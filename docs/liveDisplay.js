@@ -1,6 +1,5 @@
 /**
- * LURKER Live Display
- * Affiche les tokens en temps réel sur le site
+ * LURKER Live Display for live.html
  */
 
 const CONFIG = {
@@ -9,7 +8,6 @@ const CONFIG = {
     maxDisplay: 15
 };
 
-// Format currency
 function fmt$(val) {
     if (!val || val === 0) return '$0';
     if (val >= 1000000) return '$' + (val/1000000).toFixed(2) + 'M';
@@ -17,7 +15,6 @@ function fmt$(val) {
     return '$' + Math.floor(val);
 }
 
-// Format age
 function fmtAge(ts, ageHours) {
     if (ageHours !== undefined) {
         if (ageHours < 1) return Math.floor(ageHours * 60) + 'min';
@@ -32,27 +29,24 @@ function fmtAge(ts, ageHours) {
     return Math.floor(hrs / 24) + 'd';
 }
 
-// Create card
 function createCard(s) {
     const div = document.createElement('div');
-    div.className = 'token-card';
+    div.className = 'live-signal';
     
-    // Determine type
-    let badge = '👁️ NEW';
-    let badgeClass = 'badge-new';
+    let emoji = '👁️';
+    let title = 'NEW TOKEN';
     
     if (s.source === 'historical') {
-        badge = '📜 HIST';
-        badgeClass = 'badge-hist';
+        emoji = '📜';
+        title = 'HISTORICAL';
     } else if (s.status === 'HOT' || s.score >= 70) {
-        badge = '🔥 HOT';
-        badgeClass = 'badge-hot';
+        emoji = '🔥';
+        title = 'HOT SIGNAL';
     } else if (s.status === 'WARM' || s.score >= 40) {
-        badge = '⚡ WARM';
-        badgeClass = 'badge-warm';
+        emoji = '⚡';
+        title = 'WARM SIGNAL';
     }
     
-    // Get values with fallbacks
     const addr = s.contract_address || s.address || '???';
     const symbol = s.symbol || '???';
     const liq = s.liquidityUsd || s.liquidity || 0;
@@ -61,35 +55,34 @@ function createCard(s) {
     const age = fmtAge(s.detectedAt, s.ageHours);
     
     div.innerHTML = `
-        <div class="card-header">
-            <span class="card-symbol">$${symbol}</span>
-            <span class="card-badge ${badgeClass}">${badge}</span>
+        <div class="signal-header">
+            <span class="signal-type">
+                <span>${emoji}</span>
+                <span>${title} — $${symbol}</span>
+            </span>
+            <span class="signal-time">${age}</span>
         </div>
-        <div class="card-age">${age} ago</div>
-        <div class="card-metrics">
-            <div class="metric">
-                <span class="metric-label">LIQ</span>
-                <span class="metric-value">${fmt$(liq)}</span>
-            </div>
-            <div class="metric">
-                <span class="metric-label">MCAP</span>
-                <span class="metric-value">${fmt$(mcap)}</span>
-            </div>
-            <div class="metric">
-                <span class="metric-label">VOL24H</span>
-                <span class="metric-value">${fmt$(vol)}</span>
-            </div>
+        <div class="signal-wallet">${s.name || symbol}</div>
+        <div class="signal-pattern">
+            ${s.checks ? s.checks.map(c => '✓ ' + c.replace(/_/g, ' ')).join(' · ') : 
+              `LIQ: ${fmt$(liq)} · MCAP: ${fmt$(mcap)}`}
         </div>
-        <div class="card-links">
-            <a href="https://basescan.org/address/${addr}" target="_blank" class="link">BaseScan ↗</a>
-            ${s.url ? `<a href="${s.url}" target="_blank" class="link">DEX ↗</a>` : ''}
+        <div class="signal-meta">
+            <span>Liq: ${fmt$(liq)}</span>
+            <span>MCap: ${fmt$(mcap)}</span>
+            <span>Vol24h: ${fmt$(vol)}</span>
+            ${s.risk ? `<span>Risk: ${s.risk}</span>` : ''}
+            ${s.score ? `<span>Score: ${s.score}</span>` : ''}
+        </div>
+        <div style="display: flex; gap: 1rem; margin-top: 0.5rem;">
+            <a href="https://dexscreener.com/base/${addr}" target="_blank" class="signal-link">dexscreener →</a>
+            <a href="https://basescan.org/address/${addr}" target="_blank" class="signal-link">basescan →</a>
         </div>
     `;
     
     return div;
 }
 
-// Load
 async function load() {
     try {
         const res = await fetch(CONFIG.signalsUrl + '?t=' + Date.now());
@@ -101,28 +94,27 @@ async function load() {
         container.innerHTML = '';
         
         if (!Array.isArray(data) || data.length === 0) {
-            container.innerHTML = '<div class="empty">no signals detected</div>';
+            container.innerHTML = '<div class="no-signals"><div class="no-signals-icon">👁️</div><p>no signals detected</p></div>';
             return;
         }
         
-        // Sort by detected time
         data.sort((a, b) => (b.detectedAt || 0) - (a.detectedAt || 0));
         
-        // Display
         data.slice(0, CONFIG.maxDisplay).forEach(s => {
             container.appendChild(createCard(s));
         });
         
-        // Update count
         const count = document.getElementById('token-count');
-        if (count) count.textContent = data.length + ' tokens tracked';
+        if (count) count.textContent = data.length;
+        
+        const last = document.getElementById('last-update');
+        if (last) last.textContent = new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
         
     } catch(e) {
         console.error('[LURKER] Load error:', e);
     }
 }
 
-// Init
 function init() {
     console.log('[LURKER] Live display init');
     load();

@@ -227,66 +227,15 @@
                     <span>listening to <span id="current-chain">base</span> — next scan in <span id="countdown">0:30</span></span>
                 </div>
 
-                <div class="signal-stream" id="signal-stream">
-                    <!-- Demo signal -->
-                    <div class="live-signal">
-                        <div class="signal-header">
-                            <span class="signal-type">
-                                <span>🟠</span>
-                                <span>ACCUMULATION DETECTED</span>
-                            </span>
-                            <span class="signal-time">2m ago</span>
-                        </div>
-                        <div class="signal-wallet">0x7Bf0...1542</div>
-                        <div class="signal-pattern">3 consecutive buys: 12.5 → 15.2 → 18.8 ETH (15 min window)</div>
-                        <div class="signal-meta">
-                            <span>Confidence: 87%</span>
-                            <span>Block: 42385291</span>
-                            <span>Previous: Dormant 23d</span>
-                        </div>
-                        <a href="https://basescan.org/address/0x7Bf015421542" target="_blank" class="signal-link">
-                            view on basescan →
-                        </a>
-                    </div>
+                <div class="live-header" style="margin: 20px 0; display: flex; justify-content: space-between; align-items: center;">
+                    <span style="color: var(--text-muted); font-size: 0.9rem;">tracking <span id="token-count">0</span> tokens</span>
+                    <span style="color: var(--accent); font-size: 0.8rem;">updated: <span id="last-update">--:--</span></span>
+                </div>
 
-                    <div class="live-signal">
-                        <div class="signal-header">
-                            <span class="signal-type">
-                                <span>⚪</span>
-                                <span>WALLET AWAKENING</span>
-                            </span>
-                            <span class="signal-time">12m ago</span>
-                        </div>
-                        <div class="signal-wallet">0x9Ac3...78D2</div>
-                        <div class="signal-pattern">First transaction after 45 days of dormancy — 5.2 ETH received</div>
-                        <div class="signal-meta">
-                            <span>Confidence: 72%</span>
-                            <span>Block: 42385279</span>
-                            <span>Previous: Dormant 45d</span>
-                        </div>
-                        <a href="https://basescan.org/address/0x9Ac378D2" target="_blank" class="signal-link">
-                            view on basescan →
-                        </a>
-                    </div>
-
-                    <div class="live-signal">
-                        <div class="signal-header">
-                            <span class="signal-type">
-                                <span>🔴</span>
-                                <span>LARGE DISPLACEMENT</span>
-                            </span>
-                            <span class="signal-time">28m ago</span>
-                        </div>
-                        <div class="signal-wallet">0x3F21...9A1B</div>
-                        <div class="signal-pattern">Single transaction: 47.5 ETH moved to exchange address</div>
-                        <div class="signal-meta">
-                            <span>Confidence: 94%</span>
-                            <span>Block: 42385261</span>
-                            <span>Type: Distribution</span>
-                        </div>
-                        <a href="https://basescan.org/tx/0x3f219a1b" target="_blank" class="signal-link">
-                            view on basescan →
-                        </a>
+                <div class="signal-stream" id="live-tokens">
+                    <div class="no-signals">
+                        <div class="no-signals-icon">👁️</div>
+                        <p>scanning for signals...</p>
                     </div>
                 </div>
 
@@ -415,6 +364,7 @@
         // Refresh every 30 seconds
         setInterval(fetchSignals, 30000);
     </script>
+    <script src="liveDisplay.js"></script>
     <script>
         // Sparks effect
         const sparksContainer = document.getElementById('sparks');
