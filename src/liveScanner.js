@@ -4,28 +4,29 @@ const axios = require('axios');
 
 // Config
 const CONFIG = {
-    minLiquidityUSD: 5000,
-    minVolume24h: 5000,
+    minLiquidityUSD: 3000,
+    minVolume24h: 3000,
     maxAgeHours: 48,
-    scanInterval: 30000, // 30 seconds for live demo
-    dataFile: path.join(__dirname, '../data/signals.json')
+    scanInterval: 60000,
+    dataFile: path.join(__dirname, '../data/signals.json'),
+    // Known recent tokens to track for testing
+    testTokens: [
+        '0x4200000000000000000000000000000000000006', // WETH
+    ]
 };
 
 // Ensure data directory exists
 const dataDir = path.dirname(CONFIG.dataFile);
-if (!fs.existsSync(dataDir)) {
-    fs.mkdirSync(dataDir, { recursive: true });
-}
+if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
 
 // Load existing signals
 let signals = [];
 try {
     if (fs.existsSync(CONFIG.dataFile)) {
         signals = JSON.parse(fs.readFileSync(CONFIG.dataFile, 'utf8'));
+        if (!Array.isArray(signals)) signals = [];
     }
-} catch(e) {
-    console.log('[LIVE] Starting fresh');
-}
+} catch(e) { signals = []; }
 
 // Calculate score
 function calculateScore(data) {
@@ -38,7 +39,7 @@ function calculateScore(data) {
     
     if (data.volume24h > 100000) { score += 25; checks.push('high_vol'); }
     else if (data.volume24h > 50000) { score += 20; checks.push('good_vol'); }
-    else if (data.volume24h > 5000) { score += 10; checks.push('min_vol'); }
+    else if (data.volume24h > 10000) { score += 10; checks.push('min_vol'); }
     
     if (data.marketCap > 1000000) { score += 15; checks.push('high_mcap'); }
     else if (data.marketCap > 100000) { score += 10; checks.push('med_mcap'); }
@@ -56,7 +57,6 @@ function calculateScore(data) {
     return { score: Math.min(100, score), checks };
 }
 
-// Get token emoji based on score
 function getEmoji(score) {
     if (score >= 80) return '🟢';
     if (score >= 60) return '🟠';
@@ -64,7 +64,6 @@ function getEmoji(score) {
     return '🔴';
 }
 
-// Get risk level
 function getRisk(score) {
     if (score >= 80) return 'LOW';
     if (score >= 60) return 'MEDIUM';
@@ -72,60 +71,98 @@ function getRisk(score) {
     return 'VERY HIGH';
 }
 
-// Scan for new tokens
+function formatNumber(num) {
+    if (num >= 1e9) return (num / 1e9).toFixed(2) + 'B';
+    if (num >= 1e6) return (num / 1e6).toFixed(2) + 'M';
+    if (num >= 1e3) return (num / 1e3).toFixed(2) + 'K';
+    return num.toFixed(2);
+}
+
+// Fetch token data from DexScreener
+async function getTokenData(tokenAddress) {
+    try {
+        const res = await axios.get(
+            `https://api.dexscreener.com/latest/dex/tokens/${tokenAddress}`,
+            { timeout: 10000 }
+        );
+        if (!res.data?.pairs?.length) return null;
+        
+        // Get best pair
+        const pair = res.data.pairs.sort((a, b) => 
+            parseFloat(b.liquidity?.usd || 0) - parseFloat(a.liquidity?.usd || 0)
+        )[0];
+        
+        const age = pair.pairCreatedAt ? (Date.now() - pair.pairCreatedAt) / (1000 * 60 * 60) : 999;
+        
+        return {
+            address: tokenAddress,
+            symbol: pair.baseToken.symbol,
+            name: pair.baseToken.name,
+            priceUSD: parseFloat(pair.priceUsd) || 0,
+            liquidityUSD: parseFloat(pair.liquidity?.usd) || 0,
+            volume24h: parseFloat(pair.volume?.h24) || 0,
+            volume6h: parseFloat(pair.volume?.h6) || 0,
+            volume1h: parseFloat(pair.volume?.h1) || 0,
+            volume5m: parseFloat(pair.volume?.m5) || 0,
+            marketCap: parseFloat(pair.marketCap) || 0,
+            ageHours: age,
+            txns24h: pair.txns?.h24 || { buys: 0, sells: 0 },
+            pairAddress: pair.pairAddress,
+            dex: pair.dexId
+        };
+    } catch (e) {
+        return null;
+    }
+}
+
+// Scan for new tokens on Base
 async function scan() {
     console.log('[LIVE] Scanning Base for new tokens...');
     
+    let newSignals = 0;
+    const checked = new Set();
+    
+    // Method 1: Search for trending tokens on Base
     try {
-        // Get trending pairs from DexScreener
-        const response = await axios.get(
-            'https://api.dexscreener.com/latest/dex/pairs/base',
-            { timeout: 15000 }
-        );
+        // Get top pairs on Base by searching for common quote tokens
+        const searchQueries = ['WETH', 'USDC', 'CBETH'];
+        const baseTokens = new Set();
         
-        if (!response.data?.pairs) return;
+        for (const quote of searchQueries) {
+            try {
+                const res = await axios.get(
+                    `https://api.dexscreener.com/latest/dex/search?q=${quote}&chainId=base`,
+                    { timeout: 10000 }
+                );
+                if (res.data?.pairs) {
+                    for (const pair of res.data.pairs) {
+                        if (pair.chainId === 'base' && pair.baseToken) {
+                            baseTokens.add(pair.baseToken.address);
+                        }
+                    }
+                }
+            } catch(e) {}
+        }
         
-        // Filter recent pairs
-        const candidates = response.data.pairs
-            .filter(pair => {
-                const age = (Date.now() - pair.pairCreatedAt) / (1000 * 60 * 60);
-                const liq = parseFloat(pair.liquidity?.usd) || 0;
-                return age < CONFIG.maxAgeHours && liq >= CONFIG.minLiquidityUSD;
-            })
-            .sort((a, b) => parseFloat(b.volume?.h24) - parseFloat(a.volume?.h24))
-            .slice(0, 5);
+        console.log(`[LIVE] Found ${baseTokens.size} unique tokens on Base`);
         
-        let newSignals = 0;
-        
-        for (const pair of candidates) {
-            const tokenAddress = pair.baseToken.address;
-            
-            // Skip if already tracked
+        // Check each token
+        for (const tokenAddress of baseTokens) {
+            if (checked.has(tokenAddress)) continue;
             if (signals.some(s => s.address === tokenAddress)) continue;
+            checked.add(tokenAddress);
             
-            const data = {
-                address: tokenAddress,
-                symbol: pair.baseToken.symbol,
-                name: pair.baseToken.name,
-                priceUSD: parseFloat(pair.priceUsd) || 0,
-                liquidityUSD: parseFloat(pair.liquidity?.usd) || 0,
-                volume24h: parseFloat(pair.volume?.h24) || 0,
-                volume6h: parseFloat(pair.volume?.h6) || 0,
-                volume1h: parseFloat(pair.volume?.h1) || 0,
-                volume5m: parseFloat(pair.volume?.m5) || 0,
-                marketCap: parseFloat(pair.marketCap) || 0,
-                ageHours: (Date.now() - pair.pairCreatedAt) / (1000 * 60 * 60),
-                txns24h: pair.txns?.h24 || { buys: 0, sells: 0 },
-                pairAddress: pair.pairAddress,
-                dex: pair.dexId
-            };
+            const data = await getTokenData(tokenAddress);
+            if (!data) continue;
+            
+            // Filter by age and liquidity
+            if (data.ageHours > CONFIG.maxAgeHours || data.liquidityUSD < CONFIG.minLiquidityUSD) continue;
             
             const { score, checks } = calculateScore(data);
             
-            // Only add if score >= 40
             if (score >= 40) {
                 const signal = {
-                    id: Date.now().toString(36) + Math.random().toString(36).substr(2),
+                    id: Date.now().toString(36) + Math.random().toString(36).substr(2, 5),
                     type: 'new_token',
                     emoji: getEmoji(score),
                     score,
@@ -136,29 +173,24 @@ async function scan() {
                     timestamp: new Date().toISOString()
                 };
                 
-                signals.unshift(signal); // Add to beginning
-                if (signals.length > 50) signals.pop(); // Keep last 50
+                signals.unshift(signal);
+                if (signals.length > 50) signals.pop();
                 newSignals++;
                 
-                console.log(`[LIVE] NEW SIGNAL: ${data.symbol} (score: ${score})`);
+                console.log(`[LIVE] ✅ NEW: ${data.symbol} | Score: ${score} | Liq: $${formatNumber(data.liquidityUSD)} | Age: ${Math.floor(data.ageHours)}h`);
             }
         }
-        
-        // Save to file
-        fs.writeFileSync(CONFIG.dataFile, JSON.stringify(signals, null, 2));
-        
-        console.log(`[LIVE] Scan complete. New: ${newSignals}, Total: ${signals.length}`);
-        
     } catch (error) {
         console.error('[LIVE] Scan error:', error.message);
     }
+    
+    // Save
+    fs.writeFileSync(CONFIG.dataFile, JSON.stringify(signals, null, 2));
+    console.log(`[LIVE] Complete. New: ${newSignals}, Total: ${signals.length}`);
 }
 
-// Initial scan
+// Run
 scan();
-
-// Schedule scans
 setInterval(scan, CONFIG.scanInterval);
 
-console.log('[LIVE] Scanner running — updates every 30s');
-console.log('[LIVE] Data file:', CONFIG.dataFile);
+console.log('[LIVE] Scanner active — checking every 60s');
