@@ -1,0 +1,60 @@
+{
+  "startTime": 1771566914695,
+  "totalScans": 0,
+  "totalTokensChecked": 0,
+  "tokensDetected": 0,
+  "bySource": {
+    "unknown": {
+      "count": 1,
+      "avgScore": "85.0"
+    }
+  },
+  "byScoreRange": {
+    "90-100": {
+      "count": 0,
+      "pumps": 0,
+      "successRate": 0
+    },
+    "80-89": {
+      "count": 1,
+      "pumps": 0,
+      "successRate": "0.0"
+    },
+    "70-79": {
+      "count": 0,
+      "pumps": 0,
+      "successRate": 0
+    },
+    "60-69": {
+      "count": 0,
+      "pumps": 0,
+      "successRate": 0
+    },
+    "50-59": {
+      "count": 0,
+      "pumps": 0,
+      "successRate": 0
+    },
+    "40-49": {
+      "count": 0,
+      "pumps": 0,
+      "successRate": 0
+    },
+    "<40": {
+      "count": 0,
+      "pumps": 0,
+      "successRate": 0
+    }
+  },
+  "hourlyActivity": [
+    {
+      "hour": 6,
+      "signals": 1
+    }
+  ],
+  "totalSignals": 1,
+  "pumpsDetected": 0,
+  "overallSuccessRate": "0.0",
+  "uptimeHours": "0.0",
+  "lastUpdate": 1771566914697
+}
