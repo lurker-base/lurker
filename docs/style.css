@@ -1045,6 +1045,129 @@ a {
     color: var(--text);
 }
 
+/* Become page */
+.become-intro {
+    margin-bottom: 2rem;
+}
+
+.become-intro p {
+    color: var(--text);
+    font-size: 1.05rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.7;
+}
+
+.feature-list {
+    margin: 1.5rem 0;
+}
+
+.feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.6rem 0;
+}
+
+.feature-icon {
+    color: var(--accent);
+    font-size: 0.7rem;
+    margin-top: 0.4rem;
+}
+
+.feature-text {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.not-list p {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.territory-choices {
+    margin: 1.5rem 0;
+}
+
+.choice {
+    padding: 1rem;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid var(--border);
+    margin-bottom: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.choice-name {
+    color: var(--accent);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.choice-desc {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+.learnings p {
+    color: var(--text-muted);
+    margin-bottom: 1.25rem;
+    line-height: 1.7;
+}
+
+.costs, .revenue {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid var(--border);
+}
+
+.costs p, .revenue p {
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.start-steps {
+    margin: 1.5rem 0;
+}
+
+.start-step {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding: 1.25rem;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    margin-bottom: 0.75rem;
+}
+
+.start-step .step-num {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+    background: var(--accent);
+    color: var(--bg);
+}
+
+.start-cta {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.final-line {
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+}
+
+.final-line.accent {
+    color: var(--accent);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
 /* Footer */
 .footer {
     text-align: center;
