@@ -1,0 +1,407 @@
+[
+  {
+    "symbol": "Switch",
+    "address": "0x66108005e3f15875Ff0aB994dC085da7cF731B07",
+    "age": 0.8424166666666667,
+    "detectedAt": 1771610279546,
+    "source": "live",
+    "contract_address": "0x66108005e3f15875Ff0aB994dC085da7cF731B07"
+  },
+  {
+    "symbol": "ORIGIN",
+    "address": "0xda985b83080d4572eba4B4C56a3bF887F3c2CB07",
+    "age": 0.9091,
+    "detectedAt": 1771610279546,
+    "source": "live",
+    "contract_address": "0xda985b83080d4572eba4B4C56a3bF887F3c2CB07"
+  },
+  {
+    "symbol": "ORIGIN",
+    "address": "0x2C76BB4687E6D227B8085136817e7daaa86aCB07",
+    "age": 0.9424333333333333,
+    "detectedAt": 1771610279546,
+    "source": "live",
+    "contract_address": "0x2C76BB4687E6D227B8085136817e7daaa86aCB07"
+  },
+  {
+    "symbol": "Trolien ",
+    "address": "0xbDD71B0507F403B021dE081F108D8A1CBf747B07",
+    "age": 0.9757666666666667,
+    "detectedAt": 1771610279546,
+    "source": "live",
+    "contract_address": "0xbDD71B0507F403B021dE081F108D8A1CBf747B07"
+  },
+  {
+    "symbol": "UNIAI",
+    "address": "0xeCCd831666B0cE1e44056204D01488631f8b8b07",
+    "age": 0.17573333333333332,
+    "detectedAt": 1771610279545,
+    "source": "live",
+    "contract_address": "0xeCCd831666B0cE1e44056204D01488631f8b8b07"
+  },
+  {
+    "symbol": "UNIAI",
+    "address": "0xd4fa1Bb395287AD2D9cA8B274F536939D6ED7B07",
+    "age": 0.17575,
+    "detectedAt": 1771610279545,
+    "source": "live",
+    "contract_address": "0xd4fa1Bb395287AD2D9cA8B274F536939D6ED7B07"
+  },
+  {
+    "symbol": "EGGIE",
+    "address": "0xc96C33b5B217605d8A5E7B8E20711F077F4Bdb07",
+    "age": 0.4424166666666667,
+    "detectedAt": 1771610279545,
+    "source": "live",
+    "contract_address": "0xc96C33b5B217605d8A5E7B8E20711F077F4Bdb07"
+  },
+  {
+    "symbol": "EGGIE",
+    "address": "0x9c67687C2C5feef7680e4Df5880Ac15c5F065b07",
+    "age": 0.4424166666666667,
+    "detectedAt": 1771610279545,
+    "source": "live",
+    "contract_address": "0x9c67687C2C5feef7680e4Df5880Ac15c5F065b07"
+  },
+  {
+    "symbol": "agentuni",
+    "address": "0x31AF3fbc0413818f90C3Ab08d42eb959cbCa2b07",
+    "age": 0.5424166666666667,
+    "detectedAt": 1771610279545,
+    "source": "live",
+    "contract_address": "0x31AF3fbc0413818f90C3Ab08d42eb959cbCa2b07"
+  },
+  {
+    "symbol": "AntLing",
+    "address": "0xbE48Ea19F8C90840e014322b900f53e7D169Ab07",
+    "age": 0.5424166666666667,
+    "detectedAt": 1771610279545,
+    "source": "live",
+    "contract_address": "0xbE48Ea19F8C90840e014322b900f53e7D169Ab07"
+  },
+  {
+    "symbol": "AntLing",
+    "address": "0xFa5c09ab88F926d86F40F96d3dAFF8bCE6397b07",
+    "age": 0.5424166666666667,
+    "detectedAt": 1771610279545,
+    "source": "live",
+    "contract_address": "0xFa5c09ab88F926d86F40F96d3dAFF8bCE6397b07"
+  },
+  {
+    "symbol": "UniswapAI",
+    "address": "0x4947fA867E7f357CfE94521DFfb10a93e795cb07",
+    "age": 0.6090833333333333,
+    "detectedAt": 1771610279545,
+    "source": "live",
+    "contract_address": "0x4947fA867E7f357CfE94521DFfb10a93e795cb07"
+  },
+  {
+    "symbol": "UniswapAI",
+    "address": "0xdB4661bfC36180c9280eE55B723F67963a89AB07",
+    "age": 0.6090833333333333,
+    "detectedAt": 1771610279545,
+    "source": "live",
+    "contract_address": "0xdB4661bfC36180c9280eE55B723F67963a89AB07"
+  },
+  {
+    "symbol": "YIN",
+    "address": "0x7600A50bA7cFA9369c58164c63dba9c3CBD41B07",
+    "age": 0.67575,
+    "detectedAt": 1771610279545,
+    "source": "live",
+    "contract_address": "0x7600A50bA7cFA9369c58164c63dba9c3CBD41B07"
+  },
+  {
+    "symbol": "YIN",
+    "address": "0xC8Ee73ef141a78a76424Bd36c5533354369D4b07",
+    "age": 0.67575,
+    "detectedAt": 1771610279545,
+    "source": "live",
+    "contract_address": "0xC8Ee73ef141a78a76424Bd36c5533354369D4b07"
+  },
+  {
+    "symbol": "smoothie",
+    "address": "0x39BC447fccA71F1b449564CB9a6dE712AF8A2B07",
+    "age": 0.7424166666666666,
+    "detectedAt": 1771610279545,
+    "source": "live",
+    "contract_address": "0x39BC447fccA71F1b449564CB9a6dE712AF8A2B07"
+  },
+  {
+    "symbol": "smoothie",
+    "address": "0xF5bFfe196B4e65a65B765F4dc8c3118c0BA0FB07",
+    "age": 0.7424166666666666,
+    "detectedAt": 1771610279545,
+    "source": "live",
+    "contract_address": "0xF5bFfe196B4e65a65B765F4dc8c3118c0BA0FB07"
+  },
+  {
+    "symbol": "Trolien ",
+    "address": "0x21175DbdF12cD5DB91813d000C259b682eE8EB07",
+    "age": 0.8090833333333334,
+    "detectedAt": 1771610279545,
+    "source": "live",
+    "contract_address": "0x21175DbdF12cD5DB91813d000C259b682eE8EB07"
+  },
+  {
+    "symbol": "Trolien ",
+    "address": "0x5cd9EDebA06851C1957f9F9bf7243F3B1EBaFb07",
+    "age": 0.8090833333333334,
+    "detectedAt": 1771610279545,
+    "source": "live",
+    "contract_address": "0x5cd9EDebA06851C1957f9F9bf7243F3B1EBaFb07"
+  },
+  {
+    "symbol": "Switch",
+    "address": "0xfC348C9F9E89096a99835e6D3D2E68166DB85b07",
+    "age": 0.8424166666666667,
+    "detectedAt": 1771610279545,
+    "source": "live",
+    "contract_address": "0xfC348C9F9E89096a99835e6D3D2E68166DB85b07"
+  },
+  {
+    "symbol": "Trolien ",
+    "address": "0x593fbb262A87853B44c2Fc432E41216b22e35B07",
+    "age": 0.8962166666666667,
+    "detectedAt": 1771610272773,
+    "source": "live",
+    "contract_address": "0x593fbb262A87853B44c2Fc432E41216b22e35B07"
+  },
+  {
+    "symbol": "MOROZOVX",
+    "address": "0xbd2AAD5758d2E3D9B53C2D1BbE599Af5a0798B07",
+    "age": 1.0628833333333334,
+    "detectedAt": 1771610272773,
+    "source": "live",
+    "contract_address": "0xbd2AAD5758d2E3D9B53C2D1BbE599Af5a0798B07"
+  },
+  {
+    "symbol": "MOROZOVX",
+    "address": "0x684D25f6BB6AFfE543Ad80Fe5b2ea4a5FDCddb07",
+    "age": 0.7752166666666667,
+    "detectedAt": 1771610255513,
+    "source": "live",
+    "contract_address": "0x684D25f6BB6AFfE543Ad80Fe5b2ea4a5FDCddb07"
+  },
+  {
+    "symbol": "Riser X",
+    "address": "0x3c01B9e03C5FfE8865c43f4b3feF2817D7bcbB07",
+    "age": 0.8752166666666666,
+    "detectedAt": 1771610255513,
+    "source": "live",
+    "contract_address": "0x3c01B9e03C5FfE8865c43f4b3feF2817D7bcbB07"
+  },
+  {
+    "symbol": "smoothie",
+    "address": "0xCDdaedafa87ac91C158ca3Ec329591c379853B07",
+    "age": 0.7596,
+    "detectedAt": 1771610248576,
+    "source": "live",
+    "contract_address": "0xCDdaedafa87ac91C158ca3Ec329591c379853B07"
+  },
+  {
+    "symbol": "UniswapAI",
+    "address": "0xDEfC37488663c78fa6d5953da1A1271ca9a4bb07",
+    "age": 0.7596,
+    "detectedAt": 1771610248576,
+    "source": "live",
+    "contract_address": "0xDEfC37488663c78fa6d5953da1A1271ca9a4bb07"
+  },
+  {
+    "symbol": "smoothie",
+    "address": "0x7FA5BaE7b37D6dBB034c6985118854aABC928B07",
+    "age": 0.7596,
+    "detectedAt": 1771610248576,
+    "source": "live",
+    "contract_address": "0x7FA5BaE7b37D6dBB034c6985118854aABC928B07"
+  },
+  {
+    "symbol": "DARWINXX",
+    "address": "0xaEc881E42Ed892Dc373bc9EBDb6a42D13733FB07",
+    "age": 0.7681166666666667,
+    "detectedAt": 1771610245087,
+    "source": "live",
+    "contract_address": "0xaEc881E42Ed892Dc373bc9EBDb6a42D13733FB07"
+  },
+  {
+    "symbol": "DARWINXX",
+    "address": "0x2aaf58A45813EdDeB3920c425301ebA1AdA48b07",
+    "age": 0.80145,
+    "detectedAt": 1771610245087,
+    "source": "live",
+    "contract_address": "0x2aaf58A45813EdDeB3920c425301ebA1AdA48b07"
+  },
+  {
+    "symbol": "AntLing",
+    "address": "0xAb62F8cA5C34AE85bb08c49CCD0676B5F96BfB07",
+    "age": 0.8780833333333333,
+    "detectedAt": 1771610241685,
+    "source": "live",
+    "contract_address": "0xAb62F8cA5C34AE85bb08c49CCD0676B5F96BfB07"
+  },
+  {
+    "symbol": "AntLing",
+    "address": "0xbe76e913ba10913ED69AB6F4E70f0d3DeB202B07",
+    "age": 0.8780833333333333,
+    "detectedAt": 1771610241685,
+    "source": "live",
+    "contract_address": "0xbe76e913ba10913ED69AB6F4E70f0d3DeB202B07"
+  },
+  {
+    "symbol": "BLACKALIENXX",
+    "address": "0xe1F65DaD80ceA8bBc29BeD1ae6b18064e751Ab07",
+    "age": 0.8172,
+    "detectedAt": 1771610238032,
+    "source": "live",
+    "contract_address": "0xe1F65DaD80ceA8bBc29BeD1ae6b18064e751Ab07"
+  },
+  {
+    "symbol": "EGGIE",
+    "address": "0xB0ECdCAcE6925ceabCd02F8c540cCC6D70802B07",
+    "age": 0.8505333333333334,
+    "detectedAt": 1771610238032,
+    "source": "live",
+    "contract_address": "0xB0ECdCAcE6925ceabCd02F8c540cCC6D70802B07"
+  },
+  {
+    "symbol": "EGGIE",
+    "address": "0x60B9aa58c855d81fC74BfB6338D8C376ddE48B07",
+    "age": 0.7897333333333333,
+    "detectedAt": 1771610234384,
+    "source": "live",
+    "contract_address": "0x60B9aa58c855d81fC74BfB6338D8C376ddE48B07"
+  },
+  {
+    "symbol": "UNIAI",
+    "address": "0x3D0b5482ba0D2d4d1D7119DFac7bb570644a8b07",
+    "age": 0.8230666666666666,
+    "detectedAt": 1771610234384,
+    "source": "live",
+    "contract_address": "0x3D0b5482ba0D2d4d1D7119DFac7bb570644a8b07"
+  },
+  {
+    "symbol": "UNIAI",
+    "address": "0x4B838264cCfCBD20DaC60dE087CF2c2A8b152B07",
+    "age": 0.7634666666666666,
+    "detectedAt": 1771610230808,
+    "source": "live",
+    "contract_address": "0x4B838264cCfCBD20DaC60dE087CF2c2A8b152B07"
+  },
+  {
+    "symbol": "BlekRock",
+    "address": "0xb2d8bDD7f528Cb956A9690A4195541f23289Db07",
+    "age": 0.7634666666666666,
+    "detectedAt": 1771610230808,
+    "source": "live",
+    "contract_address": "0xb2d8bDD7f528Cb956A9690A4195541f23289Db07"
+  },
+  {
+    "symbol": "BlekRock",
+    "address": "0xC1A911111E15965AA083FcE45649433e592abb07",
+    "age": 0.7356833333333334,
+    "detectedAt": 1771610227141,
+    "source": "live",
+    "contract_address": "0xC1A911111E15965AA083FcE45649433e592abb07"
+  },
+  {
+    "symbol": "BlekRock",
+    "address": "0xb94eD574875aa97F608B22c61EA8B35E1BcdFb07",
+    "age": 0.90235,
+    "detectedAt": 1771610227141,
+    "source": "live",
+    "contract_address": "0xb94eD574875aa97F608B22c61EA8B35E1BcdFb07"
+  },
+  {
+    "symbol": "BLACKALIENXX",
+    "address": "0xbe20b03C21675E570538D3638029303EA7c41b07",
+    "age": 0.87465,
+    "detectedAt": 1771610223479,
+    "source": "live",
+    "contract_address": "0xbe20b03C21675E570538D3638029303EA7c41b07"
+  },
+  {
+    "symbol": "BlekRock",
+    "address": "0xB4Fdb08aB96893506B41bD1201653b3E52096b07",
+    "age": 0.87465,
+    "detectedAt": 1771610223479,
+    "source": "live",
+    "contract_address": "0xB4Fdb08aB96893506B41bD1201653b3E52096b07"
+  },
+  {
+    "symbol": "DARWINXX",
+    "address": "0xfcdB7Dd82B8EEADA48eE22a20f1bD222682c7550",
+    "age": 0.7262,
+    "detectedAt": 1771610212572,
+    "source": "live",
+    "contract_address": "0xfcdB7Dd82B8EEADA48eE22a20f1bD222682c7550"
+  },
+  {
+    "symbol": "BLACKALIENXX",
+    "address": "0xfC607312c6B0fE3136cca9F37cBF32e10D1F1B3D",
+    "age": 0.7928666666666667,
+    "detectedAt": 1771610212572,
+    "source": "live",
+    "contract_address": "0xfC607312c6B0fE3136cca9F37cBF32e10D1F1B3D"
+  },
+  {
+    "symbol": "SOVEREIGN",
+    "address": "0x0982490E987E6c3BF7AB2D1Dde98d430C989cB07",
+    "age": 0.77235,
+    "detectedAt": 1771610205341,
+    "source": "live",
+    "contract_address": "0x0982490E987E6c3BF7AB2D1Dde98d430C989cB07"
+  },
+  {
+    "symbol": "SOVEREIGN",
+    "address": "0x8BBd3DFF444affc50214a38dC2971BcFDc7f4b07",
+    "age": 0.8056833333333333,
+    "detectedAt": 1771610205341,
+    "source": "live",
+    "contract_address": "0x8BBd3DFF444affc50214a38dC2971BcFDc7f4b07"
+  },
+  {
+    "symbol": "STACK",
+    "address": "0x98497834eD0fe98CD60fE31dE9B6bcC029892B07",
+    "age": 0.8390166666666666,
+    "detectedAt": 1771610205341,
+    "source": "live",
+    "contract_address": "0x98497834eD0fe98CD60fE31dE9B6bcC029892B07"
+  },
+  {
+    "symbol": "STACK",
+    "address": "0xC3AD2161da341257F49C382f38257Fe4A44c9b07",
+    "age": 0.87235,
+    "detectedAt": 1771610205341,
+    "source": "live",
+    "contract_address": "0xC3AD2161da341257F49C382f38257Fe4A44c9b07"
+  },
+  {
+    "symbol": "EXO",
+    "address": "0x8B6E1d05Ad29FAF6fe4bF4997Ad712FeebB3fB07",
+    "age": 0.8123,
+    "detectedAt": 1771610201738,
+    "source": "live",
+    "contract_address": "0x8B6E1d05Ad29FAF6fe4bF4997Ad712FeebB3fB07"
+  },
+  {
+    "symbol": "Riser X",
+    "address": "0x8613d07B51BB38Be3C2383Dad428F11670062b07",
+    "age": 0.75295,
+    "detectedAt": 1771610198177,
+    "source": "live",
+    "contract_address": "0x8613d07B51BB38Be3C2383Dad428F11670062b07"
+  },
+  {
+    "symbol": "DAIMON",
+    "name": "Daimon",
+    "contract_address": "0x98c51C8E958ccCD37F798b2B9332d148E2c05D57",
+    "pairAddress": "0x5e138c89a5a70ee3ed0b8d63d5cbb7b7e6ddb22b44f2fffcd1763f22ff82a15b",
+    "dexId": "uniswap",
+    "ageHours": 46.27226638888889,
+    "liquidityUsd": 376326.54,
+    "marketCap": 1117787,
+    "found": true,
+    "source": "historical",
+    "detectedAt": 1771443701437
+  }
+]

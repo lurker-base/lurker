@@ -1,5 +1,918 @@
 [
   {
+    "tokenAddress": "0x4E1f7EAfBC078120328317646aeaeaFfb5E2CB07",
+    "symbol": "DEADS",
+    "detectedAt": 1771609976625,
+    "validatedAt": 1771610300267,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x2BcC3b4Ac5bebf8b3560fCEaBFc338b6316e7B07",
+    "symbol": "RELAY",
+    "detectedAt": 1771609976625,
+    "validatedAt": 1771610299118,
+    "status": "ILLIQUID",
+    "score": 5,
+    "reason": "💀 Pas assez de liquidité",
+    "liquidityUsd": 0,
+    "volume5m": 0,
+    "volume1h": 0.03,
+    "marketCap": 19422,
+    "priceChange5m": 0,
+    "priceChange1h": 0,
+    "txns5m": 0,
+    "txns1h": 1,
+    "pairAddress": "0xc41f1ca84aa90a63babf61728e69b60382499836d8e589ba3286723410d7b0bd",
+    "dexId": "uniswap",
+    "url": "https://dexscreener.com/base/0xc41f1ca84aa90a63babf61728e69b60382499836d8e589ba3286723410d7b0bd",
+    "analyzedAt": 1771610299118
+  },
+  {
+    "tokenAddress": "0x67F4393811c64c63FB552c7C5F29398447FEAB07",
+    "symbol": "DYCES",
+    "detectedAt": 1771609966119,
+    "validatedAt": 1771610285208,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x4de882a13B659929C214500Afb3F94BA7CA25b07",
+    "symbol": "DYCES",
+    "detectedAt": 1771609966119,
+    "validatedAt": 1771610283853,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x682C3E0f9675Db63Fb5b8B1629bbCB764f44Cb07",
+    "symbol": "OR",
+    "detectedAt": 1771609966119,
+    "validatedAt": 1771610282475,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xeEb11D1753B471B8bC3CC04B027398d6e40A1B07",
+    "symbol": "Heaven",
+    "detectedAt": 1771609966119,
+    "validatedAt": 1771610281308,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x2cEe226C5ea04bfdE56eEd76d8C107BF0A6B7B07",
+    "symbol": "OR",
+    "detectedAt": 1771609966119,
+    "validatedAt": 1771610280119,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x06695581C87575233d237f3416a11d9445C13B07",
+    "symbol": "Heaven",
+    "detectedAt": 1771609966119,
+    "validatedAt": 1771610278967,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x9DCD4427E1F9e17C0a1024Ec28F5A7861cE66B07",
+    "symbol": "elevenlabsio",
+    "detectedAt": 1771609966119,
+    "validatedAt": 1771610277817,
+    "status": "LOW",
+    "score": 25,
+    "reason": "📊 Faible activité",
+    "liquidityUsd": 19426.73,
+    "volume5m": 30.8,
+    "volume1h": 50.43,
+    "marketCap": 19426,
+    "priceChange5m": -1.09,
+    "priceChange1h": -1.09,
+    "txns5m": 4,
+    "txns1h": 5,
+    "pairAddress": "0x45b97ec0fc428529d96baf86a4ee6938e030c93cd03938e6cc0494d1677fe398",
+    "dexId": "uniswap",
+    "url": "https://dexscreener.com/base/0x45b97ec0fc428529d96baf86a4ee6938e030c93cd03938e6cc0494d1677fe398",
+    "analyzedAt": 1771610277817
+  },
+  {
+    "tokenAddress": "0x2377cB598D6630b9D1a563E36743e36dd5b06B07",
+    "symbol": "elevenlabsio",
+    "detectedAt": 1771609966119,
+    "validatedAt": 1771610276642,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x7D726bD5F44420d8ff21292BbCb388568ddE3B07",
+    "symbol": "xyz",
+    "detectedAt": 1771609966119,
+    "validatedAt": 1771610275444,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xa3DaaA6d29a5C2959763235dd271F56c2C8A4b07",
+    "symbol": "xyz",
+    "detectedAt": 1771609966119,
+    "validatedAt": 1771610274238,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x5DdacB6cd11f26d0CB8183eE34b5B5dFbD4D3B07",
+    "symbol": "CALN",
+    "detectedAt": 1771609955164,
+    "validatedAt": 1771610273081,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x7AD4f44D5FaCfdd280245aBe27d528Da39d13b07",
+    "symbol": "CALN",
+    "detectedAt": 1771609955164,
+    "validatedAt": 1771610271896,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x76c3549283A14f104AC5fc9D5758390fb1885b07",
+    "symbol": "TOKYODRIFTXX",
+    "detectedAt": 1771609955164,
+    "validatedAt": 1771610270673,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xf2121f12b6fe059cc9c201bb0E61494577E9fb07",
+    "symbol": "TOKYODRIFTXX",
+    "detectedAt": 1771609955164,
+    "validatedAt": 1771610269314,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xD56f8c445498256CeDFFfb5d9f269e7ec05c1B07",
+    "symbol": "ZORGXX",
+    "detectedAt": 1771609938693,
+    "validatedAt": 1771610250305,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x452911f44a62613D1FAACd210dF36a010B046b07",
+    "symbol": "ZORGXX",
+    "detectedAt": 1771609938693,
+    "validatedAt": 1771610249159,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xbE13fb657e78f85d61e6276d3ebDEc26D5DbfB07",
+    "symbol": "nyimu",
+    "detectedAt": 1771609938693,
+    "validatedAt": 1771610247776,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xC3A4dD9B2Ca57a1670FBc335B7af907Efb6CEb07",
+    "symbol": "nyimu",
+    "detectedAt": 1771609938693,
+    "validatedAt": 1771610246586,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xb0C95c7255035700DCf37d614D6e459209197B07",
+    "symbol": "nyimu",
+    "detectedAt": 1771609927724,
+    "validatedAt": 1771610245366,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xE36E79dCF4324BaBe864f9040731D640fa917CF3",
+    "symbol": "ZORGXX",
+    "detectedAt": 1771609927723,
+    "validatedAt": 1771610244204,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xda73F85D24d1745537C3CD5714fc8E7a408DBb07",
+    "symbol": "nyimu",
+    "detectedAt": 1771609927723,
+    "validatedAt": 1771610243030,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x5697913697103dC605FBA62dacbea2aBA519FB07",
+    "symbol": "ZORGXX",
+    "detectedAt": 1771609927723,
+    "validatedAt": 1771610241871,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xf9507e785DA0761F847fAF9d62b08AD193D3ab07",
+    "symbol": "CALN",
+    "detectedAt": 1771609916965,
+    "validatedAt": 1771610240702,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xC21380f814Cf321389ac56c6713a4B7Db34f4B07",
+    "symbol": "CALN",
+    "detectedAt": 1771609916965,
+    "validatedAt": 1771610239291,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xc90B251C93dcaDA7E8d2e6F0dED585D634DDaB07",
+    "symbol": "DYCES",
+    "detectedAt": 1771609906862,
+    "validatedAt": 1771610224762,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x7910Fc29aEBF40893a8912E58249a93ec4bc6b07",
+    "symbol": "AscendFi",
+    "detectedAt": 1771609906862,
+    "validatedAt": 1771610223561,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x18192F59483618a711A892d6A95F695776458b07",
+    "symbol": "AscendFi",
+    "detectedAt": 1771609906861,
+    "validatedAt": 1771610222400,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xa42A19A47C0aF04C48987D985ba998d12D022E1D",
+    "symbol": "TOKYODRIFTXX",
+    "detectedAt": 1771609906861,
+    "validatedAt": 1771610221246,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xD7b723a7d5e69A924f4ed975046b3F8057303B07",
+    "symbol": "xyz",
+    "detectedAt": 1771609896803,
+    "validatedAt": 1771610220045,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xa745651efFB450e3fA0003da49D3c5ffFa6e2b07",
+    "symbol": "xyz",
+    "detectedAt": 1771609896803,
+    "validatedAt": 1771610218885,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xF1c59e4bF3F2470Ef7F841b373cdD1bf5FAC5B07",
+    "symbol": "FUTURLLAMA",
+    "detectedAt": 1771609896803,
+    "validatedAt": 1771610217734,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x3be21303Ba40328F53dF5d1dA1C4b90db79B7b07",
+    "symbol": "Eliens",
+    "detectedAt": 1771609896803,
+    "validatedAt": 1771610216553,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x4340157723446D396CAC5f4c944d0dE8fe6d6b07",
+    "symbol": "Eliens",
+    "detectedAt": 1771609896803,
+    "validatedAt": 1771610215350,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x2b0D26acd636c2fdfB39De57E4AcF1B18a552b07",
+    "symbol": "DYCES",
+    "detectedAt": 1771609896803,
+    "validatedAt": 1771610214199,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x10e36a2678fb2e3C0d4Cd5f7De8E2D31Cc20AB07",
+    "symbol": "CLAWSTER",
+    "detectedAt": 1771609886577,
+    "validatedAt": 1771610213028,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x46F004909F1638E81352D9233ae3d2Ed38885b07",
+    "symbol": "Reptilian",
+    "detectedAt": 1771609886577,
+    "validatedAt": 1771610211847,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x243D047C37c5bA6f8f0e340FF8D3105E64979b07",
+    "symbol": "Reptilian",
+    "detectedAt": 1771609886577,
+    "validatedAt": 1771610210688,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x8901B8a274644a952083CDE0771F703ba47F1B07",
+    "symbol": "FUTURLLAMA",
+    "detectedAt": 1771609886577,
+    "validatedAt": 1771610209320,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x4daF246921D08B8e99DADc56458CC2CB19161B07",
+    "symbol": "LobsterAI",
+    "detectedAt": 1771609876361,
+    "validatedAt": 1771610193666,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xD3614dBbCDc3D308A2b03ed09ECdFFC95c8D5B07",
+    "symbol": "LobsterAI",
+    "detectedAt": 1771609876361,
+    "validatedAt": 1771610192311,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xf159DF81a1Aa48966C739567f27890efAe128B07",
+    "symbol": "SOVRA.IO",
+    "detectedAt": 1771609876361,
+    "validatedAt": 1771610191126,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x43178d83F145cD1E379fe20859F012bDa9215B07",
+    "symbol": "SOVRA.IO",
+    "detectedAt": 1771609876361,
+    "validatedAt": 1771610189768,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xeB0225640708D25e2bc0074F7bc5f75e6bC66B07",
+    "symbol": "CLAWSTER",
+    "detectedAt": 1771609876361,
+    "validatedAt": 1771610188619,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x82E53d587a619b9B0CF3f8b631560a51A76D4b07",
+    "symbol": "this quote ticker",
+    "detectedAt": 1771609866056,
+    "validatedAt": 1771610187252,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xfd2C0Ac106c92F919d925201b6eeABB760719B07",
+    "symbol": "LUFIOS",
+    "detectedAt": 1771609866055,
+    "validatedAt": 1771610186088,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x082049e9E7b0Efe770f5184A846000caEaf98B07",
+    "symbol": "LUFIOS",
+    "detectedAt": 1771609866055,
+    "validatedAt": 1771610184883,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x1f16680037aEfAcF830F57E325ddA5C5e37Aab07",
+    "symbol": "LUFIOS",
+    "detectedAt": 1771609855766,
+    "validatedAt": 1771610183733,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x0E4e9B7AdecB452aa7f83D64edE93471AA841b07",
+    "symbol": "LUFIOS",
+    "detectedAt": 1771609855766,
+    "validatedAt": 1771610182566,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xE81Af28Bb8FEA1891A4909eC8F84DaeB39730b07",
+    "symbol": "this quote ticker",
+    "detectedAt": 1771609855766,
+    "validatedAt": 1771610181383,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x4D90867154E3afFa12a3FCD86527BFf0b657AB07",
+    "symbol": "LobsterAI",
+    "detectedAt": 1771609848928,
+    "validatedAt": 1771610180217,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x176d3C7C07f1eB90392c57789a785d0065018b07",
+    "symbol": "LobsterAI",
+    "detectedAt": 1771609848928,
+    "validatedAt": 1771610179078,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x40e6e452576cA5212F0347371e44046f97dADB07",
+    "symbol": "Eliens",
+    "detectedAt": 1771609838568,
+    "validatedAt": 1771610159856,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xd9452393e03Ad249dF6314CDC120aA208ba36b07",
+    "symbol": "Eliens",
+    "detectedAt": 1771609838567,
+    "validatedAt": 1771610158688,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x7FA1eC6b0598Dc60D96d48bE3fC1266891BA3B07",
+    "symbol": "interesting",
+    "detectedAt": 1771609838567,
+    "validatedAt": 1771610157477,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xf41820964372223fA0f685B76D4202b2D0791b07",
+    "symbol": "interesting",
+    "detectedAt": 1771609838567,
+    "validatedAt": 1771610156308,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x133097a26f1488067048e4b06647Ce7A34ee5B07",
+    "symbol": "FUTURLLAMA",
+    "detectedAt": 1771609838567,
+    "validatedAt": 1771610154945,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x74a88505733964ccB4F4C2F4Da0cA0f95cfEeB07",
+    "symbol": "FUTURLLAMA",
+    "detectedAt": 1771609838567,
+    "validatedAt": 1771610153792,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xf7D4873e69CE19f4AaC27e6c7dF83c8f9716Ab07",
+    "symbol": "SOVRA.IO",
+    "detectedAt": 1771609838567,
+    "validatedAt": 1771610152625,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xE97Af6bE86A6B735C5E894Cf85c7727c0572Db07",
+    "symbol": "SOVRA.IO",
+    "detectedAt": 1771609838567,
+    "validatedAt": 1771610151472,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xFF6feA8D05982Db4DbFce6ceEB96CdddAfe69B07",
+    "symbol": "CLAWSTER",
+    "detectedAt": 1771609838567,
+    "validatedAt": 1771610150281,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x9f311dD5Ede5302bf935B01c3B2ec1168c001B07",
+    "symbol": "AscendFi",
+    "detectedAt": 1771609828289,
+    "validatedAt": 1771610149117,
+    "status": "LOW",
+    "score": 25,
+    "reason": "📊 Faible activité",
+    "liquidityUsd": 19426.37,
+    "volume5m": 0.21,
+    "volume1h": 0.41,
+    "marketCap": 19426,
+    "priceChange5m": -0.03,
+    "priceChange1h": -0.03,
+    "txns5m": 1,
+    "txns1h": 2,
+    "pairAddress": "0x840a74fb9abaca2bc7867cf12f5f2284a8fd54e2b279c9a51a703e57d0846d61",
+    "dexId": "uniswap",
+    "url": "https://dexscreener.com/base/0x840a74fb9abaca2bc7867cf12f5f2284a8fd54e2b279c9a51a703e57d0846d61",
+    "analyzedAt": 1771610149117
+  },
+  {
+    "tokenAddress": "0xFE0cE3B68259CaE85511E2327544CBa9BB8d4b07",
+    "symbol": "CHEEMS",
+    "detectedAt": 1771609817946,
+    "validatedAt": 1771610126314,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xb99c3d4e827EaA336Ce8aF376482CCE9dB39fb07",
+    "symbol": "CHEEMS",
+    "detectedAt": 1771609817946,
+    "validatedAt": 1771610124905,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x399ed962A0DFbBC5536c8567FE60d996F83D4b07",
+    "symbol": "interesting",
+    "detectedAt": 1771609817946,
+    "validatedAt": 1771610123760,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xfAe0915aa99b7331e05a9E6ccdcEe8334f1D4b07",
+    "symbol": "interesting",
+    "detectedAt": 1771609817946,
+    "validatedAt": 1771610122582,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x6A380254Fbb2B65cD20A5751a49887aBF6038B07",
+    "symbol": "SOVRA.IO",
+    "detectedAt": 1771609807420,
+    "validatedAt": 1771610121419,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x4CC78DaB75039859770c797D20d775732e894B07",
+    "symbol": "SOVRA.IO",
+    "detectedAt": 1771609807420,
+    "validatedAt": 1771610120258,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xa7807c2FA0Fb3187194ddbE9d2E723f3e65A4b07",
+    "symbol": "incepta",
+    "detectedAt": 1771609796110,
+    "validatedAt": 1771610119067,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xf30B7fD5Ec080e7a0a0c01199a9Dd86684032B07",
+    "symbol": "CHEEMS",
+    "detectedAt": 1771609788581,
+    "validatedAt": 1771610105685,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xCe3Bc3E4b8cc52d4C515dB831C1E6c547fEc4b07",
+    "symbol": "CHEEMS",
+    "detectedAt": 1771609788581,
+    "validatedAt": 1771610104525,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xcAEC9d7087FcD930c18565c1Bfd2656854650B07",
+    "symbol": "DEADS",
+    "detectedAt": 1771609788576,
+    "validatedAt": 1771610103347,
+    "status": "WARM",
+    "score": 80,
+    "reason": "⚡ Bon momentum",
+    "liquidityUsd": 50778.88,
+    "volume5m": 1740.15,
+    "volume1h": 2326.81,
+    "marketCap": 52167,
+    "priceChange5m": 97.7,
+    "priceChange1h": 97.7,
+    "txns5m": 124,
+    "txns1h": 125,
+    "pairAddress": "0x5a7f3bd7892bf99d28366bd3045f47b289428a0eb92427cc4f3a141276efe9b9",
+    "dexId": "uniswap",
+    "url": "https://dexscreener.com/base/0x5a7f3bd7892bf99d28366bd3045f47b289428a0eb92427cc4f3a141276efe9b9",
+    "analyzedAt": 1771610103347
+  },
+  {
+    "tokenAddress": "0xFf9fbb5090ccF051B7B64557EB4F9c63eb8d0b07",
+    "symbol": "DEADS",
+    "detectedAt": 1771609788576,
+    "validatedAt": 1771610101946,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xEE483a2f0998BDa88800FEe1dd2D8f0AAA4D7b07",
+    "symbol": "incepta",
+    "detectedAt": 1771609788576,
+    "validatedAt": 1771610100771,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xF9A6AF0561DfA88342FdBA3c67cb739908579b07",
+    "symbol": "GUGA",
+    "detectedAt": 1771609777631,
+    "validatedAt": 1771610099601,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x1b96d168Df5378A2Efe26619134f8DaAc2e2Eb07",
+    "symbol": "Agentocracy",
+    "detectedAt": 1771609777631,
+    "validatedAt": 1771610098456,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x68f8B56d70EACC74d077118efDE7ac6A4f475B07",
+    "symbol": "Agentocracy",
+    "detectedAt": 1771609777631,
+    "validatedAt": 1771610097268,
+    "status": "ILLIQUID",
+    "score": 5,
+    "reason": "💀 Pas assez de liquidité",
+    "liquidityUsd": 0,
+    "volume5m": 0,
+    "volume1h": 215.1,
+    "marketCap": 21798,
+    "priceChange5m": 0,
+    "priceChange1h": 0,
+    "txns5m": 0,
+    "txns1h": 1,
+    "pairAddress": "0x9907a4560f1e126ae3510f6f5951c7c7eb8707edab6fc00904927fa328aef410",
+    "dexId": "uniswap",
+    "url": "https://dexscreener.com/base/0x9907a4560f1e126ae3510f6f5951c7c7eb8707edab6fc00904927fa328aef410",
+    "analyzedAt": 1771610097268
+  },
+  {
+    "tokenAddress": "0x36a429A6838d15E1D81AC435d14739546ab48b07",
+    "symbol": "RORKX",
+    "detectedAt": 1771609777631,
+    "validatedAt": 1771610096095,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x6B39060C839B1870132Ff867203A90468f1B5b07",
+    "symbol": "RORKX",
+    "detectedAt": 1771609777631,
+    "validatedAt": 1771610094876,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x0B910b9eb502d91E87491869F2ac86Abe9e06b07",
+    "symbol": "robo",
+    "detectedAt": 1771609766828,
+    "validatedAt": 1771610093713,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xD4dfb69663Fd2E8d32cF75827385D51345ea1b07",
+    "symbol": "robo",
+    "detectedAt": 1771609766828,
+    "validatedAt": 1771610092561,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x4Afc9bD13592c14A736201bc6575D98559deEb07",
+    "symbol": "RABBYX",
+    "detectedAt": 1771609766827,
+    "validatedAt": 1771610091400,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x2551238eC5F79A0e56be5855796b64352b804b07",
+    "symbol": "RABBYX",
+    "detectedAt": 1771609766827,
+    "validatedAt": 1771610090243,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xeaF862B5Acf59026559F196c709F57e1ebA2DB07",
+    "symbol": "GUGA",
+    "detectedAt": 1771609766827,
+    "validatedAt": 1771610089066,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x72BfB042363534EE17e7F7ca2882BC8bA9a84b07",
+    "symbol": "Loreguy",
+    "detectedAt": 1771609755897,
+    "validatedAt": 1771610072559,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x86b8e02552F05d75e7ED417d0A8485B4e78c7B07",
+    "symbol": "CONSINO",
+    "detectedAt": 1771609755897,
+    "validatedAt": 1771610071381,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xf707A15618013331Bed2B9C2d9440DEED062bB07",
+    "symbol": "Loreguy",
+    "detectedAt": 1771609755897,
+    "validatedAt": 1771610070161,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xFce7780e9aC2A164a66145971EeCf603909b3b07",
+    "symbol": "CONSINO",
+    "detectedAt": 1771609755897,
+    "validatedAt": 1771610068956,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xE90faa03fBc736bA7F2571161FaEa1a431E5eB07",
+    "symbol": "AREA51",
+    "detectedAt": 1771609755897,
+    "validatedAt": 1771610067759,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x9cc75b2eDde6AED48D2625F874C0D92F7dd3eb07",
+    "symbol": "AREA51",
+    "detectedAt": 1771609755897,
+    "validatedAt": 1771610066528,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x74d50575fbe8285655d4c7745F505324fdb76B07",
+    "symbol": "SHIGO",
+    "detectedAt": 1771609745468,
+    "validatedAt": 1771610065323,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x80B86afBcE383af3C72F64d327de600b03b7cB07",
+    "symbol": "SHIGO",
+    "detectedAt": 1771609745468,
+    "validatedAt": 1771610064163,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x41f80E1bAbbEa1BFCc983158Ff0a7a072D31FB07",
+    "symbol": "Sovra.io",
+    "detectedAt": 1771609738536,
+    "validatedAt": 1771610062981,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x3754522e6b25B58f487b0eFc23c315Db6d2d2B07",
+    "symbol": "Sovra.io",
+    "detectedAt": 1771609738536,
+    "validatedAt": 1771610061799,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xf31b8129EDCc0D1C583aa488898C46d271C62b07",
+    "symbol": "AlienFrens",
+    "detectedAt": 1771609738536,
+    "validatedAt": 1771610060417,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x7db9B3C433cbb4617aF4Cf33E428265040Df8B07",
+    "symbol": "AlienFrens",
+    "detectedAt": 1771609738536,
+    "validatedAt": 1771610059060,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xBacf1B42Ee3eC5cB1A23fda242033EF77aB4bb07",
+    "symbol": "AlienFrens",
+    "detectedAt": 1771609718020,
+    "validatedAt": 1771610033883,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x952198cd0F9Da76cAf0D6BD9a0438aA2DAc93b07",
+    "symbol": "AlienFrens",
+    "detectedAt": 1771609718020,
+    "validatedAt": 1771610032720,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x356f082e1E0276f1Ec4Da9dF99D3e15021f4aB07",
+    "symbol": "Lobstar",
+    "detectedAt": 1771609718020,
+    "validatedAt": 1771610031400,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x9DaAA70dd6eBa750678043Be4Eed1FbdfA1D8b07",
+    "symbol": "Lobstar",
+    "detectedAt": 1771609718020,
+    "validatedAt": 1771610030224,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xbbE24567Abc3fFF15240b7B3D12f47B51F7d4B07",
+    "symbol": "CHAMONKIXX",
+    "detectedAt": 1771609707839,
+    "validatedAt": 1771610029076,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x47ECBBef193AcdCc433E302b7F216a4c81C35B07",
+    "symbol": "SHIGO",
+    "detectedAt": 1771609697508,
+    "validatedAt": 1771610002761,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xF4a09Ec21ff28524481df6C02e94571334945b07",
+    "symbol": "CONSINO",
+    "detectedAt": 1771609687222,
+    "validatedAt": 1771610001607,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0xad8E29eD492C28523840b92D08534e38eFED2B07",
+    "symbol": "AREA51",
+    "detectedAt": 1771609676854,
+    "validatedAt": 1771610000214,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
+    "tokenAddress": "0x91D365c3EEDF65CC838cf03d9f8a1afAA2A457c3",
+    "symbol": "CHAMONKIXX",
+    "detectedAt": 1771609676854,
+    "validatedAt": 1771609999056,
+    "status": "NO_LIQUIDITY",
+    "reason": "Pas encore sur DexScreener"
+  },
+  {
     "tokenAddress": "0x0124F6d0DE737B856F5F755e6A86a8C92d7632e7",
     "symbol": "RABBYX",
     "detectedAt": 1771609666616,

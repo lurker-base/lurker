@@ -1,5 +1,13 @@
 [
   {
+    "tokenAddress": "0xcAEC9d7087FcD930c18565c1Bfd2656854650B07",
+    "symbol": "DEADS",
+    "status": "WARM",
+    "score": 80,
+    "message": "\n⚡⚡ LURKER ALERT WARM ⚡⚡\n\nToken: $DEADS\n├ Address: 0xcAEC9d7087FcD930c18565c1Bfd2656854650B07\n├ Age: 5min\n├ DEX: uniswap\n└ URL: https://dexscreener.com/base/0x5a7f3bd7892bf99d28366bd3045f47b289428a0eb92427cc4f3a141276efe9b9\n\n📊 Metrics:\n├ Liq: $50,778.88\n├ Vol 5m: $1,740.15\n├ Vol 1h: $2,326.81\n├ Txns 5m: 124\n├ Price Δ5m: 97.70%\n├ Market Cap: $52,167\n└ Score: 80/100\n\n⚡ Bon momentum\n\nTime: 6:55:03 PM\n",
+    "sentAt": 1771610103351
+  },
+  {
     "tokenAddress": "0x9072Ff5a107ab1f88C6973efAEd58A408B322B07",
     "symbol": "Agentocracy",
     "status": "WARM",
