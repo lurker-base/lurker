@@ -1440,3 +1440,200 @@ a {
     color: var(--text-muted);
     font-style: italic;
 }
+
+/* Signals Section (All Tokens) */
+.signals-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.signals-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.signals-section h2::before {
+    content: '👁️';
+}
+
+#signals-last-update {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-left: auto;
+    font-weight: normal;
+}
+
+#signals-container,
+#validated-alerts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 12px;
+}
+
+.signal-item {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px;
+    transition: all 0.2s ease;
+    animation: signalAppear 0.3s ease;
+}
+
+@keyframes signalAppear {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.signal-item:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 102, 0, 0.1);
+}
+
+/* Signal status colors */
+.signal-item.hot {
+    border-left: 3px solid #ff4444;
+    background: linear-gradient(135deg, rgba(255,68,68,0.08) 0%, var(--bg-elevated) 100%);
+}
+
+.signal-item.warm {
+    border-left: 3px solid #ffaa00;
+    background: linear-gradient(135deg, rgba(255,170,0,0.08) 0%, var(--bg-elevated) 100%);
+}
+
+.signal-item.new {
+    border-left: 3px solid var(--accent);
+}
+
+.signal-item.histo {
+    border-left: 3px solid #666;
+    opacity: 0.9;
+}
+
+.signal-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.signal-emoji {
+    font-size: 1.1rem;
+}
+
+.signal-symbol {
+    font-weight: 600;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+.signal-status {
+    font-size: 0.65rem;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.signal-item.hot .signal-status {
+    background: rgba(255,68,68,0.2);
+    color: #ff6666;
+}
+
+.signal-item.warm .signal-status {
+    background: rgba(255,170,0,0.2);
+    color: #ffcc00;
+}
+
+.signal-item.new .signal-status {
+    background: var(--accent-dim);
+    color: var(--accent);
+}
+
+.signal-item.histo .signal-status {
+    background: rgba(102,102,102,0.2);
+    color: #888;
+}
+
+.signal-time {
+    margin-left: auto;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+}
+
+.signal-metrics {
+    display: flex;
+    gap: 12px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+.signal-address {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signal-address a {
+    font-family: monospace;
+    font-size: 0.7rem;
+    color: var(--accent);
+    opacity: 0.7;
+}
+
+.signal-address a:hover {
+    opacity: 1;
+}
+
+.signal-address .dex-link {
+    background: var(--accent-dim);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+}
+
+.signals-empty {
+    text-align: center;
+    padding: 40px;
+    color: var(--text-muted);
+    font-style: italic;
+    grid-column: 1 / -1;
+}
+
+/* Dual section layout */
+.signals-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+@media (max-width: 900px) {
+    .signals-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.signals-main h3,
+.signals-sidebar h3 {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

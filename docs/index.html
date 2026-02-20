@@ -108,11 +108,19 @@
                     </div>
                 </div>
 
-                <!-- Live Alerts Section -->
-                <div class="alerts-section">
-                    <h2>live alerts <span id="alerts-last-update"></span></h2>
-                    <div id="alerts-container">
-                        <div class="alerts-loading">scanning for signals...</div>
+                <!-- All Signals Section -->
+                <div class="signals-grid">
+                    <div class="signals-main">
+                        <h2>👁️ all signals <span id="signals-last-update"></span></h2>
+                        <div id="signals-container">
+                            <div class="signals-empty">scanning the network...</div>
+                        </div>
+                    </div>
+                    <div class="signals-sidebar">
+                        <h3>🔥 validated</h3>
+                        <div id="validated-alerts-container">
+                            <div class="signals-empty">waiting...</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -121,6 +129,6 @@
 
     <script src="app.js"></script>
     <script src="sparks.js"></script>
-    <script src="alerts.js"></script>
+    <script src="allSignals.js"></script>
 </body>
 </html>

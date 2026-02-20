@@ -1,5 +1,61 @@
 [
   {
+    "tokenAddress": "0xCa55A202E0a4Cb9f582F1c4E924934070AB6FB07",
+    "symbol": "BTT",
+    "status": "WARM",
+    "score": 80,
+    "message": "\n⚡⚡ LURKER ALERT WARM ⚡⚡\n\nToken: $BTT\n├ Address: 0xCa55A202E0a4Cb9f582F1c4E924934070AB6FB07\n├ Age: 5min\n├ DEX: uniswap\n└ URL: https://dexscreener.com/base/0xf2b2b67e1e8da6404acd29a4385dc1625fea74579f7af28f2aeab9b4fe2a8384\n\n📊 Metrics:\n├ Liq: $77,925.83\n├ Vol 5m: $3,088.36\n├ Vol 1h: $5,746.9\n├ Txns 5m: 58\n├ Price Δ5m: 37.20%\n├ Market Cap: $81,704\n└ Score: 80/100\n\n⚡ Bon momentum\n\nTime: 7:25:36 PM\n",
+    "sentAt": 1771611936203
+  },
+  {
+    "tokenAddress": "0x984Cf265bd25227E805F226A345CFfABDd52CB07",
+    "symbol": "BTT",
+    "status": "WARM",
+    "score": 80,
+    "message": "\n⚡⚡ LURKER ALERT WARM ⚡⚡\n\nToken: $BTT\n├ Address: 0x984Cf265bd25227E805F226A345CFfABDd52CB07\n├ Age: 5min\n├ DEX: uniswap\n└ URL: https://dexscreener.com/base/0x59761f24573749414cfd74f94eb87b26d32ac8b80e8d87b067706c409c13fa72\n\n📊 Metrics:\n├ Liq: $70,808.81\n├ Vol 5m: $3,024.03\n├ Vol 1h: $5,552.38\n├ Txns 5m: 48\n├ Price Δ5m: 30.87%\n├ Market Cap: $73,880\n└ Score: 80/100\n\n⚡ Bon momentum\n\nTime: 7:25:24 PM\n",
+    "sentAt": 1771611924390
+  },
+  {
+    "tokenAddress": "0x59A65f5e6Cf7bf6e1e149db91B98C9803d5e7b07",
+    "symbol": "MOLTAND",
+    "status": "WARM",
+    "score": 70,
+    "message": "\n⚡⚡ LURKER ALERT WARM ⚡⚡\n\nToken: $MOLTAND\n├ Address: 0x59A65f5e6Cf7bf6e1e149db91B98C9803d5e7b07\n├ Age: 5min\n├ DEX: uniswap\n└ URL: https://dexscreener.com/base/0xadd4578b28740c851b21b4b0d8effb989c14e3ee425542fd12e7c16e598dcaac\n\n📊 Metrics:\n├ Liq: $19,768.96\n├ Vol 5m: $5,391.49\n├ Vol 1h: $5,391.49\n├ Txns 5m: 25\n├ Price Δ5m: -8.65%\n├ Market Cap: $19,448\n└ Score: 70/100\n\n⚡ Bon momentum\n\nTime: 7:22:26 PM\n",
+    "sentAt": 1771611746327
+  },
+  {
+    "tokenAddress": "0x8C777B5d68157253945B18D36A0e44CE51871B07",
+    "symbol": "FANS",
+    "status": "WARM",
+    "score": 70,
+    "message": "\n⚡⚡ LURKER ALERT WARM ⚡⚡\n\nToken: $FANS\n├ Address: 0x8C777B5d68157253945B18D36A0e44CE51871B07\n├ Age: 5min\n├ DEX: uniswap\n└ URL: https://dexscreener.com/base/0xcbf2493e5c67c60558a6b1a33810c1f0ed6f39da11e9d0861a436ace2808e190\n\n📊 Metrics:\n├ Liq: $20,702.77\n├ Vol 5m: $13,212.6\n├ Vol 1h: $16,648.39\n├ Txns 5m: 60\n├ Price Δ5m: -58.21%\n├ Market Cap: $19,863\n└ Score: 70/100\n\n⚡ Bon momentum\n\nTime: 7:09:55 PM\n",
+    "sentAt": 1771610995274
+  },
+  {
+    "tokenAddress": "0x5Da343a7bDB1112a26D7fB361808a14Af0b28b07",
+    "symbol": "YIN",
+    "status": "WARM",
+    "score": 70,
+    "message": "\n⚡⚡ LURKER ALERT WARM ⚡⚡\n\nToken: $YIN\n├ Address: 0x5Da343a7bDB1112a26D7fB361808a14Af0b28b07\n├ Age: 5min\n├ DEX: uniswap\n└ URL: https://dexscreener.com/base/0x797f1dc5dca8d12d99c3b81bb9e14938eac85540fe165a993d2c84b0d12a40c6\n\n📊 Metrics:\n├ Liq: $20,122.98\n├ Vol 5m: $8,028.86\n├ Vol 1h: $11,479.07\n├ Txns 5m: 84\n├ Price Δ5m: -74.51%\n├ Market Cap: $19,425\n└ Score: 70/100\n\n⚡ Bon momentum\n\nTime: 7:06:58 PM\n",
+    "sentAt": 1771610818064
+  },
+  {
+    "tokenAddress": "0xC3AD2161da341257F49C382f38257Fe4A44c9b07",
+    "symbol": "STACK",
+    "status": "WARM",
+    "score": 70,
+    "message": "\n⚡⚡ LURKER ALERT WARM ⚡⚡\n\nToken: $STACK\n├ Address: 0xC3AD2161da341257F49C382f38257Fe4A44c9b07\n├ Age: 5min\n├ DEX: uniswap\n└ URL: https://dexscreener.com/base/0x8b788a14848d29249f86ea36811c83f2d08a6b0c8fe259725ead24486b94ea86\n\n📊 Metrics:\n├ Liq: $27,395.2\n├ Vol 5m: $13,722.62\n├ Vol 1h: $13,722.62\n├ Txns 5m: 99\n├ Price Δ5m: -8.98%\n├ Market Cap: $28,055\n└ Score: 70/100\n\n⚡ Bon momentum\n\nTime: 7:01:26 PM\n",
+    "sentAt": 1771610486136
+  },
+  {
+    "tokenAddress": "0xceC4e2E392D6430A9b31d3bA15aF462ca63A1b07",
+    "symbol": "UNIAI",
+    "status": "HOT",
+    "score": 90,
+    "message": "\n🔥🔥🔥 LURKER ALERT HOT 🔥🔥🔥\n\nToken: $UNIAI\n├ Address: 0xceC4e2E392D6430A9b31d3bA15aF462ca63A1b07\n├ Age: 5min\n├ DEX: uniswap\n└ URL: https://dexscreener.com/base/0x76886064717de45d3bbc258e08b4ac57b173aadb6c5cc6df2b560263cf9f037f\n\n📊 Metrics:\n├ Liq: $39,208.34\n├ Vol 5m: $19,424.04\n├ Vol 1h: $19,424.04\n├ Txns 5m: 135\n├ Price Δ5m: 89.95%\n├ Market Cap: $38,978\n└ Score: 90/100\n\n🔥 Fort volume + liquidité\n\nTime: 6:58:56 PM\n",
+    "sentAt": 1771610336330
+  },
+  {
     "tokenAddress": "0xcAEC9d7087FcD930c18565c1Bfd2656854650B07",
     "symbol": "DEADS",
     "status": "WARM",
