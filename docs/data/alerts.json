@@ -1,5 +1,13 @@
 [
   {
+    "tokenAddress": "0x9792e57fEC818FF2a964F4C714ae94bC5fBcFB07",
+    "symbol": "Moltbanks",
+    "status": "WARM",
+    "score": 70,
+    "message": "\n⚡⚡ LURKER ALERT WARM ⚡⚡\n\nToken: $Moltbanks\n├ Address: 0x9792e57fEC818FF2a964F4C714ae94bC5fBcFB07\n├ Age: 5min\n├ DEX: uniswap\n└ URL: https://dexscreener.com/base/0x06c932e328d220b8e230e119ea4fe5b739adecbf0292e9f9816620972b60d39e\n\n📊 Metrics:\n├ Liq: $24,649.14\n├ Vol 5m: $9,091.68\n├ Vol 1h: $11,083.12\n├ Txns 5m: 52\n├ Price Δ5m: -48.07%\n├ Market Cap: $24,412\n└ Score: 70/100\n\n⚡ Bon momentum\n\nTime: 7:27:01 PM\n",
+    "sentAt": 1771612021325
+  },
+  {
     "tokenAddress": "0xCa55A202E0a4Cb9f582F1c4E924934070AB6FB07",
     "symbol": "BTT",
     "status": "WARM",

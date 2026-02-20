@@ -1,3002 +1,3002 @@
 [
   {
-    "symbol": "DTC",
-    "address": "0x76eB1Cce4D66a00608a324A4ea00600125212B07",
-    "age": 0.08035,
-    "detectedAt": 1771611951822
+    "symbol": "GAYTASTE",
+    "address": "0xAbA613b6f2AE41dE47ced3C6a7F430f262d93b07",
+    "age": 0.2074,
+    "detectedAt": 1771612513445
   },
   {
-    "symbol": "SHRIMP",
-    "address": "0x97350AEAb1BcbDba940eB867D3fC365A790A8b07",
-    "age": 0.2137,
-    "detectedAt": 1771611951822
+    "symbol": "YANG",
+    "address": "0x71CD252523F820e95C9D4dcb693b6C0EC544Ab07",
+    "age": 0.34075,
+    "detectedAt": 1771612513445
   },
   {
-    "symbol": "LILYPADX",
-    "address": "0x5A68c595c82FB3B6340DE499cb6d8386322c1347",
-    "age": 0.3137,
-    "detectedAt": 1771611951822
+    "symbol": "GAYTASTE",
+    "address": "0xD313AC22fd5ebC028D186f705b342cAADa15eb07",
+    "age": 0.44075,
+    "detectedAt": 1771612513445
   },
   {
-    "symbol": "Moltbanks",
-    "address": "0x86d4C312d29eECd5159d07ac018FD7D04479fb07",
-    "age": 0.3803666666666667,
-    "detectedAt": 1771611951822
+    "symbol": "Flappy",
+    "address": "0x1B4d317846D75b2c09698d3EBD8bBfba84130B07",
+    "age": 0.5740833333333333,
+    "detectedAt": 1771612513445
   },
   {
-    "symbol": "microchipgnu",
-    "address": "0xd8314D9f8cdF845E0082D77204d05467e6912b07",
-    "age": 0.3803666666666667,
-    "detectedAt": 1771611951822
+    "symbol": "8BIT",
+    "address": "0x9584fb75b001Fa07567681FD740C04365756aB07",
+    "age": 0.5740833333333333,
+    "detectedAt": 1771612513445
   },
   {
-    "symbol": "BLST",
-    "address": "0xAb1e77A5A979057BCCb9A0C990Ed33aFd19B8B07",
-    "age": 0.5470333333333334,
-    "detectedAt": 1771611951822
+    "symbol": "Flappy",
+    "address": "0x444B3Bb8921B510f0A387d42b58384079F59DB07",
+    "age": 0.74075,
+    "detectedAt": 1771612513445
   },
   {
-    "symbol": "pSwiper",
-    "address": "0xb66EAB52f8a69da445d90F64fEC6C9c845923b07",
-    "age": 0.5803666666666667,
-    "detectedAt": 1771611951822
+    "symbol": "AGENTINC",
+    "address": "0xc8571F0c1D3D953A2A782C78Ac9fc243131D2b07",
+    "age": 0.9740833333333333,
+    "detectedAt": 1771612513445
   },
   {
-    "symbol": "CLAW",
-    "address": "0xEFEE34f01DcDcf82b1CD3BA7b6Ae4fB982dE9B07",
-    "age": 0.6137,
-    "detectedAt": 1771611951822
+    "symbol": "PriAi",
+    "address": "0x4696Bd0Fd9023F748C892d822fB55f8a097C8b07",
+    "age": 1.14075,
+    "detectedAt": 1771612513445
   },
   {
-    "symbol": "LARPZ",
-    "address": "0x27D9a7C5285aB9eD9fBf931c30B3Cd076CC29B07",
-    "age": 0.6803666666666667,
-    "detectedAt": 1771611951822
+    "symbol": "PriAi",
+    "address": "0x37aC73759d804765E578dA6E5835A40991c5EB07",
+    "age": 1.3740833333333333,
+    "detectedAt": 1771612513445
   },
   {
-    "symbol": " $TWINZ",
-    "address": "0x9899cAD2AFF751Aa07E7F50164c8F4B341d9BB07",
-    "age": 0.7470333333333333,
-    "detectedAt": 1771611951822
+    "symbol": "Cobot",
+    "address": "0x05664E748Dd6b3736A8a04FEB540B232dc248B07",
+    "age": 1.4074166666666668,
+    "detectedAt": 1771612513446
   },
   {
-    "symbol": "LARPZ",
-    "address": "0xFa74537233e7117680db9C8455E1B26982c41b07",
-    "age": 0.9137,
-    "detectedAt": 1771611951822
+    "symbol": "YANG",
+    "address": "0xa3626aF19F6C6c9488e553Aed1C745A935d36B07",
+    "age": 1.5407666666666666,
+    "detectedAt": 1771612513446
   },
   {
-    "symbol": "ClawWork",
-    "address": "0xb7Fb40A9478b065D9E8BAC7482C1800b98ba1b07",
-    "age": 0.9137,
-    "detectedAt": 1771611951822
+    "symbol": "ClineBench",
+    "address": "0x3864E75E60356537d525D6A89225Ec8250E57b07",
+    "age": 1.5407666666666666,
+    "detectedAt": 1771612513446
   },
   {
-    "symbol": "Moltbanks",
-    "address": "0x09a69Ff013ab66DbE5E0c98AEEF84e4127EAEB07",
-    "age": 1.0470333333333333,
-    "detectedAt": 1771611951823
+    "symbol": "Privy",
+    "address": "0x83E487B471c9Af8D082DD88C77b3a85bf32b4B07",
+    "age": 1.8074333333333332,
+    "detectedAt": 1771612513446
   },
   {
-    "symbol": "Ray",
-    "address": "0xd039DD1b66E9B698315698cd8CB078a906008b07",
-    "age": 1.0803833333333333,
-    "detectedAt": 1771611951823
+    "symbol": "AGENTINC",
+    "address": "0x549a558c8bDbbc5130b33aB1CCf915d0f7166b07",
+    "age": 1.9407666666666668,
+    "detectedAt": 1771612513446
   },
   {
-    "symbol": "BLST",
-    "address": "0xa33C77dA6837298aF09fd8af48C87463dD13aB07",
-    "age": 1.1137166666666667,
-    "detectedAt": 1771611951823
+    "symbol": "Privy",
+    "address": "0xBE716aC6b81a770d21b11622E8C9F0642aCAfb07",
+    "age": 1.9741,
+    "detectedAt": 1771612513446
   },
   {
-    "symbol": "CLAWD",
-    "address": "0x64aEB5DB4F86F9dfd3442d5825cE3305661Cc05F",
-    "age": 1.14705,
-    "detectedAt": 1771611951823
+    "symbol": "PUNCHLIENX",
+    "address": "0x5ba7C9e0Aa35C708f2a761E4aAa04A62554E9B07",
+    "age": 2.2407666666666666,
+    "detectedAt": 1771612513446
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x863b7bE0e181adf5fD72C02dDb87E32E76999B07",
-    "age": 1.1803833333333333,
-    "detectedAt": 1771611951823
+    "symbol": "BWOY",
+    "address": "0xf7623F66F7256fc7E9897731283138a016096b07",
+    "age": 2.4074333333333335,
+    "detectedAt": 1771612513446
   },
   {
-    "symbol": "microchipgnu",
-    "address": "0x1b34956C67EcDD41381d976A02ad7C918e288B07",
-    "age": 1.2803833333333334,
-    "detectedAt": 1771611951823
+    "symbol": "POOLFANS",
+    "address": "0x92a44802ABF98A763c10808fd1d3d39bE0D6Fb07",
+    "age": 2.4741,
+    "detectedAt": 1771612513446
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0xCBB1293acF16EF091c10F94F533F3E9751986B07",
-    "age": 1.2803833333333334,
-    "detectedAt": 1771611951823
+    "symbol": "CLAYTONX",
+    "address": "0xa23C6d4bED96C67f0BA7FDB0ea708d83a1A4eB07",
+    "age": 2.507433333333333,
+    "detectedAt": 1771612513446
   },
   {
-    "symbol": "mrbeast",
-    "address": "0xc60B36a25261587C3E3Ff52a83c960D59c849b07",
-    "age": 1.3803833333333333,
-    "detectedAt": 1771611951823
+    "symbol": "Gymnast🐼",
+    "address": "0xf57A5c3f2fC1Fb260156b21560AB922c7Be46B07",
+    "age": 2.6407666666666665,
+    "detectedAt": 1771612513446
   },
   {
-    "symbol": "SHRIMP",
-    "address": "0x97350AEAb1BcbDba940eB867D3fC365A790A8b07",
-    "age": 0.15253333333333333,
-    "detectedAt": 1771611948153
+    "symbol": "GAYTASTE",
+    "address": "0xAbA613b6f2AE41dE47ced3C6a7F430f262d93b07",
+    "age": 0.14423333333333332,
+    "detectedAt": 1771612509654
   },
   {
-    "symbol": "LILYPADX",
-    "address": "0x5A68c595c82FB3B6340DE499cb6d8386322c1347",
-    "age": 0.25255,
-    "detectedAt": 1771611948153
+    "symbol": "YANG",
+    "address": "0x71CD252523F820e95C9D4dcb693b6C0EC544Ab07",
+    "age": 0.2775666666666667,
+    "detectedAt": 1771612509654
   },
   {
-    "symbol": "Moltbanks",
-    "address": "0x86d4C312d29eECd5159d07ac018FD7D04479fb07",
-    "age": 0.31921666666666665,
-    "detectedAt": 1771611948153
+    "symbol": "GAYTASTE",
+    "address": "0xD313AC22fd5ebC028D186f705b342cAADa15eb07",
+    "age": 0.37756666666666666,
+    "detectedAt": 1771612509654
   },
   {
-    "symbol": "microchipgnu",
-    "address": "0xd8314D9f8cdF845E0082D77204d05467e6912b07",
-    "age": 0.31921666666666665,
-    "detectedAt": 1771611948153
+    "symbol": "Flappy",
+    "address": "0x1B4d317846D75b2c09698d3EBD8bBfba84130B07",
+    "age": 0.5109,
+    "detectedAt": 1771612509655
   },
   {
-    "symbol": "BLST",
-    "address": "0xAb1e77A5A979057BCCb9A0C990Ed33aFd19B8B07",
-    "age": 0.48588333333333333,
-    "detectedAt": 1771611948153
+    "symbol": "8BIT",
+    "address": "0x9584fb75b001Fa07567681FD740C04365756aB07",
+    "age": 0.5109166666666667,
+    "detectedAt": 1771612509655
   },
   {
-    "symbol": "pSwiper",
-    "address": "0xb66EAB52f8a69da445d90F64fEC6C9c845923b07",
-    "age": 0.5192166666666667,
-    "detectedAt": 1771611948153
+    "symbol": "Flappy",
+    "address": "0x444B3Bb8921B510f0A387d42b58384079F59DB07",
+    "age": 0.6775833333333333,
+    "detectedAt": 1771612509655
   },
   {
-    "symbol": "CLAW",
-    "address": "0xEFEE34f01DcDcf82b1CD3BA7b6Ae4fB982dE9B07",
-    "age": 0.55255,
-    "detectedAt": 1771611948153
+    "symbol": "AGENTINC",
+    "address": "0xc8571F0c1D3D953A2A782C78Ac9fc243131D2b07",
+    "age": 0.9109166666666667,
+    "detectedAt": 1771612509655
   },
   {
-    "symbol": "LARPZ",
-    "address": "0x27D9a7C5285aB9eD9fBf931c30B3Cd076CC29B07",
-    "age": 0.6192166666666666,
-    "detectedAt": 1771611948153
+    "symbol": "PriAi",
+    "address": "0x4696Bd0Fd9023F748C892d822fB55f8a097C8b07",
+    "age": 1.0775833333333333,
+    "detectedAt": 1771612509655
   },
   {
-    "symbol": " $TWINZ",
-    "address": "0x9899cAD2AFF751Aa07E7F50164c8F4B341d9BB07",
-    "age": 0.6858833333333333,
-    "detectedAt": 1771611948154
+    "symbol": "PriAi",
+    "address": "0x37aC73759d804765E578dA6E5835A40991c5EB07",
+    "age": 1.3109166666666667,
+    "detectedAt": 1771612509655
   },
   {
-    "symbol": "LARPZ",
-    "address": "0xFa74537233e7117680db9C8455E1B26982c41b07",
-    "age": 0.8525666666666667,
-    "detectedAt": 1771611948154
+    "symbol": "Cobot",
+    "address": "0x05664E748Dd6b3736A8a04FEB540B232dc248B07",
+    "age": 1.34425,
+    "detectedAt": 1771612509655
   },
   {
-    "symbol": "ClawWork",
-    "address": "0xb7Fb40A9478b065D9E8BAC7482C1800b98ba1b07",
-    "age": 0.8525666666666667,
-    "detectedAt": 1771611948154
+    "symbol": "YANG",
+    "address": "0xa3626aF19F6C6c9488e553Aed1C745A935d36B07",
+    "age": 1.4775833333333332,
+    "detectedAt": 1771612509655
   },
   {
-    "symbol": "Moltbanks",
-    "address": "0x09a69Ff013ab66DbE5E0c98AEEF84e4127EAEB07",
-    "age": 0.9859,
-    "detectedAt": 1771611948154
+    "symbol": "ClineBench",
+    "address": "0x3864E75E60356537d525D6A89225Ec8250E57b07",
+    "age": 1.4775833333333332,
+    "detectedAt": 1771612509655
   },
   {
-    "symbol": "Ray",
-    "address": "0xd039DD1b66E9B698315698cd8CB078a906008b07",
-    "age": 1.0192333333333334,
-    "detectedAt": 1771611948154
+    "symbol": "Privy",
+    "address": "0x83E487B471c9Af8D082DD88C77b3a85bf32b4B07",
+    "age": 1.74425,
+    "detectedAt": 1771612509655
   },
   {
-    "symbol": "BLST",
-    "address": "0xa33C77dA6837298aF09fd8af48C87463dD13aB07",
-    "age": 1.0525666666666667,
-    "detectedAt": 1771611948154
+    "symbol": "AGENTINC",
+    "address": "0x549a558c8bDbbc5130b33aB1CCf915d0f7166b07",
+    "age": 1.8775833333333334,
+    "detectedAt": 1771612509655
   },
   {
-    "symbol": "CLAWD",
-    "address": "0x64aEB5DB4F86F9dfd3442d5825cE3305661Cc05F",
-    "age": 1.0859,
-    "detectedAt": 1771611948154
+    "symbol": "Privy",
+    "address": "0xBE716aC6b81a770d21b11622E8C9F0642aCAfb07",
+    "age": 1.9109166666666666,
+    "detectedAt": 1771612509655
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x863b7bE0e181adf5fD72C02dDb87E32E76999B07",
-    "age": 1.1192333333333333,
-    "detectedAt": 1771611948154
+    "symbol": "PUNCHLIENX",
+    "address": "0x5ba7C9e0Aa35C708f2a761E4aAa04A62554E9B07",
+    "age": 2.177583333333333,
+    "detectedAt": 1771612509655
   },
   {
-    "symbol": "microchipgnu",
-    "address": "0x1b34956C67EcDD41381d976A02ad7C918e288B07",
-    "age": 1.2192333333333334,
-    "detectedAt": 1771611948154
+    "symbol": "BWOY",
+    "address": "0xf7623F66F7256fc7E9897731283138a016096b07",
+    "age": 2.34425,
+    "detectedAt": 1771612509655
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0xCBB1293acF16EF091c10F94F533F3E9751986B07",
-    "age": 1.2192333333333334,
-    "detectedAt": 1771611948154
+    "symbol": "POOLFANS",
+    "address": "0x92a44802ABF98A763c10808fd1d3d39bE0D6Fb07",
+    "age": 2.4109166666666666,
+    "detectedAt": 1771612509655
   },
   {
-    "symbol": "mrbeast",
-    "address": "0xc60B36a25261587C3E3Ff52a83c960D59c849b07",
-    "age": 1.3192333333333333,
-    "detectedAt": 1771611948154
+    "symbol": "CLAYTONX",
+    "address": "0xa23C6d4bED96C67f0BA7FDB0ea708d83a1A4eB07",
+    "age": 2.44425,
+    "detectedAt": 1771612509655
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x88632516000a71f3A6C4b572eBaF5BaDCd06dB07",
-    "age": 1.4859,
-    "detectedAt": 1771611948154
+    "symbol": "Gymnast🐼",
+    "address": "0xf57A5c3f2fC1Fb260156b21560AB922c7Be46B07",
+    "age": 2.577583333333333,
+    "detectedAt": 1771612509655
   },
   {
-    "symbol": "SHRIMP",
-    "address": "0x97350AEAb1BcbDba940eB867D3fC365A790A8b07",
-    "age": 0.09471666666666667,
-    "detectedAt": 1771611944683
+    "symbol": "GAYTASTE",
+    "address": "0xAbA613b6f2AE41dE47ced3C6a7F430f262d93b07",
+    "age": 0.08028333333333333,
+    "detectedAt": 1771612505817
   },
   {
-    "symbol": "LILYPADX",
-    "address": "0x5A68c595c82FB3B6340DE499cb6d8386322c1347",
-    "age": 0.19471666666666668,
-    "detectedAt": 1771611944684
+    "symbol": "YANG",
+    "address": "0x71CD252523F820e95C9D4dcb693b6C0EC544Ab07",
+    "age": 0.21361666666666668,
+    "detectedAt": 1771612505817
   },
   {
-    "symbol": "Moltbanks",
-    "address": "0x86d4C312d29eECd5159d07ac018FD7D04479fb07",
-    "age": 0.2614,
-    "detectedAt": 1771611944684
+    "symbol": "GAYTASTE",
+    "address": "0xD313AC22fd5ebC028D186f705b342cAADa15eb07",
+    "age": 0.31361666666666665,
+    "detectedAt": 1771612505817
   },
   {
-    "symbol": "microchipgnu",
-    "address": "0xd8314D9f8cdF845E0082D77204d05467e6912b07",
-    "age": 0.2614,
-    "detectedAt": 1771611944684
+    "symbol": "Flappy",
+    "address": "0x1B4d317846D75b2c09698d3EBD8bBfba84130B07",
+    "age": 0.44695,
+    "detectedAt": 1771612505817
   },
   {
-    "symbol": "BLST",
-    "address": "0xAb1e77A5A979057BCCb9A0C990Ed33aFd19B8B07",
-    "age": 0.42806666666666665,
-    "detectedAt": 1771611944684
+    "symbol": "8BIT",
+    "address": "0x9584fb75b001Fa07567681FD740C04365756aB07",
+    "age": 0.44695,
+    "detectedAt": 1771612505817
   },
   {
-    "symbol": "pSwiper",
-    "address": "0xb66EAB52f8a69da445d90F64fEC6C9c845923b07",
-    "age": 0.4614,
-    "detectedAt": 1771611944684
+    "symbol": "Flappy",
+    "address": "0x444B3Bb8921B510f0A387d42b58384079F59DB07",
+    "age": 0.6136166666666667,
+    "detectedAt": 1771612505817
   },
   {
-    "symbol": "CLAW",
-    "address": "0xEFEE34f01DcDcf82b1CD3BA7b6Ae4fB982dE9B07",
-    "age": 0.49473333333333336,
-    "detectedAt": 1771611944684
+    "symbol": "AGENTINC",
+    "address": "0xc8571F0c1D3D953A2A782C78Ac9fc243131D2b07",
+    "age": 0.84695,
+    "detectedAt": 1771612505817
   },
   {
-    "symbol": "LARPZ",
-    "address": "0x27D9a7C5285aB9eD9fBf931c30B3Cd076CC29B07",
-    "age": 0.5614,
-    "detectedAt": 1771611944684
+    "symbol": "PriAi",
+    "address": "0x4696Bd0Fd9023F748C892d822fB55f8a097C8b07",
+    "age": 1.0136333333333334,
+    "detectedAt": 1771612505818
   },
   {
-    "symbol": " $TWINZ",
-    "address": "0x9899cAD2AFF751Aa07E7F50164c8F4B341d9BB07",
-    "age": 0.6280666666666667,
-    "detectedAt": 1771611944684
+    "symbol": "PriAi",
+    "address": "0x37aC73759d804765E578dA6E5835A40991c5EB07",
+    "age": 1.2469666666666666,
+    "detectedAt": 1771612505818
   },
   {
-    "symbol": "LARPZ",
-    "address": "0xFa74537233e7117680db9C8455E1B26982c41b07",
-    "age": 0.7947333333333333,
-    "detectedAt": 1771611944684
+    "symbol": "Cobot",
+    "address": "0x05664E748Dd6b3736A8a04FEB540B232dc248B07",
+    "age": 1.2803,
+    "detectedAt": 1771612505818
   },
   {
-    "symbol": "ClawWork",
-    "address": "0xb7Fb40A9478b065D9E8BAC7482C1800b98ba1b07",
-    "age": 0.7947333333333333,
-    "detectedAt": 1771611944684
+    "symbol": "YANG",
+    "address": "0xa3626aF19F6C6c9488e553Aed1C745A935d36B07",
+    "age": 1.4136333333333333,
+    "detectedAt": 1771612505818
   },
   {
-    "symbol": "Moltbanks",
-    "address": "0x09a69Ff013ab66DbE5E0c98AEEF84e4127EAEB07",
-    "age": 0.9280666666666667,
-    "detectedAt": 1771611944684
+    "symbol": "ClineBench",
+    "address": "0x3864E75E60356537d525D6A89225Ec8250E57b07",
+    "age": 1.4136333333333333,
+    "detectedAt": 1771612505818
   },
   {
-    "symbol": "Ray",
-    "address": "0xd039DD1b66E9B698315698cd8CB078a906008b07",
-    "age": 0.9614,
-    "detectedAt": 1771611944684
+    "symbol": "Privy",
+    "address": "0x83E487B471c9Af8D082DD88C77b3a85bf32b4B07",
+    "age": 1.6803,
+    "detectedAt": 1771612505818
   },
   {
-    "symbol": "BLST",
-    "address": "0xa33C77dA6837298aF09fd8af48C87463dD13aB07",
-    "age": 0.9947333333333334,
-    "detectedAt": 1771611944684
+    "symbol": "AGENTINC",
+    "address": "0x549a558c8bDbbc5130b33aB1CCf915d0f7166b07",
+    "age": 1.8136333333333334,
+    "detectedAt": 1771612505818
   },
   {
-    "symbol": "CLAWD",
-    "address": "0x64aEB5DB4F86F9dfd3442d5825cE3305661Cc05F",
-    "age": 1.0280666666666667,
-    "detectedAt": 1771611944684
+    "symbol": "Privy",
+    "address": "0xBE716aC6b81a770d21b11622E8C9F0642aCAfb07",
+    "age": 1.8469666666666666,
+    "detectedAt": 1771612505818
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x863b7bE0e181adf5fD72C02dDb87E32E76999B07",
-    "age": 1.0614,
-    "detectedAt": 1771611944684
+    "symbol": "PUNCHLIENX",
+    "address": "0x5ba7C9e0Aa35C708f2a761E4aAa04A62554E9B07",
+    "age": 2.1136333333333335,
+    "detectedAt": 1771612505818
   },
   {
-    "symbol": "microchipgnu",
-    "address": "0x1b34956C67EcDD41381d976A02ad7C918e288B07",
-    "age": 1.1614,
-    "detectedAt": 1771611944684
+    "symbol": "BWOY",
+    "address": "0xf7623F66F7256fc7E9897731283138a016096b07",
+    "age": 2.2803,
+    "detectedAt": 1771612505818
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0xCBB1293acF16EF091c10F94F533F3E9751986B07",
-    "age": 1.1614,
-    "detectedAt": 1771611944684
+    "symbol": "POOLFANS",
+    "address": "0x92a44802ABF98A763c10808fd1d3d39bE0D6Fb07",
+    "age": 2.346966666666667,
+    "detectedAt": 1771612505818
   },
   {
-    "symbol": "mrbeast",
-    "address": "0xc60B36a25261587C3E3Ff52a83c960D59c849b07",
-    "age": 1.2614,
-    "detectedAt": 1771611944684
+    "symbol": "CLAYTONX",
+    "address": "0xa23C6d4bED96C67f0BA7FDB0ea708d83a1A4eB07",
+    "age": 2.3803,
+    "detectedAt": 1771612505818
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x88632516000a71f3A6C4b572eBaF5BaDCd06dB07",
-    "age": 1.4280666666666666,
-    "detectedAt": 1771611944684
+    "symbol": "Gymnast🐼",
+    "address": "0xf57A5c3f2fC1Fb260156b21560AB922c7Be46B07",
+    "age": 2.5136333333333334,
+    "detectedAt": 1771612505818
   },
   {
-    "symbol": "LILYPADX",
-    "address": "0x5A68c595c82FB3B6340DE499cb6d8386322c1347",
-    "age": 0.13346666666666668,
-    "detectedAt": 1771611941008
+    "symbol": "YANG",
+    "address": "0x71CD252523F820e95C9D4dcb693b6C0EC544Ab07",
+    "age": 0.14306666666666668,
+    "detectedAt": 1771612501584
   },
   {
-    "symbol": "Moltbanks",
-    "address": "0x86d4C312d29eECd5159d07ac018FD7D04479fb07",
-    "age": 0.20013333333333333,
-    "detectedAt": 1771611941008
+    "symbol": "GAYTASTE",
+    "address": "0xD313AC22fd5ebC028D186f705b342cAADa15eb07",
+    "age": 0.24306666666666665,
+    "detectedAt": 1771612501584
   },
   {
-    "symbol": "microchipgnu",
-    "address": "0xd8314D9f8cdF845E0082D77204d05467e6912b07",
-    "age": 0.20013333333333333,
-    "detectedAt": 1771611941008
+    "symbol": "Flappy",
+    "address": "0x1B4d317846D75b2c09698d3EBD8bBfba84130B07",
+    "age": 0.3764,
+    "detectedAt": 1771612501584
   },
   {
-    "symbol": "BLST",
-    "address": "0xAb1e77A5A979057BCCb9A0C990Ed33aFd19B8B07",
-    "age": 0.3668,
-    "detectedAt": 1771611941009
+    "symbol": "8BIT",
+    "address": "0x9584fb75b001Fa07567681FD740C04365756aB07",
+    "age": 0.3764,
+    "detectedAt": 1771612501584
   },
   {
-    "symbol": "pSwiper",
-    "address": "0xb66EAB52f8a69da445d90F64fEC6C9c845923b07",
-    "age": 0.40015,
-    "detectedAt": 1771611941009
+    "symbol": "Flappy",
+    "address": "0x444B3Bb8921B510f0A387d42b58384079F59DB07",
+    "age": 0.5430666666666667,
+    "detectedAt": 1771612501585
   },
   {
-    "symbol": "CLAW",
-    "address": "0xEFEE34f01DcDcf82b1CD3BA7b6Ae4fB982dE9B07",
-    "age": 0.43348333333333333,
-    "detectedAt": 1771611941009
+    "symbol": "AGENTINC",
+    "address": "0xc8571F0c1D3D953A2A782C78Ac9fc243131D2b07",
+    "age": 0.7764166666666666,
+    "detectedAt": 1771612501585
   },
   {
-    "symbol": "LARPZ",
-    "address": "0x27D9a7C5285aB9eD9fBf931c30B3Cd076CC29B07",
-    "age": 0.50015,
-    "detectedAt": 1771611941009
+    "symbol": "PriAi",
+    "address": "0x4696Bd0Fd9023F748C892d822fB55f8a097C8b07",
+    "age": 0.9430833333333334,
+    "detectedAt": 1771612501585
   },
   {
-    "symbol": " $TWINZ",
-    "address": "0x9899cAD2AFF751Aa07E7F50164c8F4B341d9BB07",
-    "age": 0.5668166666666666,
-    "detectedAt": 1771611941009
+    "symbol": "PriAi",
+    "address": "0x37aC73759d804765E578dA6E5835A40991c5EB07",
+    "age": 1.1764166666666667,
+    "detectedAt": 1771612501585
   },
   {
-    "symbol": "LARPZ",
-    "address": "0xFa74537233e7117680db9C8455E1B26982c41b07",
-    "age": 0.7334833333333334,
-    "detectedAt": 1771611941009
+    "symbol": "Cobot",
+    "address": "0x05664E748Dd6b3736A8a04FEB540B232dc248B07",
+    "age": 1.20975,
+    "detectedAt": 1771612501585
   },
   {
-    "symbol": "ClawWork",
-    "address": "0xb7Fb40A9478b065D9E8BAC7482C1800b98ba1b07",
-    "age": 0.7334833333333334,
-    "detectedAt": 1771611941009
+    "symbol": "YANG",
+    "address": "0xa3626aF19F6C6c9488e553Aed1C745A935d36B07",
+    "age": 1.3430833333333334,
+    "detectedAt": 1771612501585
   },
   {
-    "symbol": "Moltbanks",
-    "address": "0x09a69Ff013ab66DbE5E0c98AEEF84e4127EAEB07",
-    "age": 0.8668166666666667,
-    "detectedAt": 1771611941009
+    "symbol": "ClineBench",
+    "address": "0x3864E75E60356537d525D6A89225Ec8250E57b07",
+    "age": 1.3430833333333334,
+    "detectedAt": 1771612501585
   },
   {
-    "symbol": "Ray",
-    "address": "0xd039DD1b66E9B698315698cd8CB078a906008b07",
-    "age": 0.90015,
-    "detectedAt": 1771611941009
+    "symbol": "Privy",
+    "address": "0x83E487B471c9Af8D082DD88C77b3a85bf32b4B07",
+    "age": 1.60975,
+    "detectedAt": 1771612501585
   },
   {
-    "symbol": "BLST",
-    "address": "0xa33C77dA6837298aF09fd8af48C87463dD13aB07",
-    "age": 0.9334833333333333,
-    "detectedAt": 1771611941009
+    "symbol": "AGENTINC",
+    "address": "0x549a558c8bDbbc5130b33aB1CCf915d0f7166b07",
+    "age": 1.7430833333333333,
+    "detectedAt": 1771612501585
   },
   {
-    "symbol": "CLAWD",
-    "address": "0x64aEB5DB4F86F9dfd3442d5825cE3305661Cc05F",
-    "age": 0.9668166666666667,
-    "detectedAt": 1771611941009
+    "symbol": "Privy",
+    "address": "0xBE716aC6b81a770d21b11622E8C9F0642aCAfb07",
+    "age": 1.7764166666666668,
+    "detectedAt": 1771612501585
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x863b7bE0e181adf5fD72C02dDb87E32E76999B07",
-    "age": 1.00015,
-    "detectedAt": 1771611941009
+    "symbol": "PUNCHLIENX",
+    "address": "0x5ba7C9e0Aa35C708f2a761E4aAa04A62554E9B07",
+    "age": 2.043083333333333,
+    "detectedAt": 1771612501585
   },
   {
-    "symbol": "microchipgnu",
-    "address": "0x1b34956C67EcDD41381d976A02ad7C918e288B07",
-    "age": 1.10015,
-    "detectedAt": 1771611941009
+    "symbol": "BWOY",
+    "address": "0xf7623F66F7256fc7E9897731283138a016096b07",
+    "age": 2.20975,
+    "detectedAt": 1771612501585
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0xCBB1293acF16EF091c10F94F533F3E9751986B07",
-    "age": 1.10015,
-    "detectedAt": 1771611941009
+    "symbol": "POOLFANS",
+    "address": "0x92a44802ABF98A763c10808fd1d3d39bE0D6Fb07",
+    "age": 2.2764166666666665,
+    "detectedAt": 1771612501585
   },
   {
-    "symbol": "mrbeast",
-    "address": "0xc60B36a25261587C3E3Ff52a83c960D59c849b07",
-    "age": 1.20015,
-    "detectedAt": 1771611941009
+    "symbol": "CLAYTONX",
+    "address": "0xa23C6d4bED96C67f0BA7FDB0ea708d83a1A4eB07",
+    "age": 2.30975,
+    "detectedAt": 1771612501585
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x88632516000a71f3A6C4b572eBaF5BaDCd06dB07",
-    "age": 1.3668166666666666,
-    "detectedAt": 1771611941009
+    "symbol": "Gymnast🐼",
+    "address": "0xf57A5c3f2fC1Fb260156b21560AB922c7Be46B07",
+    "age": 2.4430833333333335,
+    "detectedAt": 1771612501585
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x83F369a2057Cbe3A8DD8Bca7EE1F5fE42F448b07",
-    "age": 1.6334833333333334,
-    "detectedAt": 1771611941009
+    "symbol": "Privy",
+    "address": "0x414612ebE071B13F034E276d8525756bd1E27B07",
+    "age": 2.543083333333333,
+    "detectedAt": 1771612501585
   },
   {
-    "symbol": "LILYPADX",
-    "address": "0x5A68c595c82FB3B6340DE499cb6d8386322c1347",
-    "age": 0.07278333333333334,
-    "detectedAt": 1771611937367
+    "symbol": "GAYTASTE",
+    "address": "0xD313AC22fd5ebC028D186f705b342cAADa15eb07",
+    "age": 0.18151666666666666,
+    "detectedAt": 1771612497891
   },
   {
-    "symbol": "Moltbanks",
-    "address": "0x86d4C312d29eECd5159d07ac018FD7D04479fb07",
-    "age": 0.13945,
-    "detectedAt": 1771611937368
+    "symbol": "Flappy",
+    "address": "0x1B4d317846D75b2c09698d3EBD8bBfba84130B07",
+    "age": 0.31485,
+    "detectedAt": 1771612497891
   },
   {
-    "symbol": "microchipgnu",
-    "address": "0xd8314D9f8cdF845E0082D77204d05467e6912b07",
-    "age": 0.13946666666666666,
-    "detectedAt": 1771611937368
+    "symbol": "8BIT",
+    "address": "0x9584fb75b001Fa07567681FD740C04365756aB07",
+    "age": 0.31485,
+    "detectedAt": 1771612497891
   },
   {
-    "symbol": "BLST",
-    "address": "0xAb1e77A5A979057BCCb9A0C990Ed33aFd19B8B07",
-    "age": 0.3061333333333333,
-    "detectedAt": 1771611937368
+    "symbol": "Flappy",
+    "address": "0x444B3Bb8921B510f0A387d42b58384079F59DB07",
+    "age": 0.48151666666666665,
+    "detectedAt": 1771612497892
   },
   {
-    "symbol": "pSwiper",
-    "address": "0xb66EAB52f8a69da445d90F64fEC6C9c845923b07",
-    "age": 0.3394666666666667,
-    "detectedAt": 1771611937368
+    "symbol": "AGENTINC",
+    "address": "0xc8571F0c1D3D953A2A782C78Ac9fc243131D2b07",
+    "age": 0.7148666666666667,
+    "detectedAt": 1771612497892
   },
   {
-    "symbol": "CLAW",
-    "address": "0xEFEE34f01DcDcf82b1CD3BA7b6Ae4fB982dE9B07",
-    "age": 0.3728,
-    "detectedAt": 1771611937368
+    "symbol": "PriAi",
+    "address": "0x4696Bd0Fd9023F748C892d822fB55f8a097C8b07",
+    "age": 0.8815333333333333,
+    "detectedAt": 1771612497892
   },
   {
-    "symbol": "LARPZ",
-    "address": "0x27D9a7C5285aB9eD9fBf931c30B3Cd076CC29B07",
-    "age": 0.43946666666666667,
-    "detectedAt": 1771611937368
+    "symbol": "PriAi",
+    "address": "0x37aC73759d804765E578dA6E5835A40991c5EB07",
+    "age": 1.1148666666666667,
+    "detectedAt": 1771612497892
   },
   {
-    "symbol": " $TWINZ",
-    "address": "0x9899cAD2AFF751Aa07E7F50164c8F4B341d9BB07",
-    "age": 0.5061333333333333,
-    "detectedAt": 1771611937368
+    "symbol": "Cobot",
+    "address": "0x05664E748Dd6b3736A8a04FEB540B232dc248B07",
+    "age": 1.1482,
+    "detectedAt": 1771612497892
   },
   {
-    "symbol": "LARPZ",
-    "address": "0xFa74537233e7117680db9C8455E1B26982c41b07",
-    "age": 0.6728,
-    "detectedAt": 1771611937368
+    "symbol": "YANG",
+    "address": "0xa3626aF19F6C6c9488e553Aed1C745A935d36B07",
+    "age": 1.2815333333333334,
+    "detectedAt": 1771612497892
   },
   {
-    "symbol": "ClawWork",
-    "address": "0xb7Fb40A9478b065D9E8BAC7482C1800b98ba1b07",
-    "age": 0.6728,
-    "detectedAt": 1771611937369
+    "symbol": "ClineBench",
+    "address": "0x3864E75E60356537d525D6A89225Ec8250E57b07",
+    "age": 1.2815333333333334,
+    "detectedAt": 1771612497892
   },
   {
-    "symbol": "Moltbanks",
-    "address": "0x09a69Ff013ab66DbE5E0c98AEEF84e4127EAEB07",
-    "age": 0.80615,
-    "detectedAt": 1771611937369
+    "symbol": "Privy",
+    "address": "0x83E487B471c9Af8D082DD88C77b3a85bf32b4B07",
+    "age": 1.5482,
+    "detectedAt": 1771612497892
   },
   {
-    "symbol": "Ray",
-    "address": "0xd039DD1b66E9B698315698cd8CB078a906008b07",
-    "age": 0.8394833333333334,
-    "detectedAt": 1771611937369
+    "symbol": "AGENTINC",
+    "address": "0x549a558c8bDbbc5130b33aB1CCf915d0f7166b07",
+    "age": 1.6815333333333333,
+    "detectedAt": 1771612497892
   },
   {
-    "symbol": "BLST",
-    "address": "0xa33C77dA6837298aF09fd8af48C87463dD13aB07",
-    "age": 0.8728166666666667,
-    "detectedAt": 1771611937369
+    "symbol": "Privy",
+    "address": "0xBE716aC6b81a770d21b11622E8C9F0642aCAfb07",
+    "age": 1.7148666666666668,
+    "detectedAt": 1771612497892
   },
   {
-    "symbol": "CLAWD",
-    "address": "0x64aEB5DB4F86F9dfd3442d5825cE3305661Cc05F",
-    "age": 0.90615,
-    "detectedAt": 1771611937369
+    "symbol": "PUNCHLIENX",
+    "address": "0x5ba7C9e0Aa35C708f2a761E4aAa04A62554E9B07",
+    "age": 1.9815333333333334,
+    "detectedAt": 1771612497892
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x863b7bE0e181adf5fD72C02dDb87E32E76999B07",
-    "age": 0.9394833333333333,
-    "detectedAt": 1771611937369
+    "symbol": "BWOY",
+    "address": "0xf7623F66F7256fc7E9897731283138a016096b07",
+    "age": 2.1482,
+    "detectedAt": 1771612497892
   },
   {
-    "symbol": "microchipgnu",
-    "address": "0x1b34956C67EcDD41381d976A02ad7C918e288B07",
-    "age": 1.0394833333333333,
-    "detectedAt": 1771611937369
+    "symbol": "POOLFANS",
+    "address": "0x92a44802ABF98A763c10808fd1d3d39bE0D6Fb07",
+    "age": 2.2148666666666665,
+    "detectedAt": 1771612497892
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0xCBB1293acF16EF091c10F94F533F3E9751986B07",
-    "age": 1.0394833333333333,
-    "detectedAt": 1771611937369
+    "symbol": "CLAYTONX",
+    "address": "0xa23C6d4bED96C67f0BA7FDB0ea708d83a1A4eB07",
+    "age": 2.2482,
+    "detectedAt": 1771612497892
   },
   {
-    "symbol": "mrbeast",
-    "address": "0xc60B36a25261587C3E3Ff52a83c960D59c849b07",
-    "age": 1.1394833333333334,
-    "detectedAt": 1771611937369
+    "symbol": "Gymnast🐼",
+    "address": "0xf57A5c3f2fC1Fb260156b21560AB922c7Be46B07",
+    "age": 2.3815333333333335,
+    "detectedAt": 1771612497892
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x88632516000a71f3A6C4b572eBaF5BaDCd06dB07",
-    "age": 1.30615,
-    "detectedAt": 1771611937369
+    "symbol": "Privy",
+    "address": "0x414612ebE071B13F034E276d8525756bd1E27B07",
+    "age": 2.481533333333333,
+    "detectedAt": 1771612497892
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x83F369a2057Cbe3A8DD8Bca7EE1F5fE42F448b07",
-    "age": 1.5728166666666668,
-    "detectedAt": 1771611937369
+    "symbol": "ClineBench",
+    "address": "0x48c7A9565a78F7234816b51fDbAE4ba1901ceB07",
+    "age": 2.481533333333333,
+    "detectedAt": 1771612497892
   },
   {
-    "symbol": "microchipgnu",
-    "address": "0xd8314D9f8cdF845E0082D77204d05467e6912b07",
-    "age": 0.0774,
-    "detectedAt": 1771611933645
+    "symbol": "GAYTASTE",
+    "address": "0xD313AC22fd5ebC028D186f705b342cAADa15eb07",
+    "age": 0.12081666666666667,
+    "detectedAt": 1771612494249
   },
   {
-    "symbol": "Moltbanks",
-    "address": "0x86d4C312d29eECd5159d07ac018FD7D04479fb07",
-    "age": 0.07741666666666666,
-    "detectedAt": 1771611933645
+    "symbol": "Flappy",
+    "address": "0x1B4d317846D75b2c09698d3EBD8bBfba84130B07",
+    "age": 0.25415,
+    "detectedAt": 1771612494249
   },
   {
-    "symbol": "BLST",
-    "address": "0xAb1e77A5A979057BCCb9A0C990Ed33aFd19B8B07",
-    "age": 0.24408333333333335,
-    "detectedAt": 1771611933645
+    "symbol": "8BIT",
+    "address": "0x9584fb75b001Fa07567681FD740C04365756aB07",
+    "age": 0.25415,
+    "detectedAt": 1771612494249
   },
   {
-    "symbol": "pSwiper",
-    "address": "0xb66EAB52f8a69da445d90F64fEC6C9c845923b07",
-    "age": 0.27741666666666664,
-    "detectedAt": 1771611933645
+    "symbol": "Flappy",
+    "address": "0x444B3Bb8921B510f0A387d42b58384079F59DB07",
+    "age": 0.42081666666666667,
+    "detectedAt": 1771612494249
   },
   {
-    "symbol": "CLAW",
-    "address": "0xEFEE34f01DcDcf82b1CD3BA7b6Ae4fB982dE9B07",
-    "age": 0.31075,
-    "detectedAt": 1771611933645
+    "symbol": "AGENTINC",
+    "address": "0xc8571F0c1D3D953A2A782C78Ac9fc243131D2b07",
+    "age": 0.65415,
+    "detectedAt": 1771612494249
   },
   {
-    "symbol": "LARPZ",
-    "address": "0x27D9a7C5285aB9eD9fBf931c30B3Cd076CC29B07",
-    "age": 0.3774166666666667,
-    "detectedAt": 1771611933645
+    "symbol": "PriAi",
+    "address": "0x4696Bd0Fd9023F748C892d822fB55f8a097C8b07",
+    "age": 0.8208166666666666,
+    "detectedAt": 1771612494249
   },
   {
-    "symbol": " $TWINZ",
-    "address": "0x9899cAD2AFF751Aa07E7F50164c8F4B341d9BB07",
-    "age": 0.44408333333333333,
-    "detectedAt": 1771611933645
+    "symbol": "PriAi",
+    "address": "0x37aC73759d804765E578dA6E5835A40991c5EB07",
+    "age": 1.05415,
+    "detectedAt": 1771612494249
   },
   {
-    "symbol": "LARPZ",
-    "address": "0xFa74537233e7117680db9C8455E1B26982c41b07",
-    "age": 0.61075,
-    "detectedAt": 1771611933645
+    "symbol": "Cobot",
+    "address": "0x05664E748Dd6b3736A8a04FEB540B232dc248B07",
+    "age": 1.0874833333333334,
+    "detectedAt": 1771612494249
   },
   {
-    "symbol": "ClawWork",
-    "address": "0xb7Fb40A9478b065D9E8BAC7482C1800b98ba1b07",
-    "age": 0.61075,
-    "detectedAt": 1771611933645
+    "symbol": "YANG",
+    "address": "0xa3626aF19F6C6c9488e553Aed1C745A935d36B07",
+    "age": 1.2208166666666667,
+    "detectedAt": 1771612494250
   },
   {
-    "symbol": "Moltbanks",
-    "address": "0x09a69Ff013ab66DbE5E0c98AEEF84e4127EAEB07",
-    "age": 0.7440833333333333,
-    "detectedAt": 1771611933645
+    "symbol": "ClineBench",
+    "address": "0x3864E75E60356537d525D6A89225Ec8250E57b07",
+    "age": 1.2208333333333334,
+    "detectedAt": 1771612494250
   },
   {
-    "symbol": "Ray",
-    "address": "0xd039DD1b66E9B698315698cd8CB078a906008b07",
-    "age": 0.7774166666666666,
-    "detectedAt": 1771611933645
+    "symbol": "Privy",
+    "address": "0x83E487B471c9Af8D082DD88C77b3a85bf32b4B07",
+    "age": 1.4875,
+    "detectedAt": 1771612494250
   },
   {
-    "symbol": "BLST",
-    "address": "0xa33C77dA6837298aF09fd8af48C87463dD13aB07",
-    "age": 0.81075,
-    "detectedAt": 1771611933645
+    "symbol": "AGENTINC",
+    "address": "0x549a558c8bDbbc5130b33aB1CCf915d0f7166b07",
+    "age": 1.6208333333333333,
+    "detectedAt": 1771612494250
   },
   {
-    "symbol": "CLAWD",
-    "address": "0x64aEB5DB4F86F9dfd3442d5825cE3305661Cc05F",
-    "age": 0.8440833333333333,
-    "detectedAt": 1771611933645
+    "symbol": "Privy",
+    "address": "0xBE716aC6b81a770d21b11622E8C9F0642aCAfb07",
+    "age": 1.6541666666666666,
+    "detectedAt": 1771612494250
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x863b7bE0e181adf5fD72C02dDb87E32E76999B07",
-    "age": 0.8774166666666666,
-    "detectedAt": 1771611933645
+    "symbol": "PUNCHLIENX",
+    "address": "0x5ba7C9e0Aa35C708f2a761E4aAa04A62554E9B07",
+    "age": 1.9208333333333334,
+    "detectedAt": 1771612494250
   },
   {
-    "symbol": "microchipgnu",
-    "address": "0x1b34956C67EcDD41381d976A02ad7C918e288B07",
-    "age": 0.9774166666666667,
-    "detectedAt": 1771611933645
+    "symbol": "BWOY",
+    "address": "0xf7623F66F7256fc7E9897731283138a016096b07",
+    "age": 2.0875,
+    "detectedAt": 1771612494250
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0xCBB1293acF16EF091c10F94F533F3E9751986B07",
-    "age": 0.9774166666666667,
-    "detectedAt": 1771611933645
+    "symbol": "POOLFANS",
+    "address": "0x92a44802ABF98A763c10808fd1d3d39bE0D6Fb07",
+    "age": 2.154166666666667,
+    "detectedAt": 1771612494250
   },
   {
-    "symbol": "mrbeast",
-    "address": "0xc60B36a25261587C3E3Ff52a83c960D59c849b07",
-    "age": 1.0774166666666667,
-    "detectedAt": 1771611933645
+    "symbol": "CLAYTONX",
+    "address": "0xa23C6d4bED96C67f0BA7FDB0ea708d83a1A4eB07",
+    "age": 2.1875,
+    "detectedAt": 1771612494250
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x88632516000a71f3A6C4b572eBaF5BaDCd06dB07",
-    "age": 1.2440833333333334,
-    "detectedAt": 1771611933645
+    "symbol": "Gymnast🐼",
+    "address": "0xf57A5c3f2fC1Fb260156b21560AB922c7Be46B07",
+    "age": 2.3208333333333333,
+    "detectedAt": 1771612494250
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x83F369a2057Cbe3A8DD8Bca7EE1F5fE42F448b07",
-    "age": 1.51075,
-    "detectedAt": 1771611933645
+    "symbol": "Privy",
+    "address": "0x414612ebE071B13F034E276d8525756bd1E27B07",
+    "age": 2.4208333333333334,
+    "detectedAt": 1771612494250
   },
   {
-    "symbol": "Jellybean",
-    "address": "0x098F94951E90791458bC045596C829B337D01B07",
-    "age": 1.61075,
-    "detectedAt": 1771611933645
+    "symbol": "ClineBench",
+    "address": "0x48c7A9565a78F7234816b51fDbAE4ba1901ceB07",
+    "age": 2.4208333333333334,
+    "detectedAt": 1771612494250
   },
   {
-    "symbol": "BLST",
-    "address": "0xAb1e77A5A979057BCCb9A0C990Ed33aFd19B8B07",
-    "age": 0.1827,
-    "detectedAt": 1771611929963
+    "symbol": "Flappy",
+    "address": "0x1B4d317846D75b2c09698d3EBD8bBfba84130B07",
+    "age": 0.19305,
+    "detectedAt": 1771612490583
   },
   {
-    "symbol": "pSwiper",
-    "address": "0xb66EAB52f8a69da445d90F64fEC6C9c845923b07",
-    "age": 0.21605,
-    "detectedAt": 1771611929963
+    "symbol": "8BIT",
+    "address": "0x9584fb75b001Fa07567681FD740C04365756aB07",
+    "age": 0.19305,
+    "detectedAt": 1771612490583
   },
   {
-    "symbol": "CLAW",
-    "address": "0xEFEE34f01DcDcf82b1CD3BA7b6Ae4fB982dE9B07",
-    "age": 0.24938333333333335,
-    "detectedAt": 1771611929963
+    "symbol": "Flappy",
+    "address": "0x444B3Bb8921B510f0A387d42b58384079F59DB07",
+    "age": 0.3597166666666667,
+    "detectedAt": 1771612490583
   },
   {
-    "symbol": "LARPZ",
-    "address": "0x27D9a7C5285aB9eD9fBf931c30B3Cd076CC29B07",
-    "age": 0.31605,
-    "detectedAt": 1771611929963
+    "symbol": "AGENTINC",
+    "address": "0xc8571F0c1D3D953A2A782C78Ac9fc243131D2b07",
+    "age": 0.59305,
+    "detectedAt": 1771612490583
   },
   {
-    "symbol": " $TWINZ",
-    "address": "0x9899cAD2AFF751Aa07E7F50164c8F4B341d9BB07",
-    "age": 0.38271666666666665,
-    "detectedAt": 1771611929963
+    "symbol": "PriAi",
+    "address": "0x4696Bd0Fd9023F748C892d822fB55f8a097C8b07",
+    "age": 0.7597166666666667,
+    "detectedAt": 1771612490583
   },
   {
-    "symbol": "LARPZ",
-    "address": "0xFa74537233e7117680db9C8455E1B26982c41b07",
-    "age": 0.5493833333333333,
-    "detectedAt": 1771611929963
+    "symbol": "PriAi",
+    "address": "0x37aC73759d804765E578dA6E5835A40991c5EB07",
+    "age": 0.99305,
+    "detectedAt": 1771612490583
   },
   {
-    "symbol": "ClawWork",
-    "address": "0xb7Fb40A9478b065D9E8BAC7482C1800b98ba1b07",
-    "age": 0.5493833333333333,
-    "detectedAt": 1771611929963
+    "symbol": "Cobot",
+    "address": "0x05664E748Dd6b3736A8a04FEB540B232dc248B07",
+    "age": 1.0263833333333334,
+    "detectedAt": 1771612490583
   },
   {
-    "symbol": "Moltbanks",
-    "address": "0x09a69Ff013ab66DbE5E0c98AEEF84e4127EAEB07",
-    "age": 0.6827166666666666,
-    "detectedAt": 1771611929963
+    "symbol": "YANG",
+    "address": "0xa3626aF19F6C6c9488e553Aed1C745A935d36B07",
+    "age": 1.1597166666666667,
+    "detectedAt": 1771612490583
   },
   {
-    "symbol": "Ray",
-    "address": "0xd039DD1b66E9B698315698cd8CB078a906008b07",
-    "age": 0.71605,
-    "detectedAt": 1771611929963
+    "symbol": "ClineBench",
+    "address": "0x3864E75E60356537d525D6A89225Ec8250E57b07",
+    "age": 1.1597166666666667,
+    "detectedAt": 1771612490584
   },
   {
-    "symbol": "BLST",
-    "address": "0xa33C77dA6837298aF09fd8af48C87463dD13aB07",
-    "age": 0.7493833333333333,
-    "detectedAt": 1771611929963
+    "symbol": "Privy",
+    "address": "0x83E487B471c9Af8D082DD88C77b3a85bf32b4B07",
+    "age": 1.4264,
+    "detectedAt": 1771612490584
   },
   {
-    "symbol": "CLAWD",
-    "address": "0x64aEB5DB4F86F9dfd3442d5825cE3305661Cc05F",
-    "age": 0.7827166666666666,
-    "detectedAt": 1771611929963
+    "symbol": "AGENTINC",
+    "address": "0x549a558c8bDbbc5130b33aB1CCf915d0f7166b07",
+    "age": 1.5597333333333334,
+    "detectedAt": 1771612490584
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x863b7bE0e181adf5fD72C02dDb87E32E76999B07",
-    "age": 0.81605,
-    "detectedAt": 1771611929963
+    "symbol": "Privy",
+    "address": "0xBE716aC6b81a770d21b11622E8C9F0642aCAfb07",
+    "age": 1.5930666666666666,
+    "detectedAt": 1771612490584
   },
   {
-    "symbol": "microchipgnu",
-    "address": "0x1b34956C67EcDD41381d976A02ad7C918e288B07",
-    "age": 0.91605,
-    "detectedAt": 1771611929963
+    "symbol": "PUNCHLIENX",
+    "address": "0x5ba7C9e0Aa35C708f2a761E4aAa04A62554E9B07",
+    "age": 1.8597333333333332,
+    "detectedAt": 1771612490584
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0xCBB1293acF16EF091c10F94F533F3E9751986B07",
-    "age": 0.91605,
-    "detectedAt": 1771611929963
+    "symbol": "BWOY",
+    "address": "0xf7623F66F7256fc7E9897731283138a016096b07",
+    "age": 2.0264,
+    "detectedAt": 1771612490584
   },
   {
-    "symbol": "mrbeast",
-    "address": "0xc60B36a25261587C3E3Ff52a83c960D59c849b07",
-    "age": 1.01605,
-    "detectedAt": 1771611929963
+    "symbol": "POOLFANS",
+    "address": "0x92a44802ABF98A763c10808fd1d3d39bE0D6Fb07",
+    "age": 2.0930666666666666,
+    "detectedAt": 1771612490584
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x88632516000a71f3A6C4b572eBaF5BaDCd06dB07",
-    "age": 1.1827166666666666,
-    "detectedAt": 1771611929963
+    "symbol": "CLAYTONX",
+    "address": "0xa23C6d4bED96C67f0BA7FDB0ea708d83a1A4eB07",
+    "age": 2.1264,
+    "detectedAt": 1771612490584
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x83F369a2057Cbe3A8DD8Bca7EE1F5fE42F448b07",
-    "age": 1.4493833333333332,
-    "detectedAt": 1771611929964
+    "symbol": "Gymnast🐼",
+    "address": "0xf57A5c3f2fC1Fb260156b21560AB922c7Be46B07",
+    "age": 2.259733333333333,
+    "detectedAt": 1771612490584
   },
   {
-    "symbol": "Jellybean",
-    "address": "0x098F94951E90791458bC045596C829B337D01B07",
-    "age": 1.5494,
-    "detectedAt": 1771611929964
+    "symbol": "Privy",
+    "address": "0x414612ebE071B13F034E276d8525756bd1E27B07",
+    "age": 2.3597333333333332,
+    "detectedAt": 1771612490584
   },
   {
-    "symbol": "hi",
-    "address": "0xD8b3990b12d90a71980FF2BFE1330a06a5798B07",
-    "age": 1.7160666666666666,
-    "detectedAt": 1771611929964
+    "symbol": "ClineBench",
+    "address": "0x48c7A9565a78F7234816b51fDbAE4ba1901ceB07",
+    "age": 2.3597333333333332,
+    "detectedAt": 1771612490584
   },
   {
-    "symbol": "NOBEE",
-    "address": "0x9312BdBA9d93dA898C3Df36ca5f8Df97C17c0B07",
-    "age": 1.7827333333333333,
-    "detectedAt": 1771611929964
+    "symbol": "ALIEN6",
+    "address": "0x35f3b9aaae4fCa1f684d98470a0A9319DaE86B07",
+    "age": 2.4264,
+    "detectedAt": 1771612490584
   },
   {
-    "symbol": "BLST",
-    "address": "0xAb1e77A5A979057BCCb9A0C990Ed33aFd19B8B07",
-    "age": 0.12321666666666667,
-    "detectedAt": 1771611926393
+    "symbol": "Flappy",
+    "address": "0x1B4d317846D75b2c09698d3EBD8bBfba84130B07",
+    "age": 0.1314,
+    "detectedAt": 1771612486884
   },
   {
-    "symbol": "pSwiper",
-    "address": "0xb66EAB52f8a69da445d90F64fEC6C9c845923b07",
-    "age": 0.15655,
-    "detectedAt": 1771611926393
+    "symbol": "8BIT",
+    "address": "0x9584fb75b001Fa07567681FD740C04365756aB07",
+    "age": 0.1314,
+    "detectedAt": 1771612486884
   },
   {
-    "symbol": "CLAW",
-    "address": "0xEFEE34f01DcDcf82b1CD3BA7b6Ae4fB982dE9B07",
-    "age": 0.18988333333333332,
-    "detectedAt": 1771611926394
+    "symbol": "Flappy",
+    "address": "0x444B3Bb8921B510f0A387d42b58384079F59DB07",
+    "age": 0.29806666666666665,
+    "detectedAt": 1771612486884
   },
   {
-    "symbol": "LARPZ",
-    "address": "0x27D9a7C5285aB9eD9fBf931c30B3Cd076CC29B07",
-    "age": 0.25656666666666667,
-    "detectedAt": 1771611926394
+    "symbol": "AGENTINC",
+    "address": "0xc8571F0c1D3D953A2A782C78Ac9fc243131D2b07",
+    "age": 0.5314,
+    "detectedAt": 1771612486885
   },
   {
-    "symbol": " $TWINZ",
-    "address": "0x9899cAD2AFF751Aa07E7F50164c8F4B341d9BB07",
-    "age": 0.3232333333333333,
-    "detectedAt": 1771611926394
+    "symbol": "PriAi",
+    "address": "0x4696Bd0Fd9023F748C892d822fB55f8a097C8b07",
+    "age": 0.6980833333333333,
+    "detectedAt": 1771612486885
   },
   {
-    "symbol": "LARPZ",
-    "address": "0xFa74537233e7117680db9C8455E1B26982c41b07",
-    "age": 0.4899,
-    "detectedAt": 1771611926394
+    "symbol": "PriAi",
+    "address": "0x37aC73759d804765E578dA6E5835A40991c5EB07",
+    "age": 0.9314166666666667,
+    "detectedAt": 1771612486885
   },
   {
-    "symbol": "ClawWork",
-    "address": "0xb7Fb40A9478b065D9E8BAC7482C1800b98ba1b07",
-    "age": 0.4899,
-    "detectedAt": 1771611926394
+    "symbol": "Cobot",
+    "address": "0x05664E748Dd6b3736A8a04FEB540B232dc248B07",
+    "age": 0.96475,
+    "detectedAt": 1771612486885
   },
   {
-    "symbol": "Moltbanks",
-    "address": "0x09a69Ff013ab66DbE5E0c98AEEF84e4127EAEB07",
-    "age": 0.6232333333333333,
-    "detectedAt": 1771611926394
+    "symbol": "YANG",
+    "address": "0xa3626aF19F6C6c9488e553Aed1C745A935d36B07",
+    "age": 1.0980833333333333,
+    "detectedAt": 1771612486885
   },
   {
-    "symbol": "Ray",
-    "address": "0xd039DD1b66E9B698315698cd8CB078a906008b07",
-    "age": 0.6565666666666666,
-    "detectedAt": 1771611926394
+    "symbol": "ClineBench",
+    "address": "0x3864E75E60356537d525D6A89225Ec8250E57b07",
+    "age": 1.0980833333333333,
+    "detectedAt": 1771612486885
   },
   {
-    "symbol": "BLST",
-    "address": "0xa33C77dA6837298aF09fd8af48C87463dD13aB07",
-    "age": 0.6899,
-    "detectedAt": 1771611926394
+    "symbol": "Privy",
+    "address": "0x83E487B471c9Af8D082DD88C77b3a85bf32b4B07",
+    "age": 1.36475,
+    "detectedAt": 1771612486885
   },
   {
-    "symbol": "CLAWD",
-    "address": "0x64aEB5DB4F86F9dfd3442d5825cE3305661Cc05F",
-    "age": 0.7232333333333333,
-    "detectedAt": 1771611926394
+    "symbol": "AGENTINC",
+    "address": "0x549a558c8bDbbc5130b33aB1CCf915d0f7166b07",
+    "age": 1.4980833333333334,
+    "detectedAt": 1771612486885
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x863b7bE0e181adf5fD72C02dDb87E32E76999B07",
-    "age": 0.7565666666666667,
-    "detectedAt": 1771611926394
+    "symbol": "Privy",
+    "address": "0xBE716aC6b81a770d21b11622E8C9F0642aCAfb07",
+    "age": 1.5314166666666666,
+    "detectedAt": 1771612486885
   },
   {
-    "symbol": "microchipgnu",
-    "address": "0x1b34956C67EcDD41381d976A02ad7C918e288B07",
-    "age": 0.8565666666666667,
-    "detectedAt": 1771611926394
+    "symbol": "PUNCHLIENX",
+    "address": "0x5ba7C9e0Aa35C708f2a761E4aAa04A62554E9B07",
+    "age": 1.7980833333333333,
+    "detectedAt": 1771612486885
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0xCBB1293acF16EF091c10F94F533F3E9751986B07",
-    "age": 0.8565666666666667,
-    "detectedAt": 1771611926394
+    "symbol": "BWOY",
+    "address": "0xf7623F66F7256fc7E9897731283138a016096b07",
+    "age": 1.96475,
+    "detectedAt": 1771612486885
   },
   {
-    "symbol": "mrbeast",
-    "address": "0xc60B36a25261587C3E3Ff52a83c960D59c849b07",
-    "age": 0.9565666666666667,
-    "detectedAt": 1771611926394
+    "symbol": "POOLFANS",
+    "address": "0x92a44802ABF98A763c10808fd1d3d39bE0D6Fb07",
+    "age": 2.031416666666667,
+    "detectedAt": 1771612486885
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x88632516000a71f3A6C4b572eBaF5BaDCd06dB07",
-    "age": 1.1232333333333333,
-    "detectedAt": 1771611926394
+    "symbol": "CLAYTONX",
+    "address": "0xa23C6d4bED96C67f0BA7FDB0ea708d83a1A4eB07",
+    "age": 2.06475,
+    "detectedAt": 1771612486885
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x83F369a2057Cbe3A8DD8Bca7EE1F5fE42F448b07",
-    "age": 1.3899,
-    "detectedAt": 1771611926394
+    "symbol": "Gymnast🐼",
+    "address": "0xf57A5c3f2fC1Fb260156b21560AB922c7Be46B07",
+    "age": 2.1980833333333334,
+    "detectedAt": 1771612486885
   },
   {
-    "symbol": "Jellybean",
-    "address": "0x098F94951E90791458bC045596C829B337D01B07",
-    "age": 1.4899,
-    "detectedAt": 1771611926395
+    "symbol": "Privy",
+    "address": "0x414612ebE071B13F034E276d8525756bd1E27B07",
+    "age": 2.2980833333333335,
+    "detectedAt": 1771612486885
   },
   {
-    "symbol": "hi",
-    "address": "0xD8b3990b12d90a71980FF2BFE1330a06a5798B07",
-    "age": 1.6565833333333333,
-    "detectedAt": 1771611926395
+    "symbol": "ClineBench",
+    "address": "0x48c7A9565a78F7234816b51fDbAE4ba1901ceB07",
+    "age": 2.2980833333333335,
+    "detectedAt": 1771612486885
   },
   {
-    "symbol": "NOBEE",
-    "address": "0x9312BdBA9d93dA898C3Df36ca5f8Df97C17c0B07",
-    "age": 1.72325,
-    "detectedAt": 1771611926395
+    "symbol": "ALIEN6",
+    "address": "0x35f3b9aaae4fCa1f684d98470a0A9319DaE86B07",
+    "age": 2.36475,
+    "detectedAt": 1771612486885
   },
   {
-    "symbol": "pSwiper",
-    "address": "0xb66EAB52f8a69da445d90F64fEC6C9c845923b07",
-    "age": 0.09323333333333333,
-    "detectedAt": 1771611922595
+    "symbol": "Flappy",
+    "address": "0x444B3Bb8921B510f0A387d42b58384079F59DB07",
+    "age": 0.23643333333333333,
+    "detectedAt": 1771612483187
   },
   {
-    "symbol": "CLAW",
-    "address": "0xEFEE34f01DcDcf82b1CD3BA7b6Ae4fB982dE9B07",
-    "age": 0.12658333333333333,
-    "detectedAt": 1771611922595
+    "symbol": "AGENTINC",
+    "address": "0xc8571F0c1D3D953A2A782C78Ac9fc243131D2b07",
+    "age": 0.46978333333333333,
+    "detectedAt": 1771612483187
   },
   {
-    "symbol": "LARPZ",
-    "address": "0x27D9a7C5285aB9eD9fBf931c30B3Cd076CC29B07",
-    "age": 0.19325,
-    "detectedAt": 1771611922595
+    "symbol": "PriAi",
+    "address": "0x4696Bd0Fd9023F748C892d822fB55f8a097C8b07",
+    "age": 0.63645,
+    "detectedAt": 1771612483187
   },
   {
-    "symbol": " $TWINZ",
-    "address": "0x9899cAD2AFF751Aa07E7F50164c8F4B341d9BB07",
-    "age": 0.2599166666666667,
-    "detectedAt": 1771611922595
+    "symbol": "PriAi",
+    "address": "0x37aC73759d804765E578dA6E5835A40991c5EB07",
+    "age": 0.8697833333333334,
+    "detectedAt": 1771612483187
   },
   {
-    "symbol": "LARPZ",
-    "address": "0xFa74537233e7117680db9C8455E1B26982c41b07",
-    "age": 0.4265833333333333,
-    "detectedAt": 1771611922595
+    "symbol": "Cobot",
+    "address": "0x05664E748Dd6b3736A8a04FEB540B232dc248B07",
+    "age": 0.9031166666666667,
+    "detectedAt": 1771612483187
   },
   {
-    "symbol": "ClawWork",
-    "address": "0xb7Fb40A9478b065D9E8BAC7482C1800b98ba1b07",
-    "age": 0.4265833333333333,
-    "detectedAt": 1771611922595
+    "symbol": "YANG",
+    "address": "0xa3626aF19F6C6c9488e553Aed1C745A935d36B07",
+    "age": 1.03645,
+    "detectedAt": 1771612483187
   },
   {
-    "symbol": "Moltbanks",
-    "address": "0x09a69Ff013ab66DbE5E0c98AEEF84e4127EAEB07",
-    "age": 0.5599166666666666,
-    "detectedAt": 1771611922595
+    "symbol": "ClineBench",
+    "address": "0x3864E75E60356537d525D6A89225Ec8250E57b07",
+    "age": 1.03645,
+    "detectedAt": 1771612483187
   },
   {
-    "symbol": "Ray",
-    "address": "0xd039DD1b66E9B698315698cd8CB078a906008b07",
-    "age": 0.59325,
-    "detectedAt": 1771611922595
+    "symbol": "Privy",
+    "address": "0x83E487B471c9Af8D082DD88C77b3a85bf32b4B07",
+    "age": 1.3031166666666667,
+    "detectedAt": 1771612483187
   },
   {
-    "symbol": "BLST",
-    "address": "0xa33C77dA6837298aF09fd8af48C87463dD13aB07",
-    "age": 0.6265833333333334,
-    "detectedAt": 1771611922595
+    "symbol": "AGENTINC",
+    "address": "0x549a558c8bDbbc5130b33aB1CCf915d0f7166b07",
+    "age": 1.43645,
+    "detectedAt": 1771612483187
   },
   {
-    "symbol": "CLAWD",
-    "address": "0x64aEB5DB4F86F9dfd3442d5825cE3305661Cc05F",
-    "age": 0.6599166666666667,
-    "detectedAt": 1771611922595
+    "symbol": "Privy",
+    "address": "0xBE716aC6b81a770d21b11622E8C9F0642aCAfb07",
+    "age": 1.4697833333333334,
+    "detectedAt": 1771612483188
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x863b7bE0e181adf5fD72C02dDb87E32E76999B07",
-    "age": 0.69325,
-    "detectedAt": 1771611922595
+    "symbol": "PUNCHLIENX",
+    "address": "0x5ba7C9e0Aa35C708f2a761E4aAa04A62554E9B07",
+    "age": 1.7364666666666666,
+    "detectedAt": 1771612483188
   },
   {
-    "symbol": "microchipgnu",
-    "address": "0x1b34956C67EcDD41381d976A02ad7C918e288B07",
-    "age": 0.79325,
-    "detectedAt": 1771611922595
+    "symbol": "BWOY",
+    "address": "0xf7623F66F7256fc7E9897731283138a016096b07",
+    "age": 1.9031333333333333,
+    "detectedAt": 1771612483188
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0xCBB1293acF16EF091c10F94F533F3E9751986B07",
-    "age": 0.79325,
-    "detectedAt": 1771611922595
+    "symbol": "POOLFANS",
+    "address": "0x92a44802ABF98A763c10808fd1d3d39bE0D6Fb07",
+    "age": 1.9698,
+    "detectedAt": 1771612483188
   },
   {
-    "symbol": "mrbeast",
-    "address": "0xc60B36a25261587C3E3Ff52a83c960D59c849b07",
-    "age": 0.89325,
-    "detectedAt": 1771611922595
+    "symbol": "CLAYTONX",
+    "address": "0xa23C6d4bED96C67f0BA7FDB0ea708d83a1A4eB07",
+    "age": 2.0031333333333334,
+    "detectedAt": 1771612483188
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x88632516000a71f3A6C4b572eBaF5BaDCd06dB07",
-    "age": 1.0599166666666666,
-    "detectedAt": 1771611922595
+    "symbol": "Gymnast🐼",
+    "address": "0xf57A5c3f2fC1Fb260156b21560AB922c7Be46B07",
+    "age": 2.1364666666666667,
+    "detectedAt": 1771612483188
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x83F369a2057Cbe3A8DD8Bca7EE1F5fE42F448b07",
-    "age": 1.3265833333333332,
-    "detectedAt": 1771611922595
+    "symbol": "Privy",
+    "address": "0x414612ebE071B13F034E276d8525756bd1E27B07",
+    "age": 2.236466666666667,
+    "detectedAt": 1771612483188
   },
   {
-    "symbol": "Jellybean",
-    "address": "0x098F94951E90791458bC045596C829B337D01B07",
-    "age": 1.4265833333333333,
-    "detectedAt": 1771611922595
+    "symbol": "ClineBench",
+    "address": "0x48c7A9565a78F7234816b51fDbAE4ba1901ceB07",
+    "age": 2.236466666666667,
+    "detectedAt": 1771612483188
   },
   {
-    "symbol": "hi",
-    "address": "0xD8b3990b12d90a71980FF2BFE1330a06a5798B07",
-    "age": 1.59325,
-    "detectedAt": 1771611922595
+    "symbol": "ALIEN6",
+    "address": "0x35f3b9aaae4fCa1f684d98470a0A9319DaE86B07",
+    "age": 2.3031333333333333,
+    "detectedAt": 1771612483189
   },
   {
-    "symbol": "NOBEE",
-    "address": "0x9312BdBA9d93dA898C3Df36ca5f8Df97C17c0B07",
-    "age": 1.6599166666666667,
-    "detectedAt": 1771611922595
+    "symbol": "ALIEN6",
+    "address": "0xb391a950Ed2ddcE63D4fBD8D08B08c1C1b55bB07",
+    "age": 2.50315,
+    "detectedAt": 1771612483189
   },
   {
-    "symbol": "PEDOX",
-    "address": "0xbC8B382c54137A1d9Ab3AD16DE0d6f5a069e2b07",
-    "age": 1.7599166666666666,
-    "detectedAt": 1771611922596
+    "symbol": "CRS",
+    "address": "0xdfd0aA5ddb23306E2DF73A6fE41C2081027e0b07",
+    "age": 2.736483333333333,
+    "detectedAt": 1771612483189
   },
   {
-    "symbol": "LARPZ",
-    "address": "0x27D9a7C5285aB9eD9fBf931c30B3Cd076CC29B07",
-    "age": 0.13285,
-    "detectedAt": 1771611918971
+    "symbol": "Flappy",
+    "address": "0x444B3Bb8921B510f0A387d42b58384079F59DB07",
+    "age": 0.17413333333333333,
+    "detectedAt": 1771612479450
   },
   {
-    "symbol": " $TWINZ",
-    "address": "0x9899cAD2AFF751Aa07E7F50164c8F4B341d9BB07",
-    "age": 0.19951666666666668,
-    "detectedAt": 1771611918972
+    "symbol": "AGENTINC",
+    "address": "0xc8571F0c1D3D953A2A782C78Ac9fc243131D2b07",
+    "age": 0.4075,
+    "detectedAt": 1771612479450
   },
   {
-    "symbol": "LARPZ",
-    "address": "0xFa74537233e7117680db9C8455E1B26982c41b07",
-    "age": 0.3662,
-    "detectedAt": 1771611918972
+    "symbol": "PriAi",
+    "address": "0x4696Bd0Fd9023F748C892d822fB55f8a097C8b07",
+    "age": 0.5741666666666667,
+    "detectedAt": 1771612479450
   },
   {
-    "symbol": "ClawWork",
-    "address": "0xb7Fb40A9478b065D9E8BAC7482C1800b98ba1b07",
-    "age": 0.3662,
-    "detectedAt": 1771611918972
+    "symbol": "PriAi",
+    "address": "0x37aC73759d804765E578dA6E5835A40991c5EB07",
+    "age": 0.8075,
+    "detectedAt": 1771612479450
   },
   {
-    "symbol": "Moltbanks",
-    "address": "0x09a69Ff013ab66DbE5E0c98AEEF84e4127EAEB07",
-    "age": 0.49953333333333333,
-    "detectedAt": 1771611918972
+    "symbol": "Cobot",
+    "address": "0x05664E748Dd6b3736A8a04FEB540B232dc248B07",
+    "age": 0.8408333333333333,
+    "detectedAt": 1771612479450
   },
   {
-    "symbol": "Ray",
-    "address": "0xd039DD1b66E9B698315698cd8CB078a906008b07",
-    "age": 0.5328666666666667,
-    "detectedAt": 1771611918972
+    "symbol": "YANG",
+    "address": "0xa3626aF19F6C6c9488e553Aed1C745A935d36B07",
+    "age": 0.9741666666666666,
+    "detectedAt": 1771612479450
   },
   {
-    "symbol": "BLST",
-    "address": "0xa33C77dA6837298aF09fd8af48C87463dD13aB07",
-    "age": 0.5662,
-    "detectedAt": 1771611918972
+    "symbol": "ClineBench",
+    "address": "0x3864E75E60356537d525D6A89225Ec8250E57b07",
+    "age": 0.9741666666666666,
+    "detectedAt": 1771612479450
   },
   {
-    "symbol": "CLAWD",
-    "address": "0x64aEB5DB4F86F9dfd3442d5825cE3305661Cc05F",
-    "age": 0.5995333333333334,
-    "detectedAt": 1771611918972
+    "symbol": "Privy",
+    "address": "0x83E487B471c9Af8D082DD88C77b3a85bf32b4B07",
+    "age": 1.2408333333333332,
+    "detectedAt": 1771612479450
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x863b7bE0e181adf5fD72C02dDb87E32E76999B07",
-    "age": 0.6328666666666667,
-    "detectedAt": 1771611918972
+    "symbol": "AGENTINC",
+    "address": "0x549a558c8bDbbc5130b33aB1CCf915d0f7166b07",
+    "age": 1.3741666666666668,
+    "detectedAt": 1771612479450
   },
   {
-    "symbol": "microchipgnu",
-    "address": "0x1b34956C67EcDD41381d976A02ad7C918e288B07",
-    "age": 0.7328666666666667,
-    "detectedAt": 1771611918972
+    "symbol": "Privy",
+    "address": "0xBE716aC6b81a770d21b11622E8C9F0642aCAfb07",
+    "age": 1.4075,
+    "detectedAt": 1771612479450
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0xCBB1293acF16EF091c10F94F533F3E9751986B07",
-    "age": 0.7328666666666667,
-    "detectedAt": 1771611918972
+    "symbol": "PUNCHLIENX",
+    "address": "0x5ba7C9e0Aa35C708f2a761E4aAa04A62554E9B07",
+    "age": 1.6741666666666666,
+    "detectedAt": 1771612479450
   },
   {
-    "symbol": "mrbeast",
-    "address": "0xc60B36a25261587C3E3Ff52a83c960D59c849b07",
-    "age": 0.8328666666666666,
-    "detectedAt": 1771611918972
+    "symbol": "BWOY",
+    "address": "0xf7623F66F7256fc7E9897731283138a016096b07",
+    "age": 1.8408333333333333,
+    "detectedAt": 1771612479450
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x88632516000a71f3A6C4b572eBaF5BaDCd06dB07",
-    "age": 0.9995333333333334,
-    "detectedAt": 1771611918972
+    "symbol": "POOLFANS",
+    "address": "0x92a44802ABF98A763c10808fd1d3d39bE0D6Fb07",
+    "age": 1.9075,
+    "detectedAt": 1771612479450
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x83F369a2057Cbe3A8DD8Bca7EE1F5fE42F448b07",
-    "age": 1.2662,
-    "detectedAt": 1771611918972
+    "symbol": "CLAYTONX",
+    "address": "0xa23C6d4bED96C67f0BA7FDB0ea708d83a1A4eB07",
+    "age": 1.9408333333333334,
+    "detectedAt": 1771612479450
   },
   {
-    "symbol": "Jellybean",
-    "address": "0x098F94951E90791458bC045596C829B337D01B07",
-    "age": 1.3662,
-    "detectedAt": 1771611918972
+    "symbol": "Gymnast🐼",
+    "address": "0xf57A5c3f2fC1Fb260156b21560AB922c7Be46B07",
+    "age": 2.0741666666666667,
+    "detectedAt": 1771612479450
   },
   {
-    "symbol": "hi",
-    "address": "0xD8b3990b12d90a71980FF2BFE1330a06a5798B07",
-    "age": 1.5328666666666666,
-    "detectedAt": 1771611918972
+    "symbol": "Privy",
+    "address": "0x414612ebE071B13F034E276d8525756bd1E27B07",
+    "age": 2.174166666666667,
+    "detectedAt": 1771612479450
   },
   {
-    "symbol": "NOBEE",
-    "address": "0x9312BdBA9d93dA898C3Df36ca5f8Df97C17c0B07",
-    "age": 1.5995333333333333,
-    "detectedAt": 1771611918972
+    "symbol": "ClineBench",
+    "address": "0x48c7A9565a78F7234816b51fDbAE4ba1901ceB07",
+    "age": 2.174166666666667,
+    "detectedAt": 1771612479450
   },
   {
-    "symbol": "PEDOX",
-    "address": "0xbC8B382c54137A1d9Ab3AD16DE0d6f5a069e2b07",
-    "age": 1.6995333333333333,
-    "detectedAt": 1771611918972
+    "symbol": "ALIEN6",
+    "address": "0x35f3b9aaae4fCa1f684d98470a0A9319DaE86B07",
+    "age": 2.2408333333333332,
+    "detectedAt": 1771612479450
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0x672A6808FB7191d380b5f903942d80fF5072Db07",
-    "age": 1.7995333333333334,
-    "detectedAt": 1771611918972
+    "symbol": "ALIEN6",
+    "address": "0xb391a950Ed2ddcE63D4fBD8D08B08c1C1b55bB07",
+    "age": 2.4408333333333334,
+    "detectedAt": 1771612479451
   },
   {
-    "symbol": "ORTHO",
-    "address": "0x13A8E6b6eB51ac06DE7162a251036E0adB8bfB07",
-    "age": 1.8328666666666666,
-    "detectedAt": 1771611918972
+    "symbol": "CRS",
+    "address": "0xdfd0aA5ddb23306E2DF73A6fE41C2081027e0b07",
+    "age": 2.674183333333333,
+    "detectedAt": 1771612479451
   },
   {
-    "symbol": "LARPZ",
-    "address": "0x27D9a7C5285aB9eD9fBf931c30B3Cd076CC29B07",
-    "age": 0.07355,
-    "detectedAt": 1771611915413
+    "symbol": "Flappy",
+    "address": "0x444B3Bb8921B510f0A387d42b58384079F59DB07",
+    "age": 0.11336666666666667,
+    "detectedAt": 1771612475802
   },
   {
-    "symbol": " $TWINZ",
-    "address": "0x9899cAD2AFF751Aa07E7F50164c8F4B341d9BB07",
-    "age": 0.14021666666666666,
-    "detectedAt": 1771611915413
+    "symbol": "AGENTINC",
+    "address": "0xc8571F0c1D3D953A2A782C78Ac9fc243131D2b07",
+    "age": 0.3467,
+    "detectedAt": 1771612475802
   },
   {
-    "symbol": "LARPZ",
-    "address": "0xFa74537233e7117680db9C8455E1B26982c41b07",
-    "age": 0.30688333333333334,
-    "detectedAt": 1771611915414
+    "symbol": "PriAi",
+    "address": "0x4696Bd0Fd9023F748C892d822fB55f8a097C8b07",
+    "age": 0.5133666666666666,
+    "detectedAt": 1771612475802
   },
   {
-    "symbol": "ClawWork",
-    "address": "0xb7Fb40A9478b065D9E8BAC7482C1800b98ba1b07",
-    "age": 0.3069,
-    "detectedAt": 1771611915414
+    "symbol": "PriAi",
+    "address": "0x37aC73759d804765E578dA6E5835A40991c5EB07",
+    "age": 0.7467,
+    "detectedAt": 1771612475803
   },
   {
-    "symbol": "Moltbanks",
-    "address": "0x09a69Ff013ab66DbE5E0c98AEEF84e4127EAEB07",
-    "age": 0.4402333333333333,
-    "detectedAt": 1771611915414
+    "symbol": "Cobot",
+    "address": "0x05664E748Dd6b3736A8a04FEB540B232dc248B07",
+    "age": 0.78005,
+    "detectedAt": 1771612475803
   },
   {
-    "symbol": "Ray",
-    "address": "0xd039DD1b66E9B698315698cd8CB078a906008b07",
-    "age": 0.4735666666666667,
-    "detectedAt": 1771611915414
+    "symbol": "YANG",
+    "address": "0xa3626aF19F6C6c9488e553Aed1C745A935d36B07",
+    "age": 0.9133833333333333,
+    "detectedAt": 1771612475803
   },
   {
-    "symbol": "BLST",
-    "address": "0xa33C77dA6837298aF09fd8af48C87463dD13aB07",
-    "age": 0.5069,
-    "detectedAt": 1771611915414
+    "symbol": "ClineBench",
+    "address": "0x3864E75E60356537d525D6A89225Ec8250E57b07",
+    "age": 0.9133833333333333,
+    "detectedAt": 1771612475803
   },
   {
-    "symbol": "CLAWD",
-    "address": "0x64aEB5DB4F86F9dfd3442d5825cE3305661Cc05F",
-    "age": 0.5402333333333333,
-    "detectedAt": 1771611915414
+    "symbol": "Privy",
+    "address": "0x83E487B471c9Af8D082DD88C77b3a85bf32b4B07",
+    "age": 1.18005,
+    "detectedAt": 1771612475803
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x863b7bE0e181adf5fD72C02dDb87E32E76999B07",
-    "age": 0.5735666666666667,
-    "detectedAt": 1771611915414
+    "symbol": "AGENTINC",
+    "address": "0x549a558c8bDbbc5130b33aB1CCf915d0f7166b07",
+    "age": 1.3133833333333333,
+    "detectedAt": 1771612475803
   },
   {
-    "symbol": "microchipgnu",
-    "address": "0x1b34956C67EcDD41381d976A02ad7C918e288B07",
-    "age": 0.6735666666666666,
-    "detectedAt": 1771611915414
+    "symbol": "Privy",
+    "address": "0xBE716aC6b81a770d21b11622E8C9F0642aCAfb07",
+    "age": 1.3467166666666666,
+    "detectedAt": 1771612475803
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0xCBB1293acF16EF091c10F94F533F3E9751986B07",
-    "age": 0.6735666666666666,
-    "detectedAt": 1771611915414
+    "symbol": "PUNCHLIENX",
+    "address": "0x5ba7C9e0Aa35C708f2a761E4aAa04A62554E9B07",
+    "age": 1.6133833333333334,
+    "detectedAt": 1771612475803
   },
   {
-    "symbol": "mrbeast",
-    "address": "0xc60B36a25261587C3E3Ff52a83c960D59c849b07",
-    "age": 0.7735666666666666,
-    "detectedAt": 1771611915414
+    "symbol": "BWOY",
+    "address": "0xf7623F66F7256fc7E9897731283138a016096b07",
+    "age": 1.78005,
+    "detectedAt": 1771612475803
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x88632516000a71f3A6C4b572eBaF5BaDCd06dB07",
-    "age": 0.9402333333333334,
-    "detectedAt": 1771611915414
+    "symbol": "POOLFANS",
+    "address": "0x92a44802ABF98A763c10808fd1d3d39bE0D6Fb07",
+    "age": 1.8467166666666666,
+    "detectedAt": 1771612475803
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x83F369a2057Cbe3A8DD8Bca7EE1F5fE42F448b07",
-    "age": 1.2069,
-    "detectedAt": 1771611915414
+    "symbol": "CLAYTONX",
+    "address": "0xa23C6d4bED96C67f0BA7FDB0ea708d83a1A4eB07",
+    "age": 1.88005,
+    "detectedAt": 1771612475803
   },
   {
-    "symbol": "Jellybean",
-    "address": "0x098F94951E90791458bC045596C829B337D01B07",
-    "age": 1.3069,
-    "detectedAt": 1771611915414
+    "symbol": "Gymnast🐼",
+    "address": "0xf57A5c3f2fC1Fb260156b21560AB922c7Be46B07",
+    "age": 2.0133833333333335,
+    "detectedAt": 1771612475803
   },
   {
-    "symbol": "hi",
-    "address": "0xD8b3990b12d90a71980FF2BFE1330a06a5798B07",
-    "age": 1.4735666666666667,
-    "detectedAt": 1771611915414
+    "symbol": "Privy",
+    "address": "0x414612ebE071B13F034E276d8525756bd1E27B07",
+    "age": 2.113383333333333,
+    "detectedAt": 1771612475803
   },
   {
-    "symbol": "NOBEE",
-    "address": "0x9312BdBA9d93dA898C3Df36ca5f8Df97C17c0B07",
-    "age": 1.5402333333333333,
-    "detectedAt": 1771611915414
+    "symbol": "ClineBench",
+    "address": "0x48c7A9565a78F7234816b51fDbAE4ba1901ceB07",
+    "age": 2.113383333333333,
+    "detectedAt": 1771612475803
   },
   {
-    "symbol": "PEDOX",
-    "address": "0xbC8B382c54137A1d9Ab3AD16DE0d6f5a069e2b07",
-    "age": 1.6402333333333334,
-    "detectedAt": 1771611915414
+    "symbol": "ALIEN6",
+    "address": "0x35f3b9aaae4fCa1f684d98470a0A9319DaE86B07",
+    "age": 2.18005,
+    "detectedAt": 1771612475803
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0x672A6808FB7191d380b5f903942d80fF5072Db07",
-    "age": 1.7402333333333333,
-    "detectedAt": 1771611915414
+    "symbol": "ALIEN6",
+    "address": "0xb391a950Ed2ddcE63D4fBD8D08B08c1C1b55bB07",
+    "age": 2.38005,
+    "detectedAt": 1771612475803
   },
   {
-    "symbol": "ORTHO",
-    "address": "0x13A8E6b6eB51ac06DE7162a251036E0adB8bfB07",
-    "age": 1.7735666666666667,
-    "detectedAt": 1771611915414
+    "symbol": "CRS",
+    "address": "0xdfd0aA5ddb23306E2DF73A6fE41C2081027e0b07",
+    "age": 2.613383333333333,
+    "detectedAt": 1771612475803
   },
   {
-    "symbol": " $TWINZ",
-    "address": "0x9899cAD2AFF751Aa07E7F50164c8F4B341d9BB07",
-    "age": 0.07938333333333333,
-    "detectedAt": 1771611911763
+    "symbol": "AGENTINC",
+    "address": "0xc8571F0c1D3D953A2A782C78Ac9fc243131D2b07",
+    "age": 0.2837166666666667,
+    "detectedAt": 1771612472024
   },
   {
-    "symbol": "LARPZ",
-    "address": "0xFa74537233e7117680db9C8455E1B26982c41b07",
-    "age": 0.24605,
-    "detectedAt": 1771611911763
+    "symbol": "PriAi",
+    "address": "0x4696Bd0Fd9023F748C892d822fB55f8a097C8b07",
+    "age": 0.4504,
+    "detectedAt": 1771612472024
   },
   {
-    "symbol": "ClawWork",
-    "address": "0xb7Fb40A9478b065D9E8BAC7482C1800b98ba1b07",
-    "age": 0.24605,
-    "detectedAt": 1771611911764
+    "symbol": "PriAi",
+    "address": "0x37aC73759d804765E578dA6E5835A40991c5EB07",
+    "age": 0.6837333333333333,
+    "detectedAt": 1771612472024
   },
   {
-    "symbol": "Moltbanks",
-    "address": "0x09a69Ff013ab66DbE5E0c98AEEF84e4127EAEB07",
-    "age": 0.3794,
-    "detectedAt": 1771611911764
+    "symbol": "Cobot",
+    "address": "0x05664E748Dd6b3736A8a04FEB540B232dc248B07",
+    "age": 0.7170666666666666,
+    "detectedAt": 1771612472024
   },
   {
-    "symbol": "Ray",
-    "address": "0xd039DD1b66E9B698315698cd8CB078a906008b07",
-    "age": 0.41273333333333334,
-    "detectedAt": 1771611911764
+    "symbol": "YANG",
+    "address": "0xa3626aF19F6C6c9488e553Aed1C745A935d36B07",
+    "age": 0.8504,
+    "detectedAt": 1771612472024
   },
   {
-    "symbol": "BLST",
-    "address": "0xa33C77dA6837298aF09fd8af48C87463dD13aB07",
-    "age": 0.44606666666666667,
-    "detectedAt": 1771611911764
+    "symbol": "ClineBench",
+    "address": "0x3864E75E60356537d525D6A89225Ec8250E57b07",
+    "age": 0.8504,
+    "detectedAt": 1771612472024
   },
   {
-    "symbol": "CLAWD",
-    "address": "0x64aEB5DB4F86F9dfd3442d5825cE3305661Cc05F",
-    "age": 0.4794,
-    "detectedAt": 1771611911764
+    "symbol": "Privy",
+    "address": "0x83E487B471c9Af8D082DD88C77b3a85bf32b4B07",
+    "age": 1.1170666666666667,
+    "detectedAt": 1771612472024
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x863b7bE0e181adf5fD72C02dDb87E32E76999B07",
-    "age": 0.5127333333333334,
-    "detectedAt": 1771611911764
+    "symbol": "AGENTINC",
+    "address": "0x549a558c8bDbbc5130b33aB1CCf915d0f7166b07",
+    "age": 1.2504,
+    "detectedAt": 1771612472024
   },
   {
-    "symbol": "microchipgnu",
-    "address": "0x1b34956C67EcDD41381d976A02ad7C918e288B07",
-    "age": 0.6127333333333334,
-    "detectedAt": 1771611911764
+    "symbol": "Privy",
+    "address": "0xBE716aC6b81a770d21b11622E8C9F0642aCAfb07",
+    "age": 1.2837333333333334,
+    "detectedAt": 1771612472024
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0xCBB1293acF16EF091c10F94F533F3E9751986B07",
-    "age": 0.6127333333333334,
-    "detectedAt": 1771611911764
+    "symbol": "PUNCHLIENX",
+    "address": "0x5ba7C9e0Aa35C708f2a761E4aAa04A62554E9B07",
+    "age": 1.5504,
+    "detectedAt": 1771612472024
   },
   {
-    "symbol": "mrbeast",
-    "address": "0xc60B36a25261587C3E3Ff52a83c960D59c849b07",
-    "age": 0.7127333333333333,
-    "detectedAt": 1771611911764
+    "symbol": "BWOY",
+    "address": "0xf7623F66F7256fc7E9897731283138a016096b07",
+    "age": 1.7170666666666667,
+    "detectedAt": 1771612472024
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x88632516000a71f3A6C4b572eBaF5BaDCd06dB07",
-    "age": 0.8794,
-    "detectedAt": 1771611911764
+    "symbol": "POOLFANS",
+    "address": "0x92a44802ABF98A763c10808fd1d3d39bE0D6Fb07",
+    "age": 1.7837333333333334,
+    "detectedAt": 1771612472024
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x83F369a2057Cbe3A8DD8Bca7EE1F5fE42F448b07",
-    "age": 1.1460666666666666,
-    "detectedAt": 1771611911764
+    "symbol": "CLAYTONX",
+    "address": "0xa23C6d4bED96C67f0BA7FDB0ea708d83a1A4eB07",
+    "age": 1.8170666666666666,
+    "detectedAt": 1771612472024
   },
   {
-    "symbol": "Jellybean",
-    "address": "0x098F94951E90791458bC045596C829B337D01B07",
-    "age": 1.2460666666666667,
-    "detectedAt": 1771611911764
+    "symbol": "Gymnast🐼",
+    "address": "0xf57A5c3f2fC1Fb260156b21560AB922c7Be46B07",
+    "age": 1.9504,
+    "detectedAt": 1771612472025
   },
   {
-    "symbol": "hi",
-    "address": "0xD8b3990b12d90a71980FF2BFE1330a06a5798B07",
-    "age": 1.4127333333333334,
-    "detectedAt": 1771611911764
+    "symbol": "Privy",
+    "address": "0x414612ebE071B13F034E276d8525756bd1E27B07",
+    "age": 2.0504166666666666,
+    "detectedAt": 1771612472025
   },
   {
-    "symbol": "NOBEE",
-    "address": "0x9312BdBA9d93dA898C3Df36ca5f8Df97C17c0B07",
-    "age": 1.4794,
-    "detectedAt": 1771611911764
+    "symbol": "ClineBench",
+    "address": "0x48c7A9565a78F7234816b51fDbAE4ba1901ceB07",
+    "age": 2.0504166666666666,
+    "detectedAt": 1771612472025
   },
   {
-    "symbol": "PEDOX",
-    "address": "0xbC8B382c54137A1d9Ab3AD16DE0d6f5a069e2b07",
-    "age": 1.5794,
-    "detectedAt": 1771611911764
+    "symbol": "ALIEN6",
+    "address": "0x35f3b9aaae4fCa1f684d98470a0A9319DaE86B07",
+    "age": 2.1170833333333334,
+    "detectedAt": 1771612472025
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0x672A6808FB7191d380b5f903942d80fF5072Db07",
-    "age": 1.6794,
-    "detectedAt": 1771611911764
+    "symbol": "ALIEN6",
+    "address": "0xb391a950Ed2ddcE63D4fBD8D08B08c1C1b55bB07",
+    "age": 2.317083333333333,
+    "detectedAt": 1771612472025
   },
   {
-    "symbol": "ORTHO",
-    "address": "0x13A8E6b6eB51ac06DE7162a251036E0adB8bfB07",
-    "age": 1.7127333333333334,
-    "detectedAt": 1771611911764
+    "symbol": "CRS",
+    "address": "0xdfd0aA5ddb23306E2DF73A6fE41C2081027e0b07",
+    "age": 2.5504166666666666,
+    "detectedAt": 1771612472025
   },
   {
-    "symbol": "UNICLAW",
-    "address": "0xcA15A6ED598df6Bd8f3684C688c0fbF73D1eDB07",
-    "age": 1.8460833333333333,
-    "detectedAt": 1771611911765
+    "symbol": "CYBER",
+    "address": "0x3a4202aca6D5Eefa567e339e14dBb4b207012b07",
+    "age": 2.58375,
+    "detectedAt": 1771612472025
   },
   {
-    "symbol": "LARPZ",
-    "address": "0xFa74537233e7117680db9C8455E1B26982c41b07",
-    "age": 0.18451666666666666,
-    "detectedAt": 1771611908077
+    "symbol": "AGENTINC",
+    "address": "0xc8571F0c1D3D953A2A782C78Ac9fc243131D2b07",
+    "age": 0.22128333333333333,
+    "detectedAt": 1771612468277
   },
   {
-    "symbol": "ClawWork",
-    "address": "0xb7Fb40A9478b065D9E8BAC7482C1800b98ba1b07",
-    "age": 0.18461666666666668,
-    "detectedAt": 1771611908077
+    "symbol": "PriAi",
+    "address": "0x4696Bd0Fd9023F748C892d822fB55f8a097C8b07",
+    "age": 0.38795,
+    "detectedAt": 1771612468277
   },
   {
-    "symbol": "Moltbanks",
-    "address": "0x09a69Ff013ab66DbE5E0c98AEEF84e4127EAEB07",
-    "age": 0.31795,
-    "detectedAt": 1771611908078
+    "symbol": "PriAi",
+    "address": "0x37aC73759d804765E578dA6E5835A40991c5EB07",
+    "age": 0.6212833333333333,
+    "detectedAt": 1771612468277
   },
   {
-    "symbol": "Ray",
-    "address": "0xd039DD1b66E9B698315698cd8CB078a906008b07",
-    "age": 0.3513,
-    "detectedAt": 1771611908079
+    "symbol": "Cobot",
+    "address": "0x05664E748Dd6b3736A8a04FEB540B232dc248B07",
+    "age": 0.6546166666666666,
+    "detectedAt": 1771612468277
   },
   {
-    "symbol": "BLST",
-    "address": "0xa33C77dA6837298aF09fd8af48C87463dD13aB07",
-    "age": 0.38465,
-    "detectedAt": 1771611908079
+    "symbol": "YANG",
+    "address": "0xa3626aF19F6C6c9488e553Aed1C745A935d36B07",
+    "age": 0.78795,
+    "detectedAt": 1771612468277
   },
   {
-    "symbol": "CLAWD",
-    "address": "0x64aEB5DB4F86F9dfd3442d5825cE3305661Cc05F",
-    "age": 0.4179833333333333,
-    "detectedAt": 1771611908079
+    "symbol": "ClineBench",
+    "address": "0x3864E75E60356537d525D6A89225Ec8250E57b07",
+    "age": 0.78795,
+    "detectedAt": 1771612468277
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x863b7bE0e181adf5fD72C02dDb87E32E76999B07",
-    "age": 0.45131666666666664,
-    "detectedAt": 1771611908079
+    "symbol": "Privy",
+    "address": "0x83E487B471c9Af8D082DD88C77b3a85bf32b4B07",
+    "age": 1.0546166666666668,
+    "detectedAt": 1771612468277
   },
   {
-    "symbol": "microchipgnu",
-    "address": "0x1b34956C67EcDD41381d976A02ad7C918e288B07",
-    "age": 0.5513166666666667,
-    "detectedAt": 1771611908079
+    "symbol": "AGENTINC",
+    "address": "0x549a558c8bDbbc5130b33aB1CCf915d0f7166b07",
+    "age": 1.18795,
+    "detectedAt": 1771612468277
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0xCBB1293acF16EF091c10F94F533F3E9751986B07",
-    "age": 0.5513166666666667,
-    "detectedAt": 1771611908079
+    "symbol": "Privy",
+    "address": "0xBE716aC6b81a770d21b11622E8C9F0642aCAfb07",
+    "age": 1.2212833333333333,
+    "detectedAt": 1771612468277
   },
   {
-    "symbol": "mrbeast",
-    "address": "0xc60B36a25261587C3E3Ff52a83c960D59c849b07",
-    "age": 0.6513166666666667,
-    "detectedAt": 1771611908079
+    "symbol": "PUNCHLIENX",
+    "address": "0x5ba7C9e0Aa35C708f2a761E4aAa04A62554E9B07",
+    "age": 1.48795,
+    "detectedAt": 1771612468277
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x88632516000a71f3A6C4b572eBaF5BaDCd06dB07",
-    "age": 0.8179833333333333,
-    "detectedAt": 1771611908079
+    "symbol": "BWOY",
+    "address": "0xf7623F66F7256fc7E9897731283138a016096b07",
+    "age": 1.6546166666666666,
+    "detectedAt": 1771612468278
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x83F369a2057Cbe3A8DD8Bca7EE1F5fE42F448b07",
-    "age": 1.08465,
-    "detectedAt": 1771611908079
+    "symbol": "POOLFANS",
+    "address": "0x92a44802ABF98A763c10808fd1d3d39bE0D6Fb07",
+    "age": 1.7213,
+    "detectedAt": 1771612468278
   },
   {
-    "symbol": "Jellybean",
-    "address": "0x098F94951E90791458bC045596C829B337D01B07",
-    "age": 1.18465,
-    "detectedAt": 1771611908079
+    "symbol": "CLAYTONX",
+    "address": "0xa23C6d4bED96C67f0BA7FDB0ea708d83a1A4eB07",
+    "age": 1.7546333333333333,
+    "detectedAt": 1771612468278
   },
   {
-    "symbol": "hi",
-    "address": "0xD8b3990b12d90a71980FF2BFE1330a06a5798B07",
-    "age": 1.3513166666666667,
-    "detectedAt": 1771611908079
+    "symbol": "Gymnast🐼",
+    "address": "0xf57A5c3f2fC1Fb260156b21560AB922c7Be46B07",
+    "age": 1.8879666666666666,
+    "detectedAt": 1771612468278
   },
   {
-    "symbol": "NOBEE",
-    "address": "0x9312BdBA9d93dA898C3Df36ca5f8Df97C17c0B07",
-    "age": 1.4179833333333334,
-    "detectedAt": 1771611908079
+    "symbol": "Privy",
+    "address": "0x414612ebE071B13F034E276d8525756bd1E27B07",
+    "age": 1.9879666666666667,
+    "detectedAt": 1771612468278
   },
   {
-    "symbol": "PEDOX",
-    "address": "0xbC8B382c54137A1d9Ab3AD16DE0d6f5a069e2b07",
-    "age": 1.5179833333333332,
-    "detectedAt": 1771611908079
+    "symbol": "ClineBench",
+    "address": "0x48c7A9565a78F7234816b51fDbAE4ba1901ceB07",
+    "age": 1.9879666666666667,
+    "detectedAt": 1771612468278
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0x672A6808FB7191d380b5f903942d80fF5072Db07",
-    "age": 1.6179833333333333,
-    "detectedAt": 1771611908079
+    "symbol": "ALIEN6",
+    "address": "0x35f3b9aaae4fCa1f684d98470a0A9319DaE86B07",
+    "age": 2.0546333333333333,
+    "detectedAt": 1771612468278
   },
   {
-    "symbol": "ORTHO",
-    "address": "0x13A8E6b6eB51ac06DE7162a251036E0adB8bfB07",
-    "age": 1.6513166666666668,
-    "detectedAt": 1771611908079
+    "symbol": "ALIEN6",
+    "address": "0xb391a950Ed2ddcE63D4fBD8D08B08c1C1b55bB07",
+    "age": 2.2546333333333335,
+    "detectedAt": 1771612468278
   },
   {
-    "symbol": "UNICLAW",
-    "address": "0xcA15A6ED598df6Bd8f3684C688c0fbF73D1eDB07",
-    "age": 1.78465,
-    "detectedAt": 1771611908080
+    "symbol": "CRS",
+    "address": "0xdfd0aA5ddb23306E2DF73A6fE41C2081027e0b07",
+    "age": 2.487966666666667,
+    "detectedAt": 1771612468278
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x010bD22841c8eDDf3b0880deB7B5fc03B75E9b07",
-    "age": 1.8513333333333333,
-    "detectedAt": 1771611908080
+    "symbol": "CYBER",
+    "address": "0x3a4202aca6D5Eefa567e339e14dBb4b207012b07",
+    "age": 2.5213,
+    "detectedAt": 1771612468278
   },
   {
-    "symbol": "LARPZ",
-    "address": "0xFa74537233e7117680db9C8455E1B26982c41b07",
-    "age": 0.12193333333333334,
-    "detectedAt": 1771611904317
+    "symbol": "AGENTINC",
+    "address": "0xc8571F0c1D3D953A2A782C78Ac9fc243131D2b07",
+    "age": 0.15935,
+    "detectedAt": 1771612464561
   },
   {
-    "symbol": "ClawWork",
-    "address": "0xb7Fb40A9478b065D9E8BAC7482C1800b98ba1b07",
-    "age": 0.12195,
-    "detectedAt": 1771611904317
+    "symbol": "PriAi",
+    "address": "0x4696Bd0Fd9023F748C892d822fB55f8a097C8b07",
+    "age": 0.3260166666666667,
+    "detectedAt": 1771612464562
   },
   {
-    "symbol": "Moltbanks",
-    "address": "0x09a69Ff013ab66DbE5E0c98AEEF84e4127EAEB07",
-    "age": 0.2552833333333333,
-    "detectedAt": 1771611904318
+    "symbol": "PriAi",
+    "address": "0x37aC73759d804765E578dA6E5835A40991c5EB07",
+    "age": 0.5593666666666667,
+    "detectedAt": 1771612464562
   },
   {
-    "symbol": "Ray",
-    "address": "0xd039DD1b66E9B698315698cd8CB078a906008b07",
-    "age": 0.28863333333333335,
-    "detectedAt": 1771611904318
+    "symbol": "Cobot",
+    "address": "0x05664E748Dd6b3736A8a04FEB540B232dc248B07",
+    "age": 0.5927,
+    "detectedAt": 1771612464562
   },
   {
-    "symbol": "BLST",
-    "address": "0xa33C77dA6837298aF09fd8af48C87463dD13aB07",
-    "age": 0.3219666666666667,
-    "detectedAt": 1771611904318
+    "symbol": "YANG",
+    "address": "0xa3626aF19F6C6c9488e553Aed1C745A935d36B07",
+    "age": 0.7260333333333333,
+    "detectedAt": 1771612464562
   },
   {
-    "symbol": "CLAWD",
-    "address": "0x64aEB5DB4F86F9dfd3442d5825cE3305661Cc05F",
-    "age": 0.3553,
-    "detectedAt": 1771611904318
+    "symbol": "ClineBench",
+    "address": "0x3864E75E60356537d525D6A89225Ec8250E57b07",
+    "age": 0.7260333333333333,
+    "detectedAt": 1771612464562
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x863b7bE0e181adf5fD72C02dDb87E32E76999B07",
-    "age": 0.38863333333333333,
-    "detectedAt": 1771611904318
+    "symbol": "Privy",
+    "address": "0x83E487B471c9Af8D082DD88C77b3a85bf32b4B07",
+    "age": 0.9927,
+    "detectedAt": 1771612464562
   },
   {
-    "symbol": "microchipgnu",
-    "address": "0x1b34956C67EcDD41381d976A02ad7C918e288B07",
-    "age": 0.4886333333333333,
-    "detectedAt": 1771611904318
+    "symbol": "AGENTINC",
+    "address": "0x549a558c8bDbbc5130b33aB1CCf915d0f7166b07",
+    "age": 1.1260333333333334,
+    "detectedAt": 1771612464562
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0xCBB1293acF16EF091c10F94F533F3E9751986B07",
-    "age": 0.4886333333333333,
-    "detectedAt": 1771611904318
+    "symbol": "Privy",
+    "address": "0xBE716aC6b81a770d21b11622E8C9F0642aCAfb07",
+    "age": 1.1593666666666667,
+    "detectedAt": 1771612464563
   },
   {
-    "symbol": "mrbeast",
-    "address": "0xc60B36a25261587C3E3Ff52a83c960D59c849b07",
-    "age": 0.5886333333333333,
-    "detectedAt": 1771611904318
+    "symbol": "PUNCHLIENX",
+    "address": "0x5ba7C9e0Aa35C708f2a761E4aAa04A62554E9B07",
+    "age": 1.42605,
+    "detectedAt": 1771612464563
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x88632516000a71f3A6C4b572eBaF5BaDCd06dB07",
-    "age": 0.7553,
-    "detectedAt": 1771611904318
+    "symbol": "BWOY",
+    "address": "0xf7623F66F7256fc7E9897731283138a016096b07",
+    "age": 1.5927166666666666,
+    "detectedAt": 1771612464563
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x83F369a2057Cbe3A8DD8Bca7EE1F5fE42F448b07",
-    "age": 1.0219666666666667,
-    "detectedAt": 1771611904318
+    "symbol": "POOLFANS",
+    "address": "0x92a44802ABF98A763c10808fd1d3d39bE0D6Fb07",
+    "age": 1.6593833333333334,
+    "detectedAt": 1771612464563
   },
   {
-    "symbol": "Jellybean",
-    "address": "0x098F94951E90791458bC045596C829B337D01B07",
-    "age": 1.1219666666666666,
-    "detectedAt": 1771611904318
+    "symbol": "CLAYTONX",
+    "address": "0xa23C6d4bED96C67f0BA7FDB0ea708d83a1A4eB07",
+    "age": 1.6927166666666666,
+    "detectedAt": 1771612464563
   },
   {
-    "symbol": "hi",
-    "address": "0xD8b3990b12d90a71980FF2BFE1330a06a5798B07",
-    "age": 1.2886333333333333,
-    "detectedAt": 1771611904318
+    "symbol": "Gymnast🐼",
+    "address": "0xf57A5c3f2fC1Fb260156b21560AB922c7Be46B07",
+    "age": 1.82605,
+    "detectedAt": 1771612464563
   },
   {
-    "symbol": "NOBEE",
-    "address": "0x9312BdBA9d93dA898C3Df36ca5f8Df97C17c0B07",
-    "age": 1.3553,
-    "detectedAt": 1771611904318
+    "symbol": "Privy",
+    "address": "0x414612ebE071B13F034E276d8525756bd1E27B07",
+    "age": 1.92605,
+    "detectedAt": 1771612464563
   },
   {
-    "symbol": "PEDOX",
-    "address": "0xbC8B382c54137A1d9Ab3AD16DE0d6f5a069e2b07",
-    "age": 1.4553,
-    "detectedAt": 1771611904318
+    "symbol": "ClineBench",
+    "address": "0x48c7A9565a78F7234816b51fDbAE4ba1901ceB07",
+    "age": 1.92605,
+    "detectedAt": 1771612464563
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0x672A6808FB7191d380b5f903942d80fF5072Db07",
-    "age": 1.5553,
-    "detectedAt": 1771611904318
+    "symbol": "ALIEN6",
+    "address": "0x35f3b9aaae4fCa1f684d98470a0A9319DaE86B07",
+    "age": 1.9927166666666667,
+    "detectedAt": 1771612464563
   },
   {
-    "symbol": "ORTHO",
-    "address": "0x13A8E6b6eB51ac06DE7162a251036E0adB8bfB07",
-    "age": 1.5886333333333333,
-    "detectedAt": 1771611904318
+    "symbol": "ALIEN6",
+    "address": "0xb391a950Ed2ddcE63D4fBD8D08B08c1C1b55bB07",
+    "age": 2.1927166666666666,
+    "detectedAt": 1771612464563
   },
   {
-    "symbol": "UNICLAW",
-    "address": "0xcA15A6ED598df6Bd8f3684C688c0fbF73D1eDB07",
-    "age": 1.7219666666666666,
-    "detectedAt": 1771611904318
+    "symbol": "CRS",
+    "address": "0xdfd0aA5ddb23306E2DF73A6fE41C2081027e0b07",
+    "age": 2.42605,
+    "detectedAt": 1771612464563
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x010bD22841c8eDDf3b0880deB7B5fc03B75E9b07",
-    "age": 1.78865,
-    "detectedAt": 1771611904319
+    "symbol": "CYBER",
+    "address": "0x3a4202aca6D5Eefa567e339e14dBb4b207012b07",
+    "age": 2.4593833333333333,
+    "detectedAt": 1771612464563
   },
   {
-    "symbol": "Moltbanks",
-    "address": "0x09a69Ff013ab66DbE5E0c98AEEF84e4127EAEB07",
-    "age": 0.19335,
-    "detectedAt": 1771611900601
+    "symbol": "AGENTINC",
+    "address": "0xc8571F0c1D3D953A2A782C78Ac9fc243131D2b07",
+    "age": 0.09971666666666666,
+    "detectedAt": 1771612460983
   },
   {
-    "symbol": "Ray",
-    "address": "0xd039DD1b66E9B698315698cd8CB078a906008b07",
-    "age": 0.22668333333333332,
-    "detectedAt": 1771611900601
+    "symbol": "PriAi",
+    "address": "0x4696Bd0Fd9023F748C892d822fB55f8a097C8b07",
+    "age": 0.26638333333333336,
+    "detectedAt": 1771612460983
   },
   {
-    "symbol": "BLST",
-    "address": "0xa33C77dA6837298aF09fd8af48C87463dD13aB07",
-    "age": 0.2600166666666667,
-    "detectedAt": 1771611900601
+    "symbol": "PriAi",
+    "address": "0x37aC73759d804765E578dA6E5835A40991c5EB07",
+    "age": 0.49971666666666664,
+    "detectedAt": 1771612460983
   },
   {
-    "symbol": "CLAWD",
-    "address": "0x64aEB5DB4F86F9dfd3442d5825cE3305661Cc05F",
-    "age": 0.29335,
-    "detectedAt": 1771611900601
+    "symbol": "Cobot",
+    "address": "0x05664E748Dd6b3736A8a04FEB540B232dc248B07",
+    "age": 0.53305,
+    "detectedAt": 1771612460983
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x863b7bE0e181adf5fD72C02dDb87E32E76999B07",
-    "age": 0.3266833333333333,
-    "detectedAt": 1771611900601
+    "symbol": "YANG",
+    "address": "0xa3626aF19F6C6c9488e553Aed1C745A935d36B07",
+    "age": 0.6663833333333333,
+    "detectedAt": 1771612460983
   },
   {
-    "symbol": "microchipgnu",
-    "address": "0x1b34956C67EcDD41381d976A02ad7C918e288B07",
-    "age": 0.42668333333333336,
-    "detectedAt": 1771611900602
+    "symbol": "ClineBench",
+    "address": "0x3864E75E60356537d525D6A89225Ec8250E57b07",
+    "age": 0.6663833333333333,
+    "detectedAt": 1771612460983
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0xCBB1293acF16EF091c10F94F533F3E9751986B07",
-    "age": 0.4267,
-    "detectedAt": 1771611900602
+    "symbol": "Privy",
+    "address": "0x83E487B471c9Af8D082DD88C77b3a85bf32b4B07",
+    "age": 0.93305,
+    "detectedAt": 1771612460983
   },
   {
-    "symbol": "mrbeast",
-    "address": "0xc60B36a25261587C3E3Ff52a83c960D59c849b07",
-    "age": 0.5267,
-    "detectedAt": 1771611900602
+    "symbol": "AGENTINC",
+    "address": "0x549a558c8bDbbc5130b33aB1CCf915d0f7166b07",
+    "age": 1.0663833333333332,
+    "detectedAt": 1771612460983
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x88632516000a71f3A6C4b572eBaF5BaDCd06dB07",
-    "age": 0.6933666666666667,
-    "detectedAt": 1771611900602
+    "symbol": "Privy",
+    "address": "0xBE716aC6b81a770d21b11622E8C9F0642aCAfb07",
+    "age": 1.0997166666666667,
+    "detectedAt": 1771612460983
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x83F369a2057Cbe3A8DD8Bca7EE1F5fE42F448b07",
-    "age": 0.9600333333333333,
-    "detectedAt": 1771611900602
+    "symbol": "PUNCHLIENX",
+    "address": "0x5ba7C9e0Aa35C708f2a761E4aAa04A62554E9B07",
+    "age": 1.3663833333333333,
+    "detectedAt": 1771612460984
   },
   {
-    "symbol": "Jellybean",
-    "address": "0x098F94951E90791458bC045596C829B337D01B07",
-    "age": 1.0600333333333334,
-    "detectedAt": 1771611900602
+    "symbol": "BWOY",
+    "address": "0xf7623F66F7256fc7E9897731283138a016096b07",
+    "age": 1.5330666666666666,
+    "detectedAt": 1771612460984
   },
   {
-    "symbol": "hi",
-    "address": "0xD8b3990b12d90a71980FF2BFE1330a06a5798B07",
-    "age": 1.2267,
-    "detectedAt": 1771611900602
+    "symbol": "POOLFANS",
+    "address": "0x92a44802ABF98A763c10808fd1d3d39bE0D6Fb07",
+    "age": 1.5997333333333332,
+    "detectedAt": 1771612460984
   },
   {
-    "symbol": "NOBEE",
-    "address": "0x9312BdBA9d93dA898C3Df36ca5f8Df97C17c0B07",
-    "age": 1.2933666666666668,
-    "detectedAt": 1771611900602
+    "symbol": "CLAYTONX",
+    "address": "0xa23C6d4bED96C67f0BA7FDB0ea708d83a1A4eB07",
+    "age": 1.6330666666666667,
+    "detectedAt": 1771612460984
   },
   {
-    "symbol": "PEDOX",
-    "address": "0xbC8B382c54137A1d9Ab3AD16DE0d6f5a069e2b07",
-    "age": 1.3933666666666666,
-    "detectedAt": 1771611900602
+    "symbol": "Gymnast🐼",
+    "address": "0xf57A5c3f2fC1Fb260156b21560AB922c7Be46B07",
+    "age": 1.7664,
+    "detectedAt": 1771612460984
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0x672A6808FB7191d380b5f903942d80fF5072Db07",
-    "age": 1.4933666666666667,
-    "detectedAt": 1771611900602
+    "symbol": "Privy",
+    "address": "0x414612ebE071B13F034E276d8525756bd1E27B07",
+    "age": 1.8664,
+    "detectedAt": 1771612460984
   },
   {
-    "symbol": "ORTHO",
-    "address": "0x13A8E6b6eB51ac06DE7162a251036E0adB8bfB07",
-    "age": 1.5267,
-    "detectedAt": 1771611900602
+    "symbol": "ClineBench",
+    "address": "0x48c7A9565a78F7234816b51fDbAE4ba1901ceB07",
+    "age": 1.8664,
+    "detectedAt": 1771612460984
   },
   {
-    "symbol": "UNICLAW",
-    "address": "0xcA15A6ED598df6Bd8f3684C688c0fbF73D1eDB07",
-    "age": 1.6600333333333332,
-    "detectedAt": 1771611900602
+    "symbol": "ALIEN6",
+    "address": "0x35f3b9aaae4fCa1f684d98470a0A9319DaE86B07",
+    "age": 1.9330666666666667,
+    "detectedAt": 1771612460984
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x010bD22841c8eDDf3b0880deB7B5fc03B75E9b07",
-    "age": 1.7267,
-    "detectedAt": 1771611900602
+    "symbol": "ALIEN6",
+    "address": "0xb391a950Ed2ddcE63D4fBD8D08B08c1C1b55bB07",
+    "age": 2.1330666666666667,
+    "detectedAt": 1771612460984
   },
   {
-    "symbol": "TRENCH",
-    "address": "0x6aAeBAB243d668347aaD1e372142a99F30908b07",
-    "age": 1.7267,
-    "detectedAt": 1771611900602
+    "symbol": "CRS",
+    "address": "0xdfd0aA5ddb23306E2DF73A6fE41C2081027e0b07",
+    "age": 2.3664,
+    "detectedAt": 1771612460984
   },
   {
-    "symbol": "Musk",
-    "address": "0x88c8eA4CBc1e93B8537F7091aa38F3Ec58451B07",
-    "age": 1.7600333333333333,
-    "detectedAt": 1771611900602
+    "symbol": "CYBER",
+    "address": "0x3a4202aca6D5Eefa567e339e14dBb4b207012b07",
+    "age": 2.3997333333333333,
+    "detectedAt": 1771612460984
   },
   {
-    "symbol": "Moltbanks",
-    "address": "0x09a69Ff013ab66DbE5E0c98AEEF84e4127EAEB07",
-    "age": 0.13355,
-    "detectedAt": 1771611897013
+    "symbol": "PriAi",
+    "address": "0x4696Bd0Fd9023F748C892d822fB55f8a097C8b07",
+    "age": 0.20663333333333334,
+    "detectedAt": 1771612457398
   },
   {
-    "symbol": "Ray",
-    "address": "0xd039DD1b66E9B698315698cd8CB078a906008b07",
-    "age": 0.16688333333333333,
-    "detectedAt": 1771611897013
+    "symbol": "PriAi",
+    "address": "0x37aC73759d804765E578dA6E5835A40991c5EB07",
+    "age": 0.4399666666666667,
+    "detectedAt": 1771612457398
   },
   {
-    "symbol": "BLST",
-    "address": "0xa33C77dA6837298aF09fd8af48C87463dD13aB07",
-    "age": 0.20021666666666665,
-    "detectedAt": 1771611897013
+    "symbol": "Cobot",
+    "address": "0x05664E748Dd6b3736A8a04FEB540B232dc248B07",
+    "age": 0.4733,
+    "detectedAt": 1771612457398
   },
   {
-    "symbol": "CLAWD",
-    "address": "0x64aEB5DB4F86F9dfd3442d5825cE3305661Cc05F",
-    "age": 0.23355,
-    "detectedAt": 1771611897013
+    "symbol": "YANG",
+    "address": "0xa3626aF19F6C6c9488e553Aed1C745A935d36B07",
+    "age": 0.6066333333333334,
+    "detectedAt": 1771612457398
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x863b7bE0e181adf5fD72C02dDb87E32E76999B07",
-    "age": 0.2668833333333333,
-    "detectedAt": 1771611897013
+    "symbol": "ClineBench",
+    "address": "0x3864E75E60356537d525D6A89225Ec8250E57b07",
+    "age": 0.6066333333333334,
+    "detectedAt": 1771612457398
   },
   {
-    "symbol": "microchipgnu",
-    "address": "0x1b34956C67EcDD41381d976A02ad7C918e288B07",
-    "age": 0.36688333333333334,
-    "detectedAt": 1771611897014
+    "symbol": "Privy",
+    "address": "0x83E487B471c9Af8D082DD88C77b3a85bf32b4B07",
+    "age": 0.8733,
+    "detectedAt": 1771612457398
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0xCBB1293acF16EF091c10F94F533F3E9751986B07",
-    "age": 0.3669,
-    "detectedAt": 1771611897014
+    "symbol": "AGENTINC",
+    "address": "0x549a558c8bDbbc5130b33aB1CCf915d0f7166b07",
+    "age": 1.0066333333333333,
+    "detectedAt": 1771612457398
   },
   {
-    "symbol": "mrbeast",
-    "address": "0xc60B36a25261587C3E3Ff52a83c960D59c849b07",
-    "age": 0.4669,
-    "detectedAt": 1771611897014
+    "symbol": "Privy",
+    "address": "0xBE716aC6b81a770d21b11622E8C9F0642aCAfb07",
+    "age": 1.0399666666666667,
+    "detectedAt": 1771612457398
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x88632516000a71f3A6C4b572eBaF5BaDCd06dB07",
-    "age": 0.6335666666666666,
-    "detectedAt": 1771611897014
+    "symbol": "PUNCHLIENX",
+    "address": "0x5ba7C9e0Aa35C708f2a761E4aAa04A62554E9B07",
+    "age": 1.3066333333333333,
+    "detectedAt": 1771612457398
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x83F369a2057Cbe3A8DD8Bca7EE1F5fE42F448b07",
-    "age": 0.9002333333333333,
-    "detectedAt": 1771611897014
+    "symbol": "BWOY",
+    "address": "0xf7623F66F7256fc7E9897731283138a016096b07",
+    "age": 1.4733,
+    "detectedAt": 1771612457398
   },
   {
-    "symbol": "Jellybean",
-    "address": "0x098F94951E90791458bC045596C829B337D01B07",
-    "age": 1.0002333333333333,
-    "detectedAt": 1771611897014
+    "symbol": "POOLFANS",
+    "address": "0x92a44802ABF98A763c10808fd1d3d39bE0D6Fb07",
+    "age": 1.5399666666666667,
+    "detectedAt": 1771612457398
   },
   {
-    "symbol": "hi",
-    "address": "0xD8b3990b12d90a71980FF2BFE1330a06a5798B07",
-    "age": 1.1669,
-    "detectedAt": 1771611897014
+    "symbol": "CLAYTONX",
+    "address": "0xa23C6d4bED96C67f0BA7FDB0ea708d83a1A4eB07",
+    "age": 1.5733,
+    "detectedAt": 1771612457398
   },
   {
-    "symbol": "NOBEE",
-    "address": "0x9312BdBA9d93dA898C3Df36ca5f8Df97C17c0B07",
-    "age": 1.2335666666666667,
-    "detectedAt": 1771611897014
+    "symbol": "Gymnast🐼",
+    "address": "0xf57A5c3f2fC1Fb260156b21560AB922c7Be46B07",
+    "age": 1.7066333333333332,
+    "detectedAt": 1771612457398
   },
   {
-    "symbol": "PEDOX",
-    "address": "0xbC8B382c54137A1d9Ab3AD16DE0d6f5a069e2b07",
-    "age": 1.3335666666666666,
-    "detectedAt": 1771611897014
+    "symbol": "Privy",
+    "address": "0x414612ebE071B13F034E276d8525756bd1E27B07",
+    "age": 1.8066333333333333,
+    "detectedAt": 1771612457398
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0x672A6808FB7191d380b5f903942d80fF5072Db07",
-    "age": 1.4335666666666667,
-    "detectedAt": 1771611897014
+    "symbol": "ClineBench",
+    "address": "0x48c7A9565a78F7234816b51fDbAE4ba1901ceB07",
+    "age": 1.8066333333333333,
+    "detectedAt": 1771612457398
   },
   {
-    "symbol": "ORTHO",
-    "address": "0x13A8E6b6eB51ac06DE7162a251036E0adB8bfB07",
-    "age": 1.4669,
-    "detectedAt": 1771611897014
+    "symbol": "ALIEN6",
+    "address": "0x35f3b9aaae4fCa1f684d98470a0A9319DaE86B07",
+    "age": 1.8733,
+    "detectedAt": 1771612457398
   },
   {
-    "symbol": "UNICLAW",
-    "address": "0xcA15A6ED598df6Bd8f3684C688c0fbF73D1eDB07",
-    "age": 1.6002333333333334,
-    "detectedAt": 1771611897014
+    "symbol": "ALIEN6",
+    "address": "0xb391a950Ed2ddcE63D4fBD8D08B08c1C1b55bB07",
+    "age": 2.0733,
+    "detectedAt": 1771612457398
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x010bD22841c8eDDf3b0880deB7B5fc03B75E9b07",
-    "age": 1.6669,
-    "detectedAt": 1771611897014
+    "symbol": "CRS",
+    "address": "0xdfd0aA5ddb23306E2DF73A6fE41C2081027e0b07",
+    "age": 2.3066333333333335,
+    "detectedAt": 1771612457398
   },
   {
-    "symbol": "TRENCH",
-    "address": "0x6aAeBAB243d668347aaD1e372142a99F30908b07",
-    "age": 1.6669,
-    "detectedAt": 1771611897014
+    "symbol": "CYBER",
+    "address": "0x3a4202aca6D5Eefa567e339e14dBb4b207012b07",
+    "age": 2.3399666666666668,
+    "detectedAt": 1771612457398
   },
   {
-    "symbol": "Musk",
-    "address": "0x88c8eA4CBc1e93B8537F7091aa38F3Ec58451B07",
-    "age": 1.7002333333333333,
-    "detectedAt": 1771611897014
+    "symbol": "Gymnast🐼",
+    "address": "0x5aAEbfb84eEccab5111C179e73e01471742e9B07",
+    "age": 2.3399833333333335,
+    "detectedAt": 1771612457399
   },
   {
-    "symbol": "Moltbanks",
-    "address": "0x09a69Ff013ab66DbE5E0c98AEEF84e4127EAEB07",
-    "age": 0.07613333333333333,
-    "detectedAt": 1771611893568
+    "symbol": "PriAi",
+    "address": "0x4696Bd0Fd9023F748C892d822fB55f8a097C8b07",
+    "age": 0.14526666666666666,
+    "detectedAt": 1771612453717
   },
   {
-    "symbol": "Ray",
-    "address": "0xd039DD1b66E9B698315698cd8CB078a906008b07",
-    "age": 0.10946666666666667,
-    "detectedAt": 1771611893569
+    "symbol": "PriAi",
+    "address": "0x37aC73759d804765E578dA6E5835A40991c5EB07",
+    "age": 0.37861666666666666,
+    "detectedAt": 1771612453717
   },
   {
-    "symbol": "BLST",
-    "address": "0xa33C77dA6837298aF09fd8af48C87463dD13aB07",
-    "age": 0.14281666666666668,
-    "detectedAt": 1771611893569
+    "symbol": "Cobot",
+    "address": "0x05664E748Dd6b3736A8a04FEB540B232dc248B07",
+    "age": 0.41195,
+    "detectedAt": 1771612453717
   },
   {
-    "symbol": "CLAWD",
-    "address": "0x64aEB5DB4F86F9dfd3442d5825cE3305661Cc05F",
-    "age": 0.17615,
-    "detectedAt": 1771611893569
+    "symbol": "YANG",
+    "address": "0xa3626aF19F6C6c9488e553Aed1C745A935d36B07",
+    "age": 0.5452833333333333,
+    "detectedAt": 1771612453717
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x863b7bE0e181adf5fD72C02dDb87E32E76999B07",
-    "age": 0.20948333333333333,
-    "detectedAt": 1771611893570
+    "symbol": "ClineBench",
+    "address": "0x3864E75E60356537d525D6A89225Ec8250E57b07",
+    "age": 0.5452833333333333,
+    "detectedAt": 1771612453717
   },
   {
-    "symbol": "microchipgnu",
-    "address": "0x1b34956C67EcDD41381d976A02ad7C918e288B07",
-    "age": 0.3095,
-    "detectedAt": 1771611893570
+    "symbol": "Privy",
+    "address": "0x83E487B471c9Af8D082DD88C77b3a85bf32b4B07",
+    "age": 0.81195,
+    "detectedAt": 1771612453717
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0xCBB1293acF16EF091c10F94F533F3E9751986B07",
-    "age": 0.3095,
-    "detectedAt": 1771611893570
+    "symbol": "AGENTINC",
+    "address": "0x549a558c8bDbbc5130b33aB1CCf915d0f7166b07",
+    "age": 0.9452833333333334,
+    "detectedAt": 1771612453717
   },
   {
-    "symbol": "mrbeast",
-    "address": "0xc60B36a25261587C3E3Ff52a83c960D59c849b07",
-    "age": 0.4095,
-    "detectedAt": 1771611893570
+    "symbol": "Privy",
+    "address": "0xBE716aC6b81a770d21b11622E8C9F0642aCAfb07",
+    "age": 0.9786166666666667,
+    "detectedAt": 1771612453717
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x88632516000a71f3A6C4b572eBaF5BaDCd06dB07",
-    "age": 0.5761666666666667,
-    "detectedAt": 1771611893570
+    "symbol": "PUNCHLIENX",
+    "address": "0x5ba7C9e0Aa35C708f2a761E4aAa04A62554E9B07",
+    "age": 1.2452833333333333,
+    "detectedAt": 1771612453717
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x83F369a2057Cbe3A8DD8Bca7EE1F5fE42F448b07",
-    "age": 0.8428333333333333,
-    "detectedAt": 1771611893570
+    "symbol": "BWOY",
+    "address": "0xf7623F66F7256fc7E9897731283138a016096b07",
+    "age": 1.41195,
+    "detectedAt": 1771612453717
   },
   {
-    "symbol": "Jellybean",
-    "address": "0x098F94951E90791458bC045596C829B337D01B07",
-    "age": 0.9428333333333333,
-    "detectedAt": 1771611893570
+    "symbol": "POOLFANS",
+    "address": "0x92a44802ABF98A763c10808fd1d3d39bE0D6Fb07",
+    "age": 1.4786166666666667,
+    "detectedAt": 1771612453717
   },
   {
-    "symbol": "hi",
-    "address": "0xD8b3990b12d90a71980FF2BFE1330a06a5798B07",
-    "age": 1.1095,
-    "detectedAt": 1771611893570
+    "symbol": "CLAYTONX",
+    "address": "0xa23C6d4bED96C67f0BA7FDB0ea708d83a1A4eB07",
+    "age": 1.51195,
+    "detectedAt": 1771612453717
   },
   {
-    "symbol": "NOBEE",
-    "address": "0x9312BdBA9d93dA898C3Df36ca5f8Df97C17c0B07",
-    "age": 1.1761666666666666,
-    "detectedAt": 1771611893570
+    "symbol": "Gymnast🐼",
+    "address": "0xf57A5c3f2fC1Fb260156b21560AB922c7Be46B07",
+    "age": 1.6452833333333334,
+    "detectedAt": 1771612453717
   },
   {
-    "symbol": "PEDOX",
-    "address": "0xbC8B382c54137A1d9Ab3AD16DE0d6f5a069e2b07",
-    "age": 1.2761666666666667,
-    "detectedAt": 1771611893570
+    "symbol": "Privy",
+    "address": "0x414612ebE071B13F034E276d8525756bd1E27B07",
+    "age": 1.7452833333333333,
+    "detectedAt": 1771612453717
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0x672A6808FB7191d380b5f903942d80fF5072Db07",
-    "age": 1.3761666666666668,
-    "detectedAt": 1771611893570
+    "symbol": "ClineBench",
+    "address": "0x48c7A9565a78F7234816b51fDbAE4ba1901ceB07",
+    "age": 1.7452833333333333,
+    "detectedAt": 1771612453717
   },
   {
-    "symbol": "ORTHO",
-    "address": "0x13A8E6b6eB51ac06DE7162a251036E0adB8bfB07",
-    "age": 1.4095,
-    "detectedAt": 1771611893570
+    "symbol": "ALIEN6",
+    "address": "0x35f3b9aaae4fCa1f684d98470a0A9319DaE86B07",
+    "age": 1.81195,
+    "detectedAt": 1771612453717
   },
   {
-    "symbol": "UNICLAW",
-    "address": "0xcA15A6ED598df6Bd8f3684C688c0fbF73D1eDB07",
-    "age": 1.5428333333333333,
-    "detectedAt": 1771611893570
+    "symbol": "ALIEN6",
+    "address": "0xb391a950Ed2ddcE63D4fBD8D08B08c1C1b55bB07",
+    "age": 2.01195,
+    "detectedAt": 1771612453717
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x010bD22841c8eDDf3b0880deB7B5fc03B75E9b07",
-    "age": 1.6095,
-    "detectedAt": 1771611893570
+    "symbol": "CRS",
+    "address": "0xdfd0aA5ddb23306E2DF73A6fE41C2081027e0b07",
+    "age": 2.2452833333333335,
+    "detectedAt": 1771612453717
   },
   {
-    "symbol": "TRENCH",
-    "address": "0x6aAeBAB243d668347aaD1e372142a99F30908b07",
-    "age": 1.6095,
-    "detectedAt": 1771611893570
+    "symbol": "CYBER",
+    "address": "0x3a4202aca6D5Eefa567e339e14dBb4b207012b07",
+    "age": 2.2786166666666667,
+    "detectedAt": 1771612453717
   },
   {
-    "symbol": "Musk",
-    "address": "0x88c8eA4CBc1e93B8537F7091aa38F3Ec58451B07",
-    "age": 1.6428333333333334,
-    "detectedAt": 1771611893571
+    "symbol": "Gymnast🐼",
+    "address": "0x5aAEbfb84eEccab5111C179e73e01471742e9B07",
+    "age": 2.2786166666666667,
+    "detectedAt": 1771612453718
   },
   {
-    "symbol": "BLST",
-    "address": "0xa33C77dA6837298aF09fd8af48C87463dD13aB07",
-    "age": 0.08461666666666667,
-    "detectedAt": 1771611890078
+    "symbol": "PriAi",
+    "address": "0x4696Bd0Fd9023F748C892d822fB55f8a097C8b07",
+    "age": 0.0851,
+    "detectedAt": 1771612450106
   },
   {
-    "symbol": "CLAWD",
-    "address": "0x64aEB5DB4F86F9dfd3442d5825cE3305661Cc05F",
-    "age": 0.11796666666666666,
-    "detectedAt": 1771611890078
+    "symbol": "PriAi",
+    "address": "0x37aC73759d804765E578dA6E5835A40991c5EB07",
+    "age": 0.31843333333333335,
+    "detectedAt": 1771612450106
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x863b7bE0e181adf5fD72C02dDb87E32E76999B07",
-    "age": 0.1513,
-    "detectedAt": 1771611890078
+    "symbol": "Cobot",
+    "address": "0x05664E748Dd6b3736A8a04FEB540B232dc248B07",
+    "age": 0.35176666666666667,
+    "detectedAt": 1771612450106
   },
   {
-    "symbol": "microchipgnu",
-    "address": "0x1b34956C67EcDD41381d976A02ad7C918e288B07",
-    "age": 0.2513,
-    "detectedAt": 1771611890078
+    "symbol": "YANG",
+    "address": "0xa3626aF19F6C6c9488e553Aed1C745A935d36B07",
+    "age": 0.4851,
+    "detectedAt": 1771612450107
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0xCBB1293acF16EF091c10F94F533F3E9751986B07",
-    "age": 0.2513,
-    "detectedAt": 1771611890078
+    "symbol": "ClineBench",
+    "address": "0x3864E75E60356537d525D6A89225Ec8250E57b07",
+    "age": 0.48511666666666664,
+    "detectedAt": 1771612450107
   },
   {
-    "symbol": "mrbeast",
-    "address": "0xc60B36a25261587C3E3Ff52a83c960D59c849b07",
-    "age": 0.3513,
-    "detectedAt": 1771611890078
+    "symbol": "Privy",
+    "address": "0x83E487B471c9Af8D082DD88C77b3a85bf32b4B07",
+    "age": 0.7517833333333334,
+    "detectedAt": 1771612450107
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x88632516000a71f3A6C4b572eBaF5BaDCd06dB07",
-    "age": 0.5179666666666667,
-    "detectedAt": 1771611890078
+    "symbol": "AGENTINC",
+    "address": "0x549a558c8bDbbc5130b33aB1CCf915d0f7166b07",
+    "age": 0.8851166666666667,
+    "detectedAt": 1771612450107
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x83F369a2057Cbe3A8DD8Bca7EE1F5fE42F448b07",
-    "age": 0.7846333333333333,
-    "detectedAt": 1771611890078
+    "symbol": "Privy",
+    "address": "0xBE716aC6b81a770d21b11622E8C9F0642aCAfb07",
+    "age": 0.91845,
+    "detectedAt": 1771612450107
   },
   {
-    "symbol": "Jellybean",
-    "address": "0x098F94951E90791458bC045596C829B337D01B07",
-    "age": 0.8846333333333334,
-    "detectedAt": 1771611890079
+    "symbol": "PUNCHLIENX",
+    "address": "0x5ba7C9e0Aa35C708f2a761E4aAa04A62554E9B07",
+    "age": 1.1851166666666666,
+    "detectedAt": 1771612450107
   },
   {
-    "symbol": "hi",
-    "address": "0xD8b3990b12d90a71980FF2BFE1330a06a5798B07",
-    "age": 1.0513166666666667,
-    "detectedAt": 1771611890079
+    "symbol": "BWOY",
+    "address": "0xf7623F66F7256fc7E9897731283138a016096b07",
+    "age": 1.3517833333333333,
+    "detectedAt": 1771612450107
   },
   {
-    "symbol": "NOBEE",
-    "address": "0x9312BdBA9d93dA898C3Df36ca5f8Df97C17c0B07",
-    "age": 1.1179833333333333,
-    "detectedAt": 1771611890079
+    "symbol": "POOLFANS",
+    "address": "0x92a44802ABF98A763c10808fd1d3d39bE0D6Fb07",
+    "age": 1.41845,
+    "detectedAt": 1771612450107
   },
   {
-    "symbol": "PEDOX",
-    "address": "0xbC8B382c54137A1d9Ab3AD16DE0d6f5a069e2b07",
-    "age": 1.2179833333333334,
-    "detectedAt": 1771611890079
+    "symbol": "CLAYTONX",
+    "address": "0xa23C6d4bED96C67f0BA7FDB0ea708d83a1A4eB07",
+    "age": 1.4517833333333334,
+    "detectedAt": 1771612450107
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0x672A6808FB7191d380b5f903942d80fF5072Db07",
-    "age": 1.3179833333333333,
-    "detectedAt": 1771611890079
+    "symbol": "Gymnast🐼",
+    "address": "0xf57A5c3f2fC1Fb260156b21560AB922c7Be46B07",
+    "age": 1.5851166666666667,
+    "detectedAt": 1771612450107
   },
   {
-    "symbol": "ORTHO",
-    "address": "0x13A8E6b6eB51ac06DE7162a251036E0adB8bfB07",
-    "age": 1.3513166666666667,
-    "detectedAt": 1771611890079
+    "symbol": "Privy",
+    "address": "0x414612ebE071B13F034E276d8525756bd1E27B07",
+    "age": 1.6851166666666666,
+    "detectedAt": 1771612450107
   },
   {
-    "symbol": "UNICLAW",
-    "address": "0xcA15A6ED598df6Bd8f3684C688c0fbF73D1eDB07",
-    "age": 1.48465,
-    "detectedAt": 1771611890079
+    "symbol": "ClineBench",
+    "address": "0x48c7A9565a78F7234816b51fDbAE4ba1901ceB07",
+    "age": 1.6851166666666666,
+    "detectedAt": 1771612450107
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x010bD22841c8eDDf3b0880deB7B5fc03B75E9b07",
-    "age": 1.5513166666666667,
-    "detectedAt": 1771611890079
+    "symbol": "ALIEN6",
+    "address": "0x35f3b9aaae4fCa1f684d98470a0A9319DaE86B07",
+    "age": 1.7517833333333332,
+    "detectedAt": 1771612450107
   },
   {
-    "symbol": "TRENCH",
-    "address": "0x6aAeBAB243d668347aaD1e372142a99F30908b07",
-    "age": 1.5513166666666667,
-    "detectedAt": 1771611890079
+    "symbol": "ALIEN6",
+    "address": "0xb391a950Ed2ddcE63D4fBD8D08B08c1C1b55bB07",
+    "age": 1.9517833333333334,
+    "detectedAt": 1771612450107
   },
   {
-    "symbol": "Musk",
-    "address": "0x88c8eA4CBc1e93B8537F7091aa38F3Ec58451B07",
-    "age": 1.58465,
-    "detectedAt": 1771611890079
+    "symbol": "CRS",
+    "address": "0xdfd0aA5ddb23306E2DF73A6fE41C2081027e0b07",
+    "age": 2.1851166666666666,
+    "detectedAt": 1771612450107
   },
   {
-    "symbol": "POKE",
-    "address": "0xF8E0eeEFe1Aa0379708Aa9BB7b78C6Dda8A55b07",
-    "age": 1.7179833333333334,
-    "detectedAt": 1771611890079
+    "symbol": "CYBER",
+    "address": "0x3a4202aca6D5Eefa567e339e14dBb4b207012b07",
+    "age": 2.21845,
+    "detectedAt": 1771612450107
   },
   {
-    "symbol": "AlienM",
-    "address": "0x311E44661E54Fe84ed8ed9B84BC4a9c8C180Eb07",
-    "age": 1.78465,
-    "detectedAt": 1771611890079
+    "symbol": "Gymnast🐼",
+    "address": "0x5aAEbfb84eEccab5111C179e73e01471742e9B07",
+    "age": 2.21845,
+    "detectedAt": 1771612450107
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x863b7bE0e181adf5fD72C02dDb87E32E76999B07",
-    "age": 0.09378333333333333,
-    "detectedAt": 1771611886627
+    "symbol": "PriAi",
+    "address": "0x37aC73759d804765E578dA6E5835A40991c5EB07",
+    "age": 0.2581333333333333,
+    "detectedAt": 1771612446488
   },
   {
-    "symbol": "microchipgnu",
-    "address": "0x1b34956C67EcDD41381d976A02ad7C918e288B07",
-    "age": 0.19378333333333334,
-    "detectedAt": 1771611886627
+    "symbol": "Cobot",
+    "address": "0x05664E748Dd6b3736A8a04FEB540B232dc248B07",
+    "age": 0.29146666666666665,
+    "detectedAt": 1771612446489
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0xCBB1293acF16EF091c10F94F533F3E9751986B07",
-    "age": 0.19378333333333334,
-    "detectedAt": 1771611886628
+    "symbol": "YANG",
+    "address": "0xa3626aF19F6C6c9488e553Aed1C745A935d36B07",
+    "age": 0.4248166666666667,
+    "detectedAt": 1771612446489
   },
   {
-    "symbol": "mrbeast",
-    "address": "0xc60B36a25261587C3E3Ff52a83c960D59c849b07",
-    "age": 0.2938,
-    "detectedAt": 1771611886628
+    "symbol": "ClineBench",
+    "address": "0x3864E75E60356537d525D6A89225Ec8250E57b07",
+    "age": 0.4248166666666667,
+    "detectedAt": 1771612446489
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x88632516000a71f3A6C4b572eBaF5BaDCd06dB07",
-    "age": 0.4604666666666667,
-    "detectedAt": 1771611886628
+    "symbol": "Privy",
+    "address": "0x83E487B471c9Af8D082DD88C77b3a85bf32b4B07",
+    "age": 0.6914833333333333,
+    "detectedAt": 1771612446489
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x83F369a2057Cbe3A8DD8Bca7EE1F5fE42F448b07",
-    "age": 0.7271333333333333,
-    "detectedAt": 1771611886628
+    "symbol": "AGENTINC",
+    "address": "0x549a558c8bDbbc5130b33aB1CCf915d0f7166b07",
+    "age": 0.8248166666666666,
+    "detectedAt": 1771612446489
   },
   {
-    "symbol": "Jellybean",
-    "address": "0x098F94951E90791458bC045596C829B337D01B07",
-    "age": 0.8271333333333334,
-    "detectedAt": 1771611886628
+    "symbol": "Privy",
+    "address": "0xBE716aC6b81a770d21b11622E8C9F0642aCAfb07",
+    "age": 0.85815,
+    "detectedAt": 1771612446489
   },
   {
-    "symbol": "hi",
-    "address": "0xD8b3990b12d90a71980FF2BFE1330a06a5798B07",
-    "age": 0.9938,
-    "detectedAt": 1771611886628
+    "symbol": "PUNCHLIENX",
+    "address": "0x5ba7C9e0Aa35C708f2a761E4aAa04A62554E9B07",
+    "age": 1.1248166666666666,
+    "detectedAt": 1771612446489
   },
   {
-    "symbol": "NOBEE",
-    "address": "0x9312BdBA9d93dA898C3Df36ca5f8Df97C17c0B07",
-    "age": 1.0604666666666667,
-    "detectedAt": 1771611886628
+    "symbol": "BWOY",
+    "address": "0xf7623F66F7256fc7E9897731283138a016096b07",
+    "age": 1.2914833333333333,
+    "detectedAt": 1771612446489
   },
   {
-    "symbol": "PEDOX",
-    "address": "0xbC8B382c54137A1d9Ab3AD16DE0d6f5a069e2b07",
-    "age": 1.1604666666666668,
-    "detectedAt": 1771611886628
+    "symbol": "POOLFANS",
+    "address": "0x92a44802ABF98A763c10808fd1d3d39bE0D6Fb07",
+    "age": 1.35815,
+    "detectedAt": 1771612446490
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0x672A6808FB7191d380b5f903942d80fF5072Db07",
-    "age": 1.2604666666666666,
-    "detectedAt": 1771611886628
+    "symbol": "CLAYTONX",
+    "address": "0xa23C6d4bED96C67f0BA7FDB0ea708d83a1A4eB07",
+    "age": 1.3915,
+    "detectedAt": 1771612446490
   },
   {
-    "symbol": "ORTHO",
-    "address": "0x13A8E6b6eB51ac06DE7162a251036E0adB8bfB07",
-    "age": 1.2938,
-    "detectedAt": 1771611886628
+    "symbol": "Gymnast🐼",
+    "address": "0xf57A5c3f2fC1Fb260156b21560AB922c7Be46B07",
+    "age": 1.5248333333333333,
+    "detectedAt": 1771612446490
   },
   {
-    "symbol": "UNICLAW",
-    "address": "0xcA15A6ED598df6Bd8f3684C688c0fbF73D1eDB07",
-    "age": 1.4271333333333334,
-    "detectedAt": 1771611886628
+    "symbol": "Privy",
+    "address": "0x414612ebE071B13F034E276d8525756bd1E27B07",
+    "age": 1.6248333333333334,
+    "detectedAt": 1771612446490
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x010bD22841c8eDDf3b0880deB7B5fc03B75E9b07",
-    "age": 1.4938,
-    "detectedAt": 1771611886628
+    "symbol": "ClineBench",
+    "address": "0x48c7A9565a78F7234816b51fDbAE4ba1901ceB07",
+    "age": 1.6248333333333334,
+    "detectedAt": 1771612446490
   },
   {
-    "symbol": "TRENCH",
-    "address": "0x6aAeBAB243d668347aaD1e372142a99F30908b07",
-    "age": 1.4938,
-    "detectedAt": 1771611886628
+    "symbol": "ALIEN6",
+    "address": "0x35f3b9aaae4fCa1f684d98470a0A9319DaE86B07",
+    "age": 1.6915,
+    "detectedAt": 1771612446490
   },
   {
-    "symbol": "Musk",
-    "address": "0x88c8eA4CBc1e93B8537F7091aa38F3Ec58451B07",
-    "age": 1.5271333333333332,
-    "detectedAt": 1771611886628
+    "symbol": "ALIEN6",
+    "address": "0xb391a950Ed2ddcE63D4fBD8D08B08c1C1b55bB07",
+    "age": 1.8915,
+    "detectedAt": 1771612446490
   },
   {
-    "symbol": "POKE",
-    "address": "0xF8E0eeEFe1Aa0379708Aa9BB7b78C6Dda8A55b07",
-    "age": 1.6604666666666668,
-    "detectedAt": 1771611886628
+    "symbol": "CRS",
+    "address": "0xdfd0aA5ddb23306E2DF73A6fE41C2081027e0b07",
+    "age": 2.124833333333333,
+    "detectedAt": 1771612446490
   },
   {
-    "symbol": "AlienM",
-    "address": "0x311E44661E54Fe84ed8ed9B84BC4a9c8C180Eb07",
-    "age": 1.7271333333333334,
-    "detectedAt": 1771611886628
+    "symbol": "CYBER",
+    "address": "0x3a4202aca6D5Eefa567e339e14dBb4b207012b07",
+    "age": 2.158166666666667,
+    "detectedAt": 1771612446490
   },
   {
-    "symbol": "Ray",
-    "address": "0x940e7f4c342E1c4Cc4a53b902184ba740e057B07",
-    "age": 1.7938,
-    "detectedAt": 1771611886628
+    "symbol": "Gymnast🐼",
+    "address": "0x5aAEbfb84eEccab5111C179e73e01471742e9B07",
+    "age": 2.158166666666667,
+    "detectedAt": 1771612446490
   },
   {
-    "symbol": "opnagent",
-    "address": "0xbE23faB8d15714b5C386e547B362BB684F3DCB07",
-    "age": 1.8938,
-    "detectedAt": 1771611886628
+    "symbol": "CLAYTONX",
+    "address": "0xde7117c22FAE7D5ec6610327a177CbCf492493f4",
+    "age": 2.1915,
+    "detectedAt": 1771612446490
   },
   {
-    "symbol": "microchipgnu",
-    "address": "0x1b34956C67EcDD41381d976A02ad7C918e288B07",
-    "age": 0.13708333333333333,
-    "detectedAt": 1771611883225
+    "symbol": "PriAi",
+    "address": "0x37aC73759d804765E578dA6E5835A40991c5EB07",
+    "age": 0.1957,
+    "detectedAt": 1771612442745
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0xCBB1293acF16EF091c10F94F533F3E9751986B07",
-    "age": 0.13708333333333333,
-    "detectedAt": 1771611883225
+    "symbol": "Cobot",
+    "address": "0x05664E748Dd6b3736A8a04FEB540B232dc248B07",
+    "age": 0.22908333333333333,
+    "detectedAt": 1771612442745
   },
   {
-    "symbol": "mrbeast",
-    "address": "0xc60B36a25261587C3E3Ff52a83c960D59c849b07",
-    "age": 0.23708333333333334,
-    "detectedAt": 1771611883226
+    "symbol": "YANG",
+    "address": "0xa3626aF19F6C6c9488e553Aed1C745A935d36B07",
+    "age": 0.36241666666666666,
+    "detectedAt": 1771612442745
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x88632516000a71f3A6C4b572eBaF5BaDCd06dB07",
-    "age": 0.40376666666666666,
-    "detectedAt": 1771611883226
+    "symbol": "ClineBench",
+    "address": "0x3864E75E60356537d525D6A89225Ec8250E57b07",
+    "age": 0.36241666666666666,
+    "detectedAt": 1771612442745
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x83F369a2057Cbe3A8DD8Bca7EE1F5fE42F448b07",
-    "age": 0.6704333333333333,
-    "detectedAt": 1771611883226
+    "symbol": "Privy",
+    "address": "0x83E487B471c9Af8D082DD88C77b3a85bf32b4B07",
+    "age": 0.6290833333333333,
+    "detectedAt": 1771612442745
   },
   {
-    "symbol": "Jellybean",
-    "address": "0x098F94951E90791458bC045596C829B337D01B07",
-    "age": 0.7704333333333333,
-    "detectedAt": 1771611883226
+    "symbol": "AGENTINC",
+    "address": "0x549a558c8bDbbc5130b33aB1CCf915d0f7166b07",
+    "age": 0.7624166666666666,
+    "detectedAt": 1771612442745
   },
   {
-    "symbol": "hi",
-    "address": "0xD8b3990b12d90a71980FF2BFE1330a06a5798B07",
-    "age": 0.9371,
-    "detectedAt": 1771611883226
+    "symbol": "Privy",
+    "address": "0xBE716aC6b81a770d21b11622E8C9F0642aCAfb07",
+    "age": 0.79575,
+    "detectedAt": 1771612442745
   },
   {
-    "symbol": "NOBEE",
-    "address": "0x9312BdBA9d93dA898C3Df36ca5f8Df97C17c0B07",
-    "age": 1.0037666666666667,
-    "detectedAt": 1771611883226
+    "symbol": "PUNCHLIENX",
+    "address": "0x5ba7C9e0Aa35C708f2a761E4aAa04A62554E9B07",
+    "age": 1.0624166666666666,
+    "detectedAt": 1771612442745
   },
   {
-    "symbol": "PEDOX",
-    "address": "0xbC8B382c54137A1d9Ab3AD16DE0d6f5a069e2b07",
-    "age": 1.1037666666666666,
-    "detectedAt": 1771611883226
+    "symbol": "BWOY",
+    "address": "0xf7623F66F7256fc7E9897731283138a016096b07",
+    "age": 1.2290833333333333,
+    "detectedAt": 1771612442745
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0x672A6808FB7191d380b5f903942d80fF5072Db07",
-    "age": 1.2037666666666667,
-    "detectedAt": 1771611883226
+    "symbol": "POOLFANS",
+    "address": "0x92a44802ABF98A763c10808fd1d3d39bE0D6Fb07",
+    "age": 1.29575,
+    "detectedAt": 1771612442746
   },
   {
-    "symbol": "ORTHO",
-    "address": "0x13A8E6b6eB51ac06DE7162a251036E0adB8bfB07",
-    "age": 1.2371,
-    "detectedAt": 1771611883226
+    "symbol": "CLAYTONX",
+    "address": "0xa23C6d4bED96C67f0BA7FDB0ea708d83a1A4eB07",
+    "age": 1.3291,
+    "detectedAt": 1771612442746
   },
   {
-    "symbol": "UNICLAW",
-    "address": "0xcA15A6ED598df6Bd8f3684C688c0fbF73D1eDB07",
-    "age": 1.3704333333333334,
-    "detectedAt": 1771611883226
+    "symbol": "Gymnast🐼",
+    "address": "0xf57A5c3f2fC1Fb260156b21560AB922c7Be46B07",
+    "age": 1.4624333333333333,
+    "detectedAt": 1771612442746
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x010bD22841c8eDDf3b0880deB7B5fc03B75E9b07",
-    "age": 1.4371,
-    "detectedAt": 1771611883226
+    "symbol": "Privy",
+    "address": "0x414612ebE071B13F034E276d8525756bd1E27B07",
+    "age": 1.5624333333333333,
+    "detectedAt": 1771612442746
   },
   {
-    "symbol": "TRENCH",
-    "address": "0x6aAeBAB243d668347aaD1e372142a99F30908b07",
-    "age": 1.4371,
-    "detectedAt": 1771611883226
+    "symbol": "ClineBench",
+    "address": "0x48c7A9565a78F7234816b51fDbAE4ba1901ceB07",
+    "age": 1.5624333333333333,
+    "detectedAt": 1771612442746
   },
   {
-    "symbol": "Musk",
-    "address": "0x88c8eA4CBc1e93B8537F7091aa38F3Ec58451B07",
-    "age": 1.4704333333333333,
-    "detectedAt": 1771611883226
+    "symbol": "ALIEN6",
+    "address": "0x35f3b9aaae4fCa1f684d98470a0A9319DaE86B07",
+    "age": 1.6291,
+    "detectedAt": 1771612442746
   },
   {
-    "symbol": "POKE",
-    "address": "0xF8E0eeEFe1Aa0379708Aa9BB7b78C6Dda8A55b07",
-    "age": 1.6037666666666666,
-    "detectedAt": 1771611883226
+    "symbol": "ALIEN6",
+    "address": "0xb391a950Ed2ddcE63D4fBD8D08B08c1C1b55bB07",
+    "age": 1.8291,
+    "detectedAt": 1771612442746
   },
   {
-    "symbol": "AlienM",
-    "address": "0x311E44661E54Fe84ed8ed9B84BC4a9c8C180Eb07",
-    "age": 1.6704333333333334,
-    "detectedAt": 1771611883226
+    "symbol": "CRS",
+    "address": "0xdfd0aA5ddb23306E2DF73A6fE41C2081027e0b07",
+    "age": 2.0624333333333333,
+    "detectedAt": 1771612442746
   },
   {
-    "symbol": "Ray",
-    "address": "0x940e7f4c342E1c4Cc4a53b902184ba740e057B07",
-    "age": 1.7371,
-    "detectedAt": 1771611883226
+    "symbol": "CYBER",
+    "address": "0x3a4202aca6D5Eefa567e339e14dBb4b207012b07",
+    "age": 2.0957666666666666,
+    "detectedAt": 1771612442746
   },
   {
-    "symbol": "opnagent",
-    "address": "0xbE23faB8d15714b5C386e547B362BB684F3DCB07",
-    "age": 1.8371,
-    "detectedAt": 1771611883226
+    "symbol": "Gymnast🐼",
+    "address": "0x5aAEbfb84eEccab5111C179e73e01471742e9B07",
+    "age": 2.0957666666666666,
+    "detectedAt": 1771612442746
   },
   {
-    "symbol": "BTT",
-    "address": "0x8D76539Ce3b941cf9D06940e5f4d376F2E552b07",
-    "age": 1.9704333333333333,
-    "detectedAt": 1771611883226
+    "symbol": "CLAYTONX",
+    "address": "0xde7117c22FAE7D5ec6610327a177CbCf492493f4",
+    "age": 2.1291,
+    "detectedAt": 1771612442746
   },
   {
-    "symbol": "microchipgnu",
-    "address": "0x1b34956C67EcDD41381d976A02ad7C918e288B07",
-    "age": 0.08041666666666666,
-    "detectedAt": 1771611879825
+    "symbol": "PriAi",
+    "address": "0x37aC73759d804765E578dA6E5835A40991c5EB07",
+    "age": 0.12735,
+    "detectedAt": 1771612438641
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0xCBB1293acF16EF091c10F94F533F3E9751986B07",
-    "age": 0.08041666666666666,
-    "detectedAt": 1771611879825
+    "symbol": "Cobot",
+    "address": "0x05664E748Dd6b3736A8a04FEB540B232dc248B07",
+    "age": 0.16068333333333334,
+    "detectedAt": 1771612438641
   },
   {
-    "symbol": "mrbeast",
-    "address": "0xc60B36a25261587C3E3Ff52a83c960D59c849b07",
-    "age": 0.18041666666666667,
-    "detectedAt": 1771611879825
+    "symbol": "YANG",
+    "address": "0xa3626aF19F6C6c9488e553Aed1C745A935d36B07",
+    "age": 0.29401666666666665,
+    "detectedAt": 1771612438642
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x88632516000a71f3A6C4b572eBaF5BaDCd06dB07",
-    "age": 0.34708333333333335,
-    "detectedAt": 1771611879825
+    "symbol": "ClineBench",
+    "address": "0x3864E75E60356537d525D6A89225Ec8250E57b07",
+    "age": 0.2940333333333333,
+    "detectedAt": 1771612438642
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x83F369a2057Cbe3A8DD8Bca7EE1F5fE42F448b07",
-    "age": 0.61375,
-    "detectedAt": 1771611879826
+    "symbol": "Privy",
+    "address": "0x83E487B471c9Af8D082DD88C77b3a85bf32b4B07",
+    "age": 0.5607,
+    "detectedAt": 1771612438642
   },
   {
-    "symbol": "Jellybean",
-    "address": "0x098F94951E90791458bC045596C829B337D01B07",
-    "age": 0.7137666666666667,
-    "detectedAt": 1771611879826
+    "symbol": "AGENTINC",
+    "address": "0x549a558c8bDbbc5130b33aB1CCf915d0f7166b07",
+    "age": 0.6940333333333333,
+    "detectedAt": 1771612438642
   },
   {
-    "symbol": "hi",
-    "address": "0xD8b3990b12d90a71980FF2BFE1330a06a5798B07",
-    "age": 0.8804333333333333,
-    "detectedAt": 1771611879826
+    "symbol": "Privy",
+    "address": "0xBE716aC6b81a770d21b11622E8C9F0642aCAfb07",
+    "age": 0.7273666666666667,
+    "detectedAt": 1771612438642
   },
   {
-    "symbol": "NOBEE",
-    "address": "0x9312BdBA9d93dA898C3Df36ca5f8Df97C17c0B07",
-    "age": 0.9471,
-    "detectedAt": 1771611879826
+    "symbol": "PUNCHLIENX",
+    "address": "0x5ba7C9e0Aa35C708f2a761E4aAa04A62554E9B07",
+    "age": 0.9940333333333333,
+    "detectedAt": 1771612438642
   },
   {
-    "symbol": "PEDOX",
-    "address": "0xbC8B382c54137A1d9Ab3AD16DE0d6f5a069e2b07",
-    "age": 1.0471,
-    "detectedAt": 1771611879826
+    "symbol": "BWOY",
+    "address": "0xf7623F66F7256fc7E9897731283138a016096b07",
+    "age": 1.1607,
+    "detectedAt": 1771612438642
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0x672A6808FB7191d380b5f903942d80fF5072Db07",
-    "age": 1.1471,
-    "detectedAt": 1771611879826
+    "symbol": "POOLFANS",
+    "address": "0x92a44802ABF98A763c10808fd1d3d39bE0D6Fb07",
+    "age": 1.2273666666666667,
+    "detectedAt": 1771612438642
   },
   {
-    "symbol": "ORTHO",
-    "address": "0x13A8E6b6eB51ac06DE7162a251036E0adB8bfB07",
-    "age": 1.1804333333333332,
-    "detectedAt": 1771611879826
+    "symbol": "CLAYTONX",
+    "address": "0xa23C6d4bED96C67f0BA7FDB0ea708d83a1A4eB07",
+    "age": 1.2607,
+    "detectedAt": 1771612438642
   },
   {
-    "symbol": "UNICLAW",
-    "address": "0xcA15A6ED598df6Bd8f3684C688c0fbF73D1eDB07",
-    "age": 1.3137666666666667,
-    "detectedAt": 1771611879826
+    "symbol": "Gymnast🐼",
+    "address": "0xf57A5c3f2fC1Fb260156b21560AB922c7Be46B07",
+    "age": 1.3940333333333332,
+    "detectedAt": 1771612438642
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x010bD22841c8eDDf3b0880deB7B5fc03B75E9b07",
-    "age": 1.3804333333333334,
-    "detectedAt": 1771611879826
+    "symbol": "Privy",
+    "address": "0x414612ebE071B13F034E276d8525756bd1E27B07",
+    "age": 1.4940333333333333,
+    "detectedAt": 1771612438642
   },
   {
-    "symbol": "TRENCH",
-    "address": "0x6aAeBAB243d668347aaD1e372142a99F30908b07",
-    "age": 1.3804333333333334,
-    "detectedAt": 1771611879826
+    "symbol": "ClineBench",
+    "address": "0x48c7A9565a78F7234816b51fDbAE4ba1901ceB07",
+    "age": 1.4940333333333333,
+    "detectedAt": 1771612438642
   },
   {
-    "symbol": "Musk",
-    "address": "0x88c8eA4CBc1e93B8537F7091aa38F3Ec58451B07",
-    "age": 1.4137666666666666,
-    "detectedAt": 1771611879826
+    "symbol": "ALIEN6",
+    "address": "0x35f3b9aaae4fCa1f684d98470a0A9319DaE86B07",
+    "age": 1.5607,
+    "detectedAt": 1771612438642
   },
   {
-    "symbol": "POKE",
-    "address": "0xF8E0eeEFe1Aa0379708Aa9BB7b78C6Dda8A55b07",
-    "age": 1.5471,
-    "detectedAt": 1771611879826
+    "symbol": "ALIEN6",
+    "address": "0xb391a950Ed2ddcE63D4fBD8D08B08c1C1b55bB07",
+    "age": 1.7607,
+    "detectedAt": 1771612438642
   },
   {
-    "symbol": "AlienM",
-    "address": "0x311E44661E54Fe84ed8ed9B84BC4a9c8C180Eb07",
-    "age": 1.6137666666666666,
-    "detectedAt": 1771611879826
+    "symbol": "CRS",
+    "address": "0xdfd0aA5ddb23306E2DF73A6fE41C2081027e0b07",
+    "age": 1.9940333333333333,
+    "detectedAt": 1771612438642
   },
   {
-    "symbol": "Ray",
-    "address": "0x940e7f4c342E1c4Cc4a53b902184ba740e057B07",
-    "age": 1.6804333333333332,
-    "detectedAt": 1771611879826
+    "symbol": "CYBER",
+    "address": "0x3a4202aca6D5Eefa567e339e14dBb4b207012b07",
+    "age": 2.0273666666666665,
+    "detectedAt": 1771612438642
   },
   {
-    "symbol": "opnagent",
-    "address": "0xbE23faB8d15714b5C386e547B362BB684F3DCB07",
-    "age": 1.7804333333333333,
-    "detectedAt": 1771611879826
+    "symbol": "Gymnast🐼",
+    "address": "0x5aAEbfb84eEccab5111C179e73e01471742e9B07",
+    "age": 2.0273666666666665,
+    "detectedAt": 1771612438642
   },
   {
-    "symbol": "BTT",
-    "address": "0x8D76539Ce3b941cf9D06940e5f4d376F2E552b07",
-    "age": 1.9137666666666666,
-    "detectedAt": 1771611879826
+    "symbol": "CLAYTONX",
+    "address": "0xde7117c22FAE7D5ec6610327a177CbCf492493f4",
+    "age": 2.0607,
+    "detectedAt": 1771612438642
   },
   {
-    "symbol": "mrbeast",
-    "address": "0xc60B36a25261587C3E3Ff52a83c960D59c849b07",
-    "age": 0.12396666666666667,
-    "detectedAt": 1771611876438
+    "symbol": "Cobot",
+    "address": "0x05664E748Dd6b3736A8a04FEB540B232dc248B07",
+    "age": 0.10136666666666666,
+    "detectedAt": 1771612435082
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x88632516000a71f3A6C4b572eBaF5BaDCd06dB07",
-    "age": 0.29063333333333335,
-    "detectedAt": 1771611876438
+    "symbol": "YANG",
+    "address": "0xa3626aF19F6C6c9488e553Aed1C745A935d36B07",
+    "age": 0.2347,
+    "detectedAt": 1771612435082
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x83F369a2057Cbe3A8DD8Bca7EE1F5fE42F448b07",
-    "age": 0.5573,
-    "detectedAt": 1771611876438
+    "symbol": "ClineBench",
+    "address": "0x3864E75E60356537d525D6A89225Ec8250E57b07",
+    "age": 0.2347,
+    "detectedAt": 1771612435082
   },
   {
-    "symbol": "Jellybean",
-    "address": "0x098F94951E90791458bC045596C829B337D01B07",
-    "age": 0.6573,
-    "detectedAt": 1771611876439
+    "symbol": "Privy",
+    "address": "0x83E487B471c9Af8D082DD88C77b3a85bf32b4B07",
+    "age": 0.5013666666666666,
+    "detectedAt": 1771612435082
   },
   {
-    "symbol": "hi",
-    "address": "0xD8b3990b12d90a71980FF2BFE1330a06a5798B07",
-    "age": 0.8239833333333333,
-    "detectedAt": 1771611876439
+    "symbol": "AGENTINC",
+    "address": "0x549a558c8bDbbc5130b33aB1CCf915d0f7166b07",
+    "age": 0.6347,
+    "detectedAt": 1771612435082
   },
   {
-    "symbol": "NOBEE",
-    "address": "0x9312BdBA9d93dA898C3Df36ca5f8Df97C17c0B07",
-    "age": 0.89065,
-    "detectedAt": 1771611876439
+    "symbol": "Privy",
+    "address": "0xBE716aC6b81a770d21b11622E8C9F0642aCAfb07",
+    "age": 0.6680333333333334,
+    "detectedAt": 1771612435082
   },
   {
-    "symbol": "PEDOX",
-    "address": "0xbC8B382c54137A1d9Ab3AD16DE0d6f5a069e2b07",
-    "age": 0.99065,
-    "detectedAt": 1771611876439
+    "symbol": "PUNCHLIENX",
+    "address": "0x5ba7C9e0Aa35C708f2a761E4aAa04A62554E9B07",
+    "age": 0.9347,
+    "detectedAt": 1771612435082
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0x672A6808FB7191d380b5f903942d80fF5072Db07",
-    "age": 1.09065,
-    "detectedAt": 1771611876439
+    "symbol": "BWOY",
+    "address": "0xf7623F66F7256fc7E9897731283138a016096b07",
+    "age": 1.1013666666666666,
+    "detectedAt": 1771612435082
   },
   {
-    "symbol": "ORTHO",
-    "address": "0x13A8E6b6eB51ac06DE7162a251036E0adB8bfB07",
-    "age": 1.1239833333333333,
-    "detectedAt": 1771611876439
+    "symbol": "POOLFANS",
+    "address": "0x92a44802ABF98A763c10808fd1d3d39bE0D6Fb07",
+    "age": 1.1680333333333333,
+    "detectedAt": 1771612435083
   },
   {
-    "symbol": "UNICLAW",
-    "address": "0xcA15A6ED598df6Bd8f3684C688c0fbF73D1eDB07",
-    "age": 1.2573166666666666,
-    "detectedAt": 1771611876439
+    "symbol": "CLAYTONX",
+    "address": "0xa23C6d4bED96C67f0BA7FDB0ea708d83a1A4eB07",
+    "age": 1.2013833333333332,
+    "detectedAt": 1771612435083
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x010bD22841c8eDDf3b0880deB7B5fc03B75E9b07",
-    "age": 1.3239833333333333,
-    "detectedAt": 1771611876439
+    "symbol": "Gymnast🐼",
+    "address": "0xf57A5c3f2fC1Fb260156b21560AB922c7Be46B07",
+    "age": 1.3347166666666668,
+    "detectedAt": 1771612435083
   },
   {
-    "symbol": "TRENCH",
-    "address": "0x6aAeBAB243d668347aaD1e372142a99F30908b07",
-    "age": 1.3239833333333333,
-    "detectedAt": 1771611876439
+    "symbol": "Privy",
+    "address": "0x414612ebE071B13F034E276d8525756bd1E27B07",
+    "age": 1.4347166666666666,
+    "detectedAt": 1771612435083
   },
   {
-    "symbol": "Musk",
-    "address": "0x88c8eA4CBc1e93B8537F7091aa38F3Ec58451B07",
-    "age": 1.3573166666666667,
-    "detectedAt": 1771611876439
+    "symbol": "ClineBench",
+    "address": "0x48c7A9565a78F7234816b51fDbAE4ba1901ceB07",
+    "age": 1.4347166666666666,
+    "detectedAt": 1771612435083
   },
   {
-    "symbol": "POKE",
-    "address": "0xF8E0eeEFe1Aa0379708Aa9BB7b78C6Dda8A55b07",
-    "age": 1.49065,
-    "detectedAt": 1771611876439
+    "symbol": "ALIEN6",
+    "address": "0x35f3b9aaae4fCa1f684d98470a0A9319DaE86B07",
+    "age": 1.5013833333333333,
+    "detectedAt": 1771612435083
   },
   {
-    "symbol": "AlienM",
-    "address": "0x311E44661E54Fe84ed8ed9B84BC4a9c8C180Eb07",
-    "age": 1.5573166666666667,
-    "detectedAt": 1771611876439
+    "symbol": "ALIEN6",
+    "address": "0xb391a950Ed2ddcE63D4fBD8D08B08c1C1b55bB07",
+    "age": 1.7013833333333332,
+    "detectedAt": 1771612435083
   },
   {
-    "symbol": "Ray",
-    "address": "0x940e7f4c342E1c4Cc4a53b902184ba740e057B07",
-    "age": 1.6239833333333333,
-    "detectedAt": 1771611876439
+    "symbol": "CRS",
+    "address": "0xdfd0aA5ddb23306E2DF73A6fE41C2081027e0b07",
+    "age": 1.9347166666666666,
+    "detectedAt": 1771612435083
   },
   {
-    "symbol": "opnagent",
-    "address": "0xbE23faB8d15714b5C386e547B362BB684F3DCB07",
-    "age": 1.7239833333333334,
-    "detectedAt": 1771611876439
+    "symbol": "CYBER",
+    "address": "0x3a4202aca6D5Eefa567e339e14dBb4b207012b07",
+    "age": 1.96805,
+    "detectedAt": 1771612435083
   },
   {
-    "symbol": "BTT",
-    "address": "0x8D76539Ce3b941cf9D06940e5f4d376F2E552b07",
-    "age": 1.8573166666666667,
-    "detectedAt": 1771611876439
+    "symbol": "Gymnast🐼",
+    "address": "0x5aAEbfb84eEccab5111C179e73e01471742e9B07",
+    "age": 1.96805,
+    "detectedAt": 1771612435083
   },
   {
-    "symbol": "opnagent",
-    "address": "0xC40E3e3fbf0E1B542142b9E458da0F5b32A0a836",
-    "age": 1.89065,
-    "detectedAt": 1771611876439
+    "symbol": "CLAYTONX",
+    "address": "0xde7117c22FAE7D5ec6610327a177CbCf492493f4",
+    "age": 2.0013833333333335,
+    "detectedAt": 1771612435083
   },
   {
-    "symbol": "AlienM",
-    "address": "0x3E68F016185A6A2CaFa0B15443386Fe22b23Cb07",
-    "age": 1.9239833333333334,
-    "detectedAt": 1771611876439
+    "symbol": "Psyop",
+    "address": "0x9A21f631D3E384C4a5702610033a75DF4ce49B07",
+    "age": 2.0347666666666666,
+    "detectedAt": 1771612435086
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x88632516000a71f3A6C4b572eBaF5BaDCd06dB07",
-    "age": 0.23338333333333333,
-    "detectedAt": 1771611873003
+    "symbol": "YANG",
+    "address": "0xa3626aF19F6C6c9488e553Aed1C745A935d36B07",
+    "age": 0.1713,
+    "detectedAt": 1771612431279
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x83F369a2057Cbe3A8DD8Bca7EE1F5fE42F448b07",
-    "age": 0.50005,
-    "detectedAt": 1771611873003
+    "symbol": "ClineBench",
+    "address": "0x3864E75E60356537d525D6A89225Ec8250E57b07",
+    "age": 0.17131666666666667,
+    "detectedAt": 1771612431279
   },
   {
-    "symbol": "Jellybean",
-    "address": "0x098F94951E90791458bC045596C829B337D01B07",
-    "age": 0.60005,
-    "detectedAt": 1771611873003
+    "symbol": "Privy",
+    "address": "0x83E487B471c9Af8D082DD88C77b3a85bf32b4B07",
+    "age": 0.43798333333333334,
+    "detectedAt": 1771612431279
   },
   {
-    "symbol": "hi",
-    "address": "0xD8b3990b12d90a71980FF2BFE1330a06a5798B07",
-    "age": 0.7667166666666667,
-    "detectedAt": 1771611873003
+    "symbol": "AGENTINC",
+    "address": "0x549a558c8bDbbc5130b33aB1CCf915d0f7166b07",
+    "age": 0.5713166666666667,
+    "detectedAt": 1771612431279
   },
   {
-    "symbol": "NOBEE",
-    "address": "0x9312BdBA9d93dA898C3Df36ca5f8Df97C17c0B07",
-    "age": 0.8333833333333334,
-    "detectedAt": 1771611873004
+    "symbol": "Privy",
+    "address": "0xBE716aC6b81a770d21b11622E8C9F0642aCAfb07",
+    "age": 0.60465,
+    "detectedAt": 1771612431279
   },
   {
-    "symbol": "PEDOX",
-    "address": "0xbC8B382c54137A1d9Ab3AD16DE0d6f5a069e2b07",
-    "age": 0.9334,
-    "detectedAt": 1771611873004
+    "symbol": "PUNCHLIENX",
+    "address": "0x5ba7C9e0Aa35C708f2a761E4aAa04A62554E9B07",
+    "age": 0.8713166666666666,
+    "detectedAt": 1771612431279
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0x672A6808FB7191d380b5f903942d80fF5072Db07",
-    "age": 1.0334,
-    "detectedAt": 1771611873004
+    "symbol": "BWOY",
+    "address": "0xf7623F66F7256fc7E9897731283138a016096b07",
+    "age": 1.0379833333333333,
+    "detectedAt": 1771612431282
   },
   {
-    "symbol": "ORTHO",
-    "address": "0x13A8E6b6eB51ac06DE7162a251036E0adB8bfB07",
-    "age": 1.0667333333333333,
-    "detectedAt": 1771611873004
+    "symbol": "POOLFANS",
+    "address": "0x92a44802ABF98A763c10808fd1d3d39bE0D6Fb07",
+    "age": 1.1047,
+    "detectedAt": 1771612431282
   },
   {
-    "symbol": "UNICLAW",
-    "address": "0xcA15A6ED598df6Bd8f3684C688c0fbF73D1eDB07",
-    "age": 1.2000666666666666,
-    "detectedAt": 1771611873004
+    "symbol": "CLAYTONX",
+    "address": "0xa23C6d4bED96C67f0BA7FDB0ea708d83a1A4eB07",
+    "age": 1.1380333333333332,
+    "detectedAt": 1771612431283
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x010bD22841c8eDDf3b0880deB7B5fc03B75E9b07",
-    "age": 1.2667333333333333,
-    "detectedAt": 1771611873004
+    "symbol": "Gymnast🐼",
+    "address": "0xf57A5c3f2fC1Fb260156b21560AB922c7Be46B07",
+    "age": 1.2713833333333333,
+    "detectedAt": 1771612431283
   },
   {
-    "symbol": "TRENCH",
-    "address": "0x6aAeBAB243d668347aaD1e372142a99F30908b07",
-    "age": 1.2667333333333333,
-    "detectedAt": 1771611873004
+    "symbol": "Privy",
+    "address": "0x414612ebE071B13F034E276d8525756bd1E27B07",
+    "age": 1.3713833333333334,
+    "detectedAt": 1771612431283
   },
   {
-    "symbol": "Musk",
-    "address": "0x88c8eA4CBc1e93B8537F7091aa38F3Ec58451B07",
-    "age": 1.3000666666666667,
-    "detectedAt": 1771611873004
+    "symbol": "ClineBench",
+    "address": "0x48c7A9565a78F7234816b51fDbAE4ba1901ceB07",
+    "age": 1.3713833333333334,
+    "detectedAt": 1771612431283
   },
   {
-    "symbol": "POKE",
-    "address": "0xF8E0eeEFe1Aa0379708Aa9BB7b78C6Dda8A55b07",
-    "age": 1.4334,
-    "detectedAt": 1771611873004
+    "symbol": "ALIEN6",
+    "address": "0x35f3b9aaae4fCa1f684d98470a0A9319DaE86B07",
+    "age": 1.43805,
+    "detectedAt": 1771612431283
   },
   {
-    "symbol": "AlienM",
-    "address": "0x311E44661E54Fe84ed8ed9B84BC4a9c8C180Eb07",
-    "age": 1.5000666666666667,
-    "detectedAt": 1771611873004
+    "symbol": "ALIEN6",
+    "address": "0xb391a950Ed2ddcE63D4fBD8D08B08c1C1b55bB07",
+    "age": 1.63805,
+    "detectedAt": 1771612431283
   },
   {
-    "symbol": "Ray",
-    "address": "0x940e7f4c342E1c4Cc4a53b902184ba740e057B07",
-    "age": 1.5667333333333333,
-    "detectedAt": 1771611873004
+    "symbol": "CRS",
+    "address": "0xdfd0aA5ddb23306E2DF73A6fE41C2081027e0b07",
+    "age": 1.8713833333333334,
+    "detectedAt": 1771612431283
   },
   {
-    "symbol": "opnagent",
-    "address": "0xbE23faB8d15714b5C386e547B362BB684F3DCB07",
-    "age": 1.6667333333333334,
-    "detectedAt": 1771611873004
+    "symbol": "CYBER",
+    "address": "0x3a4202aca6D5Eefa567e339e14dBb4b207012b07",
+    "age": 1.9047166666666666,
+    "detectedAt": 1771612431283
   },
   {
-    "symbol": "BTT",
-    "address": "0x8D76539Ce3b941cf9D06940e5f4d376F2E552b07",
-    "age": 1.8000666666666667,
-    "detectedAt": 1771611873004
+    "symbol": "Gymnast🐼",
+    "address": "0x5aAEbfb84eEccab5111C179e73e01471742e9B07",
+    "age": 1.9047166666666666,
+    "detectedAt": 1771612431283
   },
   {
-    "symbol": "opnagent",
-    "address": "0xC40E3e3fbf0E1B542142b9E458da0F5b32A0a836",
-    "age": 1.8334,
-    "detectedAt": 1771611873004
+    "symbol": "CLAYTONX",
+    "address": "0xde7117c22FAE7D5ec6610327a177CbCf492493f4",
+    "age": 1.93805,
+    "detectedAt": 1771612431283
   },
   {
-    "symbol": "AlienM",
-    "address": "0x3E68F016185A6A2CaFa0B15443386Fe22b23Cb07",
-    "age": 1.8667333333333334,
-    "detectedAt": 1771611873004
+    "symbol": "Psyop",
+    "address": "0x9A21f631D3E384C4a5702610033a75DF4ce49B07",
+    "age": 1.9713833333333333,
+    "detectedAt": 1771612431283
   },
   {
-    "symbol": "CLAUNCH",
-    "address": "0xBFb61Aa21a0ff136f2aE75fba90ABf4153595b07",
-    "age": 1.9667333333333332,
-    "detectedAt": 1771611873004
+    "symbol": "Microchip",
+    "address": "0xba3b0BF54EE12cCfE4492F88a680cfcF46DEab07",
+    "age": 2.1047166666666666,
+    "detectedAt": 1771612431283
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x88632516000a71f3A6C4b572eBaF5BaDCd06dB07",
-    "age": 0.17261666666666667,
-    "detectedAt": 1771611869357
+    "symbol": "YANG",
+    "address": "0xa3626aF19F6C6c9488e553Aed1C745A935d36B07",
+    "age": 0.11043333333333333,
+    "detectedAt": 1771612427627
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x83F369a2057Cbe3A8DD8Bca7EE1F5fE42F448b07",
-    "age": 0.43928333333333336,
-    "detectedAt": 1771611869357
+    "symbol": "ClineBench",
+    "address": "0x3864E75E60356537d525D6A89225Ec8250E57b07",
+    "age": 0.11045,
+    "detectedAt": 1771612427627
   },
   {
-    "symbol": "Jellybean",
-    "address": "0x098F94951E90791458bC045596C829B337D01B07",
-    "age": 0.5392833333333333,
-    "detectedAt": 1771611869358
+    "symbol": "Privy",
+    "address": "0x83E487B471c9Af8D082DD88C77b3a85bf32b4B07",
+    "age": 0.37711666666666666,
+    "detectedAt": 1771612427627
   },
   {
-    "symbol": "hi",
-    "address": "0xD8b3990b12d90a71980FF2BFE1330a06a5798B07",
-    "age": 0.7059666666666666,
-    "detectedAt": 1771611869358
+    "symbol": "AGENTINC",
+    "address": "0x549a558c8bDbbc5130b33aB1CCf915d0f7166b07",
+    "age": 0.51045,
+    "detectedAt": 1771612427628
   },
   {
-    "symbol": "NOBEE",
-    "address": "0x9312BdBA9d93dA898C3Df36ca5f8Df97C17c0B07",
-    "age": 0.7726333333333333,
-    "detectedAt": 1771611869358
+    "symbol": "Privy",
+    "address": "0xBE716aC6b81a770d21b11622E8C9F0642aCAfb07",
+    "age": 0.5438,
+    "detectedAt": 1771612427628
   },
   {
-    "symbol": "PEDOX",
-    "address": "0xbC8B382c54137A1d9Ab3AD16DE0d6f5a069e2b07",
-    "age": 0.8726333333333334,
-    "detectedAt": 1771611869358
+    "symbol": "PUNCHLIENX",
+    "address": "0x5ba7C9e0Aa35C708f2a761E4aAa04A62554E9B07",
+    "age": 0.8104666666666667,
+    "detectedAt": 1771612427628
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0x672A6808FB7191d380b5f903942d80fF5072Db07",
-    "age": 0.9726333333333333,
-    "detectedAt": 1771611869358
+    "symbol": "BWOY",
+    "address": "0xf7623F66F7256fc7E9897731283138a016096b07",
+    "age": 0.9771333333333333,
+    "detectedAt": 1771612427628
   },
   {
-    "symbol": "ORTHO",
-    "address": "0x13A8E6b6eB51ac06DE7162a251036E0adB8bfB07",
-    "age": 1.0059666666666667,
-    "detectedAt": 1771611869358
+    "symbol": "POOLFANS",
+    "address": "0x92a44802ABF98A763c10808fd1d3d39bE0D6Fb07",
+    "age": 1.0438,
+    "detectedAt": 1771612427628
   },
   {
-    "symbol": "UNICLAW",
-    "address": "0xcA15A6ED598df6Bd8f3684C688c0fbF73D1eDB07",
-    "age": 1.1393,
-    "detectedAt": 1771611869358
+    "symbol": "CLAYTONX",
+    "address": "0xa23C6d4bED96C67f0BA7FDB0ea708d83a1A4eB07",
+    "age": 1.0771333333333333,
+    "detectedAt": 1771612427628
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x010bD22841c8eDDf3b0880deB7B5fc03B75E9b07",
-    "age": 1.2059666666666666,
-    "detectedAt": 1771611869358
+    "symbol": "Gymnast🐼",
+    "address": "0xf57A5c3f2fC1Fb260156b21560AB922c7Be46B07",
+    "age": 1.2104666666666666,
+    "detectedAt": 1771612427628
   },
   {
-    "symbol": "TRENCH",
-    "address": "0x6aAeBAB243d668347aaD1e372142a99F30908b07",
-    "age": 1.2059666666666666,
-    "detectedAt": 1771611869358
+    "symbol": "Privy",
+    "address": "0x414612ebE071B13F034E276d8525756bd1E27B07",
+    "age": 1.3104666666666667,
+    "detectedAt": 1771612427628
   },
   {
-    "symbol": "Musk",
-    "address": "0x88c8eA4CBc1e93B8537F7091aa38F3Ec58451B07",
-    "age": 1.2393,
-    "detectedAt": 1771611869359
+    "symbol": "ClineBench",
+    "address": "0x48c7A9565a78F7234816b51fDbAE4ba1901ceB07",
+    "age": 1.3104666666666667,
+    "detectedAt": 1771612427628
   },
   {
-    "symbol": "POKE",
-    "address": "0xF8E0eeEFe1Aa0379708Aa9BB7b78C6Dda8A55b07",
-    "age": 1.37265,
-    "detectedAt": 1771611869359
+    "symbol": "ALIEN6",
+    "address": "0x35f3b9aaae4fCa1f684d98470a0A9319DaE86B07",
+    "age": 1.3771333333333333,
+    "detectedAt": 1771612427628
   },
   {
-    "symbol": "AlienM",
-    "address": "0x311E44661E54Fe84ed8ed9B84BC4a9c8C180Eb07",
-    "age": 1.4393166666666666,
-    "detectedAt": 1771611869359
+    "symbol": "ALIEN6",
+    "address": "0xb391a950Ed2ddcE63D4fBD8D08B08c1C1b55bB07",
+    "age": 1.5771333333333333,
+    "detectedAt": 1771612427628
   },
   {
-    "symbol": "Ray",
-    "address": "0x940e7f4c342E1c4Cc4a53b902184ba740e057B07",
-    "age": 1.5059833333333332,
-    "detectedAt": 1771611869359
+    "symbol": "CRS",
+    "address": "0xdfd0aA5ddb23306E2DF73A6fE41C2081027e0b07",
+    "age": 1.8104666666666667,
+    "detectedAt": 1771612427629
   },
   {
-    "symbol": "opnagent",
-    "address": "0xbE23faB8d15714b5C386e547B362BB684F3DCB07",
-    "age": 1.6059833333333333,
-    "detectedAt": 1771611869359
+    "symbol": "CYBER",
+    "address": "0x3a4202aca6D5Eefa567e339e14dBb4b207012b07",
+    "age": 1.8438166666666667,
+    "detectedAt": 1771612427629
   },
   {
-    "symbol": "BTT",
-    "address": "0x8D76539Ce3b941cf9D06940e5f4d376F2E552b07",
-    "age": 1.7393166666666666,
-    "detectedAt": 1771611869359
+    "symbol": "Gymnast🐼",
+    "address": "0x5aAEbfb84eEccab5111C179e73e01471742e9B07",
+    "age": 1.8438166666666667,
+    "detectedAt": 1771612427629
   },
   {
-    "symbol": "opnagent",
-    "address": "0xC40E3e3fbf0E1B542142b9E458da0F5b32A0a836",
-    "age": 1.77265,
-    "detectedAt": 1771611869359
+    "symbol": "CLAYTONX",
+    "address": "0xde7117c22FAE7D5ec6610327a177CbCf492493f4",
+    "age": 1.87715,
+    "detectedAt": 1771612427629
   },
   {
-    "symbol": "AlienM",
-    "address": "0x3E68F016185A6A2CaFa0B15443386Fe22b23Cb07",
-    "age": 1.8059833333333333,
-    "detectedAt": 1771611869359
+    "symbol": "Psyop",
+    "address": "0x9A21f631D3E384C4a5702610033a75DF4ce49B07",
+    "age": 1.9104833333333333,
+    "detectedAt": 1771612427629
   },
   {
-    "symbol": "CLAUNCH",
-    "address": "0xBFb61Aa21a0ff136f2aE75fba90ABf4153595b07",
-    "age": 1.9059833333333334,
-    "detectedAt": 1771611869359
+    "symbol": "Microchip",
+    "address": "0xba3b0BF54EE12cCfE4492F88a680cfcF46DEab07",
+    "age": 2.043816666666667,
+    "detectedAt": 1771612427629
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x88632516000a71f3A6C4b572eBaF5BaDCd06dB07",
-    "age": 0.11208333333333333,
-    "detectedAt": 1771611865725
+    "symbol": "Privy",
+    "address": "0x83E487B471c9Af8D082DD88C77b3a85bf32b4B07",
+    "age": 0.31503333333333333,
+    "detectedAt": 1771612423902
   },
   {
-    "symbol": "SANDLÖPAR",
-    "address": "0x83F369a2057Cbe3A8DD8Bca7EE1F5fE42F448b07",
-    "age": 0.37875,
-    "detectedAt": 1771611865725
+    "symbol": "AGENTINC",
+    "address": "0x549a558c8bDbbc5130b33aB1CCf915d0f7166b07",
+    "age": 0.4483666666666667,
+    "detectedAt": 1771612423902
   },
   {
-    "symbol": "Jellybean",
-    "address": "0x098F94951E90791458bC045596C829B337D01B07",
-    "age": 0.47875,
-    "detectedAt": 1771611865725
+    "symbol": "Privy",
+    "address": "0xBE716aC6b81a770d21b11622E8C9F0642aCAfb07",
+    "age": 0.4817,
+    "detectedAt": 1771612423903
   },
   {
-    "symbol": "hi",
-    "address": "0xD8b3990b12d90a71980FF2BFE1330a06a5798B07",
-    "age": 0.6454166666666666,
-    "detectedAt": 1771611865725
+    "symbol": "PUNCHLIENX",
+    "address": "0x5ba7C9e0Aa35C708f2a761E4aAa04A62554E9B07",
+    "age": 0.7483833333333333,
+    "detectedAt": 1771612423903
   },
   {
-    "symbol": "NOBEE",
-    "address": "0x9312BdBA9d93dA898C3Df36ca5f8Df97C17c0B07",
-    "age": 0.7120833333333333,
-    "detectedAt": 1771611865725
+    "symbol": "BWOY",
+    "address": "0xf7623F66F7256fc7E9897731283138a016096b07",
+    "age": 0.91505,
+    "detectedAt": 1771612423903
   },
   {
-    "symbol": "PEDOX",
-    "address": "0xbC8B382c54137A1d9Ab3AD16DE0d6f5a069e2b07",
-    "age": 0.8120833333333334,
-    "detectedAt": 1771611865725
+    "symbol": "POOLFANS",
+    "address": "0x92a44802ABF98A763c10808fd1d3d39bE0D6Fb07",
+    "age": 0.9817166666666667,
+    "detectedAt": 1771612423903
   },
   {
-    "symbol": "SAFEMOON",
-    "address": "0x672A6808FB7191d380b5f903942d80fF5072Db07",
-    "age": 0.9120833333333334,
-    "detectedAt": 1771611865725
+    "symbol": "CLAYTONX",
+    "address": "0xa23C6d4bED96C67f0BA7FDB0ea708d83a1A4eB07",
+    "age": 1.01505,
+    "detectedAt": 1771612423903
   },
   {
-    "symbol": "ORTHO",
-    "address": "0x13A8E6b6eB51ac06DE7162a251036E0adB8bfB07",
-    "age": 0.9454166666666667,
-    "detectedAt": 1771611865725
+    "symbol": "Gymnast🐼",
+    "address": "0xf57A5c3f2fC1Fb260156b21560AB922c7Be46B07",
+    "age": 1.1483833333333333,
+    "detectedAt": 1771612423903
   },
   {
-    "symbol": "UNICLAW",
-    "address": "0xcA15A6ED598df6Bd8f3684C688c0fbF73D1eDB07",
-    "age": 1.07875,
-    "detectedAt": 1771611865726
+    "symbol": "Privy",
+    "address": "0x414612ebE071B13F034E276d8525756bd1E27B07",
+    "age": 1.2483833333333334,
+    "detectedAt": 1771612423903
   },
   {
-    "symbol": "CHEDDAR",
-    "address": "0x010bD22841c8eDDf3b0880deB7B5fc03B75E9b07",
-    "age": 1.1454333333333333,
-    "detectedAt": 1771611865726
+    "symbol": "ClineBench",
+    "address": "0x48c7A9565a78F7234816b51fDbAE4ba1901ceB07",
+    "age": 1.2483833333333334,
+    "detectedAt": 1771612423903
   },
   {
-    "symbol": "TRENCH",
-    "address": "0x6aAeBAB243d668347aaD1e372142a99F30908b07",
-    "age": 1.1454333333333333,
-    "detectedAt": 1771611865726
+    "symbol": "ALIEN6",
+    "address": "0x35f3b9aaae4fCa1f684d98470a0A9319DaE86B07",
+    "age": 1.31505,
+    "detectedAt": 1771612423903
   },
   {
-    "symbol": "Musk",
-    "address": "0x88c8eA4CBc1e93B8537F7091aa38F3Ec58451B07",
-    "age": 1.1787666666666667,
-    "detectedAt": 1771611865726
+    "symbol": "ALIEN6",
+    "address": "0xb391a950Ed2ddcE63D4fBD8D08B08c1C1b55bB07",
+    "age": 1.51505,
+    "detectedAt": 1771612423903
   },
   {
-    "symbol": "POKE",
-    "address": "0xF8E0eeEFe1Aa0379708Aa9BB7b78C6Dda8A55b07",
-    "age": 1.3121,
-    "detectedAt": 1771611865726
+    "symbol": "CRS",
+    "address": "0xdfd0aA5ddb23306E2DF73A6fE41C2081027e0b07",
+    "age": 1.7483833333333334,
+    "detectedAt": 1771612423903
   },
   {
-    "symbol": "AlienM",
-    "address": "0x311E44661E54Fe84ed8ed9B84BC4a9c8C180Eb07",
-    "age": 1.3787666666666667,
-    "detectedAt": 1771611865726
+    "symbol": "CYBER",
+    "address": "0x3a4202aca6D5Eefa567e339e14dBb4b207012b07",
+    "age": 1.7817166666666666,
+    "detectedAt": 1771612423903
   },
   {
-    "symbol": "Ray",
-    "address": "0x940e7f4c342E1c4Cc4a53b902184ba740e057B07",
-    "age": 1.4454333333333333,
-    "detectedAt": 1771611865726
+    "symbol": "Gymnast🐼",
+    "address": "0x5aAEbfb84eEccab5111C179e73e01471742e9B07",
+    "age": 1.7817166666666666,
+    "detectedAt": 1771612423903
   },
   {
-    "symbol": "opnagent",
-    "address": "0xbE23faB8d15714b5C386e547B362BB684F3DCB07",
-    "age": 1.5454333333333334,
-    "detectedAt": 1771611865726
+    "symbol": "CLAYTONX",
+    "address": "0xde7117c22FAE7D5ec6610327a177CbCf492493f4",
+    "age": 1.81505,
+    "detectedAt": 1771612423903
   },
   {
-    "symbol": "BTT",
-    "address": "0x8D76539Ce3b941cf9D06940e5f4d376F2E552b07",
-    "age": 1.6787666666666667,
-    "detectedAt": 1771611865726
+    "symbol": "Psyop",
+    "address": "0x9A21f631D3E384C4a5702610033a75DF4ce49B07",
+    "age": 1.8483833333333333,
+    "detectedAt": 1771612423903
   },
   {
-    "symbol": "opnagent",
-    "address": "0xC40E3e3fbf0E1B542142b9E458da0F5b32A0a836",
-    "age": 1.7121,
-    "detectedAt": 1771611865726
+    "symbol": "Microchip",
+    "address": "0xba3b0BF54EE12cCfE4492F88a680cfcF46DEab07",
+    "age": 1.9817166666666666,
+    "detectedAt": 1771612423903
   },
   {
-    "symbol": "AlienM",
-    "address": "0x3E68F016185A6A2CaFa0B15443386Fe22b23Cb07",
-    "age": 1.7454333333333334,
-    "detectedAt": 1771611865726
+    "symbol": "BWOY",
+    "address": "0x3eA56b1EbCc655EceEd9FFDb885ac0Bd7c217b07",
+    "age": 2.0483833333333332,
+    "detectedAt": 1771612423903
   },
   {
-    "symbol": "CLAUNCH",
-    "address": "0xBFb61Aa21a0ff136f2aE75fba90ABf4153595b07",
-    "age": 1.8454333333333333,
-    "detectedAt": 1771611865726
+    "symbol": "PUNCHLIENX",
+    "address": "0xc12857C7167347243aFB9d8ec6021Fa0f428db62",
+    "age": 2.081716666666667,
+    "detectedAt": 1771612423903
   }
 ]
