@@ -442,5 +442,32 @@
     "url": "https://dexscreener.com/base/0x6c561B446416E1A00E8E93E221854d6eA4171372",
     "score": 50,
     "status": "WARM"
+  },
+  {
+    "symbol": "CLANKER",
+    "name": "tokenbot",
+    "contract_address": "0x1bc0c42215582d5A085795f4baDbaC3ff36d1Bcb",
+    "pairAddress": "0xd23FE2DB317e1A96454a2D1c7e8fc0DbF19BB000",
+    "dexId": "aerodrome",
+    "liquidityUsd": 402893.91,
+    "marketCap": 31833620,
+    "volume5m": 393.48,
+    "volume1h": 36910.43,
+    "volume24h": 572575.43,
+    "priceUsd": "32.27",
+    "priceChange5m": -0.01,
+    "priceChange1h": -0.04,
+    "priceChange24h": 0.67,
+    "txns1h": 64,
+    "score": 55,
+    "reasons": [
+      "💰 $100k+ liq",
+      "💧 $20k+ vol 1h",
+      "🐂 3:1 buy/sell"
+    ],
+    "status": "WARM",
+    "source": "ultimate-scanner",
+    "detectedAt": 1771630288461,
+    "url": "https://dexscreener.com/base/0xd23FE2DB317e1A96454a2D1c7e8fc0DbF19BB000"
   }
 ]

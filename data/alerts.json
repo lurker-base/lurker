@@ -1,5 +1,18 @@
 [
   {
+    "tokenAddress": "0x1bc0c42215582d5A085795f4baDbaC3ff36d1Bcb",
+    "symbol": "CLANKER",
+    "status": "WARM",
+    "score": 55,
+    "message": "🔥 WARM SIGNAL: $CLANKER | Score: 55",
+    "reasons": [
+      "💰 $100k+ liq",
+      "💧 $20k+ vol 1h",
+      "🐂 3:1 buy/sell"
+    ],
+    "sentAt": 1771630288461
+  },
+  {
     "tokenAddress": "0xb0e871B415216c2Dde67B8E818D248f64a17898e",
     "symbol": "DIAMOND",
     "status": "WARM",
