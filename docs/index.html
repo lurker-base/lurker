@@ -21,9 +21,10 @@
     <main class="main">
         <div class="container">
             <div class="avatar-section">
-                <div class="avatar-wrapper">
+                <div class="avatar-wrapper" id="avatar-wrapper">
                     <img src="../assets/lurker-mascot-logo.png" alt="" class="avatar">
                     <div class="avatar-glow"></div>
+                    <div class="sparks-container" id="sparks"></div>
                 </div>
                 <div class="avatar-status">
                     <span class="pulse"></span>
@@ -102,5 +103,45 @@
     </main>
 
     <script src="app.js"></script>
+    <script>
+        // Sparks effect on hover
+        const avatarWrapper = document.getElementById('avatar-wrapper');
+        const sparksContainer = document.getElementById('sparks');
+        let sparkInterval;
+
+        function createSpark() {
+            const spark = document.createElement('div');
+            spark.className = 'spark';
+            
+            // Random position around the center
+            const angle = Math.random() * Math.PI * 2;
+            const distance = 80 + Math.random() * 60; // Start from edge of avatar
+            const x = Math.cos(angle) * distance;
+            const y = Math.sin(angle) * distance;
+            
+            // Random destination (fly outward)
+            const flyDistance = 40 + Math.random() * 80;
+            const tx = Math.cos(angle) * (distance + flyDistance);
+            const ty = Math.sin(angle) * (distance + flyDistance);
+            
+            spark.style.left = `calc(50% + ${x}px)`;
+            spark.style.top = `calc(50% + ${y}px)`;
+            spark.style.setProperty('--tx', `${tx}px`);
+            spark.style.setProperty('--ty', `${ty}px`);
+            spark.style.animation = `spark-fly ${0.6 + Math.random() * 0.4}s ease-out forwards`;
+            
+            sparksContainer.appendChild(spark);
+            
+            setTimeout(() => spark.remove(), 1000);
+        }
+
+        avatarWrapper.addEventListener('mouseenter', () => {
+            sparkInterval = setInterval(createSpark, 50); // Create spark every 50ms
+        });
+
+        avatarWrapper.addEventListener('mouseleave', () => {
+            clearInterval(sparkInterval);
+        });
+    </script>
 </body>
 </html>

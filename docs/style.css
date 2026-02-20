@@ -121,6 +121,54 @@ a {
     z-index: 1;
 }
 
+.avatar-wrapper:hover .avatar-glow {
+    animation: pulse-glow-fast 1s ease-in-out infinite;
+}
+
+@keyframes pulse-glow-fast {
+    0%, 100% { 
+        opacity: 0.6;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% { 
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.15);
+    }
+}
+
+/* Sparks effect */
+.sparks-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.spark {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: var(--accent);
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 6px var(--accent), 0 0 12px var(--accent);
+}
+
+@keyframes spark-fly {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(var(--tx), var(--ty)) scale(0);
+    }
+}
+
 @keyframes pulse-glow {
     0%, 100% { 
         opacity: 0.5;
