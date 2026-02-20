@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LURKER - Autonomous Whale Surveillance</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="noise"></div>
+    <div class="grid-overlay"></div>
+    
+    <nav class="nav">
+        <div class="logo">
+            <span class="logo-icon">◈</span>
+            <span class="logo-text">LURKER</span>
+        </div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#signals">Signals</a>
+            <a href="#pricing">Pricing</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="badge">◉ AUTONOMOUS AGENT</div>
+            <h1 class="glitch" data-text="WATCHING WHAT MATTERS">
+                WATCHING WHAT MATTERS
+            </h1>
+            <p class="subtitle">
+                Real-time whale surveillance on Base chain. 
+                Detect accumulation, distribution, and smart money moves 
+                before the market reacts.
+            </p>
+            <div class="cta-group">
+                <button class="btn btn-primary">Get Alerts</button>
+                <button class="btn btn-secondary">View Signals</button>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <div class="stat-value" id="wallets">0</div>
+                <div class="stat-label">Wallets Monitored</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="signals">0</div>
+                <div class="stat-label">Signals Detected</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="blocks">0</div>
+                <div class="stat-label">Blocks Scanned</div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">📡</div>
+                    <h3>Continuous Scanning</h3>
+                    <p>Monitors Base blockchain 24/7, analyzing every block for significant transactions.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🧠</div>
+                    <h3>Pattern Detection</h3>
+                    <p>AI-powered heuristics identify accumulation, distribution, and whale movements.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Instant Alerts</h3>
+                    <p>Get notified in real-time via Telegram when high-confidence signals trigger.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="signals" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Live Signals</h2>
+            <div class="terminal">
+                <div class="terminal-header">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                    <span class="terminal-title">lurker@base:~$ tail -f signals.log</span>
+                </div>
+                <div class="terminal-body" id="terminal-output">
+                    <div class="log-line">
+                        <span class="timestamp">[04:11:23]</span>
+                        <span class="level info">INFO</span>
+                        <span class="message">Scanning block 42383738...</span>
+                    </div>
+                    <div class="log-line">
+                        <span class="timestamp">[04:11:24]</span>
+                        <span class="level warn">SIGNAL</span>
+                        <span class="message">Accumulation detected: 0x7Bf0...1542 (47.5 ETH)</span>
+                    </div>
+                    <div class="log-line">
+                        <span class="timestamp">[04:11:25]</span>
+                        <span class="level success">ALERT</span>
+                        <span class="message">Telegram notification sent (confidence: 87%)</span>
+                    </div>
+                    <div class="log-line cursor">
+                        <span class="timestamp">[04:11:26]</span>
+                        <span class="level info">INFO</span>
+                        <span class="message">Waiting for next block...</span>
+                        <span class="blink">_</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="section">
+        <div class="container">
+            <h2 class="section-title">Pricing</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Observer</h3>
+                    <div class="price">Free</div>
+                    <ul>
+                        <li>Public dashboard access</li>
+                        <li>Delayed signals (1h)</li>
+                        <li>Basic analytics</li>
+                    </ul>
+                    <button class="btn btn-outline">Get Started</button>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="badge-popular">POPULAR</div>
+                    <h3>Whale Hunter</h3>
+                    <div class="price">$299<span>/mo</span></div>
+                    <ul>
+                        <li>Real-time Telegram alerts</li>
+                        <li>High-confidence signals only</li>
+                        <li>Custom wallet tracking</li>
+                        <li>API access</li>
+                    </ul>
+                    <button class="btn btn-primary">Subscribe</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <div class="price">Custom</div>
+                    <ul>
+                        <li>Everything in Whale Hunter</li>
+                        <li>Dedicated infrastructure</li>
+                        <li>Custom alerts & integrations</li>
+                        <li>Priority support</li>
+                    </ul>
+                    <button class="btn btn-outline">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">◈</span>
+                    <span>LURKER</span>
+                </div>
+                <p class="footer-tagline">Autonomous whale surveillance. Running on Base.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/lurker-ai">GitHub</a>
+                    <a href="https://t.me/lurker_alerts">Telegram</a>
+                    <a href="https://basescan.org">Base</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 LURKER. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

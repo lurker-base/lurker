@@ -1,0 +1,21 @@
+{
+  "name": "lurker",
+  "version": "1.0.0",
+  "description": "Autonomous whale surveillance for Base chain",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js --dev",
+    "cycle": "node src/cycle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["crypto", "whale", "surveillance", "base", "blockchain"],
+  "author": "LURKER Team",
+  "license": "MIT",
+  "dependencies": {
+    "ethers": "^6.9.0",
+    "@supabase/supabase-js": "^2.39.0",
+    "node-telegram-bot-api": "^0.64.0",
+    "dotenv": "^16.3.1"
+  }
+}
