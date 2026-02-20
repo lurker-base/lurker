@@ -9,12 +9,19 @@
     "cycle": "node src/cycle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["crypto", "whale", "surveillance", "base", "blockchain"],
+  "keywords": [
+    "crypto",
+    "whale",
+    "surveillance",
+    "base",
+    "blockchain"
+  ],
   "author": "LURKER Team",
   "license": "MIT",
   "dependencies": {
+    "axios": "^1.13.5",
+    "dotenv": "^16.3.1",
     "ethers": "^6.9.0",
-    "node-telegram-bot-api": "^0.64.0",
-    "dotenv": "^16.3.1"
+    "node-telegram-bot-api": "^0.64.0"
   }
 }
