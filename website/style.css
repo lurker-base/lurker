@@ -88,6 +88,14 @@ body {
     text-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
 }
 
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--accent-cyan);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+}
+
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -117,6 +125,24 @@ body {
     text-align: center;
     padding: 8rem 2rem 4rem;
     position: relative;
+}
+
+.hero-mascot {
+    margin-bottom: 2rem;
+}
+
+.mascot-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid var(--accent-cyan);
+    box-shadow: 0 0 40px rgba(0, 240, 255, 0.5), 0 0 80px rgba(189, 0, 255, 0.3);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
 }
 
 .hero::before {
