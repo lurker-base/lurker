@@ -105,30 +105,53 @@
                     <div class="subscribe-options">
                         <div class="subscribe-tier">
                             <div class="tier-header">
-                                <span class="tier-name">observer</span>
+                                <span class="tier-name">drift</span>
                                 <span class="tier-price">free</span>
                             </div>
                             <ul class="tier-features">
                                 <li>public sightings dashboard</li>
                                 <li>1-hour delay on echoes</li>
-                                <li>basic current analysis</li>
+                                <li>5 wallets tracked</li>
                             </ul>
                             <a href="#" class="tier-cta">enter →</a>
                         </div>
 
                         <div class="subscribe-tier featured">
                             <div class="tier-header">
-                                <span class="tier-name">diver</span>
-                                <span class="tier-price">$299<span>/mo</span></span>
+                                <span class="tier-name">current</span>
+                                <span class="tier-price">$49<span>/mo</span></span>
+                                <span class="lurker-price" id="current-lurker">≈ -- LURKER</span>
                             </div>
                             <ul class="tier-features">
                                 <li>real-time telegram echoes</li>
                                 <li>confirmed sightings only</li>
-                                <li>custom wallet tracking</li>
+                                <li>50 wallets tracked</li>
                                 <li>api access</li>
                             </ul>
                             <a href="#" class="tier-cta">descend →</a>
                         </div>
+
+                        <div class="subscribe-tier">
+                            <div class="tier-header">
+                                <span class="tier-name">depth</span>
+                                <span class="tier-price">$149<span>/mo</span></span>
+                                <span class="lurker-price" id="depth-lurker">≈ -- LURKER</span>
+                            </div>
+                            <ul class="tier-features">
+                                <li>everything in current</li>
+                                <li>unlimited wallets</li>
+                                <li>custom telegram bot</li>
+                                <li>webhook integration</li>
+                                <li>priority support</li>
+                            </ul>
+                            <a href="#" class="tier-cta">submerge →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-note">
+                        <span class="mono">prices in usd — lurker equivalent calculated at current market rate</span>
+                        <br>
+                        <span class="mono">50% of lurker payments burned · 50% to treasury</span>
                     </div>
                 </div>
             </div>
@@ -138,5 +161,40 @@
     <footer class="footer">
         <span class="mono">the echo is the message</span>
     </footer>
+
+    <script>
+        // Calculate LURKER prices based on current market rate
+        // When token is live, fetch real price from DexScreener API
+        
+        const LURKER_PRICE_USD = 0.005; // Placeholder - will be dynamic
+        
+        function calculateLurkerPrice(usdAmount) {
+            const lurkerAmount = Math.ceil(usdAmount / LURKER_PRICE_USD);
+            return lurkerAmount.toLocaleString();
+        }
+        
+        function updateLurkerPrices() {
+            const currentPrice = calculateLurkerPrice(49);
+            const depthPrice = calculateLurkerPrice(149);
+            
+            const currentEl = document.getElementById('current-lurker');
+            const depthEl = document.getElementById('depth-lurker');
+            
+            if (currentEl) currentEl.textContent = `≈ ${currentPrice} LURKER`;
+            if (depthEl) depthEl.textContent = `≈ ${depthPrice} LURKER`;
+        }
+        
+        // Update on load
+        updateLurkerPrices();
+        
+        // TODO: When token is live, fetch real price:
+        // fetch('https://api.dexscreener.com/latest/dex/tokens/0xLURKER...')
+        //   .then(r => r.json())
+        //   .then(data => {
+        //     const price = data.pairs[0].priceUsd;
+        //     LURKER_PRICE_USD = parseFloat(price);
+        //     updateLurkerPrices();
+        //   });
+    </script>
 </body>
 </html>
