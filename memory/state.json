@@ -1,0 +1,10 @@
+{
+  "birthTimestamp": 1740067200000,
+  "birthDate": "2026-02-20T16:00:00Z",
+  "cycleCount": 0,
+  "signalsGenerated": 0,
+  "highScoreSignals": 0,
+  "lastCycle": null,
+  "status": "active",
+  "version": "0.1.0"
+}

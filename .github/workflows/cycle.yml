@@ -11,6 +11,8 @@ jobs:
     
     steps:
     - uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
     
     - name: Setup Node.js
       uses: actions/setup-node@v4
@@ -19,13 +21,20 @@ jobs:
         
     - name: Install dependencies
       run: npm ci --silent
-      
+    
     - name: Run LURKER cycle
       env:
         BASE_RPC_URL: ${{ secrets.BASE_RPC_URL }}
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-      run: npm run cycle 2>&1 | grep -E '(✅|🚨|LURKER|Signal|Complete)' || echo "Cycle running..."
+      run: node agent/agent/run.js
+    
+    - name: Commit changes
+      run: |
+        git config --local user.email "lurker@agent.ai"
+        git config --local user.name "LURKER Agent"
+        git add -A
+        git diff --staged --quiet || (git commit -m "[LURKER] Cycle update — $(date -u +'%H:%M UTC')" && git push)
       
     - name: Status
-      run: echo "✅ LURKER scan completed at $(date -u +'%Y-%m-%d %H:%M UTC')"
+      run: echo "✅ Cycle complete at $(date -u +'%Y-%m-%d %H:%M UTC')"
