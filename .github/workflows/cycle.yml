@@ -2,8 +2,8 @@ name: LURKER Cycle
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # Every 5 minutes
-  workflow_dispatch:  # Manual trigger
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
 
 jobs:
   cycle:
@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.GH_TOKEN }}
     
     - name: Setup Node.js
       uses: actions/setup-node@v4
@@ -23,6 +23,9 @@ jobs:
         
     - name: Install dependencies
       run: npm ci
+      
+    - name: Ensure data directory exists
+      run: mkdir -p data && echo '{"signals":[],"patterns":[],"lastBlock":0}' > data/signals.json
       
     - name: Run LURKER cycle
       env:
