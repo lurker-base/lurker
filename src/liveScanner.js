@@ -6,9 +6,9 @@ const axios = require('axios');
 const CONFIG = {
     minLiquidityUSD: 5000,        // Augmenté pour éviter les tokens trop petits
     minVolume24h: 5000,
-    maxAgeHours: 24,              // STRICT: seulement < 24h pour "new token"
-    minAgeHours: 0.5,             // Au moins 30 min (éviter les scams instants)
-    scanInterval: 60000,
+    maxAgeHours: 0.5,             // < 30min pour "new token" (pumps rapides!)
+    minAgeHours: 0.05,            // Au moins 3 min
+    scanInterval: 30000,          // 30 secondes entre scans
     dataFile: path.join(__dirname, '../data/signals.json'),
     // Sources
     sources: ['clanker', 'bankr', 'uniswap', 'aerodrome'],
