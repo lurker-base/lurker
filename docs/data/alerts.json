@@ -1,5 +1,13 @@
 [
   {
+    "tokenAddress": "0x247C719a109C9D4f7a1568D034f515D76c896B07",
+    "symbol": "TARIFF",
+    "status": "WARM",
+    "score": 80,
+    "message": "\n⚡⚡ LURKER ALERT WARM ⚡⚡\n\nToken: $TARIFF\n├ Address: 0x247C719a109C9D4f7a1568D034f515D76c896B07\n├ Age: 5min\n├ DEX: uniswap\n└ URL: https://dexscreener.com/base/0x75aec3201ea1a3863d2b06b6bc79aab4cff67f5ed5d306104714beb9cdd70a92\n\n📊 Metrics:\n├ Liq: $57,368.36\n├ Vol 5m: $1,787.04\n├ Vol 1h: $2,824.02\n├ Txns 5m: 194\n├ Price Δ5m: 82.06%\n├ Market Cap: $59,267\n└ Score: 80/100\n\n⚡ Bon momentum\n\nTime: 8:11:01 PM\n",
+    "sentAt": 1771614661245
+  },
+  {
     "tokenAddress": "0x0182BEE3B91d135b516bfe1369c2A611a6aF3B07",
     "symbol": "X DOLLAR",
     "status": "WARM",
