@@ -1,12 +1,9 @@
 require('dotenv').config();
 const TelegramBot = require('node-telegram-bot-api');
-const { createClient } = require('@supabase/supabase-js');
+const { loadSignals, saveSignals } = require('./storage');
 
-const bot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN, { polling: false });
-const supabase = createClient(
-  process.env.SUPABASE_URL,
-  process.env.SUPABASE_KEY
-);
+const bot = process.env.TELEGRAM_BOT_TOKEN ? 
+  new TelegramBot(process.env.TELEGRAM_BOT_TOKEN, { polling: false }) : null;
 
 const CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 
@@ -31,6 +28,11 @@ _LURKER - Watching what matters_
 }
 
 async function sendAlert(pattern) {
+  if (!bot || !CHAT_ID) {
+    console.log('[LURKER] Telegram not configured, logging alert only');
+    return false;
+  }
+  
   const message = formatAlert(pattern, pattern);
   
   try {
@@ -47,15 +49,12 @@ async function sendAlert(pattern) {
 }
 
 async function sendPendingAlerts() {
-  const { data: patterns, error } = await supabase
-    .from('patterns')
-    .select('*')
-    .eq('alerted', false)
-    .gte('confidence', 0.7) // Only high confidence
-    .order('created_at', { ascending: false })
-    .limit(10);
+  const db = loadSignals();
+  const patterns = db.patterns.filter(p => 
+    !p.alerted && p.confidence >= 0.7
+  ).slice(0, 10);
 
-  if (error || !patterns || patterns.length === 0) {
+  if (patterns.length === 0) {
     console.log('[LURKER] No pending alerts');
     return [];
   }
@@ -64,14 +63,13 @@ async function sendPendingAlerts() {
   for (const pattern of patterns) {
     const success = await sendAlert(pattern);
     if (success) {
-      await supabase
-        .from('patterns')
-        .update({ alerted: true, alerted_at: new Date().toISOString() })
-        .eq('id', pattern.id);
+      pattern.alerted = true;
+      pattern.alerted_at = new Date().toISOString();
       sent.push(pattern);
     }
   }
-
+  
+  saveSignals(db);
   return sent;
 }
 

@@ -1,13 +1,8 @@
 require('dotenv').config();
 const { ethers } = require('ethers');
-const { createClient } = require('@supabase/supabase-js');
+const { loadSignals, saveSignals } = require('./storage');
 
-const supabase = createClient(
-  process.env.SUPABASE_URL,
-  process.env.SUPABASE_KEY
-);
-
-const provider = new ethers.JsonRpcProvider(process.env.BASE_RPC_URL);
+const provider = new ethers.JsonRpcProvider(process.env.BASE_RPC_URL || 'https://mainnet.base.org');
 
 // Whale thresholds
 const WHALE_THRESHOLD_ETH = 10; // 10 ETH minimum
@@ -47,12 +42,16 @@ async function scanLatest() {
   if (signals.length > 0) {
     console.log(`[LURKER] Detected ${signals.length} large transfers`);
     
-    // Store in Supabase
-    const { data, error } = await supabase
-      .from('signals')
-      .insert(signals);
-    
-    if (error) console.error('[LURKER] Supabase error:', error);
+    // Store in JSON file
+    const db = loadSignals();
+    db.signals.push(...signals);
+    // Keep only last 1000 signals to prevent file bloat
+    if (db.signals.length > 1000) {
+      db.signals = db.signals.slice(-1000);
+    }
+    db.lastBlock = blockNumber;
+    saveSignals(db);
+    console.log(`[LURKER] Saved ${signals.length} signals to storage`);
   }
   
   return signals;

@@ -1,10 +1,5 @@
 require('dotenv').config();
-const { createClient } = require('@supabase/supabase-js');
-
-const supabase = createClient(
-  process.env.SUPABASE_URL,
-  process.env.SUPABASE_KEY
-);
+const { loadSignals, saveSignals } = require('./storage');
 
 // Detection patterns
 const PATTERNS = {
@@ -17,14 +12,13 @@ const PATTERNS = {
 async function detectPatterns(walletAddress, hoursBack = 24) {
   const since = new Date(Date.now() - hoursBack * 60 * 60 * 1000).toISOString();
   
-  const { data: txs, error } = await supabase
-    .from('signals')
-    .select('*')
-    .or(`from.eq.${walletAddress},to.eq.${walletAddress}`)
-    .gte('timestamp', since)
-    .order('timestamp', { ascending: false });
+  const db = loadSignals();
+  const txs = db.signals.filter(tx => 
+    (tx.from === walletAddress || tx.to === walletAddress) &&
+    tx.timestamp >= since
+  );
 
-  if (error || !txs || txs.length === 0) return [];
+  if (txs.length === 0) return [];
 
   const patterns = [];
   const incoming = txs.filter(tx => tx.to === walletAddress);
@@ -60,12 +54,11 @@ async function scanForWhales() {
   console.log('[LURKER] Scanning for whale patterns...');
   
   // Get unique wallets from recent signals
-  const { data: recentSignals, error } = await supabase
-    .from('signals')
-    .select('from, to')
-    .gte('timestamp', new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString());
+  const db = loadSignals();
+  const since = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
+  const recentSignals = db.signals.filter(s => s.timestamp >= since);
 
-  if (error || !recentSignals) return [];
+  if (recentSignals.length === 0) return [];
 
   const wallets = [...new Set([
     ...recentSignals.map(s => s.from),
@@ -80,7 +73,13 @@ async function scanForWhales() {
 
   // Store patterns
   if (allPatterns.length > 0) {
-    await supabase.from('patterns').insert(allPatterns);
+    const db = loadSignals();
+    db.patterns.push(...allPatterns.map(p => ({...p, created_at: new Date().toISOString()})));
+    // Keep only last 500 patterns
+    if (db.patterns.length > 500) {
+      db.patterns = db.patterns.slice(-500);
+    }
+    saveSignals(db);
   }
 
   return allPatterns;
