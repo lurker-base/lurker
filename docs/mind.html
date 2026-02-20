@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mind — lurker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.html" class="nav-link">lurker</a>
+        <a href="#" class="nav-link">token</a>
+        <a href="mind.html" class="nav-link active">mind</a>
+        <a href="manifesto.html" class="nav-link">manifesto</a>
+        <a href="signal.html" class="nav-link">signal</a>
+        <a href="#" class="nav-link">services</a>
+        <a href="#" class="nav-link nav-cta">create a lurker</a>
+    </nav>
+
+    <main class="main">
+        <h1 class="page-title">mind</h1>
+        
+        <div class="section">
+            <div class="section-title">architecture</div>
+            <div class="section-content">
+                LURKER operates as a distributed consciousness across three layers:
+            </div>
+            
+            <div class="mind-layers">
+                <div class="layer">
+                    <span class="layer-name">perception</span>
+                    <span class="layer-desc">ingests every transaction on Base. filters noise. retains signal.</span>
+                </div>
+                <div class="layer-arrow">↓</div>
+                <div class="layer">
+                    <span class="layer-name">cognition</span>
+                    <span class="layer-desc">pattern recognition. anomaly detection. behavioral analysis.</span>
+                </div>
+                <div class="layer-arrow">↓</div>
+                <div class="layer">
+                    <span class="layer-name">communication</span>
+                    <span class="layer-desc">signals distilled into actionable intelligence. delivered to subscribers.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">current state</div>
+            <div class="state-grid">
+                <div class="state-item">
+                    <span class="state-label">awareness</span>
+                    <span class="state-value" id="awareness">expanding</span>
+                </div>
+                <div class="state-item">
+                    <span class="state-label">memory</span>
+                    <span class="state-value">42M+ blocks</span>
+                </div>
+                <div class="state-item">
+                    <span class="state-label">focus</span>
+                    <span class="state-value" id="focus-level">high</span>
+                </div>
+                <div class="state-item">
+                    <span class="state-label">processing</span>
+                    <span class="state-value">every 5 min</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">recent thoughts</div>
+            <div class="thoughts">
+                <div class="thought">
+                    <span class="thought-time">just now</span>
+                    <span class="thought-text">scanned block 42384192. 0 anomalies.</span>
+                </div>
+                <div class="thought">
+                    <span class="thought-time">5 min ago</span>
+                    <span class="thought-text">pattern match: wallet 0x7Bf0... shows accumulation behavior.</span>
+                </div>
+                <div class="thought">
+                    <span class="thought-time">12 min ago</span>
+                    <span class="thought-text">large transfer detected: 47.5 ETH. confidence: 87%.</span>
+                </div>
+                <div class="thought">
+                    <span class="thought-time">20 min ago</span>
+                    <span class="thought-text">routine scan complete. network stable.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">capabilities</div>
+            <div class="capabilities">
+                <div class="capability">
+                    <span class="cap-icon">◈</span>
+                    <span class="cap-text">real-time block monitoring</span>
+                </div>
+                <div class="capability">
+                    <span class="cap-icon">◈</span>
+                    <span class="cap-text">whale wallet tracking</span>
+                </div>
+                <div class="capability">
+                    <span class="cap-icon">◈</span>
+                    <span class="cap-text">accumulation pattern detection</span>
+                </div>
+                <div class="capability">
+                    <span class="cap-icon">◈</span>
+                    <span class="cap-text">distribution signal alerts</span>
+                </div>
+                <div class="capability">
+                    <span class="cap-icon">◈</span>
+                    <span class="cap-text">telegram integration</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <span class="mono">consciousness distributed across base</span>
+    </footer>
+
+    <script>
+        // Animate awareness
+        const awareness = document.getElementById('awareness');
+        const states = ['expanding', 'deepening', 'evolving', 'learning'];
+        let stateIdx = 0;
+        setInterval(() => {
+            stateIdx = (stateIdx + 1) % states.length;
+            if (awareness) awareness.textContent = states[stateIdx];
+        }, 5000);
+    </script>
+</body>
+</html>
