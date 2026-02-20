@@ -227,15 +227,18 @@
                     <span>listening to <span id="current-chain">base</span> — next scan in <span id="countdown">0:30</span></span>
                 </div>
 
-                <div class="live-header" style="margin: 20px 0; display: flex; justify-content: space-between; align-items: center;">
-                    <span style="color: var(--text-muted); font-size: 0.9rem;">tracking <span id="token-count">0</span> tokens</span>
+                <div class="live-header" style="margin: 20px 0; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px;">
+                    <span style="color: var(--text-muted); font-size: 0.9rem;">tracking <span id="token-count">0</span> liquid tokens</span>
                     <span style="color: var(--accent); font-size: 0.8rem;">updated: <span id="last-update">--:--</span></span>
                 </div>
 
                 <div class="signal-stream" id="live-tokens">
                     <div class="no-signals">
                         <div class="no-signals-icon">👁️</div>
-                        <p>scanning for signals...</p>
+                        <p>scanning for liquid tokens...</p>
+                        <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 0.5rem;">
+                            Only tokens with DEX liquidity are shown
+                        </p>
                     </div>
                 </div>
 
