@@ -4,16 +4,35 @@ const axios = require('axios');
 
 // Config
 const CONFIG = {
-    minLiquidityUSD: 3000,
-    minVolume24h: 3000,
-    maxAgeHours: 48,
+    minLiquidityUSD: 5000,        // Augmenté pour éviter les tokens trop petits
+    minVolume24h: 5000,
+    maxAgeHours: 24,              // STRICT: seulement < 24h pour "new token"
+    minAgeHours: 0.5,             // Au moins 30 min (éviter les scams instants)
     scanInterval: 60000,
     dataFile: path.join(__dirname, '../data/signals.json'),
     // Sources
     sources: ['clanker', 'bankr', 'uniswap', 'aerodrome'],
-    // Known recent tokens to track for testing
-    testTokens: [
+    // BLACKLIST: Tokens établis à ignorer (pas des "new tokens")
+    blacklist: [
         '0x4200000000000000000000000000000000000006', // WETH
+        '0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22', // cbETH
+        '0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913', // USDC
+        '0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb', // DAI
+        '0x4158734D47Bc9694570F8E8eD8DcF2CCd60b55F2', // USDbC
+        '0xc1CBa3fCea344f92D9239c08C4168F955537b1D6', // BMX
+        '0x78a087d713Be963Bf307b18F2Ff8122EF9A63ae9', // BSWAP
+        '0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA', // USDCb
+        '0xEB466342C4d449BC9f53A865D5Cb90586f405215', // axlUSDC
+        '0x27D2DECb4bFC9C76F0309b8E88dec3d601fEe63a', // OVN
+        '0x6985884C4392D348587B19cb9eAAf157F13271cd', // ZRO
+        '0xA99F6E6785c55B3BbE9f80CC30FCB4c86E60E7D7', // PEPE
+        '0x532f51C46A1e03B63A2d28F88C5d13b4b9D9D3b0', // CUSTOS
+        '0x4EAf39847ec1aBv3e4f3F79211c61F15B90B2F4c', // BRETT
+        '0x6B46C1F46D883012d47d13d9b8E5e99c32b6e315', // TOSHI
+        '0x940181a94A35A4569E4529A3CDfB74e38FD98631', // AERO
+        '0x9c0e957b6B655189d1F754688c9530C861b9bEB2', // DEGEN
+        '0x0578d8A44db98B23BF096A382e016e29a5Ce0ffe', // HIGHER
+        '0xBde0A8E5db3A35eE8857e0257E4F25E6B5F1F6A8', // KEYCAT
     ]
 };
 
@@ -167,6 +186,10 @@ async function scan() {
         for (const [tokenAddress, source] of baseTokens) {
             if (checked.has(tokenAddress)) continue;
             if (signals.some(s => s.address === tokenAddress)) continue;
+            if (CONFIG.blacklist.includes(tokenAddress.toLowerCase())) {
+                console.log(`[LIVE] ⏭️  Skipping blacklisted: ${tokenAddress}`);
+                continue;
+            }
             checked.add(tokenAddress);
             
             const data = await getTokenData(tokenAddress);
@@ -175,8 +198,19 @@ async function scan() {
             // Add source info
             data.source = source;
             
-            // Filter by age and liquidity
-            if (data.ageHours > CONFIG.maxAgeHours || data.liquidityUSD < CONFIG.minLiquidityUSD) continue;
+            // STRICT Filter: must be NEW token (0.5h < age < 24h)
+            if (!data.ageHours || data.ageHours > CONFIG.maxAgeHours) {
+                console.log(`[LIVE] ⏭️  Too old: ${data.symbol} (${Math.floor(data.ageHours || 0)}h)`);
+                continue;
+            }
+            if (data.ageHours < CONFIG.minAgeHours) {
+                console.log(`[LIVE] ⏭️  Too fresh: ${data.symbol} (${Math.floor(data.ageHours * 60)}min)`);
+                continue;
+            }
+            if (data.liquidityUSD < CONFIG.minLiquidityUSD) {
+                console.log(`[LIVE] ⏭️  Low liq: ${data.symbol} ($${formatNumber(data.liquidityUSD)})`);
+                continue;
+            }
             
             const { score, checks } = calculateScore(data);
             
