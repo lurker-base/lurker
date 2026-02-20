@@ -880,17 +880,17 @@ a {
 }
 
 /* Network page */
-.network-intro {
+.watch-intro {
     margin-bottom: 2rem;
 }
 
-.network-intro p {
+.watch-intro p {
     color: var(--text);
     font-size: 1rem;
     margin-bottom: 0.5rem;
 }
 
-.network-sub {
+.watch-sub {
     color: var(--text-muted) !important;
 }
 
