@@ -8,10 +8,13 @@ const CONFIG = {
     alertsFile: path.join(__dirname, '../data/whaleAlerts.json'),
     scanInterval: 60000, // 1 minute
     
-    // Wallets à surveiller (à compléter avec de vrais whales)
+    // Wallets à surveiller (whales Base)
     trackedWallets: [
-        // Exemples - à remplacer par des vrais whales
-        '0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb', // Whale exemple
+        // TODO: Remplacer par des vrais whales trouvés sur DeBank/Arkham
+        // Exemples de formats:
+        // '0x3c0d267e8de5d47a179fd89064f9c0bf9bd2f5f3', // Base Deployer
+        // '0x...', // Whale DeBank #1
+        // '0x...', // Whale DeBank #2
     ],
     
     // Seuils de détection
