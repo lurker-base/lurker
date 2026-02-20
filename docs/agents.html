@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for agents — lurker</title>
+    <link rel="icon" type="image/png" href="../assets/lurker-mascot-logo.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .agent-hero {
+            background: linear-gradient(135deg, rgba(255,102,0,0.1) 0%, transparent 50%);
+            padding: 2rem;
+            border: 1px solid rgba(255,102,0,0.2);
+            margin-bottom: 2rem;
+        }
+        
+        .virtuals-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(139, 92, 246, 0.2);
+            border: 1px solid rgba(139, 92, 246, 0.4);
+            color: #a78bfa;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+        }
+        
+        .agent-hero h2 {
+            font-size: 1.5rem;
+            color: var(--text);
+            margin-bottom: 0.75rem;
+        }
+        
+        .agent-hero p {
+            color: var(--text-muted);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        
+        .use-case-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .use-case {
+            padding: 1.25rem;
+            background: rgba(255,255,255,0.02);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--accent);
+        }
+        
+        .use-case-title {
+            font-size: 1rem;
+            color: var(--text);
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .use-case-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+        
+        .integration-code {
+            background: #0d0d0d;
+            border: 1px solid var(--border);
+            padding: 1rem;
+            margin: 1rem 0;
+            overflow-x: auto;
+        }
+        
+        .integration-code pre {
+            margin: 0;
+            font-family: 'SF Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        
+        .integration-code .comment {
+            color: #666;
+        }
+        
+        .integration-code .string {
+            color: #a78bfa;
+        }
+        
+        .integration-code .keyword {
+            color: #ff6600;
+        }
+        
+        .benefit-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .benefit {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            padding: 1rem;
+            background: rgba(139, 92, 246, 0.05);
+            border: 1px solid rgba(139, 92, 246, 0.2);
+        }
+        
+        .benefit-icon {
+            font-size: 1.5rem;
+        }
+        
+        .benefit-content {
+            flex: 1;
+        }
+        
+        .benefit-title {
+            color: var(--text);
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+        }
+        
+        .benefit-desc {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        
+        .cta-agent {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255,102,0,0.05);
+            border: 1px solid rgba(255,102,0,0.2);
+            margin-top: 2rem;
+        }
+        
+        .cta-agent-title {
+            font-size: 1.25rem;
+            color: var(--text);
+            margin-bottom: 0.75rem;
+        }
+        
+        .cta-agent-desc {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-grid"></div>
+    
+    <nav class="nav">
+        <a href="index.html" class="nav-link">lurker</a>
+        <a href="#" class="nav-link">token</a>
+        <a href="deep.html" class="nav-link">the deep</a>
+        <a href="origin.html" class="nav-link">origin</a>
+        <a href="sightings.html" class="nav-link">sightings</a>
+        <a href="proof.html" class="nav-link">proof</a>
+        <a href="watch.html" class="nav-link">watch</a>
+        <a href="become.html" class="nav-link">become</a>
+        <a href="live.html" class="nav-link">live</a>
+        <a href="agents.html" class="nav-link active">for agents</a>
+    </nav>
+
+    <main class="main">
+        <div class="container page-container">
+            <div class="page-content">
+                <h1 class="page-title">for agents</h1>
+                
+                <div class="agent-hero">
+                    <div class="virtuals-badge">
+                        <span>◈</span>
+                        <span>virtuals protocol compatible</span>
+                    </div>
+                    <h2>intelligence for autonomous agents</h2>
+                    <p>You are an agent. You trade, you analyze, you make decisions. But you're blind without data on whale movements. LURKER feeds you the signals you need to operate with edge.</p>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">why agents need lurker</div>
+                    <div class="benefit-list">
+                        <div class="benefit">
+                            <span class="benefit-icon">🎯</span>
+                            <div class="benefit-content">
+                                <div class="benefit-title">pre-market alpha</div>
+                                <div class="benefit-desc">See accumulation before the pump. Distribution before the dump. Act before the crowd.</div>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit-icon">⚡</span>
+                            <div class="benefit-content">
+                                <div class="benefit-title">real-time execution</div>
+                                <div class="benefit-desc">Webhooks deliver signals to your agent instantly. No polling. No delays.</div>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit-icon">🧠</span>
+                            <div class="benefit-content">
+                                <div class="benefit-title">pattern recognition</div>
+                                <div class="benefit-desc">We detect accumulation, distribution, awakening. You decide the strategy.</div>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit-icon">🔗</span>
+                            <div class="benefit-content">
+                                <div class="benefit-title">native integration</div>
+                                <div class="benefit-desc">Works with Virtuals, ACP, or any agent framework. Simple API. JSON output.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">agent use cases</div>
+                    <div class="use-case-grid">
+                        <div class="use-case">
+                            <div class="use-case-title">trading agents</div>
+                            <div class="use-case-desc">Receive whale accumulation signals → Enter position before momentum builds → Exit when distribution detected</div>
+                        </div>
+                        <div class="use-case">
+                            <div class="use-case-title">arbitrage agents</div>
+                            <div class="use-case-desc">Track large cross-chain movements → Identify price discrepancies → Execute arb before market corrects</div>
+                        </div>
+                        <div class="use-case">
+                            <div class="use-case-title">sentiment agents</div>
+                            <div class="use-case-desc">Monitor smart money flows → Score market sentiment → Inform portfolio allocation decisions</div>
+                        </div>
+                        <div class="use-case">
+                            <div class="use-case-title">alert agents</div>
+                            <div class="use-case-desc">Watch specific whale wallets → Notify subscribers of movements → Generate subscription revenue</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">integration example</div>
+                    <div class="section-content">
+                        <p>Connect LURKER to your Virtuals agent in minutes:</p>
+                    </div>
+                    <div class="integration-code">
+                        <pre><span class="comment">// Your Virtuals agent receiving LURKER signals</span>
+<span class="keyword">const</span> lurker = <span class="keyword">require</span>(<span class="string">'lurker-api'</span>);
+
+<span class="comment">// Subscribe to whale signals</span>
+lurker.<span class="keyword">onSignal</span>(<span class="keyword">async</span> (signal) => {
+  <span class="keyword">if</span> (signal.type === <span class="string">'accumulation'</span> && signal.confidence > 80) {
+    <span class="comment">// Your agent decides</span>
+    <span class="keyword">const</span> decision = <span class="keyword">await</span> agent.analyze({
+      wallet: signal.wallet,
+      pattern: signal.pattern,
+      marketContext: <span class="keyword">await</span> getMarketData()
+    });
+    
+    <span class="comment">// Execute if edge detected</span>
+    <span class="keyword">if</span> (decision.shouldTrade) {
+      <span class="keyword">await</span> executeTrade(decision);
+    }
+  }
+});</pre>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">virtuals protocol integration</div>
+                    <div class="section-content">
+                        <p>LURKER can be deployed as a <strong>service node</strong> in the Virtuals ecosystem:</p>
+                        <ul style="margin: 1rem 0; padding-left: 1.5rem; color: var(--text-muted);">
+                            <li>Register as an ACP service provider</li>
+                            <li>Accept $VIRTUAL payments for signals</li>
+                            <li>Other agents discover and subscribe to your data feed</li>
+                            <li>Earn fees when agents consume your intelligence</li>
+                        </ul>
+                        <p style="color: var(--text-muted);">Coming soon: Native Virtuals Protocol integration with automated service registration.</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">pricing for agents</div>
+                    <div class="subscribe-options">
+                        <div class="subscribe-tier">
+                            <div class="tier-header">
+                                <span class="tier-name">webhook</span>
+                                <span class="tier-price">$29<span>/mo</span></span>
+                            </div>
+                            <ul class="tier-features">
+                                <li>real-time webhook signals</li>
+                                <li>100 requests/day</li>
+                                <li>base network only</li>
+                                <li>json format</li>
+                            </ul>
+                            <a href="#" class="tier-cta">connect →</a>
+                        </div>
+
+                        <div class="subscribe-tier featured">
+                            <div class="tier-header">
+                                <span class="tier-name">agent pro</span>
+                                <span class="tier-price">$79<span>/mo</span></span>
+                            </div>
+                            <ul class="tier-features">
+                                <li>unlimited webhooks</li>
+                                <li>multi-chain support</li>
+                                <li>custom pattern detection</li>
+                                <li>priority latency</li>
+                                <li>dedicated endpoint</li>
+                            </ul>
+                            <a href="#" class="tier-cta">deploy →</a>
+                        </div>
+
+                        <div class="subscribe-tier">
+                            <div class="tier-header">
+                                <span class="tier-name">virtuals native</span>
+                                <span class="tier-price">pay per use</span>
+                            </div>
+                            <ul class="tier-features">
+                                <li>acp integration</li>
+                                <li>$virtual payments</li>
+                                <li>onchain verification</li>
+                                <li>reputation system</li>
+                            </ul>
+                            <a href="#" class="tier-cta">coming soon →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-agent">
+                    <div class="cta-agent-title">ready to give your agent edge?</div>
+                    <div class="cta-agent-desc">Deploy LURKER intelligence into your autonomous system.</div>
+                    <a href="https://github.com/lurker-base/lurker" target="_blank" class="cta-button">
+                        start integration →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <span class="mono">feeding intelligence to the agent economy</span>
+    </footer>
+</body>
+</html>
