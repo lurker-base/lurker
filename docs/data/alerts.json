@@ -1,5 +1,37 @@
 [
   {
+    "tokenAddress": "0x0aB3E0343cD9E4296F5316d01b13094ddE546494",
+    "symbol": "aackchyually",
+    "status": "WARM",
+    "score": 70,
+    "message": "\n⚡⚡ LURKER ALERT WARM ⚡⚡\n\nToken: $aackchyually\n├ Address: 0x0aB3E0343cD9E4296F5316d01b13094ddE546494\n├ Age: 5min\n├ DEX: uniswap\n└ URL: https://dexscreener.com/base/0x761067a7417abe3093a1466291331955aa2ef15ca79529ebfcf82bb2736e3d72\n\n📊 Metrics:\n├ Liq: $21,468.6\n├ Vol 5m: $7,631.51\n├ Vol 1h: $11,557.38\n├ Txns 5m: 158\n├ Price Δ5m: -77.79%\n├ Market Cap: $19,381\n└ Score: 70/100\n\n⚡ Bon momentum\n\nTime: 8:51:58 PM\n",
+    "sentAt": 1771617118595
+  },
+  {
+    "tokenAddress": "0x755327327dfECB62E55c385cAAa9e5f5C13A8b07",
+    "symbol": "technologic",
+    "status": "WARM",
+    "score": 80,
+    "message": "\n⚡⚡ LURKER ALERT WARM ⚡⚡\n\nToken: $technologic\n├ Address: 0x755327327dfECB62E55c385cAAa9e5f5C13A8b07\n├ Age: 5min\n├ DEX: uniswap\n└ URL: https://dexscreener.com/base/0x8934ecadbee782c9ef6854ff972199cfbb3be259a3f409e7cadfe4cf80601a89\n\n📊 Metrics:\n├ Liq: $32,867.74\n├ Vol 5m: $2,131.19\n├ Vol 1h: $2,974.66\n├ Txns 5m: 109\n├ Price Δ5m: 11.94%\n├ Market Cap: $33,127\n└ Score: 80/100\n\n⚡ Bon momentum\n\nTime: 8:49:54 PM\n",
+    "sentAt": 1771616994792
+  },
+  {
+    "tokenAddress": "0xAb62a5A8181819a3b41a9cb331e58509B061101B",
+    "symbol": "aackchyually",
+    "status": "WARM",
+    "score": 60,
+    "message": "\n⚡⚡ LURKER ALERT WARM ⚡⚡\n\nToken: $aackchyually\n├ Address: 0xAb62a5A8181819a3b41a9cb331e58509B061101B\n├ Age: 5min\n├ DEX: uniswap\n└ URL: https://dexscreener.com/base/0x11f6c6714c400bec301b67261924147e2864f3b8e3170c43ea48a1282c3d4af6\n\n📊 Metrics:\n├ Liq: $19,859.54\n├ Vol 5m: $2,826.55\n├ Vol 1h: $3,611.11\n├ Txns 5m: 11\n├ Price Δ5m: -5.76%\n├ Market Cap: $19,769\n└ Score: 60/100\n\n⚡ Bon momentum\n\nTime: 8:49:24 PM\n",
+    "sentAt": 1771616964861
+  },
+  {
+    "tokenAddress": "0xE3A3A12002688fE0069a95dc341e963592B4Fb07",
+    "symbol": "BCA",
+    "status": "WARM",
+    "score": 80,
+    "message": "\n⚡⚡ LURKER ALERT WARM ⚡⚡\n\nToken: $BCA\n├ Address: 0xE3A3A12002688fE0069a95dc341e963592B4Fb07\n├ Age: 5min\n├ DEX: uniswap\n└ URL: https://dexscreener.com/base/0x0ada560e66608a7455ec7ad0f9ebad42f5812a5204d1070fbd66f4f1b9c91f5b\n\n📊 Metrics:\n├ Liq: $98,423.16\n├ Vol 5m: $2,896.03\n├ Vol 1h: $6,489.77\n├ Txns 5m: 48\n├ Price Δ5m: 32.26%\n├ Market Cap: $104,433\n└ Score: 80/100\n\n⚡ Bon momentum\n\nTime: 8:46:28 PM\n",
+    "sentAt": 1771616788218
+  },
+  {
     "tokenAddress": "0xBD23df91D8C99940047B7a17d8204721773D4b07",
     "symbol": "PUNCH",
     "status": "WARM",
