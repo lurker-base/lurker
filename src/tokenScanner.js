@@ -107,6 +107,7 @@ async function fetchTokenData(tokenAddress) {
             volume24h: parseFloat(pair.volume?.h24) || 0,
             volume6h: parseFloat(pair.volume?.h6) || 0,
             volume1h: parseFloat(pair.volume?.h1) || 0,
+            volume5m: parseFloat(pair.volume?.m5) || 0,
             marketCap: parseFloat(pair.marketCap) || 0,
             fdv: parseFloat(pair.fdv) || 0,
             pairAddress: pair.pairAddress,
@@ -220,8 +221,13 @@ function generateSignal(token) {
 **Metrics:**
 • Price: $${token.priceUSD.toFixed(6)}
 • Liquidity: $${token.liquidityUSD.toLocaleString()}
-• Volume 24h: $${token.volume24h.toLocaleString()}
 • Market Cap: $${token.marketCap.toLocaleString()}
+
+**Volume:**
+• 5m: $${token.volume5m?.toLocaleString() || 0}
+• 1h: $${token.volume1h?.toLocaleString() || 0}
+• 6h: $${token.volume6h?.toLocaleString() || 0}
+• 24h: $${token.volume24h?.toLocaleString() || 0}
 
 **Confidence:** ${token.confidence}/100 (${riskLevel} RISK)
 **Checks:** ${token.checks.join(', ')}
