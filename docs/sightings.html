@@ -102,6 +102,42 @@
                 </div>
 
                 <div class="section">
+                    <div class="section-title">one-shot services</div>
+                    <div class="services-list">
+                        <div class="service-item">
+                            <div class="service-header">
+                                <span class="service-name">watch one wallet</span>
+                                <span class="service-price">$5</span>
+                            </div>
+                            <p class="service-desc">track a single wallet for 30 days. alerts to your telegram.</p>
+                            <a href="#" class="service-cta">request →</a>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-header">
+                                <span class="service-name">whale report</span>
+                                <span class="service-price">$15</span>
+                            </div>
+                            <p class="service-desc">detailed analysis of any address. holdings, patterns, history.</p>
+                            <a href="#" class="service-cta">request →</a>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-header">
+                                <span class="service-name">custom bot setup</span>
+                                <span class="service-price">$50</span>
+                            </div>
+                            <p class="service-desc">your own lurker instance. github repo, cron, alerts. you control it.</p>
+                            <a href="#" class="service-cta">request →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-note">
+                        <span class="mono">pay with usdc on base — instant settlement, no accounts</span>
+                    </div>
+                </div>
+
+                <div class="section">
                     <div class="section-title">access levels</div>
                     <div class="subscribe-options">
                         <div class="subscribe-tier">
@@ -120,7 +156,7 @@
                         <div class="subscribe-tier featured">
                             <div class="tier-header">
                                 <span class="tier-name">current</span>
-                                <span class="tier-price">$49<span>/mo</span></span>
+                                <span class="tier-price">$19<span>/mo</span></span>
                                 <span class="lurker-price" id="current-lurker">≈ -- LURKER</span>
                             </div>
                             <ul class="tier-features">
@@ -135,7 +171,7 @@
                         <div class="subscribe-tier">
                             <div class="tier-header">
                                 <span class="tier-name">depth</span>
-                                <span class="tier-price">$149<span>/mo</span></span>
+                                <span class="tier-price">$49<span>/mo</span></span>
                                 <span class="lurker-price" id="depth-lurker">≈ -- LURKER</span>
                             </div>
                             <ul class="tier-features">
@@ -175,8 +211,8 @@
         }
         
         function updateLurkerPrices() {
-            const currentPrice = calculateLurkerPrice(49);
-            const depthPrice = calculateLurkerPrice(149);
+            const currentPrice = calculateLurkerPrice(19);
+            const depthPrice = calculateLurkerPrice(49);
             
             const currentEl = document.getElementById('current-lurker');
             const depthEl = document.getElementById('depth-lurker');
