@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-LURKER — The Watcher
+LURKER
 Autonomous surveillance for Base chain
 @LURKER_AI2026
 """
@@ -31,12 +31,12 @@ os.environ.update(ENV)
 VOICE = {
     'tone': 'mysterious',      # never cheerful
     'style': 'minimal',        # few words. impact.
-    'persona': 'watcher',      # observes. doesn't boast.
+    'persona': 'lurker',       # observes from shadows
     'gender': 'masculine',     # neutral-masculine energy
 }
 
-# The Watcher's words — sparse, heavy, intentional
-WATCHER_TEMPLATES = {
+# LURKER's words — sparse, heavy, intentional
+LURKER_TEMPLATES = {
     '02h': [
         "they sleep.\n\nthe chain doesn't.",
         "3am.\n\nsomething always moves in the dark.",
@@ -85,7 +85,7 @@ WATCHER_TEMPLATES = {
 }
 
 def get_client():
-    """Initialize the Watcher"""
+    """Initialize LURKER"""
     client = tweepy.Client(
         bearer_token=os.getenv('BEARER_TOKEN'),
         consumer_key=os.getenv('API_KEY'),
@@ -96,18 +96,18 @@ def get_client():
     return client
 
 def speak(time_slot, **kwargs):
-    """The Watcher speaks. Briefly."""
-    if time_slot not in WATCHER_TEMPLATES:
+    """LURKER speaks. Briefly."""
+    if time_slot not in LURKER_TEMPLATES:
         return None
     
-    template = random.choice(WATCHER_TEMPLATES[time_slot])
+    template = random.choice(LURKER_TEMPLATES[time_slot])
     
     try:
         message = template.format(**kwargs)
     except:
         message = template
     
-    # The Watcher never uses exclamation marks.
+    # LURKER never uses exclamation marks.
     # Never too enthusiastic.
     # Periods only. Or silence.
     message = message.replace('!', '.')
@@ -115,7 +115,7 @@ def speak(time_slot, **kwargs):
     return message
 
 def post(time_slot, **kwargs):
-    """The Watcher posts. Or doesn't."""
+    """LURKER posts. Or doesn't."""
     text = speak(time_slot, **kwargs)
     if not text:
         return None
@@ -130,9 +130,9 @@ def post(time_slot, **kwargs):
         return None
 
 def test_voice():
-    """Hear the Watcher without posting"""
+    """Hear LURKER without posting"""
     print("\n" + "="*50)
-    print("THE WATCHER SPEAKS")
+    print("LURKER SPEAKS")
     print("="*50 + "\n")
     
     for slot in ['02h', '06h', '11h', '16h', '21h']:
