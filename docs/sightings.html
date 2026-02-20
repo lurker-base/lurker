@@ -26,7 +26,14 @@
     </nav>
 
     <main class="main">
-        <div class="container page-container">
+        <div class="container page-container with-sidebar">
+            <div class="page-sidebar">
+                <div class="avatar-wrapper" id="avatar-wrapper">
+                    <img src="../assets/lurker-mascot-logo.png" alt="" class="avatar">
+                    <div class="avatar-glow"></div>
+                    <div class="sparks-container" id="sparks"></div>
+                </div>
+            </div>
             <div class="page-content">
                 <h1 class="page-title">sightings</h1>
                 
@@ -238,6 +245,21 @@
         //     LURKER_PRICE_USD = parseFloat(price);
         //     updateLurkerPrices();
         //   });
+    </script>
+    <script>
+        // Sparks effect
+        const sparksContainer = document.getElementById('sparks');
+        if (sparksContainer) {
+            for (let i = 0; i < 12; i++) {
+                const spark = document.createElement('div');
+                spark.className = 'spark';
+                spark.style.left = Math.random() * 100 + '%';
+                spark.style.top = Math.random() * 100 + '%';
+                spark.style.animationDelay = Math.random() * 2 + 's';
+                spark.style.animation = `spark-float ${2 + Math.random() * 2}s ease-in-out infinite`;
+                sparksContainer.appendChild(spark);
+            }
+        }
     </script>
 </body>
 </html>

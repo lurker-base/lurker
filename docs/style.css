@@ -136,6 +136,17 @@ a {
     }
 }
 
+@keyframes spark-float {
+    0%, 100% {
+        opacity: 0;
+        transform: translateY(0) scale(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-20px) scale(1);
+    }
+}
+
 /* Sparks effect */
 .sparks-container {
     position: absolute;
@@ -540,9 +551,46 @@ a {
     align-items: flex-start;
 }
 
+.page-container.with-sidebar {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 4rem;
+    max-width: 1200px;
+    align-items: start;
+}
+
+.page-sidebar {
+    position: sticky;
+    top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.page-sidebar .avatar-wrapper {
+    width: 200px;
+    height: 200px;
+}
+
+.page-sidebar .avatar-glow {
+    width: 240px;
+    height: 240px;
+}
+
+.page-sidebar .sparks-container {
+    width: 220px;
+    height: 220px;
+}
+
 .page-content {
     max-width: 700px;
     width: 100%;
+}
+
+.page-container.with-sidebar .page-content {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Subscribe/Pricing */
