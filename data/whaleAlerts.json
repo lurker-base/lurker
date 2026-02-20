@@ -1,0 +1,52 @@
+[
+  {
+    "id": "demo1",
+    "type": "accumulation",
+    "wallet": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb",
+    "walletShort": "0x742d...0bEb",
+    "confidence": 87,
+    "emoji": "🟢",
+    "label": "ACCUMULATION",
+    "details": {
+      "buys": 7,
+      "totalEth": "12.45",
+      "avgBuy": "1.779"
+    },
+    "timestamp": 1771569200000,
+    "timeFormatted": "2026-02-20T06:33:20.000Z",
+    "explorerLink": "https://basescan.org/address/0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb"
+  },
+  {
+    "id": "demo2",
+    "type": "awakening",
+    "wallet": "0x8ba17Cc6634C0532925a3b844Bc9e7595f0bEc",
+    "walletShort": "0x8ba1...0bEc",
+    "confidence": 85,
+    "emoji": "⚪",
+    "label": "AWAKENING",
+    "details": {
+      "dormantDays": 45,
+      "awakeningValue": "8.20"
+    },
+    "timestamp": 1771568600000,
+    "timeFormatted": "2026-02-20T06:23:20.000Z",
+    "explorerLink": "https://basescan.org/address/0x8ba17Cc6634C0532925a3b844Bc9e7595f0bEc"
+  },
+  {
+    "id": "demo3",
+    "type": "distribution",
+    "wallet": "0x9ca28Cc6634C0532925a3b844Bc9e7595f0bEd",
+    "walletShort": "0x9ca2...0bEd",
+    "confidence": 94,
+    "emoji": "🔴",
+    "label": "DISTRIBUTION",
+    "details": {
+      "sells": 4,
+      "totalEth": "34.80",
+      "toExchange": "Coinbase"
+    },
+    "timestamp": 1771568000000,
+    "timeFormatted": "2026-02-20T06:13:20.000Z",
+    "explorerLink": "https://basescan.org/address/0x9ca28Cc6634C0532925a3b844Bc9e7595f0bEd"
+  }
+]
