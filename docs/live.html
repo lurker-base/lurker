@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>live — lurker</title>
+    <link rel="icon" type="image/png" href="../assets/lurker-mascot-logo.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .signal-stream {
+            margin-top: 1rem;
+        }
+        
+        .live-signal {
+            padding: 1.5rem;
+            background: rgba(255, 102, 0, 0.05);
+            border: 1px solid rgba(255, 102, 0, 0.3);
+            border-left: 4px solid var(--accent);
+            margin-bottom: 1rem;
+            animation: signal-in 0.5s ease-out;
+        }
+        
+        @keyframes signal-in {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .signal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .signal-type {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.1rem;
+            color: var(--accent);
+            font-weight: 500;
+        }
+        
+        .signal-time {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-family: 'SF Mono', monospace;
+        }
+        
+        .signal-wallet {
+            font-family: 'SF Mono', monospace;
+            font-size: 0.95rem;
+            color: var(--text);
+            margin-bottom: 0.5rem;
+        }
+        
+        .signal-pattern {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+            line-height: 1.5;
+        }
+        
+        .signal-meta {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+        
+        .signal-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+        
+        .signal-link {
+            display: inline-block;
+            color: var(--accent);
+            font-size: 0.85rem;
+        }
+        
+        .listening-status {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem;
+            background: rgba(0, 255, 0, 0.05);
+            border: 1px solid rgba(0, 255, 0, 0.2);
+            margin-bottom: 2rem;
+        }
+        
+        .listening-dot {
+            width: 10px;
+            height: 10px;
+            background: #00ff00;
+            border-radius: 50%;
+            animation: pulse-green 2s infinite;
+        }
+        
+        @keyframes pulse-green {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+        
+        .no-signals {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-muted);
+        }
+        
+        .no-signals-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-grid"></div>
+    
+    <nav class="nav">
+        <a href="index.html" class="nav-link">lurker</a>
+        <a href="#" class="nav-link">token</a>
+        <a href="deep.html" class="nav-link">the deep</a>
+        <a href="origin.html" class="nav-link">origin</a>
+        <a href="sightings.html" class="nav-link">sightings</a>
+        <a href="proof.html" class="nav-link">proof</a>
+        <a href="watch.html" class="nav-link">watch</a>
+        <a href="become.html" class="nav-link">become</a>
+        <a href="live.html" class="nav-link active">live</a>
+    </nav>
+
+    <main class="main">
+        <div class="container page-container">
+            <div class="page-content">
+                <h1 class="page-title">live signals</h1>
+                
+                <div class="listening-status">
+                    <span class="listening-dot"></span>
+                    <span>listening to base — next scan in <span id="countdown">4:32</span></span>
+                </div>
+
+                <div class="signal-stream" id="signal-stream">
+                    <!-- Demo signal -->
+                    <div class="live-signal">
+                        <div class="signal-header">
+                            <span class="signal-type">
+                                <span>🟠</span>
+                                <span>ACCUMULATION DETECTED</span>
+                            </span>
+                            <span class="signal-time">2m ago</span>
+                        </div>
+                        <div class="signal-wallet">0x7Bf0...1542</div>
+                        <div class="signal-pattern">3 consecutive buys: 12.5 → 15.2 → 18.8 ETH (15 min window)</div>
+                        <div class="signal-meta">
+                            <span>Confidence: 87%</span>
+                            <span>Block: 42385291</span>
+                            <span>Previous: Dormant 23d</span>
+                        </div>
+                        <a href="https://basescan.org/address/0x7Bf015421542" target="_blank" class="signal-link">
+                            view on basescan →
+                        </a>
+                    </div>
+
+                    <div class="live-signal">
+                        <div class="signal-header">
+                            <span class="signal-type">
+                                <span>⚪</span>
+                                <span>WALLET AWAKENING</span>
+                            </span>
+                            <span class="signal-time">12m ago</span>
+                        </div>
+                        <div class="signal-wallet">0x9Ac3...78D2</div>
+                        <div class="signal-pattern">First transaction after 45 days of dormancy — 5.2 ETH received</div>
+                        <div class="signal-meta">
+                            <span>Confidence: 72%</span>
+                            <span>Block: 42385279</span>
+                            <span>Previous: Dormant 45d</span>
+                        </div>
+                        <a href="https://basescan.org/address/0x9Ac378D2" target="_blank" class="signal-link">
+                            view on basescan →
+                        </a>
+                    </div>
+
+                    <div class="live-signal">
+                        <div class="signal-header">
+                            <span class="signal-type">
+                                <span>🔴</span>
+                                <span>LARGE DISPLACEMENT</span>
+                            </span>
+                            <span class="signal-time">28m ago</span>
+                        </div>
+                        <div class="signal-wallet">0x3F21...9A1B</div>
+                        <div class="signal-pattern">Single transaction: 47.5 ETH moved to exchange address</div>
+                        <div class="signal-meta">
+                            <span>Confidence: 94%</span>
+                            <span>Block: 42385261</span>
+                            <span>Type: Distribution</span>
+                        </div>
+                        <a href="https://basescan.org/tx/0x3f219a1b" target="_blank" class="signal-link">
+                            view on basescan →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">signal types</div>
+                    <div class="signal-legend">
+                        <div class="legend-item">
+                            <span class="legend-icon">🟠</span>
+                            <span class="legend-text"><strong>Accumulation</strong> — repetitive buying, position building</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-icon">🔴</span>
+                            <span class="legend-text"><strong>Distribution</strong> — selling pressure, large moves to exchanges</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-icon">⚪</span>
+                            <span class="legend-text"><strong>Awakening</strong> — dormant wallets becoming active</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">telegram alerts</div>
+                    <div class="section-content">
+                        <p>Get these signals instantly on Telegram. Join the private channel for real-time alerts.</p>
+                        <a href="#" class="action-link">request access →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <span class="mono">listening to the depths</span>
+    </footer>
+
+    <script>
+        // Countdown timer
+        let seconds = 272; // 4:32
+        const countdownEl = document.getElementById('countdown');
+        
+        setInterval(() => {
+            seconds--;
+            if (seconds < 0) seconds = 300; // Reset to 5min
+            
+            const mins = Math.floor(seconds / 60);
+            const secs = seconds % 60;
+            if (countdownEl) {
+                countdownEl.textContent = `${mins}:${secs.toString().padStart(2, '0')}`;
+            }
+        }, 1000);
+
+        // Simulate new signals coming in (for demo)
+        setInterval(() => {
+            if (Math.random() > 0.9) { // 10% chance every 10 seconds
+                // In real implementation, this would fetch from API
+                console.log('[LURKER] New signal would appear here');
+            }
+        }, 10000);
+    </script>
+</body>
+</html>
