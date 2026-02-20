@@ -9,6 +9,8 @@ const CONFIG = {
     maxAgeHours: 48,
     scanInterval: 60000,
     dataFile: path.join(__dirname, '../data/signals.json'),
+    // Sources
+    sources: ['clanker', 'bankr', 'uniswap', 'aerodrome'],
     // Known recent tokens to track for testing
     testTokens: [
         '0x4200000000000000000000000000000000000006', // WETH
@@ -115,6 +117,19 @@ async function getTokenData(tokenAddress) {
     }
 }
 
+// Detect launch platform from pair data
+function detectSource(pair) {
+    const dex = (pair.dexId || '').toLowerCase();
+    const url = (pair.url || '').toLowerCase();
+    
+    if (url.includes('clanker') || dex.includes('clanker')) return 'clanker';
+    if (url.includes('bankr') || pair.baseToken?.name?.toLowerCase().includes('bankr')) return 'bankr';
+    if (dex.includes('aerodrome')) return 'aerodrome';
+    if (dex.includes('uniswap')) return 'uniswap';
+    if (dex.includes('baseswap')) return 'baseswap';
+    return dex || 'unknown';
+}
+
 // Scan for new tokens on Base
 async function scan() {
     console.log('[LIVE] Scanning Base for new tokens...');
@@ -125,8 +140,8 @@ async function scan() {
     // Method 1: Search for trending tokens on Base
     try {
         // Get top pairs on Base by searching for common quote tokens
-        const searchQueries = ['WETH', 'USDC', 'CBETH'];
-        const baseTokens = new Set();
+        const searchQueries = ['WETH', 'USDC', 'CBETH', 'CLANKER', 'BANKR'];
+        const baseTokens = new Map(); // address -> source
         
         for (const quote of searchQueries) {
             try {
@@ -137,7 +152,8 @@ async function scan() {
                 if (res.data?.pairs) {
                     for (const pair of res.data.pairs) {
                         if (pair.chainId === 'base' && pair.baseToken) {
-                            baseTokens.add(pair.baseToken.address);
+                            const source = detectSource(pair);
+                            baseTokens.set(pair.baseToken.address, source);
                         }
                     }
                 }
@@ -145,15 +161,19 @@ async function scan() {
         }
         
         console.log(`[LIVE] Found ${baseTokens.size} unique tokens on Base`);
+        console.log(`[LIVE] Sources: ${[...new Set(baseTokens.values())].join(', ')}`);
         
         // Check each token
-        for (const tokenAddress of baseTokens) {
+        for (const [tokenAddress, source] of baseTokens) {
             if (checked.has(tokenAddress)) continue;
             if (signals.some(s => s.address === tokenAddress)) continue;
             checked.add(tokenAddress);
             
             const data = await getTokenData(tokenAddress);
             if (!data) continue;
+            
+            // Add source info
+            data.source = source;
             
             // Filter by age and liquidity
             if (data.ageHours > CONFIG.maxAgeHours || data.liquidityUSD < CONFIG.minLiquidityUSD) continue;
@@ -177,7 +197,7 @@ async function scan() {
                 if (signals.length > 50) signals.pop();
                 newSignals++;
                 
-                console.log(`[LIVE] ✅ NEW: ${data.symbol} | Score: ${score} | Liq: $${formatNumber(data.liquidityUSD)} | Age: ${Math.floor(data.ageHours)}h`);
+                console.log(`[LIVE] ✅ NEW: ${data.symbol} | Source: ${source} | Score: ${score} | Liq: $${formatNumber(data.liquidityUSD)} | Age: ${Math.floor(data.ageHours)}h`);
             }
         }
     } catch (error) {
