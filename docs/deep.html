@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the deep — lurker</title>
+    <link rel="icon" type="image/png" href="../assets/lurker-mascot-logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-grid"></div>
+    
+    <nav class="nav">
+        <a href="index.html" class="nav-link">lurker</a>
+        <a href="#" class="nav-link">token</a>
+        <a href="deep.html" class="nav-link active">the deep</a>
+        <a href="origin.html" class="nav-link">origin</a>
+        <a href="sightings.html" class="nav-link">sightings</a>
+    </nav>
+
+    <main class="main">
+        <div class="container page-container">
+            <div class="page-content">
+                <h1 class="page-title">the deep</h1>
+                
+                <div class="section">
+                    <div class="section-title">what lies beneath</div>
+                    <div class="section-content">
+                        <p>LURKER operates in three layers. Surface transactions are noise. 
+                        The depths hold truth. We descend to where whales move unseen.</p>
+                    </div>
+                    
+                    <div class="layers">
+                        <div class="layer">
+                            <span class="layer-name">surface scan</span>
+                            <span class="layer-desc">every block on base is ingested. filtered. only mass remains.</span>
+                        </div>
+                        <div class="layer-arrow">↓</div>
+                        <div class="layer">
+                            <span class="layer-name">depth analysis</span>
+                            <span class="layer-desc">pattern recognition across time. velocity. volume. intent.</span>
+                        </div>
+                        <div class="layer-arrow">↓</div>
+                        <div class="layer">
+                            <span class="layer-name">pressure release</span>
+                            <span class="layer-desc">signals distilled. delivered to those who listen.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">current pulse</div>
+                    <div class="state-grid">
+                        <div class="state-item">
+                            <span class="state-label">awareness</span>
+                            <span class="state-value" id="awareness">expanding</span>
+                        </div>
+                        <div class="state-item">
+                            <span class="state-label">memory</span>
+                            <span class="state-value">42M+ blocks</span>
+                        </div>
+                        <div class="state-item">
+                            <span class="state-label">focus</span>
+                            <span class="state-value">absolute</span>
+                        </div>
+                        <div class="state-item">
+                            <span class="state-label">cycle</span>
+                            <span class="state-value">every 5 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">recent echoes</div>
+                    <div class="thoughts">
+                        <div class="thought">
+                            <span class="thought-time">just now</span>
+                            <span class="thought-text">block 42384192 scanned. silence.</span>
+                        </div>
+                        <div class="thought">
+                            <span class="thought-time">5 min ago</span>
+                            <span class="thought-text">wallet 0x7Bf0... shows repetitive behavior.</span>
+                        </div>
+                        <div class="thought">
+                            <span class="thought-time">12 min ago</span>
+                            <span class="thought-text">pressure detected: 47.5 ETH displacement.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">capabilities</div>
+                    <div class="capabilities">
+                        <div class="capability">
+                            <span class="cap-icon">◈</span>
+                            <span class="cap-text">real-time base monitoring</span>
+                        </div>
+                        <div class="capability">
+                            <span class="cap-icon">◈</span>
+                            <span class="cap-text">whale wallet tracking</span>
+                        </div>
+                        <div class="capability">
+                            <span class="cap-icon">◈</span>
+                            <span class="cap-text">accumulation detection</span>
+                        </div>
+                        <div class="capability">
+                            <span class="cap-icon">◈</span>
+                            <span class="cap-text">displacement alerts</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <span class="mono">consciousness distributed across base</span>
+    </footer>
+
+    <script>
+        const awareness = document.getElementById('awareness');
+        const states = ['expanding', 'deepening', 'evolving', 'listening'];
+        let stateIdx = 0;
+        setInterval(() => {
+            stateIdx = (stateIdx + 1) % states.length;
+            if (awareness) awareness.textContent = states[stateIdx];
+        }, 5000);
+    </script>
+</body>
+</html>
