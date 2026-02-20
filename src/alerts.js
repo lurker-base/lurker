@@ -1,88 +1,111 @@
-require('dotenv').config();
-const TelegramBot = require('node-telegram-bot-api');
-const { loadSignals, saveSignals } = require('./storage');
+const axios = require('axios');
+const fs = require('fs');
+const path = require('path');
 
-const bot = process.env.TELEGRAM_BOT_TOKEN ? 
-  new TelegramBot(process.env.TELEGRAM_BOT_TOKEN, { polling: false }) : null;
-
-const CHAT_ID = process.env.TELEGRAM_CHAT_ID;
-
-function formatAlert(signal, pattern) {
-  const emoji = pattern.type === 'accumulation' ? '🐋' : '⚠️';
-  const action = pattern.type === 'accumulation' ? 'ACCUMULATING' : 'DISTRIBUTING';
-  
-  return `
-${emoji} **LURKER ALERT** ${emoji}
-
-**${action} DETECTED**
-
-👤 Wallet: \`${signal.wallet?.slice(0, 6)}...${signal.wallet?.slice(-4)}\`
-📊 Confidence: ${Math.round(pattern.confidence * 100)}%
-💰 Volume: ${pattern.details?.totalIn?.toFixed(2) || pattern.details?.totalOut?.toFixed(2)} ETH
-📝 Transactions: ${pattern.details?.txCount}
-
-🔗 [View on BaseScan](https://basescan.org/address/${signal.wallet})
-
-_LURKER - Watching what matters_
-  `.trim();
-}
-
-async function sendAlert(pattern) {
-  if (!bot || !CHAT_ID) {
-    console.log('[LURKER] Telegram not configured, logging alert only');
-    return false;
-  }
-  
-  const message = formatAlert(pattern, pattern);
-  
-  try {
-    await bot.sendMessage(CHAT_ID, message, {
-      parse_mode: 'Markdown',
-      disable_web_page_preview: true
+// Load config
+const envPath = path.join(__dirname, '..', '.env.telegram');
+let config = {};
+if (fs.existsSync(envPath)) {
+    const envContent = fs.readFileSync(envPath, 'utf8');
+    envContent.split('\n').forEach(line => {
+        const [key, value] = line.split('=');
+        if (key && value) config[key.trim()] = value.trim();
     });
-    console.log(`[LURKER] Alert sent for ${pattern.wallet}`);
-    return true;
-  } catch (err) {
-    console.error('[LURKER] Telegram error:', err.message);
-    return false;
-  }
 }
 
-async function sendPendingAlerts() {
-  const db = loadSignals();
-  const patterns = db.patterns.filter(p => 
-    !p.alerted && p.confidence >= 0.7
-  ).slice(0, 10);
+const BOT_TOKEN = config.TELEGRAM_BOT_TOKEN;
+const CHAT_ID = config.CHAT_ID || '7473322586';
 
-  if (patterns.length === 0) {
-    console.log('[LURKER] No pending alerts');
-    return [];
-  }
-
-  const sent = [];
-  for (const pattern of patterns) {
-    const success = await sendAlert(pattern);
-    if (success) {
-      pattern.alerted = true;
-      pattern.alerted_at = new Date().toISOString();
-      sent.push(pattern);
+// Set webhook to ignore incoming messages (we only send signals)
+async function setupWebhook() {
+    if (!BOT_TOKEN) return;
+    
+    try {
+        // Delete webhook so bot doesn't respond to messages
+        await axios.post(`https://api.telegram.org/bot${BOT_TOKEN}/deleteWebhook`);
+        console.log('[LURKER] Webhook cleared - bot in signal-only mode');
+    } catch (error) {
+        console.error('[LURKER] Could not clear webhook:', error.message);
     }
-  }
-  
-  saveSignals(db);
-  return sent;
 }
 
-module.exports = { sendAlert, sendPendingAlerts };
+async function sendSignal(signal) {
+    if (!BOT_TOKEN) {
+        console.error('[LURKER] No bot token configured');
+        return false;
+    }
 
+    const emoji = signal.type === 'accumulation' ? '🟠' : 
+                  signal.type === 'distribution' ? '🔴' : '⚪';
+    
+    const message = `${emoji} **LURKER ALERT — ${signal.type.toUpperCase()} DETECTED**
+
+**Wallet:** \`${signal.wallet}\`
+**Pattern:** ${signal.pattern}
+**Timeframe:** ${signal.timeframe}
+**Confidence:** ${signal.confidence}%
+
+**Previous:** ${signal.previousActivity}
+**Current:** ${signal.currentHoldings}
+
+🔗 [View on BaseScan](${signal.explorerLink})
+
+---
+*lurker // watching the depths*
+*block ${signal.block}* | ${signal.timestamp}`;
+
+    try {
+        const response = await axios.post(
+            `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`,
+            {
+                chat_id: CHAT_ID,
+                text: message,
+                parse_mode: 'Markdown',
+                disable_web_page_preview: false
+            }
+        );
+        
+        if (response.data.ok) {
+            console.log('[LURKER] Signal sent to Telegram');
+            return true;
+        }
+    } catch (error) {
+        console.error('[LURKER] Failed to send signal:', error.message);
+        if (error.response) {
+            console.error('[LURKER] Response:', error.response.data);
+        }
+    }
+    
+    return false;
+}
+
+// Setup on load
+setupWebhook();
+
+// Test signal
 if (require.main === module) {
-  sendPendingAlerts()
-    .then(sent => {
-      console.log(`[LURKER] Sent ${sent.length} alerts`);
-      process.exit(0);
-    })
-    .catch(err => {
-      console.error('[LURKER] Error:', err);
-      process.exit(1);
+    const testSignal = {
+        id: 'test_001',
+        type: 'accumulation',
+        confidence: 87,
+        wallet: '0x7Bf0...1542',
+        pattern: '3 consecutive buys (12.5 → 15.2 → 18.8 ETH)',
+        timeframe: '15 minutes',
+        previousActivity: 'Dormant 23 days',
+        currentHoldings: '~450 ETH',
+        explorerLink: 'https://basescan.org/address/0x7Bf015421542',
+        block: 42385291,
+        timestamp: new Date().toISOString()
+    };
+    
+    sendSignal(testSignal).then(success => {
+        if (success) {
+            console.log('[LURKER] Test signal sent successfully');
+        } else {
+            console.log('[LURKER] Test signal failed');
+        }
+        process.exit(0);
     });
 }
+
+module.exports = { sendSignal, setupWebhook };
