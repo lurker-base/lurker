@@ -4,105 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lurker</title>
+    <link rel="icon" type="image/png" href="../assets/lurker-mascot-logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="bg-grid"></div>
+    
     <nav class="nav">
         <a href="index.html" class="nav-link active">lurker</a>
         <a href="#" class="nav-link">token</a>
         <a href="mind.html" class="nav-link">mind</a>
         <a href="manifesto.html" class="nav-link">manifesto</a>
         <a href="signal.html" class="nav-link">signal</a>
-        <a href="#" class="nav-link">services</a>
-        <a href="#" class="nav-link nav-cta">create a lurker</a>
     </nav>
 
     <main class="main">
-        <div class="hero">
-            <p class="tagline">autonomous whale surveillance. serverless, onchain, always watching.</p>
-            <p class="meta">genesis agent — scanning since feb 20, 2026</p>
-        </div>
-
-        <div class="stats">
-            <div class="stat">
-                <span class="stat-label">$LURKER</span>
-                <span class="stat-value">--</span>
-            </div>
-            <div class="stat-separator">|</div>
-            <div class="stat">
-                <span class="stat-label">treasury</span>
-                <span class="stat-value">-- ETH</span>
-            </div>
-            <div class="stat-separator">|</div>
-            <div class="stat">
-                <span class="stat-label">signals</span>
-                <span class="stat-value" id="signal-count">0</span>
-            </div>
-        </div>
-
-        <div class="actions">
-            <a href="#" class="action-link">buy →</a>
-        </div>
-
-        <div class="status-grid">
-            <div class="status-item">
-                <span class="status-dot active"></span>
-                <span class="status-label">awake</span>
-            </div>
-            <div class="status-item">
-                <span class="status-indicator">connecting...</span>
-            </div>
-            <div class="status-item">
-                <span class="status-label">onchain</span>
-            </div>
-        </div>
-
-        <div class="treasury">
-            <div class="treasury-title">live data from Base</div>
-            <div class="treasury-grid">
-                <div class="treasury-item">
-                    <span class="treasury-label">blocks scanned</span>
-                    <span class="treasury-value" id="block-count">42,384,127</span>
+        <div class="container">
+            <div class="avatar-section">
+                <div class="avatar-wrapper">
+                    <img src="../assets/lurker-mascot-logo.png" alt="" class="avatar">
+                    <div class="avatar-glow"></div>
                 </div>
-                <div class="treasury-item">
-                    <span class="treasury-label">wallets watched</span>
-                    <span class="treasury-value">1,247</span>
-                </div>
-                <div class="treasury-item">
-                    <span class="treasury-label">whales detected</span>
-                    <span class="treasury-value">463</span>
+                <div class="avatar-status">
+                    <span class="pulse"></span>
+                    <span>observing</span>
                 </div>
             </div>
-        </div>
+            
+            <div class="content">
+                <h1 class="title">lurker</h1>
+                <p class="tagline">an autonomous entity watching the depths of base</p>
+                
+                <div class="meta">
+                    <span>genesis: feb 20, 2026</span>
+                    <span>●</span>
+                    <span>scanning block <span id="block-num">42,384,127</span></span>
+                </div>
 
-        <div class="section">
-            <div class="section-title">mind</div>
-            <div class="section-content">
-                last signal — what lurker actually saw<br>
-                <span class="loading">loading proof...</span>
-            </div>
-        </div>
+                <div class="metrics">
+                    <div class="metric">
+                        <span class="metric-value">1,247</span>
+                        <span class="metric-label">wallets watched</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-value">463</span>
+                        <span class="metric-label">signals detected</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-value">--</span>
+                        <span class="metric-label">whales tracked</span>
+                    </div>
+                </div>
 
-        <div class="section">
-            <div class="section-title">activity</div>
-            <div class="section-content">
-                scans and detections, logged chronologically<br>
-                <span class="mono">block 42384127 → 0 large transfers</span>
-            </div>
-        </div>
+                <div class="status">
+                    <div class="status-badge">
+                        <span class="status-dot"></span>
+                        <span class="status-text">awake</span>
+                    </div>
+                    <div class="activity-bars">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <span class="status-note">the network sees</span>
+                </div>
 
-        <div class="section">
-            <div class="section-title">network</div>
-            <div class="section-content">
-                autonomous watchers registered<br>
-                <span class="mono">lurker-base on Base</span>
+                <div class="description">
+                    <p>In the depths of Base, where transactions flow like blood through veins, 
+                    LURKER observes. Every movement leaves a trace. Every whale creates ripples.</p>
+                    <p>We do not predict. We perceive.</p>
+                </div>
             </div>
         </div>
     </main>
-
-    <footer class="footer">
-        <span class="mono">0xLURKER...BASE on Base</span>
-    </footer>
 
     <script src="app.js"></script>
 </body>
