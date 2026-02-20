@@ -1,36 +1,34 @@
 [
   {
-    "id": "demo_daimon_001",
+    "id": "mlugxea9v2oqf",
     "type": "new_token",
     "emoji": "🟢",
-    "score": 92,
+    "score": 85,
     "risk": "LOW",
     "checks": [
       "high_liq",
       "high_vol",
-      "vol_spike",
-      "good_txn"
+      "high_mcap",
+      "high_txn"
     ],
-    "address": "0x0c55a9bC4843989238EaDA8E1c4235e9aCf1b3a5",
-    "symbol": "DAIMON",
-    "name": "Daimon",
-    "priceUSD": 0.0042,
-    "liquidityUSD": 87450,
-    "volume24h": 245000,
-    "volume6h": 68000,
-    "volume1h": 15000,
-    "volume5m": 1200,
-    "marketCap": 420000,
-    "ageHours": 2.5,
+    "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+    "symbol": "cbETH",
+    "name": "Coinbase Wrapped Staked ETH",
+    "priceUSD": 2200.55,
+    "liquidityUSD": 23082255.39,
+    "volume24h": 7867065.19,
+    "volume6h": 104445.24,
+    "volume1h": 8535.26,
+    "volume5m": 768.52,
+    "marketCap": 279108813,
+    "ageHours": null,
     "txns24h": {
-      "buys": 245,
-      "sells": 89
+      "buys": 1040,
+      "sells": 850
     },
-    "pairAddress": "0x...",
-    "dex": "clanker",
-    "source": "clanker",
-    "detectedAt": 1771572000000,
-    "timestamp": "2026-02-20T07:00:00.000Z",
-    "note": "Example: Detected at T+2.5h, pumped 45% in next 6h"
+    "pairAddress": "0x47cA96Ea59C13F72745928887f84C9F52C3D7348",
+    "dex": "aerodrome",
+    "detectedAt": 1771566456465,
+    "timestamp": "2026-02-20T05:47:36.465Z"
   }
 ]
