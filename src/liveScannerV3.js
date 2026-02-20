@@ -21,7 +21,7 @@ const CONFIG = {
     
     blacklist: [
         '0x4200000000000000000000000000000000000006', // WETH
-        '0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22', // cbETH
+        '0x2ae3f1ec7f1f5012cfeab0185bfc7aa3cf0dec22', // cbETH (lowercase)
         '0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913', // USDC
         '0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb', // DAI
         '0x4158734D47Bc9694570F8E8eD8DcF2CCd60b55F2', // USDbC
@@ -52,6 +52,12 @@ try {
     if (fs.existsSync(CONFIG.dataFile)) {
         signals = JSON.parse(fs.readFileSync(CONFIG.dataFile, 'utf8'));
         if (!Array.isArray(signals)) signals = [];
+        // Filter out blacklisted tokens on load
+        const beforeCount = signals.length;
+        signals = signals.filter(s => !CONFIG.blacklist.includes(s.address?.toLowerCase()));
+        if (signals.length < beforeCount) {
+            console.log(`[INIT] Removed ${beforeCount - signals.length} blacklisted token(s) from history`);
+        }
     }
 } catch(e) { signals = []; }
 
