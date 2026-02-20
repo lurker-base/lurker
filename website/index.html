@@ -3,182 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LURKER - Autonomous Whale Surveillance</title>
+    <title>LURKER</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="scanlines"></div>
+    <div class="vignette"></div>
     <div class="noise"></div>
-    <div class="grid-overlay"></div>
     
-    <nav class="nav">
-        <div class="logo">
-            <img src="../assets/lurker-mascot-logo.png" alt="LURKER" class="logo-img">
-            <span class="logo-text">LURKER</span>
-        </div>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#signals">Signals</a>
-            <a href="#pricing">Pricing</a>
-        </div>
-    </nav>
-
-    <header class="hero">
-        <div class="hero-mascot">
-            <img src="../assets/lurker-mascot-logo.png" alt="LURKER" class="mascot-img">
-        </div>
-        <div class="hero-content">
-            <div class="badge">◉ AUTONOMOUS AGENT</div>
-            <h1 class="glitch" data-text="WATCHING WHAT MATTERS">
-                WATCHING WHAT MATTERS
-            </h1>
-            <p class="subtitle">
-                Real-time whale surveillance on Base chain. 
-                Detect accumulation, distribution, and smart money moves 
-                before the market reacts.
-            </p>
-            <div class="cta-group">
-                <button class="btn btn-primary">Get Alerts</button>
-                <button class="btn btn-secondary">View Signals</button>
-            </div>
-        </div>
-        <div class="hero-stats">
-            <div class="stat">
-                <div class="stat-value" id="wallets">0</div>
-                <div class="stat-label">Wallets Monitored</div>
-            </div>
-            <div class="stat">
-                <div class="stat-value" id="signals">0</div>
-                <div class="stat-label">Signals Detected</div>
-            </div>
-            <div class="stat">
-                <div class="stat-value" id="blocks">0</div>
-                <div class="stat-label">Blocks Scanned</div>
-            </div>
-        </div>
-    </header>
-
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">How It Works</h2>
-            <div class="features">
-                <div class="feature">
-                    <div class="feature-icon">📡</div>
-                    <h3>Continuous Scanning</h3>
-                    <p>Monitors Base blockchain 24/7, analyzing every block for significant transactions.</p>
+    <main class="main">
+        <section class="hero">
+            <div class="hero-visual">
+                <div class="mascot-container">
+                    <img src="../assets/lurker-mascot-logo.png" alt="" class="mascot">
+                    <div class="mascot-glow"></div>
                 </div>
-                <div class="feature">
-                    <div class="feature-icon">🧠</div>
-                    <h3>Pattern Detection</h3>
-                    <p>AI-powered heuristics identify accumulation, distribution, and whale movements.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">⚡</div>
-                    <h3>Instant Alerts</h3>
-                    <p>Get notified in real-time via Telegram when high-confidence signals trigger.</p>
+                <div class="status-indicator">
+                    <span class="pulse"></span>
+                    <span class="status-text">ACTIVE</span>
                 </div>
             </div>
-        </div>
-    </section>
+            
+            <div class="hero-content">
+                <h1 class="title glitch" data-text="LURKER">LURKER</h1>
+                <p class="tagline">The network sees everything</p>
+                <div class="divider"></div>
+                <p class="description">
+                    An autonomous entity watching Base chain.<br>
+                    It learns. It waits. It signals.
+                </p>
+            </div>
+        </section>
 
-    <section id="signals" class="section section-dark">
-        <div class="container">
-            <h2 class="section-title">Live Signals</h2>
+        <section class="terminal-section">
             <div class="terminal">
                 <div class="terminal-header">
-                    <span class="terminal-dot red"></span>
-                    <span class="terminal-dot yellow"></span>
-                    <span class="terminal-dot green"></span>
-                    <span class="terminal-title">lurker@base:~$ tail -f signals.log</span>
+                    <span class="terminal-dot"></span>
+                    <span class="terminal-title">lurker@base:~$</span>
                 </div>
-                <div class="terminal-body" id="terminal-output">
-                    <div class="log-line">
-                        <span class="timestamp">[04:11:23]</span>
-                        <span class="level info">INFO</span>
-                        <span class="message">Scanning block 42383738...</span>
+                <div class="terminal-body" id="terminal">
+                    <div class="line">
+                        <span class="prompt">$</span>
+                        <span class="command">init_sequence</span>
                     </div>
-                    <div class="log-line">
-                        <span class="timestamp">[04:11:24]</span>
-                        <span class="level warn">SIGNAL</span>
-                        <span class="message">Accumulation detected: 0x7Bf0...1542 (47.5 ETH)</span>
+                    <div class="line output">
+                        <span class="timestamp">[00:00:01]</span> Connecting to Base mainnet...
                     </div>
-                    <div class="log-line">
-                        <span class="timestamp">[04:11:25]</span>
-                        <span class="level success">ALERT</span>
-                        <span class="message">Telegram notification sent (confidence: 87%)</span>
+                    <div class="line output">
+                        <span class="timestamp">[00:00:02]</span> Syncing block headers... <span class="ok">OK</span>
                     </div>
-                    <div class="log-line cursor">
-                        <span class="timestamp">[04:11:26]</span>
-                        <span class="level info">INFO</span>
-                        <span class="message">Waiting for next block...</span>
-                        <span class="blink">_</span>
+                    <div class="line output">
+                        <span class="timestamp">[00:00:03]</span> Pattern recognition loaded. <span class="ok">OK</span>
+                    </div>
+                    <div class="line output">
+                        <span class="timestamp">[00:00:04]</span> <span class="highlight">LURKER is watching</span>
+                    </div>
+                    <div class="line cursor-line">
+                        <span class="prompt">$</span>
+                        <span class="cursor">█</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="pricing" class="section">
-        <div class="container">
-            <h2 class="section-title">Pricing</h2>
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <h3>Observer</h3>
-                    <div class="price">Free</div>
-                    <ul>
-                        <li>Public dashboard access</li>
-                        <li>Delayed signals (1h)</li>
-                        <li>Basic analytics</li>
-                    </ul>
-                    <button class="btn btn-outline">Get Started</button>
+        <section class="metrics">
+            <div class="metric">
+                <div class="metric-value" id="blocks">42,384,127</div>
+                <div class="metric-label">Blocks Synced</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value" id="wallets">1,247</div>
+                <div class="metric-label">Wallets Tracked</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value" id="signals">463</div>
+                <div class="metric-label">Signals Detected</div>
+            </div>
+        </section>
+
+        <section class="manifesto">
+            <div class="manifesto-content">
+                <p class="manifesto-text">
+                    "The chain never sleeps. Neither do we.<br>
+                    Every transaction leaves a trace.<br>
+                    Every whale creates ripples.<br>
+                    We see the patterns others miss."
+                </p>
+                <div class="manifesto-sig">— LURKER</div>
+            </div>
+        </section>
+
+        <section class="access">
+            <div class="access-content">
+                <h2 class="access-title">Access The Network</h2>
+                <div class="access-options">
+                    <div class="access-tier">
+                        <div class="tier-name">Observer</div>
+                        <div class="tier-price">Free</div>
+                        <div class="tier-desc">Public signals. 1h delay.</div>
+                    </div>
+                    <div class="access-tier featured">
+                        <div class="tier-badge">RECOMMENDED</div>
+                        <div class="tier-name">Initiate</div>
+                        <div class="tier-price">$299<span>/cycle</span></div>
+                        <div class="tier-desc">Real-time alerts. Direct line.</div>
+                    </div>
                 </div>
-                <div class="pricing-card featured">
-                    <div class="badge-popular">POPULAR</div>
-                    <h3>Whale Hunter</h3>
-                    <div class="price">$299<span>/mo</span></div>
-                    <ul>
-                        <li>Real-time Telegram alerts</li>
-                        <li>High-confidence signals only</li>
-                        <li>Custom wallet tracking</li>
-                        <li>API access</li>
-                    </ul>
-                    <button class="btn btn-primary">Subscribe</button>
-                </div>
-                <div class="pricing-card">
-                    <h3>Enterprise</h3>
-                    <div class="price">Custom</div>
-                    <ul>
-                        <li>Everything in Whale Hunter</li>
-                        <li>Dedicated infrastructure</li>
-                        <li>Custom alerts & integrations</li>
-                        <li>Priority support</li>
-                    </ul>
-                    <button class="btn btn-outline">Contact Us</button>
+                <div class="access-cta">
+                    <a href="https://t.me/lurker_alerts" class="btn-enter">ENTER THE NETWORK</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="footer">
-        <div class="container">
+        <footer class="footer">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <span class="logo-icon">◈</span>
-                    <span>LURKER</span>
+                <div class="footer-left">
+                    <span class="footer-logo">LURKER</span>
+                    <span class="footer-status">● Active on Base</span>
                 </div>
-                <p class="footer-tagline">Autonomous whale surveillance. Running on Base.</p>
                 <div class="footer-links">
-                    <a href="https://github.com/lurker-ai">GitHub</a>
+                    <a href="https://github.com/lurker-base">GitHub</a>
                     <a href="https://t.me/lurker_alerts">Telegram</a>
                     <a href="https://basescan.org">Base</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 LURKER. All rights reserved.</p>
+                The entity watches. The entity learns. The entity signals.
             </div>
-        </div>
-    </footer>
+        </footer>
+    </main>
 
     <script src="app.js"></script>
 </body>
