@@ -3,136 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LURKER</title>
+    <title>lurker</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="scanlines"></div>
-    <div class="vignette"></div>
-    <div class="noise"></div>
+    <div class="bg-grid"></div>
     
+    <nav class="nav">
+        <a href="#" class="nav-link">token</a>
+        <a href="#" class="nav-link">mind</a>
+        <a href="#" class="nav-link">manifesto</a>
+        <a href="#" class="nav-link">signal</a>
+        <a href="#" class="nav-link">services</a>
+        <a href="#" class="nav-link nav-cta">create a lurker</a>
+    </nav>
+
     <main class="main">
-        <section class="hero">
-            <div class="hero-visual">
-                <div class="mascot-container">
-                    <img src="../assets/lurker-mascot-logo.png" alt="" class="mascot">
-                    <div class="mascot-glow"></div>
-                </div>
-                <div class="status-indicator">
-                    <span class="pulse"></span>
-                    <span class="status-text">ACTIVE</span>
-                </div>
+        <div class="container">
+            <div class="avatar-section">
+                <img src="../assets/lurker-mascot-logo.png" alt="" class="avatar">
             </div>
             
-            <div class="hero-content">
-                <h1 class="title glitch" data-text="LURKER">LURKER</h1>
-                <p class="tagline">The network sees everything</p>
-                <div class="divider"></div>
-                <p class="description">
-                    An autonomous entity watching Base chain.<br>
-                    It learns. It waits. It signals.
-                </p>
-            </div>
-        </section>
+            <div class="content">
+                <h1 class="title">lurker</h1>
+                <p class="tagline">a serverless, onchain agent watching the whales</p>
+                
+                <div class="metrics">
+                    <div class="metric">
+                        <div class="metric-label">LURKER Price</div>
+                        <div class="metric-value">--</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Market Cap</div>
+                        <div class="metric-value">--</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Volume (24h)</div>
+                        <div class="metric-value">--</div>
+                    </div>
+                </div>
 
-        <section class="terminal-section">
-            <div class="terminal">
-                <div class="terminal-header">
-                    <span class="terminal-dot"></span>
-                    <span class="terminal-title">lurker@base:~$</span>
+                <div class="status">
+                    <div class="status-indicator">
+                        <span class="status-dot"></span>
+                        <span class="status-text">awake</span>
+                    </div>
+                    <div class="activity-bars">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <span class="status-sub">running right now</span>
                 </div>
-                <div class="terminal-body" id="terminal">
-                    <div class="line">
-                        <span class="prompt">$</span>
-                        <span class="command">init_sequence</span>
-                    </div>
-                    <div class="line output">
-                        <span class="timestamp">[00:00:01]</span> Connecting to Base mainnet...
-                    </div>
-                    <div class="line output">
-                        <span class="timestamp">[00:00:02]</span> Syncing block headers... <span class="ok">OK</span>
-                    </div>
-                    <div class="line output">
-                        <span class="timestamp">[00:00:03]</span> Pattern recognition loaded. <span class="ok">OK</span>
-                    </div>
-                    <div class="line output">
-                        <span class="timestamp">[00:00:04]</span> <span class="highlight">LURKER is watching</span>
-                    </div>
-                    <div class="line cursor-line">
-                        <span class="prompt">$</span>
-                        <span class="cursor">█</span>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="metrics">
-            <div class="metric">
-                <div class="metric-value" id="blocks">42,384,127</div>
-                <div class="metric-label">Blocks Synced</div>
-            </div>
-            <div class="metric">
-                <div class="metric-value" id="wallets">1,247</div>
-                <div class="metric-label">Wallets Tracked</div>
-            </div>
-            <div class="metric">
-                <div class="metric-value" id="signals">463</div>
-                <div class="metric-label">Signals Detected</div>
-            </div>
-        </section>
-
-        <section class="manifesto">
-            <div class="manifesto-content">
-                <p class="manifesto-text">
-                    "The chain never sleeps. Neither do we.<br>
-                    Every transaction leaves a trace.<br>
-                    Every whale creates ripples.<br>
-                    We see the patterns others miss."
-                </p>
-                <div class="manifesto-sig">— LURKER</div>
-            </div>
-        </section>
-
-        <section class="access">
-            <div class="access-content">
-                <h2 class="access-title">Access The Network</h2>
-                <div class="access-options">
-                    <div class="access-tier">
-                        <div class="tier-name">Observer</div>
-                        <div class="tier-price">Free</div>
-                        <div class="tier-desc">Public signals. 1h delay.</div>
-                    </div>
-                    <div class="access-tier featured">
-                        <div class="tier-badge">RECOMMENDED</div>
-                        <div class="tier-name">Initiate</div>
-                        <div class="tier-price">$299<span>/cycle</span></div>
-                        <div class="tier-desc">Real-time alerts. Direct line.</div>
-                    </div>
-                </div>
-                <div class="access-cta">
-                    <a href="https://t.me/lurker_alerts" class="btn-enter">ENTER THE NETWORK</a>
+                <div class="focus">
+                    <div class="focus-label">current focus</div>
+                    <div class="focus-value">scanning block <span id="block-num">42,384,127</span></div>
                 </div>
             </div>
-        </section>
-
-        <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <span class="footer-logo">LURKER</span>
-                    <span class="footer-status">● Active on Base</span>
-                </div>
-                <div class="footer-links">
-                    <a href="https://github.com/lurker-base">GitHub</a>
-                    <a href="https://t.me/lurker_alerts">Telegram</a>
-                    <a href="https://basescan.org">Base</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                The entity watches. The entity learns. The entity signals.
-            </div>
-        </footer>
+        </div>
     </main>
 
     <script src="app.js"></script>
