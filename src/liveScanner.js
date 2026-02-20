@@ -33,6 +33,7 @@ const CONFIG = {
         '0x9c0e957b6B655189d1F754688c9530C861b9bEB2', // DEGEN
         '0x0578d8A44db98B23BF096A382e016e29a5Ce0ffe', // HIGHER
         '0xBde0A8E5db3A35eE8857e0257E4F25E6B5F1F6A8', // KEYCAT
+        '0x0c55a9bC4843989238EaDA8E1c4235e9aCf1b3a5', // DAIMON (établi)
     ]
 };
 
@@ -155,12 +156,29 @@ async function scan() {
     
     let newSignals = 0;
     const checked = new Set();
+    const baseTokens = new Map(); // address -> source
     
-    // Method 1: Search for trending tokens on Base
+    // Method 1: Get trending/latest pairs from Base
     try {
-        // Get top pairs on Base by searching for common quote tokens
+        const res = await axios.get(
+            'https://api.dexscreener.com/latest/dex/pairs/base',
+            { timeout: 15000 }
+        );
+        if (res.data?.pairs) {
+            for (const pair of res.data.pairs) {
+                if (pair.chainId === 'base' && pair.baseToken) {
+                    const source = detectSource(pair);
+                    baseTokens.set(pair.baseToken.address, source);
+                }
+            }
+        }
+    } catch(e) {
+        console.log('[LIVE] Error fetching trending pairs:', e.message);
+    }
+    
+    // Method 2: Search for specific quote tokens
+    try {
         const searchQueries = ['WETH', 'USDC', 'CBETH', 'CLANKER', 'BANKR'];
-        const baseTokens = new Map(); // address -> source
         
         for (const quote of searchQueries) {
             try {
