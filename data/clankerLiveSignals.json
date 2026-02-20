@@ -1,3002 +1,3002 @@
 [
   {
-    "symbol": "BUILD4",
-    "address": "0x6b088B37967B6fdb5feFe70eCbA882A6A0fA4B07",
-    "age": 0.08108333333333333,
-    "detectedAt": 1771614857865
+    "symbol": "DALIEN",
+    "address": "0x83A5c2148E7A60cf07e1C9c5d30Aa84e7Bcbcb07",
+    "age": 0.22886666666666666,
+    "detectedAt": 1771616684732
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x6E32A59d556C690DFF55C1CB699936e8Ff097B07",
-    "age": 0.08108333333333333,
-    "detectedAt": 1771614857865
+    "symbol": "deployer",
+    "address": "0x141aD5770a3346297002926CaF8Faac4c4577B07",
+    "age": 0.2622,
+    "detectedAt": 1771616684732
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0xD3519692984739334693c7503B470a0827bf2b07",
-    "age": 0.21441666666666667,
-    "detectedAt": 1771614857865
+    "symbol": "nes",
+    "address": "0xA122EA4836bafF954549391fb141d0E7d5358b07",
+    "age": 0.2622,
+    "detectedAt": 1771616684732
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0x9b84972bc91A931195efB5ec1831EdB3de098b07",
-    "age": 0.21441666666666667,
-    "detectedAt": 1771614857866
+    "symbol": "deployer",
+    "address": "0x321dAc8b1025D800460bCE9219233E44CeaD9B07",
+    "age": 0.2622,
+    "detectedAt": 1771616684733
   },
   {
-    "symbol": "SHINU",
-    "address": "0xe0277f68952ab329030BAd2339513b1D8E92db07",
-    "age": 0.31443333333333334,
-    "detectedAt": 1771614857866
+    "symbol": "DALIEN",
+    "address": "0x8dCD89769c4357bf0878fa3Bd2C0219f82e20b07",
+    "age": 0.26221666666666665,
+    "detectedAt": 1771616684733
   },
   {
-    "symbol": "SHINU",
-    "address": "0xb7F33E6E9abdBBfeC81DB2A2fd2A6EdB06fDdB07",
-    "age": 0.31443333333333334,
-    "detectedAt": 1771614857866
+    "symbol": "technologic",
+    "address": "0x01B88D0054cd1ADa7fd7f62C5CD3CBf6dDc61B07",
+    "age": 0.32888333333333336,
+    "detectedAt": 1771616684733
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0x9c8C9ef05b1D75eaC1405C3f2eb22CB24e687B07",
-    "age": 0.34776666666666667,
-    "detectedAt": 1771614857866
+    "symbol": "ackshually",
+    "address": "0x07786976D60f8FbACe84981C509B6bDc5f380B07",
+    "age": 0.3622166666666667,
+    "detectedAt": 1771616684733
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0x2B4d7f700a7E1E25F3097C849C5e29C03cC06B07",
-    "age": 0.3811,
-    "detectedAt": 1771614857866
+    "symbol": "ackshually",
+    "address": "0x2B75d75Aac3A77ad55fd258aE8431BE999C3Bb07",
+    "age": 0.3622166666666667,
+    "detectedAt": 1771616684733
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0xeeB9256adB9661e8615A9EFe92999f23253a2b07",
-    "age": 0.7477666666666667,
-    "detectedAt": 1771614857866
+    "symbol": "technologic",
+    "address": "0x755327327dfECB62E55c385cAAa9e5f5C13A8b07",
+    "age": 0.3622166666666667,
+    "detectedAt": 1771616684733
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0xC0234e7C082b7ccf6a68Ff4bA77d070CC152f3e4",
-    "age": 0.7477666666666667,
-    "detectedAt": 1771614857866
+    "symbol": "aackchyually",
+    "address": "0x125bb57863148735B5A8BdA50284De6347374B07",
+    "age": 0.42888333333333334,
+    "detectedAt": 1771616684733
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x49424E13465b8F5e8d2E167656cac0c39D9d9B07",
-    "age": 0.7811,
-    "detectedAt": 1771614857866
+    "symbol": "aackchyually",
+    "address": "0xFF762bE01628ad70aDaE698b65660B3dd8CBEb07",
+    "age": 0.42888333333333334,
+    "detectedAt": 1771616684733
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x09752657E2d512BfB0c8B927F497723B9Fe21B07",
-    "age": 0.7811,
-    "detectedAt": 1771614857866
+    "symbol": "aliens",
+    "address": "0x2c5c3632bB33acbE590CDb3a7e4B0Db3244A4B07",
+    "age": 0.46221666666666666,
+    "detectedAt": 1771616684733
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0xb3E065F7d7aF428C7212c8EFce865870fBE20B07",
-    "age": 0.8477666666666667,
-    "detectedAt": 1771614857866
+    "symbol": "aliens",
+    "address": "0x4822492fd53a096ef4ABd1a66d8F153271e83B07",
+    "age": 0.49555,
+    "detectedAt": 1771616684733
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0x6cE0C0141eFacFd8704f02614D082B4b22c74b07",
-    "age": 0.8477666666666667,
-    "detectedAt": 1771614857866
+    "symbol": "aliens",
+    "address": "0xB673C6c55A1f0D234A76F10B87036B79748f0b07",
+    "age": 0.8288833333333333,
+    "detectedAt": 1771616684733
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0x23dDe3d0CcDe19686FB09AA09e5e27D7FaCc6b07",
-    "age": 1.1144333333333334,
-    "detectedAt": 1771614857866
+    "symbol": "aliens",
+    "address": "0xB7ed6bB5907f6bD7854162550d6A7662e99aFB07",
+    "age": 0.8288833333333333,
+    "detectedAt": 1771616684733
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0xd1E7b76adD7045425dcFdD3E4f534E1C154dEb07",
-    "age": 1.1477666666666666,
-    "detectedAt": 1771614857866
+    "symbol": "aackchyually",
+    "address": "0x119d261fe6eF3763Fbc74Cca2892F1994645DB07",
+    "age": 0.8288833333333333,
+    "detectedAt": 1771616684733
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x58d10ED16Fa75b3C0276073B69e6e4715F877B07",
-    "age": 1.1811,
-    "detectedAt": 1771614857866
+    "symbol": "Larpz",
+    "address": "0x42B32368a839De6150603552Ba2f8d64C0247b07",
+    "age": 0.8622166666666666,
+    "detectedAt": 1771616684733
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0xbe0Fcd1640E9AC557981a54E318496Ea094E9b07",
-    "age": 1.1811,
-    "detectedAt": 1771614857866
+    "symbol": "aackchyually",
+    "address": "0xAb62a5A8181819a3b41a9cb331e58509B061101B",
+    "age": 0.8622166666666666,
+    "detectedAt": 1771616684733
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x24039F38B2F19d5B83518D714F6F122ced81bB07",
-    "age": 1.2811,
-    "detectedAt": 1771614857866
+    "symbol": "Larpz",
+    "address": "0x4320d1826AedDf596efABe0E292C27561685Eb07",
+    "age": 0.8622166666666666,
+    "detectedAt": 1771616684733
   },
   {
-    "symbol": "babybooAI",
-    "address": "0xd0fB2Cf1F7212F50a9826917Be2a3020B17e9B07",
-    "age": 1.3144333333333333,
-    "detectedAt": 1771614857866
+    "symbol": "ackshually",
+    "address": "0x3bBfC510C2291fc1a92D1FC661a2016122ca6b07",
+    "age": 0.8622166666666666,
+    "detectedAt": 1771616684733
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0xD3519692984739334693c7503B470a0827bf2b07",
-    "age": 0.15738333333333332,
-    "detectedAt": 1771614854443
+    "symbol": "DALIEN",
+    "address": "0x83A5c2148E7A60cf07e1C9c5d30Aa84e7Bcbcb07",
+    "age": 0.1671,
+    "detectedAt": 1771616681026
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0x9b84972bc91A931195efB5ec1831EdB3de098b07",
-    "age": 0.15738333333333332,
-    "detectedAt": 1771614854444
+    "symbol": "deployer",
+    "address": "0x141aD5770a3346297002926CaF8Faac4c4577B07",
+    "age": 0.20043333333333332,
+    "detectedAt": 1771616681026
   },
   {
-    "symbol": "SHINU",
-    "address": "0xe0277f68952ab329030BAd2339513b1D8E92db07",
-    "age": 0.2574,
-    "detectedAt": 1771614854444
+    "symbol": "nes",
+    "address": "0xA122EA4836bafF954549391fb141d0E7d5358b07",
+    "age": 0.20043333333333332,
+    "detectedAt": 1771616681026
   },
   {
-    "symbol": "SHINU",
-    "address": "0xb7F33E6E9abdBBfeC81DB2A2fd2A6EdB06fDdB07",
-    "age": 0.2574,
-    "detectedAt": 1771614854444
+    "symbol": "deployer",
+    "address": "0x321dAc8b1025D800460bCE9219233E44CeaD9B07",
+    "age": 0.20043333333333332,
+    "detectedAt": 1771616681027
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0x9c8C9ef05b1D75eaC1405C3f2eb22CB24e687B07",
-    "age": 0.29073333333333334,
-    "detectedAt": 1771614854444
+    "symbol": "DALIEN",
+    "address": "0x8dCD89769c4357bf0878fa3Bd2C0219f82e20b07",
+    "age": 0.20045,
+    "detectedAt": 1771616681027
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0x2B4d7f700a7E1E25F3097C849C5e29C03cC06B07",
-    "age": 0.32406666666666667,
-    "detectedAt": 1771614854444
+    "symbol": "technologic",
+    "address": "0x01B88D0054cd1ADa7fd7f62C5CD3CBf6dDc61B07",
+    "age": 0.26711666666666667,
+    "detectedAt": 1771616681027
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0xeeB9256adB9661e8615A9EFe92999f23253a2b07",
-    "age": 0.6907333333333333,
-    "detectedAt": 1771614854444
+    "symbol": "ackshually",
+    "address": "0x07786976D60f8FbACe84981C509B6bDc5f380B07",
+    "age": 0.30045,
+    "detectedAt": 1771616681027
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0xC0234e7C082b7ccf6a68Ff4bA77d070CC152f3e4",
-    "age": 0.6907333333333333,
-    "detectedAt": 1771614854444
+    "symbol": "ackshually",
+    "address": "0x2B75d75Aac3A77ad55fd258aE8431BE999C3Bb07",
+    "age": 0.30045,
+    "detectedAt": 1771616681027
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x49424E13465b8F5e8d2E167656cac0c39D9d9B07",
-    "age": 0.7240666666666666,
-    "detectedAt": 1771614854444
+    "symbol": "technologic",
+    "address": "0x755327327dfECB62E55c385cAAa9e5f5C13A8b07",
+    "age": 0.30045,
+    "detectedAt": 1771616681027
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x09752657E2d512BfB0c8B927F497723B9Fe21B07",
-    "age": 0.7240666666666666,
-    "detectedAt": 1771614854444
+    "symbol": "aackchyually",
+    "address": "0x125bb57863148735B5A8BdA50284De6347374B07",
+    "age": 0.36711666666666665,
+    "detectedAt": 1771616681027
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0xb3E065F7d7aF428C7212c8EFce865870fBE20B07",
-    "age": 0.7907333333333333,
-    "detectedAt": 1771614854444
+    "symbol": "aackchyually",
+    "address": "0xFF762bE01628ad70aDaE698b65660B3dd8CBEb07",
+    "age": 0.36711666666666665,
+    "detectedAt": 1771616681027
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0x6cE0C0141eFacFd8704f02614D082B4b22c74b07",
-    "age": 0.7907333333333333,
-    "detectedAt": 1771614854444
+    "symbol": "aliens",
+    "address": "0x2c5c3632bB33acbE590CDb3a7e4B0Db3244A4B07",
+    "age": 0.40045,
+    "detectedAt": 1771616681027
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0x23dDe3d0CcDe19686FB09AA09e5e27D7FaCc6b07",
-    "age": 1.0574,
-    "detectedAt": 1771614854444
+    "symbol": "aliens",
+    "address": "0x4822492fd53a096ef4ABd1a66d8F153271e83B07",
+    "age": 0.43378333333333335,
+    "detectedAt": 1771616681027
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0xd1E7b76adD7045425dcFdD3E4f534E1C154dEb07",
-    "age": 1.0907333333333333,
-    "detectedAt": 1771614854444
+    "symbol": "aliens",
+    "address": "0xB673C6c55A1f0D234A76F10B87036B79748f0b07",
+    "age": 0.7671166666666667,
+    "detectedAt": 1771616681027
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x58d10ED16Fa75b3C0276073B69e6e4715F877B07",
-    "age": 1.1240666666666668,
-    "detectedAt": 1771614854444
+    "symbol": "aliens",
+    "address": "0xB7ed6bB5907f6bD7854162550d6A7662e99aFB07",
+    "age": 0.7671166666666667,
+    "detectedAt": 1771616681027
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0xbe0Fcd1640E9AC557981a54E318496Ea094E9b07",
-    "age": 1.1240666666666668,
-    "detectedAt": 1771614854444
+    "symbol": "aackchyually",
+    "address": "0x119d261fe6eF3763Fbc74Cca2892F1994645DB07",
+    "age": 0.7671166666666667,
+    "detectedAt": 1771616681027
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x24039F38B2F19d5B83518D714F6F122ced81bB07",
-    "age": 1.2240666666666666,
-    "detectedAt": 1771614854444
+    "symbol": "Larpz",
+    "address": "0x42B32368a839De6150603552Ba2f8d64C0247b07",
+    "age": 0.80045,
+    "detectedAt": 1771616681027
   },
   {
-    "symbol": "babybooAI",
-    "address": "0xd0fB2Cf1F7212F50a9826917Be2a3020B17e9B07",
-    "age": 1.2574,
-    "detectedAt": 1771614854444
+    "symbol": "aackchyually",
+    "address": "0xAb62a5A8181819a3b41a9cb331e58509B061101B",
+    "age": 0.80045,
+    "detectedAt": 1771616681027
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0xedC84D0193Dc21B2B9ebbdC8379332b9C7Eceb07",
-    "age": 1.3240666666666667,
-    "detectedAt": 1771614854444
+    "symbol": "Larpz",
+    "address": "0x4320d1826AedDf596efABe0E292C27561685Eb07",
+    "age": 0.80045,
+    "detectedAt": 1771616681027
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x4C36F188B97A8c5C915e7280E5034a8a7bB7fb07",
-    "age": 1.3240666666666667,
-    "detectedAt": 1771614854444
+    "symbol": "ackshually",
+    "address": "0x3bBfC510C2291fc1a92D1FC661a2016122ca6b07",
+    "age": 0.80045,
+    "detectedAt": 1771616681027
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0xD3519692984739334693c7503B470a0827bf2b07",
-    "age": 0.1022,
-    "detectedAt": 1771614851132
+    "symbol": "DALIEN",
+    "address": "0x83A5c2148E7A60cf07e1C9c5d30Aa84e7Bcbcb07",
+    "age": 0.10628333333333333,
+    "detectedAt": 1771616677377
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0x9b84972bc91A931195efB5ec1831EdB3de098b07",
-    "age": 0.1022,
-    "detectedAt": 1771614851132
+    "symbol": "deployer",
+    "address": "0x141aD5770a3346297002926CaF8Faac4c4577B07",
+    "age": 0.13961666666666667,
+    "detectedAt": 1771616677377
   },
   {
-    "symbol": "SHINU",
-    "address": "0xe0277f68952ab329030BAd2339513b1D8E92db07",
-    "age": 0.2022,
-    "detectedAt": 1771614851133
+    "symbol": "nes",
+    "address": "0xA122EA4836bafF954549391fb141d0E7d5358b07",
+    "age": 0.13961666666666667,
+    "detectedAt": 1771616677377
   },
   {
-    "symbol": "SHINU",
-    "address": "0xb7F33E6E9abdBBfeC81DB2A2fd2A6EdB06fDdB07",
-    "age": 0.20221666666666666,
-    "detectedAt": 1771614851133
+    "symbol": "deployer",
+    "address": "0x321dAc8b1025D800460bCE9219233E44CeaD9B07",
+    "age": 0.13961666666666667,
+    "detectedAt": 1771616677377
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0x9c8C9ef05b1D75eaC1405C3f2eb22CB24e687B07",
-    "age": 0.23555,
-    "detectedAt": 1771614851133
+    "symbol": "DALIEN",
+    "address": "0x8dCD89769c4357bf0878fa3Bd2C0219f82e20b07",
+    "age": 0.13961666666666667,
+    "detectedAt": 1771616677377
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0x2B4d7f700a7E1E25F3097C849C5e29C03cC06B07",
-    "age": 0.2688833333333333,
-    "detectedAt": 1771614851133
+    "symbol": "technologic",
+    "address": "0x01B88D0054cd1ADa7fd7f62C5CD3CBf6dDc61B07",
+    "age": 0.20628333333333335,
+    "detectedAt": 1771616677378
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0xeeB9256adB9661e8615A9EFe92999f23253a2b07",
-    "age": 0.63555,
-    "detectedAt": 1771614851133
+    "symbol": "ackshually",
+    "address": "0x07786976D60f8FbACe84981C509B6bDc5f380B07",
+    "age": 0.23963333333333334,
+    "detectedAt": 1771616677378
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0xC0234e7C082b7ccf6a68Ff4bA77d070CC152f3e4",
-    "age": 0.63555,
-    "detectedAt": 1771614851133
+    "symbol": "ackshually",
+    "address": "0x2B75d75Aac3A77ad55fd258aE8431BE999C3Bb07",
+    "age": 0.23963333333333334,
+    "detectedAt": 1771616677378
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x49424E13465b8F5e8d2E167656cac0c39D9d9B07",
-    "age": 0.6688833333333334,
-    "detectedAt": 1771614851133
+    "symbol": "technologic",
+    "address": "0x755327327dfECB62E55c385cAAa9e5f5C13A8b07",
+    "age": 0.23963333333333334,
+    "detectedAt": 1771616677378
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x09752657E2d512BfB0c8B927F497723B9Fe21B07",
-    "age": 0.6688833333333334,
-    "detectedAt": 1771614851133
+    "symbol": "aackchyually",
+    "address": "0x125bb57863148735B5A8BdA50284De6347374B07",
+    "age": 0.3063,
+    "detectedAt": 1771616677378
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0xb3E065F7d7aF428C7212c8EFce865870fBE20B07",
-    "age": 0.73555,
-    "detectedAt": 1771614851133
+    "symbol": "aackchyually",
+    "address": "0xFF762bE01628ad70aDaE698b65660B3dd8CBEb07",
+    "age": 0.3063,
+    "detectedAt": 1771616677378
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0x6cE0C0141eFacFd8704f02614D082B4b22c74b07",
-    "age": 0.73555,
-    "detectedAt": 1771614851133
+    "symbol": "aliens",
+    "address": "0x2c5c3632bB33acbE590CDb3a7e4B0Db3244A4B07",
+    "age": 0.33963333333333334,
+    "detectedAt": 1771616677378
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0x23dDe3d0CcDe19686FB09AA09e5e27D7FaCc6b07",
-    "age": 1.0022166666666668,
-    "detectedAt": 1771614851133
+    "symbol": "aliens",
+    "address": "0x4822492fd53a096ef4ABd1a66d8F153271e83B07",
+    "age": 0.37296666666666667,
+    "detectedAt": 1771616677378
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0xd1E7b76adD7045425dcFdD3E4f534E1C154dEb07",
-    "age": 1.03555,
-    "detectedAt": 1771614851133
+    "symbol": "aliens",
+    "address": "0xB673C6c55A1f0D234A76F10B87036B79748f0b07",
+    "age": 0.7063,
+    "detectedAt": 1771616677378
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x58d10ED16Fa75b3C0276073B69e6e4715F877B07",
-    "age": 1.0688833333333334,
-    "detectedAt": 1771614851133
+    "symbol": "aliens",
+    "address": "0xB7ed6bB5907f6bD7854162550d6A7662e99aFB07",
+    "age": 0.7063,
+    "detectedAt": 1771616677378
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0xbe0Fcd1640E9AC557981a54E318496Ea094E9b07",
-    "age": 1.0688833333333334,
-    "detectedAt": 1771614851133
+    "symbol": "aackchyually",
+    "address": "0x119d261fe6eF3763Fbc74Cca2892F1994645DB07",
+    "age": 0.7063,
+    "detectedAt": 1771616677378
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x24039F38B2F19d5B83518D714F6F122ced81bB07",
-    "age": 1.1688833333333333,
-    "detectedAt": 1771614851133
+    "symbol": "Larpz",
+    "address": "0x42B32368a839De6150603552Ba2f8d64C0247b07",
+    "age": 0.7396333333333334,
+    "detectedAt": 1771616677378
   },
   {
-    "symbol": "babybooAI",
-    "address": "0xd0fB2Cf1F7212F50a9826917Be2a3020B17e9B07",
-    "age": 1.2022166666666667,
-    "detectedAt": 1771614851133
+    "symbol": "aackchyually",
+    "address": "0xAb62a5A8181819a3b41a9cb331e58509B061101B",
+    "age": 0.7396333333333334,
+    "detectedAt": 1771616677378
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0xedC84D0193Dc21B2B9ebbdC8379332b9C7Eceb07",
-    "age": 1.2688833333333334,
-    "detectedAt": 1771614851133
+    "symbol": "Larpz",
+    "address": "0x4320d1826AedDf596efABe0E292C27561685Eb07",
+    "age": 0.7396333333333334,
+    "detectedAt": 1771616677378
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x4C36F188B97A8c5C915e7280E5034a8a7bB7fb07",
-    "age": 1.2688833333333334,
-    "detectedAt": 1771614851133
+    "symbol": "ackshually",
+    "address": "0x3bBfC510C2291fc1a92D1FC661a2016122ca6b07",
+    "age": 0.7396333333333334,
+    "detectedAt": 1771616677378
   },
   {
-    "symbol": "SHINU",
-    "address": "0xe0277f68952ab329030BAd2339513b1D8E92db07",
-    "age": 0.14693333333333333,
-    "detectedAt": 1771614847817
+    "symbol": "deployer",
+    "address": "0x141aD5770a3346297002926CaF8Faac4c4577B07",
+    "age": 0.08138333333333334,
+    "detectedAt": 1771616673884
   },
   {
-    "symbol": "SHINU",
-    "address": "0xb7F33E6E9abdBBfeC81DB2A2fd2A6EdB06fDdB07",
-    "age": 0.14695,
-    "detectedAt": 1771614847817
+    "symbol": "nes",
+    "address": "0xA122EA4836bafF954549391fb141d0E7d5358b07",
+    "age": 0.0814,
+    "detectedAt": 1771616673884
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0x9c8C9ef05b1D75eaC1405C3f2eb22CB24e687B07",
-    "age": 0.18028333333333332,
-    "detectedAt": 1771614847817
+    "symbol": "deployer",
+    "address": "0x321dAc8b1025D800460bCE9219233E44CeaD9B07",
+    "age": 0.0814,
+    "detectedAt": 1771616673884
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0x2B4d7f700a7E1E25F3097C849C5e29C03cC06B07",
-    "age": 0.21361666666666668,
-    "detectedAt": 1771614847817
+    "symbol": "DALIEN",
+    "address": "0x8dCD89769c4357bf0878fa3Bd2C0219f82e20b07",
+    "age": 0.0814,
+    "detectedAt": 1771616673884
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0xeeB9256adB9661e8615A9EFe92999f23253a2b07",
-    "age": 0.5802833333333334,
-    "detectedAt": 1771614847817
+    "symbol": "technologic",
+    "address": "0x01B88D0054cd1ADa7fd7f62C5CD3CBf6dDc61B07",
+    "age": 0.14806666666666668,
+    "detectedAt": 1771616673884
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0xC0234e7C082b7ccf6a68Ff4bA77d070CC152f3e4",
-    "age": 0.5802833333333334,
-    "detectedAt": 1771614847817
+    "symbol": "ackshually",
+    "address": "0x07786976D60f8FbACe84981C509B6bDc5f380B07",
+    "age": 0.1814,
+    "detectedAt": 1771616673884
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x49424E13465b8F5e8d2E167656cac0c39D9d9B07",
-    "age": 0.6136166666666667,
-    "detectedAt": 1771614847817
+    "symbol": "ackshually",
+    "address": "0x2B75d75Aac3A77ad55fd258aE8431BE999C3Bb07",
+    "age": 0.1814,
+    "detectedAt": 1771616673884
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x09752657E2d512BfB0c8B927F497723B9Fe21B07",
-    "age": 0.6136166666666667,
-    "detectedAt": 1771614847817
+    "symbol": "technologic",
+    "address": "0x755327327dfECB62E55c385cAAa9e5f5C13A8b07",
+    "age": 0.1814,
+    "detectedAt": 1771616673884
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0xb3E065F7d7aF428C7212c8EFce865870fBE20B07",
-    "age": 0.6802833333333334,
-    "detectedAt": 1771614847818
+    "symbol": "aackchyually",
+    "address": "0x125bb57863148735B5A8BdA50284De6347374B07",
+    "age": 0.24806666666666666,
+    "detectedAt": 1771616673884
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0x6cE0C0141eFacFd8704f02614D082B4b22c74b07",
-    "age": 0.6803,
-    "detectedAt": 1771614847818
+    "symbol": "aackchyually",
+    "address": "0xFF762bE01628ad70aDaE698b65660B3dd8CBEb07",
+    "age": 0.24806666666666666,
+    "detectedAt": 1771616673884
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0x23dDe3d0CcDe19686FB09AA09e5e27D7FaCc6b07",
-    "age": 0.9469666666666666,
-    "detectedAt": 1771614847818
+    "symbol": "aliens",
+    "address": "0x2c5c3632bB33acbE590CDb3a7e4B0Db3244A4B07",
+    "age": 0.2814,
+    "detectedAt": 1771616673884
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0xd1E7b76adD7045425dcFdD3E4f534E1C154dEb07",
-    "age": 0.9803,
-    "detectedAt": 1771614847818
+    "symbol": "aliens",
+    "address": "0x4822492fd53a096ef4ABd1a66d8F153271e83B07",
+    "age": 0.3147333333333333,
+    "detectedAt": 1771616673884
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x58d10ED16Fa75b3C0276073B69e6e4715F877B07",
-    "age": 1.0136333333333334,
-    "detectedAt": 1771614847818
+    "symbol": "aliens",
+    "address": "0xB673C6c55A1f0D234A76F10B87036B79748f0b07",
+    "age": 0.6480666666666667,
+    "detectedAt": 1771616673884
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0xbe0Fcd1640E9AC557981a54E318496Ea094E9b07",
-    "age": 1.0136333333333334,
-    "detectedAt": 1771614847818
+    "symbol": "aliens",
+    "address": "0xB7ed6bB5907f6bD7854162550d6A7662e99aFB07",
+    "age": 0.6480666666666667,
+    "detectedAt": 1771616673884
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x24039F38B2F19d5B83518D714F6F122ced81bB07",
-    "age": 1.1136333333333333,
-    "detectedAt": 1771614847818
+    "symbol": "aackchyually",
+    "address": "0x119d261fe6eF3763Fbc74Cca2892F1994645DB07",
+    "age": 0.6480666666666667,
+    "detectedAt": 1771616673884
   },
   {
-    "symbol": "babybooAI",
-    "address": "0xd0fB2Cf1F7212F50a9826917Be2a3020B17e9B07",
-    "age": 1.1469666666666667,
-    "detectedAt": 1771614847818
+    "symbol": "Larpz",
+    "address": "0x42B32368a839De6150603552Ba2f8d64C0247b07",
+    "age": 0.6814,
+    "detectedAt": 1771616673884
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0xedC84D0193Dc21B2B9ebbdC8379332b9C7Eceb07",
-    "age": 1.2136333333333333,
-    "detectedAt": 1771614847818
+    "symbol": "aackchyually",
+    "address": "0xAb62a5A8181819a3b41a9cb331e58509B061101B",
+    "age": 0.6814,
+    "detectedAt": 1771616673884
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x4C36F188B97A8c5C915e7280E5034a8a7bB7fb07",
-    "age": 1.2136333333333333,
-    "detectedAt": 1771614847818
+    "symbol": "Larpz",
+    "address": "0x4320d1826AedDf596efABe0E292C27561685Eb07",
+    "age": 0.6814,
+    "detectedAt": 1771616673884
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x423B12da10bBECd44D82fA3cdAB89C934dBDcb07",
-    "age": 1.2469666666666666,
-    "detectedAt": 1771614847818
+    "symbol": "ackshually",
+    "address": "0x3bBfC510C2291fc1a92D1FC661a2016122ca6b07",
+    "age": 0.6814,
+    "detectedAt": 1771616673884
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x238b3ec736Bb8Bb675ddBbd0B01b74222f681b07",
-    "age": 1.2803,
-    "detectedAt": 1771614847818
+    "symbol": "SKIBIDI",
+    "address": "0xc263A5fBbca04D7F28B026AEc117475DA0ae0B07",
+    "age": 0.8147333333333333,
+    "detectedAt": 1771616673884
   },
   {
-    "symbol": "SHINU",
-    "address": "0xe0277f68952ab329030BAd2339513b1D8E92db07",
-    "age": 0.09035,
-    "detectedAt": 1771614844422
+    "symbol": "technologic",
+    "address": "0x01B88D0054cd1ADa7fd7f62C5CD3CBf6dDc61B07",
+    "age": 0.08873333333333333,
+    "detectedAt": 1771616670324
   },
   {
-    "symbol": "SHINU",
-    "address": "0xb7F33E6E9abdBBfeC81DB2A2fd2A6EdB06fDdB07",
-    "age": 0.09036666666666666,
-    "detectedAt": 1771614844422
+    "symbol": "ackshually",
+    "address": "0x07786976D60f8FbACe84981C509B6bDc5f380B07",
+    "age": 0.12206666666666667,
+    "detectedAt": 1771616670324
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0x9c8C9ef05b1D75eaC1405C3f2eb22CB24e687B07",
-    "age": 0.1237,
-    "detectedAt": 1771614844422
+    "symbol": "ackshually",
+    "address": "0x2B75d75Aac3A77ad55fd258aE8431BE999C3Bb07",
+    "age": 0.12206666666666667,
+    "detectedAt": 1771616670324
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0x2B4d7f700a7E1E25F3097C849C5e29C03cC06B07",
-    "age": 0.15703333333333333,
-    "detectedAt": 1771614844422
+    "symbol": "technologic",
+    "address": "0x755327327dfECB62E55c385cAAa9e5f5C13A8b07",
+    "age": 0.12206666666666667,
+    "detectedAt": 1771616670324
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0xeeB9256adB9661e8615A9EFe92999f23253a2b07",
-    "age": 0.5237,
-    "detectedAt": 1771614844422
+    "symbol": "aackchyually",
+    "address": "0x125bb57863148735B5A8BdA50284De6347374B07",
+    "age": 0.18873333333333334,
+    "detectedAt": 1771616670324
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0xC0234e7C082b7ccf6a68Ff4bA77d070CC152f3e4",
-    "age": 0.5237,
-    "detectedAt": 1771614844422
+    "symbol": "aackchyually",
+    "address": "0xFF762bE01628ad70aDaE698b65660B3dd8CBEb07",
+    "age": 0.18873333333333334,
+    "detectedAt": 1771616670324
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x49424E13465b8F5e8d2E167656cac0c39D9d9B07",
-    "age": 0.5570333333333334,
-    "detectedAt": 1771614844422
+    "symbol": "aliens",
+    "address": "0x2c5c3632bB33acbE590CDb3a7e4B0Db3244A4B07",
+    "age": 0.22206666666666666,
+    "detectedAt": 1771616670324
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x09752657E2d512BfB0c8B927F497723B9Fe21B07",
-    "age": 0.5570333333333334,
-    "detectedAt": 1771614844422
+    "symbol": "aliens",
+    "address": "0x4822492fd53a096ef4ABd1a66d8F153271e83B07",
+    "age": 0.2554,
+    "detectedAt": 1771616670324
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0xb3E065F7d7aF428C7212c8EFce865870fBE20B07",
-    "age": 0.6237,
-    "detectedAt": 1771614844422
+    "symbol": "aliens",
+    "address": "0xB673C6c55A1f0D234A76F10B87036B79748f0b07",
+    "age": 0.5887333333333333,
+    "detectedAt": 1771616670324
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0x6cE0C0141eFacFd8704f02614D082B4b22c74b07",
-    "age": 0.6237,
-    "detectedAt": 1771614844422
+    "symbol": "aliens",
+    "address": "0xB7ed6bB5907f6bD7854162550d6A7662e99aFB07",
+    "age": 0.5887333333333333,
+    "detectedAt": 1771616670324
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0x23dDe3d0CcDe19686FB09AA09e5e27D7FaCc6b07",
-    "age": 0.8903666666666666,
-    "detectedAt": 1771614844422
+    "symbol": "aackchyually",
+    "address": "0x119d261fe6eF3763Fbc74Cca2892F1994645DB07",
+    "age": 0.5887333333333333,
+    "detectedAt": 1771616670324
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0xd1E7b76adD7045425dcFdD3E4f534E1C154dEb07",
-    "age": 0.9237,
-    "detectedAt": 1771614844422
+    "symbol": "Larpz",
+    "address": "0x42B32368a839De6150603552Ba2f8d64C0247b07",
+    "age": 0.6220666666666667,
+    "detectedAt": 1771616670324
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x58d10ED16Fa75b3C0276073B69e6e4715F877B07",
-    "age": 0.9570333333333333,
-    "detectedAt": 1771614844422
+    "symbol": "aackchyually",
+    "address": "0xAb62a5A8181819a3b41a9cb331e58509B061101B",
+    "age": 0.6220666666666667,
+    "detectedAt": 1771616670324
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0xbe0Fcd1640E9AC557981a54E318496Ea094E9b07",
-    "age": 0.9570333333333333,
-    "detectedAt": 1771614844422
+    "symbol": "Larpz",
+    "address": "0x4320d1826AedDf596efABe0E292C27561685Eb07",
+    "age": 0.6220666666666667,
+    "detectedAt": 1771616670324
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x24039F38B2F19d5B83518D714F6F122ced81bB07",
-    "age": 1.0570333333333333,
-    "detectedAt": 1771614844422
+    "symbol": "ackshually",
+    "address": "0x3bBfC510C2291fc1a92D1FC661a2016122ca6b07",
+    "age": 0.6220666666666667,
+    "detectedAt": 1771616670325
   },
   {
-    "symbol": "babybooAI",
-    "address": "0xd0fB2Cf1F7212F50a9826917Be2a3020B17e9B07",
-    "age": 1.0903666666666667,
-    "detectedAt": 1771614844422
+    "symbol": "SKIBIDI",
+    "address": "0xc263A5fBbca04D7F28B026AEc117475DA0ae0B07",
+    "age": 0.7554166666666666,
+    "detectedAt": 1771616670325
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0xedC84D0193Dc21B2B9ebbdC8379332b9C7Eceb07",
-    "age": 1.1570333333333334,
-    "detectedAt": 1771614844423
+    "symbol": "SKIBIDI",
+    "address": "0xc9B4e7f1Ce9c43409e273128AcD973DcdFAfcb07",
+    "age": 0.78875,
+    "detectedAt": 1771616670325
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x4C36F188B97A8c5C915e7280E5034a8a7bB7fb07",
-    "age": 1.15705,
-    "detectedAt": 1771614844423
+    "symbol": "nes",
+    "address": "0x8034714fe4F42B704D76014C6B11328E9eCFBb07",
+    "age": 0.8554166666666667,
+    "detectedAt": 1771616670325
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x423B12da10bBECd44D82fA3cdAB89C934dBDcb07",
-    "age": 1.1903833333333333,
-    "detectedAt": 1771614844423
+    "symbol": "nes",
+    "address": "0xB095BeF1cb9682082dE817501D44156dD26Fcb07",
+    "age": 0.8554166666666667,
+    "detectedAt": 1771616670325
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x238b3ec736Bb8Bb675ddBbd0B01b74222f681b07",
-    "age": 1.2237166666666666,
-    "detectedAt": 1771614844423
+    "symbol": "CLAW",
+    "address": "0x5dA6391c6334ab7C29d3Be7c205AAaf1B8beCB07",
+    "age": 0.88875,
+    "detectedAt": 1771616670325
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0x9c8C9ef05b1D75eaC1405C3f2eb22CB24e687B07",
-    "age": 0.06708333333333333,
-    "detectedAt": 1771614841026
+    "symbol": "aackchyually",
+    "address": "0x125bb57863148735B5A8BdA50284De6347374B07",
+    "age": 0.13058333333333333,
+    "detectedAt": 1771616666835
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0x2B4d7f700a7E1E25F3097C849C5e29C03cC06B07",
-    "age": 0.10043333333333333,
-    "detectedAt": 1771614841026
+    "symbol": "aackchyually",
+    "address": "0xFF762bE01628ad70aDaE698b65660B3dd8CBEb07",
+    "age": 0.13058333333333333,
+    "detectedAt": 1771616666836
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0xeeB9256adB9661e8615A9EFe92999f23253a2b07",
-    "age": 0.4671,
-    "detectedAt": 1771614841026
+    "symbol": "aliens",
+    "address": "0x2c5c3632bB33acbE590CDb3a7e4B0Db3244A4B07",
+    "age": 0.16393333333333332,
+    "detectedAt": 1771616666836
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0xC0234e7C082b7ccf6a68Ff4bA77d070CC152f3e4",
-    "age": 0.4671,
-    "detectedAt": 1771614841027
+    "symbol": "aliens",
+    "address": "0x4822492fd53a096ef4ABd1a66d8F153271e83B07",
+    "age": 0.19726666666666667,
+    "detectedAt": 1771616666836
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x49424E13465b8F5e8d2E167656cac0c39D9d9B07",
-    "age": 0.50045,
-    "detectedAt": 1771614841027
+    "symbol": "aliens",
+    "address": "0xB673C6c55A1f0D234A76F10B87036B79748f0b07",
+    "age": 0.5306,
+    "detectedAt": 1771616666836
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x09752657E2d512BfB0c8B927F497723B9Fe21B07",
-    "age": 0.50045,
-    "detectedAt": 1771614841027
+    "symbol": "aliens",
+    "address": "0xB7ed6bB5907f6bD7854162550d6A7662e99aFB07",
+    "age": 0.5306,
+    "detectedAt": 1771616666836
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0xb3E065F7d7aF428C7212c8EFce865870fBE20B07",
-    "age": 0.5671166666666667,
-    "detectedAt": 1771614841027
+    "symbol": "aackchyually",
+    "address": "0x119d261fe6eF3763Fbc74Cca2892F1994645DB07",
+    "age": 0.5306,
+    "detectedAt": 1771616666836
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0x6cE0C0141eFacFd8704f02614D082B4b22c74b07",
-    "age": 0.5671166666666667,
-    "detectedAt": 1771614841027
+    "symbol": "Larpz",
+    "address": "0x42B32368a839De6150603552Ba2f8d64C0247b07",
+    "age": 0.5639333333333333,
+    "detectedAt": 1771616666836
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0x23dDe3d0CcDe19686FB09AA09e5e27D7FaCc6b07",
-    "age": 0.8337833333333333,
-    "detectedAt": 1771614841027
+    "symbol": "aackchyually",
+    "address": "0xAb62a5A8181819a3b41a9cb331e58509B061101B",
+    "age": 0.5639333333333333,
+    "detectedAt": 1771616666837
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0xd1E7b76adD7045425dcFdD3E4f534E1C154dEb07",
-    "age": 0.8671166666666666,
-    "detectedAt": 1771614841027
+    "symbol": "Larpz",
+    "address": "0x4320d1826AedDf596efABe0E292C27561685Eb07",
+    "age": 0.56395,
+    "detectedAt": 1771616666837
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x58d10ED16Fa75b3C0276073B69e6e4715F877B07",
-    "age": 0.90045,
-    "detectedAt": 1771614841027
+    "symbol": "ackshually",
+    "address": "0x3bBfC510C2291fc1a92D1FC661a2016122ca6b07",
+    "age": 0.56395,
+    "detectedAt": 1771616666837
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0xbe0Fcd1640E9AC557981a54E318496Ea094E9b07",
-    "age": 0.90045,
-    "detectedAt": 1771614841027
+    "symbol": "SKIBIDI",
+    "address": "0xc263A5fBbca04D7F28B026AEc117475DA0ae0B07",
+    "age": 0.6972833333333334,
+    "detectedAt": 1771616666837
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x24039F38B2F19d5B83518D714F6F122ced81bB07",
-    "age": 1.00045,
-    "detectedAt": 1771614841027
+    "symbol": "SKIBIDI",
+    "address": "0xc9B4e7f1Ce9c43409e273128AcD973DcdFAfcb07",
+    "age": 0.7306166666666667,
+    "detectedAt": 1771616666837
   },
   {
-    "symbol": "babybooAI",
-    "address": "0xd0fB2Cf1F7212F50a9826917Be2a3020B17e9B07",
-    "age": 1.0337833333333333,
-    "detectedAt": 1771614841027
+    "symbol": "nes",
+    "address": "0x8034714fe4F42B704D76014C6B11328E9eCFBb07",
+    "age": 0.7972833333333333,
+    "detectedAt": 1771616666837
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0xedC84D0193Dc21B2B9ebbdC8379332b9C7Eceb07",
-    "age": 1.10045,
-    "detectedAt": 1771614841027
+    "symbol": "nes",
+    "address": "0xB095BeF1cb9682082dE817501D44156dD26Fcb07",
+    "age": 0.7972833333333333,
+    "detectedAt": 1771616666837
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x4C36F188B97A8c5C915e7280E5034a8a7bB7fb07",
-    "age": 1.10045,
-    "detectedAt": 1771614841027
+    "symbol": "CLAW",
+    "address": "0x5dA6391c6334ab7C29d3Be7c205AAaf1B8beCB07",
+    "age": 0.8306166666666667,
+    "detectedAt": 1771616666837
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x423B12da10bBECd44D82fA3cdAB89C934dBDcb07",
-    "age": 1.1337833333333334,
-    "detectedAt": 1771614841027
+    "symbol": "CLAW",
+    "address": "0x4D47254dfC23C787e39C11b1F7AA0C71724C3b07",
+    "age": 0.86395,
+    "detectedAt": 1771616666837
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x238b3ec736Bb8Bb675ddBbd0B01b74222f681b07",
-    "age": 1.1671166666666666,
-    "detectedAt": 1771614841027
+    "symbol": "CLAW",
+    "address": "0x71f156d543B49705593a160eAcFD2355558Abb07",
+    "age": 1.06395,
+    "detectedAt": 1771616666837
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xeff594B4e1131a3A6071157110D326389f861b07",
-    "age": 1.4671166666666666,
-    "detectedAt": 1771614841027
+    "symbol": "CLAW",
+    "address": "0x00eb903B86b244190c54eFe09d444A7531082B07",
+    "age": 1.0972833333333334,
+    "detectedAt": 1771616666837
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xdEdb70A1d48EEe73232BD3B88B5C9aF8A2cd2b07",
-    "age": 1.4671166666666666,
-    "detectedAt": 1771614841027
+    "symbol": "golem",
+    "address": "0x2C23bc95FBB629267f2256c0BeEfAe41A73D3b07",
+    "age": 1.26395,
+    "detectedAt": 1771616666837
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0xeeB9256adB9661e8615A9EFe92999f23253a2b07",
-    "age": 0.4103333333333333,
-    "detectedAt": 1771614837620
+    "symbol": "aackchyually",
+    "address": "0x125bb57863148735B5A8BdA50284De6347374B07",
+    "age": 0.07476666666666666,
+    "detectedAt": 1771616663486
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0xC0234e7C082b7ccf6a68Ff4bA77d070CC152f3e4",
-    "age": 0.4103333333333333,
-    "detectedAt": 1771614837620
+    "symbol": "aackchyually",
+    "address": "0xFF762bE01628ad70aDaE698b65660B3dd8CBEb07",
+    "age": 0.07476666666666666,
+    "detectedAt": 1771616663486
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x49424E13465b8F5e8d2E167656cac0c39D9d9B07",
-    "age": 0.44366666666666665,
-    "detectedAt": 1771614837621
+    "symbol": "aliens",
+    "address": "0x2c5c3632bB33acbE590CDb3a7e4B0Db3244A4B07",
+    "age": 0.1081,
+    "detectedAt": 1771616663486
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x09752657E2d512BfB0c8B927F497723B9Fe21B07",
-    "age": 0.4436833333333333,
-    "detectedAt": 1771614837621
+    "symbol": "aliens",
+    "address": "0x4822492fd53a096ef4ABd1a66d8F153271e83B07",
+    "age": 0.14143333333333333,
+    "detectedAt": 1771616663487
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0xb3E065F7d7aF428C7212c8EFce865870fBE20B07",
-    "age": 0.51035,
-    "detectedAt": 1771614837621
+    "symbol": "aliens",
+    "address": "0xB673C6c55A1f0D234A76F10B87036B79748f0b07",
+    "age": 0.47478333333333333,
+    "detectedAt": 1771616663487
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0x6cE0C0141eFacFd8704f02614D082B4b22c74b07",
-    "age": 0.51035,
-    "detectedAt": 1771614837621
+    "symbol": "aliens",
+    "address": "0xB7ed6bB5907f6bD7854162550d6A7662e99aFB07",
+    "age": 0.47478333333333333,
+    "detectedAt": 1771616663487
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0x23dDe3d0CcDe19686FB09AA09e5e27D7FaCc6b07",
-    "age": 0.7770166666666667,
-    "detectedAt": 1771614837621
+    "symbol": "aackchyually",
+    "address": "0x119d261fe6eF3763Fbc74Cca2892F1994645DB07",
+    "age": 0.47478333333333333,
+    "detectedAt": 1771616663487
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0xd1E7b76adD7045425dcFdD3E4f534E1C154dEb07",
-    "age": 0.81035,
-    "detectedAt": 1771614837621
+    "symbol": "Larpz",
+    "address": "0x42B32368a839De6150603552Ba2f8d64C0247b07",
+    "age": 0.5081166666666667,
+    "detectedAt": 1771616663487
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x58d10ED16Fa75b3C0276073B69e6e4715F877B07",
-    "age": 0.8436833333333333,
-    "detectedAt": 1771614837621
+    "symbol": "aackchyually",
+    "address": "0xAb62a5A8181819a3b41a9cb331e58509B061101B",
+    "age": 0.5081166666666667,
+    "detectedAt": 1771616663487
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0xbe0Fcd1640E9AC557981a54E318496Ea094E9b07",
-    "age": 0.8436833333333333,
-    "detectedAt": 1771614837621
+    "symbol": "Larpz",
+    "address": "0x4320d1826AedDf596efABe0E292C27561685Eb07",
+    "age": 0.5081166666666667,
+    "detectedAt": 1771616663487
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x24039F38B2F19d5B83518D714F6F122ced81bB07",
-    "age": 0.9436833333333333,
-    "detectedAt": 1771614837621
+    "symbol": "ackshually",
+    "address": "0x3bBfC510C2291fc1a92D1FC661a2016122ca6b07",
+    "age": 0.5081166666666667,
+    "detectedAt": 1771616663487
   },
   {
-    "symbol": "babybooAI",
-    "address": "0xd0fB2Cf1F7212F50a9826917Be2a3020B17e9B07",
-    "age": 0.9770166666666666,
-    "detectedAt": 1771614837621
+    "symbol": "SKIBIDI",
+    "address": "0xc263A5fBbca04D7F28B026AEc117475DA0ae0B07",
+    "age": 0.64145,
+    "detectedAt": 1771616663487
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0xedC84D0193Dc21B2B9ebbdC8379332b9C7Eceb07",
-    "age": 1.0436833333333333,
-    "detectedAt": 1771614837621
+    "symbol": "SKIBIDI",
+    "address": "0xc9B4e7f1Ce9c43409e273128AcD973DcdFAfcb07",
+    "age": 0.6747833333333333,
+    "detectedAt": 1771616663487
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x4C36F188B97A8c5C915e7280E5034a8a7bB7fb07",
-    "age": 1.0436833333333333,
-    "detectedAt": 1771614837621
+    "symbol": "nes",
+    "address": "0x8034714fe4F42B704D76014C6B11328E9eCFBb07",
+    "age": 0.74145,
+    "detectedAt": 1771616663487
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x423B12da10bBECd44D82fA3cdAB89C934dBDcb07",
-    "age": 1.0770166666666667,
-    "detectedAt": 1771614837621
+    "symbol": "nes",
+    "address": "0xB095BeF1cb9682082dE817501D44156dD26Fcb07",
+    "age": 0.74145,
+    "detectedAt": 1771616663487
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x238b3ec736Bb8Bb675ddBbd0B01b74222f681b07",
-    "age": 1.11035,
-    "detectedAt": 1771614837621
+    "symbol": "CLAW",
+    "address": "0x5dA6391c6334ab7C29d3Be7c205AAaf1B8beCB07",
+    "age": 0.7747833333333334,
+    "detectedAt": 1771616663487
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xeff594B4e1131a3A6071157110D326389f861b07",
-    "age": 1.41035,
-    "detectedAt": 1771614837621
+    "symbol": "CLAW",
+    "address": "0x4D47254dfC23C787e39C11b1F7AA0C71724C3b07",
+    "age": 0.8081166666666667,
+    "detectedAt": 1771616663487
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xdEdb70A1d48EEe73232BD3B88B5C9aF8A2cd2b07",
-    "age": 1.41035,
-    "detectedAt": 1771614837621
+    "symbol": "CLAW",
+    "address": "0x71f156d543B49705593a160eAcFD2355558Abb07",
+    "age": 1.0081166666666668,
+    "detectedAt": 1771616663487
   },
   {
-    "symbol": "MARIO",
-    "address": "0x6e55Fa798B704AFfBc8b21BdedF543A2B1e95b07",
-    "age": 1.4770166666666666,
-    "detectedAt": 1771614837621
+    "symbol": "CLAW",
+    "address": "0x00eb903B86b244190c54eFe09d444A7531082B07",
+    "age": 1.04145,
+    "detectedAt": 1771616663487
   },
   {
-    "symbol": "MARIO",
-    "address": "0x853Bfc8FFC9D88a54b74d5A978d7e7aB07E78B07",
-    "age": 1.4770166666666666,
-    "detectedAt": 1771614837621
+    "symbol": "golem",
+    "address": "0x2C23bc95FBB629267f2256c0BeEfAe41A73D3b07",
+    "age": 1.2081166666666667,
+    "detectedAt": 1771616663487
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0xeeB9256adB9661e8615A9EFe92999f23253a2b07",
-    "age": 0.35435,
-    "detectedAt": 1771614834261
+    "symbol": "aliens",
+    "address": "0x4822492fd53a096ef4ABd1a66d8F153271e83B07",
+    "age": 0.08528333333333334,
+    "detectedAt": 1771616660117
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0xC0234e7C082b7ccf6a68Ff4bA77d070CC152f3e4",
-    "age": 0.35435,
-    "detectedAt": 1771614834261
+    "symbol": "aliens",
+    "address": "0xB673C6c55A1f0D234A76F10B87036B79748f0b07",
+    "age": 0.4186166666666667,
+    "detectedAt": 1771616660117
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x49424E13465b8F5e8d2E167656cac0c39D9d9B07",
-    "age": 0.3876833333333333,
-    "detectedAt": 1771614834261
+    "symbol": "aliens",
+    "address": "0xB7ed6bB5907f6bD7854162550d6A7662e99aFB07",
+    "age": 0.4186166666666667,
+    "detectedAt": 1771616660117
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x09752657E2d512BfB0c8B927F497723B9Fe21B07",
-    "age": 0.3876833333333333,
-    "detectedAt": 1771614834261
+    "symbol": "aackchyually",
+    "address": "0x119d261fe6eF3763Fbc74Cca2892F1994645DB07",
+    "age": 0.4186166666666667,
+    "detectedAt": 1771616660118
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0xb3E065F7d7aF428C7212c8EFce865870fBE20B07",
-    "age": 0.45435,
-    "detectedAt": 1771614834261
+    "symbol": "Larpz",
+    "address": "0x42B32368a839De6150603552Ba2f8d64C0247b07",
+    "age": 0.4519666666666667,
+    "detectedAt": 1771616660118
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0x6cE0C0141eFacFd8704f02614D082B4b22c74b07",
-    "age": 0.45435,
-    "detectedAt": 1771614834262
+    "symbol": "aackchyually",
+    "address": "0xAb62a5A8181819a3b41a9cb331e58509B061101B",
+    "age": 0.4519666666666667,
+    "detectedAt": 1771616660118
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0x23dDe3d0CcDe19686FB09AA09e5e27D7FaCc6b07",
-    "age": 0.7210333333333333,
-    "detectedAt": 1771614834262
+    "symbol": "Larpz",
+    "address": "0x4320d1826AedDf596efABe0E292C27561685Eb07",
+    "age": 0.4519666666666667,
+    "detectedAt": 1771616660118
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0xd1E7b76adD7045425dcFdD3E4f534E1C154dEb07",
-    "age": 0.7543666666666666,
-    "detectedAt": 1771614834262
+    "symbol": "ackshually",
+    "address": "0x3bBfC510C2291fc1a92D1FC661a2016122ca6b07",
+    "age": 0.4519666666666667,
+    "detectedAt": 1771616660118
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x58d10ED16Fa75b3C0276073B69e6e4715F877B07",
-    "age": 0.7877,
-    "detectedAt": 1771614834262
+    "symbol": "SKIBIDI",
+    "address": "0xc263A5fBbca04D7F28B026AEc117475DA0ae0B07",
+    "age": 0.5853,
+    "detectedAt": 1771616660118
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0xbe0Fcd1640E9AC557981a54E318496Ea094E9b07",
-    "age": 0.7877,
-    "detectedAt": 1771614834262
+    "symbol": "SKIBIDI",
+    "address": "0xc9B4e7f1Ce9c43409e273128AcD973DcdFAfcb07",
+    "age": 0.6186333333333334,
+    "detectedAt": 1771616660118
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x24039F38B2F19d5B83518D714F6F122ced81bB07",
-    "age": 0.8877,
-    "detectedAt": 1771614834262
+    "symbol": "nes",
+    "address": "0x8034714fe4F42B704D76014C6B11328E9eCFBb07",
+    "age": 0.6853,
+    "detectedAt": 1771616660118
   },
   {
-    "symbol": "babybooAI",
-    "address": "0xd0fB2Cf1F7212F50a9826917Be2a3020B17e9B07",
-    "age": 0.9210333333333334,
-    "detectedAt": 1771614834262
+    "symbol": "nes",
+    "address": "0xB095BeF1cb9682082dE817501D44156dD26Fcb07",
+    "age": 0.6853,
+    "detectedAt": 1771616660118
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0xedC84D0193Dc21B2B9ebbdC8379332b9C7Eceb07",
-    "age": 0.9877,
-    "detectedAt": 1771614834262
+    "symbol": "CLAW",
+    "address": "0x5dA6391c6334ab7C29d3Be7c205AAaf1B8beCB07",
+    "age": 0.7186333333333333,
+    "detectedAt": 1771616660118
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x4C36F188B97A8c5C915e7280E5034a8a7bB7fb07",
-    "age": 0.9877,
-    "detectedAt": 1771614834262
+    "symbol": "CLAW",
+    "address": "0x4D47254dfC23C787e39C11b1F7AA0C71724C3b07",
+    "age": 0.7519666666666667,
+    "detectedAt": 1771616660118
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x423B12da10bBECd44D82fA3cdAB89C934dBDcb07",
-    "age": 1.0210333333333332,
-    "detectedAt": 1771614834262
+    "symbol": "CLAW",
+    "address": "0x71f156d543B49705593a160eAcFD2355558Abb07",
+    "age": 0.9519666666666666,
+    "detectedAt": 1771616660118
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x238b3ec736Bb8Bb675ddBbd0B01b74222f681b07",
-    "age": 1.0543666666666667,
-    "detectedAt": 1771614834262
+    "symbol": "CLAW",
+    "address": "0x00eb903B86b244190c54eFe09d444A7531082B07",
+    "age": 0.9853,
+    "detectedAt": 1771616660118
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xeff594B4e1131a3A6071157110D326389f861b07",
-    "age": 1.3543666666666667,
-    "detectedAt": 1771614834262
+    "symbol": "golem",
+    "address": "0x2C23bc95FBB629267f2256c0BeEfAe41A73D3b07",
+    "age": 1.1519666666666666,
+    "detectedAt": 1771616660118
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xdEdb70A1d48EEe73232BD3B88B5C9aF8A2cd2b07",
-    "age": 1.3543666666666667,
-    "detectedAt": 1771614834262
+    "symbol": "SKIBIDI",
+    "address": "0x17b120E2EdE36f9B683BEf282c5c491Ad8910B07",
+    "age": 1.1853,
+    "detectedAt": 1771616660118
   },
   {
-    "symbol": "MARIO",
-    "address": "0x6e55Fa798B704AFfBc8b21BdedF543A2B1e95b07",
-    "age": 1.4210333333333334,
-    "detectedAt": 1771614834262
+    "symbol": "SKIBIDI",
+    "address": "0x146C659D42D4fB496CE1DfF20a242fcBAc0e0b07",
+    "age": 1.1853,
+    "detectedAt": 1771616660118
   },
   {
-    "symbol": "MARIO",
-    "address": "0x853Bfc8FFC9D88a54b74d5A978d7e7aB07E78B07",
-    "age": 1.4210333333333334,
-    "detectedAt": 1771614834262
+    "symbol": "golem",
+    "address": "0x776feF1C66EE5a661B05adC2EB66b704A1A46B07",
+    "age": 1.1853,
+    "detectedAt": 1771616660118
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0xeeB9256adB9661e8615A9EFe92999f23253a2b07",
-    "age": 0.29843333333333333,
-    "detectedAt": 1771614830906
+    "symbol": "aliens",
+    "address": "0xB673C6c55A1f0D234A76F10B87036B79748f0b07",
+    "age": 0.36235,
+    "detectedAt": 1771616656741
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0xC0234e7C082b7ccf6a68Ff4bA77d070CC152f3e4",
-    "age": 0.29843333333333333,
-    "detectedAt": 1771614830906
+    "symbol": "aliens",
+    "address": "0xB7ed6bB5907f6bD7854162550d6A7662e99aFB07",
+    "age": 0.36235,
+    "detectedAt": 1771616656741
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x49424E13465b8F5e8d2E167656cac0c39D9d9B07",
-    "age": 0.33176666666666665,
-    "detectedAt": 1771614830906
+    "symbol": "aackchyually",
+    "address": "0x119d261fe6eF3763Fbc74Cca2892F1994645DB07",
+    "age": 0.36235,
+    "detectedAt": 1771616656741
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x09752657E2d512BfB0c8B927F497723B9Fe21B07",
-    "age": 0.33176666666666665,
-    "detectedAt": 1771614830907
+    "symbol": "Larpz",
+    "address": "0x42B32368a839De6150603552Ba2f8d64C0247b07",
+    "age": 0.39568333333333333,
+    "detectedAt": 1771616656742
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0xb3E065F7d7aF428C7212c8EFce865870fBE20B07",
-    "age": 0.39845,
-    "detectedAt": 1771614830907
+    "symbol": "aackchyually",
+    "address": "0xAb62a5A8181819a3b41a9cb331e58509B061101B",
+    "age": 0.3957,
+    "detectedAt": 1771616656742
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0x6cE0C0141eFacFd8704f02614D082B4b22c74b07",
-    "age": 0.39845,
-    "detectedAt": 1771614830907
+    "symbol": "Larpz",
+    "address": "0x4320d1826AedDf596efABe0E292C27561685Eb07",
+    "age": 0.3957,
+    "detectedAt": 1771616656742
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0x23dDe3d0CcDe19686FB09AA09e5e27D7FaCc6b07",
-    "age": 0.6651166666666667,
-    "detectedAt": 1771614830907
+    "symbol": "ackshually",
+    "address": "0x3bBfC510C2291fc1a92D1FC661a2016122ca6b07",
+    "age": 0.3957,
+    "detectedAt": 1771616656742
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0xd1E7b76adD7045425dcFdD3E4f534E1C154dEb07",
-    "age": 0.69845,
-    "detectedAt": 1771614830907
+    "symbol": "SKIBIDI",
+    "address": "0xc263A5fBbca04D7F28B026AEc117475DA0ae0B07",
+    "age": 0.5290333333333334,
+    "detectedAt": 1771616656742
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x58d10ED16Fa75b3C0276073B69e6e4715F877B07",
-    "age": 0.7317833333333333,
-    "detectedAt": 1771614830907
+    "symbol": "SKIBIDI",
+    "address": "0xc9B4e7f1Ce9c43409e273128AcD973DcdFAfcb07",
+    "age": 0.5623666666666667,
+    "detectedAt": 1771616656742
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0xbe0Fcd1640E9AC557981a54E318496Ea094E9b07",
-    "age": 0.7317833333333333,
-    "detectedAt": 1771614830907
+    "symbol": "nes",
+    "address": "0x8034714fe4F42B704D76014C6B11328E9eCFBb07",
+    "age": 0.6290333333333333,
+    "detectedAt": 1771616656742
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x24039F38B2F19d5B83518D714F6F122ced81bB07",
-    "age": 0.8317833333333333,
-    "detectedAt": 1771614830907
+    "symbol": "nes",
+    "address": "0xB095BeF1cb9682082dE817501D44156dD26Fcb07",
+    "age": 0.6290333333333333,
+    "detectedAt": 1771616656742
   },
   {
-    "symbol": "babybooAI",
-    "address": "0xd0fB2Cf1F7212F50a9826917Be2a3020B17e9B07",
-    "age": 0.8651166666666666,
-    "detectedAt": 1771614830907
+    "symbol": "CLAW",
+    "address": "0x5dA6391c6334ab7C29d3Be7c205AAaf1B8beCB07",
+    "age": 0.6623666666666667,
+    "detectedAt": 1771616656742
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0xedC84D0193Dc21B2B9ebbdC8379332b9C7Eceb07",
-    "age": 0.9317833333333333,
-    "detectedAt": 1771614830907
+    "symbol": "CLAW",
+    "address": "0x4D47254dfC23C787e39C11b1F7AA0C71724C3b07",
+    "age": 0.6957,
+    "detectedAt": 1771616656742
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x4C36F188B97A8c5C915e7280E5034a8a7bB7fb07",
-    "age": 0.9317833333333333,
-    "detectedAt": 1771614830907
+    "symbol": "CLAW",
+    "address": "0x71f156d543B49705593a160eAcFD2355558Abb07",
+    "age": 0.8957,
+    "detectedAt": 1771616656742
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x423B12da10bBECd44D82fA3cdAB89C934dBDcb07",
-    "age": 0.9651166666666666,
-    "detectedAt": 1771614830907
+    "symbol": "CLAW",
+    "address": "0x00eb903B86b244190c54eFe09d444A7531082B07",
+    "age": 0.9290333333333334,
+    "detectedAt": 1771616656742
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x238b3ec736Bb8Bb675ddBbd0B01b74222f681b07",
-    "age": 0.99845,
-    "detectedAt": 1771614830907
+    "symbol": "golem",
+    "address": "0x2C23bc95FBB629267f2256c0BeEfAe41A73D3b07",
+    "age": 1.0957,
+    "detectedAt": 1771616656742
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xeff594B4e1131a3A6071157110D326389f861b07",
-    "age": 1.29845,
-    "detectedAt": 1771614830907
+    "symbol": "SKIBIDI",
+    "address": "0x17b120E2EdE36f9B683BEf282c5c491Ad8910B07",
+    "age": 1.1290333333333333,
+    "detectedAt": 1771616656742
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xdEdb70A1d48EEe73232BD3B88B5C9aF8A2cd2b07",
-    "age": 1.29845,
-    "detectedAt": 1771614830907
+    "symbol": "SKIBIDI",
+    "address": "0x146C659D42D4fB496CE1DfF20a242fcBAc0e0b07",
+    "age": 1.1290333333333333,
+    "detectedAt": 1771616656742
   },
   {
-    "symbol": "MARIO",
-    "address": "0x6e55Fa798B704AFfBc8b21BdedF543A2B1e95b07",
-    "age": 1.3651166666666668,
-    "detectedAt": 1771614830907
+    "symbol": "golem",
+    "address": "0x776feF1C66EE5a661B05adC2EB66b704A1A46B07",
+    "age": 1.1290333333333333,
+    "detectedAt": 1771616656742
   },
   {
-    "symbol": "MARIO",
-    "address": "0x853Bfc8FFC9D88a54b74d5A978d7e7aB07E78B07",
-    "age": 1.3651166666666668,
-    "detectedAt": 1771614830907
+    "symbol": "ZB",
+    "address": "0x99d4C29C6c48A41d4DbcBd7A7E83A0a7bc93Ab07",
+    "age": 1.2290333333333334,
+    "detectedAt": 1771616656742
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0xeeB9256adB9661e8615A9EFe92999f23253a2b07",
-    "age": 0.24161666666666667,
-    "detectedAt": 1771614827498
+    "symbol": "aliens",
+    "address": "0xB673C6c55A1f0D234A76F10B87036B79748f0b07",
+    "age": 0.30596666666666666,
+    "detectedAt": 1771616653358
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0xC0234e7C082b7ccf6a68Ff4bA77d070CC152f3e4",
-    "age": 0.24163333333333334,
-    "detectedAt": 1771614827498
+    "symbol": "aliens",
+    "address": "0xB7ed6bB5907f6bD7854162550d6A7662e99aFB07",
+    "age": 0.30596666666666666,
+    "detectedAt": 1771616653360
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x49424E13465b8F5e8d2E167656cac0c39D9d9B07",
-    "age": 0.2749666666666667,
-    "detectedAt": 1771614827498
+    "symbol": "aackchyually",
+    "address": "0x119d261fe6eF3763Fbc74Cca2892F1994645DB07",
+    "age": 0.306,
+    "detectedAt": 1771616653360
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x09752657E2d512BfB0c8B927F497723B9Fe21B07",
-    "age": 0.2749666666666667,
-    "detectedAt": 1771614827498
+    "symbol": "Larpz",
+    "address": "0x42B32368a839De6150603552Ba2f8d64C0247b07",
+    "age": 0.3393333333333333,
+    "detectedAt": 1771616653360
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0xb3E065F7d7aF428C7212c8EFce865870fBE20B07",
-    "age": 0.34163333333333334,
-    "detectedAt": 1771614827498
+    "symbol": "aackchyually",
+    "address": "0xAb62a5A8181819a3b41a9cb331e58509B061101B",
+    "age": 0.3393333333333333,
+    "detectedAt": 1771616653360
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0x6cE0C0141eFacFd8704f02614D082B4b22c74b07",
-    "age": 0.34163333333333334,
-    "detectedAt": 1771614827498
+    "symbol": "Larpz",
+    "address": "0x4320d1826AedDf596efABe0E292C27561685Eb07",
+    "age": 0.3393333333333333,
+    "detectedAt": 1771616653360
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0x23dDe3d0CcDe19686FB09AA09e5e27D7FaCc6b07",
-    "age": 0.6083,
-    "detectedAt": 1771614827498
+    "symbol": "ackshually",
+    "address": "0x3bBfC510C2291fc1a92D1FC661a2016122ca6b07",
+    "age": 0.3393333333333333,
+    "detectedAt": 1771616653360
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0xd1E7b76adD7045425dcFdD3E4f534E1C154dEb07",
-    "age": 0.6416333333333334,
-    "detectedAt": 1771614827498
+    "symbol": "SKIBIDI",
+    "address": "0xc263A5fBbca04D7F28B026AEc117475DA0ae0B07",
+    "age": 0.4726666666666667,
+    "detectedAt": 1771616653360
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x58d10ED16Fa75b3C0276073B69e6e4715F877B07",
-    "age": 0.6749666666666667,
-    "detectedAt": 1771614827498
+    "symbol": "SKIBIDI",
+    "address": "0xc9B4e7f1Ce9c43409e273128AcD973DcdFAfcb07",
+    "age": 0.506,
+    "detectedAt": 1771616653360
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0xbe0Fcd1640E9AC557981a54E318496Ea094E9b07",
-    "age": 0.6749666666666667,
-    "detectedAt": 1771614827498
+    "symbol": "nes",
+    "address": "0x8034714fe4F42B704D76014C6B11328E9eCFBb07",
+    "age": 0.5726666666666667,
+    "detectedAt": 1771616653360
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x24039F38B2F19d5B83518D714F6F122ced81bB07",
-    "age": 0.7749666666666667,
-    "detectedAt": 1771614827498
+    "symbol": "nes",
+    "address": "0xB095BeF1cb9682082dE817501D44156dD26Fcb07",
+    "age": 0.5726666666666667,
+    "detectedAt": 1771616653360
   },
   {
-    "symbol": "babybooAI",
-    "address": "0xd0fB2Cf1F7212F50a9826917Be2a3020B17e9B07",
-    "age": 0.8083,
-    "detectedAt": 1771614827498
+    "symbol": "CLAW",
+    "address": "0x5dA6391c6334ab7C29d3Be7c205AAaf1B8beCB07",
+    "age": 0.606,
+    "detectedAt": 1771616653360
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0xedC84D0193Dc21B2B9ebbdC8379332b9C7Eceb07",
-    "age": 0.8749666666666667,
-    "detectedAt": 1771614827498
+    "symbol": "CLAW",
+    "address": "0x4D47254dfC23C787e39C11b1F7AA0C71724C3b07",
+    "age": 0.6393333333333333,
+    "detectedAt": 1771616653361
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x4C36F188B97A8c5C915e7280E5034a8a7bB7fb07",
-    "age": 0.8749666666666667,
-    "detectedAt": 1771614827498
+    "symbol": "CLAW",
+    "address": "0x71f156d543B49705593a160eAcFD2355558Abb07",
+    "age": 0.83935,
+    "detectedAt": 1771616653361
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x423B12da10bBECd44D82fA3cdAB89C934dBDcb07",
-    "age": 0.9083,
-    "detectedAt": 1771614827498
+    "symbol": "CLAW",
+    "address": "0x00eb903B86b244190c54eFe09d444A7531082B07",
+    "age": 0.8726833333333334,
+    "detectedAt": 1771616653361
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x238b3ec736Bb8Bb675ddBbd0B01b74222f681b07",
-    "age": 0.9416333333333333,
-    "detectedAt": 1771614827498
+    "symbol": "golem",
+    "address": "0x2C23bc95FBB629267f2256c0BeEfAe41A73D3b07",
+    "age": 1.03935,
+    "detectedAt": 1771616653361
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xeff594B4e1131a3A6071157110D326389f861b07",
-    "age": 1.2416333333333334,
-    "detectedAt": 1771614827498
+    "symbol": "SKIBIDI",
+    "address": "0x17b120E2EdE36f9B683BEf282c5c491Ad8910B07",
+    "age": 1.0726833333333334,
+    "detectedAt": 1771616653361
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xdEdb70A1d48EEe73232BD3B88B5C9aF8A2cd2b07",
-    "age": 1.2416333333333334,
-    "detectedAt": 1771614827498
+    "symbol": "SKIBIDI",
+    "address": "0x146C659D42D4fB496CE1DfF20a242fcBAc0e0b07",
+    "age": 1.0726833333333334,
+    "detectedAt": 1771616653361
   },
   {
-    "symbol": "MARIO",
-    "address": "0x6e55Fa798B704AFfBc8b21BdedF543A2B1e95b07",
-    "age": 1.3083,
-    "detectedAt": 1771614827498
+    "symbol": "golem",
+    "address": "0x776feF1C66EE5a661B05adC2EB66b704A1A46B07",
+    "age": 1.0726833333333334,
+    "detectedAt": 1771616653361
   },
   {
-    "symbol": "MARIO",
-    "address": "0x853Bfc8FFC9D88a54b74d5A978d7e7aB07E78B07",
-    "age": 1.3083,
-    "detectedAt": 1771614827498
+    "symbol": "ZB",
+    "address": "0x99d4C29C6c48A41d4DbcBd7A7E83A0a7bc93Ab07",
+    "age": 1.1726833333333333,
+    "detectedAt": 1771616653361
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0xeeB9256adB9661e8615A9EFe92999f23253a2b07",
-    "age": 0.1816,
-    "detectedAt": 1771614823896
+    "symbol": "aliens",
+    "address": "0xB673C6c55A1f0D234A76F10B87036B79748f0b07",
+    "age": 0.24773333333333333,
+    "detectedAt": 1771616649864
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0xC0234e7C082b7ccf6a68Ff4bA77d070CC152f3e4",
-    "age": 0.1816,
-    "detectedAt": 1771614823896
+    "symbol": "aliens",
+    "address": "0xB7ed6bB5907f6bD7854162550d6A7662e99aFB07",
+    "age": 0.24773333333333333,
+    "detectedAt": 1771616649864
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x49424E13465b8F5e8d2E167656cac0c39D9d9B07",
-    "age": 0.21493333333333334,
-    "detectedAt": 1771614823896
+    "symbol": "aackchyually",
+    "address": "0x119d261fe6eF3763Fbc74Cca2892F1994645DB07",
+    "age": 0.24773333333333333,
+    "detectedAt": 1771616649865
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x09752657E2d512BfB0c8B927F497723B9Fe21B07",
-    "age": 0.21493333333333334,
-    "detectedAt": 1771614823896
+    "symbol": "Larpz",
+    "address": "0x42B32368a839De6150603552Ba2f8d64C0247b07",
+    "age": 0.28108333333333335,
+    "detectedAt": 1771616649865
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0xb3E065F7d7aF428C7212c8EFce865870fBE20B07",
-    "age": 0.2816,
-    "detectedAt": 1771614823897
+    "symbol": "aackchyually",
+    "address": "0xAb62a5A8181819a3b41a9cb331e58509B061101B",
+    "age": 0.28108333333333335,
+    "detectedAt": 1771616649865
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0x6cE0C0141eFacFd8704f02614D082B4b22c74b07",
-    "age": 0.2816166666666667,
-    "detectedAt": 1771614823897
+    "symbol": "Larpz",
+    "address": "0x4320d1826AedDf596efABe0E292C27561685Eb07",
+    "age": 0.28108333333333335,
+    "detectedAt": 1771616649865
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0x23dDe3d0CcDe19686FB09AA09e5e27D7FaCc6b07",
-    "age": 0.5482833333333333,
-    "detectedAt": 1771614823897
+    "symbol": "ackshually",
+    "address": "0x3bBfC510C2291fc1a92D1FC661a2016122ca6b07",
+    "age": 0.28108333333333335,
+    "detectedAt": 1771616649865
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0xd1E7b76adD7045425dcFdD3E4f534E1C154dEb07",
-    "age": 0.5816166666666667,
-    "detectedAt": 1771614823897
+    "symbol": "SKIBIDI",
+    "address": "0xc263A5fBbca04D7F28B026AEc117475DA0ae0B07",
+    "age": 0.41441666666666666,
+    "detectedAt": 1771616649865
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x58d10ED16Fa75b3C0276073B69e6e4715F877B07",
-    "age": 0.61495,
-    "detectedAt": 1771614823897
+    "symbol": "SKIBIDI",
+    "address": "0xc9B4e7f1Ce9c43409e273128AcD973DcdFAfcb07",
+    "age": 0.44775,
+    "detectedAt": 1771616649865
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0xbe0Fcd1640E9AC557981a54E318496Ea094E9b07",
-    "age": 0.61495,
-    "detectedAt": 1771614823897
+    "symbol": "nes",
+    "address": "0x8034714fe4F42B704D76014C6B11328E9eCFBb07",
+    "age": 0.5144166666666666,
+    "detectedAt": 1771616649865
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x24039F38B2F19d5B83518D714F6F122ced81bB07",
-    "age": 0.71495,
-    "detectedAt": 1771614823897
+    "symbol": "nes",
+    "address": "0xB095BeF1cb9682082dE817501D44156dD26Fcb07",
+    "age": 0.5144166666666666,
+    "detectedAt": 1771616649865
   },
   {
-    "symbol": "babybooAI",
-    "address": "0xd0fB2Cf1F7212F50a9826917Be2a3020B17e9B07",
-    "age": 0.7482833333333333,
-    "detectedAt": 1771614823897
+    "symbol": "CLAW",
+    "address": "0x5dA6391c6334ab7C29d3Be7c205AAaf1B8beCB07",
+    "age": 0.54775,
+    "detectedAt": 1771616649865
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0xedC84D0193Dc21B2B9ebbdC8379332b9C7Eceb07",
-    "age": 0.81495,
-    "detectedAt": 1771614823897
+    "symbol": "CLAW",
+    "address": "0x4D47254dfC23C787e39C11b1F7AA0C71724C3b07",
+    "age": 0.5810833333333333,
+    "detectedAt": 1771616649865
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x4C36F188B97A8c5C915e7280E5034a8a7bB7fb07",
-    "age": 0.81495,
-    "detectedAt": 1771614823897
+    "symbol": "CLAW",
+    "address": "0x71f156d543B49705593a160eAcFD2355558Abb07",
+    "age": 0.7810833333333334,
+    "detectedAt": 1771616649865
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x423B12da10bBECd44D82fA3cdAB89C934dBDcb07",
-    "age": 0.8482833333333333,
-    "detectedAt": 1771614823897
+    "symbol": "CLAW",
+    "address": "0x00eb903B86b244190c54eFe09d444A7531082B07",
+    "age": 0.8144166666666667,
+    "detectedAt": 1771616649865
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x238b3ec736Bb8Bb675ddBbd0B01b74222f681b07",
-    "age": 0.8816166666666667,
-    "detectedAt": 1771614823897
+    "symbol": "golem",
+    "address": "0x2C23bc95FBB629267f2256c0BeEfAe41A73D3b07",
+    "age": 0.9810833333333333,
+    "detectedAt": 1771616649865
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xeff594B4e1131a3A6071157110D326389f861b07",
-    "age": 1.1816166666666668,
-    "detectedAt": 1771614823897
+    "symbol": "SKIBIDI",
+    "address": "0x17b120E2EdE36f9B683BEf282c5c491Ad8910B07",
+    "age": 1.0144166666666667,
+    "detectedAt": 1771616649865
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xdEdb70A1d48EEe73232BD3B88B5C9aF8A2cd2b07",
-    "age": 1.1816166666666668,
-    "detectedAt": 1771614823897
+    "symbol": "SKIBIDI",
+    "address": "0x146C659D42D4fB496CE1DfF20a242fcBAc0e0b07",
+    "age": 1.0144166666666667,
+    "detectedAt": 1771616649865
   },
   {
-    "symbol": "MARIO",
-    "address": "0x6e55Fa798B704AFfBc8b21BdedF543A2B1e95b07",
-    "age": 1.2482833333333334,
-    "detectedAt": 1771614823897
+    "symbol": "golem",
+    "address": "0x776feF1C66EE5a661B05adC2EB66b704A1A46B07",
+    "age": 1.0144166666666667,
+    "detectedAt": 1771616649865
   },
   {
-    "symbol": "MARIO",
-    "address": "0x853Bfc8FFC9D88a54b74d5A978d7e7aB07E78B07",
-    "age": 1.2482833333333334,
-    "detectedAt": 1771614823897
+    "symbol": "ZB",
+    "address": "0x99d4C29C6c48A41d4DbcBd7A7E83A0a7bc93Ab07",
+    "age": 1.1144166666666666,
+    "detectedAt": 1771616649865
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0xeeB9256adB9661e8615A9EFe92999f23253a2b07",
-    "age": 0.12361666666666667,
-    "detectedAt": 1771614820417
+    "symbol": "aliens",
+    "address": "0xB673C6c55A1f0D234A76F10B87036B79748f0b07",
+    "age": 0.1903,
+    "detectedAt": 1771616646419
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0xC0234e7C082b7ccf6a68Ff4bA77d070CC152f3e4",
-    "age": 0.12361666666666667,
-    "detectedAt": 1771614820417
+    "symbol": "aliens",
+    "address": "0xB7ed6bB5907f6bD7854162550d6A7662e99aFB07",
+    "age": 0.19031666666666666,
+    "detectedAt": 1771616646419
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x49424E13465b8F5e8d2E167656cac0c39D9d9B07",
-    "age": 0.15695,
-    "detectedAt": 1771614820417
+    "symbol": "aackchyually",
+    "address": "0x119d261fe6eF3763Fbc74Cca2892F1994645DB07",
+    "age": 0.19031666666666666,
+    "detectedAt": 1771616646419
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x09752657E2d512BfB0c8B927F497723B9Fe21B07",
-    "age": 0.15695,
-    "detectedAt": 1771614820417
+    "symbol": "Larpz",
+    "address": "0x42B32368a839De6150603552Ba2f8d64C0247b07",
+    "age": 0.22365,
+    "detectedAt": 1771616646419
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0xb3E065F7d7aF428C7212c8EFce865870fBE20B07",
-    "age": 0.22361666666666666,
-    "detectedAt": 1771614820417
+    "symbol": "aackchyually",
+    "address": "0xAb62a5A8181819a3b41a9cb331e58509B061101B",
+    "age": 0.22365,
+    "detectedAt": 1771616646419
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0x6cE0C0141eFacFd8704f02614D082B4b22c74b07",
-    "age": 0.22361666666666666,
-    "detectedAt": 1771614820417
+    "symbol": "Larpz",
+    "address": "0x4320d1826AedDf596efABe0E292C27561685Eb07",
+    "age": 0.22365,
+    "detectedAt": 1771616646419
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0x23dDe3d0CcDe19686FB09AA09e5e27D7FaCc6b07",
-    "age": 0.49028333333333335,
-    "detectedAt": 1771614820417
+    "symbol": "ackshually",
+    "address": "0x3bBfC510C2291fc1a92D1FC661a2016122ca6b07",
+    "age": 0.22365,
+    "detectedAt": 1771616646419
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0xd1E7b76adD7045425dcFdD3E4f534E1C154dEb07",
-    "age": 0.5236166666666666,
-    "detectedAt": 1771614820418
+    "symbol": "SKIBIDI",
+    "address": "0xc263A5fBbca04D7F28B026AEc117475DA0ae0B07",
+    "age": 0.3569833333333333,
+    "detectedAt": 1771616646419
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x58d10ED16Fa75b3C0276073B69e6e4715F877B07",
-    "age": 0.5569666666666667,
-    "detectedAt": 1771614820418
+    "symbol": "SKIBIDI",
+    "address": "0xc9B4e7f1Ce9c43409e273128AcD973DcdFAfcb07",
+    "age": 0.39031666666666665,
+    "detectedAt": 1771616646419
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0xbe0Fcd1640E9AC557981a54E318496Ea094E9b07",
-    "age": 0.5569666666666667,
-    "detectedAt": 1771614820418
+    "symbol": "nes",
+    "address": "0x8034714fe4F42B704D76014C6B11328E9eCFBb07",
+    "age": 0.45698333333333335,
+    "detectedAt": 1771616646420
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x24039F38B2F19d5B83518D714F6F122ced81bB07",
-    "age": 0.6569666666666667,
-    "detectedAt": 1771614820418
+    "symbol": "nes",
+    "address": "0xB095BeF1cb9682082dE817501D44156dD26Fcb07",
+    "age": 0.457,
+    "detectedAt": 1771616646420
   },
   {
-    "symbol": "babybooAI",
-    "address": "0xd0fB2Cf1F7212F50a9826917Be2a3020B17e9B07",
-    "age": 0.6903,
-    "detectedAt": 1771614820418
+    "symbol": "CLAW",
+    "address": "0x5dA6391c6334ab7C29d3Be7c205AAaf1B8beCB07",
+    "age": 0.49033333333333334,
+    "detectedAt": 1771616646420
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0xedC84D0193Dc21B2B9ebbdC8379332b9C7Eceb07",
-    "age": 0.7569666666666667,
-    "detectedAt": 1771614820418
+    "symbol": "CLAW",
+    "address": "0x4D47254dfC23C787e39C11b1F7AA0C71724C3b07",
+    "age": 0.5236666666666666,
+    "detectedAt": 1771616646420
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x4C36F188B97A8c5C915e7280E5034a8a7bB7fb07",
-    "age": 0.7569666666666667,
-    "detectedAt": 1771614820418
+    "symbol": "CLAW",
+    "address": "0x71f156d543B49705593a160eAcFD2355558Abb07",
+    "age": 0.7236666666666667,
+    "detectedAt": 1771616646420
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x423B12da10bBECd44D82fA3cdAB89C934dBDcb07",
-    "age": 0.7903,
-    "detectedAt": 1771614820418
+    "symbol": "CLAW",
+    "address": "0x00eb903B86b244190c54eFe09d444A7531082B07",
+    "age": 0.757,
+    "detectedAt": 1771616646420
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x238b3ec736Bb8Bb675ddBbd0B01b74222f681b07",
-    "age": 0.8236333333333333,
-    "detectedAt": 1771614820418
+    "symbol": "golem",
+    "address": "0x2C23bc95FBB629267f2256c0BeEfAe41A73D3b07",
+    "age": 0.9236666666666666,
+    "detectedAt": 1771616646420
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xeff594B4e1131a3A6071157110D326389f861b07",
-    "age": 1.1236333333333333,
-    "detectedAt": 1771614820418
+    "symbol": "SKIBIDI",
+    "address": "0x17b120E2EdE36f9B683BEf282c5c491Ad8910B07",
+    "age": 0.957,
+    "detectedAt": 1771616646420
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xdEdb70A1d48EEe73232BD3B88B5C9aF8A2cd2b07",
-    "age": 1.1236333333333333,
-    "detectedAt": 1771614820418
+    "symbol": "SKIBIDI",
+    "address": "0x146C659D42D4fB496CE1DfF20a242fcBAc0e0b07",
+    "age": 0.957,
+    "detectedAt": 1771616646420
   },
   {
-    "symbol": "MARIO",
-    "address": "0x6e55Fa798B704AFfBc8b21BdedF543A2B1e95b07",
-    "age": 1.1903,
-    "detectedAt": 1771614820418
+    "symbol": "golem",
+    "address": "0x776feF1C66EE5a661B05adC2EB66b704A1A46B07",
+    "age": 0.957,
+    "detectedAt": 1771616646420
   },
   {
-    "symbol": "MARIO",
-    "address": "0x853Bfc8FFC9D88a54b74d5A978d7e7aB07E78B07",
-    "age": 1.1903,
-    "detectedAt": 1771614820418
+    "symbol": "ZB",
+    "address": "0x99d4C29C6c48A41d4DbcBd7A7E83A0a7bc93Ab07",
+    "age": 1.057,
+    "detectedAt": 1771616646420
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0xC0234e7C082b7ccf6a68Ff4bA77d070CC152f3e4",
-    "age": 0.0659,
-    "detectedAt": 1771614816954
+    "symbol": "aliens",
+    "address": "0xB673C6c55A1f0D234A76F10B87036B79748f0b07",
+    "age": 0.1329,
+    "detectedAt": 1771616642974
   },
   {
-    "symbol": "PUNCLAW",
-    "address": "0xeeB9256adB9661e8615A9EFe92999f23253a2b07",
-    "age": 0.0659,
-    "detectedAt": 1771614816954
+    "symbol": "aliens",
+    "address": "0xB7ed6bB5907f6bD7854162550d6A7662e99aFB07",
+    "age": 0.1329,
+    "detectedAt": 1771616642974
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x49424E13465b8F5e8d2E167656cac0c39D9d9B07",
-    "age": 0.09923333333333334,
-    "detectedAt": 1771614816954
+    "symbol": "aackchyually",
+    "address": "0x119d261fe6eF3763Fbc74Cca2892F1994645DB07",
+    "age": 0.1329,
+    "detectedAt": 1771616642974
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x09752657E2d512BfB0c8B927F497723B9Fe21B07",
-    "age": 0.09923333333333334,
-    "detectedAt": 1771614816954
+    "symbol": "Larpz",
+    "address": "0x42B32368a839De6150603552Ba2f8d64C0247b07",
+    "age": 0.16623333333333334,
+    "detectedAt": 1771616642975
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0xb3E065F7d7aF428C7212c8EFce865870fBE20B07",
-    "age": 0.1659,
-    "detectedAt": 1771614816954
+    "symbol": "aackchyually",
+    "address": "0xAb62a5A8181819a3b41a9cb331e58509B061101B",
+    "age": 0.16625,
+    "detectedAt": 1771616642975
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0x6cE0C0141eFacFd8704f02614D082B4b22c74b07",
-    "age": 0.1659,
-    "detectedAt": 1771614816955
+    "symbol": "Larpz",
+    "address": "0x4320d1826AedDf596efABe0E292C27561685Eb07",
+    "age": 0.16625,
+    "detectedAt": 1771616642975
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0x23dDe3d0CcDe19686FB09AA09e5e27D7FaCc6b07",
-    "age": 0.4325833333333333,
-    "detectedAt": 1771614816955
+    "symbol": "ackshually",
+    "address": "0x3bBfC510C2291fc1a92D1FC661a2016122ca6b07",
+    "age": 0.16625,
+    "detectedAt": 1771616642975
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0xd1E7b76adD7045425dcFdD3E4f534E1C154dEb07",
-    "age": 0.46591666666666665,
-    "detectedAt": 1771614816955
+    "symbol": "SKIBIDI",
+    "address": "0xc263A5fBbca04D7F28B026AEc117475DA0ae0B07",
+    "age": 0.2995833333333333,
+    "detectedAt": 1771616642975
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x58d10ED16Fa75b3C0276073B69e6e4715F877B07",
-    "age": 0.49925,
-    "detectedAt": 1771614816955
+    "symbol": "SKIBIDI",
+    "address": "0xc9B4e7f1Ce9c43409e273128AcD973DcdFAfcb07",
+    "age": 0.3329166666666667,
+    "detectedAt": 1771616642975
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0xbe0Fcd1640E9AC557981a54E318496Ea094E9b07",
-    "age": 0.49925,
-    "detectedAt": 1771614816955
+    "symbol": "nes",
+    "address": "0x8034714fe4F42B704D76014C6B11328E9eCFBb07",
+    "age": 0.39958333333333335,
+    "detectedAt": 1771616642975
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x24039F38B2F19d5B83518D714F6F122ced81bB07",
-    "age": 0.59925,
-    "detectedAt": 1771614816955
+    "symbol": "nes",
+    "address": "0xB095BeF1cb9682082dE817501D44156dD26Fcb07",
+    "age": 0.39958333333333335,
+    "detectedAt": 1771616642975
   },
   {
-    "symbol": "babybooAI",
-    "address": "0xd0fB2Cf1F7212F50a9826917Be2a3020B17e9B07",
-    "age": 0.6325833333333334,
-    "detectedAt": 1771614816955
+    "symbol": "CLAW",
+    "address": "0x5dA6391c6334ab7C29d3Be7c205AAaf1B8beCB07",
+    "age": 0.43291666666666667,
+    "detectedAt": 1771616642975
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0xedC84D0193Dc21B2B9ebbdC8379332b9C7Eceb07",
-    "age": 0.69925,
-    "detectedAt": 1771614816955
+    "symbol": "CLAW",
+    "address": "0x4D47254dfC23C787e39C11b1F7AA0C71724C3b07",
+    "age": 0.46625,
+    "detectedAt": 1771616642975
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x4C36F188B97A8c5C915e7280E5034a8a7bB7fb07",
-    "age": 0.69925,
-    "detectedAt": 1771614816955
+    "symbol": "CLAW",
+    "address": "0x71f156d543B49705593a160eAcFD2355558Abb07",
+    "age": 0.66625,
+    "detectedAt": 1771616642975
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x423B12da10bBECd44D82fA3cdAB89C934dBDcb07",
-    "age": 0.7325833333333334,
-    "detectedAt": 1771614816955
+    "symbol": "CLAW",
+    "address": "0x00eb903B86b244190c54eFe09d444A7531082B07",
+    "age": 0.6995833333333333,
+    "detectedAt": 1771616642975
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x238b3ec736Bb8Bb675ddBbd0B01b74222f681b07",
-    "age": 0.7659166666666667,
-    "detectedAt": 1771614816955
+    "symbol": "golem",
+    "address": "0x2C23bc95FBB629267f2256c0BeEfAe41A73D3b07",
+    "age": 0.86625,
+    "detectedAt": 1771616642975
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xeff594B4e1131a3A6071157110D326389f861b07",
-    "age": 1.0659166666666666,
-    "detectedAt": 1771614816955
+    "symbol": "SKIBIDI",
+    "address": "0x17b120E2EdE36f9B683BEf282c5c491Ad8910B07",
+    "age": 0.8995833333333333,
+    "detectedAt": 1771616642975
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xdEdb70A1d48EEe73232BD3B88B5C9aF8A2cd2b07",
-    "age": 1.0659166666666666,
-    "detectedAt": 1771614816955
+    "symbol": "SKIBIDI",
+    "address": "0x146C659D42D4fB496CE1DfF20a242fcBAc0e0b07",
+    "age": 0.8995833333333333,
+    "detectedAt": 1771616642975
   },
   {
-    "symbol": "MARIO",
-    "address": "0x6e55Fa798B704AFfBc8b21BdedF543A2B1e95b07",
-    "age": 1.1325833333333333,
-    "detectedAt": 1771614816955
+    "symbol": "golem",
+    "address": "0x776feF1C66EE5a661B05adC2EB66b704A1A46B07",
+    "age": 0.8995833333333333,
+    "detectedAt": 1771616642975
   },
   {
-    "symbol": "MARIO",
-    "address": "0x853Bfc8FFC9D88a54b74d5A978d7e7aB07E78B07",
-    "age": 1.1325833333333333,
-    "detectedAt": 1771614816955
+    "symbol": "ZB",
+    "address": "0x99d4C29C6c48A41d4DbcBd7A7E83A0a7bc93Ab07",
+    "age": 0.9995833333333334,
+    "detectedAt": 1771616642975
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0xb3E065F7d7aF428C7212c8EFce865870fBE20B07",
-    "age": 0.10898333333333333,
-    "detectedAt": 1771614813539
+    "symbol": "aliens",
+    "address": "0xB7ed6bB5907f6bD7854162550d6A7662e99aFB07",
+    "age": 0.07625,
+    "detectedAt": 1771616639575
   },
   {
-    "symbol": "PUNCHSTAR",
-    "address": "0x6cE0C0141eFacFd8704f02614D082B4b22c74b07",
-    "age": 0.10898333333333333,
-    "detectedAt": 1771614813539
+    "symbol": "aackchyually",
+    "address": "0x119d261fe6eF3763Fbc74Cca2892F1994645DB07",
+    "age": 0.07625,
+    "detectedAt": 1771616639575
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0x23dDe3d0CcDe19686FB09AA09e5e27D7FaCc6b07",
-    "age": 0.37565,
-    "detectedAt": 1771614813540
+    "symbol": "aliens",
+    "address": "0xB673C6c55A1f0D234A76F10B87036B79748f0b07",
+    "age": 0.07625,
+    "detectedAt": 1771616639575
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0xd1E7b76adD7045425dcFdD3E4f534E1C154dEb07",
-    "age": 0.409,
-    "detectedAt": 1771614813540
+    "symbol": "Larpz",
+    "address": "0x42B32368a839De6150603552Ba2f8d64C0247b07",
+    "age": 0.10958333333333334,
+    "detectedAt": 1771616639576
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x58d10ED16Fa75b3C0276073B69e6e4715F877B07",
-    "age": 0.44233333333333336,
-    "detectedAt": 1771614813540
+    "symbol": "aackchyually",
+    "address": "0xAb62a5A8181819a3b41a9cb331e58509B061101B",
+    "age": 0.1096,
+    "detectedAt": 1771616639576
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0xbe0Fcd1640E9AC557981a54E318496Ea094E9b07",
-    "age": 0.44233333333333336,
-    "detectedAt": 1771614813540
+    "symbol": "Larpz",
+    "address": "0x4320d1826AedDf596efABe0E292C27561685Eb07",
+    "age": 0.1096,
+    "detectedAt": 1771616639576
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x24039F38B2F19d5B83518D714F6F122ced81bB07",
-    "age": 0.5423333333333333,
-    "detectedAt": 1771614813540
+    "symbol": "ackshually",
+    "address": "0x3bBfC510C2291fc1a92D1FC661a2016122ca6b07",
+    "age": 0.1096,
+    "detectedAt": 1771616639576
   },
   {
-    "symbol": "babybooAI",
-    "address": "0xd0fB2Cf1F7212F50a9826917Be2a3020B17e9B07",
-    "age": 0.5756666666666667,
-    "detectedAt": 1771614813540
+    "symbol": "SKIBIDI",
+    "address": "0xc263A5fBbca04D7F28B026AEc117475DA0ae0B07",
+    "age": 0.24293333333333333,
+    "detectedAt": 1771616639576
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0xedC84D0193Dc21B2B9ebbdC8379332b9C7Eceb07",
-    "age": 0.6423333333333333,
-    "detectedAt": 1771614813540
+    "symbol": "SKIBIDI",
+    "address": "0xc9B4e7f1Ce9c43409e273128AcD973DcdFAfcb07",
+    "age": 0.27626666666666666,
+    "detectedAt": 1771616639576
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x4C36F188B97A8c5C915e7280E5034a8a7bB7fb07",
-    "age": 0.6423333333333333,
-    "detectedAt": 1771614813540
+    "symbol": "nes",
+    "address": "0x8034714fe4F42B704D76014C6B11328E9eCFBb07",
+    "age": 0.3429333333333333,
+    "detectedAt": 1771616639576
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x423B12da10bBECd44D82fA3cdAB89C934dBDcb07",
-    "age": 0.6756666666666666,
-    "detectedAt": 1771614813540
+    "symbol": "nes",
+    "address": "0xB095BeF1cb9682082dE817501D44156dD26Fcb07",
+    "age": 0.3429333333333333,
+    "detectedAt": 1771616639576
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x238b3ec736Bb8Bb675ddBbd0B01b74222f681b07",
-    "age": 0.709,
-    "detectedAt": 1771614813540
+    "symbol": "CLAW",
+    "address": "0x5dA6391c6334ab7C29d3Be7c205AAaf1B8beCB07",
+    "age": 0.3762666666666667,
+    "detectedAt": 1771616639576
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xeff594B4e1131a3A6071157110D326389f861b07",
-    "age": 1.009,
-    "detectedAt": 1771614813540
+    "symbol": "CLAW",
+    "address": "0x4D47254dfC23C787e39C11b1F7AA0C71724C3b07",
+    "age": 0.4096,
+    "detectedAt": 1771616639576
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xdEdb70A1d48EEe73232BD3B88B5C9aF8A2cd2b07",
-    "age": 1.009,
-    "detectedAt": 1771614813540
+    "symbol": "CLAW",
+    "address": "0x71f156d543B49705593a160eAcFD2355558Abb07",
+    "age": 0.6096,
+    "detectedAt": 1771616639576
   },
   {
-    "symbol": "MARIO",
-    "address": "0x6e55Fa798B704AFfBc8b21BdedF543A2B1e95b07",
-    "age": 1.0756666666666668,
-    "detectedAt": 1771614813540
+    "symbol": "CLAW",
+    "address": "0x00eb903B86b244190c54eFe09d444A7531082B07",
+    "age": 0.6429333333333334,
+    "detectedAt": 1771616639576
   },
   {
-    "symbol": "MARIO",
-    "address": "0x853Bfc8FFC9D88a54b74d5A978d7e7aB07E78B07",
-    "age": 1.0756666666666668,
-    "detectedAt": 1771614813540
+    "symbol": "golem",
+    "address": "0x2C23bc95FBB629267f2256c0BeEfAe41A73D3b07",
+    "age": 0.8096,
+    "detectedAt": 1771616639577
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x852b40E62ddb1d0BCfE8f7D4d28d9054F55B6b07",
-    "age": 1.0756666666666668,
-    "detectedAt": 1771614813540
+    "symbol": "SKIBIDI",
+    "address": "0x17b120E2EdE36f9B683BEf282c5c491Ad8910B07",
+    "age": 0.84295,
+    "detectedAt": 1771616639577
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x51170e21FA390A5725f82D97987d0ed34ce0eb07",
-    "age": 1.109,
-    "detectedAt": 1771614813540
+    "symbol": "SKIBIDI",
+    "address": "0x146C659D42D4fB496CE1DfF20a242fcBAc0e0b07",
+    "age": 0.84295,
+    "detectedAt": 1771616639577
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0xf89C75D813F2A9140F6dF6371F2Cc1E5DcE67b07",
-    "age": 1.1423333333333334,
-    "detectedAt": 1771614813540
+    "symbol": "golem",
+    "address": "0x776feF1C66EE5a661B05adC2EB66b704A1A46B07",
+    "age": 0.84295,
+    "detectedAt": 1771616639577
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0x3282db072CB2354A0527b713e6127F009995fb07",
-    "age": 1.209,
-    "detectedAt": 1771614813540
+    "symbol": "ZB",
+    "address": "0x99d4C29C6c48A41d4DbcBd7A7E83A0a7bc93Ab07",
+    "age": 0.94295,
+    "detectedAt": 1771616639577
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0x23dDe3d0CcDe19686FB09AA09e5e27D7FaCc6b07",
-    "age": 0.3158666666666667,
-    "detectedAt": 1771614809953
+    "symbol": "SKIBIDI",
+    "address": "0xc263A5fBbca04D7F28B026AEc117475DA0ae0B07",
+    "age": 0.18658333333333332,
+    "detectedAt": 1771616636195
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0xd1E7b76adD7045425dcFdD3E4f534E1C154dEb07",
-    "age": 0.3492166666666667,
-    "detectedAt": 1771614809953
+    "symbol": "SKIBIDI",
+    "address": "0xc9B4e7f1Ce9c43409e273128AcD973DcdFAfcb07",
+    "age": 0.21991666666666668,
+    "detectedAt": 1771616636195
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x58d10ED16Fa75b3C0276073B69e6e4715F877B07",
-    "age": 0.38255,
-    "detectedAt": 1771614809953
+    "symbol": "nes",
+    "address": "0x8034714fe4F42B704D76014C6B11328E9eCFBb07",
+    "age": 0.28658333333333336,
+    "detectedAt": 1771616636195
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0xbe0Fcd1640E9AC557981a54E318496Ea094E9b07",
-    "age": 0.38255,
-    "detectedAt": 1771614809953
+    "symbol": "nes",
+    "address": "0xB095BeF1cb9682082dE817501D44156dD26Fcb07",
+    "age": 0.28658333333333336,
+    "detectedAt": 1771616636195
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x24039F38B2F19d5B83518D714F6F122ced81bB07",
-    "age": 0.48255,
-    "detectedAt": 1771614809953
+    "symbol": "CLAW",
+    "address": "0x5dA6391c6334ab7C29d3Be7c205AAaf1B8beCB07",
+    "age": 0.3199166666666667,
+    "detectedAt": 1771616636196
   },
   {
-    "symbol": "babybooAI",
-    "address": "0xd0fB2Cf1F7212F50a9826917Be2a3020B17e9B07",
-    "age": 0.5158833333333334,
-    "detectedAt": 1771614809953
+    "symbol": "CLAW",
+    "address": "0x4D47254dfC23C787e39C11b1F7AA0C71724C3b07",
+    "age": 0.3532666666666667,
+    "detectedAt": 1771616636196
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0xedC84D0193Dc21B2B9ebbdC8379332b9C7Eceb07",
-    "age": 0.58255,
-    "detectedAt": 1771614809953
+    "symbol": "CLAW",
+    "address": "0x71f156d543B49705593a160eAcFD2355558Abb07",
+    "age": 0.5532666666666667,
+    "detectedAt": 1771616636196
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x4C36F188B97A8c5C915e7280E5034a8a7bB7fb07",
-    "age": 0.58255,
-    "detectedAt": 1771614809953
+    "symbol": "CLAW",
+    "address": "0x00eb903B86b244190c54eFe09d444A7531082B07",
+    "age": 0.5866,
+    "detectedAt": 1771616636196
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x423B12da10bBECd44D82fA3cdAB89C934dBDcb07",
-    "age": 0.6158833333333333,
-    "detectedAt": 1771614809953
+    "symbol": "golem",
+    "address": "0x2C23bc95FBB629267f2256c0BeEfAe41A73D3b07",
+    "age": 0.7532666666666666,
+    "detectedAt": 1771616636196
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x238b3ec736Bb8Bb675ddBbd0B01b74222f681b07",
-    "age": 0.6492166666666667,
-    "detectedAt": 1771614809953
+    "symbol": "SKIBIDI",
+    "address": "0x17b120E2EdE36f9B683BEf282c5c491Ad8910B07",
+    "age": 0.7866,
+    "detectedAt": 1771616636196
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xeff594B4e1131a3A6071157110D326389f861b07",
-    "age": 0.9492166666666667,
-    "detectedAt": 1771614809953
+    "symbol": "SKIBIDI",
+    "address": "0x146C659D42D4fB496CE1DfF20a242fcBAc0e0b07",
+    "age": 0.7866,
+    "detectedAt": 1771616636196
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xdEdb70A1d48EEe73232BD3B88B5C9aF8A2cd2b07",
-    "age": 0.9492166666666667,
-    "detectedAt": 1771614809953
+    "symbol": "golem",
+    "address": "0x776feF1C66EE5a661B05adC2EB66b704A1A46B07",
+    "age": 0.7866,
+    "detectedAt": 1771616636196
   },
   {
-    "symbol": "MARIO",
-    "address": "0x6e55Fa798B704AFfBc8b21BdedF543A2B1e95b07",
-    "age": 1.0158833333333332,
-    "detectedAt": 1771614809953
+    "symbol": "ZB",
+    "address": "0x99d4C29C6c48A41d4DbcBd7A7E83A0a7bc93Ab07",
+    "age": 0.8866,
+    "detectedAt": 1771616636196
   },
   {
-    "symbol": "MARIO",
-    "address": "0x853Bfc8FFC9D88a54b74d5A978d7e7aB07E78B07",
-    "age": 1.0158833333333332,
-    "detectedAt": 1771614809953
+    "symbol": "ZB",
+    "address": "0x3ac276cACAa65E9cA619Ba3e20CCA97af42eEb07",
+    "age": 0.8866,
+    "detectedAt": 1771616636196
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x852b40E62ddb1d0BCfE8f7D4d28d9054F55B6b07",
-    "age": 1.0158833333333332,
-    "detectedAt": 1771614809953
+    "symbol": "Larpz",
+    "address": "0x09124b169631A6cb7081d7f886B166AD96F12b07",
+    "age": 0.9532666666666667,
+    "detectedAt": 1771616636196
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x51170e21FA390A5725f82D97987d0ed34ce0eb07",
-    "age": 1.0492166666666667,
-    "detectedAt": 1771614809953
+    "symbol": "Larpz",
+    "address": "0xF7418DC4Bb5D035aaEb7016260E1efb0a5715b07",
+    "age": 0.9532666666666667,
+    "detectedAt": 1771616636196
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0xf89C75D813F2A9140F6dF6371F2Cc1E5DcE67b07",
-    "age": 1.08255,
-    "detectedAt": 1771614809953
+    "symbol": "Robo",
+    "address": "0x751A92403821a2368C845b7CA52055158184Bb07",
+    "age": 0.9532666666666667,
+    "detectedAt": 1771616636196
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0x3282db072CB2354A0527b713e6127F009995fb07",
-    "age": 1.1492166666666668,
-    "detectedAt": 1771614809953
+    "symbol": "UFO",
+    "address": "0x28b58038beeedc437f26BD759Bf94dF6Af812b07",
+    "age": 0.9866,
+    "detectedAt": 1771616636196
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x2a4F3acdd2c05388b65B694E8420c2f136EdbB07",
-    "age": 1.1492166666666668,
-    "detectedAt": 1771614809953
+    "symbol": "Robo",
+    "address": "0x6d19ae012206DC24dB0A013fa703d60F1a052b07",
+    "age": 0.9866,
+    "detectedAt": 1771616636196
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x6D52afe0f8fd812a6c5dd4C7D493c1534795dB07",
-    "age": 1.1492166666666668,
-    "detectedAt": 1771614809953
+    "symbol": "UFO",
+    "address": "0xD7f64598F4A32D42e656bDAB5c6434e01C3a8b07",
+    "age": 1.1199333333333332,
+    "detectedAt": 1771616636196
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0x23dDe3d0CcDe19686FB09AA09e5e27D7FaCc6b07",
-    "age": 0.25353333333333333,
-    "detectedAt": 1771614806214
+    "symbol": "SKIBIDI",
+    "address": "0xc263A5fBbca04D7F28B026AEc117475DA0ae0B07",
+    "age": 0.13026666666666667,
+    "detectedAt": 1771616632817
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0xd1E7b76adD7045425dcFdD3E4f534E1C154dEb07",
-    "age": 0.2869,
-    "detectedAt": 1771614806214
+    "symbol": "SKIBIDI",
+    "address": "0xc9B4e7f1Ce9c43409e273128AcD973DcdFAfcb07",
+    "age": 0.16361666666666666,
+    "detectedAt": 1771616632817
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x58d10ED16Fa75b3C0276073B69e6e4715F877B07",
-    "age": 0.3202333333333333,
-    "detectedAt": 1771614806214
+    "symbol": "nes",
+    "address": "0x8034714fe4F42B704D76014C6B11328E9eCFBb07",
+    "age": 0.23028333333333334,
+    "detectedAt": 1771616632817
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0xbe0Fcd1640E9AC557981a54E318496Ea094E9b07",
-    "age": 0.3202333333333333,
-    "detectedAt": 1771614806214
+    "symbol": "nes",
+    "address": "0xB095BeF1cb9682082dE817501D44156dD26Fcb07",
+    "age": 0.23028333333333334,
+    "detectedAt": 1771616632817
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x24039F38B2F19d5B83518D714F6F122ced81bB07",
-    "age": 0.42023333333333335,
-    "detectedAt": 1771614806214
+    "symbol": "CLAW",
+    "address": "0x5dA6391c6334ab7C29d3Be7c205AAaf1B8beCB07",
+    "age": 0.26361666666666667,
+    "detectedAt": 1771616632817
   },
   {
-    "symbol": "babybooAI",
-    "address": "0xd0fB2Cf1F7212F50a9826917Be2a3020B17e9B07",
-    "age": 0.4535666666666667,
-    "detectedAt": 1771614806214
+    "symbol": "CLAW",
+    "address": "0x4D47254dfC23C787e39C11b1F7AA0C71724C3b07",
+    "age": 0.29695,
+    "detectedAt": 1771616632817
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0xedC84D0193Dc21B2B9ebbdC8379332b9C7Eceb07",
-    "age": 0.5202333333333333,
-    "detectedAt": 1771614806214
+    "symbol": "CLAW",
+    "address": "0x71f156d543B49705593a160eAcFD2355558Abb07",
+    "age": 0.49695,
+    "detectedAt": 1771616632817
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x4C36F188B97A8c5C915e7280E5034a8a7bB7fb07",
-    "age": 0.5202333333333333,
-    "detectedAt": 1771614806214
+    "symbol": "CLAW",
+    "address": "0x00eb903B86b244190c54eFe09d444A7531082B07",
+    "age": 0.5302833333333333,
+    "detectedAt": 1771616632817
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x423B12da10bBECd44D82fA3cdAB89C934dBDcb07",
-    "age": 0.5535666666666667,
-    "detectedAt": 1771614806214
+    "symbol": "golem",
+    "address": "0x2C23bc95FBB629267f2256c0BeEfAe41A73D3b07",
+    "age": 0.69695,
+    "detectedAt": 1771616632817
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x238b3ec736Bb8Bb675ddBbd0B01b74222f681b07",
-    "age": 0.5869,
-    "detectedAt": 1771614806214
+    "symbol": "SKIBIDI",
+    "address": "0x17b120E2EdE36f9B683BEf282c5c491Ad8910B07",
+    "age": 0.7302833333333333,
+    "detectedAt": 1771616632817
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xeff594B4e1131a3A6071157110D326389f861b07",
-    "age": 0.8869,
-    "detectedAt": 1771614806214
+    "symbol": "SKIBIDI",
+    "address": "0x146C659D42D4fB496CE1DfF20a242fcBAc0e0b07",
+    "age": 0.7302833333333333,
+    "detectedAt": 1771616632817
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xdEdb70A1d48EEe73232BD3B88B5C9aF8A2cd2b07",
-    "age": 0.8869,
-    "detectedAt": 1771614806215
+    "symbol": "golem",
+    "address": "0x776feF1C66EE5a661B05adC2EB66b704A1A46B07",
+    "age": 0.7302833333333333,
+    "detectedAt": 1771616632817
   },
   {
-    "symbol": "MARIO",
-    "address": "0x6e55Fa798B704AFfBc8b21BdedF543A2B1e95b07",
-    "age": 0.9535833333333333,
-    "detectedAt": 1771614806215
+    "symbol": "ZB",
+    "address": "0x99d4C29C6c48A41d4DbcBd7A7E83A0a7bc93Ab07",
+    "age": 0.8302833333333334,
+    "detectedAt": 1771616632817
   },
   {
-    "symbol": "MARIO",
-    "address": "0x853Bfc8FFC9D88a54b74d5A978d7e7aB07E78B07",
-    "age": 0.9535833333333333,
-    "detectedAt": 1771614806215
+    "symbol": "ZB",
+    "address": "0x3ac276cACAa65E9cA619Ba3e20CCA97af42eEb07",
+    "age": 0.8302833333333334,
+    "detectedAt": 1771616632817
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x852b40E62ddb1d0BCfE8f7D4d28d9054F55B6b07",
-    "age": 0.9535833333333333,
-    "detectedAt": 1771614806215
+    "symbol": "Larpz",
+    "address": "0x09124b169631A6cb7081d7f886B166AD96F12b07",
+    "age": 0.89695,
+    "detectedAt": 1771616632817
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x51170e21FA390A5725f82D97987d0ed34ce0eb07",
-    "age": 0.9869166666666667,
-    "detectedAt": 1771614806215
+    "symbol": "Larpz",
+    "address": "0xF7418DC4Bb5D035aaEb7016260E1efb0a5715b07",
+    "age": 0.89695,
+    "detectedAt": 1771616632817
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0xf89C75D813F2A9140F6dF6371F2Cc1E5DcE67b07",
-    "age": 1.02025,
-    "detectedAt": 1771614806215
+    "symbol": "Robo",
+    "address": "0x751A92403821a2368C845b7CA52055158184Bb07",
+    "age": 0.89695,
+    "detectedAt": 1771616632817
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0x3282db072CB2354A0527b713e6127F009995fb07",
-    "age": 1.0869166666666668,
-    "detectedAt": 1771614806215
+    "symbol": "UFO",
+    "address": "0x28b58038beeedc437f26BD759Bf94dF6Af812b07",
+    "age": 0.9302833333333334,
+    "detectedAt": 1771616632817
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x2a4F3acdd2c05388b65B694E8420c2f136EdbB07",
-    "age": 1.0869166666666668,
-    "detectedAt": 1771614806215
+    "symbol": "Robo",
+    "address": "0x6d19ae012206DC24dB0A013fa703d60F1a052b07",
+    "age": 0.9302833333333334,
+    "detectedAt": 1771616632817
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x6D52afe0f8fd812a6c5dd4C7D493c1534795dB07",
-    "age": 1.0869166666666668,
-    "detectedAt": 1771614806215
+    "symbol": "UFO",
+    "address": "0xD7f64598F4A32D42e656bDAB5c6434e01C3a8b07",
+    "age": 1.0636333333333334,
+    "detectedAt": 1771616632818
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0x23dDe3d0CcDe19686FB09AA09e5e27D7FaCc6b07",
-    "age": 0.1926,
-    "detectedAt": 1771614802556
+    "symbol": "SKIBIDI",
+    "address": "0xc263A5fBbca04D7F28B026AEc117475DA0ae0B07",
+    "age": 0.0749,
+    "detectedAt": 1771616629495
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0xd1E7b76adD7045425dcFdD3E4f534E1C154dEb07",
-    "age": 0.22593333333333335,
-    "detectedAt": 1771614802556
+    "symbol": "SKIBIDI",
+    "address": "0xc9B4e7f1Ce9c43409e273128AcD973DcdFAfcb07",
+    "age": 0.10825,
+    "detectedAt": 1771616629495
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x58d10ED16Fa75b3C0276073B69e6e4715F877B07",
-    "age": 0.25926666666666665,
-    "detectedAt": 1771614802557
+    "symbol": "nes",
+    "address": "0x8034714fe4F42B704D76014C6B11328E9eCFBb07",
+    "age": 0.17491666666666666,
+    "detectedAt": 1771616629495
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0xbe0Fcd1640E9AC557981a54E318496Ea094E9b07",
-    "age": 0.2592833333333333,
-    "detectedAt": 1771614802557
+    "symbol": "nes",
+    "address": "0xB095BeF1cb9682082dE817501D44156dD26Fcb07",
+    "age": 0.17491666666666666,
+    "detectedAt": 1771616629495
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x24039F38B2F19d5B83518D714F6F122ced81bB07",
-    "age": 0.35928333333333334,
-    "detectedAt": 1771614802557
+    "symbol": "CLAW",
+    "address": "0x5dA6391c6334ab7C29d3Be7c205AAaf1B8beCB07",
+    "age": 0.20825,
+    "detectedAt": 1771616629495
   },
   {
-    "symbol": "babybooAI",
-    "address": "0xd0fB2Cf1F7212F50a9826917Be2a3020B17e9B07",
-    "age": 0.39261666666666667,
-    "detectedAt": 1771614802557
+    "symbol": "CLAW",
+    "address": "0x4D47254dfC23C787e39C11b1F7AA0C71724C3b07",
+    "age": 0.24158333333333334,
+    "detectedAt": 1771616629495
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0xedC84D0193Dc21B2B9ebbdC8379332b9C7Eceb07",
-    "age": 0.4592833333333333,
-    "detectedAt": 1771614802557
+    "symbol": "CLAW",
+    "address": "0x71f156d543B49705593a160eAcFD2355558Abb07",
+    "age": 0.4415833333333333,
+    "detectedAt": 1771616629495
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x4C36F188B97A8c5C915e7280E5034a8a7bB7fb07",
-    "age": 0.4592833333333333,
-    "detectedAt": 1771614802557
+    "symbol": "CLAW",
+    "address": "0x00eb903B86b244190c54eFe09d444A7531082B07",
+    "age": 0.47491666666666665,
+    "detectedAt": 1771616629495
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x423B12da10bBECd44D82fA3cdAB89C934dBDcb07",
-    "age": 0.49261666666666665,
-    "detectedAt": 1771614802557
+    "symbol": "golem",
+    "address": "0x2C23bc95FBB629267f2256c0BeEfAe41A73D3b07",
+    "age": 0.6415833333333333,
+    "detectedAt": 1771616629495
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x238b3ec736Bb8Bb675ddBbd0B01b74222f681b07",
-    "age": 0.52595,
-    "detectedAt": 1771614802557
+    "symbol": "SKIBIDI",
+    "address": "0x17b120E2EdE36f9B683BEf282c5c491Ad8910B07",
+    "age": 0.6749166666666667,
+    "detectedAt": 1771616629495
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xeff594B4e1131a3A6071157110D326389f861b07",
-    "age": 0.82595,
-    "detectedAt": 1771614802557
+    "symbol": "SKIBIDI",
+    "address": "0x146C659D42D4fB496CE1DfF20a242fcBAc0e0b07",
+    "age": 0.6749166666666667,
+    "detectedAt": 1771616629495
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xdEdb70A1d48EEe73232BD3B88B5C9aF8A2cd2b07",
-    "age": 0.82595,
-    "detectedAt": 1771614802557
+    "symbol": "golem",
+    "address": "0x776feF1C66EE5a661B05adC2EB66b704A1A46B07",
+    "age": 0.6749166666666667,
+    "detectedAt": 1771616629495
   },
   {
-    "symbol": "MARIO",
-    "address": "0x6e55Fa798B704AFfBc8b21BdedF543A2B1e95b07",
-    "age": 0.8926166666666666,
-    "detectedAt": 1771614802557
+    "symbol": "ZB",
+    "address": "0x99d4C29C6c48A41d4DbcBd7A7E83A0a7bc93Ab07",
+    "age": 0.7749166666666667,
+    "detectedAt": 1771616629495
   },
   {
-    "symbol": "MARIO",
-    "address": "0x853Bfc8FFC9D88a54b74d5A978d7e7aB07E78B07",
-    "age": 0.8926166666666666,
-    "detectedAt": 1771614802557
+    "symbol": "ZB",
+    "address": "0x3ac276cACAa65E9cA619Ba3e20CCA97af42eEb07",
+    "age": 0.7749166666666667,
+    "detectedAt": 1771616629495
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x852b40E62ddb1d0BCfE8f7D4d28d9054F55B6b07",
-    "age": 0.8926166666666666,
-    "detectedAt": 1771614802557
+    "symbol": "Larpz",
+    "address": "0x09124b169631A6cb7081d7f886B166AD96F12b07",
+    "age": 0.8415833333333333,
+    "detectedAt": 1771616629495
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x51170e21FA390A5725f82D97987d0ed34ce0eb07",
-    "age": 0.92595,
-    "detectedAt": 1771614802557
+    "symbol": "Larpz",
+    "address": "0xF7418DC4Bb5D035aaEb7016260E1efb0a5715b07",
+    "age": 0.8415833333333333,
+    "detectedAt": 1771616629495
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0xf89C75D813F2A9140F6dF6371F2Cc1E5DcE67b07",
-    "age": 0.9592833333333334,
-    "detectedAt": 1771614802558
+    "symbol": "Robo",
+    "address": "0x751A92403821a2368C845b7CA52055158184Bb07",
+    "age": 0.8415833333333333,
+    "detectedAt": 1771616629496
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0x3282db072CB2354A0527b713e6127F009995fb07",
-    "age": 1.0259666666666667,
-    "detectedAt": 1771614802558
+    "symbol": "UFO",
+    "address": "0x28b58038beeedc437f26BD759Bf94dF6Af812b07",
+    "age": 0.8749333333333333,
+    "detectedAt": 1771616629496
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x2a4F3acdd2c05388b65B694E8420c2f136EdbB07",
-    "age": 1.0259666666666667,
-    "detectedAt": 1771614802558
+    "symbol": "Robo",
+    "address": "0x6d19ae012206DC24dB0A013fa703d60F1a052b07",
+    "age": 0.8749333333333333,
+    "detectedAt": 1771616629496
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x6D52afe0f8fd812a6c5dd4C7D493c1534795dB07",
-    "age": 1.0259666666666667,
-    "detectedAt": 1771614802558
+    "symbol": "UFO",
+    "address": "0xD7f64598F4A32D42e656bDAB5c6434e01C3a8b07",
+    "age": 1.0082666666666666,
+    "detectedAt": 1771616629496
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0x23dDe3d0CcDe19686FB09AA09e5e27D7FaCc6b07",
-    "age": 0.13106666666666666,
-    "detectedAt": 1771614798865
+    "symbol": "nes",
+    "address": "0x8034714fe4F42B704D76014C6B11328E9eCFBb07",
+    "age": 0.11921666666666667,
+    "detectedAt": 1771616626153
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0xd1E7b76adD7045425dcFdD3E4f534E1C154dEb07",
-    "age": 0.16441666666666666,
-    "detectedAt": 1771614798865
+    "symbol": "nes",
+    "address": "0xB095BeF1cb9682082dE817501D44156dD26Fcb07",
+    "age": 0.11921666666666667,
+    "detectedAt": 1771616626153
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x58d10ED16Fa75b3C0276073B69e6e4715F877B07",
-    "age": 0.19775,
-    "detectedAt": 1771614798865
+    "symbol": "CLAW",
+    "address": "0x5dA6391c6334ab7C29d3Be7c205AAaf1B8beCB07",
+    "age": 0.15255,
+    "detectedAt": 1771616626153
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0xbe0Fcd1640E9AC557981a54E318496Ea094E9b07",
-    "age": 0.19775,
-    "detectedAt": 1771614798865
+    "symbol": "CLAW",
+    "address": "0x4D47254dfC23C787e39C11b1F7AA0C71724C3b07",
+    "age": 0.18588333333333334,
+    "detectedAt": 1771616626153
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x24039F38B2F19d5B83518D714F6F122ced81bB07",
-    "age": 0.29775,
-    "detectedAt": 1771614798865
+    "symbol": "CLAW",
+    "address": "0x71f156d543B49705593a160eAcFD2355558Abb07",
+    "age": 0.38588333333333336,
+    "detectedAt": 1771616626153
   },
   {
-    "symbol": "babybooAI",
-    "address": "0xd0fB2Cf1F7212F50a9826917Be2a3020B17e9B07",
-    "age": 0.33108333333333334,
-    "detectedAt": 1771614798865
+    "symbol": "CLAW",
+    "address": "0x00eb903B86b244190c54eFe09d444A7531082B07",
+    "age": 0.4192166666666667,
+    "detectedAt": 1771616626153
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0xedC84D0193Dc21B2B9ebbdC8379332b9C7Eceb07",
-    "age": 0.39775,
-    "detectedAt": 1771614798865
+    "symbol": "golem",
+    "address": "0x2C23bc95FBB629267f2256c0BeEfAe41A73D3b07",
+    "age": 0.5858833333333333,
+    "detectedAt": 1771616626153
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x4C36F188B97A8c5C915e7280E5034a8a7bB7fb07",
-    "age": 0.39775,
-    "detectedAt": 1771614798865
+    "symbol": "SKIBIDI",
+    "address": "0x17b120E2EdE36f9B683BEf282c5c491Ad8910B07",
+    "age": 0.6192166666666666,
+    "detectedAt": 1771616626155
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x423B12da10bBECd44D82fA3cdAB89C934dBDcb07",
-    "age": 0.4310833333333333,
-    "detectedAt": 1771614798865
+    "symbol": "SKIBIDI",
+    "address": "0x146C659D42D4fB496CE1DfF20a242fcBAc0e0b07",
+    "age": 0.61925,
+    "detectedAt": 1771616626156
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x238b3ec736Bb8Bb675ddBbd0B01b74222f681b07",
-    "age": 0.46441666666666664,
-    "detectedAt": 1771614798865
+    "symbol": "golem",
+    "address": "0x776feF1C66EE5a661B05adC2EB66b704A1A46B07",
+    "age": 0.6192666666666666,
+    "detectedAt": 1771616626156
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xeff594B4e1131a3A6071157110D326389f861b07",
-    "age": 0.7644166666666666,
-    "detectedAt": 1771614798865
+    "symbol": "ZB",
+    "address": "0x99d4C29C6c48A41d4DbcBd7A7E83A0a7bc93Ab07",
+    "age": 0.7192666666666667,
+    "detectedAt": 1771616626156
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xdEdb70A1d48EEe73232BD3B88B5C9aF8A2cd2b07",
-    "age": 0.7644166666666666,
-    "detectedAt": 1771614798865
+    "symbol": "ZB",
+    "address": "0x3ac276cACAa65E9cA619Ba3e20CCA97af42eEb07",
+    "age": 0.7192666666666667,
+    "detectedAt": 1771616626156
   },
   {
-    "symbol": "MARIO",
-    "address": "0x6e55Fa798B704AFfBc8b21BdedF543A2B1e95b07",
-    "age": 0.8310833333333333,
-    "detectedAt": 1771614798865
+    "symbol": "Larpz",
+    "address": "0x09124b169631A6cb7081d7f886B166AD96F12b07",
+    "age": 0.7859333333333334,
+    "detectedAt": 1771616626156
   },
   {
-    "symbol": "MARIO",
-    "address": "0x853Bfc8FFC9D88a54b74d5A978d7e7aB07E78B07",
-    "age": 0.8310833333333333,
-    "detectedAt": 1771614798865
+    "symbol": "Larpz",
+    "address": "0xF7418DC4Bb5D035aaEb7016260E1efb0a5715b07",
+    "age": 0.7859333333333334,
+    "detectedAt": 1771616626156
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x852b40E62ddb1d0BCfE8f7D4d28d9054F55B6b07",
-    "age": 0.8310833333333333,
-    "detectedAt": 1771614798865
+    "symbol": "Robo",
+    "address": "0x751A92403821a2368C845b7CA52055158184Bb07",
+    "age": 0.7859333333333334,
+    "detectedAt": 1771616626156
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x51170e21FA390A5725f82D97987d0ed34ce0eb07",
-    "age": 0.8644166666666667,
-    "detectedAt": 1771614798865
+    "symbol": "UFO",
+    "address": "0x28b58038beeedc437f26BD759Bf94dF6Af812b07",
+    "age": 0.8192666666666667,
+    "detectedAt": 1771616626156
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0xf89C75D813F2A9140F6dF6371F2Cc1E5DcE67b07",
-    "age": 0.89775,
-    "detectedAt": 1771614798865
+    "symbol": "Robo",
+    "address": "0x6d19ae012206DC24dB0A013fa703d60F1a052b07",
+    "age": 0.8192666666666667,
+    "detectedAt": 1771616626156
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0x3282db072CB2354A0527b713e6127F009995fb07",
-    "age": 0.9644166666666667,
-    "detectedAt": 1771614798865
+    "symbol": "UFO",
+    "address": "0xD7f64598F4A32D42e656bDAB5c6434e01C3a8b07",
+    "age": 0.9526,
+    "detectedAt": 1771616626156
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x2a4F3acdd2c05388b65B694E8420c2f136EdbB07",
-    "age": 0.9644166666666667,
-    "detectedAt": 1771614798865
+    "symbol": "UFO",
+    "address": "0x3AAA4c49a913e2c1caBfA3577Eab6C895839bB07",
+    "age": 0.9859333333333333,
+    "detectedAt": 1771616626156
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x6D52afe0f8fd812a6c5dd4C7D493c1534795dB07",
-    "age": 0.9644166666666667,
-    "detectedAt": 1771614798865
+    "symbol": "OLLIE",
+    "address": "0x75Ae892692a1610aA2ceD6186Fd84D0aD5f36b07",
+    "age": 1.0192666666666668,
+    "detectedAt": 1771616626156
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0xd1E7b76adD7045425dcFdD3E4f534E1C154dEb07",
-    "age": 0.10593333333333334,
-    "detectedAt": 1771614795356
+    "symbol": "CLAW",
+    "address": "0x5dA6391c6334ab7C29d3Be7c205AAaf1B8beCB07",
+    "age": 0.09615,
+    "detectedAt": 1771616622769
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x58d10ED16Fa75b3C0276073B69e6e4715F877B07",
-    "age": 0.13926666666666668,
-    "detectedAt": 1771614795356
+    "symbol": "CLAW",
+    "address": "0x4D47254dfC23C787e39C11b1F7AA0C71724C3b07",
+    "age": 0.12948333333333334,
+    "detectedAt": 1771616622769
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0xbe0Fcd1640E9AC557981a54E318496Ea094E9b07",
-    "age": 0.13926666666666668,
-    "detectedAt": 1771614795356
+    "symbol": "CLAW",
+    "address": "0x71f156d543B49705593a160eAcFD2355558Abb07",
+    "age": 0.32948333333333335,
+    "detectedAt": 1771616622769
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x24039F38B2F19d5B83518D714F6F122ced81bB07",
-    "age": 0.23926666666666666,
-    "detectedAt": 1771614795357
+    "symbol": "CLAW",
+    "address": "0x00eb903B86b244190c54eFe09d444A7531082B07",
+    "age": 0.3628166666666667,
+    "detectedAt": 1771616622769
   },
   {
-    "symbol": "babybooAI",
-    "address": "0xd0fB2Cf1F7212F50a9826917Be2a3020B17e9B07",
-    "age": 0.2726166666666667,
-    "detectedAt": 1771614795357
+    "symbol": "golem",
+    "address": "0x2C23bc95FBB629267f2256c0BeEfAe41A73D3b07",
+    "age": 0.5294833333333333,
+    "detectedAt": 1771616622769
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0xedC84D0193Dc21B2B9ebbdC8379332b9C7Eceb07",
-    "age": 0.3392833333333333,
-    "detectedAt": 1771614795357
+    "symbol": "SKIBIDI",
+    "address": "0x17b120E2EdE36f9B683BEf282c5c491Ad8910B07",
+    "age": 0.5628166666666666,
+    "detectedAt": 1771616622769
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x4C36F188B97A8c5C915e7280E5034a8a7bB7fb07",
-    "age": 0.3392833333333333,
-    "detectedAt": 1771614795357
+    "symbol": "SKIBIDI",
+    "address": "0x146C659D42D4fB496CE1DfF20a242fcBAc0e0b07",
+    "age": 0.5628166666666666,
+    "detectedAt": 1771616622769
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x423B12da10bBECd44D82fA3cdAB89C934dBDcb07",
-    "age": 0.37261666666666665,
-    "detectedAt": 1771614795357
+    "symbol": "golem",
+    "address": "0x776feF1C66EE5a661B05adC2EB66b704A1A46B07",
+    "age": 0.5628166666666666,
+    "detectedAt": 1771616622769
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x238b3ec736Bb8Bb675ddBbd0B01b74222f681b07",
-    "age": 0.40595,
-    "detectedAt": 1771614795357
+    "symbol": "ZB",
+    "address": "0x99d4C29C6c48A41d4DbcBd7A7E83A0a7bc93Ab07",
+    "age": 0.6628166666666667,
+    "detectedAt": 1771616622769
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xeff594B4e1131a3A6071157110D326389f861b07",
-    "age": 0.70595,
-    "detectedAt": 1771614795357
+    "symbol": "ZB",
+    "address": "0x3ac276cACAa65E9cA619Ba3e20CCA97af42eEb07",
+    "age": 0.6628166666666667,
+    "detectedAt": 1771616622769
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xdEdb70A1d48EEe73232BD3B88B5C9aF8A2cd2b07",
-    "age": 0.70595,
-    "detectedAt": 1771614795357
+    "symbol": "Larpz",
+    "address": "0x09124b169631A6cb7081d7f886B166AD96F12b07",
+    "age": 0.7294833333333334,
+    "detectedAt": 1771616622769
   },
   {
-    "symbol": "MARIO",
-    "address": "0x6e55Fa798B704AFfBc8b21BdedF543A2B1e95b07",
-    "age": 0.7726166666666666,
-    "detectedAt": 1771614795357
+    "symbol": "Larpz",
+    "address": "0xF7418DC4Bb5D035aaEb7016260E1efb0a5715b07",
+    "age": 0.7294833333333334,
+    "detectedAt": 1771616622769
   },
   {
-    "symbol": "MARIO",
-    "address": "0x853Bfc8FFC9D88a54b74d5A978d7e7aB07E78B07",
-    "age": 0.7726166666666666,
-    "detectedAt": 1771614795357
+    "symbol": "Robo",
+    "address": "0x751A92403821a2368C845b7CA52055158184Bb07",
+    "age": 0.7294833333333334,
+    "detectedAt": 1771616622769
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x852b40E62ddb1d0BCfE8f7D4d28d9054F55B6b07",
-    "age": 0.7726166666666666,
-    "detectedAt": 1771614795357
+    "symbol": "UFO",
+    "address": "0x28b58038beeedc437f26BD759Bf94dF6Af812b07",
+    "age": 0.7628166666666667,
+    "detectedAt": 1771616622769
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x51170e21FA390A5725f82D97987d0ed34ce0eb07",
-    "age": 0.80595,
-    "detectedAt": 1771614795357
+    "symbol": "Robo",
+    "address": "0x6d19ae012206DC24dB0A013fa703d60F1a052b07",
+    "age": 0.7628166666666667,
+    "detectedAt": 1771616622769
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0xf89C75D813F2A9140F6dF6371F2Cc1E5DcE67b07",
-    "age": 0.8392833333333334,
-    "detectedAt": 1771614795357
+    "symbol": "UFO",
+    "address": "0xD7f64598F4A32D42e656bDAB5c6434e01C3a8b07",
+    "age": 0.89615,
+    "detectedAt": 1771616622769
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0x3282db072CB2354A0527b713e6127F009995fb07",
-    "age": 0.90595,
-    "detectedAt": 1771614795357
+    "symbol": "UFO",
+    "address": "0x3AAA4c49a913e2c1caBfA3577Eab6C895839bB07",
+    "age": 0.9294833333333333,
+    "detectedAt": 1771616622769
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x2a4F3acdd2c05388b65B694E8420c2f136EdbB07",
-    "age": 0.90595,
-    "detectedAt": 1771614795357
+    "symbol": "OLLIE",
+    "address": "0x75Ae892692a1610aA2ceD6186Fd84D0aD5f36b07",
+    "age": 0.9628166666666667,
+    "detectedAt": 1771616622769
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x6D52afe0f8fd812a6c5dd4C7D493c1534795dB07",
-    "age": 0.90595,
-    "detectedAt": 1771614795357
+    "symbol": "OLLIE",
+    "address": "0x643BcA9722050b020E1F19f77FD7FF3411Ed7b07",
+    "age": 0.99615,
+    "detectedAt": 1771616622770
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0xE93BceC8FC9B2016788F80f18cd0f2d7A9220b07",
-    "age": 0.9392833333333334,
-    "detectedAt": 1771614795357
+    "symbol": "ZB",
+    "address": "0x0Be8FD5A87E435d439fEDa98793Bc466AB8c4B07",
+    "age": 1.0628333333333333,
+    "detectedAt": 1771616622770
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x58d10ED16Fa75b3C0276073B69e6e4715F877B07",
-    "age": 0.07528333333333333,
-    "detectedAt": 1771614791518
+    "symbol": "CLAW",
+    "address": "0x71f156d543B49705593a160eAcFD2355558Abb07",
+    "age": 0.27275,
+    "detectedAt": 1771616619365
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0xbe0Fcd1640E9AC557981a54E318496Ea094E9b07",
-    "age": 0.0753,
-    "detectedAt": 1771614791518
+    "symbol": "CLAW",
+    "address": "0x00eb903B86b244190c54eFe09d444A7531082B07",
+    "age": 0.3060833333333333,
+    "detectedAt": 1771616619365
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x24039F38B2F19d5B83518D714F6F122ced81bB07",
-    "age": 0.1753,
-    "detectedAt": 1771614791518
+    "symbol": "golem",
+    "address": "0x2C23bc95FBB629267f2256c0BeEfAe41A73D3b07",
+    "age": 0.47275,
+    "detectedAt": 1771616619366
   },
   {
-    "symbol": "babybooAI",
-    "address": "0xd0fB2Cf1F7212F50a9826917Be2a3020B17e9B07",
-    "age": 0.20863333333333334,
-    "detectedAt": 1771614791518
+    "symbol": "SKIBIDI",
+    "address": "0x17b120E2EdE36f9B683BEf282c5c491Ad8910B07",
+    "age": 0.5061,
+    "detectedAt": 1771616619366
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0xedC84D0193Dc21B2B9ebbdC8379332b9C7Eceb07",
-    "age": 0.2753,
-    "detectedAt": 1771614791518
+    "symbol": "SKIBIDI",
+    "address": "0x146C659D42D4fB496CE1DfF20a242fcBAc0e0b07",
+    "age": 0.5061,
+    "detectedAt": 1771616619366
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x4C36F188B97A8c5C915e7280E5034a8a7bB7fb07",
-    "age": 0.2753,
-    "detectedAt": 1771614791518
+    "symbol": "golem",
+    "address": "0x776feF1C66EE5a661B05adC2EB66b704A1A46B07",
+    "age": 0.5061,
+    "detectedAt": 1771616619366
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x423B12da10bBECd44D82fA3cdAB89C934dBDcb07",
-    "age": 0.3086333333333333,
-    "detectedAt": 1771614791518
+    "symbol": "ZB",
+    "address": "0x99d4C29C6c48A41d4DbcBd7A7E83A0a7bc93Ab07",
+    "age": 0.6061,
+    "detectedAt": 1771616619366
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x238b3ec736Bb8Bb675ddBbd0B01b74222f681b07",
-    "age": 0.34196666666666664,
-    "detectedAt": 1771614791518
+    "symbol": "ZB",
+    "address": "0x3ac276cACAa65E9cA619Ba3e20CCA97af42eEb07",
+    "age": 0.6061,
+    "detectedAt": 1771616619366
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xeff594B4e1131a3A6071157110D326389f861b07",
-    "age": 0.6419666666666667,
-    "detectedAt": 1771614791519
+    "symbol": "Larpz",
+    "address": "0x09124b169631A6cb7081d7f886B166AD96F12b07",
+    "age": 0.6727666666666666,
+    "detectedAt": 1771616619366
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xdEdb70A1d48EEe73232BD3B88B5C9aF8A2cd2b07",
-    "age": 0.6419833333333334,
-    "detectedAt": 1771614791519
+    "symbol": "Larpz",
+    "address": "0xF7418DC4Bb5D035aaEb7016260E1efb0a5715b07",
+    "age": 0.6727666666666666,
+    "detectedAt": 1771616619366
   },
   {
-    "symbol": "MARIO",
-    "address": "0x6e55Fa798B704AFfBc8b21BdedF543A2B1e95b07",
-    "age": 0.70865,
-    "detectedAt": 1771614791519
+    "symbol": "Robo",
+    "address": "0x751A92403821a2368C845b7CA52055158184Bb07",
+    "age": 0.6727666666666666,
+    "detectedAt": 1771616619366
   },
   {
-    "symbol": "MARIO",
-    "address": "0x853Bfc8FFC9D88a54b74d5A978d7e7aB07E78B07",
-    "age": 0.70865,
-    "detectedAt": 1771614791519
+    "symbol": "UFO",
+    "address": "0x28b58038beeedc437f26BD759Bf94dF6Af812b07",
+    "age": 0.7061,
+    "detectedAt": 1771616619366
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x852b40E62ddb1d0BCfE8f7D4d28d9054F55B6b07",
-    "age": 0.70865,
-    "detectedAt": 1771614791519
+    "symbol": "Robo",
+    "address": "0x6d19ae012206DC24dB0A013fa703d60F1a052b07",
+    "age": 0.7061,
+    "detectedAt": 1771616619366
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x51170e21FA390A5725f82D97987d0ed34ce0eb07",
-    "age": 0.7419833333333333,
-    "detectedAt": 1771614791519
+    "symbol": "UFO",
+    "address": "0xD7f64598F4A32D42e656bDAB5c6434e01C3a8b07",
+    "age": 0.8394333333333334,
+    "detectedAt": 1771616619366
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0xf89C75D813F2A9140F6dF6371F2Cc1E5DcE67b07",
-    "age": 0.7753166666666667,
-    "detectedAt": 1771614791519
+    "symbol": "UFO",
+    "address": "0x3AAA4c49a913e2c1caBfA3577Eab6C895839bB07",
+    "age": 0.8727666666666667,
+    "detectedAt": 1771616619366
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0x3282db072CB2354A0527b713e6127F009995fb07",
-    "age": 0.8419833333333333,
-    "detectedAt": 1771614791519
+    "symbol": "OLLIE",
+    "address": "0x75Ae892692a1610aA2ceD6186Fd84D0aD5f36b07",
+    "age": 0.9061,
+    "detectedAt": 1771616619366
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x2a4F3acdd2c05388b65B694E8420c2f136EdbB07",
-    "age": 0.8419833333333333,
-    "detectedAt": 1771614791519
+    "symbol": "OLLIE",
+    "address": "0x643BcA9722050b020E1F19f77FD7FF3411Ed7b07",
+    "age": 0.9394333333333333,
+    "detectedAt": 1771616619366
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x6D52afe0f8fd812a6c5dd4C7D493c1534795dB07",
-    "age": 0.8419833333333333,
-    "detectedAt": 1771614791519
+    "symbol": "ZB",
+    "address": "0x0Be8FD5A87E435d439fEDa98793Bc466AB8c4B07",
+    "age": 1.0061,
+    "detectedAt": 1771616619366
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0xE93BceC8FC9B2016788F80f18cd0f2d7A9220b07",
-    "age": 0.8753166666666666,
-    "detectedAt": 1771614791519
+    "symbol": "ZB",
+    "address": "0x0218A737E76B5e631DE84c317769E2b69847bB07",
+    "age": 1.0061,
+    "detectedAt": 1771616619366
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0x234B1AF20863E0ebeF06fE40140F0B7DE05F2B07",
-    "age": 0.8753166666666666,
-    "detectedAt": 1771614791519
+    "symbol": "golem",
+    "address": "0xFfa7b7A9Da974B5A9b0d59B4BC09242061653b07",
+    "age": 1.0061,
+    "detectedAt": 1771616619366
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x24039F38B2F19d5B83518D714F6F122ced81bB07",
-    "age": 0.11458333333333333,
-    "detectedAt": 1771614787876
+    "symbol": "CLAW",
+    "address": "0x71f156d543B49705593a160eAcFD2355558Abb07",
+    "age": 0.21505,
+    "detectedAt": 1771616615903
   },
   {
-    "symbol": "babybooAI",
-    "address": "0xd0fB2Cf1F7212F50a9826917Be2a3020B17e9B07",
-    "age": 0.14793333333333333,
-    "detectedAt": 1771614787876
+    "symbol": "CLAW",
+    "address": "0x00eb903B86b244190c54eFe09d444A7531082B07",
+    "age": 0.24838333333333334,
+    "detectedAt": 1771616615903
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0xedC84D0193Dc21B2B9ebbdC8379332b9C7Eceb07",
-    "age": 0.2146,
-    "detectedAt": 1771614787876
+    "symbol": "golem",
+    "address": "0x2C23bc95FBB629267f2256c0BeEfAe41A73D3b07",
+    "age": 0.41505,
+    "detectedAt": 1771616615903
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x4C36F188B97A8c5C915e7280E5034a8a7bB7fb07",
-    "age": 0.2146,
-    "detectedAt": 1771614787876
+    "symbol": "SKIBIDI",
+    "address": "0x17b120E2EdE36f9B683BEf282c5c491Ad8910B07",
+    "age": 0.44838333333333336,
+    "detectedAt": 1771616615903
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x423B12da10bBECd44D82fA3cdAB89C934dBDcb07",
-    "age": 0.24793333333333334,
-    "detectedAt": 1771614787876
+    "symbol": "SKIBIDI",
+    "address": "0x146C659D42D4fB496CE1DfF20a242fcBAc0e0b07",
+    "age": 0.44838333333333336,
+    "detectedAt": 1771616615903
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x238b3ec736Bb8Bb675ddBbd0B01b74222f681b07",
-    "age": 0.28126666666666666,
-    "detectedAt": 1771614787876
+    "symbol": "golem",
+    "address": "0x776feF1C66EE5a661B05adC2EB66b704A1A46B07",
+    "age": 0.44838333333333336,
+    "detectedAt": 1771616615903
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xeff594B4e1131a3A6071157110D326389f861b07",
-    "age": 0.5812666666666667,
-    "detectedAt": 1771614787876
+    "symbol": "ZB",
+    "address": "0x99d4C29C6c48A41d4DbcBd7A7E83A0a7bc93Ab07",
+    "age": 0.5483833333333333,
+    "detectedAt": 1771616615903
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xdEdb70A1d48EEe73232BD3B88B5C9aF8A2cd2b07",
-    "age": 0.5812666666666667,
-    "detectedAt": 1771614787876
+    "symbol": "ZB",
+    "address": "0x3ac276cACAa65E9cA619Ba3e20CCA97af42eEb07",
+    "age": 0.5483833333333333,
+    "detectedAt": 1771616615903
   },
   {
-    "symbol": "MARIO",
-    "address": "0x6e55Fa798B704AFfBc8b21BdedF543A2B1e95b07",
-    "age": 0.6479333333333334,
-    "detectedAt": 1771614787876
+    "symbol": "Larpz",
+    "address": "0x09124b169631A6cb7081d7f886B166AD96F12b07",
+    "age": 0.61505,
+    "detectedAt": 1771616615904
   },
   {
-    "symbol": "MARIO",
-    "address": "0x853Bfc8FFC9D88a54b74d5A978d7e7aB07E78B07",
-    "age": 0.6479333333333334,
-    "detectedAt": 1771614787876
+    "symbol": "Larpz",
+    "address": "0xF7418DC4Bb5D035aaEb7016260E1efb0a5715b07",
+    "age": 0.6150666666666667,
+    "detectedAt": 1771616615904
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x852b40E62ddb1d0BCfE8f7D4d28d9054F55B6b07",
-    "age": 0.6479333333333334,
-    "detectedAt": 1771614787876
+    "symbol": "Robo",
+    "address": "0x751A92403821a2368C845b7CA52055158184Bb07",
+    "age": 0.6150666666666667,
+    "detectedAt": 1771616615904
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x51170e21FA390A5725f82D97987d0ed34ce0eb07",
-    "age": 0.6812666666666667,
-    "detectedAt": 1771614787876
+    "symbol": "UFO",
+    "address": "0x28b58038beeedc437f26BD759Bf94dF6Af812b07",
+    "age": 0.6484,
+    "detectedAt": 1771616615904
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0xf89C75D813F2A9140F6dF6371F2Cc1E5DcE67b07",
-    "age": 0.7146,
-    "detectedAt": 1771614787876
+    "symbol": "Robo",
+    "address": "0x6d19ae012206DC24dB0A013fa703d60F1a052b07",
+    "age": 0.6484,
+    "detectedAt": 1771616615904
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0x3282db072CB2354A0527b713e6127F009995fb07",
-    "age": 0.7812666666666667,
-    "detectedAt": 1771614787876
+    "symbol": "UFO",
+    "address": "0xD7f64598F4A32D42e656bDAB5c6434e01C3a8b07",
+    "age": 0.7817333333333333,
+    "detectedAt": 1771616615904
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x2a4F3acdd2c05388b65B694E8420c2f136EdbB07",
-    "age": 0.7812666666666667,
-    "detectedAt": 1771614787877
+    "symbol": "UFO",
+    "address": "0x3AAA4c49a913e2c1caBfA3577Eab6C895839bB07",
+    "age": 0.8150666666666667,
+    "detectedAt": 1771616615904
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x6D52afe0f8fd812a6c5dd4C7D493c1534795dB07",
-    "age": 0.7812833333333333,
-    "detectedAt": 1771614787877
+    "symbol": "OLLIE",
+    "address": "0x75Ae892692a1610aA2ceD6186Fd84D0aD5f36b07",
+    "age": 0.8484,
+    "detectedAt": 1771616615904
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0xE93BceC8FC9B2016788F80f18cd0f2d7A9220b07",
-    "age": 0.8146166666666667,
-    "detectedAt": 1771614787877
+    "symbol": "OLLIE",
+    "address": "0x643BcA9722050b020E1F19f77FD7FF3411Ed7b07",
+    "age": 0.8817333333333334,
+    "detectedAt": 1771616615904
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0x234B1AF20863E0ebeF06fE40140F0B7DE05F2B07",
-    "age": 0.8146166666666667,
-    "detectedAt": 1771614787877
+    "symbol": "ZB",
+    "address": "0x0Be8FD5A87E435d439fEDa98793Bc466AB8c4B07",
+    "age": 0.9484,
+    "detectedAt": 1771616615904
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0x4Df0851716Cf77098bbCD104e583948daA8D0B07",
-    "age": 0.84795,
-    "detectedAt": 1771614787877
+    "symbol": "ZB",
+    "address": "0x0218A737E76B5e631DE84c317769E2b69847bB07",
+    "age": 0.9484,
+    "detectedAt": 1771616615904
   },
   {
-    "symbol": "infinite money",
-    "address": "0x301BA831C12C564942fb45C220877E1b62902b07",
-    "age": 0.94795,
-    "detectedAt": 1771614787877
+    "symbol": "golem",
+    "address": "0xFfa7b7A9Da974B5A9b0d59B4BC09242061653b07",
+    "age": 0.9484,
+    "detectedAt": 1771616615904
   },
   {
-    "symbol": "babybooAI",
-    "address": "0xd0fB2Cf1F7212F50a9826917Be2a3020B17e9B07",
-    "age": 0.08815,
-    "detectedAt": 1771614784289
+    "symbol": "CLAW",
+    "address": "0x71f156d543B49705593a160eAcFD2355558Abb07",
+    "age": 0.1587,
+    "detectedAt": 1771616612522
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0xedC84D0193Dc21B2B9ebbdC8379332b9C7Eceb07",
-    "age": 0.15481666666666666,
-    "detectedAt": 1771614784289
+    "symbol": "CLAW",
+    "address": "0x00eb903B86b244190c54eFe09d444A7531082B07",
+    "age": 0.19203333333333333,
+    "detectedAt": 1771616612522
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x4C36F188B97A8c5C915e7280E5034a8a7bB7fb07",
-    "age": 0.15481666666666666,
-    "detectedAt": 1771614784290
+    "symbol": "golem",
+    "address": "0x2C23bc95FBB629267f2256c0BeEfAe41A73D3b07",
+    "age": 0.3587,
+    "detectedAt": 1771616612523
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x423B12da10bBECd44D82fA3cdAB89C934dBDcb07",
-    "age": 0.18816666666666668,
-    "detectedAt": 1771614784290
+    "symbol": "SKIBIDI",
+    "address": "0x17b120E2EdE36f9B683BEf282c5c491Ad8910B07",
+    "age": 0.39205,
+    "detectedAt": 1771616612523
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x238b3ec736Bb8Bb675ddBbd0B01b74222f681b07",
-    "age": 0.2215,
-    "detectedAt": 1771614784290
+    "symbol": "SKIBIDI",
+    "address": "0x146C659D42D4fB496CE1DfF20a242fcBAc0e0b07",
+    "age": 0.39205,
+    "detectedAt": 1771616612523
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xeff594B4e1131a3A6071157110D326389f861b07",
-    "age": 0.5215,
-    "detectedAt": 1771614784290
+    "symbol": "golem",
+    "address": "0x776feF1C66EE5a661B05adC2EB66b704A1A46B07",
+    "age": 0.39205,
+    "detectedAt": 1771616612523
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xdEdb70A1d48EEe73232BD3B88B5C9aF8A2cd2b07",
-    "age": 0.5215,
-    "detectedAt": 1771614784290
+    "symbol": "ZB",
+    "address": "0x99d4C29C6c48A41d4DbcBd7A7E83A0a7bc93Ab07",
+    "age": 0.49205,
+    "detectedAt": 1771616612523
   },
   {
-    "symbol": "MARIO",
-    "address": "0x6e55Fa798B704AFfBc8b21BdedF543A2B1e95b07",
-    "age": 0.5881666666666666,
-    "detectedAt": 1771614784290
+    "symbol": "ZB",
+    "address": "0x3ac276cACAa65E9cA619Ba3e20CCA97af42eEb07",
+    "age": 0.49205,
+    "detectedAt": 1771616612523
   },
   {
-    "symbol": "MARIO",
-    "address": "0x853Bfc8FFC9D88a54b74d5A978d7e7aB07E78B07",
-    "age": 0.5881666666666666,
-    "detectedAt": 1771614784290
+    "symbol": "Larpz",
+    "address": "0x09124b169631A6cb7081d7f886B166AD96F12b07",
+    "age": 0.5587166666666666,
+    "detectedAt": 1771616612523
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x852b40E62ddb1d0BCfE8f7D4d28d9054F55B6b07",
-    "age": 0.5881666666666666,
-    "detectedAt": 1771614784290
+    "symbol": "Larpz",
+    "address": "0xF7418DC4Bb5D035aaEb7016260E1efb0a5715b07",
+    "age": 0.5587166666666666,
+    "detectedAt": 1771616612523
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x51170e21FA390A5725f82D97987d0ed34ce0eb07",
-    "age": 0.6215,
-    "detectedAt": 1771614784291
+    "symbol": "Robo",
+    "address": "0x751A92403821a2368C845b7CA52055158184Bb07",
+    "age": 0.5587166666666666,
+    "detectedAt": 1771616612523
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0xf89C75D813F2A9140F6dF6371F2Cc1E5DcE67b07",
-    "age": 0.65485,
-    "detectedAt": 1771614784291
+    "symbol": "UFO",
+    "address": "0x28b58038beeedc437f26BD759Bf94dF6Af812b07",
+    "age": 0.59205,
+    "detectedAt": 1771616612523
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0x3282db072CB2354A0527b713e6127F009995fb07",
-    "age": 0.7215166666666667,
-    "detectedAt": 1771614784291
+    "symbol": "Robo",
+    "address": "0x6d19ae012206DC24dB0A013fa703d60F1a052b07",
+    "age": 0.59205,
+    "detectedAt": 1771616612523
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x2a4F3acdd2c05388b65B694E8420c2f136EdbB07",
-    "age": 0.7215166666666667,
-    "detectedAt": 1771614784291
+    "symbol": "UFO",
+    "address": "0xD7f64598F4A32D42e656bDAB5c6434e01C3a8b07",
+    "age": 0.7253833333333334,
+    "detectedAt": 1771616612523
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x6D52afe0f8fd812a6c5dd4C7D493c1534795dB07",
-    "age": 0.7215166666666667,
-    "detectedAt": 1771614784291
+    "symbol": "UFO",
+    "address": "0x3AAA4c49a913e2c1caBfA3577Eab6C895839bB07",
+    "age": 0.7587166666666667,
+    "detectedAt": 1771616612523
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0xE93BceC8FC9B2016788F80f18cd0f2d7A9220b07",
-    "age": 0.75485,
-    "detectedAt": 1771614784291
+    "symbol": "OLLIE",
+    "address": "0x75Ae892692a1610aA2ceD6186Fd84D0aD5f36b07",
+    "age": 0.79205,
+    "detectedAt": 1771616612523
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0x234B1AF20863E0ebeF06fE40140F0B7DE05F2B07",
-    "age": 0.75485,
-    "detectedAt": 1771614784291
+    "symbol": "OLLIE",
+    "address": "0x643BcA9722050b020E1F19f77FD7FF3411Ed7b07",
+    "age": 0.8253833333333334,
+    "detectedAt": 1771616612523
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0x4Df0851716Cf77098bbCD104e583948daA8D0B07",
-    "age": 0.7881833333333333,
-    "detectedAt": 1771614784291
+    "symbol": "ZB",
+    "address": "0x0Be8FD5A87E435d439fEDa98793Bc466AB8c4B07",
+    "age": 0.89205,
+    "detectedAt": 1771616612523
   },
   {
-    "symbol": "infinite money",
-    "address": "0x301BA831C12C564942fb45C220877E1b62902b07",
-    "age": 0.8881833333333333,
-    "detectedAt": 1771614784291
+    "symbol": "ZB",
+    "address": "0x0218A737E76B5e631DE84c317769E2b69847bB07",
+    "age": 0.89205,
+    "detectedAt": 1771616612523
   },
   {
-    "symbol": "COSPA",
-    "address": "0xD97a31828Aa06F429D8F5bE343948a782D445B07",
-    "age": 1.0881833333333333,
-    "detectedAt": 1771614784291
+    "symbol": "golem",
+    "address": "0xFfa7b7A9Da974B5A9b0d59B4BC09242061653b07",
+    "age": 0.89205,
+    "detectedAt": 1771616612523
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0xedC84D0193Dc21B2B9ebbdC8379332b9C7Eceb07",
-    "age": 0.0949,
-    "detectedAt": 1771614780694
+    "symbol": "CLAW",
+    "address": "0x71f156d543B49705593a160eAcFD2355558Abb07",
+    "age": 0.10011666666666667,
+    "detectedAt": 1771616609007
   },
   {
-    "symbol": "PUMPBOOK",
-    "address": "0x4C36F188B97A8c5C915e7280E5034a8a7bB7fb07",
-    "age": 0.0949,
-    "detectedAt": 1771614780694
+    "symbol": "CLAW",
+    "address": "0x00eb903B86b244190c54eFe09d444A7531082B07",
+    "age": 0.13345,
+    "detectedAt": 1771616609007
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x423B12da10bBECd44D82fA3cdAB89C934dBDcb07",
-    "age": 0.12823333333333334,
-    "detectedAt": 1771614780694
+    "symbol": "golem",
+    "address": "0x2C23bc95FBB629267f2256c0BeEfAe41A73D3b07",
+    "age": 0.30011666666666664,
+    "detectedAt": 1771616609007
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x238b3ec736Bb8Bb675ddBbd0B01b74222f681b07",
-    "age": 0.16156666666666666,
-    "detectedAt": 1771614780694
+    "symbol": "SKIBIDI",
+    "address": "0x17b120E2EdE36f9B683BEf282c5c491Ad8910B07",
+    "age": 0.33345,
+    "detectedAt": 1771616609007
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xeff594B4e1131a3A6071157110D326389f861b07",
-    "age": 0.4615666666666667,
-    "detectedAt": 1771614780694
+    "symbol": "SKIBIDI",
+    "address": "0x146C659D42D4fB496CE1DfF20a242fcBAc0e0b07",
+    "age": 0.33345,
+    "detectedAt": 1771616609007
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xdEdb70A1d48EEe73232BD3B88B5C9aF8A2cd2b07",
-    "age": 0.4615666666666667,
-    "detectedAt": 1771614780695
+    "symbol": "golem",
+    "address": "0x776feF1C66EE5a661B05adC2EB66b704A1A46B07",
+    "age": 0.33345,
+    "detectedAt": 1771616609007
   },
   {
-    "symbol": "MARIO",
-    "address": "0x6e55Fa798B704AFfBc8b21BdedF543A2B1e95b07",
-    "age": 0.52825,
-    "detectedAt": 1771614780695
+    "symbol": "ZB",
+    "address": "0x99d4C29C6c48A41d4DbcBd7A7E83A0a7bc93Ab07",
+    "age": 0.43345,
+    "detectedAt": 1771616609007
   },
   {
-    "symbol": "MARIO",
-    "address": "0x853Bfc8FFC9D88a54b74d5A978d7e7aB07E78B07",
-    "age": 0.52825,
-    "detectedAt": 1771614780695
+    "symbol": "ZB",
+    "address": "0x3ac276cACAa65E9cA619Ba3e20CCA97af42eEb07",
+    "age": 0.43345,
+    "detectedAt": 1771616609007
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x852b40E62ddb1d0BCfE8f7D4d28d9054F55B6b07",
-    "age": 0.52825,
-    "detectedAt": 1771614780695
+    "symbol": "Larpz",
+    "address": "0x09124b169631A6cb7081d7f886B166AD96F12b07",
+    "age": 0.5001166666666667,
+    "detectedAt": 1771616609007
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x51170e21FA390A5725f82D97987d0ed34ce0eb07",
-    "age": 0.5615833333333333,
-    "detectedAt": 1771614780695
+    "symbol": "Larpz",
+    "address": "0xF7418DC4Bb5D035aaEb7016260E1efb0a5715b07",
+    "age": 0.5001166666666667,
+    "detectedAt": 1771616609007
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0xf89C75D813F2A9140F6dF6371F2Cc1E5DcE67b07",
-    "age": 0.5949166666666666,
-    "detectedAt": 1771614780695
+    "symbol": "Robo",
+    "address": "0x751A92403821a2368C845b7CA52055158184Bb07",
+    "age": 0.5001166666666667,
+    "detectedAt": 1771616609007
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0x3282db072CB2354A0527b713e6127F009995fb07",
-    "age": 0.6615833333333333,
-    "detectedAt": 1771614780695
+    "symbol": "UFO",
+    "address": "0x28b58038beeedc437f26BD759Bf94dF6Af812b07",
+    "age": 0.53345,
+    "detectedAt": 1771616609007
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x2a4F3acdd2c05388b65B694E8420c2f136EdbB07",
-    "age": 0.6615833333333333,
-    "detectedAt": 1771614780695
+    "symbol": "Robo",
+    "address": "0x6d19ae012206DC24dB0A013fa703d60F1a052b07",
+    "age": 0.53345,
+    "detectedAt": 1771616609008
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x6D52afe0f8fd812a6c5dd4C7D493c1534795dB07",
-    "age": 0.6615833333333333,
-    "detectedAt": 1771614780695
+    "symbol": "UFO",
+    "address": "0xD7f64598F4A32D42e656bDAB5c6434e01C3a8b07",
+    "age": 0.6668,
+    "detectedAt": 1771616609008
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0xE93BceC8FC9B2016788F80f18cd0f2d7A9220b07",
-    "age": 0.6949166666666666,
-    "detectedAt": 1771614780695
+    "symbol": "UFO",
+    "address": "0x3AAA4c49a913e2c1caBfA3577Eab6C895839bB07",
+    "age": 0.7001333333333334,
+    "detectedAt": 1771616609008
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0x234B1AF20863E0ebeF06fE40140F0B7DE05F2B07",
-    "age": 0.6949166666666666,
-    "detectedAt": 1771614780695
+    "symbol": "OLLIE",
+    "address": "0x75Ae892692a1610aA2ceD6186Fd84D0aD5f36b07",
+    "age": 0.7334666666666667,
+    "detectedAt": 1771616609008
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0x4Df0851716Cf77098bbCD104e583948daA8D0B07",
-    "age": 0.72825,
-    "detectedAt": 1771614780695
+    "symbol": "OLLIE",
+    "address": "0x643BcA9722050b020E1F19f77FD7FF3411Ed7b07",
+    "age": 0.7668,
+    "detectedAt": 1771616609008
   },
   {
-    "symbol": "infinite money",
-    "address": "0x301BA831C12C564942fb45C220877E1b62902b07",
-    "age": 0.82825,
-    "detectedAt": 1771614780695
+    "symbol": "ZB",
+    "address": "0x0Be8FD5A87E435d439fEDa98793Bc466AB8c4B07",
+    "age": 0.8334666666666667,
+    "detectedAt": 1771616609008
   },
   {
-    "symbol": "COSPA",
-    "address": "0xD97a31828Aa06F429D8F5bE343948a782D445B07",
-    "age": 1.02825,
-    "detectedAt": 1771614780695
+    "symbol": "ZB",
+    "address": "0x0218A737E76B5e631DE84c317769E2b69847bB07",
+    "age": 0.8334666666666667,
+    "detectedAt": 1771616609008
   },
   {
-    "symbol": "COSPA",
-    "address": "0x45EbC4C7855c969aBb6e9af9a19400f2e5b27b07",
-    "age": 1.0615833333333333,
-    "detectedAt": 1771614780695
+    "symbol": "golem",
+    "address": "0xFfa7b7A9Da974B5A9b0d59B4BC09242061653b07",
+    "age": 0.8334666666666667,
+    "detectedAt": 1771616609008
   },
   {
-    "symbol": "BUILD4",
-    "address": "0x238b3ec736Bb8Bb675ddBbd0B01b74222f681b07",
-    "age": 0.09978333333333333,
-    "detectedAt": 1771614776987
+    "symbol": "CLAW",
+    "address": "0x00eb903B86b244190c54eFe09d444A7531082B07",
+    "age": 0.07663333333333333,
+    "detectedAt": 1771616605598
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xeff594B4e1131a3A6071157110D326389f861b07",
-    "age": 0.3997833333333333,
-    "detectedAt": 1771614776987
+    "symbol": "golem",
+    "address": "0x2C23bc95FBB629267f2256c0BeEfAe41A73D3b07",
+    "age": 0.24331666666666665,
+    "detectedAt": 1771616605599
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xdEdb70A1d48EEe73232BD3B88B5C9aF8A2cd2b07",
-    "age": 0.3997833333333333,
-    "detectedAt": 1771614776987
+    "symbol": "SKIBIDI",
+    "address": "0x17b120E2EdE36f9B683BEf282c5c491Ad8910B07",
+    "age": 0.27665,
+    "detectedAt": 1771616605599
   },
   {
-    "symbol": "MARIO",
-    "address": "0x6e55Fa798B704AFfBc8b21BdedF543A2B1e95b07",
-    "age": 0.46645,
-    "detectedAt": 1771614776988
+    "symbol": "SKIBIDI",
+    "address": "0x146C659D42D4fB496CE1DfF20a242fcBAc0e0b07",
+    "age": 0.27665,
+    "detectedAt": 1771616605599
   },
   {
-    "symbol": "MARIO",
-    "address": "0x853Bfc8FFC9D88a54b74d5A978d7e7aB07E78B07",
-    "age": 0.46646666666666664,
-    "detectedAt": 1771614776988
+    "symbol": "golem",
+    "address": "0x776feF1C66EE5a661B05adC2EB66b704A1A46B07",
+    "age": 0.27665,
+    "detectedAt": 1771616605599
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x852b40E62ddb1d0BCfE8f7D4d28d9054F55B6b07",
-    "age": 0.46646666666666664,
-    "detectedAt": 1771614776988
+    "symbol": "ZB",
+    "address": "0x99d4C29C6c48A41d4DbcBd7A7E83A0a7bc93Ab07",
+    "age": 0.37665,
+    "detectedAt": 1771616605599
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x51170e21FA390A5725f82D97987d0ed34ce0eb07",
-    "age": 0.4998,
-    "detectedAt": 1771614776988
+    "symbol": "ZB",
+    "address": "0x3ac276cACAa65E9cA619Ba3e20CCA97af42eEb07",
+    "age": 0.37665,
+    "detectedAt": 1771616605599
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0xf89C75D813F2A9140F6dF6371F2Cc1E5DcE67b07",
-    "age": 0.5331333333333333,
-    "detectedAt": 1771614776988
+    "symbol": "Larpz",
+    "address": "0x09124b169631A6cb7081d7f886B166AD96F12b07",
+    "age": 0.4433166666666667,
+    "detectedAt": 1771616605599
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0x3282db072CB2354A0527b713e6127F009995fb07",
-    "age": 0.5998,
-    "detectedAt": 1771614776988
+    "symbol": "Larpz",
+    "address": "0xF7418DC4Bb5D035aaEb7016260E1efb0a5715b07",
+    "age": 0.4433166666666667,
+    "detectedAt": 1771616605599
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x2a4F3acdd2c05388b65B694E8420c2f136EdbB07",
-    "age": 0.5998,
-    "detectedAt": 1771614776988
+    "symbol": "Robo",
+    "address": "0x751A92403821a2368C845b7CA52055158184Bb07",
+    "age": 0.4433166666666667,
+    "detectedAt": 1771616605599
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x6D52afe0f8fd812a6c5dd4C7D493c1534795dB07",
-    "age": 0.5998,
-    "detectedAt": 1771614776988
+    "symbol": "UFO",
+    "address": "0x28b58038beeedc437f26BD759Bf94dF6Af812b07",
+    "age": 0.47665,
+    "detectedAt": 1771616605599
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0xE93BceC8FC9B2016788F80f18cd0f2d7A9220b07",
-    "age": 0.6331333333333333,
-    "detectedAt": 1771614776988
+    "symbol": "Robo",
+    "address": "0x6d19ae012206DC24dB0A013fa703d60F1a052b07",
+    "age": 0.47665,
+    "detectedAt": 1771616605599
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0x234B1AF20863E0ebeF06fE40140F0B7DE05F2B07",
-    "age": 0.6331333333333333,
-    "detectedAt": 1771614776988
+    "symbol": "UFO",
+    "address": "0xD7f64598F4A32D42e656bDAB5c6434e01C3a8b07",
+    "age": 0.6099833333333333,
+    "detectedAt": 1771616605599
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0x4Df0851716Cf77098bbCD104e583948daA8D0B07",
-    "age": 0.6664666666666667,
-    "detectedAt": 1771614776988
+    "symbol": "UFO",
+    "address": "0x3AAA4c49a913e2c1caBfA3577Eab6C895839bB07",
+    "age": 0.6433166666666666,
+    "detectedAt": 1771616605599
   },
   {
-    "symbol": "infinite money",
-    "address": "0x301BA831C12C564942fb45C220877E1b62902b07",
-    "age": 0.7664666666666666,
-    "detectedAt": 1771614776988
+    "symbol": "OLLIE",
+    "address": "0x75Ae892692a1610aA2ceD6186Fd84D0aD5f36b07",
+    "age": 0.67665,
+    "detectedAt": 1771616605599
   },
   {
-    "symbol": "COSPA",
-    "address": "0xD97a31828Aa06F429D8F5bE343948a782D445B07",
-    "age": 0.9664666666666667,
-    "detectedAt": 1771614776988
+    "symbol": "OLLIE",
+    "address": "0x643BcA9722050b020E1F19f77FD7FF3411Ed7b07",
+    "age": 0.7099833333333333,
+    "detectedAt": 1771616605599
   },
   {
-    "symbol": "COSPA",
-    "address": "0x45EbC4C7855c969aBb6e9af9a19400f2e5b27b07",
-    "age": 0.9998,
-    "detectedAt": 1771614776988
+    "symbol": "ZB",
+    "address": "0x0Be8FD5A87E435d439fEDa98793Bc466AB8c4B07",
+    "age": 0.77665,
+    "detectedAt": 1771616605599
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0x39E8457a21122B32dCE4349B97d2D5acE76b4b07",
-    "age": 1.0331333333333332,
-    "detectedAt": 1771614776988
+    "symbol": "ZB",
+    "address": "0x0218A737E76B5e631DE84c317769E2b69847bB07",
+    "age": 0.77665,
+    "detectedAt": 1771616605599
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0x7C957323B75cFBa05A967bc1672b4d65a6D35b07",
-    "age": 1.0331333333333332,
-    "detectedAt": 1771614776988
+    "symbol": "golem",
+    "address": "0xFfa7b7A9Da974B5A9b0d59B4BC09242061653b07",
+    "age": 0.77665,
+    "detectedAt": 1771616605599
   },
   {
-    "symbol": "MARIO",
-    "address": "0x761748ACb2c153bEAfCd18889bc9Ca7956bA5b07",
-    "age": 1.0664666666666667,
-    "detectedAt": 1771614776988
+    "symbol": "golem",
+    "address": "0xEAC913770eCb9d29853d064D1f7424A625246B07",
+    "age": 0.8099833333333334,
+    "detectedAt": 1771616605599
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xeff594B4e1131a3A6071157110D326389f861b07",
-    "age": 0.3307833333333333,
-    "detectedAt": 1771614772847
+    "symbol": "golem",
+    "address": "0x2C23bc95FBB629267f2256c0BeEfAe41A73D3b07",
+    "age": 0.18583333333333332,
+    "detectedAt": 1771616602151
   },
   {
-    "symbol": "BEAR X",
-    "address": "0xdEdb70A1d48EEe73232BD3B88B5C9aF8A2cd2b07",
-    "age": 0.3307833333333333,
-    "detectedAt": 1771614772847
+    "symbol": "SKIBIDI",
+    "address": "0x17b120E2EdE36f9B683BEf282c5c491Ad8910B07",
+    "age": 0.21918333333333334,
+    "detectedAt": 1771616602151
   },
   {
-    "symbol": "MARIO",
-    "address": "0x6e55Fa798B704AFfBc8b21BdedF543A2B1e95b07",
-    "age": 0.39745,
-    "detectedAt": 1771614772847
+    "symbol": "SKIBIDI",
+    "address": "0x146C659D42D4fB496CE1DfF20a242fcBAc0e0b07",
+    "age": 0.21918333333333334,
+    "detectedAt": 1771616602151
   },
   {
-    "symbol": "MARIO",
-    "address": "0x853Bfc8FFC9D88a54b74d5A978d7e7aB07E78B07",
-    "age": 0.39745,
-    "detectedAt": 1771614772847
+    "symbol": "golem",
+    "address": "0x776feF1C66EE5a661B05adC2EB66b704A1A46B07",
+    "age": 0.21918333333333334,
+    "detectedAt": 1771616602151
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x852b40E62ddb1d0BCfE8f7D4d28d9054F55B6b07",
-    "age": 0.39745,
-    "detectedAt": 1771614772852
+    "symbol": "ZB",
+    "address": "0x99d4C29C6c48A41d4DbcBd7A7E83A0a7bc93Ab07",
+    "age": 0.3191833333333333,
+    "detectedAt": 1771616602151
   },
   {
-    "symbol": "babybooAI",
-    "address": "0x51170e21FA390A5725f82D97987d0ed34ce0eb07",
-    "age": 0.4308666666666667,
-    "detectedAt": 1771614772852
+    "symbol": "ZB",
+    "address": "0x3ac276cACAa65E9cA619Ba3e20CCA97af42eEb07",
+    "age": 0.3191833333333333,
+    "detectedAt": 1771616602151
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0xf89C75D813F2A9140F6dF6371F2Cc1E5DcE67b07",
-    "age": 0.4642,
-    "detectedAt": 1771614772852
+    "symbol": "Larpz",
+    "address": "0x09124b169631A6cb7081d7f886B166AD96F12b07",
+    "age": 0.38585,
+    "detectedAt": 1771616602151
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0x3282db072CB2354A0527b713e6127F009995fb07",
-    "age": 0.5308666666666667,
-    "detectedAt": 1771614772852
+    "symbol": "Larpz",
+    "address": "0xF7418DC4Bb5D035aaEb7016260E1efb0a5715b07",
+    "age": 0.38585,
+    "detectedAt": 1771616602151
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x2a4F3acdd2c05388b65B694E8420c2f136EdbB07",
-    "age": 0.5308666666666667,
-    "detectedAt": 1771614772852
+    "symbol": "Robo",
+    "address": "0x751A92403821a2368C845b7CA52055158184Bb07",
+    "age": 0.38585,
+    "detectedAt": 1771616602151
   },
   {
-    "symbol": "TARRFIS",
-    "address": "0x6D52afe0f8fd812a6c5dd4C7D493c1534795dB07",
-    "age": 0.5308666666666667,
-    "detectedAt": 1771614772852
+    "symbol": "UFO",
+    "address": "0x28b58038beeedc437f26BD759Bf94dF6Af812b07",
+    "age": 0.41918333333333335,
+    "detectedAt": 1771616602151
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0xE93BceC8FC9B2016788F80f18cd0f2d7A9220b07",
-    "age": 0.5642,
-    "detectedAt": 1771614772852
+    "symbol": "Robo",
+    "address": "0x6d19ae012206DC24dB0A013fa703d60F1a052b07",
+    "age": 0.41918333333333335,
+    "detectedAt": 1771616602151
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0x234B1AF20863E0ebeF06fE40140F0B7DE05F2B07",
-    "age": 0.5642,
-    "detectedAt": 1771614772852
+    "symbol": "UFO",
+    "address": "0xD7f64598F4A32D42e656bDAB5c6434e01C3a8b07",
+    "age": 0.5525166666666667,
+    "detectedAt": 1771616602151
   },
   {
-    "symbol": "COMPUTERACTIVATE",
-    "address": "0x4Df0851716Cf77098bbCD104e583948daA8D0B07",
-    "age": 0.5975333333333334,
-    "detectedAt": 1771614772852
+    "symbol": "UFO",
+    "address": "0x3AAA4c49a913e2c1caBfA3577Eab6C895839bB07",
+    "age": 0.58585,
+    "detectedAt": 1771616602151
   },
   {
-    "symbol": "infinite money",
-    "address": "0x301BA831C12C564942fb45C220877E1b62902b07",
-    "age": 0.6975333333333333,
-    "detectedAt": 1771614772852
+    "symbol": "OLLIE",
+    "address": "0x75Ae892692a1610aA2ceD6186Fd84D0aD5f36b07",
+    "age": 0.6191833333333333,
+    "detectedAt": 1771616602151
   },
   {
-    "symbol": "COSPA",
-    "address": "0xD97a31828Aa06F429D8F5bE343948a782D445B07",
-    "age": 0.8975333333333333,
-    "detectedAt": 1771614772852
+    "symbol": "OLLIE",
+    "address": "0x643BcA9722050b020E1F19f77FD7FF3411Ed7b07",
+    "age": 0.6525166666666666,
+    "detectedAt": 1771616602151
   },
   {
-    "symbol": "COSPA",
-    "address": "0x45EbC4C7855c969aBb6e9af9a19400f2e5b27b07",
-    "age": 0.9308666666666666,
-    "detectedAt": 1771614772852
+    "symbol": "ZB",
+    "address": "0x0Be8FD5A87E435d439fEDa98793Bc466AB8c4B07",
+    "age": 0.7191833333333333,
+    "detectedAt": 1771616602151
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0x39E8457a21122B32dCE4349B97d2D5acE76b4b07",
-    "age": 0.9642,
-    "detectedAt": 1771614772852
+    "symbol": "ZB",
+    "address": "0x0218A737E76B5e631DE84c317769E2b69847bB07",
+    "age": 0.7191833333333333,
+    "detectedAt": 1771616602151
   },
   {
-    "symbol": "FakeClaw",
-    "address": "0x7C957323B75cFBa05A967bc1672b4d65a6D35b07",
-    "age": 0.9642,
-    "detectedAt": 1771614772852
+    "symbol": "golem",
+    "address": "0xFfa7b7A9Da974B5A9b0d59B4BC09242061653b07",
+    "age": 0.7191833333333333,
+    "detectedAt": 1771616602152
   },
   {
-    "symbol": "MARIO",
-    "address": "0x761748ACb2c153bEAfCd18889bc9Ca7956bA5b07",
-    "age": 0.9975333333333334,
-    "detectedAt": 1771614772852
+    "symbol": "golem",
+    "address": "0xEAC913770eCb9d29853d064D1f7424A625246B07",
+    "age": 0.7525333333333334,
+    "detectedAt": 1771616602152
   },
   {
-    "symbol": "MARIO",
-    "address": "0x990E5f34003812426Ee0C6bCCC3c0507dc4c3b07",
-    "age": 0.9975333333333334,
-    "detectedAt": 1771614772852
+    "symbol": "WIKI",
+    "address": "0x9bF2f4323161909966De63cFE5A0Dc01bCEAAB07",
+    "age": 0.8192,
+    "detectedAt": 1771616602152
   }
 ]

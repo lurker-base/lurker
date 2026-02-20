@@ -1,5 +1,53 @@
 [
   {
+    "tokenAddress": "0xBD23df91D8C99940047B7a17d8204721773D4b07",
+    "symbol": "PUNCH",
+    "status": "WARM",
+    "score": 60,
+    "message": "\n⚡⚡ LURKER ALERT WARM ⚡⚡\n\nToken: $PUNCH\n├ Address: 0xBD23df91D8C99940047B7a17d8204721773D4b07\n├ Age: 5min\n├ DEX: uniswap\n└ URL: https://dexscreener.com/base/0xbd89211a1b3ed01f6c54e3595a8292c294a9a515bfa7a8adede85d9c51b30814\n\n📊 Metrics:\n├ Liq: $21,848.41\n├ Vol 5m: $2,171.45\n├ Vol 1h: $4,126.79\n├ Txns 5m: 12\n├ Price Δ5m: -53.52%\n├ Market Cap: $21,816\n└ Score: 60/100\n\n⚡ Bon momentum\n\nTime: 8:41:59 PM\n",
+    "sentAt": 1771616519454
+  },
+  {
+    "tokenAddress": "0xc2446e4966cA3559a1158395be4fb0cbffDC0b07",
+    "symbol": "OLLIE",
+    "status": "HOT",
+    "score": 90,
+    "message": "\n🔥🔥🔥 LURKER ALERT HOT 🔥🔥🔥\n\nToken: $OLLIE\n├ Address: 0xc2446e4966cA3559a1158395be4fb0cbffDC0b07\n├ Age: 5min\n├ DEX: uniswap\n└ URL: https://dexscreener.com/base/0x22dd75a098e72ebb5969a11a7a34de88335e2a6745de621f9b58d18a4a1665ac\n\n📊 Metrics:\n├ Liq: $96,541.23\n├ Vol 5m: $6,833.61\n├ Vol 1h: $6,833.61\n├ Txns 5m: 88\n├ Price Δ5m: 117.00%\n├ Market Cap: $102,296\n└ Score: 90/100\n\n🔥 Fort volume + liquidité\n\nTime: 8:34:29 PM\n",
+    "sentAt": 1771616069665
+  },
+  {
+    "tokenAddress": "0x99D0B13b34e01d639711252C115D618AD4a8CB07",
+    "symbol": "everythingyouown",
+    "status": "WARM",
+    "score": 80,
+    "message": "\n⚡⚡ LURKER ALERT WARM ⚡⚡\n\nToken: $everythingyouown\n├ Address: 0x99D0B13b34e01d639711252C115D618AD4a8CB07\n├ Age: 5min\n├ DEX: uniswap\n└ URL: https://dexscreener.com/base/0x4e6e71393f06405c4b7c6cd78b441781948af07572f8a240150c40109e7ec89a\n\n📊 Metrics:\n├ Liq: $35,289.04\n├ Vol 5m: $3,041.99\n├ Vol 1h: $3,041.99\n├ Txns 5m: 64\n├ Price Δ5m: 81.79%\n├ Market Cap: $35,683\n└ Score: 80/100\n\n⚡ Bon momentum\n\nTime: 8:32:23 PM\n",
+    "sentAt": 1771615943555
+  },
+  {
+    "tokenAddress": "0xCb6abB47FeCe0287FC7F298BFbb76E13c46F1b07",
+    "symbol": "CLAWDIA",
+    "status": "WARM",
+    "score": 60,
+    "message": "\n⚡⚡ LURKER ALERT WARM ⚡⚡\n\nToken: $CLAWDIA\n├ Address: 0xCb6abB47FeCe0287FC7F298BFbb76E13c46F1b07\n├ Age: 5min\n├ DEX: uniswap\n└ URL: https://dexscreener.com/base/0xc1cab0de0c9d947926ff5aa8d8d37cb2f6304d921811aa7ba8dde6db569e6964\n\n📊 Metrics:\n├ Liq: $20,659.17\n├ Vol 5m: $4,267.48\n├ Vol 1h: $6,230.78\n├ Txns 5m: 31\n├ Price Δ5m: -13.85%\n├ Market Cap: $20,156\n└ Score: 60/100\n\n⚡ Bon momentum\n\nTime: 8:22:27 PM\n",
+    "sentAt": 1771615347253
+  },
+  {
+    "tokenAddress": "0x802E6E6d7BE24BcF8dA7855df83BDbBf000Beb07",
+    "symbol": "LOBSTAR",
+    "status": "WARM",
+    "score": 70,
+    "message": "\n⚡⚡ LURKER ALERT WARM ⚡⚡\n\nToken: $LOBSTAR\n├ Address: 0x802E6E6d7BE24BcF8dA7855df83BDbBf000Beb07\n├ Age: 5min\n├ DEX: uniswap\n└ URL: https://dexscreener.com/base/0xb91fed897834ef03185675ad90ed57827bfeb40072af9b6645c1eb32273fcc70\n\n📊 Metrics:\n├ Liq: $21,901.29\n├ Vol 5m: $8,679.2\n├ Vol 1h: $20,179.67\n├ Txns 5m: 32\n├ Price Δ5m: -19.43%\n├ Market Cap: $21,664\n└ Score: 70/100\n\n⚡ Bon momentum\n\nTime: 8:15:53 PM\n",
+    "sentAt": 1771614953626
+  },
+  {
+    "tokenAddress": "0xE16C318eaEe070893D423128608272d245c95B07",
+    "symbol": "LobstarK",
+    "status": "WARM",
+    "score": 45,
+    "message": "\n⚡⚡ LURKER ALERT WARM ⚡⚡\n\nToken: $LobstarK\n├ Address: 0xE16C318eaEe070893D423128608272d245c95B07\n├ Age: 5min\n├ DEX: uniswap\n└ URL: https://dexscreener.com/base/0x625b564420275b964f338bc0da62d91045237ef2f0564180ede649a873b47f73\n\n📊 Metrics:\n├ Liq: $25,939.93\n├ Vol 5m: $3,511.39\n├ Vol 1h: $3,511.39\n├ Txns 5m: 3\n├ Price Δ5m: -12.21%\n├ Market Cap: $25,584\n└ Score: 45/100\n\n⚡ Bon momentum\n\nTime: 8:14:29 PM\n",
+    "sentAt": 1771614869606
+  },
+  {
     "tokenAddress": "0x247C719a109C9D4f7a1568D034f515D76c896B07",
     "symbol": "TARIFF",
     "status": "WARM",
