@@ -1,5 +1,45 @@
 [
   {
+    "tokenAddress": "0x0182BEE3B91d135b516bfe1369c2A611a6aF3B07",
+    "symbol": "X DOLLAR",
+    "status": "WARM",
+    "score": 60,
+    "message": "\n⚡⚡ LURKER ALERT WARM ⚡⚡\n\nToken: $X DOLLAR\n├ Address: 0x0182BEE3B91d135b516bfe1369c2A611a6aF3B07\n├ Age: 5min\n├ DEX: uniswap\n└ URL: https://dexscreener.com/base/0xca5f67eba48b0faf904a2d9bb1b906234007b1d3d13a8fd6cdcec0db194a4b5b\n\n📊 Metrics:\n├ Liq: $19,477.02\n├ Vol 5m: $3,996.97\n├ Vol 1h: $3,996.97\n├ Txns 5m: 17\n├ Price Δ5m: -58.95%\n├ Market Cap: $19,444\n└ Score: 60/100\n\n⚡ Bon momentum\n\nTime: 7:56:26 PM\n",
+    "sentAt": 1771613786759
+  },
+  {
+    "tokenAddress": "0xb5BCc9c3b06928CF7E93c2FAE95CbD9C78305b07",
+    "symbol": "XDOLLARS",
+    "status": "HOT",
+    "score": 80,
+    "message": "\n🔥🔥🔥 LURKER ALERT HOT 🔥🔥🔥\n\nToken: $XDOLLARS\n├ Address: 0xb5BCc9c3b06928CF7E93c2FAE95CbD9C78305b07\n├ Age: 5min\n├ DEX: uniswap\n└ URL: https://dexscreener.com/base/0x7078db0ac514d9b7762f9356301e29547c4bfccc723511c998d7f72eb703a386\n\n📊 Metrics:\n├ Liq: $49,260.1\n├ Vol 5m: $9,264.93\n├ Vol 1h: $12,344.03\n├ Txns 5m: 96\n├ Price Δ5m: -26.42%\n├ Market Cap: $50,424\n└ Score: 80/100\n\n🔥 Fort volume + liquidité\n\nTime: 7:51:59 PM\n",
+    "sentAt": 1771613519313
+  },
+  {
+    "tokenAddress": "0x9BEE51f42b485380d63eA1cF78d82f9A2f8DAB07",
+    "symbol": "FLAW",
+    "status": "WARM",
+    "score": 80,
+    "message": "\n⚡⚡ LURKER ALERT WARM ⚡⚡\n\nToken: $FLAW\n├ Address: 0x9BEE51f42b485380d63eA1cF78d82f9A2f8DAB07\n├ Age: 5min\n├ DEX: uniswap\n└ URL: https://dexscreener.com/base/0x7a2a7f304bb6e8fd552821395a1e5bcf94fb8e3ca5e57b18ec27f5e45b4e4a39\n\n📊 Metrics:\n├ Liq: $43,745.45\n├ Vol 5m: $1,919.91\n├ Vol 1h: $2,306.46\n├ Txns 5m: 362\n├ Price Δ5m: 87.52%\n├ Market Cap: $44,621\n└ Score: 80/100\n\n⚡ Bon momentum\n\nTime: 7:45:20 PM\n",
+    "sentAt": 1771613120790
+  },
+  {
+    "tokenAddress": "0x51DF4df924c7FcBAE93D2B3CEEfD77102f7ECB07",
+    "symbol": "flappy",
+    "status": "WARM",
+    "score": 80,
+    "message": "\n⚡⚡ LURKER ALERT WARM ⚡⚡\n\nToken: $flappy\n├ Address: 0x51DF4df924c7FcBAE93D2B3CEEfD77102f7ECB07\n├ Age: 5min\n├ DEX: uniswap\n└ URL: https://dexscreener.com/base/0xe5f3ec775945ed53762834c3d2fdc3c7f86e5339fee3f1cb8764d24ce11085e1\n\n📊 Metrics:\n├ Liq: $97,684.56\n├ Vol 5m: $3,915.15\n├ Vol 1h: $6,525.6\n├ Txns 5m: 82\n├ Price Δ5m: 75.73%\n├ Market Cap: $103,565\n└ Score: 80/100\n\n⚡ Bon momentum\n\nTime: 7:44:51 PM\n",
+    "sentAt": 1771613091968
+  },
+  {
+    "tokenAddress": "0x444B3Bb8921B510f0A387d42b58384079F59DB07",
+    "symbol": "Flappy",
+    "status": "WARM",
+    "score": 70,
+    "message": "\n⚡⚡ LURKER ALERT WARM ⚡⚡\n\nToken: $Flappy\n├ Address: 0x444B3Bb8921B510f0A387d42b58384079F59DB07\n├ Age: 5min\n├ DEX: uniswap\n└ URL: https://dexscreener.com/base/0x422c5f71ae77510b7c02f2909c5e3a2b973c37bacf03b9941560c22c5dccdb45\n\n📊 Metrics:\n├ Liq: $19,670.19\n├ Vol 5m: $8,289.53\n├ Vol 1h: $10,306.65\n├ Txns 5m: 135\n├ Price Δ5m: -59.40%\n├ Market Cap: $19,596\n└ Score: 70/100\n\n⚡ Bon momentum\n\nTime: 7:39:50 PM\n",
+    "sentAt": 1771612790786
+  },
+  {
     "tokenAddress": "0x9792e57fEC818FF2a964F4C714ae94bC5fBcFB07",
     "symbol": "Moltbanks",
     "status": "WARM",
