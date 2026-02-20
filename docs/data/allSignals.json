@@ -1,487 +1,365 @@
 [
   {
-    "symbol": "BNKR",
-    "name": "Bankr Treasury",
-    "contract_address": "0xddb4a1754be2c032068631438b2587f6e49f8B55",
-    "address": "0xddb4a1754be2c032068631438b2587f6e49f8B55",
-    "detectedAt": 1771614155144,
-    "ageMinutes": 0,
+    "symbol": "imjar0t",
+    "address": "0x574Ef7Cb1aC6f7A644F487834dE32958aA568b07",
+    "age": 1.3271833333333334,
+    "detectedAt": 1771617498631,
     "source": "live",
-    "status": "FRESH",
-    "liquidityUsd": 0,
-    "marketCap": 0,
-    "volume24h": 0,
-    "url": "https://dexscreener.com/base/0xddb4a1754be2c032068631438b2587f6e49f8B55"
+    "contract_address": "0x574Ef7Cb1aC6f7A644F487834dE32958aA568b07"
   },
   {
-    "symbol": "SBH",
-    "name": "Solana Brotherhood",
-    "contract_address": "0xC494cb929480A592A061ca2E3aF5dd52B07D9B07",
-    "address": "0xC494cb929480A592A061ca2E3aF5dd52B07D9B07",
-    "detectedAt": 1771614155150,
-    "ageMinutes": 0,
+    "symbol": "Felipe ",
+    "address": "0xF30d4e190B91dbc59a79dBA7Ae3f236bA53A4B07",
+    "age": 0.19381666666666666,
+    "detectedAt": 1771617498630,
     "source": "live",
-    "status": "FRESH",
-    "liquidityUsd": 0,
-    "marketCap": 0,
-    "volume24h": 0,
-    "url": "https://dexscreener.com/base/0xC494cb929480A592A061ca2E3aF5dd52B07D9B07"
+    "contract_address": "0xF30d4e190B91dbc59a79dBA7Ae3f236bA53A4B07"
   },
   {
-    "symbol": "SPECS",
-    "name": "Spec Sheet",
-    "contract_address": "0x3608428221f54821b3eDdd498ab6D4Ca9582BB07",
-    "address": "0x3608428221f54821b3eDdd498ab6D4Ca9582BB07",
-    "detectedAt": 1771614155150,
-    "ageMinutes": 0,
+    "symbol": "Felipe ",
+    "address": "0x2EF92BCe50AA6c3E4B2F56b7C1Dcf35F6f777b07",
+    "age": 0.22716666666666666,
+    "detectedAt": 1771617498630,
     "source": "live",
-    "status": "FRESH",
-    "liquidityUsd": 0,
-    "marketCap": 0,
-    "volume24h": 0,
-    "url": "https://dexscreener.com/base/0x3608428221f54821b3eDdd498ab6D4Ca9582BB07"
+    "contract_address": "0x2EF92BCe50AA6c3E4B2F56b7C1Dcf35F6f777b07"
   },
   {
-    "symbol": "SPECS",
-    "name": "Spec Sheet",
-    "contract_address": "0xc7b05bC189cAd35A282bf7d17259b9aD9c4Eeb1d",
-    "address": "0xc7b05bC189cAd35A282bf7d17259b9aD9c4Eeb1d",
-    "detectedAt": 1771614155150,
-    "ageMinutes": 0,
+    "symbol": "Pinch",
+    "address": "0x095afccf0A687A74c3e02354bAD3180b8f552b07",
+    "age": 0.2605,
+    "detectedAt": 1771617498630,
     "source": "live",
-    "status": "FRESH",
-    "liquidityUsd": 0,
-    "marketCap": 0,
-    "volume24h": 0,
-    "url": "https://dexscreener.com/base/0xc7b05bC189cAd35A282bf7d17259b9aD9c4Eeb1d"
+    "contract_address": "0x095afccf0A687A74c3e02354bAD3180b8f552b07"
   },
   {
-    "symbol": "XD",
-    "name": "XDOLLAR",
-    "contract_address": "0x2118FB04e5878a5143B285e3489D61EF7da68B07",
-    "address": "0x2118FB04e5878a5143B285e3489D61EF7da68B07",
-    "detectedAt": 1771614155151,
-    "ageMinutes": 0,
+    "symbol": "Pinch",
+    "address": "0x49496834e6D2d70918e14Cd865248D6641d09B07",
+    "age": 0.2605,
+    "detectedAt": 1771617498630,
     "source": "live",
-    "status": "FRESH",
-    "liquidityUsd": 0,
-    "marketCap": 0,
-    "volume24h": 0,
-    "url": "https://dexscreener.com/base/0x2118FB04e5878a5143B285e3489D61EF7da68B07"
+    "contract_address": "0x49496834e6D2d70918e14Cd865248D6641d09B07"
   },
   {
-    "symbol": "XD",
-    "name": "XDOLLAR",
-    "contract_address": "0x9bC9eACFD9A9Ba059352bEaA569D5a4E274DcB07",
-    "address": "0x9bC9eACFD9A9Ba059352bEaA569D5a4E274DcB07",
-    "detectedAt": 1771614155151,
-    "ageMinutes": 0,
+    "symbol": "TOOLTIP",
+    "address": "0x54482d4005B445077527b2eD22Ee0fb7ab908b07",
+    "age": 0.32716666666666666,
+    "detectedAt": 1771617498630,
     "source": "live",
-    "status": "FRESH",
-    "liquidityUsd": 0,
-    "marketCap": 0,
-    "volume24h": 0,
-    "url": "https://dexscreener.com/base/0x9bC9eACFD9A9Ba059352bEaA569D5a4E274DcB07"
+    "contract_address": "0x54482d4005B445077527b2eD22Ee0fb7ab908b07"
   },
   {
-    "symbol": "DUCKS",
-    "name": "Get bread with the boys.",
-    "contract_address": "0x746645f577bE8175B2519280999ea8c1BE188b07",
-    "address": "0x746645f577bE8175B2519280999ea8c1BE188b07",
-    "detectedAt": 1771614155151,
-    "ageMinutes": 0,
+    "symbol": "TOOLTIP",
+    "address": "0x3260f67d65D955EA8bA8A0917B6A41a6d0D1ab07",
+    "age": 0.3605,
+    "detectedAt": 1771617498630,
     "source": "live",
-    "status": "FRESH",
-    "liquidityUsd": 0,
-    "marketCap": 0,
-    "volume24h": 0,
-    "url": "https://dexscreener.com/base/0x746645f577bE8175B2519280999ea8c1BE188b07"
+    "contract_address": "0x3260f67d65D955EA8bA8A0917B6A41a6d0D1ab07"
   },
   {
-    "symbol": "DUCKS",
-    "name": "Get bread with the boys.",
-    "contract_address": "0x59ee73831a054faC38a28Dff419DF9daB6807B07",
-    "address": "0x59ee73831a054faC38a28Dff419DF9daB6807B07",
-    "detectedAt": 1771614155151,
-    "ageMinutes": 0,
+    "symbol": "AARO",
+    "address": "0xa8d87114e5D5c05E9fdD86a05a07f531A6017B07",
+    "age": 0.42716666666666664,
+    "detectedAt": 1771617498630,
     "source": "live",
-    "status": "FRESH",
-    "liquidityUsd": 0,
-    "marketCap": 0,
-    "volume24h": 0,
-    "url": "https://dexscreener.com/base/0x59ee73831a054faC38a28Dff419DF9daB6807B07"
+    "contract_address": "0xa8d87114e5D5c05E9fdD86a05a07f531A6017B07"
   },
   {
-    "symbol": "XD",
-    "name": "XDOLLAR",
-    "contract_address": "0x17F18aA670D96Fb06352D5A77E512e3296856B07",
-    "address": "0x17F18aA670D96Fb06352D5A77E512e3296856B07",
-    "detectedAt": 1771614155151,
-    "ageMinutes": 0,
+    "symbol": "AARO",
+    "address": "0xF581EAdf4BAb251513e14474575aeF1A4d4C2B07",
+    "age": 0.4605,
+    "detectedAt": 1771617498630,
     "source": "live",
-    "status": "FRESH",
-    "liquidityUsd": 0,
-    "marketCap": 0,
-    "volume24h": 0,
-    "url": "https://dexscreener.com/base/0x17F18aA670D96Fb06352D5A77E512e3296856B07"
+    "contract_address": "0xF581EAdf4BAb251513e14474575aeF1A4d4C2B07"
   },
   {
-    "symbol": "XD",
-    "name": "XDOLLAR",
-    "contract_address": "0xF36ABd28a68E6fB57E7Bf559D8bDeCCE52071B07",
-    "address": "0xF36ABd28a68E6fB57E7Bf559D8bDeCCE52071B07",
-    "detectedAt": 1771614155151,
-    "ageMinutes": 0,
+    "symbol": "AARO",
+    "address": "0xFc3C32C98a955eb2f0566251abEdA78CB58C1b07",
+    "age": 0.7605,
+    "detectedAt": 1771617498630,
     "source": "live",
-    "status": "FRESH",
-    "liquidityUsd": 0,
-    "marketCap": 0,
-    "volume24h": 0,
-    "url": "https://dexscreener.com/base/0xF36ABd28a68E6fB57E7Bf559D8bDeCCE52071B07"
+    "contract_address": "0xFc3C32C98a955eb2f0566251abEdA78CB58C1b07"
   },
   {
-    "symbol": "COSMICDUST",
-    "address": "0x1FC80c24533414C159af2Bc0B8D4EF9b8B13cb07",
-    "age": 0.09458333333333334,
-    "detectedAt": 1771613910676,
+    "symbol": "AARO",
+    "address": "0x47F702e9774a4D88A2eCc7B997D10206Bd606b07",
+    "age": 0.7605,
+    "detectedAt": 1771617498630,
     "source": "live",
-    "contract_address": "0x1FC80c24533414C159af2Bc0B8D4EF9b8B13cb07"
+    "contract_address": "0x47F702e9774a4D88A2eCc7B997D10206Bd606b07"
   },
   {
-    "symbol": "COSMICDUST",
-    "address": "0x1AAF0CE59aFE2841a184a25d95118e1574F0DB07",
-    "age": 0.0946,
-    "detectedAt": 1771613910676,
+    "symbol": "imjar0t",
+    "address": "0x409b2906dB9c20d08f883334563a8844c3863B07",
+    "age": 0.8605,
+    "detectedAt": 1771617498630,
     "source": "live",
-    "contract_address": "0x1AAF0CE59aFE2841a184a25d95118e1574F0DB07"
+    "contract_address": "0x409b2906dB9c20d08f883334563a8844c3863B07"
   },
   {
-    "symbol": "memechip",
-    "address": "0x4E8689a1AF36888dF4CC5402D2F85c0bD5AB2b07",
-    "age": 0.12793333333333334,
-    "detectedAt": 1771613910676,
+    "symbol": "imjar0t",
+    "address": "0x7125b4B04C31Ee773063325C84A3b585038A9B07",
+    "age": 0.8605,
+    "detectedAt": 1771617498630,
     "source": "live",
-    "contract_address": "0x4E8689a1AF36888dF4CC5402D2F85c0bD5AB2b07"
+    "contract_address": "0x7125b4B04C31Ee773063325C84A3b585038A9B07"
   },
   {
-    "symbol": "memechip",
-    "address": "0x8d9bf80DcD01688A188621ec64dA8a57F9419B07",
-    "age": 0.12793333333333334,
-    "detectedAt": 1771613910676,
+    "symbol": "TOOLTIP",
+    "address": "0x843907D55e61c9A1f59a89e6389E998ec1D94b07",
+    "age": 0.8938333333333334,
+    "detectedAt": 1771617498630,
     "source": "live",
-    "contract_address": "0x8d9bf80DcD01688A188621ec64dA8a57F9419B07"
+    "contract_address": "0x843907D55e61c9A1f59a89e6389E998ec1D94b07"
   },
   {
-    "symbol": "STARDUST",
-    "address": "0xf1b8640E4Ad92947a4Ea14F15Beb58B97dad7Bcd",
-    "age": 0.16126666666666667,
-    "detectedAt": 1771613910676,
+    "symbol": "TOOLTIP",
+    "address": "0x5EEE9C5F476796fA4a94b9Ec4a54f40608A42B07",
+    "age": 0.8938333333333334,
+    "detectedAt": 1771617498630,
     "source": "live",
-    "contract_address": "0xf1b8640E4Ad92947a4Ea14F15Beb58B97dad7Bcd"
+    "contract_address": "0x5EEE9C5F476796fA4a94b9Ec4a54f40608A42B07"
   },
   {
-    "symbol": "Casino",
-    "address": "0x1dDF94C5AD3bd1A4C8fAc8B035AA01930CF47b07",
-    "age": 0.42793333333333333,
-    "detectedAt": 1771613910676,
+    "symbol": "Pinch",
+    "address": "0x9e31eff5995D02624472f2C6Bdf3E7221C72fb07",
+    "age": 0.9605,
+    "detectedAt": 1771617498630,
     "source": "live",
-    "contract_address": "0x1dDF94C5AD3bd1A4C8fAc8B035AA01930CF47b07"
+    "contract_address": "0x9e31eff5995D02624472f2C6Bdf3E7221C72fb07"
   },
   {
-    "symbol": "Casino",
-    "address": "0x9954A0e1E3e4D9880BDc4F50882061C9fEd57b07",
-    "age": 0.46126666666666666,
-    "detectedAt": 1771613910676,
+    "symbol": "adam",
+    "address": "0x2eA5aBeD6c992a39294183Ae7CcDd4fCE57A3b07",
+    "age": 1.0271666666666666,
+    "detectedAt": 1771617498630,
     "source": "live",
-    "contract_address": "0x9954A0e1E3e4D9880BDc4F50882061C9fEd57b07"
+    "contract_address": "0x2eA5aBeD6c992a39294183Ae7CcDd4fCE57A3b07"
   },
   {
-    "symbol": "COSMICDUST",
-    "address": "0x35630cE2dE3Bd2D723249C800E539Bb5067cCb07",
-    "age": 0.4946,
-    "detectedAt": 1771613910676,
+    "symbol": "adam",
+    "address": "0x57f90E6BA8ADF9eFB44fC22ADB993745dd12Fb07",
+    "age": 1.0271666666666666,
+    "detectedAt": 1771617498630,
     "source": "live",
-    "contract_address": "0x35630cE2dE3Bd2D723249C800E539Bb5067cCb07"
+    "contract_address": "0x57f90E6BA8ADF9eFB44fC22ADB993745dd12Fb07"
   },
   {
-    "symbol": "COSMICDUST",
-    "address": "0xe00A466C69154Fd5824f55Ec047C9931Af4F979b",
-    "age": 0.5279333333333334,
-    "detectedAt": 1771613910676,
+    "symbol": "Felipe ",
+    "address": "0x3b288141fEFc8d681eFBc0912fba8031bb239B07",
+    "age": 1.0271666666666666,
+    "detectedAt": 1771617498630,
     "source": "live",
-    "contract_address": "0xe00A466C69154Fd5824f55Ec047C9931Af4F979b"
+    "contract_address": "0x3b288141fEFc8d681eFBc0912fba8031bb239B07"
   },
   {
-    "symbol": "Pizzafrog",
-    "address": "0x9386CaCf480bB2253899bac6D9234A81f888ab07",
-    "age": 0.5612666666666667,
-    "detectedAt": 1771613910676,
+    "symbol": "Felipe ",
+    "address": "0xAcf8d05B82DF1B4b6Ba7759d59D07E39d23F2b07",
+    "age": 1.0605,
+    "detectedAt": 1771617498630,
     "source": "live",
-    "contract_address": "0x9386CaCf480bB2253899bac6D9234A81f888ab07"
+    "contract_address": "0xAcf8d05B82DF1B4b6Ba7759d59D07E39d23F2b07"
   },
   {
-    "symbol": "Pizzafrog",
-    "address": "0xDb106Fb05aA7837d1B5d5E7E688eAF4E2F8dbB07",
-    "age": 0.5946,
-    "detectedAt": 1771613910676,
+    "symbol": "imjar0t",
+    "address": "0xe49B31f369477aCa601ca9999F75c04FEF61db07",
+    "age": 1.1589166666666666,
+    "detectedAt": 1771617488535,
     "source": "live",
-    "contract_address": "0xDb106Fb05aA7837d1B5d5E7E688eAF4E2F8dbB07"
+    "contract_address": "0xe49B31f369477aCa601ca9999F75c04FEF61db07"
   },
   {
-    "symbol": "Casino",
-    "address": "0x0b3E7d85B41956cD7D5F328193E7aEB07Ed73b07",
-    "age": 0.5946,
-    "detectedAt": 1771613910676,
+    "symbol": "adam",
+    "address": "0xD72edA4B393279171c4c298aDdB9B322d753fb07",
+    "age": 1.1589166666666666,
+    "detectedAt": 1771617488535,
     "source": "live",
-    "contract_address": "0x0b3E7d85B41956cD7D5F328193E7aEB07Ed73b07"
+    "contract_address": "0xD72edA4B393279171c4c298aDdB9B322d753fb07"
   },
   {
-    "symbol": "Pizzafrog",
-    "address": "0x628388355892D013607eDeA9cE43719bd1867b07",
-    "age": 0.7612666666666666,
-    "detectedAt": 1771613910676,
+    "symbol": "adam",
+    "address": "0x1f801074cbb14aa1F50BD20d573D005775102B07",
+    "age": 1.1319166666666667,
+    "detectedAt": 1771617484915,
     "source": "live",
-    "contract_address": "0x628388355892D013607eDeA9cE43719bd1867b07"
+    "contract_address": "0x1f801074cbb14aa1F50BD20d573D005775102B07"
   },
   {
-    "symbol": "Pizzafrog",
-    "address": "0x8D412EC41C8Db60E34b55f9802d97959546E6B07",
-    "age": 0.7612666666666666,
-    "detectedAt": 1771613910676,
+    "symbol": "58NAME",
+    "address": "0xbE2a0b14803ac2d6305807B971C4472D773d5b07",
+    "age": 1.2319166666666668,
+    "detectedAt": 1771617484915,
     "source": "live",
-    "contract_address": "0x8D412EC41C8Db60E34b55f9802d97959546E6B07"
+    "contract_address": "0xbE2a0b14803ac2d6305807B971C4472D773d5b07"
   },
   {
-    "symbol": "Casino",
-    "address": "0x981B8e69c74aC1a5a311122d4192993654747b07",
-    "age": 0.8946,
-    "detectedAt": 1771613910676,
+    "symbol": "58NAME",
+    "address": "0x086F9F3ad261Eb584e94Ce1a016BDd4Aa396eb07",
+    "age": 1.1730833333333333,
+    "detectedAt": 1771617481385,
     "source": "live",
-    "contract_address": "0x981B8e69c74aC1a5a311122d4192993654747b07"
+    "contract_address": "0x086F9F3ad261Eb584e94Ce1a016BDd4Aa396eb07"
   },
   {
-    "symbol": "Casino",
-    "address": "0x60c64603CfCe323aFadB377C7Ad200feC5c90b07",
-    "age": 0.9279333333333334,
-    "detectedAt": 1771613910676,
+    "symbol": "58NAME",
+    "address": "0xE0C78E00980A2efEF4AC25AC7ABc646C0EF8Bb07",
+    "age": 1.4064166666666666,
+    "detectedAt": 1771617481385,
     "source": "live",
-    "contract_address": "0x60c64603CfCe323aFadB377C7Ad200feC5c90b07"
+    "contract_address": "0xE0C78E00980A2efEF4AC25AC7ABc646C0EF8Bb07",
+    "liquidityUsd": 19412.08,
+    "marketCap": 19408,
+    "volume24h": 403.12,
+    "volume1h": 403.12,
+    "volume5m": 196.87,
+    "txns5m": 4,
+    "txns1h": 10,
+    "priceUsd": 1.94e-7,
+    "priceChange5m": -10.31,
+    "dexId": "uniswap",
+    "url": "https://dexscreener.com/base/0xaa6d6951bf0103c0523619b86cc307a7207342cc25a07b36c4883c0bc9b91047",
+    "score": 30,
+    "scoreReasons": [
+      "liq10k",
+      "fresh"
+    ],
+    "lastUpdated": 1771617945001,
+    "status": "COLD"
   },
   {
-    "symbol": "IRONCLAW",
-    "address": "0xF65a613F55229C8c788ffE6466019144C4c8bb07",
-    "age": 0.9612666666666667,
-    "detectedAt": 1771613910676,
+    "symbol": "BILLY",
+    "address": "0xa1Cc0D4641d083A62c94D6eaC2238b7d04050B07",
+    "age": 1.7556666666666667,
+    "detectedAt": 1771617474340,
     "source": "live",
-    "contract_address": "0xF65a613F55229C8c788ffE6466019144C4c8bb07"
+    "contract_address": "0xa1Cc0D4641d083A62c94D6eaC2238b7d04050B07"
   },
   {
-    "symbol": "IRONCLAW",
-    "address": "0x31B7b5A7756eF3597E126C0097Fa72d8e5AE7b07",
-    "age": 0.9612666666666667,
-    "detectedAt": 1771613910676,
+    "symbol": "BILLY",
+    "address": "0x5d1611B3caf5e465F8aeDd4Bd9800c34C8ebDb07",
+    "age": 1.7556666666666667,
+    "detectedAt": 1771617474340,
     "source": "live",
-    "contract_address": "0x31B7b5A7756eF3597E126C0097Fa72d8e5AE7b07"
+    "contract_address": "0x5d1611B3caf5e465F8aeDd4Bd9800c34C8ebDb07"
   },
   {
-    "symbol": "BNKR",
-    "address": "0x6c8b148951BAF06b15fa14Ad5eBCa811F08F1b07",
-    "age": 1.0946,
-    "detectedAt": 1771613910676,
+    "symbol": "BILLY",
+    "address": "0x2f5eB94D406d5cba65C6E6b4c4855EF54D192b07",
+    "age": 1.6968833333333333,
+    "detectedAt": 1771617456813,
     "source": "live",
-    "contract_address": "0x6c8b148951BAF06b15fa14Ad5eBCa811F08F1b07"
+    "contract_address": "0x2f5eB94D406d5cba65C6E6b4c4855EF54D192b07"
   },
   {
-    "symbol": "BNKR",
-    "address": "0x69b2C7Ef8b6aB78Db41D146C08D4cA9a61012FF9",
-    "age": 1.1279333333333332,
-    "detectedAt": 1771613910676,
+    "symbol": "BILLY",
+    "address": "0xd0125A8fecb486204748082a4b6c012D0C267B07",
+    "age": 1.64075,
+    "detectedAt": 1771617453445,
     "source": "live",
-    "contract_address": "0x69b2C7Ef8b6aB78Db41D146C08D4cA9a61012FF9"
+    "contract_address": "0xd0125A8fecb486204748082a4b6c012D0C267B07"
   },
   {
-    "symbol": "IRONCLAW",
-    "address": "0x1e78b4384AbD869F1C2a3C79ED9B521f34Bc0b07",
-    "age": 1.1383833333333333,
-    "detectedAt": 1771613907303,
+    "symbol": "ALIENDGN",
+    "address": "0xb031be6c4C61951ca0d901B411E4972ef4d1Cb07",
+    "age": 1.7514666666666667,
+    "detectedAt": 1771617450088,
     "source": "live",
-    "contract_address": "0x1e78b4384AbD869F1C2a3C79ED9B521f34Bc0b07"
+    "contract_address": "0xb031be6c4C61951ca0d901B411E4972ef4d1Cb07"
   },
   {
-    "symbol": "BNKR",
-    "address": "0x0662Bc25955a2Dbf5C3f74dF97F5A7f2Fcf4aE0d",
-    "age": 1.1383833333333333,
-    "detectedAt": 1771613907303,
+    "symbol": "ALIENDGN",
+    "address": "0x2650EeF16699550E178f3372De4e6b9D0FCE3b07",
+    "age": 1.7848,
+    "detectedAt": 1771617450088,
     "source": "live",
-    "contract_address": "0x0662Bc25955a2Dbf5C3f74dF97F5A7f2Fcf4aE0d"
+    "contract_address": "0x2650EeF16699550E178f3372De4e6b9D0FCE3b07"
   },
   {
-    "symbol": "BNKR",
-    "address": "0x440586a3edD08c554243DBdB5C4C56f697FDEB07",
-    "age": 1.1383833333333333,
-    "detectedAt": 1771613907303,
+    "symbol": "NONE",
+    "address": "0x39216BF6825b7183fa927c3f8c0005866cd60b07",
+    "age": 2.0620333333333334,
+    "detectedAt": 1771617446722,
     "source": "live",
-    "contract_address": "0x440586a3edD08c554243DBdB5C4C56f697FDEB07"
+    "contract_address": "0x39216BF6825b7183fa927c3f8c0005866cd60b07"
   },
   {
-    "symbol": "IUR",
-    "address": "0xa76EdC20e2D59196F9e906CD7d53894F5eCE9B07",
-    "age": 1.5383833333333334,
-    "detectedAt": 1771613907303,
+    "symbol": "NONE",
+    "address": "0xF384355ac9cc8f6f408fEFFd2CB19A56284aeB07",
+    "age": 2.0620333333333334,
+    "detectedAt": 1771617446722,
     "source": "live",
-    "contract_address": "0xa76EdC20e2D59196F9e906CD7d53894F5eCE9B07"
+    "contract_address": "0xF384355ac9cc8f6f408fEFFd2CB19A56284aeB07"
   },
   {
-    "symbol": "IUR",
-    "address": "0xe70B5Fb54168e11dFc941D2b1Ef4B93aA177AB07",
-    "age": 1.6487333333333334,
-    "detectedAt": 1771613903924,
+    "symbol": "XDOLLAR",
+    "address": "0xA7c6dF0321Ab58DdC60146a81734718233878B07",
+    "age": 2.0720666666666667,
+    "detectedAt": 1771617443324,
     "source": "live",
-    "contract_address": "0xe70B5Fb54168e11dFc941D2b1Ef4B93aA177AB07"
+    "contract_address": "0xA7c6dF0321Ab58DdC60146a81734718233878B07"
   },
   {
-    "symbol": "FLAW",
-    "address": "0x9a393f83a792d50B3E2344F50ED25930555Eeb07",
-    "age": 1.4950666666666668,
-    "detectedAt": 1771613886705,
+    "symbol": "XDOLLAR",
+    "address": "0x02E663161E3198A27109c43376F83154f0275b07",
+    "age": 2.0149833333333333,
+    "detectedAt": 1771617439899,
     "source": "live",
-    "contract_address": "0x9a393f83a792d50B3E2344F50ED25930555Eeb07"
+    "contract_address": "0x02E663161E3198A27109c43376F83154f0275b07"
   },
   {
-    "symbol": "SUPERHEAT",
-    "address": "0x080959E62aB87C2FABB03AA8620cAc1251b52B07",
-    "age": 1.6284166666666666,
-    "detectedAt": 1771613886705,
+    "symbol": "BLAST",
+    "address": "0x2addFF0C023b5C5f757e751E31384e4515a51B07",
+    "age": 2.08165,
+    "detectedAt": 1771617439899,
     "source": "live",
-    "contract_address": "0x080959E62aB87C2FABB03AA8620cAc1251b52B07"
+    "contract_address": "0x2addFF0C023b5C5f757e751E31384e4515a51B07"
   },
   {
-    "symbol": "CLAUNCH",
-    "address": "0xBF86D850Bf3F8D6245179f046d8B5869c2e02b07",
-    "age": 1.6366166666666666,
-    "detectedAt": 1771613883197,
+    "symbol": "BLAST",
+    "address": "0x62785dC3754df09422187a00d9d0BD7a80bc7B07",
+    "age": 2.08165,
+    "detectedAt": 1771617439899,
     "source": "live",
-    "contract_address": "0xBF86D850Bf3F8D6245179f046d8B5869c2e02b07"
+    "contract_address": "0x62785dC3754df09422187a00d9d0BD7a80bc7B07"
   },
   {
-    "symbol": "Hi00en",
-    "address": "0x013A5c8F64aE4c434f2e261F941Af7A969eFbB07",
-    "age": 1.96995,
-    "detectedAt": 1771613883197,
+    "symbol": "BURGER",
+    "address": "0xD80Cf23067008Fb73234813683c4aFaea036FB07",
+    "age": 2.1245666666666665,
+    "detectedAt": 1771617436474,
     "source": "live",
-    "contract_address": "0x013A5c8F64aE4c434f2e261F941Af7A969eFbB07"
+    "contract_address": "0xD80Cf23067008Fb73234813683c4aFaea036FB07"
   },
   {
-    "symbol": "X Dollars",
-    "address": "0xFe32e72e28e353f39A62E118913999d44b3D4b07",
-    "age": 2.0088333333333335,
-    "detectedAt": 1771613879530,
+    "symbol": "ALIENDGN",
+    "address": "0x1848Fc8d39dB0Def8Ee285B605d209e479016b07",
+    "age": 1.9303,
+    "detectedAt": 1771617422818,
     "source": "live",
-    "contract_address": "0xFe32e72e28e353f39A62E118913999d44b3D4b07"
+    "contract_address": "0x1848Fc8d39dB0Def8Ee285B605d209e479016b07"
   },
   {
-    "symbol": "XUSDS",
-    "address": "0x430EAE98D77e4c19e88EB36840eBCc35825Aab07",
-    "age": 2.01425,
-    "detectedAt": 1771613875855,
+    "symbol": "BURGER",
+    "address": "0x20a43c0A0049CDB2987E0C81A69C685965D8eB07",
+    "age": 1.9303,
+    "detectedAt": 1771617422818,
     "source": "live",
-    "contract_address": "0x430EAE98D77e4c19e88EB36840eBCc35825Aab07"
+    "contract_address": "0x20a43c0A0049CDB2987E0C81A69C685965D8eB07"
   },
   {
-    "symbol": "SUPERHEAT",
-    "address": "0x386DC538fEFd4946692a88f7B55633A17ACfd9D2",
-    "age": 2.0809166666666665,
-    "detectedAt": 1771613875855,
+    "symbol": "ALIENDGN",
+    "address": "0xc98ffBEA2E7AD965d34C21Be82BF078AA6D03b07",
+    "age": 1.9636333333333333,
+    "detectedAt": 1771617422818,
     "source": "live",
-    "contract_address": "0x386DC538fEFd4946692a88f7B55633A17ACfd9D2"
+    "contract_address": "0xc98ffBEA2E7AD965d34C21Be82BF078AA6D03b07"
   },
   {
-    "symbol": "Clawdbase",
-    "address": "0xd80C30023f407eBEA28AfD283f05A540E8b3cb07",
-    "age": 1.9921166666666668,
-    "detectedAt": 1771613868528,
+    "symbol": "XDOLLAR",
+    "address": "0x48A37d852fA457cb2435E4C6874d486B5c981b07",
+    "age": 2.2399666666666667,
+    "detectedAt": 1771617419398,
     "source": "live",
-    "contract_address": "0xd80C30023f407eBEA28AfD283f05A540E8b3cb07"
-  },
-  {
-    "symbol": "CLAUNCH",
-    "address": "0x7f8e03b08F6c9506e7ebF7462c899967b07fcb07",
-    "age": 2.1254666666666666,
-    "detectedAt": 1771613868528,
-    "source": "live",
-    "contract_address": "0x7f8e03b08F6c9506e7ebF7462c899967b07fcb07"
-  },
-  {
-    "symbol": "76",
-    "address": "0x851Ad508CD503517393136bfC850cACc30BE6b07",
-    "age": 2.3406166666666666,
-    "detectedAt": 1771613857437,
-    "source": "live",
-    "contract_address": "0x851Ad508CD503517393136bfC850cACc30BE6b07"
-  },
-  {
-    "symbol": "Lupelo",
-    "address": "0x2987431fF93AEa00Da64Fb2F38902799d87A3b07",
-    "age": 2.2072666666666665,
-    "detectedAt": 1771613857436,
-    "source": "live",
-    "contract_address": "0x2987431fF93AEa00Da64Fb2F38902799d87A3b07"
-  },
-  {
-    "symbol": "Clawdbase",
-    "address": "0x29574e8796ea3EE4cF9F7EE776D8bd3ee2e7Bb07",
-    "age": 2.2786666666666666,
-    "detectedAt": 1771613853720,
-    "source": "live",
-    "contract_address": "0x29574e8796ea3EE4cF9F7EE776D8bd3ee2e7Bb07"
-  },
-  {
-    "symbol": "76",
-    "address": "0x3E5656111B5A43cc843C00347cd81fFCA2E06b07",
-    "age": 2.312,
-    "detectedAt": 1771613853720,
-    "source": "live",
-    "contract_address": "0x3E5656111B5A43cc843C00347cd81fFCA2E06b07"
-  },
-  {
-    "symbol": "FLAW",
-    "address": "0x5C5907a1bD0f64A94d9264BC9BD68dDF70F1Ca8f",
-    "age": 2.222766666666667,
-    "detectedAt": 1771613846366,
-    "source": "live",
-    "contract_address": "0x5C5907a1bD0f64A94d9264BC9BD68dDF70F1Ca8f"
-  },
-  {
-    "symbol": "claw",
-    "address": "0x2670321ce3ADf99A7FF96Eb68193b8EF24c3cb07",
-    "age": 2.2561,
-    "detectedAt": 1771613846366,
-    "source": "live",
-    "contract_address": "0x2670321ce3ADf99A7FF96Eb68193b8EF24c3cb07"
-  },
-  {
-    "symbol": "X DOLLARS",
-    "address": "0x16e62Eee8dBE4436909Cc624096d2aeb02B25B07",
-    "age": 2.2274666666666665,
-    "detectedAt": 1771613842648,
-    "source": "live",
-    "contract_address": "0x16e62Eee8dBE4436909Cc624096d2aeb02B25B07"
-  },
-  {
-    "symbol": "REAL",
-    "address": "0xf33726e006a0A51C7a653eB5dE2c5047b8b1cB07",
-    "age": 2.3608,
-    "detectedAt": 1771613842648,
-    "source": "live",
-    "contract_address": "0xf33726e006a0A51C7a653eB5dE2c5047b8b1cB07"
-  },
-  {
-    "symbol": "XUSDS",
-    "address": "0xa075171cE89D7a7B86bB84372E1070A6A64A3b07",
-    "age": 2.4941333333333335,
-    "detectedAt": 1771613842648,
-    "source": "live",
-    "contract_address": "0xa075171cE89D7a7B86bB84372E1070A6A64A3b07"
+    "contract_address": "0x48A37d852fA457cb2435E4C6874d486B5c981b07"
   },
   {
     "symbol": "DAIMON",
@@ -494,6 +372,6 @@
     "marketCap": 1117787,
     "found": true,
     "source": "historical",
-    "detectedAt": 1771447330727
+    "detectedAt": 1771450920460
   }
 ]

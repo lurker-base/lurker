@@ -1,0 +1,240 @@
+/**
+ * LURKER Pulse Display - Affiche les signaux HOT/WARM validés
+ */
+
+const PULSE_CONFIG = {
+    signalsUrl: 'data/pulseSignals.json',
+    allSignalsUrl: 'data/allSignals.json',
+    pollInterval: 15000,
+    maxDisplay: 20
+};
+
+function fmt$(val) {
+    if (!val || val === 0) return '$0';
+    if (val >= 1000000) return '$' + (val/1000000).toFixed(2) + 'M';
+    if (val >= 1000) return '$' + (val/1000).toFixed(1) + 'k';
+    return '$' + Math.floor(val);
+}
+
+function fmtAge(minutes) {
+    if (!minutes || minutes < 1) return 'just now';
+    if (minutes < 60) return Math.floor(minutes) + 'min';
+    if (minutes < 1440) return Math.floor(minutes/60) + 'h';
+    return Math.floor(minutes/1440) + 'd';
+}
+
+function truncateAddr(addr) {
+    if (!addr || addr.length < 10) return addr || '???';
+    return addr.slice(0, 6) + '...' + addr.slice(-4);
+}
+
+function getStatusClass(status, score) {
+    if (status === 'HOT' || score >= 70) return 'signal-high';
+    if (status === 'WARM' || score >= 40) return 'signal-medium';
+    return 'signal-low';
+}
+
+function getScoreClass(status, score) {
+    if (status === 'HOT' || score >= 70) return 'high';
+    if (status === 'WARM' || score >= 40) return 'medium';
+    return 'low';
+}
+
+function getScoreReasons(reasons) {
+    if (!reasons || !Array.isArray(reasons)) return [];
+    const reasonMap = {
+        'liq100k': 'High liquidity',
+        'liq50k': 'Good liquidity',
+        'liq10k': 'Medium liquidity',
+        'vol10k5m': 'High vol 5m',
+        'vol5k5m': 'Good volume',
+        'tx100': 'Active trading',
+        'tx50': 'Some activity',
+        'priceUp': 'Price rising',
+        'mcap500k': 'Large mcap',
+        'fresh': 'Fresh launch'
+    };
+    return reasons.map(r => reasonMap[r] || r);
+}
+
+function createPulseCard(s) {
+    const div = document.createElement('div');
+    const statusClass = getStatusClass(s.status, s.score);
+    const scoreClass = getScoreClass(s.status, s.score);
+    
+    div.className = `token-signal ${statusClass}`;
+    
+    const addr = s.contract_address || s.address || '???';
+    const symbol = s.symbol || '???';
+    const name = s.name || symbol;
+    const age = s.ageMinutes || Math.floor((Date.now() - s.detectedAt) / 60000);
+    const score = s.score || 0;
+    const reasons = getScoreReasons(s.scoreReasons);
+    
+    const liq = s.liquidityUsd || s.liquidity || 0;
+    const mcap = s.marketCap || s.market_cap || 0;
+    const vol5m = s.volume5m || 0;
+    const vol1h = s.volume1h || 0;
+    const vol24h = s.volume24h || s.volume_24h || s.volume || 0;
+    const tx5m = s.txns5m || 0;
+    const tx1h = s.txns1h || 0;
+    const price = s.priceUsd || s.price || 0;
+    const priceChange = s.priceChange5m || 0;
+    
+    // Badges dynamiques
+    const badges = [];
+    if (s.status === 'HOT') badges.push('<span class="check-badge check-pass">🔥 HOT</span>');
+    else if (s.status === 'WARM') badges.push('<span class="check-badge check-pass">⚡ WARM</span>');
+    
+    reasons.forEach(r => {
+        badges.push(`<span class="check-badge check-pass">✓ ${r}</span>`);
+    });
+    
+    if (priceChange >= 10) badges.push('<span class="check-badge check-neutral">📈 +' + priceChange.toFixed(1) + '%</span>');
+    if (tx5m >= 50) badges.push('<span class="check-badge check-pass">🔄 ' + tx5m + ' txs</span>');
+    
+    div.innerHTML = `
+        <div class="token-header">
+            <div class="token-identity">
+                <span class="token-name">$${symbol}</span>
+                <span class="token-address">${truncateAddr(addr)}</span>
+            </div>
+            <div class="token-confidence">
+                <span class="confidence-score ${scoreClass}">${score}</span>
+                <span class="confidence-label">score</span>
+            </div>
+        </div>
+        <div class="token-metrics">
+            <div class="metric-item">
+                <span class="metric-label">price</span>
+                <span class="metric-value">${price > 0 ? '$' + price.toFixed(6) : '-'}</span>
+            </div>
+            <div class="metric-item">
+                <span class="metric-label">liquidity</span>
+                <span class="metric-value">${fmt$(liq)}</span>
+            </div>
+            <div class="metric-item">
+                <span class="metric-label">mkt cap</span>
+                <span class="metric-value">${fmt$(mcap)}</span>
+            </div>
+            <div class="metric-item">
+                <span class="metric-label">age</span>
+                <span class="metric-value">${fmtAge(age)}</span>
+            </div>
+        </div>
+        <div class="volume-row">
+            <span class="volume-label">vol 5m:</span>
+            <span class="volume-value ${vol5m >= 5000 ? 'high' : vol5m < 1000 ? 'low' : ''}">${fmt$(vol5m)}</span>
+            <span class="volume-label">1h:</span>
+            <span class="volume-value">${fmt$(vol1h)}</span>
+            <span class="volume-label">24h:</span>
+            <span class="volume-value">${fmt$(vol24h)}</span>
+        </div>
+        <div class="token-checks">
+            ${badges.join('')}
+        </div>
+        <div class="token-links">
+            <a href="https://dexscreener.com/base/${addr}" target="_blank" class="token-link">dexscreener →</a>
+            <a href="https://basescan.org/address/${addr}" target="_blank" class="token-link">basescan →</a>
+            ${s.url ? `<a href="${s.url}" target="_blank" class="token-link">trade →</a>` : ''}
+        </div>
+        <span class="source-badge">${s.source || 'clanker'}</span>
+    `;
+    
+    return div;
+}
+
+async function loadPulseSignals() {
+    try {
+        const feed = document.getElementById('pulse-feed');
+        if (!feed) return;
+        
+        // Charger Pulse signals d'abord
+        let signals = [];
+        try {
+            const res = await fetch(PULSE_CONFIG.signalsUrl + '?t=' + Date.now());
+            if (res.ok) signals = await res.json();
+        } catch(e) {}
+        
+        // Si pas de Pulse signals, charger les HOT/WARM depuis allSignals
+        if (signals.length === 0) {
+            try {
+                const res = await fetch(PULSE_CONFIG.allSignalsUrl + '?t=' + Date.now());
+                if (res.ok) {
+                    const all = await res.json();
+                    signals = all.filter(s => s.status === 'HOT' || s.status === 'WARM');
+                }
+            } catch(e) {}
+        }
+        
+        feed.innerHTML = '';
+        
+        if (signals.length === 0) {
+            feed.innerHTML = `
+                <div class="no-signals">
+                    <div class="no-signals-icon">👁️</div>
+                    <p>No HOT or WARM signals yet</p>
+                    <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 0.5rem;">
+                        Signals appear here when they reach WARM or HOT status
+                    </p>
+                </div>
+            `;
+            updateStats(0, 0, 0);
+            return;
+        }
+        
+        // Trier par score puis par liquidité
+        signals.sort((a, b) => {
+            const scoreDiff = (b.score || 0) - (a.score || 0);
+            if (scoreDiff !== 0) return scoreDiff;
+            return (b.liquidityUsd || 0) - (a.liquidityUsd || 0);
+        });
+        
+        signals.slice(0, PULSE_CONFIG.maxDisplay).forEach(s => {
+            feed.appendChild(createPulseCard(s));
+        });
+        
+        // Mettre à jour les stats
+        const hot = signals.filter(s => s.status === 'HOT').length;
+        const warm = signals.filter(s => s.status === 'WARM').length;
+        updateStats(signals.length, hot, warm);
+        
+    } catch(e) {
+        console.error('[PULSE] Load error:', e);
+    }
+}
+
+function updateStats(total, hot, warm) {
+    // Mettre à jour le compteur scanné
+    const scannedEl = document.querySelector('.filter-value');
+    if (scannedEl && total > 0) {
+        scannedEl.textContent = `${total} signals (${hot} HOT, ${warm} WARM)`;
+    }
+    
+    // Mettre à jour le texte "listening"
+    const listeningText = document.querySelector('.listening-pulse span:last-child');
+    if (listeningText) {
+        listeningText.textContent = `Found ${total} validated signals — ${hot} HOT, ${warm} WARM`;
+    }
+}
+
+// Sparks effect
+const sparksContainer = document.getElementById('sparks');
+if (sparksContainer) {
+    for (let i = 0; i < 12; i++) {
+        const spark = document.createElement('div');
+        spark.className = 'spark';
+        spark.style.left = Math.random() * 100 + '%';
+        spark.style.top = Math.random() * 100 + '%';
+        spark.style.animationDelay = Math.random() * 2 + 's';
+        spark.style.animation = `spark-float ${2 + Math.random() * 2}s ease-in-out infinite`;
+        sparksContainer.appendChild(spark);
+    }
+}
+
+// Initial load
+console.log('[PULSE] Display initialized');
+loadPulseSignals();
+
+// Auto refresh
+setInterval(loadPulseSignals, PULSE_CONFIG.pollInterval);
