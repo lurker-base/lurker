@@ -36,87 +36,40 @@
 
                 <div class="live-stats">
                     <div class="live-stat">
-                        <span class="live-value" id="cycle-count">76</span>
-                        <span class="live-label">cycles completed</span>
+                        <span class="live-value" id="uptime">99.9%</span>
+                        <span class="live-label">scanner uptime</span>
                     </div>
                     <div class="live-stat">
-                        <span class="live-value" id="detection-count">12</span>
-                        <span class="live-label">whales detected</span>
+                        <span class="live-value" id="tokens-found">0</span>
+                        <span class="live-label">tokens detected</span>
                     </div>
                     <div class="live-stat">
-                        <span class="live-value" id="visitor-count">43</span>
-                        <span class="live-label">observers</span>
+                        <span class="live-value" id="avg-score">—</span>
+                        <span class="live-label">avg quality score</span>
                     </div>
                     <div class="live-stat">
-                        <span class="live-value" id="block-latest">42,385,291</span>
-                        <span class="live-label">latest block</span>
+                        <span class="live-value" id="success-rate">—</span>
+                        <span class="live-label">success rate</span>
                     </div>
                 </div>
 
                 <div class="section">
-                    <div class="section-title">live cycles</div>
-                    <div class="cycle-list" id="cycle-list">
+                    <div class="section-title">latest detections</div>
+                    <div class="cycle-list" id="detection-list">
                         <div class="cycle-item">
                             <div class="cycle-header">
-                                <span class="cycle-num">#76</span>
-                                <span class="cycle-time">2m ago</span>
-                                <span class="cycle-status complete">complete</span>
+                                <span class="cycle-num">🟢 85</span>
+                                <span class="cycle-time">loading...</span>
+                                <span class="cycle-status signal">new</span>
                             </div>
                             <div class="cycle-details">
-                                <span>blocks 42385287-42385291 scanned</span>
-                                <span>0 displacements detected</span>
-                                <span>next: ~3m</span>
-                            </div>
-                        </div>
-                        
-                        <div class="cycle-item">
-                            <div class="cycle-header">
-                                <span class="cycle-num">#75</span>
-                                <span class="cycle-time">7m ago</span>
-                                <span class="cycle-status signal">signal</span>
-                            </div>
-                            <div class="cycle-details">
-                                <span>blocks 42385282-42385286 scanned</span>
-                                <span class="signal-highlight">1 accumulation pattern detected</span>
-                                <span>wallet: 0x7Bf0...1542</span>
-                            </div>
-                        </div>
-                        
-                        <div class="cycle-item">
-                            <div class="cycle-header">
-                                <span class="cycle-num">#74</span>
-                                <span class="cycle-time">12m ago</span>
-                                <span class="cycle-status complete">complete</span>
-                            </div>
-                            <div class="cycle-details">
-                                <span>blocks 42385277-42385281 scanned</span>
-                                <span>0 displacements detected</span>
-                            </div>
-                        </div>
-
-                        <div class="cycle-item">
-                            <div class="cycle-header">
-                                <span class="cycle-num">#73</span>
-                                <span class="cycle-time">17m ago</span>
-                                <span class="cycle-status complete">complete</span>
-                            </div>
-                            <div class="cycle-details">
-                                <span>blocks 42385272-42385276 scanned</span>
-                                <span>0 displacements detected</span>
-                            </div>
-                        </div>
-
-                        <div class="cycle-item older">
-                            <div class="cycle-header">
-                                <span class="cycle-num">#72</span>
-                                <span class="cycle-time">22m ago</span>
-                                <span class="cycle-status complete">complete</span>
+                                <span>scanner initializing...</span>
                             </div>
                         </div>
                     </div>
                     
                     <div class="view-more">
-                        <a href="#" class="mono">view full journal (76 entries) →</a>
+                        <a href="live.html" class="mono">view live feed →</a>
                     </div>
                 </div>
 
@@ -170,35 +123,64 @@
         let cycleCount = 76;
         const cycleEl = document.getElementById('cycle-count');
         
-        // Simulate new cycles
-        setInterval(() => {
-            cycleCount++;
-            if (cycleEl) cycleEl.textContent = cycleCount;
-            
-            // Add new cycle to list (in real impl, this would fetch from API)
-            const list = document.getElementById('cycle-list');
-            if (list && list.children.length > 0) {
-                // Mark first as older
-                list.children[0].classList.add('older');
-                list.children[0].querySelector('.cycle-details')?.remove();
+        // Load real scanner data
+        async function loadMetrics() {
+            try {
+                const response = await fetch('https://raw.githubusercontent.com/lurker-base/lurker/main/data/signals.json?t=' + Date.now());
+                if (!response.ok) throw new Error('Failed to fetch');
+                
+                const signals = await response.json();
+                if (!Array.isArray(signals)) throw new Error('Invalid data');
+                
+                // Update stats
+                document.getElementById('tokens-found').textContent = signals.length;
+                
+                if (signals.length > 0) {
+                    const avgScore = Math.round(signals.reduce((a, s) => a + (s.score || 0), 0) / signals.length);
+                    document.getElementById('avg-score').textContent = avgScore + '/100';
+                }
+                
+                // Update detection list
+                const list = document.getElementById('detection-list');
+                if (list && signals.length > 0) {
+                    list.innerHTML = signals.slice(0, 5).map((s, i) => `
+                        <div class="cycle-item ${i > 2 ? 'older' : ''}">
+                            <div class="cycle-header">
+                                <span class="cycle-num">${s.emoji || '🟢'} ${s.score || 0}</span>
+                                <span class="cycle-time">${formatTime(s.detectedAt)}</span>
+                                <span class="cycle-status signal">${s.symbol || 'TOKEN'}</span>
+                            </div>
+                            ${i < 3 ? `
+                            <div class="cycle-details">
+                                <span>${s.checks ? s.checks.slice(0, 3).join(' · ') : 'analyzing...'}</span>
+                                <span>liq: $${(s.liquidityUSD || 0).toLocaleString()}</span>
+                            </div>
+                            ` : ''}
+                        </div>
+                    `).join('');
+                }
+                
+            } catch (error) {
+                console.log('[LURKER] Using placeholder data');
             }
-        }, 300000); // Every 5 minutes
-
-        // Update block number
-        let blockNum = 42385291;
-        const blockEl = document.getElementById('block-latest');
-        setInterval(() => {
-            blockNum++;
-            if (blockEl) blockEl.textContent = blockNum.toLocaleString();
-        }, 2000);
-
-        // Update visitor count randomly
-        const visitorEl = document.getElementById('visitor-count');
-        setInterval(() => {
-            if (Math.random() > 0.7 && visitorEl) {
-                visitorEl.textContent = parseInt(visitorEl.textContent) + 1;
-            }
-        }, 30000);
+        }
+        
+        function formatTime(timestamp) {
+            if (!timestamp) return '—';
+            const diff = Date.now() - timestamp;
+            const mins = Math.floor(diff / 60000);
+            if (mins < 1) return 'just now';
+            if (mins === 1) return '1m ago';
+            if (mins < 60) return `${mins}m ago`;
+            const hours = Math.floor(mins / 60);
+            return `${hours}h ago`;
+        }
+        
+        // Initial load
+        loadMetrics();
+        
+        // Refresh every 30 seconds
+        setInterval(loadMetrics, 30000);
     </script>
 </body>
 </html>
