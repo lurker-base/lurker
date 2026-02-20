@@ -8,13 +8,9 @@ on:
 jobs:
   cycle:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     
     steps:
     - uses: actions/checkout@v4
-      with:
-        token: ${{ secrets.GH_TOKEN }}
     
     - name: Setup Node.js
       uses: actions/setup-node@v4
@@ -24,23 +20,12 @@ jobs:
     - name: Install dependencies
       run: npm ci
       
-    - name: Ensure data directory exists
-      run: mkdir -p data && echo '{"signals":[],"patterns":[],"lastBlock":0}' > data/signals.json
-      
     - name: Run LURKER cycle
       env:
         BASE_RPC_URL: ${{ secrets.BASE_RPC_URL }}
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       run: npm run cycle
-      
-    - name: Commit data changes
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add data/
-        git diff --quiet && git diff --staged --quiet || git commit -m "Update LURKER data [$(date)]"
-        git push
       
     - name: Log activity
       run: echo "Cycle completed at $(date)"
