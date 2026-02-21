@@ -217,15 +217,29 @@ function enrichSignal(signal) {
   const earlyLateScore = calculateEarlyLateScore(signal);
   const signalStrengthReason = generateStrengthReasons(signal);
   const tier = qualifyTier(signal, earlyLateScore);
+  
+  // FIX 1: ALPHA coherence - jamais "watch", toujours "consider"
+  let suggestedAction = signal.suggestedAction || 'CONSIDER';
+  if (tier === 'ALPHA' && suggestedAction.toLowerCase() === 'watch') {
+    suggestedAction = 'CONSIDER';
+  }
+  
   const accessLevel = getAccessLevel(tier);
   const embargoUntil = calculateEmbargo(tier);
   const timingLabel = getTimingLabel(earlyLateScore);
   const window = calculateWindow(earlyLateScore);
   const invalidatedIf = normalizeInvalidations(signal);
-  const decisionSummary = generateDecisionSummary(signal, timingLabel, window);
+  
+  // Recalculer decisionSummary avec l'action corrigée
+  const decisionSummary = generateDecisionSummary(
+    { ...signal, suggestedAction }, 
+    timingLabel, 
+    window
+  );
   
   return {
     ...signal,
+    suggestedAction,
     schemaVersion: 2.1,
     marketPhase,
     earlyLateScore,
