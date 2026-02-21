@@ -1,11 +1,13 @@
 {
   "schemaVersion": 2.1,
-  "generatedAt": 1771652523,
-  "tiers": {
-    "public": 0,
-    "alpha_gold": 0,
-    "alpha_early": 1
+  "tier": "alpha_early",
+  "criteria": {
+    "minConfidence": 60,
+    "minLiquidity": 60000,
+    "maxEarlyLate": 40
   },
+  "generatedAt": 1771652523,
+  "count": 1,
   "items": [
     {
       "symbol": "CLANKER",

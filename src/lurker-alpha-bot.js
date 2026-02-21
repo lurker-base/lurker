@@ -47,9 +47,12 @@ function signalKey(s) {
 // Formater message ALPHA premium
 function formatAlphaMessage(signal) {
   const symbol = signal.symbol || 'UNKNOWN';
-  // ALPHA = toujours CONSIDER, jamais WATCH
-  const rawAction = signal.suggestedAction?.toUpperCase() || 'CONSIDER';
-  const action = signal.tier === 'ALPHA' && rawAction === 'WATCH' ? 'CONSIDER' : rawAction;
+  const isGold = signal.tier === 'ALPHA_GOLD';
+  const tierLabel = isGold ? '🥇 ALPHA GOLD' : '🧪 ALPHA EARLY';
+  const tierDesc = isGold ? 'Max 3/day • High conviction' : 'Speculative • Sizing léger';
+  
+  // ALPHA GOLD = CONSIDER, ALPHA EARLY = WATCH/SPECULATIVE
+  const action = signal.suggestedAction?.toUpperCase() || (isGold ? 'CONSIDER' : 'WATCH');
   const confidence = signal.confidence || 0;
   const timing = signal.timingLabel || 'OPTIMAL';
   const window = signal.windowText || '30-90 min';
@@ -64,11 +67,8 @@ function formatAlphaMessage(signal) {
     .map(i => `• ${i}`)
     .join('\n');
   
-  // Rareté
-  const rarity = '3-5/day';
-  
   return `
-🎯 **ALPHA SIGNAL — ${symbol}**
+${tierLabel} — ${symbol}
 
 ⏰ **TIMING: ${timing}** (${window})
 📊 **Action:** ${action} | **Confidence:** ${confidence}%
@@ -81,7 +81,7 @@ function formatAlphaMessage(signal) {
 ${invalidations}
 
 —
-🤖 LURKER V2.1 • Rarity: ${rarity}
+🤖 LURKER V2.1 • ${tierDesc}
 🔗 Proof: github.com/lurker-base/lurker
   `.trim();
 }
@@ -137,10 +137,10 @@ async function main() {
   
   console.log(`[ALPHA BOT] Fetched ${signals.length} signals`);
   
-  // Filtrer nouveaux signaux
+  // Filtrer nouveaux signaux (GOLD + EARLY)
   const newSignals = signals.filter(s => {
     const key = signalKey(s);
-    return !state.posted.includes(key) && s.tier === 'ALPHA';
+    return !state.posted.includes(key) && (s.tier === 'ALPHA_GOLD' || s.tier === 'ALPHA_EARLY');
   });
   
   console.log(`[ALPHA BOT] New ALPHA signals: ${newSignals.length}`);

@@ -12,12 +12,20 @@ const CONFIG = {
   outputDir: '/data/.openclaw/workspace/lurker-project/data',
   publicDelayMinutes: 15,
   
-  // Gatekeeper ALPHA
-  alphaThresholds: {
-    minConfidence: 65,
-    minLiquidity: 300000,
-    maxEarlyLateScore: 75,
-    validActions: ['CONSIDER', 'ENTER', 'WATCH', 'consider', 'enter', 'watch']
+  // Gatekeeper ALPHA GOLD (trabable, solide)
+  alphaGoldThresholds: {
+    minConfidence: 70,
+    minLiquidity: 250000,
+    maxEarlyLateScore: 60,
+    validActions: ['CONSIDER', 'ENTER', 'consider', 'enter']
+  },
+  
+  // Gatekeeper ALPHA EARLY (précoce, risqué)
+  alphaEarlyThresholds: {
+    minConfidence: 60,
+    minLiquidity: 60000,
+    maxEarlyLateScore: 40,
+    validActions: ['WATCH', 'SPECULATIVE', 'watch', 'speculative']
   }
 };
 
@@ -166,30 +174,41 @@ function generateStrengthReasons(signal) {
 
 // Déterminer le tier (gatekeeper)
 function qualifyTier(signal, earlyLateScore) {
-  const cfg = CONFIG.alphaThresholds;
+  const liq = signal.liquidityUsd || signal.liquidity || 0;
+  const conf = signal.confidence || 0;
+  const action = (signal.suggestedAction || '').toUpperCase();
   
-  // Vérifications de base
-  if (signal.confidence < cfg.minConfidence) return 'WATCH';
-  if (!cfg.validActions.includes(signal.suggestedAction)) return 'WATCH';
-  if ((signal.liquidityUsd || signal.liquidity || 0) < cfg.minLiquidity) return 'PULSE';
-  if (earlyLateScore > cfg.maxEarlyLateScore) return 'PULSE'; // Trop tard
+  // === ALPHA GOLD (solide, tradable) ===
+  const gold = CONFIG.alphaGoldThresholds;
+  if (conf >= gold.minConfidence && 
+      liq >= gold.minLiquidity && 
+      earlyLateScore <= gold.maxEarlyLateScore &&
+      gold.validActions.includes(action)) {
+    return 'ALPHA_GOLD';
+  }
   
-  // Vérification volume cohérent (pas flash pump)
-  const vol5m = signal.volume5m || 0;
-  const vol1h = signal.volume1h || 0;
-  if (vol1h > 0 && vol5m > (vol1h / 5)) {
-    // Volume 5m > 20% du volume 1h = possible flash pump
+  // === ALPHA EARLY (précoce, risqué) ===
+  const early = CONFIG.alphaEarlyThresholds;
+  if (conf >= early.minConfidence && 
+      liq >= early.minLiquidity && 
+      earlyLateScore <= early.maxEarlyLateScore) {
+    return 'ALPHA_EARLY';
+  }
+  
+  // === PULSE (public, délai) ===
+  if (conf >= 40 && liq >= 50000) {
     return 'PULSE';
   }
   
-  // Tous critères OK = ALPHA
-  return 'ALPHA';
+  // === WATCH (liste surveillance) ===
+  return 'WATCH';
 }
 
 // Déterminer accessLevel
 function getAccessLevel(tier) {
   switch(tier) {
-    case 'ALPHA': return 'premium';
+    case 'ALPHA_GOLD': return 'premium';
+    case 'ALPHA_EARLY': return 'premium_early';
     case 'PULSE': return 'freemium';
     case 'WATCH': return 'public';
     default: return 'public';
@@ -199,9 +218,13 @@ function getAccessLevel(tier) {
 // Calculer embargo
 function calculateEmbargo(tier) {
   const now = Math.floor(Date.now() / 1000);
-  if (tier === 'ALPHA') {
-    // ALPHA : embargo 15min (premium voit avant)
+  if (tier === 'ALPHA_GOLD') {
+    // ALPHA GOLD : embargo 15min (premium voit avant)
     return now + (CONFIG.publicDelayMinutes * 60);
+  }
+  if (tier === 'ALPHA_EARLY') {
+    // ALPHA EARLY : embargo 10min (encore plus exclusif)
+    return now + 600;
   }
   if (tier === 'PULSE') {
     // PULSE : embargo 5min
@@ -218,10 +241,14 @@ function enrichSignal(signal) {
   const signalStrengthReason = generateStrengthReasons(signal);
   const tier = qualifyTier(signal, earlyLateScore);
   
-  // FIX 1: ALPHA coherence - jamais "watch", toujours "consider"
+  // FIX 1: ALPHA coherence
   let suggestedAction = signal.suggestedAction || 'CONSIDER';
-  if (tier === 'ALPHA' && suggestedAction.toLowerCase() === 'watch') {
+  if (tier === 'ALPHA_GOLD') {
+    // ALPHA GOLD = toujours CONSIDER (jamais WATCH)
     suggestedAction = 'CONSIDER';
+  } else if (tier === 'ALPHA_EARLY') {
+    // ALPHA EARLY = WATCH ou SPECULATIVE (risqué)
+    suggestedAction = suggestedAction.toLowerCase() === 'consider' ? 'WATCH' : (suggestedAction || 'WATCH');
   }
   
   const accessLevel = getAccessLevel(tier);
@@ -258,9 +285,10 @@ function enrichSignal(signal) {
 }
 
 // Sauvegarder les fichiers
-function saveSignals(publicSignals, alphaSignals) {
+function saveSignals(publicSignals, alphaGoldSignals, alphaEarlySignals) {
   const publicPath = path.join(CONFIG.outputDir, 'pulseSignals.v2.public.json');
-  const alphaPath = path.join(CONFIG.outputDir, 'pulseSignals.v2.alpha.json');
+  const alphaGoldPath = path.join(CONFIG.outputDir, 'pulseSignals.v2.alpha.json');
+  const alphaEarlyPath = path.join(CONFIG.outputDir, 'pulseSignals.v2.alpha-early.json');
   const fullPath = path.join(CONFIG.outputDir, 'pulseSignals.v2.1.json');
   
   // Fichier public (WATCH + PULSE avec embargo respecté)
@@ -275,13 +303,24 @@ function saveSignals(publicSignals, alphaSignals) {
     items: publicReady
   }, null, 2));
   
-  // Fichier ALPHA (premium, temps réel)
-  fs.writeFileSync(alphaPath, JSON.stringify({
+  // Fichier ALPHA GOLD (premium, solide)
+  fs.writeFileSync(alphaGoldPath, JSON.stringify({
     schemaVersion: 2.1,
-    tier: 'alpha',
+    tier: 'alpha_gold',
+    criteria: { minConfidence: 70, minLiquidity: 250000, maxEarlyLate: 60 },
     generatedAt: now,
-    count: alphaSignals.length,
-    items: alphaSignals
+    count: alphaGoldSignals.length,
+    items: alphaGoldSignals
+  }, null, 2));
+  
+  // Fichier ALPHA EARLY (premium, risqué)
+  fs.writeFileSync(alphaEarlyPath, JSON.stringify({
+    schemaVersion: 2.1,
+    tier: 'alpha_early',
+    criteria: { minConfidence: 60, minLiquidity: 60000, maxEarlyLate: 40 },
+    generatedAt: now,
+    count: alphaEarlySignals.length,
+    items: alphaEarlySignals
   }, null, 2));
   
   // Fichier complet (backup)
@@ -290,12 +329,13 @@ function saveSignals(publicSignals, alphaSignals) {
     generatedAt: now,
     tiers: {
       public: publicReady.length,
-      alpha: alphaSignals.length
+      alpha_gold: alphaGoldSignals.length,
+      alpha_early: alphaEarlySignals.length
     },
-    items: [...publicSignals, ...alphaSignals]
+    items: [...publicSignals, ...alphaGoldSignals, ...alphaEarlySignals]
   }, null, 2));
   
-  console.log(`[V2.1] Saved: ${publicReady.length} public, ${alphaSignals.length} alpha`);
+  console.log(`[V2.1] Saved: ${publicReady.length} public, ${alphaGoldSignals.length} gold, ${alphaEarlySignals.length} early`);
 }
 
 // Main
@@ -314,26 +354,36 @@ function main() {
   
   // Séparer les tiers
   const publicSignals = enriched.filter(s => s.tier === 'WATCH' || s.tier === 'PULSE');
-  const alphaSignals = enriched.filter(s => s.tier === 'ALPHA');
+  const alphaGoldSignals = enriched.filter(s => s.tier === 'ALPHA_GOLD');
+  const alphaEarlySignals = enriched.filter(s => s.tier === 'ALPHA_EARLY');
   
-  console.log(`[V2.1] Tiers: ${publicSignals.length} public, ${alphaSignals.length} alpha`);
+  console.log(`[V2.1] Tiers: ${publicSignals.length} public, ${alphaGoldSignals.length} gold, ${alphaEarlySignals.length} early`);
   
-  // Exemple de signal ALPHA
-  if (alphaSignals.length > 0) {
-    const example = alphaSignals[0];
-    console.log('[V2.1] Example ALPHA signal:');
+  // Exemple de signal ALPHA GOLD
+  if (alphaGoldSignals.length > 0) {
+    const example = alphaGoldSignals[0];
+    console.log('[V2.1] Example ALPHA GOLD signal:');
     console.log(`  Symbol: $${example.symbol}`);
     console.log(`  Phase: ${example.marketPhase}`);
     console.log(`  Timing: ${example.timingLabel} (${example.earlyLateScore}/100)`);
     console.log(`  Window: ${example.windowText}`);
     console.log(`  Confidence: ${example.confidence}%`);
     console.log(`  Action: ${example.suggestedAction}`);
+  }
+  
+  // Exemple de signal ALPHA EARLY
+  if (alphaEarlySignals.length > 0) {
+    const example = alphaEarlySignals[0];
+    console.log('[V2.1] Example ALPHA EARLY signal:');
+    console.log(`  Symbol: $${example.symbol}`);
+    console.log(`  Timing: ${example.timingLabel} (${example.earlyLateScore}/100)`);
+    console.log(`  Action: ${example.suggestedAction}`);
     console.log(`  Decision: ${example.decisionSummary}`);
     console.log(`  Reasons: ${example.signalStrengthReason.join('; ')}`);
     console.log(`  Invalidated if: ${example.invalidatedIf.join(', ')}`);
   }
   
-  saveSignals(publicSignals, alphaSignals);
+  saveSignals(publicSignals, alphaGoldSignals, alphaEarlySignals);
   console.log('[V2.1] Done.');
 }
 
