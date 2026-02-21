@@ -28,10 +28,22 @@ jobs:
         working-directory: ./lurker-project
       
       - name: Build data
-        run: npm run build-data || true
+        run: npm run build-data
         working-directory: ./lurker-project
         env:
           BASESCAN_API_KEY: ${{ secrets.BASESCAN_API_KEY }}
+      
+      - name: Debug - Verify built data
+        run: |
+          echo "=== Current directory ==="
+          pwd
+          echo "=== docs/data contents ==="
+          ls -la docs/data/ || echo "Directory not found"
+          echo "=== Find all pulseSignals.json ==="
+          find . -maxdepth 4 -type f -name "pulseSignals*.json" -print -exec wc -c {} \;
+          echo "=== Check schemaVersion in v2 ==="
+          cat docs/data/pulseSignals.v2.json | head -50 | grep -E "schemaVersion|lurkerInsight" || echo "Not found"
+        working-directory: ./lurker-project
       
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

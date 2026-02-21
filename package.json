@@ -8,6 +8,7 @@
     "dev": "node src/index.js --dev",
     "cycle": "node agent/agent/run.js",
     "scan": "node src/fastScanner.js",
+    "build-data": "node scripts/build-data.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

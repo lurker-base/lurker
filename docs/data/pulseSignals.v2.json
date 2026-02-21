@@ -30,15 +30,15 @@
     "trend": "flat",
     "confidence": 65,
     "horizon": "long",
-    "lurkerInsight": "Liquidité ~$404k, momentum stable, score 55 : WATCH (confiance 65%).",
-    "suggestedAction": "watch",
+    "lurkerInsight": "Liquidité ~$404k, momentum stable, score 55 : CONSIDER (confiance 65%).",
+    "suggestedAction": "consider",
     "riskLevel": "medium",
     "invalidatedIf": [
       "score < 38",
       "liquidity_usd < 200000",
       "momentum_weakens_2_cycles"
     ],
-    "lastUpdate": 1771640797441,
+    "lastUpdate": 1771642501409,
     "schemaVersion": 2,
     "metrics": {
       "liquidity_usd": 403536,

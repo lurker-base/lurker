@@ -1,4 +1,4 @@
-name: LURKER Cycle
+name: LURKER Cycle (Safe)
 
 on:
   schedule:
@@ -18,27 +18,36 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '20'
-      continue-on-error: true
-        
+    
     - name: Install dependencies
-      run: npm ci --silent 2>/dev/null || true
-      continue-on-error: true
+      run: npm ci --silent
+      working-directory: ./lurker-project
     
     - name: Run LURKER cycle
       env:
         BASE_RPC_URL: ${{ secrets.BASE_RPC_URL }}
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-      run: node agent/agent/run.js 2>/dev/null || echo "[LURKER] Cycle complete"
-      continue-on-error: true
+      run: node agent/agent/run.js
+      working-directory: ./lurker-project
     
-    - name: Commit changes
+    - name: Build data (safe)
+      run: npm run build-data
+      working-directory: ./lurker-project
+    
+    - name: Commit specific changes only
+      working-directory: ./lurker-project
       run: |
-        git config --local user.email "lurker@agent.ai" 2>/dev/null || true
-        git config --local user.name "LURKER Agent" 2>/dev/null || true
-        git add -A 2>/dev/null || true
-        git diff --staged --quiet 2>/dev/null || (git commit -m "[LURKER] Cycle $(date -u +'%H:%M')" 2>/dev/null && git push 2>/dev/null) || true
-      continue-on-error: true
+        git config --local user.email "lurker@agent.ai"
+        git config --local user.name "LURKER Agent"
+        # Uniquement les fichiers data attendus
+        git add data/pulseSignals.json docs/data/ || true
+        if ! git diff --staged --quiet; then
+          git commit -m "[LURKER] Cycle $(date -u +'%H:%M')"
+          git push
+        else
+          echo "No changes to commit"
+        fi
       
     - name: Status
-      run: echo "✅ LURKER active"
+      run: echo "✅ LURKER cycle complete"

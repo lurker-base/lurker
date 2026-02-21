@@ -26,6 +26,24 @@
     "source": "ultimate-scanner-v3",
     "detectedAt": 1771635850946,
     "url": "https://dexscreener.com/base/0xd23FE2DB317e1A96454a2D1c7e8fc0DbF19BB000",
-    "promotedAt": 1771635850946
+    "promotedAt": 1771635850946,
+    "trend": "flat",
+    "confidence": 65,
+    "horizon": "long",
+    "lurkerInsight": "Liquidité ~$404k, momentum stable, score 55 : WATCH (confiance 65%).",
+    "suggestedAction": "watch",
+    "riskLevel": "medium",
+    "invalidatedIf": [
+      "score < 38",
+      "liquidity_usd < 200000",
+      "momentum_weakens_2_cycles"
+    ],
+    "lastUpdate": 1771640797441,
+    "schemaVersion": 2,
+    "metrics": {
+      "liquidity_usd": 403536,
+      "momentum": 0,
+      "volume_ratio_24h": 0.021
+    }
   }
 ]
