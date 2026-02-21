@@ -362,8 +362,11 @@ async function main() {
       });
       newAlerts++;
       
+      // Promouvoir dans pulse: HOT (≥70) immédiatement, WARM (≥40) aussi si pas plein
       if (signal.score >= CONFIG.hotThreshold && pulse.length < 20) {
-        pulse.unshift({ ...tokenData, promotedAt: now });
+        pulse.unshift({ ...tokenData, promotedAt: now, pulseTier: 'HOT' });
+      } else if (signal.score >= CONFIG.warmThreshold && pulse.length < 20) {
+        pulse.unshift({ ...tokenData, promotedAt: now, pulseTier: 'WARM' });
       }
     }
   }
