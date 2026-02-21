@@ -47,7 +47,9 @@ function signalKey(s) {
 // Formater message ALPHA premium
 function formatAlphaMessage(signal) {
   const symbol = signal.symbol || 'UNKNOWN';
-  const action = signal.suggestedAction?.toUpperCase() || 'CONSIDER';
+  // ALPHA = toujours CONSIDER, jamais WATCH
+  const rawAction = signal.suggestedAction?.toUpperCase() || 'CONSIDER';
+  const action = signal.tier === 'ALPHA' && rawAction === 'WATCH' ? 'CONSIDER' : rawAction;
   const confidence = signal.confidence || 0;
   const timing = signal.timingLabel || 'OPTIMAL';
   const window = signal.windowText || '30-90 min';
