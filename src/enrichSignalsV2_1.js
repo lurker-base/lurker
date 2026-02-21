@@ -84,6 +84,56 @@ function calculateEarlyLateScore(signal) {
   return Math.max(0, Math.min(100, Math.round(score)));
 }
 
+// Obtenir le timing label
+function getTimingLabel(earlyLateScore) {
+  if (earlyLateScore <= 25) return 'EARLY';
+  if (earlyLateScore <= 60) return 'OPTIMAL';
+  if (earlyLateScore <= 75) return 'LATE';
+  return 'FOMO';
+}
+
+// Calculer la window (minutes)
+function calculateWindow(earlyLateScore) {
+  if (earlyLateScore <= 25) return { min: 60, max: 180, text: '60-180 min' };
+  if (earlyLateScore <= 60) return { min: 30, max: 90, text: '30-90 min' };
+  if (earlyLateScore <= 75) return { min: 10, max: 30, text: '10-30 min' };
+  return { min: 0, max: 10, text: '0-10 min' };
+}
+
+// Normaliser les invalidations
+function normalizeInvalidations(signal) {
+  const inv = [];
+  if (signal.invalidatedIf && Array.isArray(signal.invalidatedIf)) {
+    return signal.invalidatedIf.map(i => {
+      // Normalize common patterns
+      if (i.includes('score')) return `Score < ${signal.score * 0.7 || 38}`;
+      if (i.includes('liquidity')) return `Liquidity < $${((signal.liquidityUsd || 0) * 0.5 / 1000).toFixed(0)}k`;
+      if (i.includes('momentum')) return 'Momentum reversal 2 cycles';
+      return i;
+    });
+  }
+  // Default invalidations
+  inv.push(`Score < ${Math.floor((signal.score || 50) * 0.7)}`);
+  inv.push(`Liquidity < $${Math.floor((signal.liquidityUsd || 200000) / 2 / 1000)}k`);
+  inv.push('EarlyLateScore > 75 (FOMO)');
+  return inv;
+}
+
+// Générer un résumé décisionnel (1 phrase vendable)
+function generateDecisionSummary(signal, timingLabel, window) {
+  const action = (signal.suggestedAction || 'CONSIDER').toUpperCase();
+  const phase = (signal.marketPhase || 'accumulation').toUpperCase();
+  const symbol = signal.symbol || 'TOKEN';
+  
+  if (timingLabel === 'FOMO') {
+    return `${symbol}: ${action} with caution — entering FOMO zone (${window.text} left)`;
+  }
+  if (timingLabel === 'EARLY') {
+    return `${symbol}: ${action} — early entry window (${window.text}) during ${phase}`;
+  }
+  return `${symbol}: ${action} — ${timingLabel.toLowerCase()} timing (${window.text}) in ${phase} phase`;
+}
+
 // Générer les raisons de force du signal
 function generateStrengthReasons(signal) {
   const reasons = [];
@@ -169,13 +219,23 @@ function enrichSignal(signal) {
   const tier = qualifyTier(signal, earlyLateScore);
   const accessLevel = getAccessLevel(tier);
   const embargoUntil = calculateEmbargo(tier);
+  const timingLabel = getTimingLabel(earlyLateScore);
+  const window = calculateWindow(earlyLateScore);
+  const invalidatedIf = normalizeInvalidations(signal);
+  const decisionSummary = generateDecisionSummary(signal, timingLabel, window);
   
   return {
     ...signal,
     schemaVersion: 2.1,
     marketPhase,
     earlyLateScore,
+    timingLabel,
+    windowMin: window.min,
+    windowMax: window.max,
+    windowText: window.text,
     signalStrengthReason,
+    invalidatedIf,
+    decisionSummary,
     tier,
     accessLevel,
     embargoUntil,
@@ -250,10 +310,13 @@ function main() {
     console.log('[V2.1] Example ALPHA signal:');
     console.log(`  Symbol: $${example.symbol}`);
     console.log(`  Phase: ${example.marketPhase}`);
-    console.log(`  Early/Late: ${example.earlyLateScore}/100`);
+    console.log(`  Timing: ${example.timingLabel} (${example.earlyLateScore}/100)`);
+    console.log(`  Window: ${example.windowText}`);
     console.log(`  Confidence: ${example.confidence}%`);
     console.log(`  Action: ${example.suggestedAction}`);
+    console.log(`  Decision: ${example.decisionSummary}`);
     console.log(`  Reasons: ${example.signalStrengthReason.join('; ')}`);
+    console.log(`  Invalidated if: ${example.invalidatedIf.join(', ')}`);
   }
   
   saveSignals(publicSignals, alphaSignals);

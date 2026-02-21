@@ -57,12 +57,85 @@ function getScoreReasons(reasons) {
     return reasons.map(r => reasonMap[r] || r);
 }
 
+function createAlphaDecisionBlock(s) {
+    // Only for ALPHA tier
+    if (s.tier !== 'ALPHA') return '';
+    
+    // Map WATCH to CONSIDER for ALPHA tier (never show WATCH in premium)
+    let action = (s.suggestedAction || 'CONSIDER').toUpperCase();
+    if (action === 'WATCH') action = 'CONSIDER';
+    
+    // Timing label from earlyLateScore
+    const els = s.earlyLateScore || 50;
+    let timingLabel = 'OPTIMAL';
+    let timingClass = 'optimal';
+    if (els <= 25) { timingLabel = 'EARLY'; timingClass = 'early'; }
+    else if (els <= 60) { timingLabel = 'OPTIMAL'; timingClass = 'optimal'; }
+    else if (els <= 75) { timingLabel = 'LATE'; timingClass = 'late'; }
+    else { timingLabel = 'FOMO'; timingClass = 'fomo'; }
+    
+    // Window estimate based on timing
+    let windowText = '30-90 min';
+    if (els <= 25) windowText = '60-180 min';
+    else if (els <= 60) windowText = '30-90 min';
+    else if (els <= 75) windowText = '10-30 min';
+    else windowText = '0-10 min';
+    
+    // Phase
+    const phase = (s.marketPhase || 'accumulation').toUpperCase();
+    
+    // Invalidations
+    const invalidations = (s.invalidatedIf || []).slice(0, 3);
+    
+    return `
+        <div class="alpha-decision-block">
+            <div class="alpha-header">
+                <span class="alpha-badge">🎯 ALPHA DECISION</span>
+                <span class="alpha-rarity">${s.tier} • 3-5/day</span>
+            </div>
+            <div class="alpha-grid">
+                <div class="alpha-item">
+                    <span class="alpha-label">Action</span>
+                    <span class="alpha-value alpha-action">${action}</span>
+                </div>
+                <div class="alpha-item">
+                    <span class="alpha-label">Confidence</span>
+                    <span class="alpha-value">${s.confidence || 0}%</span>
+                </div>
+                <div class="alpha-item">
+                    <span class="alpha-label">Timing</span>
+                    <span class="alpha-value alpha-timing ${timingClass}">${timingLabel}</span>
+                </div>
+                <div class="alpha-item">
+                    <span class="alpha-label">Phase</span>
+                    <span class="alpha-value">${phase}</span>
+                </div>
+            </div>
+            <div class="alpha-window">
+                <span class="alpha-window-label">Window:</span>
+                <span class="alpha-window-value">${windowText}</span>
+            </div>
+            ${invalidations.length > 0 ? `
+            <div class="alpha-invalidations">
+                <span class="alpha-inv-title">⚠️ Invalidated if:</span>
+                <ul class="alpha-inv-list">
+                    ${invalidations.map(inv => `<li>• ${inv}</li>`).join('')}
+                </ul>
+            </div>
+            ` : ''}
+            <div class="alpha-proof">
+                <span>Proof: <a href="https://github.com/lurker-base/lurker/commit/main" target="_blank">GitHub commit</a> • LURKER V2.1</span>
+            </div>
+        </div>
+    `;
+}
+
 function createPulseCard(s) {
     const div = document.createElement('div');
     const statusClass = getStatusClass(s.status, s.score);
     const scoreClass = getScoreClass(s.status, s.score);
     
-    div.className = `token-signal ${statusClass}`;
+    div.className = `token-signal ${statusClass} ${s.tier === 'ALPHA' ? 'signal-alpha' : ''}`;
     
     const addr = s.contract_address || s.address || '???';
     const symbol = s.symbol || '???';
@@ -93,7 +166,11 @@ function createPulseCard(s) {
     if (priceChange >= 10) badges.push('<span class="check-badge check-neutral">📈 +' + priceChange.toFixed(1) + '%</span>');
     if (tx5m >= 50) badges.push('<span class="check-badge check-pass">🔄 ' + tx5m + ' txs</span>');
     
+    // ALPHA DECISION block (only for ALPHA tier)
+    const alphaBlock = createAlphaDecisionBlock(s);
+    
     div.innerHTML = `
+        ${alphaBlock}
         <div class="token-header">
             <div class="token-identity">
                 <span class="token-name">$${symbol}</span>

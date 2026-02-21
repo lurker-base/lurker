@@ -271,6 +271,156 @@
             0%, 100% { opacity: 1; }
             50% { opacity: 0.3; }
         }
+        
+        /* ALPHA DECISION BLOCK - Premium tier */
+        .signal-alpha {
+            border: 2px solid #ffd700;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.05) 0%, rgba(255, 215, 0, 0.02) 100%);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+        }
+        
+        .alpha-decision-block {
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 4px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            animation: alpha-glow 3s ease-in-out infinite;
+        }
+        
+        @keyframes alpha-glow {
+            0%, 100% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.1); }
+            50% { box-shadow: 0 0 20px rgba(255, 215, 0, 0.2); }
+        }
+        
+        .alpha-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+        }
+        
+        .alpha-badge {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #ffd700;
+            letter-spacing: 0.5px;
+        }
+        
+        .alpha-rarity {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-family: 'SF Mono', monospace;
+        }
+        
+        .alpha-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .alpha-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+        
+        .alpha-label {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .alpha-value {
+            font-family: 'SF Mono', monospace;
+            font-size: 1.1rem;
+            color: var(--text);
+            font-weight: 500;
+        }
+        
+        .alpha-action {
+            color: #00ff00;
+            font-weight: 600;
+        }
+        
+        .alpha-timing.early {
+            color: #00ff88;
+        }
+        
+        .alpha-timing.optimal {
+            color: #ffd700;
+        }
+        
+        .alpha-timing.late {
+            color: #ffaa00;
+        }
+        
+        .alpha-timing.fomo {
+            color: #ff4444;
+        }
+        
+        .alpha-window {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 2px;
+        }
+        
+        .alpha-window-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+        
+        .alpha-window-value {
+            font-family: 'SF Mono', monospace;
+            font-size: 0.85rem;
+            color: #ffd700;
+        }
+        
+        .alpha-invalidations {
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+            background: rgba(255, 68, 68, 0.05);
+            border-left: 3px solid #ff4444;
+            border-radius: 2px;
+        }
+        
+        .alpha-inv-title {
+            font-size: 0.8rem;
+            color: #ff4444;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .alpha-inv-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .alpha-inv-list li {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 0.25rem;
+        }
+        
+        .alpha-proof {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            text-align: right;
+            padding-top: 0.5rem;
+            border-top: 1px solid rgba(255, 215, 0, 0.1);
+        }
+        
+        .alpha-proof a {
+            color: var(--accent);
+        }
     </style>
 </head>
 <body>

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2.1,
-  "generatedAt": 1771646352,
+  "generatedAt": 1771646881,
   "tiers": {
     "public": 0,
     "alpha": 1
@@ -41,9 +41,9 @@
       "suggestedAction": "watch",
       "riskLevel": "medium",
       "invalidatedIf": [
-        "score < 38",
-        "liquidity_usd < 200000",
-        "momentum_weakens_2_cycles"
+        "Score < 38.5",
+        "Liquidity < $202k",
+        "Momentum reversal 2 cycles"
       ],
       "lastUpdate": 1771640797441,
       "schemaVersion": 2.1,
@@ -54,13 +54,18 @@
       },
       "marketPhase": "accumulation",
       "earlyLateScore": 10,
+      "timingLabel": "EARLY",
+      "windowMin": 60,
+      "windowMax": 180,
+      "windowText": "60-180 min",
       "signalStrengthReason": [
         "Liquidité solide (>200k), risque slippage limité",
         "Momentum haussier modéré, pas de FOMO"
       ],
+      "decisionSummary": "CLANKER: WATCH — early entry window (60-180 min) during ACCUMULATION",
       "accessLevel": "premium",
-      "embargoUntil": 1771647252,
-      "generatedAt": 1771646352
+      "embargoUntil": 1771647781,
+      "generatedAt": 1771646881
     }
   ]
 }
