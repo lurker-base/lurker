@@ -5,7 +5,17 @@
     "age": 0.9696833333333333,
     "detectedAt": 1771628213182,
     "source": "live",
-    "contract_address": "0x1f5ffcFb4EF5d976D55438F2988Ee90bCB2AeB07"
+    "contract_address": "0x1f5ffcFb4EF5d976D55438F2988Ee90bCB2AeB07",
+    "baseScanData": {
+      "hasTransfers": false,
+      "verified": false,
+      "totalSupply": null,
+      "enrichedAt": 1771635081149
+    },
+    "baseScanEnriched": true,
+    "baseScanEnrichedAt": 1771635081149,
+    "verifiedContract": false,
+    "hasTransfers": false
   },
   {
     "symbol": "TOPISH",
@@ -13,7 +23,17 @@
     "age": 0.06968333333333333,
     "detectedAt": 1771628213181,
     "source": "live",
-    "contract_address": "0x49e2f3bcFB2FBA95c243b7c8742983Fecc89Eb07"
+    "contract_address": "0x49e2f3bcFB2FBA95c243b7c8742983Fecc89Eb07",
+    "baseScanData": {
+      "hasTransfers": false,
+      "verified": false,
+      "totalSupply": null,
+      "enrichedAt": 1771635081465
+    },
+    "baseScanEnriched": true,
+    "baseScanEnrichedAt": 1771635081465,
+    "verifiedContract": false,
+    "hasTransfers": false
   },
   {
     "symbol": "TOPISH",
@@ -21,7 +41,17 @@
     "age": 0.10301666666666667,
     "detectedAt": 1771628213181,
     "source": "live",
-    "contract_address": "0x5EA23F238eEf38658174409956EA2018F1316B07"
+    "contract_address": "0x5EA23F238eEf38658174409956EA2018F1316B07",
+    "baseScanData": {
+      "hasTransfers": false,
+      "verified": false,
+      "totalSupply": null,
+      "enrichedAt": 1771635081783
+    },
+    "baseScanEnriched": true,
+    "baseScanEnrichedAt": 1771635081783,
+    "verifiedContract": false,
+    "hasTransfers": false
   },
   {
     "symbol": "Nephew",
@@ -29,7 +59,17 @@
     "age": 0.13635,
     "detectedAt": 1771628213181,
     "source": "live",
-    "contract_address": "0x673A1af12C6e1aEBc99d5e581b9ff2F5121F5b07"
+    "contract_address": "0x673A1af12C6e1aEBc99d5e581b9ff2F5121F5b07",
+    "baseScanData": {
+      "hasTransfers": false,
+      "verified": false,
+      "totalSupply": null,
+      "enrichedAt": 1771635082098
+    },
+    "baseScanEnriched": true,
+    "baseScanEnrichedAt": 1771635082098,
+    "verifiedContract": false,
+    "hasTransfers": false
   },
   {
     "symbol": "Nephew",
@@ -37,7 +77,17 @@
     "age": 0.16968333333333332,
     "detectedAt": 1771628213181,
     "source": "live",
-    "contract_address": "0x0C15d796b977bAbd09d06645F383AA9C56780B07"
+    "contract_address": "0x0C15d796b977bAbd09d06645F383AA9C56780B07",
+    "baseScanData": {
+      "hasTransfers": false,
+      "verified": false,
+      "totalSupply": null,
+      "enrichedAt": 1771635082411
+    },
+    "baseScanEnriched": true,
+    "baseScanEnrichedAt": 1771635082411,
+    "verifiedContract": false,
+    "hasTransfers": false
   },
   {
     "symbol": "TURBO",
@@ -53,19 +103,7 @@
     "age": 0.26968333333333333,
     "detectedAt": 1771628213181,
     "source": "live",
-    "contract_address": "0xa85d63Fae4F35A73be0716d32C5cdf9a208eeB07",
-    "liquidityUsd": 19819.7,
-    "marketCap": 19676,
-    "volume24h": 6867.54,
-    "volume5m": 0,
-    "txns5m": 0,
-    "priceUsd": "0.0000001967",
-    "priceChange24h": -38.07,
-    "enrichedAt": 1771629139423,
-    "hasLiquidity": true,
-    "url": "https://dexscreener.com/base/0x9f906edd2496554cd6daaa0380f04854ff61970b0dd852846b37bf8ce652ee98",
-    "score": 25,
-    "status": "COLD"
+    "contract_address": "0xa85d63Fae4F35A73be0716d32C5cdf9a208eeB07"
   },
   {
     "symbol": "Molterator",
@@ -81,20 +119,7 @@
     "age": 0.3696833333333333,
     "detectedAt": 1771628213181,
     "source": "live",
-    "contract_address": "0x6FACFcee035CC994d213113B6f07AC598adb4B07",
-    "liquidityUsd": 19512.59,
-    "marketCap": 19447,
-    "volume24h": 1012.21,
-    "volume5m": 11.69,
-    "txns5m": 2,
-    "priceUsd": "0.0000001944",
-    "priceChange5m": -0.75,
-    "priceChange24h": -0.16,
-    "enrichedAt": 1771629139423,
-    "hasLiquidity": true,
-    "url": "https://dexscreener.com/base/0x4fd2d6ced3e42bb6fe15d3820da6905320930618abd0465e26fa72bb036139a0",
-    "score": 25,
-    "status": "COLD"
+    "contract_address": "0x6FACFcee035CC994d213113B6f07AC598adb4B07"
   },
   {
     "symbol": "AREA51",
@@ -385,54 +410,46 @@
     "contract_address": "0x24A8ae2d2A7f09f9F6EFE507AdFb956cf8083B07"
   },
   {
-    "symbol": "MYCEL",
-    "name": "Mycel",
+    "symbol": "DAIMON",
+    "name": "Daimon",
     "contract_address": "0x98c51C8E958ccCD37F798b2B9332d148E2c05D57",
-    "pairAddress": "0xb397d3b78498267caa946284a08332f5a18b7070851e71e89ec4d4ce4b8f8fef",
+    "pairAddress": "0x5e138c89a5a70ee3ed0b8d63d5cbb7b7e6ddb22b44f2fffcd1763f22ff82a15b",
     "dexId": "uniswap",
-    "ageHours": 5.7,
-    "liquidityUsd": 902369499.94,
-    "marketCap": 0,
+    "ageHours": 46.27226638888889,
+    "liquidityUsd": 376326.54,
+    "marketCap": 1117787,
     "found": true,
     "source": "historical",
-    "detectedAt": 1771461720018,
-    "volume5m": 0,
-    "volume1h": 0,
-    "volume24h": 0.09,
-    "txns5m": 0,
-    "txns1h": 0,
-    "txns24h": 4,
-    "priceUsd": "451183503105635037463840684.46",
-    "priceChange24h": -60.88,
-    "enrichedAt": 1771629139423,
-    "url": "https://dexscreener.com/base/0xb397d3b78498267caa946284a08332f5a18b7070851e71e89ec4d4ce4b8f8fef",
-    "score": 50,
-    "status": "WARM",
-    "hasLiquidity": true
+    "detectedAt": 1771467004092
   },
   {
-    "symbol": "WETH",
-    "name": "Wrapped Ether",
-    "contract_address": "0x4200000000000000000000000000000000000006",
-    "pairAddress": "0xb2cc224c1c9feE385f8ad6a55b4d94E92359DC59",
+    "symbol": "CLANKER",
+    "name": "tokenbot",
+    "contract_address": "0x1bc0c42215582d5A085795f4baDbaC3ff36d1Bcb",
+    "pairAddress": "0xd23FE2DB317e1A96454a2D1c7e8fc0DbF19BB000",
     "dexId": "aerodrome",
-    "ageHours": 0,
-    "liquidityUsd": 62391601.7,
-    "marketCap": 477145638,
-    "volume5m": 411.63,
-    "volume1h": 1959231.98,
-    "volume24h": 50621991.61,
-    "txns5m": 7,
-    "txns1h": 674,
-    "priceUsd": "1968.71",
-    "priceChange1h": 0.01,
-    "priceChange24h": 1.37,
-    "detectedAt": 1771628801402,
-    "enrichedAt": 1771629139423,
-    "source": "base-scan",
-    "hasLiquidity": true,
-    "url": "https://dexscreener.com/base/0x6c561B446416E1A00E8E93E221854d6eA4171372",
-    "score": 50,
-    "status": "WARM"
+    "liquidityUsd": 403536.81,
+    "marketCap": 31976489,
+    "volume5m": 1819.88,
+    "volume1h": 128218.5,
+    "volume24h": 671315.59,
+    "priceUsd": "32.42",
+    "priceChange5m": 0.14,
+    "priceChange1h": 0.34,
+    "priceChange24h": 0.67,
+    "txns1h": 85,
+    "score": 55,
+    "reasons": [
+      "💰 Liq $75k+",
+      "🔥 150+ txns",
+      "⏱️ Timing OK"
+    ],
+    "status": "HOT",
+    "source": "ultimate-scanner-v3",
+    "detectedAt": 1771635850946,
+    "url": "https://dexscreener.com/base/0xd23FE2DB317e1A96454a2D1c7e8fc0DbF19BB000",
+    "pumpScore": 55,
+    "pumpTier": "HOT",
+    "tier": "HOT"
   }
 ]
