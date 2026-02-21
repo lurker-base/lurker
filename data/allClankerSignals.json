@@ -5,17 +5,7 @@
     "age": 0.9696833333333333,
     "detectedAt": 1771628213182,
     "source": "live",
-    "contract_address": "0x1f5ffcFb4EF5d976D55438F2988Ee90bCB2AeB07",
-    "baseScanData": {
-      "hasTransfers": false,
-      "verified": false,
-      "totalSupply": null,
-      "enrichedAt": 1771635081149
-    },
-    "baseScanEnriched": true,
-    "baseScanEnrichedAt": 1771635081149,
-    "verifiedContract": false,
-    "hasTransfers": false
+    "contract_address": "0x1f5ffcFb4EF5d976D55438F2988Ee90bCB2AeB07"
   },
   {
     "symbol": "TOPISH",
@@ -23,17 +13,7 @@
     "age": 0.06968333333333333,
     "detectedAt": 1771628213181,
     "source": "live",
-    "contract_address": "0x49e2f3bcFB2FBA95c243b7c8742983Fecc89Eb07",
-    "baseScanData": {
-      "hasTransfers": false,
-      "verified": false,
-      "totalSupply": null,
-      "enrichedAt": 1771635081465
-    },
-    "baseScanEnriched": true,
-    "baseScanEnrichedAt": 1771635081465,
-    "verifiedContract": false,
-    "hasTransfers": false
+    "contract_address": "0x49e2f3bcFB2FBA95c243b7c8742983Fecc89Eb07"
   },
   {
     "symbol": "TOPISH",
@@ -41,17 +21,7 @@
     "age": 0.10301666666666667,
     "detectedAt": 1771628213181,
     "source": "live",
-    "contract_address": "0x5EA23F238eEf38658174409956EA2018F1316B07",
-    "baseScanData": {
-      "hasTransfers": false,
-      "verified": false,
-      "totalSupply": null,
-      "enrichedAt": 1771635081783
-    },
-    "baseScanEnriched": true,
-    "baseScanEnrichedAt": 1771635081783,
-    "verifiedContract": false,
-    "hasTransfers": false
+    "contract_address": "0x5EA23F238eEf38658174409956EA2018F1316B07"
   },
   {
     "symbol": "Nephew",
@@ -59,17 +29,7 @@
     "age": 0.13635,
     "detectedAt": 1771628213181,
     "source": "live",
-    "contract_address": "0x673A1af12C6e1aEBc99d5e581b9ff2F5121F5b07",
-    "baseScanData": {
-      "hasTransfers": false,
-      "verified": false,
-      "totalSupply": null,
-      "enrichedAt": 1771635082098
-    },
-    "baseScanEnriched": true,
-    "baseScanEnrichedAt": 1771635082098,
-    "verifiedContract": false,
-    "hasTransfers": false
+    "contract_address": "0x673A1af12C6e1aEBc99d5e581b9ff2F5121F5b07"
   },
   {
     "symbol": "Nephew",
@@ -77,17 +37,7 @@
     "age": 0.16968333333333332,
     "detectedAt": 1771628213181,
     "source": "live",
-    "contract_address": "0x0C15d796b977bAbd09d06645F383AA9C56780B07",
-    "baseScanData": {
-      "hasTransfers": false,
-      "verified": false,
-      "totalSupply": null,
-      "enrichedAt": 1771635082411
-    },
-    "baseScanEnriched": true,
-    "baseScanEnrichedAt": 1771635082411,
-    "verifiedContract": false,
-    "hasTransfers": false
+    "contract_address": "0x0C15d796b977bAbd09d06645F383AA9C56780B07"
   },
   {
     "symbol": "TURBO",
@@ -420,36 +370,6 @@
     "marketCap": 1117787,
     "found": true,
     "source": "historical",
-    "detectedAt": 1771467004092
-  },
-  {
-    "symbol": "CLANKER",
-    "name": "tokenbot",
-    "contract_address": "0x1bc0c42215582d5A085795f4baDbaC3ff36d1Bcb",
-    "pairAddress": "0xd23FE2DB317e1A96454a2D1c7e8fc0DbF19BB000",
-    "dexId": "aerodrome",
-    "liquidityUsd": 403536.81,
-    "marketCap": 31976489,
-    "volume5m": 1819.88,
-    "volume1h": 128218.5,
-    "volume24h": 671315.59,
-    "priceUsd": "32.42",
-    "priceChange5m": 0.14,
-    "priceChange1h": 0.34,
-    "priceChange24h": 0.67,
-    "txns1h": 85,
-    "score": 55,
-    "reasons": [
-      "💰 Liq $75k+",
-      "🔥 150+ txns",
-      "⏱️ Timing OK"
-    ],
-    "status": "HOT",
-    "source": "ultimate-scanner-v3",
-    "detectedAt": 1771635850946,
-    "url": "https://dexscreener.com/base/0xd23FE2DB317e1A96454a2D1c7e8fc0DbF19BB000",
-    "pumpScore": 55,
-    "pumpTier": "HOT",
-    "tier": "HOT"
+    "detectedAt": 1771476120822
   }
 ]
