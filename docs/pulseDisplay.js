@@ -332,13 +332,14 @@ async function loadPulseSignals() {
         feed.innerHTML = `
             <div class="no-signals">
                 <div class="no-signals-icon">👁️</div>
-                <p>No signals yet</p>
-                <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 0.5rem;">
-                    Scanner is running. ALPHA signals appear here (3-5/day).
+                <p>No Gold today</p>
+                <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 0.5rem; margin-bottom: 1rem;">
+                    The scanner is running. Gold signals are rare by design.
                 </p>
+                <a href="why-no-gold.html" style="font-size: 0.85rem; color: var(--accent); text-decoration: underline;">why no gold? →</a>
             </div>
         `;
-        updateStats(0, 0, 0, source);
+        updateStats(0, 0, 0, 0, source);
         return;
     }
     
