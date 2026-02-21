@@ -15,16 +15,26 @@ const CONFIG = {
   // API Keys (optionnel mais recommandé)
   basescanApiKey: process.env.BASESCAN_API_KEY || null,
   
-  // Critères pour les signaux
-  minLiquidity: 1000,        // $1k minimum
-  minVolume1h: 500,          // $500 volume 1h
-  minPriceChange5m: 5,       // +5% sur 5min
-  minPriceChange1h: 10,      // +10% sur 1h
-  maxAgeHours: 24,           // Tokens de moins de 24h
+  // ============ HARD FILTERS (élimination brute) ============
+  hardFilters: {
+    minLiquidity: 15000,      // $15k minimum
+    minAgeMinutes: 3,         // 3 min minimum (anti-piège)
+    maxAgeHours: 72,          // 72h maximum
+    requireVerified: true,    // Contrat vérifié obligatoire
+    minTransfers: 1           // Au moins 1 transfer
+  },
   
-  // Scoring
-  hotThreshold: 70,
-  warmThreshold: 50,
+  // ============ PUMP POTENTIAL SCORING ============
+  scoring: {
+    liquidity: { tiers: [{ min: 75000, pts: 25 }, { min: 30000, pts: 18 }, { min: 15000, pts: 10 }] },
+    activity: { tiers: [{ min: 150, pts: 25 }, { min: 50, pts: 18 }, { min: 10, pts: 10 }] },
+    structure: { verified: 10, supplyLt1B: 5, noMint: 5 },
+    timing: { '10-60min': 15, '1-6h': 10, '6-24h': 5 },
+    momentum: { recentTransfers: 15 }
+  },
+  
+  // Seuils de classification
+  thresholds: { alpha: 70, hot: 50, warm: 35 }
 };
 
 const DATA_FILE = 'data/allClankerSignals.json';
@@ -211,6 +221,68 @@ function calculateSignalScore(pair) {
   return { score, reasons, metrics: { liq, vol1h, vol24h, priceChange5m, priceChange1h, priceChange24h, txns1h, buys1h, sells1h } };
 }
 
+// ======= PUMP POTENTIAL SCORING (v3) =======
+function calculatePumpScore(pair, onChainData = null) {
+  let score = 0;
+  let reasons = [];
+  const sc = CONFIG.scoring;
+  
+  const liq = parseFloat(pair.liquidity?.usd || pair.liquidityUsd || 0);
+  const ageMinutes = pair.pairCreatedAt ? (now - pair.pairCreatedAt) / 60000 : 
+    (pair.ageMinutes || (pair.ageHours * 60) || 999);
+  
+  // 1. Liquidité (0-25 pts)
+  for (const tier of sc.liquidity.tiers) {
+    if (liq >= tier.min) { score += tier.pts; reasons.push(`💰 Liq $${tier.min/1000}k+`); break; }
+  }
+  
+  // 2. Activité transfers (0-25 pts)
+  const transfers = onChainData?.transfers || pair.txns?.h24?.buys + pair.txns?.h24?.sells || 0;
+  for (const tier of sc.activity.tiers) {
+    if (transfers >= tier.min) { score += tier.pts; reasons.push(`🔥 ${tier.min}+ txns`); break; }
+  }
+  
+  // 3. Structure (0-20 pts)
+  if (onChainData?.verified || pair.verifiedContract) { score += 10; reasons.push('✓ Vérifié'); }
+  const supply = onChainData?.totalSupply || pair.totalSupply;
+  if (supply && supply < 1e9) { score += 5; reasons.push('✓ Supply saine'); }
+  if (onChainData?.hasMintFunction === false) { score += 5; reasons.push('✓ No mint'); }
+  
+  // 4. Timing (0-15 pts)
+  if (ageMinutes >= 10 && ageMinutes <= 60) { score += 15; reasons.push('⏱️ Timing optimal'); }
+  else if (ageMinutes > 60 && ageMinutes <= 360) { score += 10; reasons.push('⏱️ Bon timing'); }
+  else if (ageMinutes > 360 && ageMinutes <= 1440) { score += 5; reasons.push('⏱️ Timing OK'); }
+  
+  // 5. Momentum prix (0-15 pts)
+  const change5m = pair.priceChange?.m5 || 0;
+  const change1h = pair.priceChange?.h1 || 0;
+  if (change5m >= 20) { score += 15; reasons.push('🚀 +20% 5m'); }
+  else if (change5m >= 10) { score += 10; reasons.push('📈 +10% 5m'); }
+  else if (change1h >= 50) { score += 5; reasons.push('📈 +50% 1h'); }
+  
+  // Classification
+  let tier = 'DEAD';
+  if (score >= CONFIG.thresholds.alpha) tier = 'ALPHA';
+  else if (score >= CONFIG.thresholds.hot) tier = 'HOT';
+  else if (score >= CONFIG.thresholds.warm) tier = 'WARM';
+  
+  return { score, tier, reasons, metrics: { liq, transfers, ageMinutes, change5m, change1h } };
+}
+
+function passesHardFilter(pair) {
+  const hf = CONFIG.hardFilters;
+  const liq = parseFloat(pair.liquidity?.usd || pair.liquidityUsd || 0);
+  const ageMinutes = pair.pairCreatedAt ? (now - pair.pairCreatedAt) / 60000 : 
+    (pair.ageMinutes || (pair.ageHours * 60) || 999);
+  const ageHours = ageMinutes / 60;
+  
+  if (liq < hf.minLiquidity) return { pass: false, reason: `Liq $${Math.floor(liq)} < $15k` };
+  if (ageMinutes < hf.minAgeMinutes) return { pass: false, reason: 'Trop jeune (<3min)' };
+  if (ageHours > hf.maxAgeHours) return { pass: false, reason: 'Trop vieux (>72h)' };
+  
+  return { pass: true };
+}
+
 // ======= MAIN =======
 async function main() {
   log('LURKER Ultimate Scanner');
@@ -259,32 +331,42 @@ async function main() {
     }
   }
   
-  // Filtrer et scorer
+  // Filtrer et scorer avec PUMP POTENTIAL
   const viablePairs = allPairs.filter(isViableToken);
   log(`  ${viablePairs.length} viable tokens`);
   
   const signals = [];
+  let hardFiltered = 0;
   
   for (const pair of viablePairs) {
-    const { score, reasons, metrics } = calculateSignalScore(pair);
+    // HARD FILTER d'abord
+    const hardCheck = passesHardFilter(pair);
+    if (!hardCheck.pass) {
+      hardFiltered++;
+      continue;
+    }
     
-    if (score >= CONFIG.warmThreshold) {
-      const age = pair.pairCreatedAt ? (now - pair.pairCreatedAt) / (1000 * 60 * 60) : 999;
-      
+    // PUMP POTENTIAL SCORING
+    const { score, tier, reasons, metrics } = calculatePumpScore(pair);
+    
+    // Ne garder que WARM et au-dessus
+    if (tier !== 'DEAD') {
       signals.push({
         pair,
         score,
+        tier,
         reasons,
         metrics,
-        ageHours: age
+        pumpScore: score,
+        pumpTier: tier
       });
     }
   }
   
-  // Trier par score
+  // Trier par pump score
   signals.sort((a, b) => b.score - a.score);
   
-  log(`\n[RESULTS] Found ${signals.length} signals`);
+  log(`\n[RESULTS] Found ${signals.length} signals (hard filtered: ${hardFiltered})`);
   
   // Traiter les signaux
   let newSignals = 0;
@@ -308,17 +390,18 @@ async function main() {
       liquidityUsd: Math.round(signal.metrics.liq * 100) / 100,
       marketCap: Math.round(parseFloat(pair.fdv || pair.marketCap || 0) * 100) / 100,
       volume5m: Math.round(parseFloat(pair.volume?.m5 || 0) * 100) / 100,
-      volume1h: Math.round(signal.metrics.vol1h * 100) / 100,
-      volume24h: Math.round(signal.metrics.vol24h * 100) / 100,
+      volume1h: Math.round(parseFloat(pair.volume?.h1 || 0) * 100) / 100,
+      volume24h: Math.round(parseFloat(pair.volume?.h24 || 0) * 100) / 100,
       priceUsd: pair.priceUsd,
-      priceChange5m: signal.metrics.priceChange5m,
-      priceChange1h: signal.metrics.priceChange1h,
-      priceChange24h: signal.metrics.priceChange24h,
-      txns1h: signal.metrics.txns1h,
+      priceChange5m: signal.metrics.change5m,
+      priceChange1h: signal.metrics.change1h,
+      pumpScore: signal.pumpScore,
+      pumpTier: signal.pumpTier,
       score: signal.score,
+      tier: signal.tier,
       reasons: signal.reasons,
-      status: signal.score >= CONFIG.hotThreshold ? 'HOT' : 'WARM',
-      source: 'ultimate-scanner',
+      status: signal.tier,
+      source: 'ultimate-scanner-v3',
       detectedAt: now,
       url: `https://dexscreener.com/base/${pair.pairAddress || addr}`
     };
@@ -334,39 +417,36 @@ async function main() {
     
     existingMap.set(addr.toLowerCase(), tokenData);
     
-    // Compter
-    if (tokenData.status === 'HOT') hotCount++;
-    else warmCount++;
+    // Compter par tier
+    if (signal.tier === 'ALPHA') { hotCount++; }
+    else if (signal.tier === 'HOT') { hotCount++; }
+    else if (signal.tier === 'WARM') { warmCount++; }
     
-    // Log
-    const emoji = signal.score >= CONFIG.hotThreshold ? '🚨' : '🔥';
-    log(`${emoji} $${token.symbol} | Score: ${signal.score} | ${signal.reasons.join(', ')}`);
+    // Log avec emoji selon tier
+    const emoji = signal.tier === 'ALPHA' ? '🚨🚨🚨' : signal.tier === 'HOT' ? '🚨' : '🔥';
+    log(`${emoji} ${signal.tier}: $${token.symbol} | Score: ${signal.pumpScore} | ${signal.reasons.slice(0, 3).join(', ')}`);
     
-    // Alertes
-    const alertMsg = signal.score >= CONFIG.hotThreshold
-      ? `🚨🚨🚨 HOT SIGNAL: $${token.symbol} | Score: ${signal.score} | ${signal.reasons.slice(0, 2).join(', ')}`
-      : `🔥 WARM SIGNAL: $${token.symbol} | Score: ${signal.score}`;
-    
-    // Éviter les doublons d'alertes
-    const alreadyAlerted = alerts.find(a => a.tokenAddress?.toLowerCase() === addr.toLowerCase() && a.score === signal.score);
-    
-    if (!alreadyAlerted) {
-      alerts.unshift({
-        tokenAddress: addr,
-        symbol: token.symbol,
-        status: tokenData.status,
-        score: signal.score,
-        message: alertMsg,
-        reasons: signal.reasons,
-        sentAt: now
-      });
-      newAlerts++;
+    // Alertes (seulement HOT et ALPHA)
+    if (signal.tier !== 'WARM') {
+      const alertMsg = signal.tier === 'ALPHA'
+        ? `🚨🚨🚨 ALPHA: $${token.symbol} | Score: ${signal.pumpScore}/100`
+        : `🚨 HOT: $${token.symbol} | Score: ${signal.pumpScore}/100`;
       
-      // Promouvoir dans pulse: HOT (≥70) immédiatement, WARM (≥40) aussi si pas plein
-      if (signal.score >= CONFIG.hotThreshold && pulse.length < 20) {
-        pulse.unshift({ ...tokenData, promotedAt: now, pulseTier: 'HOT' });
-      } else if (signal.score >= CONFIG.warmThreshold && pulse.length < 20) {
-        pulse.unshift({ ...tokenData, promotedAt: now, pulseTier: 'WARM' });
+      const alreadyAlerted = alerts.find(a => a.contract_address?.toLowerCase() === addr.toLowerCase());
+      
+      if (!alreadyAlerted) {
+        alerts.unshift({
+          ...tokenData,
+          alertType: signal.tier,
+          message: alertMsg,
+          sentAt: now
+        });
+        newAlerts++;
+      }
+      
+      // Promouvoir dans pulse (HOT et ALPHA)
+      if (!pulse.find(p => p.contract_address?.toLowerCase() === addr.toLowerCase())) {
+        pulse.unshift({ ...tokenData, promotedAt: now });
       }
     }
   }
@@ -380,19 +460,25 @@ async function main() {
   log('=== SUMMARY ===');
   log(`New signals: ${newSignals}`);
   log(`New alerts: ${newAlerts}`);
-  log(`HOT: ${hotCount} | WARM: ${warmCount}`);
+  log(`ALPHA+HOT: ${hotCount} | WARM: ${warmCount}`);
+  log(`Pulse size: ${pulse.length}`);
   log(`Total DB: ${existing.length}`);
-  log(`Total alerts: ${alerts.length}`);
+  
+  // Stats par tier
+  const tierCounts = existing.reduce((acc, t) => {
+    acc[t.tier || t.status || 'UNRANKED'] = (acc[t.tier || t.status || 'UNRANKED'] || 0) + 1;
+    return acc;
+  }, {});
+  log(`Tiers: ${JSON.stringify(tierCounts)}`);
   
   if (signals.length === 0) {
     log('');
     log('⚠️  No pump signals detected.');
-    log('Market might be quiet or criteria too strict.');
+    log('Hard filters applied: liq>$15k | age>3min | verified | transfers>0');
     log('');
     log('To improve detection:');
-    log('1. Add BaseScan API key: export BASESCAN_API_KEY=your_key');
-    log('2. Lower criteria in CONFIG');
-    log('3. Wait for market activity');
+    log('1. Wait for market activity');
+    log('2. Adjust hardFilters in CONFIG');
   }
 }
 
