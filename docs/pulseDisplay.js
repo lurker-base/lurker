@@ -163,6 +163,23 @@ function createPulseCard(s) {
     const vol5m = s.volume5m || 0;
     const vol1h = s.volume1h || 0;
     const vol24h = s.volume24h || s.volume_24h || s.volume || 0;
+    
+    // Déterminer si on affiche les vraies données ou des badges qualitatifs
+    const isPremium = s.tier === 'ALPHA_GOLD' || s.tier === 'ALPHA_EARLY';
+    
+    // Badges qualitatifs pour le public (pas de chiffres faux)
+    function getLiqBadge(val) {
+        if (val >= 500000) return '<span class="metric-badge high">HIGH</span>';
+        if (val >= 200000) return '<span class="metric-badge medium">MEDIUM</span>';
+        if (val >= 50000) return '<span class="metric-badge low">LOW</span>';
+        return '<span class="metric-badge">-</span>';
+    }
+    function getVolBadge(val) {
+        if (val >= 10000) return '<span class="vol-badge high">HIGH</span>';
+        if (val >= 2000) return '<span class="vol-badge medium">MED</span>';
+        if (val > 0) return '<span class="vol-badge low">LOW</span>';
+        return '<span class="vol-badge">-</span>';
+    }
     const tx5m = s.txns5m || 0;
     const tx1h = s.txns1h || 0;
     const price = s.priceUsd || s.price || 0;
@@ -202,17 +219,18 @@ function createPulseCard(s) {
             </div>
             <div class="metric-item">
                 <span class="metric-label">liquidity</span>
-                <span class="metric-value">${fmt$(liq)}</span>
+                <span class="metric-value">${isPremium ? fmt$(liq) : getLiqBadge(liq)}</span>
             </div>
             <div class="metric-item">
                 <span class="metric-label">mkt cap</span>
-                <span class="metric-value">${fmt$(mcap)}</span>
+                <span class="metric-value">${isPremium ? fmt$(mcap) : (mcap > 1000000 ? '$'+(mcap/1000000).toFixed(1)+'M' : mcap > 1000 ? '$'+(mcap/1000).toFixed(0)+'k' : '-')}</span>
             </div>
             <div class="metric-item">
                 <span class="metric-label">age</span>
                 <span class="metric-value">${fmtAge(age)}</span>
             </div>
         </div>
+        ${isPremium ? `
         <div class="volume-row">
             <span class="volume-label">vol 5m:</span>
             <span class="volume-value ${vol5m >= 5000 ? 'high' : vol5m < 1000 ? 'low' : ''}">${fmt$(vol5m)}</span>
@@ -221,6 +239,12 @@ function createPulseCard(s) {
             <span class="volume-label">24h:</span>
             <span class="volume-value">${fmt$(vol24h)}</span>
         </div>
+        ` : `
+        <div class="volume-row badges">
+            <span class="volume-label">volume:</span>
+            ${getVolBadge(vol5m)}
+        </div>
+        `}
         <div class="token-checks">
             ${badges.join('')}
         </div>

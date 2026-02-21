@@ -421,6 +421,29 @@
         .alpha-proof a {
             color: var(--accent);
         }
+        
+        /* Badges qualitatifs pour données masquées (public) */
+        .metric-badge, .vol-badge {
+            font-size: 0.7rem;
+            padding: 0.15rem 0.4rem;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+        .metric-badge.high, .vol-badge.high {
+            background: rgba(0, 255, 0, 0.15);
+            color: #00ff00;
+        }
+        .metric-badge.medium, .vol-badge.medium {
+            background: rgba(255, 170, 0, 0.15);
+            color: #ffaa00;
+        }
+        .metric-badge.low, .vol-badge.low {
+            background: rgba(255, 68, 68, 0.15);
+            color: #ff4444;
+        }
+        .volume-row.badges {
+            gap: 0.5rem;
+        }
     </style>
 </head>
 <body>
@@ -464,20 +487,12 @@
 
                 <div class="filter-bar">
                     <div class="filter-item">
-                        <span class="filter-label">min liquidity</span>
-                        <span class="filter-value">$1,000</span>
-                    </div>
-                    <div class="filter-item">
-                        <span class="filter-label">min volume</span>
-                        <span class="filter-value">$5,000</span>
-                    </div>
-                    <div class="filter-item">
                         <span class="filter-label">min confidence</span>
                         <span class="filter-value">50/100</span>
                     </div>
                     <div class="filter-item">
                         <span class="filter-label">scanned</span>
-                        <span class="filter-value">1,247 tokens</span>
+                        <span class="filter-value" id="scanned-count">1,247 tokens</span>
                     </div>
                 </div>
 
