@@ -3,8 +3,21 @@
  * Filtres: WARN only, tri par liquidity, compteurs
  */
 
+// Base URL dynamique pour GitHub Pages (/lurker/) ou local (/)
+function getBasePath() {
+    const path = window.location.pathname;
+    const parts = path.split('/').filter(Boolean);
+    if (parts.length >= 1 && parts[0] === 'lurker') {
+        return '/lurker/';
+    }
+    return '/';
+}
+
+const BASE_PATH = getBasePath();
+
 const CONFIG = {
-    signalsUrl: 'data/allSignals.json',
+    signalsUrl: BASE_PATH + 'data/allSignals.json',
+    publicSignalsUrl: BASE_PATH + 'data/pulseSignals.v2.public.json',
     pollInterval: 15000,
     maxDisplay: 50,
     // Default filter

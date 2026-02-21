@@ -2,9 +2,23 @@
  * LURKER Pulse Display - Affiche les signaux HOT/WARM validés
  */
 
+// Base URL dynamique pour GitHub Pages (/lurker/) ou local (/)
+function getBasePath() {
+    const path = window.location.pathname;
+    const parts = path.split('/').filter(Boolean);
+    // Si on est sur GH Pages avec /lurker/, on prend le premier segment
+    if (parts.length >= 1 && parts[0] === 'lurker') {
+        return '/lurker/';
+    }
+    return '/';
+}
+
+const BASE_PATH = getBasePath();
+
 const PULSE_CONFIG = {
-    signalsUrl: 'data/pulseSignals.json',
-    allSignalsUrl: 'data/allSignals.json',
+    signalsUrl: BASE_PATH + 'data/pulseSignals.v2.alpha.json',
+    publicSignalsUrl: BASE_PATH + 'data/pulseSignals.v2.public.json',
+    allSignalsUrl: BASE_PATH + 'data/allSignals.json',
     pollInterval: 15000,
     maxDisplay: 20
 };
@@ -222,77 +236,134 @@ function createPulseCard(s) {
 }
 
 async function loadPulseSignals() {
+    const feed = document.getElementById('pulse-feed');
+    if (!feed) return;
+    
+    feed.innerHTML = `
+        <div class="no-signals" id="loading-state">
+            <div class="no-signals-icon">⏳</div>
+            <p>Loading signals...</p>
+        </div>
+    `;
+    
+    let signals = [];
+    let source = '';
+    
     try {
-        const feed = document.getElementById('pulse-feed');
-        if (!feed) return;
-        
-        // Charger Pulse signals d'abord
-        let signals = [];
+        // 1. Essayer ALPHA signals (V2.1 premium)
         try {
             const res = await fetch(PULSE_CONFIG.signalsUrl + '?t=' + Date.now());
-            if (res.ok) signals = await res.json();
-        } catch(e) {}
+            if (res.ok) {
+                const data = await res.json();
+                const items = data.items || data;
+                if (Array.isArray(items) && items.length > 0) {
+                    signals = items;
+                    source = 'alpha-v2.1';
+                    console.log('[PULSE] Loaded ALPHA signals:', items.length);
+                }
+            }
+        } catch(e) {
+            console.log('[PULSE] ALPHA fetch failed:', e.message);
+        }
         
-        // Si pas de Pulse signals, charger les HOT/WARM depuis allSignals
+        // 2. Fallback sur public signals
+        if (signals.length === 0) {
+            try {
+                const res = await fetch(PULSE_CONFIG.publicSignalsUrl + '?t=' + Date.now());
+                if (res.ok) {
+                    const data = await res.json();
+                    const items = data.items || data;
+                    if (Array.isArray(items) && items.length > 0) {
+                        signals = items;
+                        source = 'public-v2.1';
+                        console.log('[PULSE] Loaded public signals:', items.length);
+                    }
+                }
+            } catch(e) {
+                console.log('[PULSE] Public fetch failed:', e.message);
+            }
+        }
+        
+        // 3. Fallback legacy allSignals
         if (signals.length === 0) {
             try {
                 const res = await fetch(PULSE_CONFIG.allSignalsUrl + '?t=' + Date.now());
                 if (res.ok) {
                     const all = await res.json();
                     signals = all.filter(s => s.status === 'HOT' || s.status === 'WARM');
+                    source = 'legacy';
+                    console.log('[PULSE] Loaded legacy signals:', signals.length);
                 }
-            } catch(e) {}
+            } catch(e) {
+                console.log('[PULSE] Legacy fetch failed:', e.message);
+            }
         }
-        
-        feed.innerHTML = '';
-        
-        if (signals.length === 0) {
-            feed.innerHTML = `
-                <div class="no-signals">
-                    <div class="no-signals-icon">👁️</div>
-                    <p>No HOT or WARM signals yet</p>
-                    <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 0.5rem;">
-                        Signals appear here when they reach WARM or HOT status
-                    </p>
-                </div>
-            `;
-            updateStats(0, 0, 0);
-            return;
-        }
-        
-        // Trier par score puis par liquidité
-        signals.sort((a, b) => {
-            const scoreDiff = (b.score || 0) - (a.score || 0);
-            if (scoreDiff !== 0) return scoreDiff;
-            return (b.liquidityUsd || 0) - (a.liquidityUsd || 0);
-        });
-        
-        signals.slice(0, PULSE_CONFIG.maxDisplay).forEach(s => {
-            feed.appendChild(createPulseCard(s));
-        });
-        
-        // Mettre à jour les stats
-        const hot = signals.filter(s => s.status === 'HOT').length;
-        const warm = signals.filter(s => s.status === 'WARM').length;
-        updateStats(signals.length, hot, warm);
-        
     } catch(e) {
-        console.error('[PULSE] Load error:', e);
+        console.error('[PULSE] Fatal load error:', e);
     }
+    
+    feed.innerHTML = '';
+    
+    if (signals.length === 0) {
+        feed.innerHTML = `
+            <div class="no-signals">
+                <div class="no-signals-icon">👁️</div>
+                <p>No signals yet</p>
+                <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 0.5rem;">
+                    Scanner is running. ALPHA signals appear here (3-5/day).
+                </p>
+            </div>
+        `;
+        updateStats(0, 0, 0, source);
+        return;
+    }
+    
+    // Trier: ALPHA first, then by score
+    signals.sort((a, b) => {
+        if (a.tier === 'ALPHA' && b.tier !== 'ALPHA') return -1;
+        if (b.tier === 'ALPHA' && a.tier !== 'ALPHA') return 1;
+        const scoreDiff = (b.score || 0) - (a.score || 0);
+        if (scoreDiff !== 0) return scoreDiff;
+        return (b.liquidityUsd || 0) - (a.liquidityUsd || 0);
+    });
+    
+    signals.slice(0, PULSE_CONFIG.maxDisplay).forEach(s => {
+        feed.appendChild(createPulseCard(s));
+    });
+    
+    // Stats
+    const alpha = signals.filter(s => s.tier === 'ALPHA').length;
+    const hot = signals.filter(s => s.status === 'HOT' || s.tier === 'HOT').length;
+    const warm = signals.filter(s => s.status === 'WARM' || s.tier === 'WARM').length;
+    updateStats(signals.length, alpha, hot, warm, source);
 }
 
-function updateStats(total, hot, warm) {
+function updateStats(total, alpha, hot, warm, source) {
     // Mettre à jour le compteur scanné
     const scannedEl = document.querySelector('.filter-value');
-    if (scannedEl && total > 0) {
-        scannedEl.textContent = `${total} signals (${hot} HOT, ${warm} WARM)`;
+    if (scannedEl) {
+        if (alpha > 0) {
+            scannedEl.textContent = `${total} signals (${alpha} ALPHA, ${hot} HOT)`;
+        } else if (total > 0) {
+            scannedEl.textContent = `${total} signals (${hot} HOT, ${warm} WARM)`;
+        } else {
+            scannedEl.textContent = '0 signals';
+        }
     }
     
     // Mettre à jour le texte "listening"
     const listeningText = document.querySelector('.listening-pulse span:last-child');
     if (listeningText) {
-        listeningText.textContent = `Found ${total} validated signals — ${hot} HOT, ${warm} WARM`;
+        if (alpha > 0) {
+            listeningText.textContent = `${alpha} ALPHA signal${alpha > 1 ? 's' : ''} detected — premium tier`;
+        } else if (total > 0) {
+            listeningText.textContent = `${total} signals — waiting for ALPHA tier`;
+        } else {
+            listeningText.textContent = 'Listening for new tokens...';
+        }
     }
+    
+    console.log('[PULSE] Stats updated:', { total, alpha, hot, warm, source });
 }
 
 // Sparks effect
