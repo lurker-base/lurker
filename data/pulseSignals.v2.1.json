@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 2.1,
+  "generatedAt": 1771646352,
+  "tiers": {
+    "public": 0,
+    "alpha": 1
+  },
+  "items": [
+    {
+      "symbol": "CLANKER",
+      "name": "tokenbot",
+      "contract_address": "0x1bc0c42215582d5A085795f4baDbaC3ff36d1Bcb",
+      "pairAddress": "0xd23FE2DB317e1A96454a2D1c7e8fc0DbF19BB000",
+      "dexId": "aerodrome",
+      "liquidityUsd": 403536.81,
+      "marketCap": 31976489,
+      "volume5m": 1819.88,
+      "volume1h": 128218.5,
+      "volume24h": 671315.59,
+      "priceUsd": "32.42",
+      "priceChange5m": 0.14,
+      "priceChange1h": 0.34,
+      "pumpScore": 55,
+      "pumpTier": "HOT",
+      "score": 55,
+      "tier": "ALPHA",
+      "reasons": [
+        "💰 Liq $75k+",
+        "🔥 150+ txns",
+        "⏱️ Timing OK"
+      ],
+      "status": "HOT",
+      "source": "ultimate-scanner-v3",
+      "detectedAt": 1771635850946,
+      "url": "https://dexscreener.com/base/0xd23FE2DB317e1A96454a2D1c7e8fc0DbF19BB000",
+      "promotedAt": 1771635850946,
+      "trend": "flat",
+      "confidence": 65,
+      "horizon": "long",
+      "lurkerInsight": "Liquidité ~$404k, momentum stable, score 55 : WATCH (confiance 65%).",
+      "suggestedAction": "watch",
+      "riskLevel": "medium",
+      "invalidatedIf": [
+        "score < 38",
+        "liquidity_usd < 200000",
+        "momentum_weakens_2_cycles"
+      ],
+      "lastUpdate": 1771640797441,
+      "schemaVersion": 2.1,
+      "metrics": {
+        "liquidity_usd": 403536,
+        "momentum": 0,
+        "volume_ratio_24h": 0.021
+      },
+      "marketPhase": "accumulation",
+      "earlyLateScore": 10,
+      "signalStrengthReason": [
+        "Liquidité solide (>200k), risque slippage limité",
+        "Momentum haussier modéré, pas de FOMO"
+      ],
+      "accessLevel": "premium",
+      "embargoUntil": 1771647252,
+      "generatedAt": 1771646352
+    }
+  ]
+}
