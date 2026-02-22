@@ -31,6 +31,28 @@
             min-height: 100vh;
         }
         
+        /* Navigation */
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem 1.5rem;
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.85rem;
+        }
+        
+        .nav-link {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--accent);
+        }
+        
         .container {
             max-width: 1000px;
             margin: 0 auto;
@@ -179,8 +201,25 @@
     </style>
 </head>
 <body>
+    <nav class="nav">
+        <a href="index.html" class="nav-link">lurker</a>
+        <a href="token.html" class="nav-link">token</a>
+        <a href="deep.html" class="nav-link">the deep</a>
+        <a href="origin.html" class="nav-link">origin</a>
+        <a href="sightings.html" class="nav-link">sightings</a>
+        <a href="proof.html" class="nav-link">proof</a>
+        <a href="hall-of-fame.html" class="nav-link active">hall of fame</a>
+        <a href="watch.html" class="nav-link">watch</a>
+        <a href="become.html" class="nav-link">become</a>
+        <a href="live.html" class="nav-link">live</a>
+        <a href="agents.html" class="nav-link">for agents</a>
+        <a href="pulse.html" class="nav-link">pulse</a>
+        <a href="signals.html" class="nav-link">signals</a>
+        <a href="stats.html" class="nav-link">stats</a>
+        <a href="https://x.com/LURKER_AI2026" class="nav-link" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-top:-2px"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+    </nav>
+
     <div class="container">
-        <a href="index.html" class="back-link">← back to lurker</a>
         
         <h1>🏆 Hall of Fame</h1>
         <p class="subtitle">Tokens detected early that performed well</p>
