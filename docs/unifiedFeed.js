@@ -115,6 +115,30 @@ function renderRiskBadge(riskLevel, risks = []) {
     return `<span class="badge-risk" style="background:${bg};color:${color};border:1px solid ${color};padding:2px 8px;border-radius:3px;font-size:0.7rem;text-transform:uppercase;">${riskLevel} risk${risks.length > 0 ? ': ' + riskText : ''}</span>`;
 }
 
+function renderQualityBadge(quality, liq) {
+    if (!quality) return '';
+    const qScore = quality.quality_score || 0;
+    const isPremium = qScore >= 80 && liq > 100000;
+    const isGood = qScore >= 60 || liq > 50000;
+    
+    if (isPremium) {
+        return '<span class="badge-quality" style="background:#4ade80;color:#000;padding:2px 8px;border-radius:3px;font-size:0.7rem;font-weight:bold;">PREMIUM</span>';
+    } else if (isGood) {
+        return '<span class="badge-quality" style="background:#60a5fa;color:#000;padding:2px 8px;border-radius:3px;font-size:0.7rem;font-weight:bold;">GOOD</span>';
+    } else {
+        return '<span class="badge-quality" style="background:#fbbf24;color:#000;padding:2px 8px;border-radius:3px;font-size:0.7rem;font-weight:bold;">WATCH</span>';
+    }
+}
+
+function renderQualityIcons(quality) {
+    if (!quality) return '';
+    let icons = '';
+    if (quality.has_image) icons += '🖼️';
+    if (quality.has_socials) icons += '💬';
+    if (quality.has_website) icons += '🌐';
+    return icons ? `<span style="margin-left:0.5rem;">${icons}</span>` : '';
+}
+
 function renderCIOCard(item) {
     const symbol = pick(item, ['token.symbol', 'symbol'], '???');
     const age = safeNum(item.age_hours || item.timestamps?.age_hours, 0);
@@ -128,30 +152,36 @@ function renderCIOCard(item) {
     const tx5m = safeNum(metrics.txns_5m || (item.txns?.m5?.buys + item.txns?.m5?.sells), 0);
     const riskLevel = item.risk_level || 'unknown';
     const risks = item.risks || [];
+    const quality = item.quality || {};
     const url = item.pair?.address ? `https://dexscreener.com/base/${item.pair.address}` : 
                 (item.pair_url || (item.pool_address ? `https://dexscreener.com/base/${item.pool_address}` : '#'));
     
-    // Visual separation by risk
-    const riskStyles = {
-        'low': 'border-left: 4px solid #00ff00; background: rgba(0,255,0,0.03);',
-        'medium': 'border-left: 4px solid #ffaa00; background: rgba(255,170,0,0.03);',
-        'high': 'border-left: 4px solid #ff4444; background: rgba(255,68,68,0.03);',
+    // Visual separation by quality
+    const qScore = quality.quality_score || 0;
+    const isPremium = qScore >= 80 && liq > 100000;
+    const isGood = qScore >= 60 || liq > 50000;
+    
+    const qualityStyles = {
+        'premium': 'border-left: 4px solid #4ade80; background: rgba(74,222,128,0.05);',
+        'good': 'border-left: 4px solid #60a5fa; background: rgba(96,165,250,0.05);',
+        'watch': 'border-left: 4px solid #fbbf24; background: rgba(251,191,36,0.05);',
         'unknown': ''
     };
-    const cardStyle = riskStyles[riskLevel] || '';
+    const cardStyle = isPremium ? qualityStyles.premium : isGood ? qualityStyles.good : qualityStyles.watch;
     
     return `
         <div class="token-card card-cio" style="${cardStyle}">
             <div class="card-header">
                 <span class="token-symbol">${symbol}</span>
                 <span class="badges">
+                    ${renderQualityBadge(quality, liq)}
                     ${renderAgeBadge(age)}
-                    ${renderStatusBadge('cio')}
                     ${renderSourceBadge(source)}
                 </span>
             </div>
             <div style="margin: 0.5rem 0;">
                 ${renderRiskBadge(riskLevel, risks)}
+                ${renderQualityIcons(quality)}
             </div>
             <div class="card-metrics">
                 <span>⭐ ${score}/100</span>
