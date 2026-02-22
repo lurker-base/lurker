@@ -18,9 +18,9 @@ CIO_FILE = Path(__file__).parent.parent / "signals" / "cio_feed.json"
 HOTLIST_FILE = Path(__file__).parent.parent / "signals" / "hotlist_feed.json"
 STATE_FILE = Path(__file__).parent.parent / "state" / "hotlist_state.json"
 
-# HOTLIST criteria (90-180 min window) - matches new CIO 3h window
-MIN_AGE_MINUTES = 90
-MAX_AGE_MINUTES = 180
+# HOTLIST criteria (6-24h window) - for tokens with momentum after initial pump
+MIN_AGE_MINUTES = 360
+MAX_AGE_MINUTES = 1440
 MIN_LIQ_USD = 5_000       # ULTRA: $5k (was $7k, originally $15k)
 MIN_TX_1H = 30            # ULTRA: 30 (was 40)
 MIN_TX_15M = 12           # ULTRA: 12 (was 15)
@@ -140,18 +140,22 @@ def process_cio_for_hotlist(cio, state):
     metrics = cio.get("metrics", {})
     token = cio.get("token", {})
     
+    # Basic metrics
+    liq = safe_num(metrics.get("liq_usd"), 0)
+    
     # Calculate age in minutes
     pair_created = datetime.fromisoformat(timestamps.get("pair_created_at", "2024-01-01").replace("Z", "+00:00"))
     age_minutes = (datetime.now(timezone.utc) - pair_created).total_seconds() / 60
     
-    # Age window check
+    # Age window check (more permissive for high liquidity)
     if age_minutes < MIN_AGE_MINUTES:
         return None, "too_young"
     if age_minutes > MAX_AGE_MINUTES:
-        return None, "too_old"
-    
-    # Basic metrics
-    liq = safe_num(metrics.get("liq_usd"), 0)
+        # Exception: keep hotlisting tokens with $15k+ liquidity up to 48h
+        if liq >= 15000 and age_minutes <= 2880:
+            pass  # Accept it
+        else:
+            return None, "too_old"
     vol_1h = safe_num(metrics.get("vol_1h_usd"), 0)
     tx_1h_obj = metrics.get("txns_h1", 0)  # This is a number in our format
     tx_1h = int(tx_1h_obj) if isinstance(tx_1h_obj, (int, float)) else 0
