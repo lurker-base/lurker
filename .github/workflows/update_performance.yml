@@ -2,12 +2,15 @@ name: Update Performance Tracker
 
 on:
   schedule:
-    # Every 2 hours during market hours (UTC)
     - cron: '0 */2 * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: lurker-performance
+  cancel-in-progress: true
 
 jobs:
   update-tracker:
@@ -24,13 +27,16 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
+      - name: Ensure directories
+        run: mkdir -p state
+
       - name: Update performance data
-        run: python3 scripts/update_performance.py
+        run: python3 scripts/update_performance.py || echo "Performance update failed - continuing"
 
       - name: Commit updates
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add state/performance_tracker.json
+          git add state/ || true
           git diff --cached --quiet || git commit -m "chore: auto-update performance tracker [skip ci]"
-          git push
+          git push || echo "Nothing to push"
