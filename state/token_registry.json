@@ -558,12 +558,69 @@
           "price": 0.0002582,
           "liq": 25820318.41,
           "vol_5m": 18966.92
+        },
+        {
+          "timestamp": 1771801079983,
+          "price": 0.0002583,
+          "liq": 25830881.77,
+          "vol_5m": 13402.42
         }
       ],
       "token": {
         "address": "0x0583226fc741d7dd528977b4349cf00bd1376312",
         "symbol": "auctobot001",
         "name": "auctobot001"
+      }
+    },
+    "0x52706d6a7449651eb548212ae237777f1cf19b07": {
+      "first_seen": 1771801079983,
+      "first_seen_iso": "2026-02-22T22:57:59.983000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771801079983,
+          "price": 1.96e-07,
+          "liq": 20454.38,
+          "vol_5m": 13.38
+        }
+      ],
+      "token": {
+        "address": "0x52706d6a7449651eb548212ae237777f1cf19b07",
+        "symbol": "joelclaw",
+        "name": "Joelclaw"
+      }
+    },
+    "0xfac66d173bb6e1ee1c3d2321dc13c25e36c3e525": {
+      "first_seen": 1771801079983,
+      "first_seen_iso": "2026-02-22T22:57:59.983000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771801079983,
+          "price": 0.001225,
+          "liq": 70986.56,
+          "vol_5m": 18165.4
+        }
+      ],
+      "token": {
+        "address": "0xfac66d173bb6e1ee1c3d2321dc13c25e36c3e525",
+        "symbol": "Clawster",
+        "name": "Claw Lobster"
+      }
+    },
+    "0x5dc1db3b262793fb00ef0d973ed052daa5d27b07": {
+      "first_seen": 1771801079983,
+      "first_seen_iso": "2026-02-22T22:57:59.983000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771801079983,
+          "price": 4.047e-06,
+          "liq": 316490.53,
+          "vol_5m": 3904.11
+        }
+      ],
+      "token": {
+        "address": "0x5dc1db3b262793fb00ef0d973ed052daa5d27b07",
+        "symbol": "ODAI",
+        "name": "ODEI AI"
       }
     }
   }
