@@ -80,6 +80,12 @@
           "price": 2.157e-07,
           "liq": 22371.17,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771782918017,
+          "price": 2.331e-07,
+          "liq": 24138.49,
+          "vol_5m": 0.0
         }
       ],
       "token": {
@@ -133,6 +139,12 @@
           "price": 0.001865,
           "liq": 125252.12,
           "vol_5m": 59611.22
+        },
+        {
+          "timestamp": 1771782918017,
+          "price": 0.0007044,
+          "liq": 78325.58,
+          "vol_5m": 55944.07
         }
       ],
       "token": {
@@ -239,6 +251,12 @@
           "price": 0.002621,
           "liq": 115006.61,
           "vol_5m": 14137.31
+        },
+        {
+          "timestamp": 1771782918017,
+          "price": 0.002018,
+          "liq": 101110.07,
+          "vol_5m": 15156.45
         }
       ],
       "token": {
@@ -397,12 +415,69 @@
           "price": 2.034e-06,
           "liq": 108465.07,
           "vol_5m": 14860.78
+        },
+        {
+          "timestamp": 1771782918017,
+          "price": 1.935e-07,
+          "liq": 22265.05,
+          "vol_5m": 41.86
         }
       ],
       "token": {
         "address": "0x7c0a5c1020c39bfa1af711b4b963be82f55e1b07",
         "symbol": "CLAUDET",
         "name": "Claude Terminal"
+      }
+    },
+    "0xc1299846f3523fb6c9c3f3fd6122a602855f3b07": {
+      "first_seen": 1771782918017,
+      "first_seen_iso": "2026-02-22T17:55:18.017000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771782918017,
+          "price": 2.152e-06,
+          "liq": 187079.27,
+          "vol_5m": 5140.54
+        }
+      ],
+      "token": {
+        "address": "0xc1299846f3523fb6c9c3f3fd6122a602855f3b07",
+        "symbol": "ClawZempic",
+        "name": "ClawZempic"
+      }
+    },
+    "0x8e4550fff902b90ca4424a7ba42a1e1d38e35ba3": {
+      "first_seen": 1771782918017,
+      "first_seen_iso": "2026-02-22T17:55:18.017000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771782918017,
+          "price": 6.216e-07,
+          "liq": 52952.57,
+          "vol_5m": 1513.93
+        }
+      ],
+      "token": {
+        "address": "0x8e4550fff902b90ca4424a7ba42a1e1d38e35ba3",
+        "symbol": "CLAWMART",
+        "name": "ClawMart"
+      }
+    },
+    "0x023d51677a3df1b611ec91744cbda68175ce210d": {
+      "first_seen": 1771782918017,
+      "first_seen_iso": "2026-02-22T17:55:18.017000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771782918017,
+          "price": 1.261e-05,
+          "liq": 12028.15,
+          "vol_5m": 0.0
+        }
+      ],
+      "token": {
+        "address": "0x023d51677a3df1b611ec91744cbda68175ce210d",
+        "symbol": "USAF",
+        "name": "USAF"
       }
     }
   }
