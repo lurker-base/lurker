@@ -5,6 +5,7 @@ Scans Factory events (PoolCreated) and builds CIO feed
 """
 import json
 import os
+import time
 from datetime import datetime
 from pathlib import Path
 
@@ -15,6 +16,13 @@ try:
 except ImportError:
     WEB3_AVAILABLE = False
     print("[SCANNER] web3 not available, using mock mode")
+
+# Try to import requests for DexScreener
+try:
+    import requests
+    REQUESTS_AVAILABLE = True
+except ImportError:
+    REQUESTS_AVAILABLE = False
 
 # Config
 STATE_FILE = Path(__file__).parent.parent / "state" / "scan_state.json"
@@ -167,8 +175,59 @@ def is_quote_whitelist(symbol):
     whitelist = {"WETH", "ETH", "USDC", "USDBC", "cbBTC", "CBETH"}
     return symbol.upper() in whitelist
 
+def enrich_from_dexscreener(pool_address):
+    """Fetch pool data from DexScreener"""
+    if not REQUESTS_AVAILABLE:
+        return None
+    
+    try:
+        url = f"https://api.dexscreener.com/latest/dex/pairs/base/{pool_address}"
+        resp = requests.get(url, timeout=10)
+        if resp.status_code == 200:
+            data = resp.json()
+            pair = data.get("pair") or (data.get("pairs", [])[0] if data.get("pairs") else None)
+            if pair:
+                return {
+                    "price_usd": float(pair.get("priceUsd", 0) or 0),
+                    "liq_usd": float(pair.get("liquidity", {}).get("usd", 0) or 0),
+                    "vol_24h_usd": float(pair.get("volume", {}).get("h24", 0) or 0),
+                    "vol_1h_usd": float(pair.get("volume", {}).get("h1", 0) or 0),
+                    "txns_24h": int(pair.get("txns", {}).get("h24", {}).get("buys", 0) or 0) + int(pair.get("txns", {}).get("h24", {}).get("sells", 0) or 0),
+                    "txns_1h": int(pair.get("txns", {}).get("h1", {}).get("buys", 0) or 0) + int(pair.get("txns", {}).get("h1", {}).get("sells", 0) or 0),
+                    "fdv": float(pair.get("fdv", 0) or 0),
+                    "mcap": float(pair.get("marketCap", 0) or 0),
+                    "dex_id": pair.get("dexId", "unknown"),
+                    "pair_url": pair.get("url", "")
+                }
+    except Exception as e:
+        print(f"[SCANNER] DexScreener error for {pool_address}: {e}")
+    return None
+
+def calculate_cio_score(metrics, age_hours):
+    """Calculate CIO score based on freshness, liq, vol, txns"""
+    import math
+    
+    # Freshness (0-1): newer is better
+    freshness = max(0, 1 - (age_hours / 48))
+    
+    # Liquidity score (0-1): log scale, ~1M = 1.0
+    liq = metrics.get("liq_usd", 0)
+    liq_score = min(math.log10(liq + 1) / 6, 1.0) if liq > 0 else 0
+    
+    # Volume score (0-1): log scale
+    vol = metrics.get("vol_24h_usd", 0)
+    vol_score = min(math.log10(vol + 1) / 6, 1.0) if vol > 0 else 0
+    
+    # Transaction score (0-1): 200 tx = 1.0
+    tx = metrics.get("txns_24h", 0)
+    tx_score = min(tx / 200, 1.0)
+    
+    # Weighted score
+    score = 100 * (0.45 * freshness + 0.25 * liq_score + 0.20 * vol_score + 0.10 * tx_score)
+    return round(score, 1)
+
 def pool_to_candidate(pool, block_timestamp=None):
-    """Convert pool to CIO candidate format"""
+    """Convert pool to CIO candidate format with enrichment"""
     # Determine base vs quote
     if is_quote_whitelist(pool["token1_symbol"]):
         base_token = {"symbol": pool["token0_symbol"], "address": pool["token0"], "name": pool.get("token0_name", "")}
@@ -177,38 +236,58 @@ def pool_to_candidate(pool, block_timestamp=None):
         base_token = {"symbol": pool["token1_symbol"], "address": pool["token1"], "name": pool.get("token1_name", "")}
         quote_token = {"symbol": pool["token0_symbol"], "address": pool["token0"], "name": pool.get("token0_name", "")}
     else:
-        # Neither is quote whitelist, skip
         return None
     
     # Skip stables as base
     if base_token["symbol"] in ["USDC", "USDT", "DAI", "USDBC"]:
         return None
     
-    age_hours = 0  # Just created
+    age_hours = 0
+    
+    # Enrich from DexScreener
+    enriched = enrich_from_dexscreener(pool["pool_address"])
+    
+    metrics = {
+        "liq_usd": enriched.get("liq_usd", 0) if enriched else 0,
+        "vol_24h_usd": enriched.get("vol_24h_usd", 0) if enriched else 0,
+        "vol_1h_usd": enriched.get("vol_1h_usd", 0) if enriched else 0,
+        "txns_24h": enriched.get("txns_24h", 0) if enriched else 0,
+        "txns_1h": enriched.get("txns_1h", 0) if enriched else 0,
+        "price_usd": enriched.get("price_usd", 0) if enriched else 0,
+        "fdv": enriched.get("fdv", 0) if enriched else 0,
+        "mcap": enriched.get("mcap", 0) if enriched else 0
+    }
+    
+    # Calculate score
+    cio_score = calculate_cio_score(metrics, age_hours)
+    
+    # Risk flags
+    risk_tags = []
+    if metrics["liq_usd"] < 10000:
+        risk_tags.append("low_liquidity")
+    if metrics["vol_24h_usd"] < 5000:
+        risk_tags.append("low_volume")
     
     return {
         "kind": "CIO_CANDIDATE",
         "created_at": pool["detected_at"],
         "age_hours": age_hours,
         "chain": "base",
-        "dex": pool["factory"],
+        "dex": enriched.get("dex_id", pool["factory"]) if enriched else pool["factory"],
         "pool_address": pool["pool_address"],
         "token": base_token,
         "quote_token": quote_token,
         "block_number": pool["block_number"],
         "tx_hash": pool["tx_hash"],
-        "metrics": {
-            "liq_usd": 0,  # Will be enriched later
-            "vol_24h_usd": 0,
-            "price_usd": 0,
-            "mcap_usd": 0
-        },
+        "metrics": metrics,
         "scores": {
-            "cio_score": 50,  # Base score, will be updated
-            "freshness": 1.0
+            "cio_score": cio_score,
+            "freshness": round(1.0, 2)
         },
+        "risk_tags": risk_tags,
         "status": "observing",
-        "next_check": datetime.now().isoformat()
+        "next_check": datetime.now().isoformat(),
+        "enriched": enriched is not None
     }
 
 def scan():

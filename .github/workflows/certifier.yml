@@ -1,16 +1,16 @@
-name: LURKER On-Chain Scanner
+name: LURKER Certifier
 
 on:
   schedule:
-    # Every 5 minutes
-    - cron: '*/5 * * * *'
+    # Every hour
+    - cron: '0 * * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  scan:
+  certify:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -21,16 +21,13 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
-        run: pip install web3 requests
-
-      - name: Run on-chain scanner
-        run: python3 scripts/scanner_onchain.py
+      - name: Run certifier
+        run: python3 scripts/certifier.py
 
       - name: Commit updates
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add state/scan_state.json signals/cio_feed.json
-          git diff --cached --quiet || git commit -m "chore: on-chain scan [skip ci]"
+          git add signals/cio_feed.json signals/pulse_feed.json
+          git diff --cached --quiet || git commit -m "chore: certification evaluation [skip ci]"
           git push
