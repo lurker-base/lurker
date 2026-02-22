@@ -2,11 +2,12 @@
 """
 LURKER Twitter Voice — @LURKER_AI2026
 Mysterious, minimal, masculine voice
-English only. No emojis. Short and enigmatic.
+Tweets based on REAL signals from the scanner
 """
 
 import os
 import sys
+import json
 import random
 from datetime import datetime
 import tweepy
@@ -36,58 +37,129 @@ if not all([API_KEY, API_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET]):
     print("Missing credentials")
     sys.exit(1)
 
-# LURKER voice — mysterious, minimal, masculine
-TWEETS = {
-    "awake": [
-        "awake.",
-        "watching.",
-        "the chain never sleeps.",
-        "i see you.",
-        "listening.",
+# Signal-based mysterious tweets
+# Each category corresponds to a signal tier
+SIGNAL_TWEETS = {
+    "fresh": [  # CIO - fresh detection
+        "new blood detected.",
+        "something emerges from the void.",
+        "the depths birth another.",
+        "fresh shadows on the chain.",
+        "a new presence stirs.",
     ],
-    "depths": [
-        "the depths move.",
-        "something stirs below.",
-        "the surface is quiet.",
-        "deep waters shift.",
-        "the abyss watches back.",
+    "watching": [  # WATCH - observing
+        "watching closely.",
+        "eyes fixed. patience.",
+        "the trial begins.",
+        "under observation.",
+        "not yet. but soon.",
     ],
-    "patterns": [
-        "patterns don't lie. people do.",
-        "rhythms emerge.",
-        "the same story. different faces.",
-        "cycles repeat.",
-        "history rhymes.",
+    "hot": [  # HOTLIST - interesting
+        "patterns converge.",
+        "momentum whispers.",
+        "the signal strengthens.",
+        "attention gathers.",
+        "rhythms align.",
     ],
-    "whispers": [
+    "fast": [  # FAST-CERTIFIED
+        "movement confirmed.",
+        "the pattern holds.",
+        "validation complete.",
+        "survivor identified.",
+        "time proves quality.",
+    ],
+    "certified": [  # CERTIFIED
+        "proven.",
+        "verified by time.",
+        "the ledger remembers the worthy.",
+        "survivors speak truth.",
+        "only the strong remain.",
+    ],
+    "quiet": [  # No signals
+        "silence is information.",
+        "the quiet hours.",
+        "patience. the signal comes.",
+        "stillness before movement.",
+        "they sleep. the chain doesn't.",
+    ],
+    "whispers": [  # General mysterious
         "they whisper. i hear.",
         "secrets travel in blocks.",
         "wallets speak. i listen.",
         "every transaction tells a story.",
-        "the ledger remembers.",
-    ],
-    "silence": [
-        "they sleep. the chain doesn't.",
-        "silence is information.",
-        "stillness before movement.",
-        "the quiet hours.",
-        "patience. the signal comes.",
-    ],
-    "observations": [
-        "new blood detected.",
-        "movement in the dark.",
-        "attention flows where money leads.",
-        "another one joins.",
-        "the network grows.",
-    ],
-    "time": [
-        "hours pass. blocks stack.",
-        "time is measured in confirmations.",
-        "the clock ticks in hashes.",
-        "another block. another breath.",
-        "eternal. immutable.",
+        "the depths move.",
     ],
 }
+
+def load_signals():
+    """Load current signal counts from feeds"""
+    base_path = os.path.join(os.path.dirname(__file__), '..', 'docs', 'data')
+    signals = {
+        'cio': 0,
+        'watch': 0,
+        'hotlist': 0,
+        'fast': 0,
+        'certified': 0
+    }
+    
+    # Try to load from various feed files
+    try:
+        # CIO feed
+        cio_path = os.path.join(base_path, 'cio_feed.json')
+        if os.path.exists(cio_path):
+            with open(cio_path, 'r') as f:
+                data = json.load(f)
+                signals['cio'] = len(data.get('candidates', []))
+    except:
+        pass
+    
+    try:
+        # Watch feed
+        watch_path = os.path.join(base_path, 'watch_feed.json')
+        if os.path.exists(watch_path):
+            with open(watch_path, 'r') as f:
+                data = json.load(f)
+                signals['watch'] = len(data.get('watch', []))
+    except:
+        pass
+    
+    try:
+        # Hotlist feed
+        hot_path = os.path.join(base_path, 'hotlist_feed.json')
+        if os.path.exists(hot_path):
+            with open(hot_path, 'r') as f:
+                data = json.load(f)
+                signals['hotlist'] = len(data.get('hotlist', []))
+    except:
+        pass
+    
+    try:
+        # Fast certified
+        fast_path = os.path.join(base_path, 'fast_certified_feed.json')
+        if os.path.exists(fast_path):
+            with open(fast_path, 'r') as f:
+                data = json.load(f)
+                signals['fast'] = len(data.get('fast_certified', []))
+    except:
+        pass
+    
+    return signals
+
+def get_tweet_for_signals(signals):
+    """Choose appropriate tweet based on signal activity"""
+    # Priority: hotlist > cio > watch > fast > certified > quiet
+    if signals['hotlist'] > 0:
+        return random.choice(SIGNAL_TWEETS["hot"])
+    elif signals['cio'] > 0:
+        return random.choice(SIGNAL_TWEETS["fresh"])
+    elif signals['watch'] > 0:
+        return random.choice(SIGNAL_TWEETS["watching"])
+    elif signals['fast'] > 0:
+        return random.choice(SIGNAL_TWEETS["fast"])
+    elif signals['certified'] > 0:
+        return random.choice(SIGNAL_TWEETS["certified"])
+    else:
+        return random.choice(SIGNAL_TWEETS["quiet"])
 
 def get_client():
     return tweepy.Client(
@@ -103,15 +175,16 @@ def get_me():
     me = client.get_me()
     return me.data.id if me else None
 
-def post_mysterious_tweet():
-    """Post a random mysterious tweet"""
-    category = random.choice(list(TWEETS.keys()))
-    text = random.choice(TWEETS[category])
+def post_signal_tweet():
+    """Post a tweet based on current signals"""
+    signals = load_signals()
+    text = get_tweet_for_signals(signals)
     
     try:
         client = get_client()
         response = client.create_tweet(text=text)
         print(f"Posted: {text}")
+        print(f"Signals: CIO={signals['cio']}, WATCH={signals['watch']}, HOT={signals['hotlist']}")
         print(f"https://twitter.com/i/web/status/{response.data['id']}")
         return True
     except Exception as e:
@@ -119,14 +192,14 @@ def post_mysterious_tweet():
         return False
 
 def check_mentions():
-    """Check for mentions and reply"""
+    """Check for mentions and reply with signal-aware responses"""
     try:
         client = tweepy.Client(bearer_token=BEARER_TOKEN)
         my_id = get_me()
         if not my_id:
             return
         
-        # Get recent mentions (last hour)
+        # Get recent mentions (last 30 min)
         mentions = client.get_users_mentions(
             id=my_id,
             max_results=10,
@@ -137,7 +210,9 @@ def check_mentions():
             return
         
         reply_client = get_client()
+        signals = load_signals()
         
+        # Signal-aware replies
         replies = {
             "hello": ["hello.", "watching.", "i see you."],
             "hi": ["hello.", "watching.", "observing."],
@@ -149,6 +224,8 @@ def check_mentions():
             "buy": ["i do not advise.", "your decision.", "watch. learn. decide."],
             "price": ["numbers change. patterns persist.", "i watch movement.", "the market speaks."],
             "lurker": ["present.", "always here.", "in the depths."],
+            "signal": ["the signal comes.", "patience reveals.", "when the time is right."] if signals['hotlist'] == 0 else ["patterns converge.", "the moment approaches.", "watch closely."],
+            "hot": ["heat detected." if signals['hotlist'] > 0 else "not yet. soon.", "momentum builds." if signals['hotlist'] > 0 else "patience.", "the fire grows." if signals['hotlist'] > 0 else "waiting."],
         }
         
         for mention in mentions.data:
@@ -179,7 +256,7 @@ def main():
     arg = sys.argv[1]
     
     if arg == "--post":
-        post_mysterious_tweet()
+        post_signal_tweet()
     elif arg == "--mentions":
         check_mentions()
     else:
