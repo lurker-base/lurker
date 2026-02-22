@@ -1,6 +1,361 @@
 {
   "schema": "lurker_cio_v1",
-  "last_updated": "2026-02-22T11:00:00Z",
-  "count": 0,
-  "candidates": []
+  "last_updated": "2026-02-22T11:24:22.227980",
+  "source": "dexscreener",
+  "chain": "base",
+  "count": 10,
+  "debug": {
+    "raw_pairs": 85,
+    "rejected_reasons": {
+      "bluechip": 69,
+      "high_mcap_$176,643,879": 1,
+      "high_mcap_$129,075,064": 1,
+      "high_mcap_$57,631,272": 1,
+      "high_mcap_$350,517,574": 1,
+      "high_mcap_$92,034,241": 1,
+      "high_mcap_$894,147,194": 1
+    }
+  },
+  "candidates": [
+    {
+      "kind": "CIO_CANDIDATE",
+      "created_at": "2026-02-20T23:24:22.227567",
+      "age_hours": 36,
+      "chain": "base",
+      "dex": "aerodrome",
+      "pool_address": "0xb30540172F1B37d1eE1d109e49F883E935E69219",
+      "token": {
+        "symbol": "$SOL",
+        "name": "Solana",
+        "address": "0x311935Cd80B76769bF2ecC9D8Ab7635b2139cf82"
+      },
+      "quote_token": {
+        "symbol": "USDC",
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+      },
+      "metrics": {
+        "price_usd": 85.26,
+        "mcap": 8095323.0,
+        "liq_usd": 7845373.5,
+        "vol_24h_usd": 2244179.74,
+        "vol_1h_usd": 41923.31,
+        "txns_24h": 3792,
+        "txns_1h": 83
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.25
+      },
+      "risk_tags": [],
+      "quote_whitelisted": true,
+      "status": "observing",
+      "enriched": true
+    },
+    {
+      "kind": "CIO_CANDIDATE",
+      "created_at": "2026-02-20T23:24:22.227642",
+      "age_hours": 36,
+      "chain": "base",
+      "dex": "aerodrome",
+      "pool_address": "0x34E3334E845d101205394e0Bd8821fDdc7Cd5559",
+      "token": {
+        "symbol": "$REI",
+        "name": "Unit 00 - Rei",
+        "address": "0x6B2504A03ca4D43d0D73776F6aD46dAb2F2a4cFD"
+      },
+      "quote_token": {
+        "symbol": "WETH",
+        "address": "0x4200000000000000000000000000000000000006"
+      },
+      "metrics": {
+        "price_usd": 0.03628,
+        "mcap": 36289426.0,
+        "liq_usd": 2430451.07,
+        "vol_24h_usd": 226212.48,
+        "vol_1h_usd": 1157.59,
+        "txns_24h": 305,
+        "txns_1h": 5
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.25
+      },
+      "risk_tags": [],
+      "quote_whitelisted": true,
+      "status": "observing",
+      "enriched": true
+    },
+    {
+      "kind": "CIO_CANDIDATE",
+      "created_at": "2025-12-22T22:52:39",
+      "age_hours": 36,
+      "chain": "base",
+      "dex": "aerodrome",
+      "pool_address": "0x85f1Aa3a70fEdd1C52705c15BAEd143e675CD626",
+      "token": {
+        "symbol": "$NOCK",
+        "name": "Nock",
+        "address": "0x9B5E262cF9bb04869ab40b19AF91D2dc85761722"
+      },
+      "quote_token": {
+        "symbol": "USDC",
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+      },
+      "metrics": {
+        "price_usd": 0.008986,
+        "mcap": 17444157.0,
+        "liq_usd": 602153.57,
+        "vol_24h_usd": 70589.5,
+        "vol_1h_usd": 977.89,
+        "txns_24h": 118,
+        "txns_1h": 5
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.25
+      },
+      "risk_tags": [],
+      "quote_whitelisted": true,
+      "status": "observing",
+      "enriched": true
+    },
+    {
+      "kind": "CIO_CANDIDATE",
+      "created_at": "2026-02-21T11:24:22.227740",
+      "age_hours": 24,
+      "chain": "base",
+      "dex": "aerodrome",
+      "pool_address": "0x80Cc08712Aa61cE9dc7604F9cE7560A25094B862",
+      "token": {
+        "symbol": "$SAPIEN",
+        "name": "Sapien",
+        "address": "0xC729777d0470F30612B1564Fd96E8Dd26f5814E3"
+      },
+      "quote_token": {
+        "symbol": "USDC",
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+      },
+      "metrics": {
+        "price_usd": 0.09754,
+        "mcap": 24385240.0,
+        "liq_usd": 748856.32,
+        "vol_24h_usd": 387834.81,
+        "vol_1h_usd": 18944.43,
+        "txns_24h": 2638,
+        "txns_1h": 177
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.5
+      },
+      "risk_tags": [],
+      "quote_whitelisted": true,
+      "status": "observing",
+      "enriched": true
+    },
+    {
+      "kind": "CIO_CANDIDATE",
+      "created_at": "2026-02-21T23:24:22.227753",
+      "age_hours": 12,
+      "chain": "base",
+      "dex": "aerodrome",
+      "pool_address": "0xe30d5BF485F7476AC15884a28ffb3C9cEA635DCB",
+      "token": {
+        "symbol": "$AVNT",
+        "name": "Avantis",
+        "address": "0x696F9436B67233384889472Cd7cD58A6fB5DF4f1"
+      },
+      "quote_token": {
+        "symbol": "USDC",
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+      },
+      "metrics": {
+        "price_usd": 0.186,
+        "mcap": 48036712.0,
+        "liq_usd": 802471.43,
+        "vol_24h_usd": 102356.01,
+        "vol_1h_usd": 9963.48,
+        "txns_24h": 1483,
+        "txns_1h": 84
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.75
+      },
+      "risk_tags": [],
+      "quote_whitelisted": true,
+      "status": "observing",
+      "enriched": true
+    },
+    {
+      "kind": "CIO_CANDIDATE",
+      "created_at": "2026-02-21T11:24:22.227774",
+      "age_hours": 24,
+      "chain": "base",
+      "dex": "aerodrome",
+      "pool_address": "0x659bE70647B0f63217D60e077F4417b1eCC65064",
+      "token": {
+        "symbol": "$FUN",
+        "name": "Sport.fun",
+        "address": "0x16EE7ecAc70d1028E7712751E2Ee6BA808a7dd92"
+      },
+      "quote_token": {
+        "symbol": "USDC",
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+      },
+      "metrics": {
+        "price_usd": 0.03735,
+        "mcap": 6649448.0,
+        "liq_usd": 542672.15,
+        "vol_24h_usd": 209498.75,
+        "vol_1h_usd": 10091.11,
+        "txns_24h": 4303,
+        "txns_1h": 227
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.5
+      },
+      "risk_tags": [],
+      "quote_whitelisted": true,
+      "status": "observing",
+      "enriched": true
+    },
+    {
+      "kind": "CIO_CANDIDATE",
+      "created_at": "2026-02-21T11:24:22.227808",
+      "age_hours": 24,
+      "chain": "base",
+      "dex": "aerodrome",
+      "pool_address": "0xff862675c47B6a2C9072DCBe2f37a78A445c4f37",
+      "token": {
+        "symbol": "$CARV",
+        "name": "CARV",
+        "address": "0xc08Cd26474722cE93F4D0c34D16201461c10AA8C"
+      },
+      "quote_token": {
+        "symbol": "USDC",
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+      },
+      "metrics": {
+        "price_usd": 0.06479,
+        "mcap": 32891208.0,
+        "liq_usd": 298095.21,
+        "vol_24h_usd": 456380.96,
+        "vol_1h_usd": 19146.48,
+        "txns_24h": 5281,
+        "txns_1h": 239
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.5
+      },
+      "risk_tags": [],
+      "quote_whitelisted": true,
+      "status": "observing",
+      "enriched": true
+    },
+    {
+      "kind": "CIO_CANDIDATE",
+      "created_at": "2026-02-21T11:24:22.227824",
+      "age_hours": 24,
+      "chain": "base",
+      "dex": "aerodrome",
+      "pool_address": "0x5e3791F68EbCEAC82788f3becAb154C15141A2f4",
+      "token": {
+        "symbol": "$RECALL",
+        "name": "Recall",
+        "address": "0x1f16e03C1a5908818F47f6EE7bB16690b40D0671"
+      },
+      "quote_token": {
+        "symbol": "USDC",
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+      },
+      "metrics": {
+        "price_usd": 0.05459,
+        "mcap": 12329989.0,
+        "liq_usd": 377212.13,
+        "vol_24h_usd": 179984.62,
+        "vol_1h_usd": 5920.21,
+        "txns_24h": 4589,
+        "txns_1h": 190
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.5
+      },
+      "risk_tags": [],
+      "quote_whitelisted": true,
+      "status": "observing",
+      "enriched": true
+    },
+    {
+      "kind": "CIO_CANDIDATE",
+      "created_at": "2026-02-20T23:24:22.227836",
+      "age_hours": 36,
+      "chain": "base",
+      "dex": "aerodrome",
+      "pool_address": "0x5E4efb192Dfd5a267e5bEDac155FD9b79df82496",
+      "token": {
+        "symbol": "$ELSA",
+        "name": "Elsa",
+        "address": "0x29cC30f9D113B356Ce408667aa6433589CeCBDcA"
+      },
+      "quote_token": {
+        "symbol": "USDC",
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+      },
+      "metrics": {
+        "price_usd": 0.07377,
+        "mcap": 16892759.0,
+        "liq_usd": 506960.8,
+        "vol_24h_usd": 520085.69,
+        "vol_1h_usd": 6626.18,
+        "txns_24h": 3862,
+        "txns_1h": 87
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.25
+      },
+      "risk_tags": [],
+      "quote_whitelisted": true,
+      "status": "observing",
+      "enriched": true
+    },
+    {
+      "kind": "CIO_CANDIDATE",
+      "created_at": "2025-11-12T18:00:43",
+      "age_hours": 36,
+      "chain": "base",
+      "dex": "aerodrome",
+      "pool_address": "0x566beE7EF7b39f29d150AB3be6b6242C17CC5A31",
+      "token": {
+        "symbol": "$EDEL",
+        "name": "Edel",
+        "address": "0xFb31f85A8367210B2e4Ed2360D2dA9Dc2D2Ccc95"
+      },
+      "quote_token": {
+        "symbol": "WETH",
+        "address": "0x4200000000000000000000000000000000000006"
+      },
+      "metrics": {
+        "price_usd": 0.006413,
+        "mcap": 3637092.0,
+        "liq_usd": 569023.64,
+        "vol_24h_usd": 27317.25,
+        "vol_1h_usd": 358.91,
+        "txns_24h": 288,
+        "txns_1h": 6
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.25
+      },
+      "risk_tags": [],
+      "quote_whitelisted": true,
+      "status": "observing",
+      "enriched": true
+    }
+  ]
 }
