@@ -17,12 +17,12 @@ CIO_FILE = Path(__file__).parent.parent / "signals" / "cio_feed.json"
 WATCH_FILE = Path(__file__).parent.parent / "signals" / "watch_feed.json"
 STATE_FILE = Path(__file__).parent.parent / "state" / "watch_state.json"
 
-# WATCH criteria (10-30 min window) - LAUNCH MODE
+# WATCH criteria (10-30 min window) - ULTRA LAUNCH MODE
 MIN_AGE_MINUTES = 10
 MAX_AGE_MINUTES = 30
-MIN_LIQ_USD = 4_000      # LAUNCH MODE: $4k (was $8k)
-MIN_TX_5M = 8            # LAUNCH MODE: 8 tx (was 15)
-MAX_CHECKS = 2           # LAUNCH MODE: 2 checks (was 3)
+MIN_LIQ_USD = 2_500      # ULTRA: $2.5k (was $4k, originally $8k)
+MIN_TX_5M = 5            # ULTRA: 5 tx (was 8)
+MAX_CHECKS = 2
 
 def now_ms():
     return int(time.time() * 1000)
