@@ -1,8 +1,35 @@
 {
-  "signal": "TEST_GITHUB_SECRETS",
-  "token": "LURKER_LIVE",
-  "message": "🔔 <b>LURKER SIGNAL — TEST FINAL</b>\n\nGitHub Secrets = OK\nWorkflow = OK\nTelegram = OK\n\nPipeline GitHub-Only 100% opérationnel.\n\nProchain signal = LIVE",
-  "score": 100,
-  "timestamp": "2026-02-22T08:55:00Z",
-  "source": "github_actions_live_test"
+  "kind": "LURKER_SIGNAL",
+  "version": "1.0",
+  "ts_utc": "2026-02-22T08:00:00Z",
+  "signal_id": "LURK-001",
+  "chain": "base",
+  "token": {
+    "name": "LURKER",
+    "symbol": "$LURKER",
+    "address": "0x...",
+    "pair_url": "https://dexscreener.com/base/0x..."
+  },
+  "scores": {
+    "confidence": 0,
+    "rarity": "3-5/day",
+    "risk": "high"
+  },
+  "metrics": {
+    "mcap_usd": 0,
+    "liq_usd": 0,
+    "vol_5m_usd": 0,
+    "buyers_5m": 0,
+    "sellers_5m": 0,
+    "age_minutes": 0
+  },
+  "entry": {
+    "price_usd": 0,
+    "target_1": 0,
+    "target_2": 0,
+    "stop": 0
+  },
+  "message": "🔔 LURKER SIGNAL — Format Template\n\nToken: $SYMBOL (Base)\nConf: X/100 | MC: $X | Liq: $X\n\nEntry: $X | Target: $X | Stop: $X\n\nDex: https://dexscreener.com/base/...\nRisk: HIGH — DYOR",
+  "source": "manual_assist",
+  "status": "draft"
 }

@@ -1,0 +1,8 @@
+{
+  "_schema": "daily_count_v1",
+  "description": "Compteur de signaux pour rarity gate (max 5/jour)",
+  "date_utc": "2026-02-22",
+  "count": 0,
+  "max_per_day": 5,
+  "reset_hour_utc": 0
+}

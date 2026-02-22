@@ -10,65 +10,49 @@ on:
   push:
     paths:
       - "signals/latest.json"
-      - "data/signals.json"
 
 jobs:
-  publish:
+  validate-and-publish:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Extract signal message
-        id: msg
+      - name: Validate signal (anti-doublon + rarity gate)
+        id: validate
         run: |
-          FILE="${{ github.event.inputs.signal_file || 'signals/latest.json' }}"
-          if [ ! -f "$FILE" ]; then
-            echo "text=⚠️ LURKER: Signal file not found ($FILE)" >> $GITHUB_OUTPUT
+          python3 scripts/validate_signal.py signals/latest.json
+          if [ $? -ne 0 ]; then
+            echo "status=REJECTED" >> $GITHUB_OUTPUT
             exit 0
           fi
-          
+          echo "status=VALIDATED" >> $GITHUB_OUTPUT
+
+      - name: Skip if rejected
+        if: steps.validate.outputs.status == 'REJECTED'
+        run: |
+          echo "Signal rejected by validator — stopping."
+          exit 0
+
+      - name: Extract signal message
+        if: steps.validate.outputs.status == 'VALIDATED'
+        id: msg
+        run: |
           TEXT=$(python3 - << 'PY'
-          import json, os, sys
-          file = os.environ.get("SIGNAL_FILE", "signals/latest.json")
-          try:
-              with open(file, "r", encoding="utf-8") as f:
-                  data = json.load(f)
-          except Exception as e:
-              print(f"⚠️ Error reading signal: {e}")
-              sys.exit(0)
-          
-          # Try to extract message
-          msg = None
-          if isinstance(data, dict):
-              # Priority fields
-              for k in ["message", "text", "title", "summary", "signal"]:
-                  if k in data and isinstance(data[k], str) and data[k].strip():
-                      msg = data[k].strip()
-                      break
-              # Fallback: construct from token data
-              if not msg and "token" in data:
-                  token = data.get("token", "Unknown")
-                  score = data.get("score", "N/A")
-                  msg = f"🔔 LURKER Signal: {token} (Score: {score})"
-          elif isinstance(data, list) and data:
-              item = data[0]
-              if isinstance(item, dict):
-                  msg = item.get("message") or item.get("text") or f"New signal: {item.get('token', 'Unknown')}"
-          
-          if not msg:
-              msg = "🔔 LURKER: New signal detected (see repo for details)"
-          
+          import json
+          with open("signals/latest.json", "r", encoding="utf-8") as f:
+              data = json.load(f)
+          msg = data.get("message", "🔔 LURKER: New signal")
           print(msg)
           PY)
-          
           echo "text<<EOF" >> $GITHUB_OUTPUT
           echo "$TEXT" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
-        env:
-          SIGNAL_FILE: ${{ github.event.inputs.signal_file || 'signals/latest.json' }}
 
       - name: Send to Telegram (with proof)
+        if: steps.validate.outputs.status == 'VALIDATED'
         run: |
           set -euo pipefail
           echo "Sending to chat_id=${TELEGRAM_CHAT_ID}"
@@ -83,9 +67,18 @@ jobs:
           if not j.get("ok"):
               print("Telegram API returned ok=false:", j, file=sys.stderr)
               sys.exit(1)
-          print("Telegram OK. message_id =", j["result"]["message_id"])
+          print("✅ Telegram OK. message_id =", j["result"]["message_id"])
           PY
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           TEXT: ${{ steps.msg.outputs.text }}
+
+      - name: Commit updated state files
+        if: steps.validate.outputs.status == 'VALIDATED'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add state/posted.json state/daily_count.json signals/latest.json
+          git diff --cached --quiet || git commit -m "chore: update signal state [skip ci]"
+          git push

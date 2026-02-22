@@ -1,0 +1,6 @@
+{
+  "_schema": "posted_tokens_v1",
+  "description": "Tokens déjà signalés (anti-doublon). Expire après 7 jours.",
+  "tokens": {},
+  "last_pruned": "2026-02-22T00:00:00Z"
+}
