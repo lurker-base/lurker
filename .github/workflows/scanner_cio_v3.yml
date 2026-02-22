@@ -48,9 +48,3 @@ jobs:
           else
             python3 scripts/health_check.py || true
           fi
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add signals/cio_feed.json state/token_registry.json || true
-          git diff --cached --quiet || git commit -m "chore: CIO ultra launch scan [skip ci]"
-          git push || echo "Nothing to push"
