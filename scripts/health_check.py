@@ -1,21 +1,28 @@
 #!/usr/bin/env python3
 """
-LURKER Health Check - Streak-based validation
+LURKER Health Check - Streak-based validation with freshness checks
 Fails on consecutive empty feeds (schedule) or immediately (manual)
+Also fails if feed is stale (>15 min old) even if non-empty
 """
 import json
 import sys
-from datetime import datetime, timezone
+import os
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 FEED_FILE = Path("signals/cio_feed.json")
 STATE_FILE = Path("state/health_state.json")
+STATE_TEMP = Path("state/health_state.json.tmp")
 MAX_EMPTY_STREAK = 2  # Fail after 2 consecutive empty feeds
+MAX_FEED_AGE_MINUTES = 15  # Feed must be fresher than this
 
 def load_state():
     if STATE_FILE.exists():
-        with open(STATE_FILE) as f:
-            return json.load(f)
+        try:
+            with open(STATE_FILE) as f:
+                return json.load(f)
+        except:
+            pass
     return {
         "schema": "lurker_health_v1",
         "empty_streak": 0,
@@ -24,15 +31,30 @@ def load_state():
     }
 
 def save_state(state):
+    """Atomic write to prevent race conditions"""
     STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
-    with open(STATE_FILE, 'w') as f:
+    with open(STATE_TEMP, 'w') as f:
         json.dump(state, f, indent=2)
+    os.replace(STATE_TEMP, STATE_FILE)  # Atomic rename
+
+def parse_timestamp(ts_str):
+    """Parse ISO timestamp"""
+    if not ts_str:
+        return None
+    try:
+        # Handle various ISO formats
+        ts_str = ts_str.replace('Z', '+00:00')
+        return datetime.fromisoformat(ts_str)
+    except:
+        return None
 
 def validate_feed(is_manual=False):
-    """Validate feed with streak logic"""
+    """Validate feed with streak logic and freshness checks"""
     state = load_state()
+    now = datetime.now(timezone.utc)
     
     print("=== LURKER Health Check ===")
+    print(f"Current time: {now.isoformat()}")
     
     # Check 1: File exists
     if not FEED_FILE.exists():
@@ -58,12 +80,29 @@ def validate_feed(is_manual=False):
         save_state(state)
         return False
     
-    # Check 4: Timestamp freshness
-    updated_at = feed.get("meta", {}).get("updated_at")
-    if not updated_at:
-        print("⚠️ WARNING: No updated_at timestamp")
-    else:
-        print(f"📅 Feed timestamp: {updated_at}")
+    # Check 4: Timestamp freshness (CRITICAL)
+    generated_at = feed.get("meta", {}).get("generated_at") or feed.get("meta", {}).get("updated_at")
+    generated_ts = parse_timestamp(generated_at)
+    
+    if not generated_ts:
+        print("❌ FAIL: No valid timestamp in feed")
+        state["empty_streak"] += 1
+        save_state(state)
+        return False
+    
+    age_minutes = (now - generated_ts).total_seconds() / 60
+    print(f"📅 Feed timestamp: {generated_at}")
+    print(f"⏱️  Feed age: {age_minutes:.1f} minutes")
+    
+    # CRITICAL: Fail if feed is stale (even if non-empty!)
+    if age_minutes > MAX_FEED_AGE_MINUTES:
+        print(f"❌ FAIL: Feed is stale ({age_minutes:.1f}min > {MAX_FEED_AGE_MINUTES}min max)")
+        print("   This means the scanner hasn't updated the feed recently")
+        state["empty_streak"] += 1
+        save_state(state)
+        return False
+    
+    print(f"✅ Feed is fresh (<{MAX_FEED_AGE_MINUTES}min)")
     
     # Check 5: Count
     count = len(feed.get("candidates", []))
@@ -74,7 +113,7 @@ def validate_feed(is_manual=False):
     if error:
         print(f"⚠️ Scanner reported error: {error[:200]}")
     
-    # Streak logic
+    # Streak logic with freshness validation
     if count == 0:
         state["empty_streak"] += 1
         print(f"⚠️ Empty feed detected (streak: {state['empty_streak']})")
@@ -89,17 +128,18 @@ def validate_feed(is_manual=False):
             return False
         else:
             print("✅ WARNING only (schedule mode, streak < max)")
-            state["last_check"] = datetime.now(timezone.utc).isoformat()
+            state["last_check"] = now.isoformat()
             state["last_count"] = count
             save_state(state)
             return True  # Allow to continue
     else:
-        # Reset streak on success
+        # Reset streak ONLY if feed is fresh (verified above) and count > 0
         state["empty_streak"] = 0
-        state["last_check"] = datetime.now(timezone.utc).isoformat()
+        state["last_check"] = now.isoformat()
         state["last_count"] = count
+        state["last_generated_at"] = generated_at
         save_state(state)
-        print(f"✅ Feed healthy: {count} candidates")
+        print(f"✅ Feed healthy: {count} candidates, streak reset to 0")
         return True
 
 if __name__ == "__main__":
