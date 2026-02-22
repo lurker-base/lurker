@@ -11,10 +11,9 @@ from pathlib import Path
 
 # Config
 FEED_FILE = Path(__file__).parent.parent / "signals" / "live_feed.json"
-MIN_LIQUIDITY = 50000  # $50k min
-MIN_VOLUME_24H = 10000  # $10k min
-MAX_AGE_HOURS = 24  # Only pairs created < 24h
-TOP_PAIRS = 10  # Keep top 10
+MIN_LIQUIDITY = 1000   # $1k min (lowered for testing)
+MIN_VOLUME_24H = 500    # $500 min (lowered for testing)
+TOP_PAIRS = 20  # Keep top 20
 
 def fetch_base_pairs():
     """Fetch Base pairs from DexScreener via search"""
@@ -23,6 +22,7 @@ def fetch_base_pairs():
         all_pairs = []
         queries = ["base", "eth", "usdc"]
         
+        queries = ["aerodrome", "clanker", "degen", "brett", "base"]  # More active Base tokens
         for q in queries:
             url = f"https://api.dexscreener.com/latest/dex/search?q={q}"
             resp = requests.get(url, timeout=15)
@@ -32,7 +32,8 @@ def fetch_base_pairs():
                 # Filter for Base chain only
                 base_pairs = [p for p in pairs if p.get("chainId") == "base"]
                 all_pairs.extend(base_pairs)
-            time.sleep(0.5)  # Rate limit
+                print(f"[SCANNER] Query '{q}': {len(base_pairs)} Base pairs")
+            time.sleep(0.3)  # Rate limit
         
         # Deduplicate by pair address
         seen = set()
@@ -92,24 +93,37 @@ def calculate_confidence(pair):
 def pair_to_signal(pair):
     """Convert DexScreener pair to LURKER signal format"""
     base_token = pair.get("baseToken", {})
-    quote_token = pair.get("quoteToken", {})
     
     # Use base token as the main signal
     token_symbol = base_token.get("symbol", "UNKNOWN")
     token_address = base_token.get("address", "")
     
-    # Skip if no address
+    # Skip if no address or if it's a stable/common pair
     if not token_address:
-        return None
+        return None, "no_address"
+    
+    # Skip if symbol is common stable
+    if token_symbol in ["USDC", "USDT", "DAI", "WETH", "WBTC"]:
+        return None, "stable_token"
+    
+    liq = pair.get("liquidity", {}).get("usd", 0) or 0
+    vol = pair.get("volume", {}).get("h24", 0) or 0
+    
+    # Skip low liquidity
+    if liq < MIN_LIQUIDITY:
+        return None, f"low_liq_${liq:,.0f}"
+    
+    # Skip low volume
+    if vol < MIN_VOLUME_24H:
+        return None, f"low_vol_${vol:,.0f}"
     
     confidence = calculate_confidence(pair)
     
-    # Skip low confidence
-    if confidence < 60:
-        return None
+    # Temporarily lower confidence threshold for testing
+    if confidence < 30:
+        return None, f"low_confidence_{confidence}"
     
     # Determine risk
-    liq = pair.get("liquidity", {}).get("usd", 0) or 0
     if liq > 200000:
         risk = "low"
     elif liq > 100000:
@@ -137,28 +151,37 @@ def pair_to_signal(pair):
         },
         "metrics": {
             "price_usd": float(price) if price else 0,
-            "mcap_usd": 0,  # Would need separate call
+            "mcap_usd": 0,
             "liq_usd": liq,
-            "vol_24h_usd": pair.get("volume", {}).get("h24", 0) or 0
+            "vol_24h_usd": vol
         },
         "dex": pair.get("dexId", "unknown"),
         "pair_address": pair.get("pairAddress", ""),
         "scanner": "dexscreener"
-    }
+    }, None
 
 def update_feed():
     """Main update function"""
     print("[SCANNER] Fetching Base pairs from DexScreener...")
     
     pairs = fetch_base_pairs()
-    print(f"[SCANNER] Got {len(pairs)} pairs")
+    print(f"[SCANNER] Raw pairs from API: {len(pairs)}")
+    
+    # Debug: show first few
+    for p in pairs[:3]:
+        print(f"  - {p.get('baseToken',{}).get('symbol')}: liq=${p.get('liquidity',{}).get('usd',0):,.0f}")
     
     # Convert to signals
     signals = []
+    rejected = {}
     for pair in pairs:
-        signal = pair_to_signal(pair)
+        signal, reason = pair_to_signal(pair)
         if signal:
             signals.append(signal)
+        else:
+            rejected[reason] = rejected.get(reason, 0) + 1
+    
+    print(f"[SCANNER] Rejected: {rejected}")
     
     # Sort by confidence
     signals.sort(key=lambda x: x["scores"]["confidence"], reverse=True)
@@ -174,7 +197,11 @@ def update_feed():
             "updated_at": datetime.now().isoformat(),
             "source": "dexscreener",
             "chain": "base",
-            "count": len(signals)
+            "count": len(signals),
+            "debug": {
+                "raw_pairs": len(pairs),
+                "rejected": rejected
+            }
         },
         "signals": signals
     }
