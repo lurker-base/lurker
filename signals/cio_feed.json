@@ -1,58 +1,20 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-02-22T12:55:39.784000+00:00",
-    "count": 1,
+    "updated_at": "2026-02-22T14:56:06.039000+00:00",
+    "generated_at": "2026-02-22T14:56:06.040000+00:00",
+    "count": 0,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 50,
       "min_tx_5m": 2,
       "max_age_min": 60
     },
-    "risk_distribution": {
-      "medium": 1
-    },
+    "risk_distribution": {},
     "rejected": {
-      "low_tx": 2,
-      "too_old": 5,
-      "duplicate": 1
-    }
+      "too_old": 6
+    },
+    "source": "ultra_launch_scanner"
   },
-  "candidates": [
-    {
-      "token": {
-        "address": "0x4de005e383f34d0211a7e230a0778aef6d5c7b07",
-        "symbol": "0xDP",
-        "name": "0xDirectPing"
-      },
-      "pair": {
-        "address": "0xf709ef969e672ab7d3e7b535fa65ee373272b04daf2e5a2fcc25a4b7b34c178d",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 20582.21,
-        "vol_5m_usd": 17880.57,
-        "vol_1h_usd": 160547.96,
-        "txns_5m": 1698,
-        "price_usd": "0.0000001965"
-      },
-      "timestamps": {
-        "pair_created_at": "2026-02-22T12:09:23+00:00",
-        "token_first_seen": "2026-02-22T12:55:39.782000+00:00",
-        "age_minutes": 46.3,
-        "age_hours": 0.77
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.99
-      },
-      "risks": [
-        "dumping"
-      ],
-      "risk_level": "medium",
-      "source": "profiles",
-      "status": "observing"
-    }
-  ]
+  "candidates": []
 }
