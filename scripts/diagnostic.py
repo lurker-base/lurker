@@ -21,7 +21,16 @@ def check_feed(path, name):
         meta = data.get("meta", {})
         updated = meta.get("updated_at", "")
         count = meta.get("count", 0)
-        status = meta.get("status", "unknown")
+        status = meta.get("status")
+        
+        # Backward compatibility: infer status if not present
+        if not status:
+            if meta.get("error"):
+                status = "error"
+            elif count == 0:
+                status = "calm"
+            else:
+                status = "ok"
         
         # Calculate age
         try:
@@ -82,7 +91,7 @@ def main():
     errors = [r for r in results if r["status"] == "ERROR"]
     degraded = [r for r in results if r["status"] == "DEGRADED"]
     missing = [r for r in results if r["status"] == "MISSING"]
-    stale = [r for r in results if r.get("age_min", 0) > 30]
+    stale = [r for r in results if r.get("age_min") and r["age_min"] > 30]
     
     if errors:
         print(f"🔴 ERRORS: {len(errors)} feed(s) in error state")
