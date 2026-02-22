@@ -1,0 +1,81 @@
+name: Publish LURKER Signal to Telegram
+
+on:
+  workflow_dispatch:
+    inputs:
+      signal_file:
+        description: 'Path to signal JSON file'
+        required: true
+        default: 'signals/latest.json'
+  push:
+    paths:
+      - "signals/latest.json"
+      - "data/signals.json"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Extract signal message
+        id: msg
+        run: |
+          FILE="${{ github.event.inputs.signal_file || 'signals/latest.json' }}"
+          if [ ! -f "$FILE" ]; then
+            echo "text=⚠️ LURKER: Signal file not found ($FILE)" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          
+          TEXT=$(python3 - << 'PY'
+          import json, os, sys
+          file = os.environ.get("SIGNAL_FILE", "signals/latest.json")
+          try:
+              with open(file, "r", encoding="utf-8") as f:
+                  data = json.load(f)
+          except Exception as e:
+              print(f"⚠️ Error reading signal: {e}")
+              sys.exit(0)
+          
+          # Try to extract message
+          msg = None
+          if isinstance(data, dict):
+              # Priority fields
+              for k in ["message", "text", "title", "summary", "signal"]:
+                  if k in data and isinstance(data[k], str) and data[k].strip():
+                      msg = data[k].strip()
+                      break
+              # Fallback: construct from token data
+              if not msg and "token" in data:
+                  token = data.get("token", "Unknown")
+                  score = data.get("score", "N/A")
+                  msg = f"🔔 LURKER Signal: {token} (Score: {score})"
+          elif isinstance(data, list) and data:
+              item = data[0]
+              if isinstance(item, dict):
+                  msg = item.get("message") or item.get("text") or f"New signal: {item.get('token', 'Unknown')}"
+          
+          if not msg:
+              msg = "🔔 LURKER: New signal detected (see repo for details)"
+          
+          print(msg)
+          PY)
+          
+          echo "text<<EOF" >> $GITHUB_OUTPUT
+          echo "$TEXT" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+        env:
+          SIGNAL_FILE: ${{ github.event.inputs.signal_file || 'signals/latest.json' }}
+
+      - name: Send to Telegram
+        run: |
+          curl -sS -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            -d "chat_id=${TELEGRAM_CHAT_ID}" \
+            --data-urlencode "text=${TEXT}" \
+            -d "disable_web_page_preview=true" \
+            -d "parse_mode=HTML"
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TEXT: ${{ steps.msg.outputs.text }}
