@@ -8,8 +8,49 @@
     "min_profit_percent": 10,
     "max_drawdown_percent": 30
   },
-  "signals": [],
-  "daily_summary": {},
+  "signals": [
+    {
+      "date": "2026-02-22T14:30:00Z",
+      "token": "$TEST",
+      "address": "0x1bc0c42215582d5A085795f4baDbaC3ff36d1Bcb",
+      "entry_price": 0.000045,
+      "current_price": 0.000045,
+      "perf_percent": 0,
+      "verdict": "NEUTRAL",
+      "confidence": 75,
+      "updated_at": "2026-02-22T14:30:00Z"
+    },
+    {
+      "date": "2026-02-22T12:15:00Z",
+      "token": "$EXAMPLE",
+      "address": "0x1f5ffcFb4EF5d976D55438F2988Ee90bCB2AeB07",
+      "entry_price": 0.00012,
+      "current_price": 0.00012,
+      "perf_percent": 0,
+      "verdict": "NEUTRAL",
+      "confidence": 82,
+      "updated_at": "2026-02-22T12:15:00Z"
+    },
+    {
+      "date": "2026-02-22T09:35:00Z",
+      "token": "$LURKER",
+      "address": "0xDRYRUN",
+      "entry_price": 0.00000145,
+      "current_price": 0.00000145,
+      "perf_percent": 0,
+      "verdict": "DRY-RUN",
+      "confidence": 78,
+      "updated_at": "2026-02-22T09:35:00Z"
+    }
+  ],
+  "daily_summary": {
+    "total_signals": 3,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0,
+    "avg_perf": 0,
+    "last_updated": "2026-02-22T14:30:00Z"
+  },
   "decision": {
     "status": "pending",
     "date": null,
