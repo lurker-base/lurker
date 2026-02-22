@@ -1,35 +1,31 @@
 {
   "kind": "LURKER_SIGNAL",
-  "version": "1.0",
-  "ts_utc": "2026-02-22T08:00:00Z",
-  "signal_id": "LURK-001",
+  "status": "ready",
+  "ts_utc": "2026-02-22T09:35:00Z",
   "chain": "base",
   "token": {
     "name": "LURKER",
     "symbol": "$LURKER",
     "address": "0x...",
-    "pair_url": "https://dexscreener.com/base/0x..."
+    "pair_url": "https://dexscreener.com/base/..."
   },
   "scores": {
-    "confidence": 0,
+    "confidence": 78,
     "rarity": "3-5/day",
     "risk": "high"
   },
   "metrics": {
-    "mcap_usd": 0,
-    "liq_usd": 0,
-    "vol_5m_usd": 0,
-    "buyers_5m": 0,
-    "sellers_5m": 0,
-    "age_minutes": 0
+    "price_usd": 0.00000145,
+    "mcap_usd": 485000,
+    "liq_usd": 92000,
+    "vol_5m_usd": 15000
   },
-  "entry": {
-    "price_usd": 0,
-    "target_1": 0,
-    "target_2": 0,
-    "stop": 0
+  "trade": {
+    "entry": "0.00000125 - 0.00000135",
+    "targets": ["0.00000160", "0.00000185"],
+    "stop": "0.00000105"
   },
-  "message": "🔔 LURKER SIGNAL — Format Template\n\nToken: $SYMBOL (Base)\nConf: X/100 | MC: $X | Liq: $X\n\nEntry: $X | Target: $X | Stop: $X\n\nDex: https://dexscreener.com/base/...\nRisk: HIGH — DYOR",
+  "message": "🔔 LURKER ALPHA — $LURKER (Base)\n\nConf: 78/100 | Risk: HIGH\nPrice: $0.00000145 | MC: $485k | Liq: $92k\n\n📈 Entry: 0.00000125 – 0.00000135\n🎯 Targets:\n  • TP1: 1.60 (+10%)\n  • TP2: 1.85 (+28%)\n🛑 Stop: 1.05 (-23%)\n\n⏱️ Momentum-based | Short-term setup\n\n🔗 Dex: https://dexscreener.com/base/...\n⚠️ Rarity: 3–5/day | DYOR",
   "source": "manual_assist",
-  "status": "draft"
+  "signal_number": "#2"
 }
