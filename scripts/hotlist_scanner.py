@@ -252,8 +252,30 @@ def scan():
     
     # Load CIO feed
     if not CIO_FILE.exists():
-        print("[HOTLIST] No CIO feed found")
-        return
+        print("[HOTLIST] ⚠️ No CIO feed found — creating empty hotlist feed")
+        feed = {
+            "schema": "lurker_hotlist_v1",
+            "meta": {
+                "updated_at": iso(),
+                "status": "degraded",
+                "source": "cio_30-60min_filter",
+                "count": 0,
+                "criteria": {
+                    "age_minutes": f"{MIN_AGE_MINUTES}-{MAX_AGE_MINUTES}",
+                    "min_liq_usd": MIN_LIQ_USD,
+                    "min_tx_1h": MIN_TX_1H,
+                    "min_vol_1h": MIN_VOL_1H,
+                    "max_sell_buy_ratio": MAX_SELL_BUY_RATIO
+                },
+                "rejected": {"no_cio_feed": 1}
+            },
+            "hotlist": []
+        }
+        HOTLIST_FILE.parent.mkdir(parents=True, exist_ok=True)
+        with open(HOTLIST_FILE, 'w', encoding='utf-8') as f:
+            json.dump(feed, f, ensure_ascii=False, indent=2)
+        print(f"[HOTLIST] ✅ Created empty feed (no CIO available)")
+        return 0
     
     with open(CIO_FILE) as f:
         cio_feed = json.load(f)
@@ -285,11 +307,18 @@ def scan():
     # Keep top 20
     hotlist = hotlist[:20]
     
+    # Determine status
+    if len(hotlist) > 0:
+        status = "ok"
+    else:
+        status = "calm"  # No candidates in window
+    
     # Build feed
     feed = {
         "schema": "lurker_hotlist_v1",
         "meta": {
             "updated_at": iso(),
+            "status": status,
             "source": "cio_30-60min_filter",
             "count": len(hotlist),
             "criteria": {
@@ -323,13 +352,14 @@ def scan():
     return 0
 
 def write_fail(msg: str):
-    """Write empty feed with error - never crash GitHub Actions"""
+    """Write empty feed with error - crash = exit 1"""
     import traceback
     HOTLIST_FILE.parent.mkdir(parents=True, exist_ok=True)
     payload = {
         "schema": "lurker_hotlist_v1",
         "meta": {
             "updated_at": iso(),
+            "status": "error",
             "count": 0,
             "error": msg[:500],
             "trace": traceback.format_exc()[-500:]
@@ -345,4 +375,4 @@ if __name__ == "__main__":
         sys.exit(exit_code if exit_code is not None else 0)
     except Exception as e:
         write_fail(f"hotlist scanner crashed: {repr(e)}")
-        sys.exit(0)
+        sys.exit(1)  # Exit 1 for total crash

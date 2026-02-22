@@ -21,6 +21,7 @@ def check_feed(path, name):
         meta = data.get("meta", {})
         updated = meta.get("updated_at", "")
         count = meta.get("count", 0)
+        status = meta.get("status", "unknown")
         
         # Calculate age
         try:
@@ -31,7 +32,7 @@ def check_feed(path, name):
         
         return {
             "name": name,
-            "status": "OK",
+            "status": status.upper(),
             "count": count,
             "age_min": round(age_min, 1) if age_min else None,
             "updated": updated
@@ -57,42 +58,63 @@ def main():
         result = check_feed(path, name)
         results.append(result)
         
-        status_icon = "✅" if result["status"] == "OK" else "❌"
-        age_str = f"({result['age_min']}m ago)" if result["age_min"] else ""
-        print(f"{status_icon} {result['name']}: {result['count']} tokens {age_str}")
+        status = result["status"]
+        if status in ["OK", "CALM"]:
+            status_icon = "✅"
+        elif status == "DEGRADED":
+            status_icon = "⚠️"
+        elif status in ["ERROR", "MISSING"]:
+            status_icon = "❌"
+        else:
+            status_icon = "❓"
         
-        if result["status"] not in ["OK", "MISSING"]:
-            print(f"   ⚠️  {result['status']}")
+        age_str = f"({result['age_min']}m ago)" if result["age_min"] else ""
+        print(f"{status_icon} {result['name']}: {status} | {result['count']} tokens {age_str}")
+        
+        if status == "ERROR":
+            print(f"   🔴 {result['status']} — check logs")
     
     print("\n" + "=" * 60)
     print("ANALYSIS")
     print("=" * 60)
     
-    # Check if CIO is stale
-    cio = next((r for r in results if r["name"] == "CIO (0-60min)"), None)
-    if cio and cio.get("age_min", 999) > 30:
-        print("⚠️  CIO feed is STALE (>30min old)")
-        print("   → Check if scanner_cio_v3.yml is running")
+    # Check statuses
+    errors = [r for r in results if r["status"] == "ERROR"]
+    degraded = [r for r in results if r["status"] == "DEGRADED"]
+    missing = [r for r in results if r["status"] == "MISSING"]
+    stale = [r for r in results if r.get("age_min", 0) > 30]
+    
+    if errors:
+        print(f"🔴 ERRORS: {len(errors)} feed(s) in error state")
+        for r in errors:
+            print(f"   → {r['name']}")
+    
+    if degraded:
+        print(f"⚠️  DEGRADED: {len(degraded)} feed(s) — dependencies unavailable")
+        for r in degraded:
+            print(f"   → {r['name']}")
+    
+    if missing:
+        print(f"❌ MISSING: {len(missing)} feed(s) not found")
+        for r in missing:
+            print(f"   → {r['name']}")
+    
+    if stale:
+        print(f"⏱️  STALE: {len(stale)} feed(s) >30min old")
+        for r in stale:
+            print(f"   → {r['name']} ({r['age_min']:.0f}m)")
     
     # Check total tokens
-    total = sum(r["count"] for r in results if r["status"] == "OK")
-    if total == 0:
-        print("⚠️  ZERO tokens across all feeds")
-        print("   → Possible causes:")
+    total = sum(r["count"] for r in results if r["status"] in ["OK", "CALM", "DEGRADED"])
+    if total == 0 and not errors:
+        print("\n⚠️  ZERO tokens but no errors — possible causes:")
         print("     1. No new token launches on Base right now")
         print("     2. ULTRA LAUNCH thresholds too restrictive")
-        print("     3. API rate limits blocking scanners")
-        print("     4. GitHub Actions not running")
+        print("     3. Market is calm (normal)")
     elif total < 3:
-        print(f"⚠️  Only {total} token(s) — low activity period")
+        print(f"\n⚠️  Only {total} token(s) — low activity period")
     else:
-        print(f"✅ {total} tokens tracked — normal activity")
-    
-    # Check for missing feeds
-    missing = [r["name"] for r in results if r["status"] == "MISSING"]
-    if missing:
-        print(f"\n⚠️  Missing feeds: {', '.join(missing)}")
-        print("   → These workflows may not have run yet")
+        print(f"\n✅ {total} tokens tracked — normal activity")
 
 if __name__ == "__main__":
     main()

@@ -325,12 +325,21 @@ def scan():
     for c in candidates:
         risk_counts[c["risk_level"]] += 1
     
+    # Determine status
+    if len(candidates) > 0:
+        status = "ok"
+    elif len(all_items) == 0:
+        status = "degraded"  # No raw data from any source
+    else:
+        status = "calm"  # Data available but no candidates passed filters
+    
     # Build feed
     feed = {
         "schema": "lurker_cio_ultra_launch",
         "meta": {
             "updated_at": iso(),
             "generated_at": iso(),  # For health check freshness validation
+            "status": status,
             "count": len(candidates),
             "thresholds": {
                 "min_liq_usd": MIN_LIQ_USD,
@@ -368,6 +377,7 @@ def write_fail(msg: str):
         "schema": "lurker_cio_ultra_launch",
         "meta": {
             "updated_at": iso(),
+            "status": "error",
             "count": 0,
             "error": msg[:500],
             "trace": traceback.format_exc()[-500:],
@@ -382,4 +392,4 @@ if __name__ == "__main__":
         scan()
     except Exception as e:
         write_fail(f"scanner crashed: {repr(e)}")
-        sys.exit(0)
+        sys.exit(1)  # Exit 1 for total crash

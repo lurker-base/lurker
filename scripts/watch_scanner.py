@@ -135,6 +135,7 @@ def scan():
             "schema": "lurker_watch_v1",
             "meta": {
                 "updated_at": iso(),
+                "status": "degraded",  # CIO unavailable
                 "source": "cio_10-30min_buffer",
                 "count": 0,
                 "criteria": {
@@ -151,7 +152,7 @@ def scan():
         with open(WATCH_FILE, 'w', encoding='utf-8') as f:
             json.dump(feed, f, ensure_ascii=False, indent=2)
         print(f"[WATCH] ✅ Created empty feed (no CIO available)")
-        return 0
+        return 0  # Degraded but not crashed
     
     with open(CIO_FILE) as f:
         cio_feed = json.load(f)
@@ -194,11 +195,18 @@ def scan():
     # Keep top 20
     watch_list = watch_list[:20]
     
+    # Determine status
+    if len(watch_list) > 0:
+        status = "ok"
+    else:
+        status = "calm"  # No candidates in age window
+    
     # Build feed
     feed = {
         "schema": "lurker_watch_v1",
         "meta": {
             "updated_at": iso(),
+            "status": status,
             "source": "cio_10-30min_buffer",
             "count": len(watch_list),
             "criteria": {
@@ -228,13 +236,14 @@ def scan():
     return 0  # Success - file created
 
 def write_fail(msg: str):
-    """Write empty feed with error - never crash GitHub Actions"""
+    """Write empty feed with error - crash = exit 1"""
     import traceback
     WATCH_FILE.parent.mkdir(parents=True, exist_ok=True)
     payload = {
         "schema": "lurker_watch_v1",
         "meta": {
             "updated_at": iso(),
+            "status": "error",
             "count": 0,
             "error": msg[:500],
             "trace": traceback.format_exc()[-500:]
@@ -250,4 +259,4 @@ if __name__ == "__main__":
         sys.exit(exit_code if exit_code is not None else 0)
     except Exception as e:
         write_fail(f"watch scanner crashed: {repr(e)}")
-        sys.exit(0)  # Still exit 0 - we created the error file
+        sys.exit(1)  # Exit 1 for total crash

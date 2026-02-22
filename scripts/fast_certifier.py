@@ -138,6 +138,32 @@ def scan():
     cio_feed = load_cio_feed()
     cio_list = cio_feed.get("candidates", [])
     
+    # Check if CIO is available
+    if not CIO_FILE.exists():
+        print("[FAST] ⚠️ No CIO feed found — creating empty fast-certified feed")
+        feed = {
+            "schema": "lurker_fast_certified_v1",
+            "meta": {
+                "updated_at": datetime.now(timezone.utc).isoformat(),
+                "status": "degraded",
+                "source": "cio_recheck",
+                "count": 0,
+                "criteria": {
+                    "min_age_hours": MIN_AGE_HOURS,
+                    "max_age_hours": MAX_AGE_HOURS,
+                    "min_liq_usd": MIN_LIQ_USD,
+                    "min_tx_6h": MIN_TX_6H
+                },
+                "rejected": {"no_cio_feed": 1}
+            },
+            "fast_certified": []
+        }
+        FAST_FILE.parent.mkdir(parents=True, exist_ok=True)
+        with open(FAST_FILE, 'w', encoding='utf-8') as f:
+            json.dump(feed, f, ensure_ascii=False, indent=2)
+        print(f"[FAST] ✅ Created empty feed (no CIO available)")
+        return 0
+    
     print(f"[FAST] Loaded {len(cio_list)} CIO candidates")
     
     current_time_ms = int(datetime.now(timezone.utc).timestamp() * 1000)
@@ -161,11 +187,18 @@ def scan():
     # Sort by momentum score
     fast_certified.sort(key=lambda x: x["momentum"]["score"], reverse=True)
     
+    # Determine status
+    if len(fast_certified) > 0:
+        status = "ok"
+    else:
+        status = "calm"  # No candidates certified
+    
     # Build feed
     feed = {
         "schema": "lurker_fast_certified_v1",
         "meta": {
             "updated_at": datetime.now(timezone.utc).isoformat(),
+            "status": status,
             "source": "cio_recheck",
             "count": len(fast_certified),
             "criteria": {
@@ -196,13 +229,14 @@ def scan():
     return 0
 
 def write_fail(msg: str):
-    """Write empty feed with error - never crash GitHub Actions"""
+    """Write empty feed with error - crash = exit 1"""
     import traceback
     FAST_FILE.parent.mkdir(parents=True, exist_ok=True)
     payload = {
         "schema": "lurker_fast_certified_v1",
         "meta": {
             "updated_at": datetime.now(timezone.utc).isoformat(),
+            "status": "error",
             "count": 0,
             "error": msg[:500],
             "trace": traceback.format_exc()[-500:]
@@ -218,4 +252,4 @@ if __name__ == "__main__":
         sys.exit(exit_code if exit_code is not None else 0)
     except Exception as e:
         write_fail(f"fast certifier crashed: {repr(e)}")
-        sys.exit(0)
+        sys.exit(1)  # Exit 1 for total crash
