@@ -1,8 +1,8 @@
 {
-  "signal": "TEST_PROOF_ENABLED",
-  "token": "LURKER_TEST",
-  "message": "🧪 <b>TEST #2</b> — Proof Enabled\n\nVerification cryptographique activée.\n\nSi ce message arrive = pipeline 100% fonctionnel.\n\nMode: GitHub-Only | Preuve: message_id loggué",
+  "signal": "TEST_GITHUB_SECRETS",
+  "token": "LURKER_LIVE",
+  "message": "🔔 <b>LURKER SIGNAL — TEST FINAL</b>\n\nGitHub Secrets = OK\nWorkflow = OK\nTelegram = OK\n\nPipeline GitHub-Only 100% opérationnel.\n\nProchain signal = LIVE",
   "score": 100,
-  "timestamp": "2026-02-22T08:40:00Z",
-  "source": "github_actions_test_v2"
+  "timestamp": "2026-02-22T08:55:00Z",
+  "source": "github_actions_live_test"
 }
