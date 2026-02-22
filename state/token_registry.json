@@ -479,6 +479,40 @@
         "symbol": "USAF",
         "name": "USAF"
       }
+    },
+    "0x747fc2c56447d8737e4f3a6dea5f8fbeb034db07": {
+      "first_seen": 1771789760534,
+      "first_seen_iso": "2026-02-22T19:49:20.534000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771789760534,
+          "price": 2.845e-06,
+          "liq": 236357.48,
+          "vol_5m": 9522.44
+        }
+      ],
+      "token": {
+        "address": "0x747fc2c56447d8737e4f3a6dea5f8fbeb034db07",
+        "symbol": "ClawSwarm",
+        "name": "ClawSwarm"
+      }
+    },
+    "0x0a3a6eef246ed15dbf97f8a237e20a3bc091cba3": {
+      "first_seen": 1771789760534,
+      "first_seen_iso": "2026-02-22T19:49:20.534000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771789760534,
+          "price": 2.439e-06,
+          "liq": 134969.45,
+          "vol_5m": 837.23
+        }
+      ],
+      "token": {
+        "address": "0x0a3a6eef246ed15dbf97f8a237e20a3bc091cba3",
+        "symbol": "0xDP",
+        "name": "0xDirectPing"
+      }
     }
   }
 }
