@@ -35,9 +35,48 @@ def load_state():
 def save_state(state):
     """Atomic write to prevent race conditions"""
     STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    # Add trend calculation before saving
+    state = calculate_trend(state)
     with open(STATE_TEMP, 'w') as f:
         json.dump(state, f, indent=2)
     os.replace(STATE_TEMP, STATE_FILE)  # Atomic rename
+
+def calculate_trend(state):
+    """Calculate health trend based on history"""
+    history = state.get("history", [])
+    if len(history) < 3:
+        state["trend"] = "stable"
+        return state
+    
+    # Look at last 3 checks
+    recent = history[-3:]
+    counts = [h.get("count", 0) for h in recent]
+    streaks = [h.get("empty_streak", 0) for h in recent]
+    
+    # Trend logic
+    if counts[-1] > counts[0] and streaks[-1] < streaks[0]:
+        state["trend"] = "improving"
+    elif counts[-1] < counts[0] or streaks[-1] > streaks[0]:
+        state["trend"] = "degrading"
+    else:
+        state["trend"] = "stable"
+    
+    return state
+
+def update_history(state, count, empty_streak):
+    """Keep last 10 checks for trend analysis"""
+    if "history" not in state:
+        state["history"] = []
+    
+    state["history"].append({
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "count": count,
+        "empty_streak": empty_streak
+    })
+    
+    # Keep only last 10
+    state["history"] = state["history"][-10:]
+    return state
 
 def parse_timestamp(ts_str):
     """Parse ISO timestamp"""
@@ -133,6 +172,8 @@ def validate_feed(is_manual=False):
             state["last_check"] = now.isoformat()
             state["last_count"] = count
             state["last_successful_scan"] = now.isoformat()  # Scan succeeded, just empty
+            # Update history for trend analysis
+            state = update_history(state, count, state["empty_streak"])
             save_state(state)
             return True  # Allow to continue
     else:
@@ -144,8 +185,11 @@ def validate_feed(is_manual=False):
         state["last_successful_scan"] = now.isoformat()
         if count > 0:
             state["last_non_empty_scan"] = now.isoformat()
+        # Update history for trend analysis
+        state = update_history(state, count, 0)
         save_state(state)
-        print(f"✅ Feed healthy: {count} candidates, streak reset to 0")
+        trend_emoji = {"improving": "▲", "stable": "▶", "degrading": "▼"}.get(state.get("trend", "stable"), "▶")
+        print(f"✅ Feed healthy: {count} candidates, streak reset to 0, trend: {trend_emoji} {state.get('trend', 'stable')}")
         return True
 
 if __name__ == "__main__":

@@ -395,20 +395,23 @@
                     return `${hours}h ago`;
                 };
                 
+                const trend = health.trend || 'stable';
+                const trendEmoji = {improving: '▲', stable: '▶', degrading: '▼'}[trend] || '▶';
+                
                 if (emptyStreak === 0) {
                     badge.className = 'health-badge ok';
                     dot.style.color = '#00ff00';
-                    text.textContent = 'HEALTH: OK';
+                    text.textContent = `HEALTH: OK ${trendEmoji} ${trend}`;
                     streak.textContent = minutesAgo !== null ? ` (${lastCount} tokens, ${minutesAgo}m ago)` : '';
                 } else if (emptyStreak === 1) {
                     badge.className = 'health-badge warn';
                     dot.style.color = '#ffaa00';
-                    text.textContent = 'HEALTH: WARN';
+                    text.textContent = `HEALTH: WARN ${trendEmoji} ${trend}`;
                     streak.textContent = ' (1 empty scan)';
                 } else {
                     badge.className = 'health-badge fail';
                     dot.style.color = '#ff4444';
-                    text.textContent = 'HEALTH: FAIL';
+                    text.textContent = `HEALTH: FAIL ${trendEmoji} ${trend}`;
                     streak.textContent = ` (${emptyStreak} empty scans)`;
                 }
                 
