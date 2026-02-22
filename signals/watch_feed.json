@@ -1,7 +1,7 @@
 {
   "schema": "lurker_watch_v1",
   "meta": {
-    "updated_at": "2026-02-22T19:04:30.557000+00:00",
+    "updated_at": "2026-02-22T19:48:01.611000+00:00",
     "status": "calm",
     "source": "cio_10-30min_buffer",
     "count": 0,
@@ -12,8 +12,7 @@
       "max_checks": 2
     },
     "rejected": {
-      "too_young": 1,
-      "low_tx_5m_0": 4
+      "low_tx_5m_0": 5
     }
   },
   "watch": []
