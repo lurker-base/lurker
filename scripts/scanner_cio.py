@@ -24,7 +24,8 @@ TOP_PAIRS = 30            # Keep top 30
 BLUECHIP_SYMBOLS = {
     "AERO", "AERODROME", "cbBTC", "CBBTC", "WETH", "ETH", "USDC", "USDT", 
     "DAI", "VIRTUAL", "VVV", "BRETT", "DEGEN", "CLANKER", "BASE", "USDBC",
-    "WSTETH", "CBETH", "WEETH", "RSR", "SNX", "UNI", "LINK", "AAVE", "CRV"
+    "WSTETH", "CBETH", "WEETH", "RSR", "SNX", "UNI", "LINK", "AAVE", "CRV",
+    "SOL", "WBTC", "BTC", "TRUMP"
 }
 
 def fetch_dexscreener_pairs():
