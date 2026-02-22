@@ -1,143 +1,122 @@
 {
-  "schema": "lurker_cio_v3",
+  "schema": "lurker_cio_v2",
   "meta": {
-    "updated_at": "2026-02-22T11:06:25.513000+00:00",
-    "source": "multi-source-rake",
+    "updated_at": "2026-02-22T11:38:52.442000+00:00",
+    "source": "dexscreener(token-profiles/latest + token-pairs/v1)",
+    "chain": "base",
     "count": 3,
-    "sources": [
-      "profiles",
-      "boosts",
-      "top_boosts"
-    ],
     "filters": {
       "max_age_hours": 48,
-      "min_liq_usd": 5000,
-      "min_vol_1h": 500,
-      "min_tx_1h": 10
+      "min_liq_usd": 10000,
+      "quote_whitelist": [
+        "USDBC",
+        "USDC",
+        "WETH",
+        "cbBTC"
+      ],
+      "max_tokens_per_run": 35
     },
-    "rejected": {
-      "low_liq_$4,341": 4,
-      "duplicate_pool": 4,
-      "bad_quote": 1
-    }
+    "rejected": {}
   },
   "candidates": [
     {
       "kind": "CIO_CANDIDATE",
+      "chainId": "base",
+      "dexId": "aerodrome",
       "token": {
-        "address": "0x4b65d5a766cc1f088bf98c2eaa8d95d4ad8b42c3",
+        "address": "0x4B65d5A766Cc1F088BF98c2EaA8d95D4AD8b42C3",
         "symbol": "$VIKING",
         "name": "OpenViking AI"
       },
       "quote_token": {
-        "symbol": "USDC",
-        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC"
       },
       "pool_address": "0x80E98c2035863024c9071E6A1096Cb3eD70F5Ed9",
       "pair_url": "https://dexscreener.com/base/0x80e98c2035863024c9071e6a1096cb3ed70f5ed9",
-      "dex_id": "aerodrome",
-      "chain": "base",
+      "created_at": "2026-02-22T10:33:39+00:00",
+      "age_hours": 1.09,
+      "pairCreatedAt": 1771756419000,
       "metrics": {
-        "liq_usd": 52608.71,
-        "vol_1h_usd": 16211.11,
-        "vol_24h_usd": 16211.11,
-        "txns_1h": 37,
-        "txns_24h": 0,
-        "price_usd": "0.00003066",
-        "marketCap": 30667
-      },
-      "timestamps": {
-        "pair_created_at": "2026-02-22T10:33:39+00:00",
-        "token_first_seen": "2026-02-22T11:06:25.511000+00:00",
-        "pair_age_hours": 0.55,
-        "token_age_hours": 0.0
+        "liq_usd": 55404.18,
+        "vol_24h_usd": 21749.35,
+        "txns_24h": 51,
+        "fdv": 34012,
+        "marketCap": 34012,
+        "price_usd": "0.00003401"
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 1.0,
-        "source": "profiles",
-        "source_boost": 5
+        "freshness": 0.98
       },
       "status": "observing",
-      "enriched": true
+      "source": "dexscreener_v2"
     },
     {
       "kind": "CIO_CANDIDATE",
+      "chainId": "base",
+      "dexId": "uniswap",
       "token": {
-        "address": "0x5b24d74d15f6841e0d40ac5726bd49ac134998ed",
+        "address": "0x5b24d74d15f6841E0D40ac5726Bd49aC134998eD",
         "symbol": "$Clawator",
         "name": "Clawator"
       },
       "quote_token": {
-        "symbol": "WETH",
-        "address": "0x4200000000000000000000000000000000000006"
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH"
       },
       "pool_address": "0x7473AB878f4Ca09c8d75Bf9e230f7c188468586B",
       "pair_url": "https://dexscreener.com/base/0x7473ab878f4ca09c8d75bf9e230f7c188468586b",
-      "dex_id": "uniswap",
-      "chain": "base",
+      "created_at": "2026-02-22T08:22:15+00:00",
+      "age_hours": 3.28,
+      "pairCreatedAt": 1771748535000,
       "metrics": {
-        "liq_usd": 73985.27,
-        "vol_1h_usd": 109374.12,
-        "vol_24h_usd": 163958.84,
-        "txns_1h": 148,
-        "txns_24h": 0,
-        "price_usd": "0.001334",
-        "marketCap": 1334366
-      },
-      "timestamps": {
-        "pair_created_at": "2026-02-22T08:22:15+00:00",
-        "token_first_seen": "2026-02-22T11:06:25.511000+00:00",
-        "pair_age_hours": 2.74,
-        "token_age_hours": 0.0
+        "liq_usd": 73530.38,
+        "vol_24h_usd": 297698.43,
+        "txns_24h": 624,
+        "fdv": 1303608,
+        "marketCap": 1303608,
+        "price_usd": "0.001303"
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 1.0,
-        "source": "profiles",
-        "source_boost": 5
+        "freshness": 0.93
       },
       "status": "observing",
-      "enriched": true
+      "source": "dexscreener_v2"
     },
     {
       "kind": "CIO_CANDIDATE",
+      "chainId": "base",
+      "dexId": "uniswap",
       "token": {
-        "address": "0x6e1e7f52a9178fa1e9c58810b97d5eb6a8d31198",
+        "address": "0x6E1E7F52A9178fA1e9C58810B97D5eb6a8d31198",
         "symbol": "$UNICLAW",
         "name": "Uniclaw"
       },
       "quote_token": {
-        "symbol": "WETH",
-        "address": "0x4200000000000000000000000000000000000006"
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH"
       },
       "pool_address": "0xdd2ee51fd6abb44c37c4ca3d681a77db529095c7c2cb8ded7b71c25e31d53dfd",
       "pair_url": "https://dexscreener.com/base/0xdd2ee51fd6abb44c37c4ca3d681a77db529095c7c2cb8ded7b71c25e31d53dfd",
-      "dex_id": "uniswap",
-      "chain": "base",
+      "created_at": "2026-02-22T06:10:51+00:00",
+      "age_hours": 5.47,
+      "pairCreatedAt": 1771740651000,
       "metrics": {
-        "liq_usd": 651813.93,
-        "vol_1h_usd": 106047.91,
-        "vol_24h_usd": 1853667.99,
-        "txns_1h": 553,
-        "txns_24h": 0,
-        "price_usd": "0.000007397",
-        "marketCap": 739760
-      },
-      "timestamps": {
-        "pair_created_at": "2026-02-22T06:10:51+00:00",
-        "token_first_seen": "2026-02-22T11:06:25.511000+00:00",
-        "pair_age_hours": 4.93,
-        "token_age_hours": 0.0
+        "liq_usd": 626906.57,
+        "vol_24h_usd": 1873005.49,
+        "txns_24h": 9101,
+        "fdv": 700008,
+        "marketCap": 700008,
+        "price_usd": "0.000007000"
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 1.0,
-        "source": "profiles",
-        "source_boost": 5
+        "freshness": 0.89
       },
       "status": "observing",
-      "enriched": true
+      "source": "dexscreener_v2"
     }
   ]
 }
