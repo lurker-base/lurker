@@ -45,6 +45,7 @@ function renderSignalCard(signal) {
             </div>
             <div class="signal-metrics">
                 <span>Price: $${(metrics.price_usd || 0).toExponential(2)}</span>
+                <span>MC: $${((metrics.mcap_usd || 0) / 1000000).toFixed(2)}M</span>
                 <span>Liq: $${((metrics.liq_usd || 0) / 1000).toFixed(0)}k</span>
                 <span>Vol24h: $${((metrics.vol_24h_usd || metrics.vol_5m_usd || 0) / 1000).toFixed(0)}k</span>
             </div>

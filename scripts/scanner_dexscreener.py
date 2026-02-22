@@ -11,9 +11,23 @@ from pathlib import Path
 
 # Config
 FEED_FILE = Path(__file__).parent.parent / "signals" / "live_feed.json"
-MIN_LIQUIDITY = 1000   # $1k min (lowered for testing)
-MIN_VOLUME_24H = 500    # $500 min (lowered for testing)
+MIN_LIQUIDITY = 5000   # $5k min
+MIN_VOLUME_24H = 1000  # $1k min
+MAX_MCAP = 10000000    # $10M max (favor smaller/newer tokens)
 TOP_PAIRS = 20  # Keep top 20
+
+# Blacklist bluechips (known large tokens)
+BLUECHIP_SYMBOLS = {
+    "AERO", "AERODROME", "cbBTC", "CBBTC", "SOL", "WETH", "ETH", "USDC", "USDT", 
+    "DAI", "VIRTUAL", "VVV", "BRETT", "DEGEN", "CLANKER", "BASE", "USDBC",
+    "WSTETH", "CBETH", "WEETH", "RSR", "SNX", "UNI", "LINK", "AAVE"
+}
+BLUECHIP_ADDRESSES = {
+    "0x940181a94a35a4569e4529a3cdfb74e38fd98631",  # AERO
+    "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",  # cbBTC
+    "0x532f27101965dd16442e59d40670faf5ebb142e4",  # BRETT
+    "0x4ed4e862860be51c722da7f9d9165e9a8ad3c50e",  # DEGEN
+}
 
 def fetch_base_pairs():
     """Fetch Base pairs from DexScreener via search"""
@@ -50,45 +64,50 @@ def fetch_base_pairs():
     return []
 
 def calculate_confidence(pair):
-    """Simple scoring based on liquidity, volume, age"""
+    """Scoring favoring smaller/newer tokens (anti-bluechip)"""
     score = 50  # Base
     
-    # Liquidity score (max +30)
+    # Get metrics
     liq = pair.get("liquidity", {}).get("usd", 0) or 0
-    if liq > 500000:
-        score += 30
-    elif liq > 200000:
+    vol = pair.get("volume", {}).get("h24", 0) or 0
+    mcap = pair.get("marketCap", 0) or pair.get("fdv", 0) or 0
+    
+    # Market cap factor (favor small caps - proxy for "new")
+    # Lower mcap = higher score (inverse relationship)
+    if 0 < mcap < 1000000:      # < $1M
         score += 25
+    elif mcap < 5000000:        # $1-5M
+        score += 15
+    elif mcap < 10000000:       # $5-10M
+        score += 5
+    elif mcap > 50000000:       # > $50M (too big)
+        score -= 20
+    
+    # Liquidity score (reasonable liquidity is good, max +20)
+    if liq > 500000:
+        score += 10  # Reduced for big tokens
+    elif liq > 200000:
+        score += 15
     elif liq > 100000:
         score += 20
     elif liq > 50000:
         score += 15
-    
-    # Volume score (max +20)
-    vol = pair.get("volume", {}).get("h24", 0) or 0
-    if vol > 1000000:
-        score += 20
-    elif vol > 500000:
-        score += 15
-    elif vol > 100000:
+    elif liq > 10000:
         score += 10
+    
+    # Volume score (activity is good, max +15)
+    if vol > 1000000:
+        score += 10
+    elif vol > 500000:
+        score += 12
+    elif vol > 100000:
+        score += 15
     elif vol > 50000:
+        score += 10
+    elif vol > 10000:
         score += 5
     
-    # Age bonus (newer = higher, max +10)
-    pair_created = pair.get("pairCreatedAt", 0)
-    if pair_created:
-        age_hours = (datetime.now().timestamp() * 1000 - pair_created) / (1000 * 3600)
-        if age_hours < 1:
-            score += 10
-        elif age_hours < 6:
-            score += 7
-        elif age_hours < 12:
-            score += 5
-        elif age_hours < 24:
-            score += 3
-    
-    return min(score, 100)
+    return max(0, min(score, 100))
 
 def pair_to_signal(pair):
     """Convert DexScreener pair to LURKER signal format"""
@@ -102,12 +121,23 @@ def pair_to_signal(pair):
     if not token_address:
         return None, "no_address"
     
-    # Skip if symbol is common stable
+    # Skip bluechips
+    if token_symbol.upper() in BLUECHIP_SYMBOLS:
+        return None, "bluechip_symbol"
+    if token_address.lower() in BLUECHIP_ADDRESSES:
+        return None, "bluechip_address"
+    
+    # Skip common stables
     if token_symbol in ["USDC", "USDT", "DAI", "WETH", "WBTC"]:
         return None, "stable_token"
     
     liq = pair.get("liquidity", {}).get("usd", 0) or 0
     vol = pair.get("volume", {}).get("h24", 0) or 0
+    mcap = pair.get("marketCap", 0) or pair.get("fdv", 0) or 0
+    
+    # Skip if market cap too high (bluechip proxy)
+    if mcap > MAX_MCAP:
+        return None, f"high_mcap_${mcap:,.0f}"
     
     # Skip low liquidity
     if liq < MIN_LIQUIDITY:
@@ -151,7 +181,7 @@ def pair_to_signal(pair):
         },
         "metrics": {
             "price_usd": float(price) if price else 0,
-            "mcap_usd": 0,
+            "mcap_usd": mcap,
             "liq_usd": liq,
             "vol_24h_usd": vol
         },
