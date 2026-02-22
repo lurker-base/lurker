@@ -28,7 +28,7 @@ Liq: $45k | Vol 5m: $12k | Age: 23m
 ✅ GO pour poster sur signals.html ?
 ```
 
-### 3. Validation (Toi - Stéphane)
+### 3. Validation (Toi - Boss)
 **Option A: Répondre directement**
 - Réponds **"GO"** ou **"Oui"** sur Telegram
 - Je publie automatiquement
@@ -48,7 +48,7 @@ Liq: $45k | Vol 5m: $12k | Age: 23m
 ### 4. Publication (Automatique)
 - Le signal apparaît sur https://lurker-base.github.io/lurker/signals.html
 - Format : Entry / Target / Stop
-- Validé par : Stéphane
+- Validé par : Boss
 - Timestamp : auto
 
 ## ⚠️ Règles
@@ -65,6 +65,6 @@ Liq: $45k | Vol 5m: $12k | Age: 23m
 | Qui | Responsabilité |
 |-----|----------------|
 | **Clara** | Détection, pré-analyse, exécution technique |
-| **Stéphane** | Validation finale, décision go/no-go |
+| **Boss** | Validation finale, décision go/no-go |
 
 **Tu as le dernier mot. Toujours.**
