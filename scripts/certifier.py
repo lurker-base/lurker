@@ -60,8 +60,13 @@ def save_pulse(pulse):
 def fetch_holders(token_address):
     """Fetch holder data — MVP placeholder, returns mock data"""
     # TODO: Integrate with Covalent/Moralis/Alchemy API
-    # For now, return None to indicate data not available
-    return None
+    # For now, return placeholder with low confidence
+    return {
+        "count": 0,
+        "top10_pct": 0,
+        "source": "placeholder",
+        "confidence": "low"
+    }
 
 def calculate_certified_score(metrics, stage="48h"):
     """Calculate certification health score"""
@@ -194,6 +199,9 @@ def certify():
         if result["qualified"]:
             stage = result["stage"]
             
+            # Get holders data
+            holders = fetch_holders(candidate["token"]["address"])
+            
             # Create certified entry
             certified_entry = {
                 "kind": "CERTIFIED_SIGNAL",
@@ -207,11 +215,14 @@ def certify():
                 "token": candidate["token"],
                 "quote_token": candidate["quote_token"],
                 "metrics": candidate["metrics"],
+                "holders": holders,
                 "scores": {
                     "certified_score": result["score"],
                     "health_score": result["score"]  # Same for now
                 },
-                "status": f"certified_{stage}"
+                "status": f"certified_{stage}",
+                "holders_source": holders.get("source", "unknown") if holders else "none",
+                "holders_confidence": holders.get("confidence", "none") if holders else "none"
             }
             
             if pool_addr in existing_certified:

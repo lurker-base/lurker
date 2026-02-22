@@ -83,7 +83,22 @@ async function renderCertifiedFeed(containerId) {
     
     container.innerHTML = '<div class="signal-loading">Loading certified signals...</div>';
     
+    // Also fetch CIO count for stats
+    let cioCount = 0;
+    try {
+        const cioRes = await fetch(`${REPO_RAW}/signals/cio_feed.json?t=${Date.now()}`, {cache: "no-store"});
+        const cioData = await cioRes.json();
+        cioCount = cioData.candidates?.length || 0;
+    } catch(e) {}
+    
+    // Update stats
+    const evalCount = document.getElementById('evaluated-count');
+    const certCount = document.getElementById('certified-count');
+    
     const feed = await fetchCertifiedFeed();
+    
+    if (evalCount) evalCount.textContent = cioCount;
+    if (certCount) certCount.textContent = feed.length;
     
     if (feed.length === 0) {
         container.innerHTML = '<div class="signal-empty">No certified signals yet</div>';
