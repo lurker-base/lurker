@@ -1,122 +1,143 @@
 {
-  "schema": "lurker_cio_v2",
+  "schema": "lurker_cio_v3",
   "meta": {
-    "updated_at": "2026-02-22T10:37:42.422000+00:00",
-    "source": "dexscreener(token-profiles/latest + token-pairs/v1)",
-    "chain": "base",
+    "updated_at": "2026-02-22T11:06:25.513000+00:00",
+    "source": "multi-source-rake",
     "count": 3,
+    "sources": [
+      "profiles",
+      "boosts",
+      "top_boosts"
+    ],
     "filters": {
       "max_age_hours": 48,
-      "min_liq_usd": 10000,
-      "quote_whitelist": [
-        "USDBC",
-        "USDC",
-        "WETH",
-        "cbBTC"
-      ],
-      "max_tokens_per_run": 35
+      "min_liq_usd": 5000,
+      "min_vol_1h": 500,
+      "min_tx_1h": 10
     },
-    "rejected": {}
+    "rejected": {
+      "low_liq_$4,341": 4,
+      "duplicate_pool": 4,
+      "bad_quote": 1
+    }
   },
   "candidates": [
     {
       "kind": "CIO_CANDIDATE",
-      "chainId": "base",
-      "dexId": "uniswap",
       "token": {
-        "address": "0x5b24d74d15f6841E0D40ac5726Bd49aC134998eD",
+        "address": "0x4b65d5a766cc1f088bf98c2eaa8d95d4ad8b42c3",
+        "symbol": "$VIKING",
+        "name": "OpenViking AI"
+      },
+      "quote_token": {
+        "symbol": "USDC",
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+      },
+      "pool_address": "0x80E98c2035863024c9071E6A1096Cb3eD70F5Ed9",
+      "pair_url": "https://dexscreener.com/base/0x80e98c2035863024c9071e6a1096cb3ed70f5ed9",
+      "dex_id": "aerodrome",
+      "chain": "base",
+      "metrics": {
+        "liq_usd": 52608.71,
+        "vol_1h_usd": 16211.11,
+        "vol_24h_usd": 16211.11,
+        "txns_1h": 37,
+        "txns_24h": 0,
+        "price_usd": "0.00003066",
+        "marketCap": 30667
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-22T10:33:39+00:00",
+        "token_first_seen": "2026-02-22T11:06:25.511000+00:00",
+        "pair_age_hours": 0.55,
+        "token_age_hours": 0.0
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 1.0,
+        "source": "profiles",
+        "source_boost": 5
+      },
+      "status": "observing",
+      "enriched": true
+    },
+    {
+      "kind": "CIO_CANDIDATE",
+      "token": {
+        "address": "0x5b24d74d15f6841e0d40ac5726bd49ac134998ed",
         "symbol": "$Clawator",
         "name": "Clawator"
       },
       "quote_token": {
-        "address": "0x4200000000000000000000000000000000000006",
-        "symbol": "WETH"
+        "symbol": "WETH",
+        "address": "0x4200000000000000000000000000000000000006"
       },
       "pool_address": "0x7473AB878f4Ca09c8d75Bf9e230f7c188468586B",
       "pair_url": "https://dexscreener.com/base/0x7473ab878f4ca09c8d75bf9e230f7c188468586b",
-      "created_at": "2026-02-22T08:22:15+00:00",
-      "age_hours": 2.26,
-      "pairCreatedAt": 1771748535000,
+      "dex_id": "uniswap",
+      "chain": "base",
       "metrics": {
-        "liq_usd": 34086.94,
-        "vol_24h_usd": 95287.27,
-        "txns_24h": 497,
-        "fdv": 285732,
-        "marketCap": 285732,
-        "price_usd": "0.0002857"
+        "liq_usd": 73985.27,
+        "vol_1h_usd": 109374.12,
+        "vol_24h_usd": 163958.84,
+        "txns_1h": 148,
+        "txns_24h": 0,
+        "price_usd": "0.001334",
+        "marketCap": 1334366
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-22T08:22:15+00:00",
+        "token_first_seen": "2026-02-22T11:06:25.511000+00:00",
+        "pair_age_hours": 2.74,
+        "token_age_hours": 0.0
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.95
+        "freshness": 1.0,
+        "source": "profiles",
+        "source_boost": 5
       },
       "status": "observing",
-      "source": "dexscreener_v2"
+      "enriched": true
     },
     {
       "kind": "CIO_CANDIDATE",
-      "chainId": "base",
-      "dexId": "uniswap",
       "token": {
-        "address": "0x016fB7e6283B9f45F94B7b6CA16564b74c415892",
-        "symbol": "$CLAUDEFISH",
-        "name": "claudefish"
-      },
-      "quote_token": {
-        "address": "0x4200000000000000000000000000000000000006",
-        "symbol": "WETH"
-      },
-      "pool_address": "0x58D89a9898D9513D9ff5BcA7dC24815FD0Da52f1",
-      "pair_url": "https://dexscreener.com/base/0x58d89a9898d9513d9ff5bca7dc24815fd0da52f1",
-      "created_at": "2026-02-22T08:04:45+00:00",
-      "age_hours": 2.55,
-      "pairCreatedAt": 1771747485000,
-      "metrics": {
-        "liq_usd": 57119.16,
-        "vol_24h_usd": 990010.75,
-        "txns_24h": 2346,
-        "fdv": 384942,
-        "marketCap": 384942,
-        "price_usd": "0.0003849"
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.95
-      },
-      "status": "observing",
-      "source": "dexscreener_v2"
-    },
-    {
-      "kind": "CIO_CANDIDATE",
-      "chainId": "base",
-      "dexId": "uniswap",
-      "token": {
-        "address": "0x6E1E7F52A9178fA1e9C58810B97D5eb6a8d31198",
+        "address": "0x6e1e7f52a9178fa1e9c58810b97d5eb6a8d31198",
         "symbol": "$UNICLAW",
         "name": "Uniclaw"
       },
       "quote_token": {
-        "address": "0x4200000000000000000000000000000000000006",
-        "symbol": "WETH"
+        "symbol": "WETH",
+        "address": "0x4200000000000000000000000000000000000006"
       },
       "pool_address": "0xdd2ee51fd6abb44c37c4ca3d681a77db529095c7c2cb8ded7b71c25e31d53dfd",
       "pair_url": "https://dexscreener.com/base/0xdd2ee51fd6abb44c37c4ca3d681a77db529095c7c2cb8ded7b71c25e31d53dfd",
-      "created_at": "2026-02-22T06:10:51+00:00",
-      "age_hours": 4.45,
-      "pairCreatedAt": 1771740651000,
+      "dex_id": "uniswap",
+      "chain": "base",
       "metrics": {
-        "liq_usd": 545501.01,
-        "vol_24h_usd": 1777648.19,
-        "txns_24h": 8536,
-        "fdv": 587457,
-        "marketCap": 587457,
-        "price_usd": "0.000005874"
+        "liq_usd": 651813.93,
+        "vol_1h_usd": 106047.91,
+        "vol_24h_usd": 1853667.99,
+        "txns_1h": 553,
+        "txns_24h": 0,
+        "price_usd": "0.000007397",
+        "marketCap": 739760
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-22T06:10:51+00:00",
+        "token_first_seen": "2026-02-22T11:06:25.511000+00:00",
+        "pair_age_hours": 4.93,
+        "token_age_hours": 0.0
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.91
+        "freshness": 1.0,
+        "source": "profiles",
+        "source_boost": 5
       },
       "status": "observing",
-      "source": "dexscreener_v2"
+      "enriched": true
     }
   ]
 }

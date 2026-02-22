@@ -1,0 +1,25 @@
+{
+  "schema": "lurker_token_registry_v1",
+  "tokens": {
+    "0x4b65d5a766cc1f088bf98c2eaa8d95d4ad8b42c3": {
+      "first_seen": 1771758385511,
+      "first_seen_iso": "2026-02-22T11:06:25.511000+00:00"
+    },
+    "0x5b24d74d15f6841e0d40ac5726bd49ac134998ed": {
+      "first_seen": 1771758385511,
+      "first_seen_iso": "2026-02-22T11:06:25.511000+00:00"
+    },
+    "0x6e1e7f52a9178fa1e9c58810b97d5eb6a8d31198": {
+      "first_seen": 1771758385511,
+      "first_seen_iso": "2026-02-22T11:06:25.511000+00:00"
+    },
+    "0x016fb7e6283b9f45f94b7b6ca16564b74c415892": {
+      "first_seen": 1771758385511,
+      "first_seen_iso": "2026-02-22T11:06:25.511000+00:00"
+    },
+    "0x8b7583b93ea81450af3caf3b7c71e43eb1d73ae8": {
+      "first_seen": 1771758385512,
+      "first_seen_iso": "2026-02-22T11:06:25.512000+00:00"
+    }
+  }
+}
