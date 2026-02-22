@@ -29,8 +29,18 @@
       "badge": "PREMIUM",
       "timestamp": "2026-02-22T19:05:45.381235+00:00",
       "symbol": "CLAWMART"
+    },
+    "0x747fc2c56447d8737e4f3a6dea5f8fbeb034db07": {
+      "badge": "PREMIUM",
+      "timestamp": "2026-02-22T19:49:43.679156+00:00",
+      "symbol": "ClawSwarm"
+    },
+    "0x0a3a6eef246ed15dbf97f8a237e20a3bc091cba3": {
+      "badge": "PREMIUM",
+      "timestamp": "2026-02-22T19:49:43.679170+00:00",
+      "symbol": "0xDP"
     }
   },
   "updates": [],
-  "last_check": "2026-02-22T19:05:46.366088+00:00"
+  "last_check": "2026-02-22T19:49:44.961013+00:00"
 }
