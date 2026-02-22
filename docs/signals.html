@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LURKER — Signals</title>
+    <style>
+        :root {
+            --bg: #0a0a0f;
+            --surface: #12121a;
+            --surface-2: #1a1a24;
+            --border: #2a2a3a;
+            --text: #e0e0e0;
+            --text-muted: #888;
+            --accent: #90ff00;
+            --accent-fast: #ffcc00;
+            --accent-cert: #00ccff;
+            --danger: #ff4444;
+            --warning: #ff8800;
+        }
+        
+        * { box-sizing: border-box; }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace;
+            line-height: 1.5;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 1.5rem;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: var(--accent);
+            letter-spacing: 2px;
+        }
+        
+        .subtitle {
+            color: var(--text-muted);
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        /* Navigation */
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            padding: 0.75rem;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+        
+        .nav-link {
+            padding: 0.4rem 0.8rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.8rem;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+        
+        .nav-link:hover {
+            color: var(--accent);
+            background: rgba(144, 255, 0, 0.1);
+        }
+        
+        .nav-link.active {
+            color: var(--accent);
+            background: rgba(144, 255, 0, 0.15);
+            font-weight: 500;
+        }
+        
+        .info-box {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .info-box h3 {
+            margin-top: 0;
+            color: var(--accent);
+        }
+        
+        .info-box p {
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+        
+        .signal-list {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+        
+        .signal-item {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .signal-item:last-child {
+            border-bottom: none;
+        }
+        
+        .signal-meta {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            border-top: 1px solid var(--border);
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 LURKER</h1>
+            <div class="subtitle">Trading Signals — Manual + Assisted</div>
+        </header>
+        
+        <!-- Navigation -->
+        <nav class="nav">
+            <a href="index.html" class="nav-link">lurker</a>
+            <a href="#" class="nav-link">token</a>
+            <a href="deep.html" class="nav-link">the deep</a>
+            <a href="origin.html" class="nav-link">origin</a>
+            <a href="sightings.html" class="nav-link">sightings</a>
+            <a href="proof.html" class="nav-link">proof</a>
+            <a href="watch.html" class="nav-link">watch</a>
+            <a href="become.html" class="nav-link">become</a>
+            <a href="live.html" class="nav-link">live</a>
+            <a href="agents.html" class="nav-link">for agents</a>
+            <a href="pulse.html" class="nav-link">pulse</a>
+            <a href="signals.html" class="nav-link active">signals</a>
+            <a href="stats.html" class="nav-link">stats</a>
+            <a href="https://x.com/LURKER_AI2026" class="nav-link" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-top:-2px"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        </nav>
+        
+        <div class="info-box">
+            <h3>Signal Framework</h3>
+            <p>Manual trading signals with AI-assisted validation.</p>
+            <p><strong>Format:</strong> Entry / Target / Stop only. No position sizes.</p>
+            <p><strong>Frequency:</strong> Max 5 per day. Min confidence 70/100.</p>
+            <p><strong>Language:</strong> English only.</p>
+        </div>
+        
+        <div class="signal-list">
+            <div class="signal-item">
+                <h4>No signals published yet</h4>
+                <div class="signal-meta">Signals will appear here when validated</div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>LURKER — Automated token discovery on Base</p>
+            <p>Not financial advice. DYOR.</p>
+        </footer>
+    </div>
+</body>
+</html>
