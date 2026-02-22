@@ -228,6 +228,92 @@
             padding: 2rem;
             color: var(--text-muted);
         }
+        
+        /* Mobile responsive fixes */
+        @media (max-width: 768px) {
+            .page-content {
+                padding: 0 0.75rem;
+            }
+            
+            .warning-box {
+                font-size: 0.75rem;
+                padding: 0.75rem;
+            }
+            
+            .stats-bar {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .stat-item {
+                min-width: auto;
+                text-align: left;
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            .stat-value {
+                font-size: 1.2rem;
+            }
+            
+            .feed-title {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.25rem;
+            }
+            
+            .feed-desc {
+                margin-left: 0;
+            }
+            
+            .token-card {
+                padding: 0.75rem;
+            }
+            
+            .card-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+            
+            .badges {
+                flex-wrap: wrap;
+            }
+            
+            .card-metrics {
+                flex-direction: column;
+                gap: 0.3rem;
+            }
+            
+            .card-footer {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .live-header h1 {
+                font-size: 1.5rem;
+            }
+            
+            .next-scan-timer {
+                font-size: 0.7rem;
+            }
+            
+            .token-symbol {
+                font-size: 1rem;
+            }
+            
+            .badge {
+                font-size: 0.6rem;
+                padding: 1px 4px;
+            }
+            
+            .card-metrics {
+                font-size: 0.75rem;
+            }
+        }
     </style>
 </head>
 <body>
