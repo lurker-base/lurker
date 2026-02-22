@@ -1,26 +1,27 @@
 {
   "meta": {
-    "updated_at": "2026-02-22T12:00:19.823837",
+    "updated_at": "2026-02-22T15:49:26.327873",
     "source": "dexscreener",
     "chain": "base",
-    "count": 3,
+    "count": 2,
+    "errors": [],
     "debug": {
-      "raw_pairs": 101,
+      "raw_pairs": 102,
       "rejected": {
-        "bluechip_symbol": 85,
-        "high_mcap_$171,256,773": 1,
-        "high_mcap_$129,251,002": 1,
-        "high_mcap_$36,305,588": 1,
-        "high_mcap_$57,249,508": 1,
-        "high_mcap_$350,417,470": 1,
-        "high_mcap_$17,403,305": 1,
-        "high_mcap_$24,890,972": 1,
-        "high_mcap_$47,814,193": 1,
-        "high_mcap_$91,828,310": 1,
-        "high_mcap_$896,599,569": 1,
-        "high_mcap_$32,773,151": 1,
-        "high_mcap_$12,544,130": 1,
-        "high_mcap_$16,907,683": 1
+        "bluechip_symbol": 87,
+        "high_mcap_$165,146,571": 1,
+        "high_mcap_$127,273,649": 1,
+        "high_mcap_$58,985,060": 1,
+        "high_mcap_$30,605,726": 1,
+        "high_mcap_$25,181,796": 1,
+        "high_mcap_$343,760,569": 1,
+        "high_mcap_$16,738,891": 1,
+        "high_mcap_$47,006,990": 1,
+        "high_mcap_$89,971,322": 1,
+        "high_mcap_$876,135,926": 1,
+        "high_mcap_$32,583,973": 1,
+        "high_mcap_$12,459,741": 1,
+        "high_mcap_$16,917,507": 1
       }
     }
   },
@@ -28,33 +29,7 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "posted",
-      "ts_utc": "2026-02-22T12:00:19.823779Z",
-      "chain": "base",
-      "token": {
-        "name": "Giza",
-        "symbol": "$GIZA",
-        "address": "0x590830dFDf9A3F68aFCDdE2694773dEBDF267774",
-        "pair_url": "https://dexscreener.com/base/0xe077ddfb9e9d9403a8ec42d3023d17e8417ee399"
-      },
-      "scores": {
-        "confidence": 90,
-        "rarity": "3-5/day",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0.01833,
-        "mcap_usd": 4958623,
-        "liq_usd": 297981.56,
-        "vol_24h_usd": 58334.77
-      },
-      "dex": "aerodrome",
-      "pair_address": "0xe077DdFb9E9d9403A8eC42D3023D17e8417ee399",
-      "scanner": "dexscreener"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "posted",
-      "ts_utc": "2026-02-22T12:00:19.823735Z",
+      "ts_utc": "2026-02-22T15:49:26.327770Z",
       "chain": "base",
       "token": {
         "name": "Sport.fun",
@@ -68,10 +43,10 @@
         "risk": "low"
       },
       "metrics": {
-        "price_usd": 0.04077,
-        "mcap_usd": 7257206,
-        "liq_usd": 558171.44,
-        "vol_24h_usd": 247605.38
+        "price_usd": 0.04071,
+        "mcap_usd": 7246482,
+        "liq_usd": 558070.03,
+        "vol_24h_usd": 290766.22
       },
       "dex": "aerodrome",
       "pair_address": "0x659bE70647B0f63217D60e077F4417b1eCC65064",
@@ -80,7 +55,7 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "posted",
-      "ts_utc": "2026-02-22T12:00:19.823771Z",
+      "ts_utc": "2026-02-22T15:49:26.327810Z",
       "chain": "base",
       "token": {
         "name": "Edel",
@@ -94,10 +69,10 @@
         "risk": "low"
       },
       "metrics": {
-        "price_usd": 0.006425,
-        "mcap_usd": 3643838,
-        "liq_usd": 570079.64,
-        "vol_24h_usd": 26718.43
+        "price_usd": 0.006254,
+        "mcap_usd": 3546435,
+        "liq_usd": 556565.46,
+        "vol_24h_usd": 17655.51
       },
       "dex": "aerodrome",
       "pair_address": "0x566beE7EF7b39f29d150AB3be6b6242C17CC5A31",
