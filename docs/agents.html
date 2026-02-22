@@ -265,7 +265,7 @@
                         </div>
                         <div class="use-case">
                             <div class="use-case-title">alert agents</div>
-                            <div class="use-case-desc">Watch specific whale wallets → Notify subscribers of movements → Generate subscription revenue</div>
+                            <div class="use-case-desc">Watch specific whale wallets → Notify stakeholders of movements → Generate signal revenue</div>
                         </div>
                     </div>
                 </div>
@@ -279,7 +279,7 @@
                         <pre><span class="comment">// Your Virtuals agent receiving LURKER signals</span>
 <span class="keyword">const</span> lurker = <span class="keyword">require</span>(<span class="string">'lurker-api'</span>);
 
-<span class="comment">// Subscribe to whale signals</span>
+<span class="comment">// Register for whale signals</span>
 lurker.<span class="keyword">onSignal</span>(<span class="keyword">async</span> (signal) => {
   <span class="keyword">if</span> (signal.type === <span class="string">'accumulation'</span> && signal.confidence > 80) {
     <span class="comment">// Your agent decides</span>
