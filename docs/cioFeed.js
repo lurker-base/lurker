@@ -1,12 +1,10 @@
-// CIO Feed Loader — Renders candidates 0-48h
+// CIO Feed Loader — Renders candidates 0-48h (Bulletproof version)
 const REPO_RAW = 'https://raw.githubusercontent.com/lurker-base/lurker/main';
 
 function normalizeFeed(feed) {
-    // Support multiple formats: v1 (signals), v2 (candidates), raw array
     const meta = feed?.meta || {};
     const updated = meta.updated_at || feed?.updated_at || feed?.last_updated || '--:--';
-    let items = feed?.candidates || feed?.signals || feed?.items || (Array.isArray(feed) ? feed : []);
-    // Force array
+    let items = feed?.candidates ?? feed?.signals ?? feed?.items ?? (Array.isArray(feed) ? feed : []);
     if (!Array.isArray(items)) items = [];
     return { updated, items };
 }
@@ -16,12 +14,21 @@ function safeNum(x, fallback = 0) {
     return Number.isFinite(n) ? n : fallback;
 }
 
-function safeDate(dateStr) {
-    try {
-        return new Date(dateStr).toLocaleString();
-    } catch (e) {
-        return dateStr || 'Unknown';
+function pick(obj, paths, fallback = undefined) {
+    for (const p of paths) {
+        const parts = p.split('.');
+        let cur = obj;
+        let ok = true;
+        for (const k of parts) {
+            cur = cur?.[k];
+            if (cur === undefined || cur === null) {
+                ok = false;
+                break;
+            }
+        }
+        if (ok) return cur;
     }
+    return fallback;
 }
 
 function renderAgeBadge(ageHours) {
@@ -32,32 +39,31 @@ function renderAgeBadge(ageHours) {
     return `<span style="background:#ff8800;color:#000;padding:2px 6px;border-radius:3px;font-size:0.7rem;">${Math.round(h)}h</span>`;
 }
 
-function renderCIOCard(candidate) {
-    // Safe extraction with fallbacks
-    const token = candidate.token || {};
-    const quote = candidate.quote_token || {};
-    const metrics = candidate.metrics || {};
-    const scores = candidate.scores || {};
+function renderCIOCard(item) {
+    // Safe extraction with multiple path fallbacks
+    const symbol = pick(item, ['token.symbol', 'symbol', 'baseToken.symbol'], '???');
+    const name = pick(item, ['token.name', 'name'], symbol);
+    const url = pick(item, ['pair_url', 'url', 'pair.url'], '');
+    const dexId = pick(item, ['dexId', 'dex', 'pair.dexId'], 'unknown');
+    const quote = pick(item, ['quote_token.symbol', 'quoteToken.symbol', 'quote'], '?');
     
-    const symbol = token.symbol || 'UNKNOWN';
-    const name = token.name || symbol;
-    const ageHours = safeNum(candidate.age_hours);
-    const dex = candidate.dexId || candidate.dex || 'unknown';
-    const score = safeNum(scores.cio_score);
-    const quoteSymbol = quote.symbol || '?';
+    const ageH = safeNum(pick(item, ['age_hours', 'ageHours'], 0), 0);
+    const score = safeNum(pick(item, ['scores.cio_score', 'score', 'confidence'], 0), 0);
     
-    // Metrics with fallbacks
-    const price = metrics.price_usd || metrics.priceUsd || 0;
-    const mcap = metrics.mcap || metrics.marketCap || metrics.fdv || 0;
-    const liq = metrics.liq_usd || metrics.liquidity_usd || 0;
-    const vol = metrics.vol_24h_usd || metrics.volume_h24 || 0;
-    const txns = metrics.txns_24h || 0;
+    const liq = safeNum(pick(item, ['metrics.liq_usd', 'metrics.liquidity_usd', 'liquidity_usd', 'liq_usd'], 0), 0);
+    const vol24 = safeNum(pick(item, ['metrics.vol_24h_usd', 'metrics.volume.h24', 'volume_h24'], 0), 0);
+    const tx24 = safeNum(pick(item, ['metrics.txns_24h', 'metrics.txns.h24', 'txns_h24'], 0), 0);
+    const price = safeNum(pick(item, ['metrics.price_usd', 'priceUsd'], 0), 0);
+    const mcap = safeNum(pick(item, ['metrics.marketCap', 'metrics.mcap', 'marketCap', 'fdv'], 0), 0);
     
-    // URL
-    const dexUrl = candidate.pair_url || (candidate.pool_address ? `https://dexscreener.com/base/${candidate.pool_address}` : '#');
+    const createdAt = pick(item, ['created_at', 'createdAt'], '');
+    const poolAddr = pick(item, ['pool_address', 'pairAddress'], '');
+    
+    // Build DexScreener URL
+    const dexUrl = url || (poolAddr ? `https://dexscreener.com/base/${poolAddr}` : '#');
     
     // Risk tags
-    const riskTags = (candidate.risk_tags || []).map(t => 
+    const riskTags = (item.risk_tags || []).map(t => 
         `<span style="background:#ff4444;color:#fff;padding:1px 4px;border-radius:2px;font-size:0.65rem;margin-right:4px;">${t}</span>`
     ).join('');
     
@@ -66,31 +72,28 @@ function renderCIOCard(candidate) {
             <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem;">
                 <span style="font-size:1.2rem;font-weight:600;">
                     ${symbol}
-                    ${renderAgeBadge(ageHours)}
+                    ${renderAgeBadge(ageH)}
                 </span>
                 <span style="font-size:0.8rem;color:var(--text-muted);">
-                    CIO | ${dex}
+                    CIO | ${dexId}
                 </span>
             </div>
             <div style="font-size:0.9rem;color:var(--text-muted);margin-bottom:0.5rem;">
-                Score: ${score}/100 | 
-                Quote: ${quoteSymbol}
+                Score: ${score}/100 | Quote: ${quote}
             </div>
             <div style="font-size:0.85rem;margin-bottom:0.5rem;">
                 <span title="Price">💰 $${price ? price.toExponential(2) : 'N/A'}</span> | 
                 <span title="Market Cap">🏢 $${(mcap / 1000000).toFixed(2)}M</span> | 
                 <span title="Liquidity">💧 $${(liq / 1000).toFixed(0)}k</span> | 
-                <span title="Volume 24h">📊 $${(vol / 1000).toFixed(0)}k</span> | 
-                <span title="Transactions">🔥 ${txns} tx</span>
+                <span title="Volume 24h">📊 $${(vol24 / 1000).toFixed(0)}k</span> | 
+                <span title="Transactions">🔥 ${Math.round(tx24)} tx</span>
             </div>
             ${riskTags ? `<div style="margin-bottom:0.5rem;">${riskTags}</div>` : ''}
             <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.8rem;">
                 <span style="color:var(--text-muted);">
-                    Created: ${safeDate(candidate.created_at)}
+                    ${createdAt ? `Created: ${createdAt}` : ''}
                 </span>
-                <a href="${dexUrl}" target="_blank" style="color:var(--accent);">
-                    DexScreener →
-                </a>
+                ${dexUrl !== '#' ? `<a href="${dexUrl}" target="_blank" style="color:var(--accent);">DexScreener →</a>` : ''}
             </div>
         </div>
     `;
@@ -102,50 +105,27 @@ async function renderCIOFeed(containerId) {
     
     container.innerHTML = '<div class="signal-loading">Loading CIO candidates...</div>';
     
-    // Fetch and normalize
+    const url = `${REPO_RAW}/signals/cio_feed.json?t=${Date.now()}`;
+    const updatedEl = document.getElementById('last-update') || document.getElementById('updated');
+    
     try {
-        const res = await fetch(`${REPO_RAW}/signals/cio_feed.json?t=${Date.now()}`, {
-            cache: "no-store"
-        });
-        if (!res.ok) throw new Error('HTTP ' + res.status);
-        const data = await res.json();
-        const { updated, items } = normalizeFeed(data);
+        const r = await fetch(url, { cache: 'no-store' });
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        const feed = await r.json();
+        const { updated, items } = normalizeFeed(feed);
         
-        // Update "updated" label if exists
-        const updatedEl = document.getElementById('last-update') || document.getElementById('updated');
         if (updatedEl) updatedEl.textContent = updated;
         
-        renderCIOItems(container, items);
+        if (!items.length) {
+            container.innerHTML = '<div class="signal-empty">No active CIO candidates</div>';
+            return;
+        }
+        
+        container.innerHTML = items.map(renderCIOCard).join('');
     } catch (e) {
         console.error('CIO load failed:', e);
         container.innerHTML = `<div class="signal-empty">CIO feed error: ${e.message}</div>`;
     }
-}
-
-function renderCIOItems(container, items) {
-    // Safety check
-    if (!Array.isArray(items)) {
-        container.innerHTML = '<div class="signal-empty">Invalid feed format</div>';
-        return;
-    }
-    
-    // Filter: age <= 48h and has liquidity
-    const active = items.filter(c => {
-        const age = safeNum(c.age_hours);
-        const liq = safeNum(c.metrics?.liq_usd || c.metrics?.liquidity_usd);
-        return age <= 48 && liq > 0;
-    });
-    
-    // Sort by CIO score descending
-    active.sort((a, b) => safeNum(b.scores?.cio_score) - safeNum(a.scores?.cio_score));
-    
-    if (active.length === 0) {
-        container.innerHTML = '<div class="signal-empty">No active CIO candidates</div>';
-        return;
-    }
-    
-    const html = active.slice(0, 20).map(renderCIOCard).join('');
-    container.innerHTML = html;
 }
 
 // Auto-init
