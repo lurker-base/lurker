@@ -18,9 +18,9 @@ CIO_FILE = Path(__file__).parent.parent / "signals" / "cio_feed.json"
 WATCH_FILE = Path(__file__).parent.parent / "signals" / "watch_feed.json"
 STATE_FILE = Path(__file__).parent.parent / "state" / "watch_state.json"
 
-# WATCH criteria (2-12h window) - for tokens that survived initial volatility
+# WATCH criteria (2-24h window) - for tokens that survived initial volatility
 MIN_AGE_MINUTES = 120
-MAX_AGE_MINUTES = 720
+MAX_AGE_MINUTES = 1440
 MIN_LIQ_USD = 2_500      # ULTRA: $2.5k (was $4k, originally $8k)
 MIN_TX_5M = 5            # ULTRA: 5 tx (was 8)
 MAX_CHECKS = 2
@@ -73,8 +73,8 @@ def process_cio_for_watch(cio, state):
     if age_minutes < MIN_AGE_MINUTES:
         return None, "too_young"
     if age_minutes > MAX_AGE_MINUTES:
-        # Exception: keep watching tokens with $10k+ liquidity up to 24h
-        if liq >= 10000 and age_minutes <= 1440:
+        # Exception: keep watching tokens with $5k+ liquidity up to 48h
+        if liq >= 5000 and age_minutes <= 2880:
             pass  # Accept it
         else:
             return None, "too_old"

@@ -20,7 +20,7 @@ STATE_FILE = Path(__file__).parent.parent / "state" / "token_registry.json"
 MIN_LIQ_USD = 1_000        # $1k (was $2k)
 MIN_VOLUME_5M = 50         # $50 vol 5min
 MIN_TX_5M = 2              # 2 tx minimum
-MAX_AGE_MINUTES = 360      # 6h window - capture tokens up to 6h old if they have liquidity
+MAX_AGE_MINUTES = 720      # 12h window - capture tokens up to 12h old
 TIMEOUT = 15
 
 def now_ms():
@@ -239,12 +239,12 @@ def process_candidate(item, registry):
     age_min = age_ms / 60000
     age_h = age_ms / 3600000
     
-    # ULTRA LAUNCH: accept up to 6h, but be more permissive for high liquidity tokens
+    # ULTRA LAUNCH: accept up to 12h, but be more permissive for high liquidity tokens
     liq = safe_num((pair.get("liquidity") or {}).get("usd"), 0)
     
     if age_min > MAX_AGE_MINUTES:
-        # Exception: keep tokens with $5k+ liquidity even if older (they're more established)
-        if liq >= 5000 and age_min <= 720:  # Up to 12h if liq >= $5k
+        # Exception: keep tokens with $3k+ liquidity even if older (they're more established)
+        if liq >= 3000 and age_min <= 1440:  # Up to 24h if liq >= $3k
             pass  # Accept it
         else:
             return None, "too_old"

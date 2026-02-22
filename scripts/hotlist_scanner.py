@@ -18,9 +18,9 @@ CIO_FILE = Path(__file__).parent.parent / "signals" / "cio_feed.json"
 HOTLIST_FILE = Path(__file__).parent.parent / "signals" / "hotlist_feed.json"
 STATE_FILE = Path(__file__).parent.parent / "state" / "hotlist_state.json"
 
-# HOTLIST criteria (6-24h window) - for tokens with momentum after initial pump
+# HOTLIST criteria (6-48h window) - for tokens with momentum after initial pump
 MIN_AGE_MINUTES = 360
-MAX_AGE_MINUTES = 1440
+MAX_AGE_MINUTES = 2880
 MIN_LIQ_USD = 5_000       # ULTRA: $5k (was $7k, originally $15k)
 MIN_TX_1H = 30            # ULTRA: 30 (was 40)
 MIN_TX_15M = 12           # ULTRA: 12 (was 15)
@@ -151,8 +151,8 @@ def process_cio_for_hotlist(cio, state):
     if age_minutes < MIN_AGE_MINUTES:
         return None, "too_young"
     if age_minutes > MAX_AGE_MINUTES:
-        # Exception: keep hotlisting tokens with $15k+ liquidity up to 48h
-        if liq >= 15000 and age_minutes <= 2880:
+        # Exception: keep hotlisting tokens with $10k+ liquidity up to 72h
+        if liq >= 10000 and age_minutes <= 4320:
             pass  # Accept it
         else:
             return None, "too_old"
