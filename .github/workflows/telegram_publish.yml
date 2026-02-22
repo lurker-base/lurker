@@ -1,4 +1,4 @@
-name: Publish LURKER Signal to Telegram
+name: Publish LURKER Signal to Telegram (Legacy — use telegram_premium.yml)
 
 on:
   workflow_dispatch:
@@ -6,12 +6,7 @@ on:
       signal_file:
         description: 'Path to signal JSON file'
         required: true
-        default: 'signals/latest.json'
-  
-  push:
-    branches: [main]
-    paths:
-      - "signals/latest.json"
+        default: 'signals/cio_feed.json'
 
 permissions:
   contents: write
@@ -26,16 +21,16 @@ jobs:
       - name: Validate signal
         id: validate
         run: |
-          echo "=== LURKER Signal Validation ==="
-          python3 scripts/validate_signal.py signals/latest.json || true
+          echo "=== LURKER Signal Validation (Legacy) ==="
+          python3 scripts/validate_signal.py signals/cio_feed.json || true
           echo "Validation complete"
 
       - name: Check if signal was accepted
         id: check
         run: |
           # Check if status changed to "posted" (meaning validation passed)
-          if [ -f signals/latest.json ]; then
-            STATUS=$(python3 -c "import json; print(json.load(open('signals/latest.json')).get('status','unknown'))")
+          if [ -f signals/cio_feed.json ]; then
+            STATUS=$(python3 -c "import json; print(json.load(open('signals/cio_feed.json')).get('status','unknown'))")
             echo "Signal status: $STATUS"
             if [ "$STATUS" = "posted" ]; then
               echo "result=POSTED" >> $GITHUB_OUTPUT
@@ -57,7 +52,7 @@ jobs:
         if: steps.check.outputs.result == 'POSTED'
         id: msg
         run: |
-          TEXT=$(python3 -c "import json; print(json.load(open('signals/latest.json'))['message'])")
+          TEXT=$(python3 -c "import json; print(json.load(open('signals/cio_feed.json'))['message'])")
           echo "text=$TEXT" >> $GITHUB_OUTPUT
 
       - name: Send to Telegram

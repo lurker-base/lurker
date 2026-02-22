@@ -1,8 +1,8 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-02-22T16:35:21.395000+00:00",
-    "generated_at": "2026-02-22T16:35:21.395000+00:00",
+    "updated_at": "2026-02-22T16:36:17.059000+00:00",
+    "generated_at": "2026-02-22T16:36:17.059000+00:00",
     "status": "ok",
     "count": 5,
     "thresholds": {
@@ -35,17 +35,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 130301.39,
-        "vol_5m_usd": 41451.76,
-        "vol_1h_usd": 186353.02,
-        "txns_5m": 176,
-        "price_usd": 2.841e-06
+        "liq_usd": 133944.73,
+        "vol_5m_usd": 32179.12,
+        "vol_1h_usd": 188437.8,
+        "txns_5m": 161,
+        "price_usd": 2.982e-06
       },
       "timestamps": {
         "pair_created_at": "2026-02-22T16:11:45+00:00",
         "token_first_seen": "2026-02-22T16:35:21.392000+00:00",
-        "age_minutes": 23.6,
-        "age_hours": 0.39
+        "age_minutes": 24.5,
+        "age_hours": 0.41
       },
       "scores": {
         "cio_score": 100,
@@ -75,17 +75,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 22159.91,
-        "vol_5m_usd": 414.82,
-        "vol_1h_usd": 131677.56,
-        "txns_5m": 12,
-        "price_usd": 2.136e-07
+        "liq_usd": 22390.84,
+        "vol_5m_usd": 232.37,
+        "vol_1h_usd": 130000.92,
+        "txns_5m": 10,
+        "price_usd": 2.159e-07
       },
       "timestamps": {
         "pair_created_at": "2026-02-22T15:32:31+00:00",
         "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
-        "age_minutes": 62.8,
-        "age_hours": 1.05
+        "age_minutes": 63.8,
+        "age_hours": 1.06
       },
       "scores": {
         "cio_score": 100,
@@ -115,17 +115,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 196081.68,
-        "vol_5m_usd": 3769.71,
-        "vol_1h_usd": 66001.54,
-        "txns_5m": 104,
-        "price_usd": 2.269e-06
+        "liq_usd": 196029.17,
+        "vol_5m_usd": 2244.22,
+        "vol_1h_usd": 62109.47,
+        "txns_5m": 96,
+        "price_usd": 2.268e-06
       },
       "timestamps": {
         "pair_created_at": "2026-02-22T15:16:53+00:00",
         "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
-        "age_minutes": 78.5,
-        "age_hours": 1.31
+        "age_minutes": 79.4,
+        "age_hours": 1.32
       },
       "scores": {
         "cio_score": 100,
@@ -155,17 +155,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 161677.93,
-        "vol_5m_usd": 70578.77,
-        "vol_1h_usd": 598711.34,
-        "txns_5m": 80,
-        "price_usd": 0.003149
+        "liq_usd": 167614.56,
+        "vol_5m_usd": 51052.67,
+        "vol_1h_usd": 605013.54,
+        "txns_5m": 65,
+        "price_usd": 0.003384
       },
       "timestamps": {
         "pair_created_at": "2026-02-22T14:31:41+00:00",
         "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
-        "age_minutes": 123.7,
-        "age_hours": 2.06
+        "age_minutes": 124.6,
+        "age_hours": 2.08
       },
       "scores": {
         "cio_score": 100,
@@ -195,17 +195,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 75377.21,
-        "vol_5m_usd": 20064.14,
-        "vol_1h_usd": 201770.27,
-        "txns_5m": 42,
-        "price_usd": 0.001142
+        "liq_usd": 80223.45,
+        "vol_5m_usd": 22716.07,
+        "vol_1h_usd": 210552.41,
+        "txns_5m": 51,
+        "price_usd": 0.001293
       },
       "timestamps": {
         "pair_created_at": "2026-02-22T14:00:43+00:00",
         "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
-        "age_minutes": 154.6,
-        "age_hours": 2.58
+        "age_minutes": 155.6,
+        "age_hours": 2.59
       },
       "scores": {
         "cio_score": 100,

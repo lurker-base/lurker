@@ -1,0 +1,30 @@
+name: LURKER Telegram Notifier — PREMIUM Alerts
+
+on:
+  schedule:
+    - cron: '*/2 * * * *'  # Check every 2 minutes (same as CIO scanner)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run Telegram Notifier
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python3 scripts/telegram_notifier.py
+
+      - name: Commit state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add state/telegram_notified.json || true
+          git diff --cached --quiet || git commit -m "chore: telegram notifier state [skip ci]"
+          git push || echo "Nothing to push"
