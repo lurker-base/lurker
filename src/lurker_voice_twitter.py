@@ -27,11 +27,11 @@ def load_env_file(filepath):
 env_path = os.path.join(os.path.dirname(__file__), '..', '.env.twitter')
 env = load_env_file(env_path)
 
-API_KEY = env.get('API_KEY') or os.getenv('X_API_KEY') or os.getenv('API_KEY')
-API_SECRET = env.get('API_SECRET') or os.getenv('X_API_SECRET') or os.getenv('API_SECRET')
-ACCESS_TOKEN = env.get('ACCESS_TOKEN') or os.getenv('X_ACCESS_TOKEN') or os.getenv('ACCESS_TOKEN')
-ACCESS_TOKEN_SECRET = env.get('ACCESS_TOKEN_SECRET') or os.getenv('X_ACCESS_SECRET') or os.getenv('ACCESS_TOKEN_SECRET')
-BEARER_TOKEN = env.get('BEARER_TOKEN') or os.getenv('X_BEARER_TOKEN') or os.getenv('BEARER_TOKEN')
+API_KEY = env.get('API_KEY') or os.getenv('TWITTERKEY') or os.getenv('X_API_KEY') or os.getenv('API_KEY')
+API_SECRET = env.get('API_SECRET') or os.getenv('TWITTERS') or os.getenv('X_API_SECRET') or os.getenv('API_SECRET')
+ACCESS_TOKEN = env.get('ACCESS_TOKEN') or os.getenv('TWITTER') or os.getenv('X_ACCESS_TOKEN') or os.getenv('ACCESS_TOKEN')
+ACCESS_TOKEN_SECRET = env.get('ACCESS_TOKEN_SECRET') or os.getenv('TWITTERSECRET') or os.getenv('X_ACCESS_SECRET') or os.getenv('ACCESS_TOKEN_SECRET')
+BEARER_TOKEN = env.get('BEARER_TOKEN') or os.getenv('BEARER_TOKEN')
 
 # Check required secrets - skip gracefully if missing
 required = ["API_KEY", "API_SECRET", "ACCESS_TOKEN", "ACCESS_TOKEN_SECRET"]

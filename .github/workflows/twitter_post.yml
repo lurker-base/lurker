@@ -29,20 +29,20 @@ jobs:
 
       - name: Sanity check secrets
         run: |
-          echo "TWITTER_API_KEY set? ${{ secrets.TWITTER_API_KEY != '' }}"
-          echo "TWITTER_API_SECRET set? ${{ secrets.TWITTER_API_SECRET != '' }}"
-          echo "TWITTER_ACCESS_TOKEN set? ${{ secrets.TWITTER_ACCESS_TOKEN != '' }}"
-          echo "TWITTER_ACCESS_SECRET set? ${{ secrets.TWITTER_ACCESS_SECRET != '' }}"
+          echo "TWITTERKEY set? ${{ secrets.TWITTERKEY != '' }}"
+          echo "TWITTERS set? ${{ secrets.TWITTERS != '' }}"
+          echo "TWITTER set? ${{ secrets.TWITTER != '' }}"
+          echo "TWITTERSECRET set? ${{ secrets.TWITTERSECRET != '' }}"
 
       - name: Ensure state directory
         run: mkdir -p state
 
       - name: Post tweet (never fail)
         env:
-          API_KEY: ${{ secrets.TWITTER_API_KEY }}
-          API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
-          ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
-          ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
+          API_KEY: ${{ secrets.TWITTERKEY }}
+          API_SECRET: ${{ secrets.TWITTERS }}
+          ACCESS_TOKEN: ${{ secrets.TWITTER }}
+          ACCESS_TOKEN_SECRET: ${{ secrets.TWITTERSECRET }}
         run: python3 src/lurker_voice_twitter.py --post || echo "Tweet skipped or failed - continuing"
 
       - name: Commit state updates
