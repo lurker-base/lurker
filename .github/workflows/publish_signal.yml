@@ -1,0 +1,67 @@
+name: Publish Validated Signal
+
+on:
+  workflow_dispatch:
+    inputs:
+      symbol:
+        description: 'Token symbol (e.g., 0xABC)'
+        required: true
+      pair:
+        description: 'Trading pair (e.g., 0xABC/WETH)'
+        required: false
+        default: ''
+      entry:
+        description: 'Entry price'
+        required: true
+      target:
+        description: 'Target price'
+        required: true
+      stop:
+        description: 'Stop loss'
+        required: true
+      confidence:
+        description: 'Confidence score (0-100)'
+        required: true
+        default: '70'
+      rationale:
+        description: 'Why this signal (brief)'
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: lurker-publish-signal
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Publish signal
+        run: |
+          python3 scripts/publish_signal.py \
+            --symbol "${{ github.event.inputs.symbol }}" \
+            --pair "${{ github.event.inputs.pair }}" \
+            --entry "${{ github.event.inputs.entry }}" \
+            --target "${{ github.event.inputs.target }}" \
+            --stop "${{ github.event.inputs.stop }}" \
+            --confidence ${{ github.event.inputs.confidence }} \
+            --rationale "${{ github.event.inputs.rationale }}" \
+            --validator "Stéphane"
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/signals.html
+          git diff --cached --quiet || git commit -m "signal: ${{ github.event.inputs.symbol }} — validated by Stéphane"
+          git push
