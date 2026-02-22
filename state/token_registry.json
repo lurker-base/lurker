@@ -495,6 +495,12 @@
           "price": 2.414e-06,
           "liq": 206496.17,
           "vol_5m": 6297.5
+        },
+        {
+          "timestamp": 1771793762672,
+          "price": 2.265e-07,
+          "liq": 24049.26,
+          "vol_5m": 4.33
         }
       ],
       "token": {
@@ -529,12 +535,35 @@
           "price": 0.0007621,
           "liq": 56049.98,
           "vol_5m": 13792.33
+        },
+        {
+          "timestamp": 1771793762672,
+          "price": 0.002131,
+          "liq": 94561.53,
+          "vol_5m": 12367.13
         }
       ],
       "token": {
         "address": "0xe4f5b998372443522b08b72d3b5b704c3bdafaf4",
         "symbol": "WILDE",
         "name": "Lobster Wilde"
+      }
+    },
+    "0x0583226fc741d7dd528977b4349cf00bd1376312": {
+      "first_seen": 1771793762672,
+      "first_seen_iso": "2026-02-22T20:56:02.672000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771793762672,
+          "price": 0.0002582,
+          "liq": 25820318.41,
+          "vol_5m": 18966.92
+        }
+      ],
+      "token": {
+        "address": "0x0583226fc741d7dd528977b4349cf00bd1376312",
+        "symbol": "auctobot001",
+        "name": "auctobot001"
       }
     }
   }
