@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>live — lurker</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .live-header {
+            margin-bottom: 2rem;
+        }
+        
+        .live-header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .live-header p {
+            color: var(--text-muted);
+        }
+        
+        .warning-box {
+            background: rgba(255, 136, 0, 0.1);
+            border: 1px solid rgba(255, 136, 0, 0.3);
+            border-radius: 4px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            font-size: 0.85rem;
+            color: #ffaa55;
+        }
+        
+        .stats-bar {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: rgba(255,255,255,0.02);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+        }
+        
+        .stat-item {
+            flex: 1;
+            min-width: 120px;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-family: 'SF Mono', monospace;
+            font-size: 1.5rem;
+            color: var(--accent);
+        }
+        
+        .stat-value.watch { color: #888; }
+        .stat-value.hot { color: #ff8800; }
+        .stat-value.fast { color: #ffcc00; }
+        .stat-value.cert { color: #00ccff; }
+        
+        .stat-label {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .feed-section {
+            margin-bottom: 2rem;
+        }
+        
+        .feed-title {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .feed-title h2 {
+            font-size: 1rem;
+            margin: 0;
+            text-transform: lowercase;
+        }
+        
+        .feed-title.cio h2 { color: var(--accent); }
+        .feed-title.watch h2 { color: #888; }
+        .feed-title.hot h2 { color: #ff8800; }
+        .feed-title.fast h2 { color: #ffcc00; }
+        .feed-title.cert h2 { color: #00ccff; }
+        
+        .feed-desc {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-left: auto;
+        }
+        
+        .token-card {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .token-card.cio { border-left: 3px solid var(--accent); }
+        .token-card.watch { border-left: 3px solid #666; opacity: 0.8; }
+        .token-card.hot { border-left: 3px solid #ff8800; }
+        .token-card.fast { border-left: 3px solid #ffcc00; }
+        .token-card.cert { border-left: 3px solid #00ccff; }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        
+        .token-symbol {
+            font-family: 'SF Mono', monospace;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        
+        .badges {
+            display: flex;
+            gap: 0.4rem;
+        }
+        
+        .badge {
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.65rem;
+            font-weight: 500;
+        }
+        
+        .badge.new { background: #00ff00; color: #000; }
+        .badge.fresh { background: #90ff00; color: #000; }
+        .badge.young { background: #ffcc00; color: #000; }
+        .badge.aging { background: #ff8800; color: #000; }
+        .badge.old { background: #ff4444; color: #fff; }
+        
+        .badge.cio { background: var(--accent); color: #000; }
+        .badge.watch { background: #666; color: #fff; }
+        .badge.hot { background: #ff8800; color: #000; }
+        .badge.fast { background: #ffcc00; color: #000; }
+        .badge.cert { background: #00ccff; color: #000; }
+        
+        .card-metrics {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+        
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+        
+        .card-footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        .card-footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .card-risk {
+            font-size: 0.8rem;
+            padding: 0.25rem 0.5rem;
+            background: rgba(255,255,255,0.05);
+            border-radius: 3px;
+            margin-bottom: 0.5rem;
+        }
+        
+        .empty-feed {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-style: italic;
+            border: 1px dashed var(--border);
+            border-radius: 4px;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-grid"></div>
+    
+    <nav class="nav">
+        <a href="index.html" class="nav-link">lurker</a>
+        <a href="#" class="nav-link">token</a>
+        <a href="deep.html" class="nav-link">the deep</a>
+        <a href="origin.html" class="nav-link">origin</a>
+        <a href="sightings.html" class="nav-link">sightings</a>
+        <a href="proof.html" class="nav-link">proof</a>
+        <a href="watch.html" class="nav-link">watch</a>
+        <a href="become.html" class="nav-link">become</a>
+        <a href="live.html" class="nav-link active">live</a>
+        <a href="agents.html" class="nav-link">for agents</a>
+        <a href="pulse.html" class="nav-link">pulse</a>
+        <a href="signals.html" class="nav-link">signals</a>
+        <a href="stats.html" class="nav-link">stats</a>
+        <a href="https://x.com/LURKER_AI2026" class="nav-link" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-top:-2px"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+    </nav>
+
+    <main class="main">
+        <div class="container page-container with-sidebar">
+            <div class="page-sidebar">
+                <div class="avatar-wrapper" id="avatar-wrapper">
+                    <img src="../assets/lurker-mascot-logo.png" alt="" class="avatar">
+                    <div class="avatar-glow"></div>
+                    <div class="sparks-container" id="sparks"></div>
+                </div>
+            </div>
+            <div class="page-content">
+                <div class="live-header">
+                    <h1>live</h1>
+                    <p>base token intelligence — real-time detection</p>
+                </div>
+                
+                <div class="warning-box">
+                    ⚠️ cio are early candidates, not trade signals. most will fail. do your own research.
+                </div>
+                
+                <div class="stats-bar">
+                    <div class="stat-item">
+                        <div class="stat-value" id="stat-cio">--</div>
+                        <div class="stat-label">cio (0-10m)</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value watch" id="stat-watch">--</div>
+                        <div class="stat-label">watch (10-30m)</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value hot" id="stat-hot">--</div>
+                        <div class="stat-label">hotlist (30-60m)</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value fast" id="stat-fast">--</div>
+                        <div class="stat-label">fast (1-24h)</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value cert" id="stat-cert">--</div>
+                        <div class="stat-label">certified (24h+)</div>
+                    </div>
+                </div>
+
+                <!-- CIO Section -->
+                <div class="feed-section">
+                    <div class="feed-title cio">
+                        <h2>🌱 cio (0-10m)</h2>
+                        <span class="feed-desc">fresh detections</span>
+                    </div>
+                    <div id="cio-feed">
+                        <div class="loading">scanning...</div>
+                    </div>
+                </div>
+
+                <!-- WATCH Section -->
+                <div class="feed-section">
+                    <div class="feed-title watch">
+                        <h2>👁️ watch (10-30m)</h2>
+                        <span class="feed-desc">buffer zone</span>
+                    </div>
+                    <div id="watch-feed">
+                        <div class="loading">scanning...</div>
+                    </div>
+                </div>
+
+                <!-- HOTLIST Section -->
+                <div class="feed-section">
+                    <div class="feed-title hot">
+                        <h2>🔥 hotlist (30-60m)</h2>
+                        <span class="feed-desc">early opportunity</span>
+                    </div>
+                    <div id="hot-feed">
+                        <div class="loading">scanning...</div>
+                    </div>
+                </div>
+
+                <!-- FAST Section -->
+                <div class="feed-section">
+                    <div class="feed-title fast">
+                        <h2>⚡ fast-certified (1-24h)</h2>
+                        <span class="feed-desc">momentum confirmed</span>
+                    </div>
+                    <div id="fast-feed">
+                        <div class="loading">scanning...</div>
+                    </div>
+                </div>
+
+                <!-- CERTIFIED Section -->
+                <div class="feed-section">
+                    <div class="feed-title cert">
+                        <h2>✓ certified (24h+)</h2>
+                        <span class="feed-desc">survivors</span>
+                    </div>
+                    <div id="cert-feed">
+                        <div class="empty-feed">waiting for 24h+ survivors</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="unifiedFeed.js"></script>
+    <script src="sparks.js"></script>
+</body>
+</html>

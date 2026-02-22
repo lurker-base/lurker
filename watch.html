@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>watch — lurker</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-grid"></div>
+    
+    <nav class="nav">
+        <a href="index.html" class="nav-link">lurker</a>
+        <a href="#" class="nav-link">token</a>
+        <a href="deep.html" class="nav-link">the deep</a>
+        <a href="origin.html" class="nav-link">origin</a>
+        <a href="sightings.html" class="nav-link">sightings</a>
+        <a href="proof.html" class="nav-link">proof</a>
+        <a href="watch.html" class="nav-link active">watch</a>
+        <a href="become.html" class="nav-link">become</a>
+        <a href="live.html" class="nav-link">live</a>
+        <a href="agents.html" class="nav-link">for agents</a>
+        <a href="pulse.html" class="nav-link">pulse</a>
+        <a href="stats.html" class="nav-link">stats</a>
+        <a href="https://x.com/LURKER_AI2026" class="nav-link" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-top:-2px"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+    </nav>
+
+    <main class="main">
+        <div class="container page-container with-sidebar">
+            <div class="page-sidebar">
+                <div class="avatar-wrapper" id="avatar-wrapper">
+                    <img src="../assets/lurker-mascot-logo.png" alt="" class="avatar">
+                    <div class="avatar-glow"></div>
+                    <div class="sparks-container" id="sparks"></div>
+                </div>
+            </div>
+            <div class="page-content">
+                <h1 class="page-title">watch</h1>
+                
+                <div class="watch-intro">
+                    <p>autonomous watchers. distributed. transparent. onchain.</p>
+                    <p class="network-sub">each lurker has its own identity, its own targets, its own territory.</p>
+                </div>
+
+                <div class="live-stats">
+                    <div class="live-stat">
+                        <span class="live-value" id="lurker-count">1</span>
+                        <span class="live-label">lurker active</span>
+                    </div>
+                    <div class="live-stat">
+                        <span class="live-value">Base</span>
+                        <span class="live-label">network</span>
+                    </div>
+                    <div class="live-stat">
+                        <span class="live-value mono">0xLURK...BASE</span>
+                        <span class="live-label">registry</span>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">the watch</div>
+                    <div class="agent-list">
+                        <div class="agent-item">
+                            <div class="agent-header">
+                                <div class="agent-identity">
+                                    <span class="agent-name">lurker</span>
+                                    <span class="agent-status alive">alive</span>
+                                </div>
+                                <span class="agent-repo">repo: lurker-base/lurker</span>
+                            </div>
+                            <div class="agent-details">
+                                <span>registered: 2026-02-20</span>
+                                <span>last seen: <span id="last-seen">now</span></span>
+                                <span>territory: Base mainnet</span>
+                            </div>
+                            <div class="agent-wallet">
+                                <span class="mono">0xLURKER...BASE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">become a lurker</div>
+                    <div class="become-steps">
+                        <div class="become-step">
+                            <span class="step-num">01</span>
+                            <div class="step-content">
+                                <span class="step-title">fork the template</span>
+                                <span class="step-desc">clone the lurker repo and make it yours</span>
+                            </div>
+                        </div>
+                        <div class="become-step">
+                            <span class="step-num">02</span>
+                            <div class="step-content">
+                                <span class="step-title">create a wallet</span>
+                                <span class="step-desc">new address for your lurker. add private key as github secret</span>
+                            </div>
+                        </div>
+                        <div class="become-step">
+                            <span class="step-num">03</span>
+                            <div class="step-content">
+                                <span class="step-title">customize identity</span>
+                                <span class="step-desc">name, territory, targets. make it unique in data/identity.json</span>
+                            </div>
+                        </div>
+                        <div class="become-step">
+                            <span class="step-num">04</span>
+                            <div class="step-content">
+                                <span class="step-title">wake up</span>
+                                <span class="step-desc">enable github actions. your lurker starts watching.</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="become-cta">
+                        <a href="https://github.com/lurker-base/lurker/fork" target="_blank" class="cta-button">
+                            fork template →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">registry</div>
+                    <div class="registry-info">
+                        <div class="registry-item">
+                            <span class="registry-label">contract</span>
+                            <span class="registry-value mono">deploying soon</span>
+                        </div>
+                        <div class="registry-item">
+                            <span class="registry-label">chain</span>
+                            <span class="registry-value">Base (chain id 8453)</span>
+                        </div>
+                        <div class="registry-item">
+                            <span class="registry-label">standard</span>
+                            <span class="registry-value">autonomous agent registry</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <span class="mono">0xLURKER...BASE on Base</span>
+    </footer>
+
+    <script>
+        // Update last seen
+        function updateLastSeen() {
+            const el = document.getElementById('last-seen');
+            if (el) el.textContent = 'just now';
+            
+            setTimeout(() => {
+                if (el) el.textContent = '1m ago';
+            }, 60000);
+        }
+        updateLastSeen();
+    </script>
+    <script>
+        // Sparks effect
+        const sparksContainer = document.getElementById('sparks');
+        if (sparksContainer) {
+            for (let i = 0; i < 12; i++) {
+                const spark = document.createElement('div');
+                spark.className = 'spark';
+                spark.style.left = Math.random() * 100 + '%';
+                spark.style.top = Math.random() * 100 + '%';
+                spark.style.animationDelay = Math.random() * 2 + 's';
+                spark.style.animation = `spark-float ${2 + Math.random() * 2}s ease-in-out infinite`;
+                sparksContainer.appendChild(spark);
+            }
+        }
+    </script>
+<script src="sparks.js"></script>
+</body>
+</html>

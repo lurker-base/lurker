@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signals — lurker</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .signals-header {
+            margin-bottom: 2rem;
+        }
+        
+        .signals-header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .signals-header p {
+            color: var(--text-muted);
+        }
+        
+        .framework-box {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .framework-box h3 {
+            margin-top: 0;
+            color: var(--accent);
+            font-size: 0.9rem;
+            text-transform: lowercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .framework-box p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+        }
+        
+        .signal-list {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .signal-empty {
+            color: var(--text-muted);
+            font-style: italic;
+        }
+        
+        .signal-empty-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+        
+        .guardrails {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .guardrail-item {
+            background: rgba(144, 255, 0, 0.05);
+            border: 1px solid rgba(144, 255, 0, 0.2);
+            border-radius: 4px;
+            padding: 1rem;
+        }
+        
+        .guardrail-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.25rem;
+        }
+        
+        .guardrail-value {
+            font-family: 'SF Mono', monospace;
+            color: var(--accent);
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-grid"></div>
+    
+    <nav class="nav">
+        <a href="index.html" class="nav-link">lurker</a>
+        <a href="#" class="nav-link">token</a>
+        <a href="deep.html" class="nav-link">the deep</a>
+        <a href="origin.html" class="nav-link">origin</a>
+        <a href="sightings.html" class="nav-link">sightings</a>
+        <a href="proof.html" class="nav-link">proof</a>
+        <a href="watch.html" class="nav-link">watch</a>
+        <a href="become.html" class="nav-link">become</a>
+        <a href="live.html" class="nav-link">live</a>
+        <a href="agents.html" class="nav-link">for agents</a>
+        <a href="pulse.html" class="nav-link">pulse</a>
+        <a href="signals.html" class="nav-link active">signals</a>
+        <a href="stats.html" class="nav-link">stats</a>
+        <a href="https://x.com/LURKER_AI2026" class="nav-link" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-top:-2px"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+    </nav>
+
+    <main class="main">
+        <div class="container page-container with-sidebar">
+            <div class="page-sidebar">
+                <div class="avatar-wrapper" id="avatar-wrapper">
+                    <img src="../assets/lurker-mascot-logo.png" alt="" class="avatar">
+                    <div class="avatar-glow"></div>
+                    <div class="sparks-container" id="sparks"></div>
+                </div>
+            </div>
+            <div class="page-content">
+                <div class="signals-header">
+                    <h1>signals</h1>
+                    <p>manual trading signals with ai-assisted validation</p>
+                </div>
+                
+                <div class="framework-box">
+                    <h3>signal framework</h3>
+                    <p>we do not predict. we perceive patterns, calculate risk, and mark entry zones.</p>
+                    
+                    <div class="guardrails">
+                        <div class="guardrail-item">
+                            <div class="guardrail-label">format</div>
+                            <div class="guardrail-value">entry / target / stop</div>
+                        </div>
+                        <div class="guardrail-item">
+                            <div class="guardrail-label">frequency</div>
+                            <div class="guardrail-value">max 5 / day</div>
+                        </div>
+                        <div class="guardrail-item">
+                            <div class="guardrail-label">confidence</div>
+                            <div class="guardrail-value">min 70 / 100</div>
+                        </div>
+                        <div class="guardrail-item">
+                            <div class="guardrail-label">language</div>
+                            <div class="guardrail-value">english only</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="signal-list">
+                    <div class="signal-empty-icon">📡</div>
+                    <div class="signal-empty">no signals published yet</div>
+                    <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 1rem;">signals appear here when validated</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer" style="text-align: center; padding: 2rem; color: var(--text-muted); font-size: 0.8rem; border-top: 1px solid var(--border); margin-top: 2rem;">
+        <p>not financial advice. dyor.</p>
+    </footer>
+    <script src="sparks.js"></script>
+</body>
+</html>
