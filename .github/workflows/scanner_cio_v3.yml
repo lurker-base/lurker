@@ -33,12 +33,12 @@ jobs:
       - name: Run ULTRA LAUNCH scanner
         run: python3 scripts/scanner_cio_ultra.py
 
-      - name: Health check - validate feed (info only)
+      - name: Health check - validate feed
         run: |
           if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-            python3 scripts/health_check.py --manual || echo "Health check warning - continuing"
+            python3 scripts/health_check.py --manual
           else
-            python3 scripts/health_check.py || echo "Health check warning - continuing"
+            python3 scripts/health_check.py
           fi
 
       - name: Commit updates

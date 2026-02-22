@@ -122,15 +122,36 @@ def process_cio_for_watch(cio, state):
     return result, None
 
 def scan():
-    """Main scan for WATCH candidates"""
+    """Main scan for WATCH candidates - always produces output file"""
     print("=" * 60)
     print("[WATCH] LURKER 10-30min Silent Buffer")
     print("=" * 60)
     
     # Load CIO feed
     if not CIO_FILE.exists():
-        print("[WATCH] No CIO feed found")
-        return
+        print("[WATCH] ⚠️ No CIO feed found — creating empty watch feed")
+        # Create empty feed even if no CIO
+        feed = {
+            "schema": "lurker_watch_v1",
+            "meta": {
+                "updated_at": iso(),
+                "source": "cio_10-30min_buffer",
+                "count": 0,
+                "criteria": {
+                    "age_minutes": f"{MIN_AGE_MINUTES}-{MAX_AGE_MINUTES}",
+                    "min_liq_usd": MIN_LIQ_USD,
+                    "min_tx_5m": MIN_TX_5M,
+                    "max_checks": MAX_CHECKS
+                },
+                "rejected": {"no_cio_feed": 1}
+            },
+            "watch": []
+        }
+        WATCH_FILE.parent.mkdir(parents=True, exist_ok=True)
+        with open(WATCH_FILE, 'w', encoding='utf-8') as f:
+            json.dump(feed, f, ensure_ascii=False, indent=2)
+        print(f"[WATCH] ✅ Created empty feed (no CIO available)")
+        return 0
     
     with open(CIO_FILE) as f:
         cio_feed = json.load(f)
@@ -203,6 +224,8 @@ def scan():
         print(f"  • {w['token']['symbol']}: checks={w['timestamps']['checks']}, "
               f"age={w['timestamps']['age_minutes']:.0f}m, "
               f"tx5m={w['metrics']['txns_5m']}")
+    
+    return 0  # Success - file created
 
 def write_fail(msg: str):
     """Write empty feed with error - never crash GitHub Actions"""
@@ -223,7 +246,8 @@ def write_fail(msg: str):
 
 if __name__ == "__main__":
     try:
-        scan()
+        exit_code = scan()
+        sys.exit(exit_code if exit_code is not None else 0)
     except Exception as e:
         write_fail(f"watch scanner crashed: {repr(e)}")
-        sys.exit(0)
+        sys.exit(0)  # Still exit 0 - we created the error file
