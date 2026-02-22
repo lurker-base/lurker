@@ -17,9 +17,9 @@ CIO_FILE = Path(__file__).parent.parent / "signals" / "cio_feed.json"
 WATCH_FILE = Path(__file__).parent.parent / "signals" / "watch_feed.json"
 STATE_FILE = Path(__file__).parent.parent / "state" / "watch_state.json"
 
-# WATCH criteria (10-30 min window) - ULTRA LAUNCH MODE
+# WATCH criteria (10-90 min window) - matches new CIO 3h window
 MIN_AGE_MINUTES = 10
-MAX_AGE_MINUTES = 30
+MAX_AGE_MINUTES = 90
 MIN_LIQ_USD = 2_500      # ULTRA: $2.5k (was $4k, originally $8k)
 MIN_TX_5M = 5            # ULTRA: 5 tx (was 8)
 MAX_CHECKS = 2

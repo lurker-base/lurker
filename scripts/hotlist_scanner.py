@@ -18,9 +18,9 @@ CIO_FILE = Path(__file__).parent.parent / "signals" / "cio_feed.json"
 HOTLIST_FILE = Path(__file__).parent.parent / "signals" / "hotlist_feed.json"
 STATE_FILE = Path(__file__).parent.parent / "state" / "hotlist_state.json"
 
-# HOTLIST criteria (30-60 min window) - ULTRA LAUNCH MODE
-MIN_AGE_MINUTES = 30
-MAX_AGE_MINUTES = 60
+# HOTLIST criteria (90-180 min window) - matches new CIO 3h window
+MIN_AGE_MINUTES = 90
+MAX_AGE_MINUTES = 180
 MIN_LIQ_USD = 5_000       # ULTRA: $5k (was $7k, originally $15k)
 MIN_TX_1H = 30            # ULTRA: 30 (was 40)
 MIN_TX_15M = 12           # ULTRA: 12 (was 15)

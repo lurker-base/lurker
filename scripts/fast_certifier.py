@@ -16,7 +16,7 @@ CIO_FILE = Path(__file__).parent.parent / "signals" / "cio_feed.json"
 FAST_FILE = Path(__file__).parent.parent / "signals" / "fast_certified_feed.json"
 
 # FAST-CERTIFIED criteria (1-24h) - LAUNCH MODE
-MIN_AGE_HOURS = 1
+MIN_AGE_HOURS = 3
 MAX_AGE_HOURS = 24
 MIN_LIQ_USD = 15_000      # LAUNCH MODE: $15k (was $20k)
 MIN_TX_6H = 50

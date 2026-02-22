@@ -20,7 +20,7 @@ STATE_FILE = Path(__file__).parent.parent / "state" / "token_registry.json"
 MIN_LIQ_USD = 1_000        # $1k (was $2k)
 MIN_VOLUME_5M = 50         # $50 vol 5min
 MIN_TX_5M = 2              # 2 tx minimum
-MAX_AGE_MINUTES = 60       # Extended window
+MAX_AGE_MINUTES = 180      # 3h window (was 60min) - capture more launches
 TIMEOUT = 15
 
 def now_ms():
