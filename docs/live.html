@@ -3,457 +3,307 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>live — lurker</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="alternate icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="style.css">
+    <title>LURKER — Live CIO Feed</title>
     <style>
-        .signal-stream {
-            margin-top: 1rem;
+        :root {
+            --bg: #0a0a0f;
+            --surface: #12121a;
+            --surface-2: #1a1a24;
+            --border: #2a2a3a;
+            --text: #e0e0e0;
+            --text-muted: #888;
+            --accent: #90ff00;
+            --accent-fast: #ffcc00;
+            --accent-cert: #00ccff;
+            --danger: #ff4444;
+            --warning: #ff8800;
         }
         
-        .live-signal {
-            padding: 1.5rem;
-            background: rgba(255, 102, 0, 0.05);
-            border: 1px solid rgba(255, 102, 0, 0.3);
-            border-left: 4px solid var(--accent);
-            margin-bottom: 1rem;
-            animation: signal-in 0.5s ease-out;
-        }
+        * { box-sizing: border-box; }
         
-        @keyframes signal-in {
-            from {
-                opacity: 0;
-                transform: translateX(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-        
-        .signal-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
-        
-        .signal-type {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 1.1rem;
-            color: var(--accent);
-            font-weight: 500;
-        }
-        
-        .signal-time {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            font-family: 'SF Mono', monospace;
-        }
-        
-        .signal-wallet {
-            font-family: 'SF Mono', monospace;
-            font-size: 0.95rem;
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
             color: var(--text);
-            margin-bottom: 0.5rem;
-        }
-        
-        .signal-pattern {
-            color: var(--text-muted);
-            font-size: 0.9rem;
-            margin-bottom: 0.75rem;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace;
             line-height: 1.5;
         }
         
-        .signal-meta {
-            display: flex;
-            gap: 1.5rem;
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            margin-bottom: 1rem;
-        }
-        
-        .signal-meta span {
-            display: flex;
-            align-items: center;
-            gap: 0.25rem;
-        }
-        
-        .signal-link {
-            display: inline-block;
-            color: var(--accent);
-            font-size: 0.85rem;
-        }
-        
-        .listening-status {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
             padding: 1rem;
-            background: rgba(0, 255, 0, 0.05);
-            border: 1px solid rgba(0, 255, 0, 0.2);
+        }
+        
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 1.5rem;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: var(--accent);
+            letter-spacing: 2px;
+        }
+        
+        .subtitle {
+            color: var(--text-muted);
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        /* Stats Bar */
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: var(--surface);
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+        
+        .stat-box {
+            text-align: center;
+            padding: 0.5rem 1rem;
+            min-width: 100px;
+        }
+        
+        .stat-value {
+            display: block;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+        
+        .stat-fast .stat-value { color: var(--accent-fast); }
+        .stat-cert .stat-value { color: var(--accent-cert); }
+        
+        .stat-label {
+            display: block;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-top: 0.2rem;
+        }
+        
+        .stat-updated {
+            width: 100%;
+            text-align: center;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-top: 0.5rem;
+            padding-top: 0.5rem;
+            border-top: 1px solid var(--border);
+        }
+        
+        /* Feed Sections */
+        .feed-section {
             margin-bottom: 2rem;
         }
         
-        .listening-dot {
-            width: 10px;
-            height: 10px;
-            background: #00ff00;
-            border-radius: 50%;
-            animation: pulse-green 2s infinite;
-        }
-        
-        @keyframes pulse-green {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.3; }
-        }
-        
-        .no-signals {
-            text-align: center;
-            padding: 3rem;
-            color: var(--text-muted);
-        }
-        
-        .no-signals-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            opacity: 0.5;
-        }
-        
-        .chain-selector {
+        .feed-header {
             display: flex;
             align-items: center;
-            gap: 0.75rem;
+            gap: 0.5rem;
             margin-bottom: 1rem;
-            padding: 0.75rem 1rem;
-            background: rgba(255,255,255,0.02);
-            border: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border);
         }
         
-        .chain-label {
-            font-size: 0.85rem;
+        .feed-header h2 {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+        
+        .feed-header.cio h2 { color: var(--accent); }
+        .feed-header.fast h2 { color: var(--accent-fast); }
+        .feed-header.cert h2 { color: var(--accent-cert); }
+        
+        .feed-desc {
+            font-size: 0.8rem;
             color: var(--text-muted);
-            text-transform: lowercase;
+            margin-left: auto;
         }
         
-        .chain-select {
-            background: var(--bg);
+        /* Token Cards */
+        .token-card {
+            background: var(--surface);
             border: 1px solid var(--border);
-            color: var(--text);
-            padding: 0.4rem 0.75rem;
-            font-size: 0.9rem;
-            cursor: pointer;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+            transition: transform 0.1s, border-color 0.2s;
         }
         
-        .chain-select:focus {
-            outline: none;
+        .token-card:hover {
+            transform: translateX(4px);
             border-color: var(--accent);
         }
         
-        .chain-select option:disabled {
-            color: var(--text-muted);
-            opacity: 0.5;
-        }
+        .card-cio { border-left: 3px solid var(--accent); }
+        .card-fast { border-left: 3px solid var(--accent-fast); }
+        .card-cert { border-left: 3px solid var(--accent-cert); }
         
-        .signal-legend {
+        .card-header {
             display: flex;
-            flex-direction: column;
-            gap: 0.75rem;
-            margin-top: 1rem;
-        }
-        
-        .legend-item {
-            display: flex;
+            justify-content: space-between;
             align-items: center;
-            gap: 0.75rem;
-            font-size: 0.9rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
         }
         
-        .legend-icon {
+        .token-symbol {
             font-size: 1.2rem;
+            font-weight: bold;
         }
         
-        .legend-text {
+        .badges {
+            display: flex;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+        }
+        
+        /* Badges */
+        .badge-age, .badge-status, .badge-source {
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.65rem;
+            font-weight: bold;
+        }
+        
+        .badge-new { background: #00ff00; color: #000; }
+        .badge-fresh { background: #90ff00; color: #000; }
+        .badge-young { background: #ffcc00; color: #000; }
+        .badge-aging { background: #ff8800; color: #000; }
+        .badge-old { background: #ff4444; color: #fff; }
+        
+        .badge-cio { background: var(--accent); color: #000; }
+        .badge-fast { background: var(--accent-fast); color: #000; }
+        .badge-cert { background: var(--accent-cert); color: #000; }
+        
+        .card-metrics {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+        
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.75rem;
             color: var(--text-muted);
         }
         
-        /* Mobile styles */
-        @media (max-width: 768px) {
-            body {
-                padding-top: 60px;
-            }
-            
-            .page-container.with-sidebar {
-                flex-direction: column;
-                padding: 0 1rem;
-            }
-            
-            .page-sidebar {
-                width: 100%;
-                max-width: 200px;
-                margin: 0 auto 1rem;
-            }
-            
-            .page-content {
-                padding: 0;
-            }
-            
-            .page-title {
-                font-size: 1.5rem;
-                text-align: center;
-            }
-            
-            .live-signal {
-                padding: 1rem;
-                margin-bottom: 0.75rem;
-            }
-            
-            .signal-header {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 0.25rem;
-            }
-            
-            .signal-type {
-                font-size: 1rem;
-            }
-            
-            .signal-pattern {
-                font-size: 0.8rem;
-            }
-            
-            .signal-meta {
-                flex-wrap: wrap;
-                gap: 0.75rem;
-            }
-            
-            .chain-selector {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 0.5rem;
-            }
-            
-            .listening-status {
-                font-size: 0.8rem;
-                padding: 0.75rem;
-            }
+        .dex-link {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        .dex-link:hover {
+            text-decoration: underline;
+        }
+        
+        .empty-feed {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-style: italic;
+            background: var(--surface);
+            border-radius: 8px;
+            border: 1px dashed var(--border);
+        }
+        
+        .warning-banner {
+            background: var(--warning);
+            color: #000;
+            padding: 0.75rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            font-size: 0.85rem;
+            text-align: center;
+        }
+        
+        /* Loading */
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+        }
+        
+        @media (max-width: 600px) {
+            .card-metrics { gap: 0.5rem; font-size: 0.75rem; }
+            .stat-box { min-width: 80px; padding: 0.5rem; }
+            .stat-value { font-size: 1.4rem; }
         }
     </style>
 </head>
 <body>
-    <div class="bg-grid"></div>
-    
-    <nav class="nav">
-        <a href="index.html" class="nav-link">lurker</a>
-        <a href="#" class="nav-link">token</a>
-        <a href="deep.html" class="nav-link">the deep</a>
-        <a href="origin.html" class="nav-link">origin</a>
-        <a href="sightings.html" class="nav-link">sightings</a>
-        <a href="proof.html" class="nav-link">proof</a>
-        <a href="watch.html" class="nav-link">watch</a>
-        <a href="become.html" class="nav-link">become</a>
-        <a href="live.html" class="nav-link active">live</a>
-        <a href="agents.html" class="nav-link">for agents</a>
-        <a href="pulse.html" class="nav-link">pulse</a>
-        <a href="stats.html" class="nav-link">stats</a>
-        <a href="https://x.com/LURKER_AI2026" class="nav-link" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-top:-2px"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-    </nav>
-
-    <main class="main">
-        <div class="container page-container with-sidebar">
-            <div class="page-sidebar">
-                <div class="avatar-wrapper" id="avatar-wrapper">
-                    <img src="../assets/lurker-mascot-logo.png" alt="" class="avatar">
-                    <div class="avatar-glow"></div>
-                    <div class="sparks-container" id="sparks"></div>
-                </div>
-            </div>
-            <div class="page-content">
-                <h1 class="page-title">live signals</h1>
-                
-                <div class="chain-selector">
-                    <span class="chain-label">territory:</span>
-                    <select class="chain-select" id="chain-select">
-                        <option value="base" selected>Base (mainnet)</option>
-                        <option value="ethereum" disabled>Ethereum (soon)</option>
-                        <option value="arbitrum" disabled>Arbitrum (soon)</option>
-                        <option value="optimism" disabled>Optimism (soon)</option>
-                    </select>
-                </div>
-
-                <div class="listening-status">
-                    <span class="listening-dot"></span>
-                    <span>listening to <span id="current-chain">base</span> — next scan in <span id="countdown">0:30</span></span>
-                </div>
-
-                <div class="live-header" style="margin: 20px 0; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px;">
-                    <span style="color: var(--text-muted); font-size: 0.9rem;">tracking <span id="token-count">0</span> liquid tokens</span>
-                    <span style="color: var(--accent); font-size: 0.8rem;">updated: <span id="last-update">--:--</span></span>
-                </div>
-
-                <!-- CIO Candidates Feed -->
-                <div class="section">
-                    <div class="section-title">🎯 CIO Candidates (0-48h)</div>
-                    <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:1rem;">
-                        Fresh tokens detected on-chain. Under observation, not yet certified.
-                    </p>
-                    <div style="background:rgba(255,136,0,0.1);border:1px solid rgba(255,136,0,0.3);padding:0.75rem;border-radius:6px;margin-bottom:1rem;font-size:0.85rem;color:var(--text-muted);">
-                        ⚠️ <strong>CIO are early candidates, not trade signals.</strong> Most will fail. 
-                        Only CERTIFIED signals (48h+) have survived initial filtering.
-                    </div>
-                    <div id="cio-feed-container" class="signal-stream">
-                        <div class="no-signals">
-                            <div class="no-signals-icon">📡</div>
-                            <p>Loading CIO feed...</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="section">
-                    <div class="section-title">signal types</div>
-                    <div class="signal-legend">
-                        <div class="legend-item">
-                            <span class="legend-icon">🟠</span>
-                            <span class="legend-text"><strong>Accumulation</strong> — repetitive buying, position building</span>
-                        </div>
-                        <div class="legend-item">
-                            <span class="legend-icon">🔴</span>
-                            <span class="legend-text"><strong>Distribution</strong> — selling pressure, large moves to exchanges</span>
-                        </div>
-                        <div class="legend-item">
-                            <span class="legend-icon">⚪</span>
-                            <span class="legend-text"><strong>Awakening</strong> — dormant wallets becoming active</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="section">
-                    <div class="section-title">telegram alerts</div>
-                    <div class="section-content">
-                        <p>Get these signals instantly on Telegram. Join the private channel for real-time alerts.</p>
-                        <a href="#" class="action-link">request access →</a>
-                    </div>
-                </div>
-            </div>
+    <div class="container">
+        <header>
+            <h1>🎯 LURKER</h1>
+            <div class="subtitle">Base Token Intelligence — CIO / FAST-CERTIFIED / CERTIFIED</div>
+        </header>
+        
+        <div class="warning-banner">
+            ⚠️ CIO are early candidates, not trade signals. Most will fail. Do your own research.
         </div>
-    </main>
-
-    <footer class="footer">
-        <span class="mono">listening to the depths</span>
-    </footer>
-
-    <script>
-        // Chain selector
-        const chainSelect = document.getElementById('chain-select');
-        const currentChain = document.getElementById('current-chain');
         
-        chainSelect.addEventListener('change', (e) => {
-            const chain = e.target.value;
-            if (currentChain) currentChain.textContent = chain;
-            console.log('[LURKER] Switched to territory:', chain);
-        });
-
-        // Countdown timer
-        let seconds = 30;
-        const countdownEl = document.getElementById('countdown');
+        <!-- Stats Bar -->
+        <div id="feed-stats" class="stats-bar">
+            <div class="loading">Loading stats...</div>
+        </div>
         
-        setInterval(() => {
-            seconds--;
-            if (seconds < 0) seconds = 30;
-            
-            const mins = Math.floor(seconds / 60);
-            const secs = seconds % 60;
-            if (countdownEl) {
-                countdownEl.textContent = `${mins}:${secs.toString().padStart(2, '0')}`;
-            }
-        }, 1000);
-
-        // Fetch live signals
-        const signalStream = document.getElementById('signal-stream');
+        <!-- CIO Section (0-6h) -->
+        <section class="feed-section">
+            <div class="feed-header cio">
+                <h2>🌱 CIO (0-6h)</h2>
+                <span class="feed-desc">Fresh detections — high risk, high reward</span>
+            </div>
+            <div id="cio-feed">
+                <div class="loading">Loading CIO candidates...</div>
+            </div>
+        </section>
         
-        async function fetchSignals() {
-            try {
-                // For GitHub Pages, we fetch from the raw JSON file
-                const response = await fetch('https://raw.githubusercontent.com/lurker-base/lurker/main/data/signals.json?t=' + Date.now());
-                if (!response.ok) throw new Error('Failed to fetch');
-                
-                const signals = await response.json();
-                if (!signals || signals.length === 0) return;
-                
-                // Clear and rebuild signal list
-                signalStream.innerHTML = '';
-                
-                signals.slice(0, 10).forEach(signal => {
-                    const signalEl = document.createElement('div');
-                    signalEl.className = 'live-signal';
-                    signalEl.innerHTML = `
-                        <div class="signal-header">
-                            <span class="signal-type">
-                                <span>${signal.emoji}</span>
-                                <span>NEW TOKEN — ${signal.symbol}</span>
-                                <span style="margin-left: 0.5rem; font-size: 0.8rem; color: var(--text-muted);">Score: ${signal.score}/100</span>
-                            </span>
-                            <span class="signal-time">${formatTime(signal.detectedAt)}</span>
-                        </div>
-                        <div class="signal-wallet">${signal.name}</div>
-                        <div class="signal-pattern">${signal.checks.map(c => '✓ ' + c.replace(/_/g, ' ')).join(' · ')}</div>
-                        <div class="signal-meta">
-                            <span>Price: $${signal.priceUSD.toFixed(6)}</span>
-                            <span>Liq: $${signal.liquidityUSD.toLocaleString()}</span>
-                            <span>Vol24h: $${signal.volume24h.toLocaleString()}</span>
-                            <span>Risk: ${signal.risk}</span>
-                        </div>
-                        <div style="display: flex; gap: 1rem; margin-top: 0.5rem;">
-                            <a href="https://dexscreener.com/base/${signal.address}" target="_blank" class="signal-link">dexscreener →</a>
-                            <a href="https://basescan.org/address/${signal.address}" target="_blank" class="signal-link">basescan →</a>
-                        </div>
-                    `;
-                    signalStream.appendChild(signalEl);
-                });
-                
-                console.log('[LURKER] Signals updated:', signals.length);
-                
-            } catch (error) {
-                console.log('[LURKER] Using demo data (scanner not running yet)');
-            }
-        }
+        <!-- FAST-CERTIFIED Section (6-24h) -->
+        <section class="feed-section">
+            <div class="feed-header fast">
+                <h2>⚡ FAST-CERTIFIED (6-24h)</h2>
+                <span class="feed-desc">Momentum confirmed — x5/x10 territory</span>
+            </div>
+            <div id="fast-feed">
+                <div class="loading">Loading fast-certified...</div>
+            </div>
+        </section>
         
-        function formatTime(timestamp) {
-            const diff = Date.now() - timestamp;
-            const mins = Math.floor(diff / 60000);
-            if (mins < 1) return 'just now';
-            if (mins === 1) return '1m ago';
-            if (mins < 60) return `${mins}m ago`;
-            const hours = Math.floor(mins / 60);
-            return `${hours}h ago`;
-        }
+        <!-- CERTIFIED Section (24h+) -->
+        <section class="feed-section">
+            <div class="feed-header cert">
+                <h2>✓ CERTIFIED (24h+)</h2>
+                <span class="feed-desc">Survivors with holders verification</span>
+            </div>
+            <div id="cert-feed">
+                <div class="empty-feed">No CERTIFIED yet — waiting for 24h+ survivors</div>
+            </div>
+        </section>
         
-        // Initial fetch
-        fetchSignals();
-        
-        // Refresh every 30 seconds
-        setInterval(fetchSignals, 30000);
-    </script>
-    <script src="cioFeed.js"></script>
-    <script src="liveDisplay.js"></script>
-    <script>
-        // Sparks effect
-        const sparksContainer = document.getElementById('sparks');
-        if (sparksContainer) {
-            for (let i = 0; i < 12; i++) {
-                const spark = document.createElement('div');
-                spark.className = 'spark';
-                spark.style.left = Math.random() * 100 + '%';
-                spark.style.top = Math.random() * 100 + '%';
-                spark.style.animationDelay = Math.random() * 2 + 's';
-                spark.style.animation = `spark-float ${2 + Math.random() * 2}s ease-in-out infinite`;
-                sparksContainer.appendChild(spark);
-            }
-        }
-    </script>
-<script src="sparks.js"></script>
+        <footer style="text-align: center; padding: 2rem 0; color: var(--text-muted); font-size: 0.8rem; border-top: 1px solid var(--border); margin-top: 2rem;">
+            <p>LURKER — Automated token discovery on Base</p>
+            <p>Not financial advice. DYOR.</p>
+        </footer>
+    </div>
+    
+    <script src="unifiedFeed.js"></script>
 </body>
 </html>

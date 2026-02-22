@@ -1,0 +1,20 @@
+{
+  "schema": "lurker_fast_certified_v1",
+  "meta": {
+    "updated_at": "2026-02-22T11:19:19.926114+00:00",
+    "source": "cio_recheck",
+    "count": 0,
+    "criteria": {
+      "min_age_hours": 6,
+      "max_age_hours": 24,
+      "min_liq_usd": 20000,
+      "min_tx_6h": 50
+    },
+    "rejected": {
+      "age_0.8h": 1,
+      "age_3.0h": 1,
+      "age_5.1h": 1
+    }
+  },
+  "fast_certified": []
+}
