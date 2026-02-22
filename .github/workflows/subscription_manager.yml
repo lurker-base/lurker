@@ -1,0 +1,32 @@
+name: LURKER Subscription Manager — Auto-expire & Notify
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Check every 6 hours
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  manage-subscriptions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check for expired subscriptions
+        env:
+          LURKER_SUB_BOT_TOKEN: ${{ secrets.LURKER_SUB_BOT_TOKEN }}
+          LURKER_ADMIN_CHAT_ID: ${{ secrets.LURKER_ADMIN_CHAT_ID }}
+        run: |
+          echo "Checking for expired subscriptions..."
+          python3 scripts/subscription_bot.py expire_check --user system
+
+      - name: Commit state updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add state/ || true
+          git diff --cached --quiet || git commit -m "chore: subscription state update [skip ci]"
+          git push || echo "Nothing to push"

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>subscribe — lurker</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .subscribe-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .subscribe-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .subscribe-header p {
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .tiers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto 3rem;
+        }
+        
+        .tier-card {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem;
+            position: relative;
+            transition: all 0.3s;
+        }
+        
+        .tier-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-4px);
+        }
+        
+        .tier-card.featured {
+            border-color: var(--accent);
+            background: rgba(255,102,0,0.05);
+        }
+        
+        .tier-badge {
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            background: var(--accent);
+            color: #000;
+            padding: 0.25rem 1rem;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        .tier-name {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tier-price {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        .tier-price span {
+            font-size: 1rem;
+            color: var(--text-muted);
+            font-weight: normal;
+        }
+        
+        .tier-features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 2rem;
+        }
+        
+        .tier-features li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .tier-features li::before {
+            content: "✓";
+            color: var(--accent);
+        }
+        
+        .btn-subscribe {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            background: var(--accent);
+            color: #000;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-subscribe:hover {
+            background: #ff8844;
+        }
+        
+        .payment-section {
+            max-width: 600px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background: rgba(255,255,255,0.02);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            display: none;
+        }
+        
+        .payment-section.active {
+            display: block;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 0.75rem;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            color: var(--text);
+            font-size: 1rem;
+        }
+        
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+        
+        .wallet-address {
+            background: rgba(0,0,0,0.3);
+            padding: 1rem;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9rem;
+            word-break: break-all;
+            margin: 1rem 0;
+            border: 1px solid var(--border);
+        }
+        
+        .payment-instructions {
+            background: rgba(255,102,0,0.1);
+            border-left: 3px solid var(--accent);
+            padding: 1rem;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        
+        .crypto-options {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .crypto-option {
+            flex: 1;
+            padding: 1rem;
+            background: rgba(255,255,255,0.05);
+            border: 2px solid transparent;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.2s;
+        }
+        
+        .crypto-option:hover,
+        .crypto-option.selected {
+            border-color: var(--accent);
+            background: rgba(255,102,0,0.1);
+        }
+        
+        .crypto-option img {
+            width: 32px;
+            height: 32px;
+            margin-bottom: 0.5rem;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: var(--text-muted);
+            text-decoration: none;
+        }
+        
+        .back-link:hover {
+            color: var(--accent);
+        }
+        
+        @media (max-width: 768px) {
+            .tiers-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .tier-price {
+                font-size: 2.5rem;
+            }
+            
+            .crypto-options {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-grid"></div>
+    
+    <nav class="nav">
+        <a href="index.html" class="nav-link">lurker</a>
+        <a href="token.html" class="nav-link">token</a>
+        <a href="deep.html" class="nav-link">the deep</a>
+        <a href="origin.html" class="nav-link">origin</a>
+        <a href="sightings.html" class="nav-link">sightings</a>
+        <a href="proof.html" class="nav-link">proof</a>
+        <a href="hall-of-fame.html" class="nav-link">hall of fame</a>
+        <a href="watch.html" class="nav-link">watch</a>
+        <a href="become.html" class="nav-link">become</a>
+        <a href="live.html" class="nav-link">live</a>
+        <a href="agents.html" class="nav-link">for agents</a>
+        <a href="pulse.html" class="nav-link">pulse</a>
+        <a href="signals.html" class="nav-link">signals</a>
+        <a href="subscribe.html" class="nav-link active">subscribe</a>
+    </nav>
+    
+    <main class="main">
+        <div class="container">
+            <div class="subscribe-header">
+                <h1>subscribe</h1>
+                <p>access lurker intelligence. pay with crypto. no intermediaries.</p>
+            </div>
+            
+            <div class="tiers-grid" id="tiers-section">
+                <div class="tier-card featured">
+                    <div class="tier-badge">popular</div>
+                    <h3 class="tier-name">pro signals</h3>
+                    <div class="tier-price">$19<span>/month</span></div>
+                    <ul class="tier-features">
+                        <li>real-time signals (no delay)</li>
+                        <li>telegram alerts</li>
+                        <li>early access to detections</li>
+                        <li>private group access</li>
+                        <li>priority support</li>
+                    </ul>
+                    <button class="btn-subscribe" onclick="showPayment('pro_signals', 19)">subscribe</button>
+                </div>
+                
+                <div class="tier-card">
+                    <h3 class="tier-name">api basic</h3>
+                    <div class="tier-price">$29<span>/month</span></div>
+                    <ul class="tier-features">
+                        <li>api access</li>
+                        <li>1,000 requests/day</li>
+                        <li>cio feed</li>
+                        <li>watch list</li>
+                        <li>basic support</li>
+                    </ul>
+                    <button class="btn-subscribe" onclick="showPayment('api_basic', 29)">subscribe</button>
+                </div>
+                
+                <div class="tier-card">
+                    <h3 class="tier-name">api pro</h3>
+                    <div class="tier-price">$79<span>/month</span></div>
+                    <ul class="tier-features">
+                        <li>api access</li>
+                        <li>unlimited requests</li>
+                        <li>all feeds (cio, watch, hotlist)</li>
+                        <li>webhooks</li>
+                        <li>priority support</li>
+                    </ul>
+                    <button class="btn-subscribe" onclick="showPayment('api_pro', 79)">subscribe</button>
+                </div>
+            </div>
+            
+            <div class="payment-section" id="payment-section">
+                <h2>complete your subscription</h2>
+                <p>you selected: <strong id="selected-tier">-</strong> — $<span id="selected-price">-</span>/month</p>
+                
+                <div class="form-group">
+                    <label>telegram username</label>
+                    <input type="text" id="telegram-username" placeholder="@your_username" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>select payment method</label>
+                    <div class="crypto-options">
+                        <div class="crypto-option selected" onclick="selectChain('base')">
+                            <div style="font-size: 1.5rem;">🔵</div>
+                            <div>Base</div>
+                            <small>USDC</small>
+                        </div>
+                        <div class="crypto-option" onclick="selectChain('ethereum')">
+                            <div style="font-size: 1.5rem;">⬛</div>
+                            <div>Ethereum</div>
+                            <small>USDT</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="payment-instructions">
+                    <strong>how to pay:</strong>
+                    <ol style="margin: 0.5rem 0 0 1.5rem;">
+                        <li>send <strong>exact amount</strong> (or more) to the address below</li>
+                        <li>include your telegram username in the memo if possible</li>
+                        <li>after sending, message our bot with your transaction hash</li>
+                        <li>you'll be added to the private group within minutes</li>
+                    </ol>
+                </div>
+                
+                <div class="form-group">
+                    <label>send $<span id="pay-amount">19</span> to:</label>
+                    <div class="wallet-address" id="wallet-address">
+                        0x... (loading)
+                    </div>
+                    <small style="color: var(--text-muted);">payment valid for 24 hours</small>
+                </div>
+                
+                <div class="payment-instructions" style="background: rgba(0,255,0,0.1); border-color: #00ff00;">
+                    <strong>confirm your payment:</strong><br>
+                    message <code>@lurker_sub_bot</code> with:<br>
+                    <code>/paid [payment_id] [transaction_hash]</code>
+                </div>
+                
+                <a href="#" class="back-link" onclick="showTiers(); return false;">← back to tiers</a>
+            </div>
+        </div>
+    </main>
+    
+    <script src="sparks.js"></script>
+    <script>
+        // Wallet addresses (replace with actual addresses)
+        const WALLETS = {
+            base: '0x2124556AC7056dD2C16b260b8F4e02748F44d1dC',  // Clara's existing wallet
+            ethereum: '0x2124556AC7056dD2C16b260b8F4e02748F44d1dC'  // Same for now
+        };
+        
+        let selectedChain = 'base';
+        let selectedTier = 'pro_signals';
+        let selectedPrice = 19;
+        
+        function showPayment(tier, price) {
+            selectedTier = tier;
+            selectedPrice = price;
+            
+            document.getElementById('selected-tier').textContent = tier.replace('_', ' ');
+            document.getElementById('selected-price').textContent = price;
+            document.getElementById('pay-amount').textContent = price;
+            document.getElementById('wallet-address').textContent = WALLETS[selectedChain];
+            
+            document.getElementById('tiers-section').style.display = 'none';
+            document.getElementById('payment-section').classList.add('active');
+        }
+        
+        function showTiers() {
+            document.getElementById('tiers-section').style.display = 'grid';
+            document.getElementById('payment-section').classList.remove('active');
+        }
+        
+        function selectChain(chain) {
+            selectedChain = chain;
+            document.getElementById('wallet-address').textContent = WALLETS[chain];
+            
+            // Update UI
+            document.querySelectorAll('.crypto-option').forEach(el => {
+                el.classList.remove('selected');
+            });
+            event.currentTarget.classList.add('selected');
+        }
+        
+        // Copy wallet address on click
+        document.getElementById('wallet-address').addEventListener('click', function() {
+            const text = this.textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                const original = this.textContent;
+                this.textContent = 'copied!';
+                setTimeout(() => {
+                    this.textContent = original;
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>

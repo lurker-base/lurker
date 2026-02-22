@@ -1,0 +1,14 @@
+{
+  "base": {
+    "address": "WALLET_ADDRESS_TO_CONFIGURE",
+    "private_key": "ENCRYPTED_OR_ENV",
+    "currency": "USDC",
+    "token_contract": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+  },
+  "ethereum": {
+    "address": "WALLET_ADDRESS_TO_CONFIGURE",
+    "private_key": "ENCRYPTED_OR_ENV",
+    "currency": "USDT",
+    "token_contract": "0xdAC17F958D2ee523a2206206994597C13D831ec7"
+  }
+}
