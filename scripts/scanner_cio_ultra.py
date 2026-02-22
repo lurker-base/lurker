@@ -261,6 +261,28 @@ def process_candidate(item, registry):
     vol_1h = safe_num((pair.get("volume") or {}).get("h1"), 0)
     tx_5m = (pair.get("txns") or {}).get("m5") or {}
     tx_count_5m = (tx_5m.get("buys") or 0) + (tx_5m.get("sells") or 0)
+    price_usd = safe_num(pair.get("priceUsd"), 0)
+    
+    # Track price history for Hall of Fame
+    if "price_history" not in token_meta:
+        token_meta["price_history"] = []
+    
+    # Add price point (limit to 100 points to avoid bloat)
+    token_meta["price_history"].append({
+        "timestamp": now_ms(),
+        "price": price_usd,
+        "liq": liq,
+        "vol_5m": vol_5m
+    })
+    if len(token_meta["price_history"]) > 100:
+        token_meta["price_history"] = token_meta["price_history"][-100:]
+    
+    # Store token info
+    token_meta["token"] = {
+        "address": token_addr,
+        "symbol": token_symbol,
+        "name": token.get("name", "")
+    }
     
     # ULTRA LAUNCH thresholds
     if liq < MIN_LIQ_USD:
@@ -304,7 +326,7 @@ def process_candidate(item, registry):
             "vol_5m_usd": vol_5m,
             "vol_1h_usd": vol_1h,
             "txns_5m": tx_count_5m,
-            "price_usd": pair.get("priceUsd"),
+            "price_usd": price_usd,
         },
         "timestamps": {
             "pair_created_at": iso(pair_created),

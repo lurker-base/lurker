@@ -1,0 +1,36 @@
+name: LURKER Hall of Fame
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'  # Every 2 hours
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: lurker-hof
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Hall of Fame tracker
+        run: python3 scripts/hall_of_fame.py
+
+      - name: Commit updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add signals/hall_of_fame.json || true
+          git diff --cached --quiet || git commit -m "chore: Hall of Fame update [skip ci]"
+          git push || echo "Nothing to push"
