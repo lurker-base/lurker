@@ -330,6 +330,7 @@ def scan():
         "schema": "lurker_cio_ultra_launch",
         "meta": {
             "updated_at": iso(),
+            "generated_at": iso(),  # For health check freshness validation
             "count": len(candidates),
             "thresholds": {
                 "min_liq_usd": MIN_LIQ_USD,
@@ -339,6 +340,7 @@ def scan():
             },
             "risk_distribution": dict(risk_counts),
             "rejected": dict(rejected),
+            "source": "ultra_launch_scanner",
         },
         "candidates": candidates,
     }
