@@ -115,6 +115,7 @@
                     <div class="section-title">
                         <span class="pulse-dot"></span>
                         live signals
+                        <span class="next-update" id="next-update">next scan in 60s</span>
                     </div>
                     <div class="tokens-grid" id="tokens-grid">
                         <div class="loading">scanning...</div>
@@ -233,6 +234,13 @@
             padding: 2rem;
         }
         
+        .next-update {
+            margin-left: auto;
+            font-size: 0.75rem;
+            color: #666;
+            font-weight: normal;
+        }
+        
         @keyframes pulse {
             0%, 100% { opacity: 1; }
             50% { opacity: 0.5; }
@@ -282,8 +290,24 @@
             }
         }
         
+        // Countdown timer
+        let timeLeft = 60;
+        const updateTimer = () => {
+            const timerEl = document.getElementById('next-update');
+            if (timerEl) {
+                timerEl.textContent = `next scan in ${timeLeft}s`;
+                timeLeft--;
+                if (timeLeft < 0) timeLeft = 60;
+            }
+        };
+        
+        setInterval(updateTimer, 1000);
+        
         loadLiveTokens();
-        setInterval(loadLiveTokens, 60000); // Refresh every minute
+        setInterval(() => {
+            loadLiveTokens();
+            timeLeft = 60;
+        }, 60000); // Refresh every minute
     </script>
 </body>
 </html>
