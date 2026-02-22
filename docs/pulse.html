@@ -499,11 +499,57 @@
                 <!-- LURKER Certified Signals -->
                 <div class="section">
                     <div class="section-title">LURKER certified signals</div>
-                    <div id="pulse-feed-container" class="token-feed"></div>
+                    <div id="pulse-feed-container" class="token-feed">
+                        <div class="no-signals">
+                            <div class="no-signals-icon">✓</div>
+                            <p>Loading certified signals...</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="token-feed" id="pulse-feed" style="display:none;">
-                    <div class="no-signals" id="loading-state" style="display:none;">
+                <script>
+                // Direct inline loader for pulse feed
+                (function() {
+                    const container = document.getElementById('pulse-feed-container');
+                    if (!container) return;
+                    
+                    fetch('https://raw.githubusercontent.com/lurker-base/lurker/main/signals/pulse_feed.json?t=' + Date.now(), {
+                        cache: 'no-store'
+                    })
+                    .then(r => r.json())
+                    .then(feed => {
+                        if (!Array.isArray(feed) || feed.length === 0) {
+                            container.innerHTML = '<div class="no-signals"><div class="no-signals-icon">✓</div><p>No certified signals yet</p></div>';
+                            return;
+                        }
+                        container.innerHTML = feed.slice(0, 10).map(s => {
+                            const dryRun = s.mode === 'dry-run' ? '<span style="background:#ffd700;color:#000;padding:2px 6px;border-radius:3px;font-size:0.7rem;margin-left:8px;">🧪 DRY-RUN</span>' : '';
+                            const certified = s.certified ? '<span style="background:#00ff00;color:#000;padding:2px 6px;border-radius:3px;font-size:0.7rem;margin-left:8px;">✓ CERTIFIED</span>' : '';
+                            return `<div class="signal-card" style="border:1px solid var(--border);border-left:3px solid #00ff00;padding:1rem;margin-bottom:1rem;border-radius:6px;">
+                                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem;">
+                                    <span style="font-size:1.2rem;font-weight:600;">${s.token?.symbol || 'UNKNOWN'}${certified}${dryRun}</span>
+                                    <span style="font-size:0.8rem;color:var(--text-muted);">${s.chain || 'base'}</span>
+                                </div>
+                                <div style="font-size:0.9rem;color:var(--text-muted);margin-bottom:0.5rem;">
+                                    Conf: ${s.scores?.confidence || 0}/100 | Risk: ${s.scores?.risk || 'high'} | ${s.signal_number || ''}
+                                </div>
+                                <div style="font-size:0.85rem;margin-bottom:0.5rem;">
+                                    Price: $${(s.metrics?.price_usd || 0).toExponential(2)} | 
+                                    MC: $${((s.metrics?.mcap_usd || 0)/1000).toFixed(0)}k | 
+                                    Liq: $${((s.metrics?.liq_usd || 0)/1000).toFixed(0)}k
+                                </div>
+                                <div style="font-size:0.8rem;color:var(--text-muted);">
+                                    ${s.ts_utc ? new Date(s.ts_utc).toLocaleString() : '--'}
+                                </div>
+                            </div>`;
+                        }).join('');
+                    })
+                    .catch(e => {
+                        console.error('Feed error:', e);
+                        container.innerHTML = '<div class="no-signals"><div class="no-signals-icon">⚠️</div><p>Error loading feed</p></div>';
+                    });
+                })();
+                </script>
                 </div>
 
                 <div class="section">
