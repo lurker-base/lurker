@@ -262,8 +262,10 @@
                 
                 grid.innerHTML = candidates.map(token => {
                     const quality = token.quality || {};
-                    const isPremium = quality.quality_score >= 80 && token.metrics.liq_usd > 100000;
-                    const isGood = quality.quality_score >= 60 || token.metrics.liq_usd > 50000;
+                    const vol1h = token.metrics.vol_1h_usd || 0;
+                    const isPumping = vol1h > 100000;
+                    const isPremium = quality.quality_score >= 80 && (token.metrics.liq_usd > 40000 || isPumping);
+                    const isGood = quality.quality_score >= 60 || token.metrics.liq_usd > 30000 || vol1h > 50000;
                     const statusClass = isPremium ? 'premium' : isGood ? 'good' : 'watch';
                     const statusLabel = isPremium ? 'PREMIUM' : isGood ? 'GOOD' : 'WATCH';
                     
@@ -281,6 +283,7 @@
                                 ${quality.has_image ? '🖼️' : ''}
                                 ${quality.has_socials ? '💬' : ''}
                                 ${quality.has_website ? '🌐' : ''}
+                                ${isPumping ? ' 🚀 PUMP' : ''}
                             </div>
                         </div>
                     `;

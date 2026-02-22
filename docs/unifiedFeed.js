@@ -115,11 +115,14 @@ function renderRiskBadge(riskLevel, risks = []) {
     return `<span class="badge-risk" style="background:${bg};color:${color};border:1px solid ${color};padding:2px 8px;border-radius:3px;font-size:0.7rem;text-transform:uppercase;">${riskLevel} risk${risks.length > 0 ? ': ' + riskText : ''}</span>`;
 }
 
-function renderQualityBadge(quality, liq) {
+function renderQualityBadge(quality, liq, vol1h = 0) {
     if (!quality) return '';
     const qScore = quality.quality_score || 0;
-    const isPremium = qScore >= 80 && liq > 100000;
-    const isGood = qScore >= 60 || liq > 50000;
+    // Premium: high quality + either good liquidity OR strong volume (pumping)
+    const hasGoodLiq = liq > 40000;  // Lowered from $100K
+    const isPumping = vol1h > 100000; // $100K+ volume in 1h = pumping
+    const isPremium = qScore >= 80 && (hasGoodLiq || isPumping);
+    const isGood = qScore >= 60 || liq > 30000 || vol1h > 50000;
     
     if (isPremium) {
         return '<span class="badge-quality" style="background:#4ade80;color:#000;padding:2px 8px;border-radius:3px;font-size:0.7rem;font-weight:bold;">PREMIUM</span>';
@@ -130,12 +133,13 @@ function renderQualityBadge(quality, liq) {
     }
 }
 
-function renderQualityIcons(quality) {
+function renderQualityIcons(quality, isPumping = false) {
     if (!quality) return '';
     let icons = '';
     if (quality.has_image) icons += '🖼️';
     if (quality.has_socials) icons += '💬';
     if (quality.has_website) icons += '🌐';
+    if (isPumping) icons += ' 🚀';
     return icons ? `<span style="margin-left:0.5rem;">${icons}</span>` : '';
 }
 
@@ -158,8 +162,10 @@ function renderCIOCard(item) {
     
     // Visual separation by quality
     const qScore = quality.quality_score || 0;
-    const isPremium = qScore >= 80 && liq > 100000;
-    const isGood = qScore >= 60 || liq > 50000;
+    const hasGoodLiq = liq > 40000;
+    const isPumping = vol1h > 100000;
+    const isPremium = qScore >= 80 && (hasGoodLiq || isPumping);
+    const isGood = qScore >= 60 || liq > 30000 || vol1h > 50000;
     
     const qualityStyles = {
         'premium': 'border-left: 4px solid #4ade80; background: rgba(74,222,128,0.05);',
@@ -174,14 +180,14 @@ function renderCIOCard(item) {
             <div class="card-header">
                 <span class="token-symbol">${symbol}</span>
                 <span class="badges">
-                    ${renderQualityBadge(quality, liq)}
+                    ${renderQualityBadge(quality, liq, vol1h)}
                     ${renderAgeBadge(age)}
                     ${renderSourceBadge(source)}
                 </span>
             </div>
             <div style="margin: 0.5rem 0;">
                 ${renderRiskBadge(riskLevel, risks)}
-                ${renderQualityIcons(quality)}
+                ${renderQualityIcons(quality, isPumping)}
             </div>
             <div class="card-metrics">
                 <span>⭐ ${score}/100</span>

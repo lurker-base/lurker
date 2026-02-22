@@ -28,8 +28,8 @@ ACCESS_TOKEN = env.get('ACCESS_TOKEN') or os.getenv('TWITTER') or os.getenv('ACC
 ACCESS_TOKEN_SECRET = env.get('ACCESS_TOKEN_SECRET') or os.getenv('TWITTERSECRET') or os.getenv('ACCESS_TOKEN_SECRET')
 
 # Check required secrets
-required = ["API_KEY", "API_SECRET", "ACCESS_TOKEN", "ACCESS_TOKEN_SECRET"]
-missing = [k for k in required if not locals()[k]]
+required = {"API_KEY": API_KEY, "API_SECRET": API_SECRET, "ACCESS_TOKEN": ACCESS_TOKEN, "ACCESS_TOKEN_SECRET": ACCESS_TOKEN_SECRET}
+missing = [k for k, v in required.items() if not v]
 if missing:
     print(f"[LURKER] Missing secrets: {', '.join(missing)}")
     sys.exit(1)
