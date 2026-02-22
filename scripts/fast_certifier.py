@@ -4,6 +4,7 @@ LURKER FAST-CERTIFIED Scanner — 6-24h momentum detection
 Runs hourly, analyzes CIO candidates aged 6-24h for early momentum
 """
 import json
+import sys
 import requests
 from datetime import datetime, timezone
 from pathlib import Path
@@ -191,6 +192,8 @@ def scan():
               f"momentum={f['momentum']['score']}, "
               f"age={f['timestamps']['age_hours']:.1f}h, "
               f"liq=${f['metrics_at_cert']['liq_usd']:,.0f}")
+    
+    return 0
 
 def write_fail(msg: str):
     """Write empty feed with error - never crash GitHub Actions"""
@@ -211,7 +214,8 @@ def write_fail(msg: str):
 
 if __name__ == "__main__":
     try:
-        scan()
+        exit_code = scan()
+        sys.exit(exit_code if exit_code is not None else 0)
     except Exception as e:
         write_fail(f"fast certifier crashed: {repr(e)}")
         sys.exit(0)

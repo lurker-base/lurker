@@ -4,6 +4,7 @@ LURKER HOTLIST Scanner — 30-60min early opportunity detection
 NOT certified — high risk, high reward scalping candidates
 """
 import json
+import sys
 import time
 import requests
 from datetime import datetime, timezone
@@ -318,6 +319,8 @@ def scan():
               f"opp={h['scores']['opportunity_score']}, "
               f"risk={h['risk']['level']}, "
               f"age={h['timestamps']['age_minutes']:.0f}m")
+    
+    return 0
 
 def write_fail(msg: str):
     """Write empty feed with error - never crash GitHub Actions"""
@@ -338,7 +341,8 @@ def write_fail(msg: str):
 
 if __name__ == "__main__":
     try:
-        scan()
+        exit_code = scan()
+        sys.exit(exit_code if exit_code is not None else 0)
     except Exception as e:
         write_fail(f"hotlist scanner crashed: {repr(e)}")
         sys.exit(0)
