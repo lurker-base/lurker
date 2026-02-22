@@ -1,84 +1,77 @@
 name: Publish LURKER Signal to Telegram
 
 on:
+  # Déclenchement manuel uniquement (pas de cron auto)
   workflow_dispatch:
     inputs:
       signal_file:
         description: 'Path to signal JSON file'
         required: true
         default: 'signals/latest.json'
+  
+  # Uniquement quand signals/latest.json change sur main
   push:
+    branches: [main]
     paths:
       - "signals/latest.json"
 
+# Permissions minimales
+permissions:
+  contents: write
+
 jobs:
-  validate-and-publish:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Validate signal (anti-doublon + rarity gate)
-        id: validate
+      - name: Validate signal (guardrails)
+        id: check
         run: |
           python3 scripts/validate_signal.py signals/latest.json
-          if [ $? -ne 0 ]; then
-            echo "status=REJECTED" >> $GITHUB_OUTPUT
-            exit 0
+          # Le script retourne 0 même si rejeté (pas de ❌ rouge)
+          # On vérifie si le signal a été validé en lisant le status
+          if grep -q '"status": "posted"' signals/latest.json 2>/dev/null; then
+            echo "result=POSTED" >> $GITHUB_OUTPUT
+          else
+            echo "result=SKIPPED" >> $GITHUB_OUTPUT
           fi
-          echo "status=VALIDATED" >> $GITHUB_OUTPUT
 
-      - name: Skip if rejected
-        if: steps.validate.outputs.status == 'REJECTED'
+      - name: Skip notification (guardrails)
+        if: steps.check.outputs.result == 'SKIPPED'
         run: |
-          echo "Signal rejected by validator — stopping."
-          exit 0
+          echo "⏭️ Signal skipped by guardrails (confidence/daily limit/duplicate/status)"
+          echo "This is normal — check logs above for details."
 
-      - name: Extract signal message
-        if: steps.validate.outputs.status == 'VALIDATED'
+      - name: Extract message
+        if: steps.check.outputs.result == 'POSTED'
         id: msg
         run: |
-          TEXT=$(python3 - << 'PY'
-          import json
-          with open("signals/latest.json", "r", encoding="utf-8") as f:
-              data = json.load(f)
-          msg = data.get("message", "🔔 LURKER: New signal")
-          print(msg)
-          PY)
-          echo "text<<EOF" >> $GITHUB_OUTPUT
-          echo "$TEXT" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
+          TEXT=$(python3 -c "import json; print(json.load(open('signals/latest.json'))['message'])")
+          echo "text=$TEXT" >> $GITHUB_OUTPUT
 
-      - name: Send to Telegram (with proof)
-        if: steps.validate.outputs.status == 'VALIDATED'
+      - name: Send to Telegram
+        if: steps.check.outputs.result == 'POSTED'
         run: |
           set -euo pipefail
-          echo "Sending to chat_id=${TELEGRAM_CHAT_ID}"
           curl -sS -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
             -d "chat_id=${TELEGRAM_CHAT_ID}" \
             --data-urlencode "text=${TEXT}" \
             -d "disable_web_page_preview=true" \
-            -d "parse_mode=HTML" | tee telegram_response.json
-          python3 - << 'PY'
-          import json, sys
-          j = json.load(open("telegram_response.json", "r", encoding="utf-8"))
-          if not j.get("ok"):
-              print("Telegram API returned ok=false:", j, file=sys.stderr)
-              sys.exit(1)
-          print("✅ Telegram OK. message_id =", j["result"]["message_id"])
-          PY
+            -d "parse_mode=HTML" | tee response.json
+          python3 -c "import json,sys; r=json.load(open('response.json')); sys.exit(0 if r.get('ok') else 1)"
+          echo "✅ Posted to Telegram"
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           TEXT: ${{ steps.msg.outputs.text }}
 
-      - name: Commit updated state files
-        if: steps.validate.outputs.status == 'VALIDATED'
+      - name: Commit state updates
+        if: steps.check.outputs.result == 'POSTED'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add state/posted.json state/daily_count.json signals/latest.json
-          git diff --cached --quiet || git commit -m "chore: update signal state [skip ci]"
+          git add state/
+          git diff --cached --quiet || git commit -m "chore: update state [skip ci]"
           git push

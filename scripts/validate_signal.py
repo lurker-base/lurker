@@ -113,20 +113,21 @@ def main():
     signal_file = Path(sys.argv[1]) if len(sys.argv) > 1 else SIGNALS_FILE
     
     if not signal_file.exists():
-        print("ERROR: Signal file not found")
-        sys.exit(1)
+        print("[LURKER] ℹ️ SKIP: Signal file not found")
+        sys.exit(0)
     
     with open(signal_file, 'r') as f:
         signal = json.load(f)
     
-    print(f"[LURKER] Validating signal: {signal.get('token', {}).get('symbol', 'UNKNOWN')}")
+    print(f"[LURKER] Checking signal: {signal.get('token', {}).get('symbol', 'UNKNOWN')}")
     print(f"[LURKER] Confidence: {signal.get('scores', {}).get('confidence', 0)}")
     
     ok, result = validate_signal(signal)
     
     if not ok:
-        print(f"[LURKER] ❌ REJECTED: {result}")
-        sys.exit(1)
+        print(f"[LURKER] ⏭️ REJECTED by guardrails: {result}")
+        print("[LURKER] This is expected behavior — no error.")
+        sys.exit(0)  # ← Exit 0 = SUCCESS (pas de ❌ rouge)
     
     # Update state
     update_state(signal, result)
