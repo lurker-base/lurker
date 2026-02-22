@@ -13,9 +13,15 @@ LURKER detects early opportunities on Base before the market reacts. Quality ove
 - **Transparency**: All signals verifiable on-chain
 - **GitHub-Only**: Zero VPS, zero external dashboard
 
-> **Note on CI Status:** Some scheduled workflows may show ❌ intermittently due to external API rate limits (DexScreener, RPC nodes). This is expected and handled gracefully. The [Health Dashboard](https://lurker-base.github.io/lurker/) reflects real system status, not raw CI history.
-> 
-> **Philosophy:** Workflows fail fast when there's a real outage (all sources down), but stay resilient on partial failures. We don't hide errors — we surface them honestly.
+> **Note on CI Status:** Workflows show ❌ only when there's a real outage (all API sources down). Intermittent failures (429 rate limits) are handled with retry/backoff.
+>
+> **Feed Status:** Every scanner produces a `meta.status` field:
+> - `ok` — tokens found and tracked
+> - `calm` — no tokens in current window (normal)
+> - `degraded` — partial data (some sources unavailable)
+> - `error` — total failure (crash or all sources down)
+>
+> **Philosophy:** We fail fast on real errors, stay resilient on partial failures. The [Health Dashboard](https://lurker-base.github.io/lurker/) reflects system truth, not raw CI history.
 
 ## How It Works
 
