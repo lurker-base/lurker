@@ -1,58 +1,58 @@
 {
-  "schema": "lurker_cio_v2",
+  "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-02-22T11:57:49.364000+00:00",
-    "source": "dexscreener(token-profiles/latest + token-pairs/v1)",
-    "chain": "base",
+    "updated_at": "2026-02-22T12:55:39.784000+00:00",
     "count": 1,
-    "filters": {
-      "max_age_hours": 48,
-      "min_liq_usd": 10000,
-      "quote_whitelist": [
-        "USDBC",
-        "USDC",
-        "WETH",
-        "cbBTC"
-      ],
-      "max_tokens_per_run": 35
+    "thresholds": {
+      "min_liq_usd": 1000,
+      "min_vol_5m": 50,
+      "min_tx_5m": 2,
+      "max_age_min": 60
+    },
+    "risk_distribution": {
+      "medium": 1
     },
     "rejected": {
-      "low_liq": 1
+      "low_tx": 2,
+      "too_old": 5,
+      "duplicate": 1
     }
   },
   "candidates": [
     {
-      "kind": "CIO_CANDIDATE",
-      "chainId": "base",
-      "dexId": "uniswap",
       "token": {
-        "address": "0x5b24d74d15f6841E0D40ac5726Bd49aC134998eD",
-        "symbol": "$Clawator",
-        "name": "Clawator"
+        "address": "0x4de005e383f34d0211a7e230a0778aef6d5c7b07",
+        "symbol": "0xDP",
+        "name": "0xDirectPing"
       },
-      "quote_token": {
-        "address": "0x4200000000000000000000000000000000000006",
-        "symbol": "WETH"
+      "pair": {
+        "address": "0xf709ef969e672ab7d3e7b535fa65ee373272b04daf2e5a2fcc25a4b7b34c178d",
+        "dex": "uniswap",
+        "quote": "WETH"
       },
-      "pool_address": "0x7473AB878f4Ca09c8d75Bf9e230f7c188468586B",
-      "pair_url": "https://dexscreener.com/base/0x7473ab878f4ca09c8d75bf9e230f7c188468586b",
-      "created_at": "2026-02-22T08:22:15+00:00",
-      "age_hours": 3.59,
-      "pairCreatedAt": 1771748535000,
       "metrics": {
-        "liq_usd": 74194.85,
-        "vol_24h_usd": 365033.24,
-        "txns_24h": 658,
-        "fdv": 1321260,
-        "marketCap": 1321260,
-        "price_usd": "0.001321"
+        "liq_usd": 20582.21,
+        "vol_5m_usd": 17880.57,
+        "vol_1h_usd": 160547.96,
+        "txns_5m": 1698,
+        "price_usd": "0.0000001965"
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-22T12:09:23+00:00",
+        "token_first_seen": "2026-02-22T12:55:39.782000+00:00",
+        "age_minutes": 46.3,
+        "age_hours": 0.77
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.93
+        "freshness": 0.99
       },
-      "status": "observing",
-      "source": "dexscreener_v2"
+      "risks": [
+        "dumping"
+      ],
+      "risk_level": "medium",
+      "source": "profiles",
+      "status": "observing"
     }
   ]
 }

@@ -1,0 +1,61 @@
+name: TEST - All Scanners
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test-all:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install requests
+        run: pip install requests
+
+      - name: Ensure directories
+        run: mkdir -p signals state
+
+      - name: Test CIO ULTRA
+        run: |
+          echo "=== Testing CIO ULTRA ==="
+          python3 scripts/scanner_cio_ultra.py
+          echo "Exit code: $?"
+          cat signals/cio_feed.json | head -30
+
+      - name: Test WATCH
+        run: |
+          echo "=== Testing WATCH ==="
+          python3 scripts/watch_scanner.py
+          echo "Exit code: $?"
+          cat signals/watch_feed.json | head -30
+
+      - name: Test HOTLIST
+        run: |
+          echo "=== Testing HOTLIST ==="
+          python3 scripts/hotlist_scanner.py
+          echo "Exit code: $?"
+          cat signals/hotlist_feed.json | head -30
+
+      - name: Test FAST-CERTIFIED
+        run: |
+          echo "=== Testing FAST-CERTIFIED ==="
+          python3 scripts/fast_certifier.py
+          echo "Exit code: $?"
+          cat signals/fast_certified_feed.json | head -30
+
+      - name: Summary
+        run: |
+          echo "=== SUMMARY ==="
+          echo "CIO: $(cat signals/cio_feed.json | grep -c 'token' || echo 0) tokens"
+          echo "WATCH: $(cat signals/watch_feed.json | grep -c 'token' || echo 0) tokens"
+          echo "HOTLIST: $(cat signals/hotlist_feed.json | grep -c 'token' || echo 0) tokens"
+          echo "FAST: $(cat signals/fast_certified_feed.json | grep -c 'token' || echo 0) tokens"
