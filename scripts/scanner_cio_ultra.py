@@ -80,6 +80,42 @@ def calculate_risk_tags(pair):
     
     return risks
 
+def check_dexscreener_quality(pair):
+    """Check if DexScreener profile is complete (info, image, socials)"""
+    quality = {
+        "has_profile": False,
+        "has_image": False,
+        "has_socials": False,
+        "has_website": False,
+        "quality_score": 0
+    }
+    
+    info = pair.get("info", {})
+    
+    # Check for profile image
+    if info.get("imageUrl"):
+        quality["has_image"] = True
+        quality["quality_score"] += 25
+    
+    # Check for socials
+    socials = info.get("socials", [])
+    if socials and len(socials) > 0:
+        quality["has_socials"] = True
+        quality["quality_score"] += 25
+    
+    # Check for website
+    websites = info.get("websites", [])
+    if websites and len(websites) > 0:
+        quality["has_website"] = True
+        quality["quality_score"] += 25
+    
+    # Check if overall profile exists
+    if quality["has_image"] or quality["has_socials"] or quality["has_website"]:
+        quality["has_profile"] = True
+        quality["quality_score"] += 25
+    
+    return quality
+
 def fetch_search_pairs():
     """Source 1: Search popular pairs (the 'rake')"""
     print("[SCANNER] Source 1: Search rake...")
@@ -301,6 +337,9 @@ def process_candidate(item, registry):
     # Calculate risk tags
     risks = calculate_risk_tags(pair)
     
+    # Check DexScreener profile quality
+    dex_quality = check_dexscreener_quality(pair)
+    
     # Score (higher = better)
     score = 50  # Base
     if age_h < 1: score += 30
@@ -315,6 +354,9 @@ def process_candidate(item, registry):
     if tx_count_5m > 10: score += 10
     
     if source == "boosts": score += 5
+    
+    # Bonus for complete DexScreener profile (quality indicator)
+    score += dex_quality["quality_score"] // 4  # Up to +25 points
     
     return {
         "token": {
@@ -348,6 +390,7 @@ def process_candidate(item, registry):
         "risk_level": "high" if len(risks) >= 3 else "medium" if len(risks) >= 1 else "low",
         "source": source,
         "status": "observing",
+        "quality": dex_quality,  # DexScreener profile quality
     }, None
 
 def scan():

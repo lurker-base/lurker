@@ -1,8 +1,8 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-02-22T16:10:38.997000+00:00",
-    "generated_at": "2026-02-22T16:10:38.997000+00:00",
+    "updated_at": "2026-02-22T16:12:48.331000+00:00",
+    "generated_at": "2026-02-22T16:12:48.331000+00:00",
     "status": "ok",
     "count": 5,
     "thresholds": {
@@ -35,17 +35,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 177847.04,
-        "vol_5m_usd": 11123.66,
-        "vol_1h_usd": 74474.04,
-        "txns_5m": 208,
-        "price_usd": 2.024e-06
+        "liq_usd": 180887.63,
+        "vol_5m_usd": 7342.45,
+        "vol_1h_usd": 77085.65,
+        "txns_5m": 165,
+        "price_usd": 2.065e-06
       },
       "timestamps": {
         "pair_created_at": "2026-02-22T15:32:31+00:00",
         "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
-        "age_minutes": 38.1,
-        "age_hours": 0.64
+        "age_minutes": 40.3,
+        "age_hours": 0.67
       },
       "scores": {
         "cio_score": 100,
@@ -54,7 +54,14 @@
       "risks": [],
       "risk_level": "low",
       "source": "profiles",
-      "status": "observing"
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
     },
     {
       "token": {
@@ -68,26 +75,33 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 189107.32,
-        "vol_5m_usd": 6738.88,
-        "vol_1h_usd": 87956.9,
-        "txns_5m": 106,
-        "price_usd": 2.175e-06
+        "liq_usd": 192235.19,
+        "vol_5m_usd": 3492.66,
+        "vol_1h_usd": 88827.74,
+        "txns_5m": 66,
+        "price_usd": 2.217e-06
       },
       "timestamps": {
         "pair_created_at": "2026-02-22T15:16:53+00:00",
         "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
-        "age_minutes": 53.8,
-        "age_hours": 0.9
+        "age_minutes": 55.9,
+        "age_hours": 0.93
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.99
+        "freshness": 0.98
       },
       "risks": [],
       "risk_level": "low",
       "source": "profiles",
-      "status": "observing"
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": false,
+        "quality_score": 75
+      }
     },
     {
       "token": {
@@ -101,17 +115,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 109751.29,
-        "vol_5m_usd": 6771.77,
-        "vol_1h_usd": 548449.28,
-        "txns_5m": 68,
-        "price_usd": 1.954e-06
+        "liq_usd": 109653.03,
+        "vol_5m_usd": 12049.35,
+        "vol_1h_usd": 549430.52,
+        "txns_5m": 91,
+        "price_usd": 1.948e-06
       },
       "timestamps": {
         "pair_created_at": "2026-02-22T14:43:51+00:00",
         "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
-        "age_minutes": 86.8,
-        "age_hours": 1.45
+        "age_minutes": 89.0,
+        "age_hours": 1.48
       },
       "scores": {
         "cio_score": 100,
@@ -120,7 +134,14 @@
       "risks": [],
       "risk_level": "low",
       "source": "profiles",
-      "status": "observing"
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
     },
     {
       "token": {
@@ -134,17 +155,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 141552.64,
-        "vol_5m_usd": 43622.1,
-        "vol_1h_usd": 310352.37,
-        "txns_5m": 133,
-        "price_usd": 0.002441
+        "liq_usd": 164763.25,
+        "vol_5m_usd": 56479.96,
+        "vol_1h_usd": 345085.84,
+        "txns_5m": 285,
+        "price_usd": 0.003302
       },
       "timestamps": {
         "pair_created_at": "2026-02-22T14:31:41+00:00",
         "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
-        "age_minutes": 99.0,
-        "age_hours": 1.65
+        "age_minutes": 101.1,
+        "age_hours": 1.69
       },
       "scores": {
         "cio_score": 100,
@@ -153,7 +174,14 @@
       "risks": [],
       "risk_level": "low",
       "source": "profiles",
-      "status": "observing"
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
     },
     {
       "token": {
@@ -167,17 +195,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 65069.99,
-        "vol_5m_usd": 15238.81,
-        "vol_1h_usd": 156397.84,
-        "txns_5m": 61,
-        "price_usd": 0.0008554
+        "liq_usd": 65710.05,
+        "vol_5m_usd": 13453.13,
+        "vol_1h_usd": 157339.62,
+        "txns_5m": 68,
+        "price_usd": 0.0008728
       },
       "timestamps": {
         "pair_created_at": "2026-02-22T14:00:43+00:00",
         "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
-        "age_minutes": 129.9,
-        "age_hours": 2.17
+        "age_minutes": 132.1,
+        "age_hours": 2.2
       },
       "scores": {
         "cio_score": 100,
@@ -186,7 +214,14 @@
       "risks": [],
       "risk_level": "low",
       "source": "profiles",
-      "status": "observing"
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
     }
   ]
 }
