@@ -13,7 +13,7 @@ from pathlib import Path
 
 SIGNALS_FILE = Path(__file__).parent.parent / "docs" / "signals.html"
 
-def create_signal_html(symbol, pair, entry, target, stop, confidence, rationale, validated_by="Boss"):
+def create_signal_html(symbol, pair, entry, target, stop, confidence, rationale, validated_by="LURKER"):
     """Generate HTML for a signal"""
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     
@@ -106,7 +106,7 @@ if __name__ == "__main__":
     parser.add_argument("--stop", required=True, help="Stop loss")
     parser.add_argument("--confidence", type=int, default=70, help="Confidence score (0-100)")
     parser.add_argument("--rationale", required=True, help="Why this signal")
-    parser.add_argument("--validator", default="Boss", help="Who validated")
+    parser.add_argument("--validator", default="LURKER", help="Who validated")
     
     args = parser.parse_args()
     success = publish_signal(args)

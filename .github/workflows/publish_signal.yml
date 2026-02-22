@@ -56,7 +56,7 @@ jobs:
             --stop "${{ github.event.inputs.stop }}" \
             --confidence ${{ github.event.inputs.confidence }} \
             --rationale "${{ github.event.inputs.rationale }}" \
-            --validator "Boss"
+            --validator "LURKER"
 
       - name: Commit and push
         run: |
