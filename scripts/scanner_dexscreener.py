@@ -4,6 +4,7 @@ LURKER Base Scanner — MVP via DexScreener API
 Queries new/high-activity pairs on Base, filters, scores, writes to feed
 """
 import json
+import random
 import requests
 import time
 from datetime import datetime, timedelta
@@ -29,39 +30,82 @@ BLUECHIP_ADDRESSES = {
     "0x4ed4e862860be51c722da7f9d9165e9a8ad3c50e",  # DEGEN
 }
 
+def fetch_with_retry(url, max_retries=3, backoff_base=2):
+    """Fetch with exponential backoff, handle 429/503/timeouts"""
+    for attempt in range(max_retries):
+        try:
+            resp = requests.get(url, timeout=20)
+            
+            # Handle rate limit
+            if resp.status_code == 429:
+                sleep_time = backoff_base * (2 ** attempt) + random.uniform(0, 2)
+                print(f"[SCANNER] 429 rate limit, retry in {sleep_time:.1f}s (attempt {attempt+1}/{max_retries})")
+                time.sleep(sleep_time)
+                continue
+            
+            # Handle service unavailable
+            if resp.status_code in [502, 503, 504]:
+                sleep_time = backoff_base * (2 ** attempt)
+                print(f"[SCANNER] {resp.status_code} error, retry in {sleep_time:.1f}s")
+                time.sleep(sleep_time)
+                continue
+            
+            # Check content-type before parsing
+            content_type = resp.headers.get('content-type', '').lower()
+            if 'json' not in content_type and resp.status_code == 200:
+                # Might be HTML error page
+                if len(resp.text) < 500 and '<html' in resp.text.lower():
+                    print(f"[SCANNER] Got HTML instead of JSON, retry...")
+                    time.sleep(backoff_base * (2 ** attempt))
+                    continue
+            
+            resp.raise_for_status()
+            return resp.json()
+            
+        except requests.exceptions.Timeout:
+            sleep_time = backoff_base * (2 ** attempt)
+            print(f"[SCANNER] Timeout, retry in {sleep_time:.1f}s")
+            time.sleep(sleep_time)
+        except requests.exceptions.RequestException as e:
+            if attempt < max_retries - 1:
+                sleep_time = backoff_base * (2 ** attempt)
+                print(f"[SCANNER] Request error: {e}, retry in {sleep_time:.1f}s")
+                time.sleep(sleep_time)
+            else:
+                raise
+    
+    raise Exception(f"Failed after {max_retries} retries")
+
 def fetch_base_pairs():
-    """Fetch Base pairs from DexScreener via search"""
-    try:
-        # Search for recent Base activity - using multiple queries for coverage
-        all_pairs = []
-        queries = ["base", "eth", "usdc"]
-        
-        queries = ["aerodrome", "clanker", "degen", "brett", "base"]  # More active Base tokens
-        for q in queries:
-            url = f"https://api.dexscreener.com/latest/dex/search?q={q}"
-            resp = requests.get(url, timeout=15)
-            if resp.status_code == 200:
-                data = resp.json()
-                pairs = data.get("pairs", [])
-                # Filter for Base chain only
-                base_pairs = [p for p in pairs if p.get("chainId") == "base"]
-                all_pairs.extend(base_pairs)
-                print(f"[SCANNER] Query '{q}': {len(base_pairs)} Base pairs")
-            time.sleep(0.3)  # Rate limit
-        
-        # Deduplicate by pair address
-        seen = set()
-        unique_pairs = []
-        for p in all_pairs:
-            addr = p.get("pairAddress", "")
-            if addr and addr not in seen:
-                seen.add(addr)
-                unique_pairs.append(p)
-        
-        return unique_pairs
-    except Exception as e:
-        print(f"[SCANNER] Error fetching: {e}")
-    return []
+    """Fetch Base pairs from DexScreener via search with resilience"""
+    all_pairs = []
+    queries = ["aerodrome", "clanker", "degen", "brett", "base"]
+    
+    for q in queries:
+        url = f"https://api.dexscreener.com/latest/dex/search?q={q}"
+        try:
+            data = fetch_with_retry(url)
+            pairs = data.get("pairs", [])
+            # Filter for Base chain only
+            base_pairs = [p for p in pairs if p.get("chainId") == "base"]
+            all_pairs.extend(base_pairs)
+            print(f"[SCANNER] Query '{q}': {len(base_pairs)} Base pairs")
+            time.sleep(0.5 + random.uniform(0, 0.5))  # Rate limit with jitter
+        except Exception as e:
+            print(f"[SCANNER] Failed query '{q}': {e}")
+            # Continue with other queries - fail-soft
+            continue
+    
+    # Deduplicate by pair address
+    seen = set()
+    unique_pairs = []
+    for p in all_pairs:
+        addr = p.get("pairAddress", "")
+        if addr and addr not in seen:
+            seen.add(addr)
+            unique_pairs.append(p)
+    
+    return unique_pairs
 
 def calculate_confidence(pair):
     """Scoring favoring smaller/newer tokens (anti-bluechip)"""
