@@ -59,6 +59,31 @@
         .stat-value.fast { color: #ffcc00; }
         .stat-value.cert { color: #00ccff; }
         
+        .health-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        .health-badge.ok {
+            background: rgba(0, 255, 0, 0.1);
+            border: 1px solid rgba(0, 255, 0, 0.3);
+            color: #00ff00;
+        }
+        .health-badge.warn {
+            background: rgba(255, 170, 0, 0.1);
+            border: 1px solid rgba(255, 170, 0, 0.3);
+            color: #ffaa00;
+        }
+        .health-badge.fail {
+            background: rgba(255, 68, 68, 0.1);
+            border: 1px solid rgba(255, 68, 68, 0.3);
+            color: #ff4444;
+        }
+        
         .stat-label {
             font-size: 0.7rem;
             color: var(--text-muted);
@@ -237,6 +262,14 @@
                     ⚠️ cio are early candidates, not trade signals. most will fail. do your own research.
                 </div>
                 
+                <div style="margin-bottom: 1rem; text-align: right;">
+                    <div class="health-badge" id="health-badge">
+                        <span id="health-dot">●</span>
+                        <span id="health-text">checking...</span>
+                        <span id="health-streak" style="opacity: 0.7;"></span>
+                    </div>
+                </div>
+                
                 <div class="stats-bar">
                     <div class="stat-item">
                         <div class="stat-value" id="stat-cio">--</div>
@@ -320,5 +353,60 @@
 
     <script src="unifiedFeed.js"></script>
     <script src="sparks.js"></script>
+    <script>
+        // Health status loader
+        async function loadHealthStatus() {
+            try {
+                const res = await fetch('https://raw.githubusercontent.com/lurker-base/lurker/main/state/health_state.json?t=' + Date.now(), { cache: 'no-store' });
+                if (!res.ok) throw new Error('Failed to load');
+                const health = await res.json();
+                
+                const badge = document.getElementById('health-badge');
+                const dot = document.getElementById('health-dot');
+                const text = document.getElementById('health-text');
+                const streak = document.getElementById('health-streak');
+                
+                const emptyStreak = health.empty_streak || 0;
+                const lastCheck = health.last_check;
+                const lastCount = health.last_count || 0;
+                
+                // Calculate time since last check
+                let minutesAgo = null;
+                if (lastCheck) {
+                    const last = new Date(lastCheck);
+                    const now = new Date();
+                    minutesAgo = Math.floor((now - last) / 60000);
+                }
+                
+                if (emptyStreak === 0) {
+                    badge.className = 'health-badge ok';
+                    dot.style.color = '#00ff00';
+                    text.textContent = 'HEALTH: OK';
+                    streak.textContent = minutesAgo !== null ? ` (${lastCount} tokens, ${minutesAgo}m ago)` : '';
+                } else if (emptyStreak === 1) {
+                    badge.className = 'health-badge warn';
+                    dot.style.color = '#ffaa00';
+                    text.textContent = 'HEALTH: WARN';
+                    streak.textContent = ' (1 empty scan)';
+                } else {
+                    badge.className = 'health-badge fail';
+                    dot.style.color = '#ff4444';
+                    text.textContent = 'HEALTH: FAIL';
+                    streak.textContent = ` (${emptyStreak} empty scans)`;
+                }
+            } catch (e) {
+                const badge = document.getElementById('health-badge');
+                const dot = document.getElementById('health-dot');
+                const text = document.getElementById('health-text');
+                badge.className = 'health-badge';
+                dot.style.color = '#666';
+                text.textContent = 'HEALTH: unknown';
+            }
+        }
+        
+        // Load on page load and refresh every minute
+        loadHealthStatus();
+        setInterval(loadHealthStatus, 60000);
+    </script>
 </body>
 </html>
