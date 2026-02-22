@@ -1,59 +1,29 @@
-# LURKER Twitter Launch — Plan Manuel
+# LURKER Twitter Launch — Automatique
 
-## Tweet 1 — Maintenant ⏰
+## 🚀 Lancement en cours
 
-```
-most watch price.
-we watch behavior.
-
-the difference is everything.
-```
-
-**Statut:** ⏳ À poster
+| Tweet | Timing | Statut | Contenu |
+|-------|--------|--------|---------|
+| **#1** | Maintenant | ⏳ Poste manuel | `most watch price. we watch behavior. the difference is everything.` |
+| **#2** | +25 min | ⏳ Auto programmé | `0xDP detected at 23m old...` |
+| **#3** | +50 min | ⏳ Auto programmé | `we don't sell predictions...` |
 
 ---
 
-## Tweet 2 — Dans 25-30 min ⏰
+## ✅ Validés
 
-```
-0xDP detected at 23m old
-tagged: dumping
-
-6 hours later: -70%
-
-we saw it early.
-we showed the risk.
-most arrived too late.
-```
-
-**Statut:** ⏳ En attente
+Tous les tweets ont été **validés** avant programmation.
 
 ---
 
-## Tweet 3 — Dans 50-60 min ⏰
+## 🎭 Principes
 
-```
-we don't sell predictions.
-we don't hide failures.
-
-build your own agent.
-or watch ours.
-
-either way —
-now you know.
-```
-
-**Note:** Pas de prix. Le $19 sera découvert sur le site, pas consommé sur X.
-
-**Statut:** ⏳ En attente
+- ❌ Pas de prix dans les tweets
+- ❌ Pas de hashtags
+- ❌ Pas de CTA "follow"
+- ✅ Mystère sur X
+- ✅ Structure sur le site
 
 ---
 
-## Règles
-- ✅ Poster manuellement
-- ✅ 25-30 min d'écart
-- ❌ Ne pas répondre aux mentions (sauf si pertinent)
-- ❌ Ne pas justifier
-- ❌ Ne pas vendre
-
-**Lancement fondateur.** 👁️
+**LURKER parle.** 👁️
