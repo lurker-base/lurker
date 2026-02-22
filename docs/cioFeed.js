@@ -1,6 +1,14 @@
 // CIO Feed Loader — Renders candidates 0-48h
 const REPO_RAW = 'https://raw.githubusercontent.com/lurker-base/lurker/main';
 
+function normalizeFeed(feed) {
+    // Support multiple formats: v1 (signals), v2 (candidates), raw array
+    const meta = feed?.meta || {};
+    const updated = meta.updated_at || feed?.updated_at || feed?.last_updated || '--:--';
+    const items = feed?.candidates || feed?.signals || feed?.items || (Array.isArray(feed) ? feed : []);
+    return { updated, items };
+}
+
 async function fetchCIOFeed() {
     try {
         const res = await fetch(`${REPO_RAW}/signals/cio_feed.json?t=${Date.now()}`, {
@@ -8,7 +16,8 @@ async function fetchCIOFeed() {
         });
         if (!res.ok) throw new Error('CIO feed not found');
         const data = await res.json();
-        return data.candidates || [];
+        const { items } = normalizeFeed(data);
+        return items;
     } catch (e) {
         console.log('CIO feed error:', e.message);
         return [];
@@ -74,10 +83,29 @@ async function renderCIOFeed(containerId) {
     
     container.innerHTML = '<div class="signal-loading">Loading CIO candidates...</div>';
     
-    const feed = await fetchCIOFeed();
-    
+    // Fetch and normalize
+    try {
+        const res = await fetch(`${REPO_RAW}/signals/cio_feed.json?t=${Date.now()}`, {
+            cache: "no-store"
+        });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const data = await res.json();
+        const { updated, items } = normalizeFeed(data);
+        
+        // Update "updated" label if exists
+        const updatedEl = document.getElementById('last-update') || document.getElementById('updated');
+        if (updatedEl) updatedEl.textContent = updated;
+        
+        renderCIOItems(container, items);
+    } catch (e) {
+        console.error('CIO load failed:', e);
+        container.innerHTML = '<div class="signal-empty">CIO feed error — check console</div>';
+    }
+}
+
+function renderCIOItems(container, items) {
     // Filter: age <= 48h and has metrics
-    const active = feed.filter(c => {
+    const active = items.filter(c => {
         const age = c.age_hours || 0;
         const hasMetrics = c.metrics && c.metrics.liq_usd > 0;
         return age <= 48 && hasMetrics;
