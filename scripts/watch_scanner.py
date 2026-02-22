@@ -21,8 +21,8 @@ STATE_FILE = Path(__file__).parent.parent / "state" / "watch_state.json"
 # WATCH criteria (2-24h window) - for tokens that survived initial volatility
 MIN_AGE_MINUTES = 120
 MAX_AGE_MINUTES = 1440
-MIN_LIQ_USD = 2_500      # ULTRA: $2.5k (was $4k, originally $8k)
-MIN_TX_5M = 5            # ULTRA: 5 tx (was 8)
+MIN_LIQ_USD = 1_000      # Aggressive: $1k (was $2.5k)
+MIN_TX_5M = 3            # 3 tx (was 5)
 MAX_CHECKS = 2
 
 def now_ms():

@@ -2,7 +2,7 @@ name: LURKER WATCH
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # Every 5 minutes
+    - cron: '*/3 * * * *'  # Every 3 minutes - more aggressive
   workflow_dispatch:
 
 permissions:

@@ -21,10 +21,10 @@ STATE_FILE = Path(__file__).parent.parent / "state" / "hotlist_state.json"
 # HOTLIST criteria (6-48h window) - for tokens with momentum after initial pump
 MIN_AGE_MINUTES = 360
 MAX_AGE_MINUTES = 2880
-MIN_LIQ_USD = 5_000       # ULTRA: $5k (was $7k, originally $15k)
-MIN_TX_1H = 30            # ULTRA: 30 (was 40)
-MIN_TX_15M = 12           # ULTRA: 12 (was 15)
-MIN_VOL_1H = 2_000        # ULTRA: $2k (was $5k)
+MIN_LIQ_USD = 2_000       # Aggressive: $2k (was $5k)
+MIN_TX_1H = 15            # 15 (was 30)
+MIN_TX_15M = 5            # 5 (was 12)
+MIN_VOL_1H = 1_000        # $1k (was $2k)
 MAX_PRICE_DROP_5M = -25   # ULTRA: -25% (was -20%)
 MAX_SELL_BUY_RATIO = 1.6  # ULTRA: 1.6x (was 1.5x)
 

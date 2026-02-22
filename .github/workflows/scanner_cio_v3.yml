@@ -2,7 +2,7 @@ name: LURKER CIO Scanner - ULTRA LAUNCH
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # Every 5 minutes
+    - cron: '*/2 * * * *'  # Every 2 minutes - ultra aggressive
   workflow_dispatch:
 
 permissions:

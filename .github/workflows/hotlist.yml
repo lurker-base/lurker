@@ -2,7 +2,7 @@ name: LURKER HOTLIST
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # Every 5 minutes
+    - cron: '*/4 * * * *'  # Every 4 minutes - more aggressive
   workflow_dispatch:
 
 permissions:
