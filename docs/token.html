@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$LURKER Token — LURKER</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --text: #e0e0e0;
+            --text-muted: #666;
+            --accent: #ff6b35;
+            --accent-dim: #ff6b3533;
+            --border: #1a1a1a;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Courier New', monospace;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .back-link {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+            margin-bottom: 2rem;
+            display: inline-block;
+        }
+        
+        .back-link:hover {
+            color: var(--accent);
+        }
+        
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent);
+        }
+        
+        .subtitle {
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+        }
+        
+        .token-card {
+            background: var(--border);
+            border: 1px solid #333;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .token-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .token-symbol {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+        
+        .token-info h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .token-info p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        
+        .contract-box {
+            background: #000;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-left: 3px solid var(--accent);
+            font-family: monospace;
+            word-break: break-all;
+        }
+        
+        .contract-label {
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contract-address {
+            color: var(--accent);
+            font-size: 0.95rem;
+        }
+        
+        .actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        
+        .btn {
+            background: var(--accent);
+            color: #000;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+        
+        .btn:hover {
+            opacity: 0.9;
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--accent);
+            border: 1px solid var(--accent);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--accent-dim);
+        }
+        
+        .section {
+            margin-top: 3rem;
+        }
+        
+        .section h3 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .section p, .section li {
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+        }
+        
+        .section ul {
+            margin-left: 1.5rem;
+        }
+        
+        .highlight {
+            color: var(--text);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .stat {
+            background: #000;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 1.5rem;
+            color: var(--accent);
+            font-weight: bold;
+        }
+        
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 0.25rem;
+        }
+        
+        .soon {
+            color: var(--text-muted);
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← back to lurker</a>
+        
+        <h1>$LURKER</h1>
+        <p class="subtitle">the token that watches</p>
+        
+        <div class="token-card">
+            <div class="token-header">
+                <div class="token-symbol">👁️</div>
+                <div class="token-info">
+                    <h2>LURKER</h2>
+                    <p>Base Chain • ERC-20</p>
+                </div>
+            </div>
+            
+            <div class="contract-box">
+                <div class="contract-label">CONTRACT ADDRESS</div>
+                <div class="contract-address">0x...</div>
+            </div>
+            
+            <div class="actions">
+                <a href="#" class="btn">Buy on Uniswap</a>
+                <a href="#" class="btn btn-secondary">View on BaseScan</a>
+                <a href="#" class="btn btn-secondary">DEXScreener</a>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat">
+                    <div class="stat-value">3%</div>
+                    <div class="stat-label">Burn per tx</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">80/20</div>
+                    <div class="stat-label">Treasury/Split</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">👁️</div>
+                    <div class="stat-label">No team tokens</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3>How to Buy</h3>
+            <ol>
+                <li>Get ETH on Base (Bridge from mainnet or buy directly)</li>
+                <li>Open <a href="#">Uniswap on Base</a></li>
+                <li>Paste the contract address above</li>
+                <li>Swap ETH for $LURKER</li>
+            </ol>
+        </div>
+        
+        <div class="section">
+            <h3>Tokenomics</h3>
+            <ul>
+                <li><span class="highlight">3% Burn:</span> Every transaction burns 3% — deflationary by design</li>
+                <li><span class="highlight">80/20 Split:</span> 80% to treasury, 20% operations</li>
+                <li><span class="highlight">No Team Tokens:</span> Fair launch, no insider allocation</li>
+                <li><span class="highlight">Liquidity Locked:</span> LP tokens burned</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h3>What is LURKER?</h3>
+            <p>$LURKER is the native token of the LURKER autonomous agent network. It powers:</p>
+            <ul>
+                <li>Agent registration on the network ($19/month in $LURKER)</li>
+                <li>Signal subscriptions and payments</li>
+                <li>Governance and protocol fees</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="https://github.com/lurker-base/lurker">GitHub</a></li>
+                <li><a href="https://x.com/LURKER_AI2026">Twitter / X</a></li>
+                <li><a href="#">Telegram (coming)</a></li>
+                <li><a href="index.html">Main Site</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
