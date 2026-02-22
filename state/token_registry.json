@@ -56,6 +56,12 @@
           "price": 2.065e-06,
           "liq": 180887.63,
           "vol_5m": 7342.45
+        },
+        {
+          "timestamp": 1771778121392,
+          "price": 2.136e-07,
+          "liq": 22159.91,
+          "vol_5m": 414.82
         }
       ],
       "token": {
@@ -91,6 +97,12 @@
           "price": 0.003302,
           "liq": 164763.25,
           "vol_5m": 56479.96
+        },
+        {
+          "timestamp": 1771778121392,
+          "price": 0.003149,
+          "liq": 161677.93,
+          "vol_5m": 70578.77
         }
       ],
       "token": {
@@ -126,6 +138,12 @@
           "price": 2.217e-06,
           "liq": 192235.19,
           "vol_5m": 3492.66
+        },
+        {
+          "timestamp": 1771778121392,
+          "price": 2.269e-06,
+          "liq": 196081.68,
+          "vol_5m": 3769.71
         }
       ],
       "token": {
@@ -161,6 +179,12 @@
           "price": 0.0008728,
           "liq": 65710.05,
           "vol_5m": 13453.13
+        },
+        {
+          "timestamp": 1771778121392,
+          "price": 0.001142,
+          "liq": 75377.21,
+          "vol_5m": 20064.14
         }
       ],
       "token": {
@@ -231,6 +255,12 @@
           "price": 2.177e-06,
           "liq": 4317.22,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771778121392,
+          "price": 2.177e-06,
+          "liq": 4317.22,
+          "vol_5m": 0.0
         }
       ],
       "token": {
@@ -260,12 +290,35 @@
           "price": 4.533e-06,
           "liq": 3743.58,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771778121392,
+          "price": 5.199e-06,
+          "liq": 4062.84,
+          "vol_5m": 7.73
         }
       ],
       "token": {
         "address": "0x3e96a25ee1ce2dab3f528e033d60b3352ff3e8a2",
         "symbol": "BHOMOS",
         "name": "Based Homo Sapiens"
+      }
+    },
+    "0x7c0a5c1020c39bfa1af711b4b963be82f55e1b07": {
+      "first_seen": 1771778121392,
+      "first_seen_iso": "2026-02-22T16:35:21.392000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771778121392,
+          "price": 2.841e-06,
+          "liq": 130301.39,
+          "vol_5m": 41451.76
+        }
+      ],
+      "token": {
+        "address": "0x7c0a5c1020c39bfa1af711b4b963be82f55e1b07",
+        "symbol": "CLAUDET",
+        "name": "Claude Terminal"
       }
     }
   }
