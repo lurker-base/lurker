@@ -1,0 +1,36 @@
+name: Update Performance Tracker
+
+on:
+  schedule:
+    # Every 2 hours during market hours (UTC)
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-tracker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Update performance data
+        run: python3 scripts/update_performance.py
+
+      - name: Commit updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add state/performance_tracker.json
+          git diff --cached --quiet || git commit -m "chore: auto-update performance tracker [skip ci]"
+          git push

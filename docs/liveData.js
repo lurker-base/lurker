@@ -3,7 +3,9 @@ const REPO_RAW = 'https://raw.githubusercontent.com/lurker-base/lurker/main';
 
 async function fetchLatestSignal() {
     try {
-        const res = await fetch(`${REPO_RAW}/signals/latest.json?t=${Date.now()}`);
+        const res = await fetch(`${REPO_RAW}/signals/latest.json?t=${Date.now()}`, {
+            cache: "no-store"
+        });
         if (!res.ok) throw new Error('Signal not found');
         return await res.json();
     } catch (e) {
@@ -14,7 +16,9 @@ async function fetchLatestSignal() {
 
 async function fetchPerformance() {
     try {
-        const res = await fetch(`${REPO_RAW}/state/performance_tracker.json?t=${Date.now()}`);
+        const res = await fetch(`${REPO_RAW}/state/performance_tracker.json?t=${Date.now()}`, {
+            cache: "no-store"
+        });
         if (!res.ok) throw new Error('Tracker not found');
         return await res.json();
     } catch (e) {
