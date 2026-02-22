@@ -17,15 +17,15 @@ CIO_FILE = Path(__file__).parent.parent / "signals" / "cio_feed.json"
 HOTLIST_FILE = Path(__file__).parent.parent / "signals" / "hotlist_feed.json"
 STATE_FILE = Path(__file__).parent.parent / "state" / "hotlist_state.json"
 
-# HOTLIST criteria (30-60 min window)
+# HOTLIST criteria (30-60 min window) - LAUNCH MODE
 MIN_AGE_MINUTES = 30
 MAX_AGE_MINUTES = 60
-MIN_LIQ_USD = 15_000
-MIN_TX_1H = 80
-MIN_TX_15M = 25  # Alternative: high recent activity
-MIN_VOL_1H = 10_000
-MAX_PRICE_DROP_5M = -15  # Reject if -15% or worse in 5min
-MAX_SELL_BUY_RATIO = 1.4  # Reject if sells > 1.4x buys
+MIN_LIQ_USD = 7_000       # LAUNCH MODE: $7k (was $15k)
+MIN_TX_1H = 40            # LAUNCH MODE: 40 (was 80)
+MIN_TX_15M = 15           # LAUNCH MODE: 15 (was 25)
+MIN_VOL_1H = 5_000        # LAUNCH MODE: $5k (was $10k)
+MAX_PRICE_DROP_5M = -20   # LAUNCH MODE: -20% (was -15%)
+MAX_SELL_BUY_RATIO = 1.5  # LAUNCH MODE: 1.5x (was 1.4x)
 
 def now_ms():
     return int(time.time() * 1000)

@@ -17,11 +17,11 @@ CHAIN = "base"
 CIO_FILE = Path(__file__).parent.parent / "signals" / "cio_feed.json"
 STATE_FILE = Path(__file__).parent.parent / "state" / "token_registry.json"
 
-# Filters
+# Filters - LAUNCH MODE (temporarily lowered)
 QUOTE_WHITELIST = {"USDC", "WETH", "cbBTC", "USDBC", "ETH"}
-MIN_LIQ_USD = 5_000       # Lowered for rake
-MIN_VOLUME_1H = 500       # Activity signal
-MIN_TX_1H = 10            # Anti-dead
+MIN_LIQ_USD = 2_000       # LAUNCH MODE: $2k (was $5k)
+MIN_VOLUME_1H = 200       # LAUNCH MODE: $200 (was $500)
+MIN_TX_1H = 5             # LAUNCH MODE: 5 (was 10)
 MAX_AGE_HOURS = 48
 MAX_TOKENS_PER_SOURCE = 50
 TIMEOUT = 15
