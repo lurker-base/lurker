@@ -117,6 +117,7 @@
             color: var(--accent);
         }
         
+        .stat-watch .stat-value { color: #888; }
         .stat-hot .stat-value { color: #ff6600; }
         .stat-fast .stat-value { color: var(--accent-fast); }
         .stat-cert .stat-value { color: var(--accent-cert); }
@@ -159,6 +160,7 @@
         }
         
         .feed-header.cio h2 { color: var(--accent); }
+        .feed-header.watch h2 { color: #888; }
         .feed-header.hot h2 { color: #ff6600; }
         .feed-header.fast h2 { color: var(--accent-fast); }
         .feed-header.cert h2 { color: var(--accent-cert); }
@@ -322,17 +324,28 @@
             <div class="loading">Loading stats...</div>
         </div>
         
-        <!-- CIO Section (0-30m) -->
+        <!-- CIO Section (0-10m) -->
         <section class="feed-section">
             <div class="feed-header cio">
-                <h2>🌱 CIO (0-30m)</h2>
+                <h2>🌱 CIO (0-10m)</h2>
                 <span class="feed-desc">Fresh detections — high risk, high reward</span>
             </div>
             <div id="cio-feed">
                 <div class="loading">Loading CIO candidates...</div>
             </div>
         </section>
-        
+
+        <!-- WATCH Section (10-30m) -->
+        <section class="feed-section">
+            <div class="feed-header watch">
+                <h2>👁️ WATCH (10-30m)</h2>
+                <span class="feed-desc">Buffer zone — re-testing before HOTLIST</span>
+            </div>
+            <div id="watch-feed">
+                <div class="loading">Loading watch buffer...</div>
+            </div>
+        </section>
+
         <!-- HOTLIST Section (30-60m) -->
         <section class="feed-section">
             <div class="feed-header hot">

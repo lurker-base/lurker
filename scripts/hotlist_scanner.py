@@ -22,6 +22,7 @@ MIN_AGE_MINUTES = 30
 MAX_AGE_MINUTES = 60
 MIN_LIQ_USD = 15_000
 MIN_TX_1H = 80
+MIN_TX_15M = 25  # Alternative: high recent activity
 MIN_VOL_1H = 10_000
 MAX_PRICE_DROP_5M = -15  # Reject if -15% or worse in 5min
 MAX_SELL_BUY_RATIO = 1.4  # Reject if sells > 1.4x buys
@@ -152,6 +153,18 @@ def process_cio_for_hotlist(cio, state):
     liq = safe_num(metrics.get("liq_usd"), 0)
     vol_1h = safe_num(metrics.get("vol_1h_usd"), 0)
     tx_1h_obj = metrics.get("txns_h1", 0)  # This is a number in our format
+    tx_1h = int(tx_1h_obj) if isinstance(tx_1h_obj, (int, float)) else 0
+    
+    # Try to get 15m tx from txns structure
+    tx_15m = 0
+    txns_data = cio.get("txns", {}) or {}
+    if isinstance(txns_data, dict):
+        m15 = txns_data.get("m15", {})
+        if isinstance(m15, dict):
+            tx_15m = (m15.get("buys") or 0) + (m15.get("sells") or 0)
+    
+    # Transaction check: 15m OR 1h (more permissive for early runs)
+    tx_ok = (tx_15m >= MIN_TX_15M) or (tx_1h >= MIN_TX_1H)
     
     # Hard filters
     if liq < MIN_LIQ_USD:
@@ -160,8 +173,8 @@ def process_cio_for_hotlist(cio, state):
     if vol_1h < MIN_VOL_1H:
         return None, f"low_vol_${vol_1h:,.0f}"
     
-    if tx_1h_obj < MIN_TX_1H:
-        return None, f"low_tx_{tx_1h_obj}"
+    if not tx_ok:
+        return None, f"low_tx_15m_{tx_15m}_1h_{tx_1h}"
     
     # Get tx breakdown (we need to re-fetch for detailed tx data)
     # For now, use estimated values
