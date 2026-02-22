@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hall of Fame — LURKER</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --text: #e0e0e0;
+            --text-muted: #666;
+            --accent: #ff6b35;
+            --accent-dim: #ff6b3533;
+            --border: #1a1a1a;
+            --success: #4ade80;
+            --danger: #f87171;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Courier New', monospace;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .back-link {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+            margin-bottom: 2rem;
+            display: inline-block;
+        }
+        
+        .back-link:hover {
+            color: var(--accent);
+        }
+        
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent);
+        }
+        
+        .subtitle {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+        
+        .stat-card {
+            background: var(--border);
+            border: 1px solid #333;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+        
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 0.5rem;
+        }
+        
+        .section {
+            margin-bottom: 3rem;
+        }
+        
+        .section-title {
+            font-size: 1.2rem;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #333;
+        }
+        
+        .token-card {
+            background: var(--border);
+            border: 1px solid #333;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 1.5rem;
+            align-items: center;
+        }
+        
+        .token-rank {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent);
+            min-width: 40px;
+        }
+        
+        .token-info h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .token-info p {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+        
+        .token-performance {
+            text-align: right;
+        }
+        
+        .gain-positive {
+            color: var(--success);
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .gain-negative {
+            color: var(--danger);
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .token-meta {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 0.25rem;
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-muted);
+        }
+        
+        .legend {
+            background: var(--border);
+            padding: 1rem;
+            margin-bottom: 2rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        
+        .legend strong {
+            color: var(--text);
+        }
+        
+        @media (max-width: 600px) {
+            .token-card {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .token-performance {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← back to lurker</a>
+        
+        <h1>🏆 Hall of Fame</h1>
+        <p class="subtitle">Tokens detected early that performed well</p>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value" id="win-rate">--</div>
+                <div class="stat-label">Win Rate</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="avg-gain">--</div>
+                <div class="stat-label">Avg Gain</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="total-certified">--</div>
+                <div class="stat-label">Certified</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="tracking">--</div>
+                <div class="stat-label">Tracking</div>
+            </div>
+        </div>
+        
+        <div class="legend">
+            <strong>How it works:</strong> Tokens enter the Hall of Fame when they achieve 
+            <strong>+50% gain</strong> after being detected by LURKER within the first 3 hours. 
+            This is proof of our early detection edge.
+        </div>
+        
+        <div class="section">
+            <div class="section-title">✅ Certified Winners</div>
+            <div id="certified-list">
+                <div class="empty-state">Loading...</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">⏳ Currently Tracking</div>
+            <div id="tracking-list">
+                <div class="empty-state">Loading...</div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        async function loadHallOfFame() {
+            try {
+                const response = await fetch('data/hall_of_fame.json');
+                const data = await response.json();
+                
+                // Update stats
+                document.getElementById('win-rate').textContent = data.meta.win_rate + '%';
+                document.getElementById('avg-gain').textContent = '+' + (data.meta.average_gain_pct || 0) + '%';
+                document.getElementById('total-certified').textContent = data.meta.total_certified;
+                document.getElementById('tracking').textContent = data.tracking.length;
+                
+                // Render certified
+                const certifiedList = document.getElementById('certified-list');
+                if (data.certified.length === 0) {
+                    certifiedList.innerHTML = '<div class="empty-state">No certified tokens yet. First detections in progress...</div>';
+                } else {
+                    certifiedList.innerHTML = data.certified
+                        .sort((a, b) => (b.certified_gain || 0) - (a.certified_gain || 0))
+                        .map((t, i) => `
+                            <div class="token-card">
+                                <div class="token-rank">#${i + 1}</div>
+                                <div class="token-info">
+                                    <h3>${t.token.symbol}</h3>
+                                    <p>${t.token.name}</p>
+                                </div>
+                                <div class="token-performance">
+                                    <div class="gain-positive">+${t.certified_gain.toFixed(0)}%</div>
+                                    <div class="token-meta">Detected: ${new Date(t.first_seen).toLocaleDateString()}</div>
+                                </div>
+                            </div>
+                        `).join('');
+                }
+                
+                // Render tracking
+                const trackingList = document.getElementById('tracking-list');
+                if (data.tracking.length === 0) {
+                    trackingList.innerHTML = '<div class="empty-state">No tokens currently being tracked.</div>';
+                } else {
+                    trackingList.innerHTML = data.tracking
+                        .sort((a, b) => (b.performance?.gain_pct || 0) - (a.performance?.gain_pct || 0))
+                        .map(t => {
+                            const gain = t.performance?.gain_pct || 0;
+                            const gainClass = gain >= 0 ? 'gain-positive' : 'gain-negative';
+                            return `
+                                <div class="token-card">
+                                    <div class="token-rank">⏳</div>
+                                    <div class="token-info">
+                                        <h3>${t.token.symbol}</h3>
+                                        <p>${t.token.name}</p>
+                                    </div>
+                                    <div class="token-performance">
+                                        <div class="${gainClass}">${gain >= 0 ? '+' : ''}${gain.toFixed(1)}%</div>
+                                        <div class="token-meta">Age: ${t.age_hours.toFixed(1)}h</div>
+                                    </div>
+                                </div>
+                            `;
+                        }).join('');
+                }
+            } catch (e) {
+                console.error('Failed to load Hall of Fame:', e);
+                document.querySelectorAll('.empty-state').forEach(el => {
+                    el.textContent = 'Unable to load data. Check back soon.';
+                });
+            }
+        }
+        
+        loadHallOfFame();
+    </script>
+</body>
+</html>
