@@ -263,10 +263,13 @@
                 </div>
                 
                 <div style="margin-bottom: 1rem; text-align: right;">
-                    <div class="health-badge" id="health-badge">
+                    <div class="health-badge" id="health-badge" title="Hover for details">
                         <span id="health-dot">●</span>
                         <span id="health-text">checking...</span>
                         <span id="health-streak" style="opacity: 0.7;"></span>
+                    </div>
+                    <div id="health-details" style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; font-family: 'SF Mono', monospace;">
+                        loading health metrics...
                     </div>
                 </div>
                 
@@ -365,10 +368,13 @@
                 const dot = document.getElementById('health-dot');
                 const text = document.getElementById('health-text');
                 const streak = document.getElementById('health-streak');
+                const details = document.getElementById('health-details');
                 
                 const emptyStreak = health.empty_streak || 0;
                 const lastCheck = health.last_check;
                 const lastCount = health.last_count || 0;
+                const lastSuccessful = health.last_successful_scan;
+                const lastNonEmpty = health.last_non_empty_scan;
                 
                 // Calculate time since last check
                 let minutesAgo = null;
@@ -377,6 +383,17 @@
                     const now = new Date();
                     minutesAgo = Math.floor((now - last) / 60000);
                 }
+                
+                // Format timestamps for display
+                const formatTime = (ts) => {
+                    if (!ts) return 'never';
+                    const date = new Date(ts);
+                    const mins = Math.floor((new Date() - date) / 60000);
+                    if (mins < 1) return 'just now';
+                    if (mins < 60) return `${mins}m ago`;
+                    const hours = Math.floor(mins / 60);
+                    return `${hours}h ago`;
+                };
                 
                 if (emptyStreak === 0) {
                     badge.className = 'health-badge ok';
@@ -394,13 +411,27 @@
                     text.textContent = 'HEALTH: FAIL';
                     streak.textContent = ` (${emptyStreak} empty scans)`;
                 }
+                
+                // Update detailed metrics
+                details.innerHTML = `
+                    streak: ${emptyStreak} | 
+                    last check: ${formatTime(lastCheck)} | 
+                    last success: ${formatTime(lastSuccessful)} | 
+                    last non-empty: ${formatTime(lastNonEmpty)}
+                `;
+                
+                // Update tooltip
+                badge.title = `Empty streak: ${emptyStreak}\nLast check: ${formatTime(lastCheck)}\nLast successful scan: ${formatTime(lastSuccessful)}\nLast non-empty scan: ${formatTime(lastNonEmpty)}`;
+                
             } catch (e) {
                 const badge = document.getElementById('health-badge');
                 const dot = document.getElementById('health-dot');
                 const text = document.getElementById('health-text');
+                const details = document.getElementById('health-details');
                 badge.className = 'health-badge';
                 dot.style.color = '#666';
                 text.textContent = 'HEALTH: unknown';
+                details.textContent = 'unable to load health metrics';
             }
         }
         

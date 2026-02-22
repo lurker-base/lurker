@@ -27,7 +27,9 @@ def load_state():
         "schema": "lurker_health_v1",
         "empty_streak": 0,
         "last_check": None,
-        "last_count": 0
+        "last_count": 0,
+        "last_successful_scan": None,
+        "last_non_empty_scan": None
     }
 
 def save_state(state):
@@ -130,6 +132,7 @@ def validate_feed(is_manual=False):
             print("✅ WARNING only (schedule mode, streak < max)")
             state["last_check"] = now.isoformat()
             state["last_count"] = count
+            state["last_successful_scan"] = now.isoformat()  # Scan succeeded, just empty
             save_state(state)
             return True  # Allow to continue
     else:
@@ -138,6 +141,9 @@ def validate_feed(is_manual=False):
         state["last_check"] = now.isoformat()
         state["last_count"] = count
         state["last_generated_at"] = generated_at
+        state["last_successful_scan"] = now.isoformat()
+        if count > 0:
+            state["last_non_empty_scan"] = now.isoformat()
         save_state(state)
         print(f"✅ Feed healthy: {count} candidates, streak reset to 0")
         return True
