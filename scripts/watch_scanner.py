@@ -204,5 +204,26 @@ def scan():
               f"age={w['timestamps']['age_minutes']:.0f}m, "
               f"tx5m={w['metrics']['txns_5m']}")
 
+def write_fail(msg: str):
+    """Write empty feed with error - never crash GitHub Actions"""
+    import traceback
+    WATCH_FILE.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "schema": "lurker_watch_v1",
+        "meta": {
+            "updated_at": iso(),
+            "count": 0,
+            "error": msg[:500],
+            "trace": traceback.format_exc()[-500:]
+        },
+        "watch": []
+    }
+    WATCH_FILE.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    print(f"[WATCH] ⚠️ Error handled: {msg[:200]}")
+
 if __name__ == "__main__":
-    scan()
+    try:
+        scan()
+    except Exception as e:
+        write_fail(f"watch scanner crashed: {repr(e)}")
+        sys.exit(0)

@@ -192,5 +192,26 @@ def scan():
               f"age={f['timestamps']['age_hours']:.1f}h, "
               f"liq=${f['metrics_at_cert']['liq_usd']:,.0f}")
 
+def write_fail(msg: str):
+    """Write empty feed with error - never crash GitHub Actions"""
+    import traceback
+    FAST_FILE.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "schema": "lurker_fast_certified_v1",
+        "meta": {
+            "updated_at": datetime.now(timezone.utc).isoformat(),
+            "count": 0,
+            "error": msg[:500],
+            "trace": traceback.format_exc()[-500:]
+        },
+        "fast_certified": []
+    }
+    FAST_FILE.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    print(f"[FAST] ⚠️ Error handled: {msg[:200]}")
+
 if __name__ == "__main__":
-    scan()
+    try:
+        scan()
+    except Exception as e:
+        write_fail(f"fast certifier crashed: {repr(e)}")
+        sys.exit(0)

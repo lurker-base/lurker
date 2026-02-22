@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: lurker-fast
+  cancel-in-progress: true
+
 jobs:
   certify:
     runs-on: ubuntu-latest
@@ -20,13 +24,19 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Run FAST-CERTIFIED scanner
-        run: python3 scripts/fast_certifier.py
+      - name: Install requests
+        run: pip install requests
+
+      - name: Ensure directories exist
+        run: mkdir -p signals state
+
+      - name: Run FAST-CERTIFIED scanner (never fail)
+        run: python3 scripts/fast_certifier.py || echo "Scanner warning - continuing"
 
       - name: Commit updates
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add signals/fast_certified_feed.json
+          git add signals/fast_certified_feed.json || true
           git diff --cached --quiet || git commit -m "chore: Fast-certified scan [skip ci]"
-          git push
+          git push || echo "Nothing to push"

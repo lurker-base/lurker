@@ -377,5 +377,27 @@ def scan():
               f"token_age={c['timestamps']['token_age_hours']:.1f}h, "
               f"source={c['scores']['source']}")
 
+def write_fail(msg: str):
+    """Write empty feed with error - never crash GitHub Actions"""
+    import traceback
+    CIO_FILE.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "schema": "lurker_cio_v3",
+        "meta": {
+            "updated_at": iso(),
+            "count": 0,
+            "error": msg[:500],
+            "trace": traceback.format_exc()[-500:]
+        },
+        "candidates": []
+    }
+    CIO_FILE.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    print(f"[SCANNER] ⚠️ Error handled: {msg[:200]}")
+
 if __name__ == "__main__":
-    scan()
+    try:
+        scan()
+    except Exception as e:
+        write_fail(f"scanner crashed: {repr(e)}")
+        # Exit 0 = GitHub Actions stays green
+        sys.exit(0)

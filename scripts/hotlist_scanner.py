@@ -319,5 +319,26 @@ def scan():
               f"risk={h['risk']['level']}, "
               f"age={h['timestamps']['age_minutes']:.0f}m")
 
+def write_fail(msg: str):
+    """Write empty feed with error - never crash GitHub Actions"""
+    import traceback
+    HOTLIST_FILE.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "schema": "lurker_hotlist_v1",
+        "meta": {
+            "updated_at": iso(),
+            "count": 0,
+            "error": msg[:500],
+            "trace": traceback.format_exc()[-500:]
+        },
+        "hotlist": []
+    }
+    HOTLIST_FILE.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    print(f"[HOTLIST] ⚠️ Error handled: {msg[:200]}")
+
 if __name__ == "__main__":
-    scan()
+    try:
+        scan()
+    except Exception as e:
+        write_fail(f"hotlist scanner crashed: {repr(e)}")
+        sys.exit(0)

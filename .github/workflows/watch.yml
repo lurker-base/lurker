@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: lurker-watch
+  cancel-in-progress: true
+
 jobs:
   scan:
     runs-on: ubuntu-latest
@@ -20,13 +24,19 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Run WATCH scanner
-        run: python3 scripts/watch_scanner.py
+      - name: Install requests
+        run: pip install requests
+
+      - name: Ensure directories exist
+        run: mkdir -p signals state
+
+      - name: Run WATCH scanner (never fail)
+        run: python3 scripts/watch_scanner.py || echo "Scanner warning - continuing"
 
       - name: Commit updates
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add signals/watch_feed.json state/watch_state.json
+          git add signals/watch_feed.json state/watch_state.json || true
           git diff --cached --quiet || git commit -m "chore: Watch scan [skip ci]"
-          git push
+          git push || echo "Nothing to push"

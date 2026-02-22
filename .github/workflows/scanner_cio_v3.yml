@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: lurker-cio
+  cancel-in-progress: true
+
 jobs:
   scan:
     runs-on: ubuntu-latest
@@ -23,13 +27,16 @@ jobs:
       - name: Install requests
         run: pip install requests
 
-      - name: Run CIO scanner v3
-        run: python3 scripts/scanner_cio_v3.py
+      - name: Ensure directories exist
+        run: mkdir -p signals state
+
+      - name: Run CIO scanner v3 (never fail)
+        run: python3 scripts/scanner_cio_v3.py || echo "Scanner warning - continuing"
 
       - name: Commit updates
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add signals/cio_feed.json state/token_registry.json
+          git add signals/cio_feed.json state/token_registry.json || true
           git diff --cached --quiet || git commit -m "chore: CIO v3 scan [skip ci]"
-          git push
+          git push || echo "Nothing to push"
