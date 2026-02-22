@@ -1,8 +1,8 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-02-22T19:49:20.536000+00:00",
-    "generated_at": "2026-02-22T19:49:20.536000+00:00",
+    "updated_at": "2026-02-22T20:00:27.192000+00:00",
+    "generated_at": "2026-02-22T20:00:27.192000+00:00",
     "status": "ok",
     "count": 2,
     "thresholds": {
@@ -15,7 +15,7 @@
       "low": 2
     },
     "rejected": {
-      "duplicate": 1,
+      "duplicate": 2,
       "too_old": 2
     },
     "source": "ultra_launch_scanner"
@@ -33,17 +33,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 236357.48,
-        "vol_5m_usd": 9522.44,
-        "vol_1h_usd": 99455.54,
-        "txns_5m": 324,
-        "price_usd": 2.845e-06
+        "liq_usd": 206496.17,
+        "vol_5m_usd": 6297.5,
+        "vol_1h_usd": 124490.69,
+        "txns_5m": 235,
+        "price_usd": 2.414e-06
       },
       "timestamps": {
         "pair_created_at": "2026-02-22T19:10:13+00:00",
         "token_first_seen": "2026-02-22T19:49:20.534000+00:00",
-        "age_minutes": 39.1,
-        "age_hours": 0.65
+        "age_minutes": 50.2,
+        "age_hours": 0.84
       },
       "scores": {
         "cio_score": 100,
@@ -63,31 +63,31 @@
     },
     {
       "token": {
-        "address": "0x0a3a6eef246ed15dbf97f8a237e20a3bc091cba3",
-        "symbol": "0xDP",
-        "name": "0xDirectPing"
+        "address": "0xe4f5b998372443522b08b72d3b5b704c3bdafaf4",
+        "symbol": "WILDE",
+        "name": "Lobster Wilde"
       },
       "pair": {
-        "address": "0x0cf14e19ccd6815ee699d48055c63996a762c6aff6d65ef842209be4d945dd02",
+        "address": "0xd095279501be8d9d0247cd35ae96e40c468d4353",
         "dex": "uniswap",
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 134969.45,
-        "vol_5m_usd": 837.23,
-        "vol_1h_usd": 19744.08,
-        "txns_5m": 7,
-        "price_usd": 2.439e-06
+        "liq_usd": 56049.98,
+        "vol_5m_usd": 13792.33,
+        "vol_1h_usd": 198841.21,
+        "txns_5m": 58,
+        "price_usd": 0.0007621
       },
       "timestamps": {
-        "pair_created_at": "2026-02-22T07:52:05+00:00",
-        "token_first_seen": "2026-02-22T19:49:20.534000+00:00",
-        "age_minutes": 717.3,
-        "age_hours": 11.95
+        "pair_created_at": "2026-02-22T18:27:33+00:00",
+        "token_first_seen": "2026-02-22T20:00:27.191000+00:00",
+        "age_minutes": 92.9,
+        "age_hours": 1.55
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.8
+        "freshness": 0.97
       },
       "risks": [],
       "risk_level": "low",
