@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <title>live — lurker</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="alternate icon" type="image/png" href="favicon.png">
@@ -318,6 +318,119 @@
 </head>
 <body>
     <div class="bg-grid"></div>
+    
+    <!-- Mobile Detection & Fixes -->
+    <script>
+        // Detect mobile and apply emergency fixes
+        if (window.innerWidth <= 768 || /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+            document.documentElement.classList.add('mobile-device');
+            
+            // Force viewport scale
+            const viewport = document.querySelector('meta[name="viewport"]');
+            if (viewport) {
+                viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no');
+            }
+        }
+    </script>
+    <style>
+        /* Emergency mobile overrides */
+        @media (max-width: 768px) {
+            .mobile-device body {
+                font-size: 16px !important;
+                line-height: 1.5 !important;
+            }
+            
+            .mobile-device .page-sidebar {
+                display: none !important;
+            }
+            
+            .mobile-device .page-container.with-sidebar {
+                display: block !important;
+                padding: 0.5rem !important;
+            }
+            
+            .mobile-device .page-content {
+                width: 100% !important;
+                max-width: 100% !important;
+                padding: 0.5rem !important;
+                overflow-x: hidden !important;
+            }
+            
+            .mobile-device .warning-box {
+                font-size: 14px !important;
+                line-height: 1.4 !important;
+                padding: 12px !important;
+                word-wrap: break-word !important;
+                overflow-wrap: break-word !important;
+                hyphens: auto !important;
+            }
+            
+            .mobile-device .stats-bar {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 8px !important;
+            }
+            
+            .mobile-device .stat-item {
+                display: flex !important;
+                justify-content: space-between !important;
+                align-items: center !important;
+                padding: 8px !important;
+                background: rgba(255,255,255,0.03) !important;
+                border-radius: 4px !important;
+            }
+            
+            .mobile-device .token-card {
+                padding: 12px !important;
+                margin-bottom: 12px !important;
+                border-radius: 8px !important;
+            }
+            
+            .mobile-device .card-header {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                gap: 8px !important;
+                margin-bottom: 8px !important;
+            }
+            
+            .mobile-device .card-metrics {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 4px !important;
+                font-size: 13px !important;
+            }
+            
+            .mobile-device .live-header h1 {
+                font-size: 28px !important;
+            }
+            
+            .mobile-device .live-header p {
+                font-size: 14px !important;
+            }
+            
+            .mobile-device .feed-title {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                gap: 4px !important;
+            }
+            
+            .mobile-device .feed-desc {
+                margin-left: 0 !important;
+                font-size: 12px !important;
+            }
+            
+            .mobile-device .nav {
+                padding: 8px !important;
+                gap: 4px !important;
+                justify-content: center !important;
+            }
+            
+            .mobile-device .nav-link {
+                font-size: 12px !important;
+                padding: 4px 8px !important;
+            }
+        }
+    </style>
     
     <nav class="nav">
         <a href="index.html" class="nav-link">lurker</a>
