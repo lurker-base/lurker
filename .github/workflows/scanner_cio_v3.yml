@@ -31,7 +31,23 @@ jobs:
         run: mkdir -p signals state
 
       - name: Run ULTRA LAUNCH scanner
-        run: python3 scripts/scanner_cio_ultra.py || echo "Scanner warning - continuing"
+        run: python3 scripts/scanner_cio_ultra.py
+
+      - name: Health check - verify feed exists and is valid
+        run: |
+          echo "=== Health Check ==="
+          if [ ! -f signals/cio_feed.json ]; then
+            echo "❌ ERROR: signals/cio_feed.json not found"
+            exit 1
+          fi
+          COUNT=$(python3 -c "import json; d=json.load(open('signals/cio_feed.json')); print(len(d.get('candidates', [])))" 2>/dev/null || echo 0)
+          echo "Found $COUNT candidates"
+          if [ "$COUNT" -eq 0 ]; then
+            echo "⚠️ WARNING: Empty feed (0 candidates) - this may be normal during quiet periods"
+            # Don't fail - empty feed can be valid (no new tokens)
+          else
+            echo "✅ Feed valid with $COUNT candidates"
+          fi
 
       - name: Commit updates
         run: |
