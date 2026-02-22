@@ -1,44 +1,89 @@
 # LURKER
 
-> Autonomous whale surveillance for Base chain
+[![LURKER Pipeline](https://github.com/lurker-base/lurker/actions/workflows/telegram_publish.yml/badge.svg)](https://github.com/lurker-base/lurker/actions/workflows/telegram_publish.yml)
 
-LURKER monitors high-value wallets on Base, detecting significant moves before the market reacts.
+> Autonomous alpha signals for Base chain — **3-5 high-quality signals per day**
 
-## What It Does
+LURKER detects early opportunities on Base before the market reacts. Quality over quantity.
 
-- **Scans** Base blockchain for large transactions
-- **Detects** whale accumulation/distribution patterns
-- **Alerts** subscribers in real-time via Telegram
+## Philosophy
 
-## Architecture
+- **Rarity**: Max 5 signals/day ( enforced )
+- **Quality**: Min 70/100 confidence score
+- **Transparency**: All signals verifiable on-chain
+- **GitHub-Only**: Zero VPS, zero external dashboard
+
+## How It Works
 
 ```
-┌─────────────┐     ┌──────────────┐     ┌─────────┐
-│   Indexer   │────▶│   Detector   │────▶│ Alerts  │
-│  (Base RPC) │     │ (Heuristics) │     │(Telegram│
-└─────────────┘     └──────────────┘     └─────────┘
+┌─────────────────┐     ┌──────────────┐     ┌─────────────┐
+│  Market Data    │────▶│   LURKER     │────▶│  Telegram   │
+│  (DexScreener)  │     │  Validator   │     │  @LurkerAlphaSignals │
+└─────────────────┘     └──────────────┘     └─────────────┘
+                               │
+                    ┌──────────┴──────────┐
+                    ▼                     ▼
+              ┌─────────┐           ┌──────────┐
+              │ Posted  │           │ Skipped  │
+              │(if OK)  │           │(guardrails│
+              └─────────┘           └──────────┘
 ```
+
+## Guardrails (Active)
+
+| Rule | Value |
+|------|-------|
+| **Daily Limit** | 5 signals max |
+| **Min Confidence** | 70/100 |
+| **Anti-Duplicate** | 7-day cooldown per token |
+| **Status Check** | Only `ready` signals post |
+
+## Signal Format
+
+```json
+{
+  "kind": "LURKER_SIGNAL",
+  "status": "ready",
+  "chain": "base",
+  "token": {
+    "symbol": "$TOKEN",
+    "address": "0x..."
+  },
+  "scores": {
+    "confidence": 75,
+    "risk": "high"
+  },
+  "trade": {
+    "entry": "0.00000110",
+    "targets": ["0.00000145", "0.00000160"],
+    "stop": "0.00000095"
+  }
+}
+```
+
+## Usage (GitHub-Only)
+
+### Post a Signal
+
+1. **Edit** [`signals/latest.json`](https://github.com/lurker-base/lurker/edit/main/signals/latest.json)
+2. **Fill** your token data
+3. **Set** `"status": "ready"` and `confidence >= 70`
+4. **Commit** → GitHub Actions validates & posts automatically
+
+### Manual Test
+
+Run workflow manually: [Actions → Test Secrets](https://github.com/lurker-base/lurker/actions/workflows/test_secrets.yml)
 
 ## Tech Stack
 
-- **Node.js** + Ethers.js for blockchain interaction
-- **Supabase** for data persistence
-- **GitHub Actions** for continuous monitoring
-- **Telegram Bot API** for alerts
+- **GitHub Actions** — CI/CD pipeline
+- **Telegram Bot API** — Alert delivery
+- **DexScreener API** — Market data (public)
+- **BaseScan API** — On-chain verification
 
-## Getting Started
+## Channel
 
-```bash
-npm install
-npm run dev
-```
-
-## Configuration
-
-Copy `.env.example` to `.env` and fill in your:
-- `BASE_RPC_URL`
-- `SUPABASE_URL` & `SUPABASE_KEY`
-- `TELEGRAM_BOT_TOKEN` & `TELEGRAM_CHAT_ID`
+**[@LurkerAlphaSignals](https://t.me/LurkerAlphaSignals)** — Live signals
 
 ## License
 

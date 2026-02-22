@@ -125,8 +125,11 @@ def main():
     ok, result = validate_signal(signal)
     
     if not ok:
-        print(f"[LURKER] ⏭️ REJECTED by guardrails: {result}")
-        print("[LURKER] This is expected behavior — no error.")
+        print(f"[LURKER] ⏭️ SIGNAL REJECTED (normal)")
+        print(f"[LURKER] Reason: {result}")
+        print(f"[LURKER] Guardrail triggered — signal skipped")
+        print(f"[LURKER] This is EXPECTED behavior. No error.")
+        print(f"[LURKER] Current limits: max {MAX_PER_DAY}/day, min confidence {MIN_CONFIDENCE}, 7-day anti-dup")
         sys.exit(0)  # ← Exit 0 = SUCCESS (pas de ❌ rouge)
     
     # Update state
