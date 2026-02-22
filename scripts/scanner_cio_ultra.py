@@ -84,11 +84,11 @@ def fetch_search_pairs():
     """Source 1: Search popular pairs (the 'rake')"""
     print("[SCANNER] Source 1: Search rake...")
     
-    # Popular search terms that catch new pairs
-    search_terms = ["WETH", "USDC", "ETH", "1000000", "0x", "BASE"]
+    # Popular search terms that catch new pairs - expanded for more coverage
+    search_terms = ["WETH", "USDC", "ETH", "1000000", "0x", "BASE", "AERO", "CLANKER", "VIRTUAL", "DEGEN", "BRETT", "MIGGLES"]
     all_pairs = []
     
-    for term in search_terms[:3]:  # Limit to avoid rate limits
+    for term in search_terms[:5]:  # Increased from 3 to 5 for more coverage
         results = get_json(f"{BASE_URL}/latest/dex/search?q={term}")
         if results and isinstance(results, dict):
             pairs = results.get("pairs", [])
@@ -157,6 +157,56 @@ def fetch_boosted():
         time.sleep(0.1)
     
     print(f"[SCANNER] Source 3: {len(results)} pairs")
+    return results
+
+def fetch_community_takeovers():
+    """Source 4: Community takeovers (trending)"""
+    print("[SCANNER] Source 4: Community takeovers...")
+    ctos = get_json(f"{BASE_URL}/community-takeovers/latest/v1")
+    if not ctos:
+        return []
+    if isinstance(ctos, dict):
+        ctos = ctos.get("takeovers") or ctos.get("data") or []
+    
+    base_ctos = [c for c in ctos if (c.get("chainId") or "").lower() == CHAIN][:20]
+    results = []
+    
+    for c in base_ctos:
+        token = c.get("tokenAddress")
+        if not token:
+            continue
+        pairs = get_json(f"{BASE_URL}/token-pairs/v1/{CHAIN}/{token}")
+        if pairs and isinstance(pairs, list) and len(pairs) > 0:
+            best = max(pairs, key=lambda x: safe_num((x.get("liquidity") or {}).get("usd"), 0))
+            results.append({"pair": best, "source": "community", "cto": c})
+        time.sleep(0.1)
+    
+    print(f"[SCANNER] Source 4: {len(results)} pairs")
+    return results
+
+def fetch_ads():
+    """Source 5: Advertised tokens (high activity)"""
+    print("[SCANNER] Source 5: Advertised tokens...")
+    ads = get_json(f"{BASE_URL}/ads/latest/v1")
+    if not ads:
+        return []
+    if isinstance(ads, dict):
+        ads = ads.get("ads") or ads.get("data") or []
+    
+    base_ads = [a for a in ads if (a.get("chainId") or "").lower() == CHAIN][:20]
+    results = []
+    
+    for a in base_ads:
+        token = a.get("tokenAddress")
+        if not token:
+            continue
+        pairs = get_json(f"{BASE_URL}/token-pairs/v1/{CHAIN}/{token}")
+        if pairs and isinstance(pairs, list) and len(pairs) > 0:
+            best = max(pairs, key=lambda x: safe_num((x.get("liquidity") or {}).get("usd"), 0))
+            results.append({"pair": best, "source": "ads", "ad": a})
+        time.sleep(0.1)
+    
+    print(f"[SCANNER] Source 5: {len(results)} pairs")
     return results
 
 def process_candidate(item, registry):
@@ -282,11 +332,13 @@ def scan():
     t0 = now_ms()
     registry = load_token_registry()
     
-    # Fetch all sources
+    # Fetch all sources (5 sources for maximum coverage)
     all_items = []
-    all_items.extend(fetch_search_pairs())      # Source 1: Search
-    all_items.extend(fetch_token_profiles())    # Source 2: Profiles
-    all_items.extend(fetch_boosted())           # Source 3: Boosted
+    all_items.extend(fetch_search_pairs())           # Source 1: Search
+    all_items.extend(fetch_token_profiles())         # Source 2: Profiles
+    all_items.extend(fetch_boosted())                # Source 3: Boosted
+    all_items.extend(fetch_community_takeovers())    # Source 4: CTOs
+    all_items.extend(fetch_ads())                    # Source 5: Ads
     
     print(f"\n[SCANNER] Total raw: {len(all_items)} items")
     
