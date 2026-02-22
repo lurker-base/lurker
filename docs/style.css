@@ -2392,3 +2392,175 @@ a {
     font-size: 0.9rem;
     color: var(--text-muted);
 }
+
+/* Live Signal Widget */
+.live-widget-section {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: rgba(255, 107, 53, 0.05);
+}
+
+.section-title {
+    font-size: 1.1rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    text-transform: lowercase;
+    letter-spacing: 0.05em;
+}
+
+.signal-widget {
+    min-height: 100px;
+}
+
+.signal-loading, .signal-empty {
+    color: var(--text-muted);
+    font-style: italic;
+    padding: 2rem;
+    text-align: center;
+}
+
+.signal-card {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1rem;
+    transition: border-color 0.2s;
+}
+
+.signal-card:hover {
+    border-color: var(--accent);
+}
+
+.signal-card.dry-run {
+    border-left: 3px solid #ffd700;
+}
+
+.signal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.signal-symbol {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.signal-chain {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+}
+
+.badge.dry-run {
+    background: #ffd700;
+    color: #000;
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.signal-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.signal-metrics {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.85rem;
+}
+
+.signal-time {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-align: right;
+}
+
+.view-all {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.view-all:hover {
+    text-decoration: underline;
+}
+
+/* Performance Widget */
+.perf-widget-section {
+    margin-top: 2rem;
+}
+
+.perf-widget {
+    min-height: 80px;
+}
+
+.perf-loading, .perf-empty {
+    color: var(--text-muted);
+    font-style: italic;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.perf-card {
+    background: rgba(255, 107, 53, 0.08);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.25rem;
+}
+
+.perf-title {
+    font-size: 1rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.perf-stats {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.perf-stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.perf-value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.perf-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+.perf-phase {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.perf-note {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
