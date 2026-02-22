@@ -1,0 +1,26 @@
+{
+  "notified": {
+    "0x7c0a5c1020c39bfa1af711b4b963be82f55e1b07": {
+      "badge": "PREMIUM",
+      "timestamp": "2026-02-22T17:52:45.399726+00:00",
+      "symbol": "CLAUDET"
+    },
+    "0x4b813f536f5588486e5e9bb2a7ab98c07e621b07": {
+      "badge": "GOOD",
+      "timestamp": "2026-02-22T17:52:45.399743+00:00",
+      "symbol": "zclaw"
+    },
+    "0xc61857eb390ff2ac5fd07aae0c030bbe5b79144e": {
+      "badge": "PREMIUM",
+      "timestamp": "2026-02-22T17:52:45.399748+00:00",
+      "symbol": "ZEROCLAW"
+    },
+    "0x71a09f5b9b88976ebcc79183e0e99e7d07beabaf": {
+      "badge": "PREMIUM",
+      "timestamp": "2026-02-22T17:52:45.399753+00:00",
+      "symbol": "EARENDEL"
+    }
+  },
+  "updates": [],
+  "last_check": "2026-02-22T17:52:47.328435+00:00"
+}
