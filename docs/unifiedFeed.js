@@ -98,19 +98,50 @@ function renderSourceBadge(source) {
 }
 
 // Card renderers
+function renderRiskBadge(riskLevel, risks = []) {
+    const colors = {
+        'low': '#00ff00',
+        'medium': '#ffaa00', 
+        'high': '#ff4444'
+    };
+    const bgColors = {
+        'low': 'rgba(0,255,0,0.1)',
+        'medium': 'rgba(255,170,0,0.1)',
+        'high': 'rgba(255,68,68,0.1)'
+    };
+    const color = colors[riskLevel] || '#666';
+    const bg = bgColors[riskLevel] || 'rgba(102,102,102,0.1)';
+    const riskText = risks.slice(0, 2).join(', ') || riskLevel;
+    return `<span class="badge-risk" style="background:${bg};color:${color};border:1px solid ${color};padding:2px 8px;border-radius:3px;font-size:0.7rem;text-transform:uppercase;">${riskLevel} risk${risks.length > 0 ? ': ' + riskText : ''}</span>`;
+}
+
 function renderCIOCard(item) {
     const symbol = pick(item, ['token.symbol', 'symbol'], '???');
     const age = safeNum(item.age_hours || item.timestamps?.age_hours, 0);
+    const ageMin = safeNum(item.timestamps?.age_minutes, age * 60);
     const score = safeNum(item.scores?.cio_score, 0);
-    const source = item.scores?.source;
+    const source = item.source || item.scores?.source;
     const metrics = item.metrics || {};
-    const liq = safeNum(metrics.liq_usd, 0);
-    const vol24 = safeNum(metrics.vol_24h_usd, 0);
-    const tx24 = safeNum(metrics.txns_24h, 0);
-    const url = item.pair_url || (item.pool_address ? `https://dexscreener.com/base/${item.pool_address}` : '#');
+    const liq = safeNum(metrics.liq_usd || metrics.liquidity?.usd, 0);
+    const vol5m = safeNum(metrics.vol_5m_usd || metrics.volume?.m5, 0);
+    const vol1h = safeNum(metrics.vol_1h_usd || metrics.volume?.h1, 0);
+    const tx5m = safeNum(metrics.txns_5m || (item.txns?.m5?.buys + item.txns?.m5?.sells), 0);
+    const riskLevel = item.risk_level || 'unknown';
+    const risks = item.risks || [];
+    const url = item.pair?.address ? `https://dexscreener.com/base/${item.pair.address}` : 
+                (item.pair_url || (item.pool_address ? `https://dexscreener.com/base/${item.pool_address}` : '#'));
+    
+    // Visual separation by risk
+    const riskStyles = {
+        'low': 'border-left: 4px solid #00ff00; background: rgba(0,255,0,0.03);',
+        'medium': 'border-left: 4px solid #ffaa00; background: rgba(255,170,0,0.03);',
+        'high': 'border-left: 4px solid #ff4444; background: rgba(255,68,68,0.03);',
+        'unknown': ''
+    };
+    const cardStyle = riskStyles[riskLevel] || '';
     
     return `
-        <div class="token-card card-cio">
+        <div class="token-card card-cio" style="${cardStyle}">
             <div class="card-header">
                 <span class="token-symbol">${symbol}</span>
                 <span class="badges">
@@ -119,14 +150,17 @@ function renderCIOCard(item) {
                     ${renderSourceBadge(source)}
                 </span>
             </div>
+            <div style="margin: 0.5rem 0;">
+                ${renderRiskBadge(riskLevel, risks)}
+            </div>
             <div class="card-metrics">
                 <span>⭐ ${score}/100</span>
-                <span>💧 $${(liq/1e3).toFixed(0)}k</span>
-                <span>📊 $${(vol24/1e3).toFixed(0)}k</span>
-                <span>🔥 ${Math.round(tx24)} tx</span>
+                <span>💧 $${(liq/1e3).toFixed(1)}k</span>
+                <span>📈 $${(vol5m/1e3).toFixed(1)}k/5m</span>
+                <span>🔥 ${Math.round(tx5m)} tx/5m</span>
             </div>
             <div class="card-footer">
-                <span class="age-text">${age.toFixed(1)}h old</span>
+                <span class="age-text">${Math.round(ageMin)}m old</span>
                 ${url !== '#' ? `<a href="${url}" target="_blank" class="dex-link">DexScreener →</a>` : ''}
             </div>
         </div>
