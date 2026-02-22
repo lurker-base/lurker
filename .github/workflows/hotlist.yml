@@ -1,0 +1,32 @@
+name: LURKER HOTLIST
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'  # Every 5 minutes
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run HOTLIST scanner
+        run: python3 scripts/hotlist_scanner.py
+
+      - name: Commit updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add signals/hotlist_feed.json state/hotlist_state.json
+          git diff --cached --quiet || git commit -m "chore: Hotlist scan [skip ci]"
+          git push

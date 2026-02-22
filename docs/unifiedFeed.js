@@ -1,9 +1,10 @@
-// LURKER Unified Feed — CIO + FAST-CERTIFIED + CERTIFIED
+// LURKER Unified Feed — CIO + HOTLIST + FAST-CERTIFIED + CERTIFIED
 const REPO_RAW = 'https://raw.githubusercontent.com/lurker-base/lurker/main';
 
 // Unified state
 let feedState = {
     cio: [],
+    hotlist: [],
     fastCertified: [],
     certified: [],
     updated: '--:--'
@@ -44,6 +45,7 @@ function renderAgeBadge(ageHours) {
 function renderStatusBadge(status) {
     const badges = {
         'cio': '<span class="badge-status badge-cio">CIO</span>',
+        'hotlist': '<span class="badge-status badge-hot">🔥 HOTLIST</span>',
         'fast_certified': '<span class="badge-status badge-fast">⚡ FAST-CERTIFIED</span>',
         'certified': '<span class="badge-status badge-cert">✓ CERTIFIED</span>'
     };
@@ -90,6 +92,49 @@ function renderCIOCard(item) {
             </div>
             <div class="card-footer">
                 <span class="age-text">${age.toFixed(1)}h old</span>
+                ${url !== '#' ? `<a href="${url}" target="_blank" class="dex-link">DexScreener →</a>` : ''}
+            </div>
+        </div>
+    `;
+}
+
+function renderHotlistCard(item) {
+    const symbol = pick(item, ['token.symbol', 'symbol'], '???');
+    const age = safeNum(item.timestamps?.age_minutes, 0) / 60; // Convert to hours for display
+    const score = safeNum(item.scores?.hotlist_score, 0);
+    const oppScore = safeNum(item.scores?.opportunity_score, 0);
+    const riskLevel = item.risk?.level || 'unknown';
+    const riskFactors = item.risk?.factors || [];
+    const metrics = item.metrics || {};
+    const liq = safeNum(metrics.liq_usd, 0);
+    const vol1h = safeNum(metrics.vol_1h_usd, 0);
+    const tx1h = safeNum(metrics.txns_1h, 0);
+    const url = item.pair_url || (item.pool_address ? `https://dexscreener.com/base/${item.pool_address}` : '#');
+    
+    const riskEmoji = riskLevel === 'low' ? '🟢' : riskLevel === 'medium' ? '🟡' : '🔴';
+    const riskText = riskFactors.length > 0 ? `${riskEmoji} ${riskLevel} (${riskFactors.join(', ')})` : `${riskEmoji} ${riskLevel}`;
+    
+    return `
+        <div class="token-card card-hot">
+            <div class="card-header">
+                <span class="token-symbol">${symbol}</span>
+                <span class="badges">
+                    ${renderAgeBadge(age)}
+                    ${renderStatusBadge('hotlist')}
+                </span>
+            </div>
+            <div class="card-metrics">
+                <span>🔥 ${score}/100</span>
+                <span>🎯 ${oppScore} opp</span>
+                <span>💧 $${(liq/1e3).toFixed(0)}k</span>
+                <span>📊 $${(vol1h/1e3).toFixed(0)}k</span>
+                <span>🔥 ${Math.round(tx1h)} tx</span>
+            </div>
+            <div class="card-risk" style="font-size: 0.75rem; color: ${riskLevel === 'high' ? '#ff4444' : riskLevel === 'medium' ? '#ff8800' : '#90ff00'}; margin-bottom: 0.5rem;">
+                ${riskText}
+            </div>
+            <div class="card-footer">
+                <span class="age-text">${item.timestamps?.age_minutes?.toFixed(0)}m old • EARLY OPPORTUNITY</span>
                 ${url !== '#' ? `<a href="${url}" target="_blank" class="dex-link">DexScreener →</a>` : ''}
             </div>
         </div>
@@ -144,17 +189,22 @@ function renderStats() {
     if (!statsEl) return;
     
     const cioCount = feedState.cio.length;
+    const hotCount = feedState.hotlist.length;
     const fastCount = feedState.fastCertified.length;
     const certCount = feedState.certified.length;
     
     statsEl.innerHTML = `
         <div class="stat-box">
             <span class="stat-value">${cioCount}</span>
-            <span class="stat-label">CIO (0-6h)</span>
+            <span class="stat-label">CIO (0-30m)</span>
+        </div>
+        <div class="stat-box stat-hot">
+            <span class="stat-value">${hotCount}</span>
+            <span class="stat-label">🔥 HOTLIST (30-60m)</span>
         </div>
         <div class="stat-box stat-fast">
             <span class="stat-value">${fastCount}</span>
-            <span class="stat-label">⚡ FAST (6-24h)</span>
+            <span class="stat-label">⚡ FAST (1-24h)</span>
         </div>
         <div class="stat-box stat-cert">
             <span class="stat-value">${certCount}</span>
@@ -176,6 +226,21 @@ async function loadCIOFeed() {
         feedState.updated = data.meta?.updated_at || data.updated_at || '--:--';
     } catch (e) {
         console.error('CIO load failed:', e);
+    }
+}
+
+async function loadHotlistFeed() {
+    try {
+        const res = await fetch(`${REPO_RAW}/signals/hotlist_feed.json?t=${Date.now()}`, { cache: 'no-store' });
+        if (!res.ok) {
+            feedState.hotlist = [];
+            return;
+        }
+        const data = await res.json();
+        feedState.hotlist = data.hotlist || [];
+    } catch (e) {
+        console.log('Hotlist not available yet');
+        feedState.hotlist = [];
     }
 }
 
@@ -205,6 +270,7 @@ async function renderAllFeeds() {
     // Load all feeds
     await Promise.all([
         loadCIOFeed(),
+        loadHotlistFeed(),
         loadFastCertifiedFeed(),
         loadCertifiedFeed()
     ]);
@@ -216,7 +282,7 @@ async function renderAllFeeds() {
     const cioContainer = document.getElementById('cio-feed');
     if (cioContainer) {
         if (feedState.cio.length === 0) {
-            cioContainer.innerHTML = '<div class="empty-feed">No active CIO candidates (0-6h)</div>';
+            cioContainer.innerHTML = '<div class="empty-feed">No active CIO candidates (0-30m)</div>';
         } else {
             // Sort by score
             const sorted = feedState.cio.sort((a, b) => 
@@ -226,11 +292,24 @@ async function renderAllFeeds() {
         }
     }
     
+    // Render HOTLIST section
+    const hotContainer = document.getElementById('hot-feed');
+    if (hotContainer) {
+        if (feedState.hotlist.length === 0) {
+            hotContainer.innerHTML = '<div class="empty-feed">No HOTLIST yet (30-60m early opportunities)</div>';
+        } else {
+            const sorted = feedState.hotlist.sort((a, b) => 
+                safeNum(b.scores?.opportunity_score) - safeNum(a.scores?.opportunity_score)
+            );
+            hotContainer.innerHTML = sorted.map(renderHotlistCard).join('');
+        }
+    }
+    
     // Render FAST-CERTIFIED section
     const fastContainer = document.getElementById('fast-feed');
     if (fastContainer) {
         if (feedState.fastCertified.length === 0) {
-            fastContainer.innerHTML = '<div class="empty-feed">No FAST-CERTIFIED yet (6-24h momentum)</div>';
+            fastContainer.innerHTML = '<div class="empty-feed">No FAST-CERTIFIED yet (1-24h momentum)</div>';
         } else {
             const sorted = feedState.fastCertified.sort((a, b) => 
                 safeNum(b.momentum?.score) - safeNum(a.momentum?.score)

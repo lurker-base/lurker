@@ -14,8 +14,8 @@ CHAIN = "base"
 CIO_FILE = Path(__file__).parent.parent / "signals" / "cio_feed.json"
 FAST_FILE = Path(__file__).parent.parent / "signals" / "fast_certified_feed.json"
 
-# FAST-CERTIFIED criteria
-MIN_AGE_HOURS = 6
+# FAST-CERTIFIED criteria (1-24h)
+MIN_AGE_HOURS = 1
 MAX_AGE_HOURS = 24
 MIN_LIQ_USD = 20_000
 MIN_TX_6H = 50

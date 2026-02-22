@@ -82,6 +82,7 @@
             color: var(--accent);
         }
         
+        .stat-hot .stat-value { color: #ff6600; }
         .stat-fast .stat-value { color: var(--accent-fast); }
         .stat-cert .stat-value { color: var(--accent-cert); }
         
@@ -123,6 +124,7 @@
         }
         
         .feed-header.cio h2 { color: var(--accent); }
+        .feed-header.hot h2 { color: #ff6600; }
         .feed-header.fast h2 { color: var(--accent-fast); }
         .feed-header.cert h2 { color: var(--accent-cert); }
         
@@ -148,6 +150,7 @@
         }
         
         .card-cio { border-left: 3px solid var(--accent); }
+        .card-hot { border-left: 3px solid #ff6600; }
         .card-fast { border-left: 3px solid var(--accent-fast); }
         .card-cert { border-left: 3px solid var(--accent-cert); }
         
@@ -186,6 +189,7 @@
         .badge-old { background: #ff4444; color: #fff; }
         
         .badge-cio { background: var(--accent); color: #000; }
+        .badge-hot { background: #ff6600; color: #fff; }
         .badge-fast { background: var(--accent-fast); color: #000; }
         .badge-cert { background: var(--accent-cert); color: #000; }
         
@@ -265,10 +269,10 @@
             <div class="loading">Loading stats...</div>
         </div>
         
-        <!-- CIO Section (0-6h) -->
+        <!-- CIO Section (0-30m) -->
         <section class="feed-section">
             <div class="feed-header cio">
-                <h2>🌱 CIO (0-6h)</h2>
+                <h2>🌱 CIO (0-30m)</h2>
                 <span class="feed-desc">Fresh detections — high risk, high reward</span>
             </div>
             <div id="cio-feed">
@@ -276,10 +280,21 @@
             </div>
         </section>
         
-        <!-- FAST-CERTIFIED Section (6-24h) -->
+        <!-- HOTLIST Section (30-60m) -->
+        <section class="feed-section">
+            <div class="feed-header hot">
+                <h2>🔥 HOTLIST (30-60m)</h2>
+                <span class="feed-desc">Early opportunity — NOT certified — trade at your own risk</span>
+            </div>
+            <div id="hot-feed">
+                <div class="loading">Loading hotlist...</div>
+            </div>
+        </section>
+        
+        <!-- FAST-CERTIFIED Section (1-24h) -->
         <section class="feed-section">
             <div class="feed-header fast">
-                <h2>⚡ FAST-CERTIFIED (6-24h)</h2>
+                <h2>⚡ FAST-CERTIFIED (1-24h)</h2>
                 <span class="feed-desc">Momentum confirmed — x5/x10 territory</span>
             </div>
             <div id="fast-feed">
