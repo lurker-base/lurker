@@ -28,6 +28,108 @@
     "0x4de005e383f34d0211a7e230a0778aef6d5c7b07": {
       "first_seen": 1771764939782,
       "first_seen_iso": "2026-02-22T12:55:39.782000+00:00"
+    },
+    "0x680a32cf225f2ecb46bb771e2cc2e92ecef0eb07": {
+      "first_seen": 1771776015449,
+      "first_seen_iso": "2026-02-22T16:00:15.449000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771776015449,
+          "price": 1.569e-06,
+          "liq": 142774.95,
+          "vol_5m": 11161.6
+        }
+      ],
+      "token": {
+        "address": "0x680a32cf225f2ecb46bb771e2cc2e92ecef0eb07",
+        "symbol": "VENICE",
+        "name": "veniceagents"
+      }
+    },
+    "0xc61857eb390ff2ac5fd07aae0c030bbe5b79144e": {
+      "first_seen": 1771776015449,
+      "first_seen_iso": "2026-02-22T16:00:15.449000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771776015449,
+          "price": 0.0009926,
+          "liq": 90156.05,
+          "vol_5m": 53791.97
+        }
+      ],
+      "token": {
+        "address": "0xc61857eb390ff2ac5fd07aae0c030bbe5b79144e",
+        "symbol": "ZEROCLAW",
+        "name": "ZeroClaw AI"
+      }
+    },
+    "0x4b813f536f5588486e5e9bb2a7ab98c07e621b07": {
+      "first_seen": 1771776015449,
+      "first_seen_iso": "2026-02-22T16:00:15.449000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771776015449,
+          "price": 1.878e-06,
+          "liq": 166902.04,
+          "vol_5m": 4809.07
+        }
+      ],
+      "token": {
+        "address": "0x4b813f536f5588486e5e9bb2a7ab98c07e621b07",
+        "symbol": "zclaw",
+        "name": "zclaw"
+      }
+    },
+    "0x71a09f5b9b88976ebcc79183e0e99e7d07beabaf": {
+      "first_seen": 1771776015449,
+      "first_seen_iso": "2026-02-22T16:00:15.449000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771776015449,
+          "price": 0.000484,
+          "liq": 48822.38,
+          "vol_5m": 13864.36
+        }
+      ],
+      "token": {
+        "address": "0x71a09f5b9b88976ebcc79183e0e99e7d07beabaf",
+        "symbol": "EARENDEL",
+        "name": "Earendel"
+      }
+    },
+    "0xfd1bcb4385533f1c4d4890d5e72edb45021f8b07": {
+      "first_seen": 1771776015449,
+      "first_seen_iso": "2026-02-22T16:00:15.449000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771776015449,
+          "price": 2.562e-06,
+          "liq": 128112.94,
+          "vol_5m": 75535.65
+        }
+      ],
+      "token": {
+        "address": "0xfd1bcb4385533f1c4d4890d5e72edb45021f8b07",
+        "symbol": "MiniMaxAgent",
+        "name": "MiniMax Agent"
+      }
+    },
+    "0x899da91363183aec2a27921f90d7e48b7f2cc312": {
+      "first_seen": 1771776015449,
+      "first_seen_iso": "2026-02-22T16:00:15.449000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771776015449,
+          "price": 2.177e-06,
+          "liq": 4317.22,
+          "vol_5m": 0.0
+        }
+      ],
+      "token": {
+        "address": "0x899da91363183aec2a27921f90d7e48b7f2cc312",
+        "symbol": "0xDP",
+        "name": "0xDirectPing"
+      }
     }
   }
 }

@@ -1,20 +1,194 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-02-22T14:56:06.039000+00:00",
-    "generated_at": "2026-02-22T14:56:06.040000+00:00",
-    "count": 0,
+    "updated_at": "2026-02-22T16:00:15.451000+00:00",
+    "generated_at": "2026-02-22T16:00:15.451000+00:00",
+    "status": "ok",
+    "count": 5,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 50,
       "min_tx_5m": 2,
-      "max_age_min": 60
+      "max_age_min": 360
     },
-    "risk_distribution": {},
+    "risk_distribution": {
+      "low": 4,
+      "medium": 1
+    },
     "rejected": {
-      "too_old": 6
+      "duplicate": 3,
+      "low_tx": 1,
+      "too_old": 2
     },
     "source": "ultra_launch_scanner"
   },
-  "candidates": []
+  "candidates": [
+    {
+      "token": {
+        "address": "0x680a32cf225f2ecb46bb771e2cc2e92ecef0eb07",
+        "symbol": "VENICE",
+        "name": "veniceagents"
+      },
+      "pair": {
+        "address": "0xd576a2c3aaa9b05049413d016abb789130be8b01241f01c56d8b628d694a7ac7",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 142774.95,
+        "vol_5m_usd": 11161.6,
+        "vol_1h_usd": 54954.26,
+        "txns_5m": 111,
+        "price_usd": 1.569e-06
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-22T15:32:31+00:00",
+        "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
+        "age_minutes": 27.7,
+        "age_hours": 0.46
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.99
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing"
+    },
+    {
+      "token": {
+        "address": "0x4b813f536f5588486e5e9bb2a7ab98c07e621b07",
+        "symbol": "zclaw",
+        "name": "zclaw"
+      },
+      "pair": {
+        "address": "0x6362a85866c6fc972c73d9d34a4e53391b2a99d8abbf8846605de2a98116054b",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 166902.04,
+        "vol_5m_usd": 4809.07,
+        "vol_1h_usd": 71729.05,
+        "txns_5m": 51,
+        "price_usd": 1.878e-06
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-22T15:16:53+00:00",
+        "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
+        "age_minutes": 43.4,
+        "age_hours": 0.72
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.99
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing"
+    },
+    {
+      "token": {
+        "address": "0xfd1bcb4385533f1c4d4890d5e72edb45021f8b07",
+        "symbol": "MiniMaxAgent",
+        "name": "MiniMax Agent"
+      },
+      "pair": {
+        "address": "0x4d31e159b32b4f07d9ef6cffbc9c901cb4d765127d9542dc6c08dd5f59c58c4d",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 128112.94,
+        "vol_5m_usd": 75535.65,
+        "vol_1h_usd": 550302.47,
+        "txns_5m": 183,
+        "price_usd": 2.562e-06
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-22T14:43:51+00:00",
+        "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
+        "age_minutes": 76.4,
+        "age_hours": 1.27
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.98
+      },
+      "risks": [
+        "dumping"
+      ],
+      "risk_level": "medium",
+      "source": "profiles",
+      "status": "observing"
+    },
+    {
+      "token": {
+        "address": "0xc61857eb390ff2ac5fd07aae0c030bbe5b79144e",
+        "symbol": "ZEROCLAW",
+        "name": "ZeroClaw AI"
+      },
+      "pair": {
+        "address": "0xfd67a8670009be8684dcae27f6092cc1a30b5d7f",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 90156.05,
+        "vol_5m_usd": 53791.97,
+        "vol_1h_usd": 229820.15,
+        "txns_5m": 265,
+        "price_usd": 0.0009926
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-22T14:31:41+00:00",
+        "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
+        "age_minutes": 88.6,
+        "age_hours": 1.48
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.98
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing"
+    },
+    {
+      "token": {
+        "address": "0x71a09f5b9b88976ebcc79183e0e99e7d07beabaf",
+        "symbol": "EARENDEL",
+        "name": "Earendel"
+      },
+      "pair": {
+        "address": "0xee72b928ccc98327cc3399baff9a7c2d72c5c467",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 48822.38,
+        "vol_5m_usd": 13864.36,
+        "vol_1h_usd": 126509.26,
+        "txns_5m": 146,
+        "price_usd": 0.000484
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-22T14:00:43+00:00",
+        "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
+        "age_minutes": 119.5,
+        "age_hours": 1.99
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.97
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing"
+    }
+  ]
 }
