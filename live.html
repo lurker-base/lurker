@@ -21,6 +21,13 @@
             color: var(--text-muted);
         }
         
+        .next-scan-timer {
+            font-size: 0.8rem;
+            color: var(--accent);
+            margin-top: 0.5rem;
+            font-family: 'SF Mono', monospace;
+        }
+        
         .warning-box {
             background: rgba(255, 136, 0, 0.1);
             border: 1px solid rgba(255, 136, 0, 0.3);
@@ -257,6 +264,7 @@
                 <div class="live-header">
                     <h1>live</h1>
                     <p>base token intelligence — real-time detection</p>
+                    <div class="next-scan-timer" id="next-scan-timer">next scan in 60s</div>
                 </div>
                 
                 <div class="warning-box">
@@ -442,6 +450,18 @@
         // Load on page load and refresh every minute
         loadHealthStatus();
         setInterval(loadHealthStatus, 60000);
+        
+        // Next scan countdown timer
+        let scanTimeLeft = 60;
+        const updateScanTimer = () => {
+            const timerEl = document.getElementById('next-scan-timer');
+            if (timerEl) {
+                timerEl.textContent = `next scan in ${scanTimeLeft}s`;
+                scanTimeLeft--;
+                if (scanTimeLeft < 0) scanTimeLeft = 60;
+            }
+        };
+        setInterval(updateScanTimer, 1000);
     </script>
 </body>
 </html>
