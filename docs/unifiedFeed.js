@@ -227,40 +227,17 @@ function renderCertifiedCard(item) {
 
 // Stats renderer
 function renderStats() {
-    const statsEl = document.getElementById('feed-stats');
-    if (!statsEl) return;
+    const cioEl = document.getElementById('stat-cio');
+    const watchEl = document.getElementById('stat-watch');
+    const hotEl = document.getElementById('stat-hot');
+    const fastEl = document.getElementById('stat-fast');
+    const certEl = document.getElementById('stat-cert');
     
-    const cioCount = feedState.cio.length;
-    const watchCount = feedState.watch.length;
-    const hotCount = feedState.hotlist.length;
-    const fastCount = feedState.fastCertified.length;
-    const certCount = feedState.certified.length;
-    
-    statsEl.innerHTML = `
-        <div class="stat-box">
-            <span class="stat-value">${cioCount}</span>
-            <span class="stat-label">CIO (0-10m)</span>
-        </div>
-        <div class="stat-box stat-watch">
-            <span class="stat-value">${watchCount}</span>
-            <span class="stat-label">👁️ WATCH (10-30m)</span>
-        </div>
-        <div class="stat-box stat-hot">
-            <span class="stat-value">${hotCount}</span>
-            <span class="stat-label">🔥 HOTLIST (30-60m)</span>
-        </div>
-        <div class="stat-box stat-fast">
-            <span class="stat-value">${fastCount}</span>
-            <span class="stat-label">⚡ FAST (1-24h)</span>
-        </div>
-        <div class="stat-box stat-cert">
-            <span class="stat-value">${certCount}</span>
-            <span class="stat-label">✓ CERTIFIED (24h+)</span>
-        </div>
-        <div class="stat-updated">
-            Updated: ${feedState.updated}
-        </div>
-    `;
+    if (cioEl) cioEl.textContent = feedState.cio.length;
+    if (watchEl) watchEl.textContent = feedState.watch.length;
+    if (hotEl) hotEl.textContent = feedState.hotlist.length;
+    if (fastEl) fastEl.textContent = feedState.fastCertified.length;
+    if (certEl) certEl.textContent = feedState.certified.length;
 }
 
 // Feed loaders
