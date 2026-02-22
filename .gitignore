@@ -5,3 +5,6 @@ node_modules/
 *.log
 data/signals.json
 .env.twitter
+__pycache__/
+*.pyc
+*.pyo
