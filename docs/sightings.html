@@ -147,7 +147,7 @@
                                 <span class="service-price">$5</span>
                             </div>
                             <p class="service-desc">track a single wallet for 30 days. alerts to your telegram.</p>
-                            <a href="#" class="service-cta">request →</a>
+                            <button class="btn-pay btn-pay-small" onclick="openPaymentModal('watch one wallet', 5, 'single wallet tracking for 30 days', ['30-day tracking', 'telegram alerts', 'transaction history'])">pay $5 →</button>
                         </div>
                         
                         <div class="service-item">
@@ -156,7 +156,7 @@
                                 <span class="service-price">$15</span>
                             </div>
                             <p class="service-desc">detailed analysis of any address. holdings, patterns, history.</p>
-                            <a href="#" class="service-cta">request →</a>
+                            <button class="btn-pay btn-pay-small" onclick="openPaymentModal('whale report', 15, 'detailed wallet analysis report', ['holdings breakdown', 'pattern analysis', 'transaction history', 'telegram delivery'])">pay $15 →</button>
                         </div>
                         
                         <div class="service-item">
@@ -165,7 +165,7 @@
                                 <span class="service-price">$50</span>
                             </div>
                             <p class="service-desc">your own lurker instance. github repo, cron, alerts. you control it.</p>
-                            <a href="#" class="service-cta">request →</a>
+                            <button class="btn-pay btn-pay-small" onclick="openPaymentModal('custom bot setup', 50, 'personal lurker instance deployment', ['github repo setup', 'cron configuration', 'telegram alerts', 'full documentation'])">pay $50 →</button>
                         </div>
                     </div>
                     
@@ -202,7 +202,7 @@
                                 <li>50 wallets tracked</li>
                                 <li>api access</li>
                             </ul>
-                            <a href="#" class="tier-cta">descend →</a>
+                            <button class="btn-pay btn-pay-small" onclick="openPaymentModal('current subscription', 19, 'real-time whale tracking subscription', ['real-time echoes', 'confirmed sightings', '50 wallets tracked', 'api access'])">pay $19/mo →</button>
                         </div>
 
                         <div class="subscribe-tier">
@@ -218,7 +218,7 @@
                                 <li>webhook integration</li>
                                 <li>priority support</li>
                             </ul>
-                            <a href="#" class="tier-cta">submerge →</a>
+                            <button class="btn-pay btn-pay-small" onclick="openPaymentModal('depth subscription', 49, 'unlimited whale tracking with custom bot', ['unlimited wallets', 'custom telegram bot', 'webhook integration', 'priority support'])">pay $49/mo →</button>
                         </div>
                     </div>
                     
@@ -355,6 +355,7 @@
         // Refresh every 30 seconds
         setInterval(loadWhaleAlerts, 30000);
     </script>
+    <script src="payment.js?v=1"></script>
     <script src="sparks.js"></script>
 </body>
 </html>
