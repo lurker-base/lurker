@@ -19,8 +19,18 @@
       "badge": "PREMIUM",
       "timestamp": "2026-02-22T17:52:45.399753+00:00",
       "symbol": "EARENDEL"
+    },
+    "0xc1299846f3523fb6c9c3f3fd6122a602855f3b07": {
+      "badge": "PREMIUM",
+      "timestamp": "2026-02-22T19:05:45.381219+00:00",
+      "symbol": "ClawZempic"
+    },
+    "0x8e4550fff902b90ca4424a7ba42a1e1d38e35ba3": {
+      "badge": "PREMIUM",
+      "timestamp": "2026-02-22T19:05:45.381235+00:00",
+      "symbol": "CLAWMART"
     }
   },
   "updates": [],
-  "last_check": "2026-02-22T17:52:47.328435+00:00"
+  "last_check": "2026-02-22T19:05:46.366088+00:00"
 }
