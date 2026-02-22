@@ -1,6 +1,5 @@
-// Live Feed Loader — Renders list of live signals
+// Live Feed Loader — Renders list from DexScreener scanner
 const REPO_RAW = 'https://raw.githubusercontent.com/lurker-base/lurker/main';
-const MAX_ITEMS = 10;
 
 async function fetchLiveFeed() {
     try {
@@ -8,9 +7,19 @@ async function fetchLiveFeed() {
             cache: "no-store"
         });
         if (!res.ok) throw new Error('Feed not found');
-        return await res.json();
+        const data = await res.json();
+        // New format: {meta: {...}, signals: [...]}
+        return data.signals || [];
     } catch (e) {
         console.log('Live feed error:', e.message);
+        // Fallback: try old format (array)
+        try {
+            const res = await fetch(`${REPO_RAW}/signals/live_feed.json?t=${Date.now()}`, {
+                cache: "no-store"
+            });
+            const data = await res.json();
+            if (Array.isArray(data)) return data;
+        } catch (e2) {}
         return [];
     }
 }
@@ -32,12 +41,12 @@ function renderSignalCard(signal) {
             <div class="signal-meta">
                 <span>Conf: ${scores.confidence || 0}/100</span>
                 <span>Risk: ${scores.risk || 'high'}</span>
-                <span>${signal.signal_number || ''}</span>
+                ${signal.dex ? `<span>${signal.dex}</span>` : ''}
             </div>
             <div class="signal-metrics">
                 <span>Price: $${(metrics.price_usd || 0).toExponential(2)}</span>
-                <span>MC: $${((metrics.mcap_usd || 0) / 1000).toFixed(0)}k</span>
                 <span>Liq: $${((metrics.liq_usd || 0) / 1000).toFixed(0)}k</span>
+                <span>Vol24h: $${((metrics.vol_24h_usd || metrics.vol_5m_usd || 0) / 1000).toFixed(0)}k</span>
             </div>
             <div class="signal-time">
                 ${signal.ts_utc ? new Date(signal.ts_utc).toLocaleString() : '--'}
@@ -59,24 +68,14 @@ async function renderLiveFeed(containerId) {
         return;
     }
     
-    const html = feed.slice(0, MAX_ITEMS).map(renderSignalCard).join('');
+    const html = feed.slice(0, 10).map(renderSignalCard).join('');
     container.innerHTML = html;
 }
 
-// Auto-init if element exists
+// Auto-init
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('[LURKER] Initializing live feed...');
     renderLiveFeed('live-feed-container');
 });
 
 // Refresh every 30 seconds
-setInterval(() => {
-    console.log('[LURKER] Refreshing live feed...');
-    renderLiveFeed('live-feed-container');
-}, 30000);
-
-// Also try immediate load in case DOM is already ready
-if (document.readyState === 'complete' || document.readyState === 'interactive') {
-    console.log('[LURKER] DOM already ready, loading immediately...');
-    renderLiveFeed('live-feed-container');
-}
+setInterval(() => renderLiveFeed('live-feed-container'), 30000);
