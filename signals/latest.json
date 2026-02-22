@@ -1,6 +1,6 @@
 {
   "kind": "LURKER_SIGNAL",
-  "status": "ready",
+  "status": "posted",
   "ts_utc": "2026-02-22T09:35:00Z",
   "chain": "base",
   "token": {
