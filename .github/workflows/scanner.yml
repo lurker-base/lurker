@@ -28,7 +28,7 @@ jobs:
         run: sleep $((RANDOM % 30))
 
       - name: Run scanner
-        run: python3 scripts/scanner_dexscreener.py || echo "Scanner failed but continuing"
+        run: python3 scripts/scanner_dexscreener.py
 
       - name: Commit updates
         run: |

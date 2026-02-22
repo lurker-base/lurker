@@ -235,10 +235,17 @@ def pair_to_signal(pair):
     }, None
 
 def update_feed():
-    """Main update function"""
+    """Main update function - returns exit code based on success"""
     print("[SCANNER] Fetching Base pairs from DexScreener...")
     
-    pairs = fetch_base_pairs()
+    errors = []
+    pairs = []
+    
+    try:
+        pairs = fetch_base_pairs()
+    except Exception as e:
+        errors.append(str(e))
+    
     print(f"[SCANNER] Raw pairs from API: {len(pairs)}")
     
     # Debug: show first few
@@ -272,6 +279,7 @@ def update_feed():
             "source": "dexscreener",
             "chain": "base",
             "count": len(signals),
+            "errors": errors,
             "debug": {
                 "raw_pairs": len(pairs),
                 "rejected": rejected
@@ -288,6 +296,19 @@ def update_feed():
     print(f"[SCANNER] Feed updated: {len(signals)} signals")
     for s in signals[:5]:
         print(f"  - {s['token']['symbol']}: conf={s['scores']['confidence']}, liq=${s['metrics']['liq_usd']:,.0f}")
+    
+    # Exit logic: success if we got results OR no errors (market calm)
+    # Fail only if ALL sources failed (real outage)
+    if len(signals) > 0:
+        print("[SCANNER] ✅ Success: signals generated")
+        return 0
+    elif len(errors) == 0:
+        print("[SCANNER] ✅ Success: no signals but no errors (market calm)")
+        return 0
+    else:
+        print(f"[SCANNER] ❌ Fail: no signals AND errors occurred: {errors}")
+        return 1
 
 if __name__ == "__main__":
-    update_feed()
+    exit_code = update_feed()
+    exit(exit_code)

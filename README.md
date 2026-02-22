@@ -14,6 +14,8 @@ LURKER detects early opportunities on Base before the market reacts. Quality ove
 - **GitHub-Only**: Zero VPS, zero external dashboard
 
 > **Note on CI Status:** Some scheduled workflows may show ❌ intermittently due to external API rate limits (DexScreener, RPC nodes). This is expected and handled gracefully. The [Health Dashboard](https://lurker-base.github.io/lurker/) reflects real system status, not raw CI history.
+> 
+> **Philosophy:** Workflows fail fast when there's a real outage (all sources down), but stay resilient on partial failures. We don't hide errors — we surface them honestly.
 
 ## How It Works
 
