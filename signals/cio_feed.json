@@ -1,8 +1,8 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-02-22T17:03:23.681000+00:00",
-    "generated_at": "2026-02-22T17:03:23.681000+00:00",
+    "updated_at": "2026-02-22T22:57:59.984000+00:00",
+    "generated_at": "2026-02-22T22:57:59.984000+00:00",
     "status": "ok",
     "count": 4,
     "thresholds": {
@@ -12,128 +12,47 @@
       "max_age_min": 720
     },
     "risk_distribution": {
-      "low": 3,
-      "medium": 1
+      "medium": 1,
+      "low": 3
     },
     "rejected": {
-      "low_tx": 2,
-      "duplicate": 1,
-      "low_volume": 1,
-      "too_old": 2
+      "too_old": 4,
+      "duplicate": 1
     },
     "source": "ultra_launch_scanner"
   },
   "candidates": [
     {
       "token": {
-        "address": "0x7c0a5c1020c39bfa1af711b4b963be82f55e1b07",
-        "symbol": "CLAUDET",
-        "name": "Claude Terminal"
+        "address": "0x52706d6a7449651eb548212ae237777f1cf19b07",
+        "symbol": "joelclaw",
+        "name": "Joelclaw"
       },
       "pair": {
-        "address": "0x281ac88a2784ed39efb17548085dbe7c170947e3053decde18b0d4d5c5dcb68d",
+        "address": "0xc2ded9edd9588d0209d36b08e5c92a0ebeb14978366d2f8cb337fea4b589c528",
         "dex": "uniswap",
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 108465.07,
-        "vol_5m_usd": 14860.78,
-        "vol_1h_usd": 273571.08,
-        "txns_5m": 157,
-        "price_usd": 2.034e-06
+        "liq_usd": 20454.38,
+        "vol_5m_usd": 13.38,
+        "vol_1h_usd": 144147.5,
+        "txns_5m": 2,
+        "price_usd": 1.96e-07
       },
       "timestamps": {
-        "pair_created_at": "2026-02-22T16:11:45+00:00",
-        "token_first_seen": "2026-02-22T16:35:21.392000+00:00",
-        "age_minutes": 51.6,
-        "age_hours": 0.86
+        "pair_created_at": "2026-02-22T22:04:09+00:00",
+        "token_first_seen": "2026-02-22T22:57:59.983000+00:00",
+        "age_minutes": 53.8,
+        "age_hours": 0.9
       },
       "scores": {
         "cio_score": 100,
         "freshness": 0.99
       },
-      "risks": [],
-      "risk_level": "low",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    },
-    {
-      "token": {
-        "address": "0x4b813f536f5588486e5e9bb2a7ab98c07e621b07",
-        "symbol": "zclaw",
-        "name": "zclaw"
-      },
-      "pair": {
-        "address": "0x6362a85866c6fc972c73d9d34a4e53391b2a99d8abbf8846605de2a98116054b",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 205558.57,
-        "vol_5m_usd": 413.42,
-        "vol_1h_usd": 34278.15,
-        "txns_5m": 25,
-        "price_usd": 2.398e-06
-      },
-      "timestamps": {
-        "pair_created_at": "2026-02-22T15:16:53+00:00",
-        "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
-        "age_minutes": 106.5,
-        "age_hours": 1.78
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.97
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": false,
-        "quality_score": 75
-      }
-    },
-    {
-      "token": {
-        "address": "0xc61857eb390ff2ac5fd07aae0c030bbe5b79144e",
-        "symbol": "ZEROCLAW",
-        "name": "ZeroClaw AI"
-      },
-      "pair": {
-        "address": "0xfd67a8670009be8684dcae27f6092cc1a30b5d7f",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 125252.12,
-        "vol_5m_usd": 59611.22,
-        "vol_1h_usd": 740660.93,
-        "txns_5m": 56,
-        "price_usd": 0.001865
-      },
-      "timestamps": {
-        "pair_created_at": "2026-02-22T14:31:41+00:00",
-        "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
-        "age_minutes": 151.7,
-        "age_hours": 2.53
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.96
-      },
       "risks": [
-        "dumping"
+        "low_activity",
+        "low_volume"
       ],
       "risk_level": "medium",
       "source": "profiles",
@@ -148,31 +67,111 @@
     },
     {
       "token": {
-        "address": "0x71a09f5b9b88976ebcc79183e0e99e7d07beabaf",
-        "symbol": "EARENDEL",
-        "name": "Earendel"
+        "address": "0x5dc1db3b262793fb00ef0d973ed052daa5d27b07",
+        "symbol": "ODAI",
+        "name": "ODEI AI"
       },
       "pair": {
-        "address": "0xee72b928ccc98327cc3399baff9a7c2d72c5c467",
+        "address": "0xf3203c2d6d74dee2b07b94d780a25d28fa7de440b226bef0490bf4e73e56a19f",
         "dex": "uniswap",
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 115006.61,
-        "vol_5m_usd": 14137.31,
-        "vol_1h_usd": 313823.07,
-        "txns_5m": 28,
-        "price_usd": 0.002621
+        "liq_usd": 316490.53,
+        "vol_5m_usd": 3904.11,
+        "vol_1h_usd": 179018.39,
+        "txns_5m": 239,
+        "price_usd": 4.047e-06
       },
       "timestamps": {
-        "pair_created_at": "2026-02-22T14:00:43+00:00",
-        "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
-        "age_minutes": 182.7,
-        "age_hours": 3.04
+        "pair_created_at": "2026-02-22T21:36:19+00:00",
+        "token_first_seen": "2026-02-22T22:57:59.983000+00:00",
+        "age_minutes": 81.7,
+        "age_hours": 1.36
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.95
+        "freshness": 0.98
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "boosts",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": false,
+        "quality_score": 75
+      }
+    },
+    {
+      "token": {
+        "address": "0xfac66d173bb6e1ee1c3d2321dc13c25e36c3e525",
+        "symbol": "Clawster",
+        "name": "Claw Lobster"
+      },
+      "pair": {
+        "address": "0xb8b44a44acfc7f944b23230f743faf0054c45483",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 70986.56,
+        "vol_5m_usd": 18165.4,
+        "vol_1h_usd": 136326.22,
+        "txns_5m": 41,
+        "price_usd": 0.001225
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-22T20:25:05+00:00",
+        "token_first_seen": "2026-02-22T22:57:59.983000+00:00",
+        "age_minutes": 152.9,
+        "age_hours": 2.55
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.96
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    },
+    {
+      "token": {
+        "address": "0x0583226fc741d7dd528977b4349cf00bd1376312",
+        "symbol": "auctobot001",
+        "name": "auctobot001"
+      },
+      "pair": {
+        "address": "0xf96055382ec41d2ac6f80036781de3842483b3a5622bcce412f9238c2a573a29",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 25830881.77,
+        "vol_5m_usd": 13402.42,
+        "vol_1h_usd": 185347.73,
+        "txns_5m": 172,
+        "price_usd": 0.0002583
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-22T20:19:37+00:00",
+        "token_first_seen": "2026-02-22T20:56:02.672000+00:00",
+        "age_minutes": 158.4,
+        "age_hours": 2.64
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.96
       },
       "risks": [],
       "risk_level": "low",

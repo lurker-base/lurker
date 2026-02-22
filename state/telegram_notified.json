@@ -1,0 +1,56 @@
+{
+  "notified": {
+    "0x7c0a5c1020c39bfa1af711b4b963be82f55e1b07": {
+      "badge": "PREMIUM",
+      "timestamp": "2026-02-22T17:52:45.399726+00:00",
+      "symbol": "CLAUDET"
+    },
+    "0x4b813f536f5588486e5e9bb2a7ab98c07e621b07": {
+      "badge": "GOOD",
+      "timestamp": "2026-02-22T17:52:45.399743+00:00",
+      "symbol": "zclaw"
+    },
+    "0xc61857eb390ff2ac5fd07aae0c030bbe5b79144e": {
+      "badge": "PREMIUM",
+      "timestamp": "2026-02-22T17:52:45.399748+00:00",
+      "symbol": "ZEROCLAW"
+    },
+    "0x71a09f5b9b88976ebcc79183e0e99e7d07beabaf": {
+      "badge": "PREMIUM",
+      "timestamp": "2026-02-22T17:52:45.399753+00:00",
+      "symbol": "EARENDEL"
+    },
+    "0xc1299846f3523fb6c9c3f3fd6122a602855f3b07": {
+      "badge": "PREMIUM",
+      "timestamp": "2026-02-22T19:05:45.381219+00:00",
+      "symbol": "ClawZempic"
+    },
+    "0x8e4550fff902b90ca4424a7ba42a1e1d38e35ba3": {
+      "badge": "PREMIUM",
+      "timestamp": "2026-02-22T19:05:45.381235+00:00",
+      "symbol": "CLAWMART"
+    },
+    "0x747fc2c56447d8737e4f3a6dea5f8fbeb034db07": {
+      "badge": "PREMIUM",
+      "timestamp": "2026-02-22T19:49:43.679156+00:00",
+      "symbol": "ClawSwarm"
+    },
+    "0x0a3a6eef246ed15dbf97f8a237e20a3bc091cba3": {
+      "badge": "PREMIUM",
+      "timestamp": "2026-02-22T19:49:43.679170+00:00",
+      "symbol": "0xDP"
+    },
+    "0xe4f5b998372443522b08b72d3b5b704c3bdafaf4": {
+      "badge": "PREMIUM",
+      "timestamp": "2026-02-22T20:54:39.665352+00:00",
+      "symbol": "WILDE"
+    },
+    "0x0583226fc741d7dd528977b4349cf00bd1376312": {
+      "badge": "PREMIUM",
+      "timestamp": "2026-02-22T22:56:36.790252+00:00",
+      "symbol": "auctobot001"
+    }
+  },
+  "updates": [],
+  "last_check": "2026-02-22T22:56:37.407594+00:00"
+}

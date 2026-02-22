@@ -1,27 +1,28 @@
 {
   "meta": {
-    "updated_at": "2026-02-22T15:49:26.327873",
+    "updated_at": "2026-02-22T20:54:22.958103",
     "source": "dexscreener",
     "chain": "base",
     "count": 2,
     "errors": [],
     "debug": {
-      "raw_pairs": 102,
+      "raw_pairs": 106,
       "rejected": {
-        "bluechip_symbol": 87,
-        "high_mcap_$165,146,571": 1,
-        "high_mcap_$127,273,649": 1,
-        "high_mcap_$58,985,060": 1,
-        "high_mcap_$30,605,726": 1,
-        "high_mcap_$25,181,796": 1,
-        "high_mcap_$343,760,569": 1,
-        "high_mcap_$16,738,891": 1,
-        "high_mcap_$47,006,990": 1,
-        "high_mcap_$89,971,322": 1,
-        "high_mcap_$876,135,926": 1,
-        "high_mcap_$32,583,973": 1,
-        "high_mcap_$12,459,741": 1,
-        "high_mcap_$16,917,507": 1
+        "bluechip_symbol": 90,
+        "high_mcap_$125,752,715": 1,
+        "high_mcap_$169,369,284": 1,
+        "high_mcap_$61,309,895": 1,
+        "high_mcap_$31,771,074": 1,
+        "high_mcap_$24,559,644": 1,
+        "high_mcap_$16,728,103": 1,
+        "high_mcap_$333,235,220": 1,
+        "high_mcap_$89,770,112": 1,
+        "high_mcap_$46,823,044": 1,
+        "high_mcap_$877,512,835": 1,
+        "high_mcap_$32,297,217": 1,
+        "high_mcap_$16,749,545": 1,
+        "high_mcap_$12,216,505": 1,
+        "high_mcap_$18,074,438": 1
       }
     }
   },
@@ -29,7 +30,7 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "posted",
-      "ts_utc": "2026-02-22T15:49:26.327770Z",
+      "ts_utc": "2026-02-22T20:54:22.957927Z",
       "chain": "base",
       "token": {
         "name": "Sport.fun",
@@ -43,10 +44,10 @@
         "risk": "low"
       },
       "metrics": {
-        "price_usd": 0.04071,
-        "mcap_usd": 7246482,
-        "liq_usd": 558070.03,
-        "vol_24h_usd": 290766.22
+        "price_usd": 0.0403,
+        "mcap_usd": 7173872,
+        "liq_usd": 556448.39,
+        "vol_24h_usd": 295304.75
       },
       "dex": "aerodrome",
       "pair_address": "0x659bE70647B0f63217D60e077F4417b1eCC65064",
@@ -55,7 +56,7 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "posted",
-      "ts_utc": "2026-02-22T15:49:26.327810Z",
+      "ts_utc": "2026-02-22T20:54:22.957965Z",
       "chain": "base",
       "token": {
         "name": "Edel",
@@ -69,10 +70,10 @@
         "risk": "low"
       },
       "metrics": {
-        "price_usd": 0.006254,
-        "mcap_usd": 3546435,
-        "liq_usd": 556565.46,
-        "vol_24h_usd": 17655.51
+        "price_usd": 0.006,
+        "mcap_usd": 3402824,
+        "liq_usd": 545922.2,
+        "vol_24h_usd": 31653.73
       },
       "dex": "aerodrome",
       "pair_address": "0x566beE7EF7b39f29d150AB3be6b6242C17CC5A31",
