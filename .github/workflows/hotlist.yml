@@ -30,8 +30,8 @@ jobs:
       - name: Ensure directories exist
         run: mkdir -p signals state
 
-      - name: Run HOTLIST scanner (never fail)
-        run: python3 scripts/hotlist_scanner.py || echo "Scanner warning - continuing"
+      - name: Run HOTLIST scanner
+        run: python3 scripts/hotlist_scanner.py
 
       - name: Commit updates
         run: |
