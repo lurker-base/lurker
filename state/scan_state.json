@@ -1,0 +1,25 @@
+{
+  "schema": "lurker_scan_state_v1",
+  "chain": "base",
+  "last_scanned_block": 0,
+  "last_scan_time": "2026-02-22T11:00:00Z",
+  "factories": {
+    "aerodrome": {
+      "address": "0x420DD381b31aEf6683db6b902084cB0FFECe40Da",
+      "type": "solidity",
+      "event": "PoolCreated",
+      "last_block": 0
+    },
+    "uniswap_v3": {
+      "address": "0x33128a8fC17869897dcE68Ed026d694621f6FDfD",
+      "type": "uniswap_v3", 
+      "event": "PoolCreated",
+      "last_block": 0
+    }
+  },
+  "stats": {
+    "total_pools_detected": 0,
+    "total_cio_created": 0,
+    "total_certified": 0
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "schema": "lurker_certified_v1", 
+  "schema": "lurker_cio_v1",
   "last_updated": "2026-02-22T11:00:00Z",
   "count": 0,
-  "certified": []
+  "candidates": []
 }
