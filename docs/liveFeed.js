@@ -65,8 +65,18 @@ async function renderLiveFeed(containerId) {
 
 // Auto-init if element exists
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('[LURKER] Initializing live feed...');
     renderLiveFeed('live-feed-container');
 });
 
 // Refresh every 30 seconds
-setInterval(() => renderLiveFeed('live-feed-container'), 30000);
+setInterval(() => {
+    console.log('[LURKER] Refreshing live feed...');
+    renderLiveFeed('live-feed-container');
+}, 30000);
+
+// Also try immediate load in case DOM is already ready
+if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    console.log('[LURKER] DOM already ready, loading immediately...');
+    renderLiveFeed('live-feed-container');
+}

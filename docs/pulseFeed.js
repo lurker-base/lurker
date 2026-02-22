@@ -67,8 +67,18 @@ async function renderPulseFeed(containerId) {
 
 // Auto-init if element exists
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('[LURKER] Initializing pulse feed...');
     renderPulseFeed('pulse-feed-container');
 });
 
 // Refresh every 30 seconds
-setInterval(() => renderPulseFeed('pulse-feed-container'), 30000);
+setInterval(() => {
+    console.log('[LURKER] Refreshing pulse feed...');
+    renderPulseFeed('pulse-feed-container');
+}, 30000);
+
+// Also try immediate load in case DOM is already ready
+if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    console.log('[LURKER] DOM already ready, loading immediately...');
+    renderPulseFeed('pulse-feed-container');
+}
