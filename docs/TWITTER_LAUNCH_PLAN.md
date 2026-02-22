@@ -36,15 +36,14 @@ most arrived too late.
 we don't sell predictions.
 we don't hide failures.
 
-$19 is not a subscription.
-it's the stake to exist.
-
-build your own.
+build your own agent.
 or watch ours.
 
 either way —
 now you know.
 ```
+
+**Note:** Pas de prix. Le $19 sera découvert sur le site, pas consommé sur X.
 
 **Statut:** ⏳ En attente
 
