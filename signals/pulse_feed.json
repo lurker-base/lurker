@@ -2,6 +2,56 @@
   {
     "kind": "LURKER_SIGNAL",
     "status": "posted",
+    "ts_utc": "2026-02-22T14:30:00Z",
+    "chain": "base",
+    "token": {
+      "name": "Test Token",
+      "symbol": "$TEST",
+      "address": "0x1bc0c42215582d5A085795f4baDbaC3ff36d1Bcb",
+      "pair_url": "https://dexscreener.com/base/0x1bc0c42215582d5A085795f4baDbaC3ff36d1Bcb"
+    },
+    "scores": {
+      "confidence": 75,
+      "rarity": "3-5/day",
+      "risk": "medium"
+    },
+    "metrics": {
+      "price_usd": 0.000045,
+      "mcap_usd": 1250000,
+      "liq_usd": 180000,
+      "vol_5m_usd": 45000
+    },
+    "certified": true,
+    "signal_number": "#3"
+  },
+  {
+    "kind": "LURKER_SIGNAL",
+    "status": "posted",
+    "ts_utc": "2026-02-22T12:15:00Z",
+    "chain": "base",
+    "token": {
+      "name": "Example Coin",
+      "symbol": "$EXAMPLE",
+      "address": "0x1f5ffcFb4EF5d976D55438F2988Ee90bCB2AeB07",
+      "pair_url": "https://dexscreener.com/base/0x1f5ffcFb4EF5d976D55438F2988Ee90bCB2AeB07"
+    },
+    "scores": {
+      "confidence": 82,
+      "rarity": "3-5/day",
+      "risk": "medium"
+    },
+    "metrics": {
+      "price_usd": 0.00012,
+      "mcap_usd": 2800000,
+      "liq_usd": 320000,
+      "vol_5m_usd": 89000
+    },
+    "certified": true,
+    "signal_number": "#4"
+  },
+  {
+    "kind": "LURKER_SIGNAL",
+    "status": "posted",
     "ts_utc": "2026-02-22T09:35:00Z",
     "chain": "base",
     "token": {
@@ -22,7 +72,7 @@
       "vol_5m_usd": 15000
     },
     "mode": "dry-run",
-    "signal_number": "#2",
-    "certified": true
+    "certified": true,
+    "signal_number": "#2"
   }
 ]
