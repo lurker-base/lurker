@@ -4,6 +4,7 @@ LURKER WATCH Scanner — 10-30min silent buffer
 Re-tests candidates 3 times before promotion to HOTLIST
 """
 import json
+import sys
 import time
 import requests
 from datetime import datetime, timezone
