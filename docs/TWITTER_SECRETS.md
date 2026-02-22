@@ -28,10 +28,10 @@ ACCESS_TOKEN_SECRET=xxx
 
 | Nom | Valeur (depuis .env.twitter) |
 |-----|------------------------------|
-| `X_API_KEY` | API_KEY |
-| `X_API_SECRET` | API_SECRET |
-| `X_ACCESS_TOKEN` | ACCESS_TOKEN |
-| `X_ACCESS_SECRET` | ACCESS_TOKEN_SECRET |
+| `TWITTER_API_KEY` | API_KEY |
+| `TWITTER_API_SECRET` | API_SECRET |
+| `TWITTER_ACCESS_TOKEN` | ACCESS_TOKEN |
+| `TWITTER_ACCESS_SECRET` | ACCESS_TOKEN_SECRET |
 
 ### 4. Tester
 1. Va sur : https://github.com/lurker-base/lurker/actions
