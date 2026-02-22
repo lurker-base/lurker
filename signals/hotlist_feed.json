@@ -1,19 +1,19 @@
 {
   "schema": "lurker_hotlist_v1",
   "meta": {
-    "updated_at": "2026-02-22T16:01:07.882000+00:00",
+    "updated_at": "2026-02-22T17:54:41.811000+00:00",
     "status": "calm",
     "source": "cio_30-60min_filter",
     "count": 0,
     "criteria": {
-      "age_minutes": "360-1440",
-      "min_liq_usd": 5000,
-      "min_tx_1h": 30,
-      "min_vol_1h": 2000,
+      "age_minutes": "360-2880",
+      "min_liq_usd": 2000,
+      "min_tx_1h": 15,
+      "min_vol_1h": 1000,
       "max_sell_buy_ratio": 1.6
     },
     "rejected": {
-      "too_young": 5
+      "too_young": 4
     }
   },
   "hotlist": []
