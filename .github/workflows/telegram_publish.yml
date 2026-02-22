@@ -68,13 +68,23 @@ jobs:
         env:
           SIGNAL_FILE: ${{ github.event.inputs.signal_file || 'signals/latest.json' }}
 
-      - name: Send to Telegram
+      - name: Send to Telegram (with proof)
         run: |
+          set -euo pipefail
+          echo "Sending to chat_id=${TELEGRAM_CHAT_ID}"
           curl -sS -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
             -d "chat_id=${TELEGRAM_CHAT_ID}" \
             --data-urlencode "text=${TEXT}" \
             -d "disable_web_page_preview=true" \
-            -d "parse_mode=HTML"
+            -d "parse_mode=HTML" | tee telegram_response.json
+          python3 - << 'PY'
+          import json, sys
+          j = json.load(open("telegram_response.json", "r", encoding="utf-8"))
+          if not j.get("ok"):
+              print("Telegram API returned ok=false:", j, file=sys.stderr)
+              sys.exit(1)
+          print("Telegram OK. message_id =", j["result"]["message_id"])
+          PY
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}

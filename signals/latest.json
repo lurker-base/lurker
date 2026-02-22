@@ -1,8 +1,8 @@
 {
-  "signal": "TEST_GITHUB_ONLY",
+  "signal": "TEST_PROOF_ENABLED",
   "token": "LURKER_TEST",
-  "message": "🧪 <b>TEST</b> — GitHub-Only Pipeline\n\nThis is a test of the GitHub Actions → Telegram workflow.\n\nIf you see this, the pipeline works!\n\nMode: GitHub-Only (Zero VPS)",
+  "message": "🧪 <b>TEST #2</b> — Proof Enabled\n\nVerification cryptographique activée.\n\nSi ce message arrive = pipeline 100% fonctionnel.\n\nMode: GitHub-Only | Preuve: message_id loggué",
   "score": 100,
-  "timestamp": "2026-02-22T08:35:00Z",
-  "source": "github_actions_test"
+  "timestamp": "2026-02-22T08:40:00Z",
+  "source": "github_actions_test_v2"
 }
