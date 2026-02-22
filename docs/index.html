@@ -257,7 +257,7 @@
                     const isPremium = quality.quality_score >= 80 && token.metrics.liq_usd > 100000;
                     const isGood = quality.quality_score >= 60 || token.metrics.liq_usd > 50000;
                     const statusClass = isPremium ? 'premium' : isGood ? 'good' : 'watch';
-                    const statusLabel = isPremium ? 'PREMIUM' : isGood ? 'BON' : 'WATCH';
+                    const statusLabel = isPremium ? 'PREMIUM' : isGood ? 'GOOD' : 'WATCH';
                     
                     return `
                         <div class="token-card ${statusClass}">
