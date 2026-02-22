@@ -39,8 +39,13 @@
       "badge": "PREMIUM",
       "timestamp": "2026-02-22T19:49:43.679170+00:00",
       "symbol": "0xDP"
+    },
+    "0xe4f5b998372443522b08b72d3b5b704c3bdafaf4": {
+      "badge": "PREMIUM",
+      "timestamp": "2026-02-22T20:54:39.665352+00:00",
+      "symbol": "WILDE"
     }
   },
   "updates": [],
-  "last_check": "2026-02-22T19:49:44.961013+00:00"
+  "last_check": "2026-02-22T20:54:40.190822+00:00"
 }
