@@ -19,6 +19,9 @@ MIN_CONFIDENCE = 70
 MAX_PER_DAY = 5
 DUPLICATE_EXPIRY_DAYS = 7
 
+# Mode dry-run : adresses placeholders autorisées pour test
+DRY_RUN_ADDRESSES = ["0x...", "0xDRYRUN", "0xTEST", "0xPLACEHOLDER", "0xYOUR_CONTRACT_ADDRESS"]
+
 def load_json(path):
     if not path.exists():
         return {}
@@ -31,6 +34,10 @@ def save_json(path, data):
 
 def check_duplicate(token_address):
     """Vérifie si le token a déjà été posté (expires après 7 jours)"""
+    # Ignorer les adresses dry-run
+    if token_address in DRY_RUN_ADDRESSES:
+        return True, "dry_run_mode"
+    
     posted = load_json(POSTED_FILE)
     tokens = posted.get("tokens", {})
     
@@ -72,40 +79,62 @@ def validate_signal(signal_data):
     if confidence < MIN_CONFIDENCE:
         return False, f"Confidence {confidence} < minimum {MIN_CONFIDENCE}"
     
-    # 4. Check duplicate
+    # 4. Check duplicate + detect dry-run mode
     token_addr = signal_data.get("token", {}).get("address", "")
-    if token_addr and token_addr != "0x...":
-        ok, err = check_duplicate(token_addr)
+    is_dry_run = token_addr in DRY_RUN_ADDRESSES
+    
+    if token_addr:
+        ok, dup_result = check_duplicate(token_addr)
         if not ok:
-            return False, err
+            return False, dup_result
+        if dup_result == "dry_run_mode":
+            is_dry_run = True
     
     # 5. Check daily limit
     ok, daily = check_daily_limit()
     if not ok:
         return False, daily
     
+    # Add dry-run flag to result
+    daily["is_dry_run"] = is_dry_run
+    if is_dry_run:
+        daily["dry_run_notice"] = "Token not launched yet — DRY-RUN mode"
+    
     return True, daily
 
 def update_state(signal_data, daily):
     """Met à jour les state files après validation réussie"""
     
-    # Update posted tokens
-    posted = load_json(POSTED_FILE)
+    is_dry_run = daily.get("is_dry_run", False)
+    
+    # Update posted tokens (skip for dry-run)
     token_addr = signal_data.get("token", {}).get("address", "")
-    if token_addr and token_addr != "0x...":
+    if token_addr and token_addr not in DRY_RUN_ADDRESSES:
+        posted = load_json(POSTED_FILE)
         if "tokens" not in posted:
             posted["tokens"] = {}
         posted["tokens"][token_addr] = datetime.now().isoformat()
         save_json(POSTED_FILE, posted)
     
-    # Update daily count
-    daily["count"] = daily.get("count", 0) + 1
-    save_json(DAILY_FILE, daily)
+    # Update daily count (skip for dry-run)
+    if not is_dry_run:
+        daily["count"] = daily.get("count", 0) + 1
+        save_json(DAILY_FILE, daily)
     
     # Update signal status
     signal_data["status"] = "posted"
     signal_data["posted_at"] = datetime.now().isoformat()
     signal_data["signal_number"] = f"#{daily['count']}"
+    
+    # Add dry-run markers
+    if is_dry_run:
+        signal_data["mode"] = "dry-run"
+        signal_data["certification"] = "pending"
+        # Update message with dry-run notice
+        msg = signal_data.get("message", "")
+        if "🧪 DRY-RUN" not in msg:
+            signal_data["message"] = msg + "\n\n🧪 DRY-RUN — Token not launched yet"
+    
     with open(SIGNALS_FILE, 'w') as f:
         json.dump(signal_data, f, indent=2)
 
@@ -135,8 +164,16 @@ def main():
     # Update state
     update_state(signal, result)
     
-    print(f"[LURKER] ✅ VALIDATED — Signal {signal.get('signal_number')} will be posted")
-    print(f"[LURKER] Daily count: {result['count']}/{MAX_PER_DAY}")
+    is_dry_run = result.get("is_dry_run", False)
+    
+    if is_dry_run:
+        print(f"[LURKER] ✅ VALIDATED — Signal will be posted (DRY-RUN MODE)")
+        print(f"[LURKER] 🧪 Token not launched yet — this is a test signal")
+        print(f"[LURKER] Daily count (real signals): {result['count']}/{MAX_PER_DAY}")
+    else:
+        print(f"[LURKER] ✅ VALIDATED — Signal {signal.get('signal_number')} will be posted")
+        print(f"[LURKER] Daily count: {result['count']}/{MAX_PER_DAY}")
+    
     sys.exit(0)
 
 if __name__ == "__main__":
