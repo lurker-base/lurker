@@ -110,11 +110,180 @@
                     </div>
                 </div>
 
+                <!-- LIVE TOKENS STATUS -->
+                <div class="live-tokens" id="live-tokens">
+                    <div class="section-title">
+                        <span class="pulse-dot"></span>
+                        live signals
+                    </div>
+                    <div class="tokens-grid" id="tokens-grid">
+                        <div class="loading">scanning...</div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </main>
 
     <script src="app.js"></script>
     <script src="sparks.js"></script>
+    <style>
+        .live-tokens {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #1a1a1a;
+        }
+        
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #ff6b35;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background: #ff6b35;
+            border-radius: 50%;
+            animation: pulse 1s infinite;
+        }
+        
+        .tokens-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .token-card {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            padding: 1rem;
+            transition: border-color 0.2s;
+        }
+        
+        .token-card.premium {
+            border-color: #4ade80;
+            background: rgba(74, 222, 128, 0.05);
+        }
+        
+        .token-card.good {
+            border-color: #60a5fa;
+            background: rgba(96, 165, 250, 0.05);
+        }
+        
+        .token-card.watch {
+            border-color: #fbbf24;
+            background: rgba(251, 191, 36, 0.05);
+        }
+        
+        .token-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        
+        .token-symbol {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        
+        .token-status {
+            font-size: 0.7rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 2px;
+            font-weight: bold;
+        }
+        
+        .token-status.premium {
+            background: #4ade80;
+            color: #000;
+        }
+        
+        .token-status.good {
+            background: #60a5fa;
+            color: #000;
+        }
+        
+        .token-status.watch {
+            background: #fbbf24;
+            color: #000;
+        }
+        
+        .token-metrics {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.8rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+        
+        .token-quality {
+            font-size: 0.9rem;
+        }
+        
+        .loading, .no-tokens {
+            text-align: center;
+            color: #666;
+            padding: 2rem;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+    </style>
+    <script>
+        // Live tokens loader
+        async function loadLiveTokens() {
+            try {
+                const response = await fetch('data/cio_feed.json');
+                const data = await response.json();
+                const candidates = data.candidates || [];
+                const grid = document.getElementById('tokens-grid');
+                
+                if (candidates.length === 0) {
+                    grid.innerHTML = '<div class="no-tokens">no active signals</div>';
+                    return;
+                }
+                
+                grid.innerHTML = candidates.map(token => {
+                    const quality = token.quality || {};
+                    const isPremium = quality.quality_score >= 80 && token.metrics.liq_usd > 100000;
+                    const isGood = quality.quality_score >= 60 || token.metrics.liq_usd > 50000;
+                    const statusClass = isPremium ? 'premium' : isGood ? 'good' : 'watch';
+                    const statusLabel = isPremium ? 'PREMIUM' : isGood ? 'BON' : 'WATCH';
+                    
+                    return `
+                        <div class="token-card ${statusClass}">
+                            <div class="token-header">
+                                <span class="token-symbol">${token.token.symbol}</span>
+                                <span class="token-status ${statusClass}">${statusLabel}</span>
+                            </div>
+                            <div class="token-metrics">
+                                <span class="metric">$${(token.metrics.liq_usd/1000).toFixed(0)}K liq</span>
+                                <span class="metric">${token.timestamps.age_minutes.toFixed(0)}m</span>
+                            </div>
+                            <div class="token-quality">
+                                ${quality.has_image ? '🖼️' : ''}
+                                ${quality.has_socials ? '💬' : ''}
+                                ${quality.has_website ? '🌐' : ''}
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+            } catch (e) {
+                console.log('Tokens loading...');
+            }
+        }
+        
+        loadLiveTokens();
+        setInterval(loadLiveTokens, 60000); // Refresh every minute
+    </script>
 </body>
 </html>
