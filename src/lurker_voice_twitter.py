@@ -27,15 +27,18 @@ def load_env_file(filepath):
 env_path = os.path.join(os.path.dirname(__file__), '..', '.env.twitter')
 env = load_env_file(env_path)
 
-API_KEY = env.get('API_KEY')
-API_SECRET = env.get('API_SECRET')
-ACCESS_TOKEN = env.get('ACCESS_TOKEN')
-ACCESS_TOKEN_SECRET = env.get('ACCESS_TOKEN_SECRET')
-BEARER_TOKEN = env.get('BEARER_TOKEN')
+API_KEY = env.get('API_KEY') or os.getenv('X_API_KEY') or os.getenv('API_KEY')
+API_SECRET = env.get('API_SECRET') or os.getenv('X_API_SECRET') or os.getenv('API_SECRET')
+ACCESS_TOKEN = env.get('ACCESS_TOKEN') or os.getenv('X_ACCESS_TOKEN') or os.getenv('ACCESS_TOKEN')
+ACCESS_TOKEN_SECRET = env.get('ACCESS_TOKEN_SECRET') or os.getenv('X_ACCESS_SECRET') or os.getenv('ACCESS_TOKEN_SECRET')
+BEARER_TOKEN = env.get('BEARER_TOKEN') or os.getenv('X_BEARER_TOKEN') or os.getenv('BEARER_TOKEN')
 
-if not all([API_KEY, API_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET]):
-    print("Missing credentials")
-    sys.exit(1)
+# Check required secrets - skip gracefully if missing
+required = ["API_KEY", "API_SECRET", "ACCESS_TOKEN", "ACCESS_TOKEN_SECRET"]
+missing = [k for k in required if not locals()[k]]
+if missing:
+    print(f"[LURKER] Skip tweeting. Missing secrets: {', '.join(missing)}")
+    sys.exit(0)
 
 # THE WATCHER ARC - 3 Phase Narrative
 # Phase 1: Éveil (intrigue + identité)
@@ -176,8 +179,22 @@ def get_client():
         access_token_secret=ACCESS_TOKEN_SECRET
     )
 
+def write_tweet_error(state, text, error_msg):
+    """Write error state without failing GitHub Actions"""
+    STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    error_state = {
+        "phase": state.get("phase", 1),
+        "tweet_count": state.get("tweet_count", 0),
+        "last_tweet": datetime.now().isoformat(),
+        "last_error": error_msg[:500],
+        "last_text": text,
+        "posted": state.get("posted", [])
+    }
+    with open(STATE_FILE, 'w') as f:
+        json.dump(error_state, f, indent=2)
+
 def post_narrative_tweet():
-    """Post the next tweet in the narrative arc"""
+    """Post the next tweet in the narrative arc - never fail"""
     text = get_next_tweet()
     state = load_arc_state()
     
@@ -191,25 +208,29 @@ def post_narrative_tweet():
         state["tweet_count"] = state.get("tweet_count", 0) + 1
         save_arc_state(state)
         
-        print(f"Posted Phase {state['phase']}: {text}")
+        print(f"[LURKER] Posted Phase {state['phase']}: {text}")
         print(f"https://twitter.com/i/web/status/{response.data['id']}")
         return True
     except Exception as e:
-        print(f"Error: {e}")
+        error_msg = f"Tweet failed: {repr(e)}"
+        write_tweet_error(state, text, error_msg)
+        print(f"[LURKER] ⚠️ {error_msg}")
+        print(f"[LURKER] State saved, continuing...")
         return False
 
 def main():
     if len(sys.argv) < 2:
         print("Usage: python3 lurker_voice_twitter.py [--post]")
-        sys.exit(1)
+        sys.exit(0)  # Don't fail on bad usage
     
     arg = sys.argv[1]
     
     if arg == "--post":
         post_narrative_tweet()
+        sys.exit(0)  # Always exit 0
     else:
-        print(f"Unknown: {arg}")
-        sys.exit(1)
+        print(f"[LURKER] Unknown arg: {arg}")
+        sys.exit(0)  # Don't fail on unknown arg
 
 if __name__ == "__main__":
     main()

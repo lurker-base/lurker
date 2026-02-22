@@ -1,0 +1,54 @@
+name: LURKER Twitter Post
+
+on:
+  schedule:
+    - cron: '*/25 * * * *'  # Every 25 minutes
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: lurker-twitter
+  cancel-in-progress: true
+
+jobs:
+  tweet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install tweepy
+        run: pip install tweepy
+
+      - name: Sanity check secrets
+        run: |
+          echo "X_API_KEY set? ${{ secrets.X_API_KEY != '' }}"
+          echo "X_API_SECRET set? ${{ secrets.X_API_SECRET != '' }}"
+          echo "X_ACCESS_TOKEN set? ${{ secrets.X_ACCESS_TOKEN != '' }}"
+          echo "X_ACCESS_SECRET set? ${{ secrets.X_ACCESS_SECRET != '' }}"
+
+      - name: Ensure state directory
+        run: mkdir -p state
+
+      - name: Post tweet (never fail)
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+        run: python3 src/lurker_voice_twitter.py --post || echo "Tweet skipped or failed - continuing"
+
+      - name: Commit state updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add state/twitter_arc.json || true
+          git diff --cached --quiet || git commit -m "chore: update twitter arc state [skip ci]"
+          git push || echo "Nothing to push"
