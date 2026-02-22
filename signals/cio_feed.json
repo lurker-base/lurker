@@ -1,15 +1,15 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-02-22T16:00:15.451000+00:00",
-    "generated_at": "2026-02-22T16:00:15.451000+00:00",
+    "updated_at": "2026-02-22T16:09:08.290000+00:00",
+    "generated_at": "2026-02-22T16:09:08.290000+00:00",
     "status": "ok",
     "count": 5,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 50,
       "min_tx_5m": 2,
-      "max_age_min": 360
+      "max_age_min": 720
     },
     "risk_distribution": {
       "low": 4,
@@ -18,7 +18,8 @@
     "rejected": {
       "duplicate": 3,
       "low_tx": 1,
-      "too_old": 2
+      "too_old": 1,
+      "low_volume": 1
     },
     "source": "ultra_launch_scanner"
   },
@@ -35,17 +36,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 142774.95,
-        "vol_5m_usd": 11161.6,
-        "vol_1h_usd": 54954.26,
-        "txns_5m": 111,
-        "price_usd": 1.569e-06
+        "liq_usd": 169990.3,
+        "vol_5m_usd": 6406.61,
+        "vol_1h_usd": 69743.19,
+        "txns_5m": 162,
+        "price_usd": 1.919e-06
       },
       "timestamps": {
         "pair_created_at": "2026-02-22T15:32:31+00:00",
         "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
-        "age_minutes": 27.7,
-        "age_hours": 0.46
+        "age_minutes": 36.6,
+        "age_hours": 0.61
       },
       "scores": {
         "cio_score": 100,
@@ -68,17 +69,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 166902.04,
-        "vol_5m_usd": 4809.07,
-        "vol_1h_usd": 71729.05,
-        "txns_5m": 51,
-        "price_usd": 1.878e-06
+        "liq_usd": 178720.73,
+        "vol_5m_usd": 5400.44,
+        "vol_1h_usd": 85335.07,
+        "txns_5m": 113,
+        "price_usd": 2.034e-06
       },
       "timestamps": {
         "pair_created_at": "2026-02-22T15:16:53+00:00",
         "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
-        "age_minutes": 43.4,
-        "age_hours": 0.72
+        "age_minutes": 52.3,
+        "age_hours": 0.87
       },
       "scores": {
         "cio_score": 100,
@@ -101,17 +102,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 128112.94,
-        "vol_5m_usd": 75535.65,
-        "vol_1h_usd": 550302.47,
-        "txns_5m": 183,
-        "price_usd": 2.562e-06
+        "liq_usd": 105472.59,
+        "vol_5m_usd": 7649.14,
+        "vol_1h_usd": 548365.86,
+        "txns_5m": 66,
+        "price_usd": 1.824e-06
       },
       "timestamps": {
         "pair_created_at": "2026-02-22T14:43:51+00:00",
         "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
-        "age_minutes": 76.4,
-        "age_hours": 1.27
+        "age_minutes": 85.3,
+        "age_hours": 1.42
       },
       "scores": {
         "cio_score": 100,
@@ -136,21 +137,21 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 90156.05,
-        "vol_5m_usd": 53791.97,
-        "vol_1h_usd": 229820.15,
-        "txns_5m": 265,
-        "price_usd": 0.0009926
+        "liq_usd": 133618.43,
+        "vol_5m_usd": 44628.16,
+        "vol_1h_usd": 303519.48,
+        "txns_5m": 155,
+        "price_usd": 0.00217
       },
       "timestamps": {
         "pair_created_at": "2026-02-22T14:31:41+00:00",
         "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
-        "age_minutes": 88.6,
-        "age_hours": 1.48
+        "age_minutes": 97.5,
+        "age_hours": 1.62
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.98
+        "freshness": 0.97
       },
       "risks": [],
       "risk_level": "low",
@@ -169,21 +170,21 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 48822.38,
-        "vol_5m_usd": 13864.36,
-        "vol_1h_usd": 126509.26,
-        "txns_5m": 146,
-        "price_usd": 0.000484
+        "liq_usd": 59984.86,
+        "vol_5m_usd": 24699.86,
+        "vol_1h_usd": 152340.15,
+        "txns_5m": 70,
+        "price_usd": 0.0007274
       },
       "timestamps": {
         "pair_created_at": "2026-02-22T14:00:43+00:00",
         "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
-        "age_minutes": 119.5,
-        "age_hours": 1.99
+        "age_minutes": 128.4,
+        "age_hours": 2.14
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.97
+        "freshness": 0.96
       },
       "risks": [],
       "risk_level": "low",
