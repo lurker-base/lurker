@@ -598,6 +598,12 @@
           "price": 0.001225,
           "liq": 70986.56,
           "vol_5m": 18165.4
+        },
+        {
+          "timestamp": 1771804506867,
+          "price": 0.001348,
+          "liq": 74720.91,
+          "vol_5m": 15613.46
         }
       ],
       "token": {
@@ -615,12 +621,69 @@
           "price": 4.047e-06,
           "liq": 316490.53,
           "vol_5m": 3904.11
+        },
+        {
+          "timestamp": 1771804506867,
+          "price": 4.829e-06,
+          "liq": 363586.37,
+          "vol_5m": 971.05
         }
       ],
       "token": {
         "address": "0x5dc1db3b262793fb00ef0d973ed052daa5d27b07",
         "symbol": "ODAI",
         "name": "ODEI AI"
+      }
+    },
+    "0x7dd0e05938e63a8c1b7955ac095b391615acbba3": {
+      "first_seen": 1771804506867,
+      "first_seen_iso": "2026-02-22T23:55:06.867000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771804506867,
+          "price": 6.023e-07,
+          "liq": 52731.38,
+          "vol_5m": 5634.08
+        }
+      ],
+      "token": {
+        "address": "0x7dd0e05938e63a8c1b7955ac095b391615acbba3",
+        "symbol": "SCHLONG",
+        "name": "OpenSchlong"
+      }
+    },
+    "0x59f2e635783d6e7a94ee8ecf3c913d481dc13166": {
+      "first_seen": 1771804506867,
+      "first_seen_iso": "2026-02-22T23:55:06.867000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771804506867,
+          "price": 0.0007959,
+          "liq": 81680.3,
+          "vol_5m": 13111.16
+        }
+      ],
+      "token": {
+        "address": "0x59f2e635783d6e7a94ee8ecf3c913d481dc13166",
+        "symbol": "KIMCHI",
+        "name": "Based Kimchi"
+      }
+    },
+    "0xa87e0283b8814f37e8631ba266108351fb4b0b07": {
+      "first_seen": 1771804506867,
+      "first_seen_iso": "2026-02-22T23:55:06.867000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771804506867,
+          "price": 2.017e-07,
+          "liq": 20908.87,
+          "vol_5m": 36463.48
+        }
+      ],
+      "token": {
+        "address": "0xa87e0283b8814f37e8631ba266108351fb4b0b07",
+        "symbol": "DAEMON",
+        "name": "DAEMON"
       }
     }
   }
