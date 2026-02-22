@@ -1,0 +1,38 @@
+name: LURKER Tweet — Manual Post
+
+on:
+  workflow_dispatch:
+    inputs:
+      tweet_text:
+        description: 'Text to tweet'
+        required: true
+        default: 'most watch price. we watch behavior. the difference is everything.'
+
+permissions:
+  contents: write
+
+jobs:
+  tweet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install tweepy
+        run: pip install tweepy
+
+      - name: Post tweet
+        env:
+          TWITTERKEY: ${{ secrets.TWITTERKEY }}
+          TWITTERS: ${{ secrets.TWITTERS }}
+          TWITTER: ${{ secrets.TWITTER }}
+          TWITTERSECRET: ${{ secrets.TWITTERSECRET }}
+        run: python3 scripts/post_tweet_manual.py "${{ github.event.inputs.tweet_text }}"
+
+      - name: Log result
+        run: echo "Tweet posted successfully"
