@@ -2468,6 +2468,19 @@ a {
     font-weight: 600;
 }
 
+.badge.certified {
+    background: #00ff00;
+    color: #000;
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.pulse-card {
+    border-left: 3px solid #00ff00 !important;
+}
+
 .signal-meta {
     display: flex;
     gap: 1rem;

@@ -11,6 +11,8 @@ from pathlib import Path
 
 STATE_DIR = Path(__file__).parent.parent / "state"
 SIGNALS_FILE = Path(__file__).parent.parent / "signals" / "latest.json"
+LIVE_FEED_FILE = Path(__file__).parent.parent / "signals" / "live_feed.json"
+PULSE_FEED_FILE = Path(__file__).parent.parent / "signals" / "pulse_feed.json"
 POSTED_FILE = STATE_DIR / "posted.json"
 DAILY_FILE = STATE_DIR / "daily_count.json"
 
@@ -102,6 +104,28 @@ def validate_signal(signal_data):
     
     return True, daily
 
+def update_feed(feed_file, signal_data, max_items=50):
+    """Add signal to feed (prepend, truncate to max_items)"""
+    feed = []
+    if feed_file.exists():
+        try:
+            with open(feed_file, 'r') as f:
+                feed = json.load(f)
+        except json.JSONDecodeError:
+            feed = []
+    
+    # Clean signal for feed (remove large message field)
+    feed_item = {k: v for k, v in signal_data.items() if k != 'message'}
+    
+    # Prepend new signal
+    feed.insert(0, feed_item)
+    
+    # Truncate to max items
+    feed = feed[:max_items]
+    
+    with open(feed_file, 'w') as f:
+        json.dump(feed, f, indent=2)
+
 def update_state(signal_data, daily):
     """Met à jour les state files après validation réussie"""
     
@@ -137,6 +161,13 @@ def update_state(signal_data, daily):
     
     with open(SIGNALS_FILE, 'w') as f:
         json.dump(signal_data, f, indent=2)
+    
+    # Update feeds
+    update_feed(LIVE_FEED_FILE, signal_data)  # All signals go to live
+    
+    # Certified signals go to pulse (all for now, can add filtering later)
+    signal_data["certified"] = True
+    update_feed(PULSE_FEED_FILE, signal_data)
 
 def main():
     signal_file = Path(sys.argv[1]) if len(sys.argv) > 1 else SIGNALS_FILE

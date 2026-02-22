@@ -294,6 +294,17 @@
                     <span style="color: var(--accent); font-size: 0.8rem;">updated: <span id="last-update">--:--</span></span>
                 </div>
 
+                <!-- LURKER Signals Feed -->
+                <div class="section">
+                    <div class="section-title">LURKER alpha signals</div>
+                    <div id="live-feed-container" class="signal-stream">
+                        <div class="no-signals">
+                            <div class="no-signals-icon">📡</div>
+                            <p>Loading LURKER signals...</p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="signal-stream" id="live-tokens">
                     <div class="no-signals">
                         <div class="no-signals-icon">👁️</div>
@@ -429,6 +440,7 @@
         // Refresh every 30 seconds
         setInterval(fetchSignals, 30000);
     </script>
+    <script src="liveFeed.js"></script>
     <script src="liveDisplay.js"></script>
     <script>
         // Sparks effect

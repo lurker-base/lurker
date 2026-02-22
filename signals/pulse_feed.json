@@ -1,0 +1,28 @@
+[
+  {
+    "kind": "LURKER_SIGNAL",
+    "status": "posted",
+    "ts_utc": "2026-02-22T09:35:00Z",
+    "chain": "base",
+    "token": {
+      "name": "LURKER",
+      "symbol": "$LURKER",
+      "address": "0xDRYRUN",
+      "pair_url": "https://dexscreener.com/base/0xDRYRUN"
+    },
+    "scores": {
+      "confidence": 78,
+      "rarity": "3-5/day",
+      "risk": "high"
+    },
+    "metrics": {
+      "price_usd": 0.00000145,
+      "mcap_usd": 485000,
+      "liq_usd": 92000,
+      "vol_5m_usd": 15000
+    },
+    "mode": "dry-run",
+    "signal_number": "#2",
+    "certified": true
+  }
+]
