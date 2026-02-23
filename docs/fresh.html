@@ -116,6 +116,37 @@
             font-size: 0.75rem;
             color: var(--accent);
         }
+        
+        .risk-high {
+            border-left-color: #ff4444 !important;
+        }
+        
+        .risk-factors {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+            margin-top: 0.5rem;
+        }
+        
+        .risk-factor {
+            font-size: 0.65rem;
+            padding: 0.15rem 0.4rem;
+            border-radius: 3px;
+            background: rgba(255,68,68,0.2);
+            color: #ff8888;
+            text-transform: uppercase;
+        }
+        
+        .risk-factor.bundle_farming {
+            background: rgba(255,0,0,0.3);
+            color: #ff0000;
+            font-weight: bold;
+        }
+        
+        .risk-factor.suspicious_balances {
+            background: rgba(255,136,0,0.2);
+            color: #ffaa00;
+        }
     </style>
 </head>
 <body>
@@ -177,19 +208,29 @@
                     const hasLiquidity = t.dexscreener?.liquidity?.usd > 0;
                     const sourceClass = t.source === 'hybrid_dexscreener' ? 'source-dex' : 'source-rpc';
                     const sourceLabel = t.source === 'hybrid_dexscreener' ? 'dex' : 'rpc';
+                    const riskLevel = t.risk?.level || 'unknown';
+                    const riskFactors = t.risk?.factors || [];
+                    const isHighRisk = riskLevel === 'high';
                     
                     return `
-                        <div class="fresh-token ${isNew ? 'new' : ''} ${hasLiquidity ? 'has-liquidity' : ''}">
+                        <div class="fresh-token ${isNew ? 'new' : ''} ${hasLiquidity ? 'has-liquidity' : ''} ${isHighRisk ? 'risk-high' : ''}">
                             <div class="token-info">
                                 <div style="display: flex; align-items: center; gap: 0.5rem;">
                                     <span class="token-symbol">${t.token.symbol}</span>
                                     <span class="source-badge ${sourceClass}">${sourceLabel}</span>
+                                    ${isHighRisk ? '<span style="color: #ff4444; font-size: 0.8rem;">⚠️ HIGH RISK</span>' : ''}
                                 </div>
                                 <div class="token-address">${t.token.address}</div>
                                 <div class="token-meta">
                                     <span>${t.age_hours?.toFixed(1) || '?'}h old</span>
                                     <span>block ${t.block || '?'}</span>
+                                    <span>risk: ${riskLevel}</span>
                                 </div>
+                                ${riskFactors.length > 0 ? `
+                                    <div class="risk-factors">
+                                        ${riskFactors.map(f => `<span class="risk-factor ${f}">${f.replace(/_/g, ' ')}</span>`).join('')}
+                                    </div>
+                                ` : ''}
                                 <div class="links">
                                     ${t.token.address && !t.token.address.startsWith('pending') ? `
                                         <a href="https://basescan.org/address/${t.token.address}" target="_blank">BaseScan</a>

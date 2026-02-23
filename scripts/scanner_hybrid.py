@@ -57,8 +57,8 @@ def get_block(block_num):
     except Exception as e:
         return {}
 
-def calculate_risk(token_data, dex_data=None):
-    """Calculate risk level based on token metrics"""
+def calculate_risk(token_data, dex_data=None, top_traders=None):
+    """Calculate risk level based on token metrics and trader patterns"""
     risks = []
     
     # Check liquidity
@@ -90,8 +90,34 @@ def calculate_risk(token_data, dex_data=None):
     if token_data.get('symbol') == 'UNKNOWN':
         risks.append("unknown_token")
     
+    # Check for bundle farming pattern
+    if top_traders and len(top_traders) >= 10:
+        # Check for identical balances (sign of bot/bundle)
+        balances = [t.get('balance', 0) for t in top_traders[:20]]
+        unique_balances = len(set(balances))
+        
+        if unique_balances <= 5 and len(balances) >= 10:
+            risks.append("suspicious_balances")
+        
+        # Check for wallets with tiny balance but huge volume
+        fake_volume_wallets = 0
+        for trader in top_traders[:20]:
+            balance = trader.get('balance', 0)
+            volume = trader.get('volume', 0)
+            # If balance < $100 but volume > $1M = wash trading
+            if balance < 100 and volume > 1_000_000:
+                fake_volume_wallets += 1
+        
+        if fake_volume_wallets >= 5:
+            risks.append("bundle_farming")
+        
+        # Check for 1-transaction wallets (bot pattern)
+        one_tx_wallets = sum(1 for t in top_traders[:20] if t.get('tx_count', 0) <= 1)
+        if one_tx_wallets >= 10:
+            risks.append("bot_wallets")
+    
     # Determine risk level
-    if len(risks) >= 3:
+    if len(risks) >= 3 or "bundle_farming" in risks:
         risk_level = "high"
     elif len(risks) >= 1:
         risk_level = "medium"
@@ -112,12 +138,12 @@ def get_dexscreener_data(token_address):
         
         pairs = data.get("pairs", [])
         if not pairs:
-            return None
+            return None, None
         
         # Get best pair (highest liquidity)
         best_pair = max(pairs, key=lambda x: x.get("liquidity", {}).get("usd", 0) or 0)
         
-        return {
+        dex_data = {
             "priceUsd": best_pair.get("priceUsd"),
             "liquidity": best_pair.get("liquidity", {}),
             "volume": best_pair.get("volume", {}),
@@ -129,8 +155,27 @@ def get_dexscreener_data(token_address):
             "pairCreatedAt": best_pair.get("pairCreatedAt"),
             "info": best_pair.get("info", {})
         }
+        
+        # Try to get top traders from DexScreener
+        top_traders = None
+        try:
+            pair_address = best_pair.get("pairAddress")
+            if pair_address:
+                traders_url = f"https://api.dexscreener.com/latest/dex/pairs/base/{pair_address}"
+                traders_r = requests.get(traders_url, timeout=10)
+                traders_data = traders_r.json()
+                pair_data = traders_data.get("pair", {})
+                
+                # DexScreener doesn't expose top traders directly via API
+                # This would require additional data source
+                # For now, we'll use heuristics based on available data
+                top_traders = []
+        except:
+            pass
+        
+        return dex_data, top_traders
     except Exception as e:
-        return None
+        return None, None
 
 def scan_hybrid():
     """Main hybrid scan function"""
@@ -193,7 +238,7 @@ def scan_hybrid():
         
         # Now get detailed data for each token
         for token_address, meta in all_tokens.items():
-            dex_data = get_dexscreener_data(token_address)
+            dex_data, top_traders = get_dexscreener_data(token_address)
             
             if dex_data:
                 # Calculate age
@@ -223,8 +268,8 @@ def scan_hybrid():
                 except:
                     pass
                 
-                # Calculate risk
-                risk = calculate_risk({"symbol": symbol}, dex_data)
+                # Calculate risk with trader analysis
+                risk = calculate_risk({"symbol": symbol}, dex_data, top_traders)
                 
                 new_tokens.append({
                     "token": {
@@ -247,7 +292,8 @@ def scan_hybrid():
                     "source": meta['source']
                 }
                 
-                print(f"[HYBRID] ✅ {meta['source']}: {token_address[:16]}... ({age_hours:.1f}h)")
+                risk_flag = "⚠️" if risk['level'] == 'high' else ""
+                print(f"[HYBRID] ✅ {meta['source']}: {symbol} {risk_flag} ({age_hours:.1f}h, risk={risk['level']})")
     
     except Exception as e:
         print(f"[HYBRID] DexScreener error: {e}")

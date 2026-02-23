@@ -379,12 +379,86 @@
           "rpc_only"
         ]
       }
+    },
+    {
+      "token": {
+        "address": "0xa8DB47922ec9ea07b5Bb5E195B3825179f7702D7",
+        "symbol": "KITCHEN",
+        "name": "CLAWD KITCHEN"
+      },
+      "source": "hybrid_profiles",
+      "detected_at": "2026-02-23T13:09:03.291588+00:00",
+      "age_hours": 15.94,
+      "creator": "unknown",
+      "tx_hash": null,
+      "dexscreener": {
+        "priceUsd": "0.0000004220",
+        "liquidity": {
+          "usd": 26856.7,
+          "base": 53327140706,
+          "quote": 2.2668
+        },
+        "volume": {
+          "h24": 108339.48,
+          "h6": 36063.01,
+          "h1": 3309.65,
+          "m5": 0
+        },
+        "txns": {
+          "m5": {
+            "buys": 0,
+            "sells": 0
+          },
+          "h1": {
+            "buys": 20,
+            "sells": 16
+          },
+          "h6": {
+            "buys": 182,
+            "sells": 125
+          },
+          "h24": {
+            "buys": 531,
+            "sells": 407
+          }
+        },
+        "marketCap": 42200,
+        "fdv": 42200,
+        "pairAddress": "0x253dc798832912178fd2d52854a80816d15df27ad33cb7347046fca934c49eaf",
+        "dexId": "uniswap",
+        "pairCreatedAt": 1771794755000,
+        "info": {
+          "imageUrl": "https://cdn.dexscreener.com/cms/images/mvZ4-Zh2-vOZJ_BL?width=800&height=800&quality=90",
+          "header": "https://cdn.dexscreener.com/cms/images/AffewedXSNmGEY3d?width=1500&height=500&quality=90",
+          "openGraph": "https://cdn.dexscreener.com/token-images/og/base/0xa8db47922ec9ea07b5bb5e195b3825179f7702d7?timestamp=1771852200000",
+          "websites": [
+            {
+              "url": "https://clawd.kitchen/",
+              "label": "Website"
+            }
+          ],
+          "socials": []
+        }
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "low_volume",
+          "low_activity"
+        ]
+      },
+      "meta": {
+        "source": "profiles",
+        "url": "https://dexscreener.com/base/0xa8db47922ec9ea07b5bb5e195b3825179f7702d7",
+        "header": "https://cdn.dexscreener.com/cms/images/AffewedXSNmGEY3d?width=600&height=200&fit=crop&quality=95&format=auto",
+        "icon": "https://cdn.dexscreener.com/cms/images/mvZ4-Zh2-vOZJ_BL?width=64&height=64&fit=crop&quality=95&format=auto"
+      }
     }
   ],
   "meta": {
-    "updated_at": "2026-02-23T13:00:16.211153+00:00",
-    "count": 8,
-    "new_this_scan": 2,
-    "latest_block": 42531133
+    "updated_at": "2026-02-23T13:09:05.115444+00:00",
+    "count": 9,
+    "new_this_scan": 1,
+    "latest_block": 42531397
   }
 }
