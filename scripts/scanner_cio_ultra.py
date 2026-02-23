@@ -20,7 +20,7 @@ STATE_FILE = Path(__file__).parent.parent / "state" / "token_registry.json"
 MIN_LIQ_USD = 500          # $500 (was $1k) - ultra aggressive
 MIN_VOLUME_5M = 25         # $25 vol 5min (was $50)
 MIN_TX_5M = 1              # 1 tx minimum (was 2)
-MAX_AGE_MINUTES = 720      # 12h window - capture tokens up to 12h old
+MAX_AGE_MINUTES = 120      # 2h window - ULTRA FRESH ONLY
 TIMEOUT = 15
 
 def now_ms():
