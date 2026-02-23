@@ -68,32 +68,36 @@ def calculate_badges(token_data: dict) -> List[str]:
     return badges
 
 def calculate_category(token_data: dict) -> str:
-    """Détermine la catégorie du token"""
+    """Détermine la catégorie du token sur 7 jours"""
     age_hours = token_data.get('timestamps', {}).get('age_hours', 0)
     metrics = token_data.get('metrics', {})
     liq = metrics.get('liq_usd', 0)
     vol_1h = metrics.get('vol_1h_usd', 0)
     
-    # CIO: 0-2h
+    # CIO: 0-2h (ultra fresh)
     if age_hours < 2:
         return "CIO"
     
-    # WATCH: 2-6h avec activité
-    if age_hours < 6 and vol_1h > 1000:
+    # WATCH: 2-6h
+    if age_hours < 6:
         return "WATCH"
     
-    # HOTLIST: 6-24h avec bonne liq
-    if age_hours < 24 and liq > 10000:
+    # HOTLIST: 6-24h
+    if age_hours < 24:
         return "HOTLIST"
     
-    # LIFECYCLE: 24-72h
+    # ACTIVE: 24-72h avec volume
     if age_hours < 72:
-        if vol_1h > 5000:
+        if vol_1h > 1000:
             return "ACTIVE"
         else:
             return "MONITORING"
     
-    return "EXPIRED"
+    # MATURE: 3-7 jours
+    if age_hours < 168:
+        return "MATURE"
+    
+    return "ARCHIVED"
 
 def check_volume_spike(old_data: dict, new_data: dict) -> Optional[dict]:
     """Détecte un spike de volume entre deux scans"""

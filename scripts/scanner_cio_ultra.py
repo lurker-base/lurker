@@ -17,10 +17,10 @@ CIO_FILE = Path(__file__).parent.parent / "signals" / "cio_feed.json"
 STATE_FILE = Path(__file__).parent.parent / "state" / "token_registry.json"
 
 # ULTRA LAUNCH MODE - Discovery thresholds
-MIN_LIQ_USD = 200          # $200 - capture more early tokens
-MIN_VOLUME_5M = 25         # $25 vol 5min (was $50)
-MIN_TX_5M = 1              # 1 tx minimum (was 2)
-MAX_AGE_MINUTES = 360      # 6h window - capture early tokens
+MIN_LIQ_USD = 100          # $100 - minimum viable
+MIN_VOLUME_5M = 10         # $10 - any movement
+MIN_TX_5M = 1              # 1 tx minimum
+MAX_AGE_MINUTES = 10080    # 7 days - capture ALL tokens
 TIMEOUT = 15
 
 def now_ms():
