@@ -470,6 +470,12 @@
           "price": 1.549e-06,
           "liq": 1917.57,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771860077099,
+          "price": 1.549e-06,
+          "liq": 1917.57,
+          "vol_5m": 0.0
         }
       ],
       "token": {
@@ -1297,6 +1303,12 @@
           "price": 2.124e-06,
           "liq": 156156.44,
           "vol_5m": 980.79
+        },
+        {
+          "timestamp": 1771860077099,
+          "price": 2.394e-06,
+          "liq": 169704.57,
+          "vol_5m": 448.24
         }
       ],
       "token": {
@@ -1332,6 +1344,12 @@
           "price": 1.915e-07,
           "liq": 0,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771860077098,
+          "price": 1.892e-07,
+          "liq": 0,
+          "vol_5m": 5.59
         }
       ],
       "token": {
@@ -1355,12 +1373,52 @@
           "price": 5.73e-06,
           "liq": 0,
           "vol_5m": 17444.48
+        },
+        {
+          "timestamp": 1771860077098,
+          "price": 4.532e-06,
+          "liq": 0,
+          "vol_5m": 14303.87
         }
       ],
       "token": {
         "address": "0x99bb9e6bc8aef69937bd648e8658cf872412fb07",
         "symbol": "YULE",
         "name": "Yule AI"
+      }
+    },
+    "0xce3fcd5e1481155016df318cffd8c19060f5844e": {
+      "first_seen": 1771860077098,
+      "first_seen_iso": "2026-02-23T15:21:17.098000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771860077098,
+          "price": 0.0001979,
+          "liq": 39899.12,
+          "vol_5m": 37165.49
+        }
+      ],
+      "token": {
+        "address": "0xce3fcd5e1481155016df318cffd8c19060f5844e",
+        "symbol": "AI2028",
+        "name": "AI 2028"
+      }
+    },
+    "0xb23c6e17fe82f958ade869d31055c445f76c5c43": {
+      "first_seen": 1771860077098,
+      "first_seen_iso": "2026-02-23T15:21:17.098000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771860077099,
+          "price": 3.659e-05,
+          "liq": 11769.73,
+          "vol_5m": 1.77
+        }
+      ],
+      "token": {
+        "address": "0xb23c6e17fe82f958ade869d31055c445f76c5c43",
+        "symbol": "OpeClaw",
+        "name": "OpenClaw"
       }
     }
   }

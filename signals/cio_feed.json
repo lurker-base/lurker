@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-02-23T15:06:11.205000+00:00",
-    "generated_at": "2026-02-23T15:06:11.205000+00:00",
+    "updated_at": "2026-02-23T15:21:17.103000+00:00",
+    "generated_at": "2026-02-23T15:21:17.103000+00:00",
     "status": "ok",
-    "count": 3,
+    "count": 2,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,44 +12,44 @@
       "max_age_min": 10080
     },
     "risk_distribution": {
-      "low": 2,
+      "low": 1,
       "medium": 1
     },
     "rejected": {
       "too_old": 2,
       "low_liq": 2,
-      "low_volume": 1
+      "low_volume": 2
     },
     "source": "ultra_launch_scanner"
   },
   "candidates": [
     {
       "token": {
-        "address": "0xc18db1ed7d44eb6b705dd9b928001f190314d519",
-        "symbol": "HEDW",
-        "name": "Hedwig"
+        "address": "0xce3fcd5e1481155016df318cffd8c19060f5844e",
+        "symbol": "AI2028",
+        "name": "AI 2028"
       },
       "pair": {
-        "address": "0xd5907ea812172cc1946ceb68497d0fce172cd72e",
+        "address": "0xd28abb74f714233e403b4895f85be7ea84be67cd",
         "dex": "uniswap",
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 101746.98,
-        "vol_5m_usd": 63460.58,
-        "vol_1h_usd": 246296.04,
-        "txns_5m": 80,
-        "price_usd": 0.002091
+        "liq_usd": 39899.12,
+        "vol_5m_usd": 37165.49,
+        "vol_1h_usd": 110795.7,
+        "txns_5m": 329,
+        "price_usd": 0.0001979
       },
       "timestamps": {
-        "pair_created_at": "2026-02-23T11:07:39+00:00",
-        "token_first_seen": "2026-02-23T12:50:16.965000+00:00",
-        "age_minutes": 238.5,
-        "age_hours": 3.98
+        "pair_created_at": "2026-02-23T13:50:21+00:00",
+        "token_first_seen": "2026-02-23T15:21:17.098000+00:00",
+        "age_minutes": 90.9,
+        "age_hours": 1.52
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.93
+        "freshness": 0.97
       },
       "risks": [],
       "risk_level": "low",
@@ -59,8 +59,8 @@
         "has_profile": true,
         "has_image": true,
         "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
+        "has_website": false,
+        "quality_score": 75
       }
     },
     {
@@ -75,24 +75,26 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 156156.44,
-        "vol_5m_usd": 980.79,
-        "vol_1h_usd": 8767.34,
-        "txns_5m": 6,
-        "price_usd": 2.124e-06
+        "liq_usd": 169704.57,
+        "vol_5m_usd": 448.24,
+        "vol_1h_usd": 10987.46,
+        "txns_5m": 3,
+        "price_usd": 2.394e-06
       },
       "timestamps": {
         "pair_created_at": "2026-02-20T11:14:23+00:00",
         "token_first_seen": "2026-02-23T13:35:34.911000+00:00",
-        "age_minutes": 4551.8,
-        "age_hours": 75.86
+        "age_minutes": 4566.9,
+        "age_hours": 76.12
       },
       "scores": {
         "cio_score": 95,
         "freshness": 0
       },
-      "risks": [],
-      "risk_level": "low",
+      "risks": [
+        "low_activity"
+      ],
+      "risk_level": "medium",
       "source": "boosts",
       "status": "observing",
       "quality": {
@@ -101,49 +103,6 @@
         "has_socials": true,
         "has_website": true,
         "quality_score": 100
-      }
-    },
-    {
-      "token": {
-        "address": "0xa8db47922ec9ea07b5bb5e195b3825179f7702d7",
-        "symbol": "KITCHEN",
-        "name": "CLAWD KITCHEN"
-      },
-      "pair": {
-        "address": "0x253dc798832912178fd2d52854a80816d15df27ad33cb7347046fca934c49eaf",
-        "dex": "uniswap",
-        "quote": "flETH"
-      },
-      "metrics": {
-        "liq_usd": 31550.38,
-        "vol_5m_usd": 11.25,
-        "vol_1h_usd": 6659.37,
-        "txns_5m": 1,
-        "price_usd": 5.108e-07
-      },
-      "timestamps": {
-        "pair_created_at": "2026-02-22T21:12:35+00:00",
-        "token_first_seen": "2026-02-23T13:20:28.559000+00:00",
-        "age_minutes": 1073.6,
-        "age_hours": 17.89
-      },
-      "scores": {
-        "cio_score": 93,
-        "freshness": 0.7
-      },
-      "risks": [
-        "low_activity",
-        "low_volume"
-      ],
-      "risk_level": "medium",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": false,
-        "has_website": true,
-        "quality_score": 75
       }
     }
   ]
