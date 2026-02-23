@@ -566,6 +566,12 @@
           "price": 1.392e-06,
           "liq": 1772.3,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771890537331,
+          "price": 1.392e-06,
+          "liq": 1772.3,
+          "vol_5m": 0.0
         }
       ],
       "token": {
@@ -2012,6 +2018,18 @@
           "price": 4.727e-06,
           "liq": 0,
           "vol_5m": 3908.23
+        },
+        {
+          "timestamp": 1771890537331,
+          "price": 4.777e-06,
+          "liq": 0,
+          "vol_5m": 13347.04
+        },
+        {
+          "timestamp": 1771890537331,
+          "price": 4.777e-06,
+          "liq": 0,
+          "vol_5m": 13347.04
         }
       ],
       "token": {
@@ -2058,6 +2076,12 @@
           "price": 2.633e-06,
           "liq": 0,
           "vol_5m": 875.67
+        },
+        {
+          "timestamp": 1771890537331,
+          "price": 2.511e-06,
+          "liq": 0,
+          "vol_5m": 1782.96
         }
       ],
       "token": {
@@ -2087,12 +2111,35 @@
           "price": 2.12e-07,
           "liq": 0,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771890537331,
+          "price": 2.12e-07,
+          "liq": 0,
+          "vol_5m": 0.0
         }
       ],
       "token": {
         "address": "0xa9bbee734b00bc3d732455ee4c59d485e0d00b07",
         "symbol": "BankrAgent",
         "name": "BankrAgent"
+      }
+    },
+    "0xc5898891919a3f8fc6d0d4d502e47ced11fb27ce": {
+      "first_seen": 1771890537331,
+      "first_seen_iso": "2026-02-23T23:48:57.331000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771890537331,
+          "price": 0.0001621,
+          "liq": 25773.19,
+          "vol_5m": 33631.01
+        }
+      ],
+      "token": {
+        "address": "0xc5898891919a3f8fc6d0d4d502e47ced11fb27ce",
+        "symbol": "HCLAW",
+        "name": "HyperClaw"
       }
     }
   }
