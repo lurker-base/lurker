@@ -6,6 +6,7 @@ import os
 import json
 import requests
 from datetime import datetime, timezone
+from pathlib import Path
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
@@ -14,12 +15,33 @@ TELEGRAM_CHANNEL = os.getenv("TELEGRAM_CHANNEL", "@LurkerAlphaSignals")
 def now():
     return datetime.now(timezone.utc)
 
+ALERT_LOG_FILE = Path(__file__).parent.parent / "logs" / "bundle_alerts.log"
+
+def log_alert_locally(token_symbol, token_address, risk_factors, metrics):
+    """Log alert to local file when Telegram fails"""
+    ALERT_LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
+    
+    alert_entry = {
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "token_symbol": token_symbol,
+        "token_address": token_address,
+        "risk_factors": risk_factors,
+        "metrics": metrics,
+        "telegram_sent": False
+    }
+    
+    with open(ALERT_LOG_FILE, 'a') as f:
+        f.write(json.dumps(alert_entry) + '\n')
+    
+    print(f"[ALERT] 📝 Logged locally to {ALERT_LOG_FILE}")
+    return True
+
 def send_telegram_alert(token_symbol, token_address, risk_factors, metrics):
     """Send Telegram alert for bundle farming detection"""
     
     if not TELEGRAM_BOT_TOKEN:
-        print("[ALERT] Telegram bot token not configured")
-        return False
+        print("[ALERT] Telegram bot token not configured, logging locally")
+        return log_alert_locally(token_symbol, token_address, risk_factors, metrics)
     
     # Try channel first, then chat ID
     chat_targets = []
@@ -29,8 +51,8 @@ def send_telegram_alert(token_symbol, token_address, risk_factors, metrics):
         chat_targets.append(TELEGRAM_CHAT_ID)
     
     if not chat_targets:
-        print("[ALERT] No Telegram target configured")
-        return False
+        print("[ALERT] No Telegram target configured, logging locally")
+        return log_alert_locally(token_symbol, token_address, risk_factors, metrics)
     
     # Build alert message
     emoji = "🚨"
@@ -95,8 +117,8 @@ def send_telegram_alert(token_symbol, token_address, risk_factors, metrics):
             print(f"[ALERT] ⚠️ Error sending to {chat_id}: {e}")
             continue
     
-    print(f"[ALERT] ❌ Failed to send alert to all targets")
-    return False
+    print(f"[ALERT] ⚠️ All Telegram targets failed, logging locally")
+    return log_alert_locally(token_symbol, token_address, risk_factors, metrics)
 
 def check_and_alert(token_data):
     """Check if token has bundle farming and send alert"""
