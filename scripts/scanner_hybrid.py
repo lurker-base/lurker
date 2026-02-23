@@ -57,6 +57,52 @@ def get_block(block_num):
     except Exception as e:
         return {}
 
+def calculate_risk(token_data, dex_data=None):
+    """Calculate risk level based on token metrics"""
+    risks = []
+    
+    # Check liquidity
+    if dex_data:
+        liq = dex_data.get('liquidity', {}).get('usd', 0) or 0
+        if liq < 1000:
+            risks.append("very_low_liquidity")
+        elif liq < 5000:
+            risks.append("low_liquidity")
+        
+        # Check volume
+        vol_5m = dex_data.get('volume', {}).get('m5', 0) or 0
+        if vol_5m < 100:
+            risks.append("low_volume")
+        
+        # Check transactions
+        tx_5m = dex_data.get('txns', {}).get('m5', {}).get('buys', 0) or 0
+        tx_5m += dex_data.get('txns', {}).get('m5', {}).get('sells', 0) or 0
+        if tx_5m < 3:
+            risks.append("low_activity")
+        
+        # Check for dumping (more sells than buys)
+        buys = dex_data.get('txns', {}).get('m5', {}).get('buys', 0) or 0
+        sells = dex_data.get('txns', {}).get('m5', {}).get('sells', 0) or 0
+        if sells > buys * 1.5:
+            risks.append("dumping")
+    
+    # Unknown token = higher risk
+    if token_data.get('symbol') == 'UNKNOWN':
+        risks.append("unknown_token")
+    
+    # Determine risk level
+    if len(risks) >= 3:
+        risk_level = "high"
+    elif len(risks) >= 1:
+        risk_level = "medium"
+    else:
+        risk_level = "low"
+    
+    return {
+        "level": risk_level,
+        "factors": risks
+    }
+
 def get_dexscreener_data(token_address):
     """Get token data from DexScreener"""
     try:
@@ -161,14 +207,30 @@ def scan_hybrid():
                 if age_hours > 168:
                     continue
                 
-                # Get token info from first pair
-                token_info = {}  # Will be populated from pair data
+                # Get token info from DexScreener pairs
+                symbol = "UNKNOWN"
+                name = "Unknown"
+                
+                # Try to get symbol from first pair's baseToken
+                url = f"https://api.dexscreener.com/latest/dex/tokens/{token_address}"
+                try:
+                    r = requests.get(url, timeout=10)
+                    pairs = r.json().get("pairs", [])
+                    if pairs:
+                        base_token = pairs[0].get("baseToken", {})
+                        symbol = base_token.get("symbol", "UNKNOWN")
+                        name = base_token.get("name", "Unknown")
+                except:
+                    pass
+                
+                # Calculate risk
+                risk = calculate_risk({"symbol": symbol}, dex_data)
                 
                 new_tokens.append({
                     "token": {
                         "address": token_address,
-                        "symbol": "UNKNOWN",  # Will be updated
-                        "name": "Unknown"
+                        "symbol": symbol,
+                        "name": name
                     },
                     "source": f"hybrid_{meta['source']}",
                     "detected_at": now().isoformat(),
@@ -176,6 +238,7 @@ def scan_hybrid():
                     "creator": "unknown",
                     "tx_hash": None,
                     "dexscreener": dex_data,
+                    "risk": risk,
                     "meta": meta
                 })
                 
@@ -214,6 +277,12 @@ def scan_hybrid():
                     if tx_hash in seen:
                         continue
                     
+                    # Calculate risk (high risk for RPC-only tokens - no liquidity, no verification)
+                    risk = {
+                        "level": "high",
+                        "factors": ["no_liquidity", "unverified_contract", "rpc_only"]
+                    }
+                    
                     new_tokens.append({
                         "token": {
                             "address": f"pending_{tx_hash[:20]}",
@@ -226,7 +295,8 @@ def scan_hybrid():
                         "age_hours": round(age_hours, 2),
                         "creator": tx.get("from", ""),
                         "tx_hash": tx_hash,
-                        "dexscreener": None
+                        "dexscreener": None,
+                        "risk": risk
                     })
                     
                     seen[tx_hash] = {

@@ -143,12 +143,248 @@
         "header": "https://cdn.dexscreener.com/cms/images/Y1pFysB_q90TkDfq?width=900&height=300&fit=crop&quality=95&format=auto",
         "icon": "Kq_U5gBTy_W4fVVx"
       }
+    },
+    {
+      "token": {
+        "address": "pending_0x0285fab0bbb9d0df13",
+        "symbol": "UNKNOWN",
+        "name": "Fresh Contract"
+      },
+      "source": "hybrid_rpc",
+      "detected_at": "2026-02-23T12:59:14.445892+00:00",
+      "block": 42531100,
+      "age_hours": 0.0,
+      "creator": "0xf9b2fc65e71fb6c7342a82cd94b838457ae4ee62",
+      "tx_hash": "0x0285fab0bbb9d0df1376400ea2242a448a2b04df1a7e3de21ccb496c19455a94",
+      "dexscreener": null,
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "unknown_token"
+        ]
+      }
+    },
+    {
+      "token": {
+        "address": "0xc18db1ED7d44EB6b705dd9B928001F190314D519",
+        "symbol": "UNKNOWN",
+        "name": "Unknown"
+      },
+      "source": "hybrid_profiles",
+      "detected_at": "2026-02-23T12:59:26.956375+00:00",
+      "age_hours": 1.86,
+      "creator": "unknown",
+      "tx_hash": null,
+      "dexscreener": {
+        "priceUsd": "0.0002151",
+        "liquidity": {
+          "usd": 32152.25,
+          "base": 74724933,
+          "quote": 8.3731
+        },
+        "volume": {
+          "h24": 99788.42,
+          "h6": 99788.42,
+          "h1": 69359.01,
+          "m5": 12962.23
+        },
+        "txns": {
+          "m5": {
+            "buys": 36,
+            "sells": 13
+          },
+          "h1": {
+            "buys": 780,
+            "sells": 163
+          },
+          "h6": {
+            "buys": 1224,
+            "sells": 273
+          },
+          "h24": {
+            "buys": 1224,
+            "sells": 273
+          }
+        },
+        "marketCap": 215137,
+        "fdv": 215137,
+        "pairAddress": "0xd5907EA812172cC1946cEb68497d0FCE172cd72e",
+        "dexId": "uniswap",
+        "pairCreatedAt": 1771844859000,
+        "info": {
+          "imageUrl": "https://cdn.dexscreener.com/cms/images/VUS5rFYL2BV04lba?width=800&height=800&quality=90",
+          "header": "https://cdn.dexscreener.com/cms/images/rlaZE_0kpxML3Myo?width=1500&height=500&quality=90",
+          "openGraph": "https://cdn.dexscreener.com/token-images/og/base/0xc18db1ed7d44eb6b705dd9b928001f190314d519?timestamp=1771851600000",
+          "websites": [
+            {
+              "url": "https://www.hedwigbot.xyz",
+              "label": "Website"
+            }
+          ],
+          "socials": [
+            {
+              "url": "https://x.com/hedwig_agent",
+              "type": "twitter"
+            }
+          ]
+        }
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "unknown_token"
+        ]
+      },
+      "meta": {
+        "source": "profiles",
+        "url": "https://dexscreener.com/base/0xc18db1ed7d44eb6b705dd9b928001f190314d519",
+        "header": "https://cdn.dexscreener.com/cms/images/rlaZE_0kpxML3Myo?width=600&height=200&fit=crop&quality=95&format=auto",
+        "icon": "https://cdn.dexscreener.com/cms/images/VUS5rFYL2BV04lba?width=64&height=64&fit=crop&quality=95&format=auto"
+      }
+    },
+    {
+      "token": {
+        "address": "pending_0x2bd6cdf95d65f25774",
+        "symbol": "UNKNOWN",
+        "name": "Fresh Contract"
+      },
+      "source": "hybrid_rpc",
+      "detected_at": "2026-02-23T12:59:27.498228+00:00",
+      "block": 42531108,
+      "age_hours": 0.0,
+      "creator": "0xd8a0ce5bd5c706903cbedbe037730e4520b16ba6",
+      "tx_hash": "0x2bd6cdf95d65f2577462964ea3e84d491af129f26b3789756698872e96211a9a",
+      "dexscreener": null,
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "unknown_token"
+        ]
+      }
+    },
+    {
+      "token": {
+        "address": "pending_0x304ab4bad0fd78623e",
+        "symbol": "UNKNOWN",
+        "name": "Fresh Contract"
+      },
+      "source": "hybrid_rpc",
+      "detected_at": "2026-02-23T12:59:27.498296+00:00",
+      "block": 42531108,
+      "age_hours": 0.0,
+      "creator": "0x53bb2191dcd143a4b8ca5212cff4eebe35348ed2",
+      "tx_hash": "0x304ab4bad0fd78623e5d4dff8b3c10d27799502ab01c5f45234a6ca8185a96ee",
+      "dexscreener": null,
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "unknown_token"
+        ]
+      }
+    },
+    {
+      "token": {
+        "address": "0xc18db1ED7d44EB6b705dd9B928001F190314D519",
+        "symbol": "HEDW",
+        "name": "Hedwig"
+      },
+      "source": "hybrid_profiles",
+      "detected_at": "2026-02-23T13:00:14.884817+00:00",
+      "age_hours": 1.88,
+      "creator": "unknown",
+      "tx_hash": null,
+      "dexscreener": {
+        "priceUsd": "0.0002909",
+        "liquidity": {
+          "usd": 37493.44,
+          "base": 69089595,
+          "quote": 9.06067
+        },
+        "volume": {
+          "h24": 104326.11,
+          "h6": 104326.11,
+          "h1": 73603.77,
+          "m5": 15519.44
+        },
+        "txns": {
+          "m5": {
+            "buys": 42,
+            "sells": 13
+          },
+          "h1": {
+            "buys": 792,
+            "sells": 165
+          },
+          "h6": {
+            "buys": 1237,
+            "sells": 276
+          },
+          "h24": {
+            "buys": 1237,
+            "sells": 276
+          }
+        },
+        "marketCap": 290923,
+        "fdv": 290923,
+        "pairAddress": "0xd5907EA812172cC1946cEb68497d0FCE172cd72e",
+        "dexId": "uniswap",
+        "pairCreatedAt": 1771844859000,
+        "info": {
+          "imageUrl": "https://cdn.dexscreener.com/cms/images/VUS5rFYL2BV04lba?width=800&height=800&quality=90",
+          "header": "https://cdn.dexscreener.com/cms/images/rlaZE_0kpxML3Myo?width=1500&height=500&quality=90",
+          "openGraph": "https://cdn.dexscreener.com/token-images/og/base/0xc18db1ed7d44eb6b705dd9b928001f190314d519?timestamp=1771851600000",
+          "websites": [
+            {
+              "url": "https://www.hedwigbot.xyz",
+              "label": "Website"
+            }
+          ],
+          "socials": [
+            {
+              "url": "https://x.com/hedwig_agent",
+              "type": "twitter"
+            }
+          ]
+        }
+      },
+      "risk": {
+        "level": "low",
+        "factors": []
+      },
+      "meta": {
+        "source": "profiles",
+        "url": "https://dexscreener.com/base/0xc18db1ed7d44eb6b705dd9b928001f190314d519",
+        "header": "https://cdn.dexscreener.com/cms/images/rlaZE_0kpxML3Myo?width=600&height=200&fit=crop&quality=95&format=auto",
+        "icon": "https://cdn.dexscreener.com/cms/images/VUS5rFYL2BV04lba?width=64&height=64&fit=crop&quality=95&format=auto"
+      }
+    },
+    {
+      "token": {
+        "address": "pending_0x387d42b361f9043c90",
+        "symbol": "UNKNOWN",
+        "name": "Fresh Contract"
+      },
+      "source": "hybrid_rpc",
+      "detected_at": "2026-02-23T13:00:15.536884+00:00",
+      "block": 42531132,
+      "age_hours": 0.0,
+      "creator": "0xf9b2fc65e71fb6c7342a82cd94b838457ae4ee62",
+      "tx_hash": "0x387d42b361f9043c90cd9d26f4362b1a29c8431f9d2a19ad8ed7dd1e48f682e3",
+      "dexscreener": null,
+      "risk": {
+        "level": "high",
+        "factors": [
+          "no_liquidity",
+          "unverified_contract",
+          "rpc_only"
+        ]
+      }
     }
   ],
   "meta": {
-    "updated_at": "2026-02-23T12:53:37.216249+00:00",
-    "count": 2,
+    "updated_at": "2026-02-23T13:00:16.211153+00:00",
+    "count": 8,
     "new_this_scan": 2,
-    "latest_block": 42530934
+    "latest_block": 42531133
   }
 }

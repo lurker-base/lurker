@@ -1,10 +1,10 @@
 {
   "0xc18db1ED7d44EB6b705dd9B928001F190314D519": {
-    "detected": "2026-02-23T12:53:35.388358+00:00",
+    "detected": "2026-02-23T13:00:14.884854+00:00",
     "source": "profiles"
   },
-  "0xFc57Cf56A22EC88ebAcb8C59A8D4EED1177dC58f": {
-    "detected": "2026-02-23T12:53:35.552886+00:00",
-    "source": "trending"
+  "0x387d42b361f9043c90cd9d26f4362b1a29c8431f9d2a19ad8ed7dd1e48f682e3": {
+    "detected": "2026-02-23T13:00:15.536911+00:00",
+    "block": 42531132
   }
 }
