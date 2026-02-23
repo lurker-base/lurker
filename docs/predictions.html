@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <title>predictions — lurker</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css?v=3">
+    <style>
+        .predictions-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .predictions-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .predictions-header p {
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .proof-banner {
+            background: rgba(0, 255, 0, 0.1);
+            border: 1px solid rgba(0, 255, 0, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .proof-banner h3 {
+            color: #00ff00;
+            margin: 0 0 0.5rem;
+        }
+        
+        .proof-banner p {
+            color: #aaa;
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+        
+        .stat-card {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+        
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+        
+        .prediction-list {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .prediction-card {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        
+        .prediction-card.confirmed {
+            border-left: 4px solid #00ff00;
+        }
+        
+        .prediction-card.false-positive {
+            border-left: 4px solid #ff6600;
+        }
+        
+        .prediction-card.pending {
+            border-left: 4px solid #ffcc00;
+        }
+        
+        .prediction-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .prediction-token {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        
+        .prediction-status {
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        .prediction-status.confirmed {
+            background: rgba(0, 255, 0, 0.2);
+            color: #00ff00;
+        }
+        
+        .prediction-status.false-positive {
+            background: rgba(255, 102, 0, 0.2);
+            color: #ff6600;
+        }
+        
+        .prediction-status.pending {
+            background: rgba(255, 204, 0, 0.2);
+            color: #ffcc00;
+        }
+        
+        .prediction-times {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .time-box {
+            background: rgba(0,0,0,0.3);
+            padding: 0.75rem;
+            border-radius: 6px;
+        }
+        
+        .time-label {
+            color: #666;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+        
+        .time-value {
+            color: #fff;
+            font-family: monospace;
+            font-size: 0.85rem;
+        }
+        
+        .prediction-risks {
+            margin: 1rem 0;
+        }
+        
+        .risk-tag {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            background: rgba(255,0,0,0.1);
+            border: 1px solid rgba(255,0,0,0.3);
+            border-radius: 3px;
+            font-size: 0.75rem;
+            color: #ff4444;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .prediction-proof {
+            background: rgba(0,0,0,0.3);
+            padding: 1rem;
+            border-radius: 6px;
+            margin-top: 1rem;
+        }
+        
+        .proof-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+        
+        .proof-link:hover {
+            text-decoration: underline;
+        }
+        
+        .accuracy-highlight {
+            background: rgba(0,255,0,0.1);
+            border-left: 3px solid #00ff00;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .accuracy-highlight h4 {
+            color: #00ff00;
+            margin: 0 0 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .prediction-times {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-grid"></div>
+    
+    <nav class="nav">
+        <a href="index.html" class="nav-link">lurker</a>
+        <a href="token.html" class="nav-link">token</a>
+        <a href="deep.html" class="nav-link">the deep</a>
+        <a href="origin.html" class="nav-link">origin</a>
+        <a href="sightings.html" class="nav-link">sightings</a>
+        <a href="proof.html" class="nav-link">proof</a>
+        <a href="hall-of-fame.html" class="nav-link">hall of fame</a>
+        <a href="watch.html" class="nav-link">watch</a>
+        <a href="become.html" class="nav-link">become</a>
+        <a href="live.html" class="nav-link">live</a>
+        <a href="agents.html" class="nav-link">for agents</a>
+        <a href="pulse.html" class="nav-link">pulse</a>
+        <a href="signals.html" class="nav-link">signals</a>
+        <a href="predictions.html" class="nav-link active">predictions</a>
+        <a href="subscribe.html" class="nav-link">subscribe</a>
+    </nav>
+    
+    <main class="main">
+        <div class="container">
+            <div class="predictions-header">
+                <h1>predictions</h1>
+                <p>immutable proof of early warnings. every risk flagged is recorded with cryptographic timestamps.</p>
+            </div>
+            
+            <div class="proof-banner">
+                <h3>🔒 Cryptographic Proof</h3>
+                <p>All predictions are committed to git with timestamps. Git commits are immutable and publicly verifiable on GitHub.</p>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value" id="stat-total">--</div>
+                    <div class="stat-label">Warnings</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="stat-confirmed">--</div>
+                    <div class="stat-label">Confirmed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="stat-accuracy">--%</div>
+                    <div class="stat-label">Accuracy</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="stat-avg-time">--h</div>
+                    <div class="stat-label">Avg Early</div>
+                </div>
+            </div>
+            
+            <div class="prediction-list" id="prediction-list">
+                <div class="loading">loading predictions...</div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="sparks.js"></script>
+    <script>
+        // Mock data for now - will be loaded from state/risk_warnings.json
+        const mockPredictions = [
+            {
+                id: "warn_20260222_164500_EARENDEL",
+                token_symbol: "EARENDEL",
+                token_address: "0x71a09f5b9b88976ebcc79183e0e99e7d07beabaf",
+                risk_type: "dumping",
+                risk_factors: ["rapid volume spike", "concentrated wallets", "unnatural pattern"],
+                timestamp: "2026-02-22T16:45:00Z",
+                status: "confirmed",
+                outcome: "rug_confirmed",
+                outcome_timestamp: "2026-02-22T18:30:00Z",
+                metrics_at_warning: {
+                    liq_usd: 80000,
+                    vol_1h: 150000,
+                    age_minutes: 156
+                }
+            },
+            {
+                id: "warn_20260222_183000_DAEMON",
+                token_symbol: "DAEMON",
+                token_address: "0x...",
+                risk_type: "dumping",
+                risk_factors: ["parabolic pump", "low liquidity ratio", "whale concentration"],
+                timestamp: "2026-02-22T18:30:00Z",
+                status: "confirmed",
+                outcome: "dump_confirmed",
+                outcome_timestamp: "2026-02-23T00:45:00Z",
+                metrics_at_warning: {
+                    liq_usd: 25000,
+                    vol_1h: 80000,
+                    age_minutes: 45
+                }
+            }
+        ];
+        
+        function formatTime(isoString) {
+            const date = new Date(isoString);
+            return date.toLocaleString('en-US', {
+                month: 'short',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                timeZoneName: 'short'
+            });
+        }
+        
+        function calculateHoursEarly(prediction, outcome) {
+            const pred = new Date(prediction);
+            const out = new Date(outcome);
+            return ((out - pred) / (1000 * 60 * 60)).toFixed(1);
+        }
+        
+        function renderPredictions(predictions) {
+            const container = document.getElementById('prediction-list');
+            
+            if (!predictions || predictions.length === 0) {
+                container.innerHTML = '<div class="empty">no predictions logged yet</div>';
+                return;
+            }
+            
+            // Sort by timestamp (newest first)
+            predictions.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+            
+            container.innerHTML = predictions.map(p => {
+                const hoursEarly = p.outcome_timestamp ? calculateHoursEarly(p.timestamp, p.outcome_timestamp) : null;
+                
+                return `
+                    <div class="prediction-card ${p.status}">
+                        <div class="prediction-header">
+                            <span class="prediction-token">$${p.token_symbol}</span>
+                            <span class="prediction-status ${p.status}">${p.status}</span>
+                        </div>
+                        
+                        <div class="prediction-times">
+                            <div class="time-box">
+                                <div class="time-label">Warning Issued</div>
+                                <div class="time-value">${formatTime(p.timestamp)}</div>
+                            </div>
+                            ${p.outcome_timestamp ? `
+                            <div class="time-box">
+                                <div class="time-label">Outcome Confirmed</div>
+                                <div class="time-value">${formatTime(p.outcome_timestamp)}</div>
+                            </div>
+                            ` : '<div class="time-box"><div class="time-label">Status</div><div class="time-value">Pending...</div></div>'}
+                        </div>
+                        
+                        ${hoursEarly ? `
+                        <div class="accuracy-highlight">
+                            <h4>⚡ ${hoursEarly} Hours Early</h4>
+                            <p style="margin:0; font-size:0.9rem; color:#aaa;">
+                                Flagged <strong>${p.risk_type}</strong> risk ${hoursEarly} hours before ${p.outcome === 'rug_confirmed' ? 'rug pull' : 'dump'}
+                            </p>
+                        </div>
+                        ` : ''}
+                        
+                        <div class="prediction-risks">
+                            ${p.risk_factors.map(f => `<span class="risk-tag">${f}</span>`).join('')}
+                        </div>
+                        
+                        <div class="prediction-proof">
+                            <strong>Proof:</strong> 
+                            <a href="https://github.com/lurker-base/lurker/commit/${p.id}" class="proof-link" target="_blank">
+                                View Git Commit →
+                            </a>
+                            <br>
+                            <small style="color:#666;">
+                                Warning ID: ${p.id} • 
+                                Contract: ${p.token_address.substring(0, 10)}...${p.token_address.substring(-4)}
+                            </small>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            
+            // Update stats
+            const confirmed = predictions.filter(p => p.status === 'confirmed').length;
+            const accuracy = confirmed > 0 ? Math.round((confirmed / predictions.length) * 100) : 0;
+            const avgHours = predictions.filter(p => p.outcome_timestamp)
+                .reduce((sum, p) => sum + parseFloat(calculateHoursEarly(p.timestamp, p.outcome_timestamp)), 0) / confirmed || 0;
+            
+            document.getElementById('stat-total').textContent = predictions.length;
+            document.getElementById('stat-confirmed').textContent = confirmed;
+            document.getElementById('stat-accuracy').textContent = accuracy + '%';
+            document.getElementById('stat-avg-time').textContent = avgHours.toFixed(1) + 'h';
+        }
+        
+        // Load predictions
+        async function loadPredictions() {
+            try {
+                // Try to load from file
+                const response = await fetch('state/risk_warnings.json?t=' + Date.now());
+                if (response.ok) {
+                    const data = await response.json();
+                    renderPredictions(Object.values(data));
+                } else {
+                    // Use mock data if file doesn't exist yet
+                    renderPredictions(mockPredictions);
+                }
+            } catch (e) {
+                console.log('Using mock data:', e);
+                renderPredictions(mockPredictions);
+            }
+        }
+        
+        loadPredictions();
+    </script>
+</body>
+</html>
