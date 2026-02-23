@@ -269,41 +269,7 @@
     
     <script src="sparks.js"></script>
     <script>
-        // Mock data for now - will be loaded from state/risk_warnings.json
-        const mockPredictions = [
-            {
-                id: "warn_20260222_164500_EARENDEL",
-                token_symbol: "EARENDEL",
-                token_address: "0x71a09f5b9b88976ebcc79183e0e99e7d07beabaf",
-                risk_type: "dumping",
-                risk_factors: ["rapid volume spike", "concentrated wallets", "unnatural pattern"],
-                timestamp: "2026-02-22T16:45:00Z",
-                status: "confirmed",
-                outcome: "rug_confirmed",
-                outcome_timestamp: "2026-02-22T18:30:00Z",
-                metrics_at_warning: {
-                    liq_usd: 80000,
-                    vol_1h: 150000,
-                    age_minutes: 156
-                }
-            },
-            {
-                id: "warn_20260222_183000_DAEMON",
-                token_symbol: "DAEMON",
-                token_address: "0x...",
-                risk_type: "dumping",
-                risk_factors: ["parabolic pump", "low liquidity ratio", "whale concentration"],
-                timestamp: "2026-02-22T18:30:00Z",
-                status: "confirmed",
-                outcome: "dump_confirmed",
-                outcome_timestamp: "2026-02-23T00:45:00Z",
-                metrics_at_warning: {
-                    liq_usd: 25000,
-                    vol_1h: 80000,
-                    age_minutes: 45
-                }
-            }
-        ];
+        // Load real predictions from state/risk_warnings.json
         
         function formatTime(isoString) {
             const date = new Date(isoString);
@@ -396,21 +362,38 @@
             document.getElementById('stat-avg-time').textContent = avgHours.toFixed(1) + 'h';
         }
         
-        // Load predictions
+        // Load predictions from GitHub (public raw file)
         async function loadPredictions() {
             try {
-                // Try to load from file
-                const response = await fetch('state/risk_warnings.json?t=' + Date.now());
+                // Load from GitHub raw - this is always up to date
+                const response = await fetch('https://raw.githubusercontent.com/lurker-base/lurker/main/state/risk_warnings.json?t=' + Date.now(), {
+                    cache: 'no-store'
+                });
+                
                 if (response.ok) {
                     const data = await response.json();
-                    renderPredictions(Object.values(data));
-                } else {
-                    // Use mock data if file doesn't exist yet
-                    renderPredictions(mockPredictions);
+                    const predictions = Object.values(data);
+                    
+                    if (predictions.length > 0) {
+                        renderPredictions(predictions);
+                        return;
+                    }
                 }
+                
+                // Fallback: show message if no predictions yet
+                document.getElementById('prediction-list').innerHTML = 
+                    '<div class="empty">No predictions logged yet. First warnings will appear here.</div>';
+                
+                // Update stats to 0
+                document.getElementById('stat-total').textContent = '0';
+                document.getElementById('stat-confirmed').textContent = '0';
+                document.getElementById('stat-accuracy').textContent = '0%';
+                document.getElementById('stat-avg-time').textContent = '0h';
+                
             } catch (e) {
-                console.log('Using mock data:', e);
-                renderPredictions(mockPredictions);
+                console.log('Error loading predictions:', e);
+                document.getElementById('prediction-list').innerHTML = 
+                    '<div class="empty">Loading predictions from blockchain...</div>';
             }
         }
         
