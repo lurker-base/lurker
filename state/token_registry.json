@@ -458,6 +458,12 @@
           "price": 1.558e-06,
           "liq": 1928.5,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771858264847,
+          "price": 1.549e-06,
+          "liq": 1917.57,
+          "vol_5m": 0.49
         }
       ],
       "token": {
@@ -1161,6 +1167,12 @@
           "price": 0.001374,
           "liq": 82340.06,
           "vol_5m": 8711.05
+        },
+        {
+          "timestamp": 1771858264847,
+          "price": 0.001743,
+          "liq": 92508.11,
+          "vol_5m": 17567.2
         }
       ],
       "token": {
@@ -1208,6 +1220,12 @@
           "price": 5.775e-07,
           "liq": 35144.37,
           "vol_5m": 330.56
+        },
+        {
+          "timestamp": 1771858264847,
+          "price": 4.143e-07,
+          "liq": 26394.89,
+          "vol_5m": 89.51
         }
       ],
       "token": {
@@ -1249,6 +1267,12 @@
           "price": 2.189e-06,
           "liq": 159834.64,
           "vol_5m": 5.2
+        },
+        {
+          "timestamp": 1771858264847,
+          "price": 2.106e-06,
+          "liq": 155148.61,
+          "vol_5m": 1011.78
         }
       ],
       "token": {
@@ -1272,12 +1296,35 @@
           "price": 1.628e-06,
           "liq": 0,
           "vol_5m": 14826.88
+        },
+        {
+          "timestamp": 1771858264847,
+          "price": 1.361e-06,
+          "liq": 0,
+          "vol_5m": 0.07
         }
       ],
       "token": {
         "address": "0x9802a847bedf8b45665c5e4069ee1515ae2d6b07",
         "symbol": "FortClaw",
         "name": "FortClaw"
+      }
+    },
+    "0x99bb9e6bc8aef69937bd648e8658cf872412fb07": {
+      "first_seen": 1771858264847,
+      "first_seen_iso": "2026-02-23T14:51:04.847000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771858264847,
+          "price": 7.834e-06,
+          "liq": 0,
+          "vol_5m": 72736.63
+        }
+      ],
+      "token": {
+        "address": "0x99bb9e6bc8aef69937bd648e8658cf872412fb07",
+        "symbol": "YULE",
+        "name": "Yule AI"
       }
     }
   }
