@@ -108,15 +108,107 @@ Use /invite @{telegram_username}"""
     
     return False
 
-def remove_from_paid_group(telegram_username: str):
+def get_user_chat_id(telegram_username: str):
+    """Get user chat ID from subscriptions"""
+    subscriptions = load_subscriptions()
+    for sub_id, sub in subscriptions.items():
+        if sub.get('telegram_username') == telegram_username.lower().replace('@', ''):
+            return sub.get('user_chat_id')
+    return None
+
+def load_subscriptions():
+    """Load subscriptions from file"""
+    subs_file = Path(__file__).parent.parent / "state" / "subscriptions.json"
+    if subs_file.exists():
+        with open(subs_file) as f:
+            return json.load(f)
+    return {}
+
+def kick_from_group(user_chat_id: str):
+    """Kick user from paid group (bot must be admin)"""
+    import urllib.request
+    import urllib.parse
+    
+    if not BOT_TOKEN or not TELEGRAM_GROUP_ID or not user_chat_id:
+        return False
+    
+    url = f"https://api.telegram.org/bot{BOT_TOKEN}/banChatMember"
+    data = urllib.parse.urlencode({
+        'chat_id': TELEGRAM_GROUP_ID,
+        'user_id': user_chat_id,
+        'until_date': int((datetime.now(timezone.utc) + timedelta(days=1)).timestamp()),  # Ban for 1 day (can rejoin if pays)
+        'revoke_messages': False
+    }).encode()
+    
+    try:
+        req = urllib.request.Request(url, data=data, method='POST')
+        with urllib.request.urlopen(req, timeout=30) as response:
+            result = json.loads(response.read().decode())
+            if result.get('ok'):
+                print(f"[KICK] User {user_chat_id} removed from group")
+                return True
+    except Exception as e:
+        print(f"[ERROR] Failed to kick user: {e}")
+    
+    return False
+
+def unban_from_group(user_chat_id: str):
+    """Unban user from group (allows them to rejoin with new invite)"""
+    import urllib.request
+    import urllib.parse
+    
+    if not BOT_TOKEN or not TELEGRAM_GROUP_ID or not user_chat_id:
+        return False
+    
+    url = f"https://api.telegram.org/bot{BOT_TOKEN}/unbanChatMember"
+    data = urllib.parse.urlencode({
+        'chat_id': TELEGRAM_GROUP_ID,
+        'user_id': user_chat_id,
+        'only_if_banned': True
+    }).encode()
+    
+    try:
+        req = urllib.request.Request(url, data=data, method='POST')
+        with urllib.request.urlopen(req, timeout=30) as response:
+            result = json.loads(response.read().decode())
+            return result.get('ok', False)
+    except Exception as e:
+        print(f"[ERROR] Failed to unban user: {e}")
+    
+    return False
+
+def remove_from_paid_group(telegram_username: str, user_chat_id: str = None):
     """Remove expired member from paid group"""
-    admin_message = f"""⚠️ <b>Expired Member</b>
+    # Get chat ID if not provided
+    if not user_chat_id:
+        user_chat_id = get_user_chat_id(telegram_username)
+    
+    # Send warning to user
+    if user_chat_id:
+        warning_msg = f"""⏰ <b>Subscription Expired</b>
+
+Your LURKER subscription has expired.
+
+You've been removed from the private group.
+To regain access, renew your subscription:
+/subscribe pro_signals
+
+See you soon. 👁️"""
+        
+        send_telegram_message(user_chat_id, warning_msg)
+        
+        # Kick from group
+        kick_from_group(user_chat_id)
+    
+    # Notify admin
+    admin_message = f"""⚠️ <b>Expired Member Removed</b>
 
 User: @{telegram_username}
-Action: Remove from paid group
+Chat ID: {user_chat_id or 'N/A'}
+Action: Kicked from group (subscription expired)
 Time: {datetime.now(timezone.utc).isoformat()}
 
-Subscription expired, please remove from group."""
+User has been notified and can rejoin after renewal."""
     
     admin_chat = os.getenv("LURKER_ADMIN_CHAT_ID")
     if admin_chat:
@@ -168,7 +260,7 @@ Tiers: pro_signals ($19/mo), api_basic ($29/mo), api_pro ($79/mo)"""
         payment_id = args[0]
         tx_hash = args[1]
         
-        result = verify_payment(payment_id, tx_hash)
+        result = verify_payment(payment_id, tx_hash, chat_id)  # Pass chat_id for storage
         
         if "error" in result:
             return f"❌ {result['error']}"
@@ -220,9 +312,10 @@ Use /subscribe [tier] to purchase"""
         
         if expired:
             for sub in expired:
-                remove_from_paid_group(sub['telegram_username'])
+                user_chat_id = sub.get('user_chat_id')
+                remove_from_paid_group(sub['telegram_username'], user_chat_id)
             
-            return f"⚠️ Expired {len(expired)} subscriptions. Users notified for removal."
+            return f"⚠️ Expired {len(expired)} subscriptions. Users kicked from group and notified."
         else:
             return "✅ No subscriptions to expire."
     

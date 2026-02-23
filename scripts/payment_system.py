@@ -112,7 +112,7 @@ def create_payment(tier_id: str, telegram_username: str, chain: str = "base") ->
     
     return payment
 
-def verify_payment(payment_id: str, tx_hash: str) -> dict:
+def verify_payment(payment_id: str, tx_hash: str, user_chat_id: str = None) -> dict:
     """Mark payment as paid (to be called by webhook or manual check)"""
     payments = load_json(PAYMENTS_FILE)
     
@@ -135,6 +135,7 @@ def verify_payment(payment_id: str, tx_hash: str) -> dict:
         "id": f"sub_{payment_id}",
         "payment_id": payment_id,
         "telegram_username": payment["telegram_username"],
+        "user_chat_id": user_chat_id,  # Store for later kicking
         "tier_id": payment["tier_id"],
         "tier_name": tier["name"],
         "features": tier["features"],
