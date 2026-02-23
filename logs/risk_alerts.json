@@ -1,0 +1,15 @@
+{
+  "alert_20260223_013729": {
+    "timestamp": "2026-02-23T01:37:29.257909+00:00",
+    "token": {
+      "symbol": "TEST_ALERT",
+      "address": "0x1234567890abcdef1234567890abcdef12345678"
+    },
+    "risk_type": "dumping",
+    "confidence": 95,
+    "metrics": {
+      "liq_usd": 50000,
+      "vol_1h_usd": 100000
+    }
+  }
+}

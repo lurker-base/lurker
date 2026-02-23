@@ -6,7 +6,7 @@ Handles: /subscribe, /paid, /status, /renew, auto-expire
 import json
 import os
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 # Add parent to path for imports
@@ -48,24 +48,65 @@ def send_telegram_message(chat_id: str, text: str, parse_mode: str = "HTML"):
         print(f"[ERROR] Failed to send message: {e}")
         return False
 
-def invite_to_paid_group(telegram_username: str):
-    """Generate invite link for paid group"""
-    # This requires admin rights in the group
-    # For now, we just notify admins to add the user
-    admin_message = f"""🔔 <b>New Paid Member</b>
+def create_invite_link():
+    """Create invite link for private group (bot must be admin)"""
+    import urllib.request
+    import urllib.parse
+    
+    if not BOT_TOKEN or not TELEGRAM_GROUP_ID:
+        return None
+    
+    url = f"https://api.telegram.org/bot{BOT_TOKEN}/createChatInviteLink"
+    data = urllib.parse.urlencode({
+        'chat_id': TELEGRAM_GROUP_ID,
+        'member_limit': 1,  # Single-use link
+        'expires_at': int((datetime.now(timezone.utc) + timedelta(hours=24)).timestamp())
+    }).encode()
+    
+    try:
+        req = urllib.request.Request(url, data=data, method='POST')
+        with urllib.request.urlopen(req, timeout=30) as response:
+            result = json.loads(response.read().decode())
+            if result.get('ok'):
+                return result['result']['invite_link']
+    except Exception as e:
+        print(f"[ERROR] Failed to create invite link: {e}")
+    
+    return None
+
+def invite_to_paid_group(telegram_username: str, user_chat_id: str = None):
+    """Send invite link to paid user"""
+    invite_link = create_invite_link()
+    
+    if invite_link and user_chat_id:
+        # Send invite link directly to user
+        welcome_msg = f"""🎉 <b>Welcome to LURKER Pro!</b>
+
+Your payment is confirmed. Join the private signals group:
+
+👉 <a href='{invite_link}'>Click here to join</a>
+
+⚠️ This link expires in 24 hours and can only be used once.
+
+See you inside. 👁️"""
+        
+        send_telegram_message(user_chat_id, welcome_msg)
+        return True
+    else:
+        # Fallback: notify admin
+        admin_message = f"""🔔 <b>New Paid Member</b>
 
 User: @{telegram_username}
-Action: Add to paid group
+Action: Send invite link manually
 Time: {datetime.now(timezone.utc).isoformat()}
 
-Use /add_paid @{telegram_username}"""
+Use /invite @{telegram_username}"""
+        
+        admin_chat = os.getenv("LURKER_ADMIN_CHAT_ID")
+        if admin_chat:
+            send_telegram_message(admin_chat, admin_message)
     
-    # Send to admin (you)
-    admin_chat = os.getenv("LURKER_ADMIN_CHAT_ID")
-    if admin_chat:
-        send_telegram_message(admin_chat, admin_message)
-    
-    return True
+    return False
 
 def remove_from_paid_group(telegram_username: str):
     """Remove expired member from paid group"""
@@ -132,18 +173,32 @@ Tiers: pro_signals ($19/mo), api_basic ($29/mo), api_pro ($79/mo)"""
         if "error" in result:
             return f"❌ {result['error']}"
         
-        # Add to paid group
-        invite_to_paid_group(username)
+        # Send invite link directly to user
+        invite_sent = invite_to_paid_group(username, chat_id)
         
         sub = result['subscription']
-        return f"""✅ <b>Payment Confirmed!</b>
+        
+        if invite_sent:
+            return f"""✅ <b>Payment Confirmed!</b>
 
 Welcome to LURKER {sub['tier_name']}.
 
 Your subscription is active until:
 <b>{datetime.fromisoformat(sub['expires_at']).strftime('%Y-%m-%d')}</b>
 
-You will be added to the private group shortly.
+🔑 Check your messages for the private group invite link!
+
+Use /status anytime to check your subscription."""
+        else:
+            return f"""✅ <b>Payment Confirmed!</b>
+
+Welcome to LURKER {sub['tier_name']}.
+
+Your subscription is active until:
+<b>{datetime.fromisoformat(sub['expires_at']).strftime('%Y-%m-%d')}</b>
+
+⏳ You'll receive your invite link shortly (manual verification in progress).
+
 Use /status anytime to check your subscription."""
     
     elif command == "status":
