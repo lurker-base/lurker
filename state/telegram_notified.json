@@ -49,8 +49,18 @@
       "badge": "PREMIUM",
       "timestamp": "2026-02-22T22:56:36.790252+00:00",
       "symbol": "auctobot001"
+    },
+    "0x5469cc08b15030d30207194ba6fd5b5303472b07": {
+      "badge": "GOOD",
+      "timestamp": "2026-02-23T05:23:47.032874+00:00",
+      "symbol": "ClawdINT"
+    },
+    "0x392832a4cee1d52d026e831a7ba9e6f53dc17ba3": {
+      "badge": "GOOD",
+      "timestamp": "2026-02-23T05:23:47.032888+00:00",
+      "symbol": "A2A"
     }
   },
   "updates": [],
-  "last_check": "2026-02-22T22:56:37.407594+00:00"
+  "last_check": "2026-02-23T05:23:48.312604+00:00"
 }
