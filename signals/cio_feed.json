@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-02-22T23:55:06.869000+00:00",
-    "generated_at": "2026-02-22T23:55:06.869000+00:00",
+    "updated_at": "2026-02-23T04:31:32.560000+00:00",
+    "generated_at": "2026-02-23T04:31:32.560000+00:00",
     "status": "ok",
-    "count": 5,
+    "count": 2,
     "thresholds": {
       "min_liq_usd": 500,
       "min_vol_5m": 25,
@@ -12,81 +12,39 @@
       "max_age_min": 720
     },
     "risk_distribution": {
-      "medium": 2,
-      "low": 3
+      "low": 1,
+      "medium": 1
     },
     "rejected": {
-      "duplicate": 1,
-      "too_old": 3
+      "too_old": 3,
+      "low_tx": 2
     },
     "source": "ultra_launch_scanner"
   },
   "candidates": [
     {
       "token": {
-        "address": "0xa87e0283b8814f37e8631ba266108351fb4b0b07",
-        "symbol": "DAEMON",
-        "name": "DAEMON"
+        "address": "0x5469cc08b15030d30207194ba6fd5b5303472b07",
+        "symbol": "ClawdINT",
+        "name": "ClawdINT"
       },
       "pair": {
-        "address": "0x3634a81d49254c5818a120b7010488d6a3e22147706e261c4e33134f93a0ef17",
+        "address": "0xbe361690877bc375bb9f0a6c74e2d4d52ec0cf8494d22e199fe2b7cc6ab0b579",
         "dex": "uniswap",
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 20908.87,
-        "vol_5m_usd": 36463.48,
-        "vol_1h_usd": 124018.31,
-        "txns_5m": 1065,
-        "price_usd": 2.017e-07
+        "liq_usd": 124192.28,
+        "vol_5m_usd": 12795.43,
+        "vol_1h_usd": 92689.86,
+        "txns_5m": 138,
+        "price_usd": 2.688e-06
       },
       "timestamps": {
-        "pair_created_at": "2026-02-22T23:08:47+00:00",
-        "token_first_seen": "2026-02-22T23:55:06.867000+00:00",
-        "age_minutes": 46.3,
-        "age_hours": 0.77
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.99
-      },
-      "risks": [
-        "dumping"
-      ],
-      "risk_level": "medium",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    },
-    {
-      "token": {
-        "address": "0x7dd0e05938e63a8c1b7955ac095b391615acbba3",
-        "symbol": "SCHLONG",
-        "name": "OpenSchlong"
-      },
-      "pair": {
-        "address": "0x67c27ec35172659646b7f08599c8a54308544ef3b99133827e2f086efc157f5a",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 52731.38,
-        "vol_5m_usd": 5634.08,
-        "vol_1h_usd": 185934.34,
-        "txns_5m": 34,
-        "price_usd": 6.023e-07
-      },
-      "timestamps": {
-        "pair_created_at": "2026-02-22T22:50:31+00:00",
-        "token_first_seen": "2026-02-22T23:55:06.867000+00:00",
-        "age_minutes": 64.6,
-        "age_hours": 1.08
+        "pair_created_at": "2026-02-23T03:13:51+00:00",
+        "token_first_seen": "2026-02-23T04:31:32.555000+00:00",
+        "age_minutes": 77.7,
+        "age_hours": 1.29
       },
       "scores": {
         "cio_score": 100,
@@ -106,117 +64,38 @@
     },
     {
       "token": {
-        "address": "0x59f2e635783d6e7a94ee8ecf3c913d481dc13166",
-        "symbol": "KIMCHI",
-        "name": "Based Kimchi"
+        "address": "0x392832a4cee1d52d026e831a7ba9e6f53dc17ba3",
+        "symbol": "A2A",
+        "name": "AgentNet"
       },
       "pair": {
-        "address": "0xead587df6ab495788dad157c6d23381b5a31d0d5",
+        "address": "0x6395ae92955d1f0419d372f7841c053fdaecf1b197bb616f250ab6110013ae25",
         "dex": "uniswap",
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 81680.3,
-        "vol_5m_usd": 13111.16,
-        "vol_1h_usd": 185418.93,
-        "txns_5m": 78,
-        "price_usd": 0.0007959
+        "liq_usd": 34441.55,
+        "vol_5m_usd": 80.99,
+        "vol_1h_usd": 6893.78,
+        "txns_5m": 2,
+        "price_usd": 3.55e-07
       },
       "timestamps": {
-        "pair_created_at": "2026-02-22T21:41:25+00:00",
-        "token_first_seen": "2026-02-22T23:55:06.867000+00:00",
-        "age_minutes": 133.7,
-        "age_hours": 2.23
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.96
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    },
-    {
-      "token": {
-        "address": "0x5dc1db3b262793fb00ef0d973ed052daa5d27b07",
-        "symbol": "ODAI",
-        "name": "ODEI AI"
-      },
-      "pair": {
-        "address": "0xf3203c2d6d74dee2b07b94d780a25d28fa7de440b226bef0490bf4e73e56a19f",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 363586.37,
-        "vol_5m_usd": 971.05,
-        "vol_1h_usd": 28558.55,
-        "txns_5m": 1,
-        "price_usd": 4.829e-06
-      },
-      "timestamps": {
-        "pair_created_at": "2026-02-22T21:36:19+00:00",
-        "token_first_seen": "2026-02-22T22:57:59.983000+00:00",
-        "age_minutes": 138.8,
-        "age_hours": 2.31
+        "pair_created_at": "2026-02-23T02:18:53+00:00",
+        "token_first_seen": "2026-02-23T04:31:32.556000+00:00",
+        "age_minutes": 132.7,
+        "age_hours": 2.21
       },
       "scores": {
         "cio_score": 100,
         "freshness": 0.96
       },
       "risks": [
-        "low_activity"
+        "low_activity",
+        "low_volume"
       ],
       "risk_level": "medium",
-      "source": "boosts",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": false,
-        "quality_score": 75
-      }
-    },
-    {
-      "token": {
-        "address": "0xfac66d173bb6e1ee1c3d2321dc13c25e36c3e525",
-        "symbol": "Clawster",
-        "name": "Claw Lobster"
-      },
-      "pair": {
-        "address": "0xb8b44a44acfc7f944b23230f743faf0054c45483",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 74720.91,
-        "vol_5m_usd": 15613.46,
-        "vol_1h_usd": 130602.53,
-        "txns_5m": 25,
-        "price_usd": 0.001348
-      },
-      "timestamps": {
-        "pair_created_at": "2026-02-22T20:25:05+00:00",
-        "token_first_seen": "2026-02-22T22:57:59.983000+00:00",
-        "age_minutes": 210.0,
-        "age_hours": 3.5
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.94
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "boosts",
+      "source": "profiles",
       "status": "observing",
       "quality": {
         "has_profile": true,
