@@ -1,0 +1,38 @@
+name: LURKER Risk Alerts — Telegram Notifications
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'  # Check every 5 minutes
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  risk-alerts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check for high-risk tokens
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          LURKER_ALERTS_CHAT_ID: ${{ secrets.LURKER_ALERTS_CHAT_ID }}
+        run: |
+          cd scripts
+          python3 -c "
+import json
+import sys
+sys.path.insert(0, '.')
+from risk_alerts import check_and_alert
+
+# Load current feed
+with open('../signals/cio_feed.json') as f:
+    data = json.load(f)
+
+# Check each candidate
+for c in data.get('candidates', []):
+    if c.get('risk_level') == 'high':
+        check_and_alert(c)
+"

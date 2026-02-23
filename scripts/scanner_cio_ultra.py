@@ -448,6 +448,15 @@ def scan():
     for c in candidates:
         risk_counts[c["risk_level"]] += 1
     
+    # Send Telegram alerts for high-risk tokens
+    try:
+        import risk_alerts
+        for c in candidates:
+            if c["risk_level"] == "high":
+                risk_alerts.check_and_alert(c)
+    except Exception as e:
+        print(f"[SCANNER] Alert error: {e}")
+    
     # Determine status
     if len(candidates) > 0:
         status = "ok"
