@@ -1,69 +1,24 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-02-23T16:52:07.136000+00:00",
-    "generated_at": "2026-02-23T16:52:07.136000+00:00",
-    "status": "ok",
-    "count": 1,
+    "updated_at": "2026-02-23T17:07:15.934000+00:00",
+    "generated_at": "2026-02-23T17:07:15.934000+00:00",
+    "status": "calm",
+    "count": 0,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
       "min_tx_5m": 1,
       "max_age_min": 10080
     },
-    "risk_distribution": {
-      "medium": 1
-    },
+    "risk_distribution": {},
     "rejected": {
       "too_old": 5,
-      "low_liq": 5,
+      "low_liq": 6,
+      "low_tx": 1,
       "low_volume": 2
     },
     "source": "ultra_launch_scanner"
   },
-  "candidates": [
-    {
-      "token": {
-        "address": "0x5b2193fdc451c1f847be09ca9d13a4bf60f8c86b",
-        "symbol": "UP",
-        "name": "Superform"
-      },
-      "pair": {
-        "address": "0x1e726f3177a933cc134fd0ea7c326eab270e0137",
-        "dex": "aerodrome",
-        "quote": "cbBTC"
-      },
-      "metrics": {
-        "liq_usd": 504775.46,
-        "vol_5m_usd": 19.16,
-        "vol_1h_usd": 1372.49,
-        "txns_5m": 1,
-        "price_usd": 0.03876
-      },
-      "timestamps": {
-        "pair_created_at": "2026-02-23T16:06:39.798000+00:00",
-        "token_first_seen": "2026-02-23T16:06:39.798000+00:00",
-        "age_minutes": 45.5,
-        "age_hours": 0.76
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.99
-      },
-      "risks": [
-        "low_activity",
-        "low_volume"
-      ],
-      "risk_level": "medium",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    }
-  ]
+  "candidates": []
 }

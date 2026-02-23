@@ -512,6 +512,12 @@
           "price": 1.53e-06,
           "liq": 1895.24,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771866435929,
+          "price": 1.53e-06,
+          "liq": 1895.24,
+          "vol_5m": 0.0
         }
       ],
       "token": {
@@ -1557,6 +1563,12 @@
           "price": 4.005e-05,
           "liq": 12570.47,
           "vol_5m": 0.86
+        },
+        {
+          "timestamp": 1771866435929,
+          "price": 4.026e-05,
+          "liq": 12640.92,
+          "vol_5m": 0.86
         }
       ],
       "token": {
@@ -1640,6 +1652,18 @@
           "price": 2.049e-07,
           "liq": 0,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771866435929,
+          "price": 1.875e-07,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771866435929,
+          "price": 1.875e-07,
+          "liq": 0,
+          "vol_5m": 0.0
         }
       ],
       "token": {
@@ -1687,6 +1711,12 @@
           "price": 2.906e-06,
           "liq": 0,
           "vol_5m": 12140.85
+        },
+        {
+          "timestamp": 1771866435929,
+          "price": 2.43e-06,
+          "liq": 0,
+          "vol_5m": 21850.17
         }
       ],
       "token": {
@@ -1728,6 +1758,12 @@
           "price": 2.229e-06,
           "liq": 0,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771866435929,
+          "price": 2.229e-06,
+          "liq": 0,
+          "vol_5m": 0.0
         }
       ],
       "token": {
@@ -1760,6 +1796,12 @@
         },
         {
           "timestamp": 1771865527127,
+          "price": 1.879e-07,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771866435929,
           "price": 1.879e-07,
           "liq": 0,
           "vol_5m": 0.0
@@ -1798,12 +1840,35 @@
           "price": 0.03876,
           "liq": 504775.46,
           "vol_5m": 19.16
+        },
+        {
+          "timestamp": 1771866435929,
+          "price": 0.03867,
+          "liq": 503699.85,
+          "vol_5m": 0.0
         }
       ],
       "token": {
         "address": "0x5b2193fdc451c1f847be09ca9d13a4bf60f8c86b",
         "symbol": "UP",
         "name": "Superform"
+      }
+    },
+    "0xde4b3bdfc8203f5641ceeaf203362d34d49c2b07": {
+      "first_seen": 1771866435929,
+      "first_seen_iso": "2026-02-23T17:07:15.929000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771866435929,
+          "price": 1.345e-06,
+          "liq": 0,
+          "vol_5m": 7345.09
+        }
+      ],
+      "token": {
+        "address": "0xde4b3bdfc8203f5641ceeaf203362d34d49c2b07",
+        "symbol": "BOUNCERBOT",
+        "name": "Clawd Bouncer Bot"
       }
     }
   }
