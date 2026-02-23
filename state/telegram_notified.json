@@ -59,8 +59,23 @@
       "badge": "GOOD",
       "timestamp": "2026-02-23T05:23:47.032888+00:00",
       "symbol": "A2A"
+    },
+    "0xc18db1ed7d44eb6b705dd9b928001f190314d519": {
+      "badge": "PREMIUM",
+      "timestamp": "2026-02-23T14:31:13.216480+00:00",
+      "symbol": "HEDW"
+    },
+    "0xdf25a0f930029cd46aebfa6ff988ad04c0321b07": {
+      "badge": "PREMIUM",
+      "timestamp": "2026-02-23T14:31:13.216497+00:00",
+      "symbol": "CASH"
+    },
+    "0xa8db47922ec9ea07b5bb5e195b3825179f7702d7": {
+      "badge": "GOOD",
+      "timestamp": "2026-02-23T14:31:13.216501+00:00",
+      "symbol": "KITCHEN"
     }
   },
   "updates": [],
-  "last_check": "2026-02-23T11:10:13.533916+00:00"
+  "last_check": "2026-02-23T14:31:19.035688+00:00"
 }
