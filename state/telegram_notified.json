@@ -74,8 +74,13 @@
       "badge": "GOOD",
       "timestamp": "2026-02-23T14:31:13.216501+00:00",
       "symbol": "KITCHEN"
+    },
+    "0xc5898891919a3f8fc6d0d4d502e47ced11fb27ce": {
+      "badge": "PREMIUM",
+      "timestamp": "2026-02-23T23:51:48.336478+00:00",
+      "symbol": "HCLAW"
     }
   },
   "updates": [],
-  "last_check": "2026-02-23T22:26:27.559889+00:00"
+  "last_check": "2026-02-23T23:51:48.925951+00:00"
 }
