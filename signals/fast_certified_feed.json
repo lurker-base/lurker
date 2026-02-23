@@ -1,7 +1,7 @@
 {
   "schema": "lurker_fast_certified_v1",
   "meta": {
-    "updated_at": "2026-02-22T17:01:22.750705+00:00",
+    "updated_at": "2026-02-23T05:22:22.559587+00:00",
     "status": "calm",
     "source": "cio_recheck",
     "count": 0,
@@ -12,11 +12,8 @@
       "min_tx_6h": 25
     },
     "rejected": {
-      "age_0.8h": 1,
-      "age_1.5h": 1,
-      "age_1.7h": 1,
-      "age_2.5h": 1,
-      "age_3.0h": 1
+      "age_2.1h": 1,
+      "age_3.1h": 1
     }
   },
   "fast_certified": []
