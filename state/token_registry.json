@@ -410,6 +410,12 @@
           "price": 1.558e-06,
           "liq": 1928.5,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771851016966,
+          "price": 1.558e-06,
+          "liq": 1928.5,
+          "vol_5m": 0.0
         }
       ],
       "token": {
@@ -1060,6 +1066,23 @@
         "address": "0x1105d572ef832b2346af6ac81726b485f9508b07",
         "symbol": "THERIAN",
         "name": "The Animal Within You"
+      }
+    },
+    "0xc18db1ed7d44eb6b705dd9b928001f190314d519": {
+      "first_seen": 1771851016965,
+      "first_seen_iso": "2026-02-23T12:50:16.965000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771851016965,
+          "price": 0.0001473,
+          "liq": 26575.97,
+          "vol_5m": 5621.54
+        }
+      ],
+      "token": {
+        "address": "0xc18db1ed7d44eb6b705dd9b928001f190314d519",
+        "symbol": "HEDW",
+        "name": "Hedwig"
       }
     }
   }

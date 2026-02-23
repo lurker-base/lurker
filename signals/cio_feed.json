@@ -1,23 +1,65 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-02-23T12:30:24.418000+00:00",
-    "generated_at": "2026-02-23T12:30:24.418000+00:00",
-    "status": "calm",
-    "count": 0,
+    "updated_at": "2026-02-23T12:50:16.969000+00:00",
+    "generated_at": "2026-02-23T12:50:16.969000+00:00",
+    "status": "ok",
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
       "min_tx_5m": 1,
       "max_age_min": 10080
     },
-    "risk_distribution": {},
+    "risk_distribution": {
+      "low": 1
+    },
     "rejected": {
       "too_old": 2,
-      "low_liq": 1,
       "low_volume": 1
     },
     "source": "ultra_launch_scanner"
   },
-  "candidates": []
+  "candidates": [
+    {
+      "token": {
+        "address": "0xc18db1ed7d44eb6b705dd9b928001f190314d519",
+        "symbol": "HEDW",
+        "name": "Hedwig"
+      },
+      "pair": {
+        "address": "0xd5907ea812172cc1946ceb68497d0fce172cd72e",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 26575.97,
+        "vol_5m_usd": 5621.54,
+        "vol_1h_usd": 53947.14,
+        "txns_5m": 44,
+        "price_usd": 0.0001473
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-23T11:07:39+00:00",
+        "token_first_seen": "2026-02-23T12:50:16.965000+00:00",
+        "age_minutes": 102.6,
+        "age_hours": 1.71
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.97
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    }
+  ]
 }
