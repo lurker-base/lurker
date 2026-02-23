@@ -1,8 +1,8 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-02-23T15:36:24.162000+00:00",
-    "generated_at": "2026-02-23T15:36:24.162000+00:00",
+    "updated_at": "2026-02-23T15:51:31.358000+00:00",
+    "generated_at": "2026-02-23T15:51:31.358000+00:00",
     "status": "ok",
     "count": 2,
     "thresholds": {
@@ -12,12 +12,11 @@
       "max_age_min": 10080
     },
     "risk_distribution": {
-      "low": 1,
-      "medium": 1
+      "medium": 2
     },
     "rejected": {
       "too_old": 2,
-      "low_liq": 5,
+      "low_liq": 6,
       "low_volume": 2
     },
     "source": "ultra_launch_scanner"
@@ -35,24 +34,26 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 81041.18,
-        "vol_5m_usd": 29619.39,
-        "vol_1h_usd": 218696.17,
-        "txns_5m": 101,
-        "price_usd": 0.0008198
+        "liq_usd": 55157.97,
+        "vol_5m_usd": 22268.35,
+        "vol_1h_usd": 319973.11,
+        "txns_5m": 52,
+        "price_usd": 0.0003759
       },
       "timestamps": {
         "pair_created_at": "2026-02-23T13:50:21+00:00",
         "token_first_seen": "2026-02-23T15:21:17.098000+00:00",
-        "age_minutes": 106.1,
-        "age_hours": 1.77
+        "age_minutes": 121.2,
+        "age_hours": 2.02
       },
       "scores": {
         "cio_score": 100,
         "freshness": 0.97
       },
-      "risks": [],
-      "risk_level": "low",
+      "risks": [
+        "dumping"
+      ],
+      "risk_level": "medium",
       "source": "profiles",
       "status": "observing",
       "quality": {
@@ -75,24 +76,24 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 147889.66,
-        "vol_5m_usd": 10175.79,
-        "vol_1h_usd": 23081.04,
-        "txns_5m": 16,
-        "price_usd": 1.953e-06
+        "liq_usd": 158054.46,
+        "vol_5m_usd": 1114.95,
+        "vol_1h_usd": 25959.59,
+        "txns_5m": 2,
+        "price_usd": 2.162e-06
       },
       "timestamps": {
         "pair_created_at": "2026-02-20T11:14:23+00:00",
         "token_first_seen": "2026-02-23T13:35:34.911000+00:00",
-        "age_minutes": 4582.0,
-        "age_hours": 76.37
+        "age_minutes": 4597.1,
+        "age_hours": 76.62
       },
       "scores": {
         "cio_score": 100,
         "freshness": 0
       },
       "risks": [
-        "dumping"
+        "low_activity"
       ],
       "risk_level": "medium",
       "source": "boosts",

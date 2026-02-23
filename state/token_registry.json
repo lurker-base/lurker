@@ -482,6 +482,12 @@
           "price": 1.549e-06,
           "liq": 1917.57,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771861891354,
+          "price": 1.549e-06,
+          "liq": 1917.57,
+          "vol_5m": 0.0
         }
       ],
       "token": {
@@ -1321,6 +1327,12 @@
           "price": 1.953e-06,
           "liq": 147889.66,
           "vol_5m": 10175.79
+        },
+        {
+          "timestamp": 1771861891354,
+          "price": 2.162e-06,
+          "liq": 158054.46,
+          "vol_5m": 1114.95
         }
       ],
       "token": {
@@ -1368,6 +1380,12 @@
           "price": 1.895e-07,
           "liq": 0,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771861891354,
+          "price": 1.896e-07,
+          "liq": 0,
+          "vol_5m": 0.0
         }
       ],
       "token": {
@@ -1403,6 +1421,12 @@
           "price": 6.309e-06,
           "liq": 0,
           "vol_5m": 10527.04
+        },
+        {
+          "timestamp": 1771861891354,
+          "price": 4.118e-06,
+          "liq": 0,
+          "vol_5m": 17910.38
         }
       ],
       "token": {
@@ -1426,6 +1450,12 @@
           "price": 0.0008198,
           "liq": 81041.18,
           "vol_5m": 29619.39
+        },
+        {
+          "timestamp": 1771861891354,
+          "price": 0.0003759,
+          "liq": 55157.97,
+          "vol_5m": 22268.35
         }
       ],
       "token": {
@@ -1449,6 +1479,12 @@
           "price": 3.908e-05,
           "liq": 12402.78,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771861891354,
+          "price": 3.972e-05,
+          "liq": 12557.95,
+          "vol_5m": 8.21
         }
       ],
       "token": {
@@ -1472,6 +1508,18 @@
           "price": 1.784e-06,
           "liq": 0,
           "vol_5m": 14227.9
+        },
+        {
+          "timestamp": 1771861891354,
+          "price": 2.027e-06,
+          "liq": 0,
+          "vol_5m": 19839.79
+        },
+        {
+          "timestamp": 1771861891354,
+          "price": 2.027e-06,
+          "liq": 0,
+          "vol_5m": 19839.79
         }
       ],
       "token": {
@@ -1489,12 +1537,35 @@
           "price": 2.766e-06,
           "liq": 0,
           "vol_5m": 9716.54
+        },
+        {
+          "timestamp": 1771861891354,
+          "price": 3.546e-06,
+          "liq": 0,
+          "vol_5m": 17236.61
         }
       ],
       "token": {
         "address": "0x8e27a4cac917563295de9b07d594f7f3e0fdcb07",
         "symbol": "ClawnchPedia",
         "name": "ClawnchPedia"
+      }
+    },
+    "0xb5fae1ef16015c52bf33fcb8d1b150d465139ba3": {
+      "first_seen": 1771861891354,
+      "first_seen_iso": "2026-02-23T15:51:31.354000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771861891354,
+          "price": 2.229e-06,
+          "liq": 0,
+          "vol_5m": 0.0
+        }
+      ],
+      "token": {
+        "address": "0xb5fae1ef16015c52bf33fcb8d1b150d465139ba3",
+        "symbol": "buildgd",
+        "name": "build.gd"
       }
     }
   }
