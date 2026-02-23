@@ -26,11 +26,35 @@ def save_json(path: Path, data: dict):
     with open(path, 'w') as f:
         json.dump(data, f, indent=2)
 
+def recalculate_age(token_data: dict) -> float:
+    """Recalcule l'âge du token en heures depuis maintenant"""
+    timestamps = token_data.get('timestamps', {})
+    first_seen = timestamps.get('token_first_seen')
+    
+    if first_seen:
+        try:
+            # Parse ISO timestamp
+            first_dt = datetime.fromisoformat(first_seen.replace('Z', '+00:00'))
+            now = datetime.now(timezone.utc)
+            age_hours = (now - first_dt).total_seconds() / 3600
+            
+            # Met à jour les timestamps
+            timestamps['age_hours'] = round(age_hours, 2)
+            timestamps['age_minutes'] = round(age_hours * 60, 1)
+            
+            return age_hours
+        except:
+            pass
+    
+    return timestamps.get('age_hours', 0)
+
 def calculate_badges(token_data: dict) -> List[str]:
     """Calcule les badges selon les métriques"""
     badges = []
     metrics = token_data.get('metrics', {})
-    age_hours = token_data.get('timestamps', {}).get('age_hours', 0)
+    
+    # Recalculer l'âge dynamiquement
+    age_hours = recalculate_age(token_data)
     
     # Âge
     if age_hours < 2:
