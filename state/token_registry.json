@@ -422,6 +422,12 @@
           "price": 1.558e-06,
           "liq": 1928.5,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771852828560,
+          "price": 1.558e-06,
+          "liq": 1928.5,
+          "vol_5m": 0.0
         }
       ],
       "token": {
@@ -1089,12 +1095,35 @@
           "price": 0.0002746,
           "liq": 36401.5,
           "vol_5m": 13348.36
+        },
+        {
+          "timestamp": 1771852828560,
+          "price": 0.0005377,
+          "liq": 51085.27,
+          "vol_5m": 15596.41
         }
       ],
       "token": {
         "address": "0xc18db1ed7d44eb6b705dd9b928001f190314d519",
         "symbol": "HEDW",
         "name": "Hedwig"
+      }
+    },
+    "0xa8db47922ec9ea07b5bb5e195b3825179f7702d7": {
+      "first_seen": 1771852828559,
+      "first_seen_iso": "2026-02-23T13:20:28.559000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771852828559,
+          "price": 5.569e-07,
+          "liq": 34052.65,
+          "vol_5m": 3457.13
+        }
+      ],
+      "token": {
+        "address": "0xa8db47922ec9ea07b5bb5e195b3825179f7702d7",
+        "symbol": "KITCHEN",
+        "name": "CLAWD KITCHEN"
       }
     }
   }
