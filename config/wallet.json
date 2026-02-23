@@ -1,0 +1,14 @@
+{
+  "base": {
+    "address": "0x2455970b449774e9E51ab6d19118dd596275971c",
+    "currency": "USDC",
+    "token_contract": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "chain_id": 8453
+  },
+  "ethereum": {
+    "address": "0x2455970b449774e9E51ab6d19118dd596275971c",
+    "currency": "USDT",
+    "token_contract": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "chain_id": 1
+  }
+}
