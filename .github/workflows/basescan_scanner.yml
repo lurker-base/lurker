@@ -23,8 +23,8 @@ jobs:
       - name: Install requests
         run: pip install requests
 
-      - name: Run Base RPC scanner
-        run: python3 scripts/scanner_base_rpc.py
+      - name: Run Hybrid Scanner (RPC + DexScreener)
+        run: python3 scripts/scanner_hybrid.py
 
       - name: Commit updates
         run: |

@@ -34,26 +34,87 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
         }
         
         .fresh-token.new {
             border-left: 4px solid #00ff00;
         }
         
+        .fresh-token.has-liquidity {
+            border-left: 4px solid var(--accent);
+        }
+        
+        .token-info {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .token-symbol {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+        
         .token-address {
             font-family: 'SF Mono', monospace;
-            font-size: 0.9rem;
-        }
-        
-        .token-age {
+            font-size: 0.8rem;
             color: var(--text-muted);
-            font-size: 0.875rem;
+            word-break: break-all;
         }
         
-        .token-source {
+        .token-meta {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin-top: 0.5rem;
+        }
+        
+        .token-metrics {
+            text-align: right;
+            min-width: 150px;
+        }
+        
+        .metric-value {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        
+        .metric-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+        
+        .source-badge {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        
+        .source-rpc {
+            background: rgba(255,193,7,0.2);
+            color: #ffc107;
+        }
+        
+        .source-dex {
+            background: rgba(0,255,136,0.2);
+            color: #00ff88;
+        }
+        
+        .links {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        
+        .links a {
             font-size: 0.75rem;
             color: var(--accent);
-            text-transform: uppercase;
         }
     </style>
 </head>
@@ -76,7 +137,7 @@
         <div class="container">
             <div class="fresh-header">
                 <h1>fresh</h1>
-                <p>newly created erc20 on base. detected by basescan. no filters.</p>
+                <p>new tokens detected via rpc + dexscreener. hybrid detection.</p>
             </div>
             
             <div id="tokens-container">
@@ -87,16 +148,24 @@
 
     <script src="sparks.js"></script>
     <script>
+        function formatNumber(num) {
+            if (!num) return '-';
+            if (num >= 1e9) return '$' + (num / 1e9).toFixed(2) + 'B';
+            if (num >= 1e6) return '$' + (num / 1e6).toFixed(2) + 'M';
+            if (num >= 1e3) return '$' + (num / 1e3).toFixed(2) + 'K';
+            return '$' + num.toFixed(2);
+        }
+        
         async function loadFresh() {
             try {
-                const response = await fetch('https://raw.githubusercontent.com/lurker-base/lurker/main/signals/basescan_feed.json?t=' + Date.now());
+                const response = await fetch('https://raw.githubusercontent.com/lurker-base/lurker/main/signals/hybrid_feed.json?t=' + Date.now());
                 const data = await response.json();
                 
                 const tokens = data.candidates || [];
                 const container = document.getElementById('tokens-container');
                 
                 if (tokens.length === 0) {
-                    container.innerHTML = '<div class="loading">no fresh tokens detected yet</div>';
+                    container.innerHTML = '<div class="loading">no fresh tokens detected yet. scanning every 5 minutes...</div>';
                     return;
                 }
                 
@@ -105,15 +174,38 @@
                 
                 container.innerHTML = tokens.slice(0, 50).map(t => {
                     const isNew = (t.age_hours || 0) < 1;
+                    const hasLiquidity = t.dexscreener?.liquidity?.usd > 0;
+                    const sourceClass = t.source === 'hybrid_dexscreener' ? 'source-dex' : 'source-rpc';
+                    const sourceLabel = t.source === 'hybrid_dexscreener' ? 'dex' : 'rpc';
+                    
                     return `
-                        <div class="fresh-token ${isNew ? 'new' : ''}">
-                            <div>
+                        <div class="fresh-token ${isNew ? 'new' : ''} ${hasLiquidity ? 'has-liquidity' : ''}">
+                            <div class="token-info">
+                                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                    <span class="token-symbol">${t.token.symbol}</span>
+                                    <span class="source-badge ${sourceClass}">${sourceLabel}</span>
+                                </div>
                                 <div class="token-address">${t.token.address}</div>
-                                <div class="token-age">${t.age_hours?.toFixed(1) || '?'}h old • detected ${new Date(t.detected_at).toLocaleTimeString()}</div>
+                                <div class="token-meta">
+                                    <span>${t.age_hours?.toFixed(1) || '?'}h old</span>
+                                    <span>block ${t.block || '?'}</span>
+                                </div>
+                                <div class="links">
+                                    ${t.token.address && !t.token.address.startsWith('pending') ? `
+                                        <a href="https://basescan.org/address/${t.token.address}" target="_blank">BaseScan</a>
+                                        <a href="https://dexscreener.com/base/${t.token.address}" target="_blank">DexScreener</a>
+                                    ` : '<span style="color: var(--text-muted); font-size: 0.75rem;">awaiting detection...</span>'}
+                                </div>
                             </div>
-                            <div style="text-align: right;">
-                                <div class="token-source">${t.source}</div>
-                                <a href="https://basescan.org/address/${t.token.address}" target="_blank" style="font-size: 0.75rem; color: var(--accent);">View →</a>
+                            <div class="token-metrics">
+                                ${hasLiquidity ? `
+                                    <div class="metric-value">${formatNumber(t.dexscreener.liquidity.usd)}</div>
+                                    <div class="metric-label">liquidity</div>
+                                    ${t.dexscreener.volume?.h24 ? `
+                                        <div class="metric-value" style="margin-top: 0.5rem;">${formatNumber(t.dexscreener.volume.h24)}</div>
+                                        <div class="metric-label">volume 24h</div>
+                                    ` : ''}
+                                ` : '<div class="metric-label">no liquidity yet</div>'}
                             </div>
                         </div>
                     `;
@@ -121,7 +213,7 @@
                 
             } catch (e) {
                 document.getElementById('tokens-container').innerHTML = 
-                    '<div class="loading">error loading fresh tokens</div>';
+                    '<div class="loading">error loading fresh tokens. retrying...</div>';
             }
         }
         
