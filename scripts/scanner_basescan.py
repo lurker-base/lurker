@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-LURKER BaseScan Scanner - Detect fresh ERC20 contracts on Base
+LURKER BaseScan Scanner - Detect fresh ERC20 contracts on Base (API V2)
 No liquidity filter - just NEW tokens
 """
 import json
@@ -12,8 +12,6 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 BASESCAN_API_KEY = os.getenv("BASESCAN_API_KEY", "")
-BASESCAN_URL = "https://api.basescan.org/api"
-CHAIN = "base"
 FEED_FILE = Path(__file__).parent.parent / "signals" / "basescan_feed.json"
 STATE_FILE = Path(__file__).parent.parent / "state" / "basescan_seen.json"
 
@@ -31,53 +29,27 @@ def save_json(path: Path, data: dict):
     with open(path, 'w') as f:
         json.dump(data, f, indent=2)
 
-def get_recent_contracts():
-    """Get recently created contracts from BaseScan"""
+def get_recent_transactions():
+    """Get recent transactions from BaseScan V2 API"""
     if not BASESCAN_API_KEY:
         print("[BASESCAN] No API key configured")
         return []
     
-    # Get latest block number
     try:
-        r = requests.get(
-            BASESCAN_URL,
-            params={
-                "module": "proxy",
-                "action": "eth_blockNumber",
-                "apikey": BASESCAN_API_KEY
-            },
-            timeout=30
-        )
-        latest_block = int(r.json().get("result", "0"), 16)
+        # V2 API endpoint
+        url = f"https://api.basescan.org/api?module=account&action=txlistinternal&startblock=0&endblock=99999999&sort=desc&apikey={BASESCAN_API_KEY}"
         
-        # Look back ~1000 blocks (~3-4 hours on Base)
-        from_block = latest_block - 1000
-        
-        print(f"[BASESCAN] Scanning blocks {from_block} to {latest_block}")
-        
-        # Get transactions with contract creation
-        r = requests.get(
-            BASESCAN_URL,
-            params={
-                "module": "account",
-                "action": "txlistinternal",
-                "startblock": from_block,
-                "endblock": latest_block,
-                "sort": "desc",
-                "apikey": BASESCAN_API_KEY
-            },
-            timeout=30
-        )
-        
+        r = requests.get(url, timeout=30)
         data = r.json()
+        
         if data.get("status") != "1":
-            print(f"[BASESCAN] API error: {data.get('result', data.get('message'))}")
+            print(f"[BASESCAN] API error: {data.get('message', 'Unknown error')}")
             return []
         
-        # Filter contract creations
+        # Filter contract creations (where contractAddress is not empty)
         contracts = []
-        for tx in data.get("result", []):
-            if tx.get("contractAddress"):
+        for tx in data.get("result", [])[:100]:  # Last 100 transactions
+            if tx.get("contractAddress") and tx["contractAddress"] != "":
                 contracts.append({
                     "address": tx["contractAddress"],
                     "creator": tx.get("from", ""),
@@ -92,43 +64,26 @@ def get_recent_contracts():
         print(f"[BASESCAN] Error: {e}")
         return []
 
-def check_erc20(address: str) -> dict:
-    """Check if contract is ERC20 and get basic info"""
+def check_contract(address: str) -> dict:
+    """Check if contract exists and get basic info"""
     if not BASESCAN_API_KEY:
         return None
     
     try:
-        # Get contract ABI
-        r = requests.get(
-            BASESCAN_URL,
-            params={
-                "module": "contract",
-                "action": "getabi",
+        # Get contract code
+        url = f"https://api.basescan.org/api?module=proxy&action=eth_getCode&address={address}&tag=latest&apikey={BASESCAN_API_KEY}"
+        r = requests.get(url, timeout=30)
+        data = r.json()
+        
+        code = data.get("result", "0x")
+        if code and code != "0x":
+            # Has code = is contract
+            return {
                 "address": address,
-                "apikey": BASESCAN_API_KEY
-            },
-            timeout=30
-        )
-        
-        abi_data = r.json()
-        if abi_data.get("status") != "1":
-            return None
-        
-        abi = abi_data.get("result", "")
-        
-        # Check for ERC20 functions
-        is_erc20 = all(x in abi for x in ["totalSupply", "balanceOf", "transfer"])
-        
-        if not is_erc20:
-            return None
-        
-        # Try to get token info
-        # We'll use a simple heuristic - check if it has Transfer event
-        return {
-            "address": address,
-            "is_erc20": True,
-            "detected_at": now().isoformat()
-        }
+                "has_code": True,
+                "detected_at": now().isoformat()
+            }
+        return None
         
     except Exception as e:
         print(f"[BASESCAN] Error checking {address}: {e}")
@@ -137,7 +92,7 @@ def check_erc20(address: str) -> dict:
 def scan_fresh_tokens():
     """Main scan function"""
     print("="*60)
-    print("[BASESCAN] LURKER Fresh Token Scanner")
+    print("[BASESCAN] LURKER Fresh Token Scanner V2")
     print("="*60)
     
     if not BASESCAN_API_KEY:
@@ -149,19 +104,19 @@ def scan_fresh_tokens():
     seen = load_json(STATE_FILE)
     
     # Get recent contracts
-    contracts = get_recent_contracts()
-    print(f"[BASESCAN] Found {len(contracts)} recent contracts")
+    contracts = get_recent_transactions()
+    print(f"[BASESCAN] Found {len(contracts)} recent contract creations")
     
     new_tokens = []
     
-    for contract in contracts[:50]:  # Limit to 50 most recent
+    for contract in contracts[:20]:  # Limit to 20 most recent
         addr = contract["address"]
         
         if addr in seen:
             continue
         
-        # Check if ERC20
-        token_info = check_erc20(addr)
+        # Check if valid contract
+        token_info = check_contract(addr)
         
         if token_info:
             age_hours = (now().timestamp() - contract["timestamp"]) / 3600
@@ -169,7 +124,7 @@ def scan_fresh_tokens():
             new_tokens.append({
                 "token": {
                     "address": addr,
-                    "symbol": "UNKNOWN",  # Will be filled later
+                    "symbol": "UNKNOWN",
                     "name": "Unknown Token"
                 },
                 "source": "basescan",
@@ -179,11 +134,11 @@ def scan_fresh_tokens():
                 "tx_hash": contract["hash"]
             })
             
-            print(f"[BASESCAN] ✅ New ERC20: {addr[:12]}... ({age_hours:.1f}h old)")
+            print(f"[BASESCAN] ✅ New contract: {addr[:12]}... ({age_hours:.1f}h old)")
         
         seen[addr] = {
             "detected": now().isoformat(),
-            "is_erc20": token_info is not None
+            "has_code": token_info is not None
         }
     
     # Save state
@@ -208,7 +163,7 @@ def scan_fresh_tokens():
     
     save_json(FEED_FILE, feed)
     
-    print(f"\n[BASESCAN] ✅ Found {len(new_tokens)} new ERC20 tokens")
+    print(f"\n[BASESCAN] ✅ Found {len(new_tokens)} new contracts")
     print(f"[BASESCAN] Total tracked: {len(feed['candidates'])}")
     
     return True
