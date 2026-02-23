@@ -1,0 +1,11 @@
+# LURKER Surveillance System - Cron Jobs
+# Installer avec: crontab crontab.lurker
+
+# Vérifier feed toutes les 5 minutes
+*/5 * * * * cd /data/.openclaw/workspace/lurker-project && python3 scripts/feed_sentinel.py --alert >> /data/.openclaw/logs/cron_sentinel.log 2>&1
+
+# Auto-fix si stale toutes les 10 minutes
+*/10 * * * * cd /data/.openclaw/workspace/lurker-project && ./scripts/sentinel_cron.sh >> /data/.openclaw/logs/cron_autofix.log 2>&1
+
+# Scanner manuel toutes les 15 minutes (backup si GitHub down)
+*/15 * * * * cd /data/.openclaw/workspace/lurker-project && python3 scripts/scanner_cio_ultra.py && git add -A && git diff --cached --quiet || (git commit -m "auto: scanner backup $(date +\%H:\%M)" && git push origin main) >> /data/.openclaw/logs/cron_scanner.log 2>&1

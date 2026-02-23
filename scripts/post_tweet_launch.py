@@ -96,33 +96,57 @@ def get_hours_until_launch():
     hours = int(delta.total_seconds() / 3600)
     return max(0, hours)
 
+def get_recent_tweets(log_file, hours=24):
+    """Get list of tweets posted in last N hours"""
+    recent = []
+    if not os.path.exists(log_file):
+        return recent
+    try:
+        with open(log_file, 'r') as f:
+            for line in f:
+                if '|' in line:
+                    recent.append(line.split('|', 1)[1].strip())
+    except:
+        pass
+    return recent[-50:]  # Last 50 tweets
+
 def get_random_tweet():
     """Generate a random LURKER pre-launch tweet"""
     hours_left = get_hours_until_launch()
+    log_file = os.path.join(os.path.dirname(__file__), '..', 'logs', 'tweets.log')
+    recent_tweets = get_recent_tweets(log_file)
     
-    # 30% chance to include countdown
-    include_countdown = random.random() < 0.3 and hours_left > 0
+    # Try to find a unique tweet (max 10 attempts)
+    for _ in range(10):
+        # 30% chance to include countdown
+        include_countdown = random.random() < 0.3 and hours_left > 0
+        
+        # Select category
+        category = random.choice(list(TEMPLATES.keys()))
+        text = random.choice(TEMPLATES[category])
+        
+        # Build tweet
+        tweet_parts = [text]
+        
+        # Add countdown occasionally
+        if include_countdown and hours_left > 0:
+            if hours_left <= 24:
+                tweet_parts.append(f"less than 24 hours remain.")
+            else:
+                tweet_parts.append(f"less than 48 hours.")
+        
+        # Add warning occasionally (20% chance)
+        if random.random() < 0.2:
+            tweet_parts.append("only this account posts the real contract. verify everything.")
+        
+        tweet = " ".join(tweet_parts)
+        
+        # Check if unique
+        if tweet not in recent_tweets:
+            return tweet
     
-    # Select category
-    category = random.choice(list(TEMPLATES.keys()))
-    text = random.choice(TEMPLATES[category])
-    
-    # Build tweet
-    tweet_parts = [text]
-    
-    # Add countdown occasionally
-    if include_countdown and hours_left > 0:
-        if hours_left <= 24:
-            tweet_parts.append(f"less than 24 hours remain.")
-        else:
-            tweet_parts.append(f"less than 48 hours.")
-    
-    # Add warning occasionally (20% chance)
-    if random.random() < 0.2:
-        tweet_parts.append("only this account posts the real contract. verify everything.")
-    
-    tweet = " ".join(tweet_parts)
-    return tweet
+    # If all attempts failed, add timestamp to make it unique
+    return f"{tweet} [{datetime.now(timezone.utc).strftime('%H:%M')}]"
 
 def post_tweet(text):
     """Post tweet via Tweepy"""
