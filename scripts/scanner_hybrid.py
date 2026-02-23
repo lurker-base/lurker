@@ -11,6 +11,10 @@ import requests
 from datetime import datetime, timezone
 from pathlib import Path
 
+# Import bundle alert
+sys.path.insert(0, str(Path(__file__).parent))
+import bundle_alert
+
 BASE_RPC = os.getenv("BASE_RPC_URL", "https://mainnet.base.org")
 FEED_FILE = Path(__file__).parent.parent / "signals" / "hybrid_feed.json"
 STATE_FILE = Path(__file__).parent.parent / "state" / "hybrid_seen.json"
@@ -294,6 +298,11 @@ def scan_hybrid():
                 
                 risk_flag = "⚠️" if risk['level'] == 'high' else ""
                 print(f"[HYBRID] ✅ {meta['source']}: {symbol} {risk_flag} ({age_hours:.1f}h, risk={risk['level']})")
+                
+                # Send Telegram alert if bundle farming detected
+                if risk['level'] == 'high' and ('bundle_farming' in risk['factors'] or len(risk['factors']) >= 3):
+                    print(f"[HYBRID] 🚨 Sending bundle farming alert for {symbol}...")
+                    bundle_alert.check_and_alert(new_tokens[-1])
     
     except Exception as e:
         print(f"[HYBRID] DexScreener error: {e}")
