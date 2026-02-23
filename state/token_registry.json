@@ -446,6 +446,12 @@
           "price": 1.558e-06,
           "liq": 1928.5,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771856162681,
+          "price": 1.558e-06,
+          "liq": 1928.5,
+          "vol_5m": 0.0
         }
       ],
       "token": {
@@ -1137,6 +1143,12 @@
           "price": 0.001034,
           "liq": 71329.18,
           "vol_5m": 16585.05
+        },
+        {
+          "timestamp": 1771856162681,
+          "price": 0.0009106,
+          "liq": 67080.46,
+          "vol_5m": 13258.95
         }
       ],
       "token": {
@@ -1172,6 +1184,12 @@
           "price": 6.021e-07,
           "liq": 36469.5,
           "vol_5m": 1107.66
+        },
+        {
+          "timestamp": 1771856162681,
+          "price": 6.108e-07,
+          "liq": 36938.23,
+          "vol_5m": 167.14
         }
       ],
       "token": {
@@ -1201,12 +1219,35 @@
           "price": 2.25e-06,
           "liq": 162867.24,
           "vol_5m": 605.06
+        },
+        {
+          "timestamp": 1771856162681,
+          "price": 2.229e-06,
+          "liq": 161984.49,
+          "vol_5m": 761.94
         }
       ],
       "token": {
         "address": "0xdf25a0f930029cd46aebfa6ff988ad04c0321b07",
         "symbol": "CASH",
         "name": "AI Cash"
+      }
+    },
+    "0x9802a847bedf8b45665c5e4069ee1515ae2d6b07": {
+      "first_seen": 1771856162680,
+      "first_seen_iso": "2026-02-23T14:16:02.680000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771856162681,
+          "price": 1.154e-06,
+          "liq": 0,
+          "vol_5m": 12680.99
+        }
+      ],
+      "token": {
+        "address": "0x9802a847bedf8b45665c5e4069ee1515ae2d6b07",
+        "symbol": "FortClaw",
+        "name": "FortClaw"
       }
     }
   }
