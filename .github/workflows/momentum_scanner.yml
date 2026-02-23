@@ -1,0 +1,32 @@
+name: LURKER Momentum Scanner — Detect Volume/Price Spikes
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'  # Run every 15 minutes
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  momentum-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run Momentum Scanner
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          LURKER_ALERTS_CHAT_ID: ${{ secrets.LURKER_ALERTS_CHAT_ID }}
+        run: |
+          cd scripts
+          python3 momentum_scanner.py
+
+      - name: Commit momentum state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add state/momentum_state.json logs/momentum_alerts.json || true
+          git diff --cached --quiet || git commit -m "chore: momentum scanner state update [skip ci]"
+          git push || echo "Nothing to push"
