@@ -1,23 +1,66 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-02-23T20:05:54.610000+00:00",
-    "generated_at": "2026-02-23T20:05:54.610000+00:00",
-    "status": "calm",
-    "count": 0,
+    "updated_at": "2026-02-23T23:04:45.298000+00:00",
+    "generated_at": "2026-02-23T23:04:45.298000+00:00",
+    "status": "ok",
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
       "min_tx_5m": 1,
       "max_age_min": 10080
     },
-    "risk_distribution": {},
+    "risk_distribution": {
+      "low": 1
+    },
     "rejected": {
-      "too_old": 4,
-      "low_liq": 1,
+      "too_old": 5,
+      "low_liq": 3,
       "low_volume": 1
     },
     "source": "ultra_launch_scanner"
   },
-  "candidates": []
+  "candidates": [
+    {
+      "token": {
+        "address": "0xbd5694abea9a397fc3014678ed529e3da038eba3",
+        "symbol": "BEACON",
+        "name": "CLAW BEACON"
+      },
+      "pair": {
+        "address": "0x1d39c4f0397bbf44f3747df127972435cb43a3ee17e034ce31fe39a2ca19372b",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 68544.07,
+        "vol_5m_usd": 444.15,
+        "vol_1h_usd": 22630.91,
+        "txns_5m": 6,
+        "price_usd": 7.034e-07
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-21T17:43:39+00:00",
+        "token_first_seen": "2026-02-23T23:04:45.294000+00:00",
+        "age_minutes": 3201.1,
+        "age_hours": 53.35
+      },
+      "scores": {
+        "cio_score": 90,
+        "freshness": 0.11
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    }
+  ]
 }

@@ -548,6 +548,12 @@
           "price": 1.388e-06,
           "liq": 1767.41,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771887885294,
+          "price": 1.392e-06,
+          "liq": 1772.3,
+          "vol_5m": 0.0
         }
       ],
       "token": {
@@ -1971,6 +1977,74 @@
         "address": "0xde4b3bdfc8203f5641ceeaf203362d34d49c2b07",
         "symbol": "BOUNCERBOT",
         "name": "Clawd Bouncer Bot"
+      }
+    },
+    "0xe4a3451ade8ca2c3e1e3d7b9fa6ecce419168ba3": {
+      "first_seen": 1771887885294,
+      "first_seen_iso": "2026-02-23T23:04:45.294000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771887885294,
+          "price": 4.876e-06,
+          "liq": 0,
+          "vol_5m": 10774.16
+        }
+      ],
+      "token": {
+        "address": "0xe4a3451ade8ca2c3e1e3d7b9fa6ecce419168ba3",
+        "symbol": "HCLAW",
+        "name": "HyperClaw"
+      }
+    },
+    "0xbd5694abea9a397fc3014678ed529e3da038eba3": {
+      "first_seen": 1771887885294,
+      "first_seen_iso": "2026-02-23T23:04:45.294000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771887885294,
+          "price": 7.034e-07,
+          "liq": 68544.07,
+          "vol_5m": 444.15
+        }
+      ],
+      "token": {
+        "address": "0xbd5694abea9a397fc3014678ed529e3da038eba3",
+        "symbol": "BEACON",
+        "name": "CLAW BEACON"
+      }
+    },
+    "0x2c18f3a2b9829bfe727f29191f651170d01a1b07": {
+      "first_seen": 1771887885294,
+      "first_seen_iso": "2026-02-23T23:04:45.294000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771887885294,
+          "price": 2.379e-06,
+          "liq": 0,
+          "vol_5m": 1414.78
+        }
+      ],
+      "token": {
+        "address": "0x2c18f3a2b9829bfe727f29191f651170d01a1b07",
+        "symbol": "LIA",
+        "name": "Dog saved by Grok"
+      }
+    },
+    "0xa9bbee734b00bc3d732455ee4c59d485e0d00b07": {
+      "first_seen": 1771887885294,
+      "first_seen_iso": "2026-02-23T23:04:45.294000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771887885294,
+          "price": 2.12e-07,
+          "liq": 0,
+          "vol_5m": 0.0
+        }
+      ],
+      "token": {
+        "address": "0xa9bbee734b00bc3d732455ee4c59d485e0d00b07",
+        "symbol": "BankrAgent",
+        "name": "BankrAgent"
       }
     }
   }
