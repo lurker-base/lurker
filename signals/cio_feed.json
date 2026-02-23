@@ -1,8 +1,8 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-02-23T13:35:34.914000+00:00",
-    "generated_at": "2026-02-23T13:35:34.914000+00:00",
+    "updated_at": "2026-02-23T13:50:40.795000+00:00",
+    "generated_at": "2026-02-23T13:50:40.795000+00:00",
     "status": "ok",
     "count": 3,
     "thresholds": {
@@ -12,8 +12,8 @@
       "max_age_min": 10080
     },
     "risk_distribution": {
-      "low": 2,
-      "medium": 1
+      "medium": 1,
+      "low": 2
     },
     "rejected": {
       "too_old": 2,
@@ -34,24 +34,26 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 52002.62,
-        "vol_5m_usd": 9666.55,
-        "vol_1h_usd": 136962.13,
-        "txns_5m": 28,
-        "price_usd": 0.0005544
+        "liq_usd": 53550.6,
+        "vol_5m_usd": 11282.93,
+        "vol_1h_usd": 157197.35,
+        "txns_5m": 34,
+        "price_usd": 0.000583
       },
       "timestamps": {
         "pair_created_at": "2026-02-23T11:07:39+00:00",
         "token_first_seen": "2026-02-23T12:50:16.965000+00:00",
-        "age_minutes": 147.9,
-        "age_hours": 2.47
+        "age_minutes": 163.0,
+        "age_hours": 2.72
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.96
+        "freshness": 0.95
       },
-      "risks": [],
-      "risk_level": "low",
+      "risks": [
+        "dumping"
+      ],
+      "risk_level": "medium",
       "source": "profiles",
       "status": "observing",
       "quality": {
@@ -74,17 +76,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 178239.55,
-        "vol_5m_usd": 1890.8,
-        "vol_1h_usd": 27034.22,
-        "txns_5m": 14,
-        "price_usd": 2.563e-06
+        "liq_usd": 182318.36,
+        "vol_5m_usd": 337.46,
+        "vol_1h_usd": 27342.95,
+        "txns_5m": 11,
+        "price_usd": 2.642e-06
       },
       "timestamps": {
         "pair_created_at": "2026-02-20T11:14:23+00:00",
         "token_first_seen": "2026-02-23T13:35:34.911000+00:00",
-        "age_minutes": 4461.2,
-        "age_hours": 74.35
+        "age_minutes": 4476.3,
+        "age_hours": 74.6
       },
       "scores": {
         "cio_score": 100,
@@ -114,27 +116,24 @@
         "quote": "flETH"
       },
       "metrics": {
-        "liq_usd": 33113.92,
-        "vol_5m_usd": 0.21,
-        "vol_1h_usd": 7244.65,
-        "txns_5m": 1,
-        "price_usd": 5.392e-07
+        "liq_usd": 34425.92,
+        "vol_5m_usd": 320.22,
+        "vol_1h_usd": 7837.76,
+        "txns_5m": 5,
+        "price_usd": 5.635e-07
       },
       "timestamps": {
         "pair_created_at": "2026-02-22T21:12:35+00:00",
         "token_first_seen": "2026-02-23T13:20:28.559000+00:00",
-        "age_minutes": 983.0,
-        "age_hours": 16.38
+        "age_minutes": 998.1,
+        "age_hours": 16.63
       },
       "scores": {
         "cio_score": 93,
-        "freshness": 0.73
+        "freshness": 0.72
       },
-      "risks": [
-        "low_activity",
-        "low_volume"
-      ],
-      "risk_level": "medium",
+      "risks": [],
+      "risk_level": "low",
       "source": "profiles",
       "status": "observing",
       "quality": {
