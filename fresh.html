@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fresh — lurker</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .fresh-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .fresh-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .fresh-header p {
+            color: var(--text-muted);
+        }
+        
+        .token-list {
+            display: grid;
+            gap: 1rem;
+        }
+        
+        .fresh-token {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .fresh-token.new {
+            border-left: 4px solid #00ff00;
+        }
+        
+        .token-address {
+            font-family: 'SF Mono', monospace;
+            font-size: 0.9rem;
+        }
+        
+        .token-age {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+        
+        .token-source {
+            font-size: 0.75rem;
+            color: var(--accent);
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-grid"></div>
+    
+    <nav class="nav">
+        <a href="index.html" class="nav-link">lurker</a>
+        <a href="token.html" class="nav-link">token</a>
+        <a href="origin.html" class="nav-link">origin</a>
+        <a href="live.html" class="nav-link">live</a>
+        <a href="fresh.html" class="nav-link active">fresh</a>
+        <a href="lifecycle.html" class="nav-link">lifecycle</a>
+        <a href="become.html" class="nav-link">become</a>
+        <a href="proof.html" class="nav-link">proof</a>
+        <a href="subscribe.html" class="nav-link">subscribe</a>
+    </nav>
+
+    <main class="main">
+        <div class="container">
+            <div class="fresh-header">
+                <h1>fresh</h1>
+                <p>newly created erc20 on base. detected by basescan. no filters.</p>
+            </div>
+            
+            <div id="tokens-container">
+                <div class="loading">loading fresh tokens...</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="sparks.js"></script>
+    <script>
+        async function loadFresh() {
+            try {
+                const response = await fetch('https://raw.githubusercontent.com/lurker-base/lurker/main/signals/basescan_feed.json?t=' + Date.now());
+                const data = await response.json();
+                
+                const tokens = data.candidates || [];
+                const container = document.getElementById('tokens-container');
+                
+                if (tokens.length === 0) {
+                    container.innerHTML = '<div class="loading">no fresh tokens detected yet</div>';
+                    return;
+                }
+                
+                // Sort by age (newest first)
+                tokens.sort((a, b) => (a.age_hours || 0) - (b.age_hours || 0));
+                
+                container.innerHTML = tokens.slice(0, 50).map(t => {
+                    const isNew = (t.age_hours || 0) < 1;
+                    return `
+                        <div class="fresh-token ${isNew ? 'new' : ''}">
+                            <div>
+                                <div class="token-address">${t.token.address}</div>
+                                <div class="token-age">${t.age_hours?.toFixed(1) || '?'}h old • detected ${new Date(t.detected_at).toLocaleTimeString()}</div>
+                            </div>
+                            <div style="text-align: right;">
+                                <div class="token-source">${t.source}</div>
+                                <a href="https://basescan.org/address/${t.token.address}" target="_blank" style="font-size: 0.75rem; color: var(--accent);">View →</a>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+                
+            } catch (e) {
+                document.getElementById('tokens-container').innerHTML = 
+                    '<div class="loading">error loading fresh tokens</div>';
+            }
+        }
+        
+        loadFresh();
+        setInterval(loadFresh, 60000); // Refresh every minute
+    </script>
+</body>
+</html>
