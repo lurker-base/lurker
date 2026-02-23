@@ -742,6 +742,57 @@
         "symbol": "A2A",
         "name": "AgentNet"
       }
+    },
+    "0xc2ea9dcaee956d98ea39817d598a82b3a934db07": {
+      "first_seen": 1771839079151,
+      "first_seen_iso": "2026-02-23T09:31:19.151000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771839079151,
+          "price": 1.877e-07,
+          "liq": 0,
+          "vol_5m": 0.0
+        }
+      ],
+      "token": {
+        "address": "0xc2ea9dcaee956d98ea39817d598a82b3a934db07",
+        "symbol": "OpenMid",
+        "name": "OpenMid"
+      }
+    },
+    "0xa70ffc00488d687551454f50365abbd62a34fb07": {
+      "first_seen": 1771839079151,
+      "first_seen_iso": "2026-02-23T09:31:19.151000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771839079151,
+          "price": 3.533e-06,
+          "liq": 0,
+          "vol_5m": 1795.04
+        }
+      ],
+      "token": {
+        "address": "0xa70ffc00488d687551454f50365abbd62a34fb07",
+        "symbol": "ALICE",
+        "name": "OpenAlice"
+      }
+    },
+    "0xfc57cf56a22ec88ebacb8c59a8d4eed1177dc58f": {
+      "first_seen": 1771839079151,
+      "first_seen_iso": "2026-02-23T09:31:19.151000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771839079151,
+          "price": 2.295e-06,
+          "liq": 4551.83,
+          "vol_5m": 0.0
+        }
+      ],
+      "token": {
+        "address": "0xfc57cf56a22ec88ebacb8c59a8d4eed1177dc58f",
+        "symbol": "LOBSTAR",
+        "name": "Lobstar Wilde"
+      }
     }
   }
 }

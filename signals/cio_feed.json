@@ -1,109 +1,23 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-02-23T04:31:32.560000+00:00",
-    "generated_at": "2026-02-23T04:31:32.560000+00:00",
-    "status": "ok",
-    "count": 2,
+    "updated_at": "2026-02-23T09:31:19.155000+00:00",
+    "generated_at": "2026-02-23T09:31:19.155000+00:00",
+    "status": "calm",
+    "count": 0,
     "thresholds": {
       "min_liq_usd": 500,
       "min_vol_5m": 25,
       "min_tx_5m": 1,
       "max_age_min": 720
     },
-    "risk_distribution": {
-      "low": 1,
-      "medium": 1
-    },
+    "risk_distribution": {},
     "rejected": {
-      "too_old": 3,
-      "low_tx": 2
+      "too_old": 5,
+      "low_liq": 2,
+      "low_tx": 1
     },
     "source": "ultra_launch_scanner"
   },
-  "candidates": [
-    {
-      "token": {
-        "address": "0x5469cc08b15030d30207194ba6fd5b5303472b07",
-        "symbol": "ClawdINT",
-        "name": "ClawdINT"
-      },
-      "pair": {
-        "address": "0xbe361690877bc375bb9f0a6c74e2d4d52ec0cf8494d22e199fe2b7cc6ab0b579",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 124192.28,
-        "vol_5m_usd": 12795.43,
-        "vol_1h_usd": 92689.86,
-        "txns_5m": 138,
-        "price_usd": 2.688e-06
-      },
-      "timestamps": {
-        "pair_created_at": "2026-02-23T03:13:51+00:00",
-        "token_first_seen": "2026-02-23T04:31:32.555000+00:00",
-        "age_minutes": 77.7,
-        "age_hours": 1.29
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.98
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": false,
-        "quality_score": 75
-      }
-    },
-    {
-      "token": {
-        "address": "0x392832a4cee1d52d026e831a7ba9e6f53dc17ba3",
-        "symbol": "A2A",
-        "name": "AgentNet"
-      },
-      "pair": {
-        "address": "0x6395ae92955d1f0419d372f7841c053fdaecf1b197bb616f250ab6110013ae25",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 34441.55,
-        "vol_5m_usd": 80.99,
-        "vol_1h_usd": 6893.78,
-        "txns_5m": 2,
-        "price_usd": 3.55e-07
-      },
-      "timestamps": {
-        "pair_created_at": "2026-02-23T02:18:53+00:00",
-        "token_first_seen": "2026-02-23T04:31:32.556000+00:00",
-        "age_minutes": 132.7,
-        "age_hours": 2.21
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.96
-      },
-      "risks": [
-        "low_activity",
-        "low_volume"
-      ],
-      "risk_level": "medium",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    }
-  ]
+  "candidates": []
 }
