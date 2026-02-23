@@ -8,3 +8,4 @@ data/signals.json
 __pycache__/
 *.pyc
 *.pyo
+.env.secrets
