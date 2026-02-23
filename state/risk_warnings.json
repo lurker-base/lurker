@@ -1,0 +1,26 @@
+{
+  "warn_20260222_164500_EARENDEL": {
+    "id": "warn_20260222_164500_EARENDEL",
+    "timestamp": "2026-02-22T16:45:00Z",
+    "token_symbol": "EARENDEL",
+    "token_address": "0x71a09f5b9b88976ebcc79183e0e99e7d07beabaf",
+    "risk_type": "dumping",
+    "risk_factors": [
+      "rapid volume spike",
+      "concentrated wallets",
+      "unnatural pump pattern"
+    ],
+    "metrics_at_warning": {
+      "liq_usd": 80000,
+      "vol_1h_usd": 150000,
+      "age_minutes": 156
+    },
+    "status": "confirmed",
+    "outcome": "rug_confirmed",
+    "outcome_timestamp": "2026-02-22T18:30:00Z",
+    "outcome_metrics": {
+      "liq_usd": 5000,
+      "price_change": -90
+    }
+  }
+}
