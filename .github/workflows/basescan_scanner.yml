@@ -23,10 +23,8 @@ jobs:
       - name: Install requests
         run: pip install requests
 
-      - name: Run BaseScan scanner
-        env:
-          BASESCAN_API_KEY: ${{ secrets.BASESCAN_API_KEY }}
-        run: python3 scripts/scanner_basescan.py
+      - name: Run Base RPC scanner
+        run: python3 scripts/scanner_base_rpc.py
 
       - name: Commit updates
         run: |
