@@ -776,6 +776,12 @@
           "price": 1.901e-07,
           "liq": 0,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771840896076,
+          "price": 1.901e-07,
+          "liq": 0,
+          "vol_5m": 0.0
         }
       ],
       "token": {
@@ -852,12 +858,58 @@
           "price": 2.295e-06,
           "liq": 4551.83,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771840896076,
+          "price": 2.295e-06,
+          "liq": 4551.83,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771841966326,
+          "price": 2.295e-06,
+          "liq": 4551.83,
+          "vol_5m": 0.0
         }
       ],
       "token": {
         "address": "0xfc57cf56a22ec88ebacb8c59a8d4eed1177dc58f",
         "symbol": "LOBSTAR",
         "name": "Lobstar Wilde"
+      }
+    },
+    "0x6630662d14032f58b4191316e8cef4557925fb07": {
+      "first_seen": 1771841966326,
+      "first_seen_iso": "2026-02-23T10:19:26.326000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771841966326,
+          "price": 7.449e-07,
+          "liq": 0,
+          "vol_5m": 4056.34
+        }
+      ],
+      "token": {
+        "address": "0x6630662d14032f58b4191316e8cef4557925fb07",
+        "symbol": "ClawCaster",
+        "name": "ClawCaster"
+      }
+    },
+    "0x1105d572ef832b2346af6ac81726b485f9508b07": {
+      "first_seen": 1771841966326,
+      "first_seen_iso": "2026-02-23T10:19:26.326000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771841966326,
+          "price": 3.682e-07,
+          "liq": 0,
+          "vol_5m": 4459.43
+        }
+      ],
+      "token": {
+        "address": "0x1105d572ef832b2346af6ac81726b485f9508b07",
+        "symbol": "THERIAN",
+        "name": "The Animal Within You"
       }
     }
   }
