@@ -1,0 +1,14 @@
+{
+  "candidates": [],
+  "meta": {},
+  "alerts": [
+    {
+      "type": "dump_warning",
+      "token": "HCLAW",
+      "risk_factors": [
+        "dumping"
+      ],
+      "timestamp": "2026-02-23T23:49:17.406694+00:00"
+    }
+  ]
+}
