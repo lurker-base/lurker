@@ -9,6 +9,7 @@ from datetime import datetime, timezone
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
+TELEGRAM_CHANNEL = os.getenv("TELEGRAM_CHANNEL", "@LurkerAlphaSignals")
 
 def now():
     return datetime.now(timezone.utc)
@@ -16,8 +17,19 @@ def now():
 def send_telegram_alert(token_symbol, token_address, risk_factors, metrics):
     """Send Telegram alert for bundle farming detection"""
     
-    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
-        print("[ALERT] Telegram credentials not configured")
+    if not TELEGRAM_BOT_TOKEN:
+        print("[ALERT] Telegram bot token not configured")
+        return False
+    
+    # Try channel first, then chat ID
+    chat_targets = []
+    if TELEGRAM_CHANNEL:
+        chat_targets.append(TELEGRAM_CHANNEL)
+    if TELEGRAM_CHAT_ID:
+        chat_targets.append(TELEGRAM_CHAT_ID)
+    
+    if not chat_targets:
+        print("[ALERT] No Telegram target configured")
         return False
     
     # Build alert message
@@ -55,27 +67,36 @@ def send_telegram_alert(token_symbol, token_address, risk_factors, metrics):
 <i>LURKER Watchdog — {now().strftime('%H:%M UTC')}</i>
 """
     
-    try:
-        url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-        payload = {
-            "chat_id": TELEGRAM_CHAT_ID,
-            "text": message,
-            "parse_mode": "HTML",
-            "disable_web_page_preview": True
-        }
-        
-        response = requests.post(url, json=payload, timeout=30)
-        
-        if response.status_code == 200:
-            print(f"[ALERT] ✅ Telegram alert sent for {token_symbol}")
-            return True
-        else:
-            print(f"[ALERT] ❌ Failed to send alert: {response.text}")
-            return False
+    # Try each target until one works
+    for chat_id in chat_targets:
+        try:
+            url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+            payload = {
+                "chat_id": chat_id,
+                "text": message,
+                "parse_mode": "HTML",
+                "disable_web_page_preview": True
+            }
             
-    except Exception as e:
-        print(f"[ALERT] ❌ Error sending alert: {e}")
-        return False
+            response = requests.post(url, json=payload, timeout=30)
+            result = response.json()
+            
+            if result.get('ok'):
+                print(f"[ALERT] ✅ Telegram alert sent to {chat_id} for {token_symbol}")
+                return True
+            else:
+                error = result.get('description', 'Unknown error')
+                if 'chat not found' in error.lower() or 'forbidden' in error.lower():
+                    print(f"[ALERT] ⚠️ Cannot send to {chat_id}: {error}")
+                    continue  # Try next target
+                print(f"[ALERT] ⚠️ Failed to send to {chat_id}: {error}")
+                
+        except Exception as e:
+            print(f"[ALERT] ⚠️ Error sending to {chat_id}: {e}")
+            continue
+    
+    print(f"[ALERT] ❌ Failed to send alert to all targets")
+    return False
 
 def check_and_alert(token_data):
     """Check if token has bundle farming and send alert"""
