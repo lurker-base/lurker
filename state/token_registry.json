@@ -476,6 +476,12 @@
           "price": 1.549e-06,
           "liq": 1917.57,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771860984156,
+          "price": 1.549e-06,
+          "liq": 1917.57,
+          "vol_5m": 0.0
         }
       ],
       "token": {
@@ -1309,6 +1315,12 @@
           "price": 2.394e-06,
           "liq": 169704.57,
           "vol_5m": 448.24
+        },
+        {
+          "timestamp": 1771860984156,
+          "price": 1.953e-06,
+          "liq": 147889.66,
+          "vol_5m": 10175.79
         }
       ],
       "token": {
@@ -1350,6 +1362,12 @@
           "price": 1.892e-07,
           "liq": 0,
           "vol_5m": 5.59
+        },
+        {
+          "timestamp": 1771860984156,
+          "price": 1.895e-07,
+          "liq": 0,
+          "vol_5m": 0.0
         }
       ],
       "token": {
@@ -1379,6 +1397,12 @@
           "price": 4.532e-06,
           "liq": 0,
           "vol_5m": 14303.87
+        },
+        {
+          "timestamp": 1771860984156,
+          "price": 6.309e-06,
+          "liq": 0,
+          "vol_5m": 10527.04
         }
       ],
       "token": {
@@ -1396,6 +1420,12 @@
           "price": 0.0001979,
           "liq": 39899.12,
           "vol_5m": 37165.49
+        },
+        {
+          "timestamp": 1771860984156,
+          "price": 0.0008198,
+          "liq": 81041.18,
+          "vol_5m": 29619.39
         }
       ],
       "token": {
@@ -1413,12 +1443,58 @@
           "price": 3.659e-05,
           "liq": 11769.73,
           "vol_5m": 1.77
+        },
+        {
+          "timestamp": 1771860984156,
+          "price": 3.908e-05,
+          "liq": 12402.78,
+          "vol_5m": 0.0
         }
       ],
       "token": {
         "address": "0xb23c6e17fe82f958ade869d31055c445f76c5c43",
         "symbol": "OpeClaw",
         "name": "OpenClaw"
+      }
+    },
+    "0x9ee36408f7c57763727dd64513a260820a576b07": {
+      "first_seen": 1771860984156,
+      "first_seen_iso": "2026-02-23T15:36:24.156000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771860984156,
+          "price": 1.784e-06,
+          "liq": 0,
+          "vol_5m": 14227.9
+        },
+        {
+          "timestamp": 1771860984156,
+          "price": 1.784e-06,
+          "liq": 0,
+          "vol_5m": 14227.9
+        }
+      ],
+      "token": {
+        "address": "0x9ee36408f7c57763727dd64513a260820a576b07",
+        "symbol": "CLOC",
+        "name": "Cloclo"
+      }
+    },
+    "0x8e27a4cac917563295de9b07d594f7f3e0fdcb07": {
+      "first_seen": 1771860984156,
+      "first_seen_iso": "2026-02-23T15:36:24.156000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771860984156,
+          "price": 2.766e-06,
+          "liq": 0,
+          "vol_5m": 9716.54
+        }
+      ],
+      "token": {
+        "address": "0x8e27a4cac917563295de9b07d594f7f3e0fdcb07",
+        "symbol": "ClawnchPedia",
+        "name": "ClawnchPedia"
       }
     }
   }
