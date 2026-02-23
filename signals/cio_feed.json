@@ -1,19 +1,20 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-02-23T12:05:11.585000+00:00",
-    "generated_at": "2026-02-23T12:05:11.585000+00:00",
+    "updated_at": "2026-02-23T12:30:24.418000+00:00",
+    "generated_at": "2026-02-23T12:30:24.418000+00:00",
     "status": "calm",
     "count": 0,
     "thresholds": {
-      "min_liq_usd": 500,
-      "min_vol_5m": 25,
+      "min_liq_usd": 1000,
+      "min_vol_5m": 500,
       "min_tx_5m": 1,
-      "max_age_min": 120
+      "max_age_min": 10080
     },
     "risk_distribution": {},
     "rejected": {
-      "too_old": 7,
+      "too_old": 2,
+      "low_liq": 1,
       "low_volume": 1
     },
     "source": "ultra_launch_scanner"

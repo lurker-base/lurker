@@ -17,8 +17,8 @@ CIO_FILE = Path(__file__).parent.parent / "signals" / "cio_feed.json"
 STATE_FILE = Path(__file__).parent.parent / "state" / "token_registry.json"
 
 # ULTRA LAUNCH MODE - Discovery thresholds
-MIN_LIQ_USD = 10000        # $10k - quality tokens only
-MIN_VOLUME_5M = 10000      # $10k - proven volume
+MIN_LIQ_USD = 1000         # $1k - fresh but viable
+MIN_VOLUME_5M = 500        # $500 - early activity
 MIN_TX_5M = 1              # 1 tx minimum
 MAX_AGE_MINUTES = 10080    # 7 days - full lifecycle
 TIMEOUT = 15
