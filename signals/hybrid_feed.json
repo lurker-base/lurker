@@ -453,12 +453,395 @@
         "header": "https://cdn.dexscreener.com/cms/images/AffewedXSNmGEY3d?width=600&height=200&fit=crop&quality=95&format=auto",
         "icon": "https://cdn.dexscreener.com/cms/images/mvZ4-Zh2-vOZJ_BL?width=64&height=64&fit=crop&quality=95&format=auto"
       }
+    },
+    {
+      "token": {
+        "address": "0xDF25A0F930029CD46AEbfa6Ff988ad04C0321b07",
+        "symbol": "CASH",
+        "name": "AI Cash"
+      },
+      "source": "hybrid_boosts",
+      "detected_at": "2026-02-23T13:30:17.962084+00:00",
+      "age_hours": 74.27,
+      "creator": "unknown",
+      "tx_hash": null,
+      "dexscreener": {
+        "priceUsd": "0.000002439",
+        "liquidity": {
+          "usd": 172148.02,
+          "base": 48993208498,
+          "quote": 27.3912
+        },
+        "volume": {
+          "h24": 390070.58,
+          "h6": 56645.55,
+          "h1": 25114.28,
+          "m5": 2878.08
+        },
+        "txns": {
+          "m5": {
+            "buys": 7,
+            "sells": 4
+          },
+          "h1": {
+            "buys": 78,
+            "sells": 37
+          },
+          "h6": {
+            "buys": 183,
+            "sells": 97
+          },
+          "h24": {
+            "buys": 930,
+            "sells": 662
+          }
+        },
+        "marketCap": 243986,
+        "fdv": 243986,
+        "pairAddress": "0x8055837365a951b420762e7dfe633242ef3a31e3f05e25f26c34eec94308f01a",
+        "dexId": "uniswap",
+        "pairCreatedAt": 1771586063000,
+        "info": {
+          "imageUrl": "https://cdn.dexscreener.com/cms/images/r1vGH47R833BiROg?width=800&height=800&quality=90",
+          "header": "https://cdn.dexscreener.com/cms/images/ykxv8V_K8s81uuie?width=1500&height=500&quality=90",
+          "openGraph": "https://cdn.dexscreener.com/token-images/og/base/0xdf25a0f930029cd46aebfa6ff988ad04c0321b07?timestamp=1771853400000",
+          "websites": [
+            {
+              "url": "https://aicash.network",
+              "label": "Website"
+            },
+            {
+              "url": "https://aicash.network",
+              "label": "Docs"
+            }
+          ],
+          "socials": [
+            {
+              "url": "https://x.com/AICASH_1",
+              "type": "twitter"
+            },
+            {
+              "url": "https://discord.gg/tDNDpzVpFj",
+              "type": "discord"
+            }
+          ]
+        }
+      },
+      "risk": {
+        "level": "low",
+        "factors": []
+      },
+      "meta": {
+        "source": "boosts",
+        "url": "https://dexscreener.com/base/0xdf25a0f930029cd46aebfa6ff988ad04c0321b07",
+        "header": "https://cdn.dexscreener.com/cms/images/ykxv8V_K8s81uuie?width=900&height=300&fit=crop&quality=95&format=auto",
+        "icon": "r1vGH47R833BiROg"
+      }
+    },
+    {
+      "token": {
+        "address": "0xa8DB47922ec9ea07b5Bb5E195B3825179f7702D7",
+        "symbol": "KITCHEN",
+        "name": "CLAWD KITCHEN"
+      },
+      "source": "hybrid_profiles",
+      "detected_at": "2026-02-23T13:30:35.579880+00:00",
+      "age_hours": 16.3,
+      "creator": "unknown",
+      "tx_hash": null,
+      "dexscreener": {
+        "priceUsd": "0.0000005379",
+        "liquidity": {
+          "usd": 33040.87,
+          "base": 53327140706,
+          "quote": 2.2668
+        },
+        "volume": {
+          "h24": 114929.78,
+          "h6": 42653.32,
+          "h1": 7890.27,
+          "m5": 331.71
+        },
+        "txns": {
+          "m5": {
+            "buys": 2,
+            "sells": 4
+          },
+          "h1": {
+            "buys": 45,
+            "sells": 26
+          },
+          "h6": {
+            "buys": 211,
+            "sells": 147
+          },
+          "h24": {
+            "buys": 560,
+            "sells": 429
+          }
+        },
+        "marketCap": 53799,
+        "fdv": 53799,
+        "pairAddress": "0x253dc798832912178fd2d52854a80816d15df27ad33cb7347046fca934c49eaf",
+        "dexId": "uniswap",
+        "pairCreatedAt": 1771794755000,
+        "info": {
+          "imageUrl": "https://cdn.dexscreener.com/cms/images/mvZ4-Zh2-vOZJ_BL?width=800&height=800&quality=90",
+          "header": "https://cdn.dexscreener.com/cms/images/AffewedXSNmGEY3d?width=1500&height=500&quality=90",
+          "openGraph": "https://cdn.dexscreener.com/token-images/og/base/0xa8db47922ec9ea07b5bb5e195b3825179f7702d7?timestamp=1771853400000",
+          "websites": [
+            {
+              "url": "https://clawd.kitchen/",
+              "label": "Website"
+            }
+          ],
+          "socials": []
+        }
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "dumping"
+        ]
+      },
+      "meta": {
+        "source": "profiles",
+        "url": "https://dexscreener.com/base/0xa8db47922ec9ea07b5bb5e195b3825179f7702d7",
+        "header": "https://cdn.dexscreener.com/cms/images/AffewedXSNmGEY3d?width=600&height=200&fit=crop&quality=95&format=auto",
+        "icon": "https://cdn.dexscreener.com/cms/images/mvZ4-Zh2-vOZJ_BL?width=64&height=64&fit=crop&quality=95&format=auto"
+      }
+    },
+    {
+      "token": {
+        "address": "0xc18db1ED7d44EB6b705dd9B928001F190314D519",
+        "symbol": "HEDW",
+        "name": "Hedwig"
+      },
+      "source": "hybrid_profiles",
+      "detected_at": "2026-02-23T13:30:35.955576+00:00",
+      "age_hours": 2.38,
+      "creator": "unknown",
+      "tx_hash": null,
+      "dexscreener": {
+        "priceUsd": "0.0005688",
+        "liquidity": {
+          "usd": 52628.86,
+          "base": 46034226,
+          "quote": 13.7612
+        },
+        "volume": {
+          "h24": 186673.45,
+          "h6": 186673.45,
+          "h1": 137691.26,
+          "m5": 12557.31
+        },
+        "txns": {
+          "m5": {
+            "buys": 31,
+            "sells": 13
+          },
+          "h1": {
+            "buys": 740,
+            "sells": 155
+          },
+          "h6": {
+            "buys": 1627,
+            "sells": 346
+          },
+          "h24": {
+            "buys": 1627,
+            "sells": 346
+          }
+        },
+        "marketCap": 568820,
+        "fdv": 568820,
+        "pairAddress": "0xd5907EA812172cC1946cEb68497d0FCE172cd72e",
+        "dexId": "uniswap",
+        "pairCreatedAt": 1771844859000,
+        "info": {
+          "imageUrl": "https://cdn.dexscreener.com/cms/images/VUS5rFYL2BV04lba?width=800&height=800&quality=90",
+          "header": "https://cdn.dexscreener.com/cms/images/rlaZE_0kpxML3Myo?width=1500&height=500&quality=90",
+          "openGraph": "https://cdn.dexscreener.com/token-images/og/base/0xc18db1ed7d44eb6b705dd9b928001f190314d519?timestamp=1771853400000",
+          "websites": [
+            {
+              "url": "https://www.hedwigbot.xyz",
+              "label": "Website"
+            }
+          ],
+          "socials": [
+            {
+              "url": "https://x.com/hedwig_agent",
+              "type": "twitter"
+            }
+          ]
+        }
+      },
+      "risk": {
+        "level": "low",
+        "factors": []
+      },
+      "meta": {
+        "source": "profiles",
+        "url": "https://dexscreener.com/base/0xc18db1ed7d44eb6b705dd9b928001f190314d519",
+        "header": "https://cdn.dexscreener.com/cms/images/rlaZE_0kpxML3Myo?width=600&height=200&fit=crop&quality=95&format=auto",
+        "icon": "https://cdn.dexscreener.com/cms/images/VUS5rFYL2BV04lba?width=64&height=64&fit=crop&quality=95&format=auto"
+      }
+    },
+    {
+      "token": {
+        "address": "0xDF25A0F930029CD46AEbfa6Ff988ad04C0321b07",
+        "symbol": "CASH",
+        "name": "AI Cash"
+      },
+      "source": "hybrid_boosts",
+      "detected_at": "2026-02-23T13:30:36.116505+00:00",
+      "age_hours": 74.27,
+      "creator": "unknown",
+      "tx_hash": null,
+      "dexscreener": {
+        "priceUsd": "0.000002439",
+        "liquidity": {
+          "usd": 172148.02,
+          "base": 48993208498,
+          "quote": 27.3912
+        },
+        "volume": {
+          "h24": 390070.58,
+          "h6": 56645.55,
+          "h1": 25114.28,
+          "m5": 2878.08
+        },
+        "txns": {
+          "m5": {
+            "buys": 7,
+            "sells": 4
+          },
+          "h1": {
+            "buys": 78,
+            "sells": 37
+          },
+          "h6": {
+            "buys": 183,
+            "sells": 97
+          },
+          "h24": {
+            "buys": 930,
+            "sells": 662
+          }
+        },
+        "marketCap": 243986,
+        "fdv": 243986,
+        "pairAddress": "0x8055837365a951b420762e7dfe633242ef3a31e3f05e25f26c34eec94308f01a",
+        "dexId": "uniswap",
+        "pairCreatedAt": 1771586063000,
+        "info": {
+          "imageUrl": "https://cdn.dexscreener.com/cms/images/r1vGH47R833BiROg?width=800&height=800&quality=90",
+          "header": "https://cdn.dexscreener.com/cms/images/ykxv8V_K8s81uuie?width=1500&height=500&quality=90",
+          "openGraph": "https://cdn.dexscreener.com/token-images/og/base/0xdf25a0f930029cd46aebfa6ff988ad04c0321b07?timestamp=1771853400000",
+          "websites": [
+            {
+              "url": "https://aicash.network",
+              "label": "Website"
+            },
+            {
+              "url": "https://aicash.network",
+              "label": "Docs"
+            }
+          ],
+          "socials": [
+            {
+              "url": "https://x.com/AICASH_1",
+              "type": "twitter"
+            },
+            {
+              "url": "https://discord.gg/tDNDpzVpFj",
+              "type": "discord"
+            }
+          ]
+        }
+      },
+      "risk": {
+        "level": "low",
+        "factors": []
+      },
+      "meta": {
+        "source": "boosts",
+        "url": "https://dexscreener.com/base/0xdf25a0f930029cd46aebfa6ff988ad04c0321b07",
+        "header": "https://cdn.dexscreener.com/cms/images/ykxv8V_K8s81uuie?width=900&height=300&fit=crop&quality=95&format=auto",
+        "icon": "r1vGH47R833BiROg"
+      }
+    },
+    {
+      "token": {
+        "address": "pending_0xf2fb7a3eb7a044bd28",
+        "symbol": "UNKNOWN",
+        "name": "Fresh Contract"
+      },
+      "source": "hybrid_rpc",
+      "detected_at": "2026-02-23T13:30:36.689127+00:00",
+      "block": 42532043,
+      "age_hours": 0.0,
+      "creator": "0x183902a82032cb25b50417178fe433a8a5c458c1",
+      "tx_hash": "0xf2fb7a3eb7a044bd28a012063e095cae83b84fcc573ca4fa994272bab82eb282",
+      "dexscreener": null,
+      "risk": {
+        "level": "high",
+        "factors": [
+          "no_liquidity",
+          "unverified_contract",
+          "rpc_only"
+        ]
+      }
+    },
+    {
+      "token": {
+        "address": "pending_0xd9c06cf8acd5935ea7",
+        "symbol": "UNKNOWN",
+        "name": "Fresh Contract"
+      },
+      "source": "hybrid_rpc",
+      "detected_at": "2026-02-23T13:30:36.689180+00:00",
+      "block": 42532043,
+      "age_hours": 0.0,
+      "creator": "0x183902a82032cb25b50417178fe433a8a5c458c1",
+      "tx_hash": "0xd9c06cf8acd5935ea7452725463649203874368afcce37f9b540ad99d571eafe",
+      "dexscreener": null,
+      "risk": {
+        "level": "high",
+        "factors": [
+          "no_liquidity",
+          "unverified_contract",
+          "rpc_only"
+        ]
+      }
+    },
+    {
+      "token": {
+        "address": "pending_0x02f15aab177f2b563d",
+        "symbol": "UNKNOWN",
+        "name": "Fresh Contract"
+      },
+      "source": "hybrid_rpc",
+      "detected_at": "2026-02-23T13:30:36.689193+00:00",
+      "block": 42532043,
+      "age_hours": 0.0,
+      "creator": "0x183902a82032cb25b50417178fe433a8a5c458c1",
+      "tx_hash": "0x02f15aab177f2b563d01d5a150dc3f763b8887b0eb8eba0158712d6f450b21c8",
+      "dexscreener": null,
+      "risk": {
+        "level": "high",
+        "factors": [
+          "no_liquidity",
+          "unverified_contract",
+          "rpc_only"
+        ]
+      }
     }
   ],
   "meta": {
-    "updated_at": "2026-02-23T13:09:05.115444+00:00",
-    "count": 9,
-    "new_this_scan": 1,
-    "latest_block": 42531397
+    "updated_at": "2026-02-23T13:30:37.432056+00:00",
+    "count": 16,
+    "new_this_scan": 6,
+    "latest_block": 42532044
   }
 }
