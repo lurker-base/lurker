@@ -428,6 +428,12 @@
           "price": 1.558e-06,
           "liq": 1928.5,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771853734911,
+          "price": 1.558e-06,
+          "liq": 1928.5,
+          "vol_5m": 0.0
         }
       ],
       "token": {
@@ -1101,6 +1107,12 @@
           "price": 0.0005377,
           "liq": 51085.27,
           "vol_5m": 15596.41
+        },
+        {
+          "timestamp": 1771853734911,
+          "price": 0.0005544,
+          "liq": 52002.62,
+          "vol_5m": 9666.55
         }
       ],
       "token": {
@@ -1118,12 +1130,35 @@
           "price": 5.569e-07,
           "liq": 34052.65,
           "vol_5m": 3457.13
+        },
+        {
+          "timestamp": 1771853734910,
+          "price": 5.392e-07,
+          "liq": 33113.92,
+          "vol_5m": 0.21
         }
       ],
       "token": {
         "address": "0xa8db47922ec9ea07b5bb5e195b3825179f7702d7",
         "symbol": "KITCHEN",
         "name": "CLAWD KITCHEN"
+      }
+    },
+    "0xdf25a0f930029cd46aebfa6ff988ad04c0321b07": {
+      "first_seen": 1771853734911,
+      "first_seen_iso": "2026-02-23T13:35:34.911000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771853734911,
+          "price": 2.563e-06,
+          "liq": 178239.55,
+          "vol_5m": 1890.8
+        }
+      ],
+      "token": {
+        "address": "0xdf25a0f930029cd46aebfa6ff988ad04c0321b07",
+        "symbol": "CASH",
+        "name": "AI Cash"
       }
     }
   }

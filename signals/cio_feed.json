@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-02-23T13:20:28.563000+00:00",
-    "generated_at": "2026-02-23T13:20:28.563000+00:00",
+    "updated_at": "2026-02-23T13:35:34.914000+00:00",
+    "generated_at": "2026-02-23T13:35:34.914000+00:00",
     "status": "ok",
-    "count": 2,
+    "count": 3,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,7 +12,8 @@
       "max_age_min": 10080
     },
     "risk_distribution": {
-      "low": 2
+      "low": 2,
+      "medium": 1
     },
     "rejected": {
       "too_old": 2,
@@ -33,17 +34,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 51085.27,
-        "vol_5m_usd": 15596.41,
-        "vol_1h_usd": 121737.11,
-        "txns_5m": 100,
-        "price_usd": 0.0005377
+        "liq_usd": 52002.62,
+        "vol_5m_usd": 9666.55,
+        "vol_1h_usd": 136962.13,
+        "txns_5m": 28,
+        "price_usd": 0.0005544
       },
       "timestamps": {
         "pair_created_at": "2026-02-23T11:07:39+00:00",
         "token_first_seen": "2026-02-23T12:50:16.965000+00:00",
-        "age_minutes": 132.8,
-        "age_hours": 2.21
+        "age_minutes": 147.9,
+        "age_hours": 2.47
       },
       "scores": {
         "cio_score": 100,
@@ -52,6 +53,46 @@
       "risks": [],
       "risk_level": "low",
       "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    },
+    {
+      "token": {
+        "address": "0xdf25a0f930029cd46aebfa6ff988ad04c0321b07",
+        "symbol": "CASH",
+        "name": "AI Cash"
+      },
+      "pair": {
+        "address": "0x8055837365a951b420762e7dfe633242ef3a31e3f05e25f26c34eec94308f01a",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 178239.55,
+        "vol_5m_usd": 1890.8,
+        "vol_1h_usd": 27034.22,
+        "txns_5m": 14,
+        "price_usd": 2.563e-06
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-20T11:14:23+00:00",
+        "token_first_seen": "2026-02-23T13:35:34.911000+00:00",
+        "age_minutes": 4461.2,
+        "age_hours": 74.35
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "boosts",
       "status": "observing",
       "quality": {
         "has_profile": true,
@@ -73,24 +114,27 @@
         "quote": "flETH"
       },
       "metrics": {
-        "liq_usd": 34052.65,
-        "vol_5m_usd": 3457.13,
-        "vol_1h_usd": 7812.83,
-        "txns_5m": 20,
-        "price_usd": 5.569e-07
+        "liq_usd": 33113.92,
+        "vol_5m_usd": 0.21,
+        "vol_1h_usd": 7244.65,
+        "txns_5m": 1,
+        "price_usd": 5.392e-07
       },
       "timestamps": {
         "pair_created_at": "2026-02-22T21:12:35+00:00",
         "token_first_seen": "2026-02-23T13:20:28.559000+00:00",
-        "age_minutes": 967.9,
-        "age_hours": 16.13
+        "age_minutes": 983.0,
+        "age_hours": 16.38
       },
       "scores": {
-        "cio_score": 100,
+        "cio_score": 93,
         "freshness": 0.73
       },
-      "risks": [],
-      "risk_level": "low",
+      "risks": [
+        "low_activity",
+        "low_volume"
+      ],
+      "risk_level": "medium",
       "source": "profiles",
       "status": "observing",
       "quality": {
