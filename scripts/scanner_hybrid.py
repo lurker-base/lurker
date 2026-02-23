@@ -92,116 +92,149 @@ def scan_hybrid():
     print("[HYBRID] LURKER RPC + DexScreener Scanner")
     print("="*60)
     
-    latest = get_latest_block()
-    if not latest:
-        print("[HYBRID] ❌ Cannot get latest block")
-        return False
-    
-    print(f"[HYBRID] Latest block: {latest}")
-    print("[HYBRID] Scanning last 10 blocks for new contracts...")
-    
     seen = load_json(STATE_FILE)
     new_tokens = []
     
-    # Scan last 10 blocks
-    for i in range(10):
-        block_num = latest - i
-        block = get_block(block_num)
-        
-        if not block:
-            continue
-        
-        timestamp = int(block.get("timestamp", "0x0"), 16)
-        age_hours = (time.time() - timestamp) / 3600
-        transactions = block.get("transactions", [])
-        
-        for tx in transactions:
-            # Contract creation detection
-            if not tx.get("to") and tx.get("input") and len(tx.get("input", "")) > 100:
-                # Compute contract address (simplified - would need proper RLP encoding)
-                # For now, we'll use a placeholder and enrich with DexScreener later
-                creator = tx.get("from", "")
-                tx_hash = tx.get("hash", "")
-                
-                if tx_hash in seen:
-                    continue
-                
-                # Try to find this token on DexScreener (may not exist yet)
-                # We'll store the creator and try to match later
-                
-                token_data = {
-                    "token": {
-                        "address": f"pending_{tx_hash[:20]}",  # Will be updated when found on DexScreener
-                        "symbol": "UNKNOWN",
-                        "name": "Fresh Contract"
-                    },
-                    "source": "hybrid_rpc",
-                    "detected_at": now().isoformat(),
-                    "block": block_num,
-                    "age_hours": round(age_hours, 2),
-                    "creator": creator,
-                    "tx_hash": tx_hash,
-                    "dexscreener": None  # Will be enriched later
-                }
-                
-                new_tokens.append(token_data)
-                seen[tx_hash] = {
-                    "detected": now().isoformat(),
-                    "block": block_num,
-                    "creator": creator
-                }
-                
-                print(f"[HYBRID] ✅ New contract: {creator[:12]}... (block {block_num}, {age_hours:.1f}h)")
+    # === DEXSCREENER FIRST: Get all fresh tokens on Base ===
+    print("[HYBRID] Fetching fresh tokens from DexScreener...")
     
-    # Now enrich with DexScreener for known tokens
-    print("\n[HYBRID] Enriching with DexScreener...")
-    
-    # Get top tokens from DexScreener for Base
     try:
-        dex_response = requests.get(
-            "https://api.dexscreener.com/latest/dex/search?q=base",
+        # Use token profiles API for fresh tokens
+        profiles_response = requests.get(
+            "https://api.dexscreener.com/token-profiles/latest/v1",
             timeout=15
         )
-        dex_data = dex_response.json()
-        pairs = dex_data.get("pairs", [])[:50]  # Top 50 pairs
+        profiles = profiles_response.json()
         
-        for pair in pairs:
-            base_token = pair.get("baseToken", {})
-            token_addr = base_token.get("address")
-            
-            if not token_addr:
-                continue
-            
-            # Check if this token is new (< 6 hours)
-            pair_created = pair.get("pairCreatedAt")
-            if pair_created:
-                age_hours = (time.time() * 1000 - pair_created) / (1000 * 3600)
+        # Also get boosted tokens
+        boosts_response = requests.get(
+            "https://api.dexscreener.com/token-boosts/latest/v1",
+            timeout=15
+        )
+        boosts = boosts_response.json()
+        
+        # Also get top trending on Base
+        trending_response = requests.get(
+            "https://api.dexscreener.com/token-boosts/top/v1",
+            timeout=15
+        )
+        trending = trending_response.json()
+        
+        print(f"[HYBRID] Profiles: {len(profiles)}, Boosts: {len(boosts)}, Trending: {len(trending)}")
+        
+        # Collect all token addresses from these endpoints
+        all_tokens = {}
+        
+        for source_list, source_name in [(profiles, 'profiles'), (boosts, 'boosts'), (trending, 'trending')]:
+            for item in source_list:
+                token_address = item.get('tokenAddress')
+                chain = item.get('chainId')
                 
-                if age_hours < 6:  # Less than 6 hours old
-                    if token_addr not in [t["token"]["address"] for t in new_tokens]:
-                        new_tokens.append({
-                            "token": {
-                                "address": token_addr,
-                                "symbol": base_token.get("symbol", "UNKNOWN"),
-                                "name": base_token.get("name", "Unknown")
-                            },
-                            "source": "hybrid_dexscreener",
-                            "detected_at": now().isoformat(),
-                            "age_hours": round(age_hours, 2),
-                            "creator": "unknown",
-                            "tx_hash": None,
-                            "dexscreener": {
-                                "priceUsd": pair.get("priceUsd"),
-                                "liquidity": pair.get("liquidity", {}),
-                                "volume": pair.get("volume", {}),
-                                "marketCap": pair.get("marketCap"),
-                                "pairAddress": pair.get("pairAddress")
-                            }
-                        })
-                        print(f"[HYBRID] ✅ DexScreener: {base_token.get('symbol')} ({age_hours:.1f}h)")
+                if not token_address or chain != 'base':
+                    continue
+                
+                if token_address in seen:
+                    continue
+                
+                all_tokens[token_address] = {
+                    'source': source_name,
+                    'url': item.get('url', ''),
+                    'header': item.get('header', ''),
+                    'icon': item.get('icon', '')
+                }
         
+        print(f"[HYBRID] Found {len(all_tokens)} unique fresh tokens on Base")
+        
+        # Now get detailed data for each token
+        for token_address, meta in all_tokens.items():
+            dex_data = get_dexscreener_data(token_address)
+            
+            if dex_data:
+                # Calculate age
+                pair_created = dex_data.get('pairCreatedAt')
+                if pair_created:
+                    age_hours = (time.time() * 1000 - pair_created) / (1000 * 3600)
+                else:
+                    age_hours = 999  # Unknown age
+                
+                # Skip if too old (> 7 days)
+                if age_hours > 168:
+                    continue
+                
+                # Get token info from first pair
+                token_info = {}  # Will be populated from pair data
+                
+                new_tokens.append({
+                    "token": {
+                        "address": token_address,
+                        "symbol": "UNKNOWN",  # Will be updated
+                        "name": "Unknown"
+                    },
+                    "source": f"hybrid_{meta['source']}",
+                    "detected_at": now().isoformat(),
+                    "age_hours": round(age_hours, 2),
+                    "creator": "unknown",
+                    "tx_hash": None,
+                    "dexscreener": dex_data,
+                    "meta": meta
+                })
+                
+                seen[token_address] = {
+                    "detected": now().isoformat(),
+                    "source": meta['source']
+                }
+                
+                print(f"[HYBRID] ✅ {meta['source']}: {token_address[:16]}... ({age_hours:.1f}h)")
+    
     except Exception as e:
         print(f"[HYBRID] DexScreener error: {e}")
+    
+    # === RPC SECOND: Check for contracts created in last blocks ===
+    print("\n[HYBRID] Scanning recent blocks via RPC...")
+    
+    latest = get_latest_block()
+    if latest:
+        print(f"[HYBRID] Latest block: {latest}")
+        
+        for i in range(5):  # Last 5 blocks
+            block_num = latest - i
+            block = get_block(block_num)
+            
+            if not block:
+                continue
+            
+            timestamp = int(block.get("timestamp", "0x0"), 16)
+            age_hours = (time.time() - timestamp) / 3600
+            transactions = block.get("transactions", [])
+            
+            for tx in transactions:
+                if not tx.get("to") and tx.get("input") and len(tx.get("input", "")) > 100:
+                    tx_hash = tx.get("hash", "")
+                    
+                    if tx_hash in seen:
+                        continue
+                    
+                    new_tokens.append({
+                        "token": {
+                            "address": f"pending_{tx_hash[:20]}",
+                            "symbol": "UNKNOWN",
+                            "name": "Fresh Contract"
+                        },
+                        "source": "hybrid_rpc",
+                        "detected_at": now().isoformat(),
+                        "block": block_num,
+                        "age_hours": round(age_hours, 2),
+                        "creator": tx.get("from", ""),
+                        "tx_hash": tx_hash,
+                        "dexscreener": None
+                    })
+                    
+                    seen[tx_hash] = {
+                        "detected": now().isoformat(),
+                        "block": block_num
+                    }
+                    
+                    print(f"[HYBRID] ✅ RPC: Contract at block {block_num} ({age_hours:.1f}h)")
     
     # Save state and feed
     save_json(STATE_FILE, seen)

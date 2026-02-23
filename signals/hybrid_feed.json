@@ -1,0 +1,154 @@
+{
+  "candidates": [
+    {
+      "token": {
+        "address": "0xc18db1ED7d44EB6b705dd9B928001F190314D519",
+        "symbol": "UNKNOWN",
+        "name": "Unknown"
+      },
+      "source": "hybrid_profiles",
+      "detected_at": "2026-02-23T12:53:35.388326+00:00",
+      "age_hours": 1.77,
+      "creator": "unknown",
+      "tx_hash": null,
+      "dexscreener": {
+        "priceUsd": "0.0001580",
+        "liquidity": {
+          "usd": 27570.22,
+          "base": 83124389,
+          "quote": 7.5062
+        },
+        "volume": {
+          "h24": 84698.64,
+          "h6": 84698.64,
+          "h1": 58233.53,
+          "m5": 8366.3
+        },
+        "txns": {
+          "m5": {
+            "buys": 19,
+            "sells": 11
+          },
+          "h1": {
+            "buys": 887,
+            "sells": 166
+          },
+          "h6": {
+            "buys": 1181,
+            "sells": 257
+          },
+          "h24": {
+            "buys": 1181,
+            "sells": 257
+          }
+        },
+        "marketCap": 158060,
+        "fdv": 158060,
+        "pairAddress": "0xd5907EA812172cC1946cEb68497d0FCE172cd72e",
+        "dexId": "uniswap",
+        "pairCreatedAt": 1771844859000,
+        "info": {
+          "imageUrl": "https://cdn.dexscreener.com/cms/images/VUS5rFYL2BV04lba?width=800&height=800&quality=90",
+          "header": "https://cdn.dexscreener.com/cms/images/rlaZE_0kpxML3Myo?width=1500&height=500&quality=90",
+          "openGraph": "https://cdn.dexscreener.com/token-images/og/base/0xc18db1ed7d44eb6b705dd9b928001f190314d519?timestamp=1771851300000",
+          "websites": [
+            {
+              "url": "https://www.hedwigbot.xyz",
+              "label": "Website"
+            }
+          ],
+          "socials": [
+            {
+              "url": "https://x.com/hedwig_agent",
+              "type": "twitter"
+            }
+          ]
+        }
+      },
+      "meta": {
+        "source": "profiles",
+        "url": "https://dexscreener.com/base/0xc18db1ed7d44eb6b705dd9b928001f190314d519",
+        "header": "https://cdn.dexscreener.com/cms/images/rlaZE_0kpxML3Myo?width=600&height=200&fit=crop&quality=95&format=auto",
+        "icon": "https://cdn.dexscreener.com/cms/images/VUS5rFYL2BV04lba?width=64&height=64&fit=crop&quality=95&format=auto"
+      }
+    },
+    {
+      "token": {
+        "address": "0xFc57Cf56A22EC88ebAcb8C59A8D4EED1177dC58f",
+        "symbol": "UNKNOWN",
+        "name": "Unknown"
+      },
+      "source": "hybrid_trending",
+      "detected_at": "2026-02-23T12:53:35.552855+00:00",
+      "age_hours": 17.71,
+      "creator": "unknown",
+      "tx_hash": null,
+      "dexscreener": {
+        "priceUsd": "0.000002356",
+        "liquidity": {
+          "usd": 4655.86,
+          "base": 987939818,
+          "quote": 1.212
+        },
+        "volume": {
+          "h24": 1581520,
+          "h6": 1245180.25,
+          "h1": 0,
+          "m5": 0
+        },
+        "txns": {
+          "m5": {
+            "buys": 0,
+            "sells": 0
+          },
+          "h1": {
+            "buys": 0,
+            "sells": 0
+          },
+          "h6": {
+            "buys": 1129,
+            "sells": 718
+          },
+          "h24": {
+            "buys": 4069,
+            "sells": 1647
+          }
+        },
+        "marketCap": 2356,
+        "fdv": 2356,
+        "pairAddress": "0x185a2B93C72d65A12903fE1EC74c6bF00C590128",
+        "dexId": "uniswap",
+        "pairCreatedAt": 1771787451000,
+        "info": {
+          "imageUrl": "https://cdn.dexscreener.com/cms/images/Kq_U5gBTy_W4fVVx?width=800&height=800&quality=90",
+          "header": "https://cdn.dexscreener.com/cms/images/Y1pFysB_q90TkDfq?width=1500&height=500&quality=90",
+          "openGraph": "https://cdn.dexscreener.com/token-images/og/base/0xfc57cf56a22ec88ebacb8c59a8d4eed1177dc58f?timestamp=1771851300000",
+          "websites": [
+            {
+              "url": "https://www.lobstarbot.vip/",
+              "label": "Website"
+            }
+          ],
+          "socials": [
+            {
+              "url": "https://x.com/i/communities/2024793563889078532",
+              "type": "twitter"
+            }
+          ]
+        }
+      },
+      "meta": {
+        "source": "trending",
+        "url": "https://dexscreener.com/base/0xfc57cf56a22ec88ebacb8c59a8d4eed1177dc58f",
+        "header": "https://cdn.dexscreener.com/cms/images/Y1pFysB_q90TkDfq?width=900&height=300&fit=crop&quality=95&format=auto",
+        "icon": "Kq_U5gBTy_W4fVVx"
+      }
+    }
+  ],
+  "meta": {
+    "updated_at": "2026-02-23T12:53:37.216249+00:00",
+    "count": 2,
+    "new_this_scan": 2,
+    "latest_block": 42530934
+  }
+}
