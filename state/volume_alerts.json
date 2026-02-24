@@ -17,6 +17,14 @@
         "dumping"
       ],
       "timestamp": "2026-02-24T14:20:43.599767+00:00"
+    },
+    {
+      "type": "dump_warning",
+      "token": "Spawnr",
+      "risk_factors": [
+        "dumping"
+      ],
+      "timestamp": "2026-02-24T15:13:01.176289+00:00"
     }
   ]
 }
