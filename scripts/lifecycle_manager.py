@@ -29,20 +29,53 @@ def save_json(path: Path, data: dict):
     with open(path, 'w') as f:
         json.dump(data, f, indent=2)
 
+def is_token_pump_and_dump(token: dict) -> bool:
+    """Détecte les tokens qui ont pompé puis dumpé (pattern P&D)"""
+    price_history = token.get('price_history', [])
+    if len(price_history) < 3:
+        return False
+    
+    prices = [p.get('price', 0) for p in price_history if p.get('price', 0) > 0]
+    if len(prices) < 3:
+        return False
+    
+    first_price = prices[0]
+    max_price = max(prices)
+    current_price = prices[-1]
+    
+    if first_price == 0:
+        return False
+    
+    # Pump initial (montée importante)
+    max_gain = ((max_price - first_price) / first_price) * 100
+    
+    # Dump depuis le peak (chute depuis le max)
+    drop_from_peak = ((current_price - max_price) / max_price) * 100
+    
+    # Si le token a pompé > +100% ET est redescendu de > -25% depuis le peak
+    # = Pattern PUMP & DUMP
+    if max_gain > 100 and drop_from_peak < -25:
+        return True
+    
+    # Si le token a pompé > +200% ET est redescendu de > -20% depuis le peak
+    if max_gain > 200 and drop_from_peak < -20:
+        return True
+    
+    return False
+
 def is_token_dead(token: dict) -> bool:
-    """Détecte si un token est mort (rug ou abandonné) - VERSION STRICTE"""
+    """Détecte si un token est mort (rug, P&D, ou abandonné) - VERSION STRICTE"""
     metrics = token.get('metrics', {})
     liq = metrics.get('liq_usd', 0)
     vol_1h = metrics.get('vol_1h_usd', 0)
     price_change = metrics.get('price_change_24h', 0)
     price_usd = metrics.get('price_usd', 0)
     
-    # CRITÈRE #1: Liquidité = 0 → RUG (même s'il y a du volume)
-    # Volume sans liquidité = manipulation/sniper bots
+    # CRITÈRE #1: Liquidité = 0 → RUG
     if liq == 0:
         return True
     
-    # CRITÈRE #2: Liquidité très faible (< $3k) → Suspect
+    # CRITÈRE #2: Liquidité très faible (< $3k)
     if liq < 3000:
         return True
     
@@ -50,12 +83,17 @@ def is_token_dead(token: dict) -> bool:
     if price_change < -85:
         return True
     
-    # CRITÈRE #4: Prix quasi-nul (token mort)
+    # CRITÈRE #4: Prix quasi-nul
     if price_usd == 0:
         return True
     
     # CRITÈRE #5: Plus de volume ET liquidité faible (< $10k)
     if vol_1h == 0 and liq < 10000:
+        return True
+    
+    # CRITÈRE #6: PATTERN PUMP & DUMP
+    # Token qui a pompé puis dumpé = manipulation
+    if is_token_pump_and_dump(token):
         return True
     
     return False
