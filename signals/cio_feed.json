@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-02-23T23:48:57.334000+00:00",
-    "generated_at": "2026-02-23T23:48:57.334000+00:00",
+    "updated_at": "2026-02-24T03:06:24.308000+00:00",
+    "generated_at": "2026-02-24T03:06:24.308000+00:00",
     "status": "ok",
-    "count": 1,
+    "count": 2,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,50 +12,89 @@
       "max_age_min": 10080
     },
     "risk_distribution": {
-      "medium": 1
+      "medium": 1,
+      "low": 1
     },
     "rejected": {
       "too_old": 4,
-      "low_liq": 4,
-      "duplicate": 1,
-      "low_volume": 1
+      "low_volume": 2
     },
     "source": "ultra_launch_scanner"
   },
   "candidates": [
     {
       "token": {
-        "address": "0xc5898891919a3f8fc6d0d4d502e47ced11fb27ce",
-        "symbol": "HCLAW",
-        "name": "HyperClaw"
+        "address": "0xbb060648e9782d1c48b3be718848a7acf179c11c",
+        "symbol": "PERKOS",
+        "name": "The Perk OS"
       },
       "pair": {
-        "address": "0x856d3f9a0731600089d4083468df38f3d45820ae",
+        "address": "0x32238cb9141cc14fe3d540c3b43977763e5a5938",
         "dex": "uniswap",
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 25773.19,
-        "vol_5m_usd": 33631.01,
-        "vol_1h_usd": 365528.72,
-        "txns_5m": 93,
-        "price_usd": 0.0001621
+        "liq_usd": 15315.34,
+        "vol_5m_usd": 581.3,
+        "vol_1h_usd": 49944.64,
+        "txns_5m": 5,
+        "price_usd": 6.032e-05
       },
       "timestamps": {
-        "pair_created_at": "2026-02-23T22:15:15+00:00",
-        "token_first_seen": "2026-02-23T23:48:57.331000+00:00",
-        "age_minutes": 93.7,
-        "age_hours": 1.56
+        "pair_created_at": "2026-02-23T22:42:03+00:00",
+        "token_first_seen": "2026-02-24T03:06:24.303000+00:00",
+        "age_minutes": 264.4,
+        "age_hours": 4.41
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.97
+        "freshness": 0.93
       },
       "risks": [
         "dumping"
       ],
       "risk_level": "medium",
       "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    },
+    {
+      "token": {
+        "address": "0xe4a3451ade8ca2c3e1e3d7b9fa6ecce419168ba3",
+        "symbol": "HCLAW",
+        "name": "HyperClaw"
+      },
+      "pair": {
+        "address": "0x1e8365c7d0e8dfc87bd94609072379a7b993c64c0fdc4ef5049ef42e32627528",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 209003.83,
+        "vol_5m_usd": 265.01,
+        "vol_1h_usd": 49327.5,
+        "txns_5m": 9,
+        "price_usd": 5.452e-06
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-23T21:24:31+00:00",
+        "token_first_seen": "2026-02-23T23:04:45.294000+00:00",
+        "age_minutes": 341.9,
+        "age_hours": 5.7
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.91
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "community",
       "status": "observing",
       "quality": {
         "has_profile": true,

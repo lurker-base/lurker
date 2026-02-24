@@ -572,6 +572,12 @@
           "price": 1.392e-06,
           "liq": 1772.3,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771902384303,
+          "price": 1.392e-06,
+          "liq": 1772.3,
+          "vol_5m": 0.0
         }
       ],
       "token": {
@@ -2030,6 +2036,12 @@
           "price": 4.777e-06,
           "liq": 0,
           "vol_5m": 13347.04
+        },
+        {
+          "timestamp": 1771902384303,
+          "price": 5.452e-06,
+          "liq": 209003.83,
+          "vol_5m": 265.01
         }
       ],
       "token": {
@@ -2134,12 +2146,35 @@
           "price": 0.0001621,
           "liq": 25773.19,
           "vol_5m": 33631.01
+        },
+        {
+          "timestamp": 1771902384303,
+          "price": 1.559e-06,
+          "liq": 2652.33,
+          "vol_5m": 0.0
         }
       ],
       "token": {
         "address": "0xc5898891919a3f8fc6d0d4d502e47ced11fb27ce",
         "symbol": "HCLAW",
         "name": "HyperClaw"
+      }
+    },
+    "0xbb060648e9782d1c48b3be718848a7acf179c11c": {
+      "first_seen": 1771902384303,
+      "first_seen_iso": "2026-02-24T03:06:24.303000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771902384303,
+          "price": 6.032e-05,
+          "liq": 15315.34,
+          "vol_5m": 581.3
+        }
+      ],
+      "token": {
+        "address": "0xbb060648e9782d1c48b3be718848a7acf179c11c",
+        "symbol": "PERKOS",
+        "name": "The Perk OS"
       }
     }
   }
