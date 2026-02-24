@@ -337,13 +337,13 @@
                         
                         <div class="prediction-proof">
                             <strong>Proof:</strong> 
-                            <a href="https://github.com/lurker-base/lurker/commit/${p.id}" class="proof-link" target="_blank">
-                                View Git Commit →
+                            <a href="https://github.com/lurker-base/lurker/blob/main/state/risk_warnings.json" class="proof-link" target="_blank">
+                                View Immutable Record →
                             </a>
                             <br>
                             <small style="color:#666;">
                                 Warning ID: ${p.id} • 
-                                Contract: ${p.token_address.substring(0, 10)}...${p.token_address.substring(-4)}
+                                Address: ${p.token_address.substring(0, 10)}...${p.token_address.slice(-4)}
                             </small>
                         </div>
                     </div>
