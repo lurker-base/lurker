@@ -79,8 +79,13 @@
       "badge": "PREMIUM",
       "timestamp": "2026-02-23T23:51:48.336478+00:00",
       "symbol": "HCLAW"
+    },
+    "0xe4a3451ade8ca2c3e1e3d7b9fa6ecce419168ba3": {
+      "badge": "PREMIUM",
+      "timestamp": "2026-02-24T07:59:35.009688+00:00",
+      "symbol": "HCLAW"
     }
   },
   "updates": [],
-  "last_check": "2026-02-23T23:51:48.925951+00:00"
+  "last_check": "2026-02-24T07:59:35.621741+00:00"
 }
