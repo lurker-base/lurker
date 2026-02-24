@@ -339,10 +339,13 @@
                 </div>
                 
                 <div class="payment-instructions" style="background: rgba(0,255,0,0.1); border-color: #00ff00;">
-                    <strong>confirm your payment:</strong><br>
-                    DM <a href="https://x.com/LURKER_AI2026" target="_blank">@LURKER_AI2026</a> on X with:<br>
-                    <code>payment: [payment_id] + transaction hash</code><br>
-                    <small>you'll be added within 24h</small>
+                    <strong>after payment:</strong>
+                    <ol style="margin: 0.5rem 0 0 1.5rem;">
+                        <li>DM <a href="https://x.com/LURKER_AI2026" target="_blank">@LURKER_AI2026</a> with your transaction hash</li>
+                        <li>We verify and send your API key within 24h</li>
+                        <li>Use your key: <code>Authorization: Bearer YOUR_API_KEY</code></li>
+                    </ol>
+                    <small style="display: block; margin-top: 0.5rem;">API endpoint: api.lurker.io/v1/signals/</small>
                 </div>
                 
                 <a href="#" class="back-link" onclick="showTiers(); return false;">← back to tiers</a>

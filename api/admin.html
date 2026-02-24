@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LURKER API Admin</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            padding: 2rem;
+        }
+        
+        h1 {
+            color: #ff6600;
+            margin-bottom: 2rem;
+        }
+        
+        .section {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .section h2 {
+            color: #ff6600;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+        
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+        
+        th {
+            color: #ff6600;
+            font-weight: 600;
+        }
+        
+        .status-active {
+            color: #00ff00;
+        }
+        
+        .status-inactive {
+            color: #ff0000;
+        }
+        
+        button {
+            background: #ff6600;
+            color: #000;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        button:hover {
+            background: #ff8844;
+        }
+        
+        button.danger {
+            background: #ff0000;
+            color: #fff;
+        }
+        
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #999;
+        }
+        
+        input, select {
+            width: 100%;
+            padding: 0.75rem;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid #333;
+            border-radius: 4px;
+            color: #e0e0e0;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .stat-card {
+            background: rgba(255,102,0,0.1);
+            border: 1px solid #ff6600;
+            padding: 1rem;
+            border-radius: 4px;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ff6600;
+        }
+        
+        .stat-label {
+            color: #999;
+            font-size: 0.9rem;
+        }
+        
+        .api-key {
+            font-family: monospace;
+            background: rgba(0,0,0,0.3);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+        
+        #login-section {
+            max-width: 400px;
+            margin: 10vh auto;
+        }
+        
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="login-section" class="section">
+        <h1>🔐 LURKER Admin</h1>
+        <div class="form-group">
+            <label>Admin API Key</label>
+            <input type="password" id="admin-key" placeholder="Enter admin key">
+        </div>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div id="dashboard" class="hidden">
+        <h1>👁️ LURKER API Admin</h1>
+        
+        <div class="section">
+            <h2>📊 Statistics</h2>
+            <div class="grid" id="stats-grid">
+                <!-- Stats loaded dynamically -->
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🔑 Generate API Key (After Payment)</h2>
+            <div class="form-group">
+                <label>Telegram Username</label>
+                <input type="text" id="telegram" placeholder="@username">
+            </div>
+            <div class="form-group">
+                <label>Tier</label>
+                <select id="tier">
+                    <option value="api_basic">API Basic ($29/month)</option>
+                    <option value="api_pro">API Pro ($79/month)</option>
+                    <option value="pro_signals">Pro Signals ($19/month - No API)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Payment ID</label>
+                <input type="text" id="payment-id" placeholder="pay_...">
+            </div>
+            <div class="form-group">
+                <label>Transaction Hash</label>
+                <input type="text" id="tx-hash" placeholder="0x...">
+            </div>
+            <div class="form-group">
+                <label>Amount Paid ($)</label>
+                <input type="number" id="amount" placeholder="29">
+            </div>
+            <div class="form-group">
+                <label>Chain</label>
+                <select id="chain">
+                    <option value="base">Base</option>
+                    <option value="ethereum">Ethereum</option>
+                </select>
+            </div>
+            <button onclick="generateKey()">Generate API Key</button>
+            <div id="generated-key" style="margin-top: 1rem; padding: 1rem; background: rgba(0,255,0,0.1); border-radius: 4px; display: none;"></div>
+        </div>
+
+        <div class="section">
+            <h2>🔑 Active API Keys</h2>
+            <table id="keys-table">
+                <thead>
+                    <tr>
+                        <th>Key</th>
+                        <th>Tier</th>
+                        <th>Telegram</th>
+                        <th>Requests Today</th>
+                        <th>Total</th>
+                        <th>Status</th>
+                        <th>Created</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="keys-tbody">
+                    <!-- Keys loaded dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = window.location.origin;
+        let adminKey = '';
+
+        function login() {
+            adminKey = document.getElementById('admin-key').value;
+            loadDashboard();
+        }
+
+        async function loadDashboard() {
+            try {
+                const [statsRes, keysRes] = await Promise.all([
+                    fetch(`${API_URL}/admin/stats`, { headers: { 'x-admin-key': adminKey } }),
+                    fetch(`${API_URL}/admin/keys`, { headers: { 'x-admin-key': adminKey } })
+                ]);
+
+                if (!statsRes.ok || !keysRes.ok) {
+                    alert('Invalid admin key');
+                    return;
+                }
+
+                const stats = await statsRes.json();
+                const keys = await keysRes.json();
+
+                document.getElementById('login-section').classList.add('hidden');
+                document.getElementById('dashboard').classList.remove('hidden');
+
+                renderStats(stats);
+                renderKeys(keys);
+            } catch (err) {
+                alert('Error loading dashboard: ' + err.message);
+            }
+        }
+
+        function renderStats(stats) {
+            const grid = document.getElementById('stats-grid');
+            grid.innerHTML = `
+                <div class="stat-card">
+                    <div class="stat-value">${stats.total_keys || 0}</div>
+                    <div class="stat-label">Total API Keys</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">${stats.total_requests || 0}</div>
+                    <div class="stat-label">Total Requests</div>
+                </div>
+            `;
+            
+            if (stats.tier_stats) {
+                stats.tier_stats.forEach(tier => {
+                    grid.innerHTML += `
+                        <div class="stat-card">
+                            <div class="stat-value">${tier.key_count}</div>
+                            <div class="stat-label">${tier.tier}</div>
+                        </div>
+                    `;
+                });
+            }
+        }
+
+        function renderKeys(data) {
+            const tbody = document.getElementById('keys-tbody');
+            tbody.innerHTML = data.keys.map(key => `
+                <tr>
+                    <td><span class="api-key">${key.key.substring(0, 20)}...</span></td>
+                    <td>${key.tier}</td>
+                    <td>${key.telegram_username || '-'}</td>
+                    <td>${key.requests_today}</td>
+                    <td>${key.requests_total}</td>
+                    <td class="${key.is_active ? 'status-active' : 'status-inactive'}">${key.is_active ? 'Active' : 'Revoked'}</td>
+                    <td>${new Date(key.created_at).toLocaleDateString()}</td>
+                    <td>
+                        ${key.is_active ? `<button class="danger" onclick="revokeKey('${key.id}')">Revoke</button>` : '-'}
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        async function generateKey() {
+            const body = {
+                telegram_username: document.getElementById('telegram').value,
+                tier: document.getElementById('tier').value,
+                payment_id: document.getElementById('payment-id').value,
+                tx_hash: document.getElementById('tx-hash').value,
+                amount: parseInt(document.getElementById('amount').value),
+                chain: document.getElementById('chain').value,
+                expires_at: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString() // 30 days
+            };
+
+            try {
+                const res = await fetch(`${API_URL}/verify-payment`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'x-admin-key': adminKey
+                    },
+                    body: JSON.stringify(body)
+                });
+
+                const data = await res.json();
+                
+                if (data.success) {
+                    const keyDiv = document.getElementById('generated-key');
+                    keyDiv.style.display = 'block';
+                    keyDiv.innerHTML = `
+                        <strong>✅ API Key Generated!</strong><br><br>
+                        <code style="background: #000; padding: 0.5rem; display: block; margin: 0.5rem 0;">${data.api_key}</code>
+                        <small>Share this with the user via DM</small>
+                    `;
+                    loadDashboard(); // Refresh list
+                } else {
+                    alert('Error: ' + (data.error || 'Unknown error'));
+                }
+            } catch (err) {
+                alert('Error: ' + err.message);
+            }
+        }
+
+        async function revokeKey(id) {
+            if (!confirm('Are you sure you want to revoke this API key?')) return;
+
+            try {
+                const res = await fetch(`${API_URL}/admin/keys/${id}/revoke`, {
+                    method: 'POST',
+                    headers: { 'x-admin-key': adminKey }
+                });
+
+                if (res.ok) {
+                    loadDashboard();
+                }
+            } catch (err) {
+                alert('Error: ' + err.message);
+            }
+        }
+    </script>
+</body>
+</html>
