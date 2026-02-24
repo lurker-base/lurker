@@ -20,19 +20,27 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           LURKER_ALERTS_CHAT_ID: ${{ secrets.LURKER_ALERTS_CHAT_ID }}
         run: |
-          cd scripts
           python3 -c "
 import json
 import sys
-sys.path.insert(0, '.')
+sys.path.insert(0, 'scripts')
 from risk_alerts import check_and_alert
 
 # Load current feed
-with open('../signals/cio_feed.json') as f:
-    data = json.load(f)
+try:
+    with open('signals/cio_feed.json') as f:
+        data = json.load(f)
+except FileNotFoundError:
+    print('No feed file found')
+    sys.exit(0)
 
 # Check each candidate
+count = 0
 for c in data.get('candidates', []):
     if c.get('risk_level') == 'high':
         check_and_alert(c)
+        count += 1
+
+if count == 0:
+    print('No high-risk tokens detected')
 "
