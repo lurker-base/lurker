@@ -84,9 +84,13 @@ function openPaymentModal(service, amount, description, features = []) {
                 </div>
                 
                 <div class="payment-confirm">
-                    <p>DM <a href="https://x.com/LURKER_AI2026" target="_blank">@LURKER_AI2026</a> on X:</p>
-                    <code>payment: ${paymentId} + tx hash</code>
-                    <small>access within 24h</small>
+                    <p><strong>After payment:</strong></p>
+                    <ol style="margin: 0.5rem 0; padding-left: 1.5rem;">
+                        <li>DM <a href="https://x.com/LURKER_AI2026" target="_blank">@LURKER_AI2026</a> with your transaction hash</li>
+                        <li>We verify and generate your API key within 24h</li>
+                        <li>Use your API key in requests: <code>Authorization: Bearer YOUR_KEY</code></li>
+                    </ol>
+                    <small>API endpoint: <code>https://api.lurker.io/v1/signals/</code></small>
                 </div>
             </div>
         </div>
