@@ -92,16 +92,17 @@ def is_data_stale(token: dict, max_age_hours: float = 2.0) -> bool:
 def is_token_dead(token: dict) -> bool:
     """Détecte si un token est mort (rug, P&D, ou abandonné) - VERSION STRICTE"""
     metrics = token.get('metrics', {})
-    liq = metrics.get('liq_usd', 0)
-    vol_1h = metrics.get('vol_1h_usd', 0)
-    price_change = metrics.get('price_change_24h', 0)
-    price_usd = metrics.get('price_usd', 0)
+    # Gérer les valeurs None - convertir en 0
+    liq = metrics.get('liq_usd') or 0
+    vol_1h = metrics.get('vol_1h_usd') or 0
+    price_change = metrics.get('price_change_24h') or 0
+    price_usd = metrics.get('price_usd') or 0
     
     # CRITÈRE #1: Données trop vieilles (> 2h sans mise à jour)
     if is_data_stale(token, max_age_hours=2.0):
         return True
     
-    # CRITÈRE #2: Liquidité = 0 → RUG
+    # CRITÈRE #2: Liquidité = 0 ou None → RUG
     if liq == 0:
         return True
     
@@ -113,7 +114,7 @@ def is_token_dead(token: dict) -> bool:
     if price_change < -85:
         return True
     
-    # CRITÈRE #5: Prix quasi-nul
+    # CRITÈRE #5: Prix quasi-nul (0 ou None)
     if price_usd == 0:
         return True
     
@@ -128,7 +129,7 @@ def is_token_dead(token: dict) -> bool:
     
     # CRITÈRE #8: AUCUNE ACTIVITÉ depuis 1h
     # Si vol_1h = 0 ET tx_1h = 0 → Token mort/inactif
-    tx_1h = metrics.get('txns_1h', 0)
+    tx_1h = metrics.get('txns_1h') or 0
     if vol_1h == 0 and tx_1h == 0 and liq < 10000:
         return True
     
