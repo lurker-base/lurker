@@ -1,7 +1,226 @@
 {
-  "candidates": [],
+  "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-02-24T19:55:58.456932+00:00",
-    "count": 0
-  }
+    "updated_at": "2026-02-24T19:56:15.074000+00:00",
+    "generated_at": "2026-02-24T19:56:15.074000+00:00",
+    "status": "ok",
+    "count": 5,
+    "thresholds": {
+      "min_liq_usd": 1000,
+      "min_vol_5m": 500,
+      "min_tx_5m": 1,
+      "max_age_min": 10080
+    },
+    "risk_distribution": {
+      "low": 5
+    },
+    "rejected": {
+      "too_old": 4,
+      "low_volume": 1,
+      "duplicate": 1
+    },
+    "source": "ultra_launch_scanner"
+  },
+  "candidates": [
+    {
+      "token": {
+        "address": "0x946494e26c8c26c2332225046cee80f37a76ab07",
+        "symbol": "ESME",
+        "name": "Esme"
+      },
+      "pair": {
+        "address": "0x495938351e15899bcb4d2be393d0945653e69ae0fef10556d3c76b1a9287e872",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 174730.11,
+        "vol_5m_usd": 5552.99,
+        "vol_1h_usd": 53605.48,
+        "txns_5m": 106,
+        "price_usd": 2.003e-06
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-24T18:59:31+00:00",
+        "token_first_seen": "2026-02-24T19:56:15.069000+00:00",
+        "age_minutes": 56.7,
+        "age_hours": 0.95
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.98
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": false,
+        "quality_score": 75
+      }
+    },
+    {
+      "token": {
+        "address": "0xecd7c9a76f0d10a49bc695f743ff968b5b824125",
+        "symbol": "ODAI",
+        "name": "ODEI AI"
+      },
+      "pair": {
+        "address": "0x78acdfd169ef56fbb843eaa42cb60370bcd48847",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 44693.5,
+        "vol_5m_usd": 3177.51,
+        "vol_1h_usd": 241917.36,
+        "txns_5m": 6,
+        "price_usd": 0.0002532
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-24T18:46:41+00:00",
+        "token_first_seen": "2026-02-24T19:56:15.069000+00:00",
+        "age_minutes": 69.6,
+        "age_hours": 1.16
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.98
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    },
+    {
+      "token": {
+        "address": "0x59a3a2314a0a9e701f03ab1a4396b91f61f68341",
+        "symbol": "TAKEOVER",
+        "name": "Takeover.fun"
+      },
+      "pair": {
+        "address": "0x8efba5a9b944b64acf59d37f772445a21f3b6223",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 52774.79,
+        "vol_5m_usd": 5508.5,
+        "vol_1h_usd": 274187.16,
+        "txns_5m": 20,
+        "price_usd": 0.0006942
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-24T16:43:45+00:00",
+        "token_first_seen": "2026-02-24T19:56:15.069000+00:00",
+        "age_minutes": 192.5,
+        "age_hours": 3.21
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.95
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "boosts",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    },
+    {
+      "token": {
+        "address": "0xe4a3451ade8ca2c3e1e3d7b9fa6ecce419168ba3",
+        "symbol": "HCLAW",
+        "name": "HyperClaw"
+      },
+      "pair": {
+        "address": "0x1e8365c7d0e8dfc87bd94609072379a7b993c64c0fdc4ef5049ef42e32627528",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 233812.97,
+        "vol_5m_usd": 8.04,
+        "vol_1h_usd": 5679.74,
+        "txns_5m": 2,
+        "price_usd": 6.355e-06
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-23T21:24:31+00:00",
+        "token_first_seen": "2026-02-23T23:04:45.294000+00:00",
+        "age_minutes": 1351.7,
+        "age_hours": 22.53
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.62
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "community",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    },
+    {
+      "token": {
+        "address": "0x4da7900f54b45949621649598f44e263c3955b07",
+        "symbol": "STRONG",
+        "name": "Stronghold"
+      },
+      "pair": {
+        "address": "0xad2676517d3ac3c4956c2664c345588d862b64ae5d2b881143d0230e09d39c48",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 207071.73,
+        "vol_5m_usd": 1273.37,
+        "vol_1h_usd": 28052.87,
+        "txns_5m": 4,
+        "price_usd": 2.485e-06
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-19T02:05:07+00:00",
+        "token_first_seen": "2026-02-24T19:56:15.069000+00:00",
+        "age_minutes": 8271.1,
+        "age_hours": 137.85
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    }
+  ]
 }
