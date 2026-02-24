@@ -1,4 +1,28 @@
 {
+  "warn_20260223_132900_HEDW": {
+    "id": "warn_20260223_132900_HEDW",
+    "timestamp": "2026-02-23T13:29:00Z",
+    "token_symbol": "HEDW",
+    "token_address": "0xc18db1ED7d44EB6b705dd9B928001F190314D519",
+    "risk_type": "bundle_farming",
+    "risk_factors": [
+      "bundle wallets",
+      "suspicious balances",
+      "bot wallets"
+    ],
+    "metrics_at_warning": {
+      "liq_usd": 39075,
+      "vol_24h_usd": 150000,
+      "age_minutes": 150
+    },
+    "status": "confirmed",
+    "outcome": "rug_confirmed",
+    "outcome_timestamp": "2026-02-24T08:00:00Z",
+    "outcome_metrics": {
+      "liq_usd": 2600,
+      "price_change": -85
+    }
+  },
   "warn_20260222_164500_EARENDEL": {
     "id": "warn_20260222_164500_EARENDEL",
     "timestamp": "2026-02-22T16:45:00Z",
