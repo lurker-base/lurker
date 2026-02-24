@@ -83,6 +83,7 @@ function renderWatchCard(item) {
             <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.5rem;">
                 Buffer zone (10-30m) — re-testing before HOTLIST
             </div>
+            ${renderBadges(item.badges || [])}
             <div class="card-footer">
                 <span class="age-text">${formatAge(ageMin)} old</span>
                 ${url !== '#' ? `<a href="${url}" target="_blank" class="dex-link">DexScreener →</a>` : ''}
@@ -157,6 +158,11 @@ function renderQualityIcons(quality, isPumping = false) {
     return icons ? `<span style="margin-left:0.5rem;">${icons}</span>` : '';
 }
 
+function renderBadges(badges) {
+    if (!badges || !Array.isArray(badges) || badges.length === 0) return '';
+    return badges.map(b => `<span class="badge" style="background:rgba(255,255,255,0.1);padding:2px 6px;border-radius:3px;font-size:0.7rem;margin-right:4px;">${b}</span>`).join('');
+}
+
 function renderCIOCard(item) {
     const symbol = pick(item, ['token.symbol', 'symbol'], '???');
     const age = safeNum(item.age_hours || item.timestamps?.age_hours, 0);
@@ -171,6 +177,7 @@ function renderCIOCard(item) {
     const riskLevel = item.risk_level || 'unknown';
     const risks = item.risks || [];
     const quality = item.quality || {};
+    const badges = item.badges || [];
     const tokenAddress = pick(item, ['token.address', 'address'], '');
     const url = item.pair?.address ? `https://dexscreener.com/base/${item.pair.address}` : 
                 (item.pair_url || (item.pool_address ? `https://dexscreener.com/base/${item.pool_address}` : 
@@ -203,7 +210,7 @@ function renderCIOCard(item) {
             </div>
             <div style="margin: 0.5rem 0;">
                 ${renderRiskBadge(riskLevel, risks)}
-                ${renderQualityIcons(quality, isPumping)}
+                ${renderBadges(badges)}
             </div>
             <div class="card-metrics">
                 <span>⭐ ${score}/100</span>
@@ -265,6 +272,7 @@ function renderHotlistCard(item) {
                 ${riskBiasText}
             </div>
             ${riskFactors.length > 0 ? `<div style="font-size: 0.7rem; color: var(--text-muted); margin-bottom: 0.5rem;">${riskFactors.join(', ')}</div>` : ''}
+            ${renderBadges(item.badges || [])}
             <div class="card-footer">
                 <span class="age-text">${formatAge(ageMin)} old • EARLY OPPORTUNITY</span>
                 ${url !== '#' ? `<a href="${url}" target="_blank" class="dex-link">DexScreener →</a>` : ''}
@@ -306,6 +314,7 @@ function renderFastCertifiedCard(item) {
                 <span>💧 $${(liq/1e3).toFixed(0)}k</span>
                 <span>📊 $${(vol24/1e3).toFixed(0)}k</span>
             </div>
+            ${renderBadges(item.badges || [])}
             <div class="card-footer">
                 <span class="age-text">${age.toFixed(1)}h • Momentum confirmed</span>
                 ${url !== '#' ? `<a href="${url}" target="_blank" class="dex-link">DexScreener →</a>` : ''}
