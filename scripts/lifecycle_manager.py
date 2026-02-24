@@ -63,6 +63,32 @@ def is_token_pump_and_dump(token: dict) -> bool:
     
     return False
 
+def is_data_stale(token: dict, max_age_hours: float = 2.0) -> bool:
+    """Vérifie si les données du token sont trop vieilles (pas de mise à jour récente)"""
+    price_history = token.get('price_history', [])
+    if not price_history:
+        return True  # Pas d'historique = données manquantes
+    
+    # Dernier point de données
+    last_point = price_history[-1]
+    last_timestamp = last_point.get('timestamp', 0)
+    
+    if not last_timestamp:
+        return True
+    
+    # Convertir timestamp (millisecondes) en datetime
+    try:
+        last_dt = datetime.fromtimestamp(last_timestamp / 1000, tz=timezone.utc)
+        now = datetime.now(timezone.utc)
+        age_hours = (now - last_dt).total_seconds() / 3600
+        
+        if age_hours > max_age_hours:
+            return True  # Données trop vieilles
+    except:
+        return True
+    
+    return False
+
 def is_token_dead(token: dict) -> bool:
     """Détecte si un token est mort (rug, P&D, ou abandonné) - VERSION STRICTE"""
     metrics = token.get('metrics', {})
@@ -71,32 +97,36 @@ def is_token_dead(token: dict) -> bool:
     price_change = metrics.get('price_change_24h', 0)
     price_usd = metrics.get('price_usd', 0)
     
-    # CRITÈRE #1: Liquidité = 0 → RUG
+    # CRITÈRE #1: Données trop vieilles (> 2h sans mise à jour)
+    if is_data_stale(token, max_age_hours=2.0):
+        return True
+    
+    # CRITÈRE #2: Liquidité = 0 → RUG
     if liq == 0:
         return True
     
-    # CRITÈRE #2: Liquidité très faible (< $3k)
+    # CRITÈRE #3: Liquidité très faible (< $3k)
     if liq < 3000:
         return True
     
-    # CRITÈRE #3: Dump massif -85% ou plus
+    # CRITÈRE #4: Dump massif -85% ou plus
     if price_change < -85:
         return True
     
-    # CRITÈRE #4: Prix quasi-nul
+    # CRITÈRE #5: Prix quasi-nul
     if price_usd == 0:
         return True
     
-    # CRITÈRE #5: Plus de volume ET liquidité faible (< $10k)
+    # CRITÈRE #6: Plus de volume ET liquidité faible (< $10k)
     if vol_1h == 0 and liq < 10000:
         return True
     
-    # CRITÈRE #6: PATTERN PUMP & DUMP
+    # CRITÈRE #7: PATTERN PUMP & DUMP
     # Token qui a pompé puis dumpé = manipulation
     if is_token_pump_and_dump(token):
         return True
     
-    # CRITÈRE #7: AUCUNE ACTIVITÉ depuis 1h
+    # CRITÈRE #8: AUCUNE ACTIVITÉ depuis 1h
     # Si vol_1h = 0 ET tx_1h = 0 → Token mort/inactif
     tx_1h = metrics.get('txns_1h', 0)
     if vol_1h == 0 and tx_1h == 0 and liq < 10000:
