@@ -38,7 +38,7 @@
       "liquidity_usd < 200000",
       "momentum_weakens_2_cycles"
     ],
-    "lastUpdate": 1771942969961,
+    "lastUpdate": 1771943840335,
     "schemaVersion": 2,
     "metrics": {
       "liquidity_usd": 403536,
