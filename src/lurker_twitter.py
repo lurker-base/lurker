@@ -10,8 +10,54 @@ import sys
 import json
 import random
 import re
+import subprocess
 from datetime import datetime
 import tweepy
+
+# =============================================================================
+# PRE-FLIGHT CHECKLIST - VERIFY BEFORE POSTING
+# =============================================================================
+
+def verify_url(url):
+    """Verify GitHub URL returns 200 before posting"""
+    try:
+        result = subprocess.run(
+            ['curl', '-s', '-o', '/dev/null', '-w', '%{http_code}', url],
+            capture_output=True,
+            text=True,
+            timeout=10
+        )
+        status = result.stdout.strip()
+        return status == '200', status
+    except Exception as e:
+        return False, str(e)
+
+def preflight_check(tweet_text):
+    """Run all checks before posting"""
+    print("🔍 PRE-FLIGHT CHECK:")
+    print("-" * 40)
+    
+    # Check 1: No French
+    is_english, indicator = validate_english(tweet_text)
+    if not is_english:
+        print(f"❌ FAILED: French detected ('{indicator}')")
+        print(f"❌ ENGLISH ONLY RULE VIOLATION")
+        return False
+    print("✅ Language: English only")
+    
+    # Check 2: URLs are valid
+    urls = re.findall(r'github\.com/[^\s]+', tweet_text)
+    for url in urls:
+        full_url = f"https://{url}"
+        valid, status = verify_url(full_url)
+        if not valid:
+            print(f"❌ FAILED: URL returns {status} - {full_url}")
+            return False
+        print(f"✅ URL valid: {url}")
+    
+    print("-" * 40)
+    print("✅ ALL CHECKS PASSED - Ready to post")
+    return True
 
 # =============================================================================
 # CRITICAL RULE: ENGLISH ONLY - NO FRENCH ALLOWED
@@ -55,11 +101,8 @@ def validate_english(text):
     """Block tweet if French detected."""
     is_french, indicator = contains_french(text)
     if is_french:
-        print(f"❌ BLOCKED: French detected ('{indicator}')")
-        print(f"❌ ENGLISH ONLY RULE VIOLATION")
-        print(f"Text: {text[:100]}...")
-        return False
-    return True
+        return False, indicator
+    return True, None
 
 # Load credentials from .env.twitter
 def load_env_file(filepath):
@@ -141,9 +184,10 @@ def get_client():
     return client
 
 def post_tweet(text):
-    """Post a tweet - ENGLISH VALIDATION REQUIRED"""
-    # CRITICAL: Validate no French before posting
-    if not validate_english(text):
+    """Post a tweet - ALL VALIDATION REQUIRED"""
+    # CRITICAL: Run full pre-flight check
+    if not preflight_check(text):
+        print("❌ TWEET BLOCKED - Fix issues before posting")
         return False
     
     try:
