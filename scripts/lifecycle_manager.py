@@ -26,6 +26,48 @@ def save_json(path: Path, data: dict):
     with open(path, 'w') as f:
         json.dump(data, f, indent=2)
 
+def distribute_to_category_feeds(tokens: list):
+    """Distribue les tokens dans les feeds de catégories appropriés"""
+    feeds = {
+        "CIO": {"tokens": [], "meta": {"updated_at": datetime.now(timezone.utc).isoformat()}},
+        "WATCH": {"tokens": [], "meta": {"updated_at": datetime.now(timezone.utc).isoformat()}},
+        "HOTLIST": {"tokens": [], "meta": {"updated_at": datetime.now(timezone.utc).isoformat()}},
+        "FAST_CERTIFIED": {"tokens": [], "meta": {"updated_at": datetime.now(timezone.utc).isoformat()}},
+        "CERTIFIED": {"tokens": [], "meta": {"updated_at": datetime.now(timezone.utc).isoformat()}},
+    }
+    
+    for token in tokens:
+        cat = token.get('category', 'UNKNOWN')
+        
+        # Mapping des catégories vers les noms de fichiers
+        if cat == "CIO":
+            feeds["CIO"]["tokens"].append(token)
+        elif cat == "WATCH":
+            feeds["WATCH"]["tokens"].append(token)
+        elif cat == "HOTLIST":
+            feeds["HOTLIST"]["tokens"].append(token)
+        elif cat in ["ACTIVE", "MONITORING"]:
+            # 24-72h → fast_certified
+            feeds["FAST_CERTIFIED"]["tokens"].append(token)
+        elif cat in ["MATURE", "ARCHIVED"]:
+            # 72h+ → certified
+            feeds["CERTIFIED"]["tokens"].append(token)
+    
+    # Sauvegarder chaque feed
+    for cat_name, data in feeds.items():
+        if cat_name == "CIO":
+            save_json(Path("data/signals/cio_feed.json"), data)
+        elif cat_name == "WATCH":
+            save_json(Path("data/signals/watch_feed.json"), data)
+        elif cat_name == "HOTLIST":
+            save_json(Path("data/signals/hotlist_feed.json"), data)
+        elif cat_name == "FAST_CERTIFIED":
+            save_json(Path("data/signals/fast_certified_feed.json"), data)
+        elif cat_name == "CERTIFIED":
+            save_json(Path("data/signals/certified_feed.json"), data)
+        
+        print(f"   📁 {cat_name}: {len(data['tokens'])} tokens")
+
 def recalculate_age(token_data: dict) -> float:
     """Recalcule l'âge du token en heures depuis maintenant"""
     timestamps = token_data.get('timestamps', {})
@@ -231,6 +273,10 @@ def update_lifecycle():
     print("\n📊 Répartition:")
     for cat, count in sorted(cats.items()):
         print(f"   {cat}: {count}")
+    
+    # Distribuer dans les feeds de catégories
+    print("\n🔄 Distribution dans les feeds:")
+    distribute_to_category_feeds(updated)
 
 if __name__ == "__main__":
     print("="*60)

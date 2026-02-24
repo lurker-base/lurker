@@ -2,37 +2,38 @@
   "candidates": [
     {
       "token": {
-        "address": "0xc5898891919a3f8fc6d0d4d502e47ced11fb27ce",
+        "address": "0xe4a3451ade8ca2c3e1e3d7b9fa6ecce419168ba3",
         "symbol": "HCLAW",
         "name": "HyperClaw"
       },
       "pair": {
-        "address": "0x856d3f9a0731600089d4083468df38f3d45820ae",
+        "address": "0x1e8365c7d0e8dfc87bd94609072379a7b993c64c0fdc4ef5049ef42e32627528",
         "dex": "uniswap",
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 25773.19,
-        "vol_5m_usd": 33631.01,
-        "vol_1h_usd": 365528.72,
-        "txns_5m": 93,
-        "price_usd": 0.0001621
+        "liq_usd": 219882.35,
+        "vol_5m_usd": 32.33,
+        "vol_1h_usd": 9268.93,
+        "txns_5m": 4,
+        "price_usd": 5.916e-06
       },
       "timestamps": {
-        "pair_created_at": "2026-02-23T22:15:15+00:00",
-        "token_first_seen": "2026-02-23T23:48:57.331000+00:00",
-        "age_minutes": 0.3,
-        "age_hours": 0.01
+        "pair_created_at": "2026-02-23T21:24:31+00:00",
+        "token_first_seen": "2026-02-23T23:04:45.294000+00:00",
+        "age_minutes": 480.4,
+        "age_hours": 8.01
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.97
+        "freshness": 0.84
       },
       "risks": [
-        "dumping"
+        "low_activity",
+        "low_volume"
       ],
       "risk_level": "medium",
-      "source": "profiles",
+      "source": "community",
       "status": "observing",
       "quality": {
         "has_profile": true,
@@ -42,17 +43,16 @@
         "quality_score": 100
       },
       "badges": [
-        "\ud83c\udd95 NEW",
-        "\ud83d\udcc8 HIGH_VOLUME",
+        "\u26a1 TRENDING",
+        "\ud83d\udc8e HIGH_LIQ",
         "\ud83d\udd0d WATCH"
       ],
-      "category": "CIO",
-      "alert": "DUMP_WARNING"
+      "category": "HOTLIST"
     }
   ],
   "meta": {
-    "updated_at": "2026-02-23T23:49:17.406700+00:00",
+    "updated_at": "2026-02-24T07:05:09.725607+00:00",
     "count": 1,
-    "alerts_count": 1
+    "alerts_count": 0
   }
 }
