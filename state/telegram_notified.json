@@ -104,8 +104,28 @@
       "badge": "PREMIUM",
       "timestamp": "2026-02-24T19:56:27.965521+00:00",
       "symbol": "STRONG"
+    },
+    "0x1da33947a7595577aa02d011abef6fc2149f5b07": {
+      "badge": "GOOD",
+      "timestamp": "2026-02-24T21:53:53.435924+00:00",
+      "symbol": "SMOL"
+    },
+    "0xb81a6ebc7916b94e069be1389820b01731912388": {
+      "badge": "GOOD",
+      "timestamp": "2026-02-24T21:53:53.435939+00:00",
+      "symbol": "RED"
+    },
+    "0x261e61f40c0f8541180969529a9af4ac9f4e2b07": {
+      "badge": "GOOD",
+      "timestamp": "2026-02-24T21:53:53.435943+00:00",
+      "symbol": "TAKEOVER"
+    },
+    "0x92c5ce26b5689975f59013a16800b9c4fcdeb779": {
+      "badge": "PREMIUM",
+      "timestamp": "2026-02-24T21:53:53.435945+00:00",
+      "symbol": "TAKEOVER"
     }
   },
   "updates": [],
-  "last_check": "2026-02-24T19:56:29.676021+00:00"
+  "last_check": "2026-02-24T21:53:55.203500+00:00"
 }
