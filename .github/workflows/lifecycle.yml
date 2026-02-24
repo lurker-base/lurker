@@ -22,6 +22,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add signals/lifecycle_feed.json state/volume_alerts.json data/signals/*.json || true
+          git add signals/*.json state/*.json data/signals/*.json hof.html || true
           git diff --cached --quiet || git commit -m "chore: lifecycle update [$(date +%H:%M)]"
           git push || echo "Nothing to push"
