@@ -96,9 +96,15 @@ def is_token_dead(token: dict) -> bool:
     if is_token_pump_and_dump(token):
         return True
     
+    # CRITÈRE #7: AUCUNE ACTIVITÉ depuis 1h
+    # Si vol_1h = 0 ET tx_1h = 0 → Token mort/inactif
+    tx_1h = metrics.get('txns_1h', 0)
+    if vol_1h == 0 and tx_1h == 0 and liq < 10000:
+        return True
+    
     return False
 
-def distribute_to_category_feeds(tokens: list):
+def distribute_to_category_feeds(tokens: list, registry_tokens: dict):
     """Distribue les tokens dans les feeds de catégories appropriés"""
     feeds = {
         "CIO": {"candidates": [], "meta": {"updated_at": datetime.now(timezone.utc).isoformat(), "count": 0}},
@@ -111,6 +117,14 @@ def distribute_to_category_feeds(tokens: list):
     }
     
     for token in tokens:
+        # Récupérer les données à jour du registry (source de vérité)
+        token_addr = token.get('token', {}).get('address', '')
+        if token_addr and token_addr in registry_tokens:
+            # Utiliser les métriques à jour du registry
+            registry_token = registry_tokens[token_addr]
+            token['metrics'] = registry_token.get('metrics', token.get('metrics', {}))
+            token['price_history'] = registry_token.get('price_history', token.get('price_history', []))
+        
         # Vérifier d'abord si le token est mort/rug
         if is_token_dead(token):
             token['badges'] = token.get('badges', []) + ['💀 RUGGED']
@@ -379,10 +393,13 @@ def update_lifecycle():
             all_tokens[addr] = t
     
     # Ajouter les tokens du registry qui ne sont pas déjà chargés
+    registry_dict = {}  # Pour distribute_to_category_feeds
     for t in registry_tokens:
         addr = t.get('token', {}).get('address')
-        if addr and addr not in all_tokens:
-            all_tokens[addr] = t
+        if addr:
+            registry_dict[addr] = t
+            if addr not in all_tokens:
+                all_tokens[addr] = t
     
     print(f"📊 Total tokens chargés: {len(all_tokens)}")
     print(f"   - CIO: {len(cio.get('candidates', []))}")
@@ -464,7 +481,7 @@ def update_lifecycle():
     
     # Distribuer dans les feeds de catégories
     print("\n🔄 Distribution dans les feeds:")
-    distribute_to_category_feeds(updated)
+    distribute_to_category_feeds(updated, registry_dict)
 
 if __name__ == "__main__":
     print("="*60)
