@@ -29,6 +29,23 @@ def save_json(path: Path, data: dict):
     with open(path, 'w') as f:
         json.dump(data, f, indent=2)
 
+def is_token_dead(token: dict) -> bool:
+    """Détecte si un token est mort (rug ou abandonné)"""
+    metrics = token.get('metrics', {})
+    liq = metrics.get('liq_usd', 0)
+    vol_1h = metrics.get('vol_1h_usd', 0)
+    price_change = metrics.get('price_change_24h', 0)
+    
+    # Critères de mort/rug
+    if liq == 0 and vol_1h == 0:
+        return True  # Plus de liquidité, plus de volume
+    if liq < 1000 and vol_1h == 0:
+        return True  # Liquidité quasi-nulle, mort
+    if price_change < -85:  # -85% ou plus
+        return True  # Rug confirmé
+    
+    return False
+
 def distribute_to_category_feeds(tokens: list):
     """Distribue les tokens dans les feeds de catégories appropriés"""
     feeds = {
@@ -38,9 +55,16 @@ def distribute_to_category_feeds(tokens: list):
         "FAST_CERTIFIED": {"tokens": [], "meta": {"updated_at": datetime.now(timezone.utc).isoformat()}},
         "CERTIFIED": {"tokens": [], "meta": {"updated_at": datetime.now(timezone.utc).isoformat()}},
         "ARCHIVED": {"tokens": [], "meta": {"updated_at": datetime.now(timezone.utc).isoformat()}},
+        "RUGGED": {"tokens": [], "meta": {"updated_at": datetime.now(timezone.utc).isoformat(), "description": "Tokens with -85% dump or zero liquidity"}},
     }
     
     for token in tokens:
+        # Vérifier d'abord si le token est mort/rug
+        if is_token_dead(token):
+            token['badges'] = token.get('badges', []) + ['💀 RUGGED']
+            feeds["RUGGED"]["tokens"].append(token)
+            continue
+        
         cat = token.get('category', 'UNKNOWN')
         
         # Mapping direct des catégories
@@ -68,6 +92,7 @@ def distribute_to_category_feeds(tokens: list):
         "FAST_CERTIFIED": ["data/signals/fast_certified_feed.json", "signals/fast_certified_feed.json"],
         "CERTIFIED": ["data/signals/certified_feed.json", "signals/certified_feed.json"],
         "ARCHIVED": ["data/signals/archived_feed.json", "signals/archived_feed.json"],
+        "RUGGED": ["data/signals/rugged_feed.json", "signals/rugged_feed.json"],
     }
     
     for cat_name, data in feeds.items():
