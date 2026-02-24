@@ -84,8 +84,48 @@
       "badge": "PREMIUM",
       "timestamp": "2026-02-24T07:59:35.009688+00:00",
       "symbol": "HCLAW"
+    },
+    "0x946494e26c8c26c2332225046cee80f37a76ab07": {
+      "badge": "GOOD",
+      "timestamp": "2026-02-24T19:56:27.965495+00:00",
+      "symbol": "ESME"
+    },
+    "0xecd7c9a76f0d10a49bc695f743ff968b5b824125": {
+      "badge": "PREMIUM",
+      "timestamp": "2026-02-24T19:56:27.965513+00:00",
+      "symbol": "ODAI"
+    },
+    "0x59a3a2314a0a9e701f03ab1a4396b91f61f68341": {
+      "badge": "PREMIUM",
+      "timestamp": "2026-02-24T19:56:27.965517+00:00",
+      "symbol": "TAKEOVER"
+    },
+    "0x4da7900f54b45949621649598f44e263c3955b07": {
+      "badge": "PREMIUM",
+      "timestamp": "2026-02-24T19:56:27.965521+00:00",
+      "symbol": "STRONG"
+    },
+    "0x1da33947a7595577aa02d011abef6fc2149f5b07": {
+      "badge": "GOOD",
+      "timestamp": "2026-02-24T21:53:53.435924+00:00",
+      "symbol": "SMOL"
+    },
+    "0xb81a6ebc7916b94e069be1389820b01731912388": {
+      "badge": "GOOD",
+      "timestamp": "2026-02-24T21:53:53.435939+00:00",
+      "symbol": "RED"
+    },
+    "0x261e61f40c0f8541180969529a9af4ac9f4e2b07": {
+      "badge": "GOOD",
+      "timestamp": "2026-02-24T21:53:53.435943+00:00",
+      "symbol": "TAKEOVER"
+    },
+    "0x92c5ce26b5689975f59013a16800b9c4fcdeb779": {
+      "badge": "PREMIUM",
+      "timestamp": "2026-02-24T21:53:53.435945+00:00",
+      "symbol": "TAKEOVER"
     }
   },
   "updates": [],
-  "last_check": "2026-02-24T15:13:37.110337+00:00"
+  "last_check": "2026-02-24T23:05:25.891054+00:00"
 }

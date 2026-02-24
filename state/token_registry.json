@@ -2246,6 +2246,18 @@
           "price": 4.91e-06,
           "liq": 199366.27,
           "vol_5m": 458.03
+        },
+        {
+          "timestamp": 1771962975069,
+          "price": 6.355e-06,
+          "liq": 233812.97,
+          "vol_5m": 8.04
+        },
+        {
+          "timestamp": 1771970020443,
+          "price": 6.007e-06,
+          "liq": 227410.73,
+          "vol_5m": 8596.34
         }
       ],
       "token": {
@@ -2437,6 +2449,216 @@
         "address": "0xfe4588c3bc2d9335166b7f8bd1425750176beac8",
         "symbol": "Spawnr",
         "name": "Spawnr"
+      }
+    },
+    "0x0089c6bd6bf6234b4731a81a746ade1cbbaeab07": {
+      "first_seen": 1771962975069,
+      "first_seen_iso": "2026-02-24T19:56:15.069000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771962975069,
+          "price": 1.791e-07,
+          "liq": 17967.06,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771970020443,
+          "price": 1.791e-07,
+          "liq": 17967.06,
+          "vol_5m": 0.0
+        }
+      ],
+      "token": {
+        "address": "0x0089c6bd6bf6234b4731a81a746ade1cbbaeab07",
+        "symbol": "1000000000",
+        "name": "Boom "
+      }
+    },
+    "0x946494e26c8c26c2332225046cee80f37a76ab07": {
+      "first_seen": 1771962975069,
+      "first_seen_iso": "2026-02-24T19:56:15.069000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771962975069,
+          "price": 2.003e-06,
+          "liq": 174730.11,
+          "vol_5m": 5552.99
+        }
+      ],
+      "token": {
+        "address": "0x946494e26c8c26c2332225046cee80f37a76ab07",
+        "symbol": "ESME",
+        "name": "Esme"
+      }
+    },
+    "0x4da7900f54b45949621649598f44e263c3955b07": {
+      "first_seen": 1771962975069,
+      "first_seen_iso": "2026-02-24T19:56:15.069000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771962975069,
+          "price": 2.485e-06,
+          "liq": 207071.73,
+          "vol_5m": 1273.37
+        }
+      ],
+      "token": {
+        "address": "0x4da7900f54b45949621649598f44e263c3955b07",
+        "symbol": "STRONG",
+        "name": "Stronghold"
+      }
+    },
+    "0xecd7c9a76f0d10a49bc695f743ff968b5b824125": {
+      "first_seen": 1771962975069,
+      "first_seen_iso": "2026-02-24T19:56:15.069000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771962975069,
+          "price": 0.0002532,
+          "liq": 44693.5,
+          "vol_5m": 3177.51
+        }
+      ],
+      "token": {
+        "address": "0xecd7c9a76f0d10a49bc695f743ff968b5b824125",
+        "symbol": "ODAI",
+        "name": "ODEI AI"
+      }
+    },
+    "0x59a3a2314a0a9e701f03ab1a4396b91f61f68341": {
+      "first_seen": 1771962975069,
+      "first_seen_iso": "2026-02-24T19:56:15.069000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771962975069,
+          "price": 0.0006942,
+          "liq": 52774.79,
+          "vol_5m": 5508.5
+        }
+      ],
+      "token": {
+        "address": "0x59a3a2314a0a9e701f03ab1a4396b91f61f68341",
+        "symbol": "TAKEOVER",
+        "name": "Takeover.fun"
+      }
+    },
+    "0x92c5ce26b5689975f59013a16800b9c4fcdeb779": {
+      "first_seen": 1771970020443,
+      "first_seen_iso": "2026-02-24T21:53:40.443000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771970020443,
+          "price": 1.825e-05,
+          "liq": 8932.54,
+          "vol_5m": 1029.55
+        }
+      ],
+      "token": {
+        "address": "0x92c5ce26b5689975f59013a16800b9c4fcdeb779",
+        "symbol": "TAKEOVER",
+        "name": "TAKEOVER"
+      }
+    },
+    "0xb81a6ebc7916b94e069be1389820b01731912388": {
+      "first_seen": 1771970020443,
+      "first_seen_iso": "2026-02-24T21:53:40.443000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771970020443,
+          "price": 0.0004886,
+          "liq": 43625.38,
+          "vol_5m": 19779.0
+        }
+      ],
+      "token": {
+        "address": "0xb81a6ebc7916b94e069be1389820b01731912388",
+        "symbol": "RED",
+        "name": "Red Botster Token"
+      }
+    },
+    "0x1da33947a7595577aa02d011abef6fc2149f5b07": {
+      "first_seen": 1771970020443,
+      "first_seen_iso": "2026-02-24T21:53:40.443000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771970020443,
+          "price": 1.828e-07,
+          "liq": 18618.74,
+          "vol_5m": 49.41
+        }
+      ],
+      "token": {
+        "address": "0x1da33947a7595577aa02d011abef6fc2149f5b07",
+        "symbol": "SMOL",
+        "name": "Tiny Fren"
+      }
+    },
+    "0x261e61f40c0f8541180969529a9af4ac9f4e2b07": {
+      "first_seen": 1771970020443,
+      "first_seen_iso": "2026-02-24T21:53:40.443000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771970020443,
+          "price": 7.892e-07,
+          "liq": 76514.39,
+          "vol_5m": 2878.42
+        }
+      ],
+      "token": {
+        "address": "0x261e61f40c0f8541180969529a9af4ac9f4e2b07",
+        "symbol": "TAKEOVER",
+        "name": "Takeover.fun"
+      }
+    },
+    "0xc31de1185d7df1688a16ad124b8d37800ad50b07": {
+      "first_seen": 1771970020443,
+      "first_seen_iso": "2026-02-24T21:53:40.443000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771970020443,
+          "price": 2.761e-07,
+          "liq": 28011.05,
+          "vol_5m": 0.0
+        }
+      ],
+      "token": {
+        "address": "0xc31de1185d7df1688a16ad124b8d37800ad50b07",
+        "symbol": "DarkMatter",
+        "name": "DarkMatter"
+      }
+    },
+    "0xafeadbc5927df211a75f4b6bca6ad3e5520c5720": {
+      "first_seen": 1771970020443,
+      "first_seen_iso": "2026-02-24T21:53:40.443000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771970020443,
+          "price": 3.237e-06,
+          "liq": 5108.93,
+          "vol_5m": 0.0
+        }
+      ],
+      "token": {
+        "address": "0xafeadbc5927df211a75f4b6bca6ad3e5520c5720",
+        "symbol": "YOLO",
+        "name": "YOLO Build"
+      }
+    },
+    "0x2808589324160d6b68ca1def7927fd9c965ccb07": {
+      "first_seen": 1771970020443,
+      "first_seen_iso": "2026-02-24T21:53:40.443000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771970020443,
+          "price": 1.829e-07,
+          "liq": 18733.41,
+          "vol_5m": 0.0
+        }
+      ],
+      "token": {
+        "address": "0x2808589324160d6b68ca1def7927fd9c965ccb07",
+        "symbol": "HEXAGON",
+        "name": "Hexagon OS"
       }
     }
   }

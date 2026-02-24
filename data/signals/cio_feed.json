@@ -1,7 +1,247 @@
 {
-  "candidates": [],
+  "candidates": [
+    {
+      "token": {
+        "address": "0x946494e26c8c26c2332225046cee80f37a76ab07",
+        "symbol": "ESME",
+        "name": "Esme"
+      },
+      "pair": {
+        "address": "0x495938351e15899bcb4d2be393d0945653e69ae0fef10556d3c76b1a9287e872",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 174730.11,
+        "vol_1h_usd": 66635.88,
+        "price_usd": 2.003e-06,
+        "price_change_24h": 0.0
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-24T18:59:31+00:00",
+        "token_first_seen": "2026-02-24T19:56:15.069000+00:00",
+        "age_minutes": 116.0,
+        "age_hours": 1.93
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.98
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": false,
+        "quality_score": 75
+      },
+      "badges": [
+        "\ud83c\udd95 NEW",
+        "\ud83d\udc8e HIGH_LIQ"
+      ],
+      "category": "CIO",
+      "price_history": [
+        {
+          "timestamp": 1771962975069,
+          "price": 2.003e-06,
+          "liq": 174730.11,
+          "vol_5m": 5552.99
+        }
+      ]
+    },
+    {
+      "token": {
+        "address": "0xecd7c9a76f0d10a49bc695f743ff968b5b824125",
+        "symbol": "ODAI",
+        "name": "ODEI AI"
+      },
+      "pair": {
+        "address": "0x78acdfd169ef56fbb843eaa42cb60370bcd48847",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 44693.5,
+        "vol_1h_usd": 38130.12,
+        "price_usd": 0.0002532,
+        "price_change_24h": 0.0
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-24T18:46:41+00:00",
+        "token_first_seen": "2026-02-24T19:56:15.069000+00:00",
+        "age_minutes": 116.0,
+        "age_hours": 1.93
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.98
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      },
+      "badges": [
+        "\ud83c\udd95 NEW",
+        "\ud83d\udcc8 HIGH_VOLUME"
+      ],
+      "category": "CIO",
+      "price_history": [
+        {
+          "timestamp": 1771962975069,
+          "price": 0.0002532,
+          "liq": 44693.5,
+          "vol_5m": 3177.51
+        }
+      ]
+    },
+    {
+      "token": {
+        "address": "0x59a3a2314a0a9e701f03ab1a4396b91f61f68341",
+        "symbol": "TAKEOVER",
+        "name": "Takeover.fun"
+      },
+      "pair": {
+        "address": "0x8efba5a9b944b64acf59d37f772445a21f3b6223",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 52774.79,
+        "vol_1h_usd": 66102.0,
+        "price_usd": 0.0006942,
+        "price_change_24h": 0.0
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-24T16:43:45+00:00",
+        "token_first_seen": "2026-02-24T19:56:15.069000+00:00",
+        "age_minutes": 116.0,
+        "age_hours": 1.93
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.95
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "boosts",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      },
+      "badges": [
+        "\ud83c\udd95 NEW",
+        "\ud83d\udcc8 HIGH_VOLUME",
+        "\ud83d\udca7 GOOD_LIQ"
+      ],
+      "category": "CIO",
+      "price_history": [
+        {
+          "timestamp": 1771962975069,
+          "price": 0.0006942,
+          "liq": 52774.79,
+          "vol_5m": 5508.5
+        }
+      ]
+    },
+    {
+      "token": {
+        "address": "0x4da7900f54b45949621649598f44e263c3955b07",
+        "symbol": "STRONG",
+        "name": "Stronghold"
+      },
+      "pair": {
+        "address": "0xad2676517d3ac3c4956c2664c345588d862b64ae5d2b881143d0230e09d39c48",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 207071.73,
+        "vol_1h_usd": 15280.439999999999,
+        "price_usd": 2.485e-06,
+        "price_change_24h": 0.0
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-19T02:05:07+00:00",
+        "token_first_seen": "2026-02-24T19:56:15.069000+00:00",
+        "age_minutes": 116.0,
+        "age_hours": 1.93
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      },
+      "badges": [
+        "\ud83c\udd95 NEW",
+        "\ud83d\udc8e HIGH_LIQ"
+      ],
+      "category": "CIO",
+      "price_history": [
+        {
+          "timestamp": 1771962975069,
+          "price": 2.485e-06,
+          "liq": 207071.73,
+          "vol_5m": 1273.37
+        }
+      ]
+    },
+    {
+      "token": {
+        "address": "0x0089c6bd6bf6234b4731a81a746ade1cbbaeab07",
+        "symbol": "1000000000",
+        "name": "Boom "
+      },
+      "metrics": {
+        "liq_usd": 17967.06,
+        "vol_1h_usd": 0.0,
+        "price_usd": 1.791e-07,
+        "price_change_24h": 0.0
+      },
+      "timestamps": {
+        "token_first_seen": "2026-02-24T19:56:15.069000+00:00",
+        "age_hours": 1.93,
+        "age_minutes": 116.0
+      },
+      "price_history": [
+        {
+          "timestamp": 1771962975069,
+          "price": 1.791e-07,
+          "liq": 17967.06,
+          "vol_5m": 0.0
+        }
+      ],
+      "badges": [
+        "\ud83c\udd95 NEW"
+      ],
+      "category": "CIO"
+    }
+  ],
   "meta": {
-    "updated_at": "2026-02-24T15:54:12.700883+00:00",
-    "count": 0
+    "updated_at": "2026-02-24T21:52:14.183178+00:00",
+    "count": 5
   }
 }

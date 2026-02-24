@@ -1,11 +1,11 @@
 {
   "schema": "lurker_hall_of_fame_v1",
   "meta": {
-    "updated_at": "2026-02-24T15:47:32.824613+00:00",
-    "total_tracked": 57,
+    "updated_at": "2026-02-24T23:04:41.961622+00:00",
+    "total_tracked": 9,
     "total_certified": 9,
-    "win_rate": 15.8,
-    "average_gain_pct": 332.4
+    "win_rate": 100.0,
+    "average_gain_pct": 332.3
   },
   "certified": [
     {

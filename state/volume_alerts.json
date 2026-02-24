@@ -65,6 +65,22 @@
         "dumping"
       ],
       "timestamp": "2026-02-24T15:54:12.696508+00:00"
+    },
+    {
+      "type": "dump_warning",
+      "token": "Spawnr",
+      "risk_factors": [
+        "dumping"
+      ],
+      "timestamp": "2026-02-24T19:55:58.453127+00:00"
+    },
+    {
+      "type": "dump_warning",
+      "token": "Spawnr",
+      "risk_factors": [
+        "dumping"
+      ],
+      "timestamp": "2026-02-24T21:52:14.179117+00:00"
     }
   ]
 }
