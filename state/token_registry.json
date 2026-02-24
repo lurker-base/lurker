@@ -2234,6 +2234,12 @@
           "price": 5.852e-06,
           "liq": 218920.68,
           "vol_5m": 1743.01
+        },
+        {
+          "timestamp": 1771920803997,
+          "price": 5.976e-06,
+          "liq": 221503.6,
+          "vol_5m": 121.76
         }
       ],
       "token": {
@@ -2391,6 +2397,23 @@
         "address": "0xbb060648e9782d1c48b3be718848a7acf179c11c",
         "symbol": "PERKOS",
         "name": "The Perk OS"
+      }
+    },
+    "0x0601a2352fe490e6cab10aba1d0f00405d4a9140": {
+      "first_seen": 1771920803997,
+      "first_seen_iso": "2026-02-24T08:13:23.997000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771920803997,
+          "price": 9.849e-06,
+          "liq": 61348.78,
+          "vol_5m": 14290.13
+        }
+      ],
+      "token": {
+        "address": "0x0601a2352fe490e6cab10aba1d0f00405d4a9140",
+        "symbol": "ClawFinger",
+        "name": "ClawFinger"
       }
     }
   }
