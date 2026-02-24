@@ -1,104 +1,22 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-02-24T08:13:24.007000+00:00",
-    "generated_at": "2026-02-24T08:13:24.007000+00:00",
+    "updated_at": "2026-02-24T09:10:00.000000+00:00",
+    "generated_at": "2026-02-24T09:10:00.000000+00:00",
     "status": "ok",
-    "count": 2,
+    "count": 0,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
       "min_tx_5m": 1,
       "max_age_min": 10080
     },
-    "risk_distribution": {
-      "low": 2
-    },
+    "risk_distribution": {},
     "rejected": {
-      "too_old": 4
+      "too_old": 4,
+      "low_volume": 1
     },
     "source": "ultra_launch_scanner"
   },
-  "candidates": [
-    {
-      "token": {
-        "address": "0x0601a2352fe490e6cab10aba1d0f00405d4a9140",
-        "symbol": "ClawFinger",
-        "name": "ClawFinger"
-      },
-      "pair": {
-        "address": "0x62b7e66e74aaef7927e5335f3a945ae95194a454f67022343db1a6dc30133711",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 61348.78,
-        "vol_5m_usd": 14290.13,
-        "vol_1h_usd": 73791.38,
-        "txns_5m": 43,
-        "price_usd": 9.849e-06
-      },
-      "timestamps": {
-        "pair_created_at": "2026-02-24T07:50:25+00:00",
-        "token_first_seen": "2026-02-24T08:13:23.997000+00:00",
-        "age_minutes": 23.0,
-        "age_hours": 0.38
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.99
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    },
-    {
-      "token": {
-        "address": "0xe4a3451ade8ca2c3e1e3d7b9fa6ecce419168ba3",
-        "symbol": "HCLAW",
-        "name": "HyperClaw"
-      },
-      "pair": {
-        "address": "0x1e8365c7d0e8dfc87bd94609072379a7b993c64c0fdc4ef5049ef42e32627528",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 221503.6,
-        "vol_5m_usd": 121.76,
-        "vol_1h_usd": 8930.28,
-        "txns_5m": 4,
-        "price_usd": 5.976e-06
-      },
-      "timestamps": {
-        "pair_created_at": "2026-02-23T21:24:31+00:00",
-        "token_first_seen": "2026-02-23T23:04:45.294000+00:00",
-        "age_minutes": 648.9,
-        "age_hours": 10.81
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.82
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "community",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    }
-  ]
+  "candidates": []
 }
