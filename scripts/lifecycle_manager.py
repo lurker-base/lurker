@@ -135,7 +135,7 @@ def is_token_dead(token: dict) -> bool:
     return False
 
 def distribute_to_category_feeds(tokens: list, registry_tokens: dict):
-    """Distribue les tokens dans les feeds de catégories appropriés"""
+    """Distribue les tokens dans les feeds de catégories appropriés - SANS DOUBLONS"""
     feeds = {
         "CIO": {"candidates": [], "meta": {"updated_at": datetime.now(timezone.utc).isoformat(), "count": 0}},
         "WATCH": {"tokens": [], "meta": {"updated_at": datetime.now(timezone.utc).isoformat()}},
@@ -146,11 +146,21 @@ def distribute_to_category_feeds(tokens: list, registry_tokens: dict):
         "RUGGED": {"tokens": [], "meta": {"updated_at": datetime.now(timezone.utc).isoformat(), "description": "Tokens with -85% dump or zero liquidity"}},
     }
     
+    # Utiliser un dict pour éviter les doublons (clé = adresse du token)
+    seen_tokens = {}
+    
     for token in tokens:
-        # Récupérer les données à jour du registry (source de vérité)
         token_addr = token.get('token', {}).get('address', '')
-        if token_addr and token_addr in registry_tokens:
-            # Utiliser les métriques à jour du registry
+        if not token_addr:
+            continue
+        
+        # Si on a déjà vu ce token, ignorer
+        if token_addr in seen_tokens:
+            continue
+        seen_tokens[token_addr] = True
+        
+        # Récupérer les données à jour du registry (source de vérité)
+        if token_addr in registry_tokens:
             registry_token = registry_tokens[token_addr]
             token['metrics'] = registry_token.get('metrics', token.get('metrics', {}))
             token['price_history'] = registry_token.get('price_history', token.get('price_history', []))

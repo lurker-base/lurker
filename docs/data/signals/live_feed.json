@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "updated_at": "2026-02-23T20:08:31.342677",
+    "source": "dexscreener",
+    "chain": "base",
+    "count": 2,
+    "errors": [],
+    "debug": {
+      "raw_pairs": 102,
+      "rejected": {
+        "bluechip_symbol": 86,
+        "high_mcap_$119,932,020": 1,
+        "high_mcap_$154,692,643": 1,
+        "high_mcap_$56,616,861": 1,
+        "high_mcap_$26,983,692": 1,
+        "high_mcap_$16,762,756": 1,
+        "high_mcap_$20,829,073": 1,
+        "high_mcap_$44,387,011": 1,
+        "high_mcap_$860,627,450": 1,
+        "high_mcap_$86,981,250": 1,
+        "high_mcap_$16,222,584": 1,
+        "high_mcap_$299,965,336": 1,
+        "high_mcap_$30,013,206": 1,
+        "high_mcap_$23,843,858": 1,
+        "low_vol_$131": 1
+      }
+    }
+  },
+  "signals": [
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "posted",
+      "ts_utc": "2026-02-23T20:08:31.342597Z",
+      "chain": "base",
+      "token": {
+        "name": "Edel",
+        "symbol": "$EDEL",
+        "address": "0xFb31f85A8367210B2e4Ed2360D2dA9Dc2D2Ccc95",
+        "pair_url": "https://dexscreener.com/base/0x566bee7ef7b39f29d150ab3be6b6242c17cc5a31"
+      },
+      "scores": {
+        "confidence": 85,
+        "rarity": "3-5/day",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0.006314,
+        "mcap_usd": 3582264,
+        "liq_usd": 557266.93,
+        "vol_24h_usd": 63860.49
+      },
+      "dex": "aerodrome",
+      "pair_address": "0x566beE7EF7b39f29d150AB3be6b6242C17CC5A31",
+      "scanner": "dexscreener"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "posted",
+      "ts_utc": "2026-02-23T20:08:31.342543Z",
+      "chain": "base",
+      "token": {
+        "name": "Sport.fun",
+        "symbol": "$FUN",
+        "address": "0x16EE7ecAc70d1028E7712751E2Ee6BA808a7dd92",
+        "pair_url": "https://dexscreener.com/base/0x659be70647b0f63217d60e077f4417b1ecc65064"
+      },
+      "scores": {
+        "confidence": 77,
+        "rarity": "3-5/day",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0.0468,
+        "mcap_usd": 8330841,
+        "liq_usd": 589033.92,
+        "vol_24h_usd": 926007.73
+      },
+      "dex": "aerodrome",
+      "pair_address": "0x659bE70647B0f63217D60e077F4417b1eCC65064",
+      "scanner": "dexscreener"
+    }
+  ]
+}

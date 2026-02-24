@@ -1,0 +1,560 @@
+{
+  "schema": "lurker_hall_of_fame_v1",
+  "meta": {
+    "updated_at": "2026-02-24T15:47:32.824613+00:00",
+    "total_tracked": 57,
+    "total_certified": 9,
+    "win_rate": 15.8,
+    "average_gain_pct": 332.4
+  },
+  "certified": [
+    {
+      "token": {
+        "address": "0xc61857eb390ff2ac5fd07aae0c030bbe5b79144e",
+        "symbol": "ZEROCLAW",
+        "name": "ZeroClaw AI"
+      },
+      "certified_gain": 240.9,
+      "first_seen": "2026-02-22T16:00:15.449000+00:00",
+      "certified_at": "2026-02-24T15:47:32.824657+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771776015449,
+          "price": 0.0009926,
+          "liq": 90156.05,
+          "vol_5m": 53791.97
+        },
+        {
+          "timestamp": 1771776548289,
+          "price": 0.00217,
+          "liq": 133618.43,
+          "vol_5m": 44628.16
+        },
+        {
+          "timestamp": 1771776638994,
+          "price": 0.002441,
+          "liq": 141552.64,
+          "vol_5m": 43622.1
+        },
+        {
+          "timestamp": 1771776768329,
+          "price": 0.003302,
+          "liq": 164763.25,
+          "vol_5m": 56479.96
+        },
+        {
+          "timestamp": 1771778121392,
+          "price": 0.003149,
+          "liq": 161677.93,
+          "vol_5m": 70578.77
+        },
+        {
+          "timestamp": 1771778177057,
+          "price": 0.003384,
+          "liq": 167614.56,
+          "vol_5m": 51052.67
+        },
+        {
+          "timestamp": 1771779803680,
+          "price": 0.001865,
+          "liq": 125252.12,
+          "vol_5m": 59611.22
+        },
+        {
+          "timestamp": 1771782918017,
+          "price": 0.0007044,
+          "liq": 78325.58,
+          "vol_5m": 55944.07
+        }
+      ]
+    },
+    {
+      "token": {
+        "address": "0x71a09f5b9b88976ebcc79183e0e99e7d07beabaf",
+        "symbol": "EARENDEL",
+        "name": "Earendel"
+      },
+      "certified_gain": 441.5,
+      "first_seen": "2026-02-22T16:00:15.449000+00:00",
+      "certified_at": "2026-02-24T15:47:32.824704+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771776015449,
+          "price": 0.000484,
+          "liq": 48822.38,
+          "vol_5m": 13864.36
+        },
+        {
+          "timestamp": 1771776548289,
+          "price": 0.0007274,
+          "liq": 59984.86,
+          "vol_5m": 24699.86
+        },
+        {
+          "timestamp": 1771776638995,
+          "price": 0.0008554,
+          "liq": 65069.99,
+          "vol_5m": 15238.81
+        },
+        {
+          "timestamp": 1771776768329,
+          "price": 0.0008728,
+          "liq": 65710.05,
+          "vol_5m": 13453.13
+        },
+        {
+          "timestamp": 1771778121392,
+          "price": 0.001142,
+          "liq": 75377.21,
+          "vol_5m": 20064.14
+        },
+        {
+          "timestamp": 1771778177057,
+          "price": 0.001293,
+          "liq": 80223.45,
+          "vol_5m": 22716.07
+        },
+        {
+          "timestamp": 1771779803680,
+          "price": 0.002621,
+          "liq": 115006.61,
+          "vol_5m": 14137.31
+        },
+        {
+          "timestamp": 1771782918017,
+          "price": 0.002018,
+          "liq": 101110.07,
+          "vol_5m": 15156.45
+        }
+      ]
+    },
+    {
+      "token": {
+        "address": "0xe4f5b998372443522b08b72d3b5b704c3bdafaf4",
+        "symbol": "WILDE",
+        "name": "Lobster Wilde"
+      },
+      "certified_gain": 179.6,
+      "first_seen": "2026-02-22T20:00:27.191000+00:00",
+      "certified_at": "2026-02-24T15:47:32.824728+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771790427191,
+          "price": 0.0007621,
+          "liq": 56049.98,
+          "vol_5m": 13792.33
+        },
+        {
+          "timestamp": 1771793762672,
+          "price": 0.002131,
+          "liq": 94561.53,
+          "vol_5m": 12367.13
+        }
+      ]
+    },
+    {
+      "token": {
+        "address": "0x6630662d14032f58b4191316e8cef4557925fb07",
+        "symbol": "ClawCaster",
+        "name": "ClawCaster"
+      },
+      "certified_gain": 152.1,
+      "first_seen": "2026-02-23T10:19:26.326000+00:00",
+      "certified_at": "2026-02-24T15:47:32.824755+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771841966326,
+          "price": 7.449e-07,
+          "liq": 0,
+          "vol_5m": 4056.34
+        },
+        {
+          "timestamp": 1771842212282,
+          "price": 7.702e-07,
+          "liq": 0,
+          "vol_5m": 2286.33
+        },
+        {
+          "timestamp": 1771844998927,
+          "price": 1.878e-06,
+          "liq": 0,
+          "vol_5m": 23772.95
+        },
+        {
+          "timestamp": 1771847404942,
+          "price": 1.521e-06,
+          "liq": 0,
+          "vol_5m": 2638.73
+        },
+        {
+          "timestamp": 1771849236457,
+          "price": 9.052e-07,
+          "liq": 0,
+          "vol_5m": 34432.28
+        },
+        {
+          "timestamp": 1771849273821,
+          "price": 8.67e-07,
+          "liq": 0,
+          "vol_5m": 19426.8
+        },
+        {
+          "timestamp": 1771849374395,
+          "price": 8.66e-07,
+          "liq": 0,
+          "vol_5m": 8706.32
+        },
+        {
+          "timestamp": 1771849442129,
+          "price": 6.756e-07,
+          "liq": 0,
+          "vol_5m": 5734.17
+        },
+        {
+          "timestamp": 1771849659401,
+          "price": 8.17e-07,
+          "liq": 0,
+          "vol_5m": 9662.5
+        },
+        {
+          "timestamp": 1771849824400,
+          "price": 1.19e-06,
+          "liq": 0,
+          "vol_5m": 11599.92
+        }
+      ]
+    },
+    {
+      "token": {
+        "address": "0xc18db1ed7d44eb6b705dd9b928001f190314d519",
+        "symbol": "HEDW",
+        "name": "Hedwig"
+      },
+      "certified_gain": 1319.6,
+      "first_seen": "2026-02-23T12:50:16.965000+00:00",
+      "certified_at": "2026-02-24T15:47:32.824763+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771851016965,
+          "price": 0.0001473,
+          "liq": 26575.97,
+          "vol_5m": 5621.54
+        },
+        {
+          "timestamp": 1771851922351,
+          "price": 0.0002746,
+          "liq": 36401.5,
+          "vol_5m": 13348.36
+        },
+        {
+          "timestamp": 1771852828560,
+          "price": 0.0005377,
+          "liq": 51085.27,
+          "vol_5m": 15596.41
+        },
+        {
+          "timestamp": 1771853734911,
+          "price": 0.0005544,
+          "liq": 52002.62,
+          "vol_5m": 9666.55
+        },
+        {
+          "timestamp": 1771854640786,
+          "price": 0.000583,
+          "liq": 53550.6,
+          "vol_5m": 11282.93
+        },
+        {
+          "timestamp": 1771855552247,
+          "price": 0.001034,
+          "liq": 71329.18,
+          "vol_5m": 16585.05
+        },
+        {
+          "timestamp": 1771856162681,
+          "price": 0.0009106,
+          "liq": 67080.46,
+          "vol_5m": 13258.95
+        },
+        {
+          "timestamp": 1771857358685,
+          "price": 0.001374,
+          "liq": 82340.06,
+          "vol_5m": 8711.05
+        },
+        {
+          "timestamp": 1771858264847,
+          "price": 0.001743,
+          "liq": 92508.11,
+          "vol_5m": 17567.2
+        },
+        {
+          "timestamp": 1771859171199,
+          "price": 0.002091,
+          "liq": 101746.98,
+          "vol_5m": 63460.58
+        }
+      ]
+    },
+    {
+      "token": {
+        "address": "0xce3fcd5e1481155016df318cffd8c19060f5844e",
+        "symbol": "AI2028",
+        "name": "AI 2028"
+      },
+      "certified_gain": 314.2,
+      "first_seen": "2026-02-23T15:21:17.098000+00:00",
+      "certified_at": "2026-02-24T15:47:32.824775+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771860077098,
+          "price": 0.0001979,
+          "liq": 39899.12,
+          "vol_5m": 37165.49
+        },
+        {
+          "timestamp": 1771860984156,
+          "price": 0.0008198,
+          "liq": 81041.18,
+          "vol_5m": 29619.39
+        },
+        {
+          "timestamp": 1771861891354,
+          "price": 0.0003759,
+          "liq": 55157.97,
+          "vol_5m": 22268.35
+        },
+        {
+          "timestamp": 1771862799798,
+          "price": 0.0002249,
+          "liq": 42750.46,
+          "vol_5m": 12718.34
+        },
+        {
+          "timestamp": 1771863709822,
+          "price": 2.06e-06,
+          "liq": 4105.03,
+          "vol_5m": 492.68
+        },
+        {
+          "timestamp": 1771864618298,
+          "price": 4.438e-06,
+          "liq": 6040.75,
+          "vol_5m": 0.0
+        }
+      ]
+    },
+    {
+      "token": {
+        "address": "0x9ee36408f7c57763727dd64513a260820a576b07",
+        "symbol": "CLOC",
+        "name": "Cloclo"
+      },
+      "certified_gain": 56.8,
+      "first_seen": "2026-02-23T15:36:24.156000+00:00",
+      "certified_at": "2026-02-24T15:47:32.824784+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771860984156,
+          "price": 1.784e-06,
+          "liq": 0,
+          "vol_5m": 14227.9
+        },
+        {
+          "timestamp": 1771860984156,
+          "price": 1.784e-06,
+          "liq": 0,
+          "vol_5m": 14227.9
+        },
+        {
+          "timestamp": 1771861891354,
+          "price": 2.027e-06,
+          "liq": 0,
+          "vol_5m": 19839.79
+        },
+        {
+          "timestamp": 1771861891354,
+          "price": 2.027e-06,
+          "liq": 0,
+          "vol_5m": 19839.79
+        },
+        {
+          "timestamp": 1771862799798,
+          "price": 2.383e-06,
+          "liq": 0,
+          "vol_5m": 22998.27
+        },
+        {
+          "timestamp": 1771862799798,
+          "price": 2.383e-06,
+          "liq": 0,
+          "vol_5m": 22998.27
+        },
+        {
+          "timestamp": 1771863709822,
+          "price": 2.384e-06,
+          "liq": 0,
+          "vol_5m": 17091.75
+        },
+        {
+          "timestamp": 1771863709822,
+          "price": 2.384e-06,
+          "liq": 0,
+          "vol_5m": 17091.75
+        },
+        {
+          "timestamp": 1771864618298,
+          "price": 2.797e-06,
+          "liq": 0,
+          "vol_5m": 26280.19
+        },
+        {
+          "timestamp": 1771864618298,
+          "price": 2.797e-06,
+          "liq": 0,
+          "vol_5m": 26280.19
+        },
+        {
+          "timestamp": 1771865527127,
+          "price": 2.049e-07,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771865527127,
+          "price": 2.049e-07,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771866435929,
+          "price": 1.875e-07,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771866435929,
+          "price": 1.875e-07,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771867343000,
+          "price": 1.875e-07,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771868250253,
+          "price": 1.875e-07,
+          "liq": 0,
+          "vol_5m": 0.0
+        }
+      ]
+    },
+    {
+      "token": {
+        "address": "0x8e27a4cac917563295de9b07d594f7f3e0fdcb07",
+        "symbol": "ClawnchPedia",
+        "name": "ClawnchPedia"
+      },
+      "certified_gain": 135.9,
+      "first_seen": "2026-02-23T15:36:24.156000+00:00",
+      "certified_at": "2026-02-24T15:47:32.824789+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771860984156,
+          "price": 2.766e-06,
+          "liq": 0,
+          "vol_5m": 9716.54
+        },
+        {
+          "timestamp": 1771861891354,
+          "price": 3.546e-06,
+          "liq": 0,
+          "vol_5m": 17236.61
+        },
+        {
+          "timestamp": 1771862799798,
+          "price": 6.526e-06,
+          "liq": 0,
+          "vol_5m": 33501.76
+        },
+        {
+          "timestamp": 1771863709822,
+          "price": 3.27e-06,
+          "liq": 0,
+          "vol_5m": 14657.6
+        },
+        {
+          "timestamp": 1771864618298,
+          "price": 3.667e-06,
+          "liq": 0,
+          "vol_5m": 2389.72
+        },
+        {
+          "timestamp": 1771865527127,
+          "price": 2.906e-06,
+          "liq": 0,
+          "vol_5m": 12140.85
+        },
+        {
+          "timestamp": 1771866435929,
+          "price": 2.43e-06,
+          "liq": 0,
+          "vol_5m": 21850.17
+        }
+      ]
+    },
+    {
+      "token": {
+        "address": "0xde4b3bdfc8203f5641ceeaf203362d34d49c2b07",
+        "symbol": "BOUNCERBOT",
+        "name": "Clawd Bouncer Bot"
+      },
+      "certified_gain": 150.5,
+      "first_seen": "2026-02-23T17:07:15.929000+00:00",
+      "certified_at": "2026-02-24T15:47:32.824800+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771866435929,
+          "price": 1.345e-06,
+          "liq": 0,
+          "vol_5m": 7345.09
+        },
+        {
+          "timestamp": 1771867342999,
+          "price": 1.379e-06,
+          "liq": 0,
+          "vol_5m": 6746.23
+        },
+        {
+          "timestamp": 1771868250253,
+          "price": 1.952e-06,
+          "liq": 0,
+          "vol_5m": 378.21
+        },
+        {
+          "timestamp": 1771869057126,
+          "price": 1.938e-06,
+          "liq": 0,
+          "vol_5m": 2.42
+        },
+        {
+          "timestamp": 1771877008211,
+          "price": 3.365e-06,
+          "liq": 0,
+          "vol_5m": 7.66
+        },
+        {
+          "timestamp": 1771877154605,
+          "price": 3.369e-06,
+          "liq": 0,
+          "vol_5m": 7.69
+        }
+      ]
+    }
+  ],
+  "tracking": [],
+  "rejected": []
+}
