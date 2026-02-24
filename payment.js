@@ -84,8 +84,9 @@ function openPaymentModal(service, amount, description, features = []) {
                 </div>
                 
                 <div class="payment-confirm">
-                    <p>message <strong>@lurker_sub_bot</strong>:</p>
-                    <code>/paid ${paymentId} [transaction_hash]</code>
+                    <p>DM <a href="https://x.com/LURKER_AI2026" target="_blank">@LURKER_AI2026</a> on X:</p>
+                    <code>payment: ${paymentId} + tx hash</code>
+                    <small>access within 24h</small>
                 </div>
             </div>
         </div>
