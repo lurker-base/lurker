@@ -34,6 +34,16 @@ function pick(obj, paths, fallback = undefined) {
     return fallback;
 }
 
+function formatAge(ageMinutes) {
+    const mins = safeNum(ageMinutes);
+    if (mins < 60) {
+        return `${Math.round(mins)}m`;
+    } else {
+        const hours = (mins / 60).toFixed(1);
+        return `${hours}h`;
+    }
+}
+
 function renderAgeBadge(ageHours) {
     const h = safeNum(ageHours);
     if (h < 1) return '<span class="badge-age badge-new">NEW</span>';
@@ -45,12 +55,14 @@ function renderAgeBadge(ageHours) {
 
 function renderWatchCard(item) {
     const symbol = pick(item, ['token.symbol', 'symbol'], '???');
-    const age = safeNum(item.timestamps?.age_minutes, 0) / 60;
+    const ageMin = safeNum(item.timestamps?.age_minutes, 0);
+    const age = ageMin / 60;
     const checks = item.timestamps?.checks || 1;
     const metrics = item.metrics || {};
     const liq = safeNum(metrics.liq_usd, 0);
     const tx5m = safeNum(metrics.txns_5m, 0);
-    const url = item.pair_url || (item.pool_address ? `https://dexscreener.com/base/${item.pool_address}` : '#');
+    const url = item.pair?.address ? `https://dexscreener.com/base/${item.pair.address}` : 
+                (item.pair_url || (item.pool_address ? `https://dexscreener.com/base/${item.pool_address}` : '#'));
     
     return `
         <div class="token-card" style="border-left: 3px solid #666; opacity: 0.8;">
@@ -70,7 +82,7 @@ function renderWatchCard(item) {
                 Buffer zone (10-30m) — re-testing before HOTLIST
             </div>
             <div class="card-footer">
-                <span class="age-text">${item.timestamps?.age_minutes?.toFixed(0)}m old</span>
+                <span class="age-text">${formatAge(ageMin)} old</span>
                 ${url !== '#' ? `<a href="${url}" target="_blank" class="dex-link">DexScreener →</a>` : ''}
             </div>
         </div>
@@ -196,7 +208,7 @@ function renderCIOCard(item) {
                 <span>🔥 ${Math.round(tx5m)} tx/5m</span>
             </div>
             <div class="card-footer">
-                <span class="age-text">${Math.round(ageMin)}m old</span>
+                <span class="age-text">${formatAge(ageMin)} old</span>
                 ${url !== '#' ? `<a href="${url}" target="_blank" class="dex-link">DexScreener →</a>` : ''}
             </div>
         </div>
@@ -205,7 +217,8 @@ function renderCIOCard(item) {
 
 function renderHotlistCard(item) {
     const symbol = pick(item, ['token.symbol', 'symbol'], '???');
-    const age = safeNum(item.timestamps?.age_minutes, 0) / 60; // Convert to hours for display
+    const ageMin = safeNum(item.timestamps?.age_minutes, 0);
+    const age = ageMin / 60; // Convert to hours for display
     const score = safeNum(item.scores?.hotlist_score, 0);
     const oppScore = safeNum(item.scores?.opportunity_score, 0);
     const riskLevel = item.risk?.level || 'unknown';
@@ -214,7 +227,8 @@ function renderHotlistCard(item) {
     const liq = safeNum(metrics.liq_usd, 0);
     const vol1h = safeNum(metrics.vol_1h_usd, 0);
     const tx1h = safeNum(metrics.txns_1h, 0);
-    const url = item.pair_url || (item.pool_address ? `https://dexscreener.com/base/${item.pool_address}` : '#');
+    const url = item.pair?.address ? `https://dexscreener.com/base/${item.pair.address}` : 
+                (item.pair_url || (item.pool_address ? `https://dexscreener.com/base/${item.pool_address}` : '#'));
     
     // Risk bias text
     const riskBiasText = {
@@ -246,7 +260,7 @@ function renderHotlistCard(item) {
             </div>
             ${riskFactors.length > 0 ? `<div style="font-size: 0.7rem; color: var(--text-muted); margin-bottom: 0.5rem;">${riskFactors.join(', ')}</div>` : ''}
             <div class="card-footer">
-                <span class="age-text">${item.timestamps?.age_minutes?.toFixed(0)}m old • EARLY OPPORTUNITY</span>
+                <span class="age-text">${formatAge(ageMin)} old • EARLY OPPORTUNITY</span>
                 ${url !== '#' ? `<a href="${url}" target="_blank" class="dex-link">DexScreener →</a>` : ''}
             </div>
         </div>
@@ -254,16 +268,18 @@ function renderHotlistCard(item) {
 }
 
 function renderFastCertifiedCard(item) {
-    const original = item.original_cio || {};
+    const original = item.original_cio || item;
     const symbol = pick(original, ['token.symbol', 'symbol'], '???');
     const age = safeNum(item.timestamps?.age_hours, 0);
     const score = safeNum(item.momentum?.score, 0);
-    const metrics = item.metrics_at_cert || {};
+    const metrics = item.metrics_at_cert || item.metrics || {};
     const liq = safeNum(metrics.liq_usd, 0);
     const vol24 = safeNum(metrics.vol_24h_usd, 0);
     const tx24 = safeNum(metrics.txns_24h, 0);
     const trend = item.momentum?.vol_trend || 'stable';
-    const url = original.pair_url || (original.pool_address ? `https://dexscreener.com/base/${original.pool_address}` : '#');
+    const url = item.pair?.address ? `https://dexscreener.com/base/${item.pair.address}` : 
+                (original.pair?.address ? `https://dexscreener.com/base/${original.pair.address}` : 
+                (item.pair_url || (item.pool_address ? `https://dexscreener.com/base/${item.pool_address}` : '#')));
     
     const trendEmoji = trend === 'up' ? '📈' : trend === 'down' ? '📉' : '➡️';
     
