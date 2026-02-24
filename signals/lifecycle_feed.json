@@ -1,54 +1,8 @@
 {
-  "candidates": [
-    {
-      "token": {
-        "address": "0xe4a3451ade8ca2c3e1e3d7b9fa6ecce419168ba3",
-        "symbol": "HCLAW",
-        "name": "HyperClaw"
-      },
-      "pair": {
-        "address": "0x1e8365c7d0e8dfc87bd94609072379a7b993c64c0fdc4ef5049ef42e32627528",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 218920.68,
-        "vol_5m_usd": 1743.01,
-        "vol_1h_usd": 7667.32,
-        "txns_5m": 5,
-        "price_usd": 5.852e-06
-      },
-      "timestamps": {
-        "pair_created_at": "2026-02-23T21:24:31+00:00",
-        "token_first_seen": "2026-02-23T23:04:45.294000+00:00",
-        "age_minutes": 543.7,
-        "age_hours": 9.06
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.82
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "community",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      },
-      "badges": [
-        "\u26a1 TRENDING",
-        "\ud83d\udc8e HIGH_LIQ"
-      ],
-      "category": "HOTLIST"
-    }
-  ],
+  "candidates": [],
   "meta": {
-    "updated_at": "2026-02-24T08:08:26.642643+00:00",
-    "count": 1,
+    "updated_at": "2026-02-24T10:33:46.362460+00:00",
+    "count": 0,
     "alerts_count": 0
   }
 }
