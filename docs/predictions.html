@@ -372,10 +372,47 @@
                 
                 if (response.ok) {
                     const data = await response.json();
-                    const predictions = Object.values(data);
                     
-                    if (predictions.length > 0) {
-                        renderPredictions(predictions);
+                    // Combine both warnings and predictions list
+                    let allPredictions = [];
+                    
+                    // Add individual warnings (HEDW, EARENDEL, etc.)
+                    for (const [key, value] of Object.entries(data)) {
+                        if (key.startsWith('warn_')) {
+                            // Warning format
+                            allPredictions.push({
+                                id: value.id,
+                                token_symbol: value.token_symbol,
+                                token_address: value.token_address,
+                                timestamp: value.timestamp,
+                                risk_type: value.risk_type,
+                                risk_factors: value.risk_factors || [],
+                                status: value.status,
+                                outcome: value.outcome,
+                                outcome_timestamp: value.outcome_timestamp
+                            });
+                        }
+                    }
+                    
+                    // Add predictions list if exists (from pump_dump_detector)
+                    if (data.predictions && Array.isArray(data.predictions)) {
+                        for (const pred of data.predictions) {
+                            allPredictions.push({
+                                id: pred.type + '_' + pred.token,
+                                token_symbol: pred.token,
+                                token_address: pred.address,
+                                timestamp: pred.detected_at,
+                                risk_type: pred.type === 'PUMP' ? 'pump_detected' : 'dump_detected',
+                                risk_factors: [pred.type + ' +', pred.performance.toFixed(0) + '%'],
+                                status: pred.status,
+                                outcome: pred.type === 'PUMP' ? 'pump_confirmed' : 'dump_confirmed',
+                                outcome_timestamp: pred.detected_at
+                            });
+                        }
+                    }
+                    
+                    if (allPredictions.length > 0) {
+                        renderPredictions(allPredictions);
                         return;
                     }
                 }
