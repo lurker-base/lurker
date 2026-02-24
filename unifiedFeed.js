@@ -316,7 +316,8 @@ async function loadCIOFeed() {
         const res = await fetch(`${REPO_RAW}/signals/cio_feed.json?t=${Date.now()}`, { cache: 'no-store' });
         if (!res.ok) throw new Error('CIO HTTP ' + res.status);
         const data = await res.json();
-        feedState.cio = data.candidates || [];
+        // Support both old (candidates) and new (tokens) structure
+        feedState.cio = data.candidates || data.tokens || [];
         feedState.updated = data.meta?.updated_at || data.updated_at || '--:--';
     } catch (e) {
         console.error('CIO load failed:', e);
@@ -331,7 +332,8 @@ async function loadHotlistFeed() {
             return;
         }
         const data = await res.json();
-        feedState.hotlist = data.hotlist || [];
+        // Support both old (hotlist) and new (tokens) structure
+        feedState.hotlist = data.hotlist || data.tokens || [];
     } catch (e) {
         console.log('Hotlist not available yet');
         feedState.hotlist = [];
@@ -346,7 +348,8 @@ async function loadWatchFeed() {
             return;
         }
         const data = await res.json();
-        feedState.watch = data.watch || [];
+        // Support both old (watch) and new (tokens) structure
+        feedState.watch = data.watch || data.tokens || [];
     } catch (e) {
         console.log('Watch not available yet');
         feedState.watch = [];
@@ -362,7 +365,8 @@ async function loadFastCertifiedFeed() {
             return;
         }
         const data = await res.json();
-        feedState.fastCertified = data.fast_certified || [];
+        // Support both old (fast_certified) and new (tokens) structure
+        feedState.fastCertified = data.fast_certified || data.tokens || [];
     } catch (e) {
         console.log('Fast-certified not available yet');
         feedState.fastCertified = [];
