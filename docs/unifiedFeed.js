@@ -61,8 +61,10 @@ function renderWatchCard(item) {
     const metrics = item.metrics || {};
     const liq = safeNum(metrics.liq_usd, 0);
     const tx5m = safeNum(metrics.txns_5m, 0);
+    const tokenAddress = pick(item, ['token.address', 'address'], '');
     const url = item.pair?.address ? `https://dexscreener.com/base/${item.pair.address}` : 
-                (item.pair_url || (item.pool_address ? `https://dexscreener.com/base/${item.pool_address}` : '#'));
+                (item.pair_url || (item.pool_address ? `https://dexscreener.com/base/${item.pool_address}` : 
+                (tokenAddress ? `https://dexscreener.com/base/${tokenAddress}` : '#')));
     
     return `
         <div class="token-card" style="border-left: 3px solid #666; opacity: 0.8;">
@@ -169,8 +171,10 @@ function renderCIOCard(item) {
     const riskLevel = item.risk_level || 'unknown';
     const risks = item.risks || [];
     const quality = item.quality || {};
+    const tokenAddress = pick(item, ['token.address', 'address'], '');
     const url = item.pair?.address ? `https://dexscreener.com/base/${item.pair.address}` : 
-                (item.pair_url || (item.pool_address ? `https://dexscreener.com/base/${item.pool_address}` : '#'));
+                (item.pair_url || (item.pool_address ? `https://dexscreener.com/base/${item.pool_address}` : 
+                (tokenAddress ? `https://dexscreener.com/base/${tokenAddress}` : '#')));
     
     // Visual separation by quality
     const qScore = quality.quality_score || 0;
@@ -227,8 +231,10 @@ function renderHotlistCard(item) {
     const liq = safeNum(metrics.liq_usd, 0);
     const vol1h = safeNum(metrics.vol_1h_usd, 0);
     const tx1h = safeNum(metrics.txns_1h, 0);
+    const tokenAddress = pick(item, ['token.address', 'address'], '');
     const url = item.pair?.address ? `https://dexscreener.com/base/${item.pair.address}` : 
-                (item.pair_url || (item.pool_address ? `https://dexscreener.com/base/${item.pool_address}` : '#'));
+                (item.pair_url || (item.pool_address ? `https://dexscreener.com/base/${item.pool_address}` : 
+                (tokenAddress ? `https://dexscreener.com/base/${tokenAddress}` : '#')));
     
     // Risk bias text
     const riskBiasText = {
@@ -277,9 +283,11 @@ function renderFastCertifiedCard(item) {
     const vol24 = safeNum(metrics.vol_24h_usd, 0);
     const tx24 = safeNum(metrics.txns_24h, 0);
     const trend = item.momentum?.vol_trend || 'stable';
+    const tokenAddress = pick(item, ['token.address', 'address'], pick(original, ['token.address', 'address'], ''));
     const url = item.pair?.address ? `https://dexscreener.com/base/${item.pair.address}` : 
                 (original.pair?.address ? `https://dexscreener.com/base/${original.pair.address}` : 
-                (item.pair_url || (item.pool_address ? `https://dexscreener.com/base/${item.pool_address}` : '#')));
+                (item.pair_url || (item.pool_address ? `https://dexscreener.com/base/${item.pool_address}` : 
+                (tokenAddress ? `https://dexscreener.com/base/${tokenAddress}` : '#'))));
     
     const trendEmoji = trend === 'up' ? '📈' : trend === 'down' ? '📉' : '➡️';
     

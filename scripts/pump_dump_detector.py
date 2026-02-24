@@ -119,13 +119,13 @@ class PumpDumpDetector:
         """Génère le tweet selon le type d'alerte"""
         symbol = alert['symbol']
         addr_short = alert['address'][:6] + '...' + alert['address'][-4:]
+        dex_url = f"dexscreener.com/base/{alert['address'][:10]}..."
         
         if alert['type'] == 'PUMP':
             tweet = f"""🚀 PUMP DETECTED
 
 ${symbol} +{alert['gain']:.0f}% since detection
 Early entry: {alert['first_price']:.2e}
-Current momentum confirmed
 
 Proof: github.com/lurker-base/lurker/blob/main/state/token_registry.json
 
@@ -143,9 +143,75 @@ Patterns don't lie. 👁"""
         
         return tweet
     
+    def send_telegram_alert(self, alert):
+        """Envoie une alerte Telegram immédiate"""
+        try:
+            # Charger les credentials Telegram (env var d'abord, puis fichier)
+            import os
+            bot_token = os.getenv('TELEGRAM_BOT_TOKEN')
+            chat_id = os.getenv('TELEGRAM_CHAT_ID')
+            
+            # Fallback sur fichier si pas en env
+            if not bot_token or not chat_id:
+                env_path = Path(__file__).parent.parent / '.env.telegram'
+                if env_path.exists():
+                    with open(env_path) as f:
+                        for line in f:
+                            if '=' in line and not line.startswith('#'):
+                                key, value = line.strip().split('=', 1)
+                                if key == 'TELEGRAM_BOT_TOKEN' and not bot_token:
+                                    bot_token = value
+                                if key == 'TELEGRAM_CHAT_ID' and not chat_id:
+                                    chat_id = value
+            
+            if not bot_token or not chat_id:
+                print("⚠️ Telegram credentials not found")
+                return False
+            
+            # Construire le message Telegram
+            emoji = "🚀" if alert['type'] == 'PUMP' else "📉"
+            perf = alert.get('gain') or alert.get('loss')
+            
+            # Lien DexScreener
+            dex_url = f"https://dexscreener.com/base/{alert['address']}"
+            
+            message = f"""{emoji} <b>{alert['type']} ALERT</b> {emoji}
+
+<b>Token:</b> ${alert['symbol']}
+<b>Performance:</b> {'+' if alert['type'] == 'PUMP' else '-'}{perf:.0f}%
+<b>Liquidité:</b> ${alert['liq']:,.0f}
+
+<a href='{dex_url}'>🔗 Voir sur DexScreener</a>
+<a href='https://github.com/lurker-base/lurker/blob/main/state/token_registry.json'>📋 Preuve GitHub</a>
+
+<i>Alerte automatique - LURKER</i>"""
+            
+            import urllib.request
+            import urllib.parse
+            
+            url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
+            data = urllib.parse.urlencode({
+                'chat_id': chat_id,
+                'text': message,
+                'parse_mode': 'HTML',
+                'disable_web_page_preview': True
+            }).encode()
+            
+            req = urllib.request.Request(url, data=data, method='POST')
+            with urllib.request.urlopen(req, timeout=10) as response:
+                if response.status == 200:
+                    print(f"✅ Telegram alert sent: {alert['symbol']}")
+                    return True
+        except Exception as e:
+            print(f"⚠️ Telegram alert failed: {e}")
+            return False
+    
     def send_alert(self, alert):
-        """Envoie l'alerte Twitter et sauvegarde"""
+        """Envoie l'alerte Twitter, Telegram et sauvegarde"""
         tweet = self.generate_tweet(alert)
+        
+        # Envoyer Telegram immédiatement (pour toi)
+        self.send_telegram_alert(alert)
         
         try:
             result = lt.post_tweet(tweet)
