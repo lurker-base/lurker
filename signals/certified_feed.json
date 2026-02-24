@@ -1,6 +1,8 @@
 {
-  "tokens": [],
+  "schema": "lurker_certified_v1",
   "meta": {
-    "updated_at": "2026-02-24T13:22:11.544477+00:00"
-  }
+    "updated_at": "2026-02-24T14:25:54.894382",
+    "count": 0
+  },
+  "tokens": []
 }

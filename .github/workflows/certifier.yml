@@ -2,8 +2,8 @@ name: LURKER Certifier
 
 on:
   workflow_dispatch:
-#  schedule:
-#    - cron: '0 * * * *'  # Disabled - needs certifier.py fix
+  schedule:
+    - cron: '0 * * * *'  # Every hour
 
 permissions:
   contents: write

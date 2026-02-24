@@ -1,8 +1,8 @@
 name: LURKER FAST-CERTIFIED
 
 on:
-  schedule:
-    - cron: '0 * * * *'  # Every hour
+  # schedule:
+  #   - cron: '0 * * * *'  # Every hour - DISABLED (redundant with lifecycle)
   workflow_dispatch:
 
 permissions:

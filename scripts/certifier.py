@@ -6,12 +6,14 @@ Promotes survivors to CERTIFIED feed
 import json
 import requests
 import math
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 # Config
 CIO_FILE = Path(__file__).parent.parent / "signals" / "cio_feed.json"
-PULSE_FILE = Path(__file__).parent.parent / "signals" / "pulse_feed.json"
+LIFECYCLE_FILE = Path(__file__).parent.parent / "signals" / "lifecycle_feed.json"
+REGISTRY_FILE = Path(__file__).parent.parent / "state" / "token_registry.json"
+PULSE_FILE = Path(__file__).parent.parent / "signals" / "certified_feed.json"
 
 # Certification thresholds
 CERT_48H = {
@@ -35,27 +37,84 @@ CERT_72H = {
 # Bluechip symbols to exclude from top10 calculation
 EXCLUDE_FROM_TOP10 = {"LP", "POOL", "BURN", "DEAD", "ZERO", "ROUTER"}
 
-def load_cio():
-    """Load CIO feed"""
-    if CIO_FILE.exists():
-        with open(CIO_FILE) as f:
-            return json.load(f)
-    return {"candidates": []}
+def load_tokens():
+    """Load all tokens from lifecycle and registry"""
+    tokens = []
+    
+    # Load from lifecycle feed (comprehensive)
+    if LIFECYCLE_FILE.exists():
+        with open(LIFECYCLE_FILE) as f:
+            lifecycle = json.load(f)
+            tokens.extend(lifecycle.get("candidates", []))
+    
+    # Also load from registry for completeness
+    if REGISTRY_FILE.exists():
+        with open(REGISTRY_FILE) as f:
+            registry = json.load(f)
+            for addr, data in registry.get("tokens", {}).items():
+                # Convert registry format to lifecycle format
+                price_history = data.get("price_history", [])
+                if not price_history:
+                    continue
+                
+                latest = price_history[-1]
+                first = price_history[0]
+                first_seen = data.get("first_seen_iso", "")
+                
+                # Calculate age
+                age_hours = 0
+                if first_seen:
+                    try:
+                        first_dt = datetime.fromisoformat(first_seen.replace('Z', '+00:00'))
+                        age_hours = (datetime.now() - first_dt).total_seconds() / 3600
+                    except:
+                        pass
+                
+                token = {
+                    "token": data.get("token", {}),
+                    "pool_address": addr,  # Use address as pool_address
+                    "created_at": first_seen,
+                    "age_hours": age_hours,
+                    "metrics": {
+                        "liq_usd": latest.get("liq", 0),
+                        "vol_24h_usd": latest.get("vol_5m", 0) * 288,  # Scale 5m to 24h approx
+                        "price_usd": latest.get("price", 0),
+                    },
+                    "price_history": price_history,
+                    "chain": "base",
+                    "dex": "unknown"
+                }
+                tokens.append(token)
+    
+    return {"candidates": tokens}
 
 def load_pulse():
     """Load CERTIFIED feed"""
     if PULSE_FILE.exists():
         with open(PULSE_FILE) as f:
-            return json.load(f)
+            data = json.load(f)
+            # Normalize structure: ensure 'certified' key exists
+            if "tokens" in data and "certified" not in data:
+                data["certified"] = data.pop("tokens")
+            return data
     return {"schema": "lurker_certified_v1", "certified": []}
 
 def save_pulse(pulse):
     """Save CERTIFIED feed"""
     PULSE_FILE.parent.mkdir(parents=True, exist_ok=True)
-    pulse["last_updated"] = datetime.now().isoformat()
-    pulse["count"] = len(pulse["certified"])
+    
+    # Convert to standard feed structure
+    output = {
+        "schema": "lurker_certified_v1",
+        "meta": {
+            "updated_at": datetime.now().isoformat(),
+            "count": len(pulse.get("certified", []))
+        },
+        "tokens": pulse.get("certified", [])
+    }
+    
     with open(PULSE_FILE, 'w') as f:
-        json.dump(pulse, f, indent=2)
+        json.dump(output, f, indent=2)
 
 def fetch_holders(token_address):
     """Fetch holder data — MVP placeholder, returns mock data"""
@@ -93,7 +152,7 @@ def calculate_certified_score(metrics, stage="48h"):
 def evaluate_for_certification(candidate):
     """Evaluate if candidate qualifies for certification"""
     created = datetime.fromisoformat(candidate["created_at"].replace('Z', '+00:00'))
-    age_hours = (datetime.now() - created).total_seconds() / 3600
+    age_hours = (datetime.now(timezone.utc) - created).total_seconds() / 3600
     
     metrics = candidate.get("metrics", {})
     current_stage = candidate.get("cert_stage", None)
@@ -182,7 +241,7 @@ def certify():
     print("[CERTIFIER] Starting certification evaluation...")
     print("=" * 50)
     
-    cio = load_cio()
+    tokens_data = load_tokens()
     pulse = load_pulse()
     
     existing_certified = {c["pool_address"].lower() for c in pulse["certified"]}
@@ -190,7 +249,7 @@ def certify():
     new_certified = 0
     upgraded = 0
     
-    for candidate in cio.get("candidates", []):
+    for candidate in tokens_data.get("candidates", []):
         pool_addr = candidate["pool_address"].lower()
         
         # Evaluate
@@ -251,10 +310,6 @@ def certify():
     
     # Save
     save_pulse(pulse)
-    
-    # Update CIO file with cert stages
-    with open(CIO_FILE, 'w') as f:
-        json.dump(cio, f, indent=2)
     
     print(f"[CERTIFIER] New certified: {new_certified}")
     print(f"[CERTIFIER] Upgraded to 72h: {upgraded}")
