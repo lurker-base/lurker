@@ -12,27 +12,24 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 219882.35,
-        "vol_5m_usd": 32.33,
-        "vol_1h_usd": 9268.93,
-        "txns_5m": 4,
-        "price_usd": 5.916e-06
+        "liq_usd": 218920.68,
+        "vol_5m_usd": 1743.01,
+        "vol_1h_usd": 7667.32,
+        "txns_5m": 5,
+        "price_usd": 5.852e-06
       },
       "timestamps": {
         "pair_created_at": "2026-02-23T21:24:31+00:00",
         "token_first_seen": "2026-02-23T23:04:45.294000+00:00",
-        "age_minutes": 480.4,
-        "age_hours": 8.01
+        "age_minutes": 543.7,
+        "age_hours": 9.06
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.84
+        "freshness": 0.82
       },
-      "risks": [
-        "low_activity",
-        "low_volume"
-      ],
-      "risk_level": "medium",
+      "risks": [],
+      "risk_level": "low",
       "source": "community",
       "status": "observing",
       "quality": {
@@ -44,13 +41,12 @@
       },
       "badges": [
         "\u26a1 TRENDING",
-        "\ud83d\udc8e HIGH_LIQ",
-        "\ud83d\udd0d WATCH"
+        "\ud83d\udc8e HIGH_LIQ"
       ],
       "category": "HOTLIST"
     }
   ],
   "meta": {
-    "updated_at": "2026-02-24T07:05:09.726020+00:00"
+    "updated_at": "2026-02-24T08:08:26.643372+00:00"
   }
 }
