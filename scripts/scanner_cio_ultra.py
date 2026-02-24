@@ -58,23 +58,23 @@ def save_token_registry(registry):
         json.dump(registry, f, indent=2)
 
 def calculate_risk_tags(pair):
-    """Tag risks instead of filtering out"""
+    """Tag risks based on 1h activity (not 5m to avoid false positives)"""
     risks = []
     liq = safe_num((pair.get("liquidity") or {}).get("usd"), 0)
-    vol_5m = safe_num((pair.get("volume") or {}).get("m5"), 0)
-    tx_5m = (pair.get("txns") or {}).get("m5") or {}
-    tx_count = (tx_5m.get("buys") or 0) + (tx_5m.get("sells") or 0)
+    vol_1h = safe_num((pair.get("volume") or {}).get("h1"), 0)
+    tx_1h = (pair.get("txns") or {}).get("h1") or {}
+    tx_count = (tx_1h.get("buys") or 0) + (tx_1h.get("sells") or 0)
     
     if liq < 5000:
         risks.append("low_liquidity")
     if liq < 2000:
         risks.append("very_low_liquidity")
-    if tx_count < 5:
+    if tx_count < 10:  # 10 tx sur 1h = seuil plus réaliste
         risks.append("low_activity")
-    if vol_5m < 100:
+    if vol_1h < 1000:  # $1k sur 1h au lieu de $100 sur 5m
         risks.append("low_volume")
     
-    price_change = safe_num(pair.get("priceChange", {}).get("m5"), 0)
+    price_change = safe_num(pair.get("priceChange", {}).get("h1"), 0)
     if price_change < -10:
         risks.append("dumping")
     
