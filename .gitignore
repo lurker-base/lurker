@@ -3,6 +3,9 @@ node_modules/
 .env.local
 .DS_Store
 *.log
+!logs/bundle_alerts.log
+!logs/risk_alerts.json
+!logs/tweets.log
 data/signals.json
 .env.twitter
 __pycache__/
