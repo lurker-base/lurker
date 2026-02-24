@@ -21,8 +21,8 @@
       "timestamps": {
         "pair_created_at": "2026-02-24T10:12:41+00:00",
         "token_first_seen": "2026-02-24T12:05:45.424000+00:00",
-        "age_minutes": 195.6,
-        "age_hours": 3.26
+        "age_minutes": 213.8,
+        "age_hours": 3.56
       },
       "scores": {
         "cio_score": 100,
@@ -51,6 +51,392 @@
     },
     {
       "token": {
+        "address": "0xe4a3451ade8ca2c3e1e3d7b9fa6ecce419168ba3",
+        "symbol": "HCLAW",
+        "name": "HyperClaw"
+      },
+      "pair": {
+        "address": "0x1e8365c7d0e8dfc87bd94609072379a7b993c64c0fdc4ef5049ef42e32627528",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 199366.27,
+        "vol_5m_usd": 458.03,
+        "vol_1h_usd": 38326.55,
+        "txns_5m": 5,
+        "price_usd": 4.91e-06
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-23T21:24:31+00:00",
+        "token_first_seen": "2026-02-23T23:04:45.294000+00:00",
+        "age_minutes": 994.8,
+        "age_hours": 16.58
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.76
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "community",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      },
+      "badges": [
+        "\u26a1 TRENDING",
+        "\ud83d\udc8e HIGH_LIQ"
+      ],
+      "category": "HOTLIST"
+    },
+    {
+      "token": {
+        "address": "0x8e27a4cac917563295de9b07d594f7f3e0fdcb07",
+        "symbol": "ClawnchPedia",
+        "name": "ClawnchPedia"
+      },
+      "metrics": {
+        "liq_usd": 0,
+        "vol_1h_usd": 262202.04,
+        "price_usd": 2.43e-06,
+        "price_change_24h": -12.147505422993488
+      },
+      "timestamps": {
+        "token_first_seen": "2026-02-23T15:36:24.156000+00:00",
+        "age_hours": 24.05,
+        "age_minutes": 1443.1
+      },
+      "price_history": [
+        {
+          "timestamp": 1771860984156,
+          "price": 2.766e-06,
+          "liq": 0,
+          "vol_5m": 9716.54
+        },
+        {
+          "timestamp": 1771861891354,
+          "price": 3.546e-06,
+          "liq": 0,
+          "vol_5m": 17236.61
+        },
+        {
+          "timestamp": 1771862799798,
+          "price": 6.526e-06,
+          "liq": 0,
+          "vol_5m": 33501.76
+        },
+        {
+          "timestamp": 1771863709822,
+          "price": 3.27e-06,
+          "liq": 0,
+          "vol_5m": 14657.6
+        },
+        {
+          "timestamp": 1771864618298,
+          "price": 3.667e-06,
+          "liq": 0,
+          "vol_5m": 2389.72
+        },
+        {
+          "timestamp": 1771865527127,
+          "price": 2.906e-06,
+          "liq": 0,
+          "vol_5m": 12140.85
+        },
+        {
+          "timestamp": 1771866435929,
+          "price": 2.43e-06,
+          "liq": 0,
+          "vol_5m": 21850.17
+        }
+      ],
+      "badges": [
+        "\ud83c\udf0a ESTABLISHED"
+      ],
+      "category": "FAST_CERTIFIED",
+      "category_change": "HOTLIST \u2192 FAST_CERTIFIED"
+    },
+    {
+      "token": {
+        "address": "0x5b2193fdc451c1f847be09ca9d13a4bf60f8c86b",
+        "symbol": "UP",
+        "name": "Superform"
+      },
+      "metrics": {
+        "liq_usd": 509799.11,
+        "vol_1h_usd": 0.0,
+        "price_usd": 0.03853,
+        "price_change_24h": -1.5585079202861507
+      },
+      "timestamps": {
+        "token_first_seen": "2026-02-23T16:06:39.798000+00:00",
+        "age_hours": 23.55,
+        "age_minutes": 1412.8
+      },
+      "price_history": [
+        {
+          "timestamp": 1771862799798,
+          "price": 0.03914,
+          "liq": 515067.73,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771863709822,
+          "price": 0.03914,
+          "liq": 515067.73,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771864618298,
+          "price": 0.03914,
+          "liq": 515067.73,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771865527127,
+          "price": 0.03876,
+          "liq": 504775.46,
+          "vol_5m": 19.16
+        },
+        {
+          "timestamp": 1771866435929,
+          "price": 0.03867,
+          "liq": 503699.85,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771867342999,
+          "price": 0.03853,
+          "liq": 509799.11,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771868250253,
+          "price": 0.03853,
+          "liq": 509799.11,
+          "vol_5m": 0.0
+        }
+      ],
+      "badges": [
+        "\u26a1 TRENDING",
+        "\ud83d\udc8e HIGH_LIQ"
+      ],
+      "category": "HOTLIST"
+    },
+    {
+      "token": {
+        "address": "0xde4b3bdfc8203f5641ceeaf203362d34d49c2b07",
+        "symbol": "BOUNCERBOT",
+        "name": "Clawd Bouncer Bot"
+      },
+      "metrics": {
+        "liq_usd": 0,
+        "vol_1h_usd": 92.28,
+        "price_usd": 3.369e-06,
+        "price_change_24h": 150.48327137546465
+      },
+      "timestamps": {
+        "token_first_seen": "2026-02-23T17:07:15.929000+00:00",
+        "age_hours": 22.54,
+        "age_minutes": 1352.2
+      },
+      "price_history": [
+        {
+          "timestamp": 1771866435929,
+          "price": 1.345e-06,
+          "liq": 0,
+          "vol_5m": 7345.09
+        },
+        {
+          "timestamp": 1771867342999,
+          "price": 1.379e-06,
+          "liq": 0,
+          "vol_5m": 6746.23
+        },
+        {
+          "timestamp": 1771868250253,
+          "price": 1.952e-06,
+          "liq": 0,
+          "vol_5m": 378.21
+        },
+        {
+          "timestamp": 1771869057126,
+          "price": 1.938e-06,
+          "liq": 0,
+          "vol_5m": 2.42
+        },
+        {
+          "timestamp": 1771877008211,
+          "price": 3.365e-06,
+          "liq": 0,
+          "vol_5m": 7.66
+        },
+        {
+          "timestamp": 1771877154605,
+          "price": 3.369e-06,
+          "liq": 0,
+          "vol_5m": 7.69
+        }
+      ],
+      "badges": [
+        "\u26a1 TRENDING"
+      ],
+      "category": "HOTLIST"
+    },
+    {
+      "token": {
+        "address": "0xbd5694abea9a397fc3014678ed529e3da038eba3",
+        "symbol": "BEACON",
+        "name": "CLAW BEACON"
+      },
+      "metrics": {
+        "liq_usd": 68544.07,
+        "vol_1h_usd": 5329.799999999999,
+        "price_usd": 7.034e-07,
+        "price_change_24h": 0.0
+      },
+      "timestamps": {
+        "token_first_seen": "2026-02-23T23:04:45.294000+00:00",
+        "age_hours": 16.58,
+        "age_minutes": 994.8
+      },
+      "price_history": [
+        {
+          "timestamp": 1771887885294,
+          "price": 7.034e-07,
+          "liq": 68544.07,
+          "vol_5m": 444.15
+        }
+      ],
+      "badges": [
+        "\u26a1 TRENDING",
+        "\ud83d\udca7 GOOD_LIQ"
+      ],
+      "category": "HOTLIST"
+    },
+    {
+      "token": {
+        "address": "0x2c18f3a2b9829bfe727f29191f651170d01a1b07",
+        "symbol": "LIA",
+        "name": "Dog saved by Grok"
+      },
+      "metrics": {
+        "liq_usd": 0,
+        "vol_1h_usd": 21395.52,
+        "price_usd": 2.511e-06,
+        "price_change_24h": 5.5485498108449
+      },
+      "timestamps": {
+        "token_first_seen": "2026-02-23T23:04:45.294000+00:00",
+        "age_hours": 16.58,
+        "age_minutes": 994.8
+      },
+      "price_history": [
+        {
+          "timestamp": 1771887885294,
+          "price": 2.379e-06,
+          "liq": 0,
+          "vol_5m": 1414.78
+        },
+        {
+          "timestamp": 1771888791573,
+          "price": 2.498e-06,
+          "liq": 0,
+          "vol_5m": 1845.42
+        },
+        {
+          "timestamp": 1771889698061,
+          "price": 2.633e-06,
+          "liq": 0,
+          "vol_5m": 875.67
+        },
+        {
+          "timestamp": 1771890537331,
+          "price": 2.511e-06,
+          "liq": 0,
+          "vol_5m": 1782.96
+        }
+      ],
+      "badges": [
+        "\u26a1 TRENDING"
+      ],
+      "category": "HOTLIST"
+    },
+    {
+      "token": {
+        "address": "0xbb060648e9782d1c48b3be718848a7acf179c11c",
+        "symbol": "PERKOS",
+        "name": "The Perk OS"
+      },
+      "metrics": {
+        "liq_usd": 10934.67,
+        "vol_1h_usd": 10085.64,
+        "price_usd": 3.065e-05,
+        "price_change_24h": -49.18766578249337
+      },
+      "timestamps": {
+        "token_first_seen": "2026-02-24T03:06:24.303000+00:00",
+        "age_hours": 12.55,
+        "age_minutes": 753.1
+      },
+      "price_history": [
+        {
+          "timestamp": 1771902384303,
+          "price": 6.032e-05,
+          "liq": 15315.34,
+          "vol_5m": 581.3
+        },
+        {
+          "timestamp": 1771903289689,
+          "price": 3.065e-05,
+          "liq": 10934.67,
+          "vol_5m": 840.47
+        }
+      ],
+      "badges": [
+        "\u26a1 TRENDING"
+      ],
+      "category": "HOTLIST"
+    },
+    {
+      "token": {
+        "address": "0x0601a2352fe490e6cab10aba1d0f00405d4a9140",
+        "symbol": "ClawFinger",
+        "name": "ClawFinger"
+      },
+      "metrics": {
+        "liq_usd": 61348.78,
+        "vol_1h_usd": 171481.56,
+        "price_usd": 9.849e-06,
+        "price_change_24h": 0.0
+      },
+      "timestamps": {
+        "token_first_seen": "2026-02-24T08:13:23.997000+00:00",
+        "age_hours": 7.44,
+        "age_minutes": 446.1
+      },
+      "price_history": [
+        {
+          "timestamp": 1771920803997,
+          "price": 9.849e-06,
+          "liq": 61348.78,
+          "vol_5m": 14290.13
+        }
+      ],
+      "badges": [
+        "\u26a1 TRENDING",
+        "\ud83d\udcc8 HIGH_VOLUME",
+        "\ud83d\udca7 GOOD_LIQ"
+      ],
+      "category": "HOTLIST"
+    },
+    {
+      "token": {
         "address": "0x99bb9e6bc8aef69937bd648e8658cf872412fb07",
         "symbol": "YULE",
         "name": "Yule AI"
@@ -63,8 +449,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T14:51:04.847000+00:00",
-        "age_hours": 24.5,
-        "age_minutes": 1470.3
+        "age_hours": 24.81,
+        "age_minutes": 1488.4
       },
       "price_history": [
         {
@@ -106,84 +492,6 @@
     },
     {
       "token": {
-        "address": "0x680a32cf225f2ecb46bb771e2cc2e92ecef0eb07",
-        "symbol": "VENICE",
-        "name": "veniceagents"
-      },
-      "metrics": {
-        "liq_usd": 24138.49,
-        "vol_1h_usd": 0.0,
-        "price_usd": 2.331e-07,
-        "price_change_24h": -85.14340344168261
-      },
-      "timestamps": {
-        "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
-        "age_hours": 47.35,
-        "age_minutes": 2841.1
-      },
-      "price_history": [
-        {
-          "timestamp": 1771776015449,
-          "price": 1.569e-06,
-          "liq": 142774.95,
-          "vol_5m": 11161.6
-        },
-        {
-          "timestamp": 1771776548288,
-          "price": 1.919e-06,
-          "liq": 169990.3,
-          "vol_5m": 6406.61
-        },
-        {
-          "timestamp": 1771776638994,
-          "price": 2.024e-06,
-          "liq": 177847.04,
-          "vol_5m": 11123.66
-        },
-        {
-          "timestamp": 1771776768329,
-          "price": 2.065e-06,
-          "liq": 180887.63,
-          "vol_5m": 7342.45
-        },
-        {
-          "timestamp": 1771778121392,
-          "price": 2.136e-07,
-          "liq": 22159.91,
-          "vol_5m": 414.82
-        },
-        {
-          "timestamp": 1771778177057,
-          "price": 2.159e-07,
-          "liq": 22390.84,
-          "vol_5m": 232.37
-        },
-        {
-          "timestamp": 1771779803680,
-          "price": 2.157e-07,
-          "liq": 22371.17,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1771779803680,
-          "price": 2.157e-07,
-          "liq": 22371.17,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1771782918017,
-          "price": 2.331e-07,
-          "liq": 24138.49,
-          "vol_5m": 0.0
-        }
-      ],
-      "badges": [
-        "\ud83c\udf0a ESTABLISHED"
-      ],
-      "category": "FAST_CERTIFIED"
-    },
-    {
-      "token": {
         "address": "0xc61857eb390ff2ac5fd07aae0c030bbe5b79144e",
         "symbol": "ZEROCLAW",
         "name": "ZeroClaw AI"
@@ -196,8 +504,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
-        "age_hours": 47.35,
-        "age_minutes": 2841.1
+        "age_hours": 47.65,
+        "age_minutes": 2859.3
       },
       "price_history": [
         {
@@ -270,8 +578,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
-        "age_hours": 47.35,
-        "age_minutes": 2841.1
+        "age_hours": 47.65,
+        "age_minutes": 2859.3
       },
       "price_history": [
         {
@@ -337,8 +645,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
-        "age_hours": 47.35,
-        "age_minutes": 2841.1
+        "age_hours": 47.65,
+        "age_minutes": 2859.3
       },
       "price_history": [
         {
@@ -411,8 +719,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
-        "age_hours": 47.35,
-        "age_minutes": 2841.1
+        "age_hours": 47.65,
+        "age_minutes": 2859.3
       },
       "price_history": [
         {
@@ -461,8 +769,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
-        "age_hours": 47.35,
-        "age_minutes": 2841.1
+        "age_hours": 47.65,
+        "age_minutes": 2859.3
       },
       "price_history": [
         {
@@ -527,8 +835,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T16:09:08.289000+00:00",
-        "age_hours": 47.2,
-        "age_minutes": 2832.2
+        "age_hours": 47.51,
+        "age_minutes": 2850.4
       },
       "price_history": [
         {
@@ -857,54 +1165,6 @@
     },
     {
       "token": {
-        "address": "0x7c0a5c1020c39bfa1af711b4b963be82f55e1b07",
-        "symbol": "CLAUDET",
-        "name": "Claude Terminal"
-      },
-      "metrics": {
-        "liq_usd": 22265.05,
-        "vol_1h_usd": 502.32,
-        "price_usd": 1.935e-07,
-        "price_change_24h": -93.18901795142555
-      },
-      "timestamps": {
-        "token_first_seen": "2026-02-22T16:35:21.392000+00:00",
-        "age_hours": 46.77,
-        "age_minutes": 2806.0
-      },
-      "price_history": [
-        {
-          "timestamp": 1771778121392,
-          "price": 2.841e-06,
-          "liq": 130301.39,
-          "vol_5m": 41451.76
-        },
-        {
-          "timestamp": 1771778177057,
-          "price": 2.982e-06,
-          "liq": 133944.73,
-          "vol_5m": 32179.12
-        },
-        {
-          "timestamp": 1771779803680,
-          "price": 2.034e-06,
-          "liq": 108465.07,
-          "vol_5m": 14860.78
-        },
-        {
-          "timestamp": 1771782918017,
-          "price": 1.935e-07,
-          "liq": 22265.05,
-          "vol_5m": 41.86
-        }
-      ],
-      "badges": [
-        "\ud83c\udf0a ESTABLISHED"
-      ],
-      "category": "FAST_CERTIFIED"
-    },
-    {
-      "token": {
         "address": "0xc1299846f3523fb6c9c3f3fd6122a602855f3b07",
         "symbol": "ClawZempic",
         "name": "ClawZempic"
@@ -917,8 +1177,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T17:55:18.017000+00:00",
-        "age_hours": 45.43,
-        "age_minutes": 2726.0
+        "age_hours": 45.74,
+        "age_minutes": 2744.2
       },
       "price_history": [
         {
@@ -948,8 +1208,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T17:55:18.017000+00:00",
-        "age_hours": 45.43,
-        "age_minutes": 2726.0
+        "age_hours": 45.74,
+        "age_minutes": 2744.2
       },
       "price_history": [
         {
@@ -979,8 +1239,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T17:55:18.017000+00:00",
-        "age_hours": 45.43,
-        "age_minutes": 2726.0
+        "age_hours": 45.74,
+        "age_minutes": 2744.2
       },
       "price_history": [
         {
@@ -988,48 +1248,6 @@
           "price": 1.261e-05,
           "liq": 12028.15,
           "vol_5m": 0.0
-        }
-      ],
-      "badges": [
-        "\ud83c\udf0a ESTABLISHED"
-      ],
-      "category": "FAST_CERTIFIED"
-    },
-    {
-      "token": {
-        "address": "0x747fc2c56447d8737e4f3a6dea5f8fbeb034db07",
-        "symbol": "ClawSwarm",
-        "name": "ClawSwarm"
-      },
-      "metrics": {
-        "liq_usd": 24049.26,
-        "vol_1h_usd": 51.96,
-        "price_usd": 2.265e-07,
-        "price_change_24h": -92.03866432337435
-      },
-      "timestamps": {
-        "token_first_seen": "2026-02-22T19:49:20.534000+00:00",
-        "age_hours": 43.53,
-        "age_minutes": 2612.0
-      },
-      "price_history": [
-        {
-          "timestamp": 1771789760534,
-          "price": 2.845e-06,
-          "liq": 236357.48,
-          "vol_5m": 9522.44
-        },
-        {
-          "timestamp": 1771790427191,
-          "price": 2.414e-06,
-          "liq": 206496.17,
-          "vol_5m": 6297.5
-        },
-        {
-          "timestamp": 1771793762672,
-          "price": 2.265e-07,
-          "liq": 24049.26,
-          "vol_5m": 4.33
         }
       ],
       "badges": [
@@ -1051,8 +1269,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T19:49:20.534000+00:00",
-        "age_hours": 43.53,
-        "age_minutes": 2612.0
+        "age_hours": 43.84,
+        "age_minutes": 2630.2
       },
       "price_history": [
         {
@@ -1082,8 +1300,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T20:00:27.191000+00:00",
-        "age_hours": 43.35,
-        "age_minutes": 2600.9
+        "age_hours": 43.65,
+        "age_minutes": 2619.1
       },
       "price_history": [
         {
@@ -1120,8 +1338,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T20:56:02.672000+00:00",
-        "age_hours": 42.42,
-        "age_minutes": 2545.3
+        "age_hours": 42.72,
+        "age_minutes": 2563.5
       },
       "price_history": [
         {
@@ -1157,8 +1375,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T22:57:59.983000+00:00",
-        "age_hours": 40.39,
-        "age_minutes": 2423.3
+        "age_hours": 40.69,
+        "age_minutes": 2441.5
       },
       "price_history": [
         {
@@ -1187,8 +1405,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T22:57:59.983000+00:00",
-        "age_hours": 40.39,
-        "age_minutes": 2423.3
+        "age_hours": 40.69,
+        "age_minutes": 2441.5
       },
       "price_history": [
         {
@@ -1225,8 +1443,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T22:57:59.983000+00:00",
-        "age_hours": 40.39,
-        "age_minutes": 2423.3
+        "age_hours": 40.69,
+        "age_minutes": 2441.5
       },
       "price_history": [
         {
@@ -1262,8 +1480,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T23:55:06.867000+00:00",
-        "age_hours": 39.44,
-        "age_minutes": 2366.2
+        "age_hours": 39.74,
+        "age_minutes": 2384.4
       },
       "price_history": [
         {
@@ -1294,8 +1512,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T23:55:06.867000+00:00",
-        "age_hours": 39.44,
-        "age_minutes": 2366.2
+        "age_hours": 39.74,
+        "age_minutes": 2384.4
       },
       "price_history": [
         {
@@ -1326,8 +1544,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T23:55:06.867000+00:00",
-        "age_hours": 39.44,
-        "age_minutes": 2366.2
+        "age_hours": 39.74,
+        "age_minutes": 2384.4
       },
       "price_history": [
         {
@@ -1357,8 +1575,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T04:31:32.555000+00:00",
-        "age_hours": 34.83,
-        "age_minutes": 2089.8
+        "age_hours": 35.13,
+        "age_minutes": 2108.0
       },
       "price_history": [
         {
@@ -1389,8 +1607,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T04:31:32.555000+00:00",
-        "age_hours": 34.83,
-        "age_minutes": 2089.8
+        "age_hours": 35.13,
+        "age_minutes": 2108.0
       },
       "price_history": [
         {
@@ -1425,8 +1643,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T04:31:32.556000+00:00",
-        "age_hours": 34.83,
-        "age_minutes": 2089.8
+        "age_hours": 35.13,
+        "age_minutes": 2108.0
       },
       "price_history": [
         {
@@ -1434,66 +1652,6 @@
           "price": 3.55e-07,
           "liq": 34441.55,
           "vol_5m": 80.99
-        }
-      ],
-      "badges": [
-        "\ud83c\udf0a ESTABLISHED"
-      ],
-      "category": "FAST_CERTIFIED"
-    },
-    {
-      "token": {
-        "address": "0xc2ea9dcaee956d98ea39817d598a82b3a934db07",
-        "symbol": "OpenMid",
-        "name": "OpenMid"
-      },
-      "metrics": {
-        "liq_usd": 0,
-        "vol_1h_usd": 0.0,
-        "price_usd": 1.901e-07,
-        "price_change_24h": 1.278636121470429
-      },
-      "timestamps": {
-        "token_first_seen": "2026-02-23T09:31:19.151000+00:00",
-        "age_hours": 29.83,
-        "age_minutes": 1790.0
-      },
-      "price_history": [
-        {
-          "timestamp": 1771839079151,
-          "price": 1.877e-07,
-          "liq": 0,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1771839099790,
-          "price": 1.877e-07,
-          "liq": 0,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1771839304025,
-          "price": 1.894e-07,
-          "liq": 0,
-          "vol_5m": 0.17
-        },
-        {
-          "timestamp": 1771839703939,
-          "price": 1.901e-07,
-          "liq": 0,
-          "vol_5m": 0.5
-        },
-        {
-          "timestamp": 1771840759122,
-          "price": 1.901e-07,
-          "liq": 0,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1771840896076,
-          "price": 1.901e-07,
-          "liq": 0,
-          "vol_5m": 0.0
         }
       ],
       "badges": [
@@ -1515,8 +1673,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T09:31:19.151000+00:00",
-        "age_hours": 29.83,
-        "age_minutes": 1790.0
+        "age_hours": 30.14,
+        "age_minutes": 1808.2
       },
       "price_history": [
         {
@@ -1563,8 +1721,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T09:31:19.151000+00:00",
-        "age_hours": 29.83,
-        "age_minutes": 1790.0
+        "age_hours": 30.14,
+        "age_minutes": 1808.2
       },
       "price_history": [
         {
@@ -1653,8 +1811,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T10:19:26.326000+00:00",
-        "age_hours": 29.03,
-        "age_minutes": 1741.9
+        "age_hours": 29.33,
+        "age_minutes": 1760.1
       },
       "price_history": [
         {
@@ -1725,84 +1883,6 @@
     },
     {
       "token": {
-        "address": "0x1105d572ef832b2346af6ac81726b485f9508b07",
-        "symbol": "THERIAN",
-        "name": "The Animal Within You"
-      },
-      "metrics": {
-        "liq_usd": 0,
-        "vol_1h_usd": 0.0,
-        "price_usd": 3.895e-07,
-        "price_change_24h": 5.784899511135256
-      },
-      "timestamps": {
-        "token_first_seen": "2026-02-23T10:19:26.326000+00:00",
-        "age_hours": 29.03,
-        "age_minutes": 1741.9
-      },
-      "price_history": [
-        {
-          "timestamp": 1771841966326,
-          "price": 3.682e-07,
-          "liq": 0,
-          "vol_5m": 4459.43
-        },
-        {
-          "timestamp": 1771842212282,
-          "price": 3.561e-07,
-          "liq": 0,
-          "vol_5m": 16.18
-        },
-        {
-          "timestamp": 1771844998927,
-          "price": 3.186e-07,
-          "liq": 0,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1771847404942,
-          "price": 3.895e-07,
-          "liq": 0,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1771849236457,
-          "price": 3.895e-07,
-          "liq": 0,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1771849273821,
-          "price": 3.895e-07,
-          "liq": 0,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1771849374396,
-          "price": 3.895e-07,
-          "liq": 0,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1771849442129,
-          "price": 3.895e-07,
-          "liq": 0,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1771849659401,
-          "price": 3.895e-07,
-          "liq": 0,
-          "vol_5m": 0.0
-        }
-      ],
-      "badges": [
-        "\ud83c\udf0a ESTABLISHED"
-      ],
-      "category": "FAST_CERTIFIED"
-    },
-    {
-      "token": {
         "address": "0xc18db1ed7d44eb6b705dd9b928001f190314d519",
         "symbol": "HEDW",
         "name": "Hedwig"
@@ -1815,8 +1895,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T12:50:16.965000+00:00",
-        "age_hours": 26.52,
-        "age_minutes": 1591.1
+        "age_hours": 26.82,
+        "age_minutes": 1609.2
       },
       "price_history": [
         {
@@ -1901,8 +1981,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T13:20:28.559000+00:00",
-        "age_hours": 26.01,
-        "age_minutes": 1560.9
+        "age_hours": 26.32,
+        "age_minutes": 1579.0
       },
       "price_history": [
         {
@@ -1973,8 +2053,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T13:35:34.911000+00:00",
-        "age_hours": 25.76,
-        "age_minutes": 1545.8
+        "age_hours": 26.07,
+        "age_minutes": 1563.9
       },
       "price_history": [
         {
@@ -2052,177 +2132,6 @@
     },
     {
       "token": {
-        "address": "0x9802a847bedf8b45665c5e4069ee1515ae2d6b07",
-        "symbol": "FortClaw",
-        "name": "FortClaw"
-      },
-      "metrics": {
-        "liq_usd": 0,
-        "vol_1h_usd": 0.0,
-        "price_usd": 1.896e-07,
-        "price_change_24h": -83.57019064124783
-      },
-      "timestamps": {
-        "token_first_seen": "2026-02-23T14:16:02.680000+00:00",
-        "age_hours": 25.09,
-        "age_minutes": 1505.3
-      },
-      "price_history": [
-        {
-          "timestamp": 1771856162681,
-          "price": 1.154e-06,
-          "liq": 0,
-          "vol_5m": 12680.99
-        },
-        {
-          "timestamp": 1771857358685,
-          "price": 1.628e-06,
-          "liq": 0,
-          "vol_5m": 14826.88
-        },
-        {
-          "timestamp": 1771858264847,
-          "price": 1.361e-06,
-          "liq": 0,
-          "vol_5m": 0.07
-        },
-        {
-          "timestamp": 1771859171199,
-          "price": 1.915e-07,
-          "liq": 0,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1771860077098,
-          "price": 1.892e-07,
-          "liq": 0,
-          "vol_5m": 5.59
-        },
-        {
-          "timestamp": 1771860984156,
-          "price": 1.895e-07,
-          "liq": 0,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1771861891354,
-          "price": 1.896e-07,
-          "liq": 0,
-          "vol_5m": 0.0
-        }
-      ],
-      "badges": [
-        "\ud83c\udf0a ESTABLISHED"
-      ],
-      "category": "FAST_CERTIFIED"
-    },
-    {
-      "token": {
-        "address": "0xe4a3451ade8ca2c3e1e3d7b9fa6ecce419168ba3",
-        "symbol": "HCLAW",
-        "name": "HyperClaw"
-      },
-      "pair": {
-        "address": "0x1e8365c7d0e8dfc87bd94609072379a7b993c64c0fdc4ef5049ef42e32627528",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 199366.27,
-        "vol_5m_usd": 458.03,
-        "vol_1h_usd": 38326.55,
-        "txns_5m": 5,
-        "price_usd": 4.91e-06
-      },
-      "timestamps": {
-        "pair_created_at": "2026-02-23T21:24:31+00:00",
-        "token_first_seen": "2026-02-23T23:04:45.294000+00:00",
-        "age_minutes": 976.6,
-        "age_hours": 16.28
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.76
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "community",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      },
-      "badges": [
-        "\u26a1 TRENDING",
-        "\ud83d\udc8e HIGH_LIQ"
-      ],
-      "category": "HOTLIST"
-    },
-    {
-      "token": {
-        "address": "0xce3fcd5e1481155016df318cffd8c19060f5844e",
-        "symbol": "AI2028",
-        "name": "AI 2028"
-      },
-      "metrics": {
-        "liq_usd": 6040.75,
-        "vol_1h_usd": 0.0,
-        "price_usd": 4.438e-06,
-        "price_change_24h": -97.75745325922183
-      },
-      "timestamps": {
-        "token_first_seen": "2026-02-23T15:21:17.098000+00:00",
-        "age_hours": 24.0,
-        "age_minutes": 1440.1
-      },
-      "price_history": [
-        {
-          "timestamp": 1771860077098,
-          "price": 0.0001979,
-          "liq": 39899.12,
-          "vol_5m": 37165.49
-        },
-        {
-          "timestamp": 1771860984156,
-          "price": 0.0008198,
-          "liq": 81041.18,
-          "vol_5m": 29619.39
-        },
-        {
-          "timestamp": 1771861891354,
-          "price": 0.0003759,
-          "liq": 55157.97,
-          "vol_5m": 22268.35
-        },
-        {
-          "timestamp": 1771862799798,
-          "price": 0.0002249,
-          "liq": 42750.46,
-          "vol_5m": 12718.34
-        },
-        {
-          "timestamp": 1771863709822,
-          "price": 2.06e-06,
-          "liq": 4105.03,
-          "vol_5m": 492.68
-        },
-        {
-          "timestamp": 1771864618298,
-          "price": 4.438e-06,
-          "liq": 6040.75,
-          "vol_5m": 0.0
-        }
-      ],
-      "badges": [
-        "\ud83c\udf0a ESTABLISHED"
-      ],
-      "category": "FAST_CERTIFIED"
-    },
-    {
-      "token": {
         "address": "0xb23c6e17fe82f958ade869d31055c445f76c5c43",
         "symbol": "OpeClaw",
         "name": "OpenClaw"
@@ -2235,8 +2144,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T15:21:17.098000+00:00",
-        "age_hours": 24.0,
-        "age_minutes": 1440.1
+        "age_hours": 24.3,
+        "age_minutes": 1458.2
       },
       "price_history": [
         {
@@ -2295,6 +2204,438 @@
     },
     {
       "token": {
+        "address": "0x680a32cf225f2ecb46bb771e2cc2e92ecef0eb07",
+        "symbol": "VENICE",
+        "name": "veniceagents"
+      },
+      "metrics": {
+        "liq_usd": 24138.49,
+        "vol_1h_usd": 0.0,
+        "price_usd": 2.331e-07,
+        "price_change_24h": -85.14340344168261
+      },
+      "timestamps": {
+        "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
+        "age_hours": 47.65,
+        "age_minutes": 2859.3
+      },
+      "price_history": [
+        {
+          "timestamp": 1771776015449,
+          "price": 1.569e-06,
+          "liq": 142774.95,
+          "vol_5m": 11161.6
+        },
+        {
+          "timestamp": 1771776548288,
+          "price": 1.919e-06,
+          "liq": 169990.3,
+          "vol_5m": 6406.61
+        },
+        {
+          "timestamp": 1771776638994,
+          "price": 2.024e-06,
+          "liq": 177847.04,
+          "vol_5m": 11123.66
+        },
+        {
+          "timestamp": 1771776768329,
+          "price": 2.065e-06,
+          "liq": 180887.63,
+          "vol_5m": 7342.45
+        },
+        {
+          "timestamp": 1771778121392,
+          "price": 2.136e-07,
+          "liq": 22159.91,
+          "vol_5m": 414.82
+        },
+        {
+          "timestamp": 1771778177057,
+          "price": 2.159e-07,
+          "liq": 22390.84,
+          "vol_5m": 232.37
+        },
+        {
+          "timestamp": 1771779803680,
+          "price": 2.157e-07,
+          "liq": 22371.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771779803680,
+          "price": 2.157e-07,
+          "liq": 22371.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771782918017,
+          "price": 2.331e-07,
+          "liq": 24138.49,
+          "vol_5m": 0.0
+        }
+      ],
+      "badges": [
+        "\ud83c\udf0a ESTABLISHED"
+      ],
+      "category": "FAST_CERTIFIED"
+    },
+    {
+      "token": {
+        "address": "0x7c0a5c1020c39bfa1af711b4b963be82f55e1b07",
+        "symbol": "CLAUDET",
+        "name": "Claude Terminal"
+      },
+      "metrics": {
+        "liq_usd": 22265.05,
+        "vol_1h_usd": 502.32,
+        "price_usd": 1.935e-07,
+        "price_change_24h": -93.18901795142555
+      },
+      "timestamps": {
+        "token_first_seen": "2026-02-22T16:35:21.392000+00:00",
+        "age_hours": 47.07,
+        "age_minutes": 2824.2
+      },
+      "price_history": [
+        {
+          "timestamp": 1771778121392,
+          "price": 2.841e-06,
+          "liq": 130301.39,
+          "vol_5m": 41451.76
+        },
+        {
+          "timestamp": 1771778177057,
+          "price": 2.982e-06,
+          "liq": 133944.73,
+          "vol_5m": 32179.12
+        },
+        {
+          "timestamp": 1771779803680,
+          "price": 2.034e-06,
+          "liq": 108465.07,
+          "vol_5m": 14860.78
+        },
+        {
+          "timestamp": 1771782918017,
+          "price": 1.935e-07,
+          "liq": 22265.05,
+          "vol_5m": 41.86
+        }
+      ],
+      "badges": [
+        "\ud83c\udf0a ESTABLISHED"
+      ],
+      "category": "FAST_CERTIFIED"
+    },
+    {
+      "token": {
+        "address": "0x747fc2c56447d8737e4f3a6dea5f8fbeb034db07",
+        "symbol": "ClawSwarm",
+        "name": "ClawSwarm"
+      },
+      "metrics": {
+        "liq_usd": 24049.26,
+        "vol_1h_usd": 51.96,
+        "price_usd": 2.265e-07,
+        "price_change_24h": -92.03866432337435
+      },
+      "timestamps": {
+        "token_first_seen": "2026-02-22T19:49:20.534000+00:00",
+        "age_hours": 43.84,
+        "age_minutes": 2630.2
+      },
+      "price_history": [
+        {
+          "timestamp": 1771789760534,
+          "price": 2.845e-06,
+          "liq": 236357.48,
+          "vol_5m": 9522.44
+        },
+        {
+          "timestamp": 1771790427191,
+          "price": 2.414e-06,
+          "liq": 206496.17,
+          "vol_5m": 6297.5
+        },
+        {
+          "timestamp": 1771793762672,
+          "price": 2.265e-07,
+          "liq": 24049.26,
+          "vol_5m": 4.33
+        }
+      ],
+      "badges": [
+        "\ud83c\udf0a ESTABLISHED"
+      ],
+      "category": "FAST_CERTIFIED"
+    },
+    {
+      "token": {
+        "address": "0xc2ea9dcaee956d98ea39817d598a82b3a934db07",
+        "symbol": "OpenMid",
+        "name": "OpenMid"
+      },
+      "metrics": {
+        "liq_usd": 0,
+        "vol_1h_usd": 0.0,
+        "price_usd": 1.901e-07,
+        "price_change_24h": 1.278636121470429
+      },
+      "timestamps": {
+        "token_first_seen": "2026-02-23T09:31:19.151000+00:00",
+        "age_hours": 30.14,
+        "age_minutes": 1808.2
+      },
+      "price_history": [
+        {
+          "timestamp": 1771839079151,
+          "price": 1.877e-07,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771839099790,
+          "price": 1.877e-07,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771839304025,
+          "price": 1.894e-07,
+          "liq": 0,
+          "vol_5m": 0.17
+        },
+        {
+          "timestamp": 1771839703939,
+          "price": 1.901e-07,
+          "liq": 0,
+          "vol_5m": 0.5
+        },
+        {
+          "timestamp": 1771840759122,
+          "price": 1.901e-07,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771840896076,
+          "price": 1.901e-07,
+          "liq": 0,
+          "vol_5m": 0.0
+        }
+      ],
+      "badges": [
+        "\ud83c\udf0a ESTABLISHED"
+      ],
+      "category": "FAST_CERTIFIED"
+    },
+    {
+      "token": {
+        "address": "0x1105d572ef832b2346af6ac81726b485f9508b07",
+        "symbol": "THERIAN",
+        "name": "The Animal Within You"
+      },
+      "metrics": {
+        "liq_usd": 0,
+        "vol_1h_usd": 0.0,
+        "price_usd": 3.895e-07,
+        "price_change_24h": 5.784899511135256
+      },
+      "timestamps": {
+        "token_first_seen": "2026-02-23T10:19:26.326000+00:00",
+        "age_hours": 29.33,
+        "age_minutes": 1760.1
+      },
+      "price_history": [
+        {
+          "timestamp": 1771841966326,
+          "price": 3.682e-07,
+          "liq": 0,
+          "vol_5m": 4459.43
+        },
+        {
+          "timestamp": 1771842212282,
+          "price": 3.561e-07,
+          "liq": 0,
+          "vol_5m": 16.18
+        },
+        {
+          "timestamp": 1771844998927,
+          "price": 3.186e-07,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771847404942,
+          "price": 3.895e-07,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771849236457,
+          "price": 3.895e-07,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771849273821,
+          "price": 3.895e-07,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771849374396,
+          "price": 3.895e-07,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771849442129,
+          "price": 3.895e-07,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771849659401,
+          "price": 3.895e-07,
+          "liq": 0,
+          "vol_5m": 0.0
+        }
+      ],
+      "badges": [
+        "\ud83c\udf0a ESTABLISHED"
+      ],
+      "category": "FAST_CERTIFIED"
+    },
+    {
+      "token": {
+        "address": "0x9802a847bedf8b45665c5e4069ee1515ae2d6b07",
+        "symbol": "FortClaw",
+        "name": "FortClaw"
+      },
+      "metrics": {
+        "liq_usd": 0,
+        "vol_1h_usd": 0.0,
+        "price_usd": 1.896e-07,
+        "price_change_24h": -83.57019064124783
+      },
+      "timestamps": {
+        "token_first_seen": "2026-02-23T14:16:02.680000+00:00",
+        "age_hours": 25.39,
+        "age_minutes": 1523.5
+      },
+      "price_history": [
+        {
+          "timestamp": 1771856162681,
+          "price": 1.154e-06,
+          "liq": 0,
+          "vol_5m": 12680.99
+        },
+        {
+          "timestamp": 1771857358685,
+          "price": 1.628e-06,
+          "liq": 0,
+          "vol_5m": 14826.88
+        },
+        {
+          "timestamp": 1771858264847,
+          "price": 1.361e-06,
+          "liq": 0,
+          "vol_5m": 0.07
+        },
+        {
+          "timestamp": 1771859171199,
+          "price": 1.915e-07,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771860077098,
+          "price": 1.892e-07,
+          "liq": 0,
+          "vol_5m": 5.59
+        },
+        {
+          "timestamp": 1771860984156,
+          "price": 1.895e-07,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1771861891354,
+          "price": 1.896e-07,
+          "liq": 0,
+          "vol_5m": 0.0
+        }
+      ],
+      "badges": [
+        "\ud83c\udf0a ESTABLISHED"
+      ],
+      "category": "FAST_CERTIFIED"
+    },
+    {
+      "token": {
+        "address": "0xce3fcd5e1481155016df318cffd8c19060f5844e",
+        "symbol": "AI2028",
+        "name": "AI 2028"
+      },
+      "metrics": {
+        "liq_usd": 6040.75,
+        "vol_1h_usd": 0.0,
+        "price_usd": 4.438e-06,
+        "price_change_24h": -97.75745325922183
+      },
+      "timestamps": {
+        "token_first_seen": "2026-02-23T15:21:17.098000+00:00",
+        "age_hours": 24.3,
+        "age_minutes": 1458.2
+      },
+      "price_history": [
+        {
+          "timestamp": 1771860077098,
+          "price": 0.0001979,
+          "liq": 39899.12,
+          "vol_5m": 37165.49
+        },
+        {
+          "timestamp": 1771860984156,
+          "price": 0.0008198,
+          "liq": 81041.18,
+          "vol_5m": 29619.39
+        },
+        {
+          "timestamp": 1771861891354,
+          "price": 0.0003759,
+          "liq": 55157.97,
+          "vol_5m": 22268.35
+        },
+        {
+          "timestamp": 1771862799798,
+          "price": 0.0002249,
+          "liq": 42750.46,
+          "vol_5m": 12718.34
+        },
+        {
+          "timestamp": 1771863709822,
+          "price": 2.06e-06,
+          "liq": 4105.03,
+          "vol_5m": 492.68
+        },
+        {
+          "timestamp": 1771864618298,
+          "price": 4.438e-06,
+          "liq": 6040.75,
+          "vol_5m": 0.0
+        }
+      ],
+      "badges": [
+        "\ud83c\udf0a ESTABLISHED"
+      ],
+      "category": "FAST_CERTIFIED"
+    },
+    {
+      "token": {
         "address": "0x9ee36408f7c57763727dd64513a260820a576b07",
         "symbol": "CLOC",
         "name": "Cloclo"
@@ -2307,8 +2648,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T15:36:24.156000+00:00",
-        "age_hours": 23.75,
-        "age_minutes": 1424.9
+        "age_hours": 24.05,
+        "age_minutes": 1443.1
       },
       "price_history": [
         {
@@ -2409,75 +2750,9 @@
         }
       ],
       "badges": [
-        "\u26a1 TRENDING"
+        "\ud83c\udf0a ESTABLISHED"
       ],
-      "category": "HOTLIST"
-    },
-    {
-      "token": {
-        "address": "0x8e27a4cac917563295de9b07d594f7f3e0fdcb07",
-        "symbol": "ClawnchPedia",
-        "name": "ClawnchPedia"
-      },
-      "metrics": {
-        "liq_usd": 0,
-        "vol_1h_usd": 262202.04,
-        "price_usd": 2.43e-06,
-        "price_change_24h": -12.147505422993488
-      },
-      "timestamps": {
-        "token_first_seen": "2026-02-23T15:36:24.156000+00:00",
-        "age_hours": 23.75,
-        "age_minutes": 1424.9
-      },
-      "price_history": [
-        {
-          "timestamp": 1771860984156,
-          "price": 2.766e-06,
-          "liq": 0,
-          "vol_5m": 9716.54
-        },
-        {
-          "timestamp": 1771861891354,
-          "price": 3.546e-06,
-          "liq": 0,
-          "vol_5m": 17236.61
-        },
-        {
-          "timestamp": 1771862799798,
-          "price": 6.526e-06,
-          "liq": 0,
-          "vol_5m": 33501.76
-        },
-        {
-          "timestamp": 1771863709822,
-          "price": 3.27e-06,
-          "liq": 0,
-          "vol_5m": 14657.6
-        },
-        {
-          "timestamp": 1771864618298,
-          "price": 3.667e-06,
-          "liq": 0,
-          "vol_5m": 2389.72
-        },
-        {
-          "timestamp": 1771865527127,
-          "price": 2.906e-06,
-          "liq": 0,
-          "vol_5m": 12140.85
-        },
-        {
-          "timestamp": 1771866435929,
-          "price": 2.43e-06,
-          "liq": 0,
-          "vol_5m": 21850.17
-        }
-      ],
-      "badges": [
-        "\u26a1 TRENDING"
-      ],
-      "category": "HOTLIST"
+      "category": "FAST_CERTIFIED"
     },
     {
       "token": {
@@ -2493,8 +2768,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T15:51:31.354000+00:00",
-        "age_hours": 23.5,
-        "age_minutes": 1409.8
+        "age_hours": 23.8,
+        "age_minutes": 1428.0
       },
       "price_history": [
         {
@@ -2559,8 +2834,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T16:06:39.797000+00:00",
-        "age_hours": 23.24,
-        "age_minutes": 1394.7
+        "age_hours": 23.55,
+        "age_minutes": 1412.8
       },
       "price_history": [
         {
@@ -2613,212 +2888,6 @@
     },
     {
       "token": {
-        "address": "0x5b2193fdc451c1f847be09ca9d13a4bf60f8c86b",
-        "symbol": "UP",
-        "name": "Superform"
-      },
-      "metrics": {
-        "liq_usd": 509799.11,
-        "vol_1h_usd": 0.0,
-        "price_usd": 0.03853,
-        "price_change_24h": -1.5585079202861507
-      },
-      "timestamps": {
-        "token_first_seen": "2026-02-23T16:06:39.798000+00:00",
-        "age_hours": 23.24,
-        "age_minutes": 1394.7
-      },
-      "price_history": [
-        {
-          "timestamp": 1771862799798,
-          "price": 0.03914,
-          "liq": 515067.73,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1771863709822,
-          "price": 0.03914,
-          "liq": 515067.73,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1771864618298,
-          "price": 0.03914,
-          "liq": 515067.73,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1771865527127,
-          "price": 0.03876,
-          "liq": 504775.46,
-          "vol_5m": 19.16
-        },
-        {
-          "timestamp": 1771866435929,
-          "price": 0.03867,
-          "liq": 503699.85,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1771867342999,
-          "price": 0.03853,
-          "liq": 509799.11,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1771868250253,
-          "price": 0.03853,
-          "liq": 509799.11,
-          "vol_5m": 0.0
-        }
-      ],
-      "badges": [
-        "\u26a1 TRENDING",
-        "\ud83d\udc8e HIGH_LIQ"
-      ],
-      "category": "HOTLIST"
-    },
-    {
-      "token": {
-        "address": "0xde4b3bdfc8203f5641ceeaf203362d34d49c2b07",
-        "symbol": "BOUNCERBOT",
-        "name": "Clawd Bouncer Bot"
-      },
-      "metrics": {
-        "liq_usd": 0,
-        "vol_1h_usd": 92.28,
-        "price_usd": 3.369e-06,
-        "price_change_24h": 150.48327137546465
-      },
-      "timestamps": {
-        "token_first_seen": "2026-02-23T17:07:15.929000+00:00",
-        "age_hours": 22.23,
-        "age_minutes": 1334.1
-      },
-      "price_history": [
-        {
-          "timestamp": 1771866435929,
-          "price": 1.345e-06,
-          "liq": 0,
-          "vol_5m": 7345.09
-        },
-        {
-          "timestamp": 1771867342999,
-          "price": 1.379e-06,
-          "liq": 0,
-          "vol_5m": 6746.23
-        },
-        {
-          "timestamp": 1771868250253,
-          "price": 1.952e-06,
-          "liq": 0,
-          "vol_5m": 378.21
-        },
-        {
-          "timestamp": 1771869057126,
-          "price": 1.938e-06,
-          "liq": 0,
-          "vol_5m": 2.42
-        },
-        {
-          "timestamp": 1771877008211,
-          "price": 3.365e-06,
-          "liq": 0,
-          "vol_5m": 7.66
-        },
-        {
-          "timestamp": 1771877154605,
-          "price": 3.369e-06,
-          "liq": 0,
-          "vol_5m": 7.69
-        }
-      ],
-      "badges": [
-        "\u26a1 TRENDING"
-      ],
-      "category": "HOTLIST"
-    },
-    {
-      "token": {
-        "address": "0xbd5694abea9a397fc3014678ed529e3da038eba3",
-        "symbol": "BEACON",
-        "name": "CLAW BEACON"
-      },
-      "metrics": {
-        "liq_usd": 68544.07,
-        "vol_1h_usd": 5329.799999999999,
-        "price_usd": 7.034e-07,
-        "price_change_24h": 0.0
-      },
-      "timestamps": {
-        "token_first_seen": "2026-02-23T23:04:45.294000+00:00",
-        "age_hours": 16.28,
-        "age_minutes": 976.6
-      },
-      "price_history": [
-        {
-          "timestamp": 1771887885294,
-          "price": 7.034e-07,
-          "liq": 68544.07,
-          "vol_5m": 444.15
-        }
-      ],
-      "badges": [
-        "\u26a1 TRENDING",
-        "\ud83d\udca7 GOOD_LIQ"
-      ],
-      "category": "HOTLIST"
-    },
-    {
-      "token": {
-        "address": "0x2c18f3a2b9829bfe727f29191f651170d01a1b07",
-        "symbol": "LIA",
-        "name": "Dog saved by Grok"
-      },
-      "metrics": {
-        "liq_usd": 0,
-        "vol_1h_usd": 21395.52,
-        "price_usd": 2.511e-06,
-        "price_change_24h": 5.5485498108449
-      },
-      "timestamps": {
-        "token_first_seen": "2026-02-23T23:04:45.294000+00:00",
-        "age_hours": 16.28,
-        "age_minutes": 976.6
-      },
-      "price_history": [
-        {
-          "timestamp": 1771887885294,
-          "price": 2.379e-06,
-          "liq": 0,
-          "vol_5m": 1414.78
-        },
-        {
-          "timestamp": 1771888791573,
-          "price": 2.498e-06,
-          "liq": 0,
-          "vol_5m": 1845.42
-        },
-        {
-          "timestamp": 1771889698061,
-          "price": 2.633e-06,
-          "liq": 0,
-          "vol_5m": 875.67
-        },
-        {
-          "timestamp": 1771890537331,
-          "price": 2.511e-06,
-          "liq": 0,
-          "vol_5m": 1782.96
-        }
-      ],
-      "badges": [
-        "\u26a1 TRENDING"
-      ],
-      "category": "HOTLIST"
-    },
-    {
-      "token": {
         "address": "0xa9bbee734b00bc3d732455ee4c59d485e0d00b07",
         "symbol": "BankrAgent",
         "name": "BankrAgent"
@@ -2831,8 +2900,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T23:04:45.294000+00:00",
-        "age_hours": 16.28,
-        "age_minutes": 976.6
+        "age_hours": 16.58,
+        "age_minutes": 994.8
       },
       "price_history": [
         {
@@ -2879,8 +2948,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T23:48:57.331000+00:00",
-        "age_hours": 15.54,
-        "age_minutes": 932.4
+        "age_hours": 15.84,
+        "age_minutes": 950.6
       },
       "price_history": [
         {
@@ -2918,78 +2987,10 @@
         "\u26a1 TRENDING"
       ],
       "category": "HOTLIST"
-    },
-    {
-      "token": {
-        "address": "0xbb060648e9782d1c48b3be718848a7acf179c11c",
-        "symbol": "PERKOS",
-        "name": "The Perk OS"
-      },
-      "metrics": {
-        "liq_usd": 10934.67,
-        "vol_1h_usd": 10085.64,
-        "price_usd": 3.065e-05,
-        "price_change_24h": -49.18766578249337
-      },
-      "timestamps": {
-        "token_first_seen": "2026-02-24T03:06:24.303000+00:00",
-        "age_hours": 12.25,
-        "age_minutes": 734.9
-      },
-      "price_history": [
-        {
-          "timestamp": 1771902384303,
-          "price": 6.032e-05,
-          "liq": 15315.34,
-          "vol_5m": 581.3
-        },
-        {
-          "timestamp": 1771903289689,
-          "price": 3.065e-05,
-          "liq": 10934.67,
-          "vol_5m": 840.47
-        }
-      ],
-      "badges": [
-        "\u26a1 TRENDING"
-      ],
-      "category": "HOTLIST"
-    },
-    {
-      "token": {
-        "address": "0x0601a2352fe490e6cab10aba1d0f00405d4a9140",
-        "symbol": "ClawFinger",
-        "name": "ClawFinger"
-      },
-      "metrics": {
-        "liq_usd": 61348.78,
-        "vol_1h_usd": 171481.56,
-        "price_usd": 9.849e-06,
-        "price_change_24h": 0.0
-      },
-      "timestamps": {
-        "token_first_seen": "2026-02-24T08:13:23.997000+00:00",
-        "age_hours": 7.13,
-        "age_minutes": 427.9
-      },
-      "price_history": [
-        {
-          "timestamp": 1771920803997,
-          "price": 9.849e-06,
-          "liq": 61348.78,
-          "vol_5m": 14290.13
-        }
-      ],
-      "badges": [
-        "\u26a1 TRENDING",
-        "\ud83d\udcc8 HIGH_VOLUME",
-        "\ud83d\udca7 GOOD_LIQ"
-      ],
-      "category": "HOTLIST"
     }
   ],
   "meta": {
-    "updated_at": "2026-02-24T15:21:20.594371+00:00",
+    "updated_at": "2026-02-24T15:39:30.619867+00:00",
     "count": 50,
     "alerts_count": 1
   }

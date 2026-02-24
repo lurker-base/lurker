@@ -21,8 +21,8 @@
       "timestamps": {
         "pair_created_at": "2026-02-24T10:12:41+00:00",
         "token_first_seen": "2026-02-24T12:05:45.424000+00:00",
-        "age_minutes": 195.6,
-        "age_hours": 3.26
+        "age_minutes": 213.8,
+        "age_hours": 3.56
       },
       "scores": {
         "cio_score": 100,
@@ -51,6 +51,6 @@
     }
   ],
   "meta": {
-    "updated_at": "2026-02-24T15:21:20.599909+00:00"
+    "updated_at": "2026-02-24T15:39:30.624025+00:00"
   }
 }

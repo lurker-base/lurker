@@ -30,19 +30,33 @@ def save_json(path: Path, data: dict):
         json.dump(data, f, indent=2)
 
 def is_token_dead(token: dict) -> bool:
-    """Détecte si un token est mort (rug ou abandonné)"""
+    """Détecte si un token est mort (rug ou abandonné) - VERSION STRICTE"""
     metrics = token.get('metrics', {})
     liq = metrics.get('liq_usd', 0)
     vol_1h = metrics.get('vol_1h_usd', 0)
     price_change = metrics.get('price_change_24h', 0)
+    price_usd = metrics.get('price_usd', 0)
     
-    # Critères de mort/rug
-    if liq == 0 and vol_1h == 0:
-        return True  # Plus de liquidité, plus de volume
-    if liq < 1000 and vol_1h == 0:
-        return True  # Liquidité quasi-nulle, mort
-    if price_change < -85:  # -85% ou plus
-        return True  # Rug confirmé
+    # CRITÈRE #1: Liquidité = 0 → RUG (même s'il y a du volume)
+    # Volume sans liquidité = manipulation/sniper bots
+    if liq == 0:
+        return True
+    
+    # CRITÈRE #2: Liquidité très faible (< $3k) → Suspect
+    if liq < 3000:
+        return True
+    
+    # CRITÈRE #3: Dump massif -85% ou plus
+    if price_change < -85:
+        return True
+    
+    # CRITÈRE #4: Prix quasi-nul (token mort)
+    if price_usd == 0:
+        return True
+    
+    # CRITÈRE #5: Plus de volume ET liquidité faible (< $10k)
+    if vol_1h == 0 and liq < 10000:
+        return True
     
     return False
 

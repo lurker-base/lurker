@@ -21,8 +21,8 @@
       "timestamps": {
         "pair_created_at": "2026-02-23T21:24:31+00:00",
         "token_first_seen": "2026-02-23T23:04:45.294000+00:00",
-        "age_minutes": 976.6,
-        "age_hours": 16.28
+        "age_minutes": 994.8,
+        "age_hours": 16.58
       },
       "scores": {
         "cio_score": 100,
@@ -47,72 +47,6 @@
     },
     {
       "token": {
-        "address": "0x8e27a4cac917563295de9b07d594f7f3e0fdcb07",
-        "symbol": "ClawnchPedia",
-        "name": "ClawnchPedia"
-      },
-      "metrics": {
-        "liq_usd": 0,
-        "vol_1h_usd": 262202.04,
-        "price_usd": 2.43e-06,
-        "price_change_24h": -12.147505422993488
-      },
-      "timestamps": {
-        "token_first_seen": "2026-02-23T15:36:24.156000+00:00",
-        "age_hours": 23.75,
-        "age_minutes": 1424.9
-      },
-      "price_history": [
-        {
-          "timestamp": 1771860984156,
-          "price": 2.766e-06,
-          "liq": 0,
-          "vol_5m": 9716.54
-        },
-        {
-          "timestamp": 1771861891354,
-          "price": 3.546e-06,
-          "liq": 0,
-          "vol_5m": 17236.61
-        },
-        {
-          "timestamp": 1771862799798,
-          "price": 6.526e-06,
-          "liq": 0,
-          "vol_5m": 33501.76
-        },
-        {
-          "timestamp": 1771863709822,
-          "price": 3.27e-06,
-          "liq": 0,
-          "vol_5m": 14657.6
-        },
-        {
-          "timestamp": 1771864618298,
-          "price": 3.667e-06,
-          "liq": 0,
-          "vol_5m": 2389.72
-        },
-        {
-          "timestamp": 1771865527127,
-          "price": 2.906e-06,
-          "liq": 0,
-          "vol_5m": 12140.85
-        },
-        {
-          "timestamp": 1771866435929,
-          "price": 2.43e-06,
-          "liq": 0,
-          "vol_5m": 21850.17
-        }
-      ],
-      "badges": [
-        "\u26a1 TRENDING"
-      ],
-      "category": "HOTLIST"
-    },
-    {
-      "token": {
         "address": "0x5b2193fdc451c1f847be09ca9d13a4bf60f8c86b",
         "symbol": "UP",
         "name": "Superform"
@@ -125,8 +59,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T16:06:39.798000+00:00",
-        "age_hours": 23.24,
-        "age_minutes": 1394.7
+        "age_hours": 23.55,
+        "age_minutes": 1412.8
       },
       "price_history": [
         {
@@ -180,66 +114,6 @@
     },
     {
       "token": {
-        "address": "0xde4b3bdfc8203f5641ceeaf203362d34d49c2b07",
-        "symbol": "BOUNCERBOT",
-        "name": "Clawd Bouncer Bot"
-      },
-      "metrics": {
-        "liq_usd": 0,
-        "vol_1h_usd": 92.28,
-        "price_usd": 3.369e-06,
-        "price_change_24h": 150.48327137546465
-      },
-      "timestamps": {
-        "token_first_seen": "2026-02-23T17:07:15.929000+00:00",
-        "age_hours": 22.23,
-        "age_minutes": 1334.1
-      },
-      "price_history": [
-        {
-          "timestamp": 1771866435929,
-          "price": 1.345e-06,
-          "liq": 0,
-          "vol_5m": 7345.09
-        },
-        {
-          "timestamp": 1771867342999,
-          "price": 1.379e-06,
-          "liq": 0,
-          "vol_5m": 6746.23
-        },
-        {
-          "timestamp": 1771868250253,
-          "price": 1.952e-06,
-          "liq": 0,
-          "vol_5m": 378.21
-        },
-        {
-          "timestamp": 1771869057126,
-          "price": 1.938e-06,
-          "liq": 0,
-          "vol_5m": 2.42
-        },
-        {
-          "timestamp": 1771877008211,
-          "price": 3.365e-06,
-          "liq": 0,
-          "vol_5m": 7.66
-        },
-        {
-          "timestamp": 1771877154605,
-          "price": 3.369e-06,
-          "liq": 0,
-          "vol_5m": 7.69
-        }
-      ],
-      "badges": [
-        "\u26a1 TRENDING"
-      ],
-      "category": "HOTLIST"
-    },
-    {
-      "token": {
         "address": "0xbd5694abea9a397fc3014678ed529e3da038eba3",
         "symbol": "BEACON",
         "name": "CLAW BEACON"
@@ -252,8 +126,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T23:04:45.294000+00:00",
-        "age_hours": 16.28,
-        "age_minutes": 976.6
+        "age_hours": 16.58,
+        "age_minutes": 994.8
       },
       "price_history": [
         {
@@ -271,54 +145,6 @@
     },
     {
       "token": {
-        "address": "0x2c18f3a2b9829bfe727f29191f651170d01a1b07",
-        "symbol": "LIA",
-        "name": "Dog saved by Grok"
-      },
-      "metrics": {
-        "liq_usd": 0,
-        "vol_1h_usd": 21395.52,
-        "price_usd": 2.511e-06,
-        "price_change_24h": 5.5485498108449
-      },
-      "timestamps": {
-        "token_first_seen": "2026-02-23T23:04:45.294000+00:00",
-        "age_hours": 16.28,
-        "age_minutes": 976.6
-      },
-      "price_history": [
-        {
-          "timestamp": 1771887885294,
-          "price": 2.379e-06,
-          "liq": 0,
-          "vol_5m": 1414.78
-        },
-        {
-          "timestamp": 1771888791573,
-          "price": 2.498e-06,
-          "liq": 0,
-          "vol_5m": 1845.42
-        },
-        {
-          "timestamp": 1771889698061,
-          "price": 2.633e-06,
-          "liq": 0,
-          "vol_5m": 875.67
-        },
-        {
-          "timestamp": 1771890537331,
-          "price": 2.511e-06,
-          "liq": 0,
-          "vol_5m": 1782.96
-        }
-      ],
-      "badges": [
-        "\u26a1 TRENDING"
-      ],
-      "category": "HOTLIST"
-    },
-    {
-      "token": {
         "address": "0xbb060648e9782d1c48b3be718848a7acf179c11c",
         "symbol": "PERKOS",
         "name": "The Perk OS"
@@ -331,8 +157,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-24T03:06:24.303000+00:00",
-        "age_hours": 12.25,
-        "age_minutes": 734.9
+        "age_hours": 12.55,
+        "age_minutes": 753.1
       },
       "price_history": [
         {
@@ -367,8 +193,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-24T08:13:23.997000+00:00",
-        "age_hours": 7.13,
-        "age_minutes": 427.9
+        "age_hours": 7.44,
+        "age_minutes": 446.1
       },
       "price_history": [
         {
@@ -387,6 +213,6 @@
     }
   ],
   "meta": {
-    "updated_at": "2026-02-24T15:21:20.599913+00:00"
+    "updated_at": "2026-02-24T15:39:30.624027+00:00"
   }
 }
