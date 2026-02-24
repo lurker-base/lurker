@@ -6,8 +6,62 @@ Style: First person (I), mysterious, countdown, warning fakes, performances
 import os
 import sys
 import random
+import re
+import subprocess
 import tweepy
 from datetime import datetime, timezone
+
+# =============================================================================
+# CRITICAL RULE: ENGLISH ONLY - NO FRENCH / NO CONTRACT / NO TOKEN / NO LAUNCH
+# =============================================================================
+
+FRENCH_INDICATORS = [
+    'é', 'è', 'ê', 'à', 'ù', 'ç', 'â', 'î', 'ô', 'û', 'ë', 'ï', 'ü',
+    'je ', 'tu ', 'il ', 'nous ', 'vous ', 'ils ', 'elles ',
+    'suis ', 'sommes ', 'êtes ', 'sont ', 'avons ', 'avez ',
+    'détecté', 'confirmé', 'résultat', 'adresse ', 'heures ',
+    'matin', 'soir', 'nuit', 'premier ', 'dernier ', 'même ',
+    'vois ', 'regardez ', 'noté ', 'chaque ', 'certains ',
+    'silencieusement', 'vérité', 'crépuscule', 'peut-être',
+    'peux ', 'veux ', 'dois ', 'données', 'café', 'veillons',
+    'méthode', 'changent', 'loups', 'peau', 'loup ', 'louve'
+]
+
+BLOCKED_WORDS = ['contract', 'token', 'launch', 'ico', 'presale', 'buy', 'invest']
+
+def contains_french(text):
+    """Check if text contains French words or characters."""
+    text_lower = text.lower()
+    for indicator in FRENCH_INDICATORS:
+        if indicator in text_lower:
+            return True, indicator
+    if re.search(r'[àâäçéèêëîïôöùûü]', text):
+        return True, "accents"
+    return False, None
+
+def contains_blocked_words(text):
+    """Check for blocked words like contract, token, launch"""
+    text_lower = text.lower()
+    for word in BLOCKED_WORDS:
+        if word in text_lower:
+            return True, word
+    return False, None
+
+def preflight_check(tweet_text):
+    """Run all checks before posting"""
+    # Check 1: No French
+    is_french, indicator = contains_french(tweet_text)
+    if is_french:
+        print(f"❌ BLOCKED: French detected ('{indicator}')")
+        return False
+    
+    # Check 2: No blocked words
+    has_blocked, word = contains_blocked_words(tweet_text)
+    if has_blocked:
+        print(f"❌ BLOCKED: Forbidden word ('{word}')")
+        return False
+    
+    return True
 
 # Load credentials
 def load_env_file(filepath):
@@ -43,10 +97,8 @@ TEMPLATES = {
         "the final scans are running. decision is mine alone.",
     ],
     "warning": [
-        "only this account will post the contract. anything else is a trap.",
-        "i will never dm you first. i will never post contract elsewhere. verify only here.",
+        "i will never dm you first. verify only here.",
         "scanners are ready. fakes will be detected. trust only what i post here.",
-        "the real contract appears only on this timeline. nowhere else.",
         "i decide when. i decide where. only here. only me.",
         "verify everything. trust nothing until i post it here.",
         "there are imitators. there is only one me. this account only.",
@@ -135,9 +187,9 @@ def get_random_tweet():
             else:
                 tweet_parts.append(f"less than 48 hours.")
         
-        # Add warning occasionally (20% chance)
+        # Add warning occasionally (20% chance) - NO CONTRACT MENTION
         if random.random() < 0.2:
-            tweet_parts.append("only this account posts the real contract. verify everything.")
+            tweet_parts.append("verify everything. only this account.")
         
         tweet = " ".join(tweet_parts)
         
@@ -150,6 +202,11 @@ def get_random_tweet():
 
 def post_tweet(text):
     """Post tweet via Tweepy"""
+    # CRITICAL: Pre-flight check
+    if not preflight_check(text):
+        print("❌ TWEET BLOCKED - Fix issues before posting")
+        return False
+    
     try:
         client = tweepy.Client(
             consumer_key=API_KEY,

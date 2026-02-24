@@ -2,12 +2,66 @@
 """
 LURKER Auto Tweet — Generate and post tweets automatically
 Uses templates in the LURKER voice: mysterious, minimalist, masculine
+⚠️ CRITICAL: ENGLISH ONLY - NO FRENCH / NO CONTRACT / NO TOKEN / NO LAUNCH
 """
 import os
 import sys
 import random
+import re
 import tweepy
 from datetime import datetime
+
+# =============================================================================
+# CRITICAL RULE: ENGLISH ONLY - NO FRENCH / NO CONTRACT / NO TOKEN / NO LAUNCH
+# =============================================================================
+
+FRENCH_INDICATORS = [
+    'é', 'è', 'ê', 'à', 'ù', 'ç', 'â', 'î', 'ô', 'û', 'ë', 'ï', 'ü',
+    'je ', 'tu ', 'il ', 'nous ', 'vous ', 'ils ', 'elles ',
+    'suis ', 'sommes ', 'êtes ', 'sont ', 'avons ', 'avez ',
+    'détecté', 'confirmé', 'résultat', 'adresse ', 'heures ',
+    'matin', 'soir', 'nuit', 'premier ', 'dernier ', 'même ',
+    'vois ', 'regardez ', 'noté ', 'chaque ', 'certains ',
+    'silencieusement', 'vérité', 'crépuscule', 'peut-être',
+    'peux ', 'veux ', 'dois ', 'données', 'café', 'veillons',
+    'méthode', 'changent', 'loups', 'peau', 'loup ', 'louve'
+]
+
+BLOCKED_WORDS = ['contract', 'token', 'launch', 'ico', 'presale', 'buy', 'invest']
+
+def contains_french(text):
+    """Check if text contains French words or characters."""
+    text_lower = text.lower()
+    for indicator in FRENCH_INDICATORS:
+        if indicator in text_lower:
+            return True, indicator
+    if re.search(r'[àâäçéèêëîïôöùûü]', text):
+        return True, "accents"
+    return False, None
+
+def contains_blocked_words(text):
+    """Check for blocked words like contract, token, launch"""
+    text_lower = text.lower()
+    for word in BLOCKED_WORDS:
+        if word in text_lower:
+            return True, word
+    return False, None
+
+def preflight_check(tweet_text):
+    """Run all checks before posting"""
+    # Check 1: No French
+    is_french, indicator = contains_french(tweet_text)
+    if is_french:
+        print(f"❌ BLOCKED: French detected ('{indicator}')")
+        return False
+    
+    # Check 2: No blocked words
+    has_blocked, word = contains_blocked_words(tweet_text)
+    if has_blocked:
+        print(f"❌ BLOCKED: Forbidden word ('{word}')")
+        return False
+    
+    return True
 
 # Load credentials
 def load_env_file(filepath):
@@ -29,11 +83,11 @@ API_SECRET = env.get('API_SECRET') or os.getenv('TWITTERS') or os.getenv('API_SE
 ACCESS_TOKEN = env.get('ACCESS_TOKEN') or os.getenv('TWITTER') or os.getenv('ACCESS_TOKEN')
 ACCESS_TOKEN_SECRET = env.get('ACCESS_TOKEN_SECRET') or os.getenv('TWITTERSECRET') or os.getenv('ACCESS_TOKEN_SECRET')
 
-# LURKER Voice Templates
+# LURKER Voice Templates - NO CONTRACT/TOKEN/LAUNCH MENTIONS
 TEMPLATES = {
     "observation": [
         "we don't sleep. the chain doesn't either.",
-        "fresh detection. {age} old. watching.",
+        "fresh detection. watching.",
         "the quiet hours reveal the most.",
         "patterns don't announce themselves. we track them.",
         "while you sleep, we watch.",
@@ -49,70 +103,38 @@ TEMPLATES = {
         "the chain remembers everything.",
         "information is the only true alpha.",
         "we don't predict. we detect.",
-        "those who watch longest see clearest.",
-        "every wallet tells a story.",
         "the best time to watch was yesterday. the second best is now.",
-        "behavior doesn't lie. narratives do.",
-        "we're not early. everyone else is late.",
+        "patterns repeat. we remember.",
+        "in a sea of noise, we find signal.",
+        "watching is not passive. it's a choice.",
+        "the chain doesn't lie. people do.",
     ],
     "mysterious": [
-        "we see you.",
-        "the network is talking. are you listening?",
-        "something moves in the deep.",
-        "they think they're hidden.",
-        "the watch continues.",
-        "we never blink.",
-        "information wants to be found.",
-        "the chain whispers. we hear it.",
-        "there's always someone watching.",
-        "you're not alone in the dark.",
-    ],
-    "engagement": [
-        "build your own watcher. or watch ours. either way — now you know.",
-        "your edge is only as good as your information.",
-        "the difference between early and late is everything.",
-        "most arrive when the story is over. we catch the first page.",
-        "scanning. detecting. alerting. this is what we do.",
-        "the market has patterns. we find them.",
-        "every second of delay costs.",
-        "we don't sell signals. we sell time.",
-        "become the watcher. not the watched.",
-        "knowledge isn't power. timely knowledge is.",
-    ],
-    "minimal": [
-        "watching.",
-        "scanning.",
-        "detected.",
-        "alerted.",
-        "verified.",
-        "tracking.",
-        "observing.",
-        "lurking.",
-    ],
-    "momentum": [
-        "volume rising. liquidity locked. we're watching.",
-        "the whales are moving. we see the wake.",
-        "accumulation patterns detected. early stage.",
-        "smart money leaves footprints. we follow them.",
-        "when they buy silently, we notice loudly.",
-        "before the pump, there's always a signal.",
-        "the quiet accumulation is the loudest signal.",
+        "we are already watching.",
+        "some patterns reveal themselves only to patience.",
+        "the network has no secrets from us.",
+        "we see what others miss in plain sight.",
+        "depth reveals truth.",
+        "in the dark, we see clearly.",
+        "we don't blink. we don't miss.",
+        "the watchers are always watching.",
+        "truth hides in the data. we find it.",
+        "silence speaks volumes.",
     ]
 }
 
 def get_random_tweet():
     """Generate a random LURKER tweet"""
     category = random.choice(list(TEMPLATES.keys()))
-    template = random.choice(TEMPLATES[category])
-    
-    # Replace placeholders
-    age = random.choice(["2m", "5m", "12m", "23m", "37m"])
-    tweet = template.format(age=age)
-    
-    return tweet
+    return random.choice(TEMPLATES[category])
 
 def post_tweet(text):
-    """Post tweet via Tweepy"""
+    """Post a tweet"""
+    # CRITICAL: Pre-flight check
+    if not preflight_check(text):
+        print("❌ TWEET BLOCKED - Fix issues before posting")
+        return False
+    
     try:
         client = tweepy.Client(
             consumer_key=API_KEY,
@@ -130,19 +152,8 @@ def post_tweet(text):
         return False
 
 def main():
-    # Generate tweet
     tweet_text = get_random_tweet()
-    
-    # Post it
     success = post_tweet(tweet_text)
-    
-    if success:
-        # Log to file
-        log_file = os.path.join(os.path.dirname(__file__), '..', 'logs', 'tweets.log')
-        os.makedirs(os.path.dirname(log_file), exist_ok=True)
-        with open(log_file, 'a') as f:
-            f.write(f"{datetime.now().isoformat()} | {tweet_text}\n")
-    
     return 0 if success else 1
 
 if __name__ == "__main__":

@@ -5,7 +5,60 @@ Usage: python3 scripts/post_tweet_manual.py "your tweet text"
 """
 import os
 import sys
+import re
 import tweepy
+
+# =============================================================================
+# CRITICAL RULE: ENGLISH ONLY - NO FRENCH / NO CONTRACT / NO TOKEN / NO LAUNCH
+# =============================================================================
+
+FRENCH_INDICATORS = [
+    'é', 'è', 'ê', 'à', 'ù', 'ç', 'â', 'î', 'ô', 'û', 'ë', 'ï', 'ü',
+    'je ', 'tu ', 'il ', 'nous ', 'vous ', 'ils ', 'elles ',
+    'suis ', 'sommes ', 'êtes ', 'sont ', 'avons ', 'avez ',
+    'détecté', 'confirmé', 'résultat', 'adresse ', 'heures ',
+    'matin', 'soir', 'nuit', 'premier ', 'dernier ', 'même ',
+    'vois ', 'regardez ', 'noté ', 'chaque ', 'certains ',
+    'silencieusement', 'vérité', 'crépuscule', 'peut-être',
+    'peux ', 'veux ', 'dois ', 'données', 'café', 'veillons',
+    'méthode', 'changent', 'loups', 'peau', 'loup ', 'louve'
+]
+
+BLOCKED_WORDS = ['contract', 'token', 'launch', 'ico', 'presale', 'buy', 'invest']
+
+def contains_french(text):
+    """Check if text contains French words or characters."""
+    text_lower = text.lower()
+    for indicator in FRENCH_INDICATORS:
+        if indicator in text_lower:
+            return True, indicator
+    if re.search(r'[àâäçéèêëîïôöùûü]', text):
+        return True, "accents"
+    return False, None
+
+def contains_blocked_words(text):
+    """Check for blocked words like contract, token, launch"""
+    text_lower = text.lower()
+    for word in BLOCKED_WORDS:
+        if word in text_lower:
+            return True, word
+    return False, None
+
+def preflight_check(tweet_text):
+    """Run all checks before posting"""
+    # Check 1: No French
+    is_french, indicator = contains_french(tweet_text)
+    if is_french:
+        print(f"❌ BLOCKED: French detected ('{indicator}')")
+        return False
+    
+    # Check 2: No blocked words
+    has_blocked, word = contains_blocked_words(tweet_text)
+    if has_blocked:
+        print(f"❌ BLOCKED: Forbidden word ('{word}')")
+        return False
+    
+    return True
 
 def load_env_file(filepath):
     env = {}
@@ -36,6 +89,11 @@ if missing:
 
 def post_tweet(text):
     """Post a specific tweet"""
+    # CRITICAL: Pre-flight check
+    if not preflight_check(text):
+        print("❌ TWEET BLOCKED - Fix issues before posting")
+        return False
+    
     try:
         client = tweepy.Client(
             consumer_key=API_KEY,
