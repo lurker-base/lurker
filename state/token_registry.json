@@ -2240,6 +2240,12 @@
           "price": 5.976e-06,
           "liq": 221503.6,
           "vol_5m": 121.76
+        },
+        {
+          "timestamp": 1771934745424,
+          "price": 4.91e-06,
+          "liq": 199366.27,
+          "vol_5m": 458.03
         }
       ],
       "token": {
@@ -2414,6 +2420,23 @@
         "address": "0x0601a2352fe490e6cab10aba1d0f00405d4a9140",
         "symbol": "ClawFinger",
         "name": "ClawFinger"
+      }
+    },
+    "0xfe4588c3bc2d9335166b7f8bd1425750176beac8": {
+      "first_seen": 1771934745424,
+      "first_seen_iso": "2026-02-24T12:05:45.424000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1771934745424,
+          "price": 5.964e-05,
+          "liq": 47053.44,
+          "vol_5m": 8411.62
+        }
+      ],
+      "token": {
+        "address": "0xfe4588c3bc2d9335166b7f8bd1425750176beac8",
+        "symbol": "Spawnr",
+        "name": "Spawnr"
       }
     }
   }
