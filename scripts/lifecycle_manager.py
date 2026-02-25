@@ -90,7 +90,7 @@ def is_data_stale(token: dict, max_age_hours: float = 2.0) -> bool:
     return False
 
 def is_token_dead(token: dict) -> bool:
-    """Détecte si un token est mort (rug, P&D, ou abandonné) - VERSION STRICTE"""
+    """Détecte si un token est mort (rug, P&D, ou abandonné) - VERSION CORRIGÉE"""
     metrics = token.get('metrics', {})
     # Gérer les valeurs None - convertir en 0
     liq = metrics.get('liq_usd') or 0
@@ -98,39 +98,21 @@ def is_token_dead(token: dict) -> bool:
     price_change = metrics.get('price_change_24h') or 0
     price_usd = metrics.get('price_usd') or 0
     
-    # CRITÈRE #1: Données trop vieilles (> 2h sans mise à jour)
-    if is_data_stale(token, max_age_hours=2.0):
+    # CRITÈRE #1: Liquidité = 0 ou None → RUG (mais pas si les données sont vieilles)
+    if liq == 0 and not is_data_stale(token, max_age_hours=24.0):
         return True
     
-    # CRITÈRE #2: Liquidité = 0 ou None → RUG
-    if liq == 0:
+    # CRITÈRE #2: Dump massif -90% ou plus
+    if price_change < -90:
         return True
     
-    # CRITÈRE #3: Liquidité très faible (< $3k)
-    if liq < 3000:
+    # CRITÈRE #3: Prix quasi-nul ET liquidité nulle
+    if price_usd == 0 and liq == 0:
         return True
     
-    # CRITÈRE #4: Dump massif -85% ou plus
-    if price_change < -85:
-        return True
-    
-    # CRITÈRE #5: Prix quasi-nul (0 ou None)
-    if price_usd == 0:
-        return True
-    
-    # CRITÈRE #6: Plus de volume ET liquidité faible (< $10k)
-    if vol_1h == 0 and liq < 10000:
-        return True
-    
-    # CRITÈRE #7: PATTERN PUMP & DUMP
-    # Token qui a pompé puis dumpé = manipulation
+    # CRITÈRE #4: PATTERN PUMP & DUMP violent
+    # Token qui a pompé > +200% puis dumpé > -50%
     if is_token_pump_and_dump(token):
-        return True
-    
-    # CRITÈRE #8: AUCUNE ACTIVITÉ depuis 1h
-    # Si vol_1h = 0 ET tx_1h = 0 → Token mort/inactif
-    tx_1h = metrics.get('txns_1h') or 0
-    if vol_1h == 0 and tx_1h == 0 and liq < 10000:
         return True
     
     return False

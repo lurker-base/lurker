@@ -1,6 +1,318 @@
 {
-  "tokens": [],
+  "tokens": [
+    {
+      "token": {
+        "address": "0x1da33947a7595577aa02d011abef6fc2149f5b07",
+        "symbol": "SMOL",
+        "name": "Tiny Fren"
+      },
+      "pair": {
+        "address": "0x83bd138aea90388ea5724b6a2c6e55a3dae06eda959ae7944555aded69049d45",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 18618.74,
+        "vol_1h_usd": 592.92,
+        "price_usd": 1.828e-07,
+        "price_change_24h": 0.0
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-24T21:09:35+00:00",
+        "token_first_seen": "2026-02-24T21:53:40.443000+00:00",
+        "age_minutes": 289.3,
+        "age_hours": 4.82
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.99
+      },
+      "risks": [
+        "dumping"
+      ],
+      "risk_level": "medium",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": false,
+        "quality_score": 75
+      },
+      "badges": [
+        "\ud83d\udd25 HOT",
+        "\ud83d\udcc8 HIGH_VOLUME",
+        "\ud83d\udd0d WATCH"
+      ],
+      "category": "WATCH",
+      "alert": "DUMP_WARNING",
+      "price_history": [
+        {
+          "timestamp": 1771970020443,
+          "price": 1.828e-07,
+          "liq": 18618.74,
+          "vol_5m": 49.41
+        }
+      ]
+    },
+    {
+      "token": {
+        "address": "0xb81a6ebc7916b94e069be1389820b01731912388",
+        "symbol": "RED",
+        "name": "Red Botster Token"
+      },
+      "pair": {
+        "address": "0x70b99086b37e5c4c1ca382a401279df1c212a28c",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 43625.38,
+        "vol_1h_usd": 237348.0,
+        "price_usd": 0.0004886,
+        "price_change_24h": 0.0
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-24T20:46:55+00:00",
+        "token_first_seen": "2026-02-24T21:53:40.443000+00:00",
+        "age_minutes": 289.3,
+        "age_hours": 4.82
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.98
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": false,
+        "quality_score": 75
+      },
+      "badges": [
+        "\ud83d\udd25 HOT",
+        "\ud83d\udcc8 HIGH_VOLUME"
+      ],
+      "category": "WATCH",
+      "price_history": [
+        {
+          "timestamp": 1771970020443,
+          "price": 0.0004886,
+          "liq": 43625.38,
+          "vol_5m": 19779.0
+        }
+      ]
+    },
+    {
+      "token": {
+        "address": "0x261e61f40c0f8541180969529a9af4ac9f4e2b07",
+        "symbol": "TAKEOVER",
+        "name": "Takeover.fun"
+      },
+      "pair": {
+        "address": "0x0b05effa6881c33d1c843a127977657a2587f8d8556ccaeb011eb885ab86b17e",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 76514.39,
+        "vol_1h_usd": 34541.04,
+        "price_usd": 7.892e-07,
+        "price_change_24h": 0.0
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-24T20:19:19+00:00",
+        "token_first_seen": "2026-02-24T21:53:40.443000+00:00",
+        "age_minutes": 289.3,
+        "age_hours": 4.82
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.97
+      },
+      "risks": [
+        "dumping"
+      ],
+      "risk_level": "medium",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": false,
+        "quality_score": 75
+      },
+      "badges": [
+        "\ud83d\udd25 HOT",
+        "\ud83d\udcab ACTIVE",
+        "\ud83d\udca7 GOOD_LIQ",
+        "\ud83d\udd0d WATCH"
+      ],
+      "category": "WATCH",
+      "alert": "DUMP_WARNING",
+      "price_history": [
+        {
+          "timestamp": 1771970020443,
+          "price": 7.892e-07,
+          "liq": 76514.39,
+          "vol_5m": 2878.42
+        }
+      ]
+    },
+    {
+      "token": {
+        "address": "0x92c5ce26b5689975f59013a16800b9c4fcdeb779",
+        "symbol": "TAKEOVER",
+        "name": "TAKEOVER"
+      },
+      "pair": {
+        "address": "0x6d24da3a264cbf90a22a96a186e4a0ffb1e1f151",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 8932.54,
+        "vol_1h_usd": 12354.599999999999,
+        "price_usd": 1.825e-05,
+        "price_change_24h": 0.0
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-24T19:15:17+00:00",
+        "token_first_seen": "2026-02-24T21:53:40.443000+00:00",
+        "age_minutes": 289.3,
+        "age_hours": 4.82
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.96
+      },
+      "risks": [
+        "dumping"
+      ],
+      "risk_level": "medium",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      },
+      "badges": [
+        "\ud83d\udd25 HOT",
+        "\ud83d\udcc8 HIGH_VOLUME",
+        "\ud83d\udd0d WATCH"
+      ],
+      "category": "WATCH",
+      "alert": "DUMP_WARNING",
+      "price_history": [
+        {
+          "timestamp": 1771970020443,
+          "price": 1.825e-05,
+          "liq": 8932.54,
+          "vol_5m": 1029.55
+        }
+      ]
+    },
+    {
+      "token": {
+        "address": "0xc31de1185d7df1688a16ad124b8d37800ad50b07",
+        "symbol": "DarkMatter",
+        "name": "DarkMatter"
+      },
+      "metrics": {
+        "liq_usd": 28011.05,
+        "vol_1h_usd": 0.0,
+        "price_usd": 2.761e-07,
+        "price_change_24h": 0.0
+      },
+      "timestamps": {
+        "token_first_seen": "2026-02-24T21:53:40.443000+00:00",
+        "age_hours": 4.82,
+        "age_minutes": 289.3
+      },
+      "price_history": [
+        {
+          "timestamp": 1771970020443,
+          "price": 2.761e-07,
+          "liq": 28011.05,
+          "vol_5m": 0.0
+        }
+      ],
+      "badges": [
+        "\ud83d\udd25 HOT"
+      ],
+      "category": "WATCH"
+    },
+    {
+      "token": {
+        "address": "0xafeadbc5927df211a75f4b6bca6ad3e5520c5720",
+        "symbol": "YOLO",
+        "name": "YOLO Build"
+      },
+      "metrics": {
+        "liq_usd": 5108.93,
+        "vol_1h_usd": 0.0,
+        "price_usd": 3.237e-06,
+        "price_change_24h": 0.0
+      },
+      "timestamps": {
+        "token_first_seen": "2026-02-24T21:53:40.443000+00:00",
+        "age_hours": 4.82,
+        "age_minutes": 289.3
+      },
+      "price_history": [
+        {
+          "timestamp": 1771970020443,
+          "price": 3.237e-06,
+          "liq": 5108.93,
+          "vol_5m": 0.0
+        }
+      ],
+      "badges": [
+        "\ud83d\udd25 HOT"
+      ],
+      "category": "WATCH"
+    },
+    {
+      "token": {
+        "address": "0x2808589324160d6b68ca1def7927fd9c965ccb07",
+        "symbol": "HEXAGON",
+        "name": "Hexagon OS"
+      },
+      "metrics": {
+        "liq_usd": 18733.41,
+        "vol_1h_usd": 0.0,
+        "price_usd": 1.829e-07,
+        "price_change_24h": 0.0
+      },
+      "timestamps": {
+        "token_first_seen": "2026-02-24T21:53:40.443000+00:00",
+        "age_hours": 4.82,
+        "age_minutes": 289.3
+      },
+      "price_history": [
+        {
+          "timestamp": 1771970020443,
+          "price": 1.829e-07,
+          "liq": 18733.41,
+          "vol_5m": 0.0
+        }
+      ],
+      "badges": [
+        "\ud83d\udd25 HOT"
+      ],
+      "category": "WATCH"
+    }
+  ],
   "meta": {
-    "updated_at": "2026-02-25T00:05:27.425517+00:00"
+    "updated_at": "2026-02-25T02:42:59.781234+00:00"
   }
 }

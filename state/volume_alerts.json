@@ -241,6 +241,70 @@
         "dumping"
       ],
       "timestamp": "2026-02-25T00:05:27.420000+00:00"
+    },
+    {
+      "type": "dump_warning",
+      "token": "SMOL",
+      "risk_factors": [
+        "dumping"
+      ],
+      "timestamp": "2026-02-25T02:41:44.752872+00:00"
+    },
+    {
+      "type": "dump_warning",
+      "token": "TAKEOVER",
+      "risk_factors": [
+        "dumping"
+      ],
+      "timestamp": "2026-02-25T02:41:44.752925+00:00"
+    },
+    {
+      "type": "dump_warning",
+      "token": "TAKEOVER",
+      "risk_factors": [
+        "dumping"
+      ],
+      "timestamp": "2026-02-25T02:41:44.752938+00:00"
+    },
+    {
+      "type": "dump_warning",
+      "token": "Spawnr",
+      "risk_factors": [
+        "dumping"
+      ],
+      "timestamp": "2026-02-25T02:41:44.753164+00:00"
+    },
+    {
+      "type": "dump_warning",
+      "token": "SMOL",
+      "risk_factors": [
+        "dumping"
+      ],
+      "timestamp": "2026-02-25T02:42:59.774512+00:00"
+    },
+    {
+      "type": "dump_warning",
+      "token": "TAKEOVER",
+      "risk_factors": [
+        "dumping"
+      ],
+      "timestamp": "2026-02-25T02:42:59.774542+00:00"
+    },
+    {
+      "type": "dump_warning",
+      "token": "TAKEOVER",
+      "risk_factors": [
+        "dumping"
+      ],
+      "timestamp": "2026-02-25T02:42:59.774558+00:00"
+    },
+    {
+      "type": "dump_warning",
+      "token": "Spawnr",
+      "risk_factors": [
+        "dumping"
+      ],
+      "timestamp": "2026-02-25T02:42:59.774764+00:00"
     }
   ]
 }
