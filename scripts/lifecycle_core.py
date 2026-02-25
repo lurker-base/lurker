@@ -74,6 +74,24 @@ def calculate_performance(token):
         "status": status
     }
 
+def clean_badges_for_category(token, new_category):
+    """Nettoie les badges selon la catégorie"""
+    risk_tags = token.get("risk_tags", [])
+    
+    if new_category == "RUGGED":
+        # Garder seulement badges négatifs
+        risk_tags = [tag for tag in risk_tags if any(x in str(tag) for x in ['💀', '⚠️', '📉', 'RUG', 'DUMP', 'COPYCAT'])]
+        if '💀 RUGGED' not in risk_tags:
+            risk_tags.append('💀 RUGGED')
+    
+    elif new_category in ["DUMPING"]:
+        # Retirer badges positifs pour tokens qui dumpent
+        risk_tags = [tag for tag in risk_tags if not any(x in str(tag) for x in ['⚡', '📈', '💧', '💎', '🌊', '💫'])]
+        if '📉 DUMPING' not in risk_tags:
+            risk_tags.append('📉 DUMPING')
+    
+    token["risk_tags"] = risk_tags
+
 def determine_category(token):
     """Détermine la catégorie selon l'âge et les métriques"""
     age = calculate_age_minutes(token.get("detected_at"))
@@ -81,9 +99,14 @@ def determine_category(token):
     liq = metrics.get("liq_usd", 0)
     performance = token.get("performance", {})
     status = performance.get("status", "")
+    current_gain = performance.get("current_gain", 0) or 0
     
     # RUGGED si liquidité = 0 ou pattern pump&dump
     if liq == 0 or status == "pump_dump":
+        return "RUGGED"
+    
+    # RUGGED si dumping sévère
+    if status == "dumping" and current_gain <= -50:
         return "RUGGED"
     
     # CIO: < 10 min
@@ -166,6 +189,13 @@ def process_token(addr, token):
     
     if old_category != new_category:
         print(f"  → {token['symbol']}: {old_category} → {new_category}")
+        # Nettoyer les badges quand la catégorie change
+        clean_badges_for_category(token, new_category)
+    
+    # Also clean badges if token is dumping (even if category didn't change)
+    perf = token.get("performance", {})
+    if perf.get("status") == "dumping" or perf.get("current_gain", 0) <= -20:
+        clean_badges_for_category(token, "DUMPING")
     
     token["category"] = new_category
     
