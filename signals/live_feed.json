@@ -1,25 +1,25 @@
 {
   "meta": {
-    "updated_at": "2026-02-24T19:57:07.911209",
+    "updated_at": "2026-02-25T05:26:13.582230",
     "source": "dexscreener",
     "chain": "base",
     "count": 2,
     "errors": [],
     "debug": {
-      "raw_pairs": 102,
+      "raw_pairs": 96,
       "rejected": {
-        "bluechip_symbol": 89,
-        "high_mcap_$122,296,083": 1,
-        "high_mcap_$18,390,687": 1,
-        "high_mcap_$52,712,625": 1,
-        "high_mcap_$25,493,356": 1,
-        "high_mcap_$167,586,868": 1,
-        "high_mcap_$12,453,659": 1,
-        "high_mcap_$84,784,930": 1,
-        "high_mcap_$45,774,528": 1,
-        "high_mcap_$305,920,801": 1,
-        "high_mcap_$29,391,368": 1,
-        "high_mcap_$571,499,602": 1
+        "bluechip_symbol": 83,
+        "high_mcap_$124,815,372": 1,
+        "high_mcap_$19,220,922": 1,
+        "high_mcap_$178,504,874": 1,
+        "high_mcap_$54,132,906": 1,
+        "high_mcap_$14,673,865": 1,
+        "high_mcap_$25,940,892": 1,
+        "high_mcap_$299,372,958": 1,
+        "high_mcap_$626,584,512": 1,
+        "high_mcap_$87,846,174": 1,
+        "high_mcap_$46,247,646": 1,
+        "high_mcap_$29,546,284": 1
       }
     }
   },
@@ -27,7 +27,7 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "posted",
-      "ts_utc": "2026-02-24T19:57:07.911106Z",
+      "ts_utc": "2026-02-25T05:26:13.582122Z",
       "chain": "base",
       "token": {
         "name": "Edel",
@@ -41,10 +41,10 @@
         "risk": "low"
       },
       "metrics": {
-        "price_usd": 0.009195,
-        "mcap_usd": 5216498,
-        "liq_usd": 669239.89,
-        "vol_24h_usd": 198128.31
+        "price_usd": 0.01073,
+        "mcap_usd": 6091353,
+        "liq_usd": 743049.24,
+        "vol_24h_usd": 254261.79
       },
       "dex": "aerodrome",
       "pair_address": "0x566beE7EF7b39f29d150AB3be6b6242C17CC5A31",
@@ -53,7 +53,7 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "posted",
-      "ts_utc": "2026-02-24T19:57:07.911063Z",
+      "ts_utc": "2026-02-25T05:26:13.582149Z",
       "chain": "base",
       "token": {
         "name": "Sport.fun",
@@ -62,15 +62,15 @@
         "pair_url": "https://dexscreener.com/base/0x659be70647b0f63217d60e077f4417b1ecc65064"
       },
       "scores": {
-        "confidence": 77,
+        "confidence": 80,
         "rarity": "3-5/day",
         "risk": "low"
       },
       "metrics": {
-        "price_usd": 0.04608,
-        "mcap_usd": 8203938,
-        "liq_usd": 592089.88,
-        "vol_24h_usd": 685171.17
+        "price_usd": 0.04887,
+        "mcap_usd": 8699855,
+        "liq_usd": 599712.89,
+        "vol_24h_usd": 489039.97
       },
       "dex": "aerodrome",
       "pair_address": "0x659bE70647B0f63217D60e077F4417b1eCC65064",
