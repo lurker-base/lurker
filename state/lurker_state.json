@@ -1,7 +1,7 @@
 {
   "schema": "lurker_v1.5",
   "meta": {
-    "last_scan": "2026-02-25T06:34:13.682042+00:00",
+    "last_scan": "2026-02-25T06:45:28.749305+00:00",
     "last_lifecycle": "2026-02-25T05:55:37.622090+00:00",
     "total_tokens": 62,
     "version": "1.5.0",
@@ -701,7 +701,7 @@
         "factors": []
       },
       "risk_tags": [
-        "\ud83c\udf0a ESTABLISHED"
+        "\ud83d\udcc9 DUMPING"
       ],
       "performance": {
         "max_gain": 0.0,
@@ -2382,7 +2382,7 @@
         ]
       },
       "risk_tags": [
-        "\ud83c\udf0a ESTABLISHED"
+        "\ud83d\udc80 RUGGED"
       ],
       "performance": {
         "max_gain": 14.7,
@@ -2844,7 +2844,7 @@
         ]
       },
       "risk_tags": [
-        "\ud83c\udf0a ESTABLISHED"
+        "\ud83d\udc80 RUGGED"
       ],
       "performance": {
         "max_gain": 31.6,
