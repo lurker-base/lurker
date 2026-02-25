@@ -1,9 +1,9 @@
 {
   "schema": "lurker_v1.5",
   "meta": {
-    "last_scan": "2026-02-25T08:06:54.040299+00:00",
+    "last_scan": "2026-02-25T08:13:57.455987+00:00",
     "last_lifecycle": "2026-02-25T05:55:37.622090+00:00",
-    "total_tokens": 62,
+    "total_tokens": 64,
     "version": "1.5.0",
     "migrated_from": "v1_feeds",
     "migration_date": "2026-02-25T05:39:10.406085+00:00",
@@ -11,7 +11,7 @@
       "by_category": {
         "CIO": 0,
         "WATCH": 0,
-        "HOTLIST": 11,
+        "HOTLIST": 13,
         "FAST": 26,
         "CERTIFIED": 0,
         "RUGGED": 25
@@ -4443,6 +4443,80 @@
       ],
       "is_copycat": true,
       "original_token": "0xe4a3451ade8ca2c3e1e3d7b9fa6ecce419168ba3"
+    },
+    "0xf307e242BfE1EC1fF01a4Cef2fdaa81b10A52418": {
+      "address": "0xf307e242BfE1EC1fF01a4Cef2fdaa81b10A52418",
+      "symbol": "FAME",
+      "name": "Society",
+      "pair_address": "0x3e2cab55bEbF41719148b4e6b63F6644B18AE49c",
+      "dex": "uniswap",
+      "source": "manual_add",
+      "sources": [
+        "manual"
+      ],
+      "detected_at": "2026-02-25T08:13:28.536297+00:00",
+      "category": "HOTLIST",
+      "age_minutes": 0,
+      "metrics": {
+        "liq_usd": 40443.71,
+        "price_usd": "0.0002211",
+        "vol_5m_usd": 49,
+        "vol_1h_usd": 97.8,
+        "vol_24h_usd": 251.78,
+        "txns_5m": 0,
+        "price_change_24h": 3.45,
+        "market_cap": 196402
+      },
+      "risk": {
+        "level": "low",
+        "factors": []
+      },
+      "risk_tags": [
+        "\u26a1 TRENDING"
+      ],
+      "performance": {
+        "max_gain": 0,
+        "current_gain": 0,
+        "status": "new"
+      },
+      "price_history": []
+    },
+    "0x12b7E46c5e98514447178994F26f06200E0Db660": {
+      "address": "0x12b7E46c5e98514447178994F26f06200E0Db660",
+      "symbol": "SOCIETY",
+      "name": "CLAW SOCIETY",
+      "pair_address": "0x33f821b813b57d9690305ee5c2aac4ccc02a4a51108274cb9f758e65eedbbfe1",
+      "dex": "uniswap",
+      "source": "manual_add",
+      "sources": [
+        "manual"
+      ],
+      "detected_at": "2026-02-25T08:13:57.455925+00:00",
+      "category": "HOTLIST",
+      "age_minutes": 0,
+      "metrics": {
+        "liq_usd": 27059.52,
+        "price_usd": "0.0000005149",
+        "vol_5m_usd": 4608.32,
+        "vol_1h_usd": 212461.08,
+        "vol_24h_usd": 307746.76,
+        "txns_5m": 0,
+        "price_change_24h": 924,
+        "market_cap": 51490
+      },
+      "risk": {
+        "level": "low",
+        "factors": []
+      },
+      "risk_tags": [
+        "\u26a1 TRENDING"
+      ],
+      "performance": {
+        "max_gain": 0,
+        "current_gain": 0,
+        "status": "new"
+      },
+      "price_history": []
     }
   }
 }
