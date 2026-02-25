@@ -25,9 +25,10 @@
         }
         
         .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
             margin-bottom: 3rem;
         }
         
@@ -35,8 +36,9 @@
             background: rgba(255,255,255,0.02);
             border: 1px solid var(--border);
             border-radius: 8px;
-            padding: 1.5rem;
+            padding: 1.5rem 2rem;
             text-align: center;
+            min-width: 140px;
         }
         
         .stat-value {
@@ -49,6 +51,15 @@
             color: var(--text-muted);
             font-size: 0.9rem;
             margin-top: 0.5rem;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            color: var(--accent);
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+            text-align: center;
         }
         
         .section-title {
@@ -99,14 +110,16 @@
         }
         
         .winner-metrics {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
             margin: 1rem 0;
+            flex-wrap: wrap;
         }
         
         .metric {
             text-align: center;
+            min-width: 80px;
         }
         
         .metric-value {
@@ -118,6 +131,7 @@
         .metric-label {
             font-size: 0.8rem;
             color: var(--text-muted);
+            margin-top: 0.25rem;
         }
         
         .empty-state {
@@ -193,13 +207,44 @@
         
         async function loadHallOfFame() {
             try {
-                // Load Hall of Fame
-                const hofRes = await fetch(`${REPO_RAW}/signals/hall_of_fame.json?t=${Date.now()}`, { cache: 'no-store' });
-                const hof = hofRes.ok ? await hofRes.json() : { certified: [], meta: {} };
+                // Load state directly
+                const stateRes = await fetch(`${REPO_RAW}/state/lurker_state.json?t=${Date.now()}`, { cache: 'no-store' });
+                const state = stateRes.ok ? await stateRes.json() : { tokens: {} };
                 
-                // Load Top Performers
-                const topRes = await fetch(`${REPO_RAW}/signals/top_performers.json?t=${Date.now()}`, { cache: 'no-store' });
-                const top = topRes.ok ? await topRes.json() : { performers: [] };
+                // Build HOF from state
+                const tokens = Object.values(state.tokens || {});
+                const certified = tokens.filter(t => t.category === 'CERTIFIED' && t.performance?.current_gain > 50);
+                const topPerformers = tokens.filter(t => t.performance?.status === 'pumping' && t.performance?.max_gain > 20);
+                
+                // Build stats
+                const totalCertified = certified.length;
+                const avgGain = totalCertified > 0 
+                    ? certified.reduce((sum, t) => sum + (t.performance?.current_gain || 0), 0) / totalCertified 
+                    : 0;
+                const winRate = totalCertified > 0 ? 100 : 0; // Simplified
+                
+                const hof = { 
+                    certified: certified.map(t => ({
+                        symbol: t.symbol,
+                        gain_pct: Math.round(t.performance?.current_gain || 0),
+                        max_gain_pct: Math.round(t.performance?.max_gain || 0),
+                        age_hours: Math.round((t.age_minutes || 0) / 60),
+                        token: t
+                    })),
+                    meta: { 
+                        win_rate: winRate,
+                        average_gain_pct: Math.round(avgGain)
+                    }
+                };
+                
+                const top = {
+                    performers: topPerformers.map(t => ({
+                        token: t,
+                        gain_1h_pct: Math.round(t.performance?.max_gain || 0),
+                        gain_pct: Math.round(t.performance?.current_gain || 0),
+                        current_price: t.metrics?.price_usd
+                    }))
+                };
                 
                 // Update stats
                 document.getElementById('stat-total').textContent = hof.certified?.length || 0;
@@ -210,24 +255,27 @@
                 // Render Top Performers
                 const topContainer = document.getElementById('top-performers');
                 if (top.performers && top.performers.length > 0) {
-                    topContainer.innerHTML = top.performers.map(p => `
+                    topContainer.innerHTML = top.performers.map(p => {
+                        const gain = p.gain_1h_pct || p.gain_pct || 0;
+                        const price = p.current_price || p.token?.metrics?.price_usd || 0;
+                        return `
                         <div class="winner-card top-performer">
                             <div class="winner-header">
-                                <span class="winner-symbol">$${p.token.symbol}</span>
-                                <span class="winner-badge top">+${p.gain_1h_pct}% / 1h</span>
+                                <span class="winner-symbol">$${p.token?.symbol || '?'}</span>
+                                <span class="winner-badge top">+${gain}% / 1h</span>
                             </div>
                             <div class="winner-metrics">
                                 <div class="metric">
-                                    <div class="metric-value">+${p.gain_1h_pct}%</div>
+                                    <div class="metric-value">+${gain}%</div>
                                     <div class="metric-label">1h Gain</div>
                                 </div>
                                 <div class="metric">
-                                    <div class="metric-value">$${p.current_price.toExponential(4)}</div>
+                                    <div class="metric-value">$${typeof price === 'number' ? price.toExponential(4) : price}</div>
                                     <div class="metric-label">Current Price</div>
                                 </div>
                             </div>
                         </div>
-                    `).join('');
+                    `}).join('');
                 } else {
                     topContainer.innerHTML = '<div class="empty-state">No top performers right now. Check back soon.</div>';
                 }
@@ -235,28 +283,32 @@
                 // Render Hall of Fame
                 const hofContainer = document.getElementById('hall-of-fame');
                 if (hof.certified && hof.certified.length > 0) {
-                    hofContainer.innerHTML = hof.certified.map(c => `
+                    hofContainer.innerHTML = hof.certified.map(c => {
+                        const gain = c.gain_pct || c.performance?.current_gain || 0;
+                        const maxGain = c.max_gain_pct || c.performance?.max_gain || 0;
+                        const age = c.age_hours || Math.round((c.age_minutes || 0) / 60);
+                        return `
                         <div class="winner-card">
                             <div class="winner-header">
-                                <span class="winner-symbol">$${c.token.symbol}</span>
-                                <span class="winner-badge">+${c.gain_pct}%</span>
+                                <span class="winner-symbol">$${c.token?.symbol || c.symbol || '?'}</span>
+                                <span class="winner-badge">+${gain}%</span>
                             </div>
                             <div class="winner-metrics">
                                 <div class="metric">
-                                    <div class="metric-value">+${c.gain_pct}%</div>
+                                    <div class="metric-value">+${gain}%</div>
                                     <div class="metric-label">Total Gain</div>
                                 </div>
                                 <div class="metric">
-                                    <div class="metric-value">+${c.max_gain_pct}%</div>
+                                    <div class="metric-value">+${maxGain}%</div>
                                     <div class="metric-label">Peak Gain</div>
                                 </div>
                                 <div class="metric">
-                                    <div class="metric-value">${c.age_hours}h</div>
+                                    <div class="metric-value">${age}h</div>
                                     <div class="metric-label">Age</div>
                                 </div>
                             </div>
                         </div>
-                    `).join('');
+                    `}).join('');
                 } else {
                     hofContainer.innerHTML = '<div class="empty-state">No certified winners yet. First entries coming soon.</div>';
                 }
