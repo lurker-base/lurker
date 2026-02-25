@@ -1,7 +1,7 @@
 {
   "schema": "lurker_v1.5",
   "meta": {
-    "last_scan": "2026-02-25T10:25:05.061334+00:00",
+    "last_scan": "2026-02-25T13:09:40.376284+00:00",
     "last_lifecycle": "2026-02-25T09:56:21.138799+00:00",
     "total_tokens": 63,
     "version": "1.5.0",
@@ -4595,7 +4595,7 @@
         "pairs"
       ],
       "detected_at": "2026-02-25T08:30:43.179432+00:00",
-      "category": "ACTIVE",
+      "category": "RUG",
       "risk": {
         "level": "low",
         "factors": []
@@ -4614,7 +4614,9 @@
       ],
       "badges": [
         "\ud83d\udca7 Good Liq"
-      ]
+      ],
+      "rugged_at": "2026-02-25T13:09:40.376231+00:00",
+      "rug_reason": "No liquidity data / Price unavailable"
     },
     "0xBe6279f8fB1C33BE3572996E9505506E23400e61": {
       "address": "0xBe6279f8fB1C33BE3572996E9505506E23400e61",
