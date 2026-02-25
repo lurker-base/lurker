@@ -98,8 +98,8 @@ def is_token_dead(token: dict) -> bool:
     price_change = metrics.get('price_change_24h') or 0
     price_usd = metrics.get('price_usd') or 0
     
-    # CRITÈRE #1: Liquidité = 0 ou None → RUG (mais pas si les données sont vieilles)
-    if liq == 0 and not is_data_stale(token, max_age_hours=24.0):
+    # CRITÈRE #1: Liquidité = 0 ou None → RUG (immédiat)
+    if liq == 0:
         return True
     
     # CRITÈRE #2: Dump massif -90% ou plus
