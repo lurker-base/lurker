@@ -94,6 +94,12 @@ def clean_badges_for_category(token, new_category):
 
 def determine_category(token):
     """Détermine la catégorie selon l'âge et les métriques"""
+    current_category = token.get("category", "CIO")
+    
+    # Si déjà RUGGED, ne jamais changer
+    if current_category == "RUGGED" or token.get("is_copycat"):
+        return "RUGGED"
+    
     age = calculate_age_minutes(token.get("detected_at"))
     metrics = token.get("metrics", {})
     liq = metrics.get("liq_usd", 0)

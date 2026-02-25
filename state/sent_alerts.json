@@ -130,6 +130,105 @@
         "status": "dumping"
       },
       "sent_at": "2026-02-25T06:13:25.577632+00:00"
+    },
+    {
+      "token": "0x3e96a25ee1ce2dab3f528e033d60b3352ff3e8a2",
+      "symbol": "BHOMOS (SCAM)",
+      "type": "DUMP",
+      "performance": {
+        "max_gain": 14.7,
+        "current_gain": -69.3,
+        "status": "dumping"
+      },
+      "sent_at": "2026-02-25T09:48:24.014120+00:00"
+    },
+    {
+      "token": "0xde4b3bdfc8203f5641ceeaf203362d34d49c2b07",
+      "symbol": "BOUNCERBOT (SCAM)",
+      "type": "PUMP",
+      "performance": {
+        "max_gain": 150.5,
+        "current_gain": 150.5,
+        "status": "pumping"
+      },
+      "sent_at": "2026-02-25T09:48:24.015517+00:00"
+    },
+    {
+      "token": "0x99bb9e6bc8aef69937bd648e8658cf872412fb07",
+      "symbol": "YULE (SCAM)",
+      "type": "DUMP",
+      "performance": {
+        "max_gain": 0.0,
+        "current_gain": -47.4,
+        "status": "dumping"
+      },
+      "sent_at": "2026-02-25T09:48:24.016065+00:00"
+    },
+    {
+      "token": "0x9802a847bedf8b45665c5e4069ee1515ae2d6b07",
+      "symbol": "FORTCLAW (SCAM)",
+      "type": "DUMP",
+      "performance": {
+        "max_gain": 41.1,
+        "current_gain": -83.6,
+        "status": "dumping"
+      },
+      "sent_at": "2026-02-25T09:48:24.016524+00:00"
+    },
+    {
+      "token": "0x9ee36408f7c57763727dd64513a260820a576b07",
+      "symbol": "CLOC (SCAM)",
+      "type": "PUMP",
+      "performance": {
+        "max_gain": 56.8,
+        "current_gain": -89.5,
+        "status": "pumping"
+      },
+      "sent_at": "2026-02-25T09:48:24.017487+00:00"
+    },
+    {
+      "token": "0x8e27a4cac917563295de9b07d594f7f3e0fdcb07",
+      "symbol": "CLAWNCHPEDIA (SCAM)",
+      "type": "PUMP",
+      "performance": {
+        "max_gain": 135.9,
+        "current_gain": -12.1,
+        "status": "pumping"
+      },
+      "sent_at": "2026-02-25T09:48:24.019086+00:00"
+    },
+    {
+      "token": "0x6630662d14032f58b4191316e8cef4557925fb07",
+      "symbol": "CLAWCASTER (SCAM)",
+      "type": "PUMP",
+      "performance": {
+        "max_gain": 152.1,
+        "current_gain": 59.8,
+        "status": "pumping"
+      },
+      "sent_at": "2026-02-25T09:48:24.019620+00:00"
+    },
+    {
+      "token": "0xe4f5b998372443522b08b72d3b5b704c3bdafaf4",
+      "symbol": "WILDE",
+      "type": "PUMP",
+      "performance": {
+        "max_gain": 179.6,
+        "current_gain": 179.6,
+        "status": "pumping"
+      },
+      "sent_at": "2026-02-25T09:48:25.144638+00:00"
+    },
+    {
+      "token": "0x747fc2c56447d8737e4f3a6dea5f8fbeb034db07",
+      "symbol": "CLAWSWARM",
+      "type": "DUMP",
+      "performance": {
+        "max_gain": 0.0,
+        "current_gain": -92.0,
+        "status": "dumping"
+      },
+      "sent_at": "2026-02-25T09:48:25.632212+00:00"
     }
   ]
 }

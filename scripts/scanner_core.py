@@ -298,6 +298,11 @@ def merge_tokens(sources, existing_tokens=None):
         if not metrics.get("liq_usd", 0) > 0:
             continue  # Skip si pas de liquidité
         
+        # Check if address already exists in our database
+        if addr in existing_tokens:
+            print(f"  ⚠️ Skipping {symbol} - already in database")
+            continue
+        
         # Check if symbol already exists in our database
         if symbol in existing_by_symbol:
             existing_addr, existing = existing_by_symbol[symbol]
