@@ -1,21 +1,20 @@
 {
   "schema": "lurker_v1.5",
   "meta": {
-    "last_scan": "2026-02-25T09:52:44.082775+00:00",
+    "last_scan": "2026-02-25T09:57:53.764330+00:00",
     "last_lifecycle": "2026-02-25T09:56:21.138799+00:00",
-    "total_tokens": 69,
+    "total_tokens": 63,
     "version": "1.5.0",
     "migrated_from": "v1_feeds",
     "migration_date": "2026-02-25T05:39:10.406085+00:00",
     "stats": {
       "by_category": {
-        "CIO": 5,
+        "CIO": 0,
         "WATCH": 0,
         "HOTLIST": 0,
-        "FAST": 16,
+        "FAST": 15,
         "CERTIFIED": 27,
-        "RUGGED": 21,
-        "ARCHIVED": 0
+        "RUGGED": 21
       },
       "pumps_24h": 4,
       "dumps_24h": 7,
@@ -4469,46 +4468,6 @@
         }
       ]
     },
-    "0xD8dfac62E830B4304580cf34e4Ab757E3A0B3Ba3": {
-      "address": "0xD8dfac62E830B4304580cf34e4Ab757E3A0B3Ba3",
-      "symbol": "Nook",
-      "name": "Nookplot",
-      "pair_address": "0xec0658454023e8d10d710d28ea14c83e34b6ef8c5afb8d2bd0d7fdf7ce72253d",
-      "dex": "uniswap",
-      "source": "pairs",
-      "age_minutes": 332.0,
-      "metrics": {
-        "liq_usd": 19944.98,
-        "price_usd": 1.988e-07,
-        "vol_5m_usd": 0.0,
-        "vol_1h_usd": 0.0,
-        "vol_24h_usd": 6102.51,
-        "txns_5m": 0.0,
-        "price_change_24h": -1.22,
-        "market_cap": 19888.0
-      },
-      "sources": [
-        "pairs"
-      ],
-      "detected_at": "2026-02-25T08:30:43.179434+00:00",
-      "category": "FAST",
-      "risk": {
-        "level": "low",
-        "factors": []
-      },
-      "performance": {
-        "max_gain": 0.0,
-        "current_gain": 0.0,
-        "status": "stable"
-      },
-      "risk_tags": [],
-      "price_history": [
-        {
-          "timestamp": "2026-02-25T09:56:21.138654+00:00",
-          "price": 1.988e-07
-        }
-      ]
-    },
     "0xBe6279f8fB1C33BE3572996E9505506E23400e61": {
       "address": "0xBe6279f8fB1C33BE3572996E9505506E23400e61",
       "symbol": "Marty",
@@ -4548,210 +4507,6 @@
         {
           "timestamp": "2026-02-25T09:56:21.138665+00:00",
           "price": 0.0002398
-        }
-      ]
-    },
-    "0xD81D1E61Ce04b8858dd4951808871829c195fB07": {
-      "address": "0xD81D1E61Ce04b8858dd4951808871829c195fB07",
-      "symbol": "NOOK",
-      "name": "nookplot",
-      "pair_address": "0x630062af00141542201fa21bb5401c8d575381f7cc08a6ea13e89f57ccaf3f27",
-      "dex": "uniswap",
-      "source": "pairs",
-      "age_minutes": 265.8,
-      "metrics": {
-        "liq_usd": 21622.7,
-        "price_usd": 1.996e-07,
-        "vol_5m_usd": 0.0,
-        "vol_1h_usd": 0.0,
-        "vol_24h_usd": 294676.12,
-        "txns_5m": 0.0,
-        "price_change_24h": -56.16,
-        "market_cap": 19962.0
-      },
-      "sources": [
-        "pairs"
-      ],
-      "detected_at": "2026-02-25T09:48:53.130347+00:00",
-      "category": "CIO",
-      "risk": {
-        "level": "low",
-        "factors": []
-      },
-      "performance": {
-        "max_gain": 0.0,
-        "current_gain": 0.0,
-        "status": "stable"
-      },
-      "risk_tags": [],
-      "price_history": [
-        {
-          "timestamp": "2026-02-25T09:56:21.138689+00:00",
-          "price": 1.996e-07
-        }
-      ]
-    },
-    "0xf0A48e32C134bCa8C38F32bBfb46D518753cCba3": {
-      "address": "0xf0A48e32C134bCa8C38F32bBfb46D518753cCba3",
-      "symbol": "NOOK",
-      "name": "nookplot",
-      "pair_address": "0xc5008a0bd51964ddea177c597ab34fb4785e076fb169e7158bfb4d4a72186ca3",
-      "dex": "uniswap",
-      "source": "pairs",
-      "age_minutes": 465.9,
-      "metrics": {
-        "liq_usd": 29231.84,
-        "price_usd": 2.658e-07,
-        "vol_5m_usd": 0.0,
-        "vol_1h_usd": 128.27,
-        "vol_24h_usd": 331969.49,
-        "txns_5m": 0.0,
-        "price_change_24h": 25.01,
-        "market_cap": 26587.0
-      },
-      "sources": [
-        "pairs"
-      ],
-      "detected_at": "2026-02-25T09:48:53.130354+00:00",
-      "category": "CIO",
-      "risk": {
-        "level": "low",
-        "factors": []
-      },
-      "performance": {
-        "max_gain": 0.0,
-        "current_gain": 0.0,
-        "status": "stable"
-      },
-      "risk_tags": [],
-      "price_history": [
-        {
-          "timestamp": "2026-02-25T09:56:21.138696+00:00",
-          "price": 2.658e-07
-        }
-      ]
-    },
-    "0x30E0a11a84b4D75B41857c3C38361ebf6A4519e4": {
-      "address": "0x30E0a11a84b4D75B41857c3C38361ebf6A4519e4",
-      "symbol": "NOOK",
-      "name": "Nookplot",
-      "pair_address": "0x03889ccde8dbfbe08075acf9f933340d45322572de42ab678a02f7d63c7fcc9c",
-      "dex": "uniswap",
-      "source": "pairs",
-      "age_minutes": 80.8,
-      "metrics": {
-        "liq_usd": 24102.21,
-        "price_usd": 2.518e-05,
-        "vol_5m_usd": 0.0,
-        "vol_1h_usd": 24447.6,
-        "vol_24h_usd": 125789.8,
-        "txns_5m": 0.0,
-        "price_change_24h": 328.0,
-        "market_cap": 25181.0
-      },
-      "sources": [
-        "pairs"
-      ],
-      "detected_at": "2026-02-25T09:48:53.130358+00:00",
-      "category": "CIO",
-      "risk": {
-        "level": "low",
-        "factors": []
-      },
-      "performance": {
-        "max_gain": 0.0,
-        "current_gain": 0.0,
-        "status": "stable"
-      },
-      "risk_tags": [],
-      "price_history": [
-        {
-          "timestamp": "2026-02-25T09:56:21.138728+00:00",
-          "price": 2.518e-05
-        }
-      ]
-    },
-    "0xE22C2bAa54c0d7bbD68bd9758B45b57fA6A15BA3": {
-      "address": "0xE22C2bAa54c0d7bbD68bd9758B45b57fA6A15BA3",
-      "symbol": "NOOK",
-      "name": "nookplot",
-      "pair_address": "0x655909E3DA4a1FC4e6C4176D81Bd079067f474a7",
-      "dex": "uniswap",
-      "source": "pairs",
-      "age_minutes": 1.0,
-      "metrics": {
-        "liq_usd": 19479.27,
-        "price_usd": 4.478e-05,
-        "vol_5m_usd": 796.63,
-        "vol_1h_usd": 796.63,
-        "vol_24h_usd": 796.63,
-        "txns_5m": 3.0,
-        "price_change_24h": -4.35,
-        "market_cap": 44786.0
-      },
-      "sources": [
-        "pairs"
-      ],
-      "detected_at": "2026-02-25T09:48:53.130362+00:00",
-      "category": "CIO",
-      "risk": {
-        "level": "low",
-        "factors": []
-      },
-      "performance": {
-        "max_gain": 0.0,
-        "current_gain": 0.0,
-        "status": "stable"
-      },
-      "risk_tags": [
-        "FRESH"
-      ],
-      "price_history": [
-        {
-          "timestamp": "2026-02-25T09:56:21.138741+00:00",
-          "price": 4.478e-05
-        }
-      ]
-    },
-    "0x037Ccb374CF76bC439F99Ca5fA53C5c0e5575ba3": {
-      "address": "0x037Ccb374CF76bC439F99Ca5fA53C5c0e5575ba3",
-      "symbol": "NOOK",
-      "name": "nookplot",
-      "pair_address": "0x3839348A8C30957878dA705d36c75894c71f3516",
-      "dex": "uniswap",
-      "source": "pairs",
-      "age_minutes": 0.8,
-      "metrics": {
-        "liq_usd": 19402.77,
-        "price_usd": 4.462e-05,
-        "vol_5m_usd": 133.36,
-        "vol_1h_usd": 133.36,
-        "vol_24h_usd": 133.36,
-        "txns_5m": 1.0,
-        "price_change_24h": 0,
-        "market_cap": 44621.0
-      },
-      "sources": [
-        "pairs"
-      ],
-      "detected_at": "2026-02-25T09:52:44.082549+00:00",
-      "category": "CIO",
-      "risk": {
-        "level": "low",
-        "factors": []
-      },
-      "performance": {
-        "max_gain": 0.0,
-        "current_gain": 0.0,
-        "status": "stable"
-      },
-      "risk_tags": [
-        "FRESH"
-      ],
-      "price_history": [
-        {
-          "timestamp": "2026-02-25T09:56:21.138751+00:00",
-          "price": 4.462e-05
         }
       ]
     }
