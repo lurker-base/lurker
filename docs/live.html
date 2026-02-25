@@ -186,7 +186,7 @@
         /* Fallback for any emoji badges */
         .badge-default { background: #333; color: #999; }
         
-        /* Avatar styles for this page */
+        /* Avatar styles for this page - matching main site */
         .avatar-section-fixed {
             position: fixed;
             top: 80px;
@@ -194,40 +194,47 @@
             z-index: 100;
         }
         
-        .avatar-circle {
+        .avatar-wrapper {
+            position: relative;
+            width: 60px;
+            height: 60px;
+        }
+        
+        .avatar {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            background: linear-gradient(135deg, #ff6b35 0%, #ff4500 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            box-shadow: 0 0 20px rgba(255, 107, 53, 0.5);
-        }
-        
-        .avatar-circle::before {
-            content: '';
-            position: absolute;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background: rgba(255, 107, 53, 0.2);
-            animation: pulse-glow 2s ease-in-out infinite;
-        }
-        
-        @keyframes pulse-glow {
-            0%, 100% { transform: scale(1); opacity: 0.5; }
-            50% { transform: scale(1.1); opacity: 0.8; }
-        }
-        
-        .avatar-circle img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
             object-fit: cover;
-            position: relative;
             z-index: 2;
+            filter: drop-shadow(0 0 10px rgba(255, 107, 53, 0.8));
+        }
+        
+        .avatar-glow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 107, 53, 0.4) 0%, transparent 70%);
+            animation: pulse-glow-avatar 4s ease-in-out infinite;
+            z-index: 1;
+        }
+        
+        @keyframes pulse-glow-avatar {
+            0%, 100% { 
+                opacity: 0.6;
+                transform: translate(-50%, -50%) scale(1);
+            }
+            50% { 
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1.2);
+            }
         }
         
         .token-metric {
@@ -309,8 +316,9 @@
 
     <!-- Avatar with Halo (Top Left) -->
     <div class="avatar-section-fixed">
-        <div class="avatar-circle" id="avatar-wrapper">
-            <img src="assets/lurker-mascot-logo.png" alt="LURKER" onerror="this.style.display='none'">
+        <div class="avatar-wrapper" id="avatar-wrapper">
+            <img src="assets/lurker-mascot-logo.png" alt="LURKER" class="avatar" onerror="this.style.display='none'">
+            <div class="avatar-glow"></div>
         </div>
     </div>
 
