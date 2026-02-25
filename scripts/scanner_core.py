@@ -210,21 +210,35 @@ def calculate_risk_tags(token):
     return tags
 
 def enrich_tokens_with_pairs(all_tokens, pairs_data):
-    """Enrichit les tokens profiles/boosts avec les données pairs"""
+    """Enrichit les tokens profiles/boosts avec les données pairs ET ajoute les nouveaux pairs"""
     pairs_by_addr = {p.get("address"): p for p in pairs_data if p.get("address")}
     enriched = []
+    seen_addrs = set()
     
+    # First, add all pairs_data (new tokens from pairs scanning)
+    for pair_token in pairs_data:
+        addr = pair_token.get("address")
+        if addr and addr not in seen_addrs:
+            enriched.append(pair_token)
+            seen_addrs.add(addr)
+    
+    # Then, enrich with profiles/boosts data if available
     for token in all_tokens:
         addr = token.get("address")
+        if not addr or addr in seen_addrs:
+            continue
+        
         if addr in pairs_by_addr:
             # Merge avec les données pairs
             pair_data = pairs_by_addr[addr]
             token.update(pair_data)
             token["sources"] = list(set(token.get("sources", []) + [pair_data.get("source", "pairs")]))
             enriched.append(token)
-        elif token.get("source") == "pairs":
-            # Déjà des données pairs
+            seen_addrs.add(addr)
+        elif token.get("source") in ["profiles", "boosts"]:
+            # Token from profiles/boosts without pair data
             enriched.append(token)
+            seen_addrs.add(addr)
     
     return enriched
 
