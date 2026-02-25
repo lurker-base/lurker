@@ -42,12 +42,12 @@ def calculate_age_minutes(detected_at):
 
 def calculate_performance(token):
     """Calcule gain max et actuel"""
-    current_price = token.get("metrics", {}).get("price_usd", 0)
+    current_price = float(token.get("metrics", {}).get("price_usd", 0) or 0)
     history = token.get("price_history", [])
     
     if history:
-        first_price = history[0].get("price", current_price)
-        max_price = max(p.get("price", 0) for p in history)
+        first_price = float(history[0].get("price", current_price) or 0)
+        max_price = max(float(p.get("price", 0) or 0) for p in history)
     else:
         first_price = current_price
         max_price = current_price
@@ -172,7 +172,7 @@ def update_price_history(token):
     if "price_history" not in token:
         token["price_history"] = []
     
-    current_price = token.get("metrics", {}).get("price_usd", 0)
+    current_price = float(token.get("metrics", {}).get("price_usd", 0) or 0)
     if current_price > 0:
         token["price_history"].append({
             "timestamp": datetime.now(timezone.utc).isoformat(),
