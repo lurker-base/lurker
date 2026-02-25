@@ -36,6 +36,9 @@ jobs:
       - name: Run Lifecycle
         run: python scripts/lifecycle_core.py
 
+      - name: Detect Copycats
+        run: python scripts/detect_copycats.py
+
       - name: Run Notifier
         env:
           API_KEY: ${{ secrets.TWITTER_API_KEY_LURKER }}

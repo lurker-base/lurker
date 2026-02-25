@@ -1,7 +1,7 @@
 {
   "schema": "lurker_v1.5",
   "meta": {
-    "last_scan": "2026-02-25T07:10:30.145811+00:00",
+    "last_scan": "2026-02-25T07:11:51.137787+00:00",
     "last_lifecycle": "2026-02-25T05:55:37.622090+00:00",
     "total_tokens": 62,
     "version": "1.5.0",
@@ -12,13 +12,13 @@
         "CIO": 0,
         "WATCH": 0,
         "HOTLIST": 11,
-        "FAST": 27,
+        "FAST": 26,
         "CERTIFIED": 0,
-        "RUGGED": 24
+        "RUGGED": 25
       },
       "pumps_24h": 9,
       "dumps_24h": 8,
-      "rugged": 24,
+      "rugged": 25,
       "cleanup": {
         "last_run": "2026-02-25T05:39:15.502577+00:00",
         "tokens_before": 62,
@@ -195,13 +195,11 @@
       "risk": {
         "level": "critical",
         "factors": [
-          "copycat_scam"
+          "copycat_scam",
+          "manual_mark"
         ]
       },
       "risk_tags": [
-        "\u26a1 TRENDING",
-        "\ud83d\udcab ACTIVE",
-        "\ud83d\udd0d WATCH",
         "\u26a0\ufe0f COPYCAT",
         "\ud83d\udc80 RUGGED"
       ],
@@ -468,13 +466,11 @@
       "risk": {
         "level": "critical",
         "factors": [
-          "copycat_scam"
+          "copycat_scam",
+          "manual_mark"
         ]
       },
       "risk_tags": [
-        "\u26a1 TRENDING",
-        "\ud83d\udcab ACTIVE",
-        "\ud83d\udca7 GOOD_LIQ",
         "\u26a0\ufe0f COPYCAT",
         "\ud83d\udc80 RUGGED"
       ],
@@ -2295,7 +2291,7 @@
         "migration"
       ],
       "detected_at": "2026-02-22T16:00:15.449000+00:00",
-      "category": "FAST",
+      "category": "RUGGED",
       "age_minutes": 3677.4,
       "metrics": {
         "liq_usd": 4317.22,
@@ -2308,11 +2304,16 @@
         "market_cap": 0
       },
       "risk": {
-        "level": "low",
-        "factors": []
+        "level": "critical",
+        "factors": [
+          "copycat_scam",
+          "low_liq (3.2% of legit)",
+          "very_low_liq ($4,317)"
+        ]
       },
       "risk_tags": [
-        "\ud83c\udf0a ESTABLISHED"
+        "\ud83d\udc80 RUGGED",
+        "\u26a0\ufe0f COPYCAT"
       ],
       "performance": {
         "max_gain": 0.0,
@@ -2362,7 +2363,9 @@
           "liq": 4317.22,
           "vol_5m": 0.0
         }
-      ]
+      ],
+      "is_copycat": true,
+      "original_token": "0x0a3a6eef246ed15dbf97f8a237e20a3bc091cba3"
     },
     "0x3e96a25ee1ce2dab3f528e033d60b3352ff3e8a2": {
       "address": "0x3e96a25ee1ce2dab3f528e033d60b3352ff3e8a2",
@@ -4384,11 +4387,14 @@
       "risk": {
         "level": "critical",
         "factors": [
-          "severe_dump (-99%)"
+          "copycat_scam",
+          "low_liq (1.2% of legit)",
+          "very_low_liq ($2,652)"
         ]
       },
       "risk_tags": [
-        "\ud83d\udc80 RUGGED"
+        "\ud83d\udc80 RUGGED",
+        "\u26a0\ufe0f COPYCAT"
       ],
       "performance": {
         "max_gain": 0.0,
@@ -4426,7 +4432,9 @@
           "liq": 2652.33,
           "vol_5m": 0.0
         }
-      ]
+      ],
+      "is_copycat": true,
+      "original_token": "0xe4a3451ade8ca2c3e1e3d7b9fa6ecce419168ba3"
     }
   }
 }
