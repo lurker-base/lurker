@@ -265,9 +265,17 @@ def detect_copycat(token, merged_tokens):
     
     return False, None, 0
 
-def merge_tokens(sources):
+def merge_tokens(sources, existing_tokens=None):
     """Merge les tokens de toutes les sources sans doublons"""
     merged = {}
+    
+    # Build lookup of existing symbols
+    existing_by_symbol = {}
+    if existing_tokens:
+        for addr, t in existing_tokens.items():
+            sym = t.get("symbol", "").upper()
+            if sym:
+                existing_by_symbol[sym] = (addr, t)
     
     # D'abord collecter tous les tokens
     all_tokens = []
@@ -281,6 +289,7 @@ def merge_tokens(sources):
     # First pass: add tokens with socials/profiles (likely legit)
     for token in enriched:
         addr = token.get("address")
+        symbol = token.get("symbol", "").upper()
         if not addr:
             continue
         
@@ -288,6 +297,17 @@ def merge_tokens(sources):
         metrics = token.get("metrics", {})
         if not metrics.get("liq_usd", 0) > 0:
             continue  # Skip si pas de liquidité
+        
+        # Check if symbol already exists in our database
+        if symbol in existing_by_symbol:
+            existing_addr, existing = existing_by_symbol[symbol]
+            existing_liq = existing.get("metrics", {}).get("liq_usd", 0) or 0
+            new_liq = metrics.get("liq_usd", 0) or 0
+            
+            # If existing has much higher liquidity, skip this one (it's a copycat)
+            if existing_liq > new_liq * 2:
+                print(f"  ⚠️ Skipping {symbol} - copycat of {existing_addr[:10]}...")
+                continue
         
         if addr in merged:
             # Fusionner les infos
@@ -354,7 +374,7 @@ def main():
     
     # Merge
     print("\n[4/4] Merging sources...")
-    new_tokens = merge_tokens([profiles, boosts, unique_pairs])
+    new_tokens = merge_tokens([profiles, boosts, unique_pairs], state['tokens'])
     
     # Update state
     added = 0

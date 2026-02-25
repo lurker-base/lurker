@@ -1,7 +1,7 @@
 {
   "schema": "lurker_v1.5",
   "meta": {
-    "last_scan": "2026-02-25T08:33:36.416439+00:00",
+    "last_scan": "2026-02-25T09:35:15.817202+00:00",
     "last_lifecycle": "2026-02-25T05:55:37.622090+00:00",
     "total_tokens": 79,
     "version": "1.5.0",
@@ -9,16 +9,16 @@
     "migration_date": "2026-02-25T05:39:10.406085+00:00",
     "stats": {
       "by_category": {
-        "CIO": 0,
+        "CIO": 5,
         "WATCH": 0,
-        "HOTLIST": 13,
+        "HOTLIST": 12,
         "FAST": 26,
         "CERTIFIED": 0,
-        "RUGGED": 25
+        "RUGGED": 36
       },
       "pumps_24h": 9,
       "dumps_24h": 8,
-      "rugged": 25,
+      "rugged": 36,
       "cleanup": {
         "last_run": "2026-02-25T05:39:15.502577+00:00",
         "tokens_before": 62,
@@ -185,11 +185,13 @@
       "risk": {
         "level": "critical",
         "factors": [
-          "copycat_scam",
-          "manual_mark"
+          "copycat_duplicate"
         ]
       },
-      "risk_tags": [],
+      "risk_tags": [
+        "\ud83d\udc80 RUGGED",
+        "\u26a0\ufe0f COPYCAT"
+      ],
       "performance": {
         "max_gain": 0,
         "current_gain": 0.0,
@@ -385,7 +387,7 @@
         "profiles"
       ],
       "detected_at": "2026-02-24T19:56:15.069000+00:00",
-      "category": "HOTLIST",
+      "category": "RUGGED",
       "age_minutes": 561.4,
       "metrics": {
         "liq_usd": 44693.5,
@@ -398,10 +400,15 @@
         "market_cap": 0
       },
       "risk": {
-        "level": "low",
-        "factors": []
+        "level": "critical",
+        "factors": [
+          "copycat_duplicate"
+        ]
       },
-      "risk_tags": [],
+      "risk_tags": [
+        "\ud83d\udc80 RUGGED",
+        "\u26a0\ufe0f COPYCAT"
+      ],
       "performance": {
         "max_gain": 0,
         "current_gain": 0.0,
@@ -414,7 +421,9 @@
           "liq": 44693.5,
           "vol_5m": 3177.51
         }
-      ]
+      ],
+      "is_copycat": true,
+      "original_token": "0x5dc1db3b262793fb00ef0d973ed052daa5d27b07"
     },
     "0x59a3a2314a0a9e701f03ab1a4396b91f61f68341": {
       "address": "0x59a3a2314a0a9e701f03ab1a4396b91f61f68341",
@@ -442,11 +451,13 @@
       "risk": {
         "level": "critical",
         "factors": [
-          "copycat_scam",
-          "manual_mark"
+          "copycat_duplicate"
         ]
       },
-      "risk_tags": [],
+      "risk_tags": [
+        "\ud83d\udc80 RUGGED",
+        "\u26a0\ufe0f COPYCAT"
+      ],
       "performance": {
         "max_gain": 0,
         "current_gain": 0.0,
@@ -2191,13 +2202,12 @@
       "risk": {
         "level": "critical",
         "factors": [
-          "copycat_scam",
-          "low_liq (3.2% of legit)",
-          "very_low_liq ($4,317)"
+          "copycat_duplicate"
         ]
       },
       "risk_tags": [
-        "LOW_LIQUIDITY"
+        "\ud83d\udc80 RUGGED",
+        "\u26a0\ufe0f COPYCAT"
       ],
       "performance": {
         "max_gain": 0.0,
@@ -4259,13 +4269,12 @@
       "risk": {
         "level": "critical",
         "factors": [
-          "copycat_scam",
-          "low_liq (1.2% of legit)",
-          "very_low_liq ($2,652)"
+          "copycat_duplicate"
         ]
       },
       "risk_tags": [
-        "LOW_LIQUIDITY"
+        "\ud83d\udc80 RUGGED",
+        "\u26a0\ufe0f COPYCAT"
       ],
       "performance": {
         "max_gain": 0.0,
@@ -4448,17 +4457,24 @@
         "pairs"
       ],
       "detected_at": "2026-02-25T08:30:43.179412+00:00",
-      "category": "CIO",
+      "category": "RUGGED",
       "risk": {
-        "level": "unknown",
-        "factors": []
+        "level": "critical",
+        "factors": [
+          "copycat_duplicate"
+        ]
       },
       "performance": {
         "max_gain": 0,
         "current_gain": 0,
         "status": "new"
       },
-      "risk_tags": []
+      "risk_tags": [
+        "\ud83d\udc80 RUGGED",
+        "\u26a0\ufe0f COPYCAT"
+      ],
+      "is_copycat": true,
+      "original_token": "0xb233BDFFD437E60fA451F62c6c09D3804d285Ba3"
     },
     "0xb233BDFFD437E60fA451F62c6c09D3804d285Ba3": {
       "address": "0xb233BDFFD437E60fA451F62c6c09D3804d285Ba3",
@@ -4518,17 +4534,24 @@
         "pairs"
       ],
       "detected_at": "2026-02-25T08:30:43.179421+00:00",
-      "category": "CIO",
+      "category": "RUGGED",
       "risk": {
-        "level": "unknown",
-        "factors": []
+        "level": "critical",
+        "factors": [
+          "copycat_duplicate"
+        ]
       },
       "performance": {
         "max_gain": 0,
         "current_gain": 0,
         "status": "new"
       },
-      "risk_tags": []
+      "risk_tags": [
+        "\ud83d\udc80 RUGGED",
+        "\u26a0\ufe0f COPYCAT"
+      ],
+      "is_copycat": true,
+      "original_token": "0xb233BDFFD437E60fA451F62c6c09D3804d285Ba3"
     },
     "0x2fF93315BCfD446bF46ddBeF0289F4a696D35Ba3": {
       "address": "0x2fF93315BCfD446bF46ddBeF0289F4a696D35Ba3",
@@ -4552,10 +4575,12 @@
         "pairs"
       ],
       "detected_at": "2026-02-25T08:30:43.179424+00:00",
-      "category": "CIO",
+      "category": "RUGGED",
       "risk": {
-        "level": "unknown",
-        "factors": []
+        "level": "critical",
+        "factors": [
+          "copycat_duplicate"
+        ]
       },
       "performance": {
         "max_gain": 0,
@@ -4563,8 +4588,11 @@
         "status": "new"
       },
       "risk_tags": [
-        "FRESH"
-      ]
+        "\ud83d\udc80 RUGGED",
+        "\u26a0\ufe0f COPYCAT"
+      ],
+      "is_copycat": true,
+      "original_token": "0xb233BDFFD437E60fA451F62c6c09D3804d285Ba3"
     },
     "0xc31EBaFb9a6d5e625794Ea1e5Db260c8a27a5BA3": {
       "address": "0xc31EBaFb9a6d5e625794Ea1e5Db260c8a27a5BA3",
@@ -4588,10 +4616,12 @@
         "pairs"
       ],
       "detected_at": "2026-02-25T08:30:43.179428+00:00",
-      "category": "CIO",
+      "category": "RUGGED",
       "risk": {
-        "level": "unknown",
-        "factors": []
+        "level": "critical",
+        "factors": [
+          "copycat_duplicate"
+        ]
       },
       "performance": {
         "max_gain": 0,
@@ -4599,8 +4629,11 @@
         "status": "new"
       },
       "risk_tags": [
-        "FRESH"
-      ]
+        "\ud83d\udc80 RUGGED",
+        "\u26a0\ufe0f COPYCAT"
+      ],
+      "is_copycat": true,
+      "original_token": "0xb233BDFFD437E60fA451F62c6c09D3804d285Ba3"
     },
     "0x29D56144232deC5b389aFc1AD028691Fb85E2bA3": {
       "address": "0x29D56144232deC5b389aFc1AD028691Fb85E2bA3",
@@ -4692,17 +4725,24 @@
         "pairs"
       ],
       "detected_at": "2026-02-25T08:30:43.179439+00:00",
-      "category": "CIO",
+      "category": "RUGGED",
       "risk": {
-        "level": "unknown",
-        "factors": []
+        "level": "critical",
+        "factors": [
+          "copycat_duplicate"
+        ]
       },
       "performance": {
         "max_gain": 0,
         "current_gain": 0,
         "status": "new"
       },
-      "risk_tags": []
+      "risk_tags": [
+        "\ud83d\udc80 RUGGED",
+        "\u26a0\ufe0f COPYCAT"
+      ],
+      "is_copycat": true,
+      "original_token": "0xBe6279f8fB1C33BE3572996E9505506E23400e61"
     },
     "0x4FE41F43448825003676243AC18955ecB70b6B07": {
       "address": "0x4FE41F43448825003676243AC18955ecB70b6B07",
@@ -4726,17 +4766,24 @@
         "pairs"
       ],
       "detected_at": "2026-02-25T08:30:43.179442+00:00",
-      "category": "CIO",
+      "category": "RUGGED",
       "risk": {
-        "level": "unknown",
-        "factors": []
+        "level": "critical",
+        "factors": [
+          "copycat_duplicate"
+        ]
       },
       "performance": {
         "max_gain": 0,
         "current_gain": 0,
         "status": "new"
       },
-      "risk_tags": []
+      "risk_tags": [
+        "\ud83d\udc80 RUGGED",
+        "\u26a0\ufe0f COPYCAT"
+      ],
+      "is_copycat": true,
+      "original_token": "0xBe6279f8fB1C33BE3572996E9505506E23400e61"
     },
     "0x66c7E634801a676231ab011D75b46bc41B170bA3": {
       "address": "0x66c7E634801a676231ab011D75b46bc41B170bA3",
@@ -4760,17 +4807,24 @@
         "pairs"
       ],
       "detected_at": "2026-02-25T08:30:43.179445+00:00",
-      "category": "CIO",
+      "category": "RUGGED",
       "risk": {
-        "level": "unknown",
-        "factors": []
+        "level": "critical",
+        "factors": [
+          "copycat_duplicate"
+        ]
       },
       "performance": {
         "max_gain": 0,
         "current_gain": 0,
         "status": "new"
       },
-      "risk_tags": []
+      "risk_tags": [
+        "\ud83d\udc80 RUGGED",
+        "\u26a0\ufe0f COPYCAT"
+      ],
+      "is_copycat": true,
+      "original_token": "0xBe6279f8fB1C33BE3572996E9505506E23400e61"
     },
     "0x838eBB06643532a9BbCb21cED422393428345d05": {
       "address": "0x838eBB06643532a9BbCb21cED422393428345d05",
@@ -4794,17 +4848,24 @@
         "pairs"
       ],
       "detected_at": "2026-02-25T08:30:43.179447+00:00",
-      "category": "CIO",
+      "category": "RUGGED",
       "risk": {
-        "level": "unknown",
-        "factors": []
+        "level": "critical",
+        "factors": [
+          "copycat_duplicate"
+        ]
       },
       "performance": {
         "max_gain": 0,
         "current_gain": 0,
         "status": "new"
       },
-      "risk_tags": []
+      "risk_tags": [
+        "\ud83d\udc80 RUGGED",
+        "\u26a0\ufe0f COPYCAT"
+      ],
+      "is_copycat": true,
+      "original_token": "0xBe6279f8fB1C33BE3572996E9505506E23400e61"
     },
     "0xBe6279f8fB1C33BE3572996E9505506E23400e61": {
       "address": "0xBe6279f8fB1C33BE3572996E9505506E23400e61",
@@ -4864,10 +4925,12 @@
         "pairs"
       ],
       "detected_at": "2026-02-25T08:33:36.416006+00:00",
-      "category": "CIO",
+      "category": "RUGGED",
       "risk": {
-        "level": "unknown",
-        "factors": []
+        "level": "critical",
+        "factors": [
+          "copycat_duplicate"
+        ]
       },
       "performance": {
         "max_gain": 0,
@@ -4875,8 +4938,11 @@
         "status": "new"
       },
       "risk_tags": [
-        "FRESH"
-      ]
+        "\ud83d\udc80 RUGGED",
+        "\u26a0\ufe0f COPYCAT"
+      ],
+      "is_copycat": true,
+      "original_token": "0xb233BDFFD437E60fA451F62c6c09D3804d285Ba3"
     },
     "0x30E0a11a84b4D75B41857c3C38361ebf6A4519e4": {
       "address": "0x30E0a11a84b4D75B41857c3C38361ebf6A4519e4",
@@ -4900,10 +4966,12 @@
         "pairs"
       ],
       "detected_at": "2026-02-25T08:33:36.416013+00:00",
-      "category": "CIO",
+      "category": "RUGGED",
       "risk": {
-        "level": "unknown",
-        "factors": []
+        "level": "critical",
+        "factors": [
+          "copycat_duplicate"
+        ]
       },
       "performance": {
         "max_gain": 0,
@@ -4911,8 +4979,11 @@
         "status": "new"
       },
       "risk_tags": [
-        "FRESH"
-      ]
+        "\ud83d\udc80 RUGGED",
+        "\u26a0\ufe0f COPYCAT"
+      ],
+      "is_copycat": true,
+      "original_token": "0xb233BDFFD437E60fA451F62c6c09D3804d285Ba3"
     }
   }
 }
