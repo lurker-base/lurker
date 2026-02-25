@@ -196,25 +196,25 @@
         
         .avatar-glow {
             position: absolute;
-            top: 50%;
+            top: 45%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 200px;
-            height: 200px;
+            width: 320px;
+            height: 320px;
             border-radius: 50%;
-            background: radial-gradient(circle, rgba(255, 107, 53, 0.6) 0%, rgba(255, 107, 53, 0.3) 30%, rgba(255, 107, 53, 0.1) 50%, transparent 70%);
-            animation: pulse-glow-avatar 4s ease-in-out infinite;
+            background: radial-gradient(circle, rgba(255, 107, 53, 0.4) 0%, transparent 70%);
+            animation: pulse-glow 4s ease-in-out infinite;
             z-index: 1;
         }
         
-        @keyframes pulse-glow-avatar {
+        @keyframes pulse-glow {
             0%, 100% { 
-                opacity: 0.4;
+                opacity: 0.6;
                 transform: translate(-50%, -50%) scale(1);
             }
             50% { 
-                opacity: 0.8;
-                transform: translate(-50%, -50%) scale(1.2);
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1.15);
             }
         }
         
