@@ -2,738 +2,341 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <!-- Anti-cache for Safari -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    <title>live — lurker</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="alternate icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="style.css?v=3">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LURKER — Live Signals</title>
     <style>
-        .live-header {
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #0a0a0a;
+            color: #e0e0e0;
+            font-family: 'Courier New', monospace;
+            line-height: 1.6;
+        }
+        .container { max-width: 1400px; margin: 0 auto; padding: 1rem; }
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 1px solid #333;
             margin-bottom: 2rem;
         }
-        
-        .live-header h1 {
-            font-size: 2rem;
+        h1 {
+            color: #ff6b35;
+            font-size: 2.5rem;
             margin-bottom: 0.5rem;
         }
+        .subtitle { color: #666; font-size: 0.9rem; }
         
-        .live-header p {
-            color: var(--text-muted);
-        }
-        
-        .next-scan-timer {
-            font-size: 0.8rem;
-            color: var(--accent);
-            margin-top: 0.5rem;
-            font-family: 'SF Mono', monospace;
-        }
-        
-        .warning-box {
-            background: rgba(255, 136, 0, 0.1);
-            border: 1px solid rgba(255, 136, 0, 0.3);
-            border-radius: 4px;
-            padding: 1rem;
-            margin-bottom: 2rem;
-            font-size: 0.85rem;
-            color: #ffaa55;
-        }
-        
-        .stats-bar {
-            display: flex;
+        /* Stats */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
             gap: 1rem;
-            flex-wrap: wrap;
             margin-bottom: 2rem;
-            padding: 1rem;
-            background: rgba(255,255,255,0.02);
-            border: 1px solid var(--border);
-            border-radius: 4px;
         }
-        
-        .stat-item {
-            flex: 1;
-            min-width: 120px;
+        .stat {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            padding: 1rem;
             text-align: center;
         }
-        
         .stat-value {
-            font-family: 'SF Mono', monospace;
-            font-size: 1.5rem;
-            color: var(--accent);
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ff6b35;
         }
-        
-        .stat-value.watch { color: #888; }
-        .stat-value.hot { color: #ff8800; }
-        .stat-value.fast { color: #ffcc00; }
-        .stat-value.cert { color: #00ccff; }
-        
-        .health-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            font-weight: 500;
-        }
-        .health-badge.ok {
-            background: rgba(0, 255, 0, 0.1);
-            border: 1px solid rgba(0, 255, 0, 0.3);
-            color: #00ff00;
-        }
-        .health-badge.warn {
-            background: rgba(255, 170, 0, 0.1);
-            border: 1px solid rgba(255, 170, 0, 0.3);
-            color: #ffaa00;
-        }
-        .health-badge.fail {
-            background: rgba(255, 68, 68, 0.1);
-            border: 1px solid rgba(255, 68, 68, 0.3);
-        }
-        
-        /* Safari-specific fixes */
-        @supports (-webkit-touch-callout: none) {
-            /* CSS specific to Safari/iOS */
-            body {
-                -webkit-text-size-adjust: 100%;
-                -webkit-font-smoothing: antialiased;
-            }
-            
-            .page-sidebar {
-                display: none !important;
-            }
-            
-            .page-container.with-sidebar {
-                display: block !important;
-                padding: 0.5rem !important;
-            }
-            
-            .page-content {
-                width: 100% !important;
-                max-width: 100% !important;
-                padding: 0.5rem !important;
-            }
-            
-            .warning-box {
-                font-size: 14px !important;
-                line-height: 1.4 !important;
-                word-wrap: break-word !important;
-                -webkit-hyphens: auto !important;
-                hyphens: auto !important;
-            }
-            
-            .stats-bar {
-                display: -webkit-box !important;
-                display: -webkit-flex !important;
-                display: flex !important;
-                -webkit-box-orient: vertical !important;
-                -webkit-flex-direction: column !important;
-                flex-direction: column !important;
-            }
-            
-            .stat-item {
-                display: -webkit-box !important;
-                display: -webkit-flex !important;
-                display: flex !important;
-                -webkit-box-pack: justify !important;
-                -webkit-justify-content: space-between !important;
-                justify-content: space-between !important;
-            }
-            
-            .token-card {
-                width: 100% !important;
-                -webkit-box-sizing: border-box !important;
-                box-sizing: border-box !important;
-            }
-            
-            .card-header {
-                display: -webkit-box !important;
-                display: -webkit-flex !important;
-                display: flex !important;
-                -webkit-box-orient: vertical !important;
-                -webkit-flex-direction: column !important;
-                flex-direction: column !important;
-            }
-            
-            .card-metrics {
-                display: -webkit-box !important;
-                display: -webkit-flex !important;
-                display: flex !important;
-                -webkit-box-orient: vertical !important;
-                -webkit-flex-direction: column !important;
-                flex-direction: column !important;
-            }
-            color: #ff4444;
-        }
-        
         .stat-label {
             font-size: 0.7rem;
-            color: var(--text-muted);
+            color: #666;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
         }
         
-        .feed-section {
-            margin-bottom: 2rem;
-        }
-        
-        .feed-title {
+        /* Filters */
+        .filters {
             display: flex;
-            align-items: center;
             gap: 0.5rem;
             margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid var(--border);
-        }
-        
-        .feed-title h2 {
-            font-size: 1rem;
-            margin: 0;
-            text-transform: lowercase;
-        }
-        
-        .feed-title.cio h2 { color: var(--accent); }
-        .feed-title.watch h2 { color: #888; }
-        .feed-title.hot h2 { color: #ff8800; }
-        .feed-title.fast h2 { color: #ffcc00; }
-        .feed-title.cert h2 { color: #00ccff; }
-        
-        .feed-desc {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            margin-left: auto;
-        }
-        
-        .token-card {
-            background: rgba(255,255,255,0.02);
-            border: 1px solid var(--border);
-            border-radius: 4px;
-            padding: 1rem;
-            margin-bottom: 0.75rem;
-        }
-        
-        .token-card.cio { border-left: 3px solid var(--accent); }
-        .token-card.watch { border-left: 3px solid #666; opacity: 0.8; }
-        .token-card.hot { border-left: 3px solid #ff8800; }
-        .token-card.fast { border-left: 3px solid #ffcc00; }
-        .token-card.cert { border-left: 3px solid #00ccff; }
-        
-        .card-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 0.5rem;
-        }
-        
-        .token-symbol {
-            font-family: 'SF Mono', monospace;
-            font-size: 1.1rem;
-            font-weight: 600;
-        }
-        
-        .badges {
-            display: flex;
-            gap: 0.4rem;
-        }
-        
-        .badge {
-            padding: 2px 6px;
-            border-radius: 3px;
-            font-size: 0.65rem;
-            font-weight: 500;
-        }
-        
-        .badge.new { background: #00ff00; color: #000; }
-        .badge.fresh { background: #90ff00; color: #000; }
-        .badge.young { background: #ffcc00; color: #000; }
-        .badge.aging { background: #ff8800; color: #000; }
-        .badge.old { background: #ff4444; color: #fff; }
-        
-        .badge.cio { background: var(--accent); color: #000; }
-        .badge.watch { background: #666; color: #fff; }
-        .badge.hot { background: #ff8800; color: #000; }
-        .badge.fast { background: #ffcc00; color: #000; }
-        .badge.cert { background: #00ccff; color: #000; }
-        
-        .card-metrics {
-            display: flex;
-            gap: 1rem;
             flex-wrap: wrap;
+        }
+        .filter-btn {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            color: #888;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            font-family: inherit;
             font-size: 0.8rem;
-            color: var(--text-muted);
-            margin-bottom: 0.5rem;
+        }
+        .filter-btn.active {
+            background: #ff6b35;
+            color: #000;
+            border-color: #ff6b35;
+        }
+        .filter-btn:hover:not(.active) {
+            border-color: #ff6b35;
+            color: #ff6b35;
         }
         
-        .card-footer {
-            display: flex;
-            justify-content: space-between;
+        /* Token Grid */
+        .tokens-grid {
+            display: grid;
+            gap: 1rem;
+        }
+        .token-card {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 1rem;
             align-items: center;
+        }
+        .token-card:hover {
+            border-color: #ff6b35;
+        }
+        .token-symbol {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #fff;
+        }
+        .token-name {
             font-size: 0.75rem;
-            color: var(--text-muted);
+            color: #666;
         }
-        
-        .card-footer a {
-            color: var(--accent);
-            text-decoration: none;
-        }
-        
-        .card-footer a:hover {
-            text-decoration: underline;
-        }
-        
-        .card-risk {
-            font-size: 0.8rem;
+        .token-category {
             padding: 0.25rem 0.5rem;
-            background: rgba(255,255,255,0.05);
             border-radius: 3px;
-            margin-bottom: 0.5rem;
-        }
-        
-        .empty-feed {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            font-weight: bold;
             text-align: center;
-            padding: 2rem;
-            color: var(--text-muted);
-            font-style: italic;
-            border: 1px dashed var(--border);
-            border-radius: 4px;
         }
+        .cat-CIO { background: #2d5016; color: #4ade80; }
+        .cat-WATCH { background: #1e3a8a; color: #60a5fa; }
+        .cat-HOTLIST { background: #7c2d12; color: #fb923c; }
+        .cat-CERTIFIED { background: #14532d; color: #86efac; }
+        .cat-RUGGED { background: #000; color: #666; text-decoration: line-through; }
+        .cat-FAST { background: #581c87; color: #c084fc; }
+        .token-metric {
+            text-align: right;
+            font-size: 0.85rem;
+        }
+        .metric-label {
+            font-size: 0.65rem;
+            color: #666;
+            text-transform: uppercase;
+        }
+        .metric-value {
+            color: #fff;
+        }
+        .positive { color: #4ade80; }
+        .negative { color: #f87171; }
         
+        /* Loading */
         .loading {
             text-align: center;
-            padding: 2rem;
-            color: var(--text-muted);
+            padding: 3rem;
+            color: #666;
+        }
+        .error {
+            background: #7f1d1d;
+            color: #fca5a5;
+            padding: 1rem;
+            margin: 1rem 0;
+            text-align: center;
         }
         
-        /* Mobile responsive fixes */
+        /* Last update */
+        .last-update {
+            text-align: center;
+            color: #666;
+            font-size: 0.8rem;
+            margin-top: 2rem;
+        }
+        
+        /* Responsive */
         @media (max-width: 768px) {
-            .page-content {
-                padding: 0 0.75rem;
-            }
-            
-            .warning-box {
-                font-size: 0.75rem;
-                padding: 0.75rem;
-            }
-            
-            .stats-bar {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-            
-            .stat-item {
-                min-width: auto;
-                text-align: left;
-                display: flex;
-                justify-content: space-between;
-            }
-            
-            .stat-value {
-                font-size: 1.2rem;
-            }
-            
-            .feed-title {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 0.25rem;
-            }
-            
-            .feed-desc {
-                margin-left: 0;
-            }
-            
             .token-card {
-                padding: 0.75rem;
-            }
-            
-            .card-header {
-                flex-direction: column;
-                align-items: flex-start;
+                grid-template-columns: 1fr 1fr;
                 gap: 0.5rem;
             }
-            
-            .badges {
-                flex-wrap: wrap;
-            }
-            
-            .card-metrics {
-                flex-direction: column;
-                gap: 0.3rem;
-            }
-            
-            .card-footer {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 0.5rem;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .live-header h1 {
-                font-size: 1.5rem;
-            }
-            
-            .next-scan-timer {
-                font-size: 0.7rem;
-            }
-            
-            .token-symbol {
-                font-size: 1rem;
-            }
-            
-            .badge {
-                font-size: 0.6rem;
-                padding: 1px 4px;
-            }
-            
-            .card-metrics {
-                font-size: 0.75rem;
+            .token-card > div:nth-child(3),
+            .token-card > div:nth-child(4),
+            .token-card > div:nth-child(5) {
+                display: none;
             }
         }
     </style>
 </head>
 <body>
-    <div class="bg-grid"></div>
-    
-    <!-- Mobile Detection & Fixes -->
-    <script>
-        // Detect mobile and apply emergency fixes
-        if (window.innerWidth <= 768 || /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-            document.documentElement.classList.add('mobile-device');
-            
-            // Force viewport scale
-            const viewport = document.querySelector('meta[name="viewport"]');
-            if (viewport) {
-                viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no');
-            }
-        }
-    </script>
-    <style>
-        /* Emergency mobile overrides */
-        @media (max-width: 768px) {
-            .mobile-device body {
-                font-size: 16px !important;
-                line-height: 1.5 !important;
-            }
-            
-            .mobile-device .page-sidebar {
-                display: none !important;
-            }
-            
-            .mobile-device .page-container.with-sidebar {
-                display: block !important;
-                padding: 0.5rem !important;
-            }
-            
-            .mobile-device .page-content {
-                width: 100% !important;
-                max-width: 100% !important;
-                padding: 0.5rem !important;
-                overflow-x: hidden !important;
-            }
-            
-            .mobile-device .warning-box {
-                font-size: 14px !important;
-                line-height: 1.4 !important;
-                padding: 12px !important;
-                word-wrap: break-word !important;
-                overflow-wrap: break-word !important;
-                hyphens: auto !important;
-            }
-            
-            .mobile-device .stats-bar {
-                display: flex !important;
-                flex-direction: column !important;
-                gap: 8px !important;
-            }
-            
-            .mobile-device .stat-item {
-                display: flex !important;
-                justify-content: space-between !important;
-                align-items: center !important;
-                padding: 8px !important;
-                background: rgba(255,255,255,0.03) !important;
-                border-radius: 4px !important;
-            }
-            
-            .mobile-device .token-card {
-                padding: 12px !important;
-                margin-bottom: 12px !important;
-                border-radius: 8px !important;
-            }
-            
-            .mobile-device .card-header {
-                flex-direction: column !important;
-                align-items: flex-start !important;
-                gap: 8px !important;
-                margin-bottom: 8px !important;
-            }
-            
-            .mobile-device .card-metrics {
-                display: flex !important;
-                flex-direction: column !important;
-                gap: 4px !important;
-                font-size: 13px !important;
-            }
-            
-            .mobile-device .live-header h1 {
-                font-size: 28px !important;
-            }
-            
-            .mobile-device .live-header p {
-                font-size: 14px !important;
-            }
-            
-            .mobile-device .feed-title {
-                flex-direction: column !important;
-                align-items: flex-start !important;
-                gap: 4px !important;
-            }
-            
-            .mobile-device .feed-desc {
-                margin-left: 0 !important;
-                font-size: 12px !important;
-            }
-            
-            .mobile-device .nav {
-                padding: 8px !important;
-                gap: 4px !important;
-                justify-content: center !important;
-            }
-            
-            .mobile-device .nav-link {
-                font-size: 12px !important;
-                padding: 4px 8px !important;
-            }
-        }
-    </style>
-    
-                <nav class="nav">
-        <a href="index.html" class="nav-link">lurker</a>
-        <a href="token.html" class="nav-link">token</a>
-        <a href="origin.html" class="nav-link">origin</a>
-        <a href="live.html" class="nav-link active">live</a>
-        <a href="become.html" class="nav-link">become</a>
-        <a href="proof.html" class="nav-link">proof</a>
-        <a href="predictions.html" class="nav-link">predictions</a>
-        <a href="hof.html" class="nav-link">🏆 hof</a>
-        <a href="subscribe.html" class="nav-link">subscribe</a>
-        <a href="https://x.com/LURKER_AI2026" class="nav-link" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-top:-2px"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-    </nav>
-
-    <main class="main">
-        <div class="container page-container with-sidebar">
-            <div class="page-sidebar">
-                <div class="avatar-wrapper" id="avatar-wrapper">
-                    <img src="../assets/lurker-mascot-logo.png" alt="" class="avatar">
-                    <div class="avatar-glow"></div>
-                    <div class="sparks-container" id="sparks"></div>
-                </div>
+    <div class="container">
+        <header>
+            <h1>👁 LURKER</h1>
+            <p class="subtitle">Autonomous Token Surveillance on Base</p>
+        </header>
+        
+        <div class="stats" id="stats">
+            <div class="stat">
+                <div class="stat-value" id="stat-total">-</div>
+                <div class="stat-label">Total</div>
             </div>
-            <div class="page-content">
-                <div class="live-header">
-                    <h1>live</h1>
-                    <p>base token intelligence — real-time detection</p>
-                    <div class="next-scan-timer" id="next-scan-timer">next scan in 60s</div>
-                </div>
-                
-                <div class="warning-box">
-                    ⚠️ cio are early candidates, not trade signals. most will fail. do your own research.
-                </div>
-                
-                <div style="margin-bottom: 1rem; text-align: right;">
-                    <div class="health-badge" id="health-badge" title="Hover for details">
-                        <span id="health-dot">●</span>
-                        <span id="health-text">checking...</span>
-                        <span id="health-streak" style="opacity: 0.7;"></span>
-                    </div>
-                    <div id="health-details" style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; font-family: 'SF Mono', monospace;">
-                        loading health metrics...
-                    </div>
-                </div>
-                
-                <div class="stats-bar">
-                    <div class="stat-item">
-                        <div class="stat-value" id="stat-cio">--</div>
-                        <div class="stat-label">cio (0-10m)</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-value watch" id="stat-watch">--</div>
-                        <div class="stat-label">watch (10-30m)</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-value hot" id="stat-hot">--</div>
-                        <div class="stat-label">hotlist (30-60m)</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-value fast" id="stat-fast">--</div>
-                        <div class="stat-label">fast (1-24h)</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-value cert" id="stat-cert">--</div>
-                        <div class="stat-label">certified (24h+)</div>
-                    </div>
-                </div>
-
-                <!-- CIO Section -->
-                <div class="feed-section">
-                    <div class="feed-title cio">
-                        <h2>🌱 cio (0-10m)</h2>
-                        <span class="feed-desc">fresh detections</span>
-                    </div>
-                    <div id="cio-feed">
-                        <div class="loading">scanning...</div>
-                    </div>
-                </div>
-
-                <!-- WATCH Section -->
-                <div class="feed-section">
-                    <div class="feed-title watch">
-                        <h2>👁️ watch (10-30m)</h2>
-                        <span class="feed-desc">buffer zone</span>
-                    </div>
-                    <div id="watch-feed">
-                        <div class="loading">scanning...</div>
-                    </div>
-                </div>
-
-                <!-- HOTLIST Section -->
-                <div class="feed-section">
-                    <div class="feed-title hot">
-                        <h2>🔥 hotlist (30-60m)</h2>
-                        <span class="feed-desc">early opportunity</span>
-                    </div>
-                    <div id="hot-feed">
-                        <div class="loading">scanning...</div>
-                    </div>
-                </div>
-
-                <!-- FAST Section -->
-                <div class="feed-section">
-                    <div class="feed-title fast">
-                        <h2>⚡ fast-certified (1-24h)</h2>
-                        <span class="feed-desc">momentum confirmed</span>
-                    </div>
-                    <div id="fast-feed">
-                        <div class="loading">scanning...</div>
-                    </div>
-                </div>
-
-                <!-- CERTIFIED Section -->
-                <div class="feed-section">
-                    <div class="feed-title cert">
-                        <h2>✓ certified (24h+)</h2>
-                        <span class="feed-desc">survivors</span>
-                    </div>
-                    <div id="cert-feed">
-                        <div class="empty-feed">waiting for 24h+ survivors</div>
-                    </div>
-                </div>
+            <div class="stat">
+                <div class="stat-value" id="stat-cio">-</div>
+                <div class="stat-label">CIO</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="stat-watch">-</div>
+                <div class="stat-label">Watch</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="stat-hotlist">-</div>
+                <div class="stat-label">Hotlist</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="stat-certified">-</div>
+                <div class="stat-label">Certified</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="stat-rugged">-</div>
+                <div class="stat-label">Rugged</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="stat-pumps">-</div>
+                <div class="stat-label">Pumps</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="stat-dumps">-</div>
+                <div class="stat-label">Dumps</div>
             </div>
         </div>
-    </main>
+        
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="CIO">CIO</button>
+            <button class="filter-btn" data-filter="WATCH">Watch</button>
+            <button class="filter-btn" data-filter="HOTLIST">Hotlist</button>
+            <button class="filter-btn" data-filter="FAST">Fast</button>
+            <button class="filter-btn" data-filter="CERTIFIED">Certified</button>
+            <button class="filter-btn" data-filter="RUGGED">Rugged</button>
+        </div>
+        
+        <div id="tokens-container">
+            <div class="loading">Loading signals...</div>
+        </div>
+        
+        <p class="last-update">Last update: <span id="last-update">-</span></p>
+    </div>
 
-    <script src="unifiedFeed.js"></script>
-    <script src="sparks.js"></script>
     <script>
-        // Health status loader
-        async function loadHealthStatus() {
+        const STATE_URL = 'https://raw.githubusercontent.com/lurker-base/lurker/main/state/lurker_state.json';
+        let allTokens = [];
+        let currentFilter = 'all';
+        
+        async function loadState() {
             try {
-                const res = await fetch('https://raw.githubusercontent.com/lurker-base/lurker/main/state/health_state.json?t=' + Date.now(), { cache: 'no-store' });
-                if (!res.ok) throw new Error('Failed to load');
-                const health = await res.json();
+                const response = await fetch(STATE_URL + '?t=' + Date.now());
+                if (!response.ok) throw new Error('Failed to load');
+                const state = await response.json();
                 
-                const badge = document.getElementById('health-badge');
-                const dot = document.getElementById('health-dot');
-                const text = document.getElementById('health-text');
-                const streak = document.getElementById('health-streak');
-                const details = document.getElementById('health-details');
-                
-                const emptyStreak = health.empty_streak || 0;
-                const lastCheck = health.last_check;
-                const lastCount = health.last_count || 0;
-                const lastSuccessful = health.last_successful_scan;
-                const lastNonEmpty = health.last_non_empty_scan;
-                
-                // Calculate time since last check
-                let minutesAgo = null;
-                if (lastCheck) {
-                    const last = new Date(lastCheck);
-                    const now = new Date();
-                    minutesAgo = Math.floor((now - last) / 60000);
-                }
-                
-                // Format timestamps for display
-                const formatTime = (ts) => {
-                    if (!ts) return 'never';
-                    const date = new Date(ts);
-                    const mins = Math.floor((new Date() - date) / 60000);
-                    if (mins < 1) return 'just now';
-                    if (mins < 60) return `${mins}m ago`;
-                    const hours = Math.floor(mins / 60);
-                    return `${hours}h ago`;
-                };
-                
-                const trend = health.trend || 'stable';
-                const trendEmoji = {improving: '▲', stable: '▶', degrading: '▼'}[trend] || '▶';
-                
-                if (emptyStreak === 0) {
-                    badge.className = 'health-badge ok';
-                    dot.style.color = '#00ff00';
-                    text.textContent = `HEALTH: OK ${trendEmoji} ${trend}`;
-                    streak.textContent = minutesAgo !== null ? ` (${lastCount} tokens, ${minutesAgo}m ago)` : '';
-                } else if (emptyStreak === 1) {
-                    badge.className = 'health-badge warn';
-                    dot.style.color = '#ffaa00';
-                    text.textContent = `HEALTH: WARN ${trendEmoji} ${trend}`;
-                    streak.textContent = ' (1 empty scan)';
-                } else {
-                    badge.className = 'health-badge fail';
-                    dot.style.color = '#ff4444';
-                    text.textContent = `HEALTH: FAIL ${trendEmoji} ${trend}`;
-                    streak.textContent = ` (${emptyStreak} empty scans)`;
-                }
-                
-                // Update detailed metrics
-                details.innerHTML = `
-                    streak: ${emptyStreak} | 
-                    last check: ${formatTime(lastCheck)} | 
-                    last success: ${formatTime(lastSuccessful)} | 
-                    last non-empty: ${formatTime(lastNonEmpty)}
-                `;
-                
-                // Update tooltip
-                badge.title = `Empty streak: ${emptyStreak}\nLast check: ${formatTime(lastCheck)}\nLast successful scan: ${formatTime(lastSuccessful)}\nLast non-empty scan: ${formatTime(lastNonEmpty)}`;
-                
-            } catch (e) {
-                const badge = document.getElementById('health-badge');
-                const dot = document.getElementById('health-dot');
-                const text = document.getElementById('health-text');
-                const details = document.getElementById('health-details');
-                badge.className = 'health-badge';
-                dot.style.color = '#666';
-                text.textContent = 'HEALTH: unknown';
-                details.textContent = 'unable to load health metrics';
+                allTokens = Object.values(state.tokens || {});
+                updateStats(state.meta?.stats || {});
+                renderTokens();
+                document.getElementById('last-update').textContent = new Date().toLocaleTimeString();
+            } catch (error) {
+                document.getElementById('tokens-container').innerHTML = 
+                    `<div class="error">Error loading data: ${error.message}</div>`;
             }
         }
         
-        // Load on page load and refresh every minute
-        loadHealthStatus();
-        setInterval(loadHealthStatus, 60000);
+        function updateStats(stats) {
+            const byCat = stats.by_category || {};
+            document.getElementById('stat-total').textContent = 
+                Object.values(byCat).reduce((a, b) => a + b, 0);
+            document.getElementById('stat-cio').textContent = byCat.CIO || 0;
+            document.getElementById('stat-watch').textContent = byCat.WATCH || 0;
+            document.getElementById('stat-hotlist').textContent = byCat.HOTLIST || 0;
+            document.getElementById('stat-certified').textContent = byCat.CERTIFIED || 0;
+            document.getElementById('stat-rugged').textContent = byCat.RUGGED || 0;
+            document.getElementById('stat-pumps').textContent = stats.pumps_24h || 0;
+            document.getElementById('stat-dumps').textContent = stats.dumps_24h || 0;
+        }
         
-        // Next scan countdown timer
-        let scanTimeLeft = 60;
-        const updateScanTimer = () => {
-            const timerEl = document.getElementById('next-scan-timer');
-            if (timerEl) {
-                timerEl.textContent = `next scan in ${scanTimeLeft}s`;
-                scanTimeLeft--;
-                if (scanTimeLeft < 0) scanTimeLeft = 60;
+        function formatNumber(num) {
+            if (!num) return '-';
+            if (num >= 1000000) return '$' + (num / 1000000).toFixed(1) + 'M';
+            if (num >= 1000) return '$' + (num / 1000).toFixed(1) + 'K';
+            return '$' + num.toFixed(0);
+        }
+        
+        function formatAge(detectedAt) {
+            if (!detectedAt) return '-';
+            const age = (Date.now() - new Date(detectedAt)) / 1000 / 60;
+            if (age < 60) return Math.floor(age) + 'm';
+            return Math.floor(age / 60) + 'h';
+        }
+        
+        function renderTokens() {
+            const container = document.getElementById('tokens-container');
+            
+            let tokens = allTokens;
+            if (currentFilter !== 'all') {
+                tokens = tokens.filter(t => t.category === currentFilter);
             }
-        };
-        setInterval(updateScanTimer, 1000);
+            
+            // Sort by detected_at desc
+            tokens.sort((a, b) => new Date(b.detected_at) - new Date(a.detected_at));
+            
+            if (tokens.length === 0) {
+                container.innerHTML = '<div class="loading">No tokens in this category</div>';
+                return;
+            }
+            
+            container.innerHTML = tokens.map(token => {
+                const perf = token.performance || {};
+                const metrics = token.metrics || {};
+                const gain = perf.current_gain || 0;
+                const gainClass = gain > 0 ? 'positive' : gain < 0 ? 'negative' : '';
+                
+                return `
+                    <div class="token-card">
+                        <div>
+                            <div class="token-symbol">$${token.symbol || '?'}</div>
+                            <div class="token-name">${token.name || 'Unknown'}</div>
+                        </div>
+                        <div class="token-category cat-${token.category || 'CIO'}">${token.category || 'CIO'}</div>
+                        <div class="token-metric">
+                            <div class="metric-label">Price</div>
+                            <div class="metric-value">${metrics.price_usd ? '$' + metrics.price_usd.toFixed(6) : '-'}</div>
+                        </div>
+                        <div class="token-metric">
+                            <div class="metric-label">Gain</div>
+                            <div class="metric-value ${gainClass}">${gain > 0 ? '+' : ''}${gain.toFixed(1)}%</div>
+                        </div>
+                        <div class="token-metric">
+                            <div class="metric-label">Liquidity</div>
+                            <div class="metric-value">${formatNumber(metrics.liq_usd)}</div>
+                        </div>
+                        <div class="token-metric">
+                            <div class="metric-label">Age</div>
+                            <div class="metric-value">${formatAge(token.detected_at)}</div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+        
+        // Filter buttons
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentFilter = btn.dataset.filter;
+                renderTokens();
+            });
+        });
+        
+        // Load and refresh
+        loadState();
+        setInterval(loadState, 30000); // Refresh every 30s
     </script>
 </body>
 </html>
