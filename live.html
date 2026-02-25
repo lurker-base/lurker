@@ -4,140 +4,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LURKER — Live Signals</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            background: #0a0a0a;
-            color: #e0e0e0;
-            font-family: 'Courier New', monospace;
-            line-height: 1.6;
+        /* Dashboard specific styles */
+        .dashboard-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem;
         }
-        .container { max-width: 1400px; margin: 0 auto; padding: 1rem; }
-        header {
+        
+        .dashboard-header {
             text-align: center;
-            padding: 2rem 0;
+            padding: 1rem 0 2rem;
             border-bottom: 1px solid #333;
             margin-bottom: 2rem;
         }
-        h1 {
+        
+        .dashboard-header h1 {
             color: #ff6b35;
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-bottom: 0.5rem;
         }
-        .subtitle { color: #666; font-size: 0.9rem; }
         
-        /* Stats */
-        .stats {
+        .dashboard-header .subtitle {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* Stats Grid */
+        .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 0.75rem;
             margin-bottom: 2rem;
         }
-        .stat {
+        
+        .stat-card {
             background: #1a1a1a;
             border: 1px solid #333;
-            padding: 1rem;
+            padding: 0.75rem;
             text-align: center;
         }
+        
         .stat-value {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             font-weight: bold;
             color: #ff6b35;
         }
+        
         .stat-label {
-            font-size: 0.7rem;
+            font-size: 0.65rem;
             color: #666;
             text-transform: uppercase;
         }
         
-        /* Filters */
-        .filters {
+        /* Filter Tabs */
+        .filter-tabs {
             display: flex;
             gap: 0.5rem;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             flex-wrap: wrap;
+            justify-content: center;
         }
-        .filter-btn {
-            background: #1a1a1a;
+        
+        .filter-tab {
+            background: transparent;
             border: 1px solid #333;
             color: #888;
-            padding: 0.5rem 1rem;
+            padding: 0.4rem 0.8rem;
             cursor: pointer;
             font-family: inherit;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
+            text-transform: lowercase;
         }
-        .filter-btn.active {
-            background: #ff6b35;
-            color: #000;
-            border-color: #ff6b35;
-        }
-        .filter-btn:hover:not(.active) {
+        
+        .filter-tab:hover {
             border-color: #ff6b35;
             color: #ff6b35;
         }
         
-        /* Token Grid */
-        .tokens-grid {
-            display: grid;
-            gap: 1rem;
+        .filter-tab.active {
+            background: #ff6b35;
+            color: #000;
+            border-color: #ff6b35;
         }
-        .token-card {
+        
+        /* Token List */
+        .token-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .token-row {
             background: #1a1a1a;
             border: 1px solid #333;
-            padding: 1rem;
+            padding: 0.75rem 1rem;
             display: grid;
             grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
             gap: 1rem;
             align-items: center;
         }
-        .token-card:hover {
+        
+        .token-row:hover {
             border-color: #ff6b35;
         }
+        
+        .token-info {
+            display: flex;
+            flex-direction: column;
+        }
+        
         .token-symbol {
             font-weight: bold;
-            font-size: 1.1rem;
             color: #fff;
+            font-size: 1rem;
         }
+        
         .token-name {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             color: #666;
         }
+        
         .token-category {
-            padding: 0.25rem 0.5rem;
+            padding: 0.2rem 0.5rem;
             border-radius: 3px;
-            font-size: 0.7rem;
+            font-size: 0.65rem;
             text-transform: uppercase;
             font-weight: bold;
             text-align: center;
+            border: none;
         }
+        
         .cat-CIO { background: #2d5016; color: #4ade80; }
         .cat-WATCH { background: #1e3a8a; color: #60a5fa; }
         .cat-HOTLIST { background: #7c2d12; color: #fb923c; }
         .cat-CERTIFIED { background: #14532d; color: #86efac; }
-        .cat-RUGGED { background: #000; color: #666; text-decoration: line-through; }
         .cat-FAST { background: #581c87; color: #c084fc; }
+        .cat-RUGGED { background: #000; color: #666; text-decoration: line-through; }
+        
         .token-metric {
             text-align: right;
-            font-size: 0.85rem;
         }
+        
         .metric-label {
-            font-size: 0.65rem;
+            font-size: 0.6rem;
             color: #666;
             text-transform: uppercase;
         }
+        
         .metric-value {
             color: #fff;
+            font-size: 0.9rem;
         }
+        
         .positive { color: #4ade80; }
         .negative { color: #f87171; }
         
-        /* Loading */
+        /* Loading & Error */
         .loading {
             text-align: center;
             padding: 3rem;
             color: #666;
         }
-        .error {
+        
+        .error-message {
             background: #7f1d1d;
             color: #fca5a5;
             padding: 1rem;
@@ -145,87 +178,123 @@
             text-align: center;
         }
         
-        /* Last update */
         .last-update {
             text-align: center;
             color: #666;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #333;
         }
         
         /* Responsive */
         @media (max-width: 768px) {
-            .token-card {
-                grid-template-columns: 1fr 1fr;
+            .token-row {
+                grid-template-columns: 1.5fr 1fr 1fr;
                 gap: 0.5rem;
             }
-            .token-card > div:nth-child(3),
-            .token-card > div:nth-child(4),
-            .token-card > div:nth-child(5) {
+            
+            .token-row > div:nth-child(4),
+            .token-row > div:nth-child(5) {
                 display: none;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(4, 1fr);
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>👁 LURKER</h1>
-            <p class="subtitle">Autonomous Token Surveillance on Base</p>
-        </header>
-        
-        <div class="stats" id="stats">
-            <div class="stat">
-                <div class="stat-value" id="stat-total">-</div>
-                <div class="stat-label">Total</div>
-            </div>
-            <div class="stat">
-                <div class="stat-value" id="stat-cio">-</div>
-                <div class="stat-label">CIO</div>
-            </div>
-            <div class="stat">
-                <div class="stat-value" id="stat-watch">-</div>
-                <div class="stat-label">Watch</div>
-            </div>
-            <div class="stat">
-                <div class="stat-value" id="stat-hotlist">-</div>
-                <div class="stat-label">Hotlist</div>
-            </div>
-            <div class="stat">
-                <div class="stat-value" id="stat-certified">-</div>
-                <div class="stat-label">Certified</div>
-            </div>
-            <div class="stat">
-                <div class="stat-value" id="stat-rugged">-</div>
-                <div class="stat-label">Rugged</div>
-            </div>
-            <div class="stat">
-                <div class="stat-value" id="stat-pumps">-</div>
-                <div class="stat-label">Pumps</div>
-            </div>
-            <div class="stat">
-                <div class="stat-value" id="stat-dumps">-</div>
-                <div class="stat-label">Dumps</div>
-            </div>
+    <div class="bg-grid"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="index.html" class="nav-link">lurker</a>
+        <a href="token.html" class="nav-link">token</a>
+        <a href="origin.html" class="nav-link">origin</a>
+        <a href="live.html" class="nav-link active">live</a>
+        <a href="become.html" class="nav-link">become</a>
+        <a href="proof.html" class="nav-link">proof</a>
+        <a href="predictions.html" class="nav-link">predictions</a>
+        <a href="hof.html" class="nav-link">🏆 hof</a>
+        <a href="subscribe.html" class="nav-link">subscribe</a>
+        <a href="https://x.com/LURKER_AI2026" class="nav-link" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-top:-2px"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+    </nav>
+
+    <!-- Avatar with Halo (Top Left) -->
+    <div class="avatar-section" style="position: fixed; top: 60px; left: 20px; z-index: 100;">
+        <div class="avatar-wrapper" id="avatar-wrapper">
+            <img src="../assets/lurker-mascot-logo.png" alt="" class="avatar" style="width: 50px; height: 50px;">
+            <div class="avatar-glow" style="width: 60px; height: 60px;"></div>
+            <div class="sparks-container" id="sparks"></div>
         </div>
-        
-        <div class="filters">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="CIO">CIO</button>
-            <button class="filter-btn" data-filter="WATCH">Watch</button>
-            <button class="filter-btn" data-filter="HOTLIST">Hotlist</button>
-            <button class="filter-btn" data-filter="FAST">Fast</button>
-            <button class="filter-btn" data-filter="CERTIFIED">Certified</button>
-            <button class="filter-btn" data-filter="RUGGED">Rugged</button>
-        </div>
-        
-        <div id="tokens-container">
-            <div class="loading">Loading signals...</div>
-        </div>
-        
-        <p class="last-update">Last update: <span id="last-update">-</span></p>
     </div>
 
+    <main class="main">
+        <div class="dashboard-container">
+            <div class="dashboard-header">
+                <h1>👁 live signals</h1>
+                <p class="subtitle">autonomous token surveillance on base</p>
+            </div>
+            
+            <!-- Stats -->
+            <div class="stats-grid" id="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value" id="stat-total">-</div>
+                    <div class="stat-label">total</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="stat-cio">-</div>
+                    <div class="stat-label">cio</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="stat-watch">-</div>
+                    <div class="stat-label">watch</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="stat-hotlist">-</div>
+                    <div class="stat-label">hotlist</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="stat-fast">-</div>
+                    <div class="stat-label">fast</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="stat-certified">-</div>
+                    <div class="stat-label">certified</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="stat-rugged">-</div>
+                    <div class="stat-label">rugged</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="stat-pumps">-</div>
+                    <div class="stat-label">pumps</div>
+                </div>
+            </div>
+            
+            <!-- Filter Tabs -->
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">all</button>
+                <button class="filter-tab" data-filter="CIO">cio</button>
+                <button class="filter-tab" data-filter="WATCH">watch</button>
+                <button class="filter-tab" data-filter="HOTLIST">hotlist</button>
+                <button class="filter-tab" data-filter="FAST">fast</button>
+                <button class="filter-tab" data-filter="CERTIFIED">certified</button>
+                <button class="filter-tab" data-filter="RUGGED">rugged</button>
+            </div>
+            
+            <!-- Token List -->
+            <div id="tokens-container">
+                <div class="loading">observing the chain...</div>
+            </div>
+            
+            <p class="last-update">last update: <span id="last-update">-</span></p>
+        </div>
+    </main>
+
+    <script src="sparks.js"></script>
     <script>
         const STATE_URL = 'https://raw.githubusercontent.com/lurker-base/lurker/main/state/lurker_state.json';
         let allTokens = [];
@@ -234,7 +303,7 @@
         async function loadState() {
             try {
                 const response = await fetch(STATE_URL + '?t=' + Date.now());
-                if (!response.ok) throw new Error('Failed to load');
+                if (!response.ok) throw new Error('failed to load');
                 const state = await response.json();
                 
                 allTokens = Object.values(state.tokens || {});
@@ -243,7 +312,7 @@
                 document.getElementById('last-update').textContent = new Date().toLocaleTimeString();
             } catch (error) {
                 document.getElementById('tokens-container').innerHTML = 
-                    `<div class="error">Error loading data: ${error.message}</div>`;
+                    `<div class="error-message">error loading data: ${error.message}</div>`;
             }
         }
         
@@ -254,10 +323,10 @@
             document.getElementById('stat-cio').textContent = byCat.CIO || 0;
             document.getElementById('stat-watch').textContent = byCat.WATCH || 0;
             document.getElementById('stat-hotlist').textContent = byCat.HOTLIST || 0;
+            document.getElementById('stat-fast').textContent = byCat.FAST || 0;
             document.getElementById('stat-certified').textContent = byCat.CERTIFIED || 0;
             document.getElementById('stat-rugged').textContent = byCat.RUGGED || 0;
             document.getElementById('stat-pumps').textContent = stats.pumps_24h || 0;
-            document.getElementById('stat-dumps').textContent = stats.dumps_24h || 0;
         }
         
         function formatNumber(num) {
@@ -286,7 +355,7 @@
             tokens.sort((a, b) => new Date(b.detected_at) - new Date(a.detected_at));
             
             if (tokens.length === 0) {
-                container.innerHTML = '<div class="loading">No tokens in this category</div>';
+                container.innerHTML = '<div class="loading">no tokens in this category</div>';
                 return;
             }
             
@@ -297,26 +366,26 @@
                 const gainClass = gain > 0 ? 'positive' : gain < 0 ? 'negative' : '';
                 
                 return `
-                    <div class="token-card">
-                        <div>
-                            <div class="token-symbol">$${token.symbol || '?'}</div>
-                            <div class="token-name">${token.name || 'Unknown'}</div>
+                    <div class="token-row">
+                        <div class="token-info">
+                            <span class="token-symbol">$${token.symbol || '?'}</span>
+                            <span class="token-name">${token.name || 'unknown'}</span>
                         </div>
-                        <div class="token-category cat-${token.category || 'CIO'}">${token.category || 'CIO'}</div>
+                        <button class="token-category cat-${token.category || 'CIO'}">${token.category || 'CIO'}</button>
                         <div class="token-metric">
-                            <div class="metric-label">Price</div>
+                            <div class="metric-label">price</div>
                             <div class="metric-value">${metrics.price_usd ? '$' + metrics.price_usd.toFixed(6) : '-'}</div>
                         </div>
                         <div class="token-metric">
-                            <div class="metric-label">Gain</div>
+                            <div class="metric-label">gain</div>
                             <div class="metric-value ${gainClass}">${gain > 0 ? '+' : ''}${gain.toFixed(1)}%</div>
                         </div>
                         <div class="token-metric">
-                            <div class="metric-label">Liquidity</div>
+                            <div class="metric-label">liquidity</div>
                             <div class="metric-value">${formatNumber(metrics.liq_usd)}</div>
                         </div>
                         <div class="token-metric">
-                            <div class="metric-label">Age</div>
+                            <div class="metric-label">age</div>
                             <div class="metric-value">${formatAge(token.detected_at)}</div>
                         </div>
                     </div>
@@ -324,12 +393,12 @@
             }).join('');
         }
         
-        // Filter buttons
-        document.querySelectorAll('.filter-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                currentFilter = btn.dataset.filter;
+        // Filter tabs
+        document.querySelectorAll('.filter-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                currentFilter = tab.dataset.filter;
                 renderTokens();
             });
         });
