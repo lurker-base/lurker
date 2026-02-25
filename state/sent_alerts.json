@@ -52,5 +52,62 @@
     "type": "DUMP",
     "symbol": "PERKOS",
     "tweet": "\ud83d\udcc9 DUMP CONFIRMED\n\n$PERKOS -49% since detection\nRisk signaled early. Reality followed.\n\nProof: github.com/lurker-base/lurker/blob/main/state/token_registry.json\n\nPatterns don't lie. \ud83d\udc41"
-  }
+  },
+  "alerts": [
+    {
+      "token": "0xc18db1ed7d44eb6b705dd9b928001f190314d519",
+      "symbol": "HEDW",
+      "type": "PUMP",
+      "performance": {
+        "max_gain": 1319.6,
+        "current_gain": 1319.6,
+        "status": "pumping"
+      },
+      "sent_at": "2026-02-25T05:59:35.566327+00:00"
+    },
+    {
+      "token": "0xce3fcd5e1481155016df318cffd8c19060f5844e",
+      "symbol": "AI2028",
+      "type": "PUMP",
+      "performance": {
+        "max_gain": 314.2,
+        "current_gain": -97.8,
+        "status": "pumping"
+      },
+      "sent_at": "2026-02-25T05:59:35.566373+00:00"
+    },
+    {
+      "token": "0xc61857eb390ff2ac5fd07aae0c030bbe5b79144e",
+      "symbol": "ZEROCLAW",
+      "type": "PUMP",
+      "performance": {
+        "max_gain": 240.9,
+        "current_gain": -29.0,
+        "status": "pumping"
+      },
+      "sent_at": "2026-02-25T05:59:35.566387+00:00"
+    },
+    {
+      "token": "0xe4a3451ade8ca2c3e1e3d7b9fa6ecce419168ba3",
+      "symbol": "HCLAW",
+      "type": "DUMP",
+      "performance": {
+        "max_gain": 47.2,
+        "current_gain": 23.2,
+        "status": "stable"
+      },
+      "sent_at": "2026-02-25T05:59:35.566393+00:00"
+    },
+    {
+      "token": "0x7c0a5c1020c39bfa1af711b4b963be82f55e1b07",
+      "symbol": "CLAUDET",
+      "type": "DUMP",
+      "performance": {
+        "max_gain": 5.0,
+        "current_gain": -93.2,
+        "status": "dumping"
+      },
+      "sent_at": "2026-02-25T05:59:35.566400+00:00"
+    }
+  ]
 }
