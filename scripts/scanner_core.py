@@ -360,7 +360,7 @@ def merge_tokens(sources, existing_tokens=None):
         else:
             token["sources"] = list(set(token.get("sources", [token.get("source", "unknown")])))
             token["detected_at"] = datetime.now(timezone.utc).isoformat()
-            token["category"] = "CIO"
+            token["category"] = "NEW"
             token["risk"] = {"level": "unknown", "factors": []}
             token["performance"] = {"max_gain": 0, "current_gain": 0, "status": "new"}
             token["risk_tags"] = calculate_risk_tags(token)

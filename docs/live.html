@@ -138,12 +138,12 @@
             border: none;
         }
         
-        .cat-CIO { background: #2d5016; color: #4ade80; }
-        .cat-WATCH { background: #1e3a8a; color: #60a5fa; }
-        .cat-HOTLIST { background: #7c2d12; color: #fb923c; }
-        .cat-CERTIFIED { background: #14532d; color: #86efac; }
-        .cat-FAST { background: #581c87; color: #c084fc; }
-        .cat-RUGGED { background: #000; color: #666; text-decoration: line-through; }
+        .cat-NEW { background: #2d5016; color: #4ade80; }
+        .cat-WATCHING { background: #1e3a8a; color: #60a5fa; }
+        .cat-TRENDING { background: #7c2d12; color: #fb923c; }
+        .cat-VERIFIED { background: #14532d; color: #86efac; }
+        .cat-ACTIVE { background: #581c87; color: #c084fc; }
+        .cat-RUG { background: #000; color: #666; text-decoration: line-through; }
         
         /* Badges */
         .token-badges {
@@ -317,28 +317,28 @@
                     <div class="stat-label">total</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-value" id="stat-cio">-</div>
-                    <div class="stat-label">cio</div>
+                    <div class="stat-value" id="stat-new">-</div>
+                    <div class="stat-label">new</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-value" id="stat-watch">-</div>
-                    <div class="stat-label">watch</div>
+                    <div class="stat-value" id="stat-watching">-</div>
+                    <div class="stat-label">watching</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-value" id="stat-hotlist">-</div>
-                    <div class="stat-label">hotlist</div>
+                    <div class="stat-value" id="stat-trending">-</div>
+                    <div class="stat-label">trending</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-value" id="stat-fast">-</div>
-                    <div class="stat-label">fast</div>
+                    <div class="stat-value" id="stat-active">-</div>
+                    <div class="stat-label">active</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-value" id="stat-certified">-</div>
-                    <div class="stat-label">certified</div>
+                    <div class="stat-value" id="stat-verified">-</div>
+                    <div class="stat-label">verified</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-value" id="stat-rugged">-</div>
-                    <div class="stat-label">rugged</div>
+                    <div class="stat-value" id="stat-rug">-</div>
+                    <div class="stat-label">rug</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-value" id="stat-pumps">-</div>
@@ -349,12 +349,12 @@
             <!-- Filter Tabs -->
             <div class="filter-tabs">
                 <button class="filter-tab active" data-filter="all">all</button>
-                <button class="filter-tab" data-filter="CIO">cio</button>
-                <button class="filter-tab" data-filter="WATCH">watch</button>
-                <button class="filter-tab" data-filter="HOTLIST">hotlist</button>
-                <button class="filter-tab" data-filter="FAST">fast</button>
-                <button class="filter-tab" data-filter="CERTIFIED">certified</button>
-                <button class="filter-tab" data-filter="RUGGED">rugged</button>
+                <button class="filter-tab" data-filter="NEW">new</button>
+                <button class="filter-tab" data-filter="WATCHING">watching</button>
+                <button class="filter-tab" data-filter="TRENDING">trending</button>
+                <button class="filter-tab" data-filter="ACTIVE">active</button>
+                <button class="filter-tab" data-filter="VERIFIED">verified</button>
+                <button class="filter-tab" data-filter="RUG">rug</button>
             </div>
             
             <!-- Token List -->
@@ -392,12 +392,12 @@
             const byCat = stats.by_category || {};
             document.getElementById('stat-total').textContent = 
                 Object.values(byCat).reduce((a, b) => a + b, 0);
-            document.getElementById('stat-cio').textContent = byCat.CIO || 0;
-            document.getElementById('stat-watch').textContent = byCat.WATCH || 0;
-            document.getElementById('stat-hotlist').textContent = byCat.HOTLIST || 0;
-            document.getElementById('stat-fast').textContent = byCat.FAST || 0;
-            document.getElementById('stat-certified').textContent = byCat.CERTIFIED || 0;
-            document.getElementById('stat-rugged').textContent = byCat.RUGGED || 0;
+            document.getElementById('stat-new').textContent = byCat.NEW || 0;
+            document.getElementById('stat-watching').textContent = byCat.WATCHING || 0;
+            document.getElementById('stat-trending').textContent = byCat.TRENDING || 0;
+            document.getElementById('stat-active').textContent = byCat.ACTIVE || 0;
+            document.getElementById('stat-verified').textContent = byCat.VERIFIED || 0;
+            document.getElementById('stat-rug').textContent = byCat.RUG || 0;
             document.getElementById('stat-pumps').textContent = stats.pumps_24h || 0;
         }
         
@@ -497,7 +497,7 @@
                             <div class="token-badges">${allBadgesHTML}</div>
                             ${socialHTML}
                         </div>
-                        <button class="token-category cat-${token.category || 'CIO'}">${token.category || 'CIO'}</button>
+                        <button class="token-category cat-${token.category || 'NEW'}">${token.category || 'NEW'}</button>
                         <div class="token-metric">
                             <div class="metric-label">price</div>
                             <div class="metric-value">${metrics.price_usd && !isNaN(metrics.price_usd) ? '$' + Number(metrics.price_usd).toFixed(6) : '-'}</div>

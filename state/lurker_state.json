@@ -1,7 +1,7 @@
 {
   "schema": "lurker_v1.5",
   "meta": {
-    "last_scan": "2026-02-25T10:10:23.165620+00:00",
+    "last_scan": "2026-02-25T10:18:41.133424+00:00",
     "last_lifecycle": "2026-02-25T09:56:21.138799+00:00",
     "total_tokens": 63,
     "version": "1.5.0",
@@ -9,12 +9,12 @@
     "migration_date": "2026-02-25T05:39:10.406085+00:00",
     "stats": {
       "by_category": {
-        "CIO": 0,
-        "WATCH": 0,
-        "HOTLIST": 0,
-        "FAST": 15,
-        "CERTIFIED": 27,
-        "RUGGED": 21
+        "NEW": 0,
+        "WATCHING": 0,
+        "TRENDING": 0,
+        "ACTIVE": 15,
+        "VERIFIED": 27,
+        "RUG": 21
       },
       "pumps_24h": 4,
       "dumps_24h": 7,
@@ -33,7 +33,7 @@
         "profiles"
       ],
       "detected_at": "2026-02-24T21:53:40.443000+00:00",
-      "category": "FAST",
+      "category": "ACTIVE",
       "age_minutes": 444.0,
       "metrics": {
         "liq_usd": 18618.74,
@@ -79,7 +79,7 @@
         "profiles"
       ],
       "detected_at": "2026-02-24T21:53:40.443000+00:00",
-      "category": "FAST",
+      "category": "ACTIVE",
       "age_minutes": 444.0,
       "metrics": {
         "liq_usd": 43625.38,
@@ -125,7 +125,7 @@
         "profiles"
       ],
       "detected_at": "2026-02-24T21:53:40.443000+00:00",
-      "category": "FAST",
+      "category": "ACTIVE",
       "age_minutes": 444.0,
       "metrics": {
         "liq_usd": 76514.39,
@@ -171,7 +171,7 @@
         "migration"
       ],
       "detected_at": "2026-02-24T21:53:40.443000+00:00",
-      "category": "FAST",
+      "category": "ACTIVE",
       "age_minutes": 444.0,
       "metrics": {
         "liq_usd": 28011.05,
@@ -217,7 +217,7 @@
         "migration"
       ],
       "detected_at": "2026-02-24T21:53:40.443000+00:00",
-      "category": "FAST",
+      "category": "ACTIVE",
       "age_minutes": 444.0,
       "metrics": {
         "liq_usd": 5108.93,
@@ -263,7 +263,7 @@
         "migration"
       ],
       "detected_at": "2026-02-24T21:53:40.443000+00:00",
-      "category": "FAST",
+      "category": "ACTIVE",
       "age_minutes": 444.0,
       "metrics": {
         "liq_usd": 18733.41,
@@ -309,7 +309,7 @@
         "profiles"
       ],
       "detected_at": "2026-02-24T19:56:15.069000+00:00",
-      "category": "FAST",
+      "category": "ACTIVE",
       "age_minutes": 561.4,
       "metrics": {
         "liq_usd": 174730.11,
@@ -355,7 +355,7 @@
         "profiles"
       ],
       "detected_at": "2026-02-24T19:56:15.069000+00:00",
-      "category": "FAST",
+      "category": "ACTIVE",
       "age_minutes": 561.4,
       "metrics": {
         "liq_usd": 207071.73,
@@ -401,7 +401,7 @@
         "profiles"
       ],
       "detected_at": "2026-02-24T12:05:45.424000+00:00",
-      "category": "FAST",
+      "category": "ACTIVE",
       "age_minutes": 1031.9,
       "metrics": {
         "liq_usd": 47053.44,
@@ -447,7 +447,7 @@
         "migration"
       ],
       "detected_at": "2026-02-24T08:13:23.997000+00:00",
-      "category": "CERTIFIED",
+      "category": "VERIFIED",
       "age_minutes": 1264.3,
       "metrics": {
         "liq_usd": 61348.78,
@@ -493,7 +493,7 @@
         "migration"
       ],
       "detected_at": "2026-02-24T19:56:15.069000+00:00",
-      "category": "RUGGED",
+      "category": "RUG",
       "age_minutes": 561.4,
       "metrics": {
         "liq_usd": 17967.06,
@@ -545,7 +545,7 @@
         "migration"
       ],
       "detected_at": "2026-02-24T03:06:24.303000+00:00",
-      "category": "CERTIFIED",
+      "category": "VERIFIED",
       "age_minutes": 1571.3,
       "metrics": {
         "liq_usd": 10934.67,
@@ -599,7 +599,7 @@
         "community"
       ],
       "detected_at": "2026-02-23T23:04:45.294000+00:00",
-      "category": "CERTIFIED",
+      "category": "VERIFIED",
       "age_minutes": 1812.9,
       "metrics": {
         "liq_usd": 227410.73,
@@ -795,7 +795,7 @@
         "migration"
       ],
       "detected_at": "2026-02-22T16:00:15.449000+00:00",
-      "category": "CERTIFIED",
+      "category": "VERIFIED",
       "age_minutes": 3677.4,
       "metrics": {
         "liq_usd": 205558.57,
@@ -877,7 +877,7 @@
         "migration"
       ],
       "detected_at": "2026-02-22T16:00:15.449000+00:00",
-      "category": "CERTIFIED",
+      "category": "VERIFIED",
       "age_minutes": 3677.4,
       "metrics": {
         "liq_usd": 109653.03,
@@ -943,7 +943,7 @@
         "migration"
       ],
       "detected_at": "2026-02-22T17:55:18.017000+00:00",
-      "category": "CERTIFIED",
+      "category": "VERIFIED",
       "age_minutes": 3562.4,
       "metrics": {
         "liq_usd": 187079.27,
@@ -989,7 +989,7 @@
         "migration"
       ],
       "detected_at": "2026-02-22T17:55:18.017000+00:00",
-      "category": "CERTIFIED",
+      "category": "VERIFIED",
       "age_minutes": 3562.4,
       "metrics": {
         "liq_usd": 52952.57,
@@ -1035,7 +1035,7 @@
         "migration"
       ],
       "detected_at": "2026-02-22T17:55:18.017000+00:00",
-      "category": "CERTIFIED",
+      "category": "VERIFIED",
       "age_minutes": 3562.4,
       "metrics": {
         "liq_usd": 12028.15,
@@ -1081,7 +1081,7 @@
         "migration"
       ],
       "detected_at": "2026-02-22T19:49:20.534000+00:00",
-      "category": "CERTIFIED",
+      "category": "VERIFIED",
       "age_minutes": 3448.3,
       "metrics": {
         "liq_usd": 134969.45,
@@ -1127,7 +1127,7 @@
         "migration"
       ],
       "detected_at": "2026-02-22T20:00:27.191000+00:00",
-      "category": "CERTIFIED",
+      "category": "VERIFIED",
       "age_minutes": 3437.2,
       "metrics": {
         "liq_usd": 94561.53,
@@ -1179,7 +1179,7 @@
         "migration"
       ],
       "detected_at": "2026-02-22T20:56:02.672000+00:00",
-      "category": "CERTIFIED",
+      "category": "VERIFIED",
       "age_minutes": 3381.6,
       "metrics": {
         "liq_usd": 25830881.77,
@@ -1231,7 +1231,7 @@
         "migration"
       ],
       "detected_at": "2026-02-22T22:57:59.983000+00:00",
-      "category": "CERTIFIED",
+      "category": "VERIFIED",
       "age_minutes": 3259.7,
       "metrics": {
         "liq_usd": 20454.38,
@@ -1277,7 +1277,7 @@
         "migration"
       ],
       "detected_at": "2026-02-22T22:57:59.983000+00:00",
-      "category": "CERTIFIED",
+      "category": "VERIFIED",
       "age_minutes": 3259.7,
       "metrics": {
         "liq_usd": 74720.91,
@@ -1329,7 +1329,7 @@
         "migration"
       ],
       "detected_at": "2026-02-22T22:57:59.983000+00:00",
-      "category": "CERTIFIED",
+      "category": "VERIFIED",
       "age_minutes": 3259.7,
       "metrics": {
         "liq_usd": 363586.37,
@@ -1381,7 +1381,7 @@
         "migration"
       ],
       "detected_at": "2026-02-22T23:55:06.867000+00:00",
-      "category": "CERTIFIED",
+      "category": "VERIFIED",
       "age_minutes": 3202.6,
       "metrics": {
         "liq_usd": 52731.38,
@@ -1427,7 +1427,7 @@
         "migration"
       ],
       "detected_at": "2026-02-22T23:55:06.867000+00:00",
-      "category": "CERTIFIED",
+      "category": "VERIFIED",
       "age_minutes": 3202.6,
       "metrics": {
         "liq_usd": 81680.3,
@@ -1473,7 +1473,7 @@
         "migration"
       ],
       "detected_at": "2026-02-22T23:55:06.867000+00:00",
-      "category": "CERTIFIED",
+      "category": "VERIFIED",
       "age_minutes": 3202.6,
       "metrics": {
         "liq_usd": 20908.87,
@@ -1519,7 +1519,7 @@
         "migration"
       ],
       "detected_at": "2026-02-23T04:31:32.555000+00:00",
-      "category": "CERTIFIED",
+      "category": "VERIFIED",
       "age_minutes": 2926.1,
       "metrics": {
         "liq_usd": 124192.28,
@@ -1565,7 +1565,7 @@
         "migration"
       ],
       "detected_at": "2026-02-23T04:31:32.555000+00:00",
-      "category": "CERTIFIED",
+      "category": "VERIFIED",
       "age_minutes": 2926.1,
       "metrics": {
         "liq_usd": 18933.09,
@@ -1617,7 +1617,7 @@
         "migration"
       ],
       "detected_at": "2026-02-23T04:31:32.556000+00:00",
-      "category": "CERTIFIED",
+      "category": "VERIFIED",
       "age_minutes": 2926.1,
       "metrics": {
         "liq_usd": 34441.55,
@@ -1663,7 +1663,7 @@
         "migration"
       ],
       "detected_at": "2026-02-23T12:50:16.965000+00:00",
-      "category": "CERTIFIED",
+      "category": "VERIFIED",
       "age_minutes": 2427.4,
       "metrics": {
         "liq_usd": 101746.98,
@@ -1763,7 +1763,7 @@
         "migration"
       ],
       "detected_at": "2026-02-23T13:20:28.559000+00:00",
-      "category": "CERTIFIED",
+      "category": "VERIFIED",
       "age_minutes": 2397.2,
       "metrics": {
         "liq_usd": 31550.38,
@@ -1851,7 +1851,7 @@
         "migration"
       ],
       "detected_at": "2026-02-23T13:35:34.911000+00:00",
-      "category": "CERTIFIED",
+      "category": "VERIFIED",
       "age_minutes": 2382.1,
       "metrics": {
         "liq_usd": 155154.98,
@@ -1957,7 +1957,7 @@
         "migration"
       ],
       "detected_at": "2026-02-23T15:21:17.098000+00:00",
-      "category": "CERTIFIED",
+      "category": "VERIFIED",
       "age_minutes": 2276.4,
       "metrics": {
         "liq_usd": 12640.92,
@@ -2045,7 +2045,7 @@
         "migration"
       ],
       "detected_at": "2026-02-23T16:06:39.798000+00:00",
-      "category": "CERTIFIED",
+      "category": "VERIFIED",
       "age_minutes": 2231.0,
       "metrics": {
         "liq_usd": 509799.11,
@@ -2127,7 +2127,7 @@
         "migration"
       ],
       "detected_at": "2026-02-23T23:04:45.294000+00:00",
-      "category": "CERTIFIED",
+      "category": "VERIFIED",
       "age_minutes": 1812.9,
       "metrics": {
         "liq_usd": 68544.07,
@@ -2173,7 +2173,7 @@
         "migration"
       ],
       "detected_at": "2026-02-22T16:09:08.289000+00:00",
-      "category": "RUGGED",
+      "category": "RUG",
       "age_minutes": 3668.5,
       "metrics": {
         "liq_usd": 1772.3,
@@ -2535,7 +2535,7 @@
         "migration"
       ],
       "detected_at": "2026-02-23T09:31:19.151000+00:00",
-      "category": "CERTIFIED",
+      "category": "VERIFIED",
       "age_minutes": 2626.4,
       "metrics": {
         "liq_usd": 4655.86,
@@ -2643,7 +2643,7 @@
         "migration"
       ],
       "detected_at": "2026-02-22T16:00:15.449000+00:00",
-      "category": "RUGGED",
+      "category": "RUG",
       "age_minutes": 3677.4,
       "metrics": {
         "liq_usd": 24138.49,
@@ -2739,7 +2739,7 @@
         "migration"
       ],
       "detected_at": "2026-02-23T17:07:15.929000+00:00",
-      "category": "RUGGED",
+      "category": "RUG",
       "age_minutes": 2170.4,
       "metrics": {
         "liq_usd": 0,
@@ -2819,7 +2819,7 @@
         "migration"
       ],
       "detected_at": "2026-02-23T23:04:45.294000+00:00",
-      "category": "RUGGED",
+      "category": "RUG",
       "age_minutes": 1812.9,
       "metrics": {
         "liq_usd": 0,
@@ -2887,7 +2887,7 @@
         "migration"
       ],
       "detected_at": "2026-02-23T14:51:04.847000+00:00",
-      "category": "RUGGED",
+      "category": "RUG",
       "age_minutes": 2306.6,
       "metrics": {
         "liq_usd": 0,
@@ -2961,7 +2961,7 @@
         "migration"
       ],
       "detected_at": "2026-02-23T09:31:19.151000+00:00",
-      "category": "RUGGED",
+      "category": "RUG",
       "age_minutes": 2626.4,
       "metrics": {
         "liq_usd": 0,
@@ -3029,7 +3029,7 @@
         "migration"
       ],
       "detected_at": "2026-02-23T09:31:19.151000+00:00",
-      "category": "RUGGED",
+      "category": "RUG",
       "age_minutes": 2626.4,
       "metrics": {
         "liq_usd": 0,
@@ -3109,7 +3109,7 @@
         "migration"
       ],
       "detected_at": "2026-02-23T10:19:26.326000+00:00",
-      "category": "RUGGED",
+      "category": "RUG",
       "age_minutes": 2578.2,
       "metrics": {
         "liq_usd": 0,
@@ -3207,7 +3207,7 @@
         "migration"
       ],
       "detected_at": "2026-02-23T14:16:02.680000+00:00",
-      "category": "RUGGED",
+      "category": "RUG",
       "age_minutes": 2341.6,
       "metrics": {
         "liq_usd": 0,
@@ -3293,7 +3293,7 @@
         "migration"
       ],
       "detected_at": "2026-02-23T15:36:24.156000+00:00",
-      "category": "RUGGED",
+      "category": "RUG",
       "age_minutes": 2261.3,
       "metrics": {
         "liq_usd": 0,
@@ -3433,7 +3433,7 @@
         "migration"
       ],
       "detected_at": "2026-02-23T15:51:31.354000+00:00",
-      "category": "RUGGED",
+      "category": "RUG",
       "age_minutes": 2246.2,
       "metrics": {
         "liq_usd": 0,
@@ -3519,7 +3519,7 @@
         "migration"
       ],
       "detected_at": "2026-02-23T16:06:39.797000+00:00",
-      "category": "RUGGED",
+      "category": "RUG",
       "age_minutes": 2231.0,
       "metrics": {
         "liq_usd": 0,
@@ -3605,7 +3605,7 @@
         "migration"
       ],
       "detected_at": "2026-02-23T23:04:45.294000+00:00",
-      "category": "RUGGED",
+      "category": "RUG",
       "age_minutes": 1812.9,
       "metrics": {
         "liq_usd": 0,
@@ -3673,7 +3673,7 @@
         "migration"
       ],
       "detected_at": "2026-02-22T16:00:15.449000+00:00",
-      "category": "RUGGED",
+      "category": "RUG",
       "age_minutes": 3677.4,
       "metrics": {
         "liq_usd": 78325.58,
@@ -3763,7 +3763,7 @@
         "migration"
       ],
       "detected_at": "2026-02-22T16:00:15.449000+00:00",
-      "category": "RUGGED",
+      "category": "RUG",
       "age_minutes": 3677.4,
       "metrics": {
         "liq_usd": 101110.07,
@@ -3851,7 +3851,7 @@
         "migration"
       ],
       "detected_at": "2026-02-23T15:36:24.156000+00:00",
-      "category": "RUGGED",
+      "category": "RUG",
       "age_minutes": 2261.3,
       "metrics": {
         "liq_usd": 0,
@@ -3937,7 +3937,7 @@
         "migration"
       ],
       "detected_at": "2026-02-23T10:19:26.326000+00:00",
-      "category": "RUGGED",
+      "category": "RUG",
       "age_minutes": 2578.2,
       "metrics": {
         "liq_usd": 0,
@@ -4041,7 +4041,7 @@
         "migration"
       ],
       "detected_at": "2026-02-22T16:35:21.392000+00:00",
-      "category": "RUGGED",
+      "category": "RUG",
       "age_minutes": 3642.3,
       "metrics": {
         "liq_usd": 22265.05,
@@ -4107,7 +4107,7 @@
         "migration"
       ],
       "detected_at": "2026-02-22T19:49:20.534000+00:00",
-      "category": "RUGGED",
+      "category": "RUG",
       "age_minutes": 3448.3,
       "metrics": {
         "liq_usd": 24049.26,
@@ -4167,7 +4167,7 @@
         "migration"
       ],
       "detected_at": "2026-02-23T15:21:17.098000+00:00",
-      "category": "RUGGED",
+      "category": "RUG",
       "age_minutes": 2276.4,
       "metrics": {
         "liq_usd": 6040.75,
@@ -4245,7 +4245,7 @@
         "manual"
       ],
       "detected_at": "2026-02-25T08:13:28.536297+00:00",
-      "category": "FAST",
+      "category": "ACTIVE",
       "age_minutes": 0,
       "metrics": {
         "liq_usd": 40443.71,
@@ -4288,7 +4288,7 @@
         "manual"
       ],
       "detected_at": "2026-02-25T08:13:57.455925+00:00",
-      "category": "FAST",
+      "category": "ACTIVE",
       "age_minutes": 0,
       "metrics": {
         "liq_usd": 27059.52,
@@ -4347,7 +4347,7 @@
         "pairs"
       ],
       "detected_at": "2026-02-25T08:30:43.179378+00:00",
-      "category": "FAST",
+      "category": "ACTIVE",
       "risk": {
         "level": "low",
         "factors": []
@@ -4390,7 +4390,7 @@
         "pairs"
       ],
       "detected_at": "2026-02-25T08:30:43.179416+00:00",
-      "category": "FAST",
+      "category": "ACTIVE",
       "risk": {
         "level": "low",
         "factors": []
@@ -4432,7 +4432,7 @@
         "pairs"
       ],
       "detected_at": "2026-02-25T08:30:43.179432+00:00",
-      "category": "FAST",
+      "category": "ACTIVE",
       "risk": {
         "level": "low",
         "factors": []
@@ -4472,7 +4472,7 @@
         "pairs"
       ],
       "detected_at": "2026-02-25T08:30:43.179450+00:00",
-      "category": "FAST",
+      "category": "ACTIVE",
       "risk": {
         "level": "low",
         "factors": []

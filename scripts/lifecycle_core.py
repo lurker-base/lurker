@@ -13,11 +13,11 @@ STATE_FILE = Path(__file__).parent.parent / "state" / "lurker_state.json"
 
 # Seuils (à externaliser dans config.yaml)
 THRESHOLDS = {
-    "cio_max_age": 10,        # minutes
-    "watch_max_age": 30,      # minutes
-    "hotlist_max_age": 60,    # minutes
-    "fast_max_age": 1440,     # minutes (24h)
-    "certified_min_age": 1440, # minutes (24h)
+    "new_max_age": 10,        # minutes
+    "watching_max_age": 30,   # minutes
+    "trending_max_age": 60,   # minutes
+    "active_max_age": 1440,   # minutes (24h)
+    "verified_min_age": 1440, # minutes (24h)
     "rug_liq": 0,             # $0 = rug
     "min_liq_active": 3000,   # <$3k = suspect
 }
@@ -115,27 +115,27 @@ def determine_category(token):
     if status == "dumping" and current_gain <= -50:
         return "RUGGED"
     
-    # CIO: < 10 min
-    if age < THRESHOLDS["cio_max_age"]:
-        return "CIO"
+    # NEW: < 10 min
+    if age < THRESHOLDS["new_max_age"]:
+        return "NEW"
     
-    # WATCH: 10-30 min
-    if age < THRESHOLDS["watch_max_age"]:
-        return "WATCH"
+    # WATCHING: 10-30 min
+    if age < THRESHOLDS["watching_max_age"]:
+        return "WATCHING"
     
-    # HOTLIST: 30-60 min
-    if age < THRESHOLDS["hotlist_max_age"]:
-        return "HOTLIST"
+    # TRENDING: 30-60 min
+    if age < THRESHOLDS["trending_max_age"]:
+        return "TRENDING"
     
-    # FAST: 1h-24h
-    if age < THRESHOLDS["fast_max_age"]:
-        return "FAST"
+    # ACTIVE: 1h-24h
+    if age < THRESHOLDS["active_max_age"]:
+        return "ACTIVE"
     
-    # CERTIFIED: > 24h et encore actif
+    # VERIFIED: > 24h et encore actif
     if liq >= THRESHOLDS["min_liq_active"]:
-        return "CERTIFIED"
+        return "VERIFIED"
     
-    return "ARCHIVED"
+    return "INACTIVE"
 
 def assess_risk(token):
     """Évalue le risque"""
