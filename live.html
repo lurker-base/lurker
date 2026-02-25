@@ -456,13 +456,25 @@
                 const gain = perf.current_gain || 0;
                 const gainClass = gain > 0 ? 'positive' : gain < 0 ? 'negative' : '';
                 
-                // Generate badges
+                // Generate badges with inline colors for reliability
                 const badges = token.risk_tags || [];
                 const badgeHTML = badges.map(b => {
-                    // Remove emoji and special chars for class name, keep text
-                    const cleanText = b.replace(/[^\w\s-]/g, '').trim().toLowerCase();
-                    const badgeClass = cleanText.replace(/\s+/g, '-');
-                    return `<span class="badge badge-${badgeClass}">${b}</span>`;
+                    let bgColor = '#333';
+                    let textColor = '#999';
+                    
+                    // Determine color based on badge content
+                    if (b.includes('📉') || b.includes('💀') || b.includes('RUG')) {
+                        bgColor = '#7f1d1d';  // Red
+                        textColor = '#f87171';
+                    } else if (b.includes('⚠️') || b.includes('WATCH') || b.includes('FRESH')) {
+                        bgColor = '#854d0e';  // Yellow/Orange
+                        textColor = '#fbbf24';
+                    } else if (b.includes('⚡') || b.includes('📈') || b.includes('💧') || b.includes('💎') || b.includes('🌊')) {
+                        bgColor = '#166534';  // Green
+                        textColor = '#4ade80';
+                    }
+                    
+                    return `<span class="badge" style="background: ${bgColor}; color: ${textColor}; padding: 0.15rem 0.4rem; border-radius: 3px; font-size: 0.6rem; font-weight: bold;">${b}</span>`;
                 }).join('');
                 
                 // Generate social links
