@@ -20,6 +20,7 @@ THRESHOLDS = {
     "verified_min_age": 1440, # minutes (24h)
     "rug_liq": 0,             # $0 = rug
     "min_liq_active": 3000,   # <$3k = suspect
+    "max_inactive_time": 60,  # minutes - archive si pas de volume depuis 1h
 }
 
 def load_state():
@@ -92,6 +93,27 @@ def clean_badges_for_category(token, new_category):
     
     token["risk_tags"] = risk_tags
 
+def get_minutes_since_last_volume(token):
+    """Calcule minutes depuis dernier volume significatif"""
+    metrics = token.get("metrics", {})
+    vol_24h = metrics.get("vol_24h_usd", 0) or 0
+    vol_1h = metrics.get("vol_1h_usd", 0) or 0
+    
+    # Si vol_1h existe et est 0, cela fait 1h qu'il n'y a pas eu de volume
+    if "vol_1h_usd" in metrics and vol_1h == 0:
+        return 60  # au moins 1h
+    
+    # Vérifier last_trade_timestamp si disponible
+    last_trade = token.get("last_trade_at") or token.get("dexscreener", {}).get("last_trade")
+    if last_trade:
+        try:
+            dt = datetime.fromisoformat(str(last_trade).replace('Z', '+00:00'))
+            return (datetime.now(timezone.utc) - dt).total_seconds() / 60
+        except:
+            pass
+    
+    return 0  # inconnu, considérer comme actif
+
 def determine_category(token):
     """Détermine la catégorie selon l'âge et les métriques"""
     current_category = token.get("category", "CIO")
@@ -99,6 +121,10 @@ def determine_category(token):
     # Si déjà RUGGED, ne jamais changer
     if current_category == "RUGGED" or token.get("is_copycat"):
         return "RUGGED"
+    
+    # Si déjà ARCHIVED, rester ARCHIVED (le scanner peut le re-détecter)
+    if current_category == "ARCHIVED":
+        return "ARCHIVED"
     
     age = calculate_age_minutes(token.get("detected_at"))
     metrics = token.get("metrics", {})
@@ -114,6 +140,11 @@ def determine_category(token):
     # RUGGED si dumping sévère
     if status == "dumping" and current_gain <= -50:
         return "RUGGED"
+    
+    # ARCHIVER si pas de volume depuis 1h (pas RUG, juste inactif)
+    minutes_since_vol = get_minutes_since_last_volume(token)
+    if minutes_since_vol >= THRESHOLDS["max_inactive_time"]:
+        return "ARCHIVED"
     
     # NEW: < 10 min
     if age < THRESHOLDS["new_max_age"]:
@@ -213,21 +244,24 @@ def process_token(addr, token):
 def generate_stats(state):
     """Génère les stats globales"""
     tokens = state.get("tokens", {})
-    categories = {"CIO": 0, "WATCH": 0, "HOTLIST": 0, "FAST": 0, "CERTIFIED": 0, "RUGGED": 0, "ARCHIVED": 0}
+    categories = {"NEW": 0, "WATCHING": 0, "TRENDING": 0, "ACTIVE": 0, "VERIFIED": 0, "RUGGED": 0, "ARCHIVED": 0}
     
     for token in tokens.values():
-        cat = token.get("category", "CIO")
+        cat = token.get("category", "NEW")
         categories[cat] = categories.get(cat, 0) + 1
     
-    # Pumps/dumps 24h
-    pumps = sum(1 for t in tokens.values() if t.get("performance", {}).get("status") == "pumping")
-    dumps = sum(1 for t in tokens.values() if t.get("performance", {}).get("status") == "dumping")
+    # Pumps/dumps 24h (uniquement tokens actifs)
+    active_tokens = [t for t in tokens.values() if t.get("category") not in ["RUGGED", "ARCHIVED"]]
+    pumps = sum(1 for t in active_tokens if t.get("performance", {}).get("status") == "pumping")
+    dumps = sum(1 for t in active_tokens if t.get("performance", {}).get("status") == "dumping")
     
     state["meta"]["stats"] = {
         "by_category": categories,
         "pumps_24h": pumps,
         "dumps_24h": dumps,
-        "rugged": categories.get("RUGGED", 0)
+        "rugged": categories.get("RUGGED", 0),
+        "archived": categories.get("ARCHIVED", 0),
+        "active_total": sum(v for k, v in categories.items() if k not in ["RUGGED", "ARCHIVED"])
     }
     
     return state
