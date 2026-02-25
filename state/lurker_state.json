@@ -1,7 +1,7 @@
 {
   "schema": "lurker_v1.5",
   "meta": {
-    "last_scan": "2026-02-25T07:11:51.137787+00:00",
+    "last_scan": "2026-02-25T08:06:54.040299+00:00",
     "last_lifecycle": "2026-02-25T05:55:37.622090+00:00",
     "total_tokens": 62,
     "version": "1.5.0",
@@ -1035,9 +1035,7 @@
         "factors": []
       },
       "risk_tags": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udcab ACTIVE",
-        "\ud83d\udc8e HIGH_LIQ"
+        "\ud83d\udcc9 DUMPING"
       ],
       "performance": {
         "max_gain": 0.0,
@@ -2397,7 +2395,8 @@
         ]
       },
       "risk_tags": [
-        "\ud83d\udc80 RUGGED"
+        "\ud83d\udc80 RUGGED",
+        "\ud83d\udcc9 DUMPING"
       ],
       "performance": {
         "max_gain": 14.7,
@@ -2859,7 +2858,8 @@
         ]
       },
       "risk_tags": [
-        "\ud83d\udc80 RUGGED"
+        "\ud83d\udc80 RUGGED",
+        "\ud83d\udcc9 DUMPING"
       ],
       "performance": {
         "max_gain": 31.6,
@@ -3093,7 +3093,8 @@
         ]
       },
       "risk_tags": [
-        "\ud83d\udc80 RUGGED"
+        "\ud83d\udc80 RUGGED",
+        "\ud83d\udcc9 DUMPING"
       ],
       "performance": {
         "max_gain": 0.0,
@@ -3397,7 +3398,8 @@
         ]
       },
       "risk_tags": [
-        "\ud83d\udc80 RUGGED"
+        "\ud83d\udc80 RUGGED",
+        "\ud83d\udcc9 DUMPING"
       ],
       "performance": {
         "max_gain": 41.1,
@@ -3479,7 +3481,8 @@
         ]
       },
       "risk_tags": [
-        "\ud83d\udc80 RUGGED"
+        "\ud83d\udc80 RUGGED",
+        "\ud83d\udcc9 DUMPING"
       ],
       "performance": {
         "max_gain": 56.8,
@@ -3841,7 +3844,8 @@
         "factors": []
       },
       "risk_tags": [
-        "\ud83d\udc80 RUGGED"
+        "\ud83d\udc80 RUGGED",
+        "\ud83d\udcc9 DUMPING"
       ],
       "performance": {
         "max_gain": 240.9,
@@ -4197,7 +4201,8 @@
         "factors": []
       },
       "risk_tags": [
-        "\ud83d\udc80 RUGGED"
+        "\ud83d\udc80 RUGGED",
+        "\ud83d\udcc9 DUMPING"
       ],
       "performance": {
         "max_gain": 5.0,
@@ -4259,7 +4264,8 @@
         "factors": []
       },
       "risk_tags": [
-        "\ud83d\udc80 RUGGED"
+        "\ud83d\udc80 RUGGED",
+        "\ud83d\udcc9 DUMPING"
       ],
       "performance": {
         "max_gain": 0.0,
@@ -4315,7 +4321,8 @@
         "factors": []
       },
       "risk_tags": [
-        "\ud83d\udc80 RUGGED"
+        "\ud83d\udc80 RUGGED",
+        "\ud83d\udcc9 DUMPING"
       ],
       "performance": {
         "max_gain": 314.2,
@@ -4394,7 +4401,8 @@
       },
       "risk_tags": [
         "\ud83d\udc80 RUGGED",
-        "\u26a0\ufe0f COPYCAT"
+        "\u26a0\ufe0f COPYCAT",
+        "\ud83d\udcc9 DUMPING"
       ],
       "performance": {
         "max_gain": 0.0,
