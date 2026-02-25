@@ -362,7 +362,7 @@
                 <div class="loading">observing the chain...</div>
             </div>
             
-            <p class="last-update">last update: <span id="last-update">-</span></p>
+            <p class="last-update">last update: <span id="last-update">-</span> | next refresh: <span id="countdown">30</span>s</p>
         </div>
     </main>
 
@@ -528,6 +528,16 @@
                 renderTokens();
             });
         });
+        
+        // Countdown timer
+        let countdownValue = 30;
+        const countdownEl = document.getElementById('countdown');
+        
+        setInterval(() => {
+            countdownValue--;
+            if (countdownValue < 0) countdownValue = 30;
+            if (countdownEl) countdownEl.textContent = countdownValue;
+        }, 1000);
         
         // Load and refresh
         loadState();
