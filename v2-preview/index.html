@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LURKER V2 - Live Dashboard</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #0a0a0a;
+            color: #e0e0e0;
+            font-family: 'Courier New', monospace;
+            line-height: 1.6;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        h1 { color: #ff6b35; margin-bottom: 1rem; }
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+        .stat { background: #1a1a1a; padding: 1rem; border: 1px solid #333; }
+        .stat-value { font-size: 2rem; color: #ff6b35; }
+        .stat-label { color: #666; font-size: 0.8rem; }
+        .feed { margin-bottom: 2rem; }
+        .feed-title { color: #ff6b35; border-bottom: 1px solid #333; padding-bottom: 0.5rem; margin-bottom: 1rem; }
+        .token-card {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 1rem;
+            align-items: center;
+        }
+        .token-symbol { font-weight: bold; }
+        .token-metric { color: #888; }
+        .token-status {
+            padding: 0.25rem 0.5rem;
+            border-radius: 3px;
+            font-size: 0.8rem;
+        }
+        .status-pumping { background: #2d5016; color: #4ade80; }
+        .status-dumping { background: #7f1d1d; color: #f87171; }
+        .status-stable { background: #1e3a8a; color: #60a5fa; }
+        .status-rugged { background: #000; color: #666; text-decoration: line-through; }
+        .loading { text-align: center; padding: 2rem; color: #666; }
+        .error { background: #7f1d1d; padding: 1rem; margin: 1rem 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>👁 LURKER V2 - Live Dashboard</h1>
+        
+        <div class="stats" id="stats">
+            <div class="stat">
+                <div class="stat-value" id="total-tokens">-</div>
+                <div class="stat-label">Total Tokens</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="pumping">-</div>
+                <div class="stat-label">Pumping</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="dumping">-</div>
+                <div class="stat-label">Dumping</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="rugged">-</div>
+                <div class="stat-label">Rugged</div>
+            </div>
+        </div>
+
+        <div class="feed">
+            <h2 class="feed-title">🔥 HOTLIST (0-1h)</h2>
+            <div id="hotlist-feed"><div class="loading">Loading...</div></div>
+        </div>
+
+        <div class="feed">
+            <h2 class="feed-title">⚡ FAST (1-24h)</h2>
+            <div id="fast-feed"><div class="loading">Loading...</div></div>
+        </div>
+
+        <div class="feed">
+            <h2 class="feed-title">💀 RUGGED</h2>
+            <div id="rugged-feed"><div class="loading">Loading...</div></div>
+        </div>
+
+        <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #333; color: #666; font-size: 0.8rem;">
+            Last update: <span id="last-update">-</span> | 
+            <a href="https://github.com/lurker-base/lurker/tree/v2-refonte" style="color: #666;">View on GitHub</a>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = 'https://api.github.com/repos/lurker-base/lurker/contents/state/tokens.json?ref=v2-refonte';
+const REFRESH_INTERVAL = 10000; // 10 seconds for demo
+        
+        async function loadData() {
+            try {
+                // Fetch from GitHub API
+                const res = await fetch(API_URL, {
+                    headers: { 'Accept': 'application/vnd.github.v3+json' },
+                    cache: 'no-store'
+                });
+                
+                if (!res.ok) throw new Error('Failed to load');
+                
+                const fileData = await res.json();
+                const content = atob(fileData.content);
+                const data = JSON.parse(content);
+                
+                renderStats(data);
+                renderFeeds(data);
+                
+                document.getElementById('last-update').textContent = new Date().toLocaleTimeString();
+            } catch (e) {
+                console.error('Error:', e);
+                document.querySelectorAll('.feed > div').forEach(el => {
+                    el.innerHTML = '<div class="error">Failed to load data. Retrying...</div>';
+                });
+            }
+        }
+        
+        function renderStats(data) {
+            const tokens = Object.values(data.tokens || {});
+            
+            document.getElementById('total-tokens').textContent = tokens.length;
+            document.getElementById('pumping').textContent = tokens.filter(t => t.performance?.status === 'pumping').length;
+            document.getElementById('dumping').textContent = tokens.filter(t => t.performance?.status === 'dumping').length;
+            document.getElementById('rugged').textContent = tokens.filter(t => t.category === 'RUGGED' || t.risk?.level === 'critical').length;
+        }
+        
+        function renderTokenCard(token) {
+            const perf = token.performance || {};
+            const metrics = token.metrics || {};
+            const status = perf.status || 'stable';
+            const gain = perf.current_gain || 0;
+            
+            return `
+                <div class="token-card">
+                    <div class="token-symbol">${token.symbol || '?'}</div>
+                    <div class="token-metric">Liq: $${(metrics.liq_usd || 0).toLocaleString()}</div>
+                    <div class="token-metric">${gain > 0 ? '+' : ''}${gain.toFixed(1)}%</div>
+                    <div class="token-status status-${status}">${status.toUpperCase()}</div>
+                </div>
+            `;
+        }
+        
+        function renderFeeds(data) {
+            const tokens = Object.values(data.tokens || {});
+            
+            // HOTLIST (0-1h, not rugged)
+            const hotlist = tokens.filter(t => t.category === 'HOTLIST' && t.risk?.level !== 'critical');
+            document.getElementById('hotlist-feed').innerHTML = hotlist.length ? 
+                hotlist.map(renderTokenCard).join('') : '<div class="loading">No active tokens</div>';
+            
+            // FAST (1-24h, not rugged)
+            const fast = tokens.filter(t => t.category === 'FAST' && t.risk?.level !== 'critical');
+            document.getElementById('fast-feed').innerHTML = fast.length ? 
+                fast.map(renderTokenCard).join('') : '<div class="loading">No active tokens</div>';
+            
+            // RUGGED
+            const rugged = tokens.filter(t => t.category === 'RUGGED' || t.risk?.level === 'critical');
+            document.getElementById('rugged-feed').innerHTML = rugged.length ? 
+                rugged.map(renderTokenCard).join('') : '<div class="loading">No rugged tokens</div>';
+        }
+        
+        // Load immediately and refresh every 10 seconds
+        loadData();
+        setInterval(loadData, REFRESH_INTERVAL);
+    </script>
+</body>
+</html>
