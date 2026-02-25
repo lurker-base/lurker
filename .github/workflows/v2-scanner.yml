@@ -1,0 +1,31 @@
+name: V2 Scanner
+
+on:
+  schedule:
+    - cron: '*/2 * * * *'  # Every 2 minutes
+  workflow_dispatch:
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: v2-refonte
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Scanner
+        run: python v2/scripts/scanner.py
+
+      - name: Commit state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add state/tokens.json || true
+          git diff --cached --quiet || git commit -m "v2: scan update [$(date +%H:%M)]"
+          git push || echo "Nothing to push"
