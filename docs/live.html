@@ -186,6 +186,50 @@
         /* Fallback for any emoji badges */
         .badge-default { background: #333; color: #999; }
         
+        /* Avatar styles for this page */
+        .avatar-section-fixed {
+            position: fixed;
+            top: 80px;
+            left: 20px;
+            z-index: 100;
+        }
+        
+        .avatar-circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #ff6b35 0%, #ff4500 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            box-shadow: 0 0 20px rgba(255, 107, 53, 0.5);
+        }
+        
+        .avatar-circle::before {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: rgba(255, 107, 53, 0.2);
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse-glow {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+        
+        .avatar-circle img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: relative;
+            z-index: 2;
+        }
+        
         .token-metric {
             text-align: right;
         }
@@ -264,11 +308,9 @@
     </nav>
 
     <!-- Avatar with Halo (Top Left) -->
-    <div class="avatar-section" style="position: fixed; top: 60px; left: 20px; z-index: 100;">
-        <div class="avatar-wrapper" id="avatar-wrapper">
-            <img src="assets/lurker-mascot-logo.png" alt="" class="avatar" style="width: 50px; height: 50px;">
-            <div class="avatar-glow" style="width: 60px; height: 60px;"></div>
-            <div class="sparks-container" id="sparks"></div>
+    <div class="avatar-section-fixed">
+        <div class="avatar-circle" id="avatar-wrapper">
+            <img src="assets/lurker-mascot-logo.png" alt="LURKER" onerror="this.style.display='none'">
         </div>
     </div>
 
@@ -415,12 +457,27 @@
                     return `<span class="badge badge-${badgeClass}">${b}</span>`;
                 }).join('');
                 
+                // Generate social links
+                const addr = token.address || '';
+                const dexscreenerLink = addr ? `https://dexscreener.com/base/${addr}` : '#';
+                const twitterLink = token.twitter || '';
+                const websiteLink = token.website || '';
+                
+                const socialHTML = `
+                    <div class="token-socials" style="margin-top: 0.3rem; display: flex; gap: 0.5rem;">
+                        <a href="${dexscreenerLink}" target="_blank" style="color: #ff6b35; font-size: 0.7rem; text-decoration: none;">dex</a>
+                        ${twitterLink ? `<a href="${twitterLink}" target="_blank" style="color: #60a5fa; font-size: 0.7rem; text-decoration: none;">x</a>` : ''}
+                        ${websiteLink ? `<a href="${websiteLink}" target="_blank" style="color: #4ade80; font-size: 0.7rem; text-decoration: none;">web</a>` : ''}
+                    </div>
+                `;
+                
                 return `
                     <div class="token-row">
                         <div class="token-info">
                             <span class="token-symbol">$${token.symbol || '?'}</span>
                             <span class="token-name">${token.name || 'unknown'}</span>
                             <div class="token-badges">${badgeHTML}</div>
+                            ${socialHTML}
                         </div>
                         <button class="token-category cat-${token.category || 'CIO'}">${token.category || 'CIO'}</button>
                         <div class="token-metric">

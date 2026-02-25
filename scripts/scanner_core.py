@@ -48,6 +48,29 @@ def safe_num(x, default=0):
     except:
         return default
 
+def get_token_profile(token_address):
+    """Get full profile with socials for a token"""
+    try:
+        r = requests.get(f"https://api.dexscreener.com/token-profiles/latest/v1", timeout=15)
+        r.raise_for_status()
+        profiles = r.json()
+        
+        for profile in profiles:
+            if profile.get("tokenAddress", "").lower() == token_address.lower():
+                return {
+                    "twitter": profile.get("twitterUrl", ""),
+                    "website": profile.get("websiteUrl", ""),
+                    "telegram": profile.get("telegramUrl", ""),
+                    "discord": profile.get("discordUrl", ""),
+                    "icon": profile.get("icon", ""),
+                    "description": profile.get("description", ""),
+                    "has_profile": bool(profile.get("icon") or profile.get("twitterUrl") or profile.get("websiteUrl"))
+                }
+        return None
+    except Exception as e:
+        print(f"[get_profile] Error: {e}")
+        return None
+
 def scan_dexscreener_profiles():
     """Tokens récemment créés (profils)"""
     try:
@@ -64,7 +87,11 @@ def scan_dexscreener_profiles():
                 "name": profile.get("name", "Unknown"),
                 "source": "profiles",
                 "icon": profile.get("icon", ""),
-                "description": profile.get("description", "")
+                "description": profile.get("description", ""),
+                "twitter": profile.get("twitterUrl", ""),
+                "website": profile.get("websiteUrl", ""),
+                "telegram": profile.get("telegramUrl", ""),
+                "has_profile": bool(profile.get("icon") or profile.get("twitterUrl") or profile.get("websiteUrl"))
             })
         return tokens
     except Exception as e:
@@ -195,6 +222,29 @@ def enrich_tokens_with_pairs(all_tokens, pairs_data):
     
     return enriched
 
+def detect_copycat(token, merged_tokens):
+    """Detect if token is a copycat of an existing token with same symbol"""
+    symbol = token.get("symbol", "").upper()
+    addr = token.get("address", "").lower()
+    liq = token.get("metrics", {}).get("liq_usd", 0) or 0
+    has_socials = token.get("has_profile", False) or token.get("twitter", "") or token.get("website", "")
+    
+    for existing_addr, existing in merged_tokens.items():
+        if existing.get("symbol", "").upper() == symbol:
+            if existing_addr.lower() != addr:
+                existing_liq = existing.get("metrics", {}).get("liq_usd", 0) or 0
+                existing_has_socials = existing.get("has_profile", False) or existing.get("twitter", "") or existing.get("website", "")
+                
+                # If existing has much higher liquidity and socials, this is likely a copycat
+                if existing_liq > liq * 10 and existing_has_socials and not has_socials:
+                    return True, existing_addr, existing_liq
+                
+                # If existing has socials and this one doesn't, likely copycat
+                if existing_has_socials and not has_socials:
+                    return True, existing_addr, existing_liq
+    
+    return False, None, 0
+
 def merge_tokens(sources):
     """Merge les tokens de toutes les sources sans doublons"""
     merged = {}
@@ -208,6 +258,7 @@ def merge_tokens(sources):
     pairs_data = [t for t in all_tokens if t.get("source") == "pairs"]
     enriched = enrich_tokens_with_pairs(all_tokens, pairs_data)
     
+    # First pass: add tokens with socials/profiles (likely legit)
     for token in enriched:
         addr = token.get("address")
         if not addr:
@@ -233,6 +284,15 @@ def merge_tokens(sources):
             token["performance"] = {"max_gain": 0, "current_gain": 0, "status": "new"}
             token["risk_tags"] = calculate_risk_tags(token)
             merged[addr] = token
+    
+    # Second pass: detect copycats
+    for addr, token in list(merged.items()):
+        is_copycat, original_addr, original_liq = detect_copycat(token, merged)
+        if is_copycat:
+            token["is_copycat"] = True
+            token["original_token"] = original_addr
+            token["risk_tags"].append("⚠️ COPYCAT")
+            print(f"  ⚠️ Copycat detected: {token['symbol']} (copy of {original_addr[:10]}...)")
     
     return merged
 

@@ -171,9 +171,30 @@ Patterns don't lie. 👁"""
         except:
             return 0
     
+    def is_likely_scam(self, token, state):
+        """Check if token is likely a scam/copycat"""
+        symbol = token.get("symbol", "").upper()
+        addr = token.get("address", "").lower()
+        liq = token.get("metrics", {}).get("liq_usd", 0) or 0
+        
+        # Check if there's another token with same symbol and higher liquidity
+        for other_addr, other_token in state.get("tokens", {}).items():
+            if other_token.get("symbol", "").upper() == symbol:
+                if other_addr.lower() != addr:
+                    other_liq = other_token.get("metrics", {}).get("liq_usd", 0) or 0
+                    # If this token has < 5% liquidity of the other, likely a copycat
+                    if liq > 0 and other_liq > 0 and liq < (other_liq * 0.05):
+                        return True, f"copycat (liq ${liq:,.0f} vs ${other_liq:,.0f})"
+        
+        # Very low liquidity = likely scam
+        if liq < 5000:
+            return True, f"low liquidity (${liq:,.0f})"
+        
+        return False, None
+    
     def process_alerts(self, state):
         tokens = state.get("tokens", {})
-        alerts_sent = {"pump": 0, "dump": 0, "skipped": 0}
+        alerts_sent = {"pump": 0, "dump": 0, "skipped": 0, "scam_filtered": 0}
         total_sent = 0
         MAX_ALERTS_PER_RUN = 2  # Limit to avoid spam
         
@@ -198,6 +219,15 @@ Patterns don't lie. 👁"""
             # Vérifier si déjà envoyé
             if self.was_alert_sent(addr, alert_type):
                 alerts_sent["skipped"] += 1
+                continue
+            
+            # Vérifier si c'est un scam/copycat
+            is_scam, reason = self.is_likely_scam(token, state)
+            if is_scam:
+                print(f"\n  🚫 {token['symbol']} filtered: {reason}")
+                alerts_sent["scam_filtered"] += 1
+                # Mark as sent to avoid future alerts
+                self.mark_alert_sent(addr, f"{token['symbol']} (SCAM)", alert_type, perf)
                 continue
             
             pending_alerts.append((addr, token, alert_type, perf))
