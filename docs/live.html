@@ -199,23 +199,22 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 120px;
-            height: 120px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
-            background: radial-gradient(circle, rgba(255, 107, 53, 0.5) 0%, rgba(255, 107, 53, 0.2) 40%, transparent 70%);
-            animation: pulse-glow-avatar 3s ease-in-out infinite;
+            background: radial-gradient(circle, rgba(255, 107, 53, 0.6) 0%, rgba(255, 107, 53, 0.3) 30%, rgba(255, 107, 53, 0.1) 50%, transparent 70%);
+            animation: pulse-glow-avatar 4s ease-in-out infinite;
             z-index: 1;
-            filter: blur(2px);
         }
         
         @keyframes pulse-glow-avatar {
             0%, 100% { 
-                opacity: 0.5;
+                opacity: 0.4;
                 transform: translate(-50%, -50%) scale(1);
             }
             50% { 
-                opacity: 0.9;
-                transform: translate(-50%, -50%) scale(1.15);
+                opacity: 0.8;
+                transform: translate(-50%, -50%) scale(1.2);
             }
         }
         
