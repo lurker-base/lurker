@@ -3,272 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hall of fame — lurker</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="alternate icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="style.css">
+    <title>Hall of Fame — LURKER</title>
     <style>
-        .hof-header {
-            text-align: center;
-            margin-bottom: 3rem;
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #0a0a0a;
+            color: #e0e0e0;
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
         }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
         
-        .hof-header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
+        h1 { 
+            color: #ffd700; 
+            font-size: 2.5rem; 
+            margin-bottom: 0.5rem;
+            letter-spacing: -1px;
         }
+        .subtitle { color: #666; margin-bottom: 2rem; }
         
-        .hof-header p {
-            color: var(--text-muted);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1rem;
-            margin-bottom: 3rem;
-        }
-        
-        .stat-card {
-            background: rgba(255,255,255,0.02);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1.5rem;
-            text-align: center;
-        }
-        
-        .stat-value {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: var(--accent);
-        }
-        
-        .stat-label {
-            color: var(--text-muted);
-            font-size: 0.9rem;
-            margin-top: 0.5rem;
-        }
-        
-        .section-title {
-            font-size: 1.5rem;
-            color: var(--accent);
-            margin: 2rem 0 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid var(--border);
-        }
-        
-        .winner-card {
-            background: rgba(255,255,255,0.02);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 1rem;
-            position: relative;
-            border-left: 4px solid #ffd700;
-        }
-        
-        .winner-card.top-performer {
-            border-left-color: #00ff00;
-        }
-        
-        .winner-header {
+        /* Podium top 3 */
+        .podium {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
-        
-        .winner-symbol {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        
-        .winner-badge {
-            background: linear-gradient(135deg, #ffd700, #ffaa00);
-            color: #000;
-            padding: 0.25rem 0.75rem;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: bold;
-        }
-        
-        .winner-badge.top {
-            background: linear-gradient(135deg, #00ff00, #00aa00);
-        }
-        
-        .winner-metrics {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+            align-items: flex-end;
             gap: 1rem;
-            margin: 1rem 0;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
         }
-        
-        .metric {
+        .podium-item {
             text-align: center;
+            padding: 1.5rem;
+            background: #151515;
+            border: 1px solid #333;
+            min-width: 120px;
         }
-        
-        .metric-value {
+        .podium-item.first {
+            background: linear-gradient(180deg, #ffd70033 0%, #151515 100%);
+            border-color: #ffd700;
+            order: 2;
+            padding: 2rem 1.5rem;
+        }
+        .podium-item.second {
+            background: linear-gradient(180deg, #c0c0c033 0%, #151515 100%);
+            border-color: #c0c0c0;
+            order: 1;
+        }
+        .podium-item.third {
+            background: linear-gradient(180deg, #cd7f3233 0%, #151515 100%);
+            border-color: #cd7f32;
+            order: 3;
+        }
+        .podium-rank {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .podium-symbol {
             font-size: 1.5rem;
             font-weight: bold;
-            color: #00ff00;
+            margin-bottom: 0.5rem;
+        }
+        .podium-gain {
+            font-size: 1.25rem;
+            color: #22c55e;
+            font-weight: bold;
         }
         
-        .metric-label {
-            font-size: 0.8rem;
-            color: var(--text-muted);
+        /* Liste des gagnants */
+        .winners-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
         }
         
-        .empty-state {
+        .winner-row {
+            display: grid;
+            grid-template-columns: 50px 1fr 100px 100px;
+            gap: 1rem;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            background: #151515;
+            border: 1px solid #222;
+        }
+        .winner-row:hover {
+            border-color: #444;
+        }
+        
+        .winner-rank {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #666;
+        }
+        .winner-rank.top {
+            color: #ffd700;
+        }
+        
+        .winner-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        .winner-date {
+            color: #666;
+            font-size: 0.85rem;
+        }
+        
+        .winner-gain {
+            text-align: right;
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #22c55e;
+        }
+        
+        .winner-proof {
+            text-align: right;
+        }
+        .proof-link {
+            color: #ff6b35;
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+        .proof-link:hover {
+            text-decoration: underline;
+        }
+        
+        .loading {
             text-align: center;
             padding: 3rem;
-            color: var(--text-muted);
-        }
-        
-        @media (max-width: 768px) {
-            .winner-metrics {
-                grid-template-columns: 1fr;
-            }
+            color: #666;
         }
     </style>
 </head>
 <body>
-    <div class="bg-grid"></div>
-    
-    <nav class="nav">
-        <a href="index.html" class="nav-link">lurker</a>
-        <a href="token.html" class="nav-link">token</a>
-        <a href="origin.html" class="nav-link">origin</a>
-        <a href="live.html" class="nav-link">live</a>
-        <a href="become.html" class="nav-link">become</a>
-        <a href="proof.html" class="nav-link">proof</a>
-        <a href="predictions.html" class="nav-link">predictions</a>
-        <a href="hof.html" class="nav-link active">🏆 hof</a>
-        <a href="subscribe.html" class="nav-link">subscribe</a>
-        <a href="https://x.com/LURKER_AI2026" class="nav-link" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-    </nav>
-    
-    <main class="main">
-        <div class="container">
-            <div class="hof-header">
-                <h1>🏆 hall of fame</h1>
-                <p>tokens that proved us right. early detection, real gains.</p>
-            </div>
-            
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-value" id="stat-total">--</div>
-                    <div class="stat-label">Certified Winners</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value" id="stat-winrate">--%</div>
-                    <div class="stat-label">Win Rate</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value" id="stat-avg">--%</div>
-                    <div class="stat-label">Avg Gain</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value" id="stat-top">--</div>
-                    <div class="stat-label">Top Performers</div>
-                </div>
-            </div>
-            
-            <h2 class="section-title">🚀 Top Performers (Real-time)</h2>
-            <div id="top-performers">
-                <div class="loading">scanning for winners...</div>
-            </div>
-            
-            <h2 class="section-title">🏅 Hall of Fame (+50% Confirmed)</h2>
-            <div id="hall-of-fame">
-                <div class="loading">loading champions...</div>
-            </div>
-        </div>
-    </main>
-    
-    <script src="sparks.js"></script>
-    <script>
-        const REPO_RAW = 'https://raw.githubusercontent.com/lurker-base/lurker/main';
+    <div class="container">
+        <h1>🏆 Hall of Fame</h1>
+        <p class="subtitle">Tokens that proved us right. +50% minimum.</p>
         
+        <div class="podium" id="podium">
+            <div class="loading">Loading champions...</div>
+        </div>
+        
+        <div class="winners-list" id="winners">
+        </div>
+    </div>
+
+    <script>
         async function loadHallOfFame() {
             try {
-                // Load Hall of Fame
-                const hofRes = await fetch(`${REPO_RAW}/signals/hall_of_fame.json?t=${Date.now()}`, { cache: 'no-store' });
-                const hof = hofRes.ok ? await hofRes.json() : { certified: [], meta: {} };
+                const res = await fetch('https://raw.githubusercontent.com/lurker-base/lurker/main/data/signals/hall_of_fame.json?t=' + Date.now());
+                const data = await res.json();
                 
-                // Load Top Performers
-                const topRes = await fetch(`${REPO_RAW}/signals/top_performers.json?t=${Date.now()}`, { cache: 'no-store' });
-                const top = topRes.ok ? await topRes.json() : { performers: [] };
+                const winners = data.certified || [];
                 
-                // Update stats
-                document.getElementById('stat-total').textContent = hof.certified?.length || 0;
-                document.getElementById('stat-winrate').textContent = Math.round(hof.meta?.win_rate || 0) + '%';
-                document.getElementById('stat-avg').textContent = Math.round(hof.meta?.average_gain_pct || 0) + '%';
-                document.getElementById('stat-top').textContent = top.performers?.length || 0;
+                // Sort by gain
+                winners.sort((a, b) => b.certified_gain - a.certified_gain);
                 
-                // Render Top Performers
-                const topContainer = document.getElementById('top-performers');
-                if (top.performers && top.performers.length > 0) {
-                    topContainer.innerHTML = top.performers.map(p => `
-                        <div class="winner-card top-performer">
-                            <div class="winner-header">
-                                <span class="winner-symbol">$${p.token.symbol}</span>
-                                <span class="winner-badge top">+${p.gain_1h_pct}% / 1h</span>
-                            </div>
-                            <div class="winner-metrics">
-                                <div class="metric">
-                                    <div class="metric-value">+${p.gain_1h_pct}%</div>
-                                    <div class="metric-label">1h Gain</div>
-                                </div>
-                                <div class="metric">
-                                    <div class="metric-value">$${p.current_price.toExponential(4)}</div>
-                                    <div class="metric-label">Current Price</div>
-                                </div>
-                            </div>
+                // Podium (top 3)
+                const podium = document.getElementById('podium');
+                if (winners.length >= 3) {
+                    podium.innerHTML = `
+                        <div class="podium-item second">
+                            <div class="podium-rank">🥈</div>
+                            <div class="podium-symbol">$${winners[1].token?.symbol || '?'}</div>
+                            <div class="podium-gain">+${winners[1].certified_gain.toFixed(0)}%</div>
                         </div>
-                    `).join('');
+                        <div class="podium-item first">
+                            <div class="podium-rank">🥇</div>
+                            <div class="podium-symbol">$${winners[0].token?.symbol || '?'}</div>
+                            <div class="podium-gain">+${winners[0].certified_gain.toFixed(0)}%</div>
+                        </div>
+                        <div class="podium-item third">
+                            <div class="podium-rank">🥉</div>
+                            <div class="podium-symbol">$${winners[2].token?.symbol || '?'}</div>
+                            <div class="podium-gain">+${winners[2].certified_gain.toFixed(0)}%</div>
+                        </div>
+                    `;
                 } else {
-                    topContainer.innerHTML = '<div class="empty-state">No top performers right now. Check back soon.</div>';
+                    podium.innerHTML = '<div class="loading">Waiting for champions...</div>';
                 }
                 
-                // Render Hall of Fame
-                const hofContainer = document.getElementById('hall-of-fame');
-                if (hof.certified && hof.certified.length > 0) {
-                    hofContainer.innerHTML = hof.certified.map(c => `
-                        <div class="winner-card">
-                            <div class="winner-header">
-                                <span class="winner-symbol">$${c.token.symbol}</span>
-                                <span class="winner-badge">+${c.gain_pct}%</span>
+                // List (remaining)
+                const list = document.getElementById('winners');
+                const remaining = winners.slice(3);
+                
+                if (remaining.length === 0) {
+                    list.innerHTML = '<div class="loading">More winners coming soon...</div>';
+                } else {
+                    list.innerHTML = remaining.map((w, i) => `
+                        <div class="winner-row">
+                            <div class="winner-rank">#${i + 4}</div>
+                            <div>
+                                <div class="winner-name">$${w.token?.symbol || '?'}</div>
+                                <div class="winner-date">${new Date(w.first_seen).toLocaleDateString()}</div>
                             </div>
-                            <div class="winner-metrics">
-                                <div class="metric">
-                                    <div class="metric-value">+${c.gain_pct}%</div>
-                                    <div class="metric-label">Total Gain</div>
-                                </div>
-                                <div class="metric">
-                                    <div class="metric-value">+${c.max_gain_pct}%</div>
-                                    <div class="metric-label">Peak Gain</div>
-                                </div>
-                                <div class="metric">
-                                    <div class="metric-value">${c.age_hours}h</div>
-                                    <div class="metric-label">Age</div>
-                                </div>
+                            <div class="winner-gain">+${w.certified_gain.toFixed(0)}%</div>
+                            <div class="winner-proof">
+                                <a href="https://github.com/lurker-base/lurker/blob/main/state/token_registry.json" 
+                                   class="proof-link" target="_blank">Proof →</a>
                             </div>
                         </div>
                     `).join('');
-                } else {
-                    hofContainer.innerHTML = '<div class="empty-state">No certified winners yet. First entries coming soon.</div>';
                 }
                 
             } catch (e) {
-                console.error('Error loading Hall of Fame:', e);
-                document.getElementById('hall-of-fame').innerHTML = '<div class="empty-state">Loading from blockchain...</div>';
+                document.getElementById('podium').innerHTML = 
+                    '<div class="loading">Loading champions...</div>';
             }
         }
         
         loadHallOfFame();
-        setInterval(loadHallOfFame, 60000); // Refresh every minute
+        setInterval(loadHallOfFame, 60000);
     </script>
 </body>
 </html>

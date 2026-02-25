@@ -2,439 +2,208 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <title>predictions — lurker</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="alternate icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="style.css?v=3">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictions — LURKER</title>
     <style>
-        .predictions-header {
-            text-align: center;
-            margin-bottom: 3rem;
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #0a0a0a;
+            color: #e0e0e0;
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
         }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
         
-        .predictions-header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
+        h1 { 
+            color: #ff6b35; 
+            font-size: 2.5rem; 
+            margin-bottom: 0.5rem;
+            letter-spacing: -1px;
         }
+        .subtitle { color: #666; margin-bottom: 2rem; }
         
-        .predictions-header p {
-            color: var(--text-muted);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        .proof-banner {
-            background: rgba(0, 255, 0, 0.1);
-            border: 1px solid rgba(0, 255, 0, 0.3);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-        
-        .proof-banner h3 {
-            color: #00ff00;
-            margin: 0 0 0.5rem;
-        }
-        
-        .proof-banner p {
-            color: #aaa;
-            margin: 0;
-            font-size: 0.9rem;
-        }
-        
-        .stats-grid {
+        /* Stats en haut */
+        .stats {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 1rem;
             margin-bottom: 3rem;
         }
-        
-        .stat-card {
-            background: rgba(255,255,255,0.02);
-            border: 1px solid var(--border);
-            border-radius: 8px;
+        .stat-box {
+            background: #151515;
+            border: 1px solid #222;
             padding: 1.5rem;
             text-align: center;
         }
-        
-        .stat-value {
-            font-size: 2.5rem;
+        .stat-number {
+            font-size: 3rem;
             font-weight: bold;
-            color: var(--accent);
+            color: #ff6b35;
+        }
+        .stat-label {
+            color: #888;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         
-        .stat-label {
-            color: var(--text-muted);
+        /* Liste des prédictions */
+        .prediction-list { display: flex; flex-direction: column; gap: 1rem; }
+        
+        .prediction-card {
+            background: #151515;
+            border-left: 4px solid #ff6b35;
+            padding: 1.5rem;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 1.5rem;
+            align-items: center;
+        }
+        .prediction-card.dump {
+            border-left-color: #ef4444;
+        }
+        .prediction-card.pump {
+            border-left-color: #22c55e;
+        }
+        
+        .token-icon {
+            width: 50px;
+            height: 50px;
+            background: #222;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .token-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.25rem;
+        }
+        .token-meta {
+            color: #888;
             font-size: 0.9rem;
+        }
+        
+        .token-result {
+            text-align: right;
+        }
+        .result-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        .result-dump {
+            background: #7f1d1d;
+            color: #fca5a5;
+        }
+        .result-pump {
+            background: #14532d;
+            color: #86efac;
+        }
+        .result-accuracy {
+            color: #666;
+            font-size: 0.8rem;
             margin-top: 0.5rem;
         }
         
-        .prediction-list {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        
-        .prediction-card {
-            background: rgba(255,255,255,0.02);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 1rem;
-            position: relative;
-        }
-        
-        .prediction-card.confirmed {
-            border-left: 4px solid #00ff00;
-        }
-        
-        .prediction-card.false-positive {
-            border-left: 4px solid #ff6600;
-        }
-        
-        .prediction-card.pending {
-            border-left: 4px solid #ffcc00;
-        }
-        
-        .prediction-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
-        
-        .prediction-token {
-            font-size: 1.3rem;
-            font-weight: bold;
-        }
-        
-        .prediction-status {
-            padding: 0.25rem 0.75rem;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-        
-        .prediction-status.confirmed {
-            background: rgba(0, 255, 0, 0.2);
-            color: #00ff00;
-        }
-        
-        .prediction-status.false-positive {
-            background: rgba(255, 102, 0, 0.2);
-            color: #ff6600;
-        }
-        
-        .prediction-status.pending {
-            background: rgba(255, 204, 0, 0.2);
-            color: #ffcc00;
-        }
-        
-        .prediction-times {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-            margin-bottom: 1rem;
-            font-size: 0.9rem;
-        }
-        
-        .time-box {
-            background: rgba(0,0,0,0.3);
-            padding: 0.75rem;
-            border-radius: 6px;
-        }
-        
-        .time-label {
+        .loading {
+            text-align: center;
+            padding: 3rem;
             color: #666;
-            font-size: 0.75rem;
-            text-transform: uppercase;
-        }
-        
-        .time-value {
-            color: #fff;
-            font-family: monospace;
-            font-size: 0.85rem;
-        }
-        
-        .prediction-risks {
-            margin: 1rem 0;
-        }
-        
-        .risk-tag {
-            display: inline-block;
-            padding: 0.2rem 0.5rem;
-            background: rgba(255,0,0,0.1);
-            border: 1px solid rgba(255,0,0,0.3);
-            border-radius: 3px;
-            font-size: 0.75rem;
-            color: #ff4444;
-            margin-right: 0.5rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .prediction-proof {
-            background: rgba(0,0,0,0.3);
-            padding: 1rem;
-            border-radius: 6px;
-            margin-top: 1rem;
-        }
-        
-        .proof-link {
-            color: var(--accent);
-            text-decoration: none;
-            font-size: 0.85rem;
-        }
-        
-        .proof-link:hover {
-            text-decoration: underline;
-        }
-        
-        .accuracy-highlight {
-            background: rgba(0,255,0,0.1);
-            border-left: 3px solid #00ff00;
-            padding: 1rem;
-            margin: 1rem 0;
-        }
-        
-        .accuracy-highlight h4 {
-            color: #00ff00;
-            margin: 0 0 0.5rem;
-        }
-        
-        @media (max-width: 768px) {
-            .prediction-times {
-                grid-template-columns: 1fr;
-            }
-            
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
         }
     </style>
 </head>
 <body>
-    <div class="bg-grid"></div>
-    
-                <nav class="nav">
-        <a href="index.html" class="nav-link">lurker</a>
-        <a href="token.html" class="nav-link">token</a>
-        <a href="origin.html" class="nav-link">origin</a>
-        <a href="live.html" class="nav-link">live</a>
-        <a href="become.html" class="nav-link">become</a>
-        <a href="proof.html" class="nav-link">proof</a>
-        <a href="predictions.html" class="nav-link active">predictions</a>
-        <a href="subscribe.html" class="nav-link">subscribe</a>
-        <a href="https://x.com/LURKER_AI2026" class="nav-link" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-top:-2px"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-    </nav>
-    
-    <main class="main">
-        <div class="container">
-            <div class="predictions-header">
-                <h1>predictions</h1>
-                <p>immutable proof of early warnings. every risk flagged is recorded with cryptographic timestamps.</p>
+    <div class="container">
+        <h1>🎯 Predictions</h1>
+        <p class="subtitle">What we saw vs what happened</p>
+        
+        <div class="stats">
+            <div class="stat-box">
+                <div class="stat-number" id="total-warnings">-</div>
+                <div class="stat-label">Warnings</div>
             </div>
-            
-            <div class="proof-banner">
-                <h3>🔒 Cryptographic Proof</h3>
-                <p>All predictions are committed to git with timestamps. Git commits are immutable and publicly verifiable on GitHub.</p>
+            <div class="stat-box">
+                <div class="stat-number" id="confirmed">-</div>
+                <div class="stat-label">Confirmed</div>
             </div>
-            
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-value" id="stat-total">--</div>
-                    <div class="stat-label">Warnings</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value" id="stat-confirmed">--</div>
-                    <div class="stat-label">Confirmed</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value" id="stat-accuracy">--%</div>
-                    <div class="stat-label">Accuracy</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value" id="stat-avg-time">--h</div>
-                    <div class="stat-label">Avg Early</div>
-                </div>
-            </div>
-            
-            <div class="prediction-list" id="prediction-list">
-                <div class="loading">loading predictions...</div>
+            <div class="stat-box">
+                <div class="stat-number" id="accuracy">-</div>
+                <div class="stat-label">% Accuracy</div>
             </div>
         </div>
-    </main>
-    
-    <script src="sparks.js"></script>
+        
+        <div class="prediction-list" id="predictions">
+            <div class="loading">Loading predictions...</div>
+        </div>
+    </div>
+
     <script>
-        // Load real predictions from state/risk_warnings.json
-        
-        function formatTime(isoString) {
-            const date = new Date(isoString);
-            return date.toLocaleString('en-US', {
-                month: 'short',
-                day: 'numeric',
-                hour: '2-digit',
-                minute: '2-digit',
-                timeZoneName: 'short'
-            });
-        }
-        
-        function calculateHoursEarly(prediction, outcome) {
-            const pred = new Date(prediction);
-            const out = new Date(outcome);
-            return ((out - pred) / (1000 * 60 * 60)).toFixed(1);
-        }
-        
-        function renderPredictions(predictions) {
-            const container = document.getElementById('prediction-list');
-            
-            if (!predictions || predictions.length === 0) {
-                container.innerHTML = '<div class="empty">no predictions logged yet</div>';
-                return;
-            }
-            
-            // Sort by timestamp (newest first)
-            predictions.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
-            
-            container.innerHTML = predictions.map(p => {
-                const hoursEarly = p.outcome_timestamp ? calculateHoursEarly(p.timestamp, p.outcome_timestamp) : null;
-                
-                return `
-                    <div class="prediction-card ${p.status}">
-                        <div class="prediction-header">
-                            <span class="prediction-token">$${p.token_symbol}</span>
-                            <span class="prediction-status ${p.status}">${p.status}</span>
-                        </div>
-                        
-                        <div class="prediction-times">
-                            <div class="time-box">
-                                <div class="time-label">Warning Issued</div>
-                                <div class="time-value">${formatTime(p.timestamp)}</div>
-                            </div>
-                            ${p.outcome_timestamp ? `
-                            <div class="time-box">
-                                <div class="time-label">Outcome Confirmed</div>
-                                <div class="time-value">${formatTime(p.outcome_timestamp)}</div>
-                            </div>
-                            ` : '<div class="time-box"><div class="time-label">Status</div><div class="time-value">Pending...</div></div>'}
-                        </div>
-                        
-                        ${hoursEarly ? `
-                        <div class="accuracy-highlight">
-                            <h4>⚡ ${hoursEarly} Hours Early</h4>
-                            <p style="margin:0; font-size:0.9rem; color:#aaa;">
-                                Flagged <strong>${p.risk_type}</strong> risk ${hoursEarly} hours before ${p.outcome === 'rug_confirmed' ? 'rug pull' : 'dump'}
-                            </p>
-                        </div>
-                        ` : ''}
-                        
-                        <div class="prediction-risks">
-                            ${p.risk_factors.map(f => `<span class="risk-tag">${f}</span>`).join('')}
-                        </div>
-                        
-                        <div class="prediction-proof">
-                            <strong>Proof:</strong> 
-                            <a href="https://github.com/lurker-base/lurker/blob/main/state/risk_warnings.json" class="proof-link" target="_blank">
-                                View Immutable Record →
-                            </a>
-                            <br>
-                            <small style="color:#666;">
-                                Warning ID: ${p.id} • 
-                                Address: ${p.token_address.substring(0, 10)}...${p.token_address.slice(-4)}
-                            </small>
-                        </div>
-                    </div>
-                `;
-            }).join('');
-            
-            // Update stats
-            const confirmed = predictions.filter(p => p.status === 'confirmed').length;
-            const accuracy = confirmed > 0 ? Math.round((confirmed / predictions.length) * 100) : 0;
-            const avgHours = predictions.filter(p => p.outcome_timestamp)
-                .reduce((sum, p) => sum + parseFloat(calculateHoursEarly(p.timestamp, p.outcome_timestamp)), 0) / confirmed || 0;
-            
-            document.getElementById('stat-total').textContent = predictions.length;
-            document.getElementById('stat-confirmed').textContent = confirmed;
-            document.getElementById('stat-accuracy').textContent = accuracy + '%';
-            document.getElementById('stat-avg-time').textContent = avgHours.toFixed(1) + 'h';
-        }
-        
-        // Load predictions from GitHub (public raw file)
         async function loadPredictions() {
             try {
-                // Load from GitHub raw - this is always up to date
-                const response = await fetch('https://raw.githubusercontent.com/lurker-base/lurker/main/state/risk_warnings.json?t=' + Date.now(), {
-                    cache: 'no-store'
-                });
+                const res = await fetch('https://raw.githubusercontent.com/lurker-base/lurker/main/state/risk_warnings.json?t=' + Date.now());
+                const data = await res.json();
                 
-                if (response.ok) {
-                    const data = await response.json();
-                    
-                    // Combine both warnings and predictions list
-                    let allPredictions = [];
-                    
-                    // Add individual warnings (HEDW, EARENDEL, etc.)
-                    for (const [key, value] of Object.entries(data)) {
-                        if (key.startsWith('warn_')) {
-                            // Warning format
-                            allPredictions.push({
-                                id: value.id,
-                                token_symbol: value.token_symbol,
-                                token_address: value.token_address,
-                                timestamp: value.timestamp,
-                                risk_type: value.risk_type,
-                                risk_factors: value.risk_factors || [],
-                                status: value.status,
-                                outcome: value.outcome,
-                                outcome_timestamp: value.outcome_timestamp
-                            });
-                        }
-                    }
-                    
-                    // Add predictions list if exists (from pump_dump_detector)
-                    if (data.predictions && Array.isArray(data.predictions)) {
-                        for (const pred of data.predictions) {
-                            allPredictions.push({
-                                id: pred.type + '_' + pred.token,
-                                token_symbol: pred.token,
-                                token_address: pred.address,
-                                timestamp: pred.detected_at,
-                                risk_type: pred.type === 'PUMP' ? 'pump_detected' : 'dump_detected',
-                                risk_factors: [pred.type + ' +', pred.performance.toFixed(0) + '%'],
-                                status: pred.status,
-                                outcome: pred.type === 'PUMP' ? 'pump_confirmed' : 'dump_confirmed',
-                                outcome_timestamp: pred.detected_at
-                            });
-                        }
-                    }
-                    
-                    if (allPredictions.length > 0) {
-                        renderPredictions(allPredictions);
-                        return;
+                const predictions = [];
+                
+                // Extraire les warnings
+                for (const [key, value] of Object.entries(data)) {
+                    if (key.startsWith('warn_')) {
+                        predictions.push({
+                            symbol: value.token_symbol,
+                            type: value.risk_type.includes('pump') ? 'pump' : 'dump',
+                            result: value.outcome,
+                            accuracy: value.status === 'confirmed' ? 100 : 0,
+                            date: new Date(value.timestamp).toLocaleDateString()
+                        });
                     }
                 }
                 
-                // Fallback: show message if no predictions yet
-                document.getElementById('prediction-list').innerHTML = 
-                    '<div class="empty">No predictions logged yet. First warnings will appear here.</div>';
+                // Stats
+                const total = predictions.length;
+                const confirmed = predictions.filter(p => p.accuracy === 100).length;
+                const accuracy = total > 0 ? Math.round((confirmed / total) * 100) : 0;
                 
-                // Update stats to 0
-                document.getElementById('stat-total').textContent = '0';
-                document.getElementById('stat-confirmed').textContent = '0';
-                document.getElementById('stat-accuracy').textContent = '0%';
-                document.getElementById('stat-avg-time').textContent = '0h';
+                document.getElementById('total-warnings').textContent = total;
+                document.getElementById('confirmed').textContent = confirmed;
+                document.getElementById('accuracy').textContent = accuracy + '%';
+                
+                // Render
+                const container = document.getElementById('predictions');
+                if (predictions.length === 0) {
+                    container.innerHTML = '<div class="loading">No predictions yet</div>';
+                    return;
+                }
+                
+                container.innerHTML = predictions.map(p => `
+                    <div class="prediction-card ${p.type}">
+                        <div class="token-icon">${p.symbol[0]}</div>
+                        <div class="token-info">
+                            <h3>$${p.symbol}</h3>
+                            <div class="token-meta">${p.date} • ${p.type.toUpperCase()} detected</div>
+                        </div>
+                        <div class="token-result">
+                            <span class="result-badge result-${p.result === 'rug_confirmed' || p.result === 'dump_confirmed' ? 'dump' : 'pump'}">
+                                ${p.result === 'rug_confirmed' ? 'RUG' : p.result === 'dump_confirmed' ? 'DUMP' : 'PUMP'} ✓
+                            </span>
+                            <div class="result-accuracy">${p.accuracy}% accurate</div>
+                        </div>
+                    </div>
+                `).join('');
                 
             } catch (e) {
-                console.log('Error loading predictions:', e);
-                document.getElementById('prediction-list').innerHTML = 
-                    '<div class="empty">Loading predictions from blockchain...</div>';
+                document.getElementById('predictions').innerHTML = 
+                    '<div class="loading">Error loading data. Retrying...</div>';
             }
         }
         
         loadPredictions();
+        setInterval(loadPredictions, 60000);
     </script>
 </body>
 </html>
