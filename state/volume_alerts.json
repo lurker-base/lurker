@@ -345,6 +345,38 @@
       "new_volume": 103156.08,
       "spike_ratio": 1069.1965174129355,
       "timestamp": "2026-02-25T02:50:09.335249+00:00"
+    },
+    {
+      "type": "dump_warning",
+      "token": "SMOL",
+      "risk_factors": [
+        "dumping"
+      ],
+      "timestamp": "2026-02-25T05:17:41.082054+00:00"
+    },
+    {
+      "type": "dump_warning",
+      "token": "TAKEOVER",
+      "risk_factors": [
+        "dumping"
+      ],
+      "timestamp": "2026-02-25T05:17:41.082077+00:00"
+    },
+    {
+      "type": "dump_warning",
+      "token": "TAKEOVER",
+      "risk_factors": [
+        "dumping"
+      ],
+      "timestamp": "2026-02-25T05:17:41.082090+00:00"
+    },
+    {
+      "type": "dump_warning",
+      "token": "Spawnr",
+      "risk_factors": [
+        "dumping"
+      ],
+      "timestamp": "2026-02-25T05:17:41.082145+00:00"
     }
   ]
 }
