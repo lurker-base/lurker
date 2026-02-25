@@ -1,0 +1,104 @@
+{
+  "schema": "lurker_v1.5",
+  "meta": {
+    "last_scan": "2026-02-25T04:30:00Z",
+    "last_lifecycle": "2026-02-25T04:30:00Z",
+    "total_tokens": 5,
+    "version": "1.5.0",
+    "stats": {
+      "by_category": {"CIO": 2, "WATCH": 1, "HOTLIST": 1, "CERTIFIED": 0, "RUGGED": 1, "ARCHIVED": 0},
+      "pumps_24h": 1,
+      "dumps_24h": 1
+    }
+  },
+  "tokens": {
+    "0x1234567890abcdef1234567890abcdef12345678": {
+      "address": "0x1234567890abcdef1234567890abcdef12345678",
+      "symbol": "TEST1",
+      "name": "Test Token One",
+      "pair_address": "0xabcd",
+      "dex": "aerodrome",
+      "source": "pairs",
+      "sources": ["pairs"],
+      "detected_at": "2026-02-25T04:20:00Z",
+      "category": "CIO",
+      "age_minutes": 10,
+      "metrics": {
+        "liq_usd": 5000,
+        "price_usd": 0.0001,
+        "vol_5m_usd": 1200,
+        "vol_1h_usd": 5000,
+        "vol_24h_usd": 25000,
+        "txns_5m": 15,
+        "price_change_24h": 25,
+        "market_cap": 50000
+      },
+      "risk": {"level": "low", "factors": []},
+      "risk_tags": ["FRESH"],
+      "performance": {"max_gain": 25, "current_gain": 25, "status": "stable"},
+      "price_history": [
+        {"timestamp": "2026-02-25T04:20:00Z", "price": 0.00008},
+        {"timestamp": "2026-02-25T04:30:00Z", "price": 0.0001}
+      ]
+    },
+    "0xabcdef1234567890abcdef1234567890abcdef12": {
+      "address": "0xabcdef1234567890abcdef1234567890abcdef12",
+      "symbol": "PUMP",
+      "name": "Pump Token",
+      "pair_address": "0xefgh",
+      "dex": "uniswap",
+      "source": "pairs",
+      "sources": ["pairs", "boosts"],
+      "detected_at": "2026-02-25T03:00:00Z",
+      "category": "WATCH",
+      "age_minutes": 90,
+      "metrics": {
+        "liq_usd": 25000,
+        "price_usd": 0.001,
+        "vol_5m_usd": 5000,
+        "vol_1h_usd": 25000,
+        "vol_24h_usd": 100000,
+        "txns_5m": 45,
+        "price_change_24h": 150,
+        "market_cap": 250000
+      },
+      "risk": {"level": "low", "factors": []},
+      "risk_tags": ["HIGH_ACTIVITY"],
+      "performance": {"max_gain": 150, "current_gain": 120, "status": "pumping"},
+      "price_history": [
+        {"timestamp": "2026-02-25T03:00:00Z", "price": 0.0004},
+        {"timestamp": "2026-02-25T04:00:00Z", "price": 0.001}
+      ]
+    },
+    "0xdeadbeef1234567890abcdef1234567890abcdef": {
+      "address": "0xdeadbeef1234567890abcdef1234567890abcdef",
+      "symbol": "RUG",
+      "name": "Rug Pull Token",
+      "pair_address": "0xdead",
+      "dex": "aerodrome",
+      "source": "pairs",
+      "sources": ["pairs"],
+      "detected_at": "2026-02-25T02:00:00Z",
+      "category": "RUGGED",
+      "age_minutes": 150,
+      "metrics": {
+        "liq_usd": 0,
+        "price_usd": 0,
+        "vol_5m_usd": 0,
+        "vol_1h_usd": 0,
+        "vol_24h_usd": 5000,
+        "txns_5m": 0,
+        "price_change_24h": -100,
+        "market_cap": 0
+      },
+      "risk": {"level": "critical", "factors": ["rug_detected"]},
+      "risk_tags": [],
+      "performance": {"max_gain": 50, "current_gain": -100, "status": "dumping"},
+      "price_history": [
+        {"timestamp": "2026-02-25T02:00:00Z", "price": 0.0001},
+        {"timestamp": "2026-02-25T03:00:00Z", "price": 0.00015},
+        {"timestamp": "2026-02-25T04:30:00Z", "price": 0}
+      ]
+    }
+  }
+}
