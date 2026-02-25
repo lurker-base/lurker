@@ -177,6 +177,38 @@
         "dumping"
       ],
       "timestamp": "2026-02-24T23:58:56.091333+00:00"
+    },
+    {
+      "type": "dump_warning",
+      "token": "SMOL",
+      "risk_factors": [
+        "dumping"
+      ],
+      "timestamp": "2026-02-25T00:02:28.252317+00:00"
+    },
+    {
+      "type": "dump_warning",
+      "token": "TAKEOVER",
+      "risk_factors": [
+        "dumping"
+      ],
+      "timestamp": "2026-02-25T00:02:28.252350+00:00"
+    },
+    {
+      "type": "dump_warning",
+      "token": "TAKEOVER",
+      "risk_factors": [
+        "dumping"
+      ],
+      "timestamp": "2026-02-25T00:02:28.252363+00:00"
+    },
+    {
+      "type": "dump_warning",
+      "token": "Spawnr",
+      "risk_factors": [
+        "dumping"
+      ],
+      "timestamp": "2026-02-25T00:02:28.252591+00:00"
     }
   ]
 }

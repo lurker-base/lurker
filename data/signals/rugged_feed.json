@@ -20,8 +20,8 @@
       "timestamps": {
         "pair_created_at": "2026-02-24T21:09:35+00:00",
         "token_first_seen": "2026-02-24T21:53:40.443000+00:00",
-        "age_minutes": 125.3,
-        "age_hours": 2.09
+        "age_minutes": 128.8,
+        "age_hours": 2.15
       },
       "scores": {
         "cio_score": 100,
@@ -30,9 +30,9 @@
       "risks": [
         "dumping"
       ],
-      "risk_level": "medium",
+      "risk_level": "critical",
       "source": "profiles",
-      "status": "observing",
+      "status": "rugged",
       "quality": {
         "has_profile": true,
         "has_image": true,
@@ -41,9 +41,6 @@
         "quality_score": 75
       },
       "badges": [
-        "\ud83d\udd25 HOT",
-        "\ud83d\udcc8 HIGH_VOLUME",
-        "\ud83d\udd0d WATCH",
         "\ud83d\udc80 RUGGED"
       ],
       "category": "WATCH",
@@ -77,17 +74,17 @@
       "timestamps": {
         "pair_created_at": "2026-02-24T20:46:55+00:00",
         "token_first_seen": "2026-02-24T21:53:40.443000+00:00",
-        "age_minutes": 125.3,
-        "age_hours": 2.09
+        "age_minutes": 128.8,
+        "age_hours": 2.15
       },
       "scores": {
         "cio_score": 100,
         "freshness": 0.98
       },
       "risks": [],
-      "risk_level": "low",
+      "risk_level": "critical",
       "source": "profiles",
-      "status": "observing",
+      "status": "rugged",
       "quality": {
         "has_profile": true,
         "has_image": true,
@@ -96,8 +93,6 @@
         "quality_score": 75
       },
       "badges": [
-        "\ud83d\udd25 HOT",
-        "\ud83d\udcc8 HIGH_VOLUME",
         "\ud83d\udc80 RUGGED"
       ],
       "category": "WATCH",
@@ -130,8 +125,8 @@
       "timestamps": {
         "pair_created_at": "2026-02-24T20:19:19+00:00",
         "token_first_seen": "2026-02-24T21:53:40.443000+00:00",
-        "age_minutes": 125.3,
-        "age_hours": 2.09
+        "age_minutes": 128.8,
+        "age_hours": 2.15
       },
       "scores": {
         "cio_score": 100,
@@ -140,9 +135,9 @@
       "risks": [
         "dumping"
       ],
-      "risk_level": "medium",
+      "risk_level": "critical",
       "source": "profiles",
-      "status": "observing",
+      "status": "rugged",
       "quality": {
         "has_profile": true,
         "has_image": true,
@@ -151,10 +146,6 @@
         "quality_score": 75
       },
       "badges": [
-        "\ud83d\udd25 HOT",
-        "\ud83d\udcab ACTIVE",
-        "\ud83d\udca7 GOOD_LIQ",
-        "\ud83d\udd0d WATCH",
         "\ud83d\udc80 RUGGED"
       ],
       "category": "WATCH",
@@ -188,8 +179,8 @@
       "timestamps": {
         "pair_created_at": "2026-02-24T19:15:17+00:00",
         "token_first_seen": "2026-02-24T21:53:40.443000+00:00",
-        "age_minutes": 125.3,
-        "age_hours": 2.09
+        "age_minutes": 128.8,
+        "age_hours": 2.15
       },
       "scores": {
         "cio_score": 100,
@@ -198,9 +189,9 @@
       "risks": [
         "dumping"
       ],
-      "risk_level": "medium",
+      "risk_level": "critical",
       "source": "profiles",
-      "status": "observing",
+      "status": "rugged",
       "quality": {
         "has_profile": true,
         "has_image": true,
@@ -209,9 +200,6 @@
         "quality_score": 100
       },
       "badges": [
-        "\ud83d\udd25 HOT",
-        "\ud83d\udcc8 HIGH_VOLUME",
-        "\ud83d\udd0d WATCH",
         "\ud83d\udc80 RUGGED"
       ],
       "category": "WATCH",
@@ -245,17 +233,17 @@
       "timestamps": {
         "pair_created_at": "2026-02-23T21:24:31+00:00",
         "token_first_seen": "2026-02-23T23:04:45.294000+00:00",
-        "age_minutes": 1494.2,
-        "age_hours": 24.9
+        "age_minutes": 1497.7,
+        "age_hours": 24.96
       },
       "scores": {
         "cio_score": 100,
         "freshness": 0.62
       },
       "risks": [],
-      "risk_level": "low",
+      "risk_level": "critical",
       "source": "community",
-      "status": "observing",
+      "status": "rugged",
       "quality": {
         "has_profile": true,
         "has_image": true,
@@ -264,8 +252,6 @@
         "quality_score": 100
       },
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udc8e HIGH_LIQ",
         "\ud83d\udc80 RUGGED"
       ],
       "category": "FAST_CERTIFIED",
@@ -449,17 +435,17 @@
       "timestamps": {
         "pair_created_at": "2026-02-24T18:59:31+00:00",
         "token_first_seen": "2026-02-24T19:56:15.069000+00:00",
-        "age_minutes": 242.7,
-        "age_hours": 4.04
+        "age_minutes": 246.2,
+        "age_hours": 4.1
       },
       "scores": {
         "cio_score": 100,
         "freshness": 0.98
       },
       "risks": [],
-      "risk_level": "low",
+      "risk_level": "critical",
       "source": "profiles",
-      "status": "observing",
+      "status": "rugged",
       "quality": {
         "has_profile": true,
         "has_image": true,
@@ -468,8 +454,6 @@
         "quality_score": 75
       },
       "badges": [
-        "\ud83d\udd25 HOT",
-        "\ud83d\udc8e HIGH_LIQ",
         "\ud83d\udc80 RUGGED"
       ],
       "category": "WATCH",
@@ -502,17 +486,17 @@
       "timestamps": {
         "pair_created_at": "2026-02-24T18:46:41+00:00",
         "token_first_seen": "2026-02-24T19:56:15.069000+00:00",
-        "age_minutes": 242.7,
-        "age_hours": 4.04
+        "age_minutes": 246.2,
+        "age_hours": 4.1
       },
       "scores": {
         "cio_score": 100,
         "freshness": 0.98
       },
       "risks": [],
-      "risk_level": "low",
+      "risk_level": "critical",
       "source": "profiles",
-      "status": "observing",
+      "status": "rugged",
       "quality": {
         "has_profile": true,
         "has_image": true,
@@ -521,8 +505,6 @@
         "quality_score": 100
       },
       "badges": [
-        "\ud83d\udd25 HOT",
-        "\ud83d\udcc8 HIGH_VOLUME",
         "\ud83d\udc80 RUGGED"
       ],
       "category": "WATCH",
@@ -555,17 +537,17 @@
       "timestamps": {
         "pair_created_at": "2026-02-24T16:43:45+00:00",
         "token_first_seen": "2026-02-24T19:56:15.069000+00:00",
-        "age_minutes": 242.7,
-        "age_hours": 4.04
+        "age_minutes": 246.2,
+        "age_hours": 4.1
       },
       "scores": {
         "cio_score": 100,
         "freshness": 0.95
       },
       "risks": [],
-      "risk_level": "low",
+      "risk_level": "critical",
       "source": "boosts",
-      "status": "observing",
+      "status": "rugged",
       "quality": {
         "has_profile": true,
         "has_image": true,
@@ -574,9 +556,6 @@
         "quality_score": 100
       },
       "badges": [
-        "\ud83d\udd25 HOT",
-        "\ud83d\udcc8 HIGH_VOLUME",
-        "\ud83d\udca7 GOOD_LIQ",
         "\ud83d\udc80 RUGGED"
       ],
       "category": "WATCH",
@@ -609,17 +588,17 @@
       "timestamps": {
         "pair_created_at": "2026-02-19T02:05:07+00:00",
         "token_first_seen": "2026-02-24T19:56:15.069000+00:00",
-        "age_minutes": 242.7,
-        "age_hours": 4.04
+        "age_minutes": 246.2,
+        "age_hours": 4.1
       },
       "scores": {
         "cio_score": 100,
         "freshness": 0
       },
       "risks": [],
-      "risk_level": "low",
+      "risk_level": "critical",
       "source": "profiles",
-      "status": "observing",
+      "status": "rugged",
       "quality": {
         "has_profile": true,
         "has_image": true,
@@ -628,8 +607,6 @@
         "quality_score": 100
       },
       "badges": [
-        "\ud83d\udd25 HOT",
-        "\ud83d\udc8e HIGH_LIQ",
         "\ud83d\udc80 RUGGED"
       ],
       "category": "WATCH",
@@ -656,8 +633,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
-        "age_hours": 55.98,
-        "age_minutes": 3358.7
+        "age_hours": 56.04,
+        "age_minutes": 3362.2
       },
       "price_history": [
         {
@@ -704,11 +681,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udc8e HIGH_LIQ",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -724,8 +701,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
-        "age_hours": 55.98,
-        "age_minutes": 3358.7
+        "age_hours": 56.04,
+        "age_minutes": 3362.2
       },
       "price_history": [
         {
@@ -754,12 +731,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udcab ACTIVE",
-        "\ud83d\udc8e HIGH_LIQ",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -775,8 +751,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T17:55:18.017000+00:00",
-        "age_hours": 54.06,
-        "age_minutes": 3243.6
+        "age_hours": 54.12,
+        "age_minutes": 3247.2
       },
       "price_history": [
         {
@@ -787,11 +763,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udc8e HIGH_LIQ",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -807,8 +783,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T17:55:18.017000+00:00",
-        "age_hours": 54.06,
-        "age_minutes": 3243.6
+        "age_hours": 54.12,
+        "age_minutes": 3247.2
       },
       "price_history": [
         {
@@ -819,11 +795,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udca7 GOOD_LIQ",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -839,8 +815,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T17:55:18.017000+00:00",
-        "age_hours": 54.06,
-        "age_minutes": 3243.6
+        "age_hours": 54.12,
+        "age_minutes": 3247.2
       },
       "price_history": [
         {
@@ -851,10 +827,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -870,8 +847,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T19:49:20.534000+00:00",
-        "age_hours": 52.16,
-        "age_minutes": 3129.6
+        "age_hours": 52.22,
+        "age_minutes": 3133.1
       },
       "price_history": [
         {
@@ -882,11 +859,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udc8e HIGH_LIQ",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -902,8 +879,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T20:00:27.191000+00:00",
-        "age_hours": 51.97,
-        "age_minutes": 3118.5
+        "age_hours": 52.03,
+        "age_minutes": 3122.0
       },
       "price_history": [
         {
@@ -920,12 +897,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udcab ACTIVE",
-        "\ud83d\udca7 GOOD_LIQ",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -941,8 +917,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T20:56:02.672000+00:00",
-        "age_hours": 51.05,
-        "age_minutes": 3062.9
+        "age_hours": 51.11,
+        "age_minutes": 3066.4
       },
       "price_history": [
         {
@@ -959,11 +935,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udc8e HIGH_LIQ",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -979,8 +955,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T22:57:59.983000+00:00",
-        "age_hours": 49.02,
-        "age_minutes": 2940.9
+        "age_hours": 49.07,
+        "age_minutes": 2944.5
       },
       "price_history": [
         {
@@ -991,10 +967,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -1010,8 +987,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T22:57:59.983000+00:00",
-        "age_hours": 49.02,
-        "age_minutes": 2940.9
+        "age_hours": 49.07,
+        "age_minutes": 2944.5
       },
       "price_history": [
         {
@@ -1028,12 +1005,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udcc8 HIGH_VOLUME",
-        "\ud83d\udca7 GOOD_LIQ",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -1049,8 +1025,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T22:57:59.983000+00:00",
-        "age_hours": 49.02,
-        "age_minutes": 2940.9
+        "age_hours": 49.07,
+        "age_minutes": 2944.5
       },
       "price_history": [
         {
@@ -1067,11 +1043,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udc8e HIGH_LIQ",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -1087,8 +1063,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T23:55:06.867000+00:00",
-        "age_hours": 48.06,
-        "age_minutes": 2883.8
+        "age_hours": 48.12,
+        "age_minutes": 2887.4
       },
       "price_history": [
         {
@@ -1099,12 +1075,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udcab ACTIVE",
-        "\ud83d\udca7 GOOD_LIQ",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -1120,8 +1095,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T23:55:06.867000+00:00",
-        "age_hours": 48.06,
-        "age_minutes": 2883.8
+        "age_hours": 48.12,
+        "age_minutes": 2887.4
       },
       "price_history": [
         {
@@ -1132,12 +1107,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udcab ACTIVE",
-        "\ud83d\udca7 GOOD_LIQ",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -1153,8 +1127,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T23:55:06.867000+00:00",
-        "age_hours": 48.06,
-        "age_minutes": 2883.8
+        "age_hours": 48.12,
+        "age_minutes": 2887.4
       },
       "price_history": [
         {
@@ -1165,11 +1139,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udcc8 HIGH_VOLUME",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -1185,8 +1159,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T04:31:32.555000+00:00",
-        "age_hours": 43.46,
-        "age_minutes": 2607.4
+        "age_hours": 43.52,
+        "age_minutes": 2610.9
       },
       "price_history": [
         {
@@ -1197,12 +1171,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udcab ACTIVE",
-        "\ud83d\udc8e HIGH_LIQ",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -1218,8 +1191,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T04:31:32.555000+00:00",
-        "age_hours": 43.46,
-        "age_minutes": 2607.4
+        "age_hours": 43.52,
+        "age_minutes": 2610.9
       },
       "price_history": [
         {
@@ -1236,10 +1209,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -1255,8 +1229,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T04:31:32.556000+00:00",
-        "age_hours": 43.46,
-        "age_minutes": 2607.4
+        "age_hours": 43.52,
+        "age_minutes": 2610.9
       },
       "price_history": [
         {
@@ -1267,10 +1241,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -1286,8 +1261,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T12:50:16.965000+00:00",
-        "age_hours": 35.14,
-        "age_minutes": 2108.7
+        "age_hours": 35.2,
+        "age_minutes": 2112.2
       },
       "price_history": [
         {
@@ -1352,12 +1327,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udcc8 HIGH_VOLUME",
-        "\ud83d\udc8e HIGH_LIQ",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -1373,8 +1347,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T13:20:28.559000+00:00",
-        "age_hours": 34.64,
-        "age_minutes": 2078.5
+        "age_hours": 34.7,
+        "age_minutes": 2082.0
       },
       "price_history": [
         {
@@ -1427,10 +1401,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -1446,8 +1421,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T13:35:34.911000+00:00",
-        "age_hours": 34.39,
-        "age_minutes": 2063.4
+        "age_hours": 34.45,
+        "age_minutes": 2066.9
       },
       "price_history": [
         {
@@ -1518,11 +1493,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udc8e HIGH_LIQ",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -1538,8 +1513,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T15:21:17.098000+00:00",
-        "age_hours": 32.63,
-        "age_minutes": 1957.6
+        "age_hours": 32.69,
+        "age_minutes": 1961.2
       },
       "price_history": [
         {
@@ -1592,10 +1567,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -1617,8 +1593,8 @@
       "timestamps": {
         "pair_created_at": "2026-02-24T10:12:41+00:00",
         "token_first_seen": "2026-02-24T12:05:45.424000+00:00",
-        "age_minutes": 713.2,
-        "age_hours": 11.89
+        "age_minutes": 716.7,
+        "age_hours": 11.95
       },
       "scores": {
         "cio_score": 100,
@@ -1627,9 +1603,9 @@
       "risks": [
         "dumping"
       ],
-      "risk_level": "medium",
+      "risk_level": "critical",
       "source": "profiles",
-      "status": "observing",
+      "status": "rugged",
       "quality": {
         "has_profile": true,
         "has_image": true,
@@ -1638,9 +1614,6 @@
         "quality_score": 75
       },
       "badges": [
-        "\u26a1 TRENDING",
-        "\ud83d\udcc8 HIGH_VOLUME",
-        "\ud83d\udd0d WATCH",
         "\ud83d\udc80 RUGGED"
       ],
       "category": "HOTLIST",
@@ -1668,8 +1641,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T16:06:39.798000+00:00",
-        "age_hours": 31.87,
-        "age_minutes": 1912.3
+        "age_hours": 31.93,
+        "age_minutes": 1915.8
       },
       "price_history": [
         {
@@ -1716,11 +1689,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udc8e HIGH_LIQ",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -1736,8 +1709,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T23:04:45.294000+00:00",
-        "age_hours": 24.9,
-        "age_minutes": 1494.2
+        "age_hours": 24.96,
+        "age_minutes": 1497.7
       },
       "price_history": [
         {
@@ -1748,11 +1721,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udca7 GOOD_LIQ",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -1768,8 +1741,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-24T03:06:24.303000+00:00",
-        "age_hours": 20.88,
-        "age_minutes": 1252.5
+        "age_hours": 20.93,
+        "age_minutes": 1256.1
       },
       "price_history": [
         {
@@ -1786,10 +1759,11 @@
         }
       ],
       "badges": [
-        "\u26a1 TRENDING",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "HOTLIST"
+      "category": "HOTLIST",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -1805,8 +1779,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-24T08:13:23.997000+00:00",
-        "age_hours": 15.76,
-        "age_minutes": 945.5
+        "age_hours": 15.82,
+        "age_minutes": 949.1
       },
       "price_history": [
         {
@@ -1817,12 +1791,11 @@
         }
       ],
       "badges": [
-        "\u26a1 TRENDING",
-        "\ud83d\udcc8 HIGH_VOLUME",
-        "\ud83d\udca7 GOOD_LIQ",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "HOTLIST"
+      "category": "HOTLIST",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -1838,8 +1811,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
-        "age_hours": 55.98,
-        "age_minutes": 3358.7
+        "age_hours": 56.04,
+        "age_minutes": 3362.2
       },
       "price_history": [
         {
@@ -1892,12 +1865,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udcc8 HIGH_VOLUME",
-        "\ud83d\udca7 GOOD_LIQ",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -1913,8 +1885,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
-        "age_hours": 55.98,
-        "age_minutes": 3358.7
+        "age_hours": 56.04,
+        "age_minutes": 3362.2
       },
       "price_history": [
         {
@@ -1967,12 +1939,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udcab ACTIVE",
-        "\ud83d\udc8e HIGH_LIQ",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -1988,8 +1959,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T15:36:24.156000+00:00",
-        "age_hours": 32.38,
-        "age_minutes": 1942.5
+        "age_hours": 32.43,
+        "age_minutes": 1946.1
       },
       "price_history": [
         {
@@ -2036,11 +2007,12 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
         "\ud83d\udc80 RUGGED"
       ],
       "category": "FAST_CERTIFIED",
-      "category_change": "HOTLIST \u2192 FAST_CERTIFIED"
+      "category_change": "HOTLIST \u2192 FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -2056,8 +2028,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T17:07:15.929000+00:00",
-        "age_hours": 30.86,
-        "age_minutes": 1851.7
+        "age_hours": 30.92,
+        "age_minutes": 1855.2
       },
       "price_history": [
         {
@@ -2098,10 +2070,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -2117,8 +2090,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T23:04:45.294000+00:00",
-        "age_hours": 24.9,
-        "age_minutes": 1494.2
+        "age_hours": 24.96,
+        "age_minutes": 1497.7
       },
       "price_history": [
         {
@@ -2147,10 +2120,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -2166,8 +2140,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T14:51:04.847000+00:00",
-        "age_hours": 33.13,
-        "age_minutes": 1987.9
+        "age_hours": 33.19,
+        "age_minutes": 1991.4
       },
       "price_history": [
         {
@@ -2202,11 +2176,12 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
         "\ud83d\udc80 RUGGED"
       ],
       "category": "FAST_CERTIFIED",
-      "category_change": "HOTLIST \u2192 FAST_CERTIFIED"
+      "category_change": "HOTLIST \u2192 FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -2222,8 +2197,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
-        "age_hours": 55.98,
-        "age_minutes": 3358.7
+        "age_hours": 56.04,
+        "age_minutes": 3362.2
       },
       "price_history": [
         {
@@ -2270,10 +2245,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -2289,8 +2265,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T16:09:08.289000+00:00",
-        "age_hours": 55.83,
-        "age_minutes": 3349.8
+        "age_hours": 55.89,
+        "age_minutes": 3353.3
       },
       "price_history": [
         {
@@ -2613,10 +2589,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -2632,8 +2609,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T09:31:19.151000+00:00",
-        "age_hours": 38.46,
-        "age_minutes": 2307.6
+        "age_hours": 38.52,
+        "age_minutes": 2311.2
       },
       "price_history": [
         {
@@ -2662,10 +2639,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -2681,8 +2659,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T09:31:19.151000+00:00",
-        "age_hours": 38.46,
-        "age_minutes": 2307.6
+        "age_hours": 38.52,
+        "age_minutes": 2311.2
       },
       "price_history": [
         {
@@ -2753,10 +2731,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -2772,8 +2751,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T10:19:26.326000+00:00",
-        "age_hours": 37.66,
-        "age_minutes": 2259.5
+        "age_hours": 37.72,
+        "age_minutes": 2263.0
       },
       "price_history": [
         {
@@ -2838,10 +2817,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -2857,8 +2837,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T16:00:15.449000+00:00",
-        "age_hours": 55.98,
-        "age_minutes": 3358.7
+        "age_hours": 56.04,
+        "age_minutes": 3362.2
       },
       "price_history": [
         {
@@ -2917,10 +2897,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -2936,8 +2917,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T16:35:21.392000+00:00",
-        "age_hours": 55.39,
-        "age_minutes": 3323.6
+        "age_hours": 55.45,
+        "age_minutes": 3327.1
       },
       "price_history": [
         {
@@ -2966,10 +2947,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -2985,8 +2967,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-22T19:49:20.534000+00:00",
-        "age_hours": 52.16,
-        "age_minutes": 3129.6
+        "age_hours": 52.22,
+        "age_minutes": 3133.1
       },
       "price_history": [
         {
@@ -3009,10 +2991,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -3028,8 +3011,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T09:31:19.151000+00:00",
-        "age_hours": 38.46,
-        "age_minutes": 2307.6
+        "age_hours": 38.52,
+        "age_minutes": 2311.2
       },
       "price_history": [
         {
@@ -3070,10 +3053,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -3089,8 +3073,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T10:19:26.326000+00:00",
-        "age_hours": 37.66,
-        "age_minutes": 2259.5
+        "age_hours": 37.72,
+        "age_minutes": 2263.0
       },
       "price_history": [
         {
@@ -3149,10 +3133,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -3168,8 +3153,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T14:16:02.680000+00:00",
-        "age_hours": 33.71,
-        "age_minutes": 2022.9
+        "age_hours": 33.77,
+        "age_minutes": 2026.4
       },
       "price_history": [
         {
@@ -3216,10 +3201,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -3235,8 +3221,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T15:21:17.098000+00:00",
-        "age_hours": 32.63,
-        "age_minutes": 1957.6
+        "age_hours": 32.69,
+        "age_minutes": 1961.2
       },
       "price_history": [
         {
@@ -3277,10 +3263,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -3296,8 +3283,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T15:36:24.156000+00:00",
-        "age_hours": 32.38,
-        "age_minutes": 1942.5
+        "age_hours": 32.43,
+        "age_minutes": 1946.1
       },
       "price_history": [
         {
@@ -3398,10 +3385,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -3417,8 +3405,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T15:51:31.354000+00:00",
-        "age_hours": 32.12,
-        "age_minutes": 1927.4
+        "age_hours": 32.18,
+        "age_minutes": 1930.9
       },
       "price_history": [
         {
@@ -3465,10 +3453,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -3484,8 +3473,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T16:06:39.797000+00:00",
-        "age_hours": 31.87,
-        "age_minutes": 1912.3
+        "age_hours": 31.93,
+        "age_minutes": 1915.8
       },
       "price_history": [
         {
@@ -3532,10 +3521,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -3551,8 +3541,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T23:04:45.294000+00:00",
-        "age_hours": 24.9,
-        "age_minutes": 1494.2
+        "age_hours": 24.96,
+        "age_minutes": 1497.7
       },
       "price_history": [
         {
@@ -3581,10 +3571,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -3600,8 +3591,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-23T23:48:57.331000+00:00",
-        "age_hours": 24.17,
-        "age_minutes": 1450.0
+        "age_hours": 24.23,
+        "age_minutes": 1453.5
       },
       "price_history": [
         {
@@ -3636,10 +3627,11 @@
         }
       ],
       "badges": [
-        "\ud83c\udf0a ESTABLISHED",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "FAST_CERTIFIED"
+      "category": "FAST_CERTIFIED",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -3655,8 +3647,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-24T19:56:15.069000+00:00",
-        "age_hours": 4.04,
-        "age_minutes": 242.7
+        "age_hours": 4.1,
+        "age_minutes": 246.2
       },
       "price_history": [
         {
@@ -3673,10 +3665,11 @@
         }
       ],
       "badges": [
-        "\ud83d\udd25 HOT",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "WATCH"
+      "category": "WATCH",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -3692,8 +3685,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-24T21:53:40.443000+00:00",
-        "age_hours": 2.09,
-        "age_minutes": 125.3
+        "age_hours": 2.15,
+        "age_minutes": 128.8
       },
       "price_history": [
         {
@@ -3704,10 +3697,11 @@
         }
       ],
       "badges": [
-        "\ud83d\udd25 HOT",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "WATCH"
+      "category": "WATCH",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -3723,8 +3717,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-24T21:53:40.443000+00:00",
-        "age_hours": 2.09,
-        "age_minutes": 125.3
+        "age_hours": 2.15,
+        "age_minutes": 128.8
       },
       "price_history": [
         {
@@ -3735,10 +3729,11 @@
         }
       ],
       "badges": [
-        "\ud83d\udd25 HOT",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "WATCH"
+      "category": "WATCH",
+      "risk_level": "critical",
+      "status": "rugged"
     },
     {
       "token": {
@@ -3754,8 +3749,8 @@
       },
       "timestamps": {
         "token_first_seen": "2026-02-24T21:53:40.443000+00:00",
-        "age_hours": 2.09,
-        "age_minutes": 125.3
+        "age_hours": 2.15,
+        "age_minutes": 128.8
       },
       "price_history": [
         {
@@ -3766,14 +3761,15 @@
         }
       ],
       "badges": [
-        "\ud83d\udd25 HOT",
         "\ud83d\udc80 RUGGED"
       ],
-      "category": "WATCH"
+      "category": "WATCH",
+      "risk_level": "critical",
+      "status": "rugged"
     }
   ],
   "meta": {
-    "updated_at": "2026-02-24T23:58:56.100195+00:00",
+    "updated_at": "2026-02-25T00:02:28.260191+00:00",
     "description": "Tokens with -85% dump or zero liquidity"
   }
 }

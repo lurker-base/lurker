@@ -168,7 +168,10 @@ def distribute_to_category_feeds(tokens: list, registry_tokens: dict):
         
         # Vérifier d'abord si le token est mort/rug
         if is_token_dead(token):
-            token['badges'] = token.get('badges', []) + ['💀 RUGGED']
+            # Remplacer tous les badges par RUGGED uniquement
+            token['badges'] = ['💀 RUGGED']
+            token['risk_level'] = 'critical'
+            token['status'] = 'rugged'
             feeds["RUGGED"]["tokens"].append(token)
             continue
         
