@@ -152,32 +152,39 @@
             gap: 0.3rem;
             margin-top: 0.3rem;
         }
-        
+
         .badge {
             padding: 0.15rem 0.4rem;
             border-radius: 3px;
             font-size: 0.6rem;
             font-weight: bold;
+            white-space: nowrap;
         }
-        
-        /* Green badges */
-        .badge-trending { background: #166534; color: #4ade80; }
-        .badge-high-volume { background: #166534; color: #4ade80; }
-        .badge-good-liq { background: #166534; color: #4ade80; }
-        .badge-active { background: #166534; color: #4ade80; }
-        .badge-established { background: #166534; color: #4ade80; }
-        
-        /* Yellow/Orange badges */
-        .badge-watch { background: #854d0e; color: #fbbf24; }
-        .badge-fresh { background: #854d0e; color: #fbbf24; }
-        .badge-low-liq { background: #854d0e; color: #fbbf24; }
-        
-        /* Red badges */
-        .badge-dumping { background: #7f1d1d; color: #f87171; }
-        .badge-rug { background: #000; color: #666; }
-        
-        /* Blue badges */
-        .badge-premium { background: #1e3a8a; color: #60a5fa; }
+
+        /* Green badges - Good metrics */
+        .badge--trending, .badge-trending { background: #166534; color: #4ade80; }
+        .badge--high-volume, .badge-high-volume { background: #166534; color: #4ade80; }
+        .badge--good-liq, .badge-good-liq { background: #166534; color: #4ade80; }
+        .badge--active, .badge-active { background: #166534; color: #4ade80; }
+        .badge--established, .badge-established { background: #166534; color: #4ade80; }
+        .badge--high-liq, .badge-high-liq { background: #166534; color: #4ade80; }
+
+        /* Yellow/Orange badges - Caution */
+        .badge--watch, .badge-watch { background: #854d0e; color: #fbbf24; }
+        .badge--fresh, .badge-fresh { background: #854d0e; color: #fbbf24; }
+        .badge--low-liq, .badge-low-liq { background: #854d0e; color: #fbbf24; }
+        .badge--low-liquidity, .badge-low-liquidity { background: #854d0e; color: #fbbf24; }
+
+        /* Red badges - Danger/Rug */
+        .badge--dumping, .badge-dumping { background: #7f1d1d; color: #f87171; }
+        .badge--rugged, .badge-rugged { background: #000; color: #666; }
+        .badge--rug, .badge-rug { background: #000; color: #666; }
+
+        /* Blue badges - Premium/Quality */
+        .badge--premium, .badge-premium { background: #1e3a8a; color: #60a5fa; }
+
+        /* Fallback for any emoji badges */
+        .badge-default { background: #333; color: #999; }
         
         .token-metric {
             text-align: right;
@@ -259,7 +266,7 @@
     <!-- Avatar with Halo (Top Left) -->
     <div class="avatar-section" style="position: fixed; top: 60px; left: 20px; z-index: 100;">
         <div class="avatar-wrapper" id="avatar-wrapper">
-            <img src="../assets/lurker-mascot-logo.png" alt="" class="avatar" style="width: 50px; height: 50px;">
+            <img src="assets/lurker-mascot-logo.png" alt="" class="avatar" style="width: 50px; height: 50px;">
             <div class="avatar-glow" style="width: 60px; height: 60px;"></div>
             <div class="sparks-container" id="sparks"></div>
         </div>
@@ -402,7 +409,9 @@
                 // Generate badges
                 const badges = token.risk_tags || [];
                 const badgeHTML = badges.map(b => {
-                    const badgeClass = b.toLowerCase().replace(/[^a-z]/g, '-');
+                    // Remove emoji and special chars for class name, keep text
+                    const cleanText = b.replace(/[^\w\s-]/g, '').trim().toLowerCase();
+                    const badgeClass = cleanText.replace(/\s+/g, '-');
                     return `<span class="badge badge-${badgeClass}">${b}</span>`;
                 }).join('');
                 

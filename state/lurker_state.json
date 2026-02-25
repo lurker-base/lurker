@@ -2,7 +2,7 @@
   "schema": "lurker_v1.5",
   "meta": {
     "last_scan": "2026-02-25T05:39:10.406079+00:00",
-    "last_lifecycle": "2026-02-25T05:39:10.406082+00:00",
+    "last_lifecycle": "2026-02-25T05:55:37.622090+00:00",
     "total_tokens": 62,
     "version": "1.5.0",
     "migrated_from": "v1_feeds",
@@ -13,13 +13,12 @@
         "WATCH": 0,
         "HOTLIST": 14,
         "FAST": 27,
-        "CERTIFIED": 1,
-        "RUGGED": 20,
-        "ARCHIVED": 0
+        "CERTIFIED": 0,
+        "RUGGED": 21
       },
       "pumps_24h": 9,
       "dumps_24h": 8,
-      "rugged": 20,
+      "rugged": 21,
       "cleanup": {
         "last_run": "2026-02-25T05:39:15.502577+00:00",
         "tokens_before": 62,
@@ -3896,7 +3895,7 @@
         "migration"
       ],
       "detected_at": "2026-02-22T16:00:15.449000+00:00",
-      "category": "CERTIFIED",
+      "category": "RUGGED",
       "age_minutes": 3677.4,
       "metrics": {
         "liq_usd": 101110.07,
@@ -3909,8 +3908,10 @@
         "market_cap": 0
       },
       "risk": {
-        "level": "low",
-        "factors": []
+        "level": "critical",
+        "factors": [
+          "rug_detected"
+        ]
       },
       "risk_tags": [
         "\ud83d\udc80 RUGGED"
