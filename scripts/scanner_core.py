@@ -81,6 +81,17 @@ def scan_dexscreener_profiles():
         for profile in data:
             if profile.get("chainId") != CONFIG["chain"]:
                 continue
+            # Get badges if available
+            badges = []
+            if profile.get("isGood"):
+                badges.append("✅ Good")
+            if profile.get("isVerified"):
+                badges.append("✓ Verified")
+            if profile.get("isBoosted"):
+                badges.append("🚀 Boosted")
+            if profile.get("isNew"):
+                badges.append("✨ New")
+            
             tokens.append({
                 "address": profile.get("tokenAddress"),
                 "symbol": profile.get("symbol", "UNKNOWN"),
@@ -91,7 +102,8 @@ def scan_dexscreener_profiles():
                 "twitter": profile.get("twitterUrl", ""),
                 "website": profile.get("websiteUrl", ""),
                 "telegram": profile.get("telegramUrl", ""),
-                "has_profile": bool(profile.get("icon") or profile.get("twitterUrl") or profile.get("websiteUrl"))
+                "has_profile": bool(profile.get("icon") or profile.get("twitterUrl") or profile.get("websiteUrl")),
+                "badges": badges
             })
         return tokens
     except Exception as e:
@@ -282,6 +294,30 @@ def merge_tokens(sources, existing_tokens=None):
     for source_tokens in sources:
         all_tokens.extend(source_tokens)
     
+    # Build profile lookup
+    profile_by_addr = {}
+    for t in all_tokens:
+        if t.get("source") in ["profiles", "boosts"]:
+            addr = t.get("address", "").lower()
+            if addr:
+                profile_by_addr[addr] = t
+    
+    # Enrich pairs with profile data
+    for t in all_tokens:
+        if t.get("source") == "pairs":
+            addr = t.get("address", "").lower()
+            if addr in profile_by_addr:
+                prof = profile_by_addr[addr]
+                t["twitter"] = prof.get("twitter", "") or t.get("twitter", "")
+                t["website"] = prof.get("website", "") or t.get("website", "")
+                t["telegram"] = prof.get("telegram", "") or t.get("telegram", "")
+                t["icon"] = prof.get("icon", "") or t.get("icon", "")
+                t["has_profile"] = True
+                # Merge badges
+                existing_badges = t.get("badges", [])
+                profile_badges = prof.get("badges", [])
+                t["badges"] = list(set(existing_badges + profile_badges))
+    
     # Enrichir avec les données pairs
     pairs_data = [t for t in all_tokens if t.get("source") == "pairs"]
     enriched = enrich_tokens_with_pairs(all_tokens, pairs_data)
@@ -376,6 +412,26 @@ def main():
             seen_addrs.add(addr)
             unique_pairs.append(p)
     print(f"  → {len(unique_pairs)} unique pairs total")
+    
+    # Build profile lookup by address
+    profile_by_addr = {}
+    for p in profiles:
+        addr = p.get("tokenAddress", "").lower()
+        if addr:
+            profile_by_addr[addr] = p
+    
+    # Enrich pairs with profile data
+    for pair in unique_pairs:
+        addr = pair.get("address", "").lower()
+        if addr in profile_by_addr:
+            prof = profile_by_addr[addr]
+            pair["twitter"] = prof.get("twitterUrl", "")
+            pair["website"] = prof.get("websiteUrl", "")
+            pair["telegram"] = prof.get("telegramUrl", "")
+            pair["icon"] = prof.get("icon", "")
+            pair["description"] = prof.get("description", "")
+            pair["has_profile"] = True
+            pair["badges"] = prof.get("badges", [])
     
     # Merge
     print("\n[4/4] Merging sources...")

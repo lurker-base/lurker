@@ -437,9 +437,9 @@
                 const gain = perf.current_gain || 0;
                 const gainClass = gain > 0 ? 'positive' : gain < 0 ? 'negative' : '';
                 
-                // Generate badges with colors
-                const badges = token.risk_tags || [];
-                const badgeHTML = badges.map(b => {
+                // Generate risk badges with colors
+                const riskBadges = token.risk_tags || [];
+                const riskBadgeHTML = riskBadges.map(b => {
                     let badgeClass = 'badge-default';
                     
                     // Determine class based on badge content
@@ -453,6 +453,27 @@
                     
                     return `<span class="badge ${badgeClass}">${b}</span>`;
                 }).join('');
+                
+                // Generate DexScreener badges (good, premium, boost, etc.)
+                const dsBadges = token.badges || [];
+                const dsBadgeHTML = dsBadges.map(b => {
+                    let badgeClass = 'badge-default';
+                    const badgeLower = b.toLowerCase();
+                    
+                    if (badgeLower.includes('good') || badgeLower.includes('verified')) {
+                        badgeClass = 'badge-green';
+                    } else if (badgeLower.includes('premium') || badgeLower.includes('boost')) {
+                        badgeClass = 'badge-yellow';
+                    } else if (badgeLower.includes('trending') || badgeLower.includes('hot')) {
+                        badgeClass = 'badge-green';
+                    } else if (badgeLower.includes('warning') || badgeLower.includes('risk')) {
+                        badgeClass = 'badge-red';
+                    }
+                    
+                    return `<span class="badge ${badgeClass}">${b}</span>`;
+                }).join('');
+                
+                const allBadgesHTML = riskBadgeHTML + dsBadgeHTML;
                 
                 // Generate social links
                 const addr = token.address || '';
@@ -473,7 +494,7 @@
                         <div class="token-info">
                             <span class="token-symbol">$${token.symbol || '?'}</span>
                             <span class="token-name">${token.name || 'unknown'}</span>
-                            <div class="token-badges">${badgeHTML}</div>
+                            <div class="token-badges">${allBadgesHTML}</div>
                             ${socialHTML}
                         </div>
                         <button class="token-category cat-${token.category || 'CIO'}">${token.category || 'CIO'}</button>

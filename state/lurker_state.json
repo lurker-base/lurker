@@ -1,7 +1,7 @@
 {
   "schema": "lurker_v1.5",
   "meta": {
-    "last_scan": "2026-02-25T09:57:53.764330+00:00",
+    "last_scan": "2026-02-25T10:10:23.165620+00:00",
     "last_lifecycle": "2026-02-25T09:56:21.138799+00:00",
     "total_tokens": 63,
     "version": "1.5.0",
@@ -563,9 +563,7 @@
           "declining"
         ]
       },
-      "risk_tags": [
-        "\ud83d\udcc9 DUMPING"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0.0,
         "current_gain": -49.2,
@@ -897,9 +895,7 @@
           "declining"
         ]
       },
-      "risk_tags": [
-        "\ud83d\udcc9 DUMPING"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0.0,
         "current_gain": -24.0,
@@ -2196,8 +2192,7 @@
         ]
       },
       "risk_tags": [
-        "LOW_LIQUIDITY",
-        "\ud83d\udcc9 DUMPING"
+        "LOW_LIQUIDITY"
       ],
       "performance": {
         "max_gain": 14.7,
@@ -2666,9 +2661,7 @@
           "declining"
         ]
       },
-      "risk_tags": [
-        "\ud83d\udcc9 DUMPING"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 31.6,
         "current_gain": -85.1,
@@ -2913,8 +2906,7 @@
         ]
       },
       "risk_tags": [
-        "LOW_LIQUIDITY",
-        "\ud83d\udcc9 DUMPING"
+        "LOW_LIQUIDITY"
       ],
       "performance": {
         "max_gain": 0.0,
@@ -3234,8 +3226,7 @@
         ]
       },
       "risk_tags": [
-        "LOW_LIQUIDITY",
-        "\ud83d\udcc9 DUMPING"
+        "LOW_LIQUIDITY"
       ],
       "performance": {
         "max_gain": 41.1,
@@ -3321,8 +3312,7 @@
         ]
       },
       "risk_tags": [
-        "LOW_LIQUIDITY",
-        "\ud83d\udcc9 DUMPING"
+        "LOW_LIQUIDITY"
       ],
       "performance": {
         "max_gain": 56.8,
@@ -3701,9 +3691,7 @@
           "declining"
         ]
       },
-      "risk_tags": [
-        "\ud83d\udcc9 DUMPING"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 240.9,
         "current_gain": -29.0,
@@ -4071,9 +4059,7 @@
           "declining"
         ]
       },
-      "risk_tags": [
-        "\ud83d\udcc9 DUMPING"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 5.0,
         "current_gain": -93.2,
@@ -4139,9 +4125,7 @@
           "declining"
         ]
       },
-      "risk_tags": [
-        "\ud83d\udcc9 DUMPING"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0.0,
         "current_gain": -92.0,
@@ -4201,9 +4185,7 @@
           "declining"
         ]
       },
-      "risk_tags": [
-        "\ud83d\udcc9 DUMPING"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 314.2,
         "current_gain": -97.8,
