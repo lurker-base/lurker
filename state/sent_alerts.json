@@ -108,6 +108,28 @@
         "status": "dumping"
       },
       "sent_at": "2026-02-25T05:59:35.566400+00:00"
+    },
+    {
+      "token": "0x71a09f5b9b88976ebcc79183e0e99e7d07beabaf",
+      "symbol": "EARENDEL",
+      "type": "PUMP",
+      "performance": {
+        "max_gain": 441.5,
+        "current_gain": 316.9,
+        "status": "pumping"
+      },
+      "sent_at": "2026-02-25T06:13:25.577599+00:00"
+    },
+    {
+      "token": "0xc5898891919a3f8fc6d0d4d502e47ced11fb27ce",
+      "symbol": "HCLAW",
+      "type": "DUMP",
+      "performance": {
+        "max_gain": 0.0,
+        "current_gain": -99.0,
+        "status": "dumping"
+      },
+      "sent_at": "2026-02-25T06:13:25.577632+00:00"
     }
   ]
 }

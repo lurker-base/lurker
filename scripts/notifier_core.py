@@ -61,15 +61,42 @@ class Notifier:
         })
         self.save_sent_alerts()
     
-    def send_twitter_alert(self, token, alert_type):
+    def get_symbol_with_address(self, token):
+        """Return symbol with shortened address to avoid duplicates"""
         symbol = token.get("symbol", "UNKNOWN")
+        addr = token.get("address", "")
+        if addr:
+            short_addr = addr[:6] + "..." + addr[-4:]
+            return f"${symbol} ({short_addr})"
+        return f"${symbol}"
+    
+    def check_for_duplicate_symbols(self, state, current_token):
+        """Check if another token has the same symbol"""
+        current_symbol = current_token.get("symbol", "").upper()
+        current_addr = current_token.get("address", "").lower()
+        
+        duplicates = []
+        for addr, token in state.get("tokens", {}).items():
+            if token.get("symbol", "").upper() == current_symbol:
+                if addr.lower() != current_addr:
+                    duplicates.append(token)
+        
+        return duplicates
+    
+    def send_twitter_alert(self, token, alert_type, state):
+        symbol_with_addr = self.get_symbol_with_address(token)
         perf = token.get("performance", {})
+        
+        # Check for duplicates
+        duplicates = self.check_for_duplicate_symbols(state, token)
+        if duplicates:
+            print(f"    ⚠️ WARNING: {len(duplicates)} other token(s) with same symbol found")
         
         if alert_type == "PUMP":
             gain = perf.get("max_gain", 0)
             tweet = f"""🚀 PUMP DETECTED
 
-${symbol} +{gain:.0f}% since detection
+{symbol_with_addr} +{gain:.0f}% since detection
 Early momentum confirmed
 
 Proof: github.com/lurker-base/lurker/blob/main/state/lurker_state.json
@@ -79,7 +106,7 @@ The chain confirms. 👁"""
             gain = perf.get("current_gain", 0)
             tweet = f"""📉 DUMP CONFIRMED
 
-${symbol} {gain:.0f}% since detection
+{symbol_with_addr} {gain:.0f}% since detection
 Risk signaled early
 
 Proof: github.com/lurker-base/lurker/blob/main/state/lurker_state.json
@@ -147,7 +174,11 @@ Patterns don't lie. 👁"""
     def process_alerts(self, state):
         tokens = state.get("tokens", {})
         alerts_sent = {"pump": 0, "dump": 0, "skipped": 0}
+        total_sent = 0
+        MAX_ALERTS_PER_RUN = 2  # Limit to avoid spam
         
+        # Collect all pending alerts first
+        pending_alerts = []
         for addr, token in tokens.items():
             perf = token.get("performance", {})
             status = perf.get("status", "")
@@ -169,10 +200,21 @@ Patterns don't lie. 👁"""
                 alerts_sent["skipped"] += 1
                 continue
             
+            pending_alerts.append((addr, token, alert_type, perf))
+        
+        # Sort by severity (highest gains/losses first)
+        pending_alerts.sort(key=lambda x: abs(x[3].get("max_gain" if x[2] == "PUMP" else "current_gain", 0)), reverse=True)
+        
+        # Process only top alerts (respecting limit)
+        for addr, token, alert_type, perf in pending_alerts[:MAX_ALERTS_PER_RUN]:
+            if total_sent >= MAX_ALERTS_PER_RUN:
+                print(f"\n  ⏸️ Rate limit: {len(pending_alerts) - total_sent} more alerts pending for next run")
+                break
+            
             print(f"\n  📢 {token['symbol']} → {alert_type}")
             
             # Envoyer
-            twitter_ok = self.send_twitter_alert(token, alert_type)
+            twitter_ok = self.send_twitter_alert(token, alert_type, state)
             telegram_ok = self.send_telegram_alert(token, alert_type)
             
             if twitter_ok or telegram_ok:
@@ -181,6 +223,7 @@ Patterns don't lie. 👁"""
                     alerts_sent["pump"] += 1
                 else:
                     alerts_sent["dump"] += 1
+                total_sent += 1
         
         return alerts_sent
 
