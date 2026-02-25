@@ -1,7 +1,7 @@
 {
   "schema": "lurker_v1.5",
   "meta": {
-    "last_scan": "2026-02-25T10:18:41.133424+00:00",
+    "last_scan": "2026-02-25T10:25:05.061334+00:00",
     "last_lifecycle": "2026-02-25T09:56:21.138799+00:00",
     "total_tokens": 63,
     "version": "1.5.0",
@@ -66,6 +66,9 @@
           "timestamp": "2026-02-25T09:56:21.137892+00:00",
           "price": 1.828e-07
         }
+      ],
+      "badges": [
+        "\ud83d\udca7 Good Liq"
       ]
     },
     "0xb81a6ebc7916b94e069be1389820b01731912388": {
@@ -112,6 +115,9 @@
           "timestamp": "2026-02-25T09:56:21.137952+00:00",
           "price": 0.0004886
         }
+      ],
+      "badges": [
+        "\ud83d\udca7 Good Liq"
       ]
     },
     "0x261e61f40c0f8541180969529a9af4ac9f4e2b07": {
@@ -158,6 +164,9 @@
           "timestamp": "2026-02-25T09:56:21.137984+00:00",
           "price": 7.892e-07
         }
+      ],
+      "badges": [
+        "\ud83d\udc8e High Liq"
       ]
     },
     "0xc31de1185d7df1688a16ad124b8d37800ad50b07": {
@@ -204,6 +213,9 @@
           "timestamp": "2026-02-25T09:56:21.138008+00:00",
           "price": 2.761e-07
         }
+      ],
+      "badges": [
+        "\ud83d\udca7 Good Liq"
       ]
     },
     "0xafeadbc5927df211a75f4b6bca6ad3e5520c5720": {
@@ -250,7 +262,8 @@
           "timestamp": "2026-02-25T09:56:21.138025+00:00",
           "price": 3.237e-06
         }
-      ]
+      ],
+      "badges": []
     },
     "0x2808589324160d6b68ca1def7927fd9c965ccb07": {
       "address": "0x2808589324160d6b68ca1def7927fd9c965ccb07",
@@ -296,6 +309,9 @@
           "timestamp": "2026-02-25T09:56:21.138046+00:00",
           "price": 1.829e-07
         }
+      ],
+      "badges": [
+        "\ud83d\udca7 Good Liq"
       ]
     },
     "0x946494e26c8c26c2332225046cee80f37a76ab07": {
@@ -342,6 +358,9 @@
           "timestamp": "2026-02-25T09:56:21.138059+00:00",
           "price": 2.003e-06
         }
+      ],
+      "badges": [
+        "\ud83d\udc8e High Liq"
       ]
     },
     "0x4da7900f54b45949621649598f44e263c3955b07": {
@@ -388,6 +407,9 @@
           "timestamp": "2026-02-25T09:56:21.138070+00:00",
           "price": 2.485e-06
         }
+      ],
+      "badges": [
+        "\ud83d\udc8e High Liq"
       ]
     },
     "0xfe4588c3bc2d9335166b7f8bd1425750176beac8": {
@@ -434,6 +456,9 @@
           "timestamp": "2026-02-25T09:56:21.138082+00:00",
           "price": 5.964e-05
         }
+      ],
+      "badges": [
+        "\ud83d\udca7 Good Liq"
       ]
     },
     "0x0601a2352fe490e6cab10aba1d0f00405d4a9140": {
@@ -480,6 +505,9 @@
           "timestamp": "2026-02-25T09:56:21.138097+00:00",
           "price": 9.849e-06
         }
+      ],
+      "badges": [
+        "\ud83d\udc8e High Liq"
       ]
     },
     "0x0089c6bd6bf6234b4731a81a746ade1cbbaeab07": {
@@ -532,6 +560,9 @@
           "timestamp": "2026-02-25T09:56:21.138107+00:00",
           "price": 1.791e-07
         }
+      ],
+      "badges": [
+        "\ud83d\udca7 Good Liq"
       ]
     },
     "0xbb060648e9782d1c48b3be718848a7acf179c11c": {
@@ -586,6 +617,9 @@
           "timestamp": "2026-02-25T09:56:21.138115+00:00",
           "price": 3.065e-05
         }
+      ],
+      "badges": [
+        "\ud83d\udca7 Good Liq"
       ]
     },
     "0xe4a3451ade8ca2c3e1e3d7b9fa6ecce419168ba3": {
@@ -782,6 +816,9 @@
           "timestamp": "2026-02-25T09:56:21.138131+00:00",
           "price": 6.007e-06
         }
+      ],
+      "badges": [
+        "\ud83d\udc8e High Liq"
       ]
     },
     "0x4b813f536f5588486e5e9bb2a7ab98c07e621b07": {
@@ -864,6 +901,9 @@
           "timestamp": "2026-02-25T09:56:21.138145+00:00",
           "price": 2.398e-06
         }
+      ],
+      "badges": [
+        "\ud83d\udc8e High Liq"
       ]
     },
     "0xfd1bcb4385533f1c4d4890d5e72edb45021f8b07": {
@@ -930,6 +970,9 @@
           "timestamp": "2026-02-25T09:56:21.138157+00:00",
           "price": 1.948e-06
         }
+      ],
+      "badges": [
+        "\ud83d\udc8e High Liq"
       ]
     },
     "0xc1299846f3523fb6c9c3f3fd6122a602855f3b07": {
@@ -976,6 +1019,9 @@
           "timestamp": "2026-02-25T09:56:21.138170+00:00",
           "price": 2.152e-06
         }
+      ],
+      "badges": [
+        "\ud83d\udc8e High Liq"
       ]
     },
     "0x8e4550fff902b90ca4424a7ba42a1e1d38e35ba3": {
@@ -1022,6 +1068,9 @@
           "timestamp": "2026-02-25T09:56:21.138181+00:00",
           "price": 6.216e-07
         }
+      ],
+      "badges": [
+        "\ud83d\udc8e High Liq"
       ]
     },
     "0x023d51677a3df1b611ec91744cbda68175ce210d": {
@@ -1068,6 +1117,9 @@
           "timestamp": "2026-02-25T09:56:21.138192+00:00",
           "price": 1.261e-05
         }
+      ],
+      "badges": [
+        "\ud83d\udca7 Good Liq"
       ]
     },
     "0x0a3a6eef246ed15dbf97f8a237e20a3bc091cba3": {
@@ -1114,6 +1166,9 @@
           "timestamp": "2026-02-25T09:56:21.138201+00:00",
           "price": 2.439e-06
         }
+      ],
+      "badges": [
+        "\ud83d\udc8e High Liq"
       ]
     },
     "0xe4f5b998372443522b08b72d3b5b704c3bdafaf4": {
@@ -1166,6 +1221,10 @@
           "timestamp": "2026-02-25T09:56:21.138212+00:00",
           "price": 0.002131
         }
+      ],
+      "badges": [
+        "\ud83d\udc8e High Liq",
+        "\ud83d\ude80 Mooning"
       ]
     },
     "0x0583226fc741d7dd528977b4349cf00bd1376312": {
@@ -1218,6 +1277,9 @@
           "timestamp": "2026-02-25T09:56:21.138224+00:00",
           "price": 0.0002583
         }
+      ],
+      "badges": [
+        "\ud83d\udc8e High Liq"
       ]
     },
     "0x52706d6a7449651eb548212ae237777f1cf19b07": {
@@ -1264,6 +1326,9 @@
           "timestamp": "2026-02-25T09:56:21.138238+00:00",
           "price": 1.96e-07
         }
+      ],
+      "badges": [
+        "\ud83d\udca7 Good Liq"
       ]
     },
     "0xfac66d173bb6e1ee1c3d2321dc13c25e36c3e525": {
@@ -1316,6 +1381,9 @@
           "timestamp": "2026-02-25T09:56:21.138247+00:00",
           "price": 0.001348
         }
+      ],
+      "badges": [
+        "\ud83d\udc8e High Liq"
       ]
     },
     "0x5dc1db3b262793fb00ef0d973ed052daa5d27b07": {
@@ -1368,6 +1436,9 @@
           "timestamp": "2026-02-25T09:56:21.138257+00:00",
           "price": 4.829e-06
         }
+      ],
+      "badges": [
+        "\ud83d\udc8e High Liq"
       ]
     },
     "0x7dd0e05938e63a8c1b7955ac095b391615acbba3": {
@@ -1414,6 +1485,9 @@
           "timestamp": "2026-02-25T09:56:21.138268+00:00",
           "price": 6.023e-07
         }
+      ],
+      "badges": [
+        "\ud83d\udc8e High Liq"
       ]
     },
     "0x59f2e635783d6e7a94ee8ecf3c913d481dc13166": {
@@ -1460,6 +1534,9 @@
           "timestamp": "2026-02-25T09:56:21.138278+00:00",
           "price": 0.0007959
         }
+      ],
+      "badges": [
+        "\ud83d\udc8e High Liq"
       ]
     },
     "0xa87e0283b8814f37e8631ba266108351fb4b0b07": {
@@ -1506,6 +1583,9 @@
           "timestamp": "2026-02-25T09:56:21.138287+00:00",
           "price": 2.017e-07
         }
+      ],
+      "badges": [
+        "\ud83d\udca7 Good Liq"
       ]
     },
     "0x5469cc08b15030d30207194ba6fd5b5303472b07": {
@@ -1552,6 +1632,9 @@
           "timestamp": "2026-02-25T09:56:21.138297+00:00",
           "price": 2.688e-06
         }
+      ],
+      "badges": [
+        "\ud83d\udc8e High Liq"
       ]
     },
     "0xce6bf9d777cf63b72127f8257ecfb3836f0a0b07": {
@@ -1604,6 +1687,9 @@
           "timestamp": "2026-02-25T09:56:21.138307+00:00",
           "price": 1.843e-07
         }
+      ],
+      "badges": [
+        "\ud83d\udca7 Good Liq"
       ]
     },
     "0x392832a4cee1d52d026e831a7ba9e6f53dc17ba3": {
@@ -1650,6 +1736,9 @@
           "timestamp": "2026-02-25T09:56:21.138318+00:00",
           "price": 3.55e-07
         }
+      ],
+      "badges": [
+        "\ud83d\udca7 Good Liq"
       ]
     },
     "0xc18db1ed7d44eb6b705dd9b928001f190314d519": {
@@ -1750,6 +1839,10 @@
           "timestamp": "2026-02-25T09:56:21.138330+00:00",
           "price": 0.002091
         }
+      ],
+      "badges": [
+        "\ud83d\udc8e High Liq",
+        "\ud83d\ude80 Mooning"
       ]
     },
     "0xa8db47922ec9ea07b5bb5e195b3825179f7702d7": {
@@ -1838,6 +1931,9 @@
           "timestamp": "2026-02-25T09:56:21.138344+00:00",
           "price": 5.108e-07
         }
+      ],
+      "badges": [
+        "\ud83d\udca7 Good Liq"
       ]
     },
     "0xdf25a0f930029cd46aebfa6ff988ad04c0321b07": {
@@ -1944,6 +2040,9 @@
           "timestamp": "2026-02-25T09:56:21.138356+00:00",
           "price": 2.107e-06
         }
+      ],
+      "badges": [
+        "\ud83d\udc8e High Liq"
       ]
     },
     "0xb23c6e17fe82f958ade869d31055c445f76c5c43": {
@@ -2032,6 +2131,9 @@
           "timestamp": "2026-02-25T09:56:21.138368+00:00",
           "price": 4.026e-05
         }
+      ],
+      "badges": [
+        "\ud83d\udca7 Good Liq"
       ]
     },
     "0x5b2193fdc451c1f847be09ca9d13a4bf60f8c86b": {
@@ -2114,6 +2216,9 @@
           "timestamp": "2026-02-25T09:56:21.138379+00:00",
           "price": 0.03853
         }
+      ],
+      "badges": [
+        "\ud83d\udc8e High Liq"
       ]
     },
     "0xbd5694abea9a397fc3014678ed529e3da038eba3": {
@@ -2160,6 +2265,9 @@
           "timestamp": "2026-02-25T09:56:21.138387+00:00",
           "price": 7.034e-07
         }
+      ],
+      "badges": [
+        "\ud83d\udc8e High Liq"
       ]
     },
     "0x3e96a25ee1ce2dab3f528e033d60b3352ff3e8a2": {
@@ -2522,7 +2630,8 @@
           "timestamp": "2026-02-25T09:56:21.138397+00:00",
           "price": 1.392e-06
         }
-      ]
+      ],
+      "badges": []
     },
     "0xfc57cf56a22ec88ebacb8c59a8d4eed1177dc58f": {
       "address": "0xfc57cf56a22ec88ebacb8c59a8d4eed1177dc58f",
@@ -2630,7 +2739,8 @@
           "timestamp": "2026-02-25T09:56:21.138417+00:00",
           "price": 2.356e-06
         }
-      ]
+      ],
+      "badges": []
     },
     "0x680a32cf225f2ecb46bb771e2cc2e92ecef0eb07": {
       "address": "0x680a32cf225f2ecb46bb771e2cc2e92ecef0eb07",
@@ -2726,6 +2836,9 @@
           "timestamp": "2026-02-25T09:56:21.138434+00:00",
           "price": 2.331e-07
         }
+      ],
+      "badges": [
+        "\ud83d\udca7 Good Liq"
       ]
     },
     "0xde4b3bdfc8203f5641ceeaf203362d34d49c2b07": {
@@ -2806,6 +2919,9 @@
           "timestamp": "2026-02-25T09:56:21.138442+00:00",
           "price": 3.369e-06
         }
+      ],
+      "badges": [
+        "\ud83d\ude80 Mooning"
       ]
     },
     "0x2c18f3a2b9829bfe727f29191f651170d01a1b07": {
@@ -2874,7 +2990,8 @@
           "timestamp": "2026-02-25T09:56:21.138448+00:00",
           "price": 2.511e-06
         }
-      ]
+      ],
+      "badges": []
     },
     "0x99bb9e6bc8aef69937bd648e8658cf872412fb07": {
       "address": "0x99bb9e6bc8aef69937bd648e8658cf872412fb07",
@@ -2948,7 +3065,8 @@
           "timestamp": "2026-02-25T09:56:21.138458+00:00",
           "price": 4.118e-06
         }
-      ]
+      ],
+      "badges": []
     },
     "0xa70ffc00488d687551454f50365abbd62a34fb07": {
       "address": "0xa70ffc00488d687551454f50365abbd62a34fb07",
@@ -3016,7 +3134,8 @@
           "timestamp": "2026-02-25T09:56:21.138466+00:00",
           "price": 3.684e-06
         }
-      ]
+      ],
+      "badges": []
     },
     "0xc2ea9dcaee956d98ea39817d598a82b3a934db07": {
       "address": "0xc2ea9dcaee956d98ea39817d598a82b3a934db07",
@@ -3096,7 +3215,8 @@
           "timestamp": "2026-02-25T09:56:21.138472+00:00",
           "price": 1.901e-07
         }
-      ]
+      ],
+      "badges": []
     },
     "0x1105d572ef832b2346af6ac81726b485f9508b07": {
       "address": "0x1105d572ef832b2346af6ac81726b485f9508b07",
@@ -3194,7 +3314,8 @@
           "timestamp": "2026-02-25T09:56:21.138478+00:00",
           "price": 3.895e-07
         }
-      ]
+      ],
+      "badges": []
     },
     "0x9802a847bedf8b45665c5e4069ee1515ae2d6b07": {
       "address": "0x9802a847bedf8b45665c5e4069ee1515ae2d6b07",
@@ -3280,7 +3401,8 @@
           "timestamp": "2026-02-25T09:56:21.138484+00:00",
           "price": 1.896e-07
         }
-      ]
+      ],
+      "badges": []
     },
     "0x9ee36408f7c57763727dd64513a260820a576b07": {
       "address": "0x9ee36408f7c57763727dd64513a260820a576b07",
@@ -3420,7 +3542,8 @@
           "timestamp": "2026-02-25T09:56:21.138495+00:00",
           "price": 1.875e-07
         }
-      ]
+      ],
+      "badges": []
     },
     "0xb5fae1ef16015c52bf33fcb8d1b150d465139ba3": {
       "address": "0xb5fae1ef16015c52bf33fcb8d1b150d465139ba3",
@@ -3506,7 +3629,8 @@
           "timestamp": "2026-02-25T09:56:21.138516+00:00",
           "price": 2.229e-06
         }
-      ]
+      ],
+      "badges": []
     },
     "0xc9be00eb42d2c755361aaec0054fcc9796231b07": {
       "address": "0xc9be00eb42d2c755361aaec0054fcc9796231b07",
@@ -3592,7 +3716,8 @@
           "timestamp": "2026-02-25T09:56:21.138526+00:00",
           "price": 1.857e-07
         }
-      ]
+      ],
+      "badges": []
     },
     "0xa9bbee734b00bc3d732455ee4c59d485e0d00b07": {
       "address": "0xa9bbee734b00bc3d732455ee4c59d485e0d00b07",
@@ -3660,7 +3785,8 @@
           "timestamp": "2026-02-25T09:56:21.138533+00:00",
           "price": 2.12e-07
         }
-      ]
+      ],
+      "badges": []
     },
     "0xc61857eb390ff2ac5fd07aae0c030bbe5b79144e": {
       "address": "0xc61857eb390ff2ac5fd07aae0c030bbe5b79144e",
@@ -3750,6 +3876,9 @@
           "timestamp": "2026-02-25T09:56:21.138538+00:00",
           "price": 0.0007044
         }
+      ],
+      "badges": [
+        "\ud83d\udc8e High Liq"
       ]
     },
     "0x71a09f5b9b88976ebcc79183e0e99e7d07beabaf": {
@@ -3838,6 +3967,10 @@
           "timestamp": "2026-02-25T09:56:21.138546+00:00",
           "price": 0.002018
         }
+      ],
+      "badges": [
+        "\ud83d\udc8e High Liq",
+        "\ud83d\ude80 Mooning"
       ]
     },
     "0x8e27a4cac917563295de9b07d594f7f3e0fdcb07": {
@@ -3924,7 +4057,8 @@
           "timestamp": "2026-02-25T09:56:21.138552+00:00",
           "price": 2.43e-06
         }
-      ]
+      ],
+      "badges": []
     },
     "0x6630662d14032f58b4191316e8cef4557925fb07": {
       "address": "0x6630662d14032f58b4191316e8cef4557925fb07",
@@ -4028,6 +4162,9 @@
           "timestamp": "2026-02-25T09:56:21.138558+00:00",
           "price": 1.19e-06
         }
+      ],
+      "badges": [
+        "\u26a1 Pumping"
       ]
     },
     "0x7c0a5c1020c39bfa1af711b4b963be82f55e1b07": {
@@ -4094,6 +4231,9 @@
           "timestamp": "2026-02-25T09:56:21.138563+00:00",
           "price": 1.935e-07
         }
+      ],
+      "badges": [
+        "\ud83d\udca7 Good Liq"
       ]
     },
     "0x747fc2c56447d8737e4f3a6dea5f8fbeb034db07": {
@@ -4154,6 +4294,9 @@
           "timestamp": "2026-02-25T09:56:21.138570+00:00",
           "price": 2.265e-07
         }
+      ],
+      "badges": [
+        "\ud83d\udca7 Good Liq"
       ]
     },
     "0xce3fcd5e1481155016df318cffd8c19060f5844e": {
@@ -4232,7 +4375,8 @@
           "timestamp": "2026-02-25T09:56:21.138575+00:00",
           "price": 4.438e-06
         }
-      ]
+      ],
+      "badges": []
     },
     "0xf307e242BfE1EC1fF01a4Cef2fdaa81b10A52418": {
       "address": "0xf307e242BfE1EC1fF01a4Cef2fdaa81b10A52418",
@@ -4275,6 +4419,10 @@
           "timestamp": "2026-02-25T09:56:21.138581+00:00",
           "price": 0.0002211
         }
+      ],
+      "badges": [
+        "\ud83d\udca7 Good Liq",
+        "\u2728 Fresh"
       ]
     },
     "0x12b7E46c5e98514447178994F26f06200E0Db660": {
@@ -4317,6 +4465,11 @@
           "timestamp": "2026-02-25T09:56:21.138594+00:00",
           "price": 5.149e-07
         }
+      ],
+      "badges": [
+        "\ud83d\udca7 Good Liq",
+        "\ud83d\udcc8 High Vol",
+        "\u2728 Fresh"
       ]
     },
     "0x9A92dD358a7a6411c76b0f7C3Fc061729e0c1A39": {
@@ -4366,6 +4519,11 @@
           "timestamp": "2026-02-25T09:56:21.138604+00:00",
           "price": 0.001052
         }
+      ],
+      "badges": [
+        "\ud83d\udc8e High Liq",
+        "\ud83d\udcca Active",
+        "\u2728 Fresh"
       ]
     },
     "0xb233BDFFD437E60fA451F62c6c09D3804d285Ba3": {
@@ -4408,6 +4566,11 @@
           "timestamp": "2026-02-25T09:56:21.138619+00:00",
           "price": 2.009e-05
         }
+      ],
+      "badges": [
+        "\ud83d\udc8e High Liq",
+        "\ud83d\udcc8 High Vol",
+        "\u23f1\ufe0f New"
       ]
     },
     "0x29D56144232deC5b389aFc1AD028691Fb85E2bA3": {
@@ -4448,6 +4611,9 @@
           "timestamp": "2026-02-25T09:56:21.138640+00:00",
           "price": 2.031e-07
         }
+      ],
+      "badges": [
+        "\ud83d\udca7 Good Liq"
       ]
     },
     "0xBe6279f8fB1C33BE3572996E9505506E23400e61": {
@@ -4490,6 +4656,9 @@
           "timestamp": "2026-02-25T09:56:21.138665+00:00",
           "price": 0.0002398
         }
+      ],
+      "badges": [
+        "\ud83d\udc8e High Liq"
       ]
     }
   }
