@@ -13,8 +13,8 @@ from pathlib import Path
 
 # Config (modifiable via config/lurker_config.yaml à terme)
 CONFIG = {
-    "min_liquidity": 1000,
-    "min_volume_5m": 500,
+    "min_liquidity": 300,      # Reduced to catch more tokens
+    "min_volume_5m": 0,        # No 5m volume requirement
     "max_age_minutes": 10080,  # 7 jours
     "chain": "base"
 }
@@ -135,10 +135,16 @@ def scan_dexscreener_pairs(query="base"):
             
             liq = safe_num(pair.get("liquidity", {}).get("usd"))
             vol_5m = safe_num(pair.get("volume", {}).get("m5"))
+            vol_1h = safe_num(pair.get("volume", {}).get("h1"))
+            vol_24h = safe_num(pair.get("volume", {}).get("h24"))
+            
+            # Use total volume (5m + 1h + 24h) for filtering
+            total_vol = vol_5m + vol_1h + vol_24h
             
             if liq < CONFIG["min_liquidity"]:
                 continue
-            if vol_5m < CONFIG["min_volume_5m"]:
+            # Check if any volume exists (relaxed requirement)
+            if total_vol < 100:
                 continue
             
             addr = pair.get("baseToken", {}).get("address")
@@ -167,8 +173,8 @@ def scan_dexscreener_pairs(query="base"):
                     "liq_usd": liq,
                     "price_usd": safe_num(pair.get("priceUsd")),
                     "vol_5m_usd": vol_5m,
-                    "vol_1h_usd": safe_num(pair.get("volume", {}).get("h1")),
-                    "vol_24h_usd": safe_num(pair.get("volume", {}).get("h24")),
+                    "vol_1h_usd": vol_1h,
+                    "vol_24h_usd": vol_24h,
                     "txns_5m": safe_num(pair.get("txns", {}).get("m5", {}).get("buys")) + 
                                safe_num(pair.get("txns", {}).get("m5", {}).get("sells")),
                     "price_change_24h": safe_num(pair.get("priceChange", {}).get("h24")),
@@ -305,21 +311,36 @@ def main():
     print(f"Tokens existants: {len(state['tokens'])}")
     
     # Scan multi-source
-    print("\n[1/3] Scanning profiles...")
+    print("\n[1/4] Scanning profiles...")
     profiles = scan_dexscreener_profiles()
     print(f"  → {len(profiles)} tokens from profiles")
     
-    print("[2/3] Scanning boosts...")
+    print("[2/4] Scanning boosts...")
     boosts = scan_dexscreener_boosts()
     print(f"  → {len(boosts)} tokens from boosts")
     
-    print("[3/3] Scanning pairs...")
-    pairs = scan_dexscreener_pairs("base")
-    print(f"  → {len(pairs)} tokens from pairs")
+    print("[3/4] Scanning pairs with multiple queries...")
+    all_pairs = []
+    # Expanded queries to catch more tokens
+    queries = ["base", "claw", "nook", "society", "ai", "wolf", "marty", "elon", "trump", "pepe"]
+    for query in queries:
+        pairs = scan_dexscreener_pairs(query)
+        all_pairs.extend(pairs)
+        print(f"  → {len(pairs)} from '{query}'")
+    
+    # Remove duplicates from pairs
+    seen_addrs = set()
+    unique_pairs = []
+    for p in all_pairs:
+        addr = p.get("address")
+        if addr and addr not in seen_addrs:
+            seen_addrs.add(addr)
+            unique_pairs.append(p)
+    print(f"  → {len(unique_pairs)} unique pairs total")
     
     # Merge
     print("\n[4/4] Merging sources...")
-    new_tokens = merge_tokens([profiles, boosts, pairs])
+    new_tokens = merge_tokens([profiles, boosts, unique_pairs])
     
     # Update state
     added = 0

@@ -1,9 +1,9 @@
 {
   "schema": "lurker_v1.5",
   "meta": {
-    "last_scan": "2026-02-25T08:13:57.455987+00:00",
+    "last_scan": "2026-02-25T08:30:43.179903+00:00",
     "last_lifecycle": "2026-02-25T05:55:37.622090+00:00",
-    "total_tokens": 64,
+    "total_tokens": 77,
     "version": "1.5.0",
     "migrated_from": "v1_feeds",
     "migration_date": "2026-02-25T05:39:10.406085+00:00",
@@ -58,10 +58,7 @@
           "dumping"
         ]
       },
-      "risk_tags": [
-        "\u26a1 TRENDING",
-        "\ud83d\udd0d WATCH"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0,
         "current_gain": 0.0,
@@ -103,10 +100,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\u26a1 TRENDING",
-        "\ud83d\udcc8 HIGH_VOLUME"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0,
         "current_gain": 0.0,
@@ -150,11 +144,7 @@
           "dumping"
         ]
       },
-      "risk_tags": [
-        "\u26a1 TRENDING",
-        "\ud83d\udca7 GOOD_LIQ",
-        "\ud83d\udd0d WATCH"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0,
         "current_gain": 0.0,
@@ -199,10 +189,7 @@
           "manual_mark"
         ]
       },
-      "risk_tags": [
-        "\u26a0\ufe0f COPYCAT",
-        "\ud83d\udc80 RUGGED"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0,
         "current_gain": 0.0,
@@ -246,9 +233,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\u26a1 TRENDING"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0,
         "current_gain": 0.0,
@@ -290,9 +275,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\u26a1 TRENDING"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0,
         "current_gain": 0.0,
@@ -334,9 +317,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\u26a1 TRENDING"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0,
         "current_gain": 0.0,
@@ -378,10 +359,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\u26a1 TRENDING",
-        "\ud83d\udc8e HIGH_LIQ"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0,
         "current_gain": 0.0,
@@ -423,9 +401,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\u26a1 TRENDING"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0,
         "current_gain": 0.0,
@@ -470,10 +446,7 @@
           "manual_mark"
         ]
       },
-      "risk_tags": [
-        "\u26a0\ufe0f COPYCAT",
-        "\ud83d\udc80 RUGGED"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0,
         "current_gain": 0.0,
@@ -517,10 +490,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\u26a1 TRENDING",
-        "\ud83d\udc8e HIGH_LIQ"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0,
         "current_gain": 0.0,
@@ -564,11 +534,7 @@
           "dumping"
         ]
       },
-      "risk_tags": [
-        "\u26a1 TRENDING",
-        "\ud83d\udcc8 HIGH_VOLUME",
-        "\ud83d\udd0d WATCH"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0,
         "current_gain": 0.0,
@@ -610,11 +576,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\u26a1 TRENDING",
-        "\ud83d\udcc8 HIGH_VOLUME",
-        "\ud83d\udca7 GOOD_LIQ"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0,
         "current_gain": 0.0,
@@ -658,9 +620,7 @@
           "pump_dump_pattern"
         ]
       },
-      "risk_tags": [
-        "\ud83d\udc80 RUGGED"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0.0,
         "current_gain": 0.0,
@@ -708,9 +668,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\ud83d\udcc9 DUMPING"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0.0,
         "current_gain": -49.2,
@@ -758,10 +716,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udc8e HIGH_LIQ"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 47.2,
         "current_gain": 23.2,
@@ -953,10 +908,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udc8e HIGH_LIQ"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 27.7,
         "current_gain": 27.7,
@@ -1034,9 +986,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\ud83d\udcc9 DUMPING"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0.0,
         "current_gain": -24.0,
@@ -1096,10 +1046,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udc8e HIGH_LIQ"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0,
         "current_gain": 0.0,
@@ -1141,10 +1088,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udca7 GOOD_LIQ"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0,
         "current_gain": 0.0,
@@ -1186,9 +1130,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\ud83c\udf0a ESTABLISHED"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0,
         "current_gain": 0.0,
@@ -1230,10 +1172,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udc8e HIGH_LIQ"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0,
         "current_gain": 0.0,
@@ -1275,11 +1214,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udcab ACTIVE",
-        "\ud83d\udca7 GOOD_LIQ"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 179.6,
         "current_gain": 179.6,
@@ -1327,10 +1262,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udc8e HIGH_LIQ"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0.0,
         "current_gain": 0.0,
@@ -1378,9 +1310,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\ud83c\udf0a ESTABLISHED"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0,
         "current_gain": 0.0,
@@ -1422,11 +1352,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udcc8 HIGH_VOLUME",
-        "\ud83d\udca7 GOOD_LIQ"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 10.0,
         "current_gain": 10.0,
@@ -1474,10 +1400,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udc8e HIGH_LIQ"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 19.3,
         "current_gain": 19.3,
@@ -1525,11 +1448,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udcab ACTIVE",
-        "\ud83d\udca7 GOOD_LIQ"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0,
         "current_gain": 0.0,
@@ -1571,11 +1490,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udcab ACTIVE",
-        "\ud83d\udca7 GOOD_LIQ"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0,
         "current_gain": 0.0,
@@ -1617,10 +1532,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udcc8 HIGH_VOLUME"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0,
         "current_gain": 0.0,
@@ -1662,11 +1574,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udcab ACTIVE",
-        "\ud83d\udc8e HIGH_LIQ"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0,
         "current_gain": 0.0,
@@ -1708,9 +1616,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\ud83c\udf0a ESTABLISHED"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0.0,
         "current_gain": 0.0,
@@ -1758,9 +1664,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\ud83c\udf0a ESTABLISHED"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0,
         "current_gain": 0.0,
@@ -1802,11 +1706,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udcc8 HIGH_VOLUME",
-        "\ud83d\udc8e HIGH_LIQ"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 1319.6,
         "current_gain": 1319.6,
@@ -1902,9 +1802,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\ud83c\udf0a ESTABLISHED"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 9.7,
         "current_gain": -8.3,
@@ -1988,10 +1886,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udc8e HIGH_LIQ"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 3.1,
         "current_gain": -17.8,
@@ -2093,9 +1988,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\ud83c\udf0a ESTABLISHED"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 10.8,
         "current_gain": 10.0,
@@ -2179,10 +2072,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udc8e HIGH_LIQ"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0.0,
         "current_gain": -1.6,
@@ -2260,10 +2150,7 @@
         "level": "low",
         "factors": []
       },
-      "risk_tags": [
-        "\ud83c\udf0a ESTABLISHED",
-        "\ud83d\udca7 GOOD_LIQ"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0,
         "current_gain": 0.0,
@@ -2310,8 +2197,7 @@
         ]
       },
       "risk_tags": [
-        "\ud83d\udc80 RUGGED",
-        "\u26a0\ufe0f COPYCAT"
+        "LOW_LIQUIDITY"
       ],
       "performance": {
         "max_gain": 0.0,
@@ -2395,8 +2281,7 @@
         ]
       },
       "risk_tags": [
-        "\ud83d\udc80 RUGGED",
-        "\ud83d\udcc9 DUMPING"
+        "LOW_LIQUIDITY"
       ],
       "performance": {
         "max_gain": 14.7,
@@ -2752,7 +2637,7 @@
         "factors": []
       },
       "risk_tags": [
-        "\ud83c\udf0a ESTABLISHED"
+        "LOW_LIQUIDITY"
       ],
       "performance": {
         "max_gain": 2.7,
@@ -2857,10 +2742,7 @@
           "dumping (-85%)"
         ]
       },
-      "risk_tags": [
-        "\ud83d\udc80 RUGGED",
-        "\ud83d\udcc9 DUMPING"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 31.6,
         "current_gain": -85.1,
@@ -2953,7 +2835,7 @@
         ]
       },
       "risk_tags": [
-        "\ud83d\udc80 RUGGED"
+        "LOW_LIQUIDITY"
       ],
       "performance": {
         "max_gain": 150.5,
@@ -3029,7 +2911,7 @@
         ]
       },
       "risk_tags": [
-        "\ud83d\udc80 RUGGED"
+        "LOW_LIQUIDITY"
       ],
       "performance": {
         "max_gain": 10.7,
@@ -3093,8 +2975,7 @@
         ]
       },
       "risk_tags": [
-        "\ud83d\udc80 RUGGED",
-        "\ud83d\udcc9 DUMPING"
+        "LOW_LIQUIDITY"
       ],
       "performance": {
         "max_gain": 0.0,
@@ -3164,7 +3045,7 @@
         ]
       },
       "risk_tags": [
-        "\ud83d\udc80 RUGGED"
+        "LOW_LIQUIDITY"
       ],
       "performance": {
         "max_gain": 4.3,
@@ -3228,7 +3109,7 @@
         ]
       },
       "risk_tags": [
-        "\ud83d\udc80 RUGGED"
+        "LOW_LIQUIDITY"
       ],
       "performance": {
         "max_gain": 1.3,
@@ -3304,7 +3185,7 @@
         ]
       },
       "risk_tags": [
-        "\ud83d\udc80 RUGGED"
+        "LOW_LIQUIDITY"
       ],
       "performance": {
         "max_gain": 5.8,
@@ -3398,8 +3279,7 @@
         ]
       },
       "risk_tags": [
-        "\ud83d\udc80 RUGGED",
-        "\ud83d\udcc9 DUMPING"
+        "LOW_LIQUIDITY"
       ],
       "performance": {
         "max_gain": 41.1,
@@ -3481,8 +3361,7 @@
         ]
       },
       "risk_tags": [
-        "\ud83d\udc80 RUGGED",
-        "\ud83d\udcc9 DUMPING"
+        "LOW_LIQUIDITY"
       ],
       "performance": {
         "max_gain": 56.8,
@@ -3618,7 +3497,7 @@
         ]
       },
       "risk_tags": [
-        "\ud83d\udc80 RUGGED"
+        "LOW_LIQUIDITY"
       ],
       "performance": {
         "max_gain": 0.0,
@@ -3700,7 +3579,7 @@
         ]
       },
       "risk_tags": [
-        "\ud83d\udc80 RUGGED"
+        "LOW_LIQUIDITY"
       ],
       "performance": {
         "max_gain": 0.0,
@@ -3782,7 +3661,7 @@
         ]
       },
       "risk_tags": [
-        "\ud83d\udc80 RUGGED"
+        "LOW_LIQUIDITY"
       ],
       "performance": {
         "max_gain": 0.0,
@@ -3843,10 +3722,7 @@
         "level": "critical",
         "factors": []
       },
-      "risk_tags": [
-        "\ud83d\udc80 RUGGED",
-        "\ud83d\udcc9 DUMPING"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 240.9,
         "current_gain": -29.0,
@@ -3932,9 +3808,7 @@
           "rug_detected"
         ]
       },
-      "risk_tags": [
-        "\ud83d\udc80 RUGGED"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 441.5,
         "current_gain": 316.9,
@@ -4021,7 +3895,7 @@
         ]
       },
       "risk_tags": [
-        "\ud83d\udc80 RUGGED"
+        "LOW_LIQUIDITY"
       ],
       "performance": {
         "max_gain": 135.9,
@@ -4103,7 +3977,7 @@
         ]
       },
       "risk_tags": [
-        "\ud83d\udc80 RUGGED"
+        "LOW_LIQUIDITY"
       ],
       "performance": {
         "max_gain": 152.1,
@@ -4200,10 +4074,7 @@
         "level": "critical",
         "factors": []
       },
-      "risk_tags": [
-        "\ud83d\udc80 RUGGED",
-        "\ud83d\udcc9 DUMPING"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 5.0,
         "current_gain": -93.2,
@@ -4263,10 +4134,7 @@
         "level": "critical",
         "factors": []
       },
-      "risk_tags": [
-        "\ud83d\udc80 RUGGED",
-        "\ud83d\udcc9 DUMPING"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 0.0,
         "current_gain": -92.0,
@@ -4320,10 +4188,7 @@
         "level": "critical",
         "factors": []
       },
-      "risk_tags": [
-        "\ud83d\udc80 RUGGED",
-        "\ud83d\udcc9 DUMPING"
-      ],
+      "risk_tags": [],
       "performance": {
         "max_gain": 314.2,
         "current_gain": -97.8,
@@ -4400,9 +4265,7 @@
         ]
       },
       "risk_tags": [
-        "\ud83d\udc80 RUGGED",
-        "\u26a0\ufe0f COPYCAT",
-        "\ud83d\udcc9 DUMPING"
+        "LOW_LIQUIDITY"
       ],
       "performance": {
         "max_gain": 0.0,
@@ -4472,7 +4335,8 @@
         "factors": []
       },
       "risk_tags": [
-        "\u26a1 TRENDING"
+        "FRESH",
+        "FAST_GROWTH"
       ],
       "performance": {
         "max_gain": 0,
@@ -4509,7 +4373,7 @@
         "factors": []
       },
       "risk_tags": [
-        "\u26a1 TRENDING"
+        "FRESH"
       ],
       "performance": {
         "max_gain": 0,
@@ -4517,6 +4381,466 @@
         "status": "new"
       },
       "price_history": []
+    },
+    "0x9A92dD358a7a6411c76b0f7C3Fc061729e0c1A39": {
+      "address": "0x9A92dD358a7a6411c76b0f7C3Fc061729e0c1A39",
+      "symbol": "WOLF",
+      "name": "WOLF",
+      "source": "pairs",
+      "icon": "https://cdn.dexscreener.com/cms/images/Q5oHkoA0n2Yd7o-p?width=64&height=64&fit=crop&quality=95&format=auto",
+      "description": "A tribute to Philippe des Palli\u00e8res and Herv\u00e9 Marly \u2014 bringing The Werewolves of Miller\u2019s Hollow onto the blockchain through the power of AI.",
+      "twitter": "",
+      "website": "",
+      "telegram": "",
+      "has_profile": true,
+      "pair_address": "0x49ab97B05F5Afc8a65E7C419F80C04E59C754cb8",
+      "dex": "uniswap",
+      "age_minutes": 47.8,
+      "metrics": {
+        "liq_usd": 89686.28,
+        "price_usd": 0.001052,
+        "vol_5m_usd": 382.07,
+        "vol_1h_usd": 74965.69,
+        "vol_24h_usd": 74965.69,
+        "txns_5m": 5.0,
+        "price_change_24h": 2084.0,
+        "market_cap": 1052720.0
+      },
+      "sources": [
+        "pairs"
+      ],
+      "detected_at": "2026-02-25T08:30:43.179378+00:00",
+      "category": "CIO",
+      "risk": {
+        "level": "unknown",
+        "factors": []
+      },
+      "performance": {
+        "max_gain": 0,
+        "current_gain": 0,
+        "status": "new"
+      },
+      "risk_tags": [
+        "FAST_GROWTH",
+        "ESTABLISHED"
+      ]
+    },
+    "0xD81D1E61Ce04b8858dd4951808871829c195fB07": {
+      "address": "0xD81D1E61Ce04b8858dd4951808871829c195fB07",
+      "symbol": "NOOK",
+      "name": "nookplot",
+      "source": "pairs",
+      "boost_amount": 30.0,
+      "pair_address": "0x630062af00141542201fa21bb5401c8d575381f7cc08a6ea13e89f57ccaf3f27",
+      "dex": "uniswap",
+      "age_minutes": 187.6,
+      "metrics": {
+        "liq_usd": 21622.7,
+        "price_usd": 1.996e-07,
+        "vol_5m_usd": 0.0,
+        "vol_1h_usd": 500.96,
+        "vol_24h_usd": 294676.12,
+        "txns_5m": 0.0,
+        "price_change_24h": -56.16,
+        "market_cap": 19962.0
+      },
+      "sources": [
+        "pairs"
+      ],
+      "detected_at": "2026-02-25T08:30:43.179412+00:00",
+      "category": "CIO",
+      "risk": {
+        "level": "unknown",
+        "factors": []
+      },
+      "performance": {
+        "max_gain": 0,
+        "current_gain": 0,
+        "status": "new"
+      },
+      "risk_tags": []
+    },
+    "0xb233BDFFD437E60fA451F62c6c09D3804d285Ba3": {
+      "address": "0xb233BDFFD437E60fA451F62c6c09D3804d285Ba3",
+      "symbol": "NOOK",
+      "name": "nookplot",
+      "pair_address": "0xe93071444b085fe0b83b0e138c2f0e47d510c1f6fa604a83dd10c0c7f8a0bb97",
+      "dex": "uniswap",
+      "source": "pairs",
+      "age_minutes": 318.6,
+      "metrics": {
+        "liq_usd": 463895.67,
+        "price_usd": 2.009e-05,
+        "vol_5m_usd": 9014.56,
+        "vol_1h_usd": 273261.17,
+        "vol_24h_usd": 2726874.08,
+        "txns_5m": 38.0,
+        "price_change_24h": 9924.0,
+        "market_cap": 2009199.0
+      },
+      "sources": [
+        "pairs"
+      ],
+      "detected_at": "2026-02-25T08:30:43.179416+00:00",
+      "category": "CIO",
+      "risk": {
+        "level": "unknown",
+        "factors": []
+      },
+      "performance": {
+        "max_gain": 0,
+        "current_gain": 0,
+        "status": "new"
+      },
+      "risk_tags": [
+        "ESTABLISHED"
+      ]
+    },
+    "0xf0A48e32C134bCa8C38F32bBfb46D518753cCba3": {
+      "address": "0xf0A48e32C134bCa8C38F32bBfb46D518753cCba3",
+      "symbol": "NOOK",
+      "name": "nookplot",
+      "pair_address": "0xc5008a0bd51964ddea177c597ab34fb4785e076fb169e7158bfb4d4a72186ca3",
+      "dex": "uniswap",
+      "source": "pairs",
+      "age_minutes": 387.7,
+      "metrics": {
+        "liq_usd": 29278.89,
+        "price_usd": 2.668e-07,
+        "vol_5m_usd": 41.56,
+        "vol_1h_usd": 284.68,
+        "vol_24h_usd": 331841.22,
+        "txns_5m": 1.0,
+        "price_change_24h": 25.46,
+        "market_cap": 26682.0
+      },
+      "sources": [
+        "pairs"
+      ],
+      "detected_at": "2026-02-25T08:30:43.179421+00:00",
+      "category": "CIO",
+      "risk": {
+        "level": "unknown",
+        "factors": []
+      },
+      "performance": {
+        "max_gain": 0,
+        "current_gain": 0,
+        "status": "new"
+      },
+      "risk_tags": []
+    },
+    "0x2fF93315BCfD446bF46ddBeF0289F4a696D35Ba3": {
+      "address": "0x2fF93315BCfD446bF46ddBeF0289F4a696D35Ba3",
+      "symbol": "NOOK",
+      "name": "nookplot",
+      "pair_address": "0x9bDa698E06308264939C85eE6212abBC36e71827",
+      "dex": "uniswap",
+      "source": "pairs",
+      "age_minutes": 2.4,
+      "metrics": {
+        "liq_usd": 24360.74,
+        "price_usd": 7.078e-05,
+        "vol_5m_usd": 8396.08,
+        "vol_1h_usd": 8396.08,
+        "vol_24h_usd": 8396.08,
+        "txns_5m": 55.0,
+        "price_change_24h": 62.47,
+        "market_cap": 70785.0
+      },
+      "sources": [
+        "pairs"
+      ],
+      "detected_at": "2026-02-25T08:30:43.179424+00:00",
+      "category": "CIO",
+      "risk": {
+        "level": "unknown",
+        "factors": []
+      },
+      "performance": {
+        "max_gain": 0,
+        "current_gain": 0,
+        "status": "new"
+      },
+      "risk_tags": [
+        "FRESH"
+      ]
+    },
+    "0xc31EBaFb9a6d5e625794Ea1e5Db260c8a27a5BA3": {
+      "address": "0xc31EBaFb9a6d5e625794Ea1e5Db260c8a27a5BA3",
+      "symbol": "NOOK",
+      "name": "nookplot",
+      "pair_address": "0xb45559f121a3Dc99B4F3eFF90cb57E87A8B3dc07",
+      "dex": "uniswap",
+      "source": "pairs",
+      "age_minutes": 9.6,
+      "metrics": {
+        "liq_usd": 9053.24,
+        "price_usd": 3.805e-05,
+        "vol_5m_usd": 3325.67,
+        "vol_1h_usd": 8077.08,
+        "vol_24h_usd": 8077.08,
+        "txns_5m": 60.0,
+        "price_change_24h": 169.0,
+        "market_cap": 38057.0
+      },
+      "sources": [
+        "pairs"
+      ],
+      "detected_at": "2026-02-25T08:30:43.179428+00:00",
+      "category": "CIO",
+      "risk": {
+        "level": "unknown",
+        "factors": []
+      },
+      "performance": {
+        "max_gain": 0,
+        "current_gain": 0,
+        "status": "new"
+      },
+      "risk_tags": [
+        "FRESH"
+      ]
+    },
+    "0x29D56144232deC5b389aFc1AD028691Fb85E2bA3": {
+      "address": "0x29D56144232deC5b389aFc1AD028691Fb85E2bA3",
+      "symbol": "nookplot",
+      "name": "nook",
+      "pair_address": "0xbdaf6ad50e1a9170b738f07745bb05a88f170f1445729f372b45c33144a645fb",
+      "dex": "uniswap",
+      "source": "pairs",
+      "age_minutes": 382.4,
+      "metrics": {
+        "liq_usd": 20451.5,
+        "price_usd": 2.031e-07,
+        "vol_5m_usd": 0.0,
+        "vol_1h_usd": 0.0,
+        "vol_24h_usd": 5780.16,
+        "txns_5m": 0.0,
+        "price_change_24h": -3.12,
+        "market_cap": 20317.0
+      },
+      "sources": [
+        "pairs"
+      ],
+      "detected_at": "2026-02-25T08:30:43.179432+00:00",
+      "category": "CIO",
+      "risk": {
+        "level": "unknown",
+        "factors": []
+      },
+      "performance": {
+        "max_gain": 0,
+        "current_gain": 0,
+        "status": "new"
+      },
+      "risk_tags": []
+    },
+    "0xD8dfac62E830B4304580cf34e4Ab757E3A0B3Ba3": {
+      "address": "0xD8dfac62E830B4304580cf34e4Ab757E3A0B3Ba3",
+      "symbol": "Nook",
+      "name": "Nookplot",
+      "pair_address": "0xec0658454023e8d10d710d28ea14c83e34b6ef8c5afb8d2bd0d7fdf7ce72253d",
+      "dex": "uniswap",
+      "source": "pairs",
+      "age_minutes": 332.0,
+      "metrics": {
+        "liq_usd": 19944.98,
+        "price_usd": 1.988e-07,
+        "vol_5m_usd": 0.0,
+        "vol_1h_usd": 0.0,
+        "vol_24h_usd": 6102.51,
+        "txns_5m": 0.0,
+        "price_change_24h": -1.22,
+        "market_cap": 19888.0
+      },
+      "sources": [
+        "pairs"
+      ],
+      "detected_at": "2026-02-25T08:30:43.179434+00:00",
+      "category": "CIO",
+      "risk": {
+        "level": "unknown",
+        "factors": []
+      },
+      "performance": {
+        "max_gain": 0,
+        "current_gain": 0,
+        "status": "new"
+      },
+      "risk_tags": []
+    },
+    "0x443450989CA44c9327C3298adA30a790cd07B894": {
+      "address": "0x443450989CA44c9327C3298adA30a790cd07B894",
+      "symbol": "Marty",
+      "name": "Marty",
+      "pair_address": "0x63cd31eee7f70f68147afcf4ca805ef09ed607ae3cbe5c9bbe5684f0f9ee26f5",
+      "dex": "uniswap",
+      "source": "pairs",
+      "age_minutes": 467.6,
+      "metrics": {
+        "liq_usd": 279917.99,
+        "price_usd": 3.499e-06,
+        "vol_5m_usd": 0.0,
+        "vol_1h_usd": 0.0,
+        "vol_24h_usd": 232356.21,
+        "txns_5m": 0.0,
+        "price_change_24h": 686.0,
+        "market_cap": 349981.0
+      },
+      "sources": [
+        "pairs"
+      ],
+      "detected_at": "2026-02-25T08:30:43.179439+00:00",
+      "category": "CIO",
+      "risk": {
+        "level": "unknown",
+        "factors": []
+      },
+      "performance": {
+        "max_gain": 0,
+        "current_gain": 0,
+        "status": "new"
+      },
+      "risk_tags": []
+    },
+    "0x4FE41F43448825003676243AC18955ecB70b6B07": {
+      "address": "0x4FE41F43448825003676243AC18955ecB70b6B07",
+      "symbol": "Marty",
+      "name": "Marty",
+      "pair_address": "0x98649fe2c37f6870ea46b855ef13875c608f1f348f4e3929132861edcf98d122",
+      "dex": "uniswap",
+      "source": "pairs",
+      "age_minutes": 491.0,
+      "metrics": {
+        "liq_usd": 19237.75,
+        "price_usd": 1.863e-07,
+        "vol_5m_usd": 0.0,
+        "vol_1h_usd": 0.0,
+        "vol_24h_usd": 100916.83,
+        "txns_5m": 0.0,
+        "price_change_24h": -77.31,
+        "market_cap": 18631.0
+      },
+      "sources": [
+        "pairs"
+      ],
+      "detected_at": "2026-02-25T08:30:43.179442+00:00",
+      "category": "CIO",
+      "risk": {
+        "level": "unknown",
+        "factors": []
+      },
+      "performance": {
+        "max_gain": 0,
+        "current_gain": 0,
+        "status": "new"
+      },
+      "risk_tags": []
+    },
+    "0x66c7E634801a676231ab011D75b46bc41B170bA3": {
+      "address": "0x66c7E634801a676231ab011D75b46bc41B170bA3",
+      "symbol": "Marty",
+      "name": "Marty",
+      "pair_address": "0xa5a7aa6bff66d65e04f9c26c879bc32dc11c228d5d046f134e47d31848e753bc",
+      "dex": "uniswap",
+      "source": "pairs",
+      "age_minutes": 540.0,
+      "metrics": {
+        "liq_usd": 192363.66,
+        "price_usd": 3.584e-06,
+        "vol_5m_usd": 3680.1,
+        "vol_1h_usd": 16544.4,
+        "vol_24h_usd": 2911576.69,
+        "txns_5m": 13.0,
+        "price_change_24h": 1437.0,
+        "market_cap": 358460.0
+      },
+      "sources": [
+        "pairs"
+      ],
+      "detected_at": "2026-02-25T08:30:43.179445+00:00",
+      "category": "CIO",
+      "risk": {
+        "level": "unknown",
+        "factors": []
+      },
+      "performance": {
+        "max_gain": 0,
+        "current_gain": 0,
+        "status": "new"
+      },
+      "risk_tags": []
+    },
+    "0x838eBB06643532a9BbCb21cED422393428345d05": {
+      "address": "0x838eBB06643532a9BbCb21cED422393428345d05",
+      "symbol": "Marty",
+      "name": "Marty",
+      "pair_address": "0x91c3FEA74819ba7b0635Ee1e1124c5D243fbF5aA",
+      "dex": "uniswap",
+      "source": "pairs",
+      "age_minutes": 492.6,
+      "metrics": {
+        "liq_usd": 64961.93,
+        "price_usd": 8.602e-07,
+        "vol_5m_usd": 0.0,
+        "vol_1h_usd": 0.0,
+        "vol_24h_usd": 1428927.97,
+        "txns_5m": 0.0,
+        "price_change_24h": 348.0,
+        "market_cap": 86029.0
+      },
+      "sources": [
+        "pairs"
+      ],
+      "detected_at": "2026-02-25T08:30:43.179447+00:00",
+      "category": "CIO",
+      "risk": {
+        "level": "unknown",
+        "factors": []
+      },
+      "performance": {
+        "max_gain": 0,
+        "current_gain": 0,
+        "status": "new"
+      },
+      "risk_tags": []
+    },
+    "0xBe6279f8fB1C33BE3572996E9505506E23400e61": {
+      "address": "0xBe6279f8fB1C33BE3572996E9505506E23400e61",
+      "symbol": "Marty",
+      "name": "Marty",
+      "pair_address": "0xd46903efe5c7d273efa49956c6ba4d1a54c0b0616a538cb843b17e576b846130",
+      "dex": "uniswap",
+      "source": "pairs",
+      "age_minutes": 490.9,
+      "metrics": {
+        "liq_usd": 23987024.09,
+        "price_usd": 0.0002398,
+        "vol_5m_usd": 0.0,
+        "vol_1h_usd": 0.0,
+        "vol_24h_usd": 238.92,
+        "txns_5m": 0.0,
+        "price_change_24h": 0,
+        "market_cap": 23987024.0
+      },
+      "sources": [
+        "pairs"
+      ],
+      "detected_at": "2026-02-25T08:30:43.179450+00:00",
+      "category": "CIO",
+      "risk": {
+        "level": "unknown",
+        "factors": []
+      },
+      "performance": {
+        "max_gain": 0,
+        "current_gain": 0,
+        "status": "new"
+      },
+      "risk_tags": [
+        "ESTABLISHED"
+      ]
     }
   }
 }
