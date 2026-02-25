@@ -479,15 +479,15 @@
                         <button class="token-category cat-${token.category || 'CIO'}">${token.category || 'CIO'}</button>
                         <div class="token-metric">
                             <div class="metric-label">price</div>
-                            <div class="metric-value">${metrics.price_usd ? '$' + metrics.price_usd.toFixed(6) : '-'}</div>
+                            <div class="metric-value">${metrics.price_usd && !isNaN(metrics.price_usd) ? '$' + Number(metrics.price_usd).toFixed(6) : '-'}</div>
                         </div>
                         <div class="token-metric">
                             <div class="metric-label">gain</div>
-                            <div class="metric-value ${gainClass}">${gain > 0 ? '+' : ''}${gain.toFixed(1)}%</div>
+                            <div class="metric-value ${gainClass}">${gain && !isNaN(gain) ? (gain > 0 ? '+' : '') + Number(gain).toFixed(1) + '%' : '-'}</div>
                         </div>
                         <div class="token-metric">
                             <div class="metric-label">liquidity</div>
-                            <div class="metric-value">${formatNumber(metrics.liq_usd)}</div>
+                            <div class="metric-value">${metrics.liq_usd && !isNaN(metrics.liq_usd) ? formatNumber(metrics.liq_usd) : '-'}</div>
                         </div>
                         <div class="token-metric">
                             <div class="metric-label">age</div>
