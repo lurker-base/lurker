@@ -161,29 +161,10 @@
             white-space: nowrap;
         }
 
-        /* Green badges - Good metrics */
-        .badge--trending, .badge-trending { background: #166534; color: #4ade80; }
-        .badge--high-volume, .badge-high-volume { background: #166534; color: #4ade80; }
-        .badge--good-liq, .badge-good-liq { background: #166534; color: #4ade80; }
-        .badge--active, .badge-active { background: #166534; color: #4ade80; }
-        .badge--established, .badge-established { background: #166534; color: #4ade80; }
-        .badge--high-liq, .badge-high-liq { background: #166534; color: #4ade80; }
-
-        /* Yellow/Orange badges - Caution */
-        .badge--watch, .badge-watch { background: #854d0e; color: #fbbf24; }
-        .badge--fresh, .badge-fresh { background: #854d0e; color: #fbbf24; }
-        .badge--low-liq, .badge-low-liq { background: #854d0e; color: #fbbf24; }
-        .badge--low-liquidity, .badge-low-liquidity { background: #854d0e; color: #fbbf24; }
-
-        /* Red badges - Danger/Rug */
-        .badge--dumping, .badge-dumping { background: #7f1d1d; color: #f87171; }
-        .badge--rugged, .badge-rugged { background: #000; color: #666; }
-        .badge--rug, .badge-rug { background: #000; color: #666; }
-
-        /* Blue badges - Premium/Quality */
-        .badge--premium, .badge-premium { background: #1e3a8a; color: #60a5fa; }
-
-        /* Fallback for any emoji badges */
+        /* Simple color classes */
+        .badge-green { background: #166534 !important; color: #4ade80 !important; }
+        .badge-yellow { background: #854d0e !important; color: #fbbf24 !important; }
+        .badge-red { background: #7f1d1d !important; color: #f87171 !important; }
         .badge-default { background: #333; color: #999; }
         
         /* Avatar styles for this page - matching main site */
@@ -456,25 +437,21 @@
                 const gain = perf.current_gain || 0;
                 const gainClass = gain > 0 ? 'positive' : gain < 0 ? 'negative' : '';
                 
-                // Generate badges with inline colors for reliability
+                // Generate badges with colors
                 const badges = token.risk_tags || [];
                 const badgeHTML = badges.map(b => {
-                    let bgColor = '#333';
-                    let textColor = '#999';
+                    let badgeClass = 'badge-default';
                     
-                    // Determine color based on badge content
+                    // Determine class based on badge content
                     if (b.includes('📉') || b.includes('💀') || b.includes('RUG')) {
-                        bgColor = '#7f1d1d';  // Red
-                        textColor = '#f87171';
+                        badgeClass = 'badge-red';
                     } else if (b.includes('⚠️') || b.includes('WATCH') || b.includes('FRESH')) {
-                        bgColor = '#854d0e';  // Yellow/Orange
-                        textColor = '#fbbf24';
+                        badgeClass = 'badge-yellow';
                     } else if (b.includes('⚡') || b.includes('📈') || b.includes('💧') || b.includes('💎') || b.includes('🌊')) {
-                        bgColor = '#166534';  // Green
-                        textColor = '#4ade80';
+                        badgeClass = 'badge-green';
                     }
                     
-                    return `<span class="badge" style="background: ${bgColor}; color: ${textColor}; padding: 0.15rem 0.4rem; border-radius: 3px; font-size: 0.6rem; font-weight: bold;">${b}</span>`;
+                    return `<span class="badge ${badgeClass}">${b}</span>`;
                 }).join('');
                 
                 // Generate social links
