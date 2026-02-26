@@ -2,7 +2,7 @@ name: LURKER Core
 
 on:
   schedule:
-    - cron: '*/2 * * * *'  # Every 2 minutes
+    - cron: '*/5 * * * *'  # Every 5 minutes
   workflow_dispatch:
 
 permissions:
@@ -28,7 +28,10 @@ jobs:
         run: pip install requests tweepy
 
       - name: Ensure directories exist
-        run: mkdir -p state
+        run: mkdir -p state tokens logs
+
+      - name: Fetch new tokens from DexScreener
+        run: python scripts/token_fetcher.py
 
       - name: Run Scanner
         run: python scripts/scanner_core.py
@@ -49,10 +52,10 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python scripts/notifier_core.py
 
-      - name: Commit state
+      - name: Commit state and tokens
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add state/lurker_state.json state/sent_alerts.json || true
-          git diff --cached --quiet || git commit -m "lurker: core update [$(date +%H:%M)]"
+          git add state/lurker_state.json state/sent_alerts.json tokens/base.json logs/*.log || true
+          git diff --cached --quiet || git commit -m "lurker: core update + token fetch [$(date +%H:%M)]"
           git push || echo "Nothing to push"

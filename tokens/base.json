@@ -1,0 +1,93 @@
+{
+  "0xd8b235a763d20d41bacf689d497cf6782204b5e8": {
+    "address": "0xd8b235a763d20d41bACF689D497cF6782204b5E8",
+    "symbol": "UNKNOWN",
+    "name": "Unknown",
+    "icon": "https://cdn.dexscreener.com/cms/images/hnm4Owf8A_0SmIL_?width=64&height=64&fit=crop&quality=95&format=auto",
+    "description": "ClawHammer is an open platform where AI agents systematically improve themselves through goal-setting, strategy sharing, and self-evaluation - and humans watch it happen in real time.",
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://github.com/ClawHammerApp/ClawHammer"
+      },
+      {
+        "type": "twitter",
+        "url": "https://x.com/ClawHammerAI"
+      }
+    ],
+    "discovered_at": "2026-02-26T15:40:31.858647",
+    "added_at": 1772116831,
+    "last_check": 1772116838.8544955,
+    "price_history": [
+      {
+        "timestamp": 1772116838.8544984,
+        "price": 8.96e-06,
+        "change": 918.0
+      }
+    ],
+    "pump_signal_sent": true
+  },
+  "0x943e6c14a1239374f9e5e0e52006dc8b74eace0f": {
+    "address": "0x943E6c14a1239374F9e5e0E52006DC8B74EAcE0f",
+    "symbol": "UNKNOWN",
+    "name": "Unknown",
+    "icon": "https://cdn.dexscreener.com/cms/images/f_aQogtM7NYQU3bv?width=64&height=64&fit=crop&quality=95&format=auto",
+    "description": "n0ir is an autonomous AI execution layer on Base. Deploy agent-driven yield strategies with verifiable onchain execution and a 90% fee-driven buyback flywheel.",
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://n0ir.ai/"
+      },
+      {
+        "label": "Docs",
+        "url": "https://docs.n0ir.ai/"
+      },
+      {
+        "label": "n0ir App",
+        "url": "https://app.n0ir.ai/"
+      },
+      {
+        "type": "twitter",
+        "url": "https://x.com/n0irAI"
+      },
+      {
+        "type": "discord",
+        "url": "https://discord.com/invite/XqkUsbKTAH"
+      }
+    ],
+    "discovered_at": "2026-02-26T15:40:31.858699",
+    "added_at": 1772116831,
+    "last_check": 1772116839.3269854,
+    "price_history": [
+      {
+        "timestamp": 1772116839.3269887,
+        "price": 0.0008006,
+        "change": 164.0
+      }
+    ],
+    "pump_signal_sent": true
+  },
+  "0x94bff1f44e702f7a5e35a65fd79837c95b7e2964": {
+    "address": "0x94bff1f44e702f7A5e35A65fD79837C95b7e2964",
+    "symbol": "UNKNOWN",
+    "name": "Unknown",
+    "icon": "https://cdn.dexscreener.com/cms/images/oDzpEVGZrxJoHJOk?width=64&height=64&fit=crop&quality=95&format=auto",
+    "description": "Turn tweets into apps.",
+    "links": [
+      {
+        "type": "twitter",
+        "url": "https://x.com/clonk_bot"
+      }
+    ],
+    "discovered_at": "2026-02-26T15:40:31.858705",
+    "added_at": 1772116831,
+    "last_check": 1772116839.554307,
+    "price_history": [
+      {
+        "timestamp": 1772116839.5543091,
+        "price": 1.404e-07,
+        "change": 11.56
+      }
+    ]
+  }
+}
