@@ -65,12 +65,105 @@ def fetch_latest_base_tokens():
                     if token["address"]:
                         base_tokens.append(token)
             
-            log(f"✅ Fetched {len(base_tokens)} Base tokens from DexScreener")
+            log(f"✅ Fetched {len(base_tokens)} Base tokens from profiles")
             return base_tokens
         else:
             log(f"❌ API error: {resp.status_code}")
     except Exception as e:
         log(f"❌ Error fetching: {e}")
+    
+    return []
+
+def fetch_new_pairs_base():
+    """Fetch NEW pairs on Base chain (most recent)"""
+    try:
+        # Get new pairs on Base
+        url = "https://api.dexscreener.com/token-pairs/latest/v1"
+        resp = requests.get(url, timeout=30)
+        
+        if resp.status_code == 200:
+            data = resp.json()
+            pairs = data if isinstance(data, list) else []
+            
+            # Filter for Base chain only
+            base_tokens = []
+            seen = set()
+            
+            for pair in pairs:
+                chain = pair.get("chainId", "").lower()
+                if chain != "base":
+                    continue
+                
+                # Get both tokens from pair
+                for token_key in ["baseToken", "quoteToken"]:
+                    token_data = pair.get(token_key, {})
+                    address = token_data.get("address")
+                    
+                    if not address or address in seen:
+                        continue
+                    
+                    # Skip stablecoins and major tokens
+                    symbol = token_data.get("symbol", "UNKNOWN")
+                    if symbol in ["USDC", "USDT", "DAI", "WETH", "ETH", "WBTC"]:
+                        continue
+                    
+                    seen.add(address)
+                    
+                    token = {
+                        "address": address,
+                        "symbol": symbol,
+                        "name": token_data.get("name", "Unknown"),
+                        "discovered_at": datetime.now().isoformat(),
+                        "added_at": int(datetime.now().timestamp()),
+                        "source": "dexscreener_new_pairs",
+                        "pair_address": pair.get("pairAddress"),
+                        "liquidity": pair.get("liquidity", {}).get("usd", 0)
+                    }
+                    base_tokens.append(token)
+            
+            log(f"✅ Fetched {len(base_tokens)} Base tokens from NEW pairs")
+            return base_tokens
+        else:
+            log(f"❌ API error: {resp.status_code}")
+    except Exception as e:
+        log(f"❌ Error fetching new pairs: {e}")
+    
+    return []
+
+def fetch_boosted_tokens():
+    """Fetch boosted tokens on Base (trending)"""
+    try:
+        url = "https://api.dexscreener.com/token-boosts/latest/v1"
+        resp = requests.get(url, timeout=30)
+        
+        if resp.status_code == 200:
+            data = resp.json()
+            boosts = data if isinstance(data, list) else []
+            
+            base_tokens = []
+            for boost in boosts:
+                chain = boost.get("chainId", "").lower()
+                if chain != "base":
+                    continue
+                
+                token = {
+                    "address": boost.get("tokenAddress"),
+                    "symbol": boost.get("symbol", "UNKNOWN"),
+                    "name": boost.get("name", "Unknown"),
+                    "discovered_at": datetime.now().isoformat(),
+                    "added_at": int(datetime.now().timestamp()),
+                    "source": "dexscreener_boosted",
+                    "boost_amount": boost.get("amount", 0)
+                }
+                if token["address"]:
+                    base_tokens.append(token)
+            
+            log(f"✅ Fetched {len(base_tokens)} Base tokens from BOOSTED")
+            return base_tokens
+        else:
+            log(f"❌ API error: {resp.status_code}")
+    except Exception as e:
+        log(f"❌ Error fetching boosted: {e}")
     
     return []
 
@@ -129,18 +222,36 @@ def main():
     tokens = load_tokens()
     log(f"📊 Loaded {len(tokens)} existing tokens")
     
-    # Fetch new tokens
+    # Fetch from multiple sources
+    all_new_tokens = []
+    
+    # Source 1: Latest profiles
     new_tokens = fetch_latest_base_tokens()
-    if not new_tokens:
+    all_new_tokens.extend(new_tokens)
+    
+    # Source 2: New pairs (most important for fresh tokens)
+    new_tokens = fetch_new_pairs_base()
+    all_new_tokens.extend(new_tokens)
+    
+    # Source 3: Boosted tokens
+    new_tokens = fetch_boosted_tokens()
+    all_new_tokens.extend(new_tokens)
+    
+    # Source 4: Top by volume (backup)
+    if len(all_new_tokens) < 10:
         new_tokens = fetch_top_base_tokens()
+        all_new_tokens.extend(new_tokens)
     
     # Merge with existing
     added = 0
-    for token in new_tokens:
+    for token in all_new_tokens:
+        if not token.get("address"):
+            continue
         addr = token["address"].lower()
         if addr not in tokens:
             tokens[addr] = token
             added += 1
+            log(f"🆕 New token: {token.get('symbol', 'UNKNOWN')} ({addr[:10]}...)")
     
     # Save
     save_tokens(tokens)
