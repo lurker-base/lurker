@@ -8,6 +8,16 @@ import requests
 from datetime import datetime, timezone
 from pathlib import Path
 
+# Charger les variables d'environnement depuis .env.telegram
+env_file = Path(__file__).parent.parent / ".env.telegram"
+if env_file.exists():
+    with open(env_file) as f:
+        for line in f:
+            line = line.strip()
+            if line and not line.startswith('#') and '=' in line:
+                key, value = line.split('=', 1)
+                os.environ[key] = value
+
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
 TELEGRAM_CHANNEL = os.getenv("TELEGRAM_CHANNEL", "-1003203579865")
@@ -128,11 +138,14 @@ def check_and_alert(token_data):
     risk_level = risk.get('level', 'low')
     risk_factors = risk.get('factors', [])
     
-    # Only alert for high risk with bundle farming
-    if risk_level != 'high':
-        return False
+    # Alert conditions: high risk OR bundle farming OR medium risk with dumping
+    should_alert = (
+        risk_level == 'high' or
+        'bundle_farming' in risk_factors or
+        (risk_level == 'medium' and 'dumping' in risk_factors)
+    )
     
-    if 'bundle_farming' not in risk_factors and len(risk_factors) < 3:
+    if not should_alert:
         return False
     
     # Check if we already alerted for this token

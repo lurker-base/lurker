@@ -1,0 +1,294 @@
+[
+  {
+    "timestamp": "2026-02-26T08:30:35.850395",
+    "token_id": "0x4200000000000000000000000000000000000006",
+    "token_symbol": "WETH",
+    "token_name": "Wrapped Ether",
+    "type": "PUMP",
+    "price": 3200.0,
+    "price_change": 0.18,
+    "volume_change": 2.5,
+    "score": 0.75,
+    "reasons": [
+      "Prix +18.0%",
+      "Volume 2.5x"
+    ],
+    "sent_at": "2026-02-26T09:07:47.536952"
+  },
+  {
+    "timestamp": "2026-02-26T08:35:35.859306",
+    "token_id": "0x4200000000000000000000000000000000000006",
+    "token_symbol": "WETH",
+    "token_name": "Wrapped Ether",
+    "type": "PUMP",
+    "price": 3200.0,
+    "price_change": 0.18,
+    "volume_change": 2.5,
+    "score": 0.75,
+    "reasons": [
+      "Prix +18.0%",
+      "Volume 2.5x"
+    ],
+    "sent_at": "2026-02-26T09:07:47.945384"
+  },
+  {
+    "timestamp": "2026-02-26T08:40:00.884375",
+    "token_id": "0x4200000000000000000000000000000000000006",
+    "token_symbol": "WETH",
+    "token_name": "Wrapped Ether",
+    "type": "PUMP",
+    "price": 3200.0,
+    "price_change": 0.18,
+    "volume_change": 2.5,
+    "score": 0.75,
+    "reasons": [
+      "Prix +18.0%",
+      "Volume 2.5x"
+    ],
+    "sent_at": "2026-02-26T09:07:48.342616"
+  },
+  {
+    "timestamp": "2026-02-26T08:40:35.869759",
+    "token_id": "0x4200000000000000000000000000000000000006",
+    "token_symbol": "WETH",
+    "token_name": "Wrapped Ether",
+    "type": "PUMP",
+    "price": 3200.0,
+    "price_change": 0.18,
+    "volume_change": 2.5,
+    "score": 0.75,
+    "reasons": [
+      "Prix +18.0%",
+      "Volume 2.5x"
+    ],
+    "sent_at": "2026-02-26T09:07:48.740463"
+  },
+  {
+    "timestamp": "2026-02-26T08:45:00.897709",
+    "token_id": "0x4200000000000000000000000000000000000006",
+    "token_symbol": "WETH",
+    "token_name": "Wrapped Ether",
+    "type": "PUMP",
+    "price": 3200.0,
+    "price_change": 0.18,
+    "volume_change": 2.5,
+    "score": 0.75,
+    "reasons": [
+      "Prix +18.0%",
+      "Volume 2.5x"
+    ],
+    "sent_at": "2026-02-26T09:07:49.140660"
+  },
+  {
+    "timestamp": "2026-02-26T08:45:35.879984",
+    "token_id": "0x4200000000000000000000000000000000000006",
+    "token_symbol": "WETH",
+    "token_name": "Wrapped Ether",
+    "type": "PUMP",
+    "price": 3200.0,
+    "price_change": 0.18,
+    "volume_change": 2.5,
+    "score": 0.75,
+    "reasons": [
+      "Prix +18.0%",
+      "Volume 2.5x"
+    ],
+    "sent_at": "2026-02-26T09:07:49.542862"
+  },
+  {
+    "timestamp": "2026-02-26T08:50:00.908517",
+    "token_id": "0x4200000000000000000000000000000000000006",
+    "token_symbol": "WETH",
+    "token_name": "Wrapped Ether",
+    "type": "PUMP",
+    "price": 3200.0,
+    "price_change": 0.18,
+    "volume_change": 2.5,
+    "score": 0.75,
+    "reasons": [
+      "Prix +18.0%",
+      "Volume 2.5x"
+    ],
+    "sent_at": "2026-02-26T09:07:49.943570"
+  },
+  {
+    "timestamp": "2026-02-26T08:50:35.888937",
+    "token_id": "0x4200000000000000000000000000000000000006",
+    "token_symbol": "WETH",
+    "token_name": "Wrapped Ether",
+    "type": "PUMP",
+    "price": 3200.0,
+    "price_change": 0.18,
+    "volume_change": 2.5,
+    "score": 0.75,
+    "reasons": [
+      "Prix +18.0%",
+      "Volume 2.5x"
+    ],
+    "sent_at": "2026-02-26T09:07:50.340386"
+  },
+  {
+    "timestamp": "2026-02-26T08:55:00.916614",
+    "token_id": "0x4200000000000000000000000000000000000006",
+    "token_symbol": "WETH",
+    "token_name": "Wrapped Ether",
+    "type": "PUMP",
+    "price": 3200.0,
+    "price_change": 0.18,
+    "volume_change": 2.5,
+    "score": 0.75,
+    "reasons": [
+      "Prix +18.0%",
+      "Volume 2.5x"
+    ],
+    "sent_at": "2026-02-26T09:07:50.760422"
+  },
+  {
+    "timestamp": "2026-02-26T08:55:35.897587",
+    "token_id": "0x4200000000000000000000000000000000000006",
+    "token_symbol": "WETH",
+    "token_name": "Wrapped Ether",
+    "type": "PUMP",
+    "price": 3200.0,
+    "price_change": 0.18,
+    "volume_change": 2.5,
+    "score": 0.75,
+    "reasons": [
+      "Prix +18.0%",
+      "Volume 2.5x"
+    ],
+    "sent_at": "2026-02-26T09:07:51.162229"
+  },
+  {
+    "timestamp": "2026-02-26T09:00:00.924778",
+    "token_id": "0x4200000000000000000000000000000000000006",
+    "token_symbol": "WETH",
+    "token_name": "Wrapped Ether",
+    "type": "PUMP",
+    "price": 3200.0,
+    "price_change": 0.18,
+    "volume_change": 2.5,
+    "score": 0.75,
+    "reasons": [
+      "Prix +18.0%",
+      "Volume 2.5x"
+    ],
+    "sent_at": "2026-02-26T09:07:51.562057"
+  },
+  {
+    "timestamp": "2026-02-26T09:00:35.904491",
+    "token_id": "0x4200000000000000000000000000000000000006",
+    "token_symbol": "WETH",
+    "token_name": "Wrapped Ether",
+    "type": "PUMP",
+    "price": 3200.0,
+    "price_change": 0.18,
+    "volume_change": 2.5,
+    "score": 0.75,
+    "reasons": [
+      "Prix +18.0%",
+      "Volume 2.5x"
+    ],
+    "sent_at": "2026-02-26T09:07:51.968476"
+  },
+  {
+    "timestamp": "2026-02-26T09:05:44.913506",
+    "token_id": "0x4200000000000000000000000000000000000006",
+    "token_symbol": "WETH",
+    "token_name": "Wrapped Ether",
+    "type": "PUMP",
+    "price": 3200.0,
+    "price_change": 0.18,
+    "volume_change": 2.5,
+    "score": 0.75,
+    "reasons": [
+      "Prix +18.0%",
+      "Volume 2.5x"
+    ],
+    "sent_at": "2026-02-26T09:07:52.380160"
+  },
+  {
+    "timestamp": "2026-02-26T09:52:16.439018",
+    "token_id": "0x40e6b084476d0de8093960afb1ae2737286e9bd3",
+    "token_symbol": "BENCHMARK",
+    "token_name": "The Benchmark",
+    "type": "NEW",
+    "price": 0,
+    "score": 0.6,
+    "reasons": [
+      "Risk: medium"
+    ],
+    "metrics": {
+      "liq_usd": 111746.81,
+      "vol_5m_usd": 10577.08,
+      "vol_1h_usd": 244580.27,
+      "txns_5m": 266,
+      "price_usd": 3.542e-06
+    },
+    "source": "cio_feed",
+    "sent_at": "2026-02-26T09:52:16.648571"
+  },
+  {
+    "timestamp": "2026-02-26T09:52:16.439032",
+    "token_id": "0x25f17ba23ad7910cae34fca536891b584916dba3",
+    "token_symbol": "cara",
+    "token_name": "carasecurity",
+    "type": "NEW",
+    "price": 0,
+    "score": 0.6,
+    "reasons": [
+      "Risk: medium"
+    ],
+    "metrics": {
+      "liq_usd": 69555.54,
+      "vol_5m_usd": 2455.67,
+      "vol_1h_usd": 143495.45,
+      "txns_5m": 20,
+      "price_usd": 9.217e-07
+    },
+    "source": "cio_feed",
+    "sent_at": "2026-02-26T09:52:16.834097"
+  },
+  {
+    "timestamp": "2026-02-26T09:52:34.262201",
+    "token_id": "0x40e6b084476d0de8093960afb1ae2737286e9bd3",
+    "token_symbol": "BENCHMARK",
+    "token_name": "The Benchmark",
+    "type": "NEW",
+    "price": 0,
+    "score": 0.6,
+    "reasons": [
+      "Risk: medium"
+    ],
+    "metrics": {
+      "liq_usd": 111746.81,
+      "vol_5m_usd": 10577.08,
+      "vol_1h_usd": 244580.27,
+      "txns_5m": 266,
+      "price_usd": 3.542e-06
+    },
+    "source": "cio_feed",
+    "sent_at": "2026-02-26T09:52:34.460590"
+  },
+  {
+    "timestamp": "2026-02-26T09:52:34.262216",
+    "token_id": "0x25f17ba23ad7910cae34fca536891b584916dba3",
+    "token_symbol": "cara",
+    "token_name": "carasecurity",
+    "type": "NEW",
+    "price": 0,
+    "score": 0.6,
+    "reasons": [
+      "Risk: medium"
+    ],
+    "metrics": {
+      "liq_usd": 69555.54,
+      "vol_5m_usd": 2455.67,
+      "vol_1h_usd": 143495.45,
+      "txns_5m": 20,
+      "price_usd": 9.217e-07
+    },
+    "source": "cio_feed",
+    "sent_at": "2026-02-26T09:52:34.703226"
+  }
+]

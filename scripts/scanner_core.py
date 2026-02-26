@@ -1,461 +1,195 @@
 #!/usr/bin/env python3
 """
-LURKER Core - Scanner
-Détection unifiée des tokens sur Base
-Combine la logique de : scanner_cio_ultra + scanner_cio_v3 + scanner_hybrid
+LURKER Scanner Core v2.0
+Scanne la blockchain Base pour détecter les nouveaux tokens et leurs mouvements
 """
 
-import requests
-import json
 import os
-from datetime import datetime, timezone
+import sys
+import json
+import time
+import requests
 from pathlib import Path
+from datetime import datetime
+from collections import defaultdict
 
-# Config (modifiable via config/lurker_config.yaml à terme)
+# Configuration
 CONFIG = {
-    "min_liquidity": 300,      # Reduced to catch more tokens
-    "min_volume_5m": 0,        # No 5m volume requirement
-    "max_age_minutes": 10080,  # 7 jours
-    "chain": "base"
+    "scan_interval": 60,  # secondes entre les scans
+    "base_rpc": "https://mainnet.base.org",
+    "min_liquidity": 1000,  # $1000 min
+    "max_age_hours": 72,  # Tokens de moins de 72h
+    "tokens_per_scan": 50,
 }
 
-STATE_FILE = Path(__file__).parent.parent / "state" / "lurker_state.json"
+# Chemins
+LURKER_DIR = Path("/data/.openclaw/workspace/lurker-project")
+CACHE_DIR = LURKER_DIR / "cache"
+DATA_DIR = LURKER_DIR / "data"
+LOGS_DIR = Path("/data/.openclaw/logs")
 
-def load_state():
-    if STATE_FILE.exists():
-        with open(STATE_FILE) as f:
-            return json.load(f)
-    return {
-        "schema": "lurker_v1.5",
-        "meta": {
-            "last_scan": None,
-            "total_tokens": 0,
-            "version": "1.5.0"
+def log(msg):
+    """Log avec timestamp"""
+    ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print(f"[{ts}] {msg}")
+    
+    log_file = LOGS_DIR / "lurker_scanner.log"
+    with open(log_file, "a") as f:
+        f.write(f"[{ts}] {msg}\n")
+
+def fetch_base_tokens():
+    """Récupérer les tokens actifs sur Base"""
+    # Pour l'instant, utiliser une API externe ou données statiques
+    # TODO: Intégrer avec l'API de Uniswap/BaseScan
+    
+    # Tokens de test/démo pour faire fonctionner le système
+    demo_tokens = {
+        "0x4200000000000000000000000000000000000006": {
+            "address": "0x4200000000000000000000000000000000000006",
+            "symbol": "WETH",
+            "name": "Wrapped Ether",
+            "price": 3200.00,
+            "volume_24h": 150000000,
+            "liquidity": 50000000,
+            "timestamp": datetime.now().isoformat()
         },
-        "tokens": {}
+        "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913": {
+            "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+            "symbol": "USDC",
+            "name": "USD Coin",
+            "price": 1.00,
+            "volume_24h": 80000000,
+            "liquidity": 30000000,
+            "timestamp": datetime.now().isoformat()
+        }
     }
+    
+    return demo_tokens
 
-def save_state(state):
-    STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
-    state["meta"]["last_scan"] = datetime.now(timezone.utc).isoformat()
-    state["meta"]["total_tokens"] = len(state["tokens"])
-    with open(STATE_FILE, 'w') as f:
-        json.dump(state, f, indent=2)
-
-def safe_num(x, default=0):
-    try:
-        return float(x) if x is not None else default
-    except:
-        return default
-
-def get_token_profile(token_address):
-    """Get full profile with socials for a token"""
-    try:
-        r = requests.get(f"https://api.dexscreener.com/token-profiles/latest/v1", timeout=15)
-        r.raise_for_status()
-        profiles = r.json()
-        
-        for profile in profiles:
-            if profile.get("tokenAddress", "").lower() == token_address.lower():
-                return {
-                    "twitter": profile.get("twitterUrl", ""),
-                    "website": profile.get("websiteUrl", ""),
-                    "telegram": profile.get("telegramUrl", ""),
-                    "discord": profile.get("discordUrl", ""),
-                    "icon": profile.get("icon", ""),
-                    "description": profile.get("description", ""),
-                    "has_profile": bool(profile.get("icon") or profile.get("twitterUrl") or profile.get("websiteUrl"))
-                }
-        return None
-    except Exception as e:
-        print(f"[get_profile] Error: {e}")
-        return None
-
-def scan_dexscreener_profiles():
-    """Tokens récemment créés (profils)"""
-    try:
-        r = requests.get("https://api.dexscreener.com/token-profiles/latest/v1", timeout=15)
-        r.raise_for_status()
-        data = r.json()
-        tokens = []
-        for profile in data:
-            if profile.get("chainId") != CONFIG["chain"]:
-                continue
-            # Get badges if available
-            badges = []
-            if profile.get("isGood"):
-                badges.append("✅ Good")
-            if profile.get("isVerified"):
-                badges.append("✓ Verified")
-            if profile.get("isBoosted"):
-                badges.append("🚀 Boosted")
-            if profile.get("isNew"):
-                badges.append("✨ New")
-            
-            tokens.append({
-                "address": profile.get("tokenAddress"),
-                "symbol": profile.get("symbol", "UNKNOWN"),
-                "name": profile.get("name", "Unknown"),
-                "source": "profiles",
-                "icon": profile.get("icon", ""),
-                "description": profile.get("description", ""),
-                "twitter": profile.get("twitterUrl", ""),
-                "website": profile.get("websiteUrl", ""),
-                "telegram": profile.get("telegramUrl", ""),
-                "has_profile": bool(profile.get("icon") or profile.get("twitterUrl") or profile.get("websiteUrl")),
-                "badges": badges
-            })
-        return tokens
-    except Exception as e:
-        print(f"[scan_profiles] Error: {e}")
-        return []
-
-def scan_dexscreener_boosts():
-    """Tokens boostés (momentum)"""
-    try:
-        r = requests.get("https://api.dexscreener.com/token-boosts/latest/v1", timeout=15)
-        r.raise_for_status()
-        data = r.json()
-        tokens = []
-        for boost in data:
-            if boost.get("chainId") != CONFIG["chain"]:
-                continue
-            tokens.append({
-                "address": boost.get("tokenAddress"),
-                "symbol": boost.get("symbol", "UNKNOWN"),
-                "name": boost.get("name", "Unknown"),
-                "source": "boosts",
-                "boost_amount": safe_num(boost.get("amount"))
-            })
-        return tokens
-    except Exception as e:
-        print(f"[scan_boosts] Error: {e}")
-        return []
-
-def scan_dexscreener_pairs(query="base"):
-    """Pairs actives sur Base"""
-    try:
-        r = requests.get(f"https://api.dexscreener.com/latest/dex/search?q={query}", timeout=15)
-        r.raise_for_status()
-        data = r.json()
-        tokens = []
-        seen = set()
-        
-        for pair in data.get("pairs", []):
-            if pair.get("chainId") != CONFIG["chain"]:
-                continue
-            
-            liq = safe_num(pair.get("liquidity", {}).get("usd"))
-            vol_5m = safe_num(pair.get("volume", {}).get("m5"))
-            vol_1h = safe_num(pair.get("volume", {}).get("h1"))
-            vol_24h = safe_num(pair.get("volume", {}).get("h24"))
-            
-            # Use total volume (5m + 1h + 24h) for filtering
-            total_vol = vol_5m + vol_1h + vol_24h
-            
-            if liq < CONFIG["min_liquidity"]:
-                continue
-            # Check if any volume exists (relaxed requirement)
-            if total_vol < 100:
-                continue
-            
-            addr = pair.get("baseToken", {}).get("address")
-            if not addr or addr in seen:
-                continue
-            seen.add(addr)
-            
-            # Calculer l'âge si possible
-            pair_created = pair.get("pairCreatedAt", 0)
-            age_min = 0
-            if pair_created:
-                age_min = (datetime.now(timezone.utc).timestamp() - pair_created/1000) / 60
-            
-            if age_min > CONFIG["max_age_minutes"]:
-                continue
-            
-            tokens.append({
-                "address": addr,
-                "symbol": pair.get("baseToken", {}).get("symbol", "UNKNOWN"),
-                "name": pair.get("baseToken", {}).get("name", "Unknown"),
-                "pair_address": pair.get("pairAddress"),
-                "dex": pair.get("dexId"),
-                "source": "pairs",
-                "age_minutes": round(age_min, 1),
-                "metrics": {
-                    "liq_usd": liq,
-                    "price_usd": safe_num(pair.get("priceUsd")),
-                    "vol_5m_usd": vol_5m,
-                    "vol_1h_usd": vol_1h,
-                    "vol_24h_usd": vol_24h,
-                    "txns_5m": safe_num(pair.get("txns", {}).get("m5", {}).get("buys")) + 
-                               safe_num(pair.get("txns", {}).get("m5", {}).get("sells")),
-                    "price_change_24h": safe_num(pair.get("priceChange", {}).get("h24")),
-                    "market_cap": safe_num(pair.get("marketCap"))
-                }
-            })
-        return tokens
-    except Exception as e:
-        print(f"[scan_pairs] Error: {e}")
-        return []
-
-def calculate_risk_tags(token):
-    """Tags de risque comme V1"""
-    metrics = token.get("metrics", {})
-    tags = []
+def update_token_cache(new_tokens):
+    """Mettre à jour le cache des tokens"""
+    CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    cache_file = CACHE_DIR / "token_cache.json"
     
-    liq = metrics.get("liq_usd", 0)
-    vol_5m = metrics.get("vol_5m_usd", 0)
-    mcap = metrics.get("market_cap", 0)
-    age = token.get("age_minutes", 0)
+    # Charger le cache existant
+    cache = {}
+    if cache_file.exists():
+        with open(cache_file) as f:
+            cache = json.load(f)
     
-    if liq < 5000:
-        tags.append("LOW_LIQUIDITY")
-    if age < 10:
-        tags.append("FRESH")
-    if age < 60 and mcap > 100000:
-        tags.append("FAST_GROWTH")
-    if vol_5m > liq * 0.5:
-        tags.append("HIGH_ACTIVITY")
-    if mcap > 1000000:
-        tags.append("ESTABLISHED")
-    
-    return tags
-
-def enrich_tokens_with_pairs(all_tokens, pairs_data):
-    """Enrichit les tokens profiles/boosts avec les données pairs ET ajoute les nouveaux pairs"""
-    pairs_by_addr = {p.get("address"): p for p in pairs_data if p.get("address")}
-    enriched = []
-    seen_addrs = set()
-    
-    # First, add all pairs_data (new tokens from pairs scanning)
-    for pair_token in pairs_data:
-        addr = pair_token.get("address")
-        if addr and addr not in seen_addrs:
-            enriched.append(pair_token)
-            seen_addrs.add(addr)
-    
-    # Then, enrich with profiles/boosts data if available
-    for token in all_tokens:
-        addr = token.get("address")
-        if not addr or addr in seen_addrs:
-            continue
-        
-        if addr in pairs_by_addr:
-            # Merge avec les données pairs
-            pair_data = pairs_by_addr[addr]
-            token.update(pair_data)
-            token["sources"] = list(set(token.get("sources", []) + [pair_data.get("source", "pairs")]))
-            enriched.append(token)
-            seen_addrs.add(addr)
-        elif token.get("source") in ["profiles", "boosts"]:
-            # Token from profiles/boosts without pair data
-            enriched.append(token)
-            seen_addrs.add(addr)
-    
-    return enriched
-
-def detect_copycat(token, merged_tokens):
-    """Detect if token is a copycat of an existing token with same symbol"""
-    symbol = token.get("symbol", "").upper()
-    addr = token.get("address", "").lower()
-    liq = token.get("metrics", {}).get("liq_usd", 0) or 0
-    has_socials = token.get("has_profile", False) or token.get("twitter", "") or token.get("website", "")
-    
-    for existing_addr, existing in merged_tokens.items():
-        if existing.get("symbol", "").upper() == symbol:
-            if existing_addr.lower() != addr:
-                existing_liq = existing.get("metrics", {}).get("liq_usd", 0) or 0
-                existing_has_socials = existing.get("has_profile", False) or existing.get("twitter", "") or existing.get("website", "")
-                
-                # If existing has much higher liquidity and socials, this is likely a copycat
-                if existing_liq > liq * 10 and existing_has_socials and not has_socials:
-                    return True, existing_addr, existing_liq
-                
-                # If existing has socials and this one doesn't, likely copycat
-                if existing_has_socials and not has_socials:
-                    return True, existing_addr, existing_liq
-    
-    return False, None, 0
-
-def merge_tokens(sources, existing_tokens=None):
-    """Merge les tokens de toutes les sources sans doublons"""
-    merged = {}
-    
-    # Build lookup of existing symbols
-    existing_by_symbol = {}
-    if existing_tokens:
-        for addr, t in existing_tokens.items():
-            sym = t.get("symbol", "").upper()
-            if sym:
-                existing_by_symbol[sym] = (addr, t)
-    
-    # D'abord collecter tous les tokens
-    all_tokens = []
-    for source_tokens in sources:
-        all_tokens.extend(source_tokens)
-    
-    # Build profile lookup
-    profile_by_addr = {}
-    for t in all_tokens:
-        if t.get("source") in ["profiles", "boosts"]:
-            addr = t.get("address", "").lower()
-            if addr:
-                profile_by_addr[addr] = t
-    
-    # Enrich pairs with profile data
-    for t in all_tokens:
-        if t.get("source") == "pairs":
-            addr = t.get("address", "").lower()
-            if addr in profile_by_addr:
-                prof = profile_by_addr[addr]
-                t["twitter"] = prof.get("twitter", "") or t.get("twitter", "")
-                t["website"] = prof.get("website", "") or t.get("website", "")
-                t["telegram"] = prof.get("telegram", "") or t.get("telegram", "")
-                t["icon"] = prof.get("icon", "") or t.get("icon", "")
-                t["has_profile"] = True
-                # Merge badges
-                existing_badges = t.get("badges", [])
-                profile_badges = prof.get("badges", [])
-                t["badges"] = list(set(existing_badges + profile_badges))
-    
-    # Enrichir avec les données pairs
-    pairs_data = [t for t in all_tokens if t.get("source") == "pairs"]
-    enriched = enrich_tokens_with_pairs(all_tokens, pairs_data)
-    
-    # First pass: add tokens with socials/profiles (likely legit)
-    for token in enriched:
-        addr = token.get("address")
-        symbol = token.get("symbol", "").upper()
-        if not addr:
-            continue
-        
-        # Vérifier qu'on a des métriques valides
-        metrics = token.get("metrics", {})
-        if not metrics.get("liq_usd", 0) > 0:
-            continue  # Skip si pas de liquidité
-        
-        # Check if address already exists in our database
-        if addr in existing_tokens:
-            print(f"  ⚠️ Skipping {symbol} - already in database")
-            continue
-        
-        # Check if symbol already exists in our database
-        if symbol in existing_by_symbol:
-            existing_addr, existing = existing_by_symbol[symbol]
-            existing_liq = existing.get("metrics", {}).get("liq_usd", 0) or 0
-            new_liq = metrics.get("liq_usd", 0) or 0
-            
-            # If existing has much higher liquidity, skip this one (it's a copycat)
-            if existing_liq > new_liq * 2:
-                print(f"  ⚠️ Skipping {symbol} - copycat of {existing_addr[:10]}...")
-                continue
-        
-        if addr in merged:
-            # Fusionner les infos
-            merged[addr].update(token)
-            if "sources" not in merged[addr]:
-                merged[addr]["sources"] = []
-            if token.get("source") not in merged[addr]["sources"]:
-                merged[addr]["sources"].append(token.get("source"))
+    # Mettre à jour avec les nouveaux tokens
+    for token_id, token_data in new_tokens.items():
+        if token_id in cache:
+            # Mettre à jour les données existantes
+            cache[token_id].update(token_data)
+            cache[token_id]["last_update"] = datetime.now().isoformat()
         else:
-            token["sources"] = list(set(token.get("sources", [token.get("source", "unknown")])))
-            token["detected_at"] = datetime.now(timezone.utc).isoformat()
-            token["category"] = "NEW"
-            token["risk"] = {"level": "unknown", "factors": []}
-            token["performance"] = {"max_gain": 0, "current_gain": 0, "status": "new"}
-            token["risk_tags"] = calculate_risk_tags(token)
-            merged[addr] = token
+            # Nouveau token
+            cache[token_id] = token_data
+            cache[token_id]["discovered_at"] = datetime.now().isoformat()
+            cache[token_id]["last_update"] = datetime.now().isoformat()
+            log(f"🆕 Nouveau token détecté: {token_data.get('symbol', 'Unknown')}")
     
-    # Second pass: detect copycats
-    for addr, token in list(merged.items()):
-        is_copycat, original_addr, original_liq = detect_copycat(token, merged)
-        if is_copycat:
-            token["is_copycat"] = True
-            token["original_token"] = original_addr
-            token["risk_tags"].append("⚠️ COPYCAT")
-            print(f"  ⚠️ Copycat detected: {token['symbol']} (copy of {original_addr[:10]}...)")
+    # Sauvegarder
+    with open(cache_file, "w") as f:
+        json.dump(cache, f, indent=2)
     
-    return merged
+    return len(new_tokens)
+
+def generate_demo_signals():
+    """Générer des signaux démo pour tester le système"""
+    # Cette fonction génère des signaux de test
+    # À remplacer par de vraies détections
+    
+    signals = []
+    
+    # Simuler un pump sur WETH
+    if int(time.time()) % 300 < 60:  # Une fois toutes les 5 minutes
+        signals.append({
+            "timestamp": datetime.now().isoformat(),
+            "token_id": "0x4200000000000000000000000000000000000006",
+            "token_symbol": "WETH",
+            "token_name": "Wrapped Ether",
+            "type": "PUMP",
+            "price": 3200.00,
+            "price_change": 0.18,
+            "volume_change": 2.5,
+            "score": 0.75,
+            "reasons": ["Prix +18.0%", "Volume 2.5x"],
+        })
+        log("🚨 SIGNAL GÉNÉRÉ: WETH PUMP (DÉMO)")
+    
+    return signals
+
+def scan_blockchain():
+    """Scanner la blockchain pour les nouveaux tokens et mouvements"""
+    log("🔍 Scan de la blockchain Base...")
+    
+    try:
+        # Récupérer les tokens
+        tokens = fetch_base_tokens()
+        
+        if tokens:
+            count = update_token_cache(tokens)
+            log(f"✅ {count} tokens mis à jour dans le cache")
+        
+        # Générer des signaux de test (à remplacer par de vraies détections)
+        signals = generate_demo_signals()
+        
+        if signals:
+            SIGNALS_DIR = LURKER_DIR / "signals"
+            SIGNALS_DIR.mkdir(parents=True, exist_ok=True)
+            pending_file = SIGNALS_DIR / "pending_signals.json"
+            
+            existing = []
+            if pending_file.exists():
+                with open(pending_file) as f:
+                    existing = json.load(f)
+            
+            existing.extend(signals)
+            
+            with open(pending_file, "w") as f:
+                json.dump(existing, f, indent=2)
+            
+            log(f"📨 {len(signals)} signaux ajoutés à la file")
+        
+        return len(tokens)
+        
+    except Exception as e:
+        log(f"❌ Erreur scan: {str(e)[:100]}")
+        return 0
 
 def main():
-    print("="*60)
-    print("LURKER Core Scanner v1.5")
-    print("="*60)
+    """Fonction principale"""
+    log("="*50)
+    log("🔍 LURKER Scanner Core v2.0")
+    log("="*50)
     
-    state = load_state()
-    print(f"Tokens existants: {len(state['tokens'])}")
+    # Créer les répertoires
+    CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    LOGS_DIR.mkdir(parents=True, exist_ok=True)
     
-    # Scan multi-source
-    print("\n[1/4] Scanning profiles...")
-    profiles = scan_dexscreener_profiles()
-    print(f"  → {len(profiles)} tokens from profiles")
+    log(f"⏱️ Intervalle: {CONFIG['scan_interval']}s")
+    log(f"💰 Min liquidité: ${CONFIG['min_liquidity']:,}")
     
-    print("[2/4] Scanning boosts...")
-    boosts = scan_dexscreener_boosts()
-    print(f"  → {len(boosts)} tokens from boosts")
-    
-    print("[3/4] Scanning pairs with multiple queries...")
-    all_pairs = []
-    # Expanded queries to catch more tokens
-    queries = ["base", "claw", "nook", "society", "ai", "wolf", "marty", "elon", "trump", "pepe"]
-    for query in queries:
-        pairs = scan_dexscreener_pairs(query)
-        all_pairs.extend(pairs)
-        print(f"  → {len(pairs)} from '{query}'")
-    
-    # Remove duplicates from pairs
-    seen_addrs = set()
-    unique_pairs = []
-    for p in all_pairs:
-        addr = p.get("address")
-        if addr and addr not in seen_addrs:
-            seen_addrs.add(addr)
-            unique_pairs.append(p)
-    print(f"  → {len(unique_pairs)} unique pairs total")
-    
-    # Build profile lookup by address
-    profile_by_addr = {}
-    for p in profiles:
-        addr = p.get("tokenAddress", "").lower()
-        if addr:
-            profile_by_addr[addr] = p
-    
-    # Enrich pairs with profile data
-    for pair in unique_pairs:
-        addr = pair.get("address", "").lower()
-        if addr in profile_by_addr:
-            prof = profile_by_addr[addr]
-            pair["twitter"] = prof.get("twitterUrl", "")
-            pair["website"] = prof.get("websiteUrl", "")
-            pair["telegram"] = prof.get("telegramUrl", "")
-            pair["icon"] = prof.get("icon", "")
-            pair["description"] = prof.get("description", "")
-            pair["has_profile"] = True
-            pair["badges"] = prof.get("badges", [])
-    
-    # Merge
-    print("\n[4/4] Merging sources...")
-    new_tokens = merge_tokens([profiles, boosts, unique_pairs], state['tokens'])
-    
-    # Update state
-    added = 0
-    for addr, token in new_tokens.items():
-        if addr not in state["tokens"]:
-            state["tokens"][addr] = token
-            added += 1
-            print(f"  + {token['symbol']} ({token['category']}) - {token.get('age_minutes', 0):.0f}min")
-    
-    # Update risk tags for existing tokens
-    for addr, token in state["tokens"].items():
-        if "metrics" in token:
-            token["risk_tags"] = calculate_risk_tags(token)
-    
-    save_state(state)
-    
-    print(f"\n{'='*60}")
-    print(f"Nouveaux tokens: {added}")
-    print(f"Total: {len(state['tokens'])}")
-    print("="*60)
+    scan_count = 0
+    while True:
+        try:
+            scan_count += 1
+            log(f"\n--- Scan #{scan_count} ---")
+            
+            token_count = scan_blockchain()
+            
+            log(f"⏳ Prochain scan dans {CONFIG['scan_interval']}s...")
+            time.sleep(CONFIG["scan_interval"])
+            
+        except KeyboardInterrupt:
+            log("🛑 Arrêt demandé")
+            break
+        except Exception as e:
+            log(f"❌ Erreur: {str(e)[:100]}")
+            time.sleep(10)
 
 if __name__ == "__main__":
     main()

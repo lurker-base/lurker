@@ -174,15 +174,16 @@ def assess_risk(token):
     liq = metrics.get("liq_usd", 0)
     performance = token.get("performance", {})
     current_gain = performance.get("current_gain", 0)
+    age = calculate_age_minutes(token.get("detected_at", datetime.now(timezone.utc).isoformat()))
     
     factors = []
     level = "low"
     
-    # Critical
-    if liq == 0:
+    # Critical - mais pas pour les tokens frais (< 30 min) pour éviter faux positifs
+    if liq == 0 and age > 30:
         level = "critical"
         factors.append("rug_detected")
-    elif liq < 1000:
+    elif liq < 1000 and age > 10:
         level = "critical"
         factors.append("very_low_liquidity")
     

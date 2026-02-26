@@ -1,0 +1,24 @@
+{
+  "0x4200000000000000000000000000000000000006": {
+    "address": "0x4200000000000000000000000000000000000006",
+    "symbol": "WETH",
+    "name": "Wrapped Ether",
+    "price": 3200.0,
+    "volume_24h": 150000000,
+    "liquidity": 50000000,
+    "timestamp": "2026-02-26T09:48:56.180051",
+    "discovered_at": "2026-02-26T08:30:35.849982",
+    "last_update": "2026-02-26T09:48:56.180160"
+  },
+  "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913": {
+    "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "symbol": "USDC",
+    "name": "USD Coin",
+    "price": 1.0,
+    "volume_24h": 80000000,
+    "liquidity": 30000000,
+    "timestamp": "2026-02-26T09:48:56.180058",
+    "discovered_at": "2026-02-26T08:30:35.850045",
+    "last_update": "2026-02-26T09:48:56.180167"
+  }
+}

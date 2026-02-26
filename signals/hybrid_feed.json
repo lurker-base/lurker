@@ -836,12 +836,277 @@
           "rpc_only"
         ]
       }
+    },
+    {
+      "token": {
+        "address": "0x25F17ba23aD7910CAe34fCa536891b584916dBA3",
+        "symbol": "cara",
+        "name": "carasecurity"
+      },
+      "source": "hybrid_profiles",
+      "detected_at": "2026-02-26T08:57:41.779832+00:00",
+      "age_hours": 1.59,
+      "creator": "unknown",
+      "tx_hash": null,
+      "dexscreener": {
+        "priceUsd": "0.0000009139",
+        "liquidity": {
+          "usd": 69246.39,
+          "base": 48937139991,
+          "quote": 11.9308
+        },
+        "volume": {
+          "h24": 288615.79,
+          "h6": 288615.79,
+          "h1": 121718.83,
+          "m5": 4322.89
+        },
+        "txns": {
+          "m5": {
+            "buys": 12,
+            "sells": 6
+          },
+          "h1": {
+            "buys": 282,
+            "sells": 230
+          },
+          "h6": {
+            "buys": 719,
+            "sells": 444
+          },
+          "h24": {
+            "buys": 719,
+            "sells": 444
+          }
+        },
+        "marketCap": 91395,
+        "fdv": 91395,
+        "pairAddress": "0x2ec854c1df5cfb108b63a87f2f488b884bd64017c43a10cf4cc12dc551b8e940",
+        "dexId": "uniswap",
+        "pairCreatedAt": 1772090543000,
+        "info": {
+          "imageUrl": "https://cdn.dexscreener.com/cms/images/Db_yaDDJaluDAera?width=800&height=800&quality=90",
+          "header": "https://cdn.dexscreener.com/cms/images/rnypIljEprNcOEgD?width=1500&height=500&quality=90",
+          "openGraph": "https://cdn.dexscreener.com/token-images/og/base/0x25f17ba23ad7910cae34fca536891b584916dba3?timestamp=1772096100000",
+          "websites": [
+            {
+              "url": "https://carapacesec.io/",
+              "label": "Website"
+            }
+          ],
+          "socials": [
+            {
+              "url": "https://x.com/carapacesec_",
+              "type": "twitter"
+            }
+          ]
+        }
+      },
+      "risk": {
+        "level": "low",
+        "factors": []
+      },
+      "meta": {
+        "source": "profiles",
+        "url": "https://dexscreener.com/base/0x25f17ba23ad7910cae34fca536891b584916dba3",
+        "header": "https://cdn.dexscreener.com/cms/images/rnypIljEprNcOEgD?width=600&height=200&fit=crop&quality=95&format=auto",
+        "icon": "https://cdn.dexscreener.com/cms/images/Db_yaDDJaluDAera?width=64&height=64&fit=crop&quality=95&format=auto"
+      }
+    },
+    {
+      "token": {
+        "address": "0x40E6B084476D0de8093960afB1aE2737286e9Bd3",
+        "symbol": "BENCHMARK",
+        "name": "The Benchmark"
+      },
+      "source": "hybrid_profiles",
+      "detected_at": "2026-02-26T08:57:42.049984+00:00",
+      "age_hours": 0.83,
+      "creator": "unknown",
+      "tx_hash": null,
+      "dexscreener": {
+        "priceUsd": "0.000003046",
+        "liquidity": {
+          "usd": 103239.09,
+          "base": 18577508426,
+          "quote": 22.6976
+        },
+        "volume": {
+          "h24": 283289.85,
+          "h6": 283289.85,
+          "h1": 283289.85,
+          "m5": 27242.37
+        },
+        "txns": {
+          "m5": {
+            "buys": 26,
+            "sells": 386
+          },
+          "h1": {
+            "buys": 605,
+            "sells": 1022
+          },
+          "h6": {
+            "buys": 605,
+            "sells": 1022
+          },
+          "h24": {
+            "buys": 605,
+            "sells": 1022
+          }
+        },
+        "marketCap": 304621,
+        "fdv": 304621,
+        "pairAddress": "0x61ab1e01e69bb0f8594a5f51ecd59a1e3723e914ea6b899532f1d6cde9711cb9",
+        "dexId": "uniswap",
+        "pairCreatedAt": 1772093281000,
+        "info": {
+          "imageUrl": "https://cdn.dexscreener.com/cms/images/-HnYjZuy51D7gpSO?width=800&height=800&quality=90",
+          "header": "https://cdn.dexscreener.com/cms/images/GZNjKvBRtiAQQDJ5?width=1500&height=500&quality=90",
+          "openGraph": "https://cdn.dexscreener.com/token-images/og/base/0x40e6b084476d0de8093960afb1ae2737286e9bd3?timestamp=1772096100000",
+          "websites": [],
+          "socials": [
+            {
+              "url": "https://x.com/tryTheBenchmark",
+              "type": "twitter"
+            }
+          ]
+        }
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "dumping"
+        ]
+      },
+      "meta": {
+        "source": "profiles",
+        "url": "https://dexscreener.com/base/0x40e6b084476d0de8093960afb1ae2737286e9bd3",
+        "header": "https://cdn.dexscreener.com/cms/images/GZNjKvBRtiAQQDJ5?width=600&height=200&fit=crop&quality=95&format=auto",
+        "icon": "https://cdn.dexscreener.com/cms/images/-HnYjZuy51D7gpSO?width=64&height=64&fit=crop&quality=95&format=auto"
+      }
+    },
+    {
+      "token": {
+        "address": "0x5Bdc2d52ADf52E7c510e17a79310a45D80D14B07",
+        "symbol": "MONTRA",
+        "name": "MontraFinance"
+      },
+      "source": "hybrid_trending",
+      "detected_at": "2026-02-26T08:57:42.305753+00:00",
+      "age_hours": 14.43,
+      "creator": "unknown",
+      "tx_hash": null,
+      "dexscreener": {
+        "priceUsd": "0.000005918",
+        "liquidity": {
+          "usd": 210103.84,
+          "base": 21371482868,
+          "quote": 40.6878
+        },
+        "volume": {
+          "h24": 1547640.54,
+          "h6": 372514.94,
+          "h1": 48547.79,
+          "m5": 1214.79
+        },
+        "txns": {
+          "m5": {
+            "buys": 4,
+            "sells": 18
+          },
+          "h1": {
+            "buys": 157,
+            "sells": 343
+          },
+          "h6": {
+            "buys": 1011,
+            "sells": 2257
+          },
+          "h24": {
+            "buys": 4396,
+            "sells": 9785
+          }
+        },
+        "marketCap": 591769,
+        "fdv": 591770,
+        "pairAddress": "0x80496c429578a114ee94c22e38517142a478061e70b5ae39972ceeb27cfe2786",
+        "dexId": "uniswap",
+        "pairCreatedAt": 1772044299000,
+        "info": {
+          "imageUrl": "https://cdn.dexscreener.com/cms/images/wPwO1M9kmEa_fCg5?width=800&height=800&quality=90",
+          "header": "https://cdn.dexscreener.com/cms/images/qXDPMQc5jPpXYJ29?width=1500&height=500&quality=90",
+          "openGraph": "https://cdn.dexscreener.com/token-images/og/base/0x5bdc2d52adf52e7c510e17a79310a45d80d14b07?timestamp=1772096100000",
+          "websites": [
+            {
+              "url": "https://www.montrafinance.com/",
+              "label": "Website"
+            },
+            {
+              "url": "https://www.montrafinance.com/docs",
+              "label": "Docs"
+            },
+            {
+              "url": "https://github.com/MontraFinance/MontraFinance",
+              "label": "Github"
+            }
+          ],
+          "socials": [
+            {
+              "url": "https://farcaster.xyz/montrafinance",
+              "type": "farcaster"
+            },
+            {
+              "url": "https://x.com/montrafinance?s=21",
+              "type": "twitter"
+            },
+            {
+              "url": "https://t.me/Montra_Finance",
+              "type": "telegram"
+            }
+          ]
+        }
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "dumping"
+        ]
+      },
+      "meta": {
+        "source": "trending",
+        "url": "https://dexscreener.com/base/0x5bdc2d52adf52e7c510e17a79310a45d80d14b07",
+        "header": "https://cdn.dexscreener.com/cms/images/qXDPMQc5jPpXYJ29?width=900&height=300&fit=crop&quality=95&format=auto",
+        "icon": "wPwO1M9kmEa_fCg5"
+      }
+    },
+    {
+      "token": {
+        "address": "pending_0x7f34c291e6a46cf97d",
+        "symbol": "UNKNOWN",
+        "name": "Fresh Contract"
+      },
+      "source": "hybrid_rpc",
+      "detected_at": "2026-02-26T08:57:42.821236+00:00",
+      "block": 42653457,
+      "age_hours": 0.0,
+      "creator": "0x0528b8fe114020cc895fcf709081aae2077b9afe",
+      "tx_hash": "0x7f34c291e6a46cf97daffbbf6a5098ccd4e202ca09f2b5e0f7a659f0d8eced53",
+      "dexscreener": null,
+      "risk": {
+        "level": "high",
+        "factors": [
+          "no_liquidity",
+          "unverified_contract",
+          "rpc_only"
+        ]
+      }
     }
   ],
   "meta": {
-    "updated_at": "2026-02-23T13:30:37.432056+00:00",
-    "count": 16,
-    "new_this_scan": 6,
-    "latest_block": 42532044
+    "updated_at": "2026-02-26T09:00:03.620412+00:00",
+    "count": 20,
+    "new_this_scan": 0,
+    "latest_block": 42653527
   }
 }

@@ -1,7 +1,107 @@
 {
-  "candidates": [],
+  "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-02-25T05:17:41.087157+00:00",
-    "count": 0
-  }
+    "updated_at": "2026-02-26T09:13:47.421000+00:00",
+    "generated_at": "2026-02-26T09:13:47.421000+00:00",
+    "status": "ok",
+    "count": 2,
+    "thresholds": {
+      "min_liq_usd": 1000,
+      "min_vol_5m": 500,
+      "min_tx_5m": 1,
+      "max_age_min": 10080
+    },
+    "risk_distribution": {
+      "low": 1,
+      "medium": 1
+    },
+    "rejected": {
+      "too_old": 1
+    },
+    "source": "ultra_launch_scanner"
+  },
+  "candidates": [
+    {
+      "token": {
+        "address": "0x40e6b084476d0de8093960afb1ae2737286e9bd3",
+        "symbol": "BENCHMARK",
+        "name": "The Benchmark"
+      },
+      "pair": {
+        "address": "0x61ab1e01e69bb0f8594a5f51ecd59a1e3723e914ea6b899532f1d6cde9711cb9",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 145849.1,
+        "vol_5m_usd": 14032.37,
+        "vol_1h_usd": 305598.6,
+        "txns_5m": 197,
+        "price_usd": 5.687e-06
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-26T08:08:01+00:00",
+        "token_first_seen": "2026-02-26T08:50:28.899000+00:00",
+        "age_minutes": 65.8,
+        "age_hours": 1.1
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.98
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": false,
+        "quality_score": 75
+      }
+    },
+    {
+      "token": {
+        "address": "0x25f17ba23ad7910cae34fca536891b584916dba3",
+        "symbol": "cara",
+        "name": "carasecurity"
+      },
+      "pair": {
+        "address": "0x2ec854c1df5cfb108b63a87f2f488b884bd64017c43a10cf4cc12dc551b8e940",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 65261.59,
+        "vol_5m_usd": 4123.78,
+        "vol_1h_usd": 59322.5,
+        "txns_5m": 26,
+        "price_usd": 8.286e-07
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-26T07:22:23+00:00",
+        "token_first_seen": "2026-02-26T08:50:28.899000+00:00",
+        "age_minutes": 111.4,
+        "age_hours": 1.86
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.97
+      },
+      "risks": [
+        "dumping"
+      ],
+      "risk_level": "medium",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    }
+  ]
 }

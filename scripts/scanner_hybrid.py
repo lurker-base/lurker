@@ -299,9 +299,14 @@ def scan_hybrid():
                 risk_flag = "⚠️" if risk['level'] == 'high' else ""
                 print(f"[HYBRID] ✅ {meta['source']}: {symbol} {risk_flag} ({age_hours:.1f}h, risk={risk['level']})")
                 
-                # Send Telegram alert if bundle farming detected
-                if risk['level'] == 'high' and ('bundle_farming' in risk['factors'] or len(risk['factors']) >= 3):
-                    print(f"[HYBRID] 🚨 Sending bundle farming alert for {symbol}...")
+                # Send Telegram alert if high risk or bundle farming detected
+                should_alert = (
+                    risk['level'] == 'high' or 
+                    'bundle_farming' in risk['factors'] or
+                    ('dumping' in risk['factors'] and risk['level'] == 'medium')
+                )
+                if should_alert:
+                    print(f"[HYBRID] 🚨 Sending alert for {symbol}...")
                     bundle_alert.check_and_alert(new_tokens[-1])
     
     except Exception as e:
@@ -360,6 +365,11 @@ def scan_hybrid():
                     }
                     
                     print(f"[HYBRID] ✅ RPC: Contract at block {block_num} ({age_hours:.1f}h)")
+                    
+                    # Send alert for high-risk RPC tokens
+                    if risk['level'] == 'high':
+                        print(f"[HYBRID] 🚨 Sending high-risk alert for fresh contract...")
+                        bundle_alert.check_and_alert(new_tokens[-1])
     
     # Save state and feed
     save_json(STATE_FILE, seen)
