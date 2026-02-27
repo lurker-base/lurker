@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-02-27T08:01:14.067Z"
+    "updated_at": "2026-02-27T09:01:16.462Z"
   },
   "certified": [
     {
@@ -51,7 +51,7 @@
       },
       "tier_label": "24h+",
       "timestamps": {
-        "age_hours": 150.95086694444444
+        "age_hours": 151.95153222222223
       },
       "holders": 0
     }
