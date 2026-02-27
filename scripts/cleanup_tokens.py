@@ -80,7 +80,11 @@ def cleanup_tokens(state):
     }
     
     # Pass 1: Identifier et déplacer les rugs
+    # SKIP tokens marked as protected (manually corrected)
     for addr, token in list(tokens.items()):
+        if token.get("protected"):
+            continue  # Skip manually protected tokens
+            
         is_rug, reason = is_token_rugged(token)
         current_cat = token.get("category", "CIO")
         
