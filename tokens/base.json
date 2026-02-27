@@ -314,7 +314,7 @@
     ],
     "discovered_at": "2026-02-26T16:19:51.040423",
     "added_at": 1772119191,
-    "last_check": 1772148796.9661317,
+    "last_check": 1772152411.2728941,
     "price_history": [
       {
         "timestamp": 1772119789.5169163,
@@ -360,6 +360,11 @@
         "timestamp": 1772148796.9661348,
         "price": 2.659e-07,
         "change": 26.38
+      },
+      {
+        "timestamp": 1772152411.2728977,
+        "price": 2.522e-07,
+        "change": 19.87
       }
     ],
     "pump_signal_sent": true
@@ -1839,7 +1844,7 @@
     ],
     "discovered_at": "2026-02-26T22:25:41.514521",
     "added_at": 1772141141,
-    "last_check": 1772148797.46133,
+    "last_check": 1772152411.5857406,
     "price_history": [
       {
         "timestamp": 1772141568.1801784,
@@ -1855,6 +1860,11 @@
         "timestamp": 1772148797.4613342,
         "price": 0.00196,
         "change": 210.0
+      },
+      {
+        "timestamp": 1772152411.5857432,
+        "price": 0.00189,
+        "change": 199.0
       }
     ],
     "pump_signal_sent": true
@@ -1873,7 +1883,7 @@
     ],
     "discovered_at": "2026-02-26T22:30:42.625127",
     "added_at": 1772141442,
-    "last_check": 1772148797.5033162,
+    "last_check": 1772152411.6188242,
     "price_history": [
       {
         "timestamp": 1772141568.7419636,
@@ -1889,6 +1899,11 @@
         "timestamp": 1772148797.5033467,
         "price": 2.439e-06,
         "change": 439.0
+      },
+      {
+        "timestamp": 1772152411.6188262,
+        "price": 1.978e-06,
+        "change": 337.0
       }
     ],
     "pump_signal_sent": true
@@ -1911,12 +1926,17 @@
     ],
     "discovered_at": "2026-02-27T00:33:14.417695",
     "added_at": 1772148794,
-    "last_check": 1772148797.5699062,
+    "last_check": 1772152411.6735082,
     "price_history": [
       {
         "timestamp": 1772148797.5699081,
         "price": 0.001492,
         "change": 146141.0
+      },
+      {
+        "timestamp": 1772152411.6735106,
+        "price": 0.004399,
+        "change": 430949.0
       }
     ],
     "pump_signal_sent": true
@@ -1944,5 +1964,36 @@
       }
     ],
     "pump_signal_sent": true
+  },
+  "0xb316bec066605a40ffb4b32457ab70d85356aba3": {
+    "address": "0xb316bEc066605A40fFB4B32457ab70D85356ABA3",
+    "symbol": "UNKNOWN",
+    "name": "Unknown",
+    "icon": "https://cdn.dexscreener.com/cms/images/vRemj3WTJNczZPAZ?width=64&height=64&fit=crop&quality=95&format=auto",
+    "description": "\"@PetYourClaw adopt\" on x to start",
+    "links": [
+      {
+        "type": "twitter",
+        "url": "https://x.com/PetYourClaw"
+      }
+    ],
+    "discovered_at": "2026-02-27T01:36:25.177591",
+    "added_at": 1772152585
+  },
+  "0x887ad2e2e60177dce10ea2a2b3f3d6416a09456d": {
+    "address": "0x887ad2E2E60177dce10eA2a2B3F3D6416a09456D",
+    "symbol": "BASE",
+    "name": "BASE",
+    "discovered_at": "2026-02-27T01:41:27.264152",
+    "added_at": 1772152887,
+    "source": "dexscreener_search"
+  },
+  "0xa0352f2815036fbd50257712a93bc7a3edd343cd": {
+    "address": "0xa0352F2815036fbD50257712A93BC7A3eDD343CD",
+    "symbol": "BASE",
+    "name": "BASE",
+    "discovered_at": "2026-02-27T01:41:27.264154",
+    "added_at": 1772152887,
+    "source": "dexscreener_search"
   }
 }
