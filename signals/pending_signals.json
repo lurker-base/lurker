@@ -103,5 +103,20 @@
       "Prix +18.0%",
       "Volume 2.5x"
     ]
+  },
+  {
+    "timestamp": "2026-02-27T11:30:03.609520",
+    "token_id": "0x4200000000000000000000000000000000000006",
+    "token_symbol": "WETH",
+    "token_name": "Wrapped Ether",
+    "type": "PUMP",
+    "price": 3200.0,
+    "price_change": 0.18,
+    "volume_change": 2.5,
+    "score": 0.75,
+    "reasons": [
+      "Prix +18.0%",
+      "Volume 2.5x"
+    ]
   }
 ]
