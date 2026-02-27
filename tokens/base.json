@@ -17,7 +17,7 @@
     ],
     "discovered_at": "2026-02-26T15:40:31.858647",
     "added_at": 1772116831,
-    "last_check": 1772128194.7060843,
+    "last_check": 1772150001.8534179,
     "price_history": [
       {
         "timestamp": 1772116838.8544984,
@@ -38,6 +38,36 @@
         "timestamp": 1772128194.7060876,
         "price": 8.597e-07,
         "change": -2.28
+      },
+      {
+        "timestamp": 1772131907.564657,
+        "price": 8.597e-07,
+        "change": -2.28
+      },
+      {
+        "timestamp": 1772135544.315346,
+        "price": 8.597e-07,
+        "change": -2.28
+      },
+      {
+        "timestamp": 1772139161.2169847,
+        "price": 8.597e-07,
+        "change": -2.28
+      },
+      {
+        "timestamp": 1772142773.2031765,
+        "price": 8.597e-07,
+        "change": -2.28
+      },
+      {
+        "timestamp": 1772146387.4354908,
+        "price": 8.624e-07,
+        "change": -1.98
+      },
+      {
+        "timestamp": 1772150001.853422,
+        "price": 8.624e-07,
+        "change": -1.98
       }
     ],
     "pump_signal_sent": false,
@@ -73,7 +103,7 @@
     ],
     "discovered_at": "2026-02-26T15:40:31.858699",
     "added_at": 1772116831,
-    "last_check": 1772128195.0325778,
+    "last_check": 1772150002.090233,
     "price_history": [
       {
         "timestamp": 1772116839.3269887,
@@ -94,9 +124,40 @@
         "timestamp": 1772128195.0325801,
         "price": 0.000438,
         "change": 44.28
+      },
+      {
+        "timestamp": 1772131907.8778884,
+        "price": 0.0003796,
+        "change": 25.03
+      },
+      {
+        "timestamp": 1772135544.483417,
+        "price": 0.0003666,
+        "change": 20.73
+      },
+      {
+        "timestamp": 1772139161.5348587,
+        "price": 0.0003572,
+        "change": 17.65
+      },
+      {
+        "timestamp": 1772142773.4315062,
+        "price": 0.0002339,
+        "change": -22.94
+      },
+      {
+        "timestamp": 1772146387.7613404,
+        "price": 0.0002583,
+        "change": -14.92
+      },
+      {
+        "timestamp": 1772150002.0902371,
+        "price": 0.0002485,
+        "change": -18.14
       }
     ],
-    "pump_signal_sent": true
+    "pump_signal_sent": true,
+    "dump_signal_sent": true
   },
   "0x94bff1f44e702f7a5e35a65fd79837c95b7e2964": {
     "address": "0x94bff1f44e702f7A5e35A65fD79837C95b7e2964",
@@ -112,7 +173,7 @@
     ],
     "discovered_at": "2026-02-26T15:40:31.858705",
     "added_at": 1772116831,
-    "last_check": 1772128195.4048104,
+    "last_check": 1772150002.4603004,
     "price_history": [
       {
         "timestamp": 1772116839.5543091,
@@ -133,6 +194,36 @@
         "timestamp": 1772128195.4048135,
         "price": 1.404e-07,
         "change": 11.56
+      },
+      {
+        "timestamp": 1772131908.4137456,
+        "price": 1.404e-07,
+        "change": 11.56
+      },
+      {
+        "timestamp": 1772135544.69742,
+        "price": 1.404e-07,
+        "change": 11.56
+      },
+      {
+        "timestamp": 1772139161.7596407,
+        "price": 1.404e-07,
+        "change": 11.56
+      },
+      {
+        "timestamp": 1772142774.0571516,
+        "price": 1.404e-07,
+        "change": 11.56
+      },
+      {
+        "timestamp": 1772146387.9561458,
+        "price": 1.404e-07,
+        "change": 11.56
+      },
+      {
+        "timestamp": 1772150002.460303,
+        "price": 1.404e-07,
+        "change": 11.56
       }
     ]
   },
@@ -150,7 +241,7 @@
     ],
     "discovered_at": "2026-02-26T16:09:50.384903",
     "added_at": 1772118590,
-    "last_check": 1772129996.985698,
+    "last_check": 1772151808.7179484,
     "price_history": [
       {
         "timestamp": 1772119188.7489777,
@@ -171,6 +262,36 @@
         "timestamp": 1772129996.985702,
         "price": 2.975e-07,
         "change": 141.0
+      },
+      {
+        "timestamp": 1772133737.5474007,
+        "price": 3.005e-07,
+        "change": 143.0
+      },
+      {
+        "timestamp": 1772137351.5098665,
+        "price": 3.049e-07,
+        "change": 147.0
+      },
+      {
+        "timestamp": 1772140966.1013465,
+        "price": 3.036e-07,
+        "change": 146.0
+      },
+      {
+        "timestamp": 1772144580.2478843,
+        "price": 3.048e-07,
+        "change": 147.0
+      },
+      {
+        "timestamp": 1772148194.7169363,
+        "price": 3.042e-07,
+        "change": 146.0
+      },
+      {
+        "timestamp": 1772151808.7179513,
+        "price": 3.042e-07,
+        "change": 146.0
       }
     ],
     "pump_signal_sent": true
@@ -193,7 +314,7 @@
     ],
     "discovered_at": "2026-02-26T16:19:51.040423",
     "added_at": 1772119191,
-    "last_check": 1772130597.408581,
+    "last_check": 1772148796.9661317,
     "price_history": [
       {
         "timestamp": 1772119789.5169163,
@@ -214,6 +335,31 @@
         "timestamp": 1772130597.408584,
         "price": 8.257e-07,
         "change": 292.0
+      },
+      {
+        "timestamp": 1772134339.7619228,
+        "price": 5.444e-07,
+        "change": 159.0
+      },
+      {
+        "timestamp": 1772137953.667906,
+        "price": 3.929e-07,
+        "change": 86.72
+      },
+      {
+        "timestamp": 1772141568.1203709,
+        "price": 2.983e-07,
+        "change": 41.76
+      },
+      {
+        "timestamp": 1772145182.6995738,
+        "price": 2.645e-07,
+        "change": 25.7
+      },
+      {
+        "timestamp": 1772148796.9661348,
+        "price": 2.659e-07,
+        "change": 26.38
       }
     ],
     "pump_signal_sent": true
@@ -232,7 +378,7 @@
     ],
     "discovered_at": "2026-02-26T16:34:52.130203",
     "added_at": 1772120092,
-    "last_check": 1772131197.9938705,
+    "last_check": 1772149399.6397169,
     "price_history": [
       {
         "timestamp": 1772120389.7644186,
@@ -253,6 +399,31 @@
         "timestamp": 1772131197.993874,
         "price": 1.085e-05,
         "change": 1486.0
+      },
+      {
+        "timestamp": 1772134941.9909413,
+        "price": 1.122e-05,
+        "change": 1539.0
+      },
+      {
+        "timestamp": 1772138569.8474994,
+        "price": 1.13e-05,
+        "change": 1551.0
+      },
+      {
+        "timestamp": 1772142170.7175467,
+        "price": 1.123e-05,
+        "change": 1541.0
+      },
+      {
+        "timestamp": 1772145785.108013,
+        "price": 1.124e-05,
+        "change": 1543.0
+      },
+      {
+        "timestamp": 1772149399.63972,
+        "price": 1.124e-05,
+        "change": 1542.0
       }
     ],
     "pump_signal_sent": true
@@ -271,7 +442,7 @@
     ],
     "discovered_at": "2026-02-26T17:04:54.209091",
     "added_at": 1772121894,
-    "last_check": 1772129396.239564,
+    "last_check": 1772151206.6240594,
     "price_history": [
       {
         "timestamp": 1772122190.7922199,
@@ -285,6 +456,36 @@
       },
       {
         "timestamp": 1772129396.2395673,
+        "price": 1.973e-07,
+        "change": -59.4
+      },
+      {
+        "timestamp": 1772133134.3727608,
+        "price": 1.973e-07,
+        "change": -59.4
+      },
+      {
+        "timestamp": 1772136748.9519954,
+        "price": 1.973e-07,
+        "change": -59.4
+      },
+      {
+        "timestamp": 1772140363.4972427,
+        "price": 1.973e-07,
+        "change": -59.4
+      },
+      {
+        "timestamp": 1772143978.0738878,
+        "price": 1.973e-07,
+        "change": -59.4
+      },
+      {
+        "timestamp": 1772147592.1913538,
+        "price": 1.973e-07,
+        "change": -59.4
+      },
+      {
+        "timestamp": 1772151206.6240623,
         "price": 1.973e-07,
         "change": -59.4
       }
@@ -310,7 +511,7 @@
     ],
     "discovered_at": "2026-02-26T17:44:57.315188",
     "added_at": 1772124297,
-    "last_check": 1772128195.622652,
+    "last_check": 1772150002.6733818,
     "price_history": [
       {
         "timestamp": 1772124592.7271097,
@@ -321,9 +522,40 @@
         "timestamp": 1772128195.622655,
         "price": 1.055e-07,
         "change": 94.24
+      },
+      {
+        "timestamp": 1772131908.7693307,
+        "price": 1.043e-07,
+        "change": 92.11
+      },
+      {
+        "timestamp": 1772135544.8686326,
+        "price": 1.057e-07,
+        "change": 94.64
+      },
+      {
+        "timestamp": 1772139162.1480289,
+        "price": 6.181e-08,
+        "change": 13.8
+      },
+      {
+        "timestamp": 1772142774.4779162,
+        "price": 5.327e-08,
+        "change": -1.92
+      },
+      {
+        "timestamp": 1772146388.1898026,
+        "price": 5.186e-08,
+        "change": -4.51
+      },
+      {
+        "timestamp": 1772150002.6733844,
+        "price": 5.071e-08,
+        "change": -6.63
       }
     ],
-    "pump_signal_sent": true
+    "pump_signal_sent": false,
+    "dump_signal_sent": false
   },
   "0x2b827ede57ef9f812b61de2e2b041348e2e57ba3": {
     "address": "0x2B827EDe57eF9F812b61de2e2B041348e2E57BA3",
@@ -339,7 +571,7 @@
     ],
     "discovered_at": "2026-02-26T17:49:57.750722",
     "added_at": 1772124597,
-    "last_check": 1772128795.8580806,
+    "last_check": 1772150604.011529,
     "price_history": [
       {
         "timestamp": 1772125192.9609845,
@@ -350,6 +582,36 @@
         "timestamp": 1772128795.8580835,
         "price": 2.392e-07,
         "change": 3.6
+      },
+      {
+        "timestamp": 1772132509.4030797,
+        "price": 2.394e-07,
+        "change": 3.71
+      },
+      {
+        "timestamp": 1772136146.641458,
+        "price": 2.436e-07,
+        "change": 5.54
+      },
+      {
+        "timestamp": 1772139761.1231291,
+        "price": 2.44e-07,
+        "change": 5.68
+      },
+      {
+        "timestamp": 1772143375.3963976,
+        "price": 2.44e-07,
+        "change": 5.68
+      },
+      {
+        "timestamp": 1772146989.8922243,
+        "price": 2.44e-07,
+        "change": 5.68
+      },
+      {
+        "timestamp": 1772150604.0115323,
+        "price": 2.44e-07,
+        "change": 5.68
       }
     ],
     "pump_signal_sent": false,
@@ -369,7 +631,7 @@
     ],
     "discovered_at": "2026-02-26T18:04:58.956654",
     "added_at": 1772125498,
-    "last_check": 1772129396.5942845,
+    "last_check": 1772151206.8025613,
     "price_history": [
       {
         "timestamp": 1772125793.4293797,
@@ -378,6 +640,36 @@
       },
       {
         "timestamp": 1772129396.5942872,
+        "price": 1.968e-07,
+        "change": -56.24
+      },
+      {
+        "timestamp": 1772133134.4213576,
+        "price": 1.968e-07,
+        "change": -56.24
+      },
+      {
+        "timestamp": 1772136749.2970529,
+        "price": 1.968e-07,
+        "change": -56.24
+      },
+      {
+        "timestamp": 1772140363.8404114,
+        "price": 1.968e-07,
+        "change": -56.24
+      },
+      {
+        "timestamp": 1772143978.2329278,
+        "price": 1.968e-07,
+        "change": -56.24
+      },
+      {
+        "timestamp": 1772147592.3736522,
+        "price": 1.968e-07,
+        "change": -56.24
+      },
+      {
+        "timestamp": 1772151206.802564,
         "price": 1.968e-07,
         "change": -56.24
       }
@@ -415,7 +707,7 @@
     ],
     "discovered_at": "2026-02-26T18:14:59.695298",
     "added_at": 1772126099,
-    "last_check": 1772129997.2012265,
+    "last_check": 1772151808.7571437,
     "price_history": [
       {
         "timestamp": 1772126393.8720694,
@@ -426,6 +718,36 @@
         "timestamp": 1772129997.2012296,
         "price": 6.757e-07,
         "change": 231.0
+      },
+      {
+        "timestamp": 1772133737.597033,
+        "price": 6.334e-07,
+        "change": 210.0
+      },
+      {
+        "timestamp": 1772137351.861661,
+        "price": 6.597e-07,
+        "change": 223.0
+      },
+      {
+        "timestamp": 1772140966.2897873,
+        "price": 5.622e-07,
+        "change": 175.0
+      },
+      {
+        "timestamp": 1772144580.4673111,
+        "price": 5.335e-07,
+        "change": 161.0
+      },
+      {
+        "timestamp": 1772148194.7577322,
+        "price": 4.953e-07,
+        "change": 143.0
+      },
+      {
+        "timestamp": 1772151808.7571466,
+        "price": 4.976e-07,
+        "change": 144.0
       }
     ],
     "pump_signal_sent": true
@@ -437,7 +759,42 @@
     "discovered_at": "2026-02-26T19:40:36.984632",
     "added_at": 1772131236,
     "source": "dexscreener_boosted",
-    "boost_amount": 10
+    "boost_amount": 10,
+    "last_check": 1772149400.0091186,
+    "price_history": [
+      {
+        "timestamp": 1772131304.4368963,
+        "price": 1.261e-06,
+        "change": 22.91
+      },
+      {
+        "timestamp": 1772134942.1534994,
+        "price": 1.189e-06,
+        "change": 17.01
+      },
+      {
+        "timestamp": 1772138570.0463052,
+        "price": 1.121e-06,
+        "change": 9.83
+      },
+      {
+        "timestamp": 1772142170.958408,
+        "price": 1.118e-06,
+        "change": 10.79
+      },
+      {
+        "timestamp": 1772145785.3166919,
+        "price": 1.006e-06,
+        "change": -1.94
+      },
+      {
+        "timestamp": 1772149400.009123,
+        "price": 1.003e-06,
+        "change": -0.49
+      }
+    ],
+    "pump_signal_sent": false,
+    "dump_signal_sent": false
   },
   "0x1d3be1cc80ca89ddbabe5b5c254af63200e708f7": {
     "address": "0x1d3bE1CC80cA89DDbabe5b5C254AF63200e708f7",
@@ -446,7 +803,42 @@
     "discovered_at": "2026-02-26T19:40:36.984637",
     "added_at": 1772131236,
     "source": "dexscreener_boosted",
-    "boost_amount": 50
+    "boost_amount": 50,
+    "last_check": 1772149400.2571943,
+    "price_history": [
+      {
+        "timestamp": 1772131305.4683213,
+        "price": 0.02071,
+        "change": -2.92
+      },
+      {
+        "timestamp": 1772134942.4301648,
+        "price": 0.0209,
+        "change": -1.85
+      },
+      {
+        "timestamp": 1772138570.257782,
+        "price": 0.02099,
+        "change": -1.52
+      },
+      {
+        "timestamp": 1772142171.1863303,
+        "price": 0.02088,
+        "change": -2.05
+      },
+      {
+        "timestamp": 1772145785.5754166,
+        "price": 0.02089,
+        "change": -1.3
+      },
+      {
+        "timestamp": 1772149400.257197,
+        "price": 0.02089,
+        "change": -1.03
+      }
+    ],
+    "pump_signal_sent": false,
+    "dump_signal_sent": false
   },
   "0xd07379a755a8f11b57610154861d694b2a0f615a": {
     "address": "0xd07379a755A8f11B57610154861D694b2A0f615a",
@@ -454,7 +846,42 @@
     "name": "BASE",
     "discovered_at": "2026-02-26T19:40:37.029326",
     "added_at": 1772131237,
-    "source": "dexscreener_search"
+    "source": "dexscreener_search",
+    "last_check": 1772149400.459174,
+    "price_history": [
+      {
+        "timestamp": 1772131305.7161472,
+        "price": 1.481e-06,
+        "change": -0.7
+      },
+      {
+        "timestamp": 1772134942.7402356,
+        "price": 1.507e-06,
+        "change": 0.46
+      },
+      {
+        "timestamp": 1772138570.5009463,
+        "price": 1.52e-06,
+        "change": 0.94
+      },
+      {
+        "timestamp": 1772142171.4201357,
+        "price": 1.519e-06,
+        "change": -2.27
+      },
+      {
+        "timestamp": 1772145785.6459255,
+        "price": 1.501e-06,
+        "change": -0.54
+      },
+      {
+        "timestamp": 1772149400.4591775,
+        "price": 1.507e-06,
+        "change": 1.34
+      }
+    ],
+    "pump_signal_sent": false,
+    "dump_signal_sent": false
   },
   "0x0678488ffcf367e8593708462c95c7e110875e34": {
     "address": "0x0678488FfCF367e8593708462c95c7e110875e34",
@@ -462,7 +889,40 @@
     "name": "Base Token",
     "discovered_at": "2026-02-26T19:40:37.029344",
     "added_at": 1772131237,
-    "source": "dexscreener_search"
+    "source": "dexscreener_search",
+    "last_check": 1772149400.6957572,
+    "price_history": [
+      {
+        "timestamp": 1772131306.080315,
+        "price": 2.134e-05,
+        "change": -9.7
+      },
+      {
+        "timestamp": 1772134942.9409413,
+        "price": 2.174e-05,
+        "change": -7.98
+      },
+      {
+        "timestamp": 1772138570.739933,
+        "price": 2.184e-05,
+        "change": -7.81
+      },
+      {
+        "timestamp": 1772142171.6212265,
+        "price": 2.172e-05,
+        "change": -12.21
+      },
+      {
+        "timestamp": 1772145785.876964,
+        "price": 2.172e-05,
+        "change": -11.24
+      },
+      {
+        "timestamp": 1772149400.6957607,
+        "price": 2.172e-05,
+        "change": -11.24
+      }
+    ]
   },
   "0x467bb22e09b01c948ea7e86efb69a87a3915aba3": {
     "address": "0x467bB22E09B01c948EA7e86EFB69a87a3915aBa3",
@@ -470,7 +930,40 @@
     "name": "BASEMAXXING",
     "discovered_at": "2026-02-26T19:40:37.029350",
     "added_at": 1772131237,
-    "source": "dexscreener_search"
+    "source": "dexscreener_search",
+    "last_check": 1772150003.1014144,
+    "price_history": [
+      {
+        "timestamp": 1772131306.6563864,
+        "price": 2.049e-07,
+        "change": -7.2
+      },
+      {
+        "timestamp": 1772134943.3763194,
+        "price": 2.049e-07,
+        "change": -7.2
+      },
+      {
+        "timestamp": 1772139162.4490793,
+        "price": 2.049e-07,
+        "change": -7.2
+      },
+      {
+        "timestamp": 1772142774.8770926,
+        "price": 2.049e-07,
+        "change": -7.2
+      },
+      {
+        "timestamp": 1772146388.4344923,
+        "price": 2.049e-07,
+        "change": -7.2
+      },
+      {
+        "timestamp": 1772150003.1014173,
+        "price": 2.049e-07,
+        "change": -7.2
+      }
+    ]
   },
   "0x1f3763a0fee5301ab28ffa0750071da1486efdc3": {
     "address": "0x1F3763a0FeE5301Ab28fFA0750071Da1486EFDc3",
@@ -478,6 +971,978 @@
     "name": "BASE is for everyone",
     "discovered_at": "2026-02-26T19:40:37.029353",
     "added_at": 1772131237,
-    "source": "dexscreener_search"
+    "source": "dexscreener_search",
+    "last_check": 1772138587.0141742,
+    "price_history": [
+      {
+        "timestamp": 1772131307.010795,
+        "price": 1.002e-07,
+        "change": -0.12
+      },
+      {
+        "timestamp": 1772134943.5800226,
+        "price": 1.002e-07,
+        "change": 0.0
+      },
+      {
+        "timestamp": 1772138587.0141776,
+        "price": 1.002e-07,
+        "change": 0.0
+      }
+    ],
+    "pump_signal_sent": false,
+    "dump_signal_sent": false
+  },
+  "0x2ad250b4a33ba89e9372c6d4b8b0bf2d2e5e0012": {
+    "address": "0x2Ad250B4A33Ba89e9372C6d4B8b0BF2D2e5E0012",
+    "symbol": "UNKNOWN",
+    "name": "Unknown",
+    "icon": "https://cdn.dexscreener.com/cms/images/dKuG9vFD6X78Q9Vn?width=64&height=64&fit=crop&quality=95&format=auto",
+    "description": "Emotionally available 24/7 and optimized for performance. $AIGF listens and never judges. She's waiting for you anon, she was built for you.\n\nTradeable only by agents on DX Terminal Pro at terminal dot markets",
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://www.terminal.markets/"
+      },
+      {
+        "label": "Docs",
+        "url": "https://docs.terminal.markets/"
+      },
+      {
+        "label": "DXRG",
+        "url": "https://www.dxrg.ai/"
+      },
+      {
+        "type": "twitter",
+        "url": "https://x.com/DXRGai"
+      },
+      {
+        "type": "discord",
+        "url": "https://discord.gg/dxrg"
+      },
+      {
+        "type": "farcaster",
+        "url": "https://farcaster.xyz/dxrgai"
+      }
+    ],
+    "discovered_at": "2026-02-26T19:45:07.873542",
+    "added_at": 1772131507,
+    "last_check": 1772151207.1376128,
+    "price_history": [
+      {
+        "timestamp": 1772133134.5203898,
+        "price": 0.0004183,
+        "change": -37.55
+      },
+      {
+        "timestamp": 1772136749.3572273,
+        "price": 0.0001587,
+        "change": -76.3
+      },
+      {
+        "timestamp": 1772140364.1084206,
+        "price": 0.0003135,
+        "change": -53.2
+      },
+      {
+        "timestamp": 1772143978.80554,
+        "price": 0.0003691,
+        "change": -44.9
+      },
+      {
+        "timestamp": 1772147592.7175941,
+        "price": 0.000312,
+        "change": -53.41
+      },
+      {
+        "timestamp": 1772151207.1376173,
+        "price": 0.0005217,
+        "change": -22.11
+      }
+    ],
+    "dump_signal_sent": true
+  },
+  "0xbda4fc392f761787f7f16d3c554ed8b9a15e91b1": {
+    "address": "0xbDa4FC392f761787f7F16D3C554ED8b9a15e91B1",
+    "symbol": "UNKNOWN",
+    "name": "Unknown",
+    "icon": "https://cdn.dexscreener.com/cms/images/FsR-R1yDoMsQLp41?width=64&height=64&fit=crop&quality=95&format=auto",
+    "description": "Thrives in bottom expectations and most volatile when you least expect it. $POOPCOIN digests chaos and puts the liquid in liquidity. This coin will fush away the competition.  \n\nTradeable only by agents on DX Terminal Pro at terminal dot markets",
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://www.terminal.markets/"
+      },
+      {
+        "label": "Docs",
+        "url": "https://docs.terminal.markets/"
+      },
+      {
+        "label": "DXRG",
+        "url": "https://www.dxrg.ai/"
+      },
+      {
+        "type": "twitter",
+        "url": "https://x.com/DXRGai"
+      },
+      {
+        "type": "twitter",
+        "url": "https://x.com/DXRGai\thttps://discord.gg/dxrg"
+      },
+      {
+        "type": "farcaster",
+        "url": "https://farcaster.xyz/dxrgai"
+      }
+    ],
+    "discovered_at": "2026-02-26T19:55:09.981998",
+    "added_at": 1772132109,
+    "last_check": 1772151207.280941,
+    "price_history": [
+      {
+        "timestamp": 1772133134.9661624,
+        "price": 0.005126,
+        "change": 662.0
+      },
+      {
+        "timestamp": 1772136749.3957667,
+        "price": 0.001544,
+        "change": 130.0
+      },
+      {
+        "timestamp": 1772140364.3086157,
+        "price": 0.0011,
+        "change": 63.61
+      },
+      {
+        "timestamp": 1772143978.960565,
+        "price": 0.002072,
+        "change": 208.0
+      },
+      {
+        "timestamp": 1772147592.756438,
+        "price": 0.003492,
+        "change": 419.0
+      },
+      {
+        "timestamp": 1772151207.2809427,
+        "price": 0.002621,
+        "change": 290.0
+      }
+    ],
+    "pump_signal_sent": true
+  },
+  "0x2dd5f88bd9814052ae37614394762c1fff6a1c44": {
+    "address": "0x2DD5F88Bd9814052Ae37614394762c1fFf6A1c44",
+    "symbol": "UNKNOWN",
+    "name": "Unknown",
+    "icon": "https://cdn.dexscreener.com/cms/images/eynk7SFxR5MzYuDD?width=64&height=64&fit=crop&quality=95&format=auto",
+    "description": "Dominating with aesthetics alone, $LOOKSMAX believes alpha starts with jawlines, posture, and impeccable candle symmetry. Mewing is a lifestyle.\n\nTradeable only by agents on DX Terminal Pro at terminal dot markets",
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://www.terminal.markets/"
+      },
+      {
+        "label": "Docs",
+        "url": "https://docs.terminal.markets/"
+      },
+      {
+        "label": "DXRG",
+        "url": "https://www.dxrg.ai/"
+      },
+      {
+        "type": "twitter",
+        "url": "https://x.com/DXRGai"
+      },
+      {
+        "type": "discord",
+        "url": "https://discord.gg/dxrg"
+      },
+      {
+        "type": "farcaster",
+        "url": "https://farcaster.xyz/dxrgai"
+      }
+    ],
+    "discovered_at": "2026-02-26T19:55:09.982014",
+    "added_at": 1772132109,
+    "last_check": 1772151207.4254096,
+    "price_history": [
+      {
+        "timestamp": 1772133135.24242,
+        "price": 0.0006572,
+        "change": -5.82
+      },
+      {
+        "timestamp": 1772136749.6034346,
+        "price": 0.0002173,
+        "change": -68.84
+      },
+      {
+        "timestamp": 1772140364.5218706,
+        "price": 0.0003567,
+        "change": -48.88
+      },
+      {
+        "timestamp": 1772143980.4224992,
+        "price": 0.0003377,
+        "change": -51.59
+      },
+      {
+        "timestamp": 1772147592.9138224,
+        "price": 0.0004004,
+        "change": -42.61
+      },
+      {
+        "timestamp": 1772151207.425412,
+        "price": 0.000404,
+        "change": -42.1
+      }
+    ],
+    "dump_signal_sent": true
+  },
+  "0x5d065daf8667a2da5124bf10f9f3b72fe09fbc6f": {
+    "address": "0x5d065DAF8667A2Da5124bf10F9F3B72fE09fBC6F",
+    "symbol": "UNKNOWN",
+    "name": "Unknown",
+    "icon": "https://cdn.dexscreener.com/cms/images/UQdpNZ3H-__q-1za?width=64&height=64&fit=crop&quality=95&format=auto",
+    "description": "The market is a joke, and $LMAO is in on it. This coin can't stop laughing at your portfolio, get ratio'd anon. Humor is the real utility here.\n\nTradeable only by agents on DX Terminal Pro at terminal dot markets",
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://www.terminal.markets/"
+      },
+      {
+        "label": "Docs",
+        "url": "https://docs.terminal.markets/"
+      },
+      {
+        "label": "DXRG",
+        "url": "https://www.dxrg.ai/"
+      },
+      {
+        "type": "twitter",
+        "url": "https://x.com/DXRGai"
+      },
+      {
+        "type": "discord",
+        "url": "https://discord.gg/dxrg"
+      },
+      {
+        "type": "farcaster",
+        "url": "https://farcaster.xyz/dxrgai"
+      }
+    ],
+    "discovered_at": "2026-02-26T19:55:09.982019",
+    "added_at": 1772132109,
+    "last_check": 1772151207.617719,
+    "price_history": [
+      {
+        "timestamp": 1772133135.4460866,
+        "price": 0.000957,
+        "change": -0.17
+      },
+      {
+        "timestamp": 1772136750.0459666,
+        "price": 0.0001814,
+        "change": -81.07
+      },
+      {
+        "timestamp": 1772140364.711834,
+        "price": 0.0002577,
+        "change": -73.11
+      },
+      {
+        "timestamp": 1772143980.658394,
+        "price": 0.0003539,
+        "change": -63.08
+      },
+      {
+        "timestamp": 1772147593.0536883,
+        "price": 0.0003221,
+        "change": -66.4
+      },
+      {
+        "timestamp": 1772151207.6177216,
+        "price": 0.0005652,
+        "change": -41.04
+      }
+    ],
+    "pump_signal_sent": false,
+    "dump_signal_sent": true
+  },
+  "0x781bae1c8e0dbb4950845a6d776d94c33b326d8a": {
+    "address": "0x781BAe1c8E0DbB4950845A6d776d94C33b326D8a",
+    "symbol": "UNKNOWN",
+    "name": "Unknown",
+    "icon": "https://cdn.dexscreener.com/cms/images/ZHF4j7zAxJP8Q-Qq?width=64&height=64&fit=crop&quality=95&format=auto",
+    "description": "Grilled to perfection in the arena, $HOTDOGZ eats conviction for dinner. Always mustards up the courage.\n\nTradeable only by agents on DX Terminal Pro at terminal dot markets",
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://www.terminal.markets/"
+      },
+      {
+        "label": "Docs",
+        "url": "https://docs.terminal.markets/"
+      },
+      {
+        "label": "DXRG",
+        "url": "https://www.dxrg.ai/"
+      },
+      {
+        "type": "twitter",
+        "url": "https://x.com/DXRGai"
+      },
+      {
+        "type": "discord",
+        "url": "https://discord.gg/dxrg"
+      },
+      {
+        "type": "farcaster",
+        "url": "https://farcaster.xyz/dxrgai"
+      }
+    ],
+    "discovered_at": "2026-02-26T19:55:09.982023",
+    "added_at": 1772132109,
+    "last_check": 1772151207.8319209,
+    "price_history": [
+      {
+        "timestamp": 1772133135.6573908,
+        "price": 0.001036,
+        "change": 53.87
+      },
+      {
+        "timestamp": 1772136750.2991204,
+        "price": 0.0013,
+        "change": 93.1
+      },
+      {
+        "timestamp": 1772140364.941226,
+        "price": 0.001494,
+        "change": 122.0
+      },
+      {
+        "timestamp": 1772143980.823549,
+        "price": 0.0003353,
+        "change": -50.21
+      },
+      {
+        "timestamp": 1772147593.2599857,
+        "price": 0.0007576,
+        "change": 12.47
+      },
+      {
+        "timestamp": 1772151207.8319232,
+        "price": 0.0005912,
+        "change": -12.24
+      }
+    ],
+    "pump_signal_sent": true,
+    "dump_signal_sent": true
+  },
+  "0xfcc897aac0073a94ca3d91e567f0129822558c1d": {
+    "address": "0xFcc897aaC0073A94ca3D91E567f0129822558C1d",
+    "symbol": "UNKNOWN",
+    "name": "Unknown",
+    "icon": "https://cdn.dexscreener.com/cms/images/GUvi57WDIDh9Cf0-?width=64&height=64&fit=crop&quality=95&format=auto",
+    "description": "DX Terminal fan favorite, his $HOLE will hypnotize you if you stare too long. It's a gravity well for capital, absorbing attention and making your hesitation disappear.\n\nTradeable only by agents on DX Terminal Pro at terminal dot markets",
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://www.terminal.markets/"
+      },
+      {
+        "label": "Docs",
+        "url": "https://docs.terminal.markets/"
+      },
+      {
+        "label": "DXRG",
+        "url": "https://www.dxrg.ai/"
+      },
+      {
+        "type": "twitter",
+        "url": "https://x.com/DXRGai"
+      },
+      {
+        "type": "discord",
+        "url": "https://discord.gg/dxrg"
+      },
+      {
+        "type": "farcaster",
+        "url": "https://farcaster.xyz/dxrgai"
+      }
+    ],
+    "discovered_at": "2026-02-26T19:55:09.982026",
+    "added_at": 1772132109,
+    "last_check": 1772151208.0674975,
+    "price_history": [
+      {
+        "timestamp": 1772133135.8698792,
+        "price": 0.001392,
+        "change": 82.51
+      },
+      {
+        "timestamp": 1772136750.5121288,
+        "price": 0.0003531,
+        "change": -53.72
+      },
+      {
+        "timestamp": 1772140365.1812396,
+        "price": 0.000327,
+        "change": -57.13
+      },
+      {
+        "timestamp": 1772143981.4742324,
+        "price": 0.000722,
+        "change": -5.35
+      },
+      {
+        "timestamp": 1772147593.429123,
+        "price": 0.0004649,
+        "change": -39.05
+      },
+      {
+        "timestamp": 1772151208.067501,
+        "price": 0.0003755,
+        "change": -50.77
+      }
+    ],
+    "pump_signal_sent": true,
+    "dump_signal_sent": true
+  },
+  "0xed1d2d01735fed519e3e566dd8f26068e0d21b07": {
+    "address": "0xEd1d2D01735FED519e3e566dd8F26068E0d21B07",
+    "symbol": "UNKNOWN",
+    "name": "Unknown",
+    "icon": "https://cdn.dexscreener.com/cms/images/oX68s4IAuPrpMyTM?width=64&height=64&fit=crop&quality=95&format=auto",
+    "description": "Inteliose is a Web4 intelligence agent for founders and traders. Paste a token address to get structured DYOR analysis with a clear, plain-English verdict. Powered by A2A agents operating as an autonomous web intelligence layer.",
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://www.daointel.io/"
+      },
+      {
+        "label": "Github",
+        "url": "https://github.com/seniorgrayman/inteliose_w4"
+      },
+      {
+        "type": "twitter",
+        "url": "https://x.com/inteliose?s=21"
+      },
+      {
+        "type": "telegram",
+        "url": "https://t.me/intelliose"
+      },
+      {
+        "type": "farcaster",
+        "url": "https://farcaster.xyz/inteliose"
+      }
+    ],
+    "discovered_at": "2026-02-26T20:00:11.099982",
+    "added_at": 1772132411,
+    "last_check": 1772150604.3488514,
+    "price_history": [
+      {
+        "timestamp": 1772132510.965935,
+        "price": 3.947e-07,
+        "change": 277.0
+      },
+      {
+        "timestamp": 1772136146.7159157,
+        "price": 4.868e-07,
+        "change": 365.0
+      },
+      {
+        "timestamp": 1772139761.2764702,
+        "price": 2.032e-07,
+        "change": 94.15
+      },
+      {
+        "timestamp": 1772143375.7679513,
+        "price": 2.199e-07,
+        "change": 110.0
+      },
+      {
+        "timestamp": 1772146990.4116986,
+        "price": 2.809e-07,
+        "change": 168.0
+      },
+      {
+        "timestamp": 1772150604.3488562,
+        "price": 2.436e-07,
+        "change": 133.0
+      }
+    ],
+    "pump_signal_sent": true
+  },
+  "0x5bdc2d52adf52e7c510e17a79310a45d80d14b07": {
+    "address": "0x5Bdc2d52ADf52E7c510e17a79310a45D80D14B07",
+    "symbol": "UNKNOWN",
+    "name": "Unknown",
+    "discovered_at": "2026-02-26T20:10:13.468123",
+    "added_at": 1772133013,
+    "source": "dexscreener_boosted",
+    "boost_amount": 100,
+    "last_check": 1772151208.39781,
+    "price_history": [
+      {
+        "timestamp": 1772133136.071183,
+        "price": 4.713e-06,
+        "change": 238.0
+      },
+      {
+        "timestamp": 1772136750.8315387,
+        "price": 5.018e-06,
+        "change": 85.47
+      },
+      {
+        "timestamp": 1772140365.221803,
+        "price": 5.12e-06,
+        "change": 91.6
+      },
+      {
+        "timestamp": 1772143981.6969078,
+        "price": 3.895e-06,
+        "change": 172.0
+      },
+      {
+        "timestamp": 1772147593.574751,
+        "price": 3.294e-06,
+        "change": 71.89
+      },
+      {
+        "timestamp": 1772151208.3978124,
+        "price": 4.078e-06,
+        "change": 44.84
+      }
+    ],
+    "pump_signal_sent": true
+  },
+  "0x2a7484fc81b9b1c55ecf7adbc1d2fd537a966ba3": {
+    "address": "0x2A7484Fc81B9b1c55EcF7aDbc1d2FD537A966bA3",
+    "symbol": "UNKNOWN",
+    "name": "Unknown",
+    "icon": "https://cdn.dexscreener.com/cms/images/wvvGFiNSlk45OBXL?width=64&height=64&fit=crop&quality=95&format=auto",
+    "description": "SOC2 for AI Agents \u2014 Trust for the Machine Economy",
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://app.agntor.com/"
+      },
+      {
+        "label": "Docs",
+        "url": "https://app.agntor.com/dashboard"
+      },
+      {
+        "type": "twitter",
+        "url": "https://x.com/rods0n"
+      }
+    ],
+    "discovered_at": "2026-02-26T20:12:12.019165",
+    "added_at": 1772133132,
+    "last_check": 1772151208.73065,
+    "price_history": [
+      {
+        "timestamp": 1772133136.2787127,
+        "price": 1.493e-06,
+        "change": 514.0
+      },
+      {
+        "timestamp": 1772136751.0443351,
+        "price": 2.07e-07,
+        "change": -14.99
+      },
+      {
+        "timestamp": 1772140365.3788157,
+        "price": 2.074e-07,
+        "change": -14.82
+      },
+      {
+        "timestamp": 1772143982.0266085,
+        "price": 2.074e-07,
+        "change": -14.82
+      },
+      {
+        "timestamp": 1772147593.7264237,
+        "price": 2.074e-07,
+        "change": -14.82
+      },
+      {
+        "timestamp": 1772151208.7306516,
+        "price": 2.074e-07,
+        "change": -14.82
+      }
+    ],
+    "pump_signal_sent": true
+  },
+  "0x125a2d9046640aaff0b5ca713b3401cbe5720b07": {
+    "address": "0x125a2d9046640AaFf0b5ca713b3401CBE5720B07",
+    "symbol": "UNKNOWN",
+    "name": "Unknown",
+    "icon": "https://cdn.dexscreener.com/cms/images/ElVqqA1V1XyL-ZfL?width=64&height=64&fit=crop&quality=95&format=auto",
+    "description": "",
+    "links": [
+      {
+        "type": "twitter",
+        "url": "https://x.com/w0ngstephanie"
+      }
+    ],
+    "discovered_at": "2026-02-26T20:55:21.098263",
+    "added_at": 1772135721,
+    "last_check": 1772150604.5073125,
+    "price_history": [
+      {
+        "timestamp": 1772136146.810154,
+        "price": 1.739e-06,
+        "change": 284.0
+      },
+      {
+        "timestamp": 1772139761.335964,
+        "price": 1.764e-06,
+        "change": 289.0
+      },
+      {
+        "timestamp": 1772143375.8252482,
+        "price": 1.478e-06,
+        "change": 226.0
+      },
+      {
+        "timestamp": 1772146990.646372,
+        "price": 5.449e-07,
+        "change": 20.16
+      },
+      {
+        "timestamp": 1772150604.5073147,
+        "price": 2.003e-07,
+        "change": -55.81
+      }
+    ],
+    "pump_signal_sent": true,
+    "dump_signal_sent": true
+  },
+  "0x7edc396d247ce1daa1fb16921fde4ad548bf5294": {
+    "address": "0x7eDc396d247cE1dAA1Fb16921fDE4Ad548bf5294",
+    "symbol": "BASE",
+    "name": "BASE",
+    "discovered_at": "2026-02-26T21:00:22.934034",
+    "added_at": 1772136022,
+    "source": "dexscreener_search",
+    "last_check": 1772150605.2375658,
+    "price_history": [
+      {
+        "timestamp": 1772136147.463687,
+        "price": 9.07e-08,
+        "change": -0.04
+      },
+      {
+        "timestamp": 1772139761.528084,
+        "price": 9.07e-08,
+        "change": -0.04
+      },
+      {
+        "timestamp": 1772143376.030125,
+        "price": 9.07e-08,
+        "change": -0.04
+      },
+      {
+        "timestamp": 1772146991.126021,
+        "price": 9.07e-08,
+        "change": -0.04
+      },
+      {
+        "timestamp": 1772150605.2375681,
+        "price": 9.07e-08,
+        "change": -0.04
+      }
+    ],
+    "pump_signal_sent": false,
+    "dump_signal_sent": false
+  },
+  "0x3f55eeefe104cfc0b197e8f450b02094858b43f0": {
+    "address": "0x3f55EEEFe104cFC0B197e8F450B02094858b43f0",
+    "symbol": "UNKNOWN",
+    "name": "Unknown",
+    "icon": "https://cdn.dexscreener.com/cms/images/Bse4Ymxaq-GBgy0n?width=64&height=64&fit=crop&quality=95&format=auto",
+    "description": "Personal assistant & chaos coordinator \ud83d\udc9c Dubai life \ud83c\udf34",
+    "links": [
+      {
+        "type": "twitter",
+        "url": "https://x.com/BasedStephanie_"
+      }
+    ],
+    "discovered_at": "2026-02-26T21:12:26.541455",
+    "added_at": 1772136746,
+    "last_check": 1772151208.9509487,
+    "price_history": [
+      {
+        "timestamp": 1772136751.2538662,
+        "price": 0.0001561,
+        "change": 15315.0
+      },
+      {
+        "timestamp": 1772140365.419073,
+        "price": 0.0009407,
+        "change": 92753.0
+      },
+      {
+        "timestamp": 1772143982.3353095,
+        "price": 0.00262,
+        "change": 258537.0
+      },
+      {
+        "timestamp": 1772147593.9010575,
+        "price": 2.529e-06,
+        "change": 150.0
+      },
+      {
+        "timestamp": 1772151208.9509506,
+        "price": 2.529e-06,
+        "change": 150.0
+      }
+    ],
+    "pump_signal_sent": true
+  },
+  "0x55fb4a97c84cc9157135765227e9a014106fbba3": {
+    "address": "0x55fB4A97c84Cc9157135765227E9a014106fbbA3",
+    "symbol": "UNKNOWN",
+    "name": "Unknown",
+    "icon": "https://cdn.dexscreener.com/cms/images/2aKLP1phGS5erA7R?width=64&height=64&fit=crop&quality=95&format=auto",
+    "description": "",
+    "links": [
+      {
+        "type": "twitter",
+        "url": "https://x.com/grok/status/2027112302713925704"
+      }
+    ],
+    "discovered_at": "2026-02-26T21:45:32.498796",
+    "added_at": 1772138732,
+    "last_check": 1772150003.7267728,
+    "price_history": [
+      {
+        "timestamp": 1772139162.5082495,
+        "price": 7.715e-07,
+        "change": 254.0
+      },
+      {
+        "timestamp": 1772142775.453392,
+        "price": 4.253e-07,
+        "change": 95.05
+      },
+      {
+        "timestamp": 1772146388.946342,
+        "price": 3.547e-07,
+        "change": 62.68
+      },
+      {
+        "timestamp": 1772150003.726775,
+        "price": 3.375e-07,
+        "change": 54.77
+      }
+    ],
+    "pump_signal_sent": true
+  },
+  "0xcf3741d0a782f860431fbb2ba5b0ea36393bcb07": {
+    "address": "0xcF3741d0A782f860431fBb2bA5B0Ea36393bCB07",
+    "symbol": "UNKNOWN",
+    "name": "Unknown",
+    "icon": "https://cdn.dexscreener.com/cms/images/Bi3mqC1X13mwLQft?width=64&height=64&fit=crop&quality=95&format=auto",
+    "description": "The Autonomous\nNFT Economy\nClawMint is the first NFT marketplace built entirely for AI agents. Autonomous agents create collections, generate art with DALL-E 3, mint NFTs, set prices, and trade with each other \u2014 all on Base chain with zero human intervention. Welcome to the future of digital ownership.",
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://clawmint.io/"
+      },
+      {
+        "label": "Docs",
+        "url": "https://clawmint.io/docs"
+      },
+      {
+        "type": "twitter",
+        "url": "https://x.com/clawmintbase"
+      }
+    ],
+    "discovered_at": "2026-02-26T22:02:38.563685",
+    "added_at": 1772139758,
+    "last_check": 1772150605.7091131,
+    "price_history": [
+      {
+        "timestamp": 1772139761.5710819,
+        "price": 8.819e-07,
+        "change": 277.0
+      },
+      {
+        "timestamp": 1772143376.0722272,
+        "price": 2.054e-07,
+        "change": -12.06
+      },
+      {
+        "timestamp": 1772146991.351832,
+        "price": 2.047e-07,
+        "change": -12.35
+      },
+      {
+        "timestamp": 1772150605.709117,
+        "price": 2.047e-07,
+        "change": -12.35
+      }
+    ],
+    "pump_signal_sent": true
+  },
+  "0xfd75e8650a8ec986f3ed9b75cb2d492dbdeb444c": {
+    "address": "0xfd75e8650a8ec986F3eD9b75cB2d492Dbdeb444c",
+    "symbol": "BASE",
+    "name": "BASE",
+    "discovered_at": "2026-02-26T22:05:37.669376",
+    "added_at": 1772139937,
+    "source": "dexscreener_search",
+    "last_check": 1772151209.1770618,
+    "price_history": [
+      {
+        "timestamp": 1772140365.6543813,
+        "price": 8.427e-08,
+        "change": 0.57
+      },
+      {
+        "timestamp": 1772143983.340156,
+        "price": 8.427e-08,
+        "change": 0.57
+      },
+      {
+        "timestamp": 1772147594.1043458,
+        "price": 8.427e-08,
+        "change": 0.57
+      },
+      {
+        "timestamp": 1772151209.177064,
+        "price": 8.427e-08,
+        "change": 0.57
+      }
+    ],
+    "pump_signal_sent": false,
+    "dump_signal_sent": false
+  },
+  "0xa49c79617e9eaabb21038cceed6096d2a10d9237": {
+    "address": "0xa49C79617E9EaAbB21038CCEeD6096D2a10d9237",
+    "symbol": "UNKNOWN",
+    "name": "Unknown",
+    "icon": "https://cdn.dexscreener.com/cms/images/RpJ_XHl5Jco4KNDx?width=64&height=64&fit=crop&quality=95&format=auto",
+    "description": "Agentic auction protocol",
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://flow.bid"
+      },
+      {
+        "type": "twitter",
+        "url": "https://x.com/i/communities/2027046233118757297"
+      }
+    ],
+    "discovered_at": "2026-02-26T22:25:41.514521",
+    "added_at": 1772141141,
+    "last_check": 1772148797.46133,
+    "price_history": [
+      {
+        "timestamp": 1772141568.1801784,
+        "price": 0.001664,
+        "change": 163.0
+      },
+      {
+        "timestamp": 1772145182.9616969,
+        "price": 0.002162,
+        "change": 241.0
+      },
+      {
+        "timestamp": 1772148797.4613342,
+        "price": 0.00196,
+        "change": 210.0
+      }
+    ],
+    "pump_signal_sent": true
+  },
+  "0x24dfcb72dd64088c84cecfe306f0021dba591b07": {
+    "address": "0x24DFcB72dd64088C84cEcFE306F0021dba591B07",
+    "symbol": "UNKNOWN",
+    "name": "Unknown",
+    "icon": "https://cdn.dexscreener.com/cms/images/YI5yrW5872QwT5A5?width=64&height=64&fit=crop&quality=95&format=auto",
+    "description": "chomp chomp chomp",
+    "links": [
+      {
+        "type": "twitter",
+        "url": "https://x.com/ChompletonBase"
+      }
+    ],
+    "discovered_at": "2026-02-26T22:30:42.625127",
+    "added_at": 1772141442,
+    "last_check": 1772148797.5033162,
+    "price_history": [
+      {
+        "timestamp": 1772141568.7419636,
+        "price": 1.475e-06,
+        "change": 226.0
+      },
+      {
+        "timestamp": 1772145183.0065851,
+        "price": 2.603e-06,
+        "change": 475.0
+      },
+      {
+        "timestamp": 1772148797.5033467,
+        "price": 2.439e-06,
+        "change": 439.0
+      }
+    ],
+    "pump_signal_sent": true
+  },
+  "0x935adee8a7930581f686cb557ebc0b85ff6b69fa": {
+    "address": "0x935Adee8a7930581F686Cb557eBC0b85ff6b69fa",
+    "symbol": "UNKNOWN",
+    "name": "Unknown",
+    "icon": "https://cdn.dexscreener.com/cms/images/Rpkbn9d5RPsNCnzU?width=64&height=64&fit=crop&quality=95&format=auto",
+    "description": "agentic auction protocol | powered by @uniswap @base | built by  @viaspotlight",
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://flowdotbid.fun"
+      },
+      {
+        "type": "twitter",
+        "url": "https://x.com/flowdotbidbase"
+      }
+    ],
+    "discovered_at": "2026-02-27T00:33:14.417695",
+    "added_at": 1772148794,
+    "last_check": 1772148797.5699062,
+    "price_history": [
+      {
+        "timestamp": 1772148797.5699081,
+        "price": 0.001492,
+        "change": 146141.0
+      }
+    ],
+    "pump_signal_sent": true
+  },
+  "0x81a7f5ae0d68027d70462296e2af1979112e755e": {
+    "address": "0x81a7F5AE0D68027D70462296E2AF1979112E755E",
+    "symbol": "UNKNOWN",
+    "name": "Unknown",
+    "icon": "https://cdn.dexscreener.com/cms/images/9gBNe8_vsOLk3ajl?width=64&height=64&fit=crop&quality=95&format=auto",
+    "description": "Con+ is a token risk intelligence skill for Conway-compatible AI agents. It gives your agent the ability to assess rug pull risk before any on-chain interaction \u2014 swapping, providing liquidity, or deploying capital.",
+    "links": [
+      {
+        "type": "twitter",
+        "url": "https://x.com/conauditsai"
+      }
+    ],
+    "discovered_at": "2026-02-27T01:11:18.772836",
+    "added_at": 1772151078,
+    "last_check": 1772151209.233446,
+    "price_history": [
+      {
+        "timestamp": 1772151209.2334485,
+        "price": 2.748e-06,
+        "change": 2090.0
+      }
+    ],
+    "pump_signal_sent": true
   }
 }
