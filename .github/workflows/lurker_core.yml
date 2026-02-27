@@ -42,15 +42,16 @@ jobs:
       - name: Detect Copycats
         run: python scripts/detect_copycats.py
 
-      - name: Run Notifier
-        env:
-          API_KEY: ${{ secrets.TWITTER_API_KEY_LURKER }}
-          API_SECRET: ${{ secrets.TWITTER_API_SECRET_LURKER }}
-          ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN_LURKER }}
-          ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET_LURKER }}
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python scripts/notifier_core.py
+      # DISABLED: Run Notifier - causing duplicate tweets
+      # - name: Run Notifier
+      #   env:
+      #     API_KEY: ${{ secrets.TWITTER_API_KEY_LURKER }}
+      #     API_SECRET: ${{ secrets.TWITTER_API_SECRET_LURKER }}
+      #     ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN_LURKER }}
+      #     ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET_LURKER }}
+      #     TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      #     TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      #   run: python scripts/notifier_core.py
 
       - name: Commit state and tokens
         run: |
