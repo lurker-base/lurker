@@ -1,0 +1,13 @@
+{
+  "type": "DUMP",
+  "token_id": "0xbdadae3fc9b64d69770b68d23da3545e862d0b07",
+  "symbol": "UNKNOWN",
+  "name": "Unknown",
+  "price_usd": 2.028e-07,
+  "price_change_24h": -58.28,
+  "volume_24h": 273211.12,
+  "liquidity_usd": 21809.62,
+  "detected_at": "2026-02-26T18:09:53.232882",
+  "dexscreener_url": "https://dexscreener.com/base/0xbdadae3fc9b64d69770b68d23da3545e862d0b07",
+  "alert_message": "\ud83d\udea8 DUMP ALERT: UNKNOWN $0.000000 (-58.3%)"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "PUMP",
+  "token_id": "0xbda4fc392f761787f7f16d3c554ed8b9a15e91b1",
+  "symbol": "UNKNOWN",
+  "name": "Unknown",
+  "price_usd": 0.005126,
+  "price_change_24h": 662.0,
+  "volume_24h": 1291340.01,
+  "liquidity_usd": 563797.14,
+  "detected_at": "2026-02-26T20:12:14.968555",
+  "dexscreener_url": "https://dexscreener.com/base/0xbda4fc392f761787f7f16d3c554ed8b9a15e91b1",
+  "alert_message": "\ud83d\udea8 PUMP ALERT: UNKNOWN $0.005126 (+662.0%)"
+}
