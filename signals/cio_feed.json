@@ -1,8 +1,8 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-02-26T09:16:00.531000+00:00",
-    "generated_at": "2026-02-26T09:16:00.531000+00:00",
+    "updated_at": "2026-02-27T09:57:19.216000+00:00",
+    "generated_at": "2026-02-27T09:57:19.216000+00:00",
     "status": "ok",
     "count": 2,
     "thresholds": {
@@ -12,78 +12,38 @@
       "max_age_min": 10080
     },
     "risk_distribution": {
-      "low": 1,
-      "medium": 1
+      "medium": 1,
+      "low": 1
     },
     "rejected": {
-      "too_old": 1
+      "too_old": 2
     },
     "source": "ultra_launch_scanner"
   },
   "candidates": [
     {
       "token": {
-        "address": "0x40e6b084476d0de8093960afb1ae2737286e9bd3",
-        "symbol": "BENCHMARK",
-        "name": "The Benchmark"
+        "address": "0x9adf6778d2f4a4f5ac0c76ac459e366abf01b0dc",
+        "symbol": "Jellybean",
+        "name": "Jellybean"
       },
       "pair": {
-        "address": "0x61ab1e01e69bb0f8594a5f51ecd59a1e3723e914ea6b899532f1d6cde9711cb9",
+        "address": "0x4b4124cf13e7f72abae0670e8fc02e8dac5145a5de6983cfdd98cb1c49277669",
         "dex": "uniswap",
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 147641.59,
-        "vol_5m_usd": 16541.26,
-        "vol_1h_usd": 294316.08,
-        "txns_5m": 129,
-        "price_usd": 5.796e-06
+        "liq_usd": 96792.09,
+        "vol_5m_usd": 17590.67,
+        "vol_1h_usd": 260358.89,
+        "txns_5m": 56,
+        "price_usd": 1.53e-06
       },
       "timestamps": {
-        "pair_created_at": "2026-02-26T08:08:01+00:00",
-        "token_first_seen": "2026-02-26T08:50:28.899000+00:00",
-        "age_minutes": 68.0,
-        "age_hours": 1.13
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.98
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": false,
-        "quality_score": 75
-      }
-    },
-    {
-      "token": {
-        "address": "0x25f17ba23ad7910cae34fca536891b584916dba3",
-        "symbol": "cara",
-        "name": "carasecurity"
-      },
-      "pair": {
-        "address": "0x2ec854c1df5cfb108b63a87f2f488b884bd64017c43a10cf4cc12dc551b8e940",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 63028.58,
-        "vol_5m_usd": 1890.48,
-        "vol_1h_usd": 46093.38,
-        "txns_5m": 15,
-        "price_usd": 7.842e-07
-      },
-      "timestamps": {
-        "pair_created_at": "2026-02-26T07:22:23+00:00",
-        "token_first_seen": "2026-02-26T08:50:28.899000+00:00",
-        "age_minutes": 113.6,
-        "age_hours": 1.89
+        "pair_created_at": "2026-02-27T08:14:01+00:00",
+        "token_first_seen": "2026-02-27T09:57:19.209000+00:00",
+        "age_minutes": 103.3,
+        "age_hours": 1.72
       },
       "scores": {
         "cio_score": 100,
@@ -93,6 +53,46 @@
         "dumping"
       ],
       "risk_level": "medium",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    },
+    {
+      "token": {
+        "address": "0x3326bdb31daa69b4fbc618a970a7b629590c05d8",
+        "symbol": "ClawCraft",
+        "name": "ClawCraft"
+      },
+      "pair": {
+        "address": "0x7e600662ad2c487082c51bd5b56eb036539f51f3",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 69074.83,
+        "vol_5m_usd": 14145.5,
+        "vol_1h_usd": 205655.74,
+        "txns_5m": 23,
+        "price_usd": 0.001131
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-27T07:57:29+00:00",
+        "token_first_seen": "2026-02-27T09:57:19.209000+00:00",
+        "age_minutes": 119.8,
+        "age_hours": 2.0
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.97
+      },
+      "risks": [],
+      "risk_level": "low",
       "source": "profiles",
       "status": "observing",
       "quality": {

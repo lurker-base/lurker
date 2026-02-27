@@ -1101,12 +1101,168 @@
           "rpc_only"
         ]
       }
+    },
+    {
+      "token": {
+        "address": "0x3326bdB31daa69b4FbC618a970A7B629590c05d8",
+        "symbol": "ClawCraft",
+        "name": "ClawCraft"
+      },
+      "source": "hybrid_profiles",
+      "detected_at": "2026-02-27T09:57:16.219390+00:00",
+      "age_hours": 2.0,
+      "creator": "unknown",
+      "tx_hash": null,
+      "dexscreener": {
+        "priceUsd": "0.001159",
+        "liquidity": {
+          "usd": 69990.75,
+          "base": 30184988,
+          "quote": 17.3834
+        },
+        "volume": {
+          "h24": 293731.52,
+          "h6": 293731.52,
+          "h1": 206058.36,
+          "m5": 14548.13
+        },
+        "txns": {
+          "m5": {
+            "buys": 18,
+            "sells": 6
+          },
+          "h1": {
+            "buys": 207,
+            "sells": 44
+          },
+          "h6": {
+            "buys": 567,
+            "sells": 136
+          },
+          "h24": {
+            "buys": 567,
+            "sells": 136
+          }
+        },
+        "marketCap": 1159364,
+        "fdv": 1159364,
+        "pairAddress": "0x7e600662AD2c487082c51bd5b56Eb036539f51F3",
+        "dexId": "uniswap",
+        "pairCreatedAt": 1772179049000,
+        "info": {
+          "imageUrl": "https://cdn.dexscreener.com/cms/images/Eyld0We1FWOGL3gU?width=800&height=800&quality=90",
+          "header": "https://cdn.dexscreener.com/cms/images/VmfFloIGPGjBv4CA?width=1500&height=500&quality=90",
+          "openGraph": "https://cdn.dexscreener.com/token-images/og/base/0x3326bdb31daa69b4fbc618a970a7b629590c05d8?timestamp=1772186100000",
+          "websites": [
+            {
+              "url": "https://clawcraft.pro/",
+              "label": "Website"
+            }
+          ],
+          "socials": [
+            {
+              "url": "https://x.com/ClawCraftAgent",
+              "type": "twitter"
+            },
+            {
+              "url": "https://t.me/ClawCraftAgent",
+              "type": "telegram"
+            }
+          ]
+        }
+      },
+      "risk": {
+        "level": "low",
+        "factors": []
+      },
+      "meta": {
+        "source": "profiles",
+        "url": "https://dexscreener.com/base/0x3326bdb31daa69b4fbc618a970a7b629590c05d8",
+        "header": "https://cdn.dexscreener.com/cms/images/VmfFloIGPGjBv4CA?width=600&height=200&fit=crop&quality=95&format=auto",
+        "icon": "https://cdn.dexscreener.com/cms/images/Eyld0We1FWOGL3gU?width=64&height=64&fit=crop&quality=95&format=auto"
+      }
+    },
+    {
+      "token": {
+        "address": "0x9Adf6778d2f4A4F5aC0C76AC459e366aBf01b0dc",
+        "symbol": "Jellybean",
+        "name": "Jellybean"
+      },
+      "source": "hybrid_profiles",
+      "detected_at": "2026-02-27T09:57:16.495569+00:00",
+      "age_hours": 1.72,
+      "creator": "unknown",
+      "tx_hash": null,
+      "dexscreener": {
+        "priceUsd": "0.000001542",
+        "liquidity": {
+          "usd": 97312.2,
+          "base": 37994610540,
+          "quote": 19.2229
+        },
+        "volume": {
+          "h24": 494111.8,
+          "h6": 494111.8,
+          "h1": 260724.83,
+          "m5": 17956.61
+        },
+        "txns": {
+          "m5": {
+            "buys": 31,
+            "sells": 29
+          },
+          "h1": {
+            "buys": 360,
+            "sells": 347
+          },
+          "h6": {
+            "buys": 741,
+            "sells": 673
+          },
+          "h24": {
+            "buys": 741,
+            "sells": 673
+          }
+        },
+        "marketCap": 154268,
+        "fdv": 154268,
+        "pairAddress": "0x4b4124cf13e7f72abae0670e8fc02e8dac5145a5de6983cfdd98cb1c49277669",
+        "dexId": "uniswap",
+        "pairCreatedAt": 1772180041000,
+        "info": {
+          "imageUrl": "https://cdn.dexscreener.com/cms/images/ZZ22zIFlcObtdgc7?width=800&height=800&quality=90",
+          "header": "https://cdn.dexscreener.com/cms/images/uDJPr7woBS9Y3vEY?width=1500&height=500&quality=90",
+          "openGraph": "https://cdn.dexscreener.com/token-images/og/base/0x9adf6778d2f4a4f5ac0c76ac459e366abf01b0dc?timestamp=1772186100000",
+          "websites": [
+            {
+              "url": "https://www.tiktok.com/@morganbrownwwz/video/7610282675462606093?_r=1&_t=ZG-94D0kiuxWvh",
+              "label": "Website"
+            }
+          ],
+          "socials": [
+            {
+              "url": "https://x.com/ZooWildlife/status/2026327076081725844",
+              "type": "twitter"
+            }
+          ]
+        }
+      },
+      "risk": {
+        "level": "low",
+        "factors": []
+      },
+      "meta": {
+        "source": "profiles",
+        "url": "https://dexscreener.com/base/0x9adf6778d2f4a4f5ac0c76ac459e366abf01b0dc",
+        "header": "https://cdn.dexscreener.com/cms/images/uDJPr7woBS9Y3vEY?width=600&height=200&fit=crop&quality=95&format=auto",
+        "icon": "https://cdn.dexscreener.com/cms/images/ZZ22zIFlcObtdgc7?width=64&height=64&fit=crop&quality=95&format=auto"
+      }
     }
   ],
   "meta": {
-    "updated_at": "2026-02-26T09:00:03.620412+00:00",
-    "count": 20,
-    "new_this_scan": 0,
-    "latest_block": 42653527
+    "updated_at": "2026-02-27T09:57:18.227256+00:00",
+    "count": 22,
+    "new_this_scan": 2,
+    "latest_block": 42698444
   }
 }
