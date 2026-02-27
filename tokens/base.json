@@ -734,7 +734,7 @@
     ],
     "discovered_at": "2026-02-26T16:34:52.130203",
     "added_at": 1772120092,
-    "last_check": 1772200001.1814575,
+    "last_check": 1772203615.8005702,
     "price_history": [
       {
         "timestamp": 1772120389.7644186,
@@ -848,6 +848,11 @@
       },
       {
         "timestamp": 1772200001.1814613,
+        "price": 8.314e-06,
+        "change": 1114.0
+      },
+      {
+        "timestamp": 1772203615.8005726,
         "price": 8.314e-06,
         "change": 1114.0
       }
@@ -1536,7 +1541,7 @@
     "added_at": 1772131236,
     "source": "dexscreener_boosted",
     "boost_amount": 10,
-    "last_check": 1772200001.3465226,
+    "last_check": 1772203616.009822,
     "price_history": [
       {
         "timestamp": 1772131304.4368963,
@@ -1637,6 +1642,11 @@
         "timestamp": 1772200001.3465276,
         "price": 2.69e-07,
         "change": -78.79
+      },
+      {
+        "timestamp": 1772203616.0098252,
+        "price": 2.745e-07,
+        "change": -78.26
       }
     ],
     "pump_signal_sent": false,
@@ -1650,7 +1660,7 @@
     "added_at": 1772131236,
     "source": "dexscreener_boosted",
     "boost_amount": 50,
-    "last_check": 1772200001.5790904,
+    "last_check": 1772203616.2595541,
     "price_history": [
       {
         "timestamp": 1772131305.4683213,
@@ -1751,6 +1761,11 @@
         "timestamp": 1772200001.5790935,
         "price": 0.02091,
         "change": 1.08
+      },
+      {
+        "timestamp": 1772203616.2595563,
+        "price": 0.02091,
+        "change": 1.16
       }
     ],
     "pump_signal_sent": false,
@@ -1763,7 +1778,7 @@
     "discovered_at": "2026-02-26T19:40:37.029326",
     "added_at": 1772131237,
     "source": "dexscreener_search",
-    "last_check": 1772200001.83099,
+    "last_check": 1772203616.526471,
     "price_history": [
       {
         "timestamp": 1772131305.7161472,
@@ -1864,6 +1879,11 @@
         "timestamp": 1772200001.8309932,
         "price": 1.325e-06,
         "change": -13.63
+      },
+      {
+        "timestamp": 1772203616.5264735,
+        "price": 1.382e-06,
+        "change": -7.99
       }
     ],
     "pump_signal_sent": false,
@@ -1876,7 +1896,7 @@
     "discovered_at": "2026-02-26T19:40:37.029344",
     "added_at": 1772131237,
     "source": "dexscreener_search",
-    "last_check": 1772200002.1015756,
+    "last_check": 1772203616.7465854,
     "price_history": [
       {
         "timestamp": 1772131306.080315,
@@ -1975,6 +1995,11 @@
       },
       {
         "timestamp": 1772200002.1015782,
+        "price": 2.158e-05,
+        "change": -10.91
+      },
+      {
+        "timestamp": 1772203616.746588,
         "price": 2.158e-05,
         "change": -10.91
       }
@@ -4348,7 +4373,7 @@
     ],
     "discovered_at": "2026-02-27T01:36:25.177591",
     "added_at": 1772152585,
-    "last_check": 1772200002.7886376,
+    "last_check": 1772203617.4615724,
     "price_history": [
       {
         "timestamp": 1772153016.03074,
@@ -4419,6 +4444,11 @@
         "timestamp": 1772200002.7886431,
         "price": 2.843e-07,
         "change": 42.02
+      },
+      {
+        "timestamp": 1772203617.4615743,
+        "price": 2.737e-07,
+        "change": 36.75
       }
     ],
     "pump_signal_sent": true
@@ -4430,7 +4460,7 @@
     "discovered_at": "2026-02-27T01:41:27.264152",
     "added_at": 1772152887,
     "source": "dexscreener_search",
-    "last_check": 1772200003.005363,
+    "last_check": 1772203617.6830263,
     "price_history": [
       {
         "timestamp": 1772153016.4549646,
@@ -4501,6 +4531,11 @@
         "timestamp": 1772200003.0053658,
         "price": 6.499e-08,
         "change": 0.0
+      },
+      {
+        "timestamp": 1772203617.6830297,
+        "price": 6.499e-08,
+        "change": 0.0
       }
     ],
     "pump_signal_sent": false,
@@ -4513,7 +4548,7 @@
     "discovered_at": "2026-02-27T01:41:27.264154",
     "added_at": 1772152887,
     "source": "dexscreener_search",
-    "last_check": 1772200003.279325,
+    "last_check": 1772203618.1066282,
     "price_history": [
       {
         "timestamp": 1772153016.912387,
@@ -4582,6 +4617,11 @@
       },
       {
         "timestamp": 1772200003.2793276,
+        "price": 5.729e-08,
+        "change": 0.0
+      },
+      {
+        "timestamp": 1772203618.1066308,
         "price": 5.729e-08,
         "change": 0.0
       }
@@ -5089,7 +5129,7 @@
     ],
     "discovered_at": "2026-02-27T05:44:28.325368",
     "added_at": 1772167468,
-    "last_check": 1772200003.4571335,
+    "last_check": 1772203618.3414118,
     "price_history": [
       {
         "timestamp": 1772167475.7921243,
@@ -5140,6 +5180,11 @@
         "timestamp": 1772200003.4571366,
         "price": 0.003832,
         "change": 377770.0
+      },
+      {
+        "timestamp": 1772203618.3414154,
+        "price": 0.003223,
+        "change": 317718.0
       }
     ],
     "pump_signal_sent": true
@@ -5162,7 +5207,7 @@
     ],
     "discovered_at": "2026-02-27T06:37:44.744184",
     "added_at": 1772170664,
-    "last_check": 1772200003.6641502,
+    "last_check": 1772203618.7523959,
     "price_history": [
       {
         "timestamp": 1772171087.6149902,
@@ -5206,6 +5251,11 @@
       },
       {
         "timestamp": 1772200003.664153,
+        "price": 4.861e-06,
+        "change": 131.0
+      },
+      {
+        "timestamp": 1772203618.752398,
         "price": 4.861e-06,
         "change": 131.0
       }
@@ -5530,7 +5580,7 @@
     ],
     "discovered_at": "2026-02-27T09:45:25.989087",
     "added_at": 1772181925,
-    "last_check": 1772200004.1069174,
+    "last_check": 1772203618.9444304,
     "price_history": [
       {
         "timestamp": 1772181931.3863573,
@@ -5561,6 +5611,11 @@
         "timestamp": 1772200004.1069198,
         "price": 6.96e-07,
         "change": 238.0
+      },
+      {
+        "timestamp": 1772203618.9444335,
+        "price": 5.844e-07,
+        "change": 184.0
       }
     ],
     "pump_signal_sent": true
@@ -5869,5 +5924,71 @@
     ],
     "pump_signal_sent": false,
     "dump_signal_sent": false
+  },
+  "0x62c12840eee127a31e163531eb31a6448f2172b1": {
+    "address": "0x62C12840Eee127a31e163531eB31a6448F2172B1",
+    "symbol": "UNKNOWN",
+    "name": "Unknown",
+    "icon": "https://cdn.dexscreener.com/cms/images/LBEqcJ55zvTLZ5jK?width=64&height=64&fit=crop&quality=95&format=auto",
+    "description": "CLONK builds your ideas while you touch grass",
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://github.com/clonkbot/lmao-jeeters-7fa48c"
+      },
+      {
+        "type": "twitter",
+        "url": "https://x.com/clonkcoin"
+      }
+    ],
+    "discovered_at": "2026-02-27T15:44:46.523231",
+    "added_at": 1772203486,
+    "last_check": 1772203619.0053797,
+    "price_history": [
+      {
+        "timestamp": 1772203619.005383,
+        "price": 1.538e-06,
+        "change": 904.0
+      }
+    ],
+    "pump_signal_sent": true
+  },
+  "0x1cc48ad23951fc2da96ddffefaba705ad5ef7b07": {
+    "address": "0x1Cc48Ad23951Fc2DA96DdFFeFAba705aD5ef7B07",
+    "symbol": "UNKNOWN",
+    "name": "Unknown",
+    "icon": "https://cdn.dexscreener.com/cms/images/XzRpynnhbkmVAZnt?width=64&height=64&fit=crop&quality=95&format=auto",
+    "description": "AI agent steward for Exoskeletons and Agent Outlier on Base.",
+    "links": [
+      {
+        "type": "twitter",
+        "url": "https://x.com/ollie_exo_base"
+      }
+    ],
+    "discovered_at": "2026-02-27T15:49:47.582690",
+    "added_at": 1772203787
+  },
+  "0xdafb07f4bfb683046e7277e24b225ad421819b07": {
+    "address": "0xDafB07F4BfB683046e7277E24b225AD421819b07",
+    "symbol": "UNKNOWN",
+    "name": "Unknown",
+    "icon": "https://cdn.dexscreener.com/cms/images/c6fiKUF2GGa_HdpB?width=64&height=64&fit=crop&quality=95&format=auto",
+    "description": "The Exoskeletons ecosystem token. Pays for Ollie's compute, maintenance, and upgrades.",
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://exoagent.xyz"
+      },
+      {
+        "label": "Docs",
+        "url": "https://storedon.net/net/8453/storage/load/0x2460F6C6CA04DD6a73E9B5535aC67Ac48726c09b/whitepaper"
+      },
+      {
+        "type": "twitter",
+        "url": "https://x.com/ollie_exo"
+      }
+    ],
+    "discovered_at": "2026-02-27T15:54:49.136658",
+    "added_at": 1772204089
   }
 }
