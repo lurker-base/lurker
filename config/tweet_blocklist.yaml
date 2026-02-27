@@ -1,0 +1,19 @@
+# TWEET BLOCKLIST - Tweets qui ne doivent JAMAIS être repostés
+# Ajouter ici les tweets qui ont causé des doublons
+
+blocked_tweets:
+  - "0xDP detected at 23m old"
+  - "tagged: dumping"
+  - "6 hours later: -70%"
+  - "we saw it early"
+  - "we showed the risk"
+  - "most arrived too late"
+  
+# Ces phrases sont bannies pendant 7 jours minimum
+ban_duration_days: 7
+
+# Logger tous les tweets postés pour détection de doublons
+log_all_tweets: true
+
+# Alerte si tentative de repost
+alert_on_blocked: true

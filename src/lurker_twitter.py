@@ -183,6 +183,54 @@ def get_client():
     )
     return client
 
+def load_tweet_history():
+    """Load history of posted tweets"""
+    history_file = os.path.join(os.path.dirname(__file__), '..', 'logs', 'tweet_history.json')
+    if os.path.exists(history_file):
+        try:
+            with open(history_file, 'r') as f:
+                return json.load(f)
+        except:
+            return []
+    return []
+
+def save_tweet_history(history):
+    """Save tweet history"""
+    history_file = os.path.join(os.path.dirname(__file__), '..', 'logs', 'tweet_history.json')
+    os.makedirs(os.path.dirname(history_file), exist_ok=True)
+    with open(history_file, 'w') as f:
+        json.dump(history[-200:], f)  # Keep last 200
+
+def is_similar_tweet(text, history, hours=48):
+    """Check if similar tweet was posted recently (fuzzy match)"""
+    now = datetime.now()
+    text_normalized = text.lower().strip()
+    
+    # Phrases bannies (tweets qui ont causé des problèmes)
+    BANNED_PHRASES = [
+        "0xDP detected at 23m old",
+        "tagged: dumping",
+        "6 hours later: -70%",
+        "we saw it early",
+        "we showed the risk",
+        "most arrived too late"
+    ]
+    
+    for banned in BANNED_PHRASES:
+        if banned.lower() in text_normalized:
+            print(f"❌ BLOCKED: Banned phrase detected ('{banned}')")
+            return True
+    
+    # Check exact duplicates
+    for entry in history:
+        if entry.get('text', '').lower().strip() == text_normalized:
+            sent_at = datetime.fromisoformat(entry.get('time', '2000-01-01'))
+            if (now - sent_at).total_seconds() < (hours * 3600):
+                print(f"❌ BLOCKED: Duplicate tweet (posted {hours}h ago)")
+                return True
+    
+    return False
+
 def post_tweet(text):
     """Post a tweet - ALL VALIDATION REQUIRED"""
     # CRITICAL: Run full pre-flight check
@@ -190,11 +238,26 @@ def post_tweet(text):
         print("❌ TWEET BLOCKED - Fix issues before posting")
         return False
     
+    # Check for duplicates/similar tweets
+    history = load_tweet_history()
+    if is_similar_tweet(text, history):
+        print("❌ TWEET BLOCKED - Similar tweet already posted recently")
+        return False
+    
     try:
         client = get_client()
         response = client.create_tweet(text=text)
         print(f"✅ Tweet posted successfully!")
         print(f"🔗 https://twitter.com/i/web/status/{response.data['id']}")
+        
+        # Save to history
+        history.append({
+            'text': text,
+            'time': datetime.now().isoformat(),
+            'id': response.data['id']
+        })
+        save_tweet_history(history)
+        
         return True
     except Exception as e:
         print(f"❌ Error posting tweet: {e}")
