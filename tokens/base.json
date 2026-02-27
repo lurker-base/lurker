@@ -596,13 +596,8 @@
     ],
     "discovered_at": "2026-02-26T16:19:51.040423",
     "added_at": 1772119191,
-    "last_check": 1772221086.853598,
+    "last_check": 1772224701.6157992,
     "price_history": [
-      {
-        "timestamp": 1772137953.667906,
-        "price": 3.929e-07,
-        "change": 86.72
-      },
       {
         "timestamp": 1772141568.1203709,
         "price": 2.983e-07,
@@ -717,6 +712,11 @@
         "timestamp": 1772221086.853602,
         "price": 2.244e-07,
         "change": -55.22
+      },
+      {
+        "timestamp": 1772224701.6158025,
+        "price": 2.222e-07,
+        "change": -38.26
       }
     ],
     "pump_signal_sent": true,
@@ -4380,7 +4380,7 @@
     ],
     "discovered_at": "2026-02-26T22:25:41.514521",
     "added_at": 1772141141,
-    "last_check": 1772221088.0335033,
+    "last_check": 1772224703.0833602,
     "price_history": [
       {
         "timestamp": 1772141568.1801784,
@@ -4496,6 +4496,11 @@
         "timestamp": 1772221088.033507,
         "price": 0.001306,
         "change": 106.0
+      },
+      {
+        "timestamp": 1772224703.083366,
+        "price": 0.001373,
+        "change": 35.46
       }
     ],
     "pump_signal_sent": true
@@ -4514,7 +4519,7 @@
     ],
     "discovered_at": "2026-02-26T22:30:42.625127",
     "added_at": 1772141442,
-    "last_check": 1772221088.233334,
+    "last_check": 1772224703.2897868,
     "price_history": [
       {
         "timestamp": 1772141568.7419636,
@@ -4630,6 +4635,11 @@
         "timestamp": 1772221088.2333374,
         "price": 1.958e-07,
         "change": -56.76
+      },
+      {
+        "timestamp": 1772224703.2897897,
+        "price": 1.958e-07,
+        "change": -56.76
       }
     ],
     "pump_signal_sent": true,
@@ -4653,7 +4663,7 @@
     ],
     "discovered_at": "2026-02-27T00:33:14.417695",
     "added_at": 1772148794,
-    "last_check": 1772221088.440941,
+    "last_check": 1772224703.5159168,
     "price_history": [
       {
         "timestamp": 1772148797.5699081,
@@ -4757,6 +4767,11 @@
       },
       {
         "timestamp": 1772221088.4409437,
+        "price": 6.405e-06,
+        "change": 528.0
+      },
+      {
+        "timestamp": 1772224703.5159187,
         "price": 6.405e-06,
         "change": 528.0
       }
@@ -7503,7 +7518,7 @@
     ],
     "discovered_at": "2026-02-27T18:35:25.918531",
     "added_at": 1772213725,
-    "last_check": 1772221088.682375,
+    "last_check": 1772224704.0816271,
     "price_history": [
       {
         "timestamp": 1772213859.843448,
@@ -7517,6 +7532,11 @@
       },
       {
         "timestamp": 1772221088.6823785,
+        "price": 1.9e-07,
+        "change": -58.89
+      },
+      {
+        "timestamp": 1772224704.0816302,
         "price": 1.9e-07,
         "change": -58.89
       }
@@ -7595,12 +7615,45 @@
     ],
     "discovered_at": "2026-02-27T20:38:03.898125",
     "added_at": 1772221083,
-    "last_check": 1772221088.7545798,
+    "last_check": 1772224704.1777244,
     "price_history": [
       {
         "timestamp": 1772221088.7545815,
         "price": 1.179e-05,
         "change": 652.0
+      },
+      {
+        "timestamp": 1772224704.1777272,
+        "price": 2.33e-05,
+        "change": 1385.0
+      }
+    ],
+    "pump_signal_sent": true
+  },
+  "0x6a2f75b2483ee5fbb0b3362ef4f528080d707167": {
+    "address": "0x6a2F75B2483ee5fBb0b3362eF4F528080D707167",
+    "symbol": "UNKNOWN",
+    "name": "Unknown",
+    "icon": "https://cdn.dexscreener.com/cms/images/8CwYgQ78Hw4eIuO0?width=64&height=64&fit=crop&quality=95&format=auto",
+    "description": "Crack packs. Pull legends. Earn forever. Every meme coin gets a universe of collectible cards. Each card is a permanent, tradeable share of trading fees.",
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://packcrack.gg"
+      },
+      {
+        "type": "twitter",
+        "url": "https://x.com/packcrackgg"
+      }
+    ],
+    "discovered_at": "2026-02-27T21:36:06.201823",
+    "added_at": 1772224566,
+    "last_check": 1772224704.248599,
+    "price_history": [
+      {
+        "timestamp": 1772224704.2486014,
+        "price": 2.56e-06,
+        "change": 501.0
       }
     ],
     "pump_signal_sent": true
