@@ -767,7 +767,7 @@
     ],
     "discovered_at": "2026-02-26T17:04:54.209091",
     "added_at": 1772121894,
-    "last_check": 1772187350.5385785,
+    "last_check": 1772190964.6783447,
     "price_history": [
       {
         "timestamp": 1772122190.7922199,
@@ -861,6 +861,11 @@
       },
       {
         "timestamp": 1772187350.5385828,
+        "price": 2.023e-07,
+        "change": -58.38
+      },
+      {
+        "timestamp": 1772190964.678349,
         "price": 2.023e-07,
         "change": -58.38
       }
@@ -1116,7 +1121,7 @@
     ],
     "discovered_at": "2026-02-26T18:04:58.956654",
     "added_at": 1772125498,
-    "last_check": 1772187350.8065927,
+    "last_check": 1772190965.0402,
     "price_history": [
       {
         "timestamp": 1772125793.4293797,
@@ -1205,6 +1210,11 @@
       },
       {
         "timestamp": 1772187350.8065975,
+        "price": 2.011e-07,
+        "change": -55.29
+      },
+      {
+        "timestamp": 1772190965.040205,
         "price": 2.011e-07,
         "change": -55.29
       }
@@ -1849,7 +1859,7 @@
     ],
     "discovered_at": "2026-02-26T19:45:07.873542",
     "added_at": 1772131507,
-    "last_check": 1772187351.9708834,
+    "last_check": 1772190965.7193296,
     "price_history": [
       {
         "timestamp": 1772133134.5203898,
@@ -1930,6 +1940,11 @@
         "timestamp": 1772187351.9708867,
         "price": 0.0004752,
         "change": -29.05
+      },
+      {
+        "timestamp": 1772190965.7193334,
+        "price": 0.0006133,
+        "change": -8.44
       }
     ],
     "dump_signal_sent": true
@@ -1968,7 +1983,7 @@
     ],
     "discovered_at": "2026-02-26T19:55:09.981998",
     "added_at": 1772132109,
-    "last_check": 1772187352.193335,
+    "last_check": 1772190966.0893667,
     "price_history": [
       {
         "timestamp": 1772133134.9661624,
@@ -2049,6 +2064,11 @@
         "timestamp": 1772187352.193338,
         "price": 0.004145,
         "change": 516.0
+      },
+      {
+        "timestamp": 1772190966.0893707,
+        "price": 0.003713,
+        "change": 452.0
       }
     ],
     "pump_signal_sent": true
@@ -2087,7 +2107,7 @@
     ],
     "discovered_at": "2026-02-26T19:55:09.982014",
     "added_at": 1772132109,
-    "last_check": 1772187352.3614476,
+    "last_check": 1772190966.248071,
     "price_history": [
       {
         "timestamp": 1772133135.24242,
@@ -2168,6 +2188,11 @@
         "timestamp": 1772187352.3614507,
         "price": 0.0004524,
         "change": -35.16
+      },
+      {
+        "timestamp": 1772190966.2480748,
+        "price": 0.0004352,
+        "change": -37.62
       }
     ],
     "dump_signal_sent": true
@@ -2206,7 +2231,7 @@
     ],
     "discovered_at": "2026-02-26T19:55:09.982019",
     "added_at": 1772132109,
-    "last_check": 1772187352.5783875,
+    "last_check": 1772190966.416752,
     "price_history": [
       {
         "timestamp": 1772133135.4460866,
@@ -2287,6 +2312,11 @@
         "timestamp": 1772187352.5783906,
         "price": 0.000428,
         "change": -55.35
+      },
+      {
+        "timestamp": 1772190966.4167557,
+        "price": 0.0004361,
+        "change": -54.51
       }
     ],
     "pump_signal_sent": false,
@@ -2326,7 +2356,7 @@
     ],
     "discovered_at": "2026-02-26T19:55:09.982023",
     "added_at": 1772132109,
-    "last_check": 1772187352.7539594,
+    "last_check": 1772190966.6192107,
     "price_history": [
       {
         "timestamp": 1772133135.6573908,
@@ -2407,6 +2437,11 @@
         "timestamp": 1772187352.7539632,
         "price": 0.0006497,
         "change": -3.55
+      },
+      {
+        "timestamp": 1772190966.619371,
+        "price": 0.0005738,
+        "change": -14.81
       }
     ],
     "pump_signal_sent": false,
@@ -2446,7 +2481,7 @@
     ],
     "discovered_at": "2026-02-26T19:55:09.982026",
     "added_at": 1772132109,
-    "last_check": 1772187352.991384,
+    "last_check": 1772190967.036341,
     "price_history": [
       {
         "timestamp": 1772133135.8698792,
@@ -2527,6 +2562,11 @@
         "timestamp": 1772187352.9913871,
         "price": 0.0004259,
         "change": -44.17
+      },
+      {
+        "timestamp": 1772190967.0363452,
+        "price": 0.0004281,
+        "change": -43.88
       }
     ],
     "pump_signal_sent": true,
@@ -2660,7 +2700,7 @@
     "added_at": 1772133013,
     "source": "dexscreener_boosted",
     "boost_amount": 100,
-    "last_check": 1772187353.1467977,
+    "last_check": 1772190967.1889992,
     "price_history": [
       {
         "timestamp": 1772133136.071183,
@@ -2741,6 +2781,11 @@
         "timestamp": 1772187353.1468003,
         "price": 5.149e-06,
         "change": -32.08
+      },
+      {
+        "timestamp": 1772190967.1890016,
+        "price": 4.408e-06,
+        "change": -27.67
       }
     ],
     "pump_signal_sent": true,
@@ -2768,7 +2813,7 @@
     ],
     "discovered_at": "2026-02-26T20:12:12.019165",
     "added_at": 1772133132,
-    "last_check": 1772187353.798041,
+    "last_check": 1772190967.4147925,
     "price_history": [
       {
         "timestamp": 1772133136.2787127,
@@ -2847,6 +2892,11 @@
       },
       {
         "timestamp": 1772187353.798045,
+        "price": 2.082e-07,
+        "change": -14.48
+      },
+      {
+        "timestamp": 1772190967.4147956,
         "price": 2.082e-07,
         "change": -14.48
       }
@@ -3041,7 +3091,7 @@
     ],
     "discovered_at": "2026-02-26T21:12:26.541455",
     "added_at": 1772136746,
-    "last_check": 1772187354.704714,
+    "last_check": 1772190968.0126114,
     "price_history": [
       {
         "timestamp": 1772136751.2538662,
@@ -3115,6 +3165,11 @@
       },
       {
         "timestamp": 1772187354.7047176,
+        "price": 2.537e-06,
+        "change": 150.0
+      },
+      {
+        "timestamp": 1772190968.0126138,
         "price": 2.537e-06,
         "change": 150.0
       }
@@ -3324,7 +3379,7 @@
     "discovered_at": "2026-02-26T22:05:37.669376",
     "added_at": 1772139937,
     "source": "dexscreener_search",
-    "last_check": 1772187355.0881472,
+    "last_check": 1772190968.2177532,
     "price_history": [
       {
         "timestamp": 1772140365.6543813,
@@ -3393,6 +3448,11 @@
       },
       {
         "timestamp": 1772187355.0881498,
+        "price": 8.671e-08,
+        "change": 3.5
+      },
+      {
+        "timestamp": 1772190968.2177563,
         "price": 8.671e-08,
         "change": 3.5
       }
@@ -3680,7 +3740,7 @@
     ],
     "discovered_at": "2026-02-27T01:11:18.772836",
     "added_at": 1772151078,
-    "last_check": 1772187355.4719975,
+    "last_check": 1772190968.4345186,
     "price_history": [
       {
         "timestamp": 1772151209.2334485,
@@ -3734,6 +3794,11 @@
       },
       {
         "timestamp": 1772187355.4720004,
+        "price": 1.312e-07,
+        "change": 4.64
+      },
+      {
+        "timestamp": 1772190968.4345222,
         "price": 1.312e-07,
         "change": 4.64
       }
@@ -4027,7 +4092,7 @@
     "added_at": 1772154694,
     "source": "dexscreener_boosted",
     "boost_amount": 10,
-    "last_check": 1772187356.053942,
+    "last_check": 1772190968.845986,
     "price_history": [
       {
         "timestamp": 1772154824.6564066,
@@ -4078,6 +4143,11 @@
         "timestamp": 1772187356.053946,
         "price": 9.171e-06,
         "change": 3.72
+      },
+      {
+        "timestamp": 1772190968.8459885,
+        "price": 9.171e-06,
+        "change": 4.24
       }
     ],
     "pump_signal_sent": false,
@@ -4164,7 +4234,7 @@
     "discovered_at": "2026-02-27T03:06:49.630044",
     "added_at": 1772158009,
     "source": "dexscreener_search",
-    "last_check": 1772187356.4179046,
+    "last_check": 1772190969.0795987,
     "price_history": [
       {
         "timestamp": 1772158438.5875325,
@@ -4208,6 +4278,11 @@
       },
       {
         "timestamp": 1772187356.4179077,
+        "price": 5.331e-08,
+        "change": 0.0
+      },
+      {
+        "timestamp": 1772190969.0796025,
         "price": 5.331e-08,
         "change": 0.0
       }
@@ -4453,7 +4528,7 @@
     ],
     "discovered_at": "2026-02-27T07:07:50.760377",
     "added_at": 1772172470,
-    "last_check": 1772187356.8397622,
+    "last_check": 1772190969.3013484,
     "price_history": [
       {
         "timestamp": 1772172897.7008832,
@@ -4477,6 +4552,11 @@
       },
       {
         "timestamp": 1772187356.839765,
+        "price": 9.325e-06,
+        "change": 351.0
+      },
+      {
+        "timestamp": 1772190969.3013513,
         "price": 9.325e-06,
         "change": 351.0
       }
@@ -4541,7 +4621,7 @@
     ],
     "discovered_at": "2026-02-27T08:15:04.443552",
     "added_at": 1772176504,
-    "last_check": 1772187357.237534,
+    "last_check": 1772190969.4647946,
     "price_history": [
       {
         "timestamp": 1772176510.7405305,
@@ -4562,6 +4642,11 @@
         "timestamp": 1772187357.2375367,
         "price": 9.404e-07,
         "change": 505.0
+      },
+      {
+        "timestamp": 1772190969.4647973,
+        "price": 2.345e-06,
+        "change": 1409.0
       }
     ],
     "pump_signal_sent": true
@@ -4708,7 +4793,7 @@
     ],
     "discovered_at": "2026-02-27T10:13:32.427831",
     "added_at": 1772183612,
-    "last_check": 1772187357.4589791,
+    "last_check": 1772190969.6713593,
     "price_history": [
       {
         "timestamp": 1772183741.086074,
@@ -4719,6 +4804,11 @@
         "timestamp": 1772187357.4589822,
         "price": 0.00126,
         "change": 124048.0
+      },
+      {
+        "timestamp": 1772190969.6713624,
+        "price": 0.0002959,
+        "change": 29044.0
       }
     ],
     "pump_signal_sent": true
@@ -4783,5 +4873,24 @@
       }
     ],
     "pump_signal_sent": true
+  },
+  "0x407a5fb66cb1b3d50004f7091c08a27b42ba6d6f": {
+    "address": "0x407A5fb66CB1b3d50004f7091c08A27B42ba6d6F",
+    "symbol": "UNKNOWN",
+    "name": "Unknown",
+    "icon": "https://cdn.dexscreener.com/cms/images/WD8OGHIpr-vK0Chw?width=64&height=64&fit=crop&quality=95&format=auto",
+    "description": "Fabric Foundation is dedicated to advancing open-robotics + AGI for the benefit of all humanity.",
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://fabric.foundation/blog/introducing-robo"
+      },
+      {
+        "type": "twitter",
+        "url": "https://x.com/FabricFND"
+      }
+    ],
+    "discovered_at": "2026-02-27T12:24:00.628216",
+    "added_at": 1772191440
   }
 }
