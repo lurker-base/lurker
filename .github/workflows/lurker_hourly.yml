@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: lurker-hourly-tweet
+  cancel-in-progress: true
+
 jobs:
   tweet:
     runs-on: ubuntu-latest

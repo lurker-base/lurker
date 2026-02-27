@@ -38,5 +38,13 @@
   "0x7f34c291e6a46cf97daffbbf6a5098ccd4e202ca09f2b5e0f7a659f0d8eced53": {
     "detected": "2026-02-26T08:57:42.821257+00:00",
     "block": 42653457
+  },
+  "0x3326bdB31daa69b4FbC618a970A7B629590c05d8": {
+    "detected": "2026-02-27T09:57:16.219422+00:00",
+    "source": "profiles"
+  },
+  "0x9Adf6778d2f4A4F5aC0C76AC459e366aBf01b0dc": {
+    "detected": "2026-02-27T09:57:16.495594+00:00",
+    "source": "profiles"
   }
 }

@@ -2802,6 +2802,40 @@
         "symbol": "BENCHMARK",
         "name": "The Benchmark"
       }
+    },
+    "0x3326bdb31daa69b4fbc618a970a7b629590c05d8": {
+      "first_seen": 1772186239209,
+      "first_seen_iso": "2026-02-27T09:57:19.209000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1772186239209,
+          "price": 0.001131,
+          "liq": 69074.83,
+          "vol_5m": 14145.5
+        }
+      ],
+      "token": {
+        "address": "0x3326bdb31daa69b4fbc618a970a7b629590c05d8",
+        "symbol": "ClawCraft",
+        "name": "ClawCraft"
+      }
+    },
+    "0x9adf6778d2f4a4f5ac0c76ac459e366abf01b0dc": {
+      "first_seen": 1772186239209,
+      "first_seen_iso": "2026-02-27T09:57:19.209000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1772186239209,
+          "price": 1.53e-06,
+          "liq": 96792.09,
+          "vol_5m": 17590.67
+        }
+      ],
+      "token": {
+        "address": "0x9adf6778d2f4a4f5ac0c76ac459e366abf01b0dc",
+        "symbol": "Jellybean",
+        "name": "Jellybean"
+      }
     }
   }
 }

@@ -8,6 +8,7 @@ import os
 import sys
 import random
 import re
+import json
 import tweepy
 from datetime import datetime
 
@@ -128,11 +129,45 @@ def get_random_tweet():
     category = random.choice(list(TEMPLATES.keys()))
     return random.choice(TEMPLATES[category])
 
+def load_tweet_history():
+    """Load history of posted tweets to prevent duplicates"""
+    history_file = os.path.join(os.path.dirname(__file__), '..', 'logs', 'tweet_history.json')
+    if os.path.exists(history_file):
+        try:
+            with open(history_file, 'r') as f:
+                return json.load(f)
+        except:
+            return []
+    return []
+
+def save_tweet_history(history):
+    """Save tweet history"""
+    history_file = os.path.join(os.path.dirname(__file__), '..', 'logs', 'tweet_history.json')
+    os.makedirs(os.path.dirname(history_file), exist_ok=True)
+    with open(history_file, 'w') as f:
+        json.dump(history[-100:], f)  # Keep last 100 tweets
+
+def is_duplicate_tweet(text, history, hours=24):
+    """Check if tweet was posted recently"""
+    now = datetime.now()
+    for entry in history:
+        if entry.get('text') == text:
+            posted_at = datetime.fromisoformat(entry.get('time', '2000-01-01'))
+            if (now - posted_at).total_seconds() < (hours * 3600):
+                return True
+    return False
+
 def post_tweet(text):
     """Post a tweet"""
     # CRITICAL: Pre-flight check
     if not preflight_check(text):
         print("❌ TWEET BLOCKED - Fix issues before posting")
+        return False
+    
+    # Check for duplicates
+    history = load_tweet_history()
+    if is_duplicate_tweet(text, history):
+        print(f"❌ TWEET BLOCKED - Duplicate (posted within last 24h)")
         return False
     
     try:
@@ -146,6 +181,15 @@ def post_tweet(text):
         response = client.create_tweet(text=text)
         print(f"[LURKER] Posted: {text}")
         print(f"https://twitter.com/i/web/status/{response.data['id']}")
+        
+        # Save to history
+        history.append({
+            'text': text,
+            'time': datetime.now().isoformat(),
+            'id': response.data['id']
+        })
+        save_tweet_history(history)
+        
         return True
     except Exception as e:
         print(f"[LURKER] Error: {e}")
