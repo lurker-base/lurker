@@ -25,12 +25,18 @@ def is_token_rugged(token):
     metrics = token.get("metrics", {})
     performance = token.get("performance", {})
     
-    liq = metrics.get("liq_usd", 0) or 0
+    # Check multiple liquidity field names
+    liq = metrics.get("liq_usd", 0) or metrics.get("liquidity_usd", 0) or 0
     current_gain = performance.get("current_gain", 0) or 0
     max_gain = performance.get("max_gain", 0) or 0
     status = performance.get("status", "")
     
-    # Critère 1: Liquidité = 0
+    # Skip if manually marked as not RUGGED (has Good Liq tag and positive metrics)
+    risk_tags = token.get("risk_tags", [])
+    if "💧 Good Liq" in risk_tags and liq > 10000:
+        return False, None
+    
+    # Critère 1: Liquidité = 0 (mais vérifier aussi liquidity_usd)
     if liq == 0:
         return True, "zero_liquidity"
     
@@ -122,7 +128,7 @@ def cleanup_tokens(state):
     to_remove = []
     for addr, token in list(tokens.items()):
         age_days = calculate_age_hours(token.get("detected_at")) / 24
-        liq = token.get("metrics", {}).get("liq_usd", 0) or 0
+        liq = token.get("metrics", {}).get("liq_usd", 0) or token.get("metrics", {}).get("liquidity_usd", 0) or 0
         cat = token.get("category", "CIO")
         
         # Supprimer si >7 jours ET liquidité faible ET pas certifié
