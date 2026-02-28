@@ -1,22 +1,65 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-02-28T08:27:15.536000+00:00",
-    "generated_at": "2026-02-28T08:27:15.536000+00:00",
-    "status": "calm",
-    "count": 0,
+    "updated_at": "2026-02-28T08:42:19.459000+00:00",
+    "generated_at": "2026-02-28T08:42:19.459000+00:00",
+    "status": "ok",
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
       "min_tx_5m": 1,
       "max_age_min": 10080
     },
-    "risk_distribution": {},
+    "risk_distribution": {
+      "low": 1
+    },
     "rejected": {
       "too_old": 1,
       "low_liq": 1
     },
     "source": "ultra_launch_scanner"
   },
-  "candidates": []
+  "candidates": [
+    {
+      "token": {
+        "address": "0x843d970bab8f531ff9df22b0c9331db15a4b3b07",
+        "symbol": "ClawCash",
+        "name": "Claw Cash"
+      },
+      "pair": {
+        "address": "0xa6f14c0212ac073c572003b7d6530f396668fc124c939665b421b7ad3727776d",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 81630.97,
+        "vol_5m_usd": 11033.66,
+        "vol_1h_usd": 84171.16,
+        "txns_5m": 92,
+        "price_usd": 1.34e-06
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-28T08:27:31+00:00",
+        "token_first_seen": "2026-02-28T08:42:19.455000+00:00",
+        "age_minutes": 14.8,
+        "age_hours": 0.25
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 1.0
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    }
+  ]
 }

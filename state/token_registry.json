@@ -2852,6 +2852,30 @@
           "price": 8.393e-17,
           "liq": 0.0,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1772265429055,
+          "price": 8.393e-17,
+          "liq": 0.0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1772266332038,
+          "price": 8.393e-17,
+          "liq": 0.0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1772267235532,
+          "price": 8.393e-17,
+          "liq": 0.0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1772268139455,
+          "price": 8.393e-17,
+          "liq": 0.0,
+          "vol_5m": 0.0
         }
       ],
       "token": {
@@ -2875,12 +2899,41 @@
           "price": 2.008e-07,
           "liq": 23159.45,
           "vol_5m": 1.04
+        },
+        {
+          "timestamp": 1772265429056,
+          "price": 1.991e-07,
+          "liq": 22976.37,
+          "vol_5m": 2.08
+        },
+        {
+          "timestamp": 1772266332038,
+          "price": 1.979e-07,
+          "liq": 22862.11,
+          "vol_5m": 36.18
         }
       ],
       "token": {
         "address": "0x026ed97a6fdbde66c4f63b1a9aaeed8bdea24b07",
         "symbol": "AnemllClaw",
         "name": "AnemllClaw"
+      }
+    },
+    "0x843d970bab8f531ff9df22b0c9331db15a4b3b07": {
+      "first_seen": 1772268139455,
+      "first_seen_iso": "2026-02-28T08:42:19.455000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1772268139455,
+          "price": 1.34e-06,
+          "liq": 81630.97,
+          "vol_5m": 11033.66
+        }
+      ],
+      "token": {
+        "address": "0x843d970bab8f531ff9df22b0c9331db15a4b3b07",
+        "symbol": "ClawCash",
+        "name": "Claw Cash"
       }
     }
   }
