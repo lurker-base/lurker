@@ -452,13 +452,8 @@
     ],
     "discovered_at": "2026-02-26T16:09:50.384903",
     "added_at": 1772118590,
-    "last_check": 1772249404.3735573,
+    "last_check": 1772253014.5069976,
     "price_history": [
-      {
-        "timestamp": 1772166266.29479,
-        "price": 3.042e-07,
-        "change": 146.0
-      },
       {
         "timestamp": 1772169880.5148,
         "price": 3.042e-07,
@@ -571,6 +566,11 @@
       },
       {
         "timestamp": 1772249404.373561,
+        "price": 3.047e-07,
+        "change": 0.18
+      },
+      {
+        "timestamp": 1772253014.5070019,
         "price": 3.047e-07,
         "change": 0.18
       }
@@ -1456,13 +1456,8 @@
     ],
     "discovered_at": "2026-02-26T18:14:59.695298",
     "added_at": 1772126099,
-    "last_check": 1772249404.7941172,
+    "last_check": 1772253014.727086,
     "price_history": [
-      {
-        "timestamp": 1772166266.4664066,
-        "price": 4.823e-07,
-        "change": 136.0
-      },
       {
         "timestamp": 1772169880.570459,
         "price": 4.654e-07,
@@ -1577,6 +1572,11 @@
         "timestamp": 1772249404.794121,
         "price": 2.947e-07,
         "change": -27.76
+      },
+      {
+        "timestamp": 1772253014.727092,
+        "price": 2.938e-07,
+        "change": -38.27
       }
     ],
     "pump_signal_sent": true,
@@ -5968,13 +5968,8 @@
     ],
     "discovered_at": "2026-02-27T05:17:24.975986",
     "added_at": 1772165844,
-    "last_check": 1772249407.7450075,
+    "last_check": 1772253017.2750309,
     "price_history": [
-      {
-        "timestamp": 1772166267.1784775,
-        "price": 1.789e-06,
-        "change": 770.0
-      },
       {
         "timestamp": 1772169880.9839375,
         "price": 2.752e-06,
@@ -6089,6 +6084,11 @@
         "timestamp": 1772249407.7450101,
         "price": 2.117e-06,
         "change": 50.78
+      },
+      {
+        "timestamp": 1772253017.275034,
+        "price": 1.992e-06,
+        "change": 14.62
       }
     ],
     "pump_signal_sent": true
@@ -6519,7 +6519,7 @@
     ],
     "discovered_at": "2026-02-27T07:22:53.965152",
     "added_at": 1772173373,
-    "last_check": 1772249407.9602895,
+    "last_check": 1772253017.6388044,
     "price_history": [
       {
         "timestamp": 1772173496.2961242,
@@ -6628,6 +6628,11 @@
       },
       {
         "timestamp": 1772249407.9602935,
+        "price": 4.029e-07,
+        "change": 92.21
+      },
+      {
+        "timestamp": 1772253017.6388078,
         "price": 4.029e-07,
         "change": 92.21
       }
@@ -7515,7 +7520,7 @@
     ],
     "discovered_at": "2026-02-27T12:24:00.628216",
     "added_at": 1772191440,
-    "last_check": 1772249408.148045,
+    "last_check": 1772253017.8276167,
     "price_history": [
       {
         "timestamp": 1772191568.6197135,
@@ -7601,6 +7606,11 @@
         "timestamp": 1772249408.1480498,
         "price": 0.04393,
         "change": 45.27
+      },
+      {
+        "timestamp": 1772253017.827619,
+        "price": 0.04437,
+        "change": 46.75
       }
     ],
     "pump_signal_sent": true
@@ -7623,7 +7633,7 @@
     ],
     "discovered_at": "2026-02-27T12:26:04.511503",
     "added_at": 1772191564,
-    "last_check": 1772249408.3522375,
+    "last_check": 1772253018.1973836,
     "price_history": [
       {
         "timestamp": 1772191569.1261692,
@@ -7709,6 +7719,11 @@
         "timestamp": 1772249408.3522394,
         "price": 3.705e-07,
         "change": 126.0
+      },
+      {
+        "timestamp": 1772253018.1973865,
+        "price": 3.631e-07,
+        "change": 122.0
       }
     ],
     "pump_signal_sent": true
@@ -9030,7 +9045,7 @@
     ],
     "discovered_at": "2026-02-27T23:21:29.074626",
     "added_at": 1772230889,
-    "last_check": 1772249408.5591006,
+    "last_check": 1772253018.4045122,
     "price_history": [
       {
         "timestamp": 1772231330.4438686,
@@ -9061,6 +9076,11 @@
         "timestamp": 1772249408.5591028,
         "price": 1.735e-06,
         "change": 29.1
+      },
+      {
+        "timestamp": 1772253018.4045148,
+        "price": 2.616e-06,
+        "change": 94.63
       }
     ],
     "pump_signal_sent": true
