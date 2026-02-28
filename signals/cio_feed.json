@@ -1,67 +1,23 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-02-28T07:57:09.064000+00:00",
-    "generated_at": "2026-02-28T07:57:09.064000+00:00",
-    "status": "ok",
-    "count": 1,
+    "updated_at": "2026-02-28T08:12:12.042000+00:00",
+    "generated_at": "2026-02-28T08:12:12.042000+00:00",
+    "status": "calm",
+    "count": 0,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
       "min_tx_5m": 1,
       "max_age_min": 10080
     },
-    "risk_distribution": {
-      "medium": 1
-    },
+    "risk_distribution": {},
     "rejected": {
       "too_old": 1,
-      "low_liq": 1
+      "low_liq": 1,
+      "low_volume": 1
     },
     "source": "ultra_launch_scanner"
   },
-  "candidates": [
-    {
-      "token": {
-        "address": "0x026ed97a6fdbde66c4f63b1a9aaeed8bdea24b07",
-        "symbol": "AnemllClaw",
-        "name": "AnemllClaw"
-      },
-      "pair": {
-        "address": "0x2523b4a424a72d068afc78052cfd45156c5bee5124cbbf36dcc82673a0f62512",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 22976.37,
-        "vol_5m_usd": 2.08,
-        "vol_1h_usd": 39993.73,
-        "txns_5m": 2,
-        "price_usd": 1.991e-07
-      },
-      "timestamps": {
-        "pair_created_at": "2026-02-28T05:44:03+00:00",
-        "token_first_seen": "2026-02-28T07:40:55.866000+00:00",
-        "age_minutes": 133.1,
-        "age_hours": 2.22
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.96
-      },
-      "risks": [
-        "dumping"
-      ],
-      "risk_level": "medium",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    }
-  ]
+  "candidates": []
 }
