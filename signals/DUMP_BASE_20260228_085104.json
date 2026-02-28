@@ -1,0 +1,13 @@
+{
+  "type": "DUMP",
+  "token_id": "0x0678488ffcf367e8593708462c95c7e110875e34",
+  "symbol": "BASE",
+  "name": "Base Token",
+  "price_usd": 1.545e-05,
+  "price_change_24h": -28.37,
+  "volume_24h": 707.57,
+  "liquidity_usd": 8535.06,
+  "detected_at": "2026-02-28T08:51:04.258601",
+  "dexscreener_url": "https://dexscreener.com/base/0x0678488ffcf367e8593708462c95c7e110875e34",
+  "alert_message": "\ud83d\udea8 DUMP ALERT: BASE $0.000015 (-28.4%)"
+}
