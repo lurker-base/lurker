@@ -1590,13 +1590,8 @@
     "added_at": 1772131236,
     "source": "dexscreener_boosted",
     "boost_amount": 10,
-    "last_check": 1772257834.1595497,
+    "last_check": 1772261448.6088145,
     "price_history": [
-      {
-        "timestamp": 1772174700.4318233,
-        "price": 9.164e-07,
-        "change": -23.72
-      },
       {
         "timestamp": 1772178314.6601639,
         "price": 9.088e-07,
@@ -1711,6 +1706,11 @@
         "timestamp": 1772257834.159553,
         "price": 2.633e-07,
         "change": -71.14
+      },
+      {
+        "timestamp": 1772261448.6088173,
+        "price": 2.633e-07,
+        "change": -71.14
       }
     ],
     "pump_signal_sent": false,
@@ -1724,13 +1724,8 @@
     "added_at": 1772131236,
     "source": "dexscreener_boosted",
     "boost_amount": 50,
-    "last_check": 1772257834.3379707,
+    "last_check": 1772261448.8813975,
     "price_history": [
-      {
-        "timestamp": 1772174700.6294692,
-        "price": 0.02081,
-        "change": -0.52
-      },
       {
         "timestamp": 1772178315.1125681,
         "price": 0.02083,
@@ -1845,6 +1840,11 @@
         "timestamp": 1772257834.337974,
         "price": 0.02059,
         "change": -1.87
+      },
+      {
+        "timestamp": 1772261448.8814015,
+        "price": 0.02031,
+        "change": -3.21
       }
     ],
     "pump_signal_sent": false,
@@ -1857,13 +1857,8 @@
     "discovered_at": "2026-02-26T19:40:37.029326",
     "added_at": 1772131237,
     "source": "dexscreener_search",
-    "last_check": 1772257834.8117607,
+    "last_check": 1772261448.973438,
     "price_history": [
-      {
-        "timestamp": 1772174701.009387,
-        "price": 1.512e-06,
-        "change": -0.45
-      },
       {
         "timestamp": 1772178315.3585308,
         "price": 1.518e-06,
@@ -1978,6 +1973,11 @@
         "timestamp": 1772257834.8117633,
         "price": 1.365e-06,
         "change": -14.21
+      },
+      {
+        "timestamp": 1772261448.9734404,
+        "price": 1.335e-06,
+        "change": -12.04
       }
     ],
     "pump_signal_sent": false,
@@ -1990,13 +1990,8 @@
     "discovered_at": "2026-02-26T19:40:37.029344",
     "added_at": 1772131237,
     "source": "dexscreener_search",
-    "last_check": 1772257835.2596107,
+    "last_check": 1772261449.2133825,
     "price_history": [
-      {
-        "timestamp": 1772174701.396806,
-        "price": 2.172e-05,
-        "change": -11.24
-      },
       {
         "timestamp": 1772178315.586526,
         "price": 2.172e-05,
@@ -2044,6 +2039,11 @@
       },
       {
         "timestamp": 1772257835.259613,
+        "price": 1.977e-05,
+        "change": -8.35
+      },
+      {
+        "timestamp": 1772261449.2133849,
         "price": 1.977e-05,
         "change": -8.35
       }
@@ -4889,13 +4889,8 @@
     ],
     "discovered_at": "2026-02-27T01:36:25.177591",
     "added_at": 1772152585,
-    "last_check": 1772257836.816336,
+    "last_check": 1772261450.7061214,
     "price_history": [
-      {
-        "timestamp": 1772174702.8216212,
-        "price": 3.138e-07,
-        "change": 56.76
-      },
       {
         "timestamp": 1772178316.0323234,
         "price": 3.225e-07,
@@ -5010,6 +5005,11 @@
         "timestamp": 1772257836.816339,
         "price": 2.305e-07,
         "change": -24.95
+      },
+      {
+        "timestamp": 1772261450.7061248,
+        "price": 2.218e-07,
+        "change": -30.75
       }
     ],
     "pump_signal_sent": true,
@@ -6053,13 +6053,8 @@
     ],
     "discovered_at": "2026-02-27T05:44:28.325368",
     "added_at": 1772167468,
-    "last_check": 1772257838.7296474,
+    "last_check": 1772261452.2389781,
     "price_history": [
-      {
-        "timestamp": 1772174703.4337637,
-        "price": 0.001318,
-        "change": 129925.0
-      },
       {
         "timestamp": 1772178316.5014682,
         "price": 0.0009193,
@@ -6174,6 +6169,11 @@
         "timestamp": 1772257838.7296498,
         "price": 1.235e-06,
         "change": -99.9
+      },
+      {
+        "timestamp": 1772261452.238981,
+        "price": 1.235e-06,
+        "change": -99.91
       }
     ],
     "pump_signal_sent": true,
@@ -7033,7 +7033,7 @@
     ],
     "discovered_at": "2026-02-27T09:45:25.989087",
     "added_at": 1772181925,
-    "last_check": 1772257839.6577923,
+    "last_check": 1772261452.6672652,
     "price_history": [
       {
         "timestamp": 1772181931.3863573,
@@ -7142,6 +7142,11 @@
       },
       {
         "timestamp": 1772257839.6577952,
+        "price": 2.217e-07,
+        "change": 7.83
+      },
+      {
+        "timestamp": 1772261452.6672676,
         "price": 2.217e-07,
         "change": 7.83
       }
@@ -8031,7 +8036,7 @@
     ],
     "discovered_at": "2026-02-27T15:44:46.523231",
     "added_at": 1772203486,
-    "last_check": 1772257839.9900126,
+    "last_check": 1772261452.9034746,
     "price_history": [
       {
         "timestamp": 1772203619.005383,
@@ -8110,6 +8115,11 @@
       },
       {
         "timestamp": 1772257839.9900153,
+        "price": 1.444e-07,
+        "change": -5.74
+      },
+      {
+        "timestamp": 1772261452.903477,
         "price": 1.444e-07,
         "change": -5.74
       }
@@ -8429,7 +8439,7 @@
     ],
     "discovered_at": "2026-02-27T16:39:59.498605",
     "added_at": 1772206799,
-    "last_check": 1772257840.3025138,
+    "last_check": 1772261453.3249726,
     "price_history": [
       {
         "timestamp": 1772207236.6764636,
@@ -8505,6 +8515,11 @@
         "timestamp": 1772257840.302517,
         "price": 2.161e-07,
         "change": 8.63
+      },
+      {
+        "timestamp": 1772261453.3249748,
+        "price": 2.161e-07,
+        "change": 8.63
       }
     ],
     "pump_signal_sent": true
@@ -8516,7 +8531,7 @@
     "discovered_at": "2026-02-27T16:40:00.208516",
     "added_at": 1772206800,
     "source": "dexscreener_search",
-    "last_check": 1772257840.811328,
+    "last_check": 1772261453.5359788,
     "price_history": [
       {
         "timestamp": 1772207237.0392454,
@@ -8590,6 +8605,11 @@
       },
       {
         "timestamp": 1772257840.8113308,
+        "price": 2.488e-07,
+        "change": 0.0
+      },
+      {
+        "timestamp": 1772261453.5359814,
         "price": 2.488e-07,
         "change": 0.0
       }
@@ -9201,7 +9221,7 @@
     ],
     "discovered_at": "2026-02-27T21:48:20.887595",
     "added_at": 1772225300,
-    "last_check": 1772257841.122935,
+    "last_check": 1772261453.711022,
     "price_history": [
       {
         "timestamp": 1772225308.3407402,
@@ -9252,6 +9272,11 @@
         "timestamp": 1772257841.1229382,
         "price": 1.109e-05,
         "change": 1049.0
+      },
+      {
+        "timestamp": 1772261453.7110252,
+        "price": 1.16e-06,
+        "change": 20.14
       }
     ],
     "pump_signal_sent": true
@@ -9621,7 +9646,7 @@
     "discovered_at": "2026-02-28T05:47:54.659834",
     "added_at": 1772254074,
     "source": "dexscreener_search",
-    "last_check": 1772257841.4952683,
+    "last_check": 1772261454.1106508,
     "price_history": [
       {
         "timestamp": 1772254225.3383038,
@@ -9630,6 +9655,11 @@
       },
       {
         "timestamp": 1772257841.4952717,
+        "price": 1.769e-07,
+        "change": 0.01
+      },
+      {
+        "timestamp": 1772261454.1106534,
         "price": 1.769e-07,
         "change": 0.01
       }
