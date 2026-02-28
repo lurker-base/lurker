@@ -201,19 +201,29 @@ def save_tweet_history(history):
     with open(history_file, 'w') as f:
         json.dump(history[-200:], f)  # Keep last 200
 
+def normalize_text(text):
+    """Normalize text for duplicate checking - handles escaped newlines"""
+    if not text:
+        return ""
+    # Replace literal \n with actual newlines, then normalize whitespace
+    normalized = text.replace('\\n', '\n').lower().strip()
+    # Collapse multiple whitespaces
+    normalized = ' '.join(normalized.split())
+    return normalized
+
 def is_similar_tweet(text, history, hours=48):
     """Check if similar tweet was posted recently (fuzzy match)"""
     now = datetime.now()
-    text_normalized = text.lower().strip()
+    text_normalized = normalize_text(text)
     
     # Phrases bannies (tweets qui ont causé des problèmes)
     BANNED_PHRASES = [
-        "0xDP detected at 23m old",
+        "0xdp detected at 23m old",
         "tagged: dumping",
         "6 hours later: -70%",
         "we saw it early",
         "we showed the risk",
-        "most arrived too late"
+        "most arrived too late",
     ]
     
     for banned in BANNED_PHRASES:
@@ -221,9 +231,10 @@ def is_similar_tweet(text, history, hours=48):
             print(f"❌ BLOCKED: Banned phrase detected ('{banned}')")
             return True
     
-    # Check exact duplicates
+    # Check exact duplicates (normalized)
     for entry in history:
-        if entry.get('text', '').lower().strip() == text_normalized:
+        entry_text = normalize_text(entry.get('text', ''))
+        if entry_text == text_normalized:
             sent_at = datetime.fromisoformat(entry.get('time', '2000-01-01'))
             if (now - sent_at).total_seconds() < (hours * 3600):
                 print(f"❌ BLOCKED: Duplicate tweet (posted {hours}h ago)")
