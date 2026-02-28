@@ -46,7 +46,10 @@ launch_service "scripts/lifecycle_core.py" 180 "lifecycle"
 # 3. Cleanup - nettoie les vieux tokens toutes les 10 min
 launch_service "scripts/cleanup_tokens.py" 600 "cleanup"
 
-# 4. Auto Push - pousse sur GitHub toutes les 15 min
+# 4. Scanner CIO Ultra - scanne les nouveaux tokens toutes les 15 min
+launch_service "scripts/scanner_cio_ultra.py" 900 "scanner"
+
+# 5. Auto Push - pousse sur GitHub toutes les 15 min
 (
     while true; do
         echo "[$(date)] Auto push check..." >> logs/auto_push.log
@@ -63,6 +66,7 @@ echo "Services actifs:"
 echo "  - Token Importer (toutes les 2 min)"
 echo "  - Lifecycle Core (toutes les 3 min)"
 echo "  - Cleanup (toutes les 10 min)"
+echo "  - Scanner CIO (toutes les 15 min)"
 echo "  - Auto Push GitHub (toutes les 15 min)"
 echo ""
 echo "Le système tourne en arrière-plan et se relance automatiquement."

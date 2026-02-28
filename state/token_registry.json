@@ -2836,6 +2836,52 @@
         "symbol": "Jellybean",
         "name": "Jellybean"
       }
+    },
+    "0xc376fbe00f450b6a3816640302cb9561d0c1ab07": {
+      "first_seen": 1772264455866,
+      "first_seen_iso": "2026-02-28T07:40:55.866000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1772264455866,
+          "price": 8.393e-17,
+          "liq": 0.0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1772264525965,
+          "price": 8.393e-17,
+          "liq": 0.0,
+          "vol_5m": 0.0
+        }
+      ],
+      "token": {
+        "address": "0xc376fbe00f450b6a3816640302cb9561d0c1ab07",
+        "symbol": "1000000",
+        "name": "$1m speedrun"
+      }
+    },
+    "0x026ed97a6fdbde66c4f63b1a9aaeed8bdea24b07": {
+      "first_seen": 1772264455866,
+      "first_seen_iso": "2026-02-28T07:40:55.866000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1772264455866,
+          "price": 2.008e-07,
+          "liq": 23159.45,
+          "vol_5m": 1.04
+        },
+        {
+          "timestamp": 1772264525965,
+          "price": 2.008e-07,
+          "liq": 23159.45,
+          "vol_5m": 1.04
+        }
+      ],
+      "token": {
+        "address": "0x026ed97a6fdbde66c4f63b1a9aaeed8bdea24b07",
+        "symbol": "AnemllClaw",
+        "name": "AnemllClaw"
+      }
     }
   }
 }

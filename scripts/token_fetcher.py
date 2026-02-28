@@ -76,50 +76,61 @@ def fetch_latest_base_tokens():
 
 def fetch_new_pairs_base():
     """Fetch NEW pairs on Base chain (most recent)"""
+    # NOTE: token-pairs/latest/v1 endpoint removed by DexScreener (returns 404)
+    # Using search endpoint with time filter instead
     try:
-        # Get new pairs on Base
-        url = "https://api.dexscreener.com/token-pairs/latest/v1"
+        # Get recent pairs on Base via search
+        url = "https://api.dexscreener.com/latest/dex/search?q=base"
         resp = requests.get(url, timeout=30)
         
         if resp.status_code == 200:
             data = resp.json()
-            pairs = data if isinstance(data, list) else []
+            pairs = data.get("pairs", [])
             
-            # Filter for Base chain only
+            # Filter for Base chain only and recent pairs (last 24h)
             base_tokens = []
             seen = set()
+            cutoff_time = datetime.now() - timedelta(hours=24)
             
             for pair in pairs:
-                chain = pair.get("chainId", "").lower()
-                if chain != "base":
+                if pair.get("chainId") != "base":
                     continue
                 
-                # Get both tokens from pair
-                for token_key in ["baseToken", "quoteToken"]:
-                    token_data = pair.get(token_key, {})
-                    address = token_data.get("address")
-                    
-                    if not address or address in seen:
-                        continue
-                    
-                    # Skip stablecoins and major tokens
-                    symbol = token_data.get("symbol", "UNKNOWN")
-                    if symbol in ["USDC", "USDT", "DAI", "WETH", "ETH", "WBTC"]:
-                        continue
-                    
-                    seen.add(address)
-                    
-                    token = {
-                        "address": address,
-                        "symbol": symbol,
-                        "name": token_data.get("name", "Unknown"),
-                        "discovered_at": datetime.now().isoformat(),
-                        "added_at": int(datetime.now().timestamp()),
-                        "source": "dexscreener_new_pairs",
-                        "pair_address": pair.get("pairAddress"),
-                        "liquidity": pair.get("liquidity", {}).get("usd", 0)
-                    }
-                    base_tokens.append(token)
+                # Check pair age (if available)
+                pair_created = pair.get("pairCreatedAt")
+                if pair_created:
+                    try:
+                        pair_time = datetime.fromtimestamp(pair_created / 1000)
+                        if pair_time < cutoff_time:
+                            continue  # Skip old pairs
+                    except:
+                        pass  # If can't parse, include it
+                
+                # Get base token (not WETH/USDC)
+                token_data = pair.get("baseToken", {})
+                address = token_data.get("address")
+                
+                if not address or address in seen:
+                    continue
+                
+                # Skip stablecoins and major tokens
+                symbol = token_data.get("symbol", "UNKNOWN")
+                if symbol in ["USDC", "USDT", "DAI", "WETH", "ETH", "WBTC"]:
+                    continue
+                
+                seen.add(address)
+                
+                token = {
+                    "address": address,
+                    "symbol": symbol,
+                    "name": token_data.get("name", "Unknown"),
+                    "discovered_at": datetime.now().isoformat(),
+                    "added_at": int(datetime.now().timestamp()),
+                    "source": "dexscreener_recent_pairs",
+                    "pair_address": pair.get("pairAddress"),
+                    "liquidity": pair.get("liquidity", {}).get("usd", 0)
+                }
+                base_tokens.append(token)
             
             log(f"✅ Fetched {len(base_tokens)} Base tokens from NEW pairs")
             return base_tokens
