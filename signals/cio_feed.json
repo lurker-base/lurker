@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-02-27T09:57:19.216000+00:00",
-    "generated_at": "2026-02-27T09:57:19.216000+00:00",
+    "updated_at": "2026-02-28T07:40:55.872000+00:00",
+    "generated_at": "2026-02-28T07:40:55.872000+00:00",
     "status": "ok",
-    "count": 2,
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,38 +12,38 @@
       "max_age_min": 10080
     },
     "risk_distribution": {
-      "medium": 1,
-      "low": 1
+      "medium": 1
     },
     "rejected": {
-      "too_old": 2
+      "too_old": 1,
+      "low_liq": 1
     },
     "source": "ultra_launch_scanner"
   },
   "candidates": [
     {
       "token": {
-        "address": "0x9adf6778d2f4a4f5ac0c76ac459e366abf01b0dc",
-        "symbol": "Jellybean",
-        "name": "Jellybean"
+        "address": "0x026ed97a6fdbde66c4f63b1a9aaeed8bdea24b07",
+        "symbol": "AnemllClaw",
+        "name": "AnemllClaw"
       },
       "pair": {
-        "address": "0x4b4124cf13e7f72abae0670e8fc02e8dac5145a5de6983cfdd98cb1c49277669",
+        "address": "0x2523b4a424a72d068afc78052cfd45156c5bee5124cbbf36dcc82673a0f62512",
         "dex": "uniswap",
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 96792.09,
-        "vol_5m_usd": 17590.67,
-        "vol_1h_usd": 260358.89,
-        "txns_5m": 56,
-        "price_usd": 1.53e-06
+        "liq_usd": 23159.45,
+        "vol_5m_usd": 1.04,
+        "vol_1h_usd": 154610.14,
+        "txns_5m": 2,
+        "price_usd": 2.008e-07
       },
       "timestamps": {
-        "pair_created_at": "2026-02-27T08:14:01+00:00",
-        "token_first_seen": "2026-02-27T09:57:19.209000+00:00",
-        "age_minutes": 103.3,
-        "age_hours": 1.72
+        "pair_created_at": "2026-02-28T05:44:03+00:00",
+        "token_first_seen": "2026-02-28T07:40:55.866000+00:00",
+        "age_minutes": 116.9,
+        "age_hours": 1.95
       },
       "scores": {
         "cio_score": 100,
@@ -53,46 +53,6 @@
         "dumping"
       ],
       "risk_level": "medium",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    },
-    {
-      "token": {
-        "address": "0x3326bdb31daa69b4fbc618a970a7b629590c05d8",
-        "symbol": "ClawCraft",
-        "name": "ClawCraft"
-      },
-      "pair": {
-        "address": "0x7e600662ad2c487082c51bd5b56eb036539f51f3",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 69074.83,
-        "vol_5m_usd": 14145.5,
-        "vol_1h_usd": 205655.74,
-        "txns_5m": 23,
-        "price_usd": 0.001131
-      },
-      "timestamps": {
-        "pair_created_at": "2026-02-27T07:57:29+00:00",
-        "token_first_seen": "2026-02-27T09:57:19.209000+00:00",
-        "age_minutes": 119.8,
-        "age_hours": 2.0
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.97
-      },
-      "risks": [],
-      "risk_level": "low",
       "source": "profiles",
       "status": "observing",
       "quality": {
