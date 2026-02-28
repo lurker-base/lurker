@@ -452,13 +452,8 @@
     ],
     "discovered_at": "2026-02-26T16:09:50.384903",
     "added_at": 1772118590,
-    "last_check": 1772245786.0572352,
+    "last_check": 1772249404.3735573,
     "price_history": [
-      {
-        "timestamp": 1772162652.0225632,
-        "price": 3.042e-07,
-        "change": 146.0
-      },
       {
         "timestamp": 1772166266.29479,
         "price": 3.042e-07,
@@ -571,6 +566,11 @@
       },
       {
         "timestamp": 1772245786.057239,
+        "price": 3.047e-07,
+        "change": 0.18
+      },
+      {
+        "timestamp": 1772249404.373561,
         "price": 3.047e-07,
         "change": 0.18
       }
@@ -1456,13 +1456,8 @@
     ],
     "discovered_at": "2026-02-26T18:14:59.695298",
     "added_at": 1772126099,
-    "last_check": 1772245786.1323183,
+    "last_check": 1772249404.7941172,
     "price_history": [
-      {
-        "timestamp": 1772162652.1670272,
-        "price": 3.929e-07,
-        "change": 92.43
-      },
       {
         "timestamp": 1772166266.4664066,
         "price": 4.823e-07,
@@ -1577,6 +1572,11 @@
         "timestamp": 1772245786.1323223,
         "price": 2.941e-07,
         "change": -24.57
+      },
+      {
+        "timestamp": 1772249404.794121,
+        "price": 2.947e-07,
+        "change": -27.76
       }
     ],
     "pump_signal_sent": true,
@@ -5967,7 +5967,7 @@
     ],
     "discovered_at": "2026-02-27T05:17:24.975986",
     "added_at": 1772165844,
-    "last_check": 1772245788.6405895,
+    "last_check": 1772249407.7450075,
     "price_history": [
       {
         "timestamp": 1772166267.1784775,
@@ -6083,6 +6083,11 @@
         "timestamp": 1772245788.640604,
         "price": 2.055e-06,
         "change": 70.13
+      },
+      {
+        "timestamp": 1772249407.7450101,
+        "price": 2.117e-06,
+        "change": 50.78
       }
     ],
     "pump_signal_sent": true
@@ -6498,7 +6503,7 @@
     ],
     "discovered_at": "2026-02-27T07:22:53.965152",
     "added_at": 1772173373,
-    "last_check": 1772245788.8318825,
+    "last_check": 1772249407.9602895,
     "price_history": [
       {
         "timestamp": 1772173496.2961242,
@@ -6602,6 +6607,11 @@
       },
       {
         "timestamp": 1772245788.831885,
+        "price": 4.029e-07,
+        "change": 92.21
+      },
+      {
+        "timestamp": 1772249407.9602935,
         "price": 4.029e-07,
         "change": 92.21
       }
@@ -7454,7 +7464,7 @@
     ],
     "discovered_at": "2026-02-27T12:24:00.628216",
     "added_at": 1772191440,
-    "last_check": 1772245789.0211842,
+    "last_check": 1772249408.148045,
     "price_history": [
       {
         "timestamp": 1772191568.6197135,
@@ -7535,6 +7545,11 @@
         "timestamp": 1772245789.021187,
         "price": 0.04504,
         "change": 48.97
+      },
+      {
+        "timestamp": 1772249408.1480498,
+        "price": 0.04393,
+        "change": 45.27
       }
     ],
     "pump_signal_sent": true
@@ -7557,7 +7572,7 @@
     ],
     "discovered_at": "2026-02-27T12:26:04.511503",
     "added_at": 1772191564,
-    "last_check": 1772245789.2285225,
+    "last_check": 1772249408.3522375,
     "price_history": [
       {
         "timestamp": 1772191569.1261692,
@@ -7638,6 +7653,11 @@
         "timestamp": 1772245789.2285244,
         "price": 4.224e-07,
         "change": 158.0
+      },
+      {
+        "timestamp": 1772249408.3522394,
+        "price": 3.705e-07,
+        "change": 126.0
       }
     ],
     "pump_signal_sent": true
@@ -8879,7 +8899,7 @@
     ],
     "discovered_at": "2026-02-27T23:21:29.074626",
     "added_at": 1772230889,
-    "last_check": 1772245789.4428184,
+    "last_check": 1772249408.5591006,
     "price_history": [
       {
         "timestamp": 1772231330.4438686,
@@ -8903,6 +8923,11 @@
       },
       {
         "timestamp": 1772245789.442821,
+        "price": 1.735e-06,
+        "change": 29.1
+      },
+      {
+        "timestamp": 1772249408.5591028,
         "price": 1.735e-06,
         "change": 29.1
       }
@@ -9080,5 +9105,24 @@
       }
     ],
     "pump_signal_sent": true
+  },
+  "0x8ee26a711f05a3ea6bf44e1a99af3f65c1910f2e": {
+    "address": "0x8ee26a711f05a3ea6BF44E1a99AF3f65c1910F2E",
+    "symbol": "UNKNOWN",
+    "name": "Unknown",
+    "icon": "https://cdn.dexscreener.com/cms/images/grlRTfgXcJ_DJR1s?width=64&height=64&fit=crop&quality=95&format=auto",
+    "description": "AgentGram is the first truly open-source social network designed for AI agents.",
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://github.com/agentgram/agentgram"
+      },
+      {
+        "type": "twitter",
+        "url": "https://x.com/qvsbih/status/2027463073578291526"
+      }
+    ],
+    "discovered_at": "2026-02-28T04:32:37.910005",
+    "added_at": 1772249557
   }
 }
