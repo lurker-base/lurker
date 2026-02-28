@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-02-28T08:42:19.459000+00:00",
-    "generated_at": "2026-02-28T08:42:19.459000+00:00",
+    "updated_at": "2026-02-28T11:13:58.007000+00:00",
+    "generated_at": "2026-02-28T11:13:58.007000+00:00",
     "status": "ok",
-    "count": 1,
+    "count": 2,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,42 +12,43 @@
       "max_age_min": 10080
     },
     "risk_distribution": {
-      "low": 1
+      "low": 2
     },
     "rejected": {
       "too_old": 1,
-      "low_liq": 1
+      "low_liq": 1,
+      "low_tx": 1
     },
     "source": "ultra_launch_scanner"
   },
   "candidates": [
     {
       "token": {
-        "address": "0x843d970bab8f531ff9df22b0c9331db15a4b3b07",
-        "symbol": "ClawCash",
-        "name": "Claw Cash"
+        "address": "0x514e8d1c29e6c9893555dc21fca4eb12d4bc8ba3",
+        "symbol": "BILL",
+        "name": "Bill Cooper"
       },
       "pair": {
-        "address": "0xa6f14c0212ac073c572003b7d6530f396668fc124c939665b421b7ad3727776d",
+        "address": "0x93a914f425b7e8ba97fe2e5b2abed2806d974345e44f32a40b19741a23ee985f",
         "dex": "uniswap",
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 81630.97,
-        "vol_5m_usd": 11033.66,
-        "vol_1h_usd": 84171.16,
-        "txns_5m": 92,
-        "price_usd": 1.34e-06
+        "liq_usd": 36519.65,
+        "vol_5m_usd": 962.6,
+        "vol_1h_usd": 17382.38,
+        "txns_5m": 8,
+        "price_usd": 3.792e-07
       },
       "timestamps": {
-        "pair_created_at": "2026-02-28T08:27:31+00:00",
-        "token_first_seen": "2026-02-28T08:42:19.455000+00:00",
-        "age_minutes": 14.8,
-        "age_hours": 0.25
+        "pair_created_at": "2026-02-28T08:23:51+00:00",
+        "token_first_seen": "2026-02-28T11:13:58.002000+00:00",
+        "age_minutes": 170.1,
+        "age_hours": 2.84
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 1.0
+        "freshness": 0.95
       },
       "risks": [],
       "risk_level": "low",
@@ -57,8 +58,48 @@
         "has_profile": true,
         "has_image": true,
         "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
+        "has_website": false,
+        "quality_score": 75
+      }
+    },
+    {
+      "token": {
+        "address": "0x1d9c9b0f064db69cfcc4ffddc76fe32cbab29552",
+        "symbol": "BELLATOR",
+        "name": "BELLATOR"
+      },
+      "pair": {
+        "address": "0xd3c0c10c55f63ee96758be7a95721b2557d19ec2",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 138758.76,
+        "vol_5m_usd": 13129.59,
+        "vol_1h_usd": 425550.8,
+        "txns_5m": 24,
+        "price_usd": 3.025e-06
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-28T08:22:31+00:00",
+        "token_first_seen": "2026-02-28T11:13:58.002000+00:00",
+        "age_minutes": 171.5,
+        "age_hours": 2.86
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.95
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": false,
+        "quality_score": 75
       }
     }
   ]

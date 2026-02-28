@@ -2876,6 +2876,12 @@
           "price": 8.393e-17,
           "liq": 0.0,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1772277238002,
+          "price": 8.393e-17,
+          "liq": 0.0,
+          "vol_5m": 0.0
         }
       ],
       "token": {
@@ -2934,6 +2940,57 @@
         "address": "0x843d970bab8f531ff9df22b0c9331db15a4b3b07",
         "symbol": "ClawCash",
         "name": "Claw Cash"
+      }
+    },
+    "0x514e8d1c29e6c9893555dc21fca4eb12d4bc8ba3": {
+      "first_seen": 1772277238002,
+      "first_seen_iso": "2026-02-28T11:13:58.002000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1772277238002,
+          "price": 3.792e-07,
+          "liq": 36519.65,
+          "vol_5m": 962.6
+        }
+      ],
+      "token": {
+        "address": "0x514e8d1c29e6c9893555dc21fca4eb12d4bc8ba3",
+        "symbol": "BILL",
+        "name": "Bill Cooper"
+      }
+    },
+    "0x816e79d10fa782342e1e2bb4c4285156231ade76": {
+      "first_seen": 1772277238002,
+      "first_seen_iso": "2026-02-28T11:13:58.002000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1772277238002,
+          "price": 7.576e-06,
+          "liq": 61256.11,
+          "vol_5m": 0.0
+        }
+      ],
+      "token": {
+        "address": "0x816e79d10fa782342e1e2bb4c4285156231ade76",
+        "symbol": "Clawbox",
+        "name": "Clawbox"
+      }
+    },
+    "0x1d9c9b0f064db69cfcc4ffddc76fe32cbab29552": {
+      "first_seen": 1772277238002,
+      "first_seen_iso": "2026-02-28T11:13:58.002000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1772277238002,
+          "price": 3.025e-06,
+          "liq": 138758.76,
+          "vol_5m": 13129.59
+        }
+      ],
+      "token": {
+        "address": "0x1d9c9b0f064db69cfcc4ffddc76fe32cbab29552",
+        "symbol": "BELLATOR",
+        "name": "BELLATOR"
       }
     }
   }
