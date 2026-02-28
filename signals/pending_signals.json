@@ -2758,5 +2758,50 @@
       "Prix +18.0%",
       "Volume 2.5x"
     ]
+  },
+  {
+    "timestamp": "2026-02-28T02:15:06.072293",
+    "token_id": "0x4200000000000000000000000000000000000006",
+    "token_symbol": "WETH",
+    "token_name": "Wrapped Ether",
+    "type": "PUMP",
+    "price": 3200.0,
+    "price_change": 0.18,
+    "volume_change": 2.5,
+    "score": 0.75,
+    "reasons": [
+      "Prix +18.0%",
+      "Volume 2.5x"
+    ]
+  },
+  {
+    "timestamp": "2026-02-28T02:20:06.085063",
+    "token_id": "0x4200000000000000000000000000000000000006",
+    "token_symbol": "WETH",
+    "token_name": "Wrapped Ether",
+    "type": "PUMP",
+    "price": 3200.0,
+    "price_change": 0.18,
+    "volume_change": 2.5,
+    "score": 0.75,
+    "reasons": [
+      "Prix +18.0%",
+      "Volume 2.5x"
+    ]
+  },
+  {
+    "timestamp": "2026-02-28T02:25:06.094658",
+    "token_id": "0x4200000000000000000000000000000000000006",
+    "token_symbol": "WETH",
+    "token_name": "Wrapped Ether",
+    "type": "PUMP",
+    "price": 3200.0,
+    "price_change": 0.18,
+    "volume_change": 2.5,
+    "score": 0.75,
+    "reasons": [
+      "Prix +18.0%",
+      "Volume 2.5x"
+    ]
   }
 ]
