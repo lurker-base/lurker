@@ -596,13 +596,8 @@
     ],
     "discovered_at": "2026-02-26T16:19:51.040423",
     "added_at": 1772119191,
-    "last_check": 1772264460.160998,
+    "last_check": 1772268074.90264,
     "price_history": [
-      {
-        "timestamp": 1772181325.9665349,
-        "price": 2.448e-07,
-        "change": 16.34
-      },
       {
         "timestamp": 1772184940.6214051,
         "price": 2.446e-07,
@@ -717,6 +712,11 @@
         "timestamp": 1772264460.1610017,
         "price": 2.131e-07,
         "change": -12.89
+      },
+      {
+        "timestamp": 1772268074.9026444,
+        "price": 2.131e-07,
+        "change": -12.88
       }
     ],
     "pump_signal_sent": true,
@@ -4326,13 +4326,8 @@
     ],
     "discovered_at": "2026-02-26T22:25:41.514521",
     "added_at": 1772141141,
-    "last_check": 1772264462.1094398,
+    "last_check": 1772268076.286361,
     "price_history": [
-      {
-        "timestamp": 1772181326.8327713,
-        "price": 0.001257,
-        "change": 98.48
-      },
       {
         "timestamp": 1772184941.6130998,
         "price": 0.001434,
@@ -4447,6 +4442,11 @@
         "timestamp": 1772264462.109446,
         "price": 0.001107,
         "change": -13.4
+      },
+      {
+        "timestamp": 1772268076.2863638,
+        "price": 0.001242,
+        "change": -1.23
       }
     ],
     "pump_signal_sent": false,
@@ -4466,13 +4466,8 @@
     ],
     "discovered_at": "2026-02-26T22:30:42.625127",
     "added_at": 1772141442,
-    "last_check": 1772264462.3136315,
+    "last_check": 1772268076.4982994,
     "price_history": [
-      {
-        "timestamp": 1772181327.051475,
-        "price": 2.035e-07,
-        "change": -55.06
-      },
       {
         "timestamp": 1772184941.7824078,
         "price": 2.024e-07,
@@ -4587,6 +4582,11 @@
         "timestamp": 1772264462.3136334,
         "price": 1.958e-07,
         "change": -3.25
+      },
+      {
+        "timestamp": 1772268076.498302,
+        "price": 1.958e-07,
+        "change": -3.25
       }
     ],
     "pump_signal_sent": false,
@@ -4610,13 +4610,8 @@
     ],
     "discovered_at": "2026-02-27T00:33:14.417695",
     "added_at": 1772148794,
-    "last_check": 1772264462.527822,
+    "last_check": 1772268076.7600021,
     "price_history": [
-      {
-        "timestamp": 1772181327.2262425,
-        "price": 0.0002067,
-        "change": 20158.0
-      },
       {
         "timestamp": 1772184942.2039146,
         "price": 2.507e-05,
@@ -4731,6 +4726,11 @@
         "timestamp": 1772264462.5278244,
         "price": 6.405e-06,
         "change": -99.76
+      },
+      {
+        "timestamp": 1772268076.7600045,
+        "price": 6.405e-06,
+        "change": -95.71
       }
     ],
     "pump_signal_sent": true,
@@ -8972,7 +8972,7 @@
     ],
     "discovered_at": "2026-02-27T18:35:25.918531",
     "added_at": 1772213725,
-    "last_check": 1772264464.814115,
+    "last_check": 1772268079.7246535,
     "price_history": [
       {
         "timestamp": 1772213859.843448,
@@ -9046,6 +9046,11 @@
       },
       {
         "timestamp": 1772264464.814121,
+        "price": 1.902e-07,
+        "change": -58.86
+      },
+      {
+        "timestamp": 1772268079.7246568,
         "price": 1.902e-07,
         "change": -58.86
       }
@@ -9244,7 +9249,7 @@
     ],
     "discovered_at": "2026-02-27T20:38:03.898125",
     "added_at": 1772221083,
-    "last_check": 1772264465.1915927,
+    "last_check": 1772268079.9190555,
     "price_history": [
       {
         "timestamp": 1772221088.7545815,
@@ -9310,6 +9315,11 @@
         "timestamp": 1772264465.191595,
         "price": 1.657e-06,
         "change": 5.61
+      },
+      {
+        "timestamp": 1772268079.9190571,
+        "price": 1.657e-06,
+        "change": 5.61
       }
     ],
     "pump_signal_sent": true
@@ -9332,7 +9342,7 @@
     ],
     "discovered_at": "2026-02-27T21:36:06.201823",
     "added_at": 1772224566,
-    "last_check": 1772264465.2433813,
+    "last_check": 1772268080.0897484,
     "price_history": [
       {
         "timestamp": 1772224704.2486014,
@@ -9393,6 +9403,11 @@
         "timestamp": 1772264465.2433841,
         "price": 5.387e-07,
         "change": 26.47
+      },
+      {
+        "timestamp": 1772268080.089751,
+        "price": 5.413e-07,
+        "change": 27.08
       }
     ],
     "pump_signal_sent": true
@@ -9869,7 +9884,7 @@
     ],
     "discovered_at": "2026-02-28T04:32:37.910005",
     "added_at": 1772249557,
-    "last_check": 1772264465.4104252,
+    "last_check": 1772268080.2622612,
     "price_history": [
       {
         "timestamp": 1772250011.4319296,
@@ -9893,6 +9908,11 @@
       },
       {
         "timestamp": 1772264465.4104269,
+        "price": 3.249e-06,
+        "change": 85.1
+      },
+      {
+        "timestamp": 1772268080.2622638,
         "price": 3.249e-06,
         "change": 85.1
       }
@@ -10003,5 +10023,33 @@
     ],
     "pump_signal_sent": false,
     "dump_signal_sent": false
+  },
+  "0x843d970bab8f531ff9df22b0c9331db15a4b3b07": {
+    "address": "0x843d970Bab8F531ff9df22B0C9331db15a4b3B07",
+    "symbol": "UNKNOWN",
+    "name": "Unknown",
+    "icon": "https://cdn.dexscreener.com/cms/images/WQS2XzBLoCjzh8Jn?width=64&height=64&fit=crop&quality=95&format=auto",
+    "description": "Bitcoin wallet for AI agents. Stablecoins in, Bitcoin out. Keys in hardware enclaves. Works with OpenClaw, Claude Code, or any agent harness.",
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://github.com/tiero/claw-cash"
+      },
+      {
+        "type": "twitter",
+        "url": "https://x.com/ClawCashCoin"
+      }
+    ],
+    "discovered_at": "2026-02-28T09:38:42.880101",
+    "added_at": 1772267922,
+    "last_check": 1772268080.341854,
+    "price_history": [
+      {
+        "timestamp": 1772268080.341856,
+        "price": 1.235e-06,
+        "change": 533.0
+      }
+    ],
+    "pump_signal_sent": true
   }
 }
