@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-01T22:09:05.223000+00:00",
-    "generated_at": "2026-03-01T22:09:05.223000+00:00",
+    "updated_at": "2026-03-01T22:24:04.885000+00:00",
+    "generated_at": "2026-03-01T22:24:04.885000+00:00",
     "status": "ok",
-    "count": 2,
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,41 +12,42 @@
       "max_age_min": 10080
     },
     "risk_distribution": {
-      "low": 2
+      "low": 1
     },
     "rejected": {
-      "too_old": 2
+      "too_old": 2,
+      "low_tx": 1
     },
     "source": "ultra_launch_scanner"
   },
   "candidates": [
     {
       "token": {
-        "address": "0x5aea54ee0ce098e4df2ac58f675fe24cb67b1ba3",
-        "symbol": "RAFTOR",
-        "name": "RaftorFI"
+        "address": "0x28369ec606e7195d09fc7978388947aaf1c032a2",
+        "symbol": "PORACLE",
+        "name": "PolyOracle"
       },
       "pair": {
-        "address": "0x0b91e3c44c9f6f7654f1920e7636eab142e6b600692cc1dbea80ac7014caed27",
+        "address": "0xc42cf782fbc3ed2524c662d45cc5c2b21979be9c9143633d7d69a562958232be",
         "dex": "uniswap",
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 62302.07,
-        "vol_5m_usd": 1817.93,
-        "vol_1h_usd": 25904.19,
-        "txns_5m": 14,
-        "price_usd": 7.987e-07
+        "liq_usd": 104474.22,
+        "vol_5m_usd": 20439.09,
+        "vol_1h_usd": 181217.08,
+        "txns_5m": 59,
+        "price_usd": 2.184e-05
       },
       "timestamps": {
-        "pair_created_at": "2026-03-01T19:44:19+00:00",
-        "token_first_seen": "2026-03-01T21:24:03.731000+00:00",
-        "age_minutes": 144.8,
-        "age_hours": 2.41
+        "pair_created_at": "2026-03-01T21:46:45+00:00",
+        "token_first_seen": "2026-03-01T22:14:04.045000+00:00",
+        "age_minutes": 37.3,
+        "age_hours": 0.62
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.96
+        "freshness": 0.99
       },
       "risks": [],
       "risk_level": "low",
@@ -56,48 +57,8 @@
         "has_profile": true,
         "has_image": true,
         "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    },
-    {
-      "token": {
-        "address": "0xddce43b4d3263e1f67c64233a152b5e852a8357e",
-        "symbol": "CLAWS",
-        "name": "CLAWS"
-      },
-      "pair": {
-        "address": "0xbd1f7191c61835c12009694c11bb1d2fd324d965dd3d275140f8af6bd47e5ea5",
-        "dex": "uniswap",
-        "quote": "ETH"
-      },
-      "metrics": {
-        "liq_usd": 21956.36,
-        "vol_5m_usd": 280.94,
-        "vol_1h_usd": 1709.93,
-        "txns_5m": 1,
-        "price_usd": 3.504e-05
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-01T19:38:19+00:00",
-        "token_first_seen": "2026-03-01T22:04:05.036000+00:00",
-        "age_minutes": 150.8,
-        "age_hours": 2.51
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.96
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
+        "has_website": false,
+        "quality_score": 75
       }
     }
   ]
