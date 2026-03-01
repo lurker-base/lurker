@@ -1,64 +1,21 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-01T14:23:58.225000+00:00",
-    "generated_at": "2026-03-01T14:23:58.225000+00:00",
-    "status": "ok",
-    "count": 1,
+    "updated_at": "2026-03-01T14:38:57.650000+00:00",
+    "generated_at": "2026-03-01T14:38:57.650000+00:00",
+    "status": "calm",
+    "count": 0,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
       "min_tx_5m": 1,
       "max_age_min": 10080
     },
-    "risk_distribution": {
-      "low": 1
-    },
+    "risk_distribution": {},
     "rejected": {
       "too_old": 1
     },
     "source": "ultra_launch_scanner"
   },
-  "candidates": [
-    {
-      "token": {
-        "address": "0xb99b5fd66c7b2e70e671588f9de745997805503e",
-        "symbol": "NowClaw",
-        "name": "NowClaw"
-      },
-      "pair": {
-        "address": "0xe5d2f970c30a9c297cebaa0f6a425065d0a3d407ac3c19e8b6c7abcb94504ef9",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 85135.87,
-        "vol_5m_usd": 13945.99,
-        "vol_1h_usd": 183825.43,
-        "txns_5m": 44,
-        "price_usd": 1.434e-05
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-01T12:10:37+00:00",
-        "token_first_seen": "2026-03-01T12:28:56.621000+00:00",
-        "age_minutes": 133.4,
-        "age_hours": 2.22
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.96
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": false,
-        "quality_score": 75
-      }
-    }
-  ]
+  "candidates": []
 }
