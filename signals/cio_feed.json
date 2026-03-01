@@ -1,8 +1,8 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-01T23:39:05.780000+00:00",
-    "generated_at": "2026-03-01T23:39:05.780000+00:00",
+    "updated_at": "2026-03-01T23:54:05.593000+00:00",
+    "generated_at": "2026-03-01T23:54:05.593000+00:00",
     "status": "ok",
     "count": 2,
     "thresholds": {
@@ -15,34 +15,34 @@
       "low": 2
     },
     "rejected": {
-      "too_old": 1
+      "too_old": 2
     },
     "source": "ultra_launch_scanner"
   },
   "candidates": [
     {
       "token": {
-        "address": "0xb1b233bbbf3bb40bc1e19c5b1358073dfeaaa575",
-        "symbol": "PBOT",
-        "name": "Polymarket Trading Bot"
+        "address": "0xbba2414a643fb8ff262924d9f51a673826b3669e",
+        "symbol": "ClawBeacon",
+        "name": "ClawBeacon"
       },
       "pair": {
-        "address": "0xc83658dc278c722289e155f12ab8195a672603a2",
+        "address": "0x4c156fbc0d137f4ab5aa8015edc8072d0ee2cc96035f3d42a9aaed8c69507031",
         "dex": "uniswap",
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 12459.59,
-        "vol_5m_usd": 899.4,
-        "vol_1h_usd": 9327.09,
-        "txns_5m": 8,
-        "price_usd": 1.474e-05
+        "liq_usd": 103282.4,
+        "vol_5m_usd": 13777.47,
+        "vol_1h_usd": 128337.37,
+        "txns_5m": 59,
+        "price_usd": 2.226e-06
       },
       "timestamps": {
-        "pair_created_at": "2026-03-01T23:16:13+00:00",
-        "token_first_seen": "2026-03-01T23:24:05.566000+00:00",
-        "age_minutes": 22.9,
-        "age_hours": 0.38
+        "pair_created_at": "2026-03-01T23:21:07+00:00",
+        "token_first_seen": "2026-03-01T23:49:05.378000+00:00",
+        "age_minutes": 33.0,
+        "age_hours": 0.55
       },
       "scores": {
         "cio_score": 100,
@@ -62,31 +62,31 @@
     },
     {
       "token": {
-        "address": "0x28369ec606e7195d09fc7978388947aaf1c032a2",
-        "symbol": "PORACLE",
-        "name": "PolyOracle"
+        "address": "0xb1b233bbbf3bb40bc1e19c5b1358073dfeaaa575",
+        "symbol": "PBOT",
+        "name": "Polymarket Trading Bot"
       },
       "pair": {
-        "address": "0xc42cf782fbc3ed2524c662d45cc5c2b21979be9c9143633d7d69a562958232be",
+        "address": "0xc83658dc278c722289e155f12ab8195a672603a2",
         "dex": "uniswap",
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 93237.44,
-        "vol_5m_usd": 8710.54,
-        "vol_1h_usd": 264424.65,
-        "txns_5m": 38,
-        "price_usd": 1.712e-05
+        "liq_usd": 13477.07,
+        "vol_5m_usd": 522.56,
+        "vol_1h_usd": 11455.35,
+        "txns_5m": 11,
+        "price_usd": 1.644e-05
       },
       "timestamps": {
-        "pair_created_at": "2026-03-01T21:46:45+00:00",
-        "token_first_seen": "2026-03-01T22:14:04.045000+00:00",
-        "age_minutes": 112.3,
-        "age_hours": 1.87
+        "pair_created_at": "2026-03-01T23:16:13+00:00",
+        "token_first_seen": "2026-03-01T23:24:05.566000+00:00",
+        "age_minutes": 37.9,
+        "age_hours": 0.63
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.97
+        "freshness": 0.99
       },
       "risks": [],
       "risk_level": "low",
@@ -96,8 +96,8 @@
         "has_profile": true,
         "has_image": true,
         "has_socials": true,
-        "has_website": false,
-        "quality_score": 75
+        "has_website": true,
+        "quality_score": 100
       }
     }
   ]
