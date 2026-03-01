@@ -1,21 +1,64 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-01T14:38:57.650000+00:00",
-    "generated_at": "2026-03-01T14:38:57.650000+00:00",
-    "status": "calm",
-    "count": 0,
+    "updated_at": "2026-03-01T14:54:01.636000+00:00",
+    "generated_at": "2026-03-01T14:54:01.636000+00:00",
+    "status": "ok",
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
       "min_tx_5m": 1,
       "max_age_min": 10080
     },
-    "risk_distribution": {},
+    "risk_distribution": {
+      "low": 1
+    },
     "rejected": {
       "too_old": 1
     },
     "source": "ultra_launch_scanner"
   },
-  "candidates": []
+  "candidates": [
+    {
+      "token": {
+        "address": "0xef63b8f2ada83a968a68719266b74956d342eba3",
+        "symbol": "FORGE",
+        "name": "ForgeOracle"
+      },
+      "pair": {
+        "address": "0x7a675e81a8874c44c103293ddcf28430f3cf383588f78cecb540cc3650c60ac0",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 65775.56,
+        "vol_5m_usd": 3402.78,
+        "vol_1h_usd": 4709.48,
+        "txns_5m": 14,
+        "price_usd": 8.309e-07
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-01T04:30:17+00:00",
+        "token_first_seen": "2026-03-01T14:54:01.631000+00:00",
+        "age_minutes": 623.7,
+        "age_hours": 10.4
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.83
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    }
+  ]
 }
