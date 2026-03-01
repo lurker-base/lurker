@@ -1,8 +1,8 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-01T23:24:05.573000+00:00",
-    "generated_at": "2026-03-01T23:24:05.573000+00:00",
+    "updated_at": "2026-03-01T23:39:05.780000+00:00",
+    "generated_at": "2026-03-01T23:39:05.780000+00:00",
     "status": "ok",
     "count": 2,
     "thresholds": {
@@ -12,12 +12,10 @@
       "max_age_min": 10080
     },
     "risk_distribution": {
-      "low": 1,
-      "medium": 1
+      "low": 2
     },
     "rejected": {
-      "too_old": 1,
-      "low_volume": 1
+      "too_old": 1
     },
     "source": "ultra_launch_scanner"
   },
@@ -34,21 +32,21 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 13749.19,
-        "vol_5m_usd": 1241.48,
-        "vol_1h_usd": 6798.93,
-        "txns_5m": 19,
-        "price_usd": 1.701e-05
+        "liq_usd": 12459.59,
+        "vol_5m_usd": 899.4,
+        "vol_1h_usd": 9327.09,
+        "txns_5m": 8,
+        "price_usd": 1.474e-05
       },
       "timestamps": {
         "pair_created_at": "2026-03-01T23:16:13+00:00",
         "token_first_seen": "2026-03-01T23:24:05.566000+00:00",
-        "age_minutes": 7.9,
-        "age_hours": 0.13
+        "age_minutes": 22.9,
+        "age_hours": 0.38
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 1.0
+        "freshness": 0.99
       },
       "risks": [],
       "risk_level": "low",
@@ -74,26 +72,24 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 98178.13,
-        "vol_5m_usd": 7611.27,
-        "vol_1h_usd": 271604.65,
-        "txns_5m": 37,
-        "price_usd": 1.888e-05
+        "liq_usd": 93237.44,
+        "vol_5m_usd": 8710.54,
+        "vol_1h_usd": 264424.65,
+        "txns_5m": 38,
+        "price_usd": 1.712e-05
       },
       "timestamps": {
         "pair_created_at": "2026-03-01T21:46:45+00:00",
         "token_first_seen": "2026-03-01T22:14:04.045000+00:00",
-        "age_minutes": 97.3,
-        "age_hours": 1.62
+        "age_minutes": 112.3,
+        "age_hours": 1.87
       },
       "scores": {
         "cio_score": 100,
         "freshness": 0.97
       },
-      "risks": [
-        "dumping"
-      ],
-      "risk_level": "medium",
+      "risks": [],
+      "risk_level": "low",
       "source": "profiles",
       "status": "observing",
       "quality": {
