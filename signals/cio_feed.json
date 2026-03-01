@@ -1,21 +1,66 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-01T21:09:02.900000+00:00",
-    "generated_at": "2026-03-01T21:09:02.900000+00:00",
-    "status": "calm",
-    "count": 0,
+    "updated_at": "2026-03-01T21:24:03.736000+00:00",
+    "generated_at": "2026-03-01T21:24:03.736000+00:00",
+    "status": "ok",
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
       "min_tx_5m": 1,
       "max_age_min": 10080
     },
-    "risk_distribution": {},
+    "risk_distribution": {
+      "medium": 1
+    },
     "rejected": {
       "too_old": 2
     },
     "source": "ultra_launch_scanner"
   },
-  "candidates": []
+  "candidates": [
+    {
+      "token": {
+        "address": "0x5aea54ee0ce098e4df2ac58f675fe24cb67b1ba3",
+        "symbol": "RAFTOR",
+        "name": "RaftorFI"
+      },
+      "pair": {
+        "address": "0x0b91e3c44c9f6f7654f1920e7636eab142e6b600692cc1dbea80ac7014caed27",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 47227.5,
+        "vol_5m_usd": 3384.12,
+        "vol_1h_usd": 28003.07,
+        "txns_5m": 12,
+        "price_usd": 5.37e-07
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-01T19:44:19+00:00",
+        "token_first_seen": "2026-03-01T21:24:03.731000+00:00",
+        "age_minutes": 99.7,
+        "age_hours": 1.66
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.97
+      },
+      "risks": [
+        "dumping"
+      ],
+      "risk_level": "medium",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    }
+  ]
 }
