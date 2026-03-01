@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-01T22:39:04.491000+00:00",
-    "generated_at": "2026-03-01T22:39:04.491000+00:00",
+    "updated_at": "2026-03-01T22:54:04.728000+00:00",
+    "generated_at": "2026-03-01T22:54:04.728000+00:00",
     "status": "ok",
-    "count": 2,
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,10 +12,11 @@
       "max_age_min": 10080
     },
     "risk_distribution": {
-      "low": 2
+      "low": 1
     },
     "rejected": {
-      "too_old": 2
+      "too_old": 2,
+      "low_tx": 1
     },
     "source": "ultra_launch_scanner"
   },
@@ -32,21 +33,21 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 92168.17,
-        "vol_5m_usd": 14809.19,
-        "vol_1h_usd": 230097.26,
-        "txns_5m": 63,
-        "price_usd": 1.767e-05
+        "liq_usd": 108333.38,
+        "vol_5m_usd": 34187.55,
+        "vol_1h_usd": 273885.58,
+        "txns_5m": 81,
+        "price_usd": 2.299e-05
       },
       "timestamps": {
         "pair_created_at": "2026-03-01T21:46:45+00:00",
         "token_first_seen": "2026-03-01T22:14:04.045000+00:00",
-        "age_minutes": 52.3,
-        "age_hours": 0.87
+        "age_minutes": 67.3,
+        "age_hours": 1.12
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.99
+        "freshness": 0.98
       },
       "risks": [],
       "risk_level": "low",
@@ -58,46 +59,6 @@
         "has_socials": true,
         "has_website": false,
         "quality_score": 75
-      }
-    },
-    {
-      "token": {
-        "address": "0xddce43b4d3263e1f67c64233a152b5e852a8357e",
-        "symbol": "CLAWS",
-        "name": "CLAWS"
-      },
-      "pair": {
-        "address": "0xbd1f7191c61835c12009694c11bb1d2fd324d965dd3d275140f8af6bd47e5ea5",
-        "dex": "uniswap",
-        "quote": "ETH"
-      },
-      "metrics": {
-        "liq_usd": 21612.43,
-        "vol_5m_usd": 3.83,
-        "vol_1h_usd": 1822.37,
-        "txns_5m": 1,
-        "price_usd": 3.428e-05
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-01T19:38:19+00:00",
-        "token_first_seen": "2026-03-01T22:04:05.036000+00:00",
-        "age_minutes": 180.8,
-        "age_hours": 3.01
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.95
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
       }
     }
   ]
