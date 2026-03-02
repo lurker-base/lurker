@@ -1,8 +1,8 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-02T08:20:29.677000+00:00",
-    "generated_at": "2026-03-02T08:20:29.677000+00:00",
+    "updated_at": "2026-03-02T08:35:33.328000+00:00",
+    "generated_at": "2026-03-02T08:35:33.328000+00:00",
     "status": "ok",
     "count": 2,
     "thresholds": {
@@ -12,7 +12,8 @@
       "max_age_min": 10080
     },
     "risk_distribution": {
-      "low": 2
+      "medium": 1,
+      "low": 1
     },
     "rejected": {
       "too_old": 1
@@ -32,24 +33,26 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 100718.54,
-        "vol_5m_usd": 30855.59,
-        "vol_1h_usd": 412333.58,
-        "txns_5m": 130,
-        "price_usd": 1.741e-06
+        "liq_usd": 79115.36,
+        "vol_5m_usd": 20300.16,
+        "vol_1h_usd": 377788.9,
+        "txns_5m": 139,
+        "price_usd": 1.15e-06
       },
       "timestamps": {
         "pair_created_at": "2026-03-02T07:03:01+00:00",
         "token_first_seen": "2026-03-02T08:05:26.629000+00:00",
-        "age_minutes": 77.5,
-        "age_hours": 1.29
+        "age_minutes": 92.5,
+        "age_hours": 1.54
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.98
+        "freshness": 0.97
       },
-      "risks": [],
-      "risk_level": "low",
+      "risks": [
+        "dumping"
+      ],
+      "risk_level": "medium",
       "source": "profiles",
       "status": "observing",
       "quality": {
@@ -72,17 +75,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 100066.96,
-        "vol_5m_usd": 6347.86,
-        "vol_1h_usd": 197309.19,
-        "txns_5m": 25,
-        "price_usd": 2.042e-06
+        "liq_usd": 93335.7,
+        "vol_5m_usd": 15473.02,
+        "vol_1h_usd": 190942.83,
+        "txns_5m": 44,
+        "price_usd": 1.792e-06
       },
       "timestamps": {
         "pair_created_at": "2026-03-02T06:48:53+00:00",
         "token_first_seen": "2026-03-02T08:05:26.629000+00:00",
-        "age_minutes": 91.6,
-        "age_hours": 1.53
+        "age_minutes": 106.7,
+        "age_hours": 1.78
       },
       "scores": {
         "cio_score": 100,
