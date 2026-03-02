@@ -1,17 +1,40 @@
 {
-  "timestamp": "2026-03-02T17:09:01.942085+00:00",
+  "timestamp": "2026-03-02T17:22:24.486501+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xe36fecf4f764cdcfcb029382878cea4c092faba3",
+        "address": "0x89806d7c72ec64046fa0542c12a10f6007beaba3",
         "symbol": "AICO",
         "name": "AICO"
       },
       "metrics": {
-        "liq_usd": 22218.9682,
-        "vol_24h_usd": 4484.4688031064,
-        "txns_24h": 28,
+        "liq_usd": 30130.0104,
+        "vol_24h_usd": 23716.0957131593,
+        "txns_24h": 158,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.09374604944444444,
+      "detected_at": "2026-03-02T17:22:24.485783+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0xcbedf1c66cb51278284103f577fdc6e6fa5cab07",
+        "symbol": "KUDU",
+        "name": "KUDU"
+      },
+      "metrics": {
+        "liq_usd": 14287.6044,
+        "vol_24h_usd": 15496.5287723883,
+        "txns_24h": 132,
         "price_usd": 0
       },
       "risk": {
@@ -21,52 +44,8 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.05137259111111111,
-      "detected_at": "2026-03-02T17:09:01.941335+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0x5aea54ee0ce098e4df2ac58f675fe24cb67b1ba3",
-        "symbol": "RAFTOR",
-        "name": "RAFTOR"
-      },
-      "metrics": {
-        "liq_usd": 58357.5541,
-        "vol_24h_usd": 337587.940741482,
-        "txns_24h": 1870,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "low",
-        "factors": []
-      },
-      "score": 95,
-      "age_hours": 21.41192817888889,
-      "detected_at": "2026-03-02T17:09:01.941458+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0xb3323c4b273a71c2356f63b7a51cb1f1104438a1",
-        "symbol": "HYDR",
-        "name": "HYDR"
-      },
-      "metrics": {
-        "liq_usd": 17062.9658,
-        "vol_24h_usd": 1506.6422914376,
-        "txns_24h": 8,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "high",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 90,
-      "age_hours": 0.04526146222222222,
-      "detected_at": "2026-03-02T17:09:01.941282+00:00",
+      "age_hours": 0.07152381305555555,
+      "detected_at": "2026-03-02T17:22:24.485738+00:00",
       "source": "geckoterminal_v2"
     }
   ]
