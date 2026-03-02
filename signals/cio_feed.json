@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-02T23:12:52.007320+00:00",
+  "timestamp": "2026-03-02T23:34:17.152834+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x2c6e6928d875659c18ee5c9b249f48989d3f8ba3",
-        "symbol": "OpenPaw",
-        "name": "OpenPaw"
+        "address": "0x52d90b12a35f3b10f279a0e9e2d0c5f9cb5d1ba3",
+        "symbol": "VOIDCO",
+        "name": "VOIDCO"
       },
       "metrics": {
-        "liq_usd": 37557.4578,
-        "vol_24h_usd": 32833.4966804184,
-        "txns_24h": 94,
+        "liq_usd": 35229.9533,
+        "vol_24h_usd": 31179.8972670071,
+        "txns_24h": 61,
         "price_usd": 0
       },
       "risk": {
@@ -21,20 +21,20 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.06805722888888889,
-      "detected_at": "2026-03-02T23:12:52.006029+00:00",
+      "age_hours": 0.07170881611111111,
+      "detected_at": "2026-03-02T23:34:17.151753+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0xaa58817e1fffbfc978eaae0c20a214adc7777ba3",
-        "symbol": "eqctrl",
-        "name": "eqctrl"
+        "address": "0xdb17361acf2662d6834ea037212bef10899d8ba3",
+        "symbol": "OpenPaw",
+        "name": "OpenPaw"
       },
       "metrics": {
-        "liq_usd": 29884.3442,
-        "vol_24h_usd": 19746.9351970686,
-        "txns_24h": 135,
+        "liq_usd": 28728.6885,
+        "vol_24h_usd": 15704.8244301771,
+        "txns_24h": 111,
         "price_usd": 0
       },
       "risk": {
@@ -44,20 +44,20 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.08639057500000001,
-      "detected_at": "2026-03-02T23:12:52.006074+00:00",
+      "age_hours": 0.09393107694444444,
+      "detected_at": "2026-03-02T23:34:17.151883+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0x4c2ca5ac44e92f4520a4d31eddcf7f4997aac1fd",
-        "symbol": "OpenPaw",
-        "name": "OpenPaw"
+        "address": "0x90155ae4fb08abd95b48e7914a39aee55b166ba3",
+        "symbol": "GAMAL",
+        "name": "GAMAL"
       },
       "metrics": {
-        "liq_usd": 29496.3339,
-        "vol_24h_usd": 5840.0454701586,
-        "txns_24h": 20,
+        "liq_usd": 23736.726,
+        "vol_24h_usd": 6544.5869608359,
+        "txns_24h": 47,
         "price_usd": 0
       },
       "risk": {
@@ -67,43 +67,20 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.03527943055555555,
-      "detected_at": "2026-03-02T23:12:52.005959+00:00",
+      "age_hours": 0.07226438333333332,
+      "detected_at": "2026-03-02T23:34:17.151787+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0xc82051fddad359dbc1b1f2fa1d25a4ef2241bb07",
-        "symbol": "babyrot",
-        "name": "babyrot"
+        "address": "0x5e513fc5234e018f737ac65a8311afa12b93dba3",
+        "symbol": "Clawvatar",
+        "name": "Clawvatar"
       },
       "metrics": {
-        "liq_usd": 25553.5353,
-        "vol_24h_usd": 8130.5237006329,
-        "txns_24h": 65,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 95,
-      "age_hours": 0.052501664999999996,
-      "detected_at": "2026-03-02T23:12:52.006008+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0x75cd58167021515ec2d5fe1a4a32a758a3631ba3",
-        "symbol": "INTF",
-        "name": "INTF"
-      },
-      "metrics": {
-        "liq_usd": 21961.8926,
-        "vol_24h_usd": 2712.9501572725,
-        "txns_24h": 5,
+        "liq_usd": 46573.2486,
+        "vol_24h_usd": 2806.6696989977,
+        "txns_24h": 10,
         "price_usd": 0
       },
       "risk": {
@@ -113,20 +90,20 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.08250168055555555,
-      "detected_at": "2026-03-02T23:12:52.006056+00:00",
+      "age_hours": 0.07670883472222223,
+      "detected_at": "2026-03-02T23:34:17.151811+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0x5a7beece2612d9d368eebdd13df5a5b58279ab07",
-        "symbol": "OPENPAW",
-        "name": "OPENPAW"
+        "address": "0x92a54ee5e26016e5d4c7aa8ebb6db478fed20db9",
+        "symbol": "MOLI",
+        "name": "MOLI"
       },
       "metrics": {
-        "liq_usd": 12969.4199,
-        "vol_24h_usd": 2753.2811607991,
-        "txns_24h": 20,
+        "liq_usd": 19325.75,
+        "vol_24h_usd": 10309.9071090164,
+        "txns_24h": 39,
         "price_usd": 0
       },
       "risk": {
@@ -135,9 +112,9 @@
           "new_token"
         ]
       },
-      "score": 90,
-      "age_hours": 0.025834969444444442,
-      "detected_at": "2026-03-02T23:12:52.005906+00:00",
+      "score": 95,
+      "age_hours": 0.08059773222222222,
+      "detected_at": "2026-03-02T23:34:17.151843+00:00",
       "source": "geckoterminal_v2"
     }
   ]
