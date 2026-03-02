@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-02T13:35:01.315000+00:00",
-    "generated_at": "2026-03-02T13:35:01.315000+00:00",
+    "updated_at": "2026-03-02T13:50:05.922000+00:00",
+    "generated_at": "2026-03-02T13:50:05.922000+00:00",
     "status": "ok",
-    "count": 2,
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,7 +12,6 @@
       "max_age_min": 10080
     },
     "risk_distribution": {
-      "medium": 1,
       "low": 1
     },
     "rejected": {
@@ -33,59 +32,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 124540.71,
-        "vol_5m_usd": 37282.7,
-        "vol_1h_usd": 477800.61,
-        "txns_5m": 69,
-        "price_usd": 3.013e-05
+        "liq_usd": 119634.09,
+        "vol_5m_usd": 12955.39,
+        "vol_1h_usd": 465685.45,
+        "txns_5m": 29,
+        "price_usd": 2.798e-05
       },
       "timestamps": {
         "pair_created_at": "2026-03-02T12:09:41+00:00",
         "token_first_seen": "2026-03-02T12:28:25.187000+00:00",
-        "age_minutes": 85.3,
-        "age_hours": 1.42
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.98
-      },
-      "risks": [
-        "dumping"
-      ],
-      "risk_level": "medium",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": false,
-        "quality_score": 75
-      }
-    },
-    {
-      "token": {
-        "address": "0xd68a22794c854adb5210032dda5919ca3c091940",
-        "symbol": "FortClaw",
-        "name": "FortClaw"
-      },
-      "pair": {
-        "address": "0x2ccfe5c0a4c633e1211b7005e8afead97b2cbaa30690a33edcbbf0c4c7e2336f",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 116366.32,
-        "vol_5m_usd": 64709.86,
-        "vol_1h_usd": 799783.56,
-        "txns_5m": 148,
-        "price_usd": 2.312e-06
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-02T11:42:11+00:00",
-        "token_first_seen": "2026-03-02T12:04:37.462000+00:00",
-        "age_minutes": 112.8,
-        "age_hours": 1.88
+        "age_minutes": 100.4,
+        "age_hours": 1.67
       },
       "scores": {
         "cio_score": 100,
@@ -99,8 +56,8 @@
         "has_profile": true,
         "has_image": true,
         "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
+        "has_website": false,
+        "quality_score": 75
       }
     }
   ]
