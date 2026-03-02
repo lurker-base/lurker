@@ -1,63 +1,40 @@
 {
-  "timestamp": "2026-03-02T20:47:39.227582+00:00",
+  "timestamp": "2026-03-02T21:02:40.298495+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x5444537201b3fa1f26394fde53c666856060aa6c",
-        "symbol": "METAL",
-        "name": "METAL"
-      },
-      "metrics": {
-        "liq_usd": 22731.4522,
-        "vol_24h_usd": 2303.1540192738,
-        "txns_24h": 11,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "high",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 95,
-      "age_hours": 0.052840575277777774,
-      "detected_at": "2026-03-02T20:47:39.226087+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0xa0f6930f06ee32519ded73b634d66a0fa0819b07",
-        "symbol": "BEEP",
-        "name": "BEEP"
-      },
-      "metrics": {
-        "liq_usd": 26571.5706,
-        "vol_24h_usd": 2178.874416889,
-        "txns_24h": 9,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "high",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 95,
-      "age_hours": 0.07506281666666666,
-      "detected_at": "2026-03-02T20:47:39.226145+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0xfe1cc74038d58e4c4a2715735f3d2576f023ab07",
+        "address": "0xb3acd2de746239860f3481d0fb9959b1a33bbb07",
         "symbol": "GOOSE",
         "name": "GOOSE"
       },
       "metrics": {
-        "liq_usd": 17092.5064,
-        "vol_24h_usd": 18801.2334722748,
-        "txns_24h": 138,
+        "liq_usd": 26362.9403,
+        "vol_24h_usd": 13452.4022218476,
+        "txns_24h": 106,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.06702713888888889,
+      "detected_at": "2026-03-02T21:02:40.297706+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0xa53c29c1e379faf02c43f8c53263bd16c0dd8b07",
+        "symbol": "TOMY",
+        "name": "TOMY"
+      },
+      "metrics": {
+        "liq_usd": 36430.7145,
+        "vol_24h_usd": 3436.9552486729,
+        "txns_24h": 41,
         "price_usd": 0
       },
       "risk": {
@@ -67,8 +44,8 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.07895170916666668,
-      "detected_at": "2026-03-02T20:47:39.226165+00:00",
+      "age_hours": 0.05480490083333333,
+      "detected_at": "2026-03-02T21:02:40.297652+00:00",
       "source": "geckoterminal_v2"
     }
   ]
