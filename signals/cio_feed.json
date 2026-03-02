@@ -1,8 +1,8 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-02T08:50:36.853000+00:00",
-    "generated_at": "2026-03-02T08:50:36.853000+00:00",
+    "updated_at": "2026-03-02T09:05:40.593000+00:00",
+    "generated_at": "2026-03-02T09:05:40.593000+00:00",
     "status": "ok",
     "count": 2,
     "thresholds": {
@@ -12,8 +12,7 @@
       "max_age_min": 10080
     },
     "risk_distribution": {
-      "medium": 1,
-      "low": 1
+      "medium": 2
     },
     "rejected": {
       "too_old": 1
@@ -33,17 +32,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 85233.56,
-        "vol_5m_usd": 24398.83,
-        "vol_1h_usd": 279015.76,
-        "txns_5m": 127,
-        "price_usd": 1.283e-06
+        "liq_usd": 95297.55,
+        "vol_5m_usd": 12788.88,
+        "vol_1h_usd": 273467.45,
+        "txns_5m": 96,
+        "price_usd": 1.516e-06
       },
       "timestamps": {
         "pair_created_at": "2026-03-02T07:03:01+00:00",
         "token_first_seen": "2026-03-02T08:05:26.629000+00:00",
-        "age_minutes": 107.6,
-        "age_hours": 1.79
+        "age_minutes": 122.7,
+        "age_hours": 2.04
       },
       "scores": {
         "cio_score": 100,
@@ -75,24 +74,26 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 91334.11,
-        "vol_5m_usd": 9749.29,
-        "vol_1h_usd": 179698.77,
-        "txns_5m": 27,
-        "price_usd": 1.712e-06
+        "liq_usd": 93335.05,
+        "vol_5m_usd": 9095.57,
+        "vol_1h_usd": 140949.75,
+        "txns_5m": 31,
+        "price_usd": 1.762e-06
       },
       "timestamps": {
         "pair_created_at": "2026-03-02T06:48:53+00:00",
         "token_first_seen": "2026-03-02T08:05:26.629000+00:00",
-        "age_minutes": 121.7,
-        "age_hours": 2.03
+        "age_minutes": 136.8,
+        "age_hours": 2.28
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.97
+        "freshness": 0.96
       },
-      "risks": [],
-      "risk_level": "low",
+      "risks": [
+        "dumping"
+      ],
+      "risk_level": "medium",
       "source": "profiles",
       "status": "observing",
       "quality": {
