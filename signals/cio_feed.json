@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-02T16:36:27.303000+00:00",
-    "generated_at": "2026-03-02T16:36:27.303000+00:00",
+    "updated_at": "2026-03-02T16:51:31.235000+00:00",
+    "generated_at": "2026-03-02T16:51:31.235000+00:00",
     "status": "ok",
-    "count": 1,
+    "count": 2,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,7 +12,8 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
-      "low": 1
+      "low": 1,
+      "medium": 1
     },
     "rejected": {
       "too_old": 1
@@ -20,6 +21,46 @@
     "source": "ultra_launch_scanner"
   },
   "candidates": [
+    {
+      "token": {
+        "address": "0x49bfa462ef61aea99eed375e35784dfd1360aba3",
+        "symbol": "AICO",
+        "name": "Aicolabs"
+      },
+      "pair": {
+        "address": "0xaeea9650f26ebef0e2b21e6baac37b1a0de187bfd37dcd964bf65aaf05452cbe",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 68623.15,
+        "vol_5m_usd": 14818.14,
+        "vol_1h_usd": 449015.28,
+        "txns_5m": 79,
+        "price_usd": 8.663e-07
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-02T16:09:33+00:00",
+        "token_first_seen": "2026-03-02T16:44:29.903000+00:00",
+        "age_minutes": 42.0,
+        "age_hours": 0.7
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.99
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    },
     {
       "token": {
         "address": "0x2cda49fb68238a4bdc6a2d511911b13c06b7cb07",
@@ -32,24 +73,26 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 70698.4,
-        "vol_5m_usd": 1797.81,
-        "vol_1h_usd": 20974.93,
-        "txns_5m": 4,
-        "price_usd": 7.268e-07
+        "liq_usd": 71271.1,
+        "vol_5m_usd": 13.82,
+        "vol_1h_usd": 8758.37,
+        "txns_5m": 1,
+        "price_usd": 7.335e-07
       },
       "timestamps": {
         "pair_created_at": "2026-03-02T13:47:43+00:00",
         "token_first_seen": "2026-03-02T15:50:32.194000+00:00",
-        "age_minutes": 168.7,
-        "age_hours": 2.81
+        "age_minutes": 183.8,
+        "age_hours": 3.06
       },
       "scores": {
         "cio_score": 100,
         "freshness": 0.95
       },
-      "risks": [],
-      "risk_level": "low",
+      "risks": [
+        "dumping"
+      ],
+      "risk_level": "medium",
       "source": "profiles",
       "status": "observing",
       "quality": {
