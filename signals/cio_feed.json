@@ -1,40 +1,17 @@
 {
-  "timestamp": "2026-03-02T22:17:47.225736+00:00",
+  "timestamp": "2026-03-02T22:32:48.686376+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xda89285431e1bd7d8fa884a72c689d1ed83bdb07",
-        "symbol": "babyrot",
-        "name": "babyrot"
+        "address": "0xf869e92afff5cd6509a0a971ccd1105e646a6ba3",
+        "symbol": "GAMAL",
+        "name": "GAMAL"
       },
       "metrics": {
-        "liq_usd": 20949.3796,
-        "vol_24h_usd": 2592.8275391388,
-        "txns_24h": 10,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "high",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 95,
-      "age_hours": 0.020617906944444445,
-      "detected_at": "2026-03-02T22:17:47.224483+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0x22e4a1a7300916fe99675e430ca597bfb453ab07",
-        "symbol": "ANPA",
-        "name": "ANPA"
-      },
-      "metrics": {
-        "liq_usd": 14693.8387,
-        "vol_24h_usd": 16243.5223347419,
-        "txns_24h": 125,
+        "liq_usd": 23000.6174,
+        "vol_24h_usd": 4162.0325473485,
+        "txns_24h": 29,
         "price_usd": 0
       },
       "risk": {
@@ -44,20 +21,89 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.06895132027777777,
-      "detected_at": "2026-03-02T22:17:47.224765+00:00",
+      "age_hours": 0.03824581361111112,
+      "detected_at": "2026-03-02T22:32:48.684945+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0x8ff8cc93e0138b541c94a9706f78a0bf3e3147be",
-        "symbol": "CLAWNCH",
-        "name": "CLAWNCH"
+        "address": "0x6ecc3007b4a0e0e549b1c4acb7205743747fdba3",
+        "symbol": "TRMX",
+        "name": "TRMX"
       },
       "metrics": {
-        "liq_usd": 6911.5963,
-        "vol_24h_usd": 1651.6903443896,
-        "txns_24h": 32,
+        "liq_usd": 45664.3484,
+        "vol_24h_usd": 2229.4759727384,
+        "txns_24h": 5,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "high",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 95,
+      "age_hours": 0.051579171944444446,
+      "detected_at": "2026-03-02T22:32:48.685032+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x6003efddb3c18f597889a906cfaf554f125eeba3",
+        "symbol": "McClaw",
+        "name": "McClaw"
+      },
+      "metrics": {
+        "liq_usd": 27563.4266,
+        "vol_24h_usd": 8317.0929335661,
+        "txns_24h": 58,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 95,
+      "age_hours": 0.057690289444444445,
+      "detected_at": "2026-03-02T22:32:48.685047+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0xbe843fa8b187990b35988aa68f6987cc0d93c6da",
+        "symbol": "CYCO",
+        "name": "CYCO"
+      },
+      "metrics": {
+        "liq_usd": 18926.7906,
+        "vol_24h_usd": 10202.3975353938,
+        "txns_24h": 37,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 95,
+      "age_hours": 0.07269029972222221,
+      "detected_at": "2026-03-02T22:32:48.685084+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0xd0ab240b401929b1ca203ac066394942541feba3",
+        "symbol": "McClaw",
+        "name": "McClaw"
+      },
+      "metrics": {
+        "liq_usd": 6525.9139,
+        "vol_24h_usd": 1333.5613446597,
+        "txns_24h": 18,
         "price_usd": 0
       },
       "risk": {
@@ -67,8 +113,8 @@
         ]
       },
       "score": 80,
-      "age_hours": 0.051729085277777774,
-      "detected_at": "2026-03-02T22:17:47.224714+00:00",
+      "age_hours": 0.04380138611111111,
+      "detected_at": "2026-03-02T22:32:48.684999+00:00",
       "source": "geckoterminal_v2"
     }
   ]
