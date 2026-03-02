@@ -1,40 +1,17 @@
 {
-  "timestamp": "2026-03-02T19:32:33.411385+00:00",
+  "timestamp": "2026-03-02T19:47:34.518295+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xc8bb64296c45ee6c372acc17e59f75f52c561140",
-        "symbol": "WORK",
-        "name": "WORK"
+        "address": "0xcdef8265b0f3f23004f679580e57a3014616cb07",
+        "symbol": "KellyClaud",
+        "name": "KellyClaud"
       },
       "metrics": {
-        "liq_usd": 133055.2286,
-        "vol_24h_usd": 1228.56468585,
-        "txns_24h": 14,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "high",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.0978916075,
-      "detected_at": "2026-03-02T19:32:33.409794+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0xe4ad482691759a5d60e2062243c8117425f87ba3",
-        "symbol": "McClaw",
-        "name": "McClaw"
-      },
-      "metrics": {
-        "liq_usd": 29697.2069,
-        "vol_24h_usd": 23895.7110676219,
-        "txns_24h": 175,
+        "liq_usd": 27672.4465,
+        "vol_24h_usd": 13600.7440655699,
+        "txns_24h": 83,
         "price_usd": 0
       },
       "risk": {
@@ -44,20 +21,66 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.12400272944444445,
-      "detected_at": "2026-03-02T19:32:33.409838+00:00",
+      "age_hours": 0.06375481611111111,
+      "detected_at": "2026-03-02T19:47:34.517345+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0x8ffd6b9fba75c3760e1d45056693f764bb8f3724",
-        "symbol": "LEVYCLAW",
-        "name": "LEVYCLAW"
+        "address": "0xe5c7d65d9762735c021188cc50d9e820e2a9bb07",
+        "symbol": "Machi",
+        "name": "Machi"
       },
       "metrics": {
-        "liq_usd": 23614.3697,
-        "vol_24h_usd": 6997.6515149807,
-        "txns_24h": 53,
+        "liq_usd": 32220.3863,
+        "vol_24h_usd": 28795.4946547433,
+        "txns_24h": 197,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.11597706138888889,
+      "detected_at": "2026-03-02T19:47:34.517426+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x91717f3b7a81930c6a3378f84b43fc1da948aba3",
+        "symbol": "Machi",
+        "name": "Machi"
+      },
+      "metrics": {
+        "liq_usd": 23214.3431,
+        "vol_24h_usd": 2478.4707911085,
+        "txns_24h": 11,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "high",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 95,
+      "age_hours": 0.053754801944444444,
+      "detected_at": "2026-03-02T19:47:34.517301+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x29c0aa7daaa7a0bd0ec2583d41a23472a2f7ab07",
+        "symbol": "Machi",
+        "name": "Machi"
+      },
+      "metrics": {
+        "liq_usd": 14856.1063,
+        "vol_24h_usd": 23822.2449061457,
+        "txns_24h": 197,
         "price_usd": 0
       },
       "risk": {
@@ -67,8 +90,54 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.06733603527777778,
-      "detected_at": "2026-03-02T19:32:33.409741+00:00",
+      "age_hours": 0.10208816861111111,
+      "detected_at": "2026-03-02T19:47:34.517412+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0xa1674511ee98ed0f2ff39f5498d2d2069f9bdb07",
+        "symbol": "VISUALL",
+        "name": "VISUALL"
+      },
+      "metrics": {
+        "liq_usd": 40220.6414,
+        "vol_24h_usd": 2853.0307006711,
+        "txns_24h": 31,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 95,
+      "age_hours": 0.11986595416666666,
+      "detected_at": "2026-03-02T19:47:34.517439+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x2a3a60c52cf930abfe24a90afa143c85858fcb07",
+        "symbol": "KellyClaud",
+        "name": "KellyClaud"
+      },
+      "metrics": {
+        "liq_usd": 7146.5774,
+        "vol_24h_usd": 2770.0199376926,
+        "txns_24h": 53,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "high",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 80,
+      "age_hours": 0.08708816027777778,
+      "detected_at": "2026-03-02T19:47:34.517389+00:00",
       "source": "geckoterminal_v2"
     }
   ]
