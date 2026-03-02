@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-02T23:34:17.152834+00:00",
+  "timestamp": "2026-03-02T23:49:18.432400+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x52d90b12a35f3b10f279a0e9e2d0c5f9cb5d1ba3",
+        "address": "0x96a58c0765fe428002db9a061719dae6fa1d1ba3",
         "symbol": "VOIDCO",
         "name": "VOIDCO"
       },
       "metrics": {
-        "liq_usd": 35229.9533,
-        "vol_24h_usd": 31179.8972670071,
-        "txns_24h": 61,
+        "liq_usd": 28374.8505,
+        "vol_24h_usd": 15598.865187111,
+        "txns_24h": 105,
         "price_usd": 0
       },
       "risk": {
@@ -21,66 +21,20 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.07170881611111111,
-      "detected_at": "2026-03-02T23:34:17.151753+00:00",
+      "age_hours": 0.0765071225,
+      "detected_at": "2026-03-02T23:49:18.425645+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0xdb17361acf2662d6834ea037212bef10899d8ba3",
-        "symbol": "OpenPaw",
-        "name": "OpenPaw"
+        "address": "0xf3c814bb32448a9832c82ef3d53677be86a8bb07",
+        "symbol": "GOAT",
+        "name": "GOAT"
       },
       "metrics": {
-        "liq_usd": 28728.6885,
-        "vol_24h_usd": 15704.8244301771,
-        "txns_24h": 111,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.09393107694444444,
-      "detected_at": "2026-03-02T23:34:17.151883+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0x90155ae4fb08abd95b48e7914a39aee55b166ba3",
-        "symbol": "GAMAL",
-        "name": "GAMAL"
-      },
-      "metrics": {
-        "liq_usd": 23736.726,
-        "vol_24h_usd": 6544.5869608359,
-        "txns_24h": 47,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 95,
-      "age_hours": 0.07226438333333332,
-      "detected_at": "2026-03-02T23:34:17.151787+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0x5e513fc5234e018f737ac65a8311afa12b93dba3",
-        "symbol": "Clawvatar",
-        "name": "Clawvatar"
-      },
-      "metrics": {
-        "liq_usd": 46573.2486,
-        "vol_24h_usd": 2806.6696989977,
-        "txns_24h": 10,
+        "liq_usd": 20272.5027,
+        "vol_24h_usd": 1437.7656998862,
+        "txns_24h": 7,
         "price_usd": 0
       },
       "risk": {
@@ -90,20 +44,43 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.07670883472222223,
-      "detected_at": "2026-03-02T23:34:17.151811+00:00",
+      "age_hours": 0.03428486027777777,
+      "detected_at": "2026-03-02T23:49:18.425513+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0x92a54ee5e26016e5d4c7aa8ebb6db478fed20db9",
-        "symbol": "MOLI",
-        "name": "MOLI"
+        "address": "0xbc46a3f4b82b47ecc378e5212d7b692f3189eba3",
+        "symbol": "OODA",
+        "name": "OODA"
       },
       "metrics": {
-        "liq_usd": 19325.75,
-        "vol_24h_usd": 10309.9071090164,
-        "txns_24h": 39,
+        "liq_usd": 25722.0266,
+        "vol_24h_usd": 8939.0219389362,
+        "txns_24h": 17,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "high",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 95,
+      "age_hours": 0.05150710222222222,
+      "detected_at": "2026-03-02T23:49:18.425576+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x5894f66d3e7de820c367a440bda0182f44a38ba3",
+        "symbol": "OpenPaw",
+        "name": "OpenPaw"
+      },
+      "metrics": {
+        "liq_usd": 27387.4719,
+        "vol_24h_usd": 7930.7444613252,
+        "txns_24h": 63,
         "price_usd": 0
       },
       "risk": {
@@ -113,8 +90,31 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.08059773222222222,
-      "detected_at": "2026-03-02T23:34:17.151843+00:00",
+      "age_hours": 0.062062665833333336,
+      "detected_at": "2026-03-02T23:49:18.425613+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0xaa11112ea040e46ba37afb851b05aa6394b01ba3",
+        "symbol": "VOIDCO",
+        "name": "VOIDCO"
+      },
+      "metrics": {
+        "liq_usd": 7897.6826,
+        "vol_24h_usd": 2822.4125581625,
+        "txns_24h": 47,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "high",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 80,
+      "age_hours": 0.07872934777777778,
+      "detected_at": "2026-03-02T23:49:18.425655+00:00",
       "source": "geckoterminal_v2"
     }
   ]
