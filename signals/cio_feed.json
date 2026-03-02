@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-02T21:47:45.244262+00:00",
+  "timestamp": "2026-03-02T22:02:46.221002+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x6dfed17f90d7a900dd4e2368c67a54c04e9e5ba3",
-        "symbol": "ClawCredit",
-        "name": "ClawCredit"
+        "address": "0x51f9b99f036a567312551d049e3ac513cc94db07",
+        "symbol": "horse",
+        "name": "horse"
       },
       "metrics": {
-        "liq_usd": 29044.4482,
-        "vol_24h_usd": 21963.9089163934,
-        "txns_24h": 35,
+        "liq_usd": 25743.0132,
+        "vol_24h_usd": 10950.2341444331,
+        "txns_24h": 81,
         "price_usd": 0
       },
       "risk": {
@@ -21,20 +21,20 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.03340076611111111,
-      "detected_at": "2026-03-02T21:47:45.242772+00:00",
+      "age_hours": 0.06422778388888889,
+      "detected_at": "2026-03-02T22:02:46.220028+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0xdfdfa82d5a1140035150945ea321cc90ca04bb07",
-        "symbol": "Tumbili",
-        "name": "Tumbili"
+        "address": "0xc855c0b9ecb022d417e77edbc75fd18843959ba3",
+        "symbol": "auto gener",
+        "name": "auto gener"
       },
       "metrics": {
-        "liq_usd": 26800.5937,
-        "vol_24h_usd": 12302.661015816,
-        "txns_24h": 82,
+        "liq_usd": 31919.8158,
+        "vol_24h_usd": 22411.7276977757,
+        "txns_24h": 169,
         "price_usd": 0
       },
       "risk": {
@@ -44,20 +44,20 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.06284524500000001,
-      "detected_at": "2026-03-02T21:47:45.242901+00:00",
+      "age_hours": 0.10978335361111112,
+      "detected_at": "2026-03-02T22:02:46.220083+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0x03faa57cbe418e837fc5596c4dd08b9d965f3724",
-        "symbol": "LEVYCLAW",
-        "name": "LEVYCLAW"
+        "address": "0x50e2f10aa7668dfc66893a4ea7a5957457accb07",
+        "symbol": "McClaw",
+        "name": "McClaw"
       },
       "metrics": {
-        "liq_usd": 22669.7144,
-        "vol_24h_usd": 8041.9781958229,
-        "txns_24h": 47,
+        "liq_usd": 21337.7852,
+        "vol_24h_usd": 4230.2041612943,
+        "txns_24h": 30,
         "price_usd": 0
       },
       "risk": {
@@ -67,8 +67,8 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.04840079,
-      "detected_at": "2026-03-02T21:47:45.242850+00:00",
+      "age_hours": 0.05200555111111112,
+      "detected_at": "2026-03-02T22:02:46.219995+00:00",
       "source": "geckoterminal_v2"
     }
   ]
