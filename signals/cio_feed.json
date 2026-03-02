@@ -1,67 +1,22 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-02T00:54:07.184000+00:00",
-    "generated_at": "2026-03-02T00:54:07.184000+00:00",
-    "status": "ok",
-    "count": 1,
+    "updated_at": "2026-03-02T01:09:07.676000+00:00",
+    "generated_at": "2026-03-02T01:09:07.676000+00:00",
+    "status": "calm",
+    "count": 0,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
       "min_tx_5m": 1,
       "max_age_min": 10080
     },
-    "risk_distribution": {
-      "medium": 1
-    },
+    "risk_distribution": {},
     "rejected": {
       "too_old": 2,
-      "low_tx": 1
+      "low_tx": 2
     },
     "source": "ultra_launch_scanner"
   },
-  "candidates": [
-    {
-      "token": {
-        "address": "0xb1b233bbbf3bb40bc1e19c5b1358073dfeaaa575",
-        "symbol": "PBOT",
-        "name": "Polymarket Trading Bot"
-      },
-      "pair": {
-        "address": "0xc83658dc278c722289e155f12ab8195a672603a2",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 10754.02,
-        "vol_5m_usd": 775.88,
-        "vol_1h_usd": 1789.02,
-        "txns_5m": 11,
-        "price_usd": 1.195e-05
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-01T23:16:13+00:00",
-        "token_first_seen": "2026-03-01T23:24:05.566000+00:00",
-        "age_minutes": 97.9,
-        "age_hours": 1.63
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.97
-      },
-      "risks": [
-        "dumping"
-      ],
-      "risk_level": "medium",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    }
-  ]
+  "candidates": []
 }
