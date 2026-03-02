@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-02T18:07:27.458034+00:00",
+  "timestamp": "2026-03-02T18:22:28.279855+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xd0b3838910fd089d4b71cd5c4ef01b89e4bebb07",
-        "symbol": "Maina-chan",
-        "name": "Maina-chan"
+        "address": "0x9bd28e88e41feed632c823097d448c42e73cbb07",
+        "symbol": "Wally",
+        "name": "Wally"
       },
       "metrics": {
-        "liq_usd": 28800.5671,
-        "vol_24h_usd": 15054.0291254037,
-        "txns_24h": 100,
+        "liq_usd": 22562.364,
+        "vol_24h_usd": 4182.9961583358,
+        "txns_24h": 36,
         "price_usd": 0
       },
       "risk": {
@@ -20,32 +20,78 @@
           "new_token"
         ]
       },
-      "score": 100,
-      "age_hours": 0.09790466138888888,
-      "detected_at": "2026-03-02T18:07:27.456791+00:00",
+      "score": 95,
+      "age_hours": 0.0642441575,
+      "detected_at": "2026-03-02T18:22:28.278983+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0x901ff2de4a3c4e93f654497515af98f91678cb07",
-        "symbol": "KellyClaud",
-        "name": "KellyClaud"
+        "address": "0xd6fed8e479be52882cb7a20ba077da411d31aba3",
+        "symbol": "AICO",
+        "name": "AICO"
       },
       "metrics": {
-        "liq_usd": 7861.4197,
-        "vol_24h_usd": 4052.3163163015,
+        "liq_usd": 23295.8265,
+        "vol_24h_usd": 6942.6202020012,
         "txns_24h": 57,
         "price_usd": 0
       },
       "risk": {
-        "level": "high",
+        "level": "medium",
         "factors": [
           "new_token"
         ]
       },
-      "score": 80,
-      "age_hours": 0.11734911861111111,
-      "detected_at": "2026-03-02T18:07:27.456833+00:00",
+      "score": 95,
+      "age_hours": 0.07313306916666666,
+      "detected_at": "2026-03-02T18:22:28.279062+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0xaa83c2432e44e5b2b5c2251d575073c5639bab07",
+        "symbol": "gwark",
+        "name": "gwark"
+      },
+      "metrics": {
+        "liq_usd": 16162.0137,
+        "vol_24h_usd": 16429.7274768739,
+        "txns_24h": 142,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 95,
+      "age_hours": 0.0970219688888889,
+      "detected_at": "2026-03-02T18:22:28.279095+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x61bf42bc37c286659afd2af026e9af3e90809e58",
+        "symbol": "CHVE",
+        "name": "CHVE"
+      },
+      "metrics": {
+        "liq_usd": 17654.3708,
+        "vol_24h_usd": 6800.7944097614,
+        "txns_24h": 26,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 90,
+      "age_hours": 0.07035528611111111,
+      "detected_at": "2026-03-02T18:22:28.279038+00:00",
       "source": "geckoterminal_v2"
     }
   ]
