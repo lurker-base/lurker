@@ -1,67 +1,21 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-02T14:36:00.217000+00:00",
-    "generated_at": "2026-03-02T14:36:00.217000+00:00",
-    "status": "ok",
-    "count": 1,
+    "updated_at": "2026-03-02T14:51:04.006000+00:00",
+    "generated_at": "2026-03-02T14:51:04.006000+00:00",
+    "status": "calm",
+    "count": 0,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
       "min_tx_5m": 1,
       "max_age_min": 43200
     },
-    "risk_distribution": {
-      "medium": 1
-    },
+    "risk_distribution": {},
     "rejected": {
-      "too_old": 1,
-      "low_tx": 1
+      "too_old": 1
     },
     "source": "ultra_launch_scanner"
   },
-  "candidates": [
-    {
-      "token": {
-        "address": "0x743d22706e019971c96ae602c9cd025fc8c6fe2c",
-        "symbol": "CON+",
-        "name": "ConAudits+"
-      },
-      "pair": {
-        "address": "0xf113cd92182ca6408dba032b9ed6b75868e0eb52768ece5922aa8ac4e90f65c7",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 118716.69,
-        "vol_5m_usd": 4595.16,
-        "vol_1h_usd": 128512.65,
-        "txns_5m": 16,
-        "price_usd": 2.698e-05
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-02T12:09:41+00:00",
-        "token_first_seen": "2026-03-02T12:28:25.187000+00:00",
-        "age_minutes": 146.3,
-        "age_hours": 2.44
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.96
-      },
-      "risks": [
-        "dumping"
-      ],
-      "risk_level": "medium",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": false,
-        "quality_score": 75
-      }
-    }
-  ]
+  "candidates": []
 }
