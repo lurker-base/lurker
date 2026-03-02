@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-02T21:32:43.723389+00:00",
+  "timestamp": "2026-03-02T21:47:45.244262+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x90cfd51da09a8beb5fed817d35da06187f025b07",
-        "symbol": "tt",
-        "name": "tt"
+        "address": "0x6dfed17f90d7a900dd4e2368c67a54c04e9e5ba3",
+        "symbol": "ClawCredit",
+        "name": "ClawCredit"
       },
       "metrics": {
-        "liq_usd": 29362.8818,
-        "vol_24h_usd": 11855.7168489733,
-        "txns_24h": 89,
+        "liq_usd": 29044.4482,
+        "vol_24h_usd": 21963.9089163934,
+        "txns_24h": 35,
         "price_usd": 0
       },
       "risk": {
@@ -21,20 +21,43 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.09297848388888888,
-      "detected_at": "2026-03-02T21:32:43.722547+00:00",
+      "age_hours": 0.03340076611111111,
+      "detected_at": "2026-03-02T21:47:45.242772+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0x3209be2ed5bbe7159c6b9086122a77981ce2bb07",
-        "symbol": "GOOSE",
-        "name": "GOOSE"
+        "address": "0xdfdfa82d5a1140035150945ea321cc90ca04bb07",
+        "symbol": "Tumbili",
+        "name": "Tumbili"
       },
       "metrics": {
-        "liq_usd": 23647.2538,
-        "vol_24h_usd": 3707.2545503586,
-        "txns_24h": 25,
+        "liq_usd": 26800.5937,
+        "vol_24h_usd": 12302.661015816,
+        "txns_24h": 82,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.06284524500000001,
+      "detected_at": "2026-03-02T21:47:45.242901+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x03faa57cbe418e837fc5596c4dd08b9d965f3724",
+        "symbol": "LEVYCLAW",
+        "name": "LEVYCLAW"
+      },
+      "metrics": {
+        "liq_usd": 22669.7144,
+        "vol_24h_usd": 8041.9781958229,
+        "txns_24h": 47,
         "price_usd": 0
       },
       "risk": {
@@ -44,31 +67,8 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.06686735722222223,
-      "detected_at": "2026-03-02T21:32:43.722498+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0x4cb348318a1755df0f9088ba68cd233085575b07",
-        "symbol": "WINDOWS",
-        "name": "WINDOWS"
-      },
-      "metrics": {
-        "liq_usd": 20108.2553,
-        "vol_24h_usd": 1498.5406073649,
-        "txns_24h": 60,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 95,
-      "age_hours": 0.11686738083333334,
-      "detected_at": "2026-03-02T21:32:43.722582+00:00",
+      "age_hours": 0.04840079,
+      "detected_at": "2026-03-02T21:47:45.242850+00:00",
       "source": "geckoterminal_v2"
     }
   ]
