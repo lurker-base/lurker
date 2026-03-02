@@ -1,63 +1,40 @@
 {
-  "timestamp": "2026-03-02T22:02:46.221002+00:00",
+  "timestamp": "2026-03-02T22:17:47.225736+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x51f9b99f036a567312551d049e3ac513cc94db07",
-        "symbol": "horse",
-        "name": "horse"
+        "address": "0xda89285431e1bd7d8fa884a72c689d1ed83bdb07",
+        "symbol": "babyrot",
+        "name": "babyrot"
       },
       "metrics": {
-        "liq_usd": 25743.0132,
-        "vol_24h_usd": 10950.2341444331,
-        "txns_24h": 81,
+        "liq_usd": 20949.3796,
+        "vol_24h_usd": 2592.8275391388,
+        "txns_24h": 10,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "high",
         "factors": [
           "new_token"
         ]
       },
-      "score": 100,
-      "age_hours": 0.06422778388888889,
-      "detected_at": "2026-03-02T22:02:46.220028+00:00",
+      "score": 95,
+      "age_hours": 0.020617906944444445,
+      "detected_at": "2026-03-02T22:17:47.224483+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0xc855c0b9ecb022d417e77edbc75fd18843959ba3",
-        "symbol": "auto gener",
-        "name": "auto gener"
+        "address": "0x22e4a1a7300916fe99675e430ca597bfb453ab07",
+        "symbol": "ANPA",
+        "name": "ANPA"
       },
       "metrics": {
-        "liq_usd": 31919.8158,
-        "vol_24h_usd": 22411.7276977757,
-        "txns_24h": 169,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.10978335361111112,
-      "detected_at": "2026-03-02T22:02:46.220083+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0x50e2f10aa7668dfc66893a4ea7a5957457accb07",
-        "symbol": "McClaw",
-        "name": "McClaw"
-      },
-      "metrics": {
-        "liq_usd": 21337.7852,
-        "vol_24h_usd": 4230.2041612943,
-        "txns_24h": 30,
+        "liq_usd": 14693.8387,
+        "vol_24h_usd": 16243.5223347419,
+        "txns_24h": 125,
         "price_usd": 0
       },
       "risk": {
@@ -67,8 +44,31 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.05200555111111112,
-      "detected_at": "2026-03-02T22:02:46.219995+00:00",
+      "age_hours": 0.06895132027777777,
+      "detected_at": "2026-03-02T22:17:47.224765+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x8ff8cc93e0138b541c94a9706f78a0bf3e3147be",
+        "symbol": "CLAWNCH",
+        "name": "CLAWNCH"
+      },
+      "metrics": {
+        "liq_usd": 6911.5963,
+        "vol_24h_usd": 1651.6903443896,
+        "txns_24h": 32,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "high",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 80,
+      "age_hours": 0.051729085277777774,
+      "detected_at": "2026-03-02T22:17:47.224714+00:00",
       "source": "geckoterminal_v2"
     }
   ]
