@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-02T17:22:24.486501+00:00",
+  "timestamp": "2026-03-02T17:37:25.702413+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x89806d7c72ec64046fa0542c12a10f6007beaba3",
-        "symbol": "AICO",
-        "name": "AICO"
+        "address": "0x949af3e6438a4c733307f675097bd995813d66a2",
+        "symbol": "SEED",
+        "name": "SEED"
       },
       "metrics": {
-        "liq_usd": 30130.0104,
-        "vol_24h_usd": 23716.0957131593,
-        "txns_24h": 158,
+        "liq_usd": 21876.8711,
+        "vol_24h_usd": 60595.4940476783,
+        "txns_24h": 80,
         "price_usd": 0
       },
       "risk": {
@@ -21,20 +21,66 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.09374604944444444,
-      "detected_at": "2026-03-02T17:22:24.485783+00:00",
+      "age_hours": 0.07463933805555556,
+      "detected_at": "2026-03-02T17:37:25.701622+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0xcbedf1c66cb51278284103f577fdc6e6fa5cab07",
-        "symbol": "KUDU",
-        "name": "KUDU"
+        "address": "0x8a7936ab73de58b827be6b17113fedf4298dcb07",
+        "symbol": "KellyClaud",
+        "name": "KellyClaud"
       },
       "metrics": {
-        "liq_usd": 14287.6044,
-        "vol_24h_usd": 15496.5287723883,
-        "txns_24h": 132,
+        "liq_usd": 28108.7838,
+        "vol_24h_usd": 15911.0669194418,
+        "txns_24h": 123,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.08352823055555557,
+      "detected_at": "2026-03-02T17:37:25.701634+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x9b635ec4ff8f42577a398d5278050c0dcec34756",
+        "symbol": "SEED",
+        "name": "SEED"
+      },
+      "metrics": {
+        "liq_usd": 43170.3085,
+        "vol_24h_usd": 159334.140118404,
+        "txns_24h": 428,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.10991712527777779,
+      "detected_at": "2026-03-02T17:37:25.701655+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x780bcd232d75d42872b66b0cc49d4bb8ada6eba3",
+        "symbol": "Clashly",
+        "name": "Clashly"
+      },
+      "metrics": {
+        "liq_usd": 22604.7469,
+        "vol_24h_usd": 7899.9642006196,
+        "txns_24h": 26,
         "price_usd": 0
       },
       "risk": {
@@ -44,8 +90,31 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.07152381305555555,
-      "detected_at": "2026-03-02T17:22:24.485738+00:00",
+      "age_hours": 0.06519488333333334,
+      "detected_at": "2026-03-02T17:37:25.701593+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x953d1afdefff99a1bbe7c848f00f4a8b0e7835d1",
+        "symbol": "ELCA",
+        "name": "ELCA"
+      },
+      "metrics": {
+        "liq_usd": 17777.3859,
+        "vol_24h_usd": 1808.6099449494,
+        "txns_24h": 6,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "high",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 90,
+      "age_hours": 0.03408375583333333,
+      "detected_at": "2026-03-02T17:37:25.701534+00:00",
       "source": "geckoterminal_v2"
     }
   ]
