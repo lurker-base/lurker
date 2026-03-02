@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-02T17:52:26.548907+00:00",
+  "timestamp": "2026-03-02T18:07:27.458034+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x8e7b311e513971354d52a63ddbcc356497f1db07",
+        "address": "0xd0b3838910fd089d4b71cd5c4ef01b89e4bebb07",
         "symbol": "Maina-chan",
         "name": "Maina-chan"
       },
       "metrics": {
-        "liq_usd": 23133.0518,
-        "vol_24h_usd": 27244.7328560796,
-        "txns_24h": 147,
+        "liq_usd": 28800.5671,
+        "vol_24h_usd": 15054.0291254037,
+        "txns_24h": 100,
         "price_usd": 0
       },
       "risk": {
@@ -21,43 +21,20 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.08931885305555555,
-      "detected_at": "2026-03-02T17:52:26.547884+00:00",
+      "age_hours": 0.09790466138888888,
+      "detected_at": "2026-03-02T18:07:27.456791+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0xf1b2e25656e4761a7baadf5b8aba1b7c571c4756",
-        "symbol": "SEED",
-        "name": "SEED"
+        "address": "0x901ff2de4a3c4e93f654497515af98f91678cb07",
+        "symbol": "KellyClaud",
+        "name": "KellyClaud"
       },
       "metrics": {
-        "liq_usd": 30552.746,
-        "vol_24h_usd": 16101.4417399197,
-        "txns_24h": 120,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.09042997055555556,
-      "detected_at": "2026-03-02T17:52:26.547900+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0x3467637fe5e10247257866505aeccfa69ae3aba3",
-        "symbol": "COMMON",
-        "name": "COMMON"
-      },
-      "metrics": {
-        "liq_usd": 21410.7303,
-        "vol_24h_usd": 1200.8497541924,
-        "txns_24h": 13,
+        "liq_usd": 7861.4197,
+        "vol_24h_usd": 4052.3163163015,
+        "txns_24h": 57,
         "price_usd": 0
       },
       "risk": {
@@ -66,32 +43,9 @@
           "new_token"
         ]
       },
-      "score": 95,
-      "age_hours": 0.05209654472222222,
-      "detected_at": "2026-03-02T17:52:26.547575+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0x304c9e4fe4a61264dd0dd2715b5cf24a6aa7ab07",
-        "symbol": "Maina-chan",
-        "name": "Maina-chan"
-      },
-      "metrics": {
-        "liq_usd": 15796.7091,
-        "vol_24h_usd": 9704.6307311914,
-        "txns_24h": 71,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 90,
-      "age_hours": 0.062652175,
-      "detected_at": "2026-03-02T17:52:26.547840+00:00",
+      "score": 80,
+      "age_hours": 0.11734911861111111,
+      "detected_at": "2026-03-02T18:07:27.456833+00:00",
       "source": "geckoterminal_v2"
     }
   ]
