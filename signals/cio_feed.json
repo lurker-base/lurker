@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-02T12:19:41.052000+00:00",
-    "generated_at": "2026-03-02T12:19:41.052000+00:00",
+    "updated_at": "2026-03-02T12:34:44.943000+00:00",
+    "generated_at": "2026-03-02T12:34:44.943000+00:00",
     "status": "ok",
-    "count": 1,
+    "count": 2,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,14 +12,54 @@
       "max_age_min": 10080
     },
     "risk_distribution": {
-      "low": 1
+      "low": 2
     },
     "rejected": {
-      "too_old": 1
+      "too_old": 2
     },
     "source": "ultra_launch_scanner"
   },
   "candidates": [
+    {
+      "token": {
+        "address": "0x743d22706e019971c96ae602c9cd025fc8c6fe2c",
+        "symbol": "CON+",
+        "name": "ConAudits+"
+      },
+      "pair": {
+        "address": "0xf113cd92182ca6408dba032b9ed6b75868e0eb52768ece5922aa8ac4e90f65c7",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 114022.47,
+        "vol_5m_usd": 5005.61,
+        "vol_1h_usd": 146854.24,
+        "txns_5m": 40,
+        "price_usd": 2.724e-05
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-02T12:09:41+00:00",
+        "token_first_seen": "2026-03-02T12:28:25.187000+00:00",
+        "age_minutes": 25.1,
+        "age_hours": 0.42
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.99
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": false,
+        "quality_score": 75
+      }
+    },
     {
       "token": {
         "address": "0xd68a22794c854adb5210032dda5919ca3c091940",
@@ -32,17 +72,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 71146.89,
-        "vol_5m_usd": 14864.21,
-        "vol_1h_usd": 177093.93,
-        "txns_5m": 53,
-        "price_usd": 1.152e-06
+        "liq_usd": 69965.52,
+        "vol_5m_usd": 11832.29,
+        "vol_1h_usd": 216778.48,
+        "txns_5m": 34,
+        "price_usd": 1.112e-06
       },
       "timestamps": {
         "pair_created_at": "2026-03-02T11:42:11+00:00",
         "token_first_seen": "2026-03-02T12:04:37.462000+00:00",
-        "age_minutes": 37.5,
-        "age_hours": 0.63
+        "age_minutes": 52.6,
+        "age_hours": 0.88
       },
       "scores": {
         "cio_score": 100,
