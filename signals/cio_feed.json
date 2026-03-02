@@ -1,8 +1,8 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-02T06:49:10.602000+00:00",
-    "generated_at": "2026-03-02T06:49:10.602000+00:00",
+    "updated_at": "2026-03-02T08:05:26.638000+00:00",
+    "generated_at": "2026-03-02T08:05:26.638000+00:00",
     "status": "ok",
     "count": 2,
     "thresholds": {
@@ -12,8 +12,7 @@
       "max_age_min": 10080
     },
     "risk_distribution": {
-      "low": 1,
-      "medium": 1
+      "low": 2
     },
     "rejected": {
       "too_old": 1
@@ -23,31 +22,71 @@
   "candidates": [
     {
       "token": {
-        "address": "0xfdfae5df3cbf9c89ea463fb1a2e3f973202c8c44",
-        "symbol": "ClawHammer",
-        "name": "ClawHammer"
+        "address": "0x0b749729cdd57e0b63e0d949a398b31f71b02b07",
+        "symbol": "ClawHarbor",
+        "name": "Claw Harbor"
       },
       "pair": {
-        "address": "0x205d2863938bf4e9498560fec87424bf30cd496e3b5e40bba71bcb5dae9480cf",
+        "address": "0x7f6d8a37a2f818bf1c3afb3d0485f76fbddca6547a0b07440bef69dc5a375ba5",
         "dex": "uniswap",
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 107281.67,
-        "vol_5m_usd": 6885.0,
-        "vol_1h_usd": 150363.04,
-        "txns_5m": 51,
-        "price_usd": 1.87e-05
+        "liq_usd": 149802.12,
+        "vol_5m_usd": 26844.42,
+        "vol_1h_usd": 414695.22,
+        "txns_5m": 93,
+        "price_usd": 3.514e-06
       },
       "timestamps": {
-        "pair_created_at": "2026-03-02T04:25:45+00:00",
-        "token_first_seen": "2026-03-02T04:49:08.997000+00:00",
-        "age_minutes": 143.4,
-        "age_hours": 2.39
+        "pair_created_at": "2026-03-02T07:03:01+00:00",
+        "token_first_seen": "2026-03-02T08:05:26.629000+00:00",
+        "age_minutes": 62.4,
+        "age_hours": 1.04
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.96
+        "freshness": 0.98
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    },
+    {
+      "token": {
+        "address": "0x05fd730be6e9490a6e1ff16c1c02918b0f2fd9bf",
+        "symbol": "ActivateClaw",
+        "name": "ActivateClaw"
+      },
+      "pair": {
+        "address": "0x18f1770be06261ecccaf9b2e0b67d445eff1b119e486f1ade62a13bcc46a1c21",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 86386.28,
+        "vol_5m_usd": 23748.12,
+        "vol_1h_usd": 201302.53,
+        "txns_5m": 57,
+        "price_usd": 1.595e-06
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-02T06:48:53+00:00",
+        "token_first_seen": "2026-03-02T08:05:26.629000+00:00",
+        "age_minutes": 76.6,
+        "age_hours": 1.28
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.98
       },
       "risks": [],
       "risk_level": "low",
@@ -59,48 +98,6 @@
         "has_socials": true,
         "has_website": false,
         "quality_score": 75
-      }
-    },
-    {
-      "token": {
-        "address": "0xc914b7fb6a281dfff7828862444e042512fa5ba3",
-        "symbol": "LINXCLAW",
-        "name": "LINXCLAW"
-      },
-      "pair": {
-        "address": "0x057ac5b44490e0c0f9c81d23a7e2795270225e986bde86f62fbb36a3582b7057",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 25111.79,
-        "vol_5m_usd": 43.41,
-        "vol_1h_usd": 1496.93,
-        "txns_5m": 1,
-        "price_usd": 2.459e-07
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-02T02:45:37+00:00",
-        "token_first_seen": "2026-03-02T05:19:09.615000+00:00",
-        "age_minutes": 243.6,
-        "age_hours": 4.06
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.93
-      },
-      "risks": [
-        "dumping"
-      ],
-      "risk_level": "medium",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
       }
     }
   ]
