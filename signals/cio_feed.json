@@ -1,109 +1,63 @@
 {
-  "timestamp": "2026-03-02T20:32:37.760741+00:00",
+  "timestamp": "2026-03-02T20:47:39.227582+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xdcac045d1286ea98b328290b3cd5345aa1a2db07",
-        "symbol": "JELLYWAR",
-        "name": "JELLYWAR"
+        "address": "0x5444537201b3fa1f26394fde53c666856060aa6c",
+        "symbol": "METAL",
+        "name": "METAL"
       },
       "metrics": {
-        "liq_usd": 23071.699,
-        "vol_24h_usd": 22092.0848819294,
-        "txns_24h": 147,
+        "liq_usd": 22731.4522,
+        "vol_24h_usd": 2303.1540192738,
+        "txns_24h": 11,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "high",
         "factors": [
           "new_token"
         ]
       },
-      "score": 100,
-      "age_hours": 0.08021092222222222,
-      "detected_at": "2026-03-02T20:32:37.759335+00:00",
+      "score": 95,
+      "age_hours": 0.052840575277777774,
+      "detected_at": "2026-03-02T20:47:39.226087+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0xf2afdede1beadb9dd7a2c8f7a79112db8f76cb07",
-        "symbol": "KellyClaud",
-        "name": "KellyClaud"
+        "address": "0xa0f6930f06ee32519ded73b634d66a0fa0819b07",
+        "symbol": "BEEP",
+        "name": "BEEP"
       },
       "metrics": {
-        "liq_usd": 28270.267,
-        "vol_24h_usd": 14249.8161015686,
-        "txns_24h": 104,
+        "liq_usd": 26571.5706,
+        "vol_24h_usd": 2178.874416889,
+        "txns_24h": 9,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "high",
         "factors": [
           "new_token"
         ]
       },
-      "score": 100,
-      "age_hours": 0.08187760388888889,
-      "detected_at": "2026-03-02T20:32:37.759383+00:00",
+      "score": 95,
+      "age_hours": 0.07506281666666666,
+      "detected_at": "2026-03-02T20:47:39.226145+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0xdcc200104ec00a8b493b15ed8d1d57430d1f6ba3",
-        "symbol": "canonical",
-        "name": "canonical"
+        "address": "0xfe1cc74038d58e4c4a2715735f3d2576f023ab07",
+        "symbol": "GOOSE",
+        "name": "GOOSE"
       },
       "metrics": {
-        "liq_usd": 21499.166,
-        "vol_24h_usd": 53403.1655612734,
-        "txns_24h": 179,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.09298873055555555,
-      "detected_at": "2026-03-02T20:32:37.759435+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0xdba03421a7196676be19dac6b622bf41fae434c9",
-        "symbol": "VIRTERN",
-        "name": "VIRTERN"
-      },
-      "metrics": {
-        "liq_usd": 134709.1099,
-        "vol_24h_usd": 1883.27152963,
-        "txns_24h": 22,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.09854429083333334,
-      "detected_at": "2026-03-02T20:32:37.759452+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0xb90693968d004facd553bf919203975093f1ab07",
-        "symbol": "UPPY",
-        "name": "UPPY"
-      },
-      "metrics": {
-        "liq_usd": 15242.3326,
-        "vol_24h_usd": 20991.5969027946,
-        "txns_24h": 163,
+        "liq_usd": 17092.5064,
+        "vol_24h_usd": 18801.2334722748,
+        "txns_24h": 138,
         "price_usd": 0
       },
       "risk": {
@@ -113,8 +67,8 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.09132205722222222,
-      "detected_at": "2026-03-02T20:32:37.759420+00:00",
+      "age_hours": 0.07895170916666668,
+      "detected_at": "2026-03-02T20:47:39.226165+00:00",
       "source": "geckoterminal_v2"
     }
   ]
