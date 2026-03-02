@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-02T18:52:30.098212+00:00",
+  "timestamp": "2026-03-02T19:07:31.265771+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xf61074494165614478b5ba0d77d1bf1ce67b6ba3",
-        "symbol": "GRACE",
-        "name": "GRACE"
+        "address": "0x899779773c80462c4bfeda414caefd1fcbc3dba3",
+        "symbol": "Swarm",
+        "name": "Swarm"
       },
       "metrics": {
-        "liq_usd": 34081.2092,
-        "vol_24h_usd": 15119.0051985255,
-        "txns_24h": 26,
+        "liq_usd": 31033.7962,
+        "vol_24h_usd": 47421.372863845,
+        "txns_24h": 108,
         "price_usd": 0
       },
       "risk": {
@@ -21,20 +21,20 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.026971433611111113,
-      "detected_at": "2026-03-02T18:52:30.097174+00:00",
+      "age_hours": 0.07729582833333333,
+      "detected_at": "2026-03-02T19:07:31.264998+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0x78adc2dbdf1bbca057efe25f97d563a7d602bb07",
-        "symbol": "MABEL",
-        "name": "MABEL"
+        "address": "0xb7dd5d2a5d33899791f20f4127c79edd57fddb07",
+        "symbol": "GOAT",
+        "name": "GOAT"
       },
       "metrics": {
-        "liq_usd": 31170.2021,
-        "vol_24h_usd": 19688.7491727649,
-        "txns_24h": 153,
+        "liq_usd": 22696.3251,
+        "vol_24h_usd": 18988.9309274989,
+        "txns_24h": 140,
         "price_usd": 0
       },
       "risk": {
@@ -44,20 +44,66 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.10030480583333334,
-      "detected_at": "2026-03-02T18:52:30.097393+00:00",
+      "age_hours": 0.08340694805555555,
+      "detected_at": "2026-03-02T19:07:31.265019+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0x3c364fa1394b27422abe1f851df7c9c5b35aab07",
-        "symbol": "ORO",
-        "name": "ORO"
+        "address": "0x8f662f720a922c97655431a389a3d7eb1ba6cba3",
+        "symbol": "ClawdFun",
+        "name": "ClawdFun"
       },
       "metrics": {
-        "liq_usd": 14925.6269,
-        "vol_24h_usd": 10867.6873925859,
-        "txns_24h": 73,
+        "liq_usd": 22277.2292,
+        "vol_24h_usd": 20687.6301728536,
+        "txns_24h": 63,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.0872958411111111,
+      "detected_at": "2026-03-02T19:07:31.265034+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x812c8ccde083b78262706dc2d40fb4124948fba3",
+        "symbol": "ClawWork",
+        "name": "ClawWork"
+      },
+      "metrics": {
+        "liq_usd": 22529.7015,
+        "vol_24h_usd": 16324.6828047179,
+        "txns_24h": 52,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.10396251805555555,
+      "detected_at": "2026-03-02T19:07:31.265070+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0xfc6c144c904da59083450e265cfd0fcf216347be",
+        "symbol": "CLAWNCH",
+        "name": "CLAWNCH"
+      },
+      "metrics": {
+        "liq_usd": 26048.6862,
+        "vol_24h_usd": 6769.6459777649,
+        "txns_24h": 24,
         "price_usd": 0
       },
       "risk": {
@@ -67,8 +113,31 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.058082568055555554,
-      "detected_at": "2026-03-02T18:52:30.097252+00:00",
+      "age_hours": 0.05229573666666667,
+      "detected_at": "2026-03-02T19:07:31.264667+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x25920ea0d783aab61602c1696f8b720d5c2f47be",
+        "symbol": "CLAWNCH",
+        "name": "CLAWNCH"
+      },
+      "metrics": {
+        "liq_usd": 7232.5555,
+        "vol_24h_usd": 1825.9717239947,
+        "txns_24h": 31,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "high",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 80,
+      "age_hours": 0.06840687472222222,
+      "detected_at": "2026-03-02T19:07:31.264757+00:00",
       "source": "geckoterminal_v2"
     }
   ]
