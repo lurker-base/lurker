@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-02T18:37:29.172050+00:00",
+  "timestamp": "2026-03-02T18:52:30.098212+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xc5ed17e3564680187758786f63e01271ad0ddb07",
-        "symbol": "Wally",
-        "name": "Wally"
+        "address": "0xf61074494165614478b5ba0d77d1bf1ce67b6ba3",
+        "symbol": "GRACE",
+        "name": "GRACE"
       },
       "metrics": {
-        "liq_usd": 23413.7548,
-        "vol_24h_usd": 25926.2865115537,
-        "txns_24h": 162,
+        "liq_usd": 34081.2092,
+        "vol_24h_usd": 15119.0051985255,
+        "txns_24h": 26,
         "price_usd": 0
       },
       "risk": {
@@ -21,8 +21,54 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.09560309444444444,
-      "detected_at": "2026-03-02T18:37:29.171157+00:00",
+      "age_hours": 0.026971433611111113,
+      "detected_at": "2026-03-02T18:52:30.097174+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x78adc2dbdf1bbca057efe25f97d563a7d602bb07",
+        "symbol": "MABEL",
+        "name": "MABEL"
+      },
+      "metrics": {
+        "liq_usd": 31170.2021,
+        "vol_24h_usd": 19688.7491727649,
+        "txns_24h": 153,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.10030480583333334,
+      "detected_at": "2026-03-02T18:52:30.097393+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x3c364fa1394b27422abe1f851df7c9c5b35aab07",
+        "symbol": "ORO",
+        "name": "ORO"
+      },
+      "metrics": {
+        "liq_usd": 14925.6269,
+        "vol_24h_usd": 10867.6873925859,
+        "txns_24h": 73,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 95,
+      "age_hours": 0.058082568055555554,
+      "detected_at": "2026-03-02T18:52:30.097252+00:00",
       "source": "geckoterminal_v2"
     }
   ]
