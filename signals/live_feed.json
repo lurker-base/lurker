@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-03T17:00:06.763Z",
+    "updated_at": "2026-03-03T17:00:45.894Z",
     "source": "cio",
     "chain": "base",
     "count": 1,
@@ -10,26 +10,26 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-03T16:59:22.854742+00:00",
+      "ts_utc": "2026-03-03T17:00:45.866087+00:00",
       "chain": "base",
       "token": {
-        "name": "Muppin",
-        "symbol": "$MUPPIN",
-        "address": "0xf8c90463e5c8aa4bc69c7925e2956838452d6e6d"
+        "name": "SEED",
+        "symbol": "$SEED",
+        "address": "0x952d09bc76ded154df674dc1d8460e17ea969abf"
       },
       "scores": {
-        "confidence": 90,
+        "confidence": 100,
         "rarity": "new",
-        "risk": "high"
+        "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 15800.8219,
-        "vol_24h_usd": 1995.26309248
+        "liq_usd": 137871.7448,
+        "vol_24h_usd": 62894.7167301638
       },
       "dex": "geckoterminal",
-      "pair_address": "0xf8c90463e5c8aa4bc69c7925e2956838452d6e6d",
+      "pair_address": "0x952d09bc76ded154df674dc1d8460e17ea969abf",
       "scanner": "cio"
     }
   ]

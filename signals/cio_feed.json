@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-03-03T16:59:22.858141+00:00",
+  "timestamp": "2026-03-03T17:00:45.867801+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xf8c90463e5c8aa4bc69c7925e2956838452d6e6d",
-        "symbol": "Muppin",
-        "name": "Muppin"
+        "address": "0x952d09bc76ded154df674dc1d8460e17ea969abf",
+        "symbol": "SEED",
+        "name": "SEED"
       },
       "metrics": {
-        "liq_usd": 15800.8219,
-        "vol_24h_usd": 1995.26309248,
-        "txns_24h": 18,
+        "liq_usd": 137871.7448,
+        "vol_24h_usd": 62894.7167301638,
+        "txns_24h": 57,
         "price_usd": 0
       },
       "risk": {
-        "level": "high",
+        "level": "medium",
         "factors": [
           "new_token"
         ]
       },
-      "score": 90,
-      "age_hours": 0.03718186833333333,
-      "detected_at": "2026-03-03T16:59:22.854742+00:00",
+      "score": 100,
+      "age_hours": 0.016629459722222222,
+      "detected_at": "2026-03-03T17:00:45.866087+00:00",
       "source": "geckoterminal_v2"
     }
   ]
