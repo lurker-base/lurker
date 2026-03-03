@@ -8,68 +8,40 @@
     <link rel="alternate icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Live page specific styles */
         .dashboard-container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
         
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 1rem;
-            margin-bottom: 2rem;
-        }
-        
-        .stat-card {
-            background: var(--bg-elevated);
-            border: 1px solid var(--border);
-            padding: 1rem;
-            text-align: center;
-            border-radius: 8px;
-        }
-        
+        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 2rem; }
+        .stat-card { background: var(--bg-elevated); border: 1px solid var(--border); padding: 1rem; text-align: center; border-radius: 8px; }
         .stat-value { font-size: 2rem; font-weight: bold; color: var(--accent); }
         .stat-label { font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase; margin-top: 0.5rem; }
         
-        /* Filter Tabs */
         .filter-tabs { display: flex; gap: 0.5rem; margin-bottom: 2rem; flex-wrap: wrap; }
-        .filter-tab {
-            background: transparent;
-            border: 1px solid var(--border);
-            color: var(--text-dim);
-            padding: 0.5rem 1rem;
-            cursor: pointer;
-            font-family: inherit;
-            font-size: 0.8rem;
-            border-radius: 4px;
-        }
+        .filter-tab { background: transparent; border: 1px solid var(--border); color: var(--text-dim); padding: 0.5rem 1rem; cursor: pointer; font-family: inherit; font-size: 0.8rem; border-radius: 4px; }
         .filter-tab:hover { border-color: var(--accent); color: var(--accent); }
         .filter-tab.active { background: var(--accent); color: var(--bg); border-color: var(--accent); }
         
-        /* Token List */
         .token-list { display: flex; flex-direction: column; gap: 0.75rem; }
         
         .token-row {
-            background: var(--bg-elevated);
-            border: 1px solid var(--border);
-            padding: 1rem 1.5rem;
-            display: grid;
-            grid-template-columns: 2fr 1.5fr 1.5fr 1fr 1fr;
-            gap: 1.5rem;
-            align-items: center;
-            border-radius: 8px;
-            transition: border-color 0.2s;
+            background: var(--bg-elevated); border: 1px solid var(--border); padding: 1rem 1.5rem;
+            display: grid; grid-template-columns: 2fr 2fr 1.5fr 1fr 0.5fr; gap: 1.5rem; align-items: center;
+            border-radius: 8px; transition: border-color 0.2s;
         }
         .token-row:hover { border-color: var(--accent); }
         
         .token-info { display: flex; flex-direction: column; gap: 0.25rem; }
         .token-symbol { font-weight: bold; font-size: 1.1rem; }
-        .token-symbol a { 
-            color: #60a5fa !important; 
-            text-decoration: underline; 
+        
+        /* DEXSCREENER LINK - Make it visible and clickable */
+        .dex-link {
+            color: #60a5fa !important;
+            text-decoration: none !important;
+            border-bottom: 1px dashed #60a5fa;
+            padding-bottom: 1px;
             cursor: pointer;
         }
-        .token-symbol a:hover { 
-            color: var(--accent) !important; 
-        }
+        .dex-link:hover { color: var(--accent) !important; border-bottom-style: solid; }
+        
         .token-address { font-size: 0.7rem; color: var(--text-dim); font-family: monospace; }
         
         .token-metrics { display: flex; gap: 1.5rem; }
@@ -77,25 +49,27 @@
         .metric-label { font-size: 0.6rem; color: var(--text-dim); text-transform: uppercase; }
         .metric-value { font-weight: bold; }
         
-        .badge { padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.7rem; font-weight: bold; }
-        .badge-new { background: #166534; color: #4ade80; }
-        .badge-active { background: #581c87; color: #c084fc; }
-        .badge-verified { background: #14532d; color: #86efac; }
-        .badge-risk { background: #7f1d1d; color: #f87171; }
+        /* BADGES - LURKER native indicators */
+        .token-badges { display: flex; gap: 0.3rem; flex-wrap: wrap; }
+        .badge { padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.65rem; font-weight: bold; }
+        
         .badge-score { background: #1e3a8a; color: #60a5fa; }
-        .badge-med { background: #854d0e; color: #fbbf24; }
-        .badge-safe { background: #166534; color: #4ade80; }
         .badge-fresh { background: #dc2626; color: #fff; }
         .badge-liquid { background: #0891b2; color: #fff; }
-        .token-badges { display: flex; gap: 0.25rem; flex-wrap: wrap; }
-        .token-symbol a { color: inherit; text-decoration: none; }
-        .token-symbol a:hover { color: var(--accent); }
+        .badge-volume { background: #7c3aed; color: #fff; }
+        .badge-tx { background: #059669; color: #fff; }
         
-        .positive { color: #4ade80; }
-        .negative { color: #f87171; }
+        /* Risk badges */
+        .badge-risk-low { background: #166534; color: #4ade80; }
+        .badge-risk-med { background: #854d0e; color: #fbbf24; }
+        .badge-risk-high { background: #7f1d1d; color: #f87171; }
+        
+        /* LURKER custom badges */
+        .badge-convergence { background: #be185d; color: #fbcfe8; }
+        .badge-smart { background: #1d4ed8; color: #bfdbfe; }
+        .badge-narrative { background: #7c3aed; color: #ede9fe; }
         
         .loading { text-align: center; padding: 4rem; color: var(--text-dim); }
-        
         .last-update { text-align: center; color: var(--text-dim); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
         
         @media (max-width: 768px) {
@@ -138,7 +112,7 @@
                     <div class="stat-card"><div class="stat-value" id="stat-total">-</div><div class="stat-label">Total</div></div>
                     <div class="stat-card"><div class="stat-value" id="stat-new">-</div><div class="stat-label">New</div></div>
                     <div class="stat-card"><div class="stat-value" id="stat-active">-</div><div class="stat-label">Active</div></div>
-                    <div class="stat-card"><div class="stat-value" id="stat-verified">-</div><div class="stat-label">Verified</div></div>
+                    <div class="stat-card"><div class="stat-value" id="stat-risk">-</div><div class="stat-label">Risk</div></div>
                 </div>
                 
                 <div class="filter-tabs">
@@ -156,7 +130,6 @@
 
     <script src="sparks.js"></script>
     <script>
-        // Use CIO feed for real-time data (not archived state)
         const CIO_FEED_URL = 'https://raw.githubusercontent.com/lurker-base/lurker/main/signals/cio_feed.json';
         let allTokens = [];
         let currentFilter = 'all';
@@ -172,8 +145,7 @@
                 renderTokens();
                 document.getElementById('last-update').textContent = new Date().toLocaleTimeString();
             } catch (error) {
-                document.getElementById('tokens-container').innerHTML = 
-                    '<div class="loading">error: ' + error.message + '</div>';
+                document.getElementById('tokens-container').innerHTML = '<div class="loading">error: ' + error.message + '</div>';
             }
         }
         
@@ -181,7 +153,7 @@
             document.getElementById('stat-total').textContent = allTokens.length;
             document.getElementById('stat-new').textContent = allTokens.filter(t => t.score >= 95).length;
             document.getElementById('stat-active').textContent = allTokens.filter(t => t.score >= 90).length;
-            document.getElementById('stat-verified').textContent = '-';
+            document.getElementById('stat-risk').textContent = allTokens.filter(t => t.risk?.level === 'high').length;
         }
         
         function formatNumber(num) {
@@ -212,23 +184,39 @@
             
             container.innerHTML = '<div class="token-list">' + tokens.map(token => {
                 const risk = token.risk?.level || 'medium';
+                const riskClass = risk === 'high' ? 'badge-risk-high' : risk === 'medium' ? 'badge-risk-med' : 'badge-risk-low';
                 
-                // Generate DexScreener URL
-                const dexUrl = 'https://dexscreener.com/base/' + token.token.address;
-                
-                // Generate badges
+                // Generate badges - LURKER native indicators
                 const badges = [];
                 badges.push('<span class="badge badge-score">' + token.score + '%</span>');
-                if (risk === 'high') badges.push('<span class="badge badge-risk">⚠️ HIGH</span>');
-                else if (risk === 'medium') badges.push('<span class="badge badge-med">⚡ MED</span>');
-                else badges.push('<span class="badge badge-safe">✓ LOW</span>');
+                
+                // Age badge
                 if (token.age_hours < 0.1) badges.push('<span class="badge badge-fresh">🔥 FRESH</span>');
-                if (token.metrics.liq_usd > 20000) badges.push('<span class="badge badge-liquid">💧 $20K+</span>');
+                else if (token.age_hours < 1) badges.push('<span class="badge badge-fresh">' + formatAge(token.age_hours) + '</span>');
+                
+                // Liquidity badge
+                if (token.metrics.liq_usd >= 50000) badges.push('<span class="badge badge-liquid">💧 $50K+</span>');
+                else if (token.metrics.liq_usd >= 20000) badges.push('<span class="badge badge-liquid">💧 $20K+</span>');
+                
+                // Volume badge
+                if (token.metrics.vol_24h_usd >= 50000) badges.push('<span class="badge badge-volume">📈 $50K+</span>');
+                else if (token.metrics.vol_24h_usd >= 10000) badges.push('<span class="badge badge-volume">📈 $10K+</span>');
+                
+                // Tx badge
+                if (token.metrics.txns_24h >= 50) badges.push('<span class="badge badge-tx">⚡ ' + token.metrics.txns_24h + ' tx</span>');
+                
+                // Risk badge
+                badges.push('<span class="badge ' + riskClass + '">' + risk.toUpperCase() + '</span>');
+                
+                // DexScreener link - PROMINENT
+                const dexUrl = 'https://dexscreener.com/base/' + token.token.address;
                 
                 return `
                     <div class="token-row">
                         <div class="token-info">
-                            <a href="${dexUrl}" target="_blank" class="token-symbol">$${token.token.symbol}</a>
+                            <span class="token-symbol">
+                                <a href="${dexUrl}" target="_blank" class="dex-link">$${token.token.symbol}</a>
+                            </span>
                             <span class="token-address">${token.token.address.slice(0, 6)}...${token.token.address.slice(-4)}</span>
                         </div>
                         <div class="token-metrics">
@@ -265,11 +253,9 @@
             });
         });
         
-        // Auto refresh
         loadData();
         setInterval(loadData, 30000);
         
-        // Countdown
         let countdown = 30;
         setInterval(() => {
             countdown--;
