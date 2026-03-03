@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-03T03:04:36.359624+00:00",
+  "timestamp": "2026-03-03T03:19:37.639293+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x1374d0eaf942c7e5a397f25d49a1d2f07391eba3",
-        "symbol": "COOK",
-        "name": "COOK"
+        "address": "0x58432452be5bd53e6d1bb7a75fa8cf518c1fdb07",
+        "symbol": "333",
+        "name": "333"
       },
       "metrics": {
-        "liq_usd": 26126.3124,
-        "vol_24h_usd": 7384.0922650452,
-        "txns_24h": 67,
+        "liq_usd": 21608.172,
+        "vol_24h_usd": 20007.1690191137,
+        "txns_24h": 115,
         "price_usd": 0
       },
       "risk": {
@@ -20,32 +20,32 @@
           "new_token"
         ]
       },
-      "score": 95,
-      "age_hours": 0.055377320833333334,
-      "detected_at": "2026-03-03T03:04:36.358366+00:00",
+      "score": 100,
+      "age_hours": 0.07295499,
+      "detected_at": "2026-03-03T03:19:37.637972+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0x904fabdd1283b1591c8d089d7dafe5dbdd9dab07",
-        "symbol": "Pencil",
-        "name": "Pencil"
+        "address": "0xae078b96c3865c336cdf56c904fcf84c0e339610",
+        "symbol": "realwallst",
+        "name": "realwallst"
       },
       "metrics": {
-        "liq_usd": 13368.5005,
-        "vol_24h_usd": 10520.9665700353,
-        "txns_24h": 89,
+        "liq_usd": 6690.558,
+        "vol_24h_usd": 3070.3158286885,
+        "txns_24h": 41,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "high",
         "factors": [
           "new_token"
         ]
       },
-      "score": 95,
-      "age_hours": 0.059821779722222225,
-      "detected_at": "2026-03-03T03:04:36.358413+00:00",
+      "score": 80,
+      "age_hours": 0.06628830583333334,
+      "detected_at": "2026-03-03T03:19:37.637913+00:00",
       "source": "geckoterminal_v2"
     }
   ]
