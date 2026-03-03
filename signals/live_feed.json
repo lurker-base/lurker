@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-03T15:04:22.297Z",
+    "updated_at": "2026-03-03T16:05:25.933Z",
     "source": "cio",
     "chain": "base",
-    "count": 3,
+    "count": 7,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-03T15:04:22.263185+00:00",
+      "ts_utc": "2026-03-03T16:05:25.886596+00:00",
       "chain": "base",
       "token": {
-        "name": "AICO",
-        "symbol": "$AICO",
-        "address": "0xf11d1d38a558a0190af709fa9bd8e7fc4e48aba3"
+        "name": "CMC",
+        "symbol": "$CMC",
+        "address": "0xcff062acc627ec321f31a57be2843cd66534bb07"
       },
       "scores": {
         "confidence": 100,
@@ -25,22 +25,22 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 29460.5285,
-        "vol_24h_usd": 16260.5176136049
+        "liq_usd": 31123.7256,
+        "vol_24h_usd": 19385.1988791689
       },
       "dex": "geckoterminal",
-      "pair_address": "0xf11d1d38a558a0190af709fa9bd8e7fc4e48aba3",
+      "pair_address": "0xcff062acc627ec321f31a57be2843cd66534bb07",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-03T15:04:22.263229+00:00",
+      "ts_utc": "2026-03-03T16:05:25.886612+00:00",
       "chain": "base",
       "token": {
-        "name": "CL1LLM",
-        "symbol": "$CL1LLM",
-        "address": "0x202fe992d6dbcffc6b4074c1c759fda1417edb07"
+        "name": "BST",
+        "symbol": "$BST",
+        "address": "0x74b84975d3854258f0a71223ca741b6ba0c0e05f"
       },
       "scores": {
         "confidence": 100,
@@ -50,22 +50,47 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 25157.8336,
-        "vol_24h_usd": 37829.0632244578
+        "liq_usd": 30042.836,
+        "vol_24h_usd": 24199.2206090695
       },
       "dex": "geckoterminal",
-      "pair_address": "0x202fe992d6dbcffc6b4074c1c759fda1417edb07",
+      "pair_address": "0x74b84975d3854258f0a71223ca741b6ba0c0e05f",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-03T15:04:22.263135+00:00",
+      "ts_utc": "2026-03-03T16:05:25.886625+00:00",
       "chain": "base",
       "token": {
-        "name": "CM",
-        "symbol": "$CM",
-        "address": "0x6218b6691da6805319aa259901a557aba7c0eba3"
+        "name": "big",
+        "symbol": "$BIG",
+        "address": "0xde59ac87bacf22e12889d65630e5c607b349db07"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 21216.9757,
+        "vol_24h_usd": 29945.9449387557
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xde59ac87bacf22e12889d65630e5c607b349db07",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-03T16:05:25.886412+00:00",
+      "chain": "base",
+      "token": {
+        "name": "YARR",
+        "symbol": "$YARR",
+        "address": "0xaa5c1e269dd98240c33ea2eb7e9412a244fdbea3"
       },
       "scores": {
         "confidence": 95,
@@ -75,11 +100,86 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 27414.5964,
-        "vol_24h_usd": 9132.6968577957
+        "liq_usd": 22501.0107,
+        "vol_24h_usd": 4996.6778682295
       },
       "dex": "geckoterminal",
-      "pair_address": "0x6218b6691da6805319aa259901a557aba7c0eba3",
+      "pair_address": "0xaa5c1e269dd98240c33ea2eb7e9412a244fdbea3",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-03T16:05:25.886478+00:00",
+      "chain": "base",
+      "token": {
+        "name": "NUGGET",
+        "symbol": "$NUGGET",
+        "address": "0xe8bdcd70ab5c6d356ff5af9482840a01ff71ab07"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 14060.7238,
+        "vol_24h_usd": 10498.5446316159
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xe8bdcd70ab5c6d356ff5af9482840a01ff71ab07",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-03T16:05:25.886548+00:00",
+      "chain": "base",
+      "token": {
+        "name": "EDCE",
+        "symbol": "$EDCE",
+        "address": "0x5ad84dc7ec89684d841432ebdc9cef189275c370"
+      },
+      "scores": {
+        "confidence": 85,
+        "rarity": "new",
+        "risk": "high"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 9572.3868,
+        "vol_24h_usd": 11945.7286272694
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x5ad84dc7ec89684d841432ebdc9cef189275c370",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-03T16:05:25.886580+00:00",
+      "chain": "base",
+      "token": {
+        "name": "GAL🦅",
+        "symbol": "$GAL🦅",
+        "address": "0xf242a960fecba4b2ec657f5809f06f363964ef18"
+      },
+      "scores": {
+        "confidence": 80,
+        "rarity": "new",
+        "risk": "high"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 5329.8645,
+        "vol_24h_usd": 5386.8687024992
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xf242a960fecba4b2ec657f5809f06f363964ef18",
       "scanner": "cio"
     }
   ]
