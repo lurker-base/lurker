@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-03T08:35:06.865645+00:00",
+  "timestamp": "2026-03-03T08:50:08.089450+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x4f4a61985f907ea45490add134b864431808db07",
-        "symbol": "czpippin",
-        "name": "czpippin"
+        "address": "0xf27f0cf2caf41342ca9bc8fcc88654010bcd1ba3",
+        "symbol": "VOIDCO",
+        "name": "VOIDCO"
       },
       "metrics": {
-        "liq_usd": 20603.9201,
-        "vol_24h_usd": 1715.8196457102,
-        "txns_24h": 20,
+        "liq_usd": 30200.8343,
+        "vol_24h_usd": 21745.3333223203,
+        "txns_24h": 156,
         "price_usd": 0
       },
       "risk": {
@@ -20,21 +20,21 @@
           "new_token"
         ]
       },
-      "score": 95,
-      "age_hours": 0.02496225527777778,
-      "detected_at": "2026-03-03T08:35:06.864129+00:00",
+      "score": 100,
+      "age_hours": 0.10585764027777779,
+      "detected_at": "2026-03-03T08:50:08.087513+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0xbde654c9402ed3366bba86beccb7d53d8067aba3",
-        "symbol": "AICO",
-        "name": "AICO"
+        "address": "0x9e18ab28982d5da3f647da529eabf7217a8cab07",
+        "symbol": "PIZZA",
+        "name": "PIZZA"
       },
       "metrics": {
-        "liq_usd": 25094.1098,
-        "vol_24h_usd": 5589.6540503982,
-        "txns_24h": 46,
+        "liq_usd": 16670.884,
+        "vol_24h_usd": 20687.7094573221,
+        "txns_24h": 160,
         "price_usd": 0
       },
       "risk": {
@@ -44,8 +44,8 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.03940671638888889,
-      "detected_at": "2026-03-03T08:35:06.864185+00:00",
+      "age_hours": 0.09363540472222222,
+      "detected_at": "2026-03-03T08:50:08.087477+00:00",
       "source": "geckoterminal_v2"
     }
   ]
