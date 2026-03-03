@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-03T04:19:43.333839+00:00",
+  "timestamp": "2026-03-03T04:34:44.561331+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x175565767e8013fc00cf3b0eead98ede8c1dbb07",
-        "symbol": "Conviction",
-        "name": "Conviction"
+        "address": "0x3ee215ee75f0f010efcc3d2f7d24612285d3cb07",
+        "symbol": "KellyClaud",
+        "name": "KellyClaud"
       },
       "metrics": {
-        "liq_usd": 25051.8552,
-        "vol_24h_usd": 11093.8777382778,
-        "txns_24h": 78,
+        "liq_usd": 24876.2223,
+        "vol_24h_usd": 13226.9016479506,
+        "txns_24h": 95,
         "price_usd": 0
       },
       "risk": {
@@ -21,20 +21,20 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.054536755,
-      "detected_at": "2026-03-03T04:19:43.332326+00:00",
+      "age_hours": 0.07154430083333334,
+      "detected_at": "2026-03-03T04:34:44.559491+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0x7c0e94b5009b833f33f9fe9cf473f2c59c6d6bdc",
-        "symbol": "ROCMO",
-        "name": "ROCMO"
+        "address": "0x55007c2d6705702fa20081331fa799bcc73faba3",
+        "symbol": "AICO",
+        "name": "AICO"
       },
       "metrics": {
-        "liq_usd": 24711.1328,
-        "vol_24h_usd": 10885.3016721396,
-        "txns_24h": 31,
+        "liq_usd": 28047.0995,
+        "vol_24h_usd": 18092.9002602093,
+        "txns_24h": 152,
         "price_usd": 0
       },
       "risk": {
@@ -44,54 +44,31 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.05731454027777778,
-      "detected_at": "2026-03-03T04:19:43.332358+00:00",
+      "age_hours": 0.09765543194444444,
+      "detected_at": "2026-03-03T04:34:44.559570+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0x5a119831e3e6006f892ffd11c7b683c303e747be",
-        "symbol": "CLAWNCH",
-        "name": "CLAWNCH"
+        "address": "0xed180d6da40aaf32ce138da318af685a9dccdf9c",
+        "symbol": "APDO",
+        "name": "APDO"
       },
       "metrics": {
-        "liq_usd": 22169.6022,
-        "vol_24h_usd": 1502.0010638278,
-        "txns_24h": 13,
+        "liq_usd": 24126.9651,
+        "vol_24h_usd": 9463.6840835601,
+        "txns_24h": 28,
         "price_usd": 0
       },
       "risk": {
-        "level": "high",
+        "level": "medium",
         "factors": [
           "new_token"
         ]
       },
       "score": 95,
-      "age_hours": 0.032870068055555555,
-      "detected_at": "2026-03-03T04:19:43.332259+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0xd6ee9354e6329b8c9a71cfda3b3dc785198847be",
-        "symbol": "CLAWNCH",
-        "name": "CLAWNCH"
-      },
-      "metrics": {
-        "liq_usd": 7662.552,
-        "vol_24h_usd": 2986.2114598578,
-        "txns_24h": 43,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "high",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 80,
-      "age_hours": 0.06842566305555556,
-      "detected_at": "2026-03-03T04:19:43.332393+00:00",
+      "age_hours": 0.056544283888888894,
+      "detected_at": "2026-03-03T04:34:44.559439+00:00",
       "source": "geckoterminal_v2"
     }
   ]
