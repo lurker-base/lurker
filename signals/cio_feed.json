@@ -1,17 +1,63 @@
 {
-  "timestamp": "2026-03-03T09:05:09.535106+00:00",
+  "timestamp": "2026-03-03T09:20:10.595460+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x1d0c9c0ae1edcec08bad382ec635aac741beaba3",
-        "symbol": "AICO",
-        "name": "AICO"
+        "address": "0x9b49bdb11987326cf56dcfe94500f748b192db07",
+        "symbol": "PippinFam",
+        "name": "PippinFam"
       },
       "metrics": {
-        "liq_usd": 21775.2213,
-        "vol_24h_usd": 3092.5958580572,
-        "txns_24h": 20,
+        "liq_usd": 21682.0216,
+        "vol_24h_usd": 19732.2179582863,
+        "txns_24h": 114,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.06155394027777778,
+      "detected_at": "2026-03-03T09:20:10.594195+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x63fb491204a7b56e51464edccfc3933a285eeba3",
+        "symbol": "HAZEL",
+        "name": "HAZEL"
+      },
+      "metrics": {
+        "liq_usd": 28326.4646,
+        "vol_24h_usd": 17538.2025469998,
+        "txns_24h": 137,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.0821095061111111,
+      "detected_at": "2026-03-03T09:20:10.594225+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0xa05dafb97e314dd234502b0bd7a8b0ffc65bbb07",
+        "symbol": "Ganadi",
+        "name": "Ganadi"
+      },
+      "metrics": {
+        "liq_usd": 22571.5868,
+        "vol_24h_usd": 3549.8533775014,
+        "txns_24h": 34,
         "price_usd": 0
       },
       "risk": {
@@ -21,8 +67,54 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.03570363083333333,
-      "detected_at": "2026-03-03T09:05:09.533085+00:00",
+      "age_hours": 0.039887255,
+      "detected_at": "2026-03-03T09:20:10.594128+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x6038ce27cb3e38cf8f259bb113e37964d931ab07",
+        "symbol": "Ganadi",
+        "name": "Ganadi"
+      },
+      "metrics": {
+        "liq_usd": 15291.0949,
+        "vol_24h_usd": 23798.9434727413,
+        "txns_24h": 147,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 95,
+      "age_hours": 0.07377616861111111,
+      "detected_at": "2026-03-03T09:20:10.594211+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x20dea5fccde7d4c85e32b2d1faffe0a96aee47be",
+        "symbol": "CLAWNCH",
+        "name": "CLAWNCH"
+      },
+      "metrics": {
+        "liq_usd": 6358.7217,
+        "vol_24h_usd": 1832.7137009207,
+        "txns_24h": 27,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "high",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 80,
+      "age_hours": 0.043776154166666664,
+      "detected_at": "2026-03-03T09:20:10.594162+00:00",
       "source": "geckoterminal_v2"
     }
   ]
