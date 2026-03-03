@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-03T11:20:20.693790+00:00",
+  "timestamp": "2026-03-03T12:30:50.770851+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xe30d35d20ff9cb6bb9658570ad75b8ff1cca9af2",
-        "symbol": "ADHD",
-        "name": "ADHD"
+        "address": "0xde37b4c65ad4c35d9d86c7d0a95f91c114b401cb",
+        "symbol": "MECKA",
+        "name": "MECKA"
       },
       "metrics": {
-        "liq_usd": 128150.0057,
-        "vol_24h_usd": 1112.385023416,
-        "txns_24h": 16,
+        "liq_usd": 144512.2234,
+        "vol_24h_usd": 1184.25667963,
+        "txns_24h": 18,
         "price_usd": 0
       },
       "risk": {
@@ -21,20 +21,20 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.08102565472222223,
-      "detected_at": "2026-03-03T11:20:20.692373+00:00",
+      "age_hours": 0.09493575027777779,
+      "detected_at": "2026-03-03T12:30:50.768716+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0xc94e0489925cf15b863dfdcd38719ade9e60bb07",
-        "symbol": "Conviction",
-        "name": "Conviction"
+        "address": "0xd38b7d43e91d0a613cc3b9d816e896522499db07",
+        "symbol": "IRS",
+        "name": "IRS"
       },
       "metrics": {
-        "liq_usd": 20206.7378,
-        "vol_24h_usd": 1509.5053390841,
-        "txns_24h": 9,
+        "liq_usd": 20149.3932,
+        "vol_24h_usd": 4272.5528188498,
+        "txns_24h": 17,
         "price_usd": 0
       },
       "risk": {
@@ -44,20 +44,20 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.034358957499999995,
-      "detected_at": "2026-03-03T11:20:20.692260+00:00",
+      "age_hours": 0.015491253055555555,
+      "detected_at": "2026-03-03T12:30:50.768529+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0x9111513f366bec9b7be5dcf67ba4b60e55ca47be",
+        "address": "0x5868300e5814c4832a7f466bc58db9aad0fe47be",
         "symbol": "CLAWNCH",
         "name": "CLAWNCH"
       },
       "metrics": {
-        "liq_usd": 24641.8768,
-        "vol_24h_usd": 9900.0129865069,
-        "txns_24h": 64,
+        "liq_usd": 10737.2677,
+        "vol_24h_usd": 1957.6446085236,
+        "txns_24h": 34,
         "price_usd": 0
       },
       "risk": {
@@ -66,9 +66,9 @@
           "new_token"
         ]
       },
-      "score": 95,
-      "age_hours": 0.0626923125,
-      "detected_at": "2026-03-03T11:20:20.692332+00:00",
+      "score": 90,
+      "age_hours": 0.04215794027777778,
+      "detected_at": "2026-03-03T12:30:50.768593+00:00",
       "source": "geckoterminal_v2"
     }
   ]
