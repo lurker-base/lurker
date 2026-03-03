@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-03T06:19:52.966111+00:00",
+  "timestamp": "2026-03-03T06:34:54.662355+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x2056a08a437085a1939ca56c353ccccec1b3db07",
-        "symbol": "NoahAI",
-        "name": "NoahAI"
+        "address": "0x859a4f98489615da5acf1550bea659b8e27bbb07",
+        "symbol": "SFM",
+        "name": "SFM"
       },
       "metrics": {
-        "liq_usd": 21942.5783,
-        "vol_24h_usd": 12707.3258767553,
-        "txns_24h": 97,
+        "liq_usd": 28123.1895,
+        "vol_24h_usd": 15616.3054053046,
+        "txns_24h": 93,
         "price_usd": 0
       },
       "risk": {
@@ -21,19 +21,42 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.06721233277777777,
-      "detected_at": "2026-03-03T06:19:52.964413+00:00",
+      "age_hours": 0.0604613975,
+      "detected_at": "2026-03-03T06:34:54.661042+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0xf7abd205bbf9cd60e046b27e2eb25ad2c8efaba3",
-        "symbol": "AICO",
-        "name": "AICO"
+        "address": "0x4cd7d2214efcf561945b54f4d1a9cb075d57db07",
+        "symbol": "FACE",
+        "name": "FACE"
       },
       "metrics": {
-        "liq_usd": 28182.1174,
-        "vol_24h_usd": 14545.5717776471,
+        "liq_usd": 25148.3507,
+        "vol_24h_usd": 16056.0683077901,
+        "txns_24h": 112,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.06212807638888889,
+      "detected_at": "2026-03-03T06:34:54.661081+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0xf528af64e6f7c5ad55fdbe0b35a5fb182aae47be",
+        "symbol": "CLAWNCH",
+        "name": "CLAWNCH"
+      },
+      "metrics": {
+        "liq_usd": 25784.5738,
+        "vol_24h_usd": 11336.5764907329,
         "txns_24h": 94,
         "price_usd": 0
       },
@@ -44,54 +67,8 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.07721234694444444,
-      "detected_at": "2026-03-03T06:19:52.964458+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0xea37df90e438aa7b133a8fea7805c1b6e1e1bb07",
-        "symbol": "42",
-        "name": "42"
-      },
-      "metrics": {
-        "liq_usd": 29721.4826,
-        "vol_24h_usd": 19406.7141764291,
-        "txns_24h": 134,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.09443458416666665,
-      "detected_at": "2026-03-03T06:19:52.964517+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0x05a31a18dc5594983d1d7aa531f548da4a36ff73",
-        "symbol": "VIRTERN",
-        "name": "VIRTERN"
-      },
-      "metrics": {
-        "liq_usd": 131452.6989,
-        "vol_24h_usd": 1703.492840177,
-        "txns_24h": 22,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.09721237055555557,
-      "detected_at": "2026-03-03T06:19:52.964540+00:00",
+      "age_hours": 0.06768363722222222,
+      "detected_at": "2026-03-03T06:34:54.661105+00:00",
       "source": "geckoterminal_v2"
     }
   ]
