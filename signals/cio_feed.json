@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-03T17:00:45.867801+00:00",
+  "timestamp": "2026-03-03T17:12:35.146656+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x952d09bc76ded154df674dc1d8460e17ea969abf",
-        "symbol": "SEED",
-        "name": "SEED"
+        "address": "0x6b53db089c86b2e78af02b746c3b7657b1ddbb07",
+        "symbol": "ONE",
+        "name": "ONE"
       },
       "metrics": {
-        "liq_usd": 137871.7448,
-        "vol_24h_usd": 62894.7167301638,
-        "txns_24h": 57,
+        "liq_usd": 24971.5114,
+        "vol_24h_usd": 10497.719827383,
+        "txns_24h": 95,
         "price_usd": 0
       },
       "risk": {
@@ -21,8 +21,77 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.016629459722222222,
-      "detected_at": "2026-03-03T17:00:45.866087+00:00",
+      "age_hours": 0.06706009527777779,
+      "detected_at": "2026-03-03T17:12:34.416358+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0xdae6eebcf7557829a96e3ee25b8ab5821a01bba3",
+        "symbol": "0x402",
+        "name": "0x402"
+      },
+      "metrics": {
+        "liq_usd": 27590.3694,
+        "vol_24h_usd": 19795.4431694881,
+        "txns_24h": 132,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.08156606694444445,
+      "detected_at": "2026-03-03T17:12:34.637857+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0xc7ab9de34f94168f31518327279766f7a28cab07",
+        "symbol": "ONE",
+        "name": "ONE"
+      },
+      "metrics": {
+        "liq_usd": 14619.3244,
+        "vol_24h_usd": 22124.0323379054,
+        "txns_24h": 169,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 95,
+      "age_hours": 0.08216711194444444,
+      "detected_at": "2026-03-03T17:12:34.801622+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x13862a0e37f5586e04a1829b6714f44fa90fbba3",
+        "symbol": "0x402",
+        "name": "0x402"
+      },
+      "metrics": {
+        "liq_usd": 10512.0138,
+        "vol_24h_usd": 3201.0363856509,
+        "txns_24h": 53,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 90,
+      "age_hours": 0.08666022472222222,
+      "detected_at": "2026-03-03T17:12:34.976823+00:00",
       "source": "geckoterminal_v2"
     }
   ]
