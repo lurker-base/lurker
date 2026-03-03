@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-03T02:19:31.485874+00:00",
+  "timestamp": "2026-03-03T02:34:33.450408+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xab56865f807854f328bae0007105b0b93082963c",
-        "symbol": "CHARLES",
-        "name": "CHARLES"
+        "address": "0xd3c7fa22e2f4c67d96fd06ea20c1addf0f741ba3",
+        "symbol": "VOIDCO",
+        "name": "VOIDCO"
       },
       "metrics": {
-        "liq_usd": 23805.5786,
-        "vol_24h_usd": 3186.3642998634,
-        "txns_24h": 29,
+        "liq_usd": 30382.9266,
+        "vol_24h_usd": 18404.6699017792,
+        "txns_24h": 124,
         "price_usd": 0
       },
       "risk": {
@@ -20,21 +20,21 @@
           "new_token"
         ]
       },
-      "score": 95,
-      "age_hours": 0.042356871944444444,
-      "detected_at": "2026-03-03T02:19:31.484749+00:00",
+      "score": 100,
+      "age_hours": 0.08234704277777778,
+      "detected_at": "2026-03-03T02:34:33.449366+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0xb8a9479d924099d94fc57df14d1e5f5c15170fb8",
-        "symbol": "nachtara",
-        "name": "nachtara"
+        "address": "0xb6938b96dc6efb6941f7afdafb3b539d9e7aed30",
+        "symbol": "HYDR",
+        "name": "HYDR"
       },
       "metrics": {
-        "liq_usd": 7967.5776,
-        "vol_24h_usd": 3579.3905603481,
-        "txns_24h": 45,
+        "liq_usd": 18739.0195,
+        "vol_24h_usd": 4041.719469611,
+        "txns_24h": 16,
         "price_usd": 0
       },
       "risk": {
@@ -43,9 +43,32 @@
           "new_token"
         ]
       },
-      "score": 80,
-      "age_hours": 0.07735691972222222,
-      "detected_at": "2026-03-03T02:19:31.484917+00:00",
+      "score": 90,
+      "age_hours": 0.039013683611111113,
+      "detected_at": "2026-03-03T02:34:33.449273+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x686d506d10f0e8257bb31610a1517a100456ab07",
+        "symbol": "333",
+        "name": "333"
+      },
+      "metrics": {
+        "liq_usd": 12804.381,
+        "vol_24h_usd": 4380.8577336974,
+        "txns_24h": 43,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 90,
+      "age_hours": 0.0451248075,
+      "detected_at": "2026-03-03T02:34:33.449314+00:00",
       "source": "geckoterminal_v2"
     }
   ]
