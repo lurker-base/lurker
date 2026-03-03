@@ -13,14 +13,14 @@ STATE_FILE = Path(__file__).parent.parent / "state" / "lurker_state.json"
 
 # Seuils (à externaliser dans config.yaml)
 THRESHOLDS = {
-    "new_max_age": 10,        # minutes
-    "watching_max_age": 30,   # minutes
-    "trending_max_age": 60,   # minutes
+    "new_max_age": 30,        # minutes (increased from 10)
+    "watching_max_age": 60,   # minutes (increased from 30)
+    "trending_max_age": 180,  # minutes (increased from 60)
     "active_max_age": 1440,   # minutes (24h)
     "verified_min_age": 1440, # minutes (24h)
     "rug_liq": 0,             # $0 = rug
     "min_liq_active": 3000,   # <$3k = suspect
-    "max_inactive_time": 60,  # minutes - archive si pas de volume depuis 1h
+    "max_inactive_time": 180, # minutes - archive si pas de volume depuis 3h (increased from 60)
 }
 
 def load_state():

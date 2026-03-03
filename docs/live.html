@@ -3,285 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LURKER — Live Signals</title>
+    <title>live signals — lurker</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="alternate icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Dashboard specific styles */
-        .dashboard-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 1rem;
-        }
+        /* Live page specific styles */
+        .dashboard-container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
         
-        .dashboard-header {
-            text-align: center;
-            padding: 1rem 0 2rem;
-            border-bottom: 1px solid #333;
-            margin-bottom: 2rem;
-        }
-        
-        .dashboard-header h1 {
-            color: #ff6b35;
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .dashboard-header .subtitle {
-            color: #666;
-            font-size: 0.9rem;
-        }
-        
-        /* Stats Grid */
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            gap: 0.75rem;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
             margin-bottom: 2rem;
         }
         
         .stat-card {
-            background: #1a1a1a;
-            border: 1px solid #333;
-            padding: 0.75rem;
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            padding: 1rem;
             text-align: center;
+            border-radius: 8px;
         }
         
-        .stat-value {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #ff6b35;
-        }
-        
-        .stat-label {
-            font-size: 0.65rem;
-            color: #666;
-            text-transform: uppercase;
-        }
+        .stat-value { font-size: 2rem; font-weight: bold; color: var(--accent); }
+        .stat-label { font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase; margin-top: 0.5rem; }
         
         /* Filter Tabs */
-        .filter-tabs {
-            display: flex;
-            gap: 0.5rem;
-            margin-bottom: 1.5rem;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        
+        .filter-tabs { display: flex; gap: 0.5rem; margin-bottom: 2rem; flex-wrap: wrap; }
         .filter-tab {
             background: transparent;
-            border: 1px solid #333;
-            color: #888;
-            padding: 0.4rem 0.8rem;
+            border: 1px solid var(--border);
+            color: var(--text-dim);
+            padding: 0.5rem 1rem;
             cursor: pointer;
             font-family: inherit;
-            font-size: 0.75rem;
-            text-transform: lowercase;
+            font-size: 0.8rem;
+            border-radius: 4px;
         }
-        
-        .filter-tab:hover {
-            border-color: #ff6b35;
-            color: #ff6b35;
-        }
-        
-        .filter-tab.active {
-            background: #ff6b35;
-            color: #000;
-            border-color: #ff6b35;
-        }
+        .filter-tab:hover { border-color: var(--accent); color: var(--accent); }
+        .filter-tab.active { background: var(--accent); color: var(--bg); border-color: var(--accent); }
         
         /* Token List */
-        .token-list {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
+        .token-list { display: flex; flex-direction: column; gap: 0.75rem; }
         
         .token-row {
-            background: #1a1a1a;
-            border: 1px solid #333;
-            padding: 0.75rem 1rem;
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            padding: 1rem 1.5rem;
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
-            gap: 1rem;
+            grid-template-columns: 2fr 1.5fr 1.5fr 1fr 1fr;
+            gap: 1.5rem;
             align-items: center;
+            border-radius: 8px;
+            transition: border-color 0.2s;
         }
+        .token-row:hover { border-color: var(--accent); }
         
-        .token-row:hover {
-            border-color: #ff6b35;
-        }
+        .token-info { display: flex; flex-direction: column; gap: 0.25rem; }
+        .token-symbol { font-weight: bold; font-size: 1.1rem; }
+        .token-address { font-size: 0.7rem; color: var(--text-dim); font-family: monospace; }
         
-        .token-info {
-            display: flex;
-            flex-direction: column;
-        }
+        .token-metrics { display: flex; gap: 1.5rem; }
+        .token-metric { text-align: right; }
+        .metric-label { font-size: 0.6rem; color: var(--text-dim); text-transform: uppercase; }
+        .metric-value { font-weight: bold; }
         
-        .token-symbol {
-            font-weight: bold;
-            color: #fff;
-            font-size: 1rem;
-        }
-        
-        .token-name {
-            font-size: 0.7rem;
-            color: #666;
-        }
-        
-        .token-category {
-            padding: 0.2rem 0.5rem;
-            border-radius: 3px;
-            font-size: 0.65rem;
-            text-transform: uppercase;
-            font-weight: bold;
-            text-align: center;
-            border: none;
-        }
-        
-        .cat-NEW { background: #2d5016; color: #4ade80; }
-        .cat-WATCHING { background: #1e3a8a; color: #60a5fa; }
-        .cat-TRENDING { background: #7c2d12; color: #fb923c; }
-        .cat-VERIFIED { background: #14532d; color: #86efac; }
-        .cat-ACTIVE { background: #581c87; color: #c084fc; }
-        .cat-RUG { background: #000; color: #666; text-decoration: line-through; }
-        
-        /* Badges */
-        .token-badges {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.3rem;
-            margin-top: 0.3rem;
-        }
-
-        .badge {
-            padding: 0.15rem 0.4rem;
-            border-radius: 3px;
-            font-size: 0.6rem;
-            font-weight: bold;
-            white-space: nowrap;
-        }
-
-        /* Simple color classes */
-        .badge-green { background: #166534 !important; color: #4ade80 !important; }
-        .badge-yellow { background: #854d0e !important; color: #fbbf24 !important; }
-        .badge-red { background: #7f1d1d !important; color: #f87171 !important; }
-        .badge-default { background: #333; color: #999; }
-        
-        /* Avatar styles for this page - matching main site */
-        .avatar-section-fixed {
-            position: fixed;
-            top: 80px;
-            left: 20px;
-            z-index: 100;
-        }
-        
-        .avatar-wrapper {
-            position: relative;
-            width: 60px;
-            height: 60px;
-        }
-        
-        .avatar {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            object-fit: cover;
-            z-index: 2;
-            filter: drop-shadow(0 0 10px rgba(255, 107, 53, 0.8));
-        }
-        
-        .avatar-glow {
-            position: absolute;
-            top: 45%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 320px;
-            height: 320px;
-            border-radius: 50%;
-            background: radial-gradient(circle, rgba(255, 107, 53, 0.4) 0%, transparent 70%);
-            animation: pulse-glow 4s ease-in-out infinite;
-            z-index: 1;
-        }
-        
-        @keyframes pulse-glow {
-            0%, 100% { 
-                opacity: 0.6;
-                transform: translate(-50%, -50%) scale(1);
-            }
-            50% { 
-                opacity: 1;
-                transform: translate(-50%, -50%) scale(1.15);
-            }
-        }
-        
-        .token-metric {
-            text-align: right;
-        }
-        
-        .metric-label {
-            font-size: 0.6rem;
-            color: #666;
-            text-transform: uppercase;
-        }
-        
-        .metric-value {
-            color: #fff;
-            font-size: 0.9rem;
-        }
+        .badge { padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.7rem; font-weight: bold; }
+        .badge-new { background: #166534; color: #4ade80; }
+        .badge-active { background: #581c87; color: #c084fc; }
+        .badge-verified { background: #14532d; color: #86efac; }
+        .badge-risk { background: #7f1d1d; color: #f87171; }
         
         .positive { color: #4ade80; }
         .negative { color: #f87171; }
         
-        /* Loading & Error */
-        .loading {
-            text-align: center;
-            padding: 3rem;
-            color: #666;
-        }
+        .loading { text-align: center; padding: 4rem; color: var(--text-dim); }
         
-        .error-message {
-            background: #7f1d1d;
-            color: #fca5a5;
-            padding: 1rem;
-            margin: 1rem 0;
-            text-align: center;
-        }
+        .last-update { text-align: center; color: var(--text-dim); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
         
-        .last-update {
-            text-align: center;
-            color: #666;
-            font-size: 0.75rem;
-            margin-top: 2rem;
-            padding-top: 1rem;
-            border-top: 1px solid #333;
-        }
-        
-        /* Responsive */
         @media (max-width: 768px) {
-            .token-row {
-                grid-template-columns: 1.5fr 1fr 1fr;
-                gap: 0.5rem;
-            }
-            
-            .token-row > div:nth-child(4),
-            .token-row > div:nth-child(5) {
-                display: none;
-            }
-            
-            .stats-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .token-row { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+            .token-metrics { display: none; }
         }
     </style>
 </head>
 <body>
     <div class="bg-grid"></div>
     
-    <!-- Navigation -->
     <nav class="nav">
         <a href="index.html" class="nav-link">lurker</a>
         <a href="token.html" class="nav-link">token</a>
@@ -292,113 +102,70 @@
         <a href="predictions.html" class="nav-link">predictions</a>
         <a href="hof.html" class="nav-link">🏆 hof</a>
         <a href="subscribe.html" class="nav-link">subscribe</a>
-        <a href="https://x.com/LURKER_AI2026" class="nav-link" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-top:-2px"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        <a href="https://x.com/LURKER_AI2026" class="nav-link" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
     </nav>
 
-    <!-- Avatar with Halo (Top Left) -->
-    <div class="avatar-section-fixed">
-        <div class="avatar-wrapper" id="avatar-wrapper">
-            <img src="assets/lurker-mascot-logo.png" alt="LURKER" class="avatar" onerror="this.style.display='none'">
-            <div class="avatar-glow"></div>
-        </div>
-    </div>
-
     <main class="main">
-        <div class="dashboard-container">
-            <div class="dashboard-header">
-                <h1>👁 live signals</h1>
-                <p class="subtitle">autonomous token surveillance on base</p>
-            </div>
-            
-            <!-- Stats -->
-            <div class="stats-grid" id="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-value" id="stat-total">-</div>
-                    <div class="stat-label">total</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value" id="stat-new">-</div>
-                    <div class="stat-label">new</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value" id="stat-watching">-</div>
-                    <div class="stat-label">watching</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value" id="stat-trending">-</div>
-                    <div class="stat-label">trending</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value" id="stat-active">-</div>
-                    <div class="stat-label">active</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value" id="stat-verified">-</div>
-                    <div class="stat-label">verified</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value" id="stat-rug">-</div>
-                    <div class="stat-label">rug</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value" id="stat-pumps">-</div>
-                    <div class="stat-label">pumps</div>
+        <div class="container page-container with-sidebar">
+            <div class="page-sidebar">
+                <div class="avatar-wrapper" id="avatar-wrapper">
+                    <img src="assets/lurker-mascot-logo.png" alt="" class="avatar">
+                    <div class="avatar-glow"></div>
+                    <div class="sparks-container" id="sparks"></div>
                 </div>
             </div>
             
-            <!-- Filter Tabs -->
-            <div class="filter-tabs">
-                <button class="filter-tab active" data-filter="all">all</button>
-                <button class="filter-tab" data-filter="NEW">new</button>
-                <button class="filter-tab" data-filter="WATCHING">watching</button>
-                <button class="filter-tab" data-filter="TRENDING">trending</button>
-                <button class="filter-tab" data-filter="ACTIVE">active</button>
-                <button class="filter-tab" data-filter="VERIFIED">verified</button>
-                <button class="filter-tab" data-filter="RUG">rug</button>
+            <div class="page-content">
+                <h1 class="page-title">live signals</h1>
+                
+                <div class="stats-grid">
+                    <div class="stat-card"><div class="stat-value" id="stat-total">-</div><div class="stat-label">Total</div></div>
+                    <div class="stat-card"><div class="stat-value" id="stat-new">-</div><div class="stat-label">New</div></div>
+                    <div class="stat-card"><div class="stat-value" id="stat-active">-</div><div class="stat-label">Active</div></div>
+                    <div class="stat-card"><div class="stat-value" id="stat-verified">-</div><div class="stat-label">Verified</div></div>
+                </div>
+                
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">all</button>
+                    <button class="filter-tab" data-filter="new">new</button>
+                    <button class="filter-tab" data-filter="active">active</button>
+                </div>
+                
+                <div id="tokens-container"><div class="loading">observing the chain...</div></div>
+                
+                <p class="last-update">last scan: <span id="last-update">-</span> | next: <span id="countdown">30</span>s</p>
             </div>
-            
-            <!-- Token List -->
-            <div id="tokens-container">
-                <div class="loading">observing the chain...</div>
-            </div>
-            
-            <p class="last-update">last update: <span id="last-update">-</span> | next refresh: <span id="countdown">30</span>s</p>
         </div>
     </main>
 
     <script src="sparks.js"></script>
     <script>
-        const STATE_URL = 'https://raw.githubusercontent.com/lurker-base/lurker/main/state/lurker_state.json';
+        // Use CIO feed for real-time data (not archived state)
+        const CIO_FEED_URL = 'https://raw.githubusercontent.com/lurker-base/lurker/main/signals/cio_feed.json';
         let allTokens = [];
         let currentFilter = 'all';
         
-        async function loadState() {
+        async function loadData() {
             try {
-                const response = await fetch(STATE_URL + '?t=' + Date.now());
+                const response = await fetch(CIO_FEED_URL + '?t=' + Date.now());
                 if (!response.ok) throw new Error('failed to load');
-                const state = await response.json();
+                const data = await response.json();
                 
-                allTokens = Object.values(state.tokens || {});
-                updateStats(state.meta?.stats || {});
+                allTokens = data.candidates || [];
+                updateStats();
                 renderTokens();
                 document.getElementById('last-update').textContent = new Date().toLocaleTimeString();
             } catch (error) {
                 document.getElementById('tokens-container').innerHTML = 
-                    `<div class="error-message">error loading data: ${error.message}</div>`;
+                    '<div class="loading">error: ' + error.message + '</div>';
             }
         }
         
-        function updateStats(stats) {
-            const byCat = stats.by_category || {};
-            document.getElementById('stat-total').textContent = 
-                Object.values(byCat).reduce((a, b) => a + b, 0);
-            document.getElementById('stat-new').textContent = byCat.NEW || 0;
-            document.getElementById('stat-watching').textContent = byCat.WATCHING || 0;
-            document.getElementById('stat-trending').textContent = byCat.TRENDING || 0;
-            document.getElementById('stat-active').textContent = byCat.ACTIVE || 0;
-            document.getElementById('stat-verified').textContent = byCat.VERIFIED || 0;
-            document.getElementById('stat-rug').textContent = byCat.RUG || 0;
-            document.getElementById('stat-pumps').textContent = stats.pumps_24h || 0;
+        function updateStats() {
+            document.getElementById('stat-total').textContent = allTokens.length;
+            document.getElementById('stat-new').textContent = allTokens.filter(t => t.score >= 95).length;
+            document.getElementById('stat-active').textContent = allTokens.filter(t => t.score >= 90).length;
+            document.getElementById('stat-verified').textContent = '-';
         }
         
         function formatNumber(num) {
@@ -408,115 +175,56 @@
             return '$' + num.toFixed(0);
         }
         
-        function formatAge(detectedAt) {
-            if (!detectedAt) return '-';
-            const age = (Date.now() - new Date(detectedAt)) / 1000 / 60;
-            if (age < 60) return Math.floor(age) + 'm';
-            return Math.floor(age / 60) + 'h';
+        function formatAge(ageHours) {
+            if (!ageHours) return '-';
+            if (ageHours < 1) return Math.floor(ageHours * 60) + 'm';
+            return ageHours.toFixed(1) + 'h';
         }
         
         function renderTokens() {
             const container = document.getElementById('tokens-container');
-            
             let tokens = allTokens;
-            if (currentFilter !== 'all') {
-                tokens = tokens.filter(t => t.category === currentFilter);
-            }
+            if (currentFilter === 'new') tokens = tokens.filter(t => t.score >= 95);
+            if (currentFilter === 'active') tokens = tokens.filter(t => t.score >= 90 && t.score < 95);
             
-            // Sort by detected_at desc
-            tokens.sort((a, b) => new Date(b.detected_at) - new Date(a.detected_at));
+            tokens.sort((a, b) => b.score - a.score);
             
             if (tokens.length === 0) {
-                container.innerHTML = '<div class="loading">no tokens in this category</div>';
+                container.innerHTML = '<div class="loading">no signals detected</div>';
                 return;
             }
             
-            container.innerHTML = tokens.map(token => {
-                const perf = token.performance || {};
-                const metrics = token.metrics || {};
-                const gain = perf.current_gain || 0;
-                const gainClass = gain > 0 ? 'positive' : gain < 0 ? 'negative' : '';
-                
-                // Generate risk badges with colors
-                const riskBadges = token.risk_tags || [];
-                const riskBadgeHTML = riskBadges.map(b => {
-                    let badgeClass = 'badge-default';
-                    
-                    // Determine class based on badge content
-                    if (b.includes('📉') || b.includes('💀') || b.includes('RUG')) {
-                        badgeClass = 'badge-red';
-                    } else if (b.includes('⚠️') || b.includes('WATCH') || b.includes('FRESH')) {
-                        badgeClass = 'badge-yellow';
-                    } else if (b.includes('⚡') || b.includes('📈') || b.includes('💧') || b.includes('💎') || b.includes('🌊')) {
-                        badgeClass = 'badge-green';
-                    }
-                    
-                    return `<span class="badge ${badgeClass}">${b}</span>`;
-                }).join('');
-                
-                // Generate DexScreener badges (good, premium, boost, etc.)
-                const dsBadges = token.badges || [];
-                const dsBadgeHTML = dsBadges.map(b => {
-                    let badgeClass = 'badge-default';
-                    const badgeLower = b.toLowerCase();
-                    
-                    if (badgeLower.includes('good') || badgeLower.includes('verified')) {
-                        badgeClass = 'badge-green';
-                    } else if (badgeLower.includes('premium') || badgeLower.includes('boost')) {
-                        badgeClass = 'badge-yellow';
-                    } else if (badgeLower.includes('trending') || badgeLower.includes('hot')) {
-                        badgeClass = 'badge-green';
-                    } else if (badgeLower.includes('warning') || badgeLower.includes('risk')) {
-                        badgeClass = 'badge-red';
-                    }
-                    
-                    return `<span class="badge ${badgeClass}">${b}</span>`;
-                }).join('');
-                
-                const allBadgesHTML = riskBadgeHTML + dsBadgeHTML;
-                
-                // Generate social links
-                const addr = token.address || '';
-                const dexscreenerLink = addr ? `https://dexscreener.com/base/${addr}` : '#';
-                const twitterLink = token.twitter || '';
-                const websiteLink = token.website || '';
-                
-                const socialHTML = `
-                    <div class="token-socials" style="margin-top: 0.3rem; display: flex; gap: 0.5rem;">
-                        <a href="${dexscreenerLink}" target="_blank" style="color: #ff6b35; font-size: 0.7rem; text-decoration: none;">dex</a>
-                        ${twitterLink ? `<a href="${twitterLink}" target="_blank" style="color: #60a5fa; font-size: 0.7rem; text-decoration: none;">x</a>` : ''}
-                        ${websiteLink ? `<a href="${websiteLink}" target="_blank" style="color: #4ade80; font-size: 0.7rem; text-decoration: none;">web</a>` : ''}
-                    </div>
-                `;
-                
+            container.innerHTML = '<div class="token-list">' + tokens.map(token => {
+                const risk = token.risk?.level || 'medium';
+                const badgeClass = risk === 'high' ? 'badge-risk' : token.score >= 95 ? 'badge-new' : 'badge-active';
                 return `
                     <div class="token-row">
                         <div class="token-info">
-                            <span class="token-symbol">$${token.symbol || '?'}</span>
-                            <span class="token-name">${token.name || 'unknown'}</span>
-                            <div class="token-badges">${allBadgesHTML}</div>
-                            ${socialHTML}
+                            <span class="token-symbol">$${token.token.symbol}</span>
+                            <span class="token-address">${token.token.address.slice(0, 10)}...${token.token.address.slice(-8)}</span>
                         </div>
-                        <button class="token-category cat-${token.category || 'NEW'}">${token.category || 'NEW'}</button>
+                        <div class="token-metrics">
+                            <div class="token-metric">
+                                <div class="metric-label">Liquidity</div>
+                                <div class="metric-value">${formatNumber(token.metrics.liq_usd)}</div>
+                            </div>
+                            <div class="token-metric">
+                                <div class="metric-label">Volume 24h</div>
+                                <div class="metric-value">${formatNumber(token.metrics.vol_24h_usd)}</div>
+                            </div>
+                        </div>
+                        <div><span class="badge ${badgeClass}">${token.score}%</span></div>
                         <div class="token-metric">
-                            <div class="metric-label">price</div>
-                            <div class="metric-value">${metrics.price_usd && !isNaN(metrics.price_usd) ? '$' + Number(metrics.price_usd).toFixed(6) : '-'}</div>
+                            <div class="metric-label">Age</div>
+                            <div class="metric-value">${formatAge(token.age_hours)}</div>
                         </div>
                         <div class="token-metric">
-                            <div class="metric-label">gain</div>
-                            <div class="metric-value ${gainClass}">${gain && !isNaN(gain) ? (gain > 0 ? '+' : '') + Number(gain).toFixed(1) + '%' : '-'}</div>
-                        </div>
-                        <div class="token-metric">
-                            <div class="metric-label">liquidity</div>
-                            <div class="metric-value">${metrics.liq_usd && !isNaN(metrics.liq_usd) ? formatNumber(metrics.liq_usd) : '-'}</div>
-                        </div>
-                        <div class="token-metric">
-                            <div class="metric-label">age</div>
-                            <div class="metric-value">${formatAge(token.detected_at)}</div>
+                            <div class="metric-label">Risk</div>
+                            <div class="metric-value">${risk}</div>
                         </div>
                     </div>
                 `;
-            }).join('');
+            }).join('') + '</div>';
         }
         
         // Filter tabs
@@ -529,19 +237,17 @@
             });
         });
         
-        // Countdown timer
-        let countdownValue = 30;
-        const countdownEl = document.getElementById('countdown');
+        // Auto refresh
+        loadData();
+        setInterval(loadData, 30000);
         
+        // Countdown
+        let countdown = 30;
         setInterval(() => {
-            countdownValue--;
-            if (countdownValue < 0) countdownValue = 30;
-            if (countdownEl) countdownEl.textContent = countdownValue;
+            countdown--;
+            if (countdown <= 0) countdown = 30;
+            document.getElementById('countdown').textContent = countdown;
         }, 1000);
-        
-        // Load and refresh
-        loadState();
-        setInterval(loadState, 30000); // Refresh every 30s
     </script>
 </body>
 </html>
