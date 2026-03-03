@@ -152,7 +152,7 @@ def parse_pool(pool_data):
         'created_at': created_str
     }, None
 
-def score_token(token_data):
+def score_token(token_data, dex_data=None):
     """Calcule un score 0-100"""
     score = 50  # Base
     
@@ -183,9 +183,27 @@ def score_token(token_data):
     elif vol > 10000:
         score += 5
     
-    return min(100, score)
+    # Price action bonus (from DexScreener)
+    if dex_data:
+        # DexScreener returns priceChange as dict with h24 key
+        pc = 0
+        if isinstance(dex_data.get('priceChange'), dict):
+            pc = dex_data.get('priceChange', {}).get('h24', 0)
+        elif isinstance(dex_data.get('priceChange'), (int, float)):
+            pc = dex_data.get('priceChange', 0)
+        
+        if pc > 50:  # Strong pump
+            score += 15
+        elif pc > 20:
+            score += 10
+        elif pc < -50:  # Dump
+            score -= 20
+        elif pc < -20:
+            score -= 10
+    
+    return min(100, max(0, score))
 
-def calculate_risk(token_data):
+def calculate_risk(token_data, dex_data=None):
     """Calcule le niveau de risque"""
     risks = []
     
@@ -196,11 +214,100 @@ def calculate_risk(token_data):
     if token_data['tx_24h'] < 20:
         risks.append('low_activity')
     
-    if len(risks) >= 2:
+    # Check DexScreener for dumps/rugs
+    if dex_data:
+        # Check liquidity (already validated but double check)
+        liquidity = dex_data.get('liquidity', {}).get('usd', 0)
+        if liquidity < 1000:
+            risks.append('rugged')
+        
+        # Check price change
+        pc = 0
+        if isinstance(dex_data.get('priceChange'), dict):
+            pc = dex_data.get('priceChange', {}).get('h24', 0)
+        elif isinstance(dex_data.get('priceChange'), (int, float)):
+            pc = dex_data.get('priceChange', 0)
+        
+        if pc < -80:
+            risks.append('heavy_dump')
+    
+    if 'rugged' in risks or len(risks) >= 3:
         return 'high'
-    elif len(risks) == 1:
+    elif len(risks) >= 2:
         return 'medium'
     return 'low'
+
+def calculate_badges(token_data, dex_data=None):
+    """
+    Calcule les badges pour un token
+    Returns: list of badge strings
+    """
+    badges = []
+    
+    # Age badges
+    age = token_data['age_hours']
+    if age < 0.1:
+        badges.append('🔥 SUPER FRESH')
+    elif age < 1:
+        badges.append('🔥 FRESH')
+    elif age < 6:
+        badges.append('🆕 NEW')
+    
+    # Liquidity badges
+    liq = token_data['liquidity_usd']
+    if liq >= 100000:
+        badges.append('💰 WHALE')
+    elif liq >= 50000:
+        badges.append('💧 DEEP LIQ')
+    elif liq >= 20000:
+        badges.append('💧 LIQ')
+    
+    # Volume badges  
+    vol = token_data['volume_24h']
+    if vol >= 100000:
+        badges.append('📈 MOON')
+    elif vol >= 50000:
+        badges.append('📈 HOT')
+    elif vol >= 20000:
+        badges.append('📈 ACTIVE')
+    
+    # Tx badges
+    tx = token_data['tx_24h']
+    if tx >= 100:
+        badges.append('⚡ VIRAL')
+    elif tx >= 50:
+        badges.append('⚡ BUZZ')
+    
+    # Price action badges (from DexScreener)
+    if dex_data:
+        # DexScreener returns priceChange as dict with h24 key
+        pc = 0
+        if isinstance(dex_data.get('priceChange'), dict):
+            pc = dex_data.get('priceChange', {}).get('h24', 0)
+        elif isinstance(dex_data.get('priceChange'), (int, float)):
+            pc = dex_data.get('priceChange', 0)
+        
+        if pc > 100:
+            badges.append('🚀 MEGA PUMP')
+        elif pc > 50:
+            badges.append('🚀 PUMP')
+        elif pc > 20:
+            badges.append('📗 PUMPING')
+        elif pc < -80:
+            badges.append('💀 RUG')
+        elif pc < -50:
+            badges.append('📕 HEAVY DUMP')
+        elif pc < -20:
+            badges.append('📙 DUMPING')
+    
+    # Premium badges (high score + good metrics)
+    score = token_data.get('score', 0)
+    if score >= 95 and liq >= 30000 and vol >= 20000:
+        badges.append('💎 PREMIUM')
+    elif score >= 90 and liq >= 20000:
+        badges.append('⭐ GEM')
+    
+    return badges
 
 def main():
     print("=" * 60)
@@ -247,17 +354,20 @@ def main():
                 rejected['known'] += 1
                 continue
         
-        # Nouveau token valide
-        token_data['score'] = score_token(token_data)
-        token_data['risk'] = calculate_risk(token_data)
-        token_data['detected_at'] = iso()
-        
-        # DexScreener validation - cross-check liquidity and detect rugs
+        # DexScreener validation - cross-check liquidity and detect rugs FIRST
         is_valid, reject_reason, dex_data = validate_token_dexscreener(addr)
         if not is_valid:
             rejected[reject_reason] = rejected.get(reject_reason, 0) + 1
             print(f"  ⚠️ {token_data['token_symbol']}: REJECTED by DexScreener - {reject_reason}")
             continue
+        
+        # Calculate score & risk WITH DexScreener data
+        token_data['score'] = score_token(token_data, dex_data)
+        token_data['risk'] = calculate_risk(token_data, dex_data)
+        token_data['detected_at'] = iso()
+        
+        # Calculate badges
+        token_data['badges'] = calculate_badges(token_data, dex_data)
         
         # Mark as seen
         if addr not in registry['tokens']:
@@ -274,8 +384,9 @@ def main():
     # Affichage
     print(f"\n✅ Candidates: {len(candidates)}")
     for c in candidates:
+        badges_str = ' | '.join(c.get('badges', [])) if c.get('badges') else ''
         print(f"  • {c['token_symbol']}: score={c['score']}, age={c['age_hours']:.1f}h, "
-              f"liq=${c['liquidity_usd']:,.0f}, risk={c['risk']}")
+              f"liq=${c['liquidity_usd']:,.0f}, risk={c['risk']} {f'[{badges_str}]' if badges_str else ''}")
     
     print(f"\n❌ Rejected: {rejected}")
     
@@ -287,13 +398,13 @@ def main():
                 'token': {
                     'address': c['token_address'],
                     'symbol': c['token_symbol'],
-                    'name': c['token_symbol']  # On n'a pas le nom complet
+                    'name': c['token_symbol']
                 },
                 'metrics': {
                     'liq_usd': c['liquidity_usd'],
                     'vol_24h_usd': c['volume_24h'],
                     'txns_24h': c['tx_24h'],
-                    'price_usd': 0  # Pas de prix dispo dans cette API
+                    'price_usd': 0
                 },
                 'risk': {
                     'level': c['risk'],
@@ -302,7 +413,8 @@ def main():
                 'score': c['score'],
                 'age_hours': c['age_hours'],
                 'detected_at': c['detected_at'],
-                'source': 'geckoterminal_v2'
+                'source': 'geckoterminal_v2',
+                'badges': c.get('badges', [])
             })
         
         cio_data = {

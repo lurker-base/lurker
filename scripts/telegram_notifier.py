@@ -84,10 +84,11 @@ def format_token_alert(token, badge_name, badge_emoji):
     liq = token['metrics']['liq_usd']
     vol1h = token['metrics'].get('vol_1h_usd', 0)
     vol5m = token['metrics'].get('vol_5m_usd', 0)
-    age = token['timestamps']['age_minutes']
+    # Handle both old format (timestamps.age_minutes) and new format (age_hours)
+    age = token.get('timestamps', {}).get('age_minutes', token.get('age_hours', 0) * 60)
     quality = token.get('quality', {})
-    risk = token.get('risk_level', 'unknown')
-    score = token.get('scores', {}).get('cio_score', 0)
+    risk = token.get('risk', {}).get('level', token.get('risk_level', 'medium'))
+    score = token.get('score', token.get('scores', {}).get('cio_score', 0))
     
     # Risk emoji
     risk_emoji = "🟢" if risk == 'low' else "🟡" if risk == 'medium' else "🔴"

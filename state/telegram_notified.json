@@ -124,8 +124,63 @@
       "badge": "PREMIUM",
       "timestamp": "2026-02-24T21:53:53.435945+00:00",
       "symbol": "TAKEOVER"
+    },
+    "0x952d09bc76ded154df674dc1d8460e17ea969abf": {
+      "badge": "GOOD",
+      "timestamp": "2026-03-03T17:05:50.767686+00:00",
+      "symbol": "SEED"
+    },
+    "0x6b53db089c86b2e78af02b746c3b7657b1ddbb07": {
+      "badge": "WATCH",
+      "timestamp": "2026-03-03T17:13:30.246291+00:00",
+      "symbol": "ONE"
+    },
+    "0xdae6eebcf7557829a96e3ee25b8ab5821a01bba3": {
+      "badge": "WATCH",
+      "timestamp": "2026-03-03T17:13:30.246308+00:00",
+      "symbol": "0x402"
+    },
+    "0xc7ab9de34f94168f31518327279766f7a28cab07": {
+      "badge": "WATCH",
+      "timestamp": "2026-03-03T17:13:30.246312+00:00",
+      "symbol": "ONE"
+    },
+    "0x13862a0e37f5586e04a1829b6714f44fa90fbba3": {
+      "badge": "WATCH",
+      "timestamp": "2026-03-03T17:13:30.246314+00:00",
+      "symbol": "0x402"
+    },
+    "0x315ea7dbbb2820c66274e014b180105e35196ba3": {
+      "badge": "WATCH",
+      "timestamp": "2026-03-03T17:29:31.519248+00:00",
+      "symbol": "YARR"
+    },
+    "0xf8e314eaf2b8258465a467b2c4fd176f90d4bb07": {
+      "badge": "WATCH",
+      "timestamp": "2026-03-03T17:29:31.519268+00:00",
+      "symbol": "ONE"
+    },
+    "0xf2505498de1cf897a27100ee7000c939bd05aba3": {
+      "badge": "WATCH",
+      "timestamp": "2026-03-03T17:29:31.519274+00:00",
+      "symbol": "HeyBotAi"
+    },
+    "0xccb06716aad8a7833845c81561c37e4f1e2adb07": {
+      "badge": "WATCH",
+      "timestamp": "2026-03-03T17:35:32.389325+00:00",
+      "symbol": "Karma"
+    },
+    "0xcfd0ef82a38c59fc1f128105c066b60ee74747be": {
+      "badge": "WATCH",
+      "timestamp": "2026-03-03T17:35:32.389347+00:00",
+      "symbol": "CLAWNCH"
+    },
+    "0xfec4633b575353f7ceea65018ee7ac358bd8ab07": {
+      "badge": "WATCH",
+      "timestamp": "2026-03-03T17:35:32.389354+00:00",
+      "symbol": "ONE"
     }
   },
   "updates": [],
-  "last_check": "2026-02-25T05:21:39.453703+00:00"
+  "last_check": "2026-03-03T17:37:33.075388+00:00"
 }

@@ -1,0 +1,13 @@
+{
+  "schema": "lurker_v1.5",
+  "meta": {
+    "version": "1.5.0",
+    "total_tokens": 0,
+    "stats": {
+      "by_category": {"NEW": 0, "WATCHING": 0, "TRENDING": 0, "ACTIVE": 0, "VERIFIED": 0, "RUGGED": 0},
+      "pumps_24h": 0,
+      "dumps_24h": 0
+    }
+  },
+  "tokens": {}
+}

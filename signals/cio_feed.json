@@ -1,75 +1,120 @@
 {
-  "timestamp": "2026-03-03T17:33:53.871095+00:00",
+  "timestamp": "2026-03-03T17:37:38.200216+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xccb06716aad8a7833845c81561c37e4f1e2adb07",
-        "symbol": "Karma",
-        "name": "Karma"
+        "address": "0xf7f4dbd0fdd60b5d79e63b7c4f1f1e4d1172fb07",
+        "symbol": "Claw_ops",
+        "name": "Claw_ops"
       },
       "metrics": {
-        "liq_usd": 21083.1417,
-        "vol_24h_usd": 11184.0887528923,
-        "txns_24h": 90,
+        "liq_usd": 28036.2545,
+        "vol_24h_usd": 12971.8143493493,
+        "txns_24h": 46,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "low",
         "factors": [
           "new_token"
         ]
       },
       "score": 100,
-      "age_hours": 0.05133719027777778,
-      "detected_at": "2026-03-03T17:33:53.813899+00:00",
-      "source": "geckoterminal_v2"
+      "age_hours": 0.04448471444444444,
+      "detected_at": "2026-03-03T17:37:37.323474+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 SUPER FRESH",
+        "\ud83d\udca7 LIQ",
+        "\ud83d\ude80 PUMP",
+        "\u2b50 GEM"
+      ]
     },
     {
       "token": {
-        "address": "0xcfd0ef82a38c59fc1f128105c066b60ee74747be",
-        "symbol": "CLAWNCH",
-        "name": "CLAWNCH"
-      },
-      "metrics": {
-        "liq_usd": 21211.8841,
-        "vol_24h_usd": 4267.5323162302,
-        "txns_24h": 38,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 95,
-      "age_hours": 0.03631051138888889,
-      "detected_at": "2026-03-03T17:33:53.717854+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0xfec4633b575353f7ceea65018ee7ac358bd8ab07",
+        "address": "0x39629e0a4751e70cc61dfe45b01a58ad840fbb07",
         "symbol": "ONE",
         "name": "ONE"
       },
       "metrics": {
-        "liq_usd": 13183.9988,
-        "vol_24h_usd": 9595.1394797809,
-        "txns_24h": 88,
+        "liq_usd": 27354.937,
+        "vol_24h_usd": 10114.7556705138,
+        "txns_24h": 84,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "low",
         "factors": [
           "new_token"
         ]
       },
-      "score": 90,
-      "age_hours": 0.05021590027777778,
-      "detected_at": "2026-03-03T17:33:53.777255+00:00",
-      "source": "geckoterminal_v2"
+      "score": 100,
+      "age_hours": 0.06573197555555556,
+      "detected_at": "2026-03-03T17:37:37.843378+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 SUPER FRESH",
+        "\ud83d\udca7 LIQ",
+        "\u26a1 BUZZ",
+        "\ud83d\ude80 MEGA PUMP",
+        "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0xdc9b3869a86db79defe8ddfda22f999fc75c6ba3",
+        "symbol": "YARR",
+        "name": "YARR"
+      },
+      "metrics": {
+        "liq_usd": 10840.0345,
+        "vol_24h_usd": 2986.4519016782,
+        "txns_24h": 61,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "low",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.09473096555555556,
+      "detected_at": "2026-03-03T17:37:38.197961+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 SUPER FRESH",
+        "\u26a1 BUZZ",
+        "\ud83d\ude80 PUMP"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x86cd9013badb9c54a9d0f47d5b7b74263ac33b07",
+        "symbol": "agentwatch",
+        "name": "agentwatch"
+      },
+      "metrics": {
+        "liq_usd": 19425.9868,
+        "vol_24h_usd": 3149.3715274296,
+        "txns_24h": 32,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "low",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 80,
+      "age_hours": 0.06967873083333334,
+      "detected_at": "2026-03-03T17:37:38.031382+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 SUPER FRESH",
+        "\ud83d\udcd9 DUMPING"
+      ]
     }
   ]
 }

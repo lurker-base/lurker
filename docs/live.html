@@ -70,6 +70,22 @@
         .badge-smart { background: #1d4ed8; color: #bfdbfe; }
         .badge-narrative { background: #7c3aed; color: #ede9fe; }
         
+        /* Premium/Pump/Dump badges */
+        .badge-premium { background: linear-gradient(135deg, #f59e0b, #d97706); color: #fff; }
+        .badge-gem { background: linear-gradient(135deg, #8b5cf6, #6d28d9); color: #fff; }
+        .badge-pump { background: #065f46; color: #34d399; }
+        .badge-mega-pump { background: #047857; color: #10b981; animation: pulse 1s infinite; }
+        .badge-dump { background: #7f1d1d; color: #fca5a5; }
+        .badge-rug { background: #000; color: #ff0000; border: 1px solid #ff0000; }
+        .badge-whale { background: #0d9488; color: #5eead4; }
+        .badge-hot { background: #dc2626; color: #fecaca; }
+        .badge-viral { background: #f59e0b; color: #78350f; }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
         .loading { text-align: center; padding: 4rem; color: var(--text-dim); }
         .last-update { text-align: center; color: var(--text-dim); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
         
@@ -269,6 +285,23 @@
                 
                 // Risk badge
                 badges.push('<span class="badge ' + riskClass + '">' + risk.toUpperCase() + '</span>');
+                
+                // Add badges from scanner feed (PUMP, DUMP, PREMIUM, etc.)
+                if (token.badges && token.badges.length > 0) {
+                    token.badges.forEach(badge => {
+                        let className = 'badge';
+                        if (badge.includes('PREMIUM')) className += ' badge-premium';
+                        else if (badge.includes('GEM')) className += ' badge-gem';
+                        else if (badge.includes('MEGA PUMP')) className += ' badge-mega-pump';
+                        else if (badge.includes('PUMP')) className += ' badge-pump';
+                        else if (badge.includes('DUMP')) className += ' badge-dump';
+                        else if (badge.includes('RUG')) className += ' badge-rug';
+                        else if (badge.includes('WHALE')) className += ' badge-whale';
+                        else if (badge.includes('HOT')) className += ' badge-hot';
+                        else if (badge.includes('VIRAL')) className += ' badge-viral';
+                        badges.push('<span class="' + className + '">' + badge + '</span>');
+                    });
+                }
                 
                 // DexScreener link - PROMINENT
                 const dexUrl = 'https://dexscreener.com/base/' + token.token.address;
