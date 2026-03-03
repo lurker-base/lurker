@@ -1,17 +1,63 @@
 {
-  "timestamp": "2026-03-03T16:07:15.056289+00:00",
+  "timestamp": "2026-03-03T16:55:49.791870+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xc244ce047e22d8d539078fc77a6dad2e77af6ba3",
-        "symbol": "YARR",
-        "name": "YARR"
+        "address": "0x2620129918c01a88d8c949b39e9045b9d96647be",
+        "symbol": "CLAWNCH",
+        "name": "CLAWNCH"
       },
       "metrics": {
-        "liq_usd": 22143.8772,
-        "vol_24h_usd": 3505.092131095,
-        "txns_24h": 40,
+        "liq_usd": 34438.3305,
+        "vol_24h_usd": 33657.9189552128,
+        "txns_24h": 229,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.12633050694444445,
+      "detected_at": "2026-03-03T16:55:49.789832+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x4b4ad34660399b670e6aae467078a8559cd8bcb3",
+        "symbol": "AYA",
+        "name": "AYA"
+      },
+      "metrics": {
+        "liq_usd": 132655.8229,
+        "vol_24h_usd": 2546.726935655,
+        "txns_24h": 31,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.13299718500000002,
+      "detected_at": "2026-03-03T16:55:49.789871+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x82ba48f57e2333084c9d24d51f91087fbc80c957",
+        "symbol": "CLERM",
+        "name": "CLERM"
+      },
+      "metrics": {
+        "liq_usd": 24061.463,
+        "vol_24h_usd": 6900.3542910599,
+        "txns_24h": 27,
         "price_usd": 0
       },
       "risk": {
@@ -21,8 +67,123 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.037792896666666666,
-      "detected_at": "2026-03-03T16:07:15.054443+00:00",
+      "age_hours": 0.033552606666666665,
+      "detected_at": "2026-03-03T16:55:49.789426+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0xeb49863644b1c8b28d22183de83387e768c5db07",
+        "symbol": "MOONCAT",
+        "name": "MOONCAT"
+      },
+      "metrics": {
+        "liq_usd": 21439.8402,
+        "vol_24h_usd": 9514.7481504754,
+        "txns_24h": 76,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 95,
+      "age_hours": 0.055774851388888894,
+      "detected_at": "2026-03-03T16:55:49.789476+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x8357125f8ff10bb84bed346bad4f4392f47dddb2",
+        "symbol": "CLERM",
+        "name": "CLERM"
+      },
+      "metrics": {
+        "liq_usd": 20250.4912,
+        "vol_24h_usd": 4447.3500134982,
+        "txns_24h": 29,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 95,
+      "age_hours": 0.1296638472222222,
+      "detected_at": "2026-03-03T16:55:49.789856+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x91b3f80c3e39acdc40beb4591333fe8d0e7e1ba3",
+        "symbol": "claw16z",
+        "name": "claw16z"
+      },
+      "metrics": {
+        "liq_usd": 21578.1807,
+        "vol_24h_usd": 5306.4701402149,
+        "txns_24h": 13,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "high",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 95,
+      "age_hours": 0.13466385555555554,
+      "detected_at": "2026-03-03T16:55:49.789885+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x6e1111d5b67b4424988d24527ceebcd76862ab07",
+        "symbol": "Truth",
+        "name": "Truth"
+      },
+      "metrics": {
+        "liq_usd": 16969.3422,
+        "vol_24h_usd": 36537.4860064665,
+        "txns_24h": 296,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 95,
+      "age_hours": 0.13744163916666666,
+      "detected_at": "2026-03-03T16:55:49.789907+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0xcd73594e852a703331ed87eee17ad63a62073d6e",
+        "symbol": "\ud83d\udc31BOT",
+        "name": "\ud83d\udc31BOT"
+      },
+      "metrics": {
+        "liq_usd": 6315.7081,
+        "vol_24h_usd": 7780.4939229781,
+        "txns_24h": 102,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "high",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 80,
+      "age_hours": 0.10966382666666667,
+      "detected_at": "2026-03-03T16:55:49.789802+00:00",
       "source": "geckoterminal_v2"
     }
   ]
