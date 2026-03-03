@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-03T09:35:11.658462+00:00",
+  "timestamp": "2026-03-03T09:50:12.858758+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x71e5bb0819d91c3198c7fd83c36000fa6933bb07",
-        "symbol": "Ganadi",
-        "name": "Ganadi"
+        "address": "0x1f23ef873e8cb830385c9fe1f520bd8445e52a8a",
+        "symbol": "MEGFI",
+        "name": "MEGFI"
       },
       "metrics": {
-        "liq_usd": 26917.078,
-        "vol_24h_usd": 14775.0480915168,
-        "txns_24h": 86,
+        "liq_usd": 20206.394,
+        "vol_24h_usd": 19710.6170316429,
+        "txns_24h": 57,
         "price_usd": 0
       },
       "risk": {
@@ -21,20 +21,20 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.052404613055555556,
-      "detected_at": "2026-03-03T09:35:11.656615+00:00",
+      "age_hours": 0.07662693027777777,
+      "detected_at": "2026-03-03T09:50:12.856957+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0x5ba8dd4b0250aaea75c771abe91ca934eb0947be",
-        "symbol": "CLAWNCH",
-        "name": "CLAWNCH"
+        "address": "0xe2e8db3cc03990f42ba69d6ffe1db099cf4bdb07",
+        "symbol": "\u6bd4\u6bd4\u62c9",
+        "name": "\u6bd4\u6bd4\u62c9"
       },
       "metrics": {
-        "liq_usd": 26828.1317,
-        "vol_24h_usd": 13253.5393050996,
-        "txns_24h": 91,
+        "liq_usd": 20145.0246,
+        "vol_24h_usd": 5767.3736855412,
+        "txns_24h": 60,
         "price_usd": 0
       },
       "risk": {
@@ -43,32 +43,9 @@
           "new_token"
         ]
       },
-      "score": 100,
-      "age_hours": 0.06018240055555556,
-      "detected_at": "2026-03-03T09:35:11.656655+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0x2fb5a78d02c7e00e9da332c0cdafc428a04cab07",
-        "symbol": "SNOW",
-        "name": "SNOW"
-      },
-      "metrics": {
-        "liq_usd": 14403.6672,
-        "vol_24h_usd": 4432.1100586083,
-        "txns_24h": 35,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 90,
-      "age_hours": 0.02629347361111111,
-      "detected_at": "2026-03-03T09:35:11.656518+00:00",
+      "score": 95,
+      "age_hours": 0.04218246361111111,
+      "detected_at": "2026-03-03T09:50:12.856883+00:00",
       "source": "geckoterminal_v2"
     }
   ]
