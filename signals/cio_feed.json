@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-03T07:50:02.882161+00:00",
+  "timestamp": "2026-03-03T08:05:04.465536+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xdbc42c648567df3441a980c0ed6d2e390ae73724",
-        "symbol": "LEVYCLAW",
-        "name": "LEVYCLAW"
+        "address": "0x67d8837a204ae3f97dbd38cadbe2a162835a47be",
+        "symbol": "CLAWNCH",
+        "name": "CLAWNCH"
       },
       "metrics": {
-        "liq_usd": 20934.4859,
-        "vol_24h_usd": 2923.1358264794,
-        "txns_24h": 26,
+        "liq_usd": 28061.7826,
+        "vol_24h_usd": 21677.0957549732,
+        "txns_24h": 161,
         "price_usd": 0
       },
       "risk": {
@@ -20,32 +20,55 @@
           "new_token"
         ]
       },
-      "score": 95,
-      "age_hours": 0.04052243861111111,
-      "detected_at": "2026-03-03T07:50:02.880789+00:00",
+      "score": 100,
+      "age_hours": 0.08707306722222222,
+      "detected_at": "2026-03-03T08:05:04.463059+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0xf8dfa6923ba9a9f39db3080a323b4982cf65ab07",
-        "symbol": "MOLT",
-        "name": "MOLT"
+        "address": "0xd75ee467d9a6c761b925cf4dd3a2068470536ba3",
+        "symbol": "ltk",
+        "name": "ltk"
       },
       "metrics": {
-        "liq_usd": 23024.7998,
-        "vol_24h_usd": 6667.0638565734,
-        "txns_24h": 45,
+        "liq_usd": 24440.1947,
+        "vol_24h_usd": 2244.5682858982,
+        "txns_24h": 6,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "high",
         "factors": [
           "new_token"
         ]
       },
       "score": 95,
-      "age_hours": 0.047189123888888886,
-      "detected_at": "2026-03-03T07:50:02.880856+00:00",
+      "age_hours": 0.02373969388888889,
+      "detected_at": "2026-03-03T08:05:04.462913+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x6b1efb0413dbe6ada39b08e527285931491f318d",
+        "symbol": "FLOIN",
+        "name": "FLOIN"
+      },
+      "metrics": {
+        "liq_usd": 11485.0001,
+        "vol_24h_usd": 2098.1284891181,
+        "txns_24h": 18,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "high",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 90,
+      "age_hours": 0.03096193527777778,
+      "detected_at": "2026-03-03T08:05:04.462974+00:00",
       "source": "geckoterminal_v2"
     }
   ]
