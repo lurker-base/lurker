@@ -74,6 +74,14 @@
         .badge-active { background: #581c87; color: #c084fc; }
         .badge-verified { background: #14532d; color: #86efac; }
         .badge-risk { background: #7f1d1d; color: #f87171; }
+        .badge-score { background: #1e3a8a; color: #60a5fa; }
+        .badge-med { background: #854d0e; color: #fbbf24; }
+        .badge-safe { background: #166534; color: #4ade80; }
+        .badge-fresh { background: #dc2626; color: #fff; }
+        .badge-liquid { background: #0891b2; color: #fff; }
+        .token-badges { display: flex; gap: 0.25rem; flex-wrap: wrap; }
+        .token-symbol a { color: inherit; text-decoration: none; }
+        .token-symbol a:hover { color: var(--accent); }
         
         .positive { color: #4ade80; }
         .negative { color: #f87171; }
@@ -196,12 +204,24 @@
             
             container.innerHTML = '<div class="token-list">' + tokens.map(token => {
                 const risk = token.risk?.level || 'medium';
-                const badgeClass = risk === 'high' ? 'badge-risk' : token.score >= 95 ? 'badge-new' : 'badge-active';
+                
+                // Generate DexScreener URL
+                const dexUrl = 'https://dexscreener.com/base/' + token.token.address;
+                
+                // Generate badges
+                const badges = [];
+                badges.push('<span class="badge badge-score">' + token.score + '%</span>');
+                if (risk === 'high') badges.push('<span class="badge badge-risk">⚠️ HIGH</span>');
+                else if (risk === 'medium') badges.push('<span class="badge badge-med">⚡ MED</span>');
+                else badges.push('<span class="badge badge-safe">✓ LOW</span>');
+                if (token.age_hours < 0.1) badges.push('<span class="badge badge-fresh">🔥 FRESH</span>');
+                if (token.metrics.liq_usd > 20000) badges.push('<span class="badge badge-liquid">💧 $20K+</span>');
+                
                 return `
                     <div class="token-row">
                         <div class="token-info">
-                            <span class="token-symbol">$${token.token.symbol}</span>
-                            <span class="token-address">${token.token.address.slice(0, 10)}...${token.token.address.slice(-8)}</span>
+                            <a href="${dexUrl}" target="_blank" class="token-symbol">$${token.token.symbol}</a>
+                            <span class="token-address">${token.token.address.slice(0, 6)}...${token.token.address.slice(-4)}</span>
                         </div>
                         <div class="token-metrics">
                             <div class="token-metric">
@@ -213,7 +233,7 @@
                                 <div class="metric-value">${formatNumber(token.metrics.vol_24h_usd)}</div>
                             </div>
                         </div>
-                        <div><span class="badge ${badgeClass}">${token.score}%</span></div>
+                        <div class="token-badges">${badges.join('')}</div>
                         <div class="token-metric">
                             <div class="metric-label">Age</div>
                             <div class="metric-value">${formatAge(token.age_hours)}</div>
