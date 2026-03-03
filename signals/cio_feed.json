@@ -1,17 +1,40 @@
 {
-  "timestamp": "2026-03-03T05:04:46.874943+00:00",
+  "timestamp": "2026-03-03T05:19:47.836620+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xda5a54dedd8ff958c41dd22e712596668267db07",
-        "symbol": "TR4LPH",
-        "name": "TR4LPH"
+        "address": "0xf01265556dffe59914f4eb20d4b36e7ffb82aba3",
+        "symbol": "AICO",
+        "name": "AICO"
       },
       "metrics": {
-        "liq_usd": 21224.0978,
-        "vol_24h_usd": 6262.0978870162,
-        "txns_24h": 54,
+        "liq_usd": 32092.5392,
+        "vol_24h_usd": 21851.1527701501,
+        "txns_24h": 149,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.08967642416666667,
+      "detected_at": "2026-03-03T05:19:47.835134+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x0c5610ba7b3f692a171b2af74df2d4ec4363fee9",
+        "symbol": "DOGGP",
+        "name": "DOGGP"
+      },
+      "metrics": {
+        "liq_usd": 24947.4306,
+        "vol_24h_usd": 9865.8254297253,
+        "txns_24h": 32,
         "price_usd": 0
       },
       "risk": {
@@ -21,8 +44,54 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.03496477666666666,
-      "detected_at": "2026-03-03T05:04:46.873210+00:00",
+      "age_hours": 0.06634303416666666,
+      "detected_at": "2026-03-03T05:19:47.834938+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x11ed849b7dfaf27877e57fb34ca7386d3444ab07",
+        "symbol": "DST",
+        "name": "DST"
+      },
+      "metrics": {
+        "liq_usd": 15474.0614,
+        "vol_24h_usd": 19562.5252804007,
+        "txns_24h": 166,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 95,
+      "age_hours": 0.08634307944444444,
+      "detected_at": "2026-03-03T05:19:47.835113+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0xc32bbf8250f234e8bbed206d09f3216bf19847be",
+        "symbol": "CLAWNCH",
+        "name": "CLAWNCH"
+      },
+      "metrics": {
+        "liq_usd": 7357.5367,
+        "vol_24h_usd": 2712.883685653,
+        "txns_24h": 43,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "high",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 80,
+      "age_hours": 0.07300971583333332,
+      "detected_at": "2026-03-03T05:19:47.834985+00:00",
       "source": "geckoterminal_v2"
     }
   ]
