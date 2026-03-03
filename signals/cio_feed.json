@@ -1,120 +1,28 @@
 {
-  "timestamp": "2026-03-03T13:33:53.489520+00:00",
+  "timestamp": "2026-03-03T13:35:28.450070+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x969db2da7130f986d814dfde1c391938cbee69a9",
-        "symbol": "CLAWPASS",
-        "name": "CLAWPASS"
+        "address": "0xb72369a2f74bb86bbbc1da09e6f34f012d34ab07",
+        "symbol": "\u6211\u7684\u5200",
+        "name": "\u6211\u7684\u5200"
       },
       "metrics": {
-        "liq_usd": 32464.8484,
-        "vol_24h_usd": 14613.6177585465,
-        "txns_24h": 29,
+        "liq_usd": 12248.1725,
+        "vol_24h_usd": 1680.3564306662,
+        "txns_24h": 18,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.04235746583333333,
-      "detected_at": "2026-03-03T13:33:53.486894+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0x1612bbf8c2be7de926c77b00b9e67a4d8587aba3",
-        "symbol": "AICO",
-        "name": "AICO"
-      },
-      "metrics": {
-        "liq_usd": 25150.5571,
-        "vol_24h_usd": 11381.7833905393,
-        "txns_24h": 64,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.05791304083333333,
-      "detected_at": "2026-03-03T13:33:53.486956+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0xc98efc003c39e615eb84fdff9b778299bb2cbb07",
-        "symbol": "VIRAL",
-        "name": "VIRAL"
-      },
-      "metrics": {
-        "liq_usd": 23986.5069,
-        "vol_24h_usd": 13401.160753337,
-        "txns_24h": 97,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.07680201722222221,
-      "detected_at": "2026-03-03T13:33:53.487268+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0x935903de0fcc3e794f16bc60e1d71a4aa978ab07",
-        "symbol": "GEMPY",
-        "name": "GEMPY"
-      },
-      "metrics": {
-        "liq_usd": 13636.0725,
-        "vol_24h_usd": 12091.4372455051,
-        "txns_24h": 94,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 95,
-      "age_hours": 0.06346866694444445,
-      "detected_at": "2026-03-03T13:33:53.487216+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0xd8a0440bdce9dd9f2fe55e45c41561d80d1e47be",
-        "symbol": "CLAWNCH",
-        "name": "CLAWNCH"
-      },
-      "metrics": {
-        "liq_usd": 11190.3558,
-        "vol_24h_usd": 2511.9506342504,
-        "txns_24h": 43,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
+        "level": "high",
         "factors": [
           "new_token"
         ]
       },
       "score": 90,
-      "age_hours": 0.071246455,
-      "detected_at": "2026-03-03T13:33:53.487244+00:00",
+      "age_hours": 0.02206898361111111,
+      "detected_at": "2026-03-03T13:35:28.448355+00:00",
       "source": "geckoterminal_v2"
     }
   ]
