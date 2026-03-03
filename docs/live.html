@@ -62,6 +62,14 @@
         
         .token-info { display: flex; flex-direction: column; gap: 0.25rem; }
         .token-symbol { font-weight: bold; font-size: 1.1rem; }
+        .token-symbol a { 
+            color: #60a5fa !important; 
+            text-decoration: underline; 
+            cursor: pointer;
+        }
+        .token-symbol a:hover { 
+            color: var(--accent) !important; 
+        }
         .token-address { font-size: 0.7rem; color: var(--text-dim); font-family: monospace; }
         
         .token-metrics { display: flex; gap: 1.5rem; }
