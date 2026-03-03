@@ -1,16 +1,62 @@
 {
-  "timestamp": "2026-03-03T04:04:42.391294+00:00",
+  "timestamp": "2026-03-03T04:19:43.333839+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x1e1b541dbff5b1966d90fe31c4e6ff127c9647be",
+        "address": "0x175565767e8013fc00cf3b0eead98ede8c1dbb07",
+        "symbol": "Conviction",
+        "name": "Conviction"
+      },
+      "metrics": {
+        "liq_usd": 25051.8552,
+        "vol_24h_usd": 11093.8777382778,
+        "txns_24h": 78,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.054536755,
+      "detected_at": "2026-03-03T04:19:43.332326+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x7c0e94b5009b833f33f9fe9cf473f2c59c6d6bdc",
+        "symbol": "ROCMO",
+        "name": "ROCMO"
+      },
+      "metrics": {
+        "liq_usd": 24711.1328,
+        "vol_24h_usd": 10885.3016721396,
+        "txns_24h": 31,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.05731454027777778,
+      "detected_at": "2026-03-03T04:19:43.332358+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x5a119831e3e6006f892ffd11c7b683c303e747be",
         "symbol": "CLAWNCH",
         "name": "CLAWNCH"
       },
       "metrics": {
-        "liq_usd": 22672.9576,
-        "vol_24h_usd": 3058.2630068842,
+        "liq_usd": 22169.6022,
+        "vol_24h_usd": 1502.0010638278,
         "txns_24h": 13,
         "price_usd": 0
       },
@@ -21,20 +67,20 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.04760825833333333,
-      "detected_at": "2026-03-03T04:04:42.389745+00:00",
+      "age_hours": 0.032870068055555555,
+      "detected_at": "2026-03-03T04:19:43.332259+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0xf7185965ad5d6e5ca785e2522dc58130ecb05ba3",
-        "symbol": "AgentWatch",
-        "name": "AgentWatch"
+        "address": "0xd6ee9354e6329b8c9a71cfda3b3dc785198847be",
+        "symbol": "CLAWNCH",
+        "name": "CLAWNCH"
       },
       "metrics": {
-        "liq_usd": 40602.3037,
-        "vol_24h_usd": 1494.0378762345,
-        "txns_24h": 11,
+        "liq_usd": 7662.552,
+        "vol_24h_usd": 2986.2114598578,
+        "txns_24h": 43,
         "price_usd": 0
       },
       "risk": {
@@ -43,9 +89,9 @@
           "new_token"
         ]
       },
-      "score": 95,
-      "age_hours": 0.08705273333333333,
-      "detected_at": "2026-03-03T04:04:42.389848+00:00",
+      "score": 80,
+      "age_hours": 0.06842566305555556,
+      "detected_at": "2026-03-03T04:19:43.332393+00:00",
       "source": "geckoterminal_v2"
     }
   ]
