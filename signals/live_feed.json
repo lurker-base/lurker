@@ -1,80 +1,86 @@
 {
   "meta": {
-    "updated_at": "2026-02-25T05:26:13.582230",
-    "source": "dexscreener",
+    "updated_at": "2026-03-03T15:04:22.297Z",
+    "source": "cio",
     "chain": "base",
-    "count": 2,
-    "errors": [],
-    "debug": {
-      "raw_pairs": 96,
-      "rejected": {
-        "bluechip_symbol": 83,
-        "high_mcap_$124,815,372": 1,
-        "high_mcap_$19,220,922": 1,
-        "high_mcap_$178,504,874": 1,
-        "high_mcap_$54,132,906": 1,
-        "high_mcap_$14,673,865": 1,
-        "high_mcap_$25,940,892": 1,
-        "high_mcap_$299,372,958": 1,
-        "high_mcap_$626,584,512": 1,
-        "high_mcap_$87,846,174": 1,
-        "high_mcap_$46,247,646": 1,
-        "high_mcap_$29,546,284": 1
-      }
-    }
+    "count": 3,
+    "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
-      "status": "posted",
-      "ts_utc": "2026-02-25T05:26:13.582122Z",
+      "status": "active",
+      "ts_utc": "2026-03-03T15:04:22.263185+00:00",
       "chain": "base",
       "token": {
-        "name": "Edel",
-        "symbol": "$EDEL",
-        "address": "0xFb31f85A8367210B2e4Ed2360D2dA9Dc2D2Ccc95",
-        "pair_url": "https://dexscreener.com/base/0x566bee7ef7b39f29d150ab3be6b6242c17cc5a31"
+        "name": "AICO",
+        "symbol": "$AICO",
+        "address": "0xf11d1d38a558a0190af709fa9bd8e7fc4e48aba3"
       },
       "scores": {
-        "confidence": 80,
-        "rarity": "3-5/day",
-        "risk": "low"
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "medium"
       },
       "metrics": {
-        "price_usd": 0.01073,
-        "mcap_usd": 6091353,
-        "liq_usd": 743049.24,
-        "vol_24h_usd": 254261.79
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 29460.5285,
+        "vol_24h_usd": 16260.5176136049
       },
-      "dex": "aerodrome",
-      "pair_address": "0x566beE7EF7b39f29d150AB3be6b6242C17CC5A31",
-      "scanner": "dexscreener"
+      "dex": "geckoterminal",
+      "pair_address": "0xf11d1d38a558a0190af709fa9bd8e7fc4e48aba3",
+      "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
-      "status": "posted",
-      "ts_utc": "2026-02-25T05:26:13.582149Z",
+      "status": "active",
+      "ts_utc": "2026-03-03T15:04:22.263229+00:00",
       "chain": "base",
       "token": {
-        "name": "Sport.fun",
-        "symbol": "$FUN",
-        "address": "0x16EE7ecAc70d1028E7712751E2Ee6BA808a7dd92",
-        "pair_url": "https://dexscreener.com/base/0x659be70647b0f63217d60e077f4417b1ecc65064"
+        "name": "CL1LLM",
+        "symbol": "$CL1LLM",
+        "address": "0x202fe992d6dbcffc6b4074c1c759fda1417edb07"
       },
       "scores": {
-        "confidence": 80,
-        "rarity": "3-5/day",
-        "risk": "low"
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "medium"
       },
       "metrics": {
-        "price_usd": 0.04887,
-        "mcap_usd": 8699855,
-        "liq_usd": 599712.89,
-        "vol_24h_usd": 489039.97
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 25157.8336,
+        "vol_24h_usd": 37829.0632244578
       },
-      "dex": "aerodrome",
-      "pair_address": "0x659bE70647B0f63217D60e077F4417b1eCC65064",
-      "scanner": "dexscreener"
+      "dex": "geckoterminal",
+      "pair_address": "0x202fe992d6dbcffc6b4074c1c759fda1417edb07",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-03T15:04:22.263135+00:00",
+      "chain": "base",
+      "token": {
+        "name": "CM",
+        "symbol": "$CM",
+        "address": "0x6218b6691da6805319aa259901a557aba7c0eba3"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 27414.5964,
+        "vol_24h_usd": 9132.6968577957
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x6218b6691da6805319aa259901a557aba7c0eba3",
+      "scanner": "cio"
     }
   ]
 }
