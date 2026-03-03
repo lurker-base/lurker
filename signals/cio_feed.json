@@ -1,17 +1,63 @@
 {
-  "timestamp": "2026-03-03T10:05:14.891072+00:00",
+  "timestamp": "2026-03-03T10:20:15.957180+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xccb670e48ca5b84ba5921435c0e464da467a7ba3",
+        "address": "0xc0c26dbf04f2df716ba3314fed7229c4af6ebb07",
+        "symbol": "Dex",
+        "name": "Dex"
+      },
+      "metrics": {
+        "liq_usd": 24730.0355,
+        "vol_24h_usd": 10278.7420765849,
+        "txns_24h": 79,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.060265248333333334,
+      "detected_at": "2026-03-03T10:20:15.954903+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x9023fb5e4a7dab5f22452aa2b9224715f1b5db07",
+        "symbol": "USD1",
+        "name": "USD1"
+      },
+      "metrics": {
+        "liq_usd": 21807.8323,
+        "vol_24h_usd": 30072.310176023,
+        "txns_24h": 197,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.09304304805555555,
+      "detected_at": "2026-03-03T10:20:15.954988+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x8100b0fe812383782e3ca74f9b7d2070500ceba3",
         "symbol": "McClaw",
         "name": "McClaw"
       },
       "metrics": {
-        "liq_usd": 25744.0651,
-        "vol_24h_usd": 8134.171282003,
-        "txns_24h": 57,
+        "liq_usd": 21918.3867,
+        "vol_24h_usd": 4855.6001789504,
+        "txns_24h": 37,
         "price_usd": 0
       },
       "risk": {
@@ -21,77 +67,8 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.05608019527777777,
-      "detected_at": "2026-03-03T10:05:14.888711+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0xe7e72da6354c9fa90d08d51475e444265aa8ab07",
-        "symbol": "GM",
-        "name": "GM"
-      },
-      "metrics": {
-        "liq_usd": 14027.381,
-        "vol_24h_usd": 13460.0547018007,
-        "txns_24h": 126,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 95,
-      "age_hours": 0.07496913749999999,
-      "detected_at": "2026-03-03T10:05:14.888909+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0xb21441412c6b2b4469c05019c06a0222ce3f373c",
-        "symbol": "ClawFarm",
-        "name": "ClawFarm"
-      },
-      "metrics": {
-        "liq_usd": 43911.4425,
-        "vol_24h_usd": 1500.332316155,
-        "txns_24h": 10,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "high",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 95,
-      "age_hours": 0.09219137111111111,
-      "detected_at": "2026-03-03T10:05:14.888942+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0x27d6d587766150bff1c6cce2ed5066229ef235b7",
-        "symbol": "METDO",
-        "name": "METDO"
-      },
-      "metrics": {
-        "liq_usd": 14849.6113,
-        "vol_24h_usd": 5710.0511338667,
-        "txns_24h": 30,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 90,
-      "age_hours": 0.04052461611111111,
-      "detected_at": "2026-03-03T10:05:14.888641+00:00",
+      "age_hours": 0.04082072888888889,
+      "detected_at": "2026-03-03T10:20:15.954809+00:00",
       "source": "geckoterminal_v2"
     }
   ]
