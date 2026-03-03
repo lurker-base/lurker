@@ -1,16 +1,62 @@
 {
-  "timestamp": "2026-03-03T17:27:32.288813+00:00",
+  "timestamp": "2026-03-03T17:33:53.871095+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x315ea7dbbb2820c66274e014b180105e35196ba3",
-        "symbol": "YARR",
-        "name": "YARR"
+        "address": "0xccb06716aad8a7833845c81561c37e4f1e2adb07",
+        "symbol": "Karma",
+        "name": "Karma"
       },
       "metrics": {
-        "liq_usd": 23842.6672,
-        "vol_24h_usd": 10147.0545323832,
+        "liq_usd": 21083.1417,
+        "vol_24h_usd": 11184.0887528923,
+        "txns_24h": 90,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.05133719027777778,
+      "detected_at": "2026-03-03T17:33:53.813899+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0xcfd0ef82a38c59fc1f128105c066b60ee74747be",
+        "symbol": "CLAWNCH",
+        "name": "CLAWNCH"
+      },
+      "metrics": {
+        "liq_usd": 21211.8841,
+        "vol_24h_usd": 4267.5323162302,
+        "txns_24h": 38,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 95,
+      "age_hours": 0.03631051138888889,
+      "detected_at": "2026-03-03T17:33:53.717854+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0xfec4633b575353f7ceea65018ee7ac358bd8ab07",
+        "symbol": "ONE",
+        "name": "ONE"
+      },
+      "metrics": {
+        "liq_usd": 13183.9988,
+        "vol_24h_usd": 9595.1394797809,
         "txns_24h": 88,
         "price_usd": 0
       },
@@ -20,55 +66,9 @@
           "new_token"
         ]
       },
-      "score": 100,
-      "age_hours": 0.05699548555555556,
-      "detected_at": "2026-03-03T17:27:32.183768+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0xf8e314eaf2b8258465a467b2c4fd176f90d4bb07",
-        "symbol": "ONE",
-        "name": "ONE"
-      },
-      "metrics": {
-        "liq_usd": 27724.9833,
-        "vol_24h_usd": 20491.1183990564,
-        "txns_24h": 134,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.0786780138888889,
-      "detected_at": "2026-03-03T17:27:32.240859+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0xf2505498de1cf897a27100ee7000c939bd05aba3",
-        "symbol": "HeyBotAi",
-        "name": "HeyBotAi"
-      },
-      "metrics": {
-        "liq_usd": 20585.6556,
-        "vol_24h_usd": 1164.3865338974,
-        "txns_24h": 5,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "high",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 95,
-      "age_hours": 0.0503081325,
-      "detected_at": "2026-03-03T17:27:32.109292+00:00",
+      "score": 90,
+      "age_hours": 0.05021590027777778,
+      "detected_at": "2026-03-03T17:33:53.777255+00:00",
       "source": "geckoterminal_v2"
     }
   ]
