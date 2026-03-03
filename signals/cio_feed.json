@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-03T10:35:17.352116+00:00",
+  "timestamp": "2026-03-03T10:50:18.474302+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x09f67e5aaad354e24aec807e85b9de248d9feba3",
-        "symbol": "McClaw",
-        "name": "McClaw"
+        "address": "0xa5ede6ece02316587f9b968bc5cad9fee976db07",
+        "symbol": "\u8349\u5730\u725b",
+        "name": "\u8349\u5730\u725b"
       },
       "metrics": {
-        "liq_usd": 25385.2417,
-        "vol_24h_usd": 13848.236754636,
-        "txns_24h": 121,
+        "liq_usd": 23461.1775,
+        "vol_24h_usd": 27522.9424087234,
+        "txns_24h": 181,
         "price_usd": 0
       },
       "risk": {
@@ -21,20 +21,43 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.06509712694444444,
-      "detected_at": "2026-03-03T10:35:17.349692+00:00",
+      "age_hours": 0.08429786666666668,
+      "detected_at": "2026-03-03T10:50:18.472328+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0x889e0ba38db1f74ca110a0a5aa9b9f989f076b07",
-        "symbol": "CLAWD",
-        "name": "CLAWD"
+        "address": "0xb20b6f5aef24cf80ad9b7412f134bbcab130bb07",
+        "symbol": "Dex",
+        "name": "Dex"
       },
       "metrics": {
-        "liq_usd": 23353.6501,
-        "vol_24h_usd": 7255.2748080555,
-        "txns_24h": 58,
+        "liq_usd": 28737.2637,
+        "vol_24h_usd": 21141.3265240667,
+        "txns_24h": 163,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.09152009444444444,
+      "detected_at": "2026-03-03T10:50:18.472354+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x9b1958493523c33f7712f0ea9d2b2b03e8bf47be",
+        "symbol": "CLAWNCH",
+        "name": "CLAWNCH"
+      },
+      "metrics": {
+        "liq_usd": 23591.4271,
+        "vol_24h_usd": 7160.4246154048,
+        "txns_24h": 62,
         "price_usd": 0
       },
       "risk": {
@@ -44,31 +67,8 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.0423193175,
-      "detected_at": "2026-03-03T10:35:17.349557+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0xdbcc90687d1e77858b28d93db4a081b525210f26",
-        "symbol": "APEWO",
-        "name": "APEWO"
-      },
-      "metrics": {
-        "liq_usd": 15685.6631,
-        "vol_24h_usd": 14356.8417306189,
-        "txns_24h": 39,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 95,
-      "age_hours": 0.051208225555555556,
-      "detected_at": "2026-03-03T10:35:17.349618+00:00",
+      "age_hours": 0.04985339805555555,
+      "detected_at": "2026-03-03T10:50:18.472247+00:00",
       "source": "geckoterminal_v2"
     }
   ]
