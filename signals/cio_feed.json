@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-03T06:34:54.662355+00:00",
+  "timestamp": "2026-03-03T06:49:56.002194+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x859a4f98489615da5acf1550bea659b8e27bbb07",
-        "symbol": "SFM",
-        "name": "SFM"
+        "address": "0x250ce3a0b7fcf1e2f2ecb95e218d3e3ac398bb07",
+        "symbol": "42",
+        "name": "42"
       },
       "metrics": {
-        "liq_usd": 28123.1895,
-        "vol_24h_usd": 15616.3054053046,
-        "txns_24h": 93,
+        "liq_usd": 27107.9721,
+        "vol_24h_usd": 12134.9843115818,
+        "txns_24h": 90,
         "price_usd": 0
       },
       "risk": {
@@ -21,43 +21,20 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.0604613975,
-      "detected_at": "2026-03-03T06:34:54.661042+00:00",
+      "age_hours": 0.05416681583333333,
+      "detected_at": "2026-03-03T06:49:56.000550+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0x4cd7d2214efcf561945b54f4d1a9cb075d57db07",
-        "symbol": "FACE",
-        "name": "FACE"
-      },
-      "metrics": {
-        "liq_usd": 25148.3507,
-        "vol_24h_usd": 16056.0683077901,
-        "txns_24h": 112,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.06212807638888889,
-      "detected_at": "2026-03-03T06:34:54.661081+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0xf528af64e6f7c5ad55fdbe0b35a5fb182aae47be",
+        "address": "0xb3b362d3b6b3077e7966aba88696d3c9775847be",
         "symbol": "CLAWNCH",
         "name": "CLAWNCH"
       },
       "metrics": {
-        "liq_usd": 25784.5738,
-        "vol_24h_usd": 11336.5764907329,
-        "txns_24h": 94,
+        "liq_usd": 25459.1536,
+        "vol_24h_usd": 14979.9143990275,
+        "txns_24h": 107,
         "price_usd": 0
       },
       "risk": {
@@ -67,8 +44,8 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.06768363722222222,
-      "detected_at": "2026-03-03T06:34:54.661105+00:00",
+      "age_hours": 0.06583349472222222,
+      "detected_at": "2026-03-03T06:49:56.000588+00:00",
       "source": "geckoterminal_v2"
     }
   ]
