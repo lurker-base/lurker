@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-03T00:19:20.884434+00:00",
+  "timestamp": "2026-03-03T00:34:22.544236+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xa25409ea4fabdbcd4717dc2d8e7170f6a429dba3",
-        "symbol": "GAMAL",
-        "name": "GAMAL"
+        "address": "0x6ce40f0a27d633b108642389fc92fbb8ebeedb07",
+        "symbol": "PUSSPIPPIN",
+        "name": "PUSSPIPPIN"
       },
       "metrics": {
-        "liq_usd": 35387.431,
-        "vol_24h_usd": 28102.7321933827,
-        "txns_24h": 200,
+        "liq_usd": 22916.4823,
+        "vol_24h_usd": 27476.952379519,
+        "txns_24h": 188,
         "price_usd": 0
       },
       "risk": {
@@ -21,20 +21,43 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.11552306527777778,
-      "detected_at": "2026-03-03T00:19:20.883049+00:00",
+      "age_hours": 0.09820644611111111,
+      "detected_at": "2026-03-03T00:34:22.543212+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0xe5e695a7cf885a08320b3b4f0219bcf8235d5ba3",
-        "symbol": "GAMAL",
-        "name": "GAMAL"
+        "address": "0x5304c1bf56707286cda8aa97861e2e68dc2abb07",
+        "symbol": "uranium",
+        "name": "uranium"
       },
       "metrics": {
-        "liq_usd": 20287.6342,
-        "vol_24h_usd": 2728.0238241725,
-        "txns_24h": 11,
+        "liq_usd": 31483.997,
+        "vol_24h_usd": 20806.9437815441,
+        "txns_24h": 169,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.10542867527777777,
+      "detected_at": "2026-03-03T00:34:22.543242+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0xc953d51becd5c4ccca3ea3a2f17dade9dabf310a",
+        "symbol": "CRAIG",
+        "name": "CRAIG"
+      },
+      "metrics": {
+        "liq_usd": 44866.5609,
+        "vol_24h_usd": 1190.62136307,
+        "txns_24h": 7,
         "price_usd": 0
       },
       "risk": {
@@ -44,31 +67,8 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.06830081055555555,
-      "detected_at": "2026-03-03T00:19:20.882933+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0x4642a42eaf67d7bab00dbd191bc3d82ba323ab07",
-        "symbol": "MILF",
-        "name": "MILF"
-      },
-      "metrics": {
-        "liq_usd": 15724.9644,
-        "vol_24h_usd": 25202.0967747579,
-        "txns_24h": 177,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 95,
-      "age_hours": 0.08774527583333333,
-      "detected_at": "2026-03-03T00:19:20.883000+00:00",
+      "age_hours": 0.08431754416666666,
+      "detected_at": "2026-03-03T00:34:22.543171+00:00",
       "source": "geckoterminal_v2"
     }
   ]
