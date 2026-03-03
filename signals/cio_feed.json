@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-03T02:49:34.754576+00:00",
+  "timestamp": "2026-03-03T03:04:36.359624+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x519f0e6c1a128f33daf4df24898d56a08198bb07",
-        "symbol": "DiCaprio",
-        "name": "DiCaprio"
+        "address": "0x1374d0eaf942c7e5a397f25d49a1d2f07391eba3",
+        "symbol": "COOK",
+        "name": "COOK"
       },
       "metrics": {
-        "liq_usd": 30536.6125,
-        "vol_24h_usd": 13509.2901929531,
-        "txns_24h": 91,
+        "liq_usd": 26126.3124,
+        "vol_24h_usd": 7384.0922650452,
+        "txns_24h": 67,
         "price_usd": 0
       },
       "risk": {
@@ -20,9 +20,32 @@
           "new_token"
         ]
       },
-      "score": 100,
-      "age_hours": 0.05937591111111111,
-      "detected_at": "2026-03-03T02:49:34.753294+00:00",
+      "score": 95,
+      "age_hours": 0.055377320833333334,
+      "detected_at": "2026-03-03T03:04:36.358366+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x904fabdd1283b1591c8d089d7dafe5dbdd9dab07",
+        "symbol": "Pencil",
+        "name": "Pencil"
+      },
+      "metrics": {
+        "liq_usd": 13368.5005,
+        "vol_24h_usd": 10520.9665700353,
+        "txns_24h": 89,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 95,
+      "age_hours": 0.059821779722222225,
+      "detected_at": "2026-03-03T03:04:36.358413+00:00",
       "source": "geckoterminal_v2"
     }
   ]
