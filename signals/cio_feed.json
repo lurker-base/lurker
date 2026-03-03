@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-03T17:12:35.146656+00:00",
+  "timestamp": "2026-03-03T17:27:32.288813+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x6b53db089c86b2e78af02b746c3b7657b1ddbb07",
-        "symbol": "ONE",
-        "name": "ONE"
+        "address": "0x315ea7dbbb2820c66274e014b180105e35196ba3",
+        "symbol": "YARR",
+        "name": "YARR"
       },
       "metrics": {
-        "liq_usd": 24971.5114,
-        "vol_24h_usd": 10497.719827383,
-        "txns_24h": 95,
+        "liq_usd": 23842.6672,
+        "vol_24h_usd": 10147.0545323832,
+        "txns_24h": 88,
         "price_usd": 0
       },
       "risk": {
@@ -21,20 +21,20 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.06706009527777779,
-      "detected_at": "2026-03-03T17:12:34.416358+00:00",
+      "age_hours": 0.05699548555555556,
+      "detected_at": "2026-03-03T17:27:32.183768+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0xdae6eebcf7557829a96e3ee25b8ab5821a01bba3",
-        "symbol": "0x402",
-        "name": "0x402"
+        "address": "0xf8e314eaf2b8258465a467b2c4fd176f90d4bb07",
+        "symbol": "ONE",
+        "name": "ONE"
       },
       "metrics": {
-        "liq_usd": 27590.3694,
-        "vol_24h_usd": 19795.4431694881,
-        "txns_24h": 132,
+        "liq_usd": 27724.9833,
+        "vol_24h_usd": 20491.1183990564,
+        "txns_24h": 134,
         "price_usd": 0
       },
       "risk": {
@@ -44,54 +44,31 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.08156606694444445,
-      "detected_at": "2026-03-03T17:12:34.637857+00:00",
+      "age_hours": 0.0786780138888889,
+      "detected_at": "2026-03-03T17:27:32.240859+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0xc7ab9de34f94168f31518327279766f7a28cab07",
-        "symbol": "ONE",
-        "name": "ONE"
+        "address": "0xf2505498de1cf897a27100ee7000c939bd05aba3",
+        "symbol": "HeyBotAi",
+        "name": "HeyBotAi"
       },
       "metrics": {
-        "liq_usd": 14619.3244,
-        "vol_24h_usd": 22124.0323379054,
-        "txns_24h": 169,
+        "liq_usd": 20585.6556,
+        "vol_24h_usd": 1164.3865338974,
+        "txns_24h": 5,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "high",
         "factors": [
           "new_token"
         ]
       },
       "score": 95,
-      "age_hours": 0.08216711194444444,
-      "detected_at": "2026-03-03T17:12:34.801622+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0x13862a0e37f5586e04a1829b6714f44fa90fbba3",
-        "symbol": "0x402",
-        "name": "0x402"
-      },
-      "metrics": {
-        "liq_usd": 10512.0138,
-        "vol_24h_usd": 3201.0363856509,
-        "txns_24h": 53,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 90,
-      "age_hours": 0.08666022472222222,
-      "detected_at": "2026-03-03T17:12:34.976823+00:00",
+      "age_hours": 0.0503081325,
+      "detected_at": "2026-03-03T17:27:32.109292+00:00",
       "source": "geckoterminal_v2"
     }
   ]
