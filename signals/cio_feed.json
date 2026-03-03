@@ -1,40 +1,17 @@
 {
-  "timestamp": "2026-03-03T04:49:45.785114+00:00",
+  "timestamp": "2026-03-03T05:04:46.874943+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x42e5b2de9366b2d61bf5293bf811e7e813a01d55",
-        "symbol": "AYA",
-        "name": "AYA"
+        "address": "0xda5a54dedd8ff958c41dd22e712596668267db07",
+        "symbol": "TR4LPH",
+        "name": "TR4LPH"
       },
       "metrics": {
-        "liq_usd": 130725.7048,
-        "vol_24h_usd": 1005.327445608,
-        "txns_24h": 14,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "high",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.06910643805555555,
-      "detected_at": "2026-03-03T04:49:45.783186+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0xbafac9564aa8dea21ecf08b28192c068fe0cbb07",
-        "symbol": "KYLESAMANI",
-        "name": "KYLESAMANI"
-      },
-      "metrics": {
-        "liq_usd": 25669.5109,
-        "vol_24h_usd": 7858.2721623493,
-        "txns_24h": 71,
+        "liq_usd": 21224.0978,
+        "vol_24h_usd": 6262.0978870162,
+        "txns_24h": 54,
         "price_usd": 0
       },
       "risk": {
@@ -44,8 +21,8 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.06021752805555555,
-      "detected_at": "2026-03-03T04:49:45.783116+00:00",
+      "age_hours": 0.03496477666666666,
+      "detected_at": "2026-03-03T05:04:46.873210+00:00",
       "source": "geckoterminal_v2"
     }
   ]
