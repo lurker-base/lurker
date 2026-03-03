@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-03T02:04:29.812228+00:00",
+  "timestamp": "2026-03-03T02:19:31.485874+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x02c3fea4717b6adb7d8b95c6eaa86737c41aab07",
-        "symbol": "comeback",
-        "name": "comeback"
+        "address": "0xab56865f807854f328bae0007105b0b93082963c",
+        "symbol": "CHARLES",
+        "name": "CHARLES"
       },
       "metrics": {
-        "liq_usd": 13913.6691,
-        "vol_24h_usd": 10117.0379383933,
-        "txns_24h": 70,
+        "liq_usd": 23805.5786,
+        "vol_24h_usd": 3186.3642998634,
+        "txns_24h": 29,
         "price_usd": 0
       },
       "risk": {
@@ -21,8 +21,31 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.05466978888888889,
-      "detected_at": "2026-03-03T02:04:29.811253+00:00",
+      "age_hours": 0.042356871944444444,
+      "detected_at": "2026-03-03T02:19:31.484749+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0xb8a9479d924099d94fc57df14d1e5f5c15170fb8",
+        "symbol": "nachtara",
+        "name": "nachtara"
+      },
+      "metrics": {
+        "liq_usd": 7967.5776,
+        "vol_24h_usd": 3579.3905603481,
+        "txns_24h": 45,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "high",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 80,
+      "age_hours": 0.07735691972222222,
+      "detected_at": "2026-03-03T02:19:31.484917+00:00",
       "source": "geckoterminal_v2"
     }
   ]
