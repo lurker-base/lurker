@@ -1,63 +1,109 @@
 {
-  "timestamp": "2026-03-03T12:30:50.770851+00:00",
+  "timestamp": "2026-03-03T13:33:53.489520+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xde37b4c65ad4c35d9d86c7d0a95f91c114b401cb",
-        "symbol": "MECKA",
-        "name": "MECKA"
+        "address": "0x969db2da7130f986d814dfde1c391938cbee69a9",
+        "symbol": "CLAWPASS",
+        "name": "CLAWPASS"
       },
       "metrics": {
-        "liq_usd": 144512.2234,
-        "vol_24h_usd": 1184.25667963,
-        "txns_24h": 18,
+        "liq_usd": 32464.8484,
+        "vol_24h_usd": 14613.6177585465,
+        "txns_24h": 29,
         "price_usd": 0
       },
       "risk": {
-        "level": "high",
+        "level": "medium",
         "factors": [
           "new_token"
         ]
       },
       "score": 100,
-      "age_hours": 0.09493575027777779,
-      "detected_at": "2026-03-03T12:30:50.768716+00:00",
+      "age_hours": 0.04235746583333333,
+      "detected_at": "2026-03-03T13:33:53.486894+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0xd38b7d43e91d0a613cc3b9d816e896522499db07",
-        "symbol": "IRS",
-        "name": "IRS"
+        "address": "0x1612bbf8c2be7de926c77b00b9e67a4d8587aba3",
+        "symbol": "AICO",
+        "name": "AICO"
       },
       "metrics": {
-        "liq_usd": 20149.3932,
-        "vol_24h_usd": 4272.5528188498,
-        "txns_24h": 17,
+        "liq_usd": 25150.5571,
+        "vol_24h_usd": 11381.7833905393,
+        "txns_24h": 64,
         "price_usd": 0
       },
       "risk": {
-        "level": "high",
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.05791304083333333,
+      "detected_at": "2026-03-03T13:33:53.486956+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0xc98efc003c39e615eb84fdff9b778299bb2cbb07",
+        "symbol": "VIRAL",
+        "name": "VIRAL"
+      },
+      "metrics": {
+        "liq_usd": 23986.5069,
+        "vol_24h_usd": 13401.160753337,
+        "txns_24h": 97,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.07680201722222221,
+      "detected_at": "2026-03-03T13:33:53.487268+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x935903de0fcc3e794f16bc60e1d71a4aa978ab07",
+        "symbol": "GEMPY",
+        "name": "GEMPY"
+      },
+      "metrics": {
+        "liq_usd": 13636.0725,
+        "vol_24h_usd": 12091.4372455051,
+        "txns_24h": 94,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
         "factors": [
           "new_token"
         ]
       },
       "score": 95,
-      "age_hours": 0.015491253055555555,
-      "detected_at": "2026-03-03T12:30:50.768529+00:00",
+      "age_hours": 0.06346866694444445,
+      "detected_at": "2026-03-03T13:33:53.487216+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0x5868300e5814c4832a7f466bc58db9aad0fe47be",
+        "address": "0xd8a0440bdce9dd9f2fe55e45c41561d80d1e47be",
         "symbol": "CLAWNCH",
         "name": "CLAWNCH"
       },
       "metrics": {
-        "liq_usd": 10737.2677,
-        "vol_24h_usd": 1957.6446085236,
-        "txns_24h": 34,
+        "liq_usd": 11190.3558,
+        "vol_24h_usd": 2511.9506342504,
+        "txns_24h": 43,
         "price_usd": 0
       },
       "risk": {
@@ -67,8 +113,8 @@
         ]
       },
       "score": 90,
-      "age_hours": 0.04215794027777778,
-      "detected_at": "2026-03-03T12:30:50.768593+00:00",
+      "age_hours": 0.071246455,
+      "detected_at": "2026-03-03T13:33:53.487244+00:00",
       "source": "geckoterminal_v2"
     }
   ]
