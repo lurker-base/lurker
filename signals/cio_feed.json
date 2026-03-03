@@ -1,40 +1,17 @@
 {
-  "timestamp": "2026-03-03T03:49:40.878057+00:00",
+  "timestamp": "2026-03-03T04:04:42.391294+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xc867f057fb4ab68cb1f52aa5a46fa2d5d62b47be",
+        "address": "0x1e1b541dbff5b1966d90fe31c4e6ff127c9647be",
         "symbol": "CLAWNCH",
         "name": "CLAWNCH"
       },
       "metrics": {
-        "liq_usd": 26567.9961,
-        "vol_24h_usd": 11453.9008085402,
-        "txns_24h": 78,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.05329915972222222,
-      "detected_at": "2026-03-03T03:49:40.876979+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0x27b66ac556932c8aab8dd2f63c352b44e985db07",
-        "symbol": "MonkAgenC",
-        "name": "MonkAgenC"
-      },
-      "metrics": {
-        "liq_usd": 20214.4651,
-        "vol_24h_usd": 1043.8790281357,
-        "txns_24h": 8,
+        "liq_usd": 22672.9576,
+        "vol_24h_usd": 3058.2630068842,
+        "txns_24h": 13,
         "price_usd": 0
       },
       "risk": {
@@ -44,77 +21,31 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.017188012222222222,
-      "detected_at": "2026-03-03T03:49:40.876870+00:00",
+      "age_hours": 0.04760825833333333,
+      "detected_at": "2026-03-03T04:04:42.389745+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0xe832a64060e0e7842f8f2b96bf4d1d1c951abb07",
-        "symbol": "Conviction",
-        "name": "Conviction"
+        "address": "0xf7185965ad5d6e5ca785e2522dc58130ecb05ba3",
+        "symbol": "AgentWatch",
+        "name": "AgentWatch"
       },
       "metrics": {
-        "liq_usd": 24196.1479,
-        "vol_24h_usd": 5770.2733399972,
-        "txns_24h": 50,
+        "liq_usd": 40602.3037,
+        "vol_24h_usd": 1494.0378762345,
+        "txns_24h": 11,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "high",
         "factors": [
           "new_token"
         ]
       },
       "score": 95,
-      "age_hours": 0.03996581611111111,
-      "detected_at": "2026-03-03T03:49:40.876945+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0xb6a41ee556fd26b9b88e28373a00f5920593ab07",
-        "symbol": "Pencil",
-        "name": "Pencil"
-      },
-      "metrics": {
-        "liq_usd": 15029.8777,
-        "vol_24h_usd": 24198.9159358497,
-        "txns_24h": 191,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 95,
-      "age_hours": 0.08385472833333334,
-      "detected_at": "2026-03-03T03:49:40.877026+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0xa58b6effdeb91cd4138d12e70a6692fdca91d000",
-        "symbol": "SUPFI",
-        "name": "SUPFI"
-      },
-      "metrics": {
-        "liq_usd": 18657.0794,
-        "vol_24h_usd": 8786.9001695091,
-        "txns_24h": 23,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 90,
-      "age_hours": 0.04052137583333333,
-      "detected_at": "2026-03-03T03:49:40.876964+00:00",
+      "age_hours": 0.08705273333333333,
+      "detected_at": "2026-03-03T04:04:42.389848+00:00",
       "source": "geckoterminal_v2"
     }
   ]
