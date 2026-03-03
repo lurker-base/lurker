@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-03T06:04:51.371766+00:00",
+  "timestamp": "2026-03-03T06:19:52.966111+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x4cbdee5bc3cd35adc54a29e6f011fe5cfa88aba3",
-        "symbol": "AICO",
-        "name": "AICO"
+        "address": "0x2056a08a437085a1939ca56c353ccccec1b3db07",
+        "symbol": "NoahAI",
+        "name": "NoahAI"
       },
       "metrics": {
-        "liq_usd": 27788.7565,
-        "vol_24h_usd": 22370.0336992411,
-        "txns_24h": 136,
+        "liq_usd": 21942.5783,
+        "vol_24h_usd": 12707.3258767553,
+        "txns_24h": 97,
         "price_usd": 0
       },
       "risk": {
@@ -21,20 +21,20 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.09454650194444444,
-      "detected_at": "2026-03-03T06:04:51.367420+00:00",
+      "age_hours": 0.06721233277777777,
+      "detected_at": "2026-03-03T06:19:52.964413+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0x2e679b1177b60cfa25c94c31ae8542ae82650341",
-        "symbol": "Trinket",
-        "name": "Trinket"
+        "address": "0xf7abd205bbf9cd60e046b27e2eb25ad2c8efaba3",
+        "symbol": "AICO",
+        "name": "AICO"
       },
       "metrics": {
-        "liq_usd": 30688.6072,
-        "vol_24h_usd": 16485.2689165766,
-        "txns_24h": 48,
+        "liq_usd": 28182.1174,
+        "vol_24h_usd": 14545.5717776471,
+        "txns_24h": 94,
         "price_usd": 0
       },
       "risk": {
@@ -44,8 +44,54 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.09510206805555554,
-      "detected_at": "2026-03-03T06:04:51.367452+00:00",
+      "age_hours": 0.07721234694444444,
+      "detected_at": "2026-03-03T06:19:52.964458+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0xea37df90e438aa7b133a8fea7805c1b6e1e1bb07",
+        "symbol": "42",
+        "name": "42"
+      },
+      "metrics": {
+        "liq_usd": 29721.4826,
+        "vol_24h_usd": 19406.7141764291,
+        "txns_24h": 134,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.09443458416666665,
+      "detected_at": "2026-03-03T06:19:52.964517+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x05a31a18dc5594983d1d7aa531f548da4a36ff73",
+        "symbol": "VIRTERN",
+        "name": "VIRTERN"
+      },
+      "metrics": {
+        "liq_usd": 131452.6989,
+        "vol_24h_usd": 1703.492840177,
+        "txns_24h": 22,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.09721237055555557,
+      "detected_at": "2026-03-03T06:19:52.964540+00:00",
       "source": "geckoterminal_v2"
     }
   ]
