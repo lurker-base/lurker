@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-03T00:04:19.483846+00:00",
+  "timestamp": "2026-03-03T00:19:20.884434+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x84b987d075ee68735da9a395b82acf8afb0ddb07",
-        "symbol": "Trinket",
-        "name": "Trinket"
+        "address": "0xa25409ea4fabdbcd4717dc2d8e7170f6a429dba3",
+        "symbol": "GAMAL",
+        "name": "GAMAL"
       },
       "metrics": {
-        "liq_usd": 21240.1487,
-        "vol_24h_usd": 9456.146542914,
-        "txns_24h": 49,
+        "liq_usd": 35387.431,
+        "vol_24h_usd": 28102.7321933827,
+        "txns_24h": 200,
         "price_usd": 0
       },
       "risk": {
@@ -20,21 +20,21 @@
           "new_token"
         ]
       },
-      "score": 95,
-      "age_hours": 0.035689524166666674,
-      "detected_at": "2026-03-03T00:04:19.482296+00:00",
+      "score": 100,
+      "age_hours": 0.11552306527777778,
+      "detected_at": "2026-03-03T00:19:20.883049+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0xd3bcf5f4721f30bb3076fed9200d6dce95b64ba3",
-        "symbol": "CODEXRIOS",
-        "name": "CODEXRIOS"
+        "address": "0xe5e695a7cf885a08320b3b4f0219bcf8235d5ba3",
+        "symbol": "GAMAL",
+        "name": "GAMAL"
       },
       "metrics": {
-        "liq_usd": 20992.0522,
-        "vol_24h_usd": 1384.3293154518,
-        "txns_24h": 13,
+        "liq_usd": 20287.6342,
+        "vol_24h_usd": 2728.0238241725,
+        "txns_24h": 11,
         "price_usd": 0
       },
       "risk": {
@@ -44,20 +44,20 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.057356203055555555,
-      "detected_at": "2026-03-03T00:04:19.482366+00:00",
+      "age_hours": 0.06830081055555555,
+      "detected_at": "2026-03-03T00:19:20.882933+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0x409de01be6913c32cc9a9fe579e82ba37c95f49c",
-        "symbol": "SUSW",
-        "name": "SUSW"
+        "address": "0x4642a42eaf67d7bab00dbd191bc3d82ba323ab07",
+        "symbol": "MILF",
+        "name": "MILF"
       },
       "metrics": {
-        "liq_usd": 17250.7086,
-        "vol_24h_usd": 13112.7496382688,
-        "txns_24h": 42,
+        "liq_usd": 15724.9644,
+        "vol_24h_usd": 25202.0967747579,
+        "txns_24h": 177,
         "price_usd": 0
       },
       "risk": {
@@ -67,31 +67,8 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.09235623305555556,
-      "detected_at": "2026-03-03T00:04:19.482445+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0xbd7f864f66e5a96685ef3be4c347ad4f7a75ab07",
-        "symbol": "Bombombini",
-        "name": "Bombombini"
-      },
-      "metrics": {
-        "liq_usd": 12468.5256,
-        "vol_24h_usd": 2974.1359524276,
-        "txns_24h": 19,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "high",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 90,
-      "age_hours": 0.02624506388888889,
-      "detected_at": "2026-03-03T00:04:19.482248+00:00",
+      "age_hours": 0.08774527583333333,
+      "detected_at": "2026-03-03T00:19:20.883000+00:00",
       "source": "geckoterminal_v2"
     }
   ]
