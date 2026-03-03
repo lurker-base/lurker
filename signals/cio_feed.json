@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-03T02:34:33.450408+00:00",
+  "timestamp": "2026-03-03T02:49:34.754576+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xd3c7fa22e2f4c67d96fd06ea20c1addf0f741ba3",
-        "symbol": "VOIDCO",
-        "name": "VOIDCO"
+        "address": "0x519f0e6c1a128f33daf4df24898d56a08198bb07",
+        "symbol": "DiCaprio",
+        "name": "DiCaprio"
       },
       "metrics": {
-        "liq_usd": 30382.9266,
-        "vol_24h_usd": 18404.6699017792,
-        "txns_24h": 124,
+        "liq_usd": 30536.6125,
+        "vol_24h_usd": 13509.2901929531,
+        "txns_24h": 91,
         "price_usd": 0
       },
       "risk": {
@@ -21,54 +21,8 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.08234704277777778,
-      "detected_at": "2026-03-03T02:34:33.449366+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0xb6938b96dc6efb6941f7afdafb3b539d9e7aed30",
-        "symbol": "HYDR",
-        "name": "HYDR"
-      },
-      "metrics": {
-        "liq_usd": 18739.0195,
-        "vol_24h_usd": 4041.719469611,
-        "txns_24h": 16,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "high",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 90,
-      "age_hours": 0.039013683611111113,
-      "detected_at": "2026-03-03T02:34:33.449273+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0x686d506d10f0e8257bb31610a1517a100456ab07",
-        "symbol": "333",
-        "name": "333"
-      },
-      "metrics": {
-        "liq_usd": 12804.381,
-        "vol_24h_usd": 4380.8577336974,
-        "txns_24h": 43,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 90,
-      "age_hours": 0.0451248075,
-      "detected_at": "2026-03-03T02:34:33.449314+00:00",
+      "age_hours": 0.05937591111111111,
+      "detected_at": "2026-03-03T02:49:34.753294+00:00",
       "source": "geckoterminal_v2"
     }
   ]
