@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-03T05:34:48.890621+00:00",
+  "timestamp": "2026-03-03T05:49:50.348633+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x8eccbafd05a8b02af9f3b1e0b400b54b71c1bb07",
-        "symbol": "LEVERS",
-        "name": "LEVERS"
+        "address": "0xa91f49f9d6ff97762971a8e2b8e050556174ab07",
+        "symbol": "MOLT",
+        "name": "MOLT"
       },
       "metrics": {
-        "liq_usd": 27191.0815,
-        "vol_24h_usd": 14474.0070640685,
-        "txns_24h": 103,
+        "liq_usd": 26794.2383,
+        "vol_24h_usd": 10812.2600712324,
+        "txns_24h": 78,
         "price_usd": 0
       },
       "risk": {
@@ -21,20 +21,20 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.08663573916666667,
-      "detected_at": "2026-03-03T05:34:48.888696+00:00",
+      "age_hours": 0.05759631055555556,
+      "detected_at": "2026-03-03T05:49:50.346728+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0x0a6c6f8332d5c2f9e177149e2e54d9c669cd7ba3",
-        "symbol": "OCS",
-        "name": "OCS"
+        "address": "0x53014d835251e8057e2098e8354eb4186dcfaba3",
+        "symbol": "AICO",
+        "name": "AICO"
       },
       "metrics": {
-        "liq_usd": 27097.5078,
-        "vol_24h_usd": 15344.5239680732,
-        "txns_24h": 113,
+        "liq_usd": 23662.0912,
+        "vol_24h_usd": 4764.2845681832,
+        "txns_24h": 33,
         "price_usd": 0
       },
       "risk": {
@@ -43,32 +43,32 @@
           "new_token"
         ]
       },
-      "score": 100,
-      "age_hours": 0.08830242361111111,
-      "detected_at": "2026-03-03T05:34:48.888733+00:00",
+      "score": 95,
+      "age_hours": 0.0375962775,
+      "detected_at": "2026-03-03T05:49:50.346613+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0x1f081bd62b5323f34d939773f195d848c63847be",
-        "symbol": "CLAWNCH",
-        "name": "CLAWNCH"
+        "address": "0x39a9d77fc0a18c9e2681801e762eaec02b52415f",
+        "symbol": "CYBFR",
+        "name": "CYBFR"
       },
       "metrics": {
-        "liq_usd": 8658.6752,
-        "vol_24h_usd": 4660.2474935335,
-        "txns_24h": 71,
+        "liq_usd": 19671.9065,
+        "vol_24h_usd": 8343.3525438897,
+        "txns_24h": 31,
         "price_usd": 0
       },
       "risk": {
-        "level": "high",
+        "level": "medium",
         "factors": [
           "new_token"
         ]
       },
-      "score": 80,
-      "age_hours": 0.10663577444444444,
-      "detected_at": "2026-03-03T05:34:48.888808+00:00",
+      "score": 90,
+      "age_hours": 0.06037409694444444,
+      "detected_at": "2026-03-03T05:49:50.346764+00:00",
       "source": "geckoterminal_v2"
     }
   ]
