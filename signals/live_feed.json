@@ -1,135 +1,35 @@
 {
   "meta": {
-    "updated_at": "2026-03-03T16:58:44.603Z",
+    "updated_at": "2026-03-03T16:59:22.888Z",
     "source": "cio",
     "chain": "base",
-    "count": 5,
+    "count": 1,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-03T16:58:03.370611+00:00",
+      "ts_utc": "2026-03-03T16:59:22.854742+00:00",
       "chain": "base",
       "token": {
-        "name": "YARR",
-        "symbol": "$YARR",
-        "address": "0xe7014a27e36d33e13dd3a979f1de1ef69b926ba3"
+        "name": "Muppin",
+        "symbol": "$MUPPIN",
+        "address": "0xf8c90463e5c8aa4bc69c7925e2956838452d6e6d"
       },
       "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 25856.0601,
-        "vol_24h_usd": 14517.7689117567
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xe7014a27e36d33e13dd3a979f1de1ef69b926ba3",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-03T16:58:03.370497+00:00",
-      "chain": "base",
-      "token": {
-        "name": "CLAW JESSE",
-        "symbol": "$CLAW JESSE",
-        "address": "0x31b177af847a9d66335c172bcae351079b202ba3"
-      },
-      "scores": {
-        "confidence": 95,
+        "confidence": 90,
         "rarity": "new",
         "risk": "high"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 22388.5959,
-        "vol_24h_usd": 1878.1688674416
+        "liq_usd": 15800.8219,
+        "vol_24h_usd": 1995.26309248
       },
       "dex": "geckoterminal",
-      "pair_address": "0x31b177af847a9d66335c172bcae351079b202ba3",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-03T16:58:03.370561+00:00",
-      "chain": "base",
-      "token": {
-        "name": "BONG-GU",
-        "symbol": "$BONG-GU",
-        "address": "0x156c935bc7bbb020014ecb60663715a18679ab07"
-      },
-      "scores": {
-        "confidence": 95,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 13485.8188,
-        "vol_24h_usd": 12653.3621561983
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x156c935bc7bbb020014ecb60663715a18679ab07",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-03T16:58:03.370591+00:00",
-      "chain": "base",
-      "token": {
-        "name": "ONE",
-        "symbol": "$ONE",
-        "address": "0x5939972d7f0d57d7ee3327bbcb9286112618bb07"
-      },
-      "scores": {
-        "confidence": 95,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 22971.2147,
-        "vol_24h_usd": 7769.861150279
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x5939972d7f0d57d7ee3327bbcb9286112618bb07",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-03T16:58:03.370625+00:00",
-      "chain": "base",
-      "token": {
-        "name": "YARR",
-        "symbol": "$YARR",
-        "address": "0xbf7733c9f6d9410308de59fc9f520e8963f96ba3"
-      },
-      "scores": {
-        "confidence": 90,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 10677.415,
-        "vol_24h_usd": 2429.5571133009
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xbf7733c9f6d9410308de59fc9f520e8963f96ba3",
+      "pair_address": "0xf8c90463e5c8aa4bc69c7925e2956838452d6e6d",
       "scanner": "cio"
     }
   ]

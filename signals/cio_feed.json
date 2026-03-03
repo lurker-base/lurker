@@ -1,40 +1,17 @@
 {
-  "timestamp": "2026-03-03T16:58:03.372839+00:00",
+  "timestamp": "2026-03-03T16:59:22.858141+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xe7014a27e36d33e13dd3a979f1de1ef69b926ba3",
-        "symbol": "YARR",
-        "name": "YARR"
+        "address": "0xf8c90463e5c8aa4bc69c7925e2956838452d6e6d",
+        "symbol": "Muppin",
+        "name": "Muppin"
       },
       "metrics": {
-        "liq_usd": 25856.0601,
-        "vol_24h_usd": 14517.7689117567,
-        "txns_24h": 85,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.04676961277777778,
-      "detected_at": "2026-03-03T16:58:03.370611+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0x31b177af847a9d66335c172bcae351079b202ba3",
-        "symbol": "CLAW JESSE",
-        "name": "CLAW JESSE"
-      },
-      "metrics": {
-        "liq_usd": 22388.5959,
-        "vol_24h_usd": 1878.1688674416,
-        "txns_24h": 6,
+        "liq_usd": 15800.8219,
+        "vol_24h_usd": 1995.26309248,
+        "txns_24h": 18,
         "price_usd": 0
       },
       "risk": {
@@ -43,78 +20,9 @@
           "new_token"
         ]
       },
-      "score": 95,
-      "age_hours": 0.01454735138888889,
-      "detected_at": "2026-03-03T16:58:03.370497+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0x156c935bc7bbb020014ecb60663715a18679ab07",
-        "symbol": "BONG-GU",
-        "name": "BONG-GU"
-      },
-      "metrics": {
-        "liq_usd": 13485.8188,
-        "vol_24h_usd": 12653.3621561983,
-        "txns_24h": 66,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 95,
-      "age_hours": 0.031769597777777776,
-      "detected_at": "2026-03-03T16:58:03.370561+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0x5939972d7f0d57d7ee3327bbcb9286112618bb07",
-        "symbol": "ONE",
-        "name": "ONE"
-      },
-      "metrics": {
-        "liq_usd": 22971.2147,
-        "vol_24h_usd": 7769.861150279,
-        "txns_24h": 57,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 95,
-      "age_hours": 0.04121404888888889,
-      "detected_at": "2026-03-03T16:58:03.370591+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0xbf7733c9f6d9410308de59fc9f520e8963f96ba3",
-        "symbol": "YARR",
-        "name": "YARR"
-      },
-      "metrics": {
-        "liq_usd": 10677.415,
-        "vol_24h_usd": 2429.5571133009,
-        "txns_24h": 42,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
       "score": 90,
-      "age_hours": 0.04954739444444445,
-      "detected_at": "2026-03-03T16:58:03.370625+00:00",
+      "age_hours": 0.03718186833333333,
+      "detected_at": "2026-03-03T16:59:22.854742+00:00",
       "source": "geckoterminal_v2"
     }
   ]
