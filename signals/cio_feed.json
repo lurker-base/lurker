@@ -1,51 +1,74 @@
 {
-  "timestamp": "2026-03-03T01:34:27.520093+00:00",
+  "timestamp": "2026-03-03T01:49:28.882560+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x6f42bec3c1e12154d3dcf8f8bb27357ef87047be",
-        "symbol": "CLAWNCH",
-        "name": "CLAWNCH"
+        "address": "0x247dfd6ed512d74c9d352b97ddbbf0bcee16760b",
+        "symbol": "SPACE",
+        "name": "SPACE"
       },
       "metrics": {
-        "liq_usd": 32507.7738,
-        "vol_24h_usd": 29118.2281519071,
-        "txns_24h": 167,
+        "liq_usd": 133273.0295,
+        "vol_24h_usd": 1380.16019949,
+        "txns_24h": 17,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "high",
         "factors": [
           "new_token"
         ]
       },
       "score": 100,
-      "age_hours": 0.0990330025,
-      "detected_at": "2026-03-03T01:34:27.518819+00:00",
+      "age_hours": 0.0794114975,
+      "detected_at": "2026-03-03T01:49:28.881398+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0xe342ce72b7d0e90c04bf8c5b4f324d750b19aba3",
-        "symbol": "AICO",
-        "name": "AICO"
+        "address": "0xd1feb99b483ea57220b12aae34262a28463bfb07",
+        "symbol": "DEUS",
+        "name": "DEUS"
       },
       "metrics": {
-        "liq_usd": 24399.943,
-        "vol_24h_usd": 6087.6073606473,
-        "txns_24h": 59,
+        "liq_usd": 66636.3195,
+        "vol_24h_usd": 2534.8026160784,
+        "txns_24h": 14,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "high",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.08163372416666667,
+      "detected_at": "2026-03-03T01:49:28.881419+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x63c2a863f2326aeb874575751e07d2eb85d14192",
+        "symbol": "CRAIG",
+        "name": "CRAIG"
+      },
+      "metrics": {
+        "liq_usd": 44690.8341,
+        "vol_24h_usd": 1054.335857011,
+        "txns_24h": 7,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "high",
         "factors": [
           "new_token"
         ]
       },
       "score": 95,
-      "age_hours": 0.05069963833333333,
-      "detected_at": "2026-03-03T01:34:27.518709+00:00",
+      "age_hours": 0.05941147611111111,
+      "detected_at": "2026-03-03T01:49:28.881328+00:00",
       "source": "geckoterminal_v2"
     }
   ]
