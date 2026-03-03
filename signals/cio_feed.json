@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-03T03:19:37.639293+00:00",
+  "timestamp": "2026-03-03T03:34:39.341176+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x58432452be5bd53e6d1bb7a75fa8cf518c1fdb07",
-        "symbol": "333",
-        "name": "333"
+        "address": "0x2ed0a85ae25ee0048d460124cd61dbbe36a8db07",
+        "symbol": "DISHBRAIN",
+        "name": "DISHBRAIN"
       },
       "metrics": {
-        "liq_usd": 21608.172,
-        "vol_24h_usd": 20007.1690191137,
-        "txns_24h": 115,
+        "liq_usd": 22526.4023,
+        "vol_24h_usd": 12114.8933598657,
+        "txns_24h": 76,
         "price_usd": 0
       },
       "risk": {
@@ -21,31 +21,31 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.07295499,
-      "detected_at": "2026-03-03T03:19:37.637972+00:00",
+      "age_hours": 0.037316546111111105,
+      "detected_at": "2026-03-03T03:34:39.339581+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0xae078b96c3865c336cdf56c904fcf84c0e339610",
-        "symbol": "realwallst",
-        "name": "realwallst"
+        "address": "0xb4f928b9ee4269024dd988dafbc28f7eb3be2e97",
+        "symbol": "MOOPA",
+        "name": "MOOPA"
       },
       "metrics": {
-        "liq_usd": 6690.558,
-        "vol_24h_usd": 3070.3158286885,
-        "txns_24h": 41,
+        "liq_usd": 20621.2437,
+        "vol_24h_usd": 8239.101910471,
+        "txns_24h": 28,
         "price_usd": 0
       },
       "risk": {
-        "level": "high",
+        "level": "medium",
         "factors": [
           "new_token"
         ]
       },
-      "score": 80,
-      "age_hours": 0.06628830583333334,
-      "detected_at": "2026-03-03T03:19:37.637913+00:00",
+      "score": 95,
+      "age_hours": 0.04953878694444444,
+      "detected_at": "2026-03-03T03:34:39.339640+00:00",
       "source": "geckoterminal_v2"
     }
   ]
