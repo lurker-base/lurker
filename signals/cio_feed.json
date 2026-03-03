@@ -1,63 +1,40 @@
 {
-  "timestamp": "2026-03-03T04:34:44.561331+00:00",
+  "timestamp": "2026-03-03T04:49:45.785114+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x3ee215ee75f0f010efcc3d2f7d24612285d3cb07",
-        "symbol": "KellyClaud",
-        "name": "KellyClaud"
+        "address": "0x42e5b2de9366b2d61bf5293bf811e7e813a01d55",
+        "symbol": "AYA",
+        "name": "AYA"
       },
       "metrics": {
-        "liq_usd": 24876.2223,
-        "vol_24h_usd": 13226.9016479506,
-        "txns_24h": 95,
+        "liq_usd": 130725.7048,
+        "vol_24h_usd": 1005.327445608,
+        "txns_24h": 14,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "high",
         "factors": [
           "new_token"
         ]
       },
       "score": 100,
-      "age_hours": 0.07154430083333334,
-      "detected_at": "2026-03-03T04:34:44.559491+00:00",
+      "age_hours": 0.06910643805555555,
+      "detected_at": "2026-03-03T04:49:45.783186+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0x55007c2d6705702fa20081331fa799bcc73faba3",
-        "symbol": "AICO",
-        "name": "AICO"
+        "address": "0xbafac9564aa8dea21ecf08b28192c068fe0cbb07",
+        "symbol": "KYLESAMANI",
+        "name": "KYLESAMANI"
       },
       "metrics": {
-        "liq_usd": 28047.0995,
-        "vol_24h_usd": 18092.9002602093,
-        "txns_24h": 152,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.09765543194444444,
-      "detected_at": "2026-03-03T04:34:44.559570+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0xed180d6da40aaf32ce138da318af685a9dccdf9c",
-        "symbol": "APDO",
-        "name": "APDO"
-      },
-      "metrics": {
-        "liq_usd": 24126.9651,
-        "vol_24h_usd": 9463.6840835601,
-        "txns_24h": 28,
+        "liq_usd": 25669.5109,
+        "vol_24h_usd": 7858.2721623493,
+        "txns_24h": 71,
         "price_usd": 0
       },
       "risk": {
@@ -67,8 +44,8 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.056544283888888894,
-      "detected_at": "2026-03-03T04:34:44.559439+00:00",
+      "age_hours": 0.06021752805555555,
+      "detected_at": "2026-03-03T04:49:45.783116+00:00",
       "source": "geckoterminal_v2"
     }
   ]
