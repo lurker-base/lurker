@@ -63,6 +63,7 @@
         .badge-risk-low { background: #166534; color: #4ade80; }
         .badge-risk-med { background: #854d0e; color: #fbbf24; }
         .badge-risk-high { background: #7f1d1d; color: #f87171; }
+        .badge-rug { background: #000; color: #ff0000; border: 1px solid #ff0000; }
         
         /* LURKER custom badges */
         .badge-convergence { background: #be185d; color: #fbcfe8; }
@@ -131,8 +132,54 @@
     <script src="sparks.js"></script>
     <script>
         const CIO_FEED_URL = 'https://raw.githubusercontent.com/lurker-base/lurker/main/signals/cio_feed.json';
+        const DEXSCREENER_API = 'https://api.dexscreener.com/latest/dex/tokens';
+        
         let allTokens = [];
+        let tokenDexData = {}; // Cache DexScreener data
         let currentFilter = 'all';
+        
+        // Validate token with DexScreener in real-time
+        async function validateTokenDexscreener(address) {
+            if (tokenDexData[address]) return tokenDexData[address];
+            
+            try {
+                const resp = await fetch(DEXSCREENER_API + '/' + address);
+                if (!resp.ok) return null;
+                const data = await resp.json();
+                const pairs = data.pairs || [];
+                
+                if (pairs.length === 0) {
+                    tokenDexData[address] = { rugged: true, reason: 'no_pairs' };
+                    return tokenDexData[address];
+                }
+                
+                // Get best pair by liquidity
+                const best = pairs.reduce((a, b) => 
+                    (a.liquidity?.usd || 0) > (b.liquidity?.usd || 0) ? a : b);
+                
+                const liquidity = best.liquidity?.usd || 0;
+                const priceChange = best.priceChange?.h24 || 0;
+                
+                const result = {
+                    rugged: liquidity < 100 || priceChange < -90,
+                    liquidity: liquidity,
+                    priceChange: priceChange,
+                    dex: best.dexId,
+                    pairAddress: best.pairAddress
+                };
+                
+                if (result.rugged) {
+                    result.reason = liquidity < 100 ? 'low_liq' : 'dump';
+                }
+                
+                tokenDexData[address] = result;
+                return result;
+                
+            } catch (e) {
+                console.warn('DexScreener validation failed:', e);
+                return null;
+            }
+        }
         
         async function loadData() {
             try {
@@ -141,6 +188,21 @@
                 const data = await response.json();
                 
                 allTokens = data.candidates || [];
+                
+                // Validate all tokens with DexScreener in parallel
+                const validatePromises = allTokens.map(async (token) => {
+                    const addr = token.token.address;
+                    const dexData = await validateTokenDexscreener(addr);
+                    token._dexData = dexData;
+                });
+                
+                await Promise.all(validatePromises);
+                
+                // Filter out rugged tokens
+                const beforeCount = allTokens.length;
+                allTokens = allTokens.filter(t => !t._dexData?.rugged);
+                console.log(`Filtered ${beforeCount - allTokens.length} rugged tokens`);
+                
                 updateStats();
                 renderTokens();
                 document.getElementById('last-update').textContent = new Date().toLocaleTimeString();
