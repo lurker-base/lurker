@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-03T01:04:24.582763+00:00",
+  "timestamp": "2026-03-03T01:19:25.570381+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x7f423b3565e6200ad8078b1285ade295e6bf82b2",
-        "symbol": "OCS",
-        "name": "OCS"
+        "address": "0x2383e6514c23874f87a2ad65000f0b2bd32fdb07",
+        "symbol": "Watermelon",
+        "name": "Watermelon"
       },
       "metrics": {
-        "liq_usd": 34235.4709,
-        "vol_24h_usd": 15734.7695913373,
-        "txns_24h": 29,
+        "liq_usd": 23980.0107,
+        "vol_24h_usd": 20723.3140899212,
+        "txns_24h": 149,
         "price_usd": 0
       },
       "risk": {
@@ -21,20 +21,20 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.04488373944444444,
-      "detected_at": "2026-03-03T01:04:24.581476+00:00",
+      "age_hours": 0.07126913055555556,
+      "detected_at": "2026-03-03T01:19:25.568883+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0x99ef372b7f0b4db905b34a2523bab6a90d8c7ba3",
-        "symbol": "OCS",
-        "name": "OCS"
+        "address": "0xf352850d01cc470f77d34ece66bc108d7619ab07",
+        "symbol": "BACON",
+        "name": "BACON"
       },
       "metrics": {
-        "liq_usd": 39419.6885,
-        "vol_24h_usd": 19938.6612868798,
-        "txns_24h": 72,
+        "liq_usd": 18683.3275,
+        "vol_24h_usd": 13820.7684489949,
+        "txns_24h": 109,
         "price_usd": 0
       },
       "risk": {
@@ -43,55 +43,32 @@
           "new_token"
         ]
       },
-      "score": 100,
-      "age_hours": 0.09155043916666668,
-      "detected_at": "2026-03-03T01:04:24.581593+00:00",
+      "score": 95,
+      "age_hours": 0.062380224444444445,
+      "detected_at": "2026-03-03T01:19:25.568822+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0x671e77059aaa8d08894fcf282d4779b510915ba3",
-        "symbol": "BRO",
-        "name": "BRO"
+        "address": "0xc76456bfe8ce46e1ac099ce6654805850ccf5b07",
+        "symbol": "OCS",
+        "name": "OCS"
       },
       "metrics": {
-        "liq_usd": 22042.0702,
-        "vol_24h_usd": 10438.1674651571,
-        "txns_24h": 18,
+        "liq_usd": 25736.4933,
+        "vol_24h_usd": 2080.7927940027,
+        "txns_24h": 33,
         "price_usd": 0
       },
       "risk": {
-        "level": "high",
+        "level": "medium",
         "factors": [
           "new_token"
         ]
       },
-      "score": 100,
-      "age_hours": 0.10043933583333334,
-      "detected_at": "2026-03-03T01:04:24.581615+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0xee93756d631966d1125be15c1c9c27a7a20ecb07",
-        "symbol": "KellyClaud",
-        "name": "KellyClaud"
-      },
-      "metrics": {
-        "liq_usd": 7410.8331,
-        "vol_24h_usd": 3048.9711051707,
-        "txns_24h": 48,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "high",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 80,
-      "age_hours": 0.09043932222222223,
-      "detected_at": "2026-03-03T01:04:24.581567+00:00",
+      "score": 95,
+      "age_hours": 0.06682468055555556,
+      "detected_at": "2026-03-03T01:19:25.568858+00:00",
       "source": "geckoterminal_v2"
     }
   ]
