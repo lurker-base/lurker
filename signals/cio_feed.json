@@ -1,40 +1,17 @@
 {
-  "timestamp": "2026-03-03T07:35:01.385420+00:00",
+  "timestamp": "2026-03-03T07:50:02.882161+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x1463bec74022ec7a5979a76d589ca18ee7bbdb07",
-        "symbol": "PIZZA",
-        "name": "PIZZA"
+        "address": "0xdbc42c648567df3441a980c0ed6d2e390ae73724",
+        "symbol": "LEVYCLAW",
+        "name": "LEVYCLAW"
       },
       "metrics": {
-        "liq_usd": 20755.5727,
-        "vol_24h_usd": 12983.1475648045,
-        "txns_24h": 100,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.04899509277777778,
-      "detected_at": "2026-03-03T07:35:01.382347+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0xf36f87aa6ae49df8a4eb7e8822b04eaaecfc900b",
-        "symbol": "HAZEL",
-        "name": "HAZEL"
-      },
-      "metrics": {
-        "liq_usd": 34956.6383,
-        "vol_24h_usd": 9997.9940447897,
-        "txns_24h": 56,
+        "liq_usd": 20934.4859,
+        "vol_24h_usd": 2923.1358264794,
+        "txns_24h": 26,
         "price_usd": 0
       },
       "risk": {
@@ -44,31 +21,31 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.03843952638888889,
-      "detected_at": "2026-03-03T07:35:01.382302+00:00",
+      "age_hours": 0.04052243861111111,
+      "detected_at": "2026-03-03T07:50:02.880789+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0x431448cbf590a55a6d1f6947db58dac2052dab07",
-        "symbol": "Monitor",
-        "name": "Monitor"
+        "address": "0xf8dfa6923ba9a9f39db3080a323b4982cf65ab07",
+        "symbol": "MOLT",
+        "name": "MOLT"
       },
       "metrics": {
-        "liq_usd": 13355.9798,
-        "vol_24h_usd": 2617.0712593607,
-        "txns_24h": 13,
+        "liq_usd": 23024.7998,
+        "vol_24h_usd": 6667.0638565734,
+        "txns_24h": 45,
         "price_usd": 0
       },
       "risk": {
-        "level": "high",
+        "level": "medium",
         "factors": [
           "new_token"
         ]
       },
-      "score": 90,
-      "age_hours": 0.02455062111111111,
-      "detected_at": "2026-03-03T07:35:01.382252+00:00",
+      "score": 95,
+      "age_hours": 0.047189123888888886,
+      "detected_at": "2026-03-03T07:50:02.880856+00:00",
       "source": "geckoterminal_v2"
     }
   ]
