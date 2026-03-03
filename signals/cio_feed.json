@@ -1,109 +1,17 @@
 {
-  "timestamp": "2026-03-03T07:04:57.598424+00:00",
+  "timestamp": "2026-03-03T07:19:59.326035+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x720c6d977d0b2c66c231a279f94aa2a520fa47be",
-        "symbol": "CLAWNCH",
-        "name": "CLAWNCH"
-      },
-      "metrics": {
-        "liq_usd": 26082.3712,
-        "vol_24h_usd": 13888.3200720764,
-        "txns_24h": 82,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.07127677388888888,
-      "detected_at": "2026-03-03T07:04:57.596399+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0x88af5a90e3e5e04dd48353a09230657db4473724",
-        "symbol": "LEVYCLAW",
-        "name": "LEVYCLAW"
-      },
-      "metrics": {
-        "liq_usd": 25455.4783,
-        "vol_24h_usd": 14717.8046653853,
-        "txns_24h": 100,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.07183233944444445,
-      "detected_at": "2026-03-03T07:04:57.596427+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0x681539b0d909955e3a63e3b416dbd5fc0681db07",
-        "symbol": "PIZZA",
-        "name": "PIZZA"
-      },
-      "metrics": {
-        "liq_usd": 22975.6648,
-        "vol_24h_usd": 22714.2772559383,
-        "txns_24h": 180,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.08683235111111112,
-      "detected_at": "2026-03-03T07:04:57.596468+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0x679a05c0a34f08cf608a62777c66d9bab703ab07",
-        "symbol": "Hazel_OC",
-        "name": "Hazel_OC"
-      },
-      "metrics": {
-        "liq_usd": 13507.5663,
-        "vol_24h_usd": 10986.272708039,
-        "txns_24h": 68,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 95,
-      "age_hours": 0.06016564972222222,
-      "detected_at": "2026-03-03T07:04:57.596346+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0xfb1a5dfa2a083ec4babeb22bc8bf7b2f6365bb07",
+        "address": "0xf71d4d8b48fe70d23afc0da4c41cffd423a0bb07",
         "symbol": "Enki",
         "name": "Enki"
       },
       "metrics": {
-        "liq_usd": 26218.7443,
-        "vol_24h_usd": 9423.4813249523,
-        "txns_24h": 80,
+        "liq_usd": 34875.5584,
+        "vol_24h_usd": 22854.5859768994,
+        "txns_24h": 182,
         "price_usd": 0
       },
       "risk": {
@@ -112,21 +20,21 @@
           "new_token"
         ]
       },
-      "score": 95,
-      "age_hours": 0.07127678,
-      "detected_at": "2026-03-03T07:04:57.596413+00:00",
+      "score": 100,
+      "age_hours": 0.09064568083333334,
+      "detected_at": "2026-03-03T07:19:59.324456+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0x9fb34c9177d6e9f7b833faa824b54de411f16f37",
-        "symbol": "$NEURA",
-        "name": "$NEURA"
+        "address": "0x4d50e0fd25af38d994cbdec3c9337a13fa37c9c5",
+        "symbol": "CLAWD",
+        "name": "CLAWD"
       },
       "metrics": {
-        "liq_usd": 44253.6587,
-        "vol_24h_usd": 1416.875551021,
-        "txns_24h": 9,
+        "liq_usd": 43932.6451,
+        "vol_24h_usd": 1249.79102182,
+        "txns_24h": 8,
         "price_usd": 0
       },
       "risk": {
@@ -136,31 +44,54 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.08238790277777779,
-      "detected_at": "2026-03-03T07:04:57.596455+00:00",
+      "age_hours": 0.06286788972222222,
+      "detected_at": "2026-03-03T07:19:59.324410+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0xdf72c0cf103a2ca848a8157e57f3ec1070174e08",
-        "symbol": "QUAMO",
-        "name": "QUAMO"
+        "address": "0x25abc64edde40730376be522b73a01fa03bf1af4",
+        "symbol": "CHAFR",
+        "name": "CHAFR"
       },
       "metrics": {
-        "liq_usd": 12700.6109,
-        "vol_24h_usd": 6636.8471519064,
-        "txns_24h": 27,
+        "liq_usd": 12100.9599,
+        "vol_24h_usd": 3315.6050156293,
+        "txns_24h": 12,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "high",
         "factors": [
           "new_token"
         ]
       },
       "score": 90,
-      "age_hours": 0.060165638888888893,
-      "detected_at": "2026-03-03T07:04:57.596313+00:00",
+      "age_hours": 0.015090091111111112,
+      "detected_at": "2026-03-03T07:19:59.324341+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x34f718854e055e689495f1105ee933ee70ffeba3",
+        "symbol": "HAZEL",
+        "name": "HAZEL"
+      },
+      "metrics": {
+        "liq_usd": 8424.853,
+        "vol_24h_usd": 5467.4167809852,
+        "txns_24h": 69,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "high",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 80,
+      "age_hours": 0.07675678555555555,
+      "detected_at": "2026-03-03T07:19:59.324440+00:00",
       "source": "geckoterminal_v2"
     }
   ]
