@@ -1,63 +1,40 @@
 {
-  "timestamp": "2026-03-03T10:20:15.957180+00:00",
+  "timestamp": "2026-03-03T10:35:17.352116+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xc0c26dbf04f2df716ba3314fed7229c4af6ebb07",
-        "symbol": "Dex",
-        "name": "Dex"
-      },
-      "metrics": {
-        "liq_usd": 24730.0355,
-        "vol_24h_usd": 10278.7420765849,
-        "txns_24h": 79,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.060265248333333334,
-      "detected_at": "2026-03-03T10:20:15.954903+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0x9023fb5e4a7dab5f22452aa2b9224715f1b5db07",
-        "symbol": "USD1",
-        "name": "USD1"
-      },
-      "metrics": {
-        "liq_usd": 21807.8323,
-        "vol_24h_usd": 30072.310176023,
-        "txns_24h": 197,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.09304304805555555,
-      "detected_at": "2026-03-03T10:20:15.954988+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0x8100b0fe812383782e3ca74f9b7d2070500ceba3",
+        "address": "0x09f67e5aaad354e24aec807e85b9de248d9feba3",
         "symbol": "McClaw",
         "name": "McClaw"
       },
       "metrics": {
-        "liq_usd": 21918.3867,
-        "vol_24h_usd": 4855.6001789504,
-        "txns_24h": 37,
+        "liq_usd": 25385.2417,
+        "vol_24h_usd": 13848.236754636,
+        "txns_24h": 121,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.06509712694444444,
+      "detected_at": "2026-03-03T10:35:17.349692+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x889e0ba38db1f74ca110a0a5aa9b9f989f076b07",
+        "symbol": "CLAWD",
+        "name": "CLAWD"
+      },
+      "metrics": {
+        "liq_usd": 23353.6501,
+        "vol_24h_usd": 7255.2748080555,
+        "txns_24h": 58,
         "price_usd": 0
       },
       "risk": {
@@ -67,8 +44,31 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.04082072888888889,
-      "detected_at": "2026-03-03T10:20:15.954809+00:00",
+      "age_hours": 0.0423193175,
+      "detected_at": "2026-03-03T10:35:17.349557+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0xdbcc90687d1e77858b28d93db4a081b525210f26",
+        "symbol": "APEWO",
+        "name": "APEWO"
+      },
+      "metrics": {
+        "liq_usd": 15685.6631,
+        "vol_24h_usd": 14356.8417306189,
+        "txns_24h": 39,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 95,
+      "age_hours": 0.051208225555555556,
+      "detected_at": "2026-03-03T10:35:17.349618+00:00",
       "source": "geckoterminal_v2"
     }
   ]
