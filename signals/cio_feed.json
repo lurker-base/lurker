@@ -1,17 +1,63 @@
 {
-  "timestamp": "2026-03-03T11:05:19.675129+00:00",
+  "timestamp": "2026-03-03T11:20:20.693790+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xd5834c9c25d47f765e796e3f10d4d1c3fb44eba3",
-        "symbol": "McClaw",
-        "name": "McClaw"
+        "address": "0xe30d35d20ff9cb6bb9658570ad75b8ff1cca9af2",
+        "symbol": "ADHD",
+        "name": "ADHD"
       },
       "metrics": {
-        "liq_usd": 22739.5559,
-        "vol_24h_usd": 2719.0387055496,
-        "txns_24h": 24,
+        "liq_usd": 128150.0057,
+        "vol_24h_usd": 1112.385023416,
+        "txns_24h": 16,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "high",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.08102565472222223,
+      "detected_at": "2026-03-03T11:20:20.692373+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0xc94e0489925cf15b863dfdcd38719ade9e60bb07",
+        "symbol": "Conviction",
+        "name": "Conviction"
+      },
+      "metrics": {
+        "liq_usd": 20206.7378,
+        "vol_24h_usd": 1509.5053390841,
+        "txns_24h": 9,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "high",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 95,
+      "age_hours": 0.034358957499999995,
+      "detected_at": "2026-03-03T11:20:20.692260+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0x9111513f366bec9b7be5dcf67ba4b60e55ca47be",
+        "symbol": "CLAWNCH",
+        "name": "CLAWNCH"
+      },
+      "metrics": {
+        "liq_usd": 24641.8768,
+        "vol_24h_usd": 9900.0129865069,
+        "txns_24h": 64,
         "price_usd": 0
       },
       "risk": {
@@ -21,54 +67,8 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.03018687611111111,
-      "detected_at": "2026-03-03T11:05:19.672763+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0x906a967eb3efa5e52652399b3aa6bb0837fbab07",
-        "symbol": "Conviction",
-        "name": "Conviction"
-      },
-      "metrics": {
-        "liq_usd": 14591.1775,
-        "vol_24h_usd": 4471.4076421304,
-        "txns_24h": 33,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 90,
-      "age_hours": 0.027409084166666667,
-      "detected_at": "2026-03-03T11:05:19.672718+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0xce717379fce93717dc72bceb2d23233a2b325de5",
-        "symbol": "GISW",
-        "name": "GISW"
-      },
-      "metrics": {
-        "liq_usd": 15736.7861,
-        "vol_24h_usd": 8668.3864356363,
-        "txns_24h": 26,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 90,
-      "age_hours": 0.03240910416666667,
-      "detected_at": "2026-03-03T11:05:19.672789+00:00",
+      "age_hours": 0.0626923125,
+      "detected_at": "2026-03-03T11:20:20.692332+00:00",
       "source": "geckoterminal_v2"
     }
   ]
