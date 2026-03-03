@@ -1,40 +1,17 @@
 {
-  "timestamp": "2026-03-03T00:49:23.626903+00:00",
+  "timestamp": "2026-03-03T01:04:24.582763+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x743401e245e335e32c01624fba2f8a2350b09247",
-        "symbol": "GIGMO",
-        "name": "GIGMO"
+        "address": "0x7f423b3565e6200ad8078b1285ade295e6bf82b2",
+        "symbol": "OCS",
+        "name": "OCS"
       },
       "metrics": {
-        "liq_usd": 20211.927,
-        "vol_24h_usd": 5965.4010422294,
-        "txns_24h": 13,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "high",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 95,
-      "age_hours": 0.04739596972222222,
-      "detected_at": "2026-03-03T00:49:23.625507+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0x27231849b05f762ff454788fbae443a17d638ba3",
-        "symbol": "OpenPaw",
-        "name": "OpenPaw"
-      },
-      "metrics": {
-        "liq_usd": 22855.1441,
-        "vol_24h_usd": 6073.3410509579,
-        "txns_24h": 40,
+        "liq_usd": 34235.4709,
+        "vol_24h_usd": 15734.7695913373,
+        "txns_24h": 29,
         "price_usd": 0
       },
       "risk": {
@@ -43,21 +20,21 @@
           "new_token"
         ]
       },
-      "score": 95,
-      "age_hours": 0.05739598638888889,
-      "detected_at": "2026-03-03T00:49:23.625559+00:00",
+      "score": 100,
+      "age_hours": 0.04488373944444444,
+      "detected_at": "2026-03-03T01:04:24.581476+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0xb047f6d0cb2b876ffefed2033230f4fa1351db07",
-        "symbol": "PIPPINWIF",
-        "name": "PIPPINWIF"
+        "address": "0x99ef372b7f0b4db905b34a2523bab6a90d8c7ba3",
+        "symbol": "OCS",
+        "name": "OCS"
       },
       "metrics": {
-        "liq_usd": 22582.087,
-        "vol_24h_usd": 5574.2987703925,
-        "txns_24h": 60,
+        "liq_usd": 39419.6885,
+        "vol_24h_usd": 19938.6612868798,
+        "txns_24h": 72,
         "price_usd": 0
       },
       "risk": {
@@ -66,21 +43,21 @@
           "new_token"
         ]
       },
-      "score": 95,
-      "age_hours": 0.0579515475,
-      "detected_at": "2026-03-03T00:49:23.625583+00:00",
+      "score": 100,
+      "age_hours": 0.09155043916666668,
+      "detected_at": "2026-03-03T01:04:24.581593+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0x76a0275b142d143567fb9b1af93615e308bffba3",
-        "symbol": "NotionAI",
-        "name": "NotionAI"
+        "address": "0x671e77059aaa8d08894fcf282d4779b510915ba3",
+        "symbol": "BRO",
+        "name": "BRO"
       },
       "metrics": {
-        "liq_usd": 22436.0067,
-        "vol_24h_usd": 1096.6905916023,
-        "txns_24h": 7,
+        "liq_usd": 22042.0702,
+        "vol_24h_usd": 10438.1674651571,
+        "txns_24h": 18,
         "price_usd": 0
       },
       "risk": {
@@ -89,9 +66,32 @@
           "new_token"
         ]
       },
-      "score": 95,
-      "age_hours": 0.10795156555555555,
-      "detected_at": "2026-03-03T00:49:23.625642+00:00",
+      "score": 100,
+      "age_hours": 0.10043933583333334,
+      "detected_at": "2026-03-03T01:04:24.581615+00:00",
+      "source": "geckoterminal_v2"
+    },
+    {
+      "token": {
+        "address": "0xee93756d631966d1125be15c1c9c27a7a20ecb07",
+        "symbol": "KellyClaud",
+        "name": "KellyClaud"
+      },
+      "metrics": {
+        "liq_usd": 7410.8331,
+        "vol_24h_usd": 3048.9711051707,
+        "txns_24h": 48,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "high",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 80,
+      "age_hours": 0.09043932222222223,
+      "detected_at": "2026-03-03T01:04:24.581567+00:00",
       "source": "geckoterminal_v2"
     }
   ]
