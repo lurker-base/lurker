@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-03T01:19:25.570381+00:00",
+  "timestamp": "2026-03-03T01:34:27.520093+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x2383e6514c23874f87a2ad65000f0b2bd32fdb07",
-        "symbol": "Watermelon",
-        "name": "Watermelon"
+        "address": "0x6f42bec3c1e12154d3dcf8f8bb27357ef87047be",
+        "symbol": "CLAWNCH",
+        "name": "CLAWNCH"
       },
       "metrics": {
-        "liq_usd": 23980.0107,
-        "vol_24h_usd": 20723.3140899212,
-        "txns_24h": 149,
+        "liq_usd": 32507.7738,
+        "vol_24h_usd": 29118.2281519071,
+        "txns_24h": 167,
         "price_usd": 0
       },
       "risk": {
@@ -21,20 +21,20 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.07126913055555556,
-      "detected_at": "2026-03-03T01:19:25.568883+00:00",
+      "age_hours": 0.0990330025,
+      "detected_at": "2026-03-03T01:34:27.518819+00:00",
       "source": "geckoterminal_v2"
     },
     {
       "token": {
-        "address": "0xf352850d01cc470f77d34ece66bc108d7619ab07",
-        "symbol": "BACON",
-        "name": "BACON"
+        "address": "0xe342ce72b7d0e90c04bf8c5b4f324d750b19aba3",
+        "symbol": "AICO",
+        "name": "AICO"
       },
       "metrics": {
-        "liq_usd": 18683.3275,
-        "vol_24h_usd": 13820.7684489949,
-        "txns_24h": 109,
+        "liq_usd": 24399.943,
+        "vol_24h_usd": 6087.6073606473,
+        "txns_24h": 59,
         "price_usd": 0
       },
       "risk": {
@@ -44,31 +44,8 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.062380224444444445,
-      "detected_at": "2026-03-03T01:19:25.568822+00:00",
-      "source": "geckoterminal_v2"
-    },
-    {
-      "token": {
-        "address": "0xc76456bfe8ce46e1ac099ce6654805850ccf5b07",
-        "symbol": "OCS",
-        "name": "OCS"
-      },
-      "metrics": {
-        "liq_usd": 25736.4933,
-        "vol_24h_usd": 2080.7927940027,
-        "txns_24h": 33,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 95,
-      "age_hours": 0.06682468055555556,
-      "detected_at": "2026-03-03T01:19:25.568858+00:00",
+      "age_hours": 0.05069963833333333,
+      "detected_at": "2026-03-03T01:34:27.518709+00:00",
       "source": "geckoterminal_v2"
     }
   ]
