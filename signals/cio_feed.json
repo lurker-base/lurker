@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-04T18:17:06.559000+00:00",
-    "generated_at": "2026-03-04T18:17:06.559000+00:00",
+    "updated_at": "2026-03-04T18:32:09.532000+00:00",
+    "generated_at": "2026-03-04T18:32:09.532000+00:00",
     "status": "ok",
-    "count": 2,
+    "count": 4,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,16 +12,97 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
-      "medium": 1,
-      "low": 1
+      "low": 2,
+      "medium": 2
     },
     "rejected": {
-      "too_old": 1,
-      "low_tx": 1
+      "too_old": 1
     },
     "source": "ultra_launch_scanner"
   },
   "candidates": [
+    {
+      "token": {
+        "address": "0xe8cfa37d5666c16df7c3d1c2f583cd25a4744b07",
+        "symbol": "SERA",
+        "name": "Seraph"
+      },
+      "pair": {
+        "address": "0x2233c2b6d10827ce779c3f80c46f522e3148c5a8b8b69a40e090dd5af9ce8a55",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 105821.5,
+        "vol_5m_usd": 558.91,
+        "vol_1h_usd": 11478.29,
+        "txns_5m": 3,
+        "price_usd": 1.117e-06
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-04T18:21:29+00:00",
+        "token_first_seen": "2026-03-04T18:28:49.611000+00:00",
+        "age_minutes": 10.7,
+        "age_hours": 0.18
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 1.0
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    },
+    {
+      "token": {
+        "address": "0xdc9d93f0e3e18e95d548f6154ca4279a3392a482",
+        "symbol": "PAINT",
+        "name": "PAINT"
+      },
+      "pair": {
+        "address": "0x992ec796d93252fcc6c985ec691312a0490070b193edc237dcc5bad5f7f54c59",
+        "dex": "uniswap",
+        "quote": "USDC"
+      },
+      "metrics": {
+        "liq_usd": 51763.56,
+        "vol_5m_usd": 707.89,
+        "vol_1h_usd": 16259.67,
+        "txns_5m": 4,
+        "price_usd": 7.715e-05
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-04T17:09:45+00:00",
+        "token_first_seen": "2026-03-04T17:36:08.019000+00:00",
+        "age_minutes": 82.4,
+        "age_hours": 1.37
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.98
+      },
+      "risks": [
+        "dumping"
+      ],
+      "risk_level": "medium",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": false,
+        "has_website": true,
+        "quality_score": 75
+      }
+    },
     {
       "token": {
         "address": "0x7fe05d80dd2f223d64f34d71883bff4f37fff2bb",
@@ -34,17 +115,17 @@
         "quote": "flETH"
       },
       "metrics": {
-        "liq_usd": 7547.13,
-        "vol_5m_usd": 509.88,
-        "vol_1h_usd": 3472.97,
-        "txns_5m": 10,
-        "price_usd": 7.849e-08
+        "liq_usd": 6959.67,
+        "vol_5m_usd": 106.03,
+        "vol_1h_usd": 2913.06,
+        "txns_5m": 1,
+        "price_usd": 7.127e-08
       },
       "timestamps": {
         "pair_created_at": "2026-03-04T16:01:03+00:00",
         "token_first_seen": "2026-03-04T18:14:34.974000+00:00",
-        "age_minutes": 136.1,
-        "age_hours": 2.27
+        "age_minutes": 151.1,
+        "age_hours": 2.52
       },
       "scores": {
         "cio_score": 100,
@@ -76,17 +157,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 15916.27,
-        "vol_5m_usd": 96.05,
-        "vol_1h_usd": 2074.51,
-        "txns_5m": 3,
-        "price_usd": 0.0003859
+        "liq_usd": 15369.91,
+        "vol_5m_usd": 271.71,
+        "vol_1h_usd": 2027.16,
+        "txns_5m": 5,
+        "price_usd": 0.0003574
       },
       "timestamps": {
         "pair_created_at": "2025-11-16T10:28:45+00:00",
         "token_first_seen": "2026-03-04T17:21:03.277000+00:00",
-        "age_minutes": 155988.4,
-        "age_hours": 2599.81
+        "age_minutes": 156003.4,
+        "age_hours": 2600.06
       },
       "scores": {
         "cio_score": 95,
