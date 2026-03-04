@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-04T11:44:49.964Z",
+    "updated_at": "2026-03-04T12:14:02.873Z",
     "source": "cio",
     "chain": "base",
-    "count": 1,
+    "count": 4,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-04T11:44:49.938227+00:00",
+      "ts_utc": "2026-03-04T12:14:01.993001+00:00",
       "chain": "base",
       "token": {
-        "name": "VLTN",
-        "symbol": "$VLTN",
-        "address": "0x0fdeee699b98af964d84dd2ab862b7a4e1d2db07"
+        "name": "Laboon",
+        "symbol": "$LABOON",
+        "address": "0x7b6eac04accb7cde27d5476ba152246e97fadb07"
       },
       "scores": {
         "confidence": 100,
@@ -25,11 +25,86 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 21757.348,
-        "vol_24h_usd": 9615.2699203375
+        "liq_usd": 21267.3306,
+        "vol_24h_usd": 9561.4851243702
       },
       "dex": "geckoterminal",
-      "pair_address": "0x0fdeee699b98af964d84dd2ab862b7a4e1d2db07",
+      "pair_address": "0x7b6eac04accb7cde27d5476ba152246e97fadb07",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-04T12:14:02.607655+00:00",
+      "chain": "base",
+      "token": {
+        "name": "Pigeon",
+        "symbol": "$PIGEON",
+        "address": "0xc47ede3ff4b13289a0aa7d7767534ea2a52fab07"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 17199.1919,
+        "vol_24h_usd": 38816.2905269707
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xc47ede3ff4b13289a0aa7d7767534ea2a52fab07",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-04T12:14:02.841417+00:00",
+      "chain": "base",
+      "token": {
+        "name": "PIR",
+        "symbol": "$PIR",
+        "address": "0xaf0edf91c57d5999245d1ed27cdbf5a9f5009c79"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 54700.7237,
+        "vol_24h_usd": 3768.130181608
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xaf0edf91c57d5999245d1ed27cdbf5a9f5009c79",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-04T12:14:02.193462+00:00",
+      "chain": "base",
+      "token": {
+        "name": "KOLI",
+        "symbol": "$KOLI",
+        "address": "0x5419ede1c465873b34aff7ac49191ed75d5c6077"
+      },
+      "scores": {
+        "confidence": 90,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 12217.1321,
+        "vol_24h_usd": 9262.0247926844
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x5419ede1c465873b34aff7ac49191ed75d5c6077",
       "scanner": "cio"
     }
   ]

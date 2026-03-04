@@ -1,66 +1,120 @@
 {
-  "schema": "lurker_cio_ultra_launch",
-  "meta": {
-    "updated_at": "2026-03-04T12:13:44.564000+00:00",
-    "generated_at": "2026-03-04T12:13:44.564000+00:00",
-    "status": "ok",
-    "count": 1,
-    "thresholds": {
-      "min_liq_usd": 1000,
-      "min_vol_5m": 500,
-      "min_tx_5m": 1,
-      "max_age_min": 43200
-    },
-    "risk_distribution": {
-      "low": 1
-    },
-    "rejected": {
-      "too_old": 1,
-      "low_liq": 1,
-      "low_volume": 1
-    },
-    "source": "ultra_launch_scanner"
-  },
+  "timestamp": "2026-03-04T12:14:02.843944+00:00",
+  "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x9e7937c570585cc496a14c9b0ba91dda31100f93",
-        "symbol": "AgentMail",
-        "name": "AgentMail"
-      },
-      "pair": {
-        "address": "0x66aeba941689deedb4699dbb7f267aa00b627b4c14fa9c7a9b29e9dc50dae5b8",
-        "dex": "uniswap",
-        "quote": "WETH"
+        "address": "0x7b6eac04accb7cde27d5476ba152246e97fadb07",
+        "symbol": "Laboon",
+        "name": "Laboon"
       },
       "metrics": {
-        "liq_usd": 105098.85,
-        "vol_5m_usd": 71351.97,
-        "vol_1h_usd": 314863.14,
-        "txns_5m": 214,
-        "price_usd": 2.312e-06
+        "liq_usd": 21267.3306,
+        "vol_24h_usd": 9561.4851243702,
+        "txns_24h": 66,
+        "price_usd": 0
       },
-      "timestamps": {
-        "pair_created_at": "2026-03-04T11:41:27+00:00",
-        "token_first_seen": "2026-03-04T12:12:18.516000+00:00",
-        "age_minutes": 32.3,
-        "age_hours": 0.54
+      "risk": {
+        "level": "low",
+        "factors": [
+          "new_token"
+        ]
       },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.99
+      "score": 100,
+      "age_hours": 0.04965495472222222,
+      "detected_at": "2026-03-04T12:14:01.993001+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 SUPER FRESH",
+        "\ud83d\udca7 LIQ",
+        "\u26a1 BUZZ",
+        "\ud83d\udcd7 PUMPING",
+        "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0xc47ede3ff4b13289a0aa7d7767534ea2a52fab07",
+        "symbol": "Pigeon",
+        "name": "Pigeon"
       },
-      "risks": [],
-      "risk_level": "low",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": false,
-        "quality_score": 75
-      }
+      "metrics": {
+        "liq_usd": 17199.1919,
+        "vol_24h_usd": 38816.2905269707,
+        "txns_24h": 254,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "low",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.12533154333333332,
+      "detected_at": "2026-03-04T12:14:02.607655+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udcc8 ACTIVE",
+        "\u26a1 VIRAL",
+        "\ud83d\ude80 MEGA PUMP"
+      ]
+    },
+    {
+      "token": {
+        "address": "0xaf0edf91c57d5999245d1ed27cdbf5a9f5009c79",
+        "symbol": "PIR",
+        "name": "PIR"
+      },
+      "metrics": {
+        "liq_usd": 54700.7237,
+        "vol_24h_usd": 3768.130181608,
+        "txns_24h": 19,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.1760021638888889,
+      "detected_at": "2026-03-04T12:14:02.841417+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udca7 DEEP LIQ",
+        "\ud83d\udcd7 PUMPING",
+        "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x5419ede1c465873b34aff7ac49191ed75d5c6077",
+        "symbol": "KOLI",
+        "name": "KOLI"
+      },
+      "metrics": {
+        "liq_usd": 12217.1321,
+        "vol_24h_usd": 9262.0247926844,
+        "txns_24h": 45,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "low",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 90,
+      "age_hours": 0.07749807694444445,
+      "detected_at": "2026-03-04T12:14:02.193462+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 SUPER FRESH"
+      ]
     }
   ]
 }
