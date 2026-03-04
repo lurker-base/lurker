@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-04T17:32:45.304000+00:00",
-    "generated_at": "2026-03-04T17:32:45.304000+00:00",
+    "updated_at": "2026-03-04T17:47:00.501000+00:00",
+    "generated_at": "2026-03-04T17:47:00.501000+00:00",
     "status": "ok",
-    "count": 4,
+    "count": 3,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -13,42 +13,41 @@
     },
     "risk_distribution": {
       "medium": 2,
-      "low": 2
+      "low": 1
     },
     "rejected": {
-      "too_old": 1,
-      "duplicate": 1
+      "too_old": 1
     },
     "source": "ultra_launch_scanner"
   },
   "candidates": [
     {
       "token": {
-        "address": "0x3396de6026bbb65570ef7ee487a8f3a97746ff08",
-        "symbol": "MimiClaw",
-        "name": "MimiClaw"
+        "address": "0xdc9d93f0e3e18e95d548f6154ca4279a3392a482",
+        "symbol": "PAINT",
+        "name": "PAINT"
       },
       "pair": {
-        "address": "0x32379d3b998e2ac0ec9d1d8d5dfeaa8832a762bab8310cf0bef690dcf2015722",
+        "address": "0x992ec796d93252fcc6c985ec691312a0490070b193edc237dcc5bad5f7f54c59",
         "dex": "uniswap",
-        "quote": "WETH"
+        "quote": "USDC"
       },
       "metrics": {
-        "liq_usd": 153733.23,
-        "vol_5m_usd": 58068.06,
-        "vol_1h_usd": 938090.96,
-        "txns_5m": 109,
-        "price_usd": 3.873e-06
+        "liq_usd": 58204.33,
+        "vol_5m_usd": 5795.87,
+        "vol_1h_usd": 45935.8,
+        "txns_5m": 24,
+        "price_usd": 8.87e-05
       },
       "timestamps": {
-        "pair_created_at": "2026-03-04T15:27:27+00:00",
-        "token_first_seen": "2026-03-04T16:34:15.099000+00:00",
-        "age_minutes": 125.3,
-        "age_hours": 2.09
+        "pair_created_at": "2026-03-04T17:09:45+00:00",
+        "token_first_seen": "2026-03-04T17:36:08.019000+00:00",
+        "age_minutes": 37.3,
+        "age_hours": 0.62
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.97
+        "freshness": 0.99
       },
       "risks": [
         "dumping"
@@ -59,41 +58,43 @@
       "quality": {
         "has_profile": true,
         "has_image": true,
-        "has_socials": true,
+        "has_socials": false,
         "has_website": true,
-        "quality_score": 100
+        "quality_score": 75
       }
     },
     {
       "token": {
-        "address": "0x4a691b5aa1ddbc5dd4d525a1ab0a5ae69d5721bf",
-        "symbol": "STACKR",
-        "name": "SILVER STACKRS"
+        "address": "0x4972e029f2e1831d205b20d05833cc771feb2ba3",
+        "symbol": "HARBOR",
+        "name": "CLAW HARBOR"
       },
       "pair": {
-        "address": "0x7a1b86459823a60c22dd9d76893a8a46c667ea10",
+        "address": "0xcfd2369558fd36bb0cfee4b627c0405ad223a0f9358dd7afa2618a4e063e146b",
         "dex": "uniswap",
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 157429.81,
-        "vol_5m_usd": 9186.45,
-        "vol_1h_usd": 81631.81,
-        "txns_5m": 47,
-        "price_usd": 1.429e-05
+        "liq_usd": 65175.09,
+        "vol_5m_usd": 303.99,
+        "vol_1h_usd": 16688.05,
+        "txns_5m": 2,
+        "price_usd": 7.034e-07
       },
       "timestamps": {
-        "pair_created_at": "2026-03-04T15:04:29+00:00",
+        "pair_created_at": "2026-02-28T21:29:07+00:00",
         "token_first_seen": "2026-03-04T16:34:15.099000+00:00",
-        "age_minutes": 148.3,
-        "age_hours": 2.47
+        "age_minutes": 5537.9,
+        "age_hours": 92.3
       },
       "scores": {
-        "cio_score": 100,
-        "freshness": 0.96
+        "cio_score": 95,
+        "freshness": 0
       },
-      "risks": [],
-      "risk_level": "low",
+      "risks": [
+        "dumping"
+      ],
+      "risk_level": "medium",
       "source": "boosts",
       "status": "observing",
       "quality": {
@@ -116,17 +117,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 15779.07,
-        "vol_5m_usd": 73.7,
-        "vol_1h_usd": 1410.74,
-        "txns_5m": 3,
-        "price_usd": 0.0003803
+        "liq_usd": 16082.7,
+        "vol_5m_usd": 116.9,
+        "vol_1h_usd": 1862.9,
+        "txns_5m": 5,
+        "price_usd": 0.0003938
       },
       "timestamps": {
         "pair_created_at": "2025-11-16T10:28:45+00:00",
         "token_first_seen": "2026-03-04T17:21:03.277000+00:00",
-        "age_minutes": 155944.0,
-        "age_hours": 2599.07
+        "age_minutes": 155958.3,
+        "age_hours": 2599.3
       },
       "scores": {
         "cio_score": 95,
@@ -135,48 +136,6 @@
       "risks": [],
       "risk_level": "low",
       "source": "boosts",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    },
-    {
-      "token": {
-        "address": "0x4972e029f2e1831d205b20d05833cc771feb2ba3",
-        "symbol": "HARBOR",
-        "name": "CLAW HARBOR"
-      },
-      "pair": {
-        "address": "0xcfd2369558fd36bb0cfee4b627c0405ad223a0f9358dd7afa2618a4e063e146b",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 62592.39,
-        "vol_5m_usd": 971.61,
-        "vol_1h_usd": 18307.26,
-        "txns_5m": 4,
-        "price_usd": 6.638e-07
-      },
-      "timestamps": {
-        "pair_created_at": "2026-02-28T21:29:07+00:00",
-        "token_first_seen": "2026-03-04T16:34:15.099000+00:00",
-        "age_minutes": 5523.6,
-        "age_hours": 92.06
-      },
-      "scores": {
-        "cio_score": 90,
-        "freshness": 0
-      },
-      "risks": [
-        "dumping"
-      ],
-      "risk_level": "medium",
-      "source": "profiles",
       "status": "observing",
       "quality": {
         "has_profile": true,
