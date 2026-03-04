@@ -1,22 +1,65 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-04T22:48:05.841000+00:00",
-    "generated_at": "2026-03-04T22:48:05.841000+00:00",
-    "status": "calm",
-    "count": 0,
+    "updated_at": "2026-03-04T22:55:36.323000+00:00",
+    "generated_at": "2026-03-04T22:55:36.323000+00:00",
+    "status": "ok",
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
       "min_tx_5m": 1,
       "max_age_min": 43200
     },
-    "risk_distribution": {},
+    "risk_distribution": {
+      "low": 1
+    },
     "rejected": {
       "too_old": 1,
       "low_volume": 1
     },
     "source": "ultra_launch_scanner"
   },
-  "candidates": []
+  "candidates": [
+    {
+      "token": {
+        "address": "0x413e1d89897636ef6be002f26422cfcc6940eac7",
+        "symbol": "365",
+        "name": "Base365"
+      },
+      "pair": {
+        "address": "0xc5ebe7bd0475b6a3d27253c9c09fc5864f0357bc",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 12315.34,
+        "vol_5m_usd": 7527.42,
+        "vol_1h_usd": 46006.91,
+        "txns_5m": 56,
+        "price_usd": 2.619e-05
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-04T19:29:55+00:00",
+        "token_first_seen": "2026-03-04T22:53:55.448000+00:00",
+        "age_minutes": 205.7,
+        "age_hours": 3.43
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.94
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    }
+  ]
 }
