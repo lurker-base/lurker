@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-04T21:02:41.560000+00:00",
-    "generated_at": "2026-03-04T21:02:41.560000+00:00",
+    "updated_at": "2026-03-04T21:17:46.142000+00:00",
+    "generated_at": "2026-03-04T21:17:46.142000+00:00",
     "status": "ok",
-    "count": 3,
+    "count": 2,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,8 +12,7 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
-      "low": 2,
-      "medium": 1
+      "low": 2
     },
     "rejected": {
       "too_old": 1
@@ -21,6 +20,46 @@
     "source": "ultra_launch_scanner"
   },
   "candidates": [
+    {
+      "token": {
+        "address": "0x58e4b38d7afba303aa46ab0f9d6146aca6a33b07",
+        "symbol": "CLAWDA",
+        "name": "Clawcada"
+      },
+      "pair": {
+        "address": "0x77403205cda7453f425d9b86cf3a134ff3e687da5206f0c9d8f4a69d2872c26a",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 87170.37,
+        "vol_5m_usd": 2263.71,
+        "vol_1h_usd": 27344.23,
+        "txns_5m": 24,
+        "price_usd": 9.12e-07
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-04T20:58:15+00:00",
+        "token_first_seen": "2026-03-04T21:08:33.334000+00:00",
+        "age_minutes": 19.5,
+        "age_hours": 0.33
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.99
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    },
     {
       "token": {
         "address": "0x893d721aa3a954d21e2d2c0fc18243882be2bba3",
@@ -33,17 +72,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 116566.89,
-        "vol_5m_usd": 7935.33,
-        "vol_1h_usd": 722847.96,
-        "txns_5m": 29,
-        "price_usd": 1.968e-06
+        "liq_usd": 122366.64,
+        "vol_5m_usd": 3379.81,
+        "vol_1h_usd": 300536.47,
+        "txns_5m": 14,
+        "price_usd": 2.133e-06
       },
       "timestamps": {
         "pair_created_at": "2026-03-04T18:55:47+00:00",
         "token_first_seen": "2026-03-04T20:36:46.819000+00:00",
-        "age_minutes": 126.9,
-        "age_hours": 2.12
+        "age_minutes": 142.0,
+        "age_hours": 2.37
       },
       "scores": {
         "cio_score": 100,
@@ -52,88 +91,6 @@
       "risks": [],
       "risk_level": "low",
       "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    },
-    {
-      "token": {
-        "address": "0xeba8f1054aacc291778f1876fb5b5db003f32b07",
-        "symbol": "moltcook",
-        "name": "moltcook"
-      },
-      "pair": {
-        "address": "0xeb27c382582c0bcab5264a86534dacc985bdf6987e8575172f4caf24ea074ed3",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 51690.09,
-        "vol_5m_usd": 1739.6,
-        "vol_1h_usd": 2439.97,
-        "txns_5m": 4,
-        "price_usd": 5.226e-07
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-04T17:26:33+00:00",
-        "token_first_seen": "2026-03-04T19:54:06.236000+00:00",
-        "age_minutes": 216.1,
-        "age_hours": 3.6
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.94
-      },
-      "risks": [
-        "dumping"
-      ],
-      "risk_level": "medium",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    },
-    {
-      "token": {
-        "address": "0xf0197f10ea542a67914ecc0ec5304dc9df1faf6f",
-        "symbol": "DEAD",
-        "name": "DEAD"
-      },
-      "pair": {
-        "address": "0xba9d9445e0abdb6764ad6923feb04f12e863a616",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 16023.89,
-        "vol_5m_usd": 283.89,
-        "vol_1h_usd": 2301.19,
-        "txns_5m": 8,
-        "price_usd": 0.0003878
-      },
-      "timestamps": {
-        "pair_created_at": "2025-11-16T10:28:45+00:00",
-        "token_first_seen": "2026-03-04T17:21:03.277000+00:00",
-        "age_minutes": 156153.9,
-        "age_hours": 2602.57
-      },
-      "scores": {
-        "cio_score": 95,
-        "freshness": 0
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "boosts",
       "status": "observing",
       "quality": {
         "has_profile": true,
