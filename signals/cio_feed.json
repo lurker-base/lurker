@@ -1,44 +1,17 @@
 {
-  "timestamp": "2026-03-04T11:37:22.322140+00:00",
+  "timestamp": "2026-03-04T11:43:34.188466+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x75f9c1543f6db116c946992339a39093a1e7ab07",
-        "symbol": "POH",
-        "name": "POH"
+        "address": "0x65a5a9c9b264f383f6ab6cffd5d250d7c0e9bda8",
+        "symbol": "SENT",
+        "name": "SENT"
       },
       "metrics": {
-        "liq_usd": 17109.1354,
-        "vol_24h_usd": 7445.70410589,
-        "txns_24h": 32,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "low",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.0303257025,
-      "detected_at": "2026-03-04T11:37:22.319972+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 SUPER FRESH",
-        "\ud83d\udcd7 PUMPING"
-      ]
-    },
-    {
-      "token": {
-        "address": "0xadd11b0fb38a3c82ea48aeae62e9947c2f9edb07",
-        "symbol": "VLTN",
-        "name": "VLTN"
-      },
-      "metrics": {
-        "liq_usd": 21402.6139317399,
-        "vol_24h_usd": 1463.5732979706,
-        "txns_24h": 6,
+        "liq_usd": 134119.462,
+        "vol_24h_usd": 1008.543347,
+        "txns_24h": 13,
         "price_usd": 0
       },
       "risk": {
@@ -47,13 +20,13 @@
           "new_token"
         ]
       },
-      "score": 95,
-      "age_hours": 0.02082761611111111,
-      "detected_at": "2026-03-04T11:37:22.172489+00:00",
+      "score": 100,
+      "age_hours": 0.07805125333333333,
+      "detected_at": "2026-03-04T11:43:34.186274+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 SUPER FRESH",
-        "\ud83d\udca7 LIQ",
+        "\ud83d\udcb0 WHALE",
         "\u2b50 GEM"
       ]
     }
