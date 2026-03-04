@@ -1,8 +1,8 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-04T18:02:51.862000+00:00",
-    "generated_at": "2026-03-04T18:02:51.862000+00:00",
+    "updated_at": "2026-03-04T18:17:06.559000+00:00",
+    "generated_at": "2026-03-04T18:17:06.559000+00:00",
     "status": "ok",
     "count": 2,
     "thresholds": {
@@ -16,38 +16,39 @@
       "low": 1
     },
     "rejected": {
-      "too_old": 1
+      "too_old": 1,
+      "low_tx": 1
     },
     "source": "ultra_launch_scanner"
   },
   "candidates": [
     {
       "token": {
-        "address": "0xdc9d93f0e3e18e95d548f6154ca4279a3392a482",
-        "symbol": "PAINT",
-        "name": "PAINT"
+        "address": "0x7fe05d80dd2f223d64f34d71883bff4f37fff2bb",
+        "symbol": "ACTOBOT",
+        "name": "Actobotics"
       },
       "pair": {
-        "address": "0x992ec796d93252fcc6c985ec691312a0490070b193edc237dcc5bad5f7f54c59",
+        "address": "0x715a7dcbe981003d190b3d5489f254d3d9abc55e8ff5c4147b6020fc3a183151",
         "dex": "uniswap",
-        "quote": "USDC"
+        "quote": "flETH"
       },
       "metrics": {
-        "liq_usd": 60230.14,
-        "vol_5m_usd": 927.34,
-        "vol_1h_usd": 47781.81,
-        "txns_5m": 4,
-        "price_usd": 9.224e-05
+        "liq_usd": 7547.13,
+        "vol_5m_usd": 509.88,
+        "vol_1h_usd": 3472.97,
+        "txns_5m": 10,
+        "price_usd": 7.849e-08
       },
       "timestamps": {
-        "pair_created_at": "2026-03-04T17:09:45+00:00",
-        "token_first_seen": "2026-03-04T17:36:08.019000+00:00",
-        "age_minutes": 53.1,
-        "age_hours": 0.89
+        "pair_created_at": "2026-03-04T16:01:03+00:00",
+        "token_first_seen": "2026-03-04T18:14:34.974000+00:00",
+        "age_minutes": 136.1,
+        "age_hours": 2.27
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.99
+        "freshness": 0.96
       },
       "risks": [
         "dumping"
@@ -58,9 +59,9 @@
       "quality": {
         "has_profile": true,
         "has_image": true,
-        "has_socials": false,
+        "has_socials": true,
         "has_website": true,
-        "quality_score": 75
+        "quality_score": 100
       }
     },
     {
@@ -75,17 +76,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 16056.78,
-        "vol_5m_usd": 95.32,
-        "vol_1h_usd": 2051.33,
+        "liq_usd": 15916.27,
+        "vol_5m_usd": 96.05,
+        "vol_1h_usd": 2074.51,
         "txns_5m": 3,
-        "price_usd": 0.0003922
+        "price_usd": 0.0003859
       },
       "timestamps": {
         "pair_created_at": "2025-11-16T10:28:45+00:00",
         "token_first_seen": "2026-03-04T17:21:03.277000+00:00",
-        "age_minutes": 155974.1,
-        "age_hours": 2599.57
+        "age_minutes": 155988.4,
+        "age_hours": 2599.81
       },
       "scores": {
         "cio_score": 95,
