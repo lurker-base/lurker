@@ -2,7 +2,7 @@
   "schema": 1,
   "meta": {
     "version": "1.0",
-    "total_tokens": 1,
+    "total_tokens": 2,
     "stats": {
       "by_category": {
         "CIO": 0,
@@ -12,21 +12,22 @@
         "CERTIFIED": 0,
         "RUGGED": 0,
         "ARCHIVED": 0,
-        "WATCHING": 1
+        "WATCHING": 1,
+        "NEW": 1
       },
       "pumps_24h": 0,
       "dumps_24h": 0,
       "rugged": 0,
       "cleanup": {
-        "last_run": "2026-03-04T23:40:38.146418+00:00",
-        "tokens_before": 1,
-        "tokens_after": 1,
+        "last_run": "2026-03-04T23:48:10.289896+00:00",
+        "tokens_before": 2,
+        "tokens_after": 2,
         "moved_to_rugged": 0,
         "removed_stale": 0
       }
     },
-    "last_scan": "2026-03-04T22:54:27.176977+00:00",
-    "last_lifecycle": "2026-03-04T23:40:33.146712+00:00"
+    "last_scan": "2026-03-04T23:44:38.227609+00:00",
+    "last_lifecycle": "2026-03-04T23:48:05.285278+00:00"
   },
   "tokens": {
     "0x413e1d89897636ef6be002f26422cfcc6940eac7": {
@@ -285,6 +286,102 @@
         {
           "timestamp": "2026-03-04T23:40:33.146618+00:00",
           "price": 4.085e-05
+        },
+        {
+          "timestamp": "2026-03-04T23:41:23.170271+00:00",
+          "price": 4.085e-05
+        },
+        {
+          "timestamp": "2026-03-04T23:42:13.176133+00:00",
+          "price": 4.085e-05
+        },
+        {
+          "timestamp": "2026-03-04T23:43:03.217453+00:00",
+          "price": 4.085e-05
+        },
+        {
+          "timestamp": "2026-03-04T23:43:53.213936+00:00",
+          "price": 4.085e-05
+        },
+        {
+          "timestamp": "2026-03-04T23:44:43.233602+00:00",
+          "price": 4.085e-05
+        },
+        {
+          "timestamp": "2026-03-04T23:45:33.244945+00:00",
+          "price": 4.085e-05
+        },
+        {
+          "timestamp": "2026-03-04T23:46:25.260539+00:00",
+          "price": 4.085e-05
+        },
+        {
+          "timestamp": "2026-03-04T23:47:15.279423+00:00",
+          "price": 4.085e-05
+        },
+        {
+          "timestamp": "2026-03-04T23:48:05.285201+00:00",
+          "price": 4.085e-05
+        }
+      ],
+      "performance": {
+        "max_gain": 0.0,
+        "current_gain": 0.0,
+        "status": "stable"
+      }
+    },
+    "0x4be6269947ba8d6ce2b37bbf10d54b382277dba3": {
+      "address": "0x4be6269947ba8d6ce2b37bbf10d54b382277dba3",
+      "symbol": "OPENPAW",
+      "name": "OPENPAW",
+      "pair_address": "0x5866d690297aa62ff71b1687192590e760448571647af9d406d5af2142e0b31e",
+      "dex": "uniswap",
+      "source": "profiles",
+      "sources": [
+        "profiles"
+      ],
+      "detected_at": "2026-03-04T23:44:38.227533+00:00",
+      "category": "NEW",
+      "age_minutes": 0,
+      "metrics": {
+        "liq_usd": 101126.36,
+        "price_usd": 1.461e-06,
+        "vol_5m_usd": 344.05,
+        "vol_1h_usd": 87438.91,
+        "vol_24h_usd": 0,
+        "txns_5m": 7,
+        "price_change_24h": 0,
+        "market_cap": 0
+      },
+      "risk": {
+        "level": "low",
+        "factors": []
+      },
+      "risk_tags": [
+        "\u26a0\ufe0f Medium",
+        "\ud83d\udca7 High Liq"
+      ],
+      "score": 0,
+      "price_history": [
+        {
+          "timestamp": "2026-03-04T23:44:43.233666+00:00",
+          "price": 1.461e-06
+        },
+        {
+          "timestamp": "2026-03-04T23:45:33.245014+00:00",
+          "price": 1.461e-06
+        },
+        {
+          "timestamp": "2026-03-04T23:46:25.260608+00:00",
+          "price": 1.461e-06
+        },
+        {
+          "timestamp": "2026-03-04T23:47:15.279503+00:00",
+          "price": 1.461e-06
+        },
+        {
+          "timestamp": "2026-03-04T23:48:05.285250+00:00",
+          "price": 1.461e-06
         }
       ],
       "performance": {

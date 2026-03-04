@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-04T23:39:56.423000+00:00",
-    "generated_at": "2026-03-04T23:39:56.423000+00:00",
+    "updated_at": "2026-03-04T23:48:18.833000+00:00",
+    "generated_at": "2026-03-04T23:48:18.833000+00:00",
     "status": "ok",
-    "count": 1,
+    "count": 2,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,6 +12,7 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
+      "low": 1,
       "medium": 1
     },
     "rejected": {
@@ -21,6 +22,46 @@
     "source": "ultra_launch_scanner"
   },
   "candidates": [
+    {
+      "token": {
+        "address": "0x4be6269947ba8d6ce2b37bbf10d54b382277dba3",
+        "symbol": "OPENPAW",
+        "name": "OPENPAW"
+      },
+      "pair": {
+        "address": "0x5866d690297aa62ff71b1687192590e760448571647af9d406d5af2142e0b31e",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 95052.28,
+        "vol_5m_usd": 6176.14,
+        "vol_1h_usd": 73215.62,
+        "txns_5m": 30,
+        "price_usd": 1.311e-06
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-04T21:22:29+00:00",
+        "token_first_seen": "2026-03-04T23:44:06.976000+00:00",
+        "age_minutes": 145.8,
+        "age_hours": 2.43
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.96
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    },
     {
       "token": {
         "address": "0x413e1d89897636ef6be002f26422cfcc6940eac7",
@@ -33,17 +74,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 7497.54,
-        "vol_5m_usd": 367.44,
-        "vol_1h_usd": 43080.29,
-        "txns_5m": 4,
-        "price_usd": 1.148e-05
+        "liq_usd": 5552.46,
+        "vol_5m_usd": 1180.38,
+        "vol_1h_usd": 35332.62,
+        "txns_5m": 11,
+        "price_usd": 7.141e-06
       },
       "timestamps": {
         "pair_created_at": "2026-03-04T19:29:55+00:00",
         "token_first_seen": "2026-03-04T22:53:55.448000+00:00",
-        "age_minutes": 250.0,
-        "age_hours": 4.17
+        "age_minutes": 258.4,
+        "age_hours": 4.31
       },
       "scores": {
         "cio_score": 100,
