@@ -1,35 +1,31 @@
 {
-  "timestamp": "2026-03-04T11:34:51.247609+00:00",
+  "timestamp": "2026-03-04T11:36:08.649876+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x9b9249d143aa7e96eb02b0c23552b62fea90db07",
-        "symbol": "pengDog",
-        "name": "pengDog"
+        "address": "0x5f280c997d6c7235dd5645755db51f676272152e",
+        "symbol": "PILL",
+        "name": "PILL"
       },
       "metrics": {
-        "liq_usd": 25699.3353,
-        "vol_24h_usd": 15510.1123841641,
-        "txns_24h": 103,
+        "liq_usd": 11337.8526,
+        "vol_24h_usd": 1089.3416998743,
+        "txns_24h": 9,
         "price_usd": 0
       },
       "risk": {
-        "level": "low",
+        "level": "medium",
         "factors": [
           "new_token"
         ]
       },
-      "score": 100,
-      "age_hours": 0.05945429722222222,
-      "detected_at": "2026-03-04T11:34:51.245716+00:00",
+      "score": 90,
+      "age_hours": 0.16312076833333333,
+      "detected_at": "2026-03-04T11:36:08.647694+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 SUPER FRESH",
-        "\ud83d\udca7 LIQ",
-        "\u26a1 VIRAL",
-        "\ud83d\ude80 PUMP",
-        "\u2b50 GEM"
+        "\ud83d\udd25 FRESH"
       ]
     }
   ]
