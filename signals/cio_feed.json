@@ -1,8 +1,8 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-04T20:32:34.799000+00:00",
-    "generated_at": "2026-03-04T20:32:34.799000+00:00",
+    "updated_at": "2026-03-04T20:47:39.699000+00:00",
+    "generated_at": "2026-03-04T20:47:39.699000+00:00",
     "status": "ok",
     "count": 2,
     "thresholds": {
@@ -12,48 +12,46 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
-      "medium": 1,
-      "low": 1
+      "low": 2
     },
     "rejected": {
       "too_old": 1,
-      "low_tx": 1
+      "low_tx": 1,
+      "low_volume": 1
     },
     "source": "ultra_launch_scanner"
   },
   "candidates": [
     {
       "token": {
-        "address": "0xeba8f1054aacc291778f1876fb5b5db003f32b07",
-        "symbol": "moltcook",
-        "name": "moltcook"
+        "address": "0x893d721aa3a954d21e2d2c0fc18243882be2bba3",
+        "symbol": "McClaw",
+        "name": "Agent McClaw"
       },
       "pair": {
-        "address": "0xeb27c382582c0bcab5264a86534dacc985bdf6987e8575172f4caf24ea074ed3",
+        "address": "0x2020d4cb0c2f6e9f3b3d921554517d3b8d9b9f30cd4a9cd55a3f3709e4b12984",
         "dex": "uniswap",
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 73937.91,
-        "vol_5m_usd": 22.91,
-        "vol_1h_usd": 2021.75,
-        "txns_5m": 2,
-        "price_usd": 7.647e-07
+        "liq_usd": 114137.51,
+        "vol_5m_usd": 23261.03,
+        "vol_1h_usd": 675597.45,
+        "txns_5m": 76,
+        "price_usd": 1.902e-06
       },
       "timestamps": {
-        "pair_created_at": "2026-03-04T17:26:33+00:00",
-        "token_first_seen": "2026-03-04T19:54:06.236000+00:00",
-        "age_minutes": 186.0,
-        "age_hours": 3.1
+        "pair_created_at": "2026-03-04T18:55:47+00:00",
+        "token_first_seen": "2026-03-04T20:36:46.819000+00:00",
+        "age_minutes": 111.9,
+        "age_hours": 1.86
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.95
+        "freshness": 0.97
       },
-      "risks": [
-        "dumping"
-      ],
-      "risk_level": "medium",
+      "risks": [],
+      "risk_level": "low",
       "source": "profiles",
       "status": "observing",
       "quality": {
@@ -76,17 +74,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 16377.44,
-        "vol_5m_usd": 124.71,
-        "vol_1h_usd": 2833.51,
-        "txns_5m": 4,
-        "price_usd": 0.0004016
+        "liq_usd": 16396.77,
+        "vol_5m_usd": 107.34,
+        "vol_1h_usd": 2861.71,
+        "txns_5m": 3,
+        "price_usd": 0.0004021
       },
       "timestamps": {
         "pair_created_at": "2025-11-16T10:28:45+00:00",
         "token_first_seen": "2026-03-04T17:21:03.277000+00:00",
-        "age_minutes": 156123.8,
-        "age_hours": 2602.06
+        "age_minutes": 156138.9,
+        "age_hours": 2602.32
       },
       "scores": {
         "cio_score": 95,
