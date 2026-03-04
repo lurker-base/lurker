@@ -1,8 +1,8 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-04T17:17:43.454000+00:00",
-    "generated_at": "2026-03-04T17:17:43.454000+00:00",
+    "updated_at": "2026-03-04T17:31:55.469000+00:00",
+    "generated_at": "2026-03-04T17:31:55.469000+00:00",
     "status": "ok",
     "count": 4,
     "thresholds": {
@@ -12,12 +12,12 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
-      "low": 3,
-      "medium": 1
+      "medium": 2,
+      "low": 2
     },
     "rejected": {
       "too_old": 1,
-      "duplicate": 2
+      "duplicate": 1
     },
     "source": "ultra_launch_scanner"
   },
@@ -34,24 +34,26 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 228291.58,
-        "vol_5m_usd": 65603.74,
-        "vol_1h_usd": 929172.63,
-        "txns_5m": 138,
-        "price_usd": 8.076e-06
+        "liq_usd": 154370.89,
+        "vol_5m_usd": 58068.06,
+        "vol_1h_usd": 938090.96,
+        "txns_5m": 109,
+        "price_usd": 3.873e-06
       },
       "timestamps": {
         "pair_created_at": "2026-03-04T15:27:27+00:00",
         "token_first_seen": "2026-03-04T16:34:15.099000+00:00",
-        "age_minutes": 110.3,
-        "age_hours": 1.84
+        "age_minutes": 124.5,
+        "age_hours": 2.07
       },
       "scores": {
         "cio_score": 100,
         "freshness": 0.97
       },
-      "risks": [],
-      "risk_level": "low",
+      "risks": [
+        "dumping"
+      ],
+      "risk_level": "medium",
       "source": "profiles",
       "status": "observing",
       "quality": {
@@ -74,17 +76,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 149802.75,
-        "vol_5m_usd": 3803.62,
-        "vol_1h_usd": 86743.69,
-        "txns_5m": 19,
-        "price_usd": 1.29e-05
+        "liq_usd": 158579.3,
+        "vol_5m_usd": 8811.26,
+        "vol_1h_usd": 82202.77,
+        "txns_5m": 46,
+        "price_usd": 1.45e-05
       },
       "timestamps": {
         "pair_created_at": "2026-03-04T15:04:29+00:00",
         "token_first_seen": "2026-03-04T16:34:15.099000+00:00",
-        "age_minutes": 133.2,
-        "age_hours": 2.22
+        "age_minutes": 147.4,
+        "age_hours": 2.46
       },
       "scores": {
         "cio_score": 100,
@@ -92,7 +94,7 @@
       },
       "risks": [],
       "risk_level": "low",
-      "source": "profiles",
+      "source": "boosts",
       "status": "observing",
       "quality": {
         "has_profile": true,
@@ -104,35 +106,35 @@
     },
     {
       "token": {
-        "address": "0x04c4c098a5b492750a2bd0578c685f179c78a1ca",
-        "symbol": "FLOKI",
-        "name": "FLOKI ON BASE"
+        "address": "0xf0197f10ea542a67914ecc0ec5304dc9df1faf6f",
+        "symbol": "DEAD",
+        "name": "DEAD"
       },
       "pair": {
-        "address": "0xfca261560133699ecd4c99941c767e096700216d",
+        "address": "0xba9d9445e0abdb6764ad6923feb04f12e863a616",
         "dex": "uniswap",
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 37725.65,
-        "vol_5m_usd": 1423.4,
-        "vol_1h_usd": 20381.03,
-        "txns_5m": 6,
-        "price_usd": 7.66e-07
+        "liq_usd": 15808.57,
+        "vol_5m_usd": 123.97,
+        "vol_1h_usd": 1442.15,
+        "txns_5m": 4,
+        "price_usd": 0.0003821
       },
       "timestamps": {
-        "pair_created_at": "2026-03-04T12:35:55+00:00",
-        "token_first_seen": "2026-03-04T16:34:15.099000+00:00",
-        "age_minutes": 281.8,
-        "age_hours": 4.7
+        "pair_created_at": "2025-11-16T10:28:45+00:00",
+        "token_first_seen": "2026-03-04T17:21:03.277000+00:00",
+        "age_minutes": 155943.2,
+        "age_hours": 2599.05
       },
       "scores": {
-        "cio_score": 100,
-        "freshness": 0.92
+        "cio_score": 95,
+        "freshness": 0
       },
       "risks": [],
       "risk_level": "low",
-      "source": "profiles",
+      "source": "boosts",
       "status": "observing",
       "quality": {
         "has_profile": true,
@@ -154,20 +156,20 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 68968.93,
-        "vol_5m_usd": 1370.46,
-        "vol_1h_usd": 16257.46,
-        "txns_5m": 8,
-        "price_usd": 7.665e-07
+        "liq_usd": 62591.51,
+        "vol_5m_usd": 971.61,
+        "vol_1h_usd": 18307.26,
+        "txns_5m": 4,
+        "price_usd": 6.638e-07
       },
       "timestamps": {
         "pair_created_at": "2026-02-28T21:29:07+00:00",
         "token_first_seen": "2026-03-04T16:34:15.099000+00:00",
-        "age_minutes": 5508.6,
-        "age_hours": 91.81
+        "age_minutes": 5522.8,
+        "age_hours": 92.05
       },
       "scores": {
-        "cio_score": 100,
+        "cio_score": 90,
         "freshness": 0
       },
       "risks": [
