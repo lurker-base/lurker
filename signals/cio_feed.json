@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-04T06:00:28.315052+00:00",
+  "timestamp": "2026-03-04T08:02:07.075154+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x9c4f1f21066ffed95b00cf101e208b2c57d06b07",
-        "symbol": "CLAWD",
-        "name": "CLAWD"
+        "address": "0x362381e242f3c7999b8a34dd6adf6f5cf5cfdb07",
+        "symbol": "radar",
+        "name": "radar"
       },
       "metrics": {
-        "liq_usd": 11552.4572,
-        "vol_24h_usd": 5064.1571710753,
-        "txns_24h": 88,
+        "liq_usd": 21355.5891,
+        "vol_24h_usd": 9570.023249034,
+        "txns_24h": 59,
         "price_usd": 0
       },
       "risk": {
@@ -21,82 +21,27 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.11464968694444445,
-      "detected_at": "2026-03-04T06:00:27.943259+00:00",
+      "age_hours": 0.04752545666666667,
+      "detected_at": "2026-03-04T08:02:06.322068+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 FRESH",
+        "\ud83d\udd25 SUPER FRESH",
+        "\ud83d\udca7 LIQ",
         "\u26a1 BUZZ",
-        "\ud83d\ude80 PUMP"
+        "\ud83d\udcd7 PUMPING",
+        "\u2b50 GEM"
       ]
     },
     {
       "token": {
-        "address": "0x5dfa76003252851022ce2ae701570074098cab07",
-        "symbol": "\u4e2d\u56fd\u6d77",
-        "name": "\u4e2d\u56fd\u6d77"
+        "address": "0xb8dca92eb26663a9155d15da25e4404a01705689",
+        "symbol": "AYA",
+        "name": "AYA"
       },
       "metrics": {
-        "liq_usd": 16762.9808,
-        "vol_24h_usd": 41984.8962103531,
-        "txns_24h": 317,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "low",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.1341509475,
-      "detected_at": "2026-03-04T06:00:28.170141+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 FRESH",
-        "\ud83d\udcc8 ACTIVE",
-        "\u26a1 VIRAL",
-        "\ud83d\udcd7 PUMPING"
-      ]
-    },
-    {
-      "token": {
-        "address": "0x8fe435d4f6900bbbe6b48431b91833f69beacba3",
-        "symbol": "SCOUT",
-        "name": "SCOUT"
-      },
-      "metrics": {
-        "liq_usd": 151523.2505,
-        "vol_24h_usd": 1190775.70766576,
-        "txns_24h": 4411,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "low",
-        "factors": []
-      },
-      "score": 100,
-      "age_hours": 11.948658457222221,
-      "detected_at": "2026-03-04T06:00:28.311415+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udcb0 WHALE",
-        "\ud83d\udcc8 MOON",
-        "\u26a1 VIRAL",
-        "\ud83d\ude80 MEGA PUMP",
-        "\ud83d\udc8e PREMIUM"
-      ]
-    },
-    {
-      "token": {
-        "address": "0x2f7b2d7d567e9188b840f89cedd4aa9d03fc8ba3",
-        "symbol": "ZET",
-        "name": "ZET"
-      },
-      "metrics": {
-        "liq_usd": 20133.5327,
-        "vol_24h_usd": 3913.8197503727,
-        "txns_24h": 7,
+        "liq_usd": 132485.8495,
+        "vol_24h_usd": 1571.019971,
+        "txns_24h": 17,
         "price_usd": 0
       },
       "risk": {
@@ -105,14 +50,43 @@
           "new_token"
         ]
       },
-      "score": 95,
-      "age_hours": 0.04793854638888889,
-      "detected_at": "2026-03-04T06:00:27.738815+00:00",
+      "score": 100,
+      "age_hours": 0.08981170694444444,
+      "detected_at": "2026-03-04T08:02:06.667663+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 SUPER FRESH",
-        "\ud83d\udca7 LIQ",
+        "\ud83d\udcb0 WHALE",
         "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x9efc3c413a27791f35a8bd00425c083e294eab07",
+        "symbol": "WASTELAND",
+        "name": "WASTELAND"
+      },
+      "metrics": {
+        "liq_usd": 15482.431,
+        "vol_24h_usd": 50200.9186995683,
+        "txns_24h": 373,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "low",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.16157442333333333,
+      "detected_at": "2026-03-04T08:02:07.072481+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udcc8 HOT",
+        "\u26a1 VIRAL",
+        "\ud83d\ude80 PUMP"
       ]
     }
   ]
