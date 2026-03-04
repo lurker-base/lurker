@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-04T08:02:07.075154+00:00",
+  "timestamp": "2026-03-04T09:03:21.298817+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x362381e242f3c7999b8a34dd6adf6f5cf5cfdb07",
-        "symbol": "radar",
-        "name": "radar"
+        "address": "0x75719db9791d86902792a268c9258a123897db07",
+        "symbol": "wcd",
+        "name": "wcd"
       },
       "metrics": {
-        "liq_usd": 21355.5891,
-        "vol_24h_usd": 9570.023249034,
-        "txns_24h": 59,
+        "liq_usd": 22257.9136,
+        "vol_24h_usd": 11744.800644411,
+        "txns_24h": 81,
         "price_usd": 0
       },
       "risk": {
@@ -21,27 +21,27 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.04752545666666667,
-      "detected_at": "2026-03-04T08:02:06.322068+00:00",
+      "age_hours": 0.06576236666666667,
+      "detected_at": "2026-03-04T09:03:20.135829+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 SUPER FRESH",
         "\ud83d\udca7 LIQ",
         "\u26a1 BUZZ",
-        "\ud83d\udcd7 PUMPING",
+        "\ud83d\ude80 PUMP",
         "\u2b50 GEM"
       ]
     },
     {
       "token": {
-        "address": "0xb8dca92eb26663a9155d15da25e4404a01705689",
-        "symbol": "AYA",
-        "name": "AYA"
+        "address": "0x5e33c434b347e757f85dc77ddf2703fc18696543",
+        "symbol": "ONE",
+        "name": "ONE"
       },
       "metrics": {
-        "liq_usd": 132485.8495,
-        "vol_24h_usd": 1571.019971,
-        "txns_24h": 17,
+        "liq_usd": 52125.975,
+        "vol_24h_usd": 2620.180325,
+        "txns_24h": 13,
         "price_usd": 0
       },
       "risk": {
@@ -51,25 +51,26 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.08981170694444444,
-      "detected_at": "2026-03-04T08:02:06.667663+00:00",
+      "age_hours": 0.14864886,
+      "detected_at": "2026-03-04T09:03:20.323098+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 SUPER FRESH",
-        "\ud83d\udcb0 WHALE",
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udca7 DEEP LIQ",
+        "\ud83d\udcd7 PUMPING",
         "\u2b50 GEM"
       ]
     },
     {
       "token": {
-        "address": "0x9efc3c413a27791f35a8bd00425c083e294eab07",
-        "symbol": "WASTELAND",
-        "name": "WASTELAND"
+        "address": "0x73ca75b6493f47246d4ede10ebd4176b582eb040",
+        "symbol": "TrumpWin",
+        "name": "TrumpWin"
       },
       "metrics": {
-        "liq_usd": 15482.431,
-        "vol_24h_usd": 50200.9186995683,
-        "txns_24h": 373,
+        "liq_usd": 13903.9184,
+        "vol_24h_usd": 11701.0025233862,
+        "txns_24h": 62,
         "price_usd": 0
       },
       "risk": {
@@ -79,14 +80,70 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.16157442333333333,
-      "detected_at": "2026-03-04T08:02:07.072481+00:00",
+      "age_hours": 0.2249289613888889,
+      "detected_at": "2026-03-04T09:03:20.923812+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\udcc8 HOT",
-        "\u26a1 VIRAL",
-        "\ud83d\ude80 PUMP"
+        "\u26a1 BUZZ",
+        "\ud83d\ude80 MEGA PUMP"
+      ]
+    },
+    {
+      "token": {
+        "address": "0xd798b4d8799a36b77053d6bb831c102405bc46c9",
+        "symbol": "SENT",
+        "name": "SENT"
+      },
+      "metrics": {
+        "liq_usd": 143430.0692,
+        "vol_24h_usd": 5203.35072,
+        "txns_24h": 53,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "low",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.23497884916666667,
+      "detected_at": "2026-03-04T09:03:21.107531+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udcb0 WHALE",
+        "\u26a1 BUZZ",
+        "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0xc1272fcb3a2b0e9bd57e93bce186a2c195a2db07",
+        "symbol": "AFA",
+        "name": "AFA"
+      },
+      "metrics": {
+        "liq_usd": 34598.9183,
+        "vol_24h_usd": 2354.0962121404,
+        "txns_24h": 16,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 85,
+      "age_hours": 0.2994743347222222,
+      "detected_at": "2026-03-04T09:03:21.296119+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udca7 LIQ",
+        "\ud83d\udcd9 DUMPING"
       ]
     }
   ]

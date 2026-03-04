@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-04T08:02:07.110Z",
+    "updated_at": "2026-03-04T09:03:21.326Z",
     "source": "cio",
     "chain": "base",
-    "count": 3,
+    "count": 5,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-04T08:02:06.322068+00:00",
+      "ts_utc": "2026-03-04T09:03:20.135829+00:00",
       "chain": "base",
       "token": {
-        "name": "radar",
-        "symbol": "$RADAR",
-        "address": "0x362381e242f3c7999b8a34dd6adf6f5cf5cfdb07"
+        "name": "wcd",
+        "symbol": "$WCD",
+        "address": "0x75719db9791d86902792a268c9258a123897db07"
       },
       "scores": {
         "confidence": 100,
@@ -25,22 +25,22 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 21355.5891,
-        "vol_24h_usd": 9570.023249034
+        "liq_usd": 22257.9136,
+        "vol_24h_usd": 11744.800644411
       },
       "dex": "geckoterminal",
-      "pair_address": "0x362381e242f3c7999b8a34dd6adf6f5cf5cfdb07",
+      "pair_address": "0x75719db9791d86902792a268c9258a123897db07",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-04T08:02:06.667663+00:00",
+      "ts_utc": "2026-03-04T09:03:20.323098+00:00",
       "chain": "base",
       "token": {
-        "name": "AYA",
-        "symbol": "$AYA",
-        "address": "0xb8dca92eb26663a9155d15da25e4404a01705689"
+        "name": "ONE",
+        "symbol": "$ONE",
+        "address": "0x5e33c434b347e757f85dc77ddf2703fc18696543"
       },
       "scores": {
         "confidence": 100,
@@ -50,22 +50,22 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 132485.8495,
-        "vol_24h_usd": 1571.019971
+        "liq_usd": 52125.975,
+        "vol_24h_usd": 2620.180325
       },
       "dex": "geckoterminal",
-      "pair_address": "0xb8dca92eb26663a9155d15da25e4404a01705689",
+      "pair_address": "0x5e33c434b347e757f85dc77ddf2703fc18696543",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-04T08:02:07.072481+00:00",
+      "ts_utc": "2026-03-04T09:03:20.923812+00:00",
       "chain": "base",
       "token": {
-        "name": "WASTELAND",
-        "symbol": "$WASTELAND",
-        "address": "0x9efc3c413a27791f35a8bd00425c083e294eab07"
+        "name": "TrumpWin",
+        "symbol": "$TRUMPWIN",
+        "address": "0x73ca75b6493f47246d4ede10ebd4176b582eb040"
       },
       "scores": {
         "confidence": 100,
@@ -75,11 +75,61 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 15482.431,
-        "vol_24h_usd": 50200.9186995683
+        "liq_usd": 13903.9184,
+        "vol_24h_usd": 11701.0025233862
       },
       "dex": "geckoterminal",
-      "pair_address": "0x9efc3c413a27791f35a8bd00425c083e294eab07",
+      "pair_address": "0x73ca75b6493f47246d4ede10ebd4176b582eb040",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-04T09:03:21.107531+00:00",
+      "chain": "base",
+      "token": {
+        "name": "SENT",
+        "symbol": "$SENT",
+        "address": "0xd798b4d8799a36b77053d6bb831c102405bc46c9"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 143430.0692,
+        "vol_24h_usd": 5203.35072
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xd798b4d8799a36b77053d6bb831c102405bc46c9",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-04T09:03:21.296119+00:00",
+      "chain": "base",
+      "token": {
+        "name": "AFA",
+        "symbol": "$AFA",
+        "address": "0xc1272fcb3a2b0e9bd57e93bce186a2c195a2db07"
+      },
+      "scores": {
+        "confidence": 85,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 34598.9183,
+        "vol_24h_usd": 2354.0962121404
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xc1272fcb3a2b0e9bd57e93bce186a2c195a2db07",
       "scanner": "cio"
     }
   ]
