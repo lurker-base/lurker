@@ -6,27 +6,21 @@
     "last_update": "2026-03-04T13:15:00.000000+00:00",
     "stats": {
       "by_category": {
-        "CIO": 0,
-        "WATCH": 0,
-        "HOTLIST": 0,
-        "FAST": 0,
-        "CERTIFIED": 0,
+        "NEW": 1,
+        "WATCHING": 0,
+        "TRENDING": 0,
+        "ACTIVE": 0,
+        "VERIFIED": 0,
         "RUGGED": 0,
-        "ARCHIVED": 0,
-        "NEW": 1
+        "ARCHIVED": 0
       },
       "pumps_24h": 0,
       "dumps_24h": 0,
       "rugged": 0,
-      "cleanup": {
-        "last_run": "2026-03-04T12:13:17.520708+00:00",
-        "tokens_before": 1,
-        "tokens_after": 1,
-        "moved_to_rugged": 0,
-        "removed_stale": 0
-      }
+      "archived": 0,
+      "active_total": 1
     },
-    "last_lifecycle": "2026-03-04T12:13:17.462693+00:00",
+    "last_lifecycle": "2026-03-04T12:13:50.282481+00:00",
     "last_scan": "2026-03-04T12:13:17.511150+00:00"
   },
   "tokens": {
@@ -54,7 +48,7 @@
         "market_cap": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "low",
         "factors": []
       },
       "risk_tags": [
@@ -62,7 +56,53 @@
         "\ud83d\udca7 High Liq"
       ],
       "score": 0,
-      "price_history": []
+      "price_history": [
+        {
+          "timestamp": "2026-03-04T12:13:18.530665+00:00",
+          "price": 2.312e-06
+        },
+        {
+          "timestamp": "2026-03-04T12:13:19.578402+00:00",
+          "price": 2.312e-06
+        },
+        {
+          "timestamp": "2026-03-04T12:13:20.622057+00:00",
+          "price": 2.312e-06
+        },
+        {
+          "timestamp": "2026-03-04T12:13:21.668885+00:00",
+          "price": 2.312e-06
+        },
+        {
+          "timestamp": "2026-03-04T12:13:22.710766+00:00",
+          "price": 2.312e-06
+        },
+        {
+          "timestamp": "2026-03-04T12:13:23.754333+00:00",
+          "price": 2.312e-06
+        },
+        {
+          "timestamp": "2026-03-04T12:13:24.799333+00:00",
+          "price": 2.312e-06
+        },
+        {
+          "timestamp": "2026-03-04T12:13:25.848713+00:00",
+          "price": 2.312e-06
+        },
+        {
+          "timestamp": "2026-03-04T12:13:26.889578+00:00",
+          "price": 2.312e-06
+        },
+        {
+          "timestamp": "2026-03-04T12:13:50.282428+00:00",
+          "price": 2.312e-06
+        }
+      ],
+      "performance": {
+        "max_gain": 0.0,
+        "current_gain": 0.0,
+        "status": "stable"
+      }
     }
   },
   "categories": {
