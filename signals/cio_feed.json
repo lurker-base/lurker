@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-04T18:47:12.590000+00:00",
-    "generated_at": "2026-03-04T18:47:12.590000+00:00",
+    "updated_at": "2026-03-04T19:02:14.805000+00:00",
+    "generated_at": "2026-03-04T19:02:14.805000+00:00",
     "status": "ok",
-    "count": 2,
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,55 +12,15 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
-      "low": 2
+      "low": 1
     },
     "rejected": {
       "too_old": 1,
-      "low_tx": 1
+      "low_tx": 2
     },
     "source": "ultra_launch_scanner"
   },
   "candidates": [
-    {
-      "token": {
-        "address": "0xe8cfa37d5666c16df7c3d1c2f583cd25a4744b07",
-        "symbol": "SERA",
-        "name": "Seraph"
-      },
-      "pair": {
-        "address": "0x2233c2b6d10827ce779c3f80c46f522e3148c5a8b8b69a40e090dd5af9ce8a55",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 70451.55,
-        "vol_5m_usd": 9219.37,
-        "vol_1h_usd": 29980.96,
-        "txns_5m": 95,
-        "price_usd": 7.255e-07
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-04T18:21:29+00:00",
-        "token_first_seen": "2026-03-04T18:28:49.611000+00:00",
-        "age_minutes": 25.7,
-        "age_hours": 0.43
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.99
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    },
     {
       "token": {
         "address": "0xf0197f10ea542a67914ecc0ec5304dc9df1faf6f",
@@ -73,17 +33,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 15384.07,
-        "vol_5m_usd": 149.24,
-        "vol_1h_usd": 2396.76,
-        "txns_5m": 4,
-        "price_usd": 0.0003578
+        "liq_usd": 15378.75,
+        "vol_5m_usd": 117.24,
+        "vol_1h_usd": 2487.14,
+        "txns_5m": 3,
+        "price_usd": 0.0003581
       },
       "timestamps": {
         "pair_created_at": "2025-11-16T10:28:45+00:00",
         "token_first_seen": "2026-03-04T17:21:03.277000+00:00",
-        "age_minutes": 156018.5,
-        "age_hours": 2600.31
+        "age_minutes": 156033.5,
+        "age_hours": 2600.56
       },
       "scores": {
         "cio_score": 95,
