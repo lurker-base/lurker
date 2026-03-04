@@ -1,35 +1,60 @@
 {
   "meta": {
-    "updated_at": "2026-03-04T11:36:08.673Z",
+    "updated_at": "2026-03-04T11:37:22.343Z",
     "source": "cio",
     "chain": "base",
-    "count": 1,
+    "count": 2,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-04T11:36:08.647694+00:00",
+      "ts_utc": "2026-03-04T11:37:22.319972+00:00",
       "chain": "base",
       "token": {
-        "name": "PILL",
-        "symbol": "$PILL",
-        "address": "0x5f280c997d6c7235dd5645755db51f676272152e"
+        "name": "POH",
+        "symbol": "$POH",
+        "address": "0x75f9c1543f6db116c946992339a39093a1e7ab07"
       },
       "scores": {
-        "confidence": 90,
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 17109.1354,
+        "vol_24h_usd": 7445.70410589
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x75f9c1543f6db116c946992339a39093a1e7ab07",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-04T11:37:22.172489+00:00",
+      "chain": "base",
+      "token": {
+        "name": "VLTN",
+        "symbol": "$VLTN",
+        "address": "0xadd11b0fb38a3c82ea48aeae62e9947c2f9edb07"
+      },
+      "scores": {
+        "confidence": 95,
         "rarity": "new",
         "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 11337.8526,
-        "vol_24h_usd": 1089.3416998743
+        "liq_usd": 21402.6139317399,
+        "vol_24h_usd": 1463.5732979706
       },
       "dex": "geckoterminal",
-      "pair_address": "0x5f280c997d6c7235dd5645755db51f676272152e",
+      "pair_address": "0xadd11b0fb38a3c82ea48aeae62e9947c2f9edb07",
       "scanner": "cio"
     }
   ]
