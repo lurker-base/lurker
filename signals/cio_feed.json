@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-04T19:32:21.832000+00:00",
-    "generated_at": "2026-03-04T19:32:21.832000+00:00",
+    "updated_at": "2026-03-04T19:47:25.793000+00:00",
+    "generated_at": "2026-03-04T19:47:25.793000+00:00",
     "status": "ok",
-    "count": 4,
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,140 +12,15 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
-      "low": 2,
-      "medium": 2
+      "low": 1
     },
     "rejected": {
       "too_old": 1,
-      "duplicate": 1
+      "low_tx": 2
     },
     "source": "ultra_launch_scanner"
   },
   "candidates": [
-    {
-      "token": {
-        "address": "0x4965c9258fb5a5f8c1167edc0072f3611a757ba3",
-        "symbol": "CRAFT",
-        "name": "Craftable Found"
-      },
-      "pair": {
-        "address": "0x805f599cd0439727b89c48849f8f144cf61882cba94fe4b2c0688de0d54c4aef",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 74791.92,
-        "vol_5m_usd": 7747.74,
-        "vol_1h_usd": 45745.39,
-        "txns_5m": 26,
-        "price_usd": 1.091e-06
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-04T19:09:41+00:00",
-        "token_first_seen": "2026-03-04T19:25:42.332000+00:00",
-        "age_minutes": 22.7,
-        "age_hours": 0.38
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.99
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    },
-    {
-      "token": {
-        "address": "0xe8cfa37d5666c16df7c3d1c2f583cd25a4744b07",
-        "symbol": "SERA",
-        "name": "Seraph"
-      },
-      "pair": {
-        "address": "0x2233c2b6d10827ce779c3f80c46f522e3148c5a8b8b69a40e090dd5af9ce8a55",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 22135.01,
-        "vol_5m_usd": 66.78,
-        "vol_1h_usd": 21612.7,
-        "txns_5m": 4,
-        "price_usd": 2.163e-07
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-04T18:21:29+00:00",
-        "token_first_seen": "2026-03-04T18:28:49.611000+00:00",
-        "age_minutes": 70.9,
-        "age_hours": 1.18
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.98
-      },
-      "risks": [
-        "dumping"
-      ],
-      "risk_level": "medium",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    },
-    {
-      "token": {
-        "address": "0x7fe05d80dd2f223d64f34d71883bff4f37fff2bb",
-        "symbol": "ACTOBOT",
-        "name": "Actobotics"
-      },
-      "pair": {
-        "address": "0x715a7dcbe981003d190b3d5489f254d3d9abc55e8ff5c4147b6020fc3a183151",
-        "dex": "uniswap",
-        "quote": "flETH"
-      },
-      "metrics": {
-        "liq_usd": 6853.11,
-        "vol_5m_usd": 2.16,
-        "vol_1h_usd": 557.11,
-        "txns_5m": 2,
-        "price_usd": 6.999e-08
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-04T16:01:03+00:00",
-        "token_first_seen": "2026-03-04T18:14:34.974000+00:00",
-        "age_minutes": 211.3,
-        "age_hours": 3.52
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.94
-      },
-      "risks": [
-        "low_volume"
-      ],
-      "risk_level": "medium",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    },
     {
       "token": {
         "address": "0xf0197f10ea542a67914ecc0ec5304dc9df1faf6f",
@@ -158,17 +33,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 16028.1,
-        "vol_5m_usd": 150.85,
-        "vol_1h_usd": 2723.64,
-        "txns_5m": 4,
-        "price_usd": 0.0003853
+        "liq_usd": 16122.95,
+        "vol_5m_usd": 105.99,
+        "vol_1h_usd": 2284.68,
+        "txns_5m": 3,
+        "price_usd": 0.0003885
       },
       "timestamps": {
         "pair_created_at": "2025-11-16T10:28:45+00:00",
         "token_first_seen": "2026-03-04T17:21:03.277000+00:00",
-        "age_minutes": 156063.6,
-        "age_hours": 2601.06
+        "age_minutes": 156078.7,
+        "age_hours": 2601.31
       },
       "scores": {
         "cio_score": 95,
