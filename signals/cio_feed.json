@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-04T12:17:06.520000+00:00",
-    "generated_at": "2026-03-04T12:17:06.520000+00:00",
+    "updated_at": "2026-03-04T16:46:46.740000+00:00",
+    "generated_at": "2026-03-04T16:46:46.740000+00:00",
     "status": "ok",
-    "count": 1,
+    "count": 4,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,43 +12,42 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
-      "low": 1
+      "low": 4
     },
     "rejected": {
       "too_old": 1,
-      "low_liq": 1,
-      "low_volume": 1
+      "duplicate": 2
     },
     "source": "ultra_launch_scanner"
   },
   "candidates": [
     {
       "token": {
-        "address": "0x9e7937c570585cc496a14c9b0ba91dda31100f93",
-        "symbol": "AgentMail",
-        "name": "AgentMail"
+        "address": "0x3396de6026bbb65570ef7ee487a8f3a97746ff08",
+        "symbol": "MimiClaw",
+        "name": "MimiClaw"
       },
       "pair": {
-        "address": "0x66aeba941689deedb4699dbb7f267aa00b627b4c14fa9c7a9b29e9dc50dae5b8",
+        "address": "0x32379d3b998e2ac0ec9d1d8d5dfeaa8832a762bab8310cf0bef690dcf2015722",
         "dex": "uniswap",
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 105331.55,
-        "vol_5m_usd": 54527.3,
-        "vol_1h_usd": 363028.95,
-        "txns_5m": 158,
-        "price_usd": 2.303e-06
+        "liq_usd": 285418.71,
+        "vol_5m_usd": 94984.36,
+        "vol_1h_usd": 799077.06,
+        "txns_5m": 126,
+        "price_usd": 1.263e-05
       },
       "timestamps": {
-        "pair_created_at": "2026-03-04T11:41:27+00:00",
-        "token_first_seen": "2026-03-04T12:16:26.146000+00:00",
-        "age_minutes": 35.7,
-        "age_hours": 0.59
+        "pair_created_at": "2026-03-04T15:27:27+00:00",
+        "token_first_seen": "2026-03-04T16:34:15.099000+00:00",
+        "age_minutes": 79.3,
+        "age_hours": 1.32
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.99
+        "freshness": 0.98
       },
       "risks": [],
       "risk_level": "low",
@@ -58,8 +57,128 @@
         "has_profile": true,
         "has_image": true,
         "has_socials": true,
-        "has_website": false,
-        "quality_score": 75
+        "has_website": true,
+        "quality_score": 100
+      }
+    },
+    {
+      "token": {
+        "address": "0x4a691b5aa1ddbc5dd4d525a1ab0a5ae69d5721bf",
+        "symbol": "STACKR",
+        "name": "SILVER STACKRS"
+      },
+      "pair": {
+        "address": "0x7a1b86459823a60c22dd9d76893a8a46c667ea10",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 157297.96,
+        "vol_5m_usd": 6492.47,
+        "vol_1h_usd": 170354.58,
+        "txns_5m": 25,
+        "price_usd": 1.32e-05
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-04T15:04:29+00:00",
+        "token_first_seen": "2026-03-04T16:34:15.099000+00:00",
+        "age_minutes": 102.3,
+        "age_hours": 1.7
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.97
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    },
+    {
+      "token": {
+        "address": "0x04c4c098a5b492750a2bd0578c685f179c78a1ca",
+        "symbol": "FLOKI",
+        "name": "FLOKI ON BASE"
+      },
+      "pair": {
+        "address": "0xfca261560133699ecd4c99941c767e096700216d",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 35897.83,
+        "vol_5m_usd": 2117.99,
+        "vol_1h_usd": 22625.53,
+        "txns_5m": 28,
+        "price_usd": 6.988e-07
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-04T12:35:55+00:00",
+        "token_first_seen": "2026-03-04T16:34:15.099000+00:00",
+        "age_minutes": 250.9,
+        "age_hours": 4.18
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.93
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    },
+    {
+      "token": {
+        "address": "0x4972e029f2e1831d205b20d05833cc771feb2ba3",
+        "symbol": "HARBOR",
+        "name": "CLAW HARBOR"
+      },
+      "pair": {
+        "address": "0xcfd2369558fd36bb0cfee4b627c0405ad223a0f9358dd7afa2618a4e063e146b",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 79344.65,
+        "vol_5m_usd": 232.58,
+        "vol_1h_usd": 33328.7,
+        "txns_5m": 6,
+        "price_usd": 9.503e-07
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-28T21:29:07+00:00",
+        "token_first_seen": "2026-03-04T16:34:15.099000+00:00",
+        "age_minutes": 5477.7,
+        "age_hours": 91.29
+      },
+      "scores": {
+        "cio_score": 90,
+        "freshness": 0
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
       }
     }
   ]
