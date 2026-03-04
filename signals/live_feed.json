@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-04T11:31:52.386Z",
+    "updated_at": "2026-03-04T11:34:51.288Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 1,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-04T11:31:51.926347+00:00",
+      "ts_utc": "2026-03-04T11:34:51.245716+00:00",
       "chain": "base",
       "token": {
-        "name": "Bidoof",
-        "symbol": "$BIDOOF",
-        "address": "0xf9f257ba5896b80ce40cff7f0ce5402bd15aab07"
+        "name": "pengDog",
+        "symbol": "$PENGDOG",
+        "address": "0x9b9249d143aa7e96eb02b0c23552b62fea90db07"
       },
       "scores": {
         "confidence": 100,
@@ -25,36 +25,11 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 13388.6191,
-        "vol_24h_usd": 13100.0122346873
+        "liq_usd": 25699.3353,
+        "vol_24h_usd": 15510.1123841641
       },
       "dex": "geckoterminal",
-      "pair_address": "0xf9f257ba5896b80ce40cff7f0ce5402bd15aab07",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-04T11:31:52.107597+00:00",
-      "chain": "base",
-      "token": {
-        "name": "McClaw",
-        "symbol": "$MCCLAW",
-        "address": "0x092a6be731c33385de33498a7d429e7e07806a9c"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 52037.5004,
-        "vol_24h_usd": 2247.15316
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x092a6be731c33385de33498a7d429e7e07806a9c",
+      "pair_address": "0x9b9249d143aa7e96eb02b0c23552b62fea90db07",
       "scanner": "cio"
     }
   ]
