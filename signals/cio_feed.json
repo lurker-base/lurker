@@ -1,36 +1,66 @@
 {
-  "timestamp": "2026-03-04T11:44:49.940058+00:00",
-  "source": "geckoterminal_v2",
+  "schema": "lurker_cio_ultra_launch",
+  "meta": {
+    "updated_at": "2026-03-04T12:12:45.027000+00:00",
+    "generated_at": "2026-03-04T12:12:45.027000+00:00",
+    "status": "ok",
+    "count": 1,
+    "thresholds": {
+      "min_liq_usd": 1000,
+      "min_vol_5m": 500,
+      "min_tx_5m": 1,
+      "max_age_min": 43200
+    },
+    "risk_distribution": {
+      "low": 1
+    },
+    "rejected": {
+      "too_old": 1,
+      "low_liq": 1,
+      "low_volume": 1
+    },
+    "source": "ultra_launch_scanner"
+  },
   "candidates": [
     {
       "token": {
-        "address": "0x0fdeee699b98af964d84dd2ab862b7a4e1d2db07",
-        "symbol": "VLTN",
-        "name": "VLTN"
+        "address": "0x9e7937c570585cc496a14c9b0ba91dda31100f93",
+        "symbol": "AgentMail",
+        "name": "AgentMail"
+      },
+      "pair": {
+        "address": "0x66aeba941689deedb4699dbb7f267aa00b627b4c14fa9c7a9b29e9dc50dae5b8",
+        "dex": "uniswap",
+        "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 21757.348,
-        "vol_24h_usd": 9615.2699203375,
-        "txns_24h": 58,
-        "price_usd": 0
+        "liq_usd": 110002.04,
+        "vol_5m_usd": 65311.63,
+        "vol_1h_usd": 300273.51,
+        "txns_5m": 212,
+        "price_usd": 2.503e-06
       },
-      "risk": {
-        "level": "low",
-        "factors": [
-          "new_token"
-        ]
+      "timestamps": {
+        "pair_created_at": "2026-03-04T11:41:27+00:00",
+        "token_first_seen": "2026-03-04T12:12:18.516000+00:00",
+        "age_minutes": 31.3,
+        "age_hours": 0.52
       },
-      "score": 100,
-      "age_hours": 0.051318641388888885,
-      "detected_at": "2026-03-04T11:44:49.938227+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 SUPER FRESH",
-        "\ud83d\udca7 LIQ",
-        "\u26a1 BUZZ",
-        "\ud83d\udcd7 PUMPING",
-        "\u2b50 GEM"
-      ]
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.99
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": false,
+        "quality_score": 75
+      }
     }
   ]
 }

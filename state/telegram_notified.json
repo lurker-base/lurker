@@ -179,8 +179,28 @@
       "badge": "WATCH",
       "timestamp": "2026-03-03T17:35:32.389354+00:00",
       "symbol": "ONE"
+    },
+    "0xf7f4dbd0fdd60b5d79e63b7c4f1f1e4d1172fb07": {
+      "badge": "WATCH",
+      "timestamp": "2026-03-03T17:39:33.114237+00:00",
+      "symbol": "Claw_ops"
+    },
+    "0x39629e0a4751e70cc61dfe45b01a58ad840fbb07": {
+      "badge": "WATCH",
+      "timestamp": "2026-03-03T17:39:33.114253+00:00",
+      "symbol": "ONE"
+    },
+    "0xdc9b3869a86db79defe8ddfda22f999fc75c6ba3": {
+      "badge": "WATCH",
+      "timestamp": "2026-03-03T17:39:33.114257+00:00",
+      "symbol": "YARR"
+    },
+    "0x86cd9013badb9c54a9d0f47d5b7b74263ac33b07": {
+      "badge": "WATCH",
+      "timestamp": "2026-03-03T17:39:33.114259+00:00",
+      "symbol": "agentwatch"
     }
   },
   "updates": [],
-  "last_check": "2026-03-03T17:37:33.075388+00:00"
+  "last_check": "2026-03-03T22:25:39.704196+00:00"
 }
