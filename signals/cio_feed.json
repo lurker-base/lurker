@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-04T21:17:46.142000+00:00",
-    "generated_at": "2026-03-04T21:17:46.142000+00:00",
+    "updated_at": "2026-03-04T21:32:48.197000+00:00",
+    "generated_at": "2026-03-04T21:32:48.197000+00:00",
     "status": "ok",
-    "count": 2,
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,54 +12,15 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
-      "low": 2
+      "low": 1
     },
     "rejected": {
-      "too_old": 1
+      "too_old": 1,
+      "low_tx": 2
     },
     "source": "ultra_launch_scanner"
   },
   "candidates": [
-    {
-      "token": {
-        "address": "0x58e4b38d7afba303aa46ab0f9d6146aca6a33b07",
-        "symbol": "CLAWDA",
-        "name": "Clawcada"
-      },
-      "pair": {
-        "address": "0x77403205cda7453f425d9b86cf3a134ff3e687da5206f0c9d8f4a69d2872c26a",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 87170.37,
-        "vol_5m_usd": 2263.71,
-        "vol_1h_usd": 27344.23,
-        "txns_5m": 24,
-        "price_usd": 9.12e-07
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-04T20:58:15+00:00",
-        "token_first_seen": "2026-03-04T21:08:33.334000+00:00",
-        "age_minutes": 19.5,
-        "age_hours": 0.33
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.99
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    },
     {
       "token": {
         "address": "0x893d721aa3a954d21e2d2c0fc18243882be2bba3",
@@ -72,17 +33,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 122366.64,
-        "vol_5m_usd": 3379.81,
-        "vol_1h_usd": 300536.47,
-        "txns_5m": 14,
-        "price_usd": 2.133e-06
+        "liq_usd": 104456.19,
+        "vol_5m_usd": 7153.64,
+        "vol_1h_usd": 238976.61,
+        "txns_5m": 13,
+        "price_usd": 1.622e-06
       },
       "timestamps": {
         "pair_created_at": "2026-03-04T18:55:47+00:00",
         "token_first_seen": "2026-03-04T20:36:46.819000+00:00",
-        "age_minutes": 142.0,
-        "age_hours": 2.37
+        "age_minutes": 157.0,
+        "age_hours": 2.62
       },
       "scores": {
         "cio_score": 100,
