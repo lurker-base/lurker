@@ -1,8 +1,8 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-04T12:16:53.572000+00:00",
-    "generated_at": "2026-03-04T12:16:53.572000+00:00",
+    "updated_at": "2026-03-04T12:17:06.520000+00:00",
+    "generated_at": "2026-03-04T12:17:06.520000+00:00",
     "status": "ok",
     "count": 1,
     "thresholds": {
@@ -34,16 +34,16 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 108511.23,
-        "vol_5m_usd": 52681.53,
-        "vol_1h_usd": 361183.18,
-        "txns_5m": 149,
-        "price_usd": 2.427e-06
+        "liq_usd": 105331.55,
+        "vol_5m_usd": 54527.3,
+        "vol_1h_usd": 363028.95,
+        "txns_5m": 158,
+        "price_usd": 2.303e-06
       },
       "timestamps": {
         "pair_created_at": "2026-03-04T11:41:27+00:00",
         "token_first_seen": "2026-03-04T12:16:26.146000+00:00",
-        "age_minutes": 35.4,
+        "age_minutes": 35.7,
         "age_hours": 0.59
       },
       "scores": {
