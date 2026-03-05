@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-05T01:02:44.203000+00:00",
-    "generated_at": "2026-03-05T01:02:44.203000+00:00",
+    "updated_at": "2026-03-05T01:10:15.908000+00:00",
+    "generated_at": "2026-03-05T01:10:15.908000+00:00",
     "status": "ok",
-    "count": 2,
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,8 +12,7 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
-      "low": 1,
-      "medium": 1
+      "low": 1
     },
     "rejected": {
       "too_old": 1
@@ -33,21 +32,21 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 122715.62,
-        "vol_5m_usd": 11040.66,
-        "vol_1h_usd": 206472.06,
-        "txns_5m": 37,
-        "price_usd": 2.78e-06
+        "liq_usd": 134964.99,
+        "vol_5m_usd": 17656.9,
+        "vol_1h_usd": 236569.57,
+        "txns_5m": 97,
+        "price_usd": 3.267e-06
       },
       "timestamps": {
         "pair_created_at": "2026-03-05T00:13:13+00:00",
         "token_first_seen": "2026-03-05T00:31:48.037000+00:00",
-        "age_minutes": 49.5,
-        "age_hours": 0.83
+        "age_minutes": 57.0,
+        "age_hours": 0.95
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.99
+        "freshness": 0.98
       },
       "risks": [],
       "risk_level": "low",
@@ -59,48 +58,6 @@
         "has_socials": true,
         "has_website": false,
         "quality_score": 75
-      }
-    },
-    {
-      "token": {
-        "address": "0x4be6269947ba8d6ce2b37bbf10d54b382277dba3",
-        "symbol": "OPENPAW",
-        "name": "OPENPAW"
-      },
-      "pair": {
-        "address": "0x5866d690297aa62ff71b1687192590e760448571647af9d406d5af2142e0b31e",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 75104.14,
-        "vol_5m_usd": 848.73,
-        "vol_1h_usd": 24878.23,
-        "txns_5m": 8,
-        "price_usd": 8.767e-07
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-04T21:22:29+00:00",
-        "token_first_seen": "2026-03-04T23:44:06.976000+00:00",
-        "age_minutes": 220.3,
-        "age_hours": 3.67
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.94
-      },
-      "risks": [
-        "dumping"
-      ],
-      "risk_level": "medium",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
       }
     }
   ]
