@@ -1,8 +1,8 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-05T18:04:52.363000+00:00",
-    "generated_at": "2026-03-05T18:04:52.363000+00:00",
+    "updated_at": "2026-03-05T18:09:52.131000+00:00",
+    "generated_at": "2026-03-05T18:09:52.131000+00:00",
     "status": "ok",
     "count": 3,
     "thresholds": {
@@ -33,21 +33,21 @@
         "quote": "ETH"
       },
       "metrics": {
-        "liq_usd": 12657.6,
-        "vol_5m_usd": 1158.0,
-        "vol_1h_usd": 30576.03,
-        "txns_5m": 14,
-        "price_usd": 5.86
+        "liq_usd": 10037.13,
+        "vol_5m_usd": 1852.64,
+        "vol_1h_usd": 32430.66,
+        "txns_5m": 18,
+        "price_usd": 3.6
       },
       "timestamps": {
         "pair_created_at": "2026-03-05T17:47:17+00:00",
         "token_first_seen": "2026-03-05T18:01:32.412000+00:00",
-        "age_minutes": 17.6,
-        "age_hours": 0.29
+        "age_minutes": 22.6,
+        "age_hours": 0.38
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 1.0
+        "freshness": 0.99
       },
       "risks": [],
       "risk_level": "low",
@@ -73,21 +73,21 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 50892.15,
-        "vol_5m_usd": 857.43,
-        "vol_1h_usd": 21611.54,
-        "txns_5m": 2,
-        "price_usd": 6.074e-07
+        "liq_usd": 54106.45,
+        "vol_5m_usd": 2793.83,
+        "vol_1h_usd": 23384.87,
+        "txns_5m": 6,
+        "price_usd": 6.619e-07
       },
       "timestamps": {
         "pair_created_at": "2026-03-05T16:02:03+00:00",
         "token_first_seen": "2026-03-05T17:42:17.370000+00:00",
-        "age_minutes": 122.8,
-        "age_hours": 2.05
+        "age_minutes": 127.8,
+        "age_hours": 2.13
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.97
+        "freshness": 0.96
       },
       "risks": [],
       "risk_level": "low",
@@ -113,17 +113,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 84627.21,
-        "vol_5m_usd": 1967.74,
-        "vol_1h_usd": 9338.44,
-        "txns_5m": 6,
-        "price_usd": 1.081e-06
+        "liq_usd": 88087.12,
+        "vol_5m_usd": 2330.95,
+        "vol_1h_usd": 9124.63,
+        "txns_5m": 7,
+        "price_usd": 1.15e-06
       },
       "timestamps": {
         "pair_created_at": "2026-03-03T15:10:33+00:00",
         "token_first_seen": "2026-03-05T17:00:28.412000+00:00",
-        "age_minutes": 3054.3,
-        "age_hours": 50.91
+        "age_minutes": 3059.3,
+        "age_hours": 50.99
       },
       "scores": {
         "cio_score": 100,
