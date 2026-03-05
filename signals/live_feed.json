@@ -1,10 +1,86 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T13:41:58.670Z",
+    "updated_at": "2026-03-05T13:46:59.150Z",
     "source": "cio",
     "chain": "base",
-    "count": 0,
+    "count": 3,
     "errors": []
   },
-  "signals": []
+  "signals": [
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T13:46:59.090651+00:00",
+      "chain": "base",
+      "token": {
+        "name": "SPACE",
+        "symbol": "$SPACE",
+        "address": "0xbf62cb6c3fd2371042612b3e60f80e046442b544"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 141453.7584,
+        "vol_24h_usd": 2342.666126
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xbf62cb6c3fd2371042612b3e60f80e046442b544",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T13:46:59.050211+00:00",
+      "chain": "base",
+      "token": {
+        "name": "Fakeout",
+        "symbol": "$FAKEOUT",
+        "address": "0x45cb675eb6d9c12b75e6cd04b73b196b5bac4398"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 19375.7324,
+        "vol_24h_usd": 25114.2276703621
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x45cb675eb6d9c12b75e6cd04b73b196b5bac4398",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T13:46:59.123444+00:00",
+      "chain": "base",
+      "token": {
+        "name": "AMARA",
+        "symbol": "$AMARA",
+        "address": "0x9071c74bfc5f298536e1466234d231b2752c4320"
+      },
+      "scores": {
+        "confidence": 90,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 11562.4489,
+        "vol_24h_usd": 1087.5479915579
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x9071c74bfc5f298536e1466234d231b2752c4320",
+      "scanner": "cio"
+    }
+  ]
 }
