@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-05T21:49:51.072000+00:00",
-    "generated_at": "2026-03-05T21:49:51.072000+00:00",
+    "updated_at": "2026-03-05T21:55:42.444000+00:00",
+    "generated_at": "2026-03-05T21:55:42.444000+00:00",
     "status": "ok",
-    "count": 3,
+    "count": 2,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,10 +12,11 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
-      "low": 3
+      "low": 2
     },
     "rejected": {
-      "too_old": 1
+      "too_old": 1,
+      "low_tx": 1
     },
     "source": "ultra_launch_scanner"
   },
@@ -32,17 +33,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 119258.35,
-        "vol_5m_usd": 6806.91,
-        "vol_1h_usd": 145465.93,
-        "txns_5m": 19,
-        "price_usd": 2.213e-06
+        "liq_usd": 109341.62,
+        "vol_5m_usd": 1707.87,
+        "vol_1h_usd": 145851.78,
+        "txns_5m": 15,
+        "price_usd": 1.913e-06
       },
       "timestamps": {
         "pair_created_at": "2026-03-05T19:05:19+00:00",
         "token_first_seen": "2026-03-05T21:28:56.038000+00:00",
-        "age_minutes": 164.5,
-        "age_hours": 2.74
+        "age_minutes": 170.4,
+        "age_hours": 2.84
       },
       "scores": {
         "cio_score": 100,
@@ -72,61 +73,21 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 64720.63,
-        "vol_5m_usd": 29.0,
-        "vol_1h_usd": 2992.27,
-        "txns_5m": 3,
-        "price_usd": 7.74e-07
+        "liq_usd": 64086.87,
+        "vol_5m_usd": 214.45,
+        "vol_1h_usd": 3177.19,
+        "txns_5m": 2,
+        "price_usd": 7.637e-07
       },
       "timestamps": {
         "pair_created_at": "2026-03-04T04:03:53+00:00",
         "token_first_seen": "2026-03-05T20:27:03.069000+00:00",
-        "age_minutes": 2506.0,
-        "age_hours": 41.77
+        "age_minutes": 2511.8,
+        "age_hours": 41.86
       },
       "scores": {
         "cio_score": 90,
         "freshness": 0.3
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    },
-    {
-      "token": {
-        "address": "0x5566f6c47da94193d3815c8cdaed5b1f9ddc3ba3",
-        "symbol": "CLAWSTORE",
-        "name": "clawstore"
-      },
-      "pair": {
-        "address": "0x7ee469d205faa769178ca6c523ed07aa70b8dd07652b82231f1e8a2a244eaa8b",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 35510.2,
-        "vol_5m_usd": 103.04,
-        "vol_1h_usd": 7941.19,
-        "txns_5m": 1,
-        "price_usd": 3.466e-07
-      },
-      "timestamps": {
-        "pair_created_at": "2026-02-24T22:10:57+00:00",
-        "token_first_seen": "2026-03-05T20:56:19.370000+00:00",
-        "age_minutes": 12938.9,
-        "age_hours": 215.65
-      },
-      "scores": {
-        "cio_score": 90,
-        "freshness": 0
       },
       "risks": [],
       "risk_level": "low",

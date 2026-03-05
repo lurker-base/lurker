@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T21:47:03.996Z",
+    "updated_at": "2026-03-05T21:52:05.060Z",
     "source": "cio",
     "chain": "base",
     "count": 3,
@@ -10,12 +10,12 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T21:47:03.543296+00:00",
+      "ts_utc": "2026-03-05T21:52:04.360737+00:00",
       "chain": "base",
       "token": {
-        "name": "PRISM",
-        "symbol": "$PRISM",
-        "address": "0x8bdfb547f90d09d1a5b899bb697b6ef0141bc9df"
+        "name": "BLACKHOUSE",
+        "symbol": "$BLACKHOUSE",
+        "address": "0x5ef249efa52654821e87c8a7c39e4a219dea2791"
       },
       "scores": {
         "confidence": 100,
@@ -25,22 +25,22 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 24122.1377,
-        "vol_24h_usd": 29299.6750670818
+        "liq_usd": 22272.0532,
+        "vol_24h_usd": 6159.5181795909
       },
       "dex": "geckoterminal",
-      "pair_address": "0x8bdfb547f90d09d1a5b899bb697b6ef0141bc9df",
+      "pair_address": "0x5ef249efa52654821e87c8a7c39e4a219dea2791",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T21:47:03.766943+00:00",
+      "ts_utc": "2026-03-05T21:52:05.022468+00:00",
       "chain": "base",
       "token": {
-        "name": "Pikachu",
-        "symbol": "$PIKACHU",
-        "address": "0xff783bb7a5f0facbb95c0bbd466d6acc9e3f9a24"
+        "name": "MimiClaw",
+        "symbol": "$MIMICLAW",
+        "address": "0xa472619ddba8c09b921569aa34d26373d725c6f7"
       },
       "scores": {
         "confidence": 100,
@@ -50,36 +50,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 85975.7339,
-        "vol_24h_usd": 1391.980097975
+        "liq_usd": 51406.0804,
+        "vol_24h_usd": 1749.823139
       },
       "dex": "geckoterminal",
-      "pair_address": "0xff783bb7a5f0facbb95c0bbd466d6acc9e3f9a24",
+      "pair_address": "0xa472619ddba8c09b921569aa34d26373d725c6f7",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T21:47:03.969096+00:00",
+      "ts_utc": "2026-03-05T21:52:04.749571+00:00",
       "chain": "base",
       "token": {
-        "name": "BabyBlaze",
-        "symbol": "$BABYBLAZE",
-        "address": "0x5344e749764dd66e300623c1ac5f607a24f6a16d"
+        "name": "SPAWN",
+        "symbol": "$SPAWN",
+        "address": "0x0c63e045d0776f9d4b1c29ec97bdee8ae6d9f44c"
       },
       "scores": {
-        "confidence": 100,
+        "confidence": 95,
         "rarity": "new",
-        "risk": "low"
+        "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 118651.9938,
-        "vol_24h_usd": 1105.577101
+        "liq_usd": 46158.74,
+        "vol_24h_usd": 1623.1393227805
       },
       "dex": "geckoterminal",
-      "pair_address": "0x5344e749764dd66e300623c1ac5f607a24f6a16d",
+      "pair_address": "0x0c63e045d0776f9d4b1c29ec97bdee8ae6d9f44c",
       "scanner": "cio"
     }
   ]
