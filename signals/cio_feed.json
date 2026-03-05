@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-05T18:39:57.942000+00:00",
-    "generated_at": "2026-03-05T18:39:57.942000+00:00",
+    "updated_at": "2026-03-05T18:40:51.057000+00:00",
+    "generated_at": "2026-03-05T18:40:51.057000+00:00",
     "status": "ok",
-    "count": 2,
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,55 +12,15 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
-      "low": 2
+      "low": 1
     },
     "rejected": {
       "too_old": 1,
-      "low_tx": 1
+      "low_tx": 2
     },
     "source": "ultra_launch_scanner"
   },
   "candidates": [
-    {
-      "token": {
-        "address": "0xd344aefe9a72215b72768cc0f50a4f9a203027de",
-        "symbol": "RANCH",
-        "name": "Ranch Token"
-      },
-      "pair": {
-        "address": "0xcf154df0f559a1387ec035916b5492dc9d6a6dbca5330864d1ab9f18684da072",
-        "dex": "uniswap",
-        "quote": "ETH"
-      },
-      "metrics": {
-        "liq_usd": 10689.06,
-        "vol_5m_usd": 196.02,
-        "vol_1h_usd": 38279.02,
-        "txns_5m": 2,
-        "price_usd": 1.62
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-05T17:47:17+00:00",
-        "token_first_seen": "2026-03-05T18:01:32.412000+00:00",
-        "age_minutes": 52.7,
-        "age_hours": 0.88
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.99
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    },
     {
       "token": {
         "address": "0x2f491be4c6354236a9d76bba9d9929e9ed81dba3",
@@ -73,17 +33,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 62322.96,
-        "vol_5m_usd": 63.74,
-        "vol_1h_usd": 28756.24,
-        "txns_5m": 1,
-        "price_usd": 8.127e-07
+        "liq_usd": 62081.78,
+        "vol_5m_usd": 252.28,
+        "vol_1h_usd": 28753.9,
+        "txns_5m": 6,
+        "price_usd": 8.08e-07
       },
       "timestamps": {
         "pair_created_at": "2026-03-05T16:02:03+00:00",
         "token_first_seen": "2026-03-05T17:42:17.370000+00:00",
-        "age_minutes": 157.9,
-        "age_hours": 2.63
+        "age_minutes": 158.8,
+        "age_hours": 2.65
       },
       "scores": {
         "cio_score": 100,
