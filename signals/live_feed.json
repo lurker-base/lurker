@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T03:30:07.122Z",
+    "updated_at": "2026-03-05T03:45:09.569Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 5,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T03:30:07.077805+00:00",
+      "ts_utc": "2026-03-05T03:45:09.045317+00:00",
       "chain": "base",
       "token": {
-        "name": "chuck",
-        "symbol": "$CHUCK",
-        "address": "0xdccd12f74d450895dc17887564fa07fd169039fb"
+        "name": "POPEYE",
+        "symbol": "$POPEYE",
+        "address": "0x31daf4173b4aabf370e2e1c8015d34ea0213312c"
       },
       "scores": {
         "confidence": 100,
@@ -25,36 +25,111 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 13372.9568,
-        "vol_24h_usd": 2056.1111850271
+        "liq_usd": 87347.3776,
+        "vol_24h_usd": 1439.380091356
       },
       "dex": "geckoterminal",
-      "pair_address": "0xdccd12f74d450895dc17887564fa07fd169039fb",
+      "pair_address": "0x31daf4173b4aabf370e2e1c8015d34ea0213312c",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T03:30:06.934861+00:00",
+      "ts_utc": "2026-03-05T03:45:09.189040+00:00",
       "chain": "base",
       "token": {
-        "name": "Shells",
-        "symbol": "$SHELLS",
-        "address": "0xaa20b180c34fefc9ec744b8ddd6812eb70c7391c"
+        "name": "WORTHLESS",
+        "symbol": "$WORTHLESS",
+        "address": "0x2e1579d25cf7da643aacbcc16112652dd6749b02"
       },
       "scores": {
-        "confidence": 95,
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 16681.4011,
+        "vol_24h_usd": 27709.7430976774
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x2e1579d25cf7da643aacbcc16112652dd6749b02",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T03:45:09.333595+00:00",
+      "chain": "base",
+      "token": {
+        "name": "POKEPULL",
+        "symbol": "$POKEPULL",
+        "address": "0xf1c0683a310eb64862a0e61012e33af88130becd"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 142741.107,
+        "vol_24h_usd": 3128.6649653531
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xf1c0683a310eb64862a0e61012e33af88130becd",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T03:45:09.525922+00:00",
+      "chain": "base",
+      "token": {
+        "name": "PENGUIN",
+        "symbol": "$PENGUIN",
+        "address": "0xf63cf10e19aa60682cd4ea0647dce5a91f78a0d8"
+      },
+      "scores": {
+        "confidence": 100,
         "rarity": "new",
         "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 23179.8059,
-        "vol_24h_usd": 2000.3080451285
+        "liq_usd": 55321.4541,
+        "vol_24h_usd": 3364.655745
       },
       "dex": "geckoterminal",
-      "pair_address": "0xaa20b180c34fefc9ec744b8ddd6812eb70c7391c",
+      "pair_address": "0xf63cf10e19aa60682cd4ea0647dce5a91f78a0d8",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T03:45:09.011644+00:00",
+      "chain": "base",
+      "token": {
+        "name": "chuck",
+        "symbol": "$CHUCK",
+        "address": "0x2cc9c9ae719b6ec7a94b947621965be1f9d56a7e"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 23683.6429,
+        "vol_24h_usd": 8190.9417774832
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x2cc9c9ae719b6ec7a94b947621965be1f9d56a7e",
       "scanner": "cio"
     }
   ]
