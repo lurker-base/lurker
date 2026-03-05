@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T19:21:40.977Z",
+    "updated_at": "2026-03-05T19:31:43.088Z",
     "source": "cio",
     "chain": "base",
-    "count": 3,
+    "count": 2,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T19:21:40.782978+00:00",
+      "ts_utc": "2026-03-05T19:31:43.014588+00:00",
       "chain": "base",
       "token": {
-        "name": "search",
-        "symbol": "$SEARCH",
-        "address": "0xc84c654f97530e30834566bca05d158358187ba3"
+        "name": "THUNDAH",
+        "symbol": "$THUNDAH",
+        "address": "0xace5f200f7512f35e08f50ee3ae7f25db5d1710a"
       },
       "scores": {
         "confidence": 100,
@@ -25,61 +25,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 11401.8183,
-        "vol_24h_usd": 2387.8580197187
+        "liq_usd": 14804.7106,
+        "vol_24h_usd": 14188.6742319891
       },
       "dex": "geckoterminal",
-      "pair_address": "0xc84c654f97530e30834566bca05d158358187ba3",
+      "pair_address": "0xace5f200f7512f35e08f50ee3ae7f25db5d1710a",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T19:21:40.941639+00:00",
+      "ts_utc": "2026-03-05T19:31:43.057179+00:00",
       "chain": "base",
       "token": {
-        "name": "LILBULE",
-        "symbol": "$LILBULE",
-        "address": "0x49fbd66c3c60a3ba940929925e5f485bb3bd2862"
+        "name": "Mei",
+        "symbol": "$MEI",
+        "address": "0x568bac4e1c5a097d4b3b903b9a511534bd45eba3"
       },
       "scores": {
         "confidence": 100,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 89781.2188,
-        "vol_24h_usd": 1156.5966087739
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x49fbd66c3c60a3ba940929925e5f485bb3bd2862",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T19:21:40.557293+00:00",
-      "chain": "base",
-      "token": {
-        "name": "memes",
-        "symbol": "$MEMES",
-        "address": "0x7ed096a9fd1d50931cb891f27df956f3b20bf1c6"
-      },
-      "scores": {
-        "confidence": 90,
         "rarity": "new",
         "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 14941.803,
-        "vol_24h_usd": 5684.8363708603
+        "liq_usd": 44236.7468,
+        "vol_24h_usd": 79455.2987902514
       },
       "dex": "geckoterminal",
-      "pair_address": "0x7ed096a9fd1d50931cb891f27df956f3b20bf1c6",
+      "pair_address": "0x568bac4e1c5a097d4b3b903b9a511534bd45eba3",
       "scanner": "cio"
     }
   ]

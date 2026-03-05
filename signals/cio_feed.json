@@ -1,65 +1,22 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-05T19:25:09.518000+00:00",
-    "generated_at": "2026-03-05T19:25:09.518000+00:00",
-    "status": "ok",
-    "count": 1,
+    "updated_at": "2026-03-05T19:34:21.479000+00:00",
+    "generated_at": "2026-03-05T19:34:21.479000+00:00",
+    "status": "calm",
+    "count": 0,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
       "min_tx_5m": 1,
       "max_age_min": 43200
     },
-    "risk_distribution": {
-      "low": 1
-    },
+    "risk_distribution": {},
     "rejected": {
       "too_old": 1,
       "low_tx": 1
     },
     "source": "ultra_launch_scanner"
   },
-  "candidates": [
-    {
-      "token": {
-        "address": "0x740ec7d407e0a4d95756bb74ee0e7c15f6841735",
-        "symbol": "VIRTERN",
-        "name": "Virtuals Intern by Virtuals"
-      },
-      "pair": {
-        "address": "0x9064f2dacf2f3b0e871a7dc233835c832d166d96",
-        "dex": "uniswap",
-        "quote": "VIRTUAL"
-      },
-      "metrics": {
-        "liq_usd": 52793.22,
-        "vol_5m_usd": 900.21,
-        "vol_1h_usd": 6070.43,
-        "txns_5m": 7,
-        "price_usd": 0.0001497
-      },
-      "timestamps": {
-        "pair_created_at": "2026-02-19T14:26:17+00:00",
-        "token_first_seen": "2026-03-05T18:10:45.236000+00:00",
-        "age_minutes": 20458.9,
-        "age_hours": 340.98
-      },
-      "scores": {
-        "cio_score": 90,
-        "freshness": 0
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    }
-  ]
+  "candidates": []
 }
