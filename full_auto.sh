@@ -21,39 +21,44 @@ launch_service() {
 while true; do
     echo "[\$(date)] Starting $name" >> "$logfile"
     python3 "$script" >> "$logfile" 2>&1
-    echo "[\$(date)] $name exited, restarting in ${interval}s" >> "$logfile"
+    # If python3 exited, log and sleep before next attempt
+    status=$?
+    echo "[\$(date)] $name exited with status $status, restarting in ${interval}s" >> "$logfile"
     sleep "$interval"
 done
 EOF
     chmod +x "logs/${name}_wrapper.sh"
     
     # Lancer le wrapper
-    nohup "logs/${name}_wrapper.sh" > /dev/null 2>&1 &
+    # Use setsid to ensure it runs in its own session and persists
+    setsid nohup "logs/${name}_wrapper.sh" > /dev/null 2>&1 &
     local wrapper_pid=$!
     echo $wrapper_pid > "logs/${name}.pid"
     
     # Attendre que le Python démarre et capturer son PID
-    sleep 2
+    # Give the wrapper time to start the python process
+    sleep 5
     local py_pid=$(pgrep -f "$script" | head -1)
     if [ -n "$py_pid" ]; then
         echo $py_pid > "logs/${name}_py.pid"
         echo "  ✅ $name lancé (Wrapper PID: $wrapper_pid, Python PID: $py_pid)"
     else
-        echo "  ⚠️  $name lancé (Wrapper PID: $wrapper_pid, Python PID: en attente)"
+        echo "  ⚠️  $name launched (Wrapper PID: $wrapper_pid, Python PID: waiting to start)"
     fi
 }
 
-# Arrêter les anciens processus (sauf nous-même)
-echo "Arrêt des processus existants..."
-MY_PID=$$
-pgrep -f "lifecycle_core.py" | grep -v "$MY_PID" | xargs -r kill 2>/dev/null
-pgrep -f "token_importer.py" | grep -v "$MY_PID" | xargs -r kill 2>/dev/null
-pgrep -f "cleanup_tokens.py" | grep -v "$MY_PID" | xargs -r kill 2>/dev/null
-pgrep -f "scanner_cio_ultra.py" | grep -v "$MY_PID" | xargs -r kill 2>/dev/null
-pgrep -f "auto_push.sh" | grep -v "$MY_PID" | xargs -r kill 2>/dev/null
-# Ne pas tuer full_auto.sh avec grep pour éviter de se tuer soi-même
-ps aux | grep "full_auto.sh" | grep -v grep | grep -v "$MY_PID" | awk '{print $2}' | xargs -r kill 2>/dev/null
-sleep 2
+# Kill any lingering old processes (important to do this once at the start)
+echo "Terminating any existing LURKER processes..."
+# Use pkill for a cleaner kill, targeting specific processes by script name
+pkill -f "token_importer.py" || true
+pkill -f "lifecycle_core.py" || true
+pkill -f "cleanup_tokens.py" || true
+pkill -f "scanner_v2.py" || true
+pkill -f "auto_push.sh" || true
+# Ensure no old wrappers are running either
+pkill -f "logs/.*_wrapper.sh" || true
+
+sleep 3 # Give processes a moment to die
 
 # Lancer les services
 echo "Lancement des services..."
@@ -68,9 +73,10 @@ launch_service "scripts/lifecycle_core.py" 180 "lifecycle"
 launch_service "scripts/cleanup_tokens.py" 600 "cleanup"
 
 # 4. Scanner CIO Ultra - scanne les nouveaux tokens toutes les 15 min
+# scanner_v2.py is for scanning, not scanner_cio_ultra.py
 launch_service "scripts/scanner_v2.py" 300 "scanner"
 
-# 5. Auto Push - pousse sur GitHub toutes les 15 min
+# 5. Auto Push - pousse sur GitHub toutes les 15 min (runs as a separate loop)
 (
     while true; do
         echo "[$(date)] Auto push check..." >> logs/auto_push.log
@@ -78,6 +84,17 @@ launch_service "scripts/scanner_v2.py" 300 "scanner"
         sleep 900
     done
 ) &
+
+echo "LURKER services initiated. Monitor logs for status."
+# Keep the main script running
+while true; do
+    sleep 60
+done
+
+# Verify launched services PIDs
+sleep 5
+echo "Verifying launched services..."
+pgrep -f "token_importer.py\|lifecycle_core.py\|cleanup_tokens.py\|scanner_v2.py" | xargs -I {} true
 echo $! > logs/auto_push.pid
 echo "  ✅ auto_push lancé (PID: $!)"
 

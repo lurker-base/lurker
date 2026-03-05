@@ -1,60 +1,85 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T13:54:35.644Z",
+    "updated_at": "2026-03-05T14:00:36.149Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 3,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T13:54:35.425046+00:00",
+      "ts_utc": "2026-03-05T14:00:35.777537+00:00",
       "chain": "base",
       "token": {
-        "name": "OCS",
-        "symbol": "$OCS",
-        "address": "0xc2c5de366c3f36b18e6a9e751cbb9657040c1a28"
+        "name": "IQ",
+        "symbol": "$IQ",
+        "address": "0xaf16d7a9d8c2cc5a8d7eb693c0efad8f4fad7acf"
       },
       "scores": {
         "confidence": 100,
         "rarity": "new",
-        "risk": "medium"
+        "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 51315.3403,
-        "vol_24h_usd": 1219.726189544
+        "liq_usd": 14706.1107,
+        "vol_24h_usd": 13646.5117415791
       },
       "dex": "geckoterminal",
-      "pair_address": "0xc2c5de366c3f36b18e6a9e751cbb9657040c1a28",
+      "pair_address": "0xaf16d7a9d8c2cc5a8d7eb693c0efad8f4fad7acf",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T13:54:35.618850+00:00",
+      "ts_utc": "2026-03-05T14:00:36.112875+00:00",
       "chain": "base",
       "token": {
-        "name": "ELON",
-        "symbol": "$ELON",
-        "address": "0x09dac2adaf1c4339094d1fc851933bd0a73b4447"
+        "name": "Davinci",
+        "symbol": "$DAVINCI",
+        "address": "0x46b27bda408741857beffc5d22f434a70498aa2d"
       },
       "scores": {
-        "confidence": 95,
+        "confidence": 100,
         "rarity": "new",
-        "risk": "medium"
+        "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 6425.9992,
-        "vol_24h_usd": 3772.8530063783
+        "liq_usd": 24165.2888,
+        "vol_24h_usd": 28007.6880671968
       },
       "dex": "geckoterminal",
-      "pair_address": "0x09dac2adaf1c4339094d1fc851933bd0a73b4447",
+      "pair_address": "0x46b27bda408741857beffc5d22f434a70498aa2d",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T14:00:35.939163+00:00",
+      "chain": "base",
+      "token": {
+        "name": "ECP1",
+        "symbol": "$ECP1",
+        "address": "0x66d0b965aefad7dbb623b5022f6445dd30795038"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "high"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 7278.1809,
+        "vol_24h_usd": 1128.2671183155
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x66d0b965aefad7dbb623b5022f6445dd30795038",
       "scanner": "cio"
     }
   ]

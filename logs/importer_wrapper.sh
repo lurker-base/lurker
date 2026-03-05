@@ -2,6 +2,8 @@
 while true; do
     echo "[$(date)] Starting importer" >> "logs/importer.log"
     python3 "scripts/token_importer.py" >> "logs/importer.log" 2>&1
-    echo "[$(date)] importer exited, restarting in 120s" >> "logs/importer.log"
+    # If python3 exited, log and sleep before next attempt
+    status=0
+    echo "[$(date)] importer exited with status , restarting in 120s" >> "logs/importer.log"
     sleep "120"
 done
