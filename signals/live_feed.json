@@ -1,46 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T04:00:11.041Z",
+    "updated_at": "2026-03-05T04:15:14.365Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 3,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T04:00:10.978464+00:00",
+      "ts_utc": "2026-03-05T04:15:14.010266+00:00",
       "chain": "base",
       "token": {
-        "name": "KellyClaud",
-        "symbol": "$KELLYCLAUD",
-        "address": "0xbb25a20a3b1ea81c7b36d89b08006d9d3e42cb07"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 11893.9978,
-        "vol_24h_usd": 2862.2644436986
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xbb25a20a3b1ea81c7b36d89b08006d9d3e42cb07",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T04:00:11.006802+00:00",
-      "chain": "base",
-      "token": {
-        "name": "ZEROCLAW",
-        "symbol": "$ZEROCLAW",
-        "address": "0x32a5d79f2512a14143bed817a31c3c7729c0314b"
+        "name": "Diamond",
+        "symbol": "$DIAMOND",
+        "address": "0x630a755f75705648c3c24c41da180b64a6561364"
       },
       "scores": {
         "confidence": 100,
@@ -50,11 +25,61 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 53715.6084,
-        "vol_24h_usd": 2471.639835
+        "liq_usd": 13944.6665,
+        "vol_24h_usd": 1152.5149147716
       },
       "dex": "geckoterminal",
-      "pair_address": "0x32a5d79f2512a14143bed817a31c3c7729c0314b",
+      "pair_address": "0x630a755f75705648c3c24c41da180b64a6561364",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T04:15:14.298909+00:00",
+      "chain": "base",
+      "token": {
+        "name": "Holdcoin",
+        "symbol": "$HOLDCOIN",
+        "address": "0x7a5b413d73db0b90bb92c231a37ec0e7c0990cca"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 22713.8235,
+        "vol_24h_usd": 7178.845504762
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x7a5b413d73db0b90bb92c231a37ec0e7c0990cca",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T04:15:14.332518+00:00",
+      "chain": "base",
+      "token": {
+        "name": "Pikachu",
+        "symbol": "$PIKACHU",
+        "address": "0xbe4b83eaef384a43af1b5a88ce8ea502799c8d4a"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 87801.1266,
+        "vol_24h_usd": 1426.06775
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xbe4b83eaef384a43af1b5a88ce8ea502799c8d4a",
       "scanner": "cio"
     }
   ]
