@@ -1,36 +1,10 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T10:01:13.350Z",
+    "updated_at": "2026-03-05T10:16:16.258Z",
     "source": "cio",
     "chain": "base",
-    "count": 1,
+    "count": 0,
     "errors": []
   },
-  "signals": [
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T10:01:13.311337+00:00",
-      "chain": "base",
-      "token": {
-        "name": "SEAHORSE",
-        "symbol": "$SEAHORSE",
-        "address": "0x7fe81b7b8330e19f58c4b72c9ec34c4512b11a19"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 15791.6539,
-        "vol_24h_usd": 20681.9759832231
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x7fe81b7b8330e19f58c4b72c9ec34c4512b11a19",
-      "scanner": "cio"
-    }
-  ]
+  "signals": []
 }
