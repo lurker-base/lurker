@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-05T17:34:45.354000+00:00",
-    "generated_at": "2026-03-05T17:34:45.354000+00:00",
+    "updated_at": "2026-03-05T17:39:45.444000+00:00",
+    "generated_at": "2026-03-05T17:39:45.444000+00:00",
     "status": "ok",
-    "count": 1,
+    "count": 2,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,11 +12,11 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
+      "medium": 1,
       "low": 1
     },
     "rejected": {
-      "too_old": 1,
-      "low_tx": 1
+      "too_old": 1
     },
     "source": "ultra_launch_scanner"
   },
@@ -33,21 +33,63 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 66442.55,
-        "vol_5m_usd": 10997.34,
-        "vol_1h_usd": 251503.1,
-        "txns_5m": 59,
-        "price_usd": 9.124e-07
+        "liq_usd": 65898.57,
+        "vol_5m_usd": 21123.56,
+        "vol_1h_usd": 254636.48,
+        "txns_5m": 80,
+        "price_usd": 8.92e-07
       },
       "timestamps": {
         "pair_created_at": "2026-03-05T16:28:47+00:00",
         "token_first_seen": "2026-03-05T16:44:33.788000+00:00",
-        "age_minutes": 66.0,
-        "age_hours": 1.1
+        "age_minutes": 71.0,
+        "age_hours": 1.18
       },
       "scores": {
         "cio_score": 100,
         "freshness": 0.98
+      },
+      "risks": [
+        "dumping"
+      ],
+      "risk_level": "medium",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": false,
+        "quality_score": 75
+      }
+    },
+    {
+      "token": {
+        "address": "0x309792e8950405f803c0e3f2c9083bdff4466ba3",
+        "symbol": "YARR",
+        "name": "Yarr Token"
+      },
+      "pair": {
+        "address": "0xeebc6f6fc4a6e5304abb9fdf340c08b7cc1efb941febc9c9e6224b648d317ca6",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 79684.48,
+        "vol_5m_usd": 681.91,
+        "vol_1h_usd": 9938.62,
+        "txns_5m": 4,
+        "price_usd": 9.832e-07
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-03T15:10:33+00:00",
+        "token_first_seen": "2026-03-05T17:00:28.412000+00:00",
+        "age_minutes": 3029.2,
+        "age_hours": 50.49
+      },
+      "scores": {
+        "cio_score": 90,
+        "freshness": 0.16
       },
       "risks": [],
       "risk_level": "low",
@@ -57,8 +99,8 @@
         "has_profile": true,
         "has_image": true,
         "has_socials": true,
-        "has_website": false,
-        "quality_score": 75
+        "has_website": true,
+        "quality_score": 100
       }
     }
   ]

@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T17:31:18.113Z",
+    "updated_at": "2026-03-05T17:36:18.917Z",
     "source": "cio",
     "chain": "base",
-    "count": 3,
+    "count": 6,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T17:31:17.784331+00:00",
+      "ts_utc": "2026-03-05T17:36:18.490950+00:00",
       "chain": "base",
       "token": {
-        "name": "OILWAR",
-        "symbol": "$OILWAR",
-        "address": "0x667472118179b5dac0ffb190d315db89a406c879"
+        "name": "chamath",
+        "symbol": "$CHAMATH",
+        "address": "0x6eb22ac96e584528eb01651530e0893e08556185"
       },
       "scores": {
         "confidence": 100,
@@ -25,47 +25,22 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 27934.9083,
-        "vol_24h_usd": 25379.0929192243
+        "liq_usd": 16443.6921,
+        "vol_24h_usd": 7267.1533075621
       },
       "dex": "geckoterminal",
-      "pair_address": "0x667472118179b5dac0ffb190d315db89a406c879",
+      "pair_address": "0x6eb22ac96e584528eb01651530e0893e08556185",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T17:31:17.942860+00:00",
+      "ts_utc": "2026-03-05T17:36:18.715235+00:00",
       "chain": "base",
       "token": {
-        "name": "AYA",
-        "symbol": "$AYA",
-        "address": "0xde0ce0d7975a922760490221228c90f2be26468d"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 139581.8683,
-        "vol_24h_usd": 2827.265607203
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xde0ce0d7975a922760490221228c90f2be26468d",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T17:31:18.076843+00:00",
-      "chain": "base",
-      "token": {
-        "name": "ROLL",
-        "symbol": "$ROLL",
-        "address": "0x0cd9033b8eefa6f5f9aae48b63670e17553725d3"
+        "name": "CLAWHIRE",
+        "symbol": "$CLAWHIRE",
+        "address": "0x02ad8291ef214df6acd48940f5eba32f11932d42"
       },
       "scores": {
         "confidence": 100,
@@ -75,11 +50,111 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 11925.1507,
-        "vol_24h_usd": 1124.6860362676
+        "liq_usd": 51635.3484,
+        "vol_24h_usd": 2080.067009246
       },
       "dex": "geckoterminal",
-      "pair_address": "0x0cd9033b8eefa6f5f9aae48b63670e17553725d3",
+      "pair_address": "0x02ad8291ef214df6acd48940f5eba32f11932d42",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T17:36:18.768567+00:00",
+      "chain": "base",
+      "token": {
+        "name": "CLAWNCH",
+        "symbol": "$CLAWNCH",
+        "address": "0x40315919740e81e7fc906efa2da2c2e9280d47be"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 12597.7335,
+        "vol_24h_usd": 6299.7117739975
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x40315919740e81e7fc906efa2da2c2e9280d47be",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T17:36:18.823483+00:00",
+      "chain": "base",
+      "token": {
+        "name": "U.S. Oil",
+        "symbol": "$U.S. OIL",
+        "address": "0xa1e1736d2579a431d46d0df5243a8007ed735b56"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 118242.066,
+        "vol_24h_usd": 1397.922607
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xa1e1736d2579a431d46d0df5243a8007ed735b56",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T17:36:18.876301+00:00",
+      "chain": "base",
+      "token": {
+        "name": "ROOM",
+        "symbol": "$ROOM",
+        "address": "0x0f8cfa3bb0ceec41f42908e3e4dfab0bd8ff2ba3"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 28054.9703,
+        "vol_24h_usd": 13271.6803627245
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x0f8cfa3bb0ceec41f42908e3e4dfab0bd8ff2ba3",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T17:36:18.534302+00:00",
+      "chain": "base",
+      "token": {
+        "name": "AUR",
+        "symbol": "$AUR",
+        "address": "0xaa7afd0aa653b5e094015e9c4effa4e2012b6b07"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 21532.5112,
+        "vol_24h_usd": 3955.0836847536
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xaa7afd0aa653b5e094015e9c4effa4e2012b6b07",
       "scanner": "cio"
     }
   ]
