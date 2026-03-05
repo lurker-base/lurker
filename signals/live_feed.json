@@ -1,46 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T16:51:11.654Z",
+    "updated_at": "2026-03-05T17:01:13.265Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 1,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T16:51:11.488317+00:00",
+      "ts_utc": "2026-03-05T17:01:13.237204+00:00",
       "chain": "base",
       "token": {
-        "name": "BLOOM",
-        "symbol": "$BLOOM",
-        "address": "0xe4135d5159d6f978f526a2d8fac1f55072c47ba3"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 35557.855,
-        "vol_24h_usd": 12603.392429721
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xe4135d5159d6f978f526a2d8fac1f55072c47ba3",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T16:51:11.630572+00:00",
-      "chain": "base",
-      "token": {
-        "name": "kp",
-        "symbol": "$KP",
-        "address": "0xa88543e1e9d47706856960ac39ea58114898bba3"
+        "name": "OpenTown",
+        "symbol": "$OPENTOWN",
+        "address": "0x82b75cab5f284273df61f6f410b33e6f8574b52a"
       },
       "scores": {
         "confidence": 95,
@@ -50,11 +25,11 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 20896.5849,
-        "vol_24h_usd": 3855.1937955743
+        "liq_usd": 22128.101,
+        "vol_24h_usd": 2478.5799275512
       },
       "dex": "geckoterminal",
-      "pair_address": "0xa88543e1e9d47706856960ac39ea58114898bba3",
+      "pair_address": "0x82b75cab5f284273df61f6f410b33e6f8574b52a",
       "scanner": "cio"
     }
   ]
