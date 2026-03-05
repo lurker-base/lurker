@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T09:46:10.611Z",
+    "updated_at": "2026-03-05T10:01:13.350Z",
     "source": "cio",
     "chain": "base",
     "count": 1,
@@ -10,26 +10,26 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T09:46:10.577943+00:00",
+      "ts_utc": "2026-03-05T10:01:13.311337+00:00",
       "chain": "base",
       "token": {
-        "name": "CLU",
-        "symbol": "$CLU",
-        "address": "0x1c37e764be6ece77fbfb5b7666d237c2fe17f8df"
+        "name": "SEAHORSE",
+        "symbol": "$SEAHORSE",
+        "address": "0x7fe81b7b8330e19f58c4b72c9ec34c4512b11a19"
       },
       "scores": {
-        "confidence": 95,
+        "confidence": 100,
         "rarity": "new",
-        "risk": "medium"
+        "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 7254.5649,
-        "vol_24h_usd": 2034.0638257742
+        "liq_usd": 15791.6539,
+        "vol_24h_usd": 20681.9759832231
       },
       "dex": "geckoterminal",
-      "pair_address": "0x1c37e764be6ece77fbfb5b7666d237c2fe17f8df",
+      "pair_address": "0x7fe81b7b8330e19f58c4b72c9ec34c4512b11a19",
       "scanner": "cio"
     }
   ]
