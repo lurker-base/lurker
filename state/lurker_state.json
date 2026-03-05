@@ -5,19 +5,26 @@
     "total_tokens": 5,
     "stats": {
       "by_category": {
-        "NEW": 0,
-        "WATCHING": 0,
-        "TRENDING": 2,
-        "ACTIVE": 3,
-        "VERIFIED": 0,
+        "CIO": 0,
+        "WATCH": 0,
+        "HOTLIST": 0,
+        "FAST": 0,
+        "CERTIFIED": 0,
         "RUGGED": 0,
-        "ARCHIVED": 0
+        "ARCHIVED": 0,
+        "ACTIVE": 3,
+        "TRENDING": 2
       },
       "pumps_24h": 0,
       "dumps_24h": 0,
       "rugged": 0,
-      "archived": 0,
-      "active_total": 5
+      "cleanup": {
+        "last_run": "2026-03-05T08:04:09.170657+00:00",
+        "tokens_before": 5,
+        "tokens_after": 5,
+        "moved_to_rugged": 0,
+        "removed_stale": 0
+      }
     },
     "last_scan": "2026-03-05T06:18:36.609767+00:00",
     "last_lifecycle": "2026-03-05T08:04:04.106143+00:00"
