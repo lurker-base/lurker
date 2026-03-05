@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T22:17:10.397Z",
+    "updated_at": "2026-03-05T22:22:11.285Z",
     "source": "cio",
     "chain": "base",
-    "count": 4,
+    "count": 2,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T22:17:10.181574+00:00",
+      "ts_utc": "2026-03-05T22:22:10.854179+00:00",
       "chain": "base",
       "token": {
-        "name": "CLAWNCH",
-        "symbol": "$CLAWNCH",
-        "address": "0xc531a323eb061c1c3931dc4b0b1a7725276547be"
+        "name": "Milly",
+        "symbol": "$MILLY",
+        "address": "0x6c0d23f49f2e0f932c004bf4ed5c4c956e6017ca"
       },
       "scores": {
         "confidence": 100,
@@ -25,86 +25,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 10901.6549,
-        "vol_24h_usd": 2340.5885810578
+        "liq_usd": 21854.2151,
+        "vol_24h_usd": 4814.2236029904
       },
       "dex": "geckoterminal",
-      "pair_address": "0xc531a323eb061c1c3931dc4b0b1a7725276547be",
+      "pair_address": "0x6c0d23f49f2e0f932c004bf4ed5c4c956e6017ca",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T22:17:10.370765+00:00",
+      "ts_utc": "2026-03-05T22:22:11.258592+00:00",
       "chain": "base",
       "token": {
-        "name": "LUFFY",
-        "symbol": "$LUFFY",
-        "address": "0xf01b1bcec638b4d147016e8f8f611ee4968b4c31"
+        "name": "TikTok",
+        "symbol": "$TIKTOK",
+        "address": "0xa8eecad8961e362ada17d4af7b4627bd1518fc25"
       },
       "scores": {
         "confidence": 100,
         "rarity": "new",
-        "risk": "medium"
+        "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 86922.0017,
-        "vol_24h_usd": 1876.26553
+        "liq_usd": 119684.6052,
+        "vol_24h_usd": 1574.897514
       },
       "dex": "geckoterminal",
-      "pair_address": "0xf01b1bcec638b4d147016e8f8f611ee4968b4c31",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T22:17:09.730719+00:00",
-      "chain": "base",
-      "token": {
-        "name": "OPUS",
-        "symbol": "$OPUS",
-        "address": "0xa3052b4e8476af9da0e9a64bc26f0dd3e456cba3"
-      },
-      "scores": {
-        "confidence": 95,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 21449.0399,
-        "vol_24h_usd": 2144.2023182278
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xa3052b4e8476af9da0e9a64bc26f0dd3e456cba3",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T22:17:09.785895+00:00",
-      "chain": "base",
-      "token": {
-        "name": "狗狗老虎🐶",
-        "symbol": "$狗狗老虎🐶",
-        "address": "0x004ed8ab72103d5267ce26451da2b00536277141"
-      },
-      "scores": {
-        "confidence": 95,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 6793.7458,
-        "vol_24h_usd": 2116.3367797217
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x004ed8ab72103d5267ce26451da2b00536277141",
+      "pair_address": "0xa8eecad8961e362ada17d4af7b4627bd1518fc25",
       "scanner": "cio"
     }
   ]

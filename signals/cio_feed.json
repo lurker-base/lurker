@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-05T22:19:56.825000+00:00",
-    "generated_at": "2026-03-05T22:19:56.825000+00:00",
+    "updated_at": "2026-03-05T22:24:58.770000+00:00",
+    "generated_at": "2026-03-05T22:24:58.770000+00:00",
     "status": "ok",
-    "count": 2,
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,12 +12,11 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
-      "medium": 1,
-      "low": 1
+      "medium": 1
     },
     "rejected": {
       "too_old": 1,
-      "low_tx": 1
+      "low_tx": 2
     },
     "source": "ultra_launch_scanner"
   },
@@ -34,66 +33,26 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 102319.07,
-        "vol_5m_usd": 1069.13,
-        "vol_1h_usd": 101964.79,
+        "liq_usd": 107237.18,
+        "vol_5m_usd": 2372.89,
+        "vol_1h_usd": 57451.84,
         "txns_5m": 12,
-        "price_usd": 1.704e-06
+        "price_usd": 1.842e-06
       },
       "timestamps": {
         "pair_created_at": "2026-03-05T19:05:19+00:00",
         "token_first_seen": "2026-03-05T21:28:56.038000+00:00",
-        "age_minutes": 194.6,
-        "age_hours": 3.24
+        "age_minutes": 199.7,
+        "age_hours": 3.33
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.95
+        "freshness": 0.94
       },
       "risks": [
         "dumping"
       ],
       "risk_level": "medium",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    },
-    {
-      "token": {
-        "address": "0xd724810bdff66416cb61f6ecb1c50f5d423a6ba3",
-        "symbol": "TEDDY",
-        "name": "Teddy Declassified"
-      },
-      "pair": {
-        "address": "0xec645eee2c69d085c45f58a2fead471b97e5a854c3238180c6bbb43bc4f3a7db",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 64608.71,
-        "vol_5m_usd": 31.48,
-        "vol_1h_usd": 1224.56,
-        "txns_5m": 2,
-        "price_usd": 7.722e-07
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-04T04:03:53+00:00",
-        "token_first_seen": "2026-03-05T20:27:03.069000+00:00",
-        "age_minutes": 2536.1,
-        "age_hours": 42.27
-      },
-      "scores": {
-        "cio_score": 90,
-        "freshness": 0.3
-      },
-      "risks": [],
-      "risk_level": "low",
       "source": "profiles",
       "status": "observing",
       "quality": {
