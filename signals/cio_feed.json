@@ -1,21 +1,64 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-05T16:40:23.762000+00:00",
-    "generated_at": "2026-03-05T16:40:23.762000+00:00",
-    "status": "calm",
-    "count": 0,
+    "updated_at": "2026-03-05T16:49:33.524000+00:00",
+    "generated_at": "2026-03-05T16:49:33.524000+00:00",
+    "status": "ok",
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
       "min_tx_5m": 1,
       "max_age_min": 43200
     },
-    "risk_distribution": {},
+    "risk_distribution": {
+      "low": 1
+    },
     "rejected": {
       "too_old": 1
     },
     "source": "ultra_launch_scanner"
   },
-  "candidates": []
+  "candidates": [
+    {
+      "token": {
+        "address": "0xc240c6e638c6537c090ed8ef10bba0f5b5da402a",
+        "symbol": "ClawTools",
+        "name": "ClawTools"
+      },
+      "pair": {
+        "address": "0x39db96479a2100177be002f42dc462f8efe86c5263fbc9a74be3a9877bef8dfb",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 93547.7,
+        "vol_5m_usd": 8630.74,
+        "vol_1h_usd": 84991.93,
+        "txns_5m": 74,
+        "price_usd": 1.628e-06
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-05T16:28:47+00:00",
+        "token_first_seen": "2026-03-05T16:44:33.788000+00:00",
+        "age_minutes": 20.8,
+        "age_hours": 0.35
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.99
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": false,
+        "quality_score": 75
+      }
+    }
+  ]
 }
