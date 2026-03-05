@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T12:01:39.022Z",
+    "updated_at": "2026-03-05T12:16:41.890Z",
     "source": "cio",
     "chain": "base",
     "count": 3,
@@ -10,12 +10,12 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T12:01:38.641155+00:00",
+      "ts_utc": "2026-03-05T12:16:41.100709+00:00",
       "chain": "base",
       "token": {
-        "name": "死对头",
-        "symbol": "$死对头",
-        "address": "0xb07ae5b852fe0698734dd296afa1a46976f11ce5"
+        "name": "Crow",
+        "symbol": "$CROW",
+        "address": "0x5d010c7235164ccf6bf073fbb4f8a5777b9c2acc"
       },
       "scores": {
         "confidence": 100,
@@ -25,22 +25,22 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 22707.9076,
-        "vol_24h_usd": 11835.0851105833
+        "liq_usd": 14314.9866,
+        "vol_24h_usd": 13006.4567591342
       },
       "dex": "geckoterminal",
-      "pair_address": "0xb07ae5b852fe0698734dd296afa1a46976f11ce5",
+      "pair_address": "0x5d010c7235164ccf6bf073fbb4f8a5777b9c2acc",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T12:01:38.814098+00:00",
+      "ts_utc": "2026-03-05T12:16:41.440342+00:00",
       "chain": "base",
       "token": {
-        "name": "MOLT",
-        "symbol": "$MOLT",
-        "address": "0xbb96e373eb052f853b68b72d94d171ae5134ab07"
+        "name": "Raven",
+        "symbol": "$RAVEN",
+        "address": "0xf1de9fc3161d96bc109b7bc9272ae84f64967fd7"
       },
       "scores": {
         "confidence": 100,
@@ -50,36 +50,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 12811.8969,
-        "vol_24h_usd": 5213.7341731599
+        "liq_usd": 29572.7846,
+        "vol_24h_usd": 22826.4899832784
       },
       "dex": "geckoterminal",
-      "pair_address": "0xbb96e373eb052f853b68b72d94d171ae5134ab07",
+      "pair_address": "0xf1de9fc3161d96bc109b7bc9272ae84f64967fd7",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T12:01:38.981825+00:00",
+      "ts_utc": "2026-03-05T12:16:41.857096+00:00",
       "chain": "base",
       "token": {
-        "name": "SPACE",
-        "symbol": "$SPACE",
-        "address": "0xfc544f17a1f712417ac066da7641c721da0f5b73"
+        "name": "Aleister",
+        "symbol": "$ALEISTER",
+        "address": "0x7a744b77464579987a4269c56f16d3a993d8355d"
       },
       "scores": {
         "confidence": 100,
         "rarity": "new",
-        "risk": "low"
+        "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 143358.6334,
-        "vol_24h_usd": 2726.045535779
+        "liq_usd": 53082.1178,
+        "vol_24h_usd": 2004.844155462
       },
       "dex": "geckoterminal",
-      "pair_address": "0xfc544f17a1f712417ac066da7641c721da0f5b73",
+      "pair_address": "0x7a744b77464579987a4269c56f16d3a993d8355d",
       "scanner": "cio"
     }
   ]
