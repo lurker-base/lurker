@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T05:45:26.993Z",
+    "updated_at": "2026-03-05T06:00:29.205Z",
     "source": "cio",
     "chain": "base",
     "count": 3,
@@ -10,37 +10,12 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T05:45:26.798377+00:00",
+      "ts_utc": "2026-03-05T06:00:29.159357+00:00",
       "chain": "base",
       "token": {
-        "name": "OIL",
-        "symbol": "$OIL",
-        "address": "0x2d0c2448b3fa59c285d643ba8ec290f32da9b1f1"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 26009.9205,
-        "vol_24h_usd": 20829.6346255979
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x2d0c2448b3fa59c285d643ba8ec290f32da9b1f1",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T05:45:26.959745+00:00",
-      "chain": "base",
-      "token": {
-        "name": "Trinket",
-        "symbol": "$TRINKET",
-        "address": "0x42c604b0fc76c17c72fed309edb4bb284a711034"
+        "name": "DIPClaw",
+        "symbol": "$DIPCLAW",
+        "address": "0xcbc15b4744cbe04985d59492267c678e5d57332e"
       },
       "scores": {
         "confidence": 100,
@@ -50,36 +25,61 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 52607.4853,
-        "vol_24h_usd": 1978.593542
+        "liq_usd": 154754.7882,
+        "vol_24h_usd": 1138.3883899
       },
       "dex": "geckoterminal",
-      "pair_address": "0x42c604b0fc76c17c72fed309edb4bb284a711034",
+      "pair_address": "0xcbc15b4744cbe04985d59492267c678e5d57332e",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T05:45:26.614041+00:00",
+      "ts_utc": "2026-03-05T06:00:29.096629+00:00",
       "chain": "base",
       "token": {
-        "name": "CLAWNCH",
-        "symbol": "$CLAWNCH",
-        "address": "0x66b49bd660db97ab9c70793a665e2c99054f47be"
+        "name": "ItsHover",
+        "symbol": "$ITSHOVER",
+        "address": "0x43325fa6b128d2d4c20bd609a6fd7a5cf22e99f4"
       },
       "scores": {
-        "confidence": 90,
+        "confidence": 95,
         "rarity": "new",
         "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 11023.935,
-        "vol_24h_usd": 1438.1728142907
+        "liq_usd": 23396.6326,
+        "vol_24h_usd": 9772.9892480903
       },
       "dex": "geckoterminal",
-      "pair_address": "0x66b49bd660db97ab9c70793a665e2c99054f47be",
+      "pair_address": "0x43325fa6b128d2d4c20bd609a6fd7a5cf22e99f4",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T06:00:29.131599+00:00",
+      "chain": "base",
+      "token": {
+        "name": "E=MC²",
+        "symbol": "$E=MC²",
+        "address": "0x3b968a6a0c707106f770da6bd2899d1d135d2dae"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 15617.9497,
+        "vol_24h_usd": 21954.6842299239
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x3b968a6a0c707106f770da6bd2899d1d135d2dae",
       "scanner": "cio"
     }
   ]
