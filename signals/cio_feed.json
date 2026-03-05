@@ -1,104 +1,94 @@
 {
-  "schema": "lurker_cio_ultra_launch",
-  "meta": {
-    "updated_at": "2026-03-05T14:24:53.461000+00:00",
-    "generated_at": "2026-03-05T14:24:53.461000+00:00",
-    "status": "ok",
-    "count": 2,
-    "thresholds": {
-      "min_liq_usd": 1000,
-      "min_vol_5m": 500,
-      "min_tx_5m": 1,
-      "max_age_min": 43200
-    },
-    "risk_distribution": {
-      "low": 2
-    },
-    "rejected": {
-      "too_old": 1
-    },
-    "source": "ultra_launch_scanner"
-  },
+  "timestamp": "2026-03-05T14:25:40.268364+00:00",
+  "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xea72fab512856eafe090475e7242e975ed72f087",
-        "symbol": "AG0",
-        "name": "Ag0 Ai"
-      },
-      "pair": {
-        "address": "0xcf0ef17abcba064f880ac9c4de5289c5b403a2b4bb95b5a64d4e9eae67c4cc0a",
-        "dex": "uniswap",
-        "quote": "WETH"
+        "address": "0x7c1c5f6e72590711234a828bab375e4cc9fe3ba3",
+        "symbol": "SCOUT",
+        "name": "SCOUT"
       },
       "metrics": {
-        "liq_usd": 117577.78,
-        "vol_5m_usd": 38299.67,
-        "vol_1h_usd": 526773.41,
-        "txns_5m": 119,
-        "price_usd": 1.977e-06
+        "liq_usd": 38091.6095,
+        "vol_24h_usd": 22998.3554855202,
+        "txns_24h": 41,
+        "price_usd": 0
       },
-      "timestamps": {
-        "pair_created_at": "2026-03-05T12:33:53+00:00",
-        "token_first_seen": "2026-03-05T13:42:17.301000+00:00",
-        "age_minutes": 111.0,
-        "age_hours": 1.85
+      "risk": {
+        "level": "low",
+        "factors": [
+          "new_token"
+        ]
       },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.97
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": false,
-        "quality_score": 75
-      }
+      "score": 100,
+      "age_hours": 0.03628387027777778,
+      "detected_at": "2026-03-05T14:25:39.803280+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 SUPER FRESH",
+        "\ud83d\udca7 LIQ",
+        "\ud83d\udcc8 ACTIVE",
+        "\ud83d\ude80 PUMP",
+        "\ud83d\udc8e PREMIUM"
+      ]
     },
     {
       "token": {
-        "address": "0x04c4c098a5b492750a2bd0578c685f179c78a1ca",
-        "symbol": "FLOKI",
-        "name": "FLOKI ON BASE"
-      },
-      "pair": {
-        "address": "0xfca261560133699ecd4c99941c767e096700216d",
-        "dex": "uniswap",
-        "quote": "WETH"
+        "address": "0x91557c6b0ceeff056c1352123190e7555002ac56",
+        "symbol": "Sanrio",
+        "name": "Sanrio"
       },
       "metrics": {
-        "liq_usd": 47467.75,
-        "vol_5m_usd": 2488.18,
-        "vol_1h_usd": 62425.75,
-        "txns_5m": 51,
-        "price_usd": 1.217e-06
+        "liq_usd": 26369.8473,
+        "vol_24h_usd": 17827.8465185469,
+        "txns_24h": 84,
+        "price_usd": 0
       },
-      "timestamps": {
-        "pair_created_at": "2026-03-04T12:35:55+00:00",
-        "token_first_seen": "2026-03-04T16:34:15.099000+00:00",
-        "age_minutes": 1549.0,
-        "age_hours": 25.82
+      "risk": {
+        "level": "low",
+        "factors": [
+          "new_token"
+        ]
       },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.57
+      "score": 100,
+      "age_hours": 0.047445371666666666,
+      "detected_at": "2026-03-05T14:25:40.122292+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 SUPER FRESH",
+        "\ud83d\udca7 LIQ",
+        "\u26a1 BUZZ",
+        "\ud83d\udcd7 PUMPING",
+        "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0xb31f98803a1eb1b7b546554b00482b907509eba3",
+        "symbol": "SCOUT",
+        "name": "SCOUT"
       },
-      "risks": [],
-      "risk_level": "low",
-      "source": "boosts",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
+      "metrics": {
+        "liq_usd": 23474.7964,
+        "vol_24h_usd": 4263.682028245,
+        "txns_24h": 12,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 95,
+      "age_hours": 0.07308955472222221,
+      "detected_at": "2026-03-05T14:25:40.267413+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 SUPER FRESH",
+        "\ud83d\udca7 LIQ",
+        "\u2b50 GEM"
+      ]
     }
   ]
 }
