@@ -1,19 +1,104 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-05T06:33:55.698000+00:00",
-    "generated_at": "2026-03-05T06:33:55.698000+00:00",
-    "status": "degraded",
-    "count": 0,
+    "updated_at": "2026-03-05T06:34:46.008000+00:00",
+    "generated_at": "2026-03-05T06:34:46.008000+00:00",
+    "status": "ok",
+    "count": 2,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
       "min_tx_5m": 1,
       "max_age_min": 43200
     },
-    "risk_distribution": {},
-    "rejected": {},
+    "risk_distribution": {
+      "low": 2
+    },
+    "rejected": {
+      "too_old": 1
+    },
     "source": "ultra_launch_scanner"
   },
-  "candidates": []
+  "candidates": [
+    {
+      "token": {
+        "address": "0x55b1bc6dab36f01b99bc172b2cbfd7bb1077e2cb",
+        "symbol": "ClawPass",
+        "name": "ClawPass"
+      },
+      "pair": {
+        "address": "0xda714545c4980087fc66adbb58a97521dfcd5fc3279ce46283f7e3654cd61c79",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 199125.8,
+        "vol_5m_usd": 77985.65,
+        "vol_1h_usd": 512066.91,
+        "txns_5m": 209,
+        "price_usd": 7.026e-06
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-05T05:55:37+00:00",
+        "token_first_seen": "2026-03-05T06:08:46.539000+00:00",
+        "age_minutes": 39.1,
+        "age_hours": 0.65
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.99
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": false,
+        "quality_score": 75
+      }
+    },
+    {
+      "token": {
+        "address": "0xccae4fe9719a6b492803613a0a7f2832944a4630",
+        "symbol": "BEAN",
+        "name": "Lil Bean"
+      },
+      "pair": {
+        "address": "0xe9a451cdcd2a79ae1c68d9a9cdb1c55545097d1b",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 83768.6,
+        "vol_5m_usd": 3298.93,
+        "vol_1h_usd": 24473.66,
+        "txns_5m": 31,
+        "price_usd": 0.0003277
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-27T15:44:05+00:00",
+        "token_first_seen": "2026-03-05T06:17:35.212000+00:00",
+        "age_minutes": 8090.7,
+        "age_hours": 134.84
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    }
+  ]
 }
