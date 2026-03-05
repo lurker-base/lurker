@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T14:25:40.306Z",
+    "updated_at": "2026-03-05T14:30:41.641Z",
     "source": "cio",
     "chain": "base",
-    "count": 3,
+    "count": 4,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T14:25:39.803280+00:00",
+      "ts_utc": "2026-03-05T14:30:41.088217+00:00",
       "chain": "base",
       "token": {
-        "name": "SCOUT",
-        "symbol": "$SCOUT",
-        "address": "0x7c1c5f6e72590711234a828bab375e4cc9fe3ba3"
+        "name": "PAPERCLIP",
+        "symbol": "$PAPERCLIP",
+        "address": "0x6a83dadd414754037bb910aac5cb54d8f046c928"
       },
       "scores": {
         "confidence": 100,
@@ -25,22 +25,22 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 38091.6095,
-        "vol_24h_usd": 22998.3554855202
+        "liq_usd": 23585.2853,
+        "vol_24h_usd": 15013.1732079922
       },
       "dex": "geckoterminal",
-      "pair_address": "0x7c1c5f6e72590711234a828bab375e4cc9fe3ba3",
+      "pair_address": "0x6a83dadd414754037bb910aac5cb54d8f046c928",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T14:25:40.122292+00:00",
+      "ts_utc": "2026-03-05T14:30:41.423615+00:00",
       "chain": "base",
       "token": {
-        "name": "Sanrio",
-        "symbol": "$SANRIO",
-        "address": "0x91557c6b0ceeff056c1352123190e7555002ac56"
+        "name": "RETARDED",
+        "symbol": "$RETARDED",
+        "address": "0x4aa1afcac3a04318161225d03996878bf43ad63f"
       },
       "scores": {
         "confidence": 100,
@@ -50,36 +50,61 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 26369.8473,
-        "vol_24h_usd": 17827.8465185469
+        "liq_usd": 14796.7715,
+        "vol_24h_usd": 13986.0377965478
       },
       "dex": "geckoterminal",
-      "pair_address": "0x91557c6b0ceeff056c1352123190e7555002ac56",
+      "pair_address": "0x4aa1afcac3a04318161225d03996878bf43ad63f",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T14:25:40.267413+00:00",
+      "ts_utc": "2026-03-05T14:30:40.927440+00:00",
       "chain": "base",
       "token": {
         "name": "SCOUT",
         "symbol": "$SCOUT",
-        "address": "0xb31f98803a1eb1b7b546554b00482b907509eba3"
+        "address": "0x678051462e48f1a550c38340219e8b680a0a3ba3"
       },
       "scores": {
-        "confidence": 95,
+        "confidence": 90,
         "rarity": "new",
-        "risk": "medium"
+        "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 23474.7964,
-        "vol_24h_usd": 4263.682028245
+        "liq_usd": 10873.9705,
+        "vol_24h_usd": 1320.0692007511
       },
       "dex": "geckoterminal",
-      "pair_address": "0xb31f98803a1eb1b7b546554b00482b907509eba3",
+      "pair_address": "0x678051462e48f1a550c38340219e8b680a0a3ba3",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T14:30:41.615452+00:00",
+      "chain": "base",
+      "token": {
+        "name": "SCOUT",
+        "symbol": "$SCOUT",
+        "address": "0x97344c2fb39a06ceeda49bcf0598a74c35054ba3"
+      },
+      "scores": {
+        "confidence": 80,
+        "rarity": "new",
+        "risk": "high"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 8253.5924,
+        "vol_24h_usd": 7294.350559533
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x97344c2fb39a06ceeda49bcf0598a74c35054ba3",
       "scanner": "cio"
     }
   ]
