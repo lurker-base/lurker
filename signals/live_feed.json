@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T19:16:40.073Z",
+    "updated_at": "2026-03-05T19:21:40.977Z",
     "source": "cio",
     "chain": "base",
     "count": 3,
@@ -10,12 +10,12 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T19:16:39.685635+00:00",
+      "ts_utc": "2026-03-05T19:21:40.782978+00:00",
       "chain": "base",
       "token": {
-        "name": "friens",
-        "symbol": "$FRIENS",
-        "address": "0x5842ad18a7c1f5d346818bd1e56ebe43e9a7cde4"
+        "name": "search",
+        "symbol": "$SEARCH",
+        "address": "0xc84c654f97530e30834566bca05d158358187ba3"
       },
       "scores": {
         "confidence": 100,
@@ -25,61 +25,61 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 23873.6724,
-        "vol_24h_usd": 33743.2215732342
+        "liq_usd": 11401.8183,
+        "vol_24h_usd": 2387.8580197187
       },
       "dex": "geckoterminal",
-      "pair_address": "0x5842ad18a7c1f5d346818bd1e56ebe43e9a7cde4",
+      "pair_address": "0xc84c654f97530e30834566bca05d158358187ba3",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T19:16:40.039223+00:00",
+      "ts_utc": "2026-03-05T19:21:40.941639+00:00",
       "chain": "base",
       "token": {
-        "name": "memes",
-        "symbol": "$MEMES",
-        "address": "0x078d758803a6baaa95cb6e74ba6c8382cfaf7b0c"
+        "name": "LILBULE",
+        "symbol": "$LILBULE",
+        "address": "0x49fbd66c3c60a3ba940929925e5f485bb3bd2862"
       },
       "scores": {
         "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 15833.9932,
-        "vol_24h_usd": 23453.8588778624
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x078d758803a6baaa95cb6e74ba6c8382cfaf7b0c",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T19:16:39.863493+00:00",
-      "chain": "base",
-      "token": {
-        "name": "gpt4o",
-        "symbol": "$GPT4O",
-        "address": "0x761adf83b564d11a11c0626fba1f6143f47daba3"
-      },
-      "scores": {
-        "confidence": 95,
         "rarity": "new",
         "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 20984.7876,
-        "vol_24h_usd": 3952.984
+        "liq_usd": 89781.2188,
+        "vol_24h_usd": 1156.5966087739
       },
       "dex": "geckoterminal",
-      "pair_address": "0x761adf83b564d11a11c0626fba1f6143f47daba3",
+      "pair_address": "0x49fbd66c3c60a3ba940929925e5f485bb3bd2862",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T19:21:40.557293+00:00",
+      "chain": "base",
+      "token": {
+        "name": "memes",
+        "symbol": "$MEMES",
+        "address": "0x7ed096a9fd1d50931cb891f27df956f3b20bf1c6"
+      },
+      "scores": {
+        "confidence": 90,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 14941.803,
+        "vol_24h_usd": 5684.8363708603
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x7ed096a9fd1d50931cb891f27df956f3b20bf1c6",
       "scanner": "cio"
     }
   ]
