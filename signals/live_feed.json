@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T10:31:19.602Z",
+    "updated_at": "2026-03-05T10:46:22.558Z",
     "source": "cio",
     "chain": "base",
     "count": 3,
@@ -10,12 +10,12 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T10:31:19.169043+00:00",
+      "ts_utc": "2026-03-05T10:46:22.381897+00:00",
       "chain": "base",
       "token": {
-        "name": "GITC",
-        "symbol": "$GITC",
-        "address": "0xacfb40667a6ed00c65f9e34d7f673dd0fe0ddba3"
+        "name": "MOLT",
+        "symbol": "$MOLT",
+        "address": "0xe02a2a91e9fb15e9660c430cb71e5844edd9ab07"
       },
       "scores": {
         "confidence": 100,
@@ -25,47 +25,22 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 11383.4393,
-        "vol_24h_usd": 2061.263508595
+        "liq_usd": 12698.8917,
+        "vol_24h_usd": 4091.9494381261
       },
       "dex": "geckoterminal",
-      "pair_address": "0xacfb40667a6ed00c65f9e34d7f673dd0fe0ddba3",
+      "pair_address": "0xe02a2a91e9fb15e9660c430cb71e5844edd9ab07",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T10:31:19.370903+00:00",
+      "ts_utc": "2026-03-05T10:46:22.521520+00:00",
       "chain": "base",
       "token": {
-        "name": "Clawops",
-        "symbol": "$CLAWOPS",
-        "address": "0xf3d9505172429b40527c3aaeeaf13a806574d01a"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 52565.2472,
-        "vol_24h_usd": 1611.514618582
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xf3d9505172429b40527c3aaeeaf13a806574d01a",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T10:31:19.562206+00:00",
-      "chain": "base",
-      "token": {
-        "name": "🀄️",
-        "symbol": "$🀄️",
-        "address": "0x4074dd578ba038ce807267f94f497251af1585f8"
+        "name": "MD",
+        "symbol": "$MD",
+        "address": "0xe4188b4bdb012b8b522be21f0aee2cc7309ac415"
       },
       "scores": {
         "confidence": 100,
@@ -75,11 +50,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 16270.6961,
-        "vol_24h_usd": 33485.3984316149
+        "liq_usd": 144337.1344,
+        "vol_24h_usd": 2680.543213
       },
       "dex": "geckoterminal",
-      "pair_address": "0x4074dd578ba038ce807267f94f497251af1585f8",
+      "pair_address": "0xe4188b4bdb012b8b522be21f0aee2cc7309ac415",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T10:46:22.210126+00:00",
+      "chain": "base",
+      "token": {
+        "name": "CHAD🐯",
+        "symbol": "$CHAD🐯",
+        "address": "0xee57e103671560a6e827aca51ea6a28ffa551ffb"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "high"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 6837.6993,
+        "vol_24h_usd": 1250.72415
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xee57e103671560a6e827aca51ea6a28ffa551ffb",
       "scanner": "cio"
     }
   ]
