@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T20:31:54.042Z",
+    "updated_at": "2026-03-05T20:36:54.421Z",
     "source": "cio",
     "chain": "base",
     "count": 1,
@@ -10,26 +10,26 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T20:31:54.015884+00:00",
+      "ts_utc": "2026-03-05T20:36:54.394935+00:00",
       "chain": "base",
       "token": {
-        "name": "ROOM",
-        "symbol": "$ROOM",
-        "address": "0xfb2ae88aaac774a650a21f153d6b91c793346ab1"
+        "name": "X",
+        "symbol": "$X",
+        "address": "0xfe153054b3748add9266955762af69e46ff5a8ec"
       },
       "scores": {
-        "confidence": 95,
+        "confidence": 100,
         "rarity": "new",
-        "risk": "medium"
+        "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 49618.4403,
-        "vol_24h_usd": 1094.094466885
+        "liq_usd": 25548.0771,
+        "vol_24h_usd": 13112.1316267977
       },
       "dex": "geckoterminal",
-      "pair_address": "0xfb2ae88aaac774a650a21f153d6b91c793346ab1",
+      "pair_address": "0xfe153054b3748add9266955762af69e46ff5a8ec",
       "scanner": "cio"
     }
   ]
