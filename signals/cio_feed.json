@@ -1,8 +1,8 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-05T21:19:44.034000+00:00",
-    "generated_at": "2026-03-05T21:19:44.034000+00:00",
+    "updated_at": "2026-03-05T21:25:36.225000+00:00",
+    "generated_at": "2026-03-05T21:25:36.225000+00:00",
     "status": "ok",
     "count": 2,
     "thresholds": {
@@ -22,31 +22,31 @@
   "candidates": [
     {
       "token": {
-        "address": "0xd724810bdff66416cb61f6ecb1c50f5d423a6ba3",
-        "symbol": "TEDDY",
-        "name": "Teddy Declassified"
+        "address": "0x5566f6c47da94193d3815c8cdaed5b1f9ddc3ba3",
+        "symbol": "CLAWSTORE",
+        "name": "clawstore"
       },
       "pair": {
-        "address": "0xec645eee2c69d085c45f58a2fead471b97e5a854c3238180c6bbb43bc4f3a7db",
+        "address": "0x7ee469d205faa769178ca6c523ed07aa70b8dd07652b82231f1e8a2a244eaa8b",
         "dex": "uniswap",
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 65551.25,
-        "vol_5m_usd": 2599.27,
-        "vol_1h_usd": 14696.6,
-        "txns_5m": 5,
-        "price_usd": 7.842e-07
+        "liq_usd": 38593.24,
+        "vol_5m_usd": 1710.99,
+        "vol_1h_usd": 6333.08,
+        "txns_5m": 7,
+        "price_usd": 3.84e-07
       },
       "timestamps": {
-        "pair_created_at": "2026-03-04T04:03:53+00:00",
-        "token_first_seen": "2026-03-05T20:27:03.069000+00:00",
-        "age_minutes": 2475.9,
-        "age_hours": 41.26
+        "pair_created_at": "2026-02-24T22:10:57+00:00",
+        "token_first_seen": "2026-03-05T20:56:19.370000+00:00",
+        "age_minutes": 12914.7,
+        "age_hours": 215.24
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.31
+        "freshness": 0
       },
       "risks": [],
       "risk_level": "low",
@@ -62,31 +62,31 @@
     },
     {
       "token": {
-        "address": "0x5566f6c47da94193d3815c8cdaed5b1f9ddc3ba3",
-        "symbol": "CLAWSTORE",
-        "name": "clawstore"
+        "address": "0xd724810bdff66416cb61f6ecb1c50f5d423a6ba3",
+        "symbol": "TEDDY",
+        "name": "Teddy Declassified"
       },
       "pair": {
-        "address": "0x7ee469d205faa769178ca6c523ed07aa70b8dd07652b82231f1e8a2a244eaa8b",
+        "address": "0xec645eee2c69d085c45f58a2fead471b97e5a854c3238180c6bbb43bc4f3a7db",
         "dex": "uniswap",
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 41293.42,
-        "vol_5m_usd": 570.85,
-        "vol_1h_usd": 4602.63,
-        "txns_5m": 7,
-        "price_usd": 4.187e-07
+        "liq_usd": 65143.26,
+        "vol_5m_usd": 101.99,
+        "vol_1h_usd": 11084.85,
+        "txns_5m": 1,
+        "price_usd": 7.794e-07
       },
       "timestamps": {
-        "pair_created_at": "2026-02-24T22:10:57+00:00",
-        "token_first_seen": "2026-03-05T20:56:19.370000+00:00",
-        "age_minutes": 12908.8,
-        "age_hours": 215.15
+        "pair_created_at": "2026-03-04T04:03:53+00:00",
+        "token_first_seen": "2026-03-05T20:27:03.069000+00:00",
+        "age_minutes": 2481.7,
+        "age_hours": 41.36
       },
       "scores": {
         "cio_score": 90,
-        "freshness": 0
+        "freshness": 0.31
       },
       "risks": [],
       "risk_level": "low",
