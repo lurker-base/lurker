@@ -1,35 +1,60 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T07:15:41.496Z",
+    "updated_at": "2026-03-05T07:30:44.071Z",
     "source": "cio",
     "chain": "base",
-    "count": 1,
+    "count": 2,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T07:15:41.451361+00:00",
+      "ts_utc": "2026-03-05T07:30:43.893890+00:00",
       "chain": "base",
       "token": {
-        "name": "LYSUN",
-        "symbol": "$LYSUN",
-        "address": "0x1978e62c52b6431808ca9cc7ef54818f18378e22"
+        "name": "AYA",
+        "symbol": "$AYA",
+        "address": "0x6a47af1bc183941a10a987455dfc4ae0655daaf1"
       },
       "scores": {
-        "confidence": 95,
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 142005.4596,
+        "vol_24h_usd": 2227.306146
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x6a47af1bc183941a10a987455dfc4ae0655daaf1",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T07:30:44.034123+00:00",
+      "chain": "base",
+      "token": {
+        "name": "PENGUIN",
+        "symbol": "$PENGUIN",
+        "address": "0x3b7b7535ebd67c356470e27a08bc53c8e1f62ed6"
+      },
+      "scores": {
+        "confidence": 100,
         "rarity": "new",
         "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 7306.9199,
-        "vol_24h_usd": 1475.5160196347
+        "liq_usd": 53501.1964,
+        "vol_24h_usd": 2701.18535
       },
       "dex": "geckoterminal",
-      "pair_address": "0x1978e62c52b6431808ca9cc7ef54818f18378e22",
+      "pair_address": "0x3b7b7535ebd67c356470e27a08bc53c8e1f62ed6",
       "scanner": "cio"
     }
   ]
