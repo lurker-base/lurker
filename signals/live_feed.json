@@ -1,85 +1,60 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T23:47:27.868Z",
+    "updated_at": "2026-03-05T23:52:28.780Z",
     "source": "cio",
     "chain": "base",
-    "count": 3,
+    "count": 2,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T23:47:27.673065+00:00",
+      "ts_utc": "2026-03-05T23:52:28.550550+00:00",
       "chain": "base",
       "token": {
-        "name": "LAYER",
-        "symbol": "$LAYER",
-        "address": "0x9ffd883ef3906774fdad09e9db5ebcf3dc994040"
+        "name": "cryptoeasy",
+        "symbol": "$CRYPTOEASY",
+        "address": "0x5230c4048e1faca2761c203b73f37744975f3b07"
       },
       "scores": {
         "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 25585.9474,
-        "vol_24h_usd": 19140.5758830515
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x9ffd883ef3906774fdad09e9db5ebcf3dc994040",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T23:47:27.838760+00:00",
-      "chain": "base",
-      "token": {
-        "name": "ZAMA",
-        "symbol": "$ZAMA",
-        "address": "0x9303cc42de0967dd3deb3c3040abb78718a58d24"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 119817.5649,
-        "vol_24h_usd": 1800.797386731
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x9303cc42de0967dd3deb3c3040abb78718a58d24",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T23:47:27.492227+00:00",
-      "chain": "base",
-      "token": {
-        "name": "paperclip",
-        "symbol": "$PAPERCLIP",
-        "address": "0x09d5aa61115d1943e6d31a4d568103a180350ba3"
-      },
-      "scores": {
-        "confidence": 95,
         "rarity": "new",
         "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 20688.7766,
-        "vol_24h_usd": 2228.3258654941
+        "liq_usd": 20941.7469,
+        "vol_24h_usd": 1049.7104041989
       },
       "dex": "geckoterminal",
-      "pair_address": "0x09d5aa61115d1943e6d31a4d568103a180350ba3",
+      "pair_address": "0x5230c4048e1faca2761c203b73f37744975f3b07",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T23:52:28.751805+00:00",
+      "chain": "base",
+      "token": {
+        "name": "DiCaprio",
+        "symbol": "$DICAPRIO",
+        "address": "0x8310f69630e272a940b779648bcb61926e326360"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 52009.6326,
+        "vol_24h_usd": 2142.607886
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x8310f69630e272a940b779648bcb61926e326360",
       "scanner": "cio"
     }
   ]
