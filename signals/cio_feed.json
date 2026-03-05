@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-05T22:40:50.642000+00:00",
-    "generated_at": "2026-03-05T22:40:50.642000+00:00",
+    "updated_at": "2026-03-05T22:50:03.296000+00:00",
+    "generated_at": "2026-03-05T22:50:03.296000+00:00",
     "status": "ok",
-    "count": 2,
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,7 +12,7 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
-      "medium": 2
+      "medium": 1
     },
     "rejected": {
       "too_old": 1
@@ -32,17 +32,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 105529.32,
-        "vol_5m_usd": 1795.51,
-        "vol_1h_usd": 40609.43,
-        "txns_5m": 12,
-        "price_usd": 1.79e-06
+        "liq_usd": 112246.38,
+        "vol_5m_usd": 3008.65,
+        "vol_1h_usd": 37644.05,
+        "txns_5m": 24,
+        "price_usd": 1.983e-06
       },
       "timestamps": {
         "pair_created_at": "2026-03-05T19:05:19+00:00",
         "token_first_seen": "2026-03-05T21:28:56.038000+00:00",
-        "age_minutes": 215.5,
-        "age_hours": 3.59
+        "age_minutes": 224.7,
+        "age_hours": 3.75
       },
       "scores": {
         "cio_score": 100,
@@ -50,48 +50,6 @@
       },
       "risks": [
         "dumping"
-      ],
-      "risk_level": "medium",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    },
-    {
-      "token": {
-        "address": "0x5566f6c47da94193d3815c8cdaed5b1f9ddc3ba3",
-        "symbol": "CLAWSTORE",
-        "name": "clawstore"
-      },
-      "pair": {
-        "address": "0x7ee469d205faa769178ca6c523ed07aa70b8dd07652b82231f1e8a2a244eaa8b",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 40252.81,
-        "vol_5m_usd": 2274.88,
-        "vol_1h_usd": 2378.93,
-        "txns_5m": 5,
-        "price_usd": 4.05e-07
-      },
-      "timestamps": {
-        "pair_created_at": "2026-02-24T22:10:57+00:00",
-        "token_first_seen": "2026-03-05T20:56:19.370000+00:00",
-        "age_minutes": 12989.9,
-        "age_hours": 216.5
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0
-      },
-      "risks": [
-        "low_activity"
       ],
       "risk_level": "medium",
       "source": "profiles",

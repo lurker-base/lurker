@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T22:37:13.511Z",
+    "updated_at": "2026-03-05T22:47:15.234Z",
     "source": "cio",
     "chain": "base",
     "count": 1,
@@ -10,26 +10,26 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T22:37:13.487700+00:00",
+      "ts_utc": "2026-03-05T22:47:15.207193+00:00",
       "chain": "base",
       "token": {
-        "name": "皮皮拉",
-        "symbol": "$皮皮拉",
-        "address": "0xb617167bd5c24ac5b4f9530104b3810a1ca2fed3"
+        "name": "CRAIG",
+        "symbol": "$CRAIG",
+        "address": "0xb975c620ec3af8fc950c0ce18e5bb9b9e07682e5"
       },
       "scores": {
         "confidence": 100,
         "rarity": "new",
-        "risk": "low"
+        "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 25249.4681,
-        "vol_24h_usd": 17222.1203959955
+        "liq_usd": 52305.7222,
+        "vol_24h_usd": 2196.976414235
       },
       "dex": "geckoterminal",
-      "pair_address": "0xb617167bd5c24ac5b4f9530104b3810a1ca2fed3",
+      "pair_address": "0xb975c620ec3af8fc950c0ce18e5bb9b9e07682e5",
       "scanner": "cio"
     }
   ]
