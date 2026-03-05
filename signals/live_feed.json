@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T14:15:38.391Z",
+    "updated_at": "2026-03-05T14:20:39.316Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 3,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T14:15:38.162067+00:00",
+      "ts_utc": "2026-03-05T14:20:38.847894+00:00",
       "chain": "base",
       "token": {
-        "name": "ALICE",
-        "symbol": "$ALICE",
-        "address": "0xfa4101ffdc4c92309a4e5f34812aee775479d359"
+        "name": "Maneki",
+        "symbol": "$MANEKI",
+        "address": "0x57262e4f1ad107ea78884b768a4a98ce17d49d01"
       },
       "scores": {
         "confidence": 100,
@@ -25,36 +25,61 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 26241.6658,
-        "vol_24h_usd": 17538.8319867023
+        "liq_usd": 13403.9038,
+        "vol_24h_usd": 8271.0874963118
       },
       "dex": "geckoterminal",
-      "pair_address": "0xfa4101ffdc4c92309a4e5f34812aee775479d359",
+      "pair_address": "0x57262e4f1ad107ea78884b768a4a98ce17d49d01",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T14:15:38.362957+00:00",
+      "ts_utc": "2026-03-05T14:20:39.044366+00:00",
       "chain": "base",
       "token": {
-        "name": "GPT",
-        "symbol": "$GPT",
-        "address": "0x5635d42b64356867de90bd28bebb0892b2ab0af9"
+        "name": "GITC",
+        "symbol": "$GITC",
+        "address": "0x5bf39e3bd2ee284bbe2323b51c0141715962dba3"
       },
       "scores": {
-        "confidence": 90,
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 11988.8366,
+        "vol_24h_usd": 4231.9283765715
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x5bf39e3bd2ee284bbe2323b51c0141715962dba3",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T14:20:39.292298+00:00",
+      "chain": "base",
+      "token": {
+        "name": "LAUKI",
+        "symbol": "$LAUKI",
+        "address": "0x54e14c48b0d4e3eb246204b416b40d395f8871f8"
+      },
+      "scores": {
+        "confidence": 100,
         "rarity": "new",
         "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 6238.6568,
-        "vol_24h_usd": 6883.0883871867
+        "liq_usd": 52584.0083,
+        "vol_24h_usd": 1944.741462185
       },
       "dex": "geckoterminal",
-      "pair_address": "0x5635d42b64356867de90bd28bebb0892b2ab0af9",
+      "pair_address": "0x54e14c48b0d4e3eb246204b416b40d395f8871f8",
       "scanner": "cio"
     }
   ]
