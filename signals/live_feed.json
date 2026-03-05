@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T16:21:06.097Z",
+    "updated_at": "2026-03-05T16:31:08.172Z",
     "source": "cio",
     "chain": "base",
-    "count": 5,
+    "count": 3,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T16:21:05.321566+00:00",
+      "ts_utc": "2026-03-05T16:31:07.419044+00:00",
       "chain": "base",
       "token": {
-        "name": "JURASSIUS",
-        "symbol": "$JURASSIUS",
-        "address": "0x969ca496fc1686f054b6a0ad67fe83126a76a999"
+        "name": "matrix",
+        "symbol": "$MATRIX",
+        "address": "0x897868a8e772b880778584a17ba19c87f3cd8ba3"
       },
       "scores": {
         "confidence": 100,
@@ -25,22 +25,22 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 15828.868,
-        "vol_24h_usd": 9235.8450816225
+        "liq_usd": 26697.6491,
+        "vol_24h_usd": 4358.9973651165
       },
       "dex": "geckoterminal",
-      "pair_address": "0x969ca496fc1686f054b6a0ad67fe83126a76a999",
+      "pair_address": "0x897868a8e772b880778584a17ba19c87f3cd8ba3",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T16:21:05.531220+00:00",
+      "ts_utc": "2026-03-05T16:31:07.809488+00:00",
       "chain": "base",
       "token": {
-        "name": "XELVYN",
-        "symbol": "$XELVYN",
-        "address": "0x7026d75c386239e7761d2358b355b33b7404dba3"
+        "name": "SUPER",
+        "symbol": "$SUPER",
+        "address": "0x050b5a9069d4ada783376b523203bd5c1163bd49"
       },
       "scores": {
         "confidence": 100,
@@ -50,22 +50,22 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 10859.422,
-        "vol_24h_usd": 1600.4805211938
+        "liq_usd": 15508.4723,
+        "vol_24h_usd": 32513.5476644865
       },
       "dex": "geckoterminal",
-      "pair_address": "0x7026d75c386239e7761d2358b355b33b7404dba3",
+      "pair_address": "0x050b5a9069d4ada783376b523203bd5c1163bd49",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T16:21:05.702260+00:00",
+      "ts_utc": "2026-03-05T16:31:08.140541+00:00",
       "chain": "base",
       "token": {
-        "name": "MART",
-        "symbol": "$MART",
-        "address": "0x67d79519e51003f7e3918b45f70d5b69f0e1bba3"
+        "name": "COLESLAW",
+        "symbol": "$COLESLAW",
+        "address": "0x625f9d9566fde0531a7892c72def72efd7d02ca0"
       },
       "scores": {
         "confidence": 100,
@@ -75,61 +75,11 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 30005.0695,
-        "vol_24h_usd": 8463.5161669229
+        "liq_usd": 24127.5634,
+        "vol_24h_usd": 43408.508935132
       },
       "dex": "geckoterminal",
-      "pair_address": "0x67d79519e51003f7e3918b45f70d5b69f0e1bba3",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T16:21:06.069013+00:00",
-      "chain": "base",
-      "token": {
-        "name": "Paperclip",
-        "symbol": "$PAPERCLIP",
-        "address": "0x3e228f0602ae9b3241b5f73b3440dd47a82b85a5"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 51330.8637,
-        "vol_24h_usd": 1917.172709
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x3e228f0602ae9b3241b5f73b3440dd47a82b85a5",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T16:21:05.900467+00:00",
-      "chain": "base",
-      "token": {
-        "name": "SOELF",
-        "symbol": "$SOELF",
-        "address": "0xaa24167558a46139c4de16d0b344c5d42b1ef4ad"
-      },
-      "scores": {
-        "confidence": 95,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 7182.896,
-        "vol_24h_usd": 1518.2885023797
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xaa24167558a46139c4de16d0b344c5d42b1ef4ad",
+      "pair_address": "0x625f9d9566fde0531a7892c72def72efd7d02ca0",
       "scanner": "cio"
     }
   ]
