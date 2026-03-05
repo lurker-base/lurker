@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-05T23:25:12.031000+00:00",
-    "generated_at": "2026-03-05T23:25:12.031000+00:00",
+    "updated_at": "2026-03-05T23:26:02.469000+00:00",
+    "generated_at": "2026-03-05T23:26:02.469000+00:00",
     "status": "ok",
-    "count": 2,
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,11 +12,11 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
-      "medium": 1,
-      "high": 1
+      "medium": 1
     },
     "rejected": {
       "too_old": 1,
+      "low_tx": 1,
       "duplicate": 1
     },
     "source": "ultra_launch_scanner"
@@ -34,17 +34,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 37084.81,
-        "vol_5m_usd": 862.41,
-        "vol_1h_usd": 14653.5,
-        "txns_5m": 21,
-        "price_usd": 3.876e-07
+        "liq_usd": 37095.18,
+        "vol_5m_usd": 427.64,
+        "vol_1h_usd": 14646.94,
+        "txns_5m": 19,
+        "price_usd": 3.877e-07
       },
       "timestamps": {
         "pair_created_at": "2026-03-05T21:37:13+00:00",
         "token_first_seen": "2026-03-05T23:02:37.259000+00:00",
-        "age_minutes": 108.0,
-        "age_hours": 1.8
+        "age_minutes": 108.8,
+        "age_hours": 1.81
       },
       "scores": {
         "cio_score": 100,
@@ -62,50 +62,6 @@
         "has_socials": true,
         "has_website": true,
         "quality_score": 100
-      }
-    },
-    {
-      "token": {
-        "address": "0x985805bec842adab8bb65dc42867e2cdd86546d2",
-        "symbol": "WONTON",
-        "name": "WONTON INU"
-      },
-      "pair": {
-        "address": "0xc6001f634005d5d2ba0d69d898f4b5f2552ca971",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 4772.74,
-        "vol_5m_usd": 62.93,
-        "vol_1h_usd": 539.3,
-        "txns_5m": 1,
-        "price_usd": 0.0005246
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-01T05:26:55+00:00",
-        "token_first_seen": "2026-03-05T23:16:00.223000+00:00",
-        "age_minutes": 6838.3,
-        "age_hours": 113.97
-      },
-      "scores": {
-        "cio_score": 60,
-        "freshness": 0
-      },
-      "risks": [
-        "low_liquidity",
-        "low_activity",
-        "low_volume"
-      ],
-      "risk_level": "high",
-      "source": "boosts",
-      "status": "observing",
-      "quality": {
-        "has_profile": false,
-        "has_image": false,
-        "has_socials": false,
-        "has_website": false,
-        "quality_score": 0
       }
     }
   ]
