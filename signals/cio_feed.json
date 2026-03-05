@@ -1,61 +1,107 @@
 {
-  "timestamp": "2026-03-05T13:54:35.620590+00:00",
-  "source": "geckoterminal_v2",
+  "schema": "lurker_cio_ultra_launch",
+  "meta": {
+    "updated_at": "2026-03-05T13:54:47.614000+00:00",
+    "generated_at": "2026-03-05T13:54:47.614000+00:00",
+    "status": "ok",
+    "count": 2,
+    "thresholds": {
+      "min_liq_usd": 1000,
+      "min_vol_5m": 500,
+      "min_tx_5m": 1,
+      "max_age_min": 43200
+    },
+    "risk_distribution": {
+      "low": 1,
+      "medium": 1
+    },
+    "rejected": {
+      "too_old": 1
+    },
+    "source": "ultra_launch_scanner"
+  },
   "candidates": [
     {
       "token": {
-        "address": "0xc2c5de366c3f36b18e6a9e751cbb9657040c1a28",
-        "symbol": "OCS",
-        "name": "OCS"
+        "address": "0xea72fab512856eafe090475e7242e975ed72f087",
+        "symbol": "AG0",
+        "name": "Ag0 Ai"
+      },
+      "pair": {
+        "address": "0xcf0ef17abcba064f880ac9c4de5289c5b403a2b4bb95b5a64d4e9eae67c4cc0a",
+        "dex": "uniswap",
+        "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 51315.3403,
-        "vol_24h_usd": 1219.726189544,
-        "txns_24h": 6,
-        "price_usd": 0
+        "liq_usd": 75775.36,
+        "vol_5m_usd": 11798.24,
+        "vol_1h_usd": 374466.21,
+        "txns_5m": 52,
+        "price_usd": 1.022e-06
       },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
+      "timestamps": {
+        "pair_created_at": "2026-03-05T12:33:53+00:00",
+        "token_first_seen": "2026-03-05T13:42:17.301000+00:00",
+        "age_minutes": 80.9,
+        "age_hours": 1.35
       },
-      "score": 100,
-      "age_hours": 0.057248884722222226,
-      "detected_at": "2026-03-05T13:54:35.425046+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 SUPER FRESH",
-        "\ud83d\udca7 DEEP LIQ",
-        "\u2b50 GEM"
-      ]
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.98
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": false,
+        "quality_score": 75
+      }
     },
     {
       "token": {
-        "address": "0x09dac2adaf1c4339094d1fc851933bd0a73b4447",
-        "symbol": "ELON",
-        "name": "ELON"
+        "address": "0x04c4c098a5b492750a2bd0578c685f179c78a1ca",
+        "symbol": "FLOKI",
+        "name": "FLOKI ON BASE"
+      },
+      "pair": {
+        "address": "0xfca261560133699ecd4c99941c767e096700216d",
+        "dex": "uniswap",
+        "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 6425.9992,
-        "vol_24h_usd": 3772.8530063783,
-        "txns_24h": 45,
-        "price_usd": 0
+        "liq_usd": 41493.92,
+        "vol_5m_usd": 6901.19,
+        "vol_1h_usd": 87553.57,
+        "txns_5m": 85,
+        "price_usd": 9.4e-07
       },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
+      "timestamps": {
+        "pair_created_at": "2026-03-04T12:35:55+00:00",
+        "token_first_seen": "2026-03-04T16:34:15.099000+00:00",
+        "age_minutes": 1518.9,
+        "age_hours": 25.31
       },
-      "score": 95,
-      "age_hours": 0.06789586083333334,
-      "detected_at": "2026-03-05T13:54:35.618850+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 SUPER FRESH",
-        "\ud83d\ude80 PUMP"
-      ]
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.58
+      },
+      "risks": [
+        "dumping"
+      ],
+      "risk_level": "medium",
+      "source": "boosts",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
     }
   ]
 }
