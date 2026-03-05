@@ -1,96 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T23:07:18.916Z",
+    "updated_at": "2026-03-05T23:17:20.407Z",
     "source": "cio",
     "chain": "base",
-    "count": 4,
+    "count": 1,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T23:07:18.660116+00:00",
+      "ts_utc": "2026-03-05T23:17:20.383826+00:00",
       "chain": "base",
       "token": {
-        "name": "WHITEHOUSE",
-        "symbol": "$WHITEHOUSE",
-        "address": "0x67f4bc635ffbcfc21bbfb703f565bc946fb91706"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 23155.682,
-        "vol_24h_usd": 21543.3168229745
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x67f4bc635ffbcfc21bbfb703f565bc946fb91706",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T23:07:18.715659+00:00",
-      "chain": "base",
-      "token": {
-        "name": "Pikachu",
-        "symbol": "$PIKACHU",
-        "address": "0xeb5c89233848ad83b800a3736f4bd2b96ee8a538"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 84879.911,
-        "vol_24h_usd": 1077.901188046
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xeb5c89233848ad83b800a3736f4bd2b96ee8a538",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T23:07:18.889193+00:00",
-      "chain": "base",
-      "token": {
-        "name": "GITC",
-        "symbol": "$GITC",
-        "address": "0xab54e7a3fddfb0079c763dffcaa7e9fc74bedba3"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 13452.206,
-        "vol_24h_usd": 4929.4389536033
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xab54e7a3fddfb0079c763dffcaa7e9fc74bedba3",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T23:07:18.759766+00:00",
-      "chain": "base",
-      "token": {
-        "name": "MOLTROOMS",
-        "symbol": "$MOLTROOMS",
-        "address": "0x93e01b8b359a95ecc907f5c54f48ef44c176cba3"
+        "name": "BANKRCAT",
+        "symbol": "$BANKRCAT",
+        "address": "0x9fa6d841484dbfeb195f7f40a8cc3f919dc76ba3"
       },
       "scores": {
         "confidence": 95,
@@ -100,11 +25,11 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 20916.3243,
-        "vol_24h_usd": 3998.1993399833
+        "liq_usd": 23273.781,
+        "vol_24h_usd": 4408.7023334936
       },
       "dex": "geckoterminal",
-      "pair_address": "0x93e01b8b359a95ecc907f5c54f48ef44c176cba3",
+      "pair_address": "0x9fa6d841484dbfeb195f7f40a8cc3f919dc76ba3",
       "scanner": "cio"
     }
   ]
