@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T15:50:57.708Z",
+    "updated_at": "2026-03-05T16:00:59.487Z",
     "source": "cio",
     "chain": "base",
-    "count": 1,
+    "count": 3,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T15:50:57.682819+00:00",
+      "ts_utc": "2026-03-05T16:00:59.407892+00:00",
       "chain": "base",
       "token": {
-        "name": "GOONFLUTE",
-        "symbol": "$GOONFLUTE",
-        "address": "0x27b0693654ba665481df90732698b62df790c53b"
+        "name": "AGORA",
+        "symbol": "$AGORA",
+        "address": "0xd620b6f8decb4e189d1b52f8f2ef17ef30565ba3"
       },
       "scores": {
         "confidence": 100,
@@ -25,11 +25,61 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 16217.0504,
-        "vol_24h_usd": 8340.2664223406
+        "liq_usd": 25805.6584,
+        "vol_24h_usd": 3824.2760795673
       },
       "dex": "geckoterminal",
-      "pair_address": "0x27b0693654ba665481df90732698b62df790c53b",
+      "pair_address": "0xd620b6f8decb4e189d1b52f8f2ef17ef30565ba3",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T16:00:59.462619+00:00",
+      "chain": "base",
+      "token": {
+        "name": "ClawPod",
+        "symbol": "$CLAWPOD",
+        "address": "0xb4122a01feab36cb1a42562607f1ed938fc39ef6"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 52303.2414,
+        "vol_24h_usd": 2184.444753
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xb4122a01feab36cb1a42562607f1ed938fc39ef6",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T16:00:59.332160+00:00",
+      "chain": "base",
+      "token": {
+        "name": "PetroFi",
+        "symbol": "$PETROFI",
+        "address": "0x0a94c5eb4b3216144ee07e2aaa9b94b4043d0386"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 21097.2606,
+        "vol_24h_usd": 2399.8815703095
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x0a94c5eb4b3216144ee07e2aaa9b94b4043d0386",
       "scanner": "cio"
     }
   ]
