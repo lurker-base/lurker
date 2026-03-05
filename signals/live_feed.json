@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T20:46:55.857Z",
+    "updated_at": "2026-03-05T21:01:57.240Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 1,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T20:46:55.624162+00:00",
+      "ts_utc": "2026-03-05T21:01:57.212088+00:00",
       "chain": "base",
       "token": {
-        "name": "BrainFry",
-        "symbol": "$BRAINFRY",
-        "address": "0x952051bb075da81076bf8c0d57a2887472928614"
+        "name": "CIGS",
+        "symbol": "$CIGS",
+        "address": "0x06a897732e72d8369842fe9508631505fab5facf"
       },
       "scores": {
         "confidence": 100,
@@ -25,36 +25,11 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 23575.9248,
-        "vol_24h_usd": 18989.7919412209
+        "liq_usd": 26944.5401,
+        "vol_24h_usd": 27953.0808076908
       },
       "dex": "geckoterminal",
-      "pair_address": "0x952051bb075da81076bf8c0d57a2887472928614",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T20:46:55.826049+00:00",
-      "chain": "base",
-      "token": {
-        "name": "GITC",
-        "symbol": "$GITC",
-        "address": "0xe5d46c89644e9d3240510403c0dd7017f2ebdba3"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 11399.7758,
-        "vol_24h_usd": 2685.8197010215
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xe5d46c89644e9d3240510403c0dd7017f2ebdba3",
+      "pair_address": "0x06a897732e72d8369842fe9508631505fab5facf",
       "scanner": "cio"
     }
   ]
