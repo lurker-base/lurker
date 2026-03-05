@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T18:31:30.393Z",
+    "updated_at": "2026-03-05T18:36:31.463Z",
     "source": "cio",
     "chain": "base",
     "count": 3,
@@ -10,12 +10,12 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T18:31:30.006161+00:00",
+      "ts_utc": "2026-03-05T18:36:30.853261+00:00",
       "chain": "base",
       "token": {
-        "name": "BURGER6900",
-        "symbol": "$BURGER6900",
-        "address": "0x80c3b0e5b9078378d3e5da935e2ee970e2e90f00"
+        "name": "SCAM",
+        "symbol": "$SCAM",
+        "address": "0xb1229ac21ea28eb1228e2760b2676df04b7d42e8"
       },
       "scores": {
         "confidence": 100,
@@ -25,61 +25,61 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 22755.4074,
-        "vol_24h_usd": 7499.8433379652
+        "liq_usd": 14634.3659,
+        "vol_24h_usd": 12643.285744077
       },
       "dex": "geckoterminal",
-      "pair_address": "0x80c3b0e5b9078378d3e5da935e2ee970e2e90f00",
+      "pair_address": "0xb1229ac21ea28eb1228e2760b2676df04b7d42e8",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T18:31:30.169031+00:00",
+      "ts_utc": "2026-03-05T18:36:31.425917+00:00",
       "chain": "base",
       "token": {
-        "name": "POKEPULL",
-        "symbol": "$POKEPULL",
-        "address": "0x9199da8067cc64074c9d961833d6145ed212a5ef"
+        "name": "Paperclip",
+        "symbol": "$PAPERCLIP",
+        "address": "0xe1a07d8b63c11e68b01cd3575fa3b6136364aba3"
       },
       "scores": {
         "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 13073.6985,
+        "vol_24h_usd": 5138.2136804925
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xe1a07d8b63c11e68b01cd3575fa3b6136364aba3",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T18:36:31.057017+00:00",
+      "chain": "base",
+      "token": {
+        "name": "FIRST",
+        "symbol": "$FIRST",
+        "address": "0x0f8d29adf68f2c88a91cdc199e82dc85da4acba3"
+      },
+      "scores": {
+        "confidence": 95,
         "rarity": "new",
         "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 136088.8295,
-        "vol_24h_usd": 1361.681629
+        "liq_usd": 22450.3487,
+        "vol_24h_usd": 2230.2202807791
       },
       "dex": "geckoterminal",
-      "pair_address": "0x9199da8067cc64074c9d961833d6145ed212a5ef",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T18:31:30.367591+00:00",
-      "chain": "base",
-      "token": {
-        "name": "McClaw",
-        "symbol": "$MCCLAW",
-        "address": "0xcbdf8d20a39ffee7dc6c23d3e594741c1484cd95"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 50731.9821,
-        "vol_24h_usd": 1592.982449696
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xcbdf8d20a39ffee7dc6c23d3e594741c1484cd95",
+      "pair_address": "0x0f8d29adf68f2c88a91cdc199e82dc85da4acba3",
       "scanner": "cio"
     }
   ]
