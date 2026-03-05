@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T23:32:23.840Z",
+    "updated_at": "2026-03-05T23:37:25.114Z",
     "source": "cio",
     "chain": "base",
-    "count": 4,
+    "count": 5,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T23:32:23.340206+00:00",
+      "ts_utc": "2026-03-05T23:37:24.342549+00:00",
       "chain": "base",
       "token": {
-        "name": "WALL",
-        "symbol": "$WALL",
-        "address": "0x2e6b2943302ac25bc9a5c1095ffe691f4bbb9ba3"
+        "name": "LAYER",
+        "symbol": "$LAYER",
+        "address": "0x39b1a1355fd362039ed70dca9caa47af18c8b79e"
       },
       "scores": {
         "confidence": 100,
@@ -25,22 +25,47 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 12415.8997,
-        "vol_24h_usd": 3114.7558945281
+        "liq_usd": 25877.4678,
+        "vol_24h_usd": 22997.2103678326
       },
       "dex": "geckoterminal",
-      "pair_address": "0x2e6b2943302ac25bc9a5c1095ffe691f4bbb9ba3",
+      "pair_address": "0x39b1a1355fd362039ed70dca9caa47af18c8b79e",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T23:32:23.806567+00:00",
+      "ts_utc": "2026-03-05T23:37:24.670309+00:00",
       "chain": "base",
       "token": {
-        "name": "𝕏Money",
-        "symbol": "$𝕏MONEY",
-        "address": "0x8a5d5782c82ba980d813d07671feee994ff16e72"
+        "name": "Postal",
+        "symbol": "$POSTAL",
+        "address": "0x0feefea6a71afad8b6c535fa16df5fd41e6ceba3"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 32608.1345,
+        "vol_24h_usd": 20860.0895337913
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x0feefea6a71afad8b6c535fa16df5fd41e6ceba3",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T23:37:24.853464+00:00",
+      "chain": "base",
+      "token": {
+        "name": "LUFFY",
+        "symbol": "$LUFFY",
+        "address": "0xffe2be97480aecdf281d6b818a771fdf19ae2e5b"
       },
       "scores": {
         "confidence": 100,
@@ -50,61 +75,61 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 52879.2723,
-        "vol_24h_usd": 2485.082697
+        "liq_usd": 86312.2258,
+        "vol_24h_usd": 1682.9087
       },
       "dex": "geckoterminal",
-      "pair_address": "0x8a5d5782c82ba980d813d07671feee994ff16e72",
+      "pair_address": "0xffe2be97480aecdf281d6b818a771fdf19ae2e5b",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T23:32:23.488441+00:00",
+      "ts_utc": "2026-03-05T23:37:25.081546+00:00",
       "chain": "base",
       "token": {
-        "name": "WALL",
-        "symbol": "$WALL",
-        "address": "0xa8299ca82a756ecd018bce53b5ebab6a109d1ba3"
+        "name": "STACKR",
+        "symbol": "$STACKR",
+        "address": "0x7daa6dbd4cbc2481a0f208a34018319b5f953aed"
       },
       "scores": {
-        "confidence": 95,
+        "confidence": 100,
         "rarity": "new",
         "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 20985.8356,
-        "vol_24h_usd": 8515.05821428
+        "liq_usd": 152922.6541,
+        "vol_24h_usd": 1709.4189578
       },
       "dex": "geckoterminal",
-      "pair_address": "0xa8299ca82a756ecd018bce53b5ebab6a109d1ba3",
+      "pair_address": "0x7daa6dbd4cbc2481a0f208a34018319b5f953aed",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T23:32:23.643653+00:00",
+      "ts_utc": "2026-03-05T23:37:24.529724+00:00",
       "chain": "base",
       "token": {
-        "name": "WALL",
-        "symbol": "$WALL",
-        "address": "0xce694996f4871f58d88233262c8377704722aba3"
+        "name": "CEBUT",
+        "symbol": "$CEBUT",
+        "address": "0xfd4ae3c1231d503d8b164cf94d30555cecd6cf1c"
       },
       "scores": {
         "confidence": 95,
         "rarity": "new",
-        "risk": "medium"
+        "risk": "high"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 21810.2147,
-        "vol_24h_usd": 8734.8873107133
+        "liq_usd": 6437.0216,
+        "vol_24h_usd": 1508.0946747149
       },
       "dex": "geckoterminal",
-      "pair_address": "0xce694996f4871f58d88233262c8377704722aba3",
+      "pair_address": "0xfd4ae3c1231d503d8b164cf94d30555cecd6cf1c",
       "scanner": "cio"
     }
   ]
