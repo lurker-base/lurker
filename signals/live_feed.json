@@ -1,21 +1,96 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T14:35:42.293Z",
+    "updated_at": "2026-03-05T14:45:44.145Z",
     "source": "cio",
     "chain": "base",
-    "count": 1,
+    "count": 5,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T14:35:42.252331+00:00",
+      "ts_utc": "2026-03-05T14:45:43.457313+00:00",
       "chain": "base",
       "token": {
-        "name": "MACMINI",
-        "symbol": "$MACMINI",
-        "address": "0x92dc5e68c55ea5d762082f06c9e35c493552c082"
+        "name": "SCOUT",
+        "symbol": "$SCOUT",
+        "address": "0xf37652c279c6cf4038689ffe0dd52cb07c283ba3"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 11885.5841,
+        "vol_24h_usd": 3490.6256014139
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xf37652c279c6cf4038689ffe0dd52cb07c283ba3",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T14:45:43.648712+00:00",
+      "chain": "base",
+      "token": {
+        "name": "NWFI",
+        "symbol": "$NWFI",
+        "address": "0x0ef666475326ab7c0d7a4398cf3e86d2b80bf84e"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 24001.4901,
+        "vol_24h_usd": 38081.8237496447
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x0ef666475326ab7c0d7a4398cf3e86d2b80bf84e",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T14:45:43.796652+00:00",
+      "chain": "base",
+      "token": {
+        "name": "Maneki",
+        "symbol": "$MANEKI",
+        "address": "0x2b6dd3f3075134806ed481d22cc58c7a5289f61e"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 16422.2266,
+        "vol_24h_usd": 35625.1820485698
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x2b6dd3f3075134806ed481d22cc58c7a5289f61e",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T14:45:43.952262+00:00",
+      "chain": "base",
+      "token": {
+        "name": "CZAI",
+        "symbol": "$CZAI",
+        "address": "0x254b3278891cc7d99b8a3f676f8231868917f0f9"
       },
       "scores": {
         "confidence": 100,
@@ -25,11 +100,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 12993.6671,
-        "vol_24h_usd": 1457.8190610735
+        "liq_usd": 12531.1077,
+        "vol_24h_usd": 1246.6771443194
       },
       "dex": "geckoterminal",
-      "pair_address": "0x92dc5e68c55ea5d762082f06c9e35c493552c082",
+      "pair_address": "0x254b3278891cc7d99b8a3f676f8231868917f0f9",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T14:45:44.112171+00:00",
+      "chain": "base",
+      "token": {
+        "name": "CHARLES",
+        "symbol": "$CHARLES",
+        "address": "0xcffab73a88ce0a69d76da15216a0d7994b41bc2a"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 141990.36,
+        "vol_24h_usd": 3007.5370841239
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xcffab73a88ce0a69d76da15216a0d7994b41bc2a",
       "scanner": "cio"
     }
   ]
