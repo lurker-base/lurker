@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T18:21:28.551Z",
+    "updated_at": "2026-03-05T18:31:30.393Z",
     "source": "cio",
     "chain": "base",
-    "count": 5,
+    "count": 3,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T18:21:28.142449+00:00",
+      "ts_utc": "2026-03-05T18:31:30.006161+00:00",
       "chain": "base",
       "token": {
-        "name": "CLAWNCH",
-        "symbol": "$CLAWNCH",
-        "address": "0x778b079faf78465faff5cdcdd20e37e3073d47be"
+        "name": "BURGER6900",
+        "symbol": "$BURGER6900",
+        "address": "0x80c3b0e5b9078378d3e5da935e2ee970e2e90f00"
       },
       "scores": {
         "confidence": 100,
@@ -25,111 +25,61 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 11445.8352,
-        "vol_24h_usd": 4162.3537427943
+        "liq_usd": 22755.4074,
+        "vol_24h_usd": 7499.8433379652
       },
       "dex": "geckoterminal",
-      "pair_address": "0x778b079faf78465faff5cdcdd20e37e3073d47be",
+      "pair_address": "0x80c3b0e5b9078378d3e5da935e2ee970e2e90f00",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T18:21:28.526690+00:00",
+      "ts_utc": "2026-03-05T18:31:30.169031+00:00",
       "chain": "base",
       "token": {
-        "name": "sparrow",
-        "symbol": "$SPARROW",
-        "address": "0xad44f8e86315fadc067320fa53dcb8495c723ba3"
+        "name": "POKEPULL",
+        "symbol": "$POKEPULL",
+        "address": "0x9199da8067cc64074c9d961833d6145ed212a5ef"
       },
       "scores": {
         "confidence": 100,
         "rarity": "new",
-        "risk": "low"
+        "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 24216.8623,
-        "vol_24h_usd": 27071.3010920069
+        "liq_usd": 136088.8295,
+        "vol_24h_usd": 1361.681629
       },
       "dex": "geckoterminal",
-      "pair_address": "0xad44f8e86315fadc067320fa53dcb8495c723ba3",
+      "pair_address": "0x9199da8067cc64074c9d961833d6145ed212a5ef",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T18:21:27.991654+00:00",
+      "ts_utc": "2026-03-05T18:31:30.367591+00:00",
       "chain": "base",
       "token": {
-        "name": "War",
-        "symbol": "$WAR",
-        "address": "0x65f8d1d21874cc92912795b304d86e483b864ba3"
+        "name": "McClaw",
+        "symbol": "$MCCLAW",
+        "address": "0xcbdf8d20a39ffee7dc6c23d3e594741c1484cd95"
       },
       "scores": {
-        "confidence": 95,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 20427.8519,
-        "vol_24h_usd": 7354.5726254364
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x65f8d1d21874cc92912795b304d86e483b864ba3",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T18:21:28.324005+00:00",
-      "chain": "base",
-      "token": {
-        "name": "openfangg",
-        "symbol": "$OPENFANGG",
-        "address": "0xf545d5c27db16acd720a9ddcdc4caf5f235f7ba3"
-      },
-      "scores": {
-        "confidence": 95,
+        "confidence": 100,
         "rarity": "new",
         "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 21297.2738,
-        "vol_24h_usd": 2689.0968709919
+        "liq_usd": 50731.9821,
+        "vol_24h_usd": 1592.982449696
       },
       "dex": "geckoterminal",
-      "pair_address": "0xf545d5c27db16acd720a9ddcdc4caf5f235f7ba3",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T18:21:27.843184+00:00",
-      "chain": "base",
-      "token": {
-        "name": "JPC",
-        "symbol": "$JPC",
-        "address": "0x15d969ecc165faab5a529423432c1261ed2c09bd"
-      },
-      "scores": {
-        "confidence": 90,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 13315.8305,
-        "vol_24h_usd": 3545.9300457701
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x15d969ecc165faab5a529423432c1261ed2c09bd",
+      "pair_address": "0xcbdf8d20a39ffee7dc6c23d3e594741c1484cd95",
       "scanner": "cio"
     }
   ]
