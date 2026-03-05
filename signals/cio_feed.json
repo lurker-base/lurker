@@ -1,107 +1,19 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-05T13:48:29.455000+00:00",
-    "generated_at": "2026-03-05T13:48:29.455000+00:00",
-    "status": "ok",
-    "count": 2,
+    "updated_at": "2026-03-05T13:49:29.997000+00:00",
+    "generated_at": "2026-03-05T13:49:29.997000+00:00",
+    "status": "degraded",
+    "count": 0,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
       "min_tx_5m": 1,
       "max_age_min": 43200
     },
-    "risk_distribution": {
-      "low": 1,
-      "medium": 1
-    },
-    "rejected": {
-      "too_old": 1
-    },
+    "risk_distribution": {},
+    "rejected": {},
     "source": "ultra_launch_scanner"
   },
-  "candidates": [
-    {
-      "token": {
-        "address": "0xea72fab512856eafe090475e7242e975ed72f087",
-        "symbol": "AG0",
-        "name": "Ag0 Ai"
-      },
-      "pair": {
-        "address": "0xcf0ef17abcba064f880ac9c4de5289c5b403a2b4bb95b5a64d4e9eae67c4cc0a",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 79030.64,
-        "vol_5m_usd": 12636.07,
-        "vol_1h_usd": 373102.7,
-        "txns_5m": 47,
-        "price_usd": 1.099e-06
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-05T12:33:53+00:00",
-        "token_first_seen": "2026-03-05T13:42:17.301000+00:00",
-        "age_minutes": 74.6,
-        "age_hours": 1.24
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.98
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": false,
-        "quality_score": 75
-      }
-    },
-    {
-      "token": {
-        "address": "0x04c4c098a5b492750a2bd0578c685f179c78a1ca",
-        "symbol": "FLOKI",
-        "name": "FLOKI ON BASE"
-      },
-      "pair": {
-        "address": "0xfca261560133699ecd4c99941c767e096700216d",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 41163.91,
-        "vol_5m_usd": 3494.16,
-        "vol_1h_usd": 86436.17,
-        "txns_5m": 72,
-        "price_usd": 9.308e-07
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-04T12:35:55+00:00",
-        "token_first_seen": "2026-03-04T16:34:15.099000+00:00",
-        "age_minutes": 1512.6,
-        "age_hours": 25.21
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.58
-      },
-      "risks": [
-        "dumping"
-      ],
-      "risk_level": "medium",
-      "source": "boosts",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    }
-  ]
+  "candidates": []
 }
