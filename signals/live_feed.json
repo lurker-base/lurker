@@ -1,10 +1,36 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T03:05:02.544Z",
+    "updated_at": "2026-03-05T03:15:04.092Z",
     "source": "cio",
     "chain": "base",
-    "count": 0,
+    "count": 1,
     "errors": []
   },
-  "signals": []
+  "signals": [
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T03:15:04.048193+00:00",
+      "chain": "base",
+      "token": {
+        "name": "CHARLES",
+        "symbol": "$CHARLES",
+        "address": "0xc54bf943d57a417c347dec253a44249123bf1cf9"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 142928.7581,
+        "vol_24h_usd": 3056.053597
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xc54bf943d57a417c347dec253a44249123bf1cf9",
+      "scanner": "cio"
+    }
+  ]
 }
