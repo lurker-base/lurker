@@ -1,46 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T04:15:14.365Z",
+    "updated_at": "2026-03-05T04:30:16.149Z",
     "source": "cio",
     "chain": "base",
-    "count": 3,
+    "count": 4,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T04:15:14.010266+00:00",
+      "ts_utc": "2026-03-05T04:30:15.971343+00:00",
       "chain": "base",
       "token": {
-        "name": "Diamond",
-        "symbol": "$DIAMOND",
-        "address": "0x630a755f75705648c3c24c41da180b64a6561364"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 13944.6665,
-        "vol_24h_usd": 1152.5149147716
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x630a755f75705648c3c24c41da180b64a6561364",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T04:15:14.298909+00:00",
-      "chain": "base",
-      "token": {
-        "name": "Holdcoin",
-        "symbol": "$HOLDCOIN",
-        "address": "0x7a5b413d73db0b90bb92c231a37ec0e7c0990cca"
+        "name": "Genny",
+        "symbol": "$GENNY",
+        "address": "0xdef4cfe9af7533a6f5bc74e8824728c7884693cd"
       },
       "scores": {
         "confidence": 100,
@@ -50,36 +25,86 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 22713.8235,
-        "vol_24h_usd": 7178.845504762
+        "liq_usd": 25173.766,
+        "vol_24h_usd": 24114.6300467005
       },
       "dex": "geckoterminal",
-      "pair_address": "0x7a5b413d73db0b90bb92c231a37ec0e7c0990cca",
+      "pair_address": "0xdef4cfe9af7533a6f5bc74e8824728c7884693cd",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T04:15:14.332518+00:00",
+      "ts_utc": "2026-03-05T04:30:16.031011+00:00",
       "chain": "base",
       "token": {
-        "name": "Pikachu",
-        "symbol": "$PIKACHU",
-        "address": "0xbe4b83eaef384a43af1b5a88ce8ea502799c8d4a"
+        "name": "Diamond",
+        "symbol": "$DIAMOND",
+        "address": "0xdff707ee97590ca045b89fe45c2de553fe7c2ed8"
       },
       "scores": {
         "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 16937.0378,
+        "vol_24h_usd": 26650.2043420926
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xdff707ee97590ca045b89fe45c2de553fe7c2ed8",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T04:30:16.062546+00:00",
+      "chain": "base",
+      "token": {
+        "name": "CEETH",
+        "symbol": "$CEETH",
+        "address": "0x8a968bbe37dbd8fb6e80b2a30835aed3511a9343"
+      },
+      "scores": {
+        "confidence": 95,
         "rarity": "new",
         "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 87801.1266,
-        "vol_24h_usd": 1426.06775
+        "liq_usd": 7680.3453,
+        "vol_24h_usd": 1665.6957570546
       },
       "dex": "geckoterminal",
-      "pair_address": "0xbe4b83eaef384a43af1b5a88ce8ea502799c8d4a",
+      "pair_address": "0x8a968bbe37dbd8fb6e80b2a30835aed3511a9343",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T04:30:16.110254+00:00",
+      "chain": "base",
+      "token": {
+        "name": "DEBT",
+        "symbol": "$DEBT",
+        "address": "0xcea64a168c101cdcc07c502a9d00b0d18fad4aab"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 5324.2515,
+        "vol_24h_usd": 1609.0255968942
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xcea64a168c101cdcc07c502a9d00b0d18fad4aab",
       "scanner": "cio"
     }
   ]
