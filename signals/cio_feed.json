@@ -1,9 +1,9 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-05T06:04:43.429000+00:00",
-    "generated_at": "2026-03-05T06:04:43.429000+00:00",
-    "status": "calm",
+    "updated_at": "2026-03-05T06:05:11.941000+00:00",
+    "generated_at": "2026-03-05T06:05:11.941000+00:00",
+    "status": "degraded",
     "count": 0,
     "thresholds": {
       "min_liq_usd": 1000,
@@ -12,9 +12,7 @@
       "max_age_min": 43200
     },
     "risk_distribution": {},
-    "rejected": {
-      "too_old": 1
-    },
+    "rejected": {},
     "source": "ultra_launch_scanner"
   },
   "candidates": []
