@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T22:02:07.309Z",
+    "updated_at": "2026-03-05T22:07:08.267Z",
     "source": "cio",
     "chain": "base",
-    "count": 4,
+    "count": 3,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T22:02:06.912090+00:00",
+      "ts_utc": "2026-03-05T22:07:07.889415+00:00",
       "chain": "base",
       "token": {
-        "name": "Russia",
-        "symbol": "$RUSSIA",
-        "address": "0x769098d7b733f2f0378818c9a4514959b78f749e"
+        "name": "KellyClaud",
+        "symbol": "$KELLYCLAUD",
+        "address": "0x2bafa970753a08021ac71c75efc02dfb0d69cb07"
       },
       "scores": {
         "confidence": 100,
@@ -25,47 +25,47 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 26374.4748,
-        "vol_24h_usd": 19335.4277794823
+        "liq_usd": 11771.9791,
+        "vol_24h_usd": 4448.1754808975
       },
       "dex": "geckoterminal",
-      "pair_address": "0x769098d7b733f2f0378818c9a4514959b78f749e",
+      "pair_address": "0x2bafa970753a08021ac71c75efc02dfb0d69cb07",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T22:02:07.274262+00:00",
+      "ts_utc": "2026-03-05T22:07:08.073556+00:00",
       "chain": "base",
       "token": {
-        "name": "Builder Arena",
-        "symbol": "$BUILDER ARENA",
-        "address": "0x0bd7f17897e3ef5eb845ad14fc06b9573ed5777d"
+        "name": "Elsa",
+        "symbol": "$ELSA",
+        "address": "0xbca86d4cd9e3fc23e9c855696547d4da602f7ec5"
       },
       "scores": {
         "confidence": 100,
         "rarity": "new",
-        "risk": "low"
+        "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 140177.1306,
-        "vol_24h_usd": 2895.275424
+        "liq_usd": 89079.8074,
+        "vol_24h_usd": 1022.761215
       },
       "dex": "geckoterminal",
-      "pair_address": "0x0bd7f17897e3ef5eb845ad14fc06b9573ed5777d",
+      "pair_address": "0xbca86d4cd9e3fc23e9c855696547d4da602f7ec5",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T22:02:06.684825+00:00",
+      "ts_utc": "2026-03-05T22:07:08.240445+00:00",
       "chain": "base",
       "token": {
-        "name": "Robodonkey",
-        "symbol": "$ROBODONKEY",
-        "address": "0x6d75f150b8b371ee1caf41caf606246ba5fc4ba3"
+        "name": "PAPERCLIP",
+        "symbol": "$PAPERCLIP",
+        "address": "0x86272bbbd60acc359452bbfdfcf41d37fcc72ba3"
       },
       "scores": {
         "confidence": 95,
@@ -75,36 +75,11 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 21760.5538,
-        "vol_24h_usd": 1069.3870141751
+        "liq_usd": 20873.8202,
+        "vol_24h_usd": 4483.9902857806
       },
       "dex": "geckoterminal",
-      "pair_address": "0x6d75f150b8b371ee1caf41caf606246ba5fc4ba3",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T22:02:07.091170+00:00",
-      "chain": "base",
-      "token": {
-        "name": "ABLOHISMS",
-        "symbol": "$ABLOHISMS",
-        "address": "0x91e915736b21a7f7dda9257a25334b2966e93956"
-      },
-      "scores": {
-        "confidence": 95,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 39275.3665,
-        "vol_24h_usd": 2739.2395215672
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x91e915736b21a7f7dda9257a25334b2966e93956",
+      "pair_address": "0x86272bbbd60acc359452bbfdfcf41d37fcc72ba3",
       "scanner": "cio"
     }
   ]
