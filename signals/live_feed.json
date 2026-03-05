@@ -1,46 +1,71 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T05:30:24.789Z",
+    "updated_at": "2026-03-05T05:45:26.993Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 3,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T05:30:24.710844+00:00",
+      "ts_utc": "2026-03-05T05:45:26.798377+00:00",
       "chain": "base",
       "token": {
-        "name": "WARDRUM",
-        "symbol": "$WARDRUM",
-        "address": "0x98de18243c3dbb75fe07216d6df25be57ac514cd"
+        "name": "OIL",
+        "symbol": "$OIL",
+        "address": "0x2d0c2448b3fa59c285d643ba8ec290f32da9b1f1"
       },
       "scores": {
-        "confidence": 95,
+        "confidence": 100,
         "rarity": "new",
         "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 22528.3234,
-        "vol_24h_usd": 7242.0268511358
+        "liq_usd": 26009.9205,
+        "vol_24h_usd": 20829.6346255979
       },
       "dex": "geckoterminal",
-      "pair_address": "0x98de18243c3dbb75fe07216d6df25be57ac514cd",
+      "pair_address": "0x2d0c2448b3fa59c285d643ba8ec290f32da9b1f1",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T05:30:24.745425+00:00",
+      "ts_utc": "2026-03-05T05:45:26.959745+00:00",
       "chain": "base",
       "token": {
-        "name": "Diamond",
-        "symbol": "$DIAMOND",
-        "address": "0xfdcff6c6183bb039316b8a6ba294bdf09c67594b"
+        "name": "Trinket",
+        "symbol": "$TRINKET",
+        "address": "0x42c604b0fc76c17c72fed309edb4bb284a711034"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 52607.4853,
+        "vol_24h_usd": 1978.593542
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x42c604b0fc76c17c72fed309edb4bb284a711034",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T05:45:26.614041+00:00",
+      "chain": "base",
+      "token": {
+        "name": "CLAWNCH",
+        "symbol": "$CLAWNCH",
+        "address": "0x66b49bd660db97ab9c70793a665e2c99054f47be"
       },
       "scores": {
         "confidence": 90,
@@ -50,11 +75,11 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 15896.1287,
-        "vol_24h_usd": 9540.9587056769
+        "liq_usd": 11023.935,
+        "vol_24h_usd": 1438.1728142907
       },
       "dex": "geckoterminal",
-      "pair_address": "0xfdcff6c6183bb039316b8a6ba294bdf09c67594b",
+      "pair_address": "0x66b49bd660db97ab9c70793a665e2c99054f47be",
       "scanner": "cio"
     }
   ]
