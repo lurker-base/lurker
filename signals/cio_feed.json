@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-05T17:25:33.263000+00:00",
-    "generated_at": "2026-03-05T17:25:33.263000+00:00",
+    "updated_at": "2026-03-05T17:34:45.354000+00:00",
+    "generated_at": "2026-03-05T17:34:45.354000+00:00",
     "status": "ok",
-    "count": 2,
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,10 +12,11 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
-      "low": 2
+      "low": 1
     },
     "rejected": {
-      "too_old": 1
+      "too_old": 1,
+      "low_tx": 1
     },
     "source": "ultra_launch_scanner"
   },
@@ -32,17 +33,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 74074.37,
-        "vol_5m_usd": 20148.23,
-        "vol_1h_usd": 267952.97,
-        "txns_5m": 62,
-        "price_usd": 1.082e-06
+        "liq_usd": 66442.55,
+        "vol_5m_usd": 10997.34,
+        "vol_1h_usd": 251503.1,
+        "txns_5m": 59,
+        "price_usd": 9.124e-07
       },
       "timestamps": {
         "pair_created_at": "2026-03-05T16:28:47+00:00",
         "token_first_seen": "2026-03-05T16:44:33.788000+00:00",
-        "age_minutes": 56.8,
-        "age_hours": 0.95
+        "age_minutes": 66.0,
+        "age_hours": 1.1
       },
       "scores": {
         "cio_score": 100,
@@ -58,46 +59,6 @@
         "has_socials": true,
         "has_website": false,
         "quality_score": 75
-      }
-    },
-    {
-      "token": {
-        "address": "0x309792e8950405f803c0e3f2c9083bdff4466ba3",
-        "symbol": "YARR",
-        "name": "Yarr Token"
-      },
-      "pair": {
-        "address": "0xeebc6f6fc4a6e5304abb9fdf340c08b7cc1efb941febc9c9e6224b648d317ca6",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 78165.51,
-        "vol_5m_usd": 306.31,
-        "vol_1h_usd": 9041.08,
-        "txns_5m": 2,
-        "price_usd": 9.506e-07
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-03T15:10:33+00:00",
-        "token_first_seen": "2026-03-05T17:00:28.412000+00:00",
-        "age_minutes": 3015.0,
-        "age_hours": 50.25
-      },
-      "scores": {
-        "cio_score": 90,
-        "freshness": 0.16
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
       }
     }
   ]
