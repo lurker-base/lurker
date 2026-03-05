@@ -1,60 +1,85 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T15:05:47.830Z",
+    "updated_at": "2026-03-05T15:15:49.853Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 3,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T15:05:47.438050+00:00",
+      "ts_utc": "2026-03-05T15:15:49.473328+00:00",
       "chain": "base",
       "token": {
-        "name": "ROKU",
-        "symbol": "$ROKU",
-        "address": "0x593ecaf555900c8d198de10630b6e3b1e0060ba3"
+        "name": "LATTICE",
+        "symbol": "$LATTICE",
+        "address": "0xd2317c884d2f5b63544a71fb7b9e7837422f960b"
       },
       "scores": {
-        "confidence": 95,
+        "confidence": 100,
         "rarity": "new",
-        "risk": "medium"
+        "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 20914.6894,
-        "vol_24h_usd": 4191.7687385491
+        "liq_usd": 21997.3922,
+        "vol_24h_usd": 14364.2490832847
       },
       "dex": "geckoterminal",
-      "pair_address": "0x593ecaf555900c8d198de10630b6e3b1e0060ba3",
+      "pair_address": "0xd2317c884d2f5b63544a71fb7b9e7837422f960b",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T15:05:47.803030+00:00",
+      "ts_utc": "2026-03-05T15:15:49.825093+00:00",
       "chain": "base",
       "token": {
-        "name": "VELRBOT",
-        "symbol": "$VELRBOT",
-        "address": "0xd327159bc55a1c69c042d1af15ca78ee2d0c0b07"
+        "name": "STACKR",
+        "symbol": "$STACKR",
+        "address": "0x8aefebcbc962556bf3672faf8781c6c5d9914bdc"
       },
       "scores": {
-        "confidence": 95,
+        "confidence": 100,
         "rarity": "new",
         "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 22454.7236,
-        "vol_24h_usd": 1050.7292420041
+        "liq_usd": 152650.0257,
+        "vol_24h_usd": 1179.214354
       },
       "dex": "geckoterminal",
-      "pair_address": "0xd327159bc55a1c69c042d1af15ca78ee2d0c0b07",
+      "pair_address": "0x8aefebcbc962556bf3672faf8781c6c5d9914bdc",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T15:15:49.679848+00:00",
+      "chain": "base",
+      "token": {
+        "name": "SHIB",
+        "symbol": "$SHIB",
+        "address": "0x01a295ca8cdb09d40fc02aa655798670fa0174fe"
+      },
+      "scores": {
+        "confidence": 90,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 6205.7237,
+        "vol_24h_usd": 6174.7931711732
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x01a295ca8cdb09d40fc02aa655798670fa0174fe",
       "scanner": "cio"
     }
   ]
