@@ -1,71 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T20:01:49.089Z",
+    "updated_at": "2026-03-05T20:06:49.652Z",
     "source": "cio",
     "chain": "base",
-    "count": 4,
+    "count": 1,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T20:01:48.652200+00:00",
+      "ts_utc": "2026-03-05T20:06:49.620970+00:00",
       "chain": "base",
       "token": {
-        "name": "HELIX",
-        "symbol": "$HELIX",
-        "address": "0xa29d1487bb9676805e32658d0c7d2eab79ca6b4d"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 15015.5447,
-        "vol_24h_usd": 9091.0769214542
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xa29d1487bb9676805e32658d0c7d2eab79ca6b4d",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T20:01:49.050192+00:00",
-      "chain": "base",
-      "token": {
-        "name": "Mei",
-        "symbol": "$MEI",
-        "address": "0x8ef5387804e7214db285158143993cb08d3aeba3"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 12365.1569,
-        "vol_24h_usd": 4596.4899595554
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x8ef5387804e7214db285158143993cb08d3aeba3",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T20:01:48.462770+00:00",
-      "chain": "base",
-      "token": {
-        "name": "CTWARS",
-        "symbol": "$CTWARS",
-        "address": "0x7b556d1fb58ceb7a625eaddd5c6ff37eb0c2d032"
+        "name": "retards",
+        "symbol": "$RETARDS",
+        "address": "0xeb20b2ee7f849884e7156a21c1b89a1c5b8a4ba3"
       },
       "scores": {
         "confidence": 95,
@@ -75,36 +25,11 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 21171.3578,
-        "vol_24h_usd": 2795.2477815874
+        "liq_usd": 20420.6706,
+        "vol_24h_usd": 4105.2726275339
       },
       "dex": "geckoterminal",
-      "pair_address": "0x7b556d1fb58ceb7a625eaddd5c6ff37eb0c2d032",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T20:01:48.840012+00:00",
-      "chain": "base",
-      "token": {
-        "name": "AgentInBox",
-        "symbol": "$AGENTINBOX",
-        "address": "0xe6ee532bce144e27e8dfc4aff923b3d98bbc8ba3"
-      },
-      "scores": {
-        "confidence": 90,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 21603.44,
-        "vol_24h_usd": 12111.1941915065
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xe6ee532bce144e27e8dfc4aff923b3d98bbc8ba3",
+      "pair_address": "0xeb20b2ee7f849884e7156a21c1b89a1c5b8a4ba3",
       "scanner": "cio"
     }
   ]
