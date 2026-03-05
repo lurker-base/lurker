@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T17:16:15.727Z",
+    "updated_at": "2026-03-05T17:21:16.334Z",
     "source": "cio",
     "chain": "base",
-    "count": 4,
+    "count": 1,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T17:16:15.425620+00:00",
+      "ts_utc": "2026-03-05T17:21:16.307628+00:00",
       "chain": "base",
       "token": {
-        "name": "FARMER",
-        "symbol": "$FARMER",
-        "address": "0x46de81d40f5f78b1809a187c3e2270384ef40b07"
+        "name": "CLAWNCH",
+        "symbol": "$CLAWNCH",
+        "address": "0x9c2b341685ce5f27758db65ae0568a73b5e847be"
       },
       "scores": {
         "confidence": 100,
@@ -25,86 +25,11 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 23681.5046,
-        "vol_24h_usd": 5121.112047107
+        "liq_usd": 11747.2701,
+        "vol_24h_usd": 3507.3303869063
       },
       "dex": "geckoterminal",
-      "pair_address": "0x46de81d40f5f78b1809a187c3e2270384ef40b07",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T17:16:15.581934+00:00",
-      "chain": "base",
-      "token": {
-        "name": "WAR",
-        "symbol": "$WAR",
-        "address": "0x3aba03838108486ccebb2748831da071d38c6e14"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 13806.3139,
-        "vol_24h_usd": 13691.3060958574
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x3aba03838108486ccebb2748831da071d38c6e14",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T17:16:15.641195+00:00",
-      "chain": "base",
-      "token": {
-        "name": "ZAMA",
-        "symbol": "$ZAMA",
-        "address": "0xce0cc489f097a2e4546c03eb8278790977dc1e56"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 118326.154,
-        "vol_24h_usd": 1007.194998
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xce0cc489f097a2e4546c03eb8278790977dc1e56",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T17:16:15.699042+00:00",
-      "chain": "base",
-      "token": {
-        "name": "JURASSIUS",
-        "symbol": "$JURASSIUS",
-        "address": "0x2dda4faaa7e32f39be34839bf198238753b3960d"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 25828.7009,
-        "vol_24h_usd": 36643.2847899412
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x2dda4faaa7e32f39be34839bf198238753b3960d",
+      "pair_address": "0x9c2b341685ce5f27758db65ae0568a73b5e847be",
       "scanner": "cio"
     }
   ]
