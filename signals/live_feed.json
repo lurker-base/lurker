@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T14:10:37.623Z",
+    "updated_at": "2026-03-05T14:15:38.391Z",
     "source": "cio",
     "chain": "base",
     "count": 2,
@@ -10,12 +10,12 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T14:10:37.583716+00:00",
+      "ts_utc": "2026-03-05T14:15:38.162067+00:00",
       "chain": "base",
       "token": {
-        "name": "Davinci",
-        "symbol": "$DAVINCI",
-        "address": "0x84ea8ae0b7b9fb8d41a8f42ad6f4f29bbd0092b6"
+        "name": "ALICE",
+        "symbol": "$ALICE",
+        "address": "0xfa4101ffdc4c92309a4e5f34812aee775479d359"
       },
       "scores": {
         "confidence": 100,
@@ -25,22 +25,22 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 27242.0688,
-        "vol_24h_usd": 35939.8865214941
+        "liq_usd": 26241.6658,
+        "vol_24h_usd": 17538.8319867023
       },
       "dex": "geckoterminal",
-      "pair_address": "0x84ea8ae0b7b9fb8d41a8f42ad6f4f29bbd0092b6",
+      "pair_address": "0xfa4101ffdc4c92309a4e5f34812aee775479d359",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T14:10:37.262181+00:00",
+      "ts_utc": "2026-03-05T14:15:38.362957+00:00",
       "chain": "base",
       "token": {
-        "name": "SPC",
-        "symbol": "$SPC",
-        "address": "0x2867d7430f3186b9fd6295d34a950a4d332bc8de"
+        "name": "GPT",
+        "symbol": "$GPT",
+        "address": "0x5635d42b64356867de90bd28bebb0892b2ab0af9"
       },
       "scores": {
         "confidence": 90,
@@ -50,11 +50,11 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 13113.3483,
-        "vol_24h_usd": 1136.1774043661
+        "liq_usd": 6238.6568,
+        "vol_24h_usd": 6883.0883871867
       },
       "dex": "geckoterminal",
-      "pair_address": "0x2867d7430f3186b9fd6295d34a950a4d332bc8de",
+      "pair_address": "0x5635d42b64356867de90bd28bebb0892b2ab0af9",
       "scanner": "cio"
     }
   ]
