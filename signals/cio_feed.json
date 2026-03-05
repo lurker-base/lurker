@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-05T22:35:01.115000+00:00",
-    "generated_at": "2026-03-05T22:35:01.115000+00:00",
+    "updated_at": "2026-03-05T22:40:01.031000+00:00",
+    "generated_at": "2026-03-05T22:40:01.031000+00:00",
     "status": "ok",
-    "count": 1,
+    "count": 2,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,11 +12,10 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
-      "medium": 1
+      "medium": 2
     },
     "rejected": {
-      "too_old": 1,
-      "low_volume": 1
+      "too_old": 1
     },
     "source": "ultra_launch_scanner"
   },
@@ -33,17 +32,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 104493.09,
-        "vol_5m_usd": 2764.48,
-        "vol_1h_usd": 45582.61,
-        "txns_5m": 11,
-        "price_usd": 1.764e-06
+        "liq_usd": 105624.63,
+        "vol_5m_usd": 1538.37,
+        "vol_1h_usd": 40352.29,
+        "txns_5m": 8,
+        "price_usd": 1.793e-06
       },
       "timestamps": {
         "pair_created_at": "2026-03-05T19:05:19+00:00",
         "token_first_seen": "2026-03-05T21:28:56.038000+00:00",
-        "age_minutes": 209.7,
-        "age_hours": 3.5
+        "age_minutes": 214.7,
+        "age_hours": 3.58
       },
       "scores": {
         "cio_score": 100,
@@ -51,6 +50,48 @@
       },
       "risks": [
         "dumping"
+      ],
+      "risk_level": "medium",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    },
+    {
+      "token": {
+        "address": "0x5566f6c47da94193d3815c8cdaed5b1f9ddc3ba3",
+        "symbol": "CLAWSTORE",
+        "name": "clawstore"
+      },
+      "pair": {
+        "address": "0x7ee469d205faa769178ca6c523ed07aa70b8dd07652b82231f1e8a2a244eaa8b",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 39847.96,
+        "vol_5m_usd": 2089.28,
+        "vol_1h_usd": 2193.33,
+        "txns_5m": 2,
+        "price_usd": 3.999e-07
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-24T22:10:57+00:00",
+        "token_first_seen": "2026-03-05T20:56:19.370000+00:00",
+        "age_minutes": 12989.1,
+        "age_hours": 216.48
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0
+      },
+      "risks": [
+        "low_activity"
       ],
       "risk_level": "medium",
       "source": "profiles",

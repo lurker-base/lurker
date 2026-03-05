@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T22:32:12.953Z",
+    "updated_at": "2026-03-05T22:37:13.511Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 1,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T22:32:12.748602+00:00",
+      "ts_utc": "2026-03-05T22:37:13.487700+00:00",
       "chain": "base",
       "token": {
-        "name": "CLAWNCH",
-        "symbol": "$CLAWNCH",
-        "address": "0x021402efe70b671c5970ddc6e9048bd7cf8447be"
+        "name": "皮皮拉",
+        "symbol": "$皮皮拉",
+        "address": "0xb617167bd5c24ac5b4f9530104b3810a1ca2fed3"
       },
       "scores": {
         "confidence": 100,
@@ -25,36 +25,11 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 11319.2867,
-        "vol_24h_usd": 3380.305858487
+        "liq_usd": 25249.4681,
+        "vol_24h_usd": 17222.1203959955
       },
       "dex": "geckoterminal",
-      "pair_address": "0x021402efe70b671c5970ddc6e9048bd7cf8447be",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T22:32:12.919001+00:00",
-      "chain": "base",
-      "token": {
-        "name": "NANOCORP",
-        "symbol": "$NANOCORP",
-        "address": "0x6e9a7602806b08722875bcdbdcf0f2e0698ceba3"
-      },
-      "scores": {
-        "confidence": 90,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 29300.798,
-        "vol_24h_usd": 26968.5197006229
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x6e9a7602806b08722875bcdbdcf0f2e0698ceba3",
+      "pair_address": "0xb617167bd5c24ac5b4f9530104b3810a1ca2fed3",
       "scanner": "cio"
     }
   ]
