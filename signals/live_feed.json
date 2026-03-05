@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T07:00:38.498Z",
+    "updated_at": "2026-03-05T07:15:41.496Z",
     "source": "cio",
     "chain": "base",
     "count": 1,
@@ -10,26 +10,26 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T07:00:38.462800+00:00",
+      "ts_utc": "2026-03-05T07:15:41.451361+00:00",
       "chain": "base",
       "token": {
-        "name": "Mafia Nuts",
-        "symbol": "$MAFIA NUTS",
-        "address": "0x0cd628f098b5a0e5e1bb16960667e4c12a120aea"
+        "name": "LYSUN",
+        "symbol": "$LYSUN",
+        "address": "0x1978e62c52b6431808ca9cc7ef54818f18378e22"
       },
       "scores": {
         "confidence": 95,
         "rarity": "new",
-        "risk": "low"
+        "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 23367.0193,
-        "vol_24h_usd": 5898.1712819813
+        "liq_usd": 7306.9199,
+        "vol_24h_usd": 1475.5160196347
       },
       "dex": "geckoterminal",
-      "pair_address": "0x0cd628f098b5a0e5e1bb16960667e4c12a120aea",
+      "pair_address": "0x1978e62c52b6431808ca9cc7ef54818f18378e22",
       "scanner": "cio"
     }
   ]
