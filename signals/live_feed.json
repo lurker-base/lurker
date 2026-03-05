@@ -1,61 +1,10 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T08:45:58.388Z",
+    "updated_at": "2026-03-05T09:01:01.405Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 0,
     "errors": []
   },
-  "signals": [
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T08:45:58.151405+00:00",
-      "chain": "base",
-      "token": {
-        "name": "CLAWNCH",
-        "symbol": "$CLAWNCH",
-        "address": "0xdbbabcd575096da17c985b057afae0e554a447be"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 11997.9965,
-        "vol_24h_usd": 4944.7762448378
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xdbbabcd575096da17c985b057afae0e554a447be",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T08:45:58.350993+00:00",
-      "chain": "base",
-      "token": {
-        "name": "PUNCH",
-        "symbol": "$PUNCH",
-        "address": "0x07c8396d147b448b2ae2906edb80bb8fdd49f652"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 12364.5546,
-        "vol_24h_usd": 1697.7792921939
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x07c8396d147b448b2ae2906edb80bb8fdd49f652",
-      "scanner": "cio"
-    }
-  ]
+  "signals": []
 }
