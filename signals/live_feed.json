@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T08:30:56.270Z",
+    "updated_at": "2026-03-05T08:45:58.388Z",
     "source": "cio",
     "chain": "base",
-    "count": 3,
+    "count": 2,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T08:30:55.681002+00:00",
+      "ts_utc": "2026-03-05T08:45:58.151405+00:00",
       "chain": "base",
       "token": {
-        "name": "GITC",
-        "symbol": "$GITC",
-        "address": "0x560c46fd85bac3198f4194813f53ef69209edba3"
+        "name": "CLAWNCH",
+        "symbol": "$CLAWNCH",
+        "address": "0xdbbabcd575096da17c985b057afae0e554a447be"
       },
       "scores": {
         "confidence": 100,
@@ -25,61 +25,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 11258.0388,
-        "vol_24h_usd": 1184.2166418249
+        "liq_usd": 11997.9965,
+        "vol_24h_usd": 4944.7762448378
       },
       "dex": "geckoterminal",
-      "pair_address": "0x560c46fd85bac3198f4194813f53ef69209edba3",
+      "pair_address": "0xdbbabcd575096da17c985b057afae0e554a447be",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T08:30:55.861321+00:00",
+      "ts_utc": "2026-03-05T08:45:58.350993+00:00",
       "chain": "base",
       "token": {
-        "name": "NOVA",
-        "symbol": "$NOVA",
-        "address": "0xbd8c24447af07dc881513f7216560999a0302ba3"
+        "name": "PUNCH",
+        "symbol": "$PUNCH",
+        "address": "0x07c8396d147b448b2ae2906edb80bb8fdd49f652"
       },
       "scores": {
-        "confidence": 95,
+        "confidence": 100,
         "rarity": "new",
         "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 23843.8357,
-        "vol_24h_usd": 1957.3315249867
+        "liq_usd": 12364.5546,
+        "vol_24h_usd": 1697.7792921939
       },
       "dex": "geckoterminal",
-      "pair_address": "0xbd8c24447af07dc881513f7216560999a0302ba3",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T08:30:56.237884+00:00",
-      "chain": "base",
-      "token": {
-        "name": "Conway",
-        "symbol": "$CONWAY",
-        "address": "0x674fa70f85ff3bf331bdb572cee0dcbdaeb34ba3"
-      },
-      "scores": {
-        "confidence": 95,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 22184.6441,
-        "vol_24h_usd": 4152.5846632422
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x674fa70f85ff3bf331bdb572cee0dcbdaeb34ba3",
+      "pair_address": "0x07c8396d147b448b2ae2906edb80bb8fdd49f652",
       "scanner": "cio"
     }
   ]
