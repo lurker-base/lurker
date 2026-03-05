@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T21:06:57.901Z",
+    "updated_at": "2026-03-05T21:16:58.902Z",
     "source": "cio",
     "chain": "base",
     "count": 1,
@@ -10,26 +10,26 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T21:06:57.875372+00:00",
+      "ts_utc": "2026-03-05T21:16:58.870036+00:00",
       "chain": "base",
       "token": {
-        "name": "VIRTERN",
-        "symbol": "$VIRTERN",
-        "address": "0x23dfcc676d0d63c656130ef92754e51684ec3b00"
+        "name": "GVG",
+        "symbol": "$GVG",
+        "address": "0x882c721b7377599eb55b7b87e9ff028ec0a90323"
       },
       "scores": {
         "confidence": 100,
         "rarity": "new",
-        "risk": "medium"
+        "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 137881.168,
-        "vol_24h_usd": 1239.068035
+        "liq_usd": 24097.5776,
+        "vol_24h_usd": 16773.9571620478
       },
       "dex": "geckoterminal",
-      "pair_address": "0x23dfcc676d0d63c656130ef92754e51684ec3b00",
+      "pair_address": "0x882c721b7377599eb55b7b87e9ff028ec0a90323",
       "scanner": "cio"
     }
   ]

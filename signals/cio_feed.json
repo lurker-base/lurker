@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-05T21:10:31.470000+00:00",
-    "generated_at": "2026-03-05T21:10:31.470000+00:00",
+    "updated_at": "2026-03-05T21:19:44.034000+00:00",
+    "generated_at": "2026-03-05T21:19:44.034000+00:00",
     "status": "ok",
-    "count": 1,
+    "count": 2,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,15 +12,54 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
-      "medium": 1
+      "low": 2
     },
     "rejected": {
-      "too_old": 1,
-      "low_tx": 1
+      "too_old": 1
     },
     "source": "ultra_launch_scanner"
   },
   "candidates": [
+    {
+      "token": {
+        "address": "0xd724810bdff66416cb61f6ecb1c50f5d423a6ba3",
+        "symbol": "TEDDY",
+        "name": "Teddy Declassified"
+      },
+      "pair": {
+        "address": "0xec645eee2c69d085c45f58a2fead471b97e5a854c3238180c6bbb43bc4f3a7db",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 65551.25,
+        "vol_5m_usd": 2599.27,
+        "vol_1h_usd": 14696.6,
+        "txns_5m": 5,
+        "price_usd": 7.842e-07
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-04T04:03:53+00:00",
+        "token_first_seen": "2026-03-05T20:27:03.069000+00:00",
+        "age_minutes": 2475.9,
+        "age_hours": 41.26
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.31
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    },
     {
       "token": {
         "address": "0x5566f6c47da94193d3815c8cdaed5b1f9ddc3ba3",
@@ -33,26 +72,24 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 36059.24,
-        "vol_5m_usd": 570.27,
-        "vol_1h_usd": 2067.98,
-        "txns_5m": 2,
-        "price_usd": 3.535e-07
+        "liq_usd": 41293.42,
+        "vol_5m_usd": 570.85,
+        "vol_1h_usd": 4602.63,
+        "txns_5m": 7,
+        "price_usd": 4.187e-07
       },
       "timestamps": {
         "pair_created_at": "2026-02-24T22:10:57+00:00",
         "token_first_seen": "2026-03-05T20:56:19.370000+00:00",
-        "age_minutes": 12899.6,
-        "age_hours": 214.99
+        "age_minutes": 12908.8,
+        "age_hours": 215.15
       },
       "scores": {
         "cio_score": 90,
         "freshness": 0
       },
-      "risks": [
-        "low_activity"
-      ],
-      "risk_level": "medium",
+      "risks": [],
+      "risk_level": "low",
       "source": "profiles",
       "status": "observing",
       "quality": {
