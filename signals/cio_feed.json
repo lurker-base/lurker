@@ -1,11 +1,107 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-05T13:35:42.460000+00:00",
-    "status": "error",
-    "count": 0,
-    "error": "scanner crashed: JSONDecodeError('Extra data: line 9866 column 2 (char 235986)')",
-    "trace": "_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)\n  File \"/home/linuxbrew/.linuxbrew/Cellar/python@3.14/3.14.3_1/lib/python3.14/json/__init__.py\", line 352, in loads\n    return _default_decoder.decode(s)\n           ~~~~~~~~~~~~~~~~~~~~~~~^^^\n  File \"/home/linuxbrew/.linuxbrew/Cellar/python@3.14/3.14.3_1/lib/python3.14/json/decoder.py\", line 348, in decode\n    raise JSONDecodeError(\"Extra data\", s, end)\njson.decoder.JSONDecodeError: Extra data: line 9866 column 2 (char 235986)\n"
+    "updated_at": "2026-03-05T13:42:17.313000+00:00",
+    "generated_at": "2026-03-05T13:42:17.313000+00:00",
+    "status": "ok",
+    "count": 2,
+    "thresholds": {
+      "min_liq_usd": 1000,
+      "min_vol_5m": 500,
+      "min_tx_5m": 1,
+      "max_age_min": 43200
+    },
+    "risk_distribution": {
+      "low": 1,
+      "medium": 1
+    },
+    "rejected": {
+      "too_old": 1
+    },
+    "source": "ultra_launch_scanner"
   },
-  "candidates": []
+  "candidates": [
+    {
+      "token": {
+        "address": "0xea72fab512856eafe090475e7242e975ed72f087",
+        "symbol": "AG0",
+        "name": "Ag0 Ai"
+      },
+      "pair": {
+        "address": "0xcf0ef17abcba064f880ac9c4de5289c5b403a2b4bb95b5a64d4e9eae67c4cc0a",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 82698.58,
+        "vol_5m_usd": 21269.78,
+        "vol_1h_usd": 368034.84,
+        "txns_5m": 87,
+        "price_usd": 1.188e-06
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-05T12:33:53+00:00",
+        "token_first_seen": "2026-03-05T13:42:17.301000+00:00",
+        "age_minutes": 68.4,
+        "age_hours": 1.14
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.98
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": false,
+        "quality_score": 75
+      }
+    },
+    {
+      "token": {
+        "address": "0x04c4c098a5b492750a2bd0578c685f179c78a1ca",
+        "symbol": "FLOKI",
+        "name": "FLOKI ON BASE"
+      },
+      "pair": {
+        "address": "0xfca261560133699ecd4c99941c767e096700216d",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 42396.79,
+        "vol_5m_usd": 4494.53,
+        "vol_1h_usd": 90779.77,
+        "txns_5m": 86,
+        "price_usd": 9.934e-07
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-04T12:35:55+00:00",
+        "token_first_seen": "2026-03-04T16:34:15.099000+00:00",
+        "age_minutes": 1506.4,
+        "age_hours": 25.11
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.58
+      },
+      "risks": [
+        "dumping"
+      ],
+      "risk_level": "medium",
+      "source": "boosts",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    }
+  ]
 }
