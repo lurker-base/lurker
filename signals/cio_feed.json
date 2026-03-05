@@ -1,8 +1,8 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-05T22:55:55.565000+00:00",
-    "generated_at": "2026-03-05T22:55:55.565000+00:00",
+    "updated_at": "2026-03-05T23:05:07.564000+00:00",
+    "generated_at": "2026-03-05T23:05:07.564000+00:00",
     "status": "ok",
     "count": 1,
     "thresholds": {
@@ -12,44 +12,47 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
-      "low": 1
+      "medium": 1
     },
     "rejected": {
-      "too_old": 1
+      "too_old": 1,
+      "duplicate": 1
     },
     "source": "ultra_launch_scanner"
   },
   "candidates": [
     {
       "token": {
-        "address": "0x64b6f95bcd81291dc42981f6b6202c7d18df0ba3",
-        "symbol": "ROOM",
-        "name": "MoltRooms"
+        "address": "0x124a4ed43e2abf32b7e6a3d6dc1c8e47bbd1cba3",
+        "symbol": "WW3",
+        "name": "WORLD WAR 3"
       },
       "pair": {
-        "address": "0x3201a762e98be4018c1b51544eab96c408085b38a272745da3c52b20b856cf68",
+        "address": "0x9aeb5c9b5f6de5c576d3e6998a3c7bb3afd0736326ba771064bfad1d7591c59e",
         "dex": "uniswap",
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 117454.58,
-        "vol_5m_usd": 3104.26,
-        "vol_1h_usd": 34803.63,
-        "txns_5m": 10,
-        "price_usd": 2.138e-06
+        "liq_usd": 40016.67,
+        "vol_5m_usd": 2311.1,
+        "vol_1h_usd": 20419.32,
+        "txns_5m": 35,
+        "price_usd": 4.291e-07
       },
       "timestamps": {
-        "pair_created_at": "2026-03-05T19:05:19+00:00",
-        "token_first_seen": "2026-03-05T21:28:56.038000+00:00",
-        "age_minutes": 230.6,
-        "age_hours": 3.84
+        "pair_created_at": "2026-03-05T21:37:13+00:00",
+        "token_first_seen": "2026-03-05T23:02:37.259000+00:00",
+        "age_minutes": 87.9,
+        "age_hours": 1.47
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.94
+        "freshness": 0.98
       },
-      "risks": [],
-      "risk_level": "low",
+      "risks": [
+        "dumping"
+      ],
+      "risk_level": "medium",
       "source": "profiles",
       "status": "observing",
       "quality": {
