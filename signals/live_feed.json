@@ -1,10 +1,36 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T06:15:31.574Z",
+    "updated_at": "2026-03-05T06:30:33.114Z",
     "source": "cio",
     "chain": "base",
-    "count": 0,
+    "count": 1,
     "errors": []
   },
-  "signals": []
+  "signals": [
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T06:30:33.088601+00:00",
+      "chain": "base",
+      "token": {
+        "name": "E=MC²",
+        "symbol": "$E=MC²",
+        "address": "0xe91d2f2a0bcb1f2864fb4b381a0c3df70913a247"
+      },
+      "scores": {
+        "confidence": 90,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 13815.2183,
+        "vol_24h_usd": 7054.2708501137
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xe91d2f2a0bcb1f2864fb4b381a0c3df70913a247",
+      "scanner": "cio"
+    }
+  ]
 }
