@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T14:05:36.787Z",
+    "updated_at": "2026-03-05T14:10:37.623Z",
     "source": "cio",
     "chain": "base",
-    "count": 1,
+    "count": 2,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T14:05:36.751203+00:00",
+      "ts_utc": "2026-03-05T14:10:37.583716+00:00",
       "chain": "base",
       "token": {
-        "name": "AG0",
-        "symbol": "$AG0",
-        "address": "0x53d238b4ed2981889b2e2bb99d32bb6c8bb1f087"
+        "name": "Davinci",
+        "symbol": "$DAVINCI",
+        "address": "0x84ea8ae0b7b9fb8d41a8f42ad6f4f29bbd0092b6"
       },
       "scores": {
         "confidence": 100,
@@ -25,11 +25,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 11400.0652,
-        "vol_24h_usd": 1957.3200483345
+        "liq_usd": 27242.0688,
+        "vol_24h_usd": 35939.8865214941
       },
       "dex": "geckoterminal",
-      "pair_address": "0x53d238b4ed2981889b2e2bb99d32bb6c8bb1f087",
+      "pair_address": "0x84ea8ae0b7b9fb8d41a8f42ad6f4f29bbd0092b6",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T14:10:37.262181+00:00",
+      "chain": "base",
+      "token": {
+        "name": "SPC",
+        "symbol": "$SPC",
+        "address": "0x2867d7430f3186b9fd6295d34a950a4d332bc8de"
+      },
+      "scores": {
+        "confidence": 90,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 13113.3483,
+        "vol_24h_usd": 1136.1774043661
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x2867d7430f3186b9fd6295d34a950a4d332bc8de",
       "scanner": "cio"
     }
   ]

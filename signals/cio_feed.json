@@ -1,107 +1,63 @@
 {
-  "schema": "lurker_cio_ultra_launch",
-  "meta": {
-    "updated_at": "2026-03-05T14:09:50.859000+00:00",
-    "generated_at": "2026-03-05T14:09:50.859000+00:00",
-    "status": "ok",
-    "count": 2,
-    "thresholds": {
-      "min_liq_usd": 1000,
-      "min_vol_5m": 500,
-      "min_tx_5m": 1,
-      "max_age_min": 43200
-    },
-    "risk_distribution": {
-      "low": 1,
-      "medium": 1
-    },
-    "rejected": {
-      "too_old": 1
-    },
-    "source": "ultra_launch_scanner"
-  },
+  "timestamp": "2026-03-05T14:10:37.585782+00:00",
+  "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xea72fab512856eafe090475e7242e975ed72f087",
-        "symbol": "AG0",
-        "name": "Ag0 Ai"
-      },
-      "pair": {
-        "address": "0xcf0ef17abcba064f880ac9c4de5289c5b403a2b4bb95b5a64d4e9eae67c4cc0a",
-        "dex": "uniswap",
-        "quote": "WETH"
+        "address": "0x84ea8ae0b7b9fb8d41a8f42ad6f4f29bbd0092b6",
+        "symbol": "Davinci",
+        "name": "Davinci"
       },
       "metrics": {
-        "liq_usd": 123502.76,
-        "vol_5m_usd": 74614.26,
-        "vol_1h_usd": 444181.32,
-        "txns_5m": 141,
-        "price_usd": 2.19e-06
+        "liq_usd": 27242.0688,
+        "vol_24h_usd": 35939.8865214941,
+        "txns_24h": 209,
+        "price_usd": 0
       },
-      "timestamps": {
-        "pair_created_at": "2026-03-05T12:33:53+00:00",
-        "token_first_seen": "2026-03-05T13:42:17.301000+00:00",
-        "age_minutes": 96.0,
-        "age_hours": 1.6
+      "risk": {
+        "level": "low",
+        "factors": [
+          "new_token"
+        ]
       },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.97
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": false,
-        "quality_score": 75
-      }
+      "score": 100,
+      "age_hours": 0.09785063861111111,
+      "detected_at": "2026-03-05T14:10:37.583716+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 SUPER FRESH",
+        "\ud83d\udca7 LIQ",
+        "\ud83d\udcc8 ACTIVE",
+        "\u26a1 VIRAL",
+        "\ud83d\udcd7 PUMPING",
+        "\u2b50 GEM"
+      ]
     },
     {
       "token": {
-        "address": "0x04c4c098a5b492750a2bd0578c685f179c78a1ca",
-        "symbol": "FLOKI",
-        "name": "FLOKI ON BASE"
-      },
-      "pair": {
-        "address": "0xfca261560133699ecd4c99941c767e096700216d",
-        "dex": "uniswap",
-        "quote": "WETH"
+        "address": "0x2867d7430f3186b9fd6295d34a950a4d332bc8de",
+        "symbol": "SPC",
+        "name": "SPC"
       },
       "metrics": {
-        "liq_usd": 47317.6,
-        "vol_5m_usd": 6700.83,
-        "vol_1h_usd": 82971.03,
-        "txns_5m": 87,
-        "price_usd": 1.216e-06
+        "liq_usd": 13113.3483,
+        "vol_24h_usd": 1136.1774043661,
+        "txns_24h": 12,
+        "price_usd": 0
       },
-      "timestamps": {
-        "pair_created_at": "2026-03-04T12:35:55+00:00",
-        "token_first_seen": "2026-03-04T16:34:15.099000+00:00",
-        "age_minutes": 1533.9,
-        "age_hours": 25.57
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
       },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.57
-      },
-      "risks": [
-        "dumping"
-      ],
-      "risk_level": "medium",
-      "source": "boosts",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
+      "score": 90,
+      "age_hours": 0.028362314166666666,
+      "detected_at": "2026-03-05T14:10:37.262181+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 SUPER FRESH"
+      ]
     }
   ]
 }
