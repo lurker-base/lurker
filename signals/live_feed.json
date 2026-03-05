@@ -1,96 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T15:00:46.803Z",
+    "updated_at": "2026-03-05T15:05:47.830Z",
     "source": "cio",
     "chain": "base",
-    "count": 4,
+    "count": 2,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T15:00:46.781046+00:00",
+      "ts_utc": "2026-03-05T15:05:47.438050+00:00",
       "chain": "base",
       "token": {
-        "name": "ruck",
-        "symbol": "$RUCK",
-        "address": "0x30a19fab96eaa973b6872fc39162bc7f37a96c8f"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 52037.655,
-        "vol_24h_usd": 1651.787018
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x30a19fab96eaa973b6872fc39162bc7f37a96c8f",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T15:00:46.222500+00:00",
-      "chain": "base",
-      "token": {
-        "name": "LATTICE",
-        "symbol": "$LATTICE",
-        "address": "0x39a04d68e6206380f68fad1a277e5ae03b0983ac"
-      },
-      "scores": {
-        "confidence": 95,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 14365.5232,
-        "vol_24h_usd": 12603.1941737589
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x39a04d68e6206380f68fad1a277e5ae03b0983ac",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T15:00:46.394292+00:00",
-      "chain": "base",
-      "token": {
-        "name": "Mort",
-        "symbol": "$MORT",
-        "address": "0xccbce48fe0cddefc461d37e0e44896ba4c1644c1"
-      },
-      "scores": {
-        "confidence": 95,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 23774.904,
-        "vol_24h_usd": 9416.7673386761
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xccbce48fe0cddefc461d37e0e44896ba4c1644c1",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T15:00:46.599691+00:00",
-      "chain": "base",
-      "token": {
-        "name": "$DIME",
-        "symbol": "$$DIME",
-        "address": "0xda432a42f68980581d1fe1c3295f200128218cc1"
+        "name": "ROKU",
+        "symbol": "$ROKU",
+        "address": "0x593ecaf555900c8d198de10630b6e3b1e0060ba3"
       },
       "scores": {
         "confidence": 95,
@@ -100,11 +25,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 6604.6108,
-        "vol_24h_usd": 2237.804985118
+        "liq_usd": 20914.6894,
+        "vol_24h_usd": 4191.7687385491
       },
       "dex": "geckoterminal",
-      "pair_address": "0xda432a42f68980581d1fe1c3295f200128218cc1",
+      "pair_address": "0x593ecaf555900c8d198de10630b6e3b1e0060ba3",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T15:05:47.803030+00:00",
+      "chain": "base",
+      "token": {
+        "name": "VELRBOT",
+        "symbol": "$VELRBOT",
+        "address": "0xd327159bc55a1c69c042d1af15ca78ee2d0c0b07"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 22454.7236,
+        "vol_24h_usd": 1050.7292420041
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xd327159bc55a1c69c042d1af15ca78ee2d0c0b07",
       "scanner": "cio"
     }
   ]
