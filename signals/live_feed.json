@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T21:01:57.240Z",
+    "updated_at": "2026-03-05T21:06:57.901Z",
     "source": "cio",
     "chain": "base",
     "count": 1,
@@ -10,26 +10,26 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T21:01:57.212088+00:00",
+      "ts_utc": "2026-03-05T21:06:57.875372+00:00",
       "chain": "base",
       "token": {
-        "name": "CIGS",
-        "symbol": "$CIGS",
-        "address": "0x06a897732e72d8369842fe9508631505fab5facf"
+        "name": "VIRTERN",
+        "symbol": "$VIRTERN",
+        "address": "0x23dfcc676d0d63c656130ef92754e51684ec3b00"
       },
       "scores": {
         "confidence": 100,
         "rarity": "new",
-        "risk": "low"
+        "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 26944.5401,
-        "vol_24h_usd": 27953.0808076908
+        "liq_usd": 137881.168,
+        "vol_24h_usd": 1239.068035
       },
       "dex": "geckoterminal",
-      "pair_address": "0x06a897732e72d8369842fe9508631505fab5facf",
+      "pair_address": "0x23dfcc676d0d63c656130ef92754e51684ec3b00",
       "scanner": "cio"
     }
   ]

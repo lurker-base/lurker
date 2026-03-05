@@ -1,22 +1,67 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-05T21:04:41.812000+00:00",
-    "generated_at": "2026-03-05T21:04:41.812000+00:00",
-    "status": "calm",
-    "count": 0,
+    "updated_at": "2026-03-05T21:10:31.470000+00:00",
+    "generated_at": "2026-03-05T21:10:31.470000+00:00",
+    "status": "ok",
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
       "min_tx_5m": 1,
       "max_age_min": 43200
     },
-    "risk_distribution": {},
+    "risk_distribution": {
+      "medium": 1
+    },
     "rejected": {
       "too_old": 1,
-      "low_tx": 2
+      "low_tx": 1
     },
     "source": "ultra_launch_scanner"
   },
-  "candidates": []
+  "candidates": [
+    {
+      "token": {
+        "address": "0x5566f6c47da94193d3815c8cdaed5b1f9ddc3ba3",
+        "symbol": "CLAWSTORE",
+        "name": "clawstore"
+      },
+      "pair": {
+        "address": "0x7ee469d205faa769178ca6c523ed07aa70b8dd07652b82231f1e8a2a244eaa8b",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 36059.24,
+        "vol_5m_usd": 570.27,
+        "vol_1h_usd": 2067.98,
+        "txns_5m": 2,
+        "price_usd": 3.535e-07
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-24T22:10:57+00:00",
+        "token_first_seen": "2026-03-05T20:56:19.370000+00:00",
+        "age_minutes": 12899.6,
+        "age_hours": 214.99
+      },
+      "scores": {
+        "cio_score": 90,
+        "freshness": 0
+      },
+      "risks": [
+        "low_activity"
+      ],
+      "risk_level": "medium",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    }
+  ]
 }
