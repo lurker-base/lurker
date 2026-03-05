@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T19:31:43.088Z",
+    "updated_at": "2026-03-05T19:36:43.968Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 3,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T19:31:43.014588+00:00",
+      "ts_utc": "2026-03-05T19:36:43.644359+00:00",
       "chain": "base",
       "token": {
-        "name": "THUNDAH",
-        "symbol": "$THUNDAH",
-        "address": "0xace5f200f7512f35e08f50ee3ae7f25db5d1710a"
+        "name": "CL",
+        "symbol": "$CL",
+        "address": "0x5ee277d8b03f2487f209ff6113dd9c66574c962a"
       },
       "scores": {
         "confidence": 100,
@@ -25,22 +25,22 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 14804.7106,
-        "vol_24h_usd": 14188.6742319891
+        "liq_usd": 22747.3835,
+        "vol_24h_usd": 21874.3966861805
       },
       "dex": "geckoterminal",
-      "pair_address": "0xace5f200f7512f35e08f50ee3ae7f25db5d1710a",
+      "pair_address": "0x5ee277d8b03f2487f209ff6113dd9c66574c962a",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T19:31:43.057179+00:00",
+      "ts_utc": "2026-03-05T19:36:43.940721+00:00",
       "chain": "base",
       "token": {
         "name": "Mei",
         "symbol": "$MEI",
-        "address": "0x568bac4e1c5a097d4b3b903b9a511534bd45eba3"
+        "address": "0x205241f60e93ba7370478db9b788a86e832aeba3"
       },
       "scores": {
         "confidence": 100,
@@ -50,11 +50,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 44236.7468,
-        "vol_24h_usd": 79455.2987902514
+        "liq_usd": 12118.5639,
+        "vol_24h_usd": 4905.0323748043
       },
       "dex": "geckoterminal",
-      "pair_address": "0x568bac4e1c5a097d4b3b903b9a511534bd45eba3",
+      "pair_address": "0x205241f60e93ba7370478db9b788a86e832aeba3",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T19:36:43.802149+00:00",
+      "chain": "base",
+      "token": {
+        "name": "jatevo",
+        "symbol": "$JATEVO",
+        "address": "0xaf0e5476d46909210b24377b64059dfb2d9feba3"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 21986.2317,
+        "vol_24h_usd": 5789.1226346436
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xaf0e5476d46909210b24377b64059dfb2d9feba3",
       "scanner": "cio"
     }
   ]
