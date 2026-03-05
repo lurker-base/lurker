@@ -1,19 +1,64 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-05T07:04:47.877000+00:00",
-    "generated_at": "2026-03-05T07:04:47.877000+00:00",
-    "status": "degraded",
-    "count": 0,
+    "updated_at": "2026-03-05T07:05:16.130000+00:00",
+    "generated_at": "2026-03-05T07:05:16.130000+00:00",
+    "status": "ok",
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
       "min_tx_5m": 1,
       "max_age_min": 43200
     },
-    "risk_distribution": {},
-    "rejected": {},
+    "risk_distribution": {
+      "low": 1
+    },
+    "rejected": {
+      "too_old": 1
+    },
     "source": "ultra_launch_scanner"
   },
-  "candidates": []
+  "candidates": [
+    {
+      "token": {
+        "address": "0xccae4fe9719a6b492803613a0a7f2832944a4630",
+        "symbol": "BEAN",
+        "name": "Lil Bean"
+      },
+      "pair": {
+        "address": "0xe9a451cdcd2a79ae1c68d9a9cdb1c55545097d1b",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 86623.58,
+        "vol_5m_usd": 5945.06,
+        "vol_1h_usd": 64892.73,
+        "txns_5m": 36,
+        "price_usd": 0.0003486
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-27T15:44:05+00:00",
+        "token_first_seen": "2026-03-05T06:17:35.212000+00:00",
+        "age_minutes": 8121.2,
+        "age_hours": 135.35
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    }
+  ]
 }
