@@ -1,35 +1,85 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T22:47:15.234Z",
+    "updated_at": "2026-03-05T22:52:16.140Z",
     "source": "cio",
     "chain": "base",
-    "count": 1,
+    "count": 3,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T22:47:15.207193+00:00",
+      "ts_utc": "2026-03-05T22:52:15.797031+00:00",
       "chain": "base",
       "token": {
-        "name": "CRAIG",
-        "symbol": "$CRAIG",
-        "address": "0xb975c620ec3af8fc950c0ce18e5bb9b9e07682e5"
+        "name": "NEXUS",
+        "symbol": "$NEXUS",
+        "address": "0xeadbc80848740536c80808d48eb20d5991fa3ba3"
       },
       "scores": {
         "confidence": 100,
         "rarity": "new",
-        "risk": "medium"
+        "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 52305.7222,
-        "vol_24h_usd": 2196.976414235
+        "liq_usd": 11024.0982,
+        "vol_24h_usd": 2206.0925503084
       },
       "dex": "geckoterminal",
-      "pair_address": "0xb975c620ec3af8fc950c0ce18e5bb9b9e07682e5",
+      "pair_address": "0xeadbc80848740536c80808d48eb20d5991fa3ba3",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T22:52:15.972392+00:00",
+      "chain": "base",
+      "token": {
+        "name": "LOLA",
+        "symbol": "$LOLA",
+        "address": "0x99ec0211d4adaf582ffdbefcd9e2d4847cd7dc28"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 22431.4186,
+        "vol_24h_usd": 28696.0090988185
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x99ec0211d4adaf582ffdbefcd9e2d4847cd7dc28",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T22:52:16.114132+00:00",
+      "chain": "base",
+      "token": {
+        "name": "ZAMA",
+        "symbol": "$ZAMA",
+        "address": "0x15d63dd2bcde45232223ed57c538c62b4f7abf0d"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 120445.5942,
+        "vol_24h_usd": 1926.408103264
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x15d63dd2bcde45232223ed57c538c62b4f7abf0d",
       "scanner": "cio"
     }
   ]
