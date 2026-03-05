@@ -1,35 +1,85 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T17:01:13.265Z",
+    "updated_at": "2026-03-05T17:06:13.943Z",
     "source": "cio",
     "chain": "base",
-    "count": 1,
+    "count": 3,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T17:01:13.237204+00:00",
+      "ts_utc": "2026-03-05T17:06:13.764051+00:00",
       "chain": "base",
       "token": {
-        "name": "OpenTown",
-        "symbol": "$OPENTOWN",
-        "address": "0x82b75cab5f284273df61f6f410b33e6f8574b52a"
+        "name": "clawmart",
+        "symbol": "$CLAWMART",
+        "address": "0x05a1e2906591f317d4336f1e76c7cb770d04fba3"
       },
       "scores": {
-        "confidence": 95,
+        "confidence": 100,
         "rarity": "new",
         "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 22128.101,
-        "vol_24h_usd": 2478.5799275512
+        "liq_usd": 27216.3558,
+        "vol_24h_usd": 9993.5957813712
       },
       "dex": "geckoterminal",
-      "pair_address": "0x82b75cab5f284273df61f6f410b33e6f8574b52a",
+      "pair_address": "0x05a1e2906591f317d4336f1e76c7cb770d04fba3",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T17:06:13.906183+00:00",
+      "chain": "base",
+      "token": {
+        "name": "POKEPULL",
+        "symbol": "$POKEPULL",
+        "address": "0x9c429dc666d2dee703b20682721ec4d8d18352c9"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 141551.5059,
+        "vol_24h_usd": 3058.565160034
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x9c429dc666d2dee703b20682721ec4d8d18352c9",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T17:06:13.714179+00:00",
+      "chain": "base",
+      "token": {
+        "name": "WhiteHouse",
+        "symbol": "$WHITEHOUSE",
+        "address": "0xaea47e1c1aba205d1dfe666a6737e2bf9635ec27"
+      },
+      "scores": {
+        "confidence": 90,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 12620.9979,
+        "vol_24h_usd": 1192.3485471212
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xaea47e1c1aba205d1dfe666a6737e2bf9635ec27",
       "scanner": "cio"
     }
   ]
