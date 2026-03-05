@@ -1,61 +1,10 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T04:45:18.868Z",
+    "updated_at": "2026-03-05T05:00:20.942Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 0,
     "errors": []
   },
-  "signals": [
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T04:45:18.669520+00:00",
-      "chain": "base",
-      "token": {
-        "name": "ANTS",
-        "symbol": "$ANTS",
-        "address": "0xea6f0c0acd0cb15232ce22a758066ed09ddf05dc"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 15515.8623,
-        "vol_24h_usd": 8875.5230686919
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xea6f0c0acd0cb15232ce22a758066ed09ddf05dc",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T04:45:18.836649+00:00",
-      "chain": "base",
-      "token": {
-        "name": "LUFFY",
-        "symbol": "$LUFFY",
-        "address": "0x9cb4b6a15d15e7a073b59cc1d6fad22a8eea9877"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 89135.3624,
-        "vol_24h_usd": 1914.85529
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x9cb4b6a15d15e7a073b59cc1d6fad22a8eea9877",
-      "scanner": "cio"
-    }
-  ]
+  "signals": []
 }
