@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T18:36:31.463Z",
+    "updated_at": "2026-03-05T18:46:33.351Z",
     "source": "cio",
     "chain": "base",
     "count": 3,
@@ -10,12 +10,12 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T18:36:30.853261+00:00",
+      "ts_utc": "2026-03-05T18:46:33.035373+00:00",
       "chain": "base",
       "token": {
-        "name": "SCAM",
-        "symbol": "$SCAM",
-        "address": "0xb1229ac21ea28eb1228e2760b2676df04b7d42e8"
+        "name": "BURGER6900",
+        "symbol": "$BURGER6900",
+        "address": "0x084446022afddcecb9824dc8506187a3c1c3a723"
       },
       "scores": {
         "confidence": 100,
@@ -25,22 +25,22 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 14634.3659,
-        "vol_24h_usd": 12643.285744077
+        "liq_usd": 16630.8357,
+        "vol_24h_usd": 18238.9597670595
       },
       "dex": "geckoterminal",
-      "pair_address": "0xb1229ac21ea28eb1228e2760b2676df04b7d42e8",
+      "pair_address": "0x084446022afddcecb9824dc8506187a3c1c3a723",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T18:36:31.425917+00:00",
+      "ts_utc": "2026-03-05T18:46:33.223201+00:00",
       "chain": "base",
       "token": {
-        "name": "Paperclip",
-        "symbol": "$PAPERCLIP",
-        "address": "0xe1a07d8b63c11e68b01cd3575fa3b6136364aba3"
+        "name": "MOLT",
+        "symbol": "$MOLT",
+        "address": "0x85a4006baacafb39b3faa6762ea3b0ce88f1ab07"
       },
       "scores": {
         "confidence": 100,
@@ -50,36 +50,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 13073.6985,
-        "vol_24h_usd": 5138.2136804925
+        "liq_usd": 11695.2556,
+        "vol_24h_usd": 3447.72817466
       },
       "dex": "geckoterminal",
-      "pair_address": "0xe1a07d8b63c11e68b01cd3575fa3b6136364aba3",
+      "pair_address": "0x85a4006baacafb39b3faa6762ea3b0ce88f1ab07",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T18:36:31.057017+00:00",
+      "ts_utc": "2026-03-05T18:46:33.299665+00:00",
       "chain": "base",
       "token": {
-        "name": "FIRST",
-        "symbol": "$FIRST",
-        "address": "0x0f8d29adf68f2c88a91cdc199e82dc85da4acba3"
+        "name": "Doppler",
+        "symbol": "$DOPPLER",
+        "address": "0xcab83066cdbeb5befae431f1911ec5ddc6b64b07"
       },
       "scores": {
         "confidence": 95,
         "rarity": "new",
-        "risk": "medium"
+        "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 22450.3487,
-        "vol_24h_usd": 2230.2202807791
+        "liq_usd": 20743.1773,
+        "vol_24h_usd": 1483.8304214883
       },
       "dex": "geckoterminal",
-      "pair_address": "0x0f8d29adf68f2c88a91cdc199e82dc85da4acba3",
+      "pair_address": "0xcab83066cdbeb5befae431f1911ec5ddc6b64b07",
       "scanner": "cio"
     }
   ]

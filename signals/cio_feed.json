@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-05T18:40:51.057000+00:00",
-    "generated_at": "2026-03-05T18:40:51.057000+00:00",
+    "updated_at": "2026-03-05T18:49:11.363000+00:00",
+    "generated_at": "2026-03-05T18:49:11.363000+00:00",
     "status": "ok",
-    "count": 1,
+    "count": 2,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,11 +12,11 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
-      "low": 1
+      "low": 2
     },
     "rejected": {
       "too_old": 1,
-      "low_tx": 2
+      "low_tx": 1
     },
     "source": "ultra_launch_scanner"
   },
@@ -33,21 +33,61 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 62081.78,
-        "vol_5m_usd": 252.28,
-        "vol_1h_usd": 28753.9,
-        "txns_5m": 6,
-        "price_usd": 8.08e-07
+        "liq_usd": 59991.89,
+        "vol_5m_usd": 1.0,
+        "vol_1h_usd": 19113.16,
+        "txns_5m": 2,
+        "price_usd": 7.67e-07
       },
       "timestamps": {
         "pair_created_at": "2026-03-05T16:02:03+00:00",
         "token_first_seen": "2026-03-05T17:42:17.370000+00:00",
-        "age_minutes": 158.8,
-        "age_hours": 2.65
+        "age_minutes": 167.1,
+        "age_hours": 2.79
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.96
+        "freshness": 0.95
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    },
+    {
+      "token": {
+        "address": "0x740ec7d407e0a4d95756bb74ee0e7c15f6841735",
+        "symbol": "VIRTERN",
+        "name": "Virtuals Intern by Virtuals"
+      },
+      "pair": {
+        "address": "0x9064f2dacf2f3b0e871a7dc233835c832d166d96",
+        "dex": "uniswap",
+        "quote": "VIRTUAL"
+      },
+      "metrics": {
+        "liq_usd": 51710.94,
+        "vol_5m_usd": 61.44,
+        "vol_1h_usd": 5509.48,
+        "txns_5m": 1,
+        "price_usd": 0.0001447
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-19T14:26:17+00:00",
+        "token_first_seen": "2026-03-05T18:10:45.236000+00:00",
+        "age_minutes": 20422.9,
+        "age_hours": 340.38
+      },
+      "scores": {
+        "cio_score": 90,
+        "freshness": 0
       },
       "risks": [],
       "risk_level": "low",
