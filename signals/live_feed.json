@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T11:46:36.445Z",
+    "updated_at": "2026-03-05T12:01:39.022Z",
     "source": "cio",
     "chain": "base",
-    "count": 4,
+    "count": 3,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T11:46:35.847228+00:00",
+      "ts_utc": "2026-03-05T12:01:38.641155+00:00",
       "chain": "base",
       "token": {
-        "name": "SUISEI",
-        "symbol": "$SUISEI",
-        "address": "0x20d373fc4b1f72f05b070e0272cab378fe649a39"
+        "name": "死对头",
+        "symbol": "$死对头",
+        "address": "0xb07ae5b852fe0698734dd296afa1a46976f11ce5"
       },
       "scores": {
         "confidence": 100,
@@ -25,22 +25,22 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 14420.6331,
-        "vol_24h_usd": 6343.4860266012
+        "liq_usd": 22707.9076,
+        "vol_24h_usd": 11835.0851105833
       },
       "dex": "geckoterminal",
-      "pair_address": "0x20d373fc4b1f72f05b070e0272cab378fe649a39",
+      "pair_address": "0xb07ae5b852fe0698734dd296afa1a46976f11ce5",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T11:46:36.037144+00:00",
+      "ts_utc": "2026-03-05T12:01:38.814098+00:00",
       "chain": "base",
       "token": {
-        "name": "CLAWNCH",
-        "symbol": "$CLAWNCH",
-        "address": "0x85fbc7f8b8ccc8cc93bd4f48111fc4b5d31e47be"
+        "name": "MOLT",
+        "symbol": "$MOLT",
+        "address": "0xbb96e373eb052f853b68b72d94d171ae5134ab07"
       },
       "scores": {
         "confidence": 100,
@@ -50,22 +50,22 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 11969.8322,
-        "vol_24h_usd": 2625.2451729893
+        "liq_usd": 12811.8969,
+        "vol_24h_usd": 5213.7341731599
       },
       "dex": "geckoterminal",
-      "pair_address": "0x85fbc7f8b8ccc8cc93bd4f48111fc4b5d31e47be",
+      "pair_address": "0xbb96e373eb052f853b68b72d94d171ae5134ab07",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T11:46:36.234164+00:00",
+      "ts_utc": "2026-03-05T12:01:38.981825+00:00",
       "chain": "base",
       "token": {
-        "name": "FLAGGED",
-        "symbol": "$FLAGGED",
-        "address": "0xfd8c51aebd3406a8b3c354b1312a9c0b49e17f3a"
+        "name": "SPACE",
+        "symbol": "$SPACE",
+        "address": "0xfc544f17a1f712417ac066da7641c721da0f5b73"
       },
       "scores": {
         "confidence": 100,
@@ -75,36 +75,11 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 26508.319,
-        "vol_24h_usd": 26775.1448914895
+        "liq_usd": 143358.6334,
+        "vol_24h_usd": 2726.045535779
       },
       "dex": "geckoterminal",
-      "pair_address": "0xfd8c51aebd3406a8b3c354b1312a9c0b49e17f3a",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T11:46:36.407216+00:00",
-      "chain": "base",
-      "token": {
-        "name": "PEPENA",
-        "symbol": "$PEPENA",
-        "address": "0x66b107df5363350121af632575cc928521d43a65"
-      },
-      "scores": {
-        "confidence": 95,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 5882.8617,
-        "vol_24h_usd": 2293.2979764052
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x66b107df5363350121af632575cc928521d43a65",
+      "pair_address": "0xfc544f17a1f712417ac066da7641c721da0f5b73",
       "scanner": "cio"
     }
   ]
