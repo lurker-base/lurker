@@ -1,46 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T06:45:36.293Z",
+    "updated_at": "2026-03-05T07:00:38.498Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 1,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T06:45:36.250553+00:00",
+      "ts_utc": "2026-03-05T07:00:38.462800+00:00",
       "chain": "base",
       "token": {
-        "name": "MOLT",
-        "symbol": "$MOLT",
-        "address": "0xc2f05248a9bbc4cce4d3ef7b509b7d01bc8fab07"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 11641.6239,
-        "vol_24h_usd": 2989.1498535602
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xc2f05248a9bbc4cce4d3ef7b509b7d01bc8fab07",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T06:45:35.794428+00:00",
-      "chain": "base",
-      "token": {
-        "name": "E=MC²",
-        "symbol": "$E=MC²",
-        "address": "0x01fceb3df447e15f16b0b6a58e46b0d5ba720d83"
+        "name": "Mafia Nuts",
+        "symbol": "$MAFIA NUTS",
+        "address": "0x0cd628f098b5a0e5e1bb16960667e4c12a120aea"
       },
       "scores": {
         "confidence": 95,
@@ -50,11 +25,11 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 22331.5771,
-        "vol_24h_usd": 4244.8413837692
+        "liq_usd": 23367.0193,
+        "vol_24h_usd": 5898.1712819813
       },
       "dex": "geckoterminal",
-      "pair_address": "0x01fceb3df447e15f16b0b6a58e46b0d5ba720d83",
+      "pair_address": "0x0cd628f098b5a0e5e1bb16960667e4c12a120aea",
       "scanner": "cio"
     }
   ]
