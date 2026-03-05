@@ -1,35 +1,60 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T03:15:04.092Z",
+    "updated_at": "2026-03-05T03:30:07.122Z",
     "source": "cio",
     "chain": "base",
-    "count": 1,
+    "count": 2,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T03:15:04.048193+00:00",
+      "ts_utc": "2026-03-05T03:30:07.077805+00:00",
       "chain": "base",
       "token": {
-        "name": "CHARLES",
-        "symbol": "$CHARLES",
-        "address": "0xc54bf943d57a417c347dec253a44249123bf1cf9"
+        "name": "chuck",
+        "symbol": "$CHUCK",
+        "address": "0xdccd12f74d450895dc17887564fa07fd169039fb"
       },
       "scores": {
         "confidence": 100,
         "rarity": "new",
-        "risk": "low"
+        "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 142928.7581,
-        "vol_24h_usd": 3056.053597
+        "liq_usd": 13372.9568,
+        "vol_24h_usd": 2056.1111850271
       },
       "dex": "geckoterminal",
-      "pair_address": "0xc54bf943d57a417c347dec253a44249123bf1cf9",
+      "pair_address": "0xdccd12f74d450895dc17887564fa07fd169039fb",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T03:30:06.934861+00:00",
+      "chain": "base",
+      "token": {
+        "name": "Shells",
+        "symbol": "$SHELLS",
+        "address": "0xaa20b180c34fefc9ec744b8ddd6812eb70c7391c"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 23179.8059,
+        "vol_24h_usd": 2000.3080451285
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xaa20b180c34fefc9ec744b8ddd6812eb70c7391c",
       "scanner": "cio"
     }
   ]
