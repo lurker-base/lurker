@@ -1,86 +1,10 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T12:31:44.394Z",
+    "updated_at": "2026-03-05T12:46:47.121Z",
     "source": "cio",
     "chain": "base",
-    "count": 3,
+    "count": 0,
     "errors": []
   },
-  "signals": [
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T12:31:43.956418+00:00",
-      "chain": "base",
-      "token": {
-        "name": "PumpAI",
-        "symbol": "$PUMPAI",
-        "address": "0x883691a1b459d2b617636d70bacdc2df30fd838a"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 23329.7618,
-        "vol_24h_usd": 14826.8329132314
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x883691a1b459d2b617636d70bacdc2df30fd838a",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T12:31:44.356452+00:00",
-      "chain": "base",
-      "token": {
-        "name": "MrFox",
-        "symbol": "$MRFOX",
-        "address": "0xc5f9db34fc234138288861de793b5a6ae97c3a75"
-      },
-      "scores": {
-        "confidence": 95,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 5541.2393,
-        "vol_24h_usd": 1698.6424336855
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xc5f9db34fc234138288861de793b5a6ae97c3a75",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T12:31:44.157192+00:00",
-      "chain": "base",
-      "token": {
-        "name": "妈妈",
-        "symbol": "$妈妈",
-        "address": "0x5e193a2b4efaf81674b45327a2c0be1d6a7fd647"
-      },
-      "scores": {
-        "confidence": 90,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 5815.7121,
-        "vol_24h_usd": 5222.7409133799
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x5e193a2b4efaf81674b45327a2c0be1d6a7fd647",
-      "scanner": "cio"
-    }
-  ]
+  "signals": []
 }
