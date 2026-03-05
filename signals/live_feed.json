@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T23:22:21.098Z",
+    "updated_at": "2026-03-05T23:32:23.840Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 4,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T23:22:20.906304+00:00",
+      "ts_utc": "2026-03-05T23:32:23.340206+00:00",
       "chain": "base",
       "token": {
         "name": "WALL",
         "symbol": "$WALL",
-        "address": "0x17af3146367d3d1e51ed0d22877cd18566ca779b"
+        "address": "0x2e6b2943302ac25bc9a5c1095ffe691f4bbb9ba3"
       },
       "scores": {
         "confidence": 100,
@@ -25,36 +25,86 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 24651.289,
-        "vol_24h_usd": 17558.3790961763
+        "liq_usd": 12415.8997,
+        "vol_24h_usd": 3114.7558945281
       },
       "dex": "geckoterminal",
-      "pair_address": "0x17af3146367d3d1e51ed0d22877cd18566ca779b",
+      "pair_address": "0x2e6b2943302ac25bc9a5c1095ffe691f4bbb9ba3",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T23:22:21.071922+00:00",
+      "ts_utc": "2026-03-05T23:32:23.806567+00:00",
       "chain": "base",
       "token": {
-        "name": "CLAWNCH",
-        "symbol": "$CLAWNCH",
-        "address": "0xcfcdb161d969837c64565a50b11eeb43154847be"
+        "name": "𝕏Money",
+        "symbol": "$𝕏MONEY",
+        "address": "0x8a5d5782c82ba980d813d07671feee994ff16e72"
       },
       "scores": {
         "confidence": 100,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 52879.2723,
+        "vol_24h_usd": 2485.082697
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x8a5d5782c82ba980d813d07671feee994ff16e72",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T23:32:23.488441+00:00",
+      "chain": "base",
+      "token": {
+        "name": "WALL",
+        "symbol": "$WALL",
+        "address": "0xa8299ca82a756ecd018bce53b5ebab6a109d1ba3"
+      },
+      "scores": {
+        "confidence": 95,
         "rarity": "new",
         "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 11868.7154,
-        "vol_24h_usd": 3875.0437090265
+        "liq_usd": 20985.8356,
+        "vol_24h_usd": 8515.05821428
       },
       "dex": "geckoterminal",
-      "pair_address": "0xcfcdb161d969837c64565a50b11eeb43154847be",
+      "pair_address": "0xa8299ca82a756ecd018bce53b5ebab6a109d1ba3",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T23:32:23.643653+00:00",
+      "chain": "base",
+      "token": {
+        "name": "WALL",
+        "symbol": "$WALL",
+        "address": "0xce694996f4871f58d88233262c8377704722aba3"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 21810.2147,
+        "vol_24h_usd": 8734.8873107133
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xce694996f4871f58d88233262c8377704722aba3",
       "scanner": "cio"
     }
   ]
