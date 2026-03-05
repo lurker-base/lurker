@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T21:32:01.451Z",
+    "updated_at": "2026-03-05T21:37:02.052Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 1,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T21:32:01.411309+00:00",
+      "ts_utc": "2026-03-05T21:37:02.018074+00:00",
       "chain": "base",
       "token": {
-        "name": "FIGHT",
-        "symbol": "$FIGHT",
-        "address": "0xa054c227ae5fcc6beb31619d55e9003a1c50cb5c"
+        "name": "BLACKHOUSE",
+        "symbol": "$BLACKHOUSE",
+        "address": "0xf46e0a0a611ebfabf1ce45d81e7ac5e8d6afa9e3"
       },
       "scores": {
         "confidence": 100,
@@ -25,36 +25,11 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 119151.4543,
-        "vol_24h_usd": 1003.6243263852
+        "liq_usd": 23719.0173,
+        "vol_24h_usd": 23851.2245644313
       },
       "dex": "geckoterminal",
-      "pair_address": "0xa054c227ae5fcc6beb31619d55e9003a1c50cb5c",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T21:32:01.238721+00:00",
-      "chain": "base",
-      "token": {
-        "name": "GVG",
-        "symbol": "$GVG",
-        "address": "0x847d122c042eee2512ab0a63f200c229f30bea76"
-      },
-      "scores": {
-        "confidence": 95,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 21828.8234,
-        "vol_24h_usd": 7440.2250469382
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x847d122c042eee2512ab0a63f200c229f30bea76",
+      "pair_address": "0xf46e0a0a611ebfabf1ce45d81e7ac5e8d6afa9e3",
       "scanner": "cio"
     }
   ]
