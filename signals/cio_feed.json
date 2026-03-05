@@ -1,19 +1,66 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-05T13:43:36.827000+00:00",
-    "generated_at": "2026-03-05T13:43:36.827000+00:00",
-    "status": "degraded",
-    "count": 0,
+    "updated_at": "2026-03-05T13:45:53.083000+00:00",
+    "generated_at": "2026-03-05T13:45:53.083000+00:00",
+    "status": "ok",
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
       "min_tx_5m": 1,
       "max_age_min": 43200
     },
-    "risk_distribution": {},
-    "rejected": {},
+    "risk_distribution": {
+      "medium": 1
+    },
+    "rejected": {
+      "too_old": 1
+    },
     "source": "ultra_launch_scanner"
   },
-  "candidates": []
+  "candidates": [
+    {
+      "token": {
+        "address": "0x04c4c098a5b492750a2bd0578c685f179c78a1ca",
+        "symbol": "FLOKI",
+        "name": "FLOKI ON BASE"
+      },
+      "pair": {
+        "address": "0xfca261560133699ecd4c99941c767e096700216d",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 42103.59,
+        "vol_5m_usd": 3466.68,
+        "vol_1h_usd": 90637.53,
+        "txns_5m": 69,
+        "price_usd": 9.755e-07
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-04T12:35:55+00:00",
+        "token_first_seen": "2026-03-04T16:34:15.099000+00:00",
+        "age_minutes": 1510.0,
+        "age_hours": 25.17
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.58
+      },
+      "risks": [
+        "dumping"
+      ],
+      "risk_level": "medium",
+      "source": "boosts",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    }
+  ]
 }
