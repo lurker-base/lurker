@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T07:30:44.071Z",
+    "updated_at": "2026-03-05T07:45:46.936Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 5,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T07:30:43.893890+00:00",
+      "ts_utc": "2026-03-05T07:45:46.410617+00:00",
       "chain": "base",
       "token": {
-        "name": "AYA",
-        "symbol": "$AYA",
-        "address": "0x6a47af1bc183941a10a987455dfc4ae0655daaf1"
+        "name": "KellyClaud",
+        "symbol": "$KELLYCLAUD",
+        "address": "0xe7ceae087bb5f63dade861884ac3aaf8974dcb07"
       },
       "scores": {
         "confidence": 100,
@@ -25,22 +25,47 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 142005.4596,
-        "vol_24h_usd": 2227.306146
+        "liq_usd": 12087.4028,
+        "vol_24h_usd": 3091.3027487017
       },
       "dex": "geckoterminal",
-      "pair_address": "0x6a47af1bc183941a10a987455dfc4ae0655daaf1",
+      "pair_address": "0xe7ceae087bb5f63dade861884ac3aaf8974dcb07",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T07:30:44.034123+00:00",
+      "ts_utc": "2026-03-05T07:45:46.560394+00:00",
       "chain": "base",
       "token": {
-        "name": "PENGUIN",
-        "symbol": "$PENGUIN",
-        "address": "0x3b7b7535ebd67c356470e27a08bc53c8e1f62ed6"
+        "name": "LONGCAT",
+        "symbol": "$LONGCAT",
+        "address": "0xbe6cb948c4c1dd43ba10db8c3a044f0186e69dc6"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 25602.4392,
+        "vol_24h_usd": 31234.8460629645
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xbe6cb948c4c1dd43ba10db8c3a044f0186e69dc6",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T07:45:46.702258+00:00",
+      "chain": "base",
+      "token": {
+        "name": "COG",
+        "symbol": "$COG",
+        "address": "0x5b96bc4f196808ef66272c891bbcce7c99f6add7"
       },
       "scores": {
         "confidence": 100,
@@ -50,11 +75,61 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 53501.1964,
-        "vol_24h_usd": 2701.18535
+        "liq_usd": 54189.5912,
+        "vol_24h_usd": 2733.926155
       },
       "dex": "geckoterminal",
-      "pair_address": "0x3b7b7535ebd67c356470e27a08bc53c8e1f62ed6",
+      "pair_address": "0x5b96bc4f196808ef66272c891bbcce7c99f6add7",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T07:45:46.904709+00:00",
+      "chain": "base",
+      "token": {
+        "name": "SENT",
+        "symbol": "$SENT",
+        "address": "0x17f2bee321e7ac19361f628f351d38dc13ddedeb"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 12204.0652,
+        "vol_24h_usd": 1305.6411833413
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x17f2bee321e7ac19361f628f351d38dc13ddedeb",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T07:45:46.230852+00:00",
+      "chain": "base",
+      "token": {
+        "name": "LONGCAT",
+        "symbol": "$LONGCAT",
+        "address": "0xfad67f03d12fb5465c7369d29f5b1fbf8cb91843"
+      },
+      "scores": {
+        "confidence": 90,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 13942.1467,
+        "vol_24h_usd": 3680.5249337123
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xfad67f03d12fb5465c7369d29f5b1fbf8cb91843",
       "scanner": "cio"
     }
   ]
