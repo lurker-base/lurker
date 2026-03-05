@@ -1,8 +1,8 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-05T22:24:58.770000+00:00",
-    "generated_at": "2026-03-05T22:24:58.770000+00:00",
+    "updated_at": "2026-03-05T22:25:49.092000+00:00",
+    "generated_at": "2026-03-05T22:25:49.092000+00:00",
     "status": "ok",
     "count": 1,
     "thresholds": {
@@ -42,8 +42,8 @@
       "timestamps": {
         "pair_created_at": "2026-03-05T19:05:19+00:00",
         "token_first_seen": "2026-03-05T21:28:56.038000+00:00",
-        "age_minutes": 199.7,
-        "age_hours": 3.33
+        "age_minutes": 200.5,
+        "age_hours": 3.34
       },
       "scores": {
         "cio_score": 100,
