@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T19:36:43.968Z",
+    "updated_at": "2026-03-05T19:46:45.911Z",
     "source": "cio",
     "chain": "base",
     "count": 3,
@@ -10,37 +10,12 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T19:36:43.644359+00:00",
-      "chain": "base",
-      "token": {
-        "name": "CL",
-        "symbol": "$CL",
-        "address": "0x5ee277d8b03f2487f209ff6113dd9c66574c962a"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 22747.3835,
-        "vol_24h_usd": 21874.3966861805
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x5ee277d8b03f2487f209ff6113dd9c66574c962a",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T19:36:43.940721+00:00",
+      "ts_utc": "2026-03-05T19:46:45.766703+00:00",
       "chain": "base",
       "token": {
         "name": "Mei",
         "symbol": "$MEI",
-        "address": "0x205241f60e93ba7370478db9b788a86e832aeba3"
+        "address": "0xa9f559f202caac5a56988b05b184a8eb423beba3"
       },
       "scores": {
         "confidence": 100,
@@ -50,22 +25,47 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 12118.5639,
-        "vol_24h_usd": 4905.0323748043
+        "liq_usd": 11765.7445,
+        "vol_24h_usd": 2445.6613377079
       },
       "dex": "geckoterminal",
-      "pair_address": "0x205241f60e93ba7370478db9b788a86e832aeba3",
+      "pair_address": "0xa9f559f202caac5a56988b05b184a8eb423beba3",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T19:36:43.802149+00:00",
+      "ts_utc": "2026-03-05T19:46:45.835787+00:00",
       "chain": "base",
       "token": {
-        "name": "jatevo",
-        "symbol": "$JATEVO",
-        "address": "0xaf0e5476d46909210b24377b64059dfb2d9feba3"
+        "name": "AgentInBox",
+        "symbol": "$AGENTINBOX",
+        "address": "0x51d9e316f7cb4a6bef7bb9a171cdb129fa34cba3"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 38603.3741,
+        "vol_24h_usd": 60063.3771026179
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x51d9e316f7cb4a6bef7bb9a171cdb129fa34cba3",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T19:46:45.883651+00:00",
+      "chain": "base",
+      "token": {
+        "name": "KORE",
+        "symbol": "$KORE",
+        "address": "0xcb061ed07b1e60b97165f24e965ef7e5b3a56ba3"
       },
       "scores": {
         "confidence": 95,
@@ -75,11 +75,11 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 21986.2317,
-        "vol_24h_usd": 5789.1226346436
+        "liq_usd": 20923.3513,
+        "vol_24h_usd": 6099.4225725262
       },
       "dex": "geckoterminal",
-      "pair_address": "0xaf0e5476d46909210b24377b64059dfb2d9feba3",
+      "pair_address": "0xcb061ed07b1e60b97165f24e965ef7e5b3a56ba3",
       "scanner": "cio"
     }
   ]
