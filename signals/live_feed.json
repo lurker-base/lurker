@@ -1,185 +1,85 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T19:01:36.986Z",
+    "updated_at": "2026-03-05T19:06:37.956Z",
     "source": "cio",
     "chain": "base",
-    "count": 7,
+    "count": 3,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T19:01:36.614159+00:00",
-      "chain": "base",
-      "token": {
-        "name": "AYA",
-        "symbol": "$AYA",
-        "address": "0x6f1a9163611ce1bfd3c7eda9b0065c2cb4094e3f"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 137977.675,
-        "vol_24h_usd": 2149.73798431
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x6f1a9163611ce1bfd3c7eda9b0065c2cb4094e3f",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T19:01:36.790345+00:00",
-      "chain": "base",
-      "token": {
-        "name": "MOLT",
-        "symbol": "$MOLT",
-        "address": "0x032e29c011dd45acd75037c26606e753bb71ab07"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 12457.4336,
-        "vol_24h_usd": 5022.4894049749
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x032e29c011dd45acd75037c26606e753bb71ab07",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T19:01:36.958049+00:00",
-      "chain": "base",
-      "token": {
-        "name": "TikTok",
-        "symbol": "$TIKTOK",
-        "address": "0x970688b9fea1b4b8d9e0aabfd70f1b52d1844499"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 118796.7768,
-        "vol_24h_usd": 1322.853236206
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x970688b9fea1b4b8d9e0aabfd70f1b52d1844499",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T19:01:35.907403+00:00",
-      "chain": "base",
-      "token": {
-        "name": "ROOM",
-        "symbol": "$ROOM",
-        "address": "0x58c4fa00c15ac22ce4ae85670f2efdf595517ba3"
-      },
-      "scores": {
-        "confidence": 95,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 24397.8053,
-        "vol_24h_usd": 4760.2352474133
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x58c4fa00c15ac22ce4ae85670f2efdf595517ba3",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T19:01:36.070082+00:00",
-      "chain": "base",
-      "token": {
-        "name": "LUCA",
-        "symbol": "$LUCA",
-        "address": "0x245addb73a34af7efc2f1da396dd317024b12ba3"
-      },
-      "scores": {
-        "confidence": 95,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 23157.6431,
-        "vol_24h_usd": 5443.129447723
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x245addb73a34af7efc2f1da396dd317024b12ba3",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T19:01:36.455237+00:00",
-      "chain": "base",
-      "token": {
-        "name": "SLAYER",
-        "symbol": "$SLAYER",
-        "address": "0x3da7fe56b071180aea03cda28d07ffef4ff3bba3"
-      },
-      "scores": {
-        "confidence": 95,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 21370.5753,
-        "vol_24h_usd": 2060.6366364057
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x3da7fe56b071180aea03cda28d07ffef4ff3bba3",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T19:01:35.740466+00:00",
+      "ts_utc": "2026-03-05T19:06:37.516005+00:00",
       "chain": "base",
       "token": {
         "name": "memes",
         "symbol": "$MEMES",
-        "address": "0x7843c7dd8bbdf2250324f837b9154e2ad58d5c94"
+        "address": "0xd75c5488063eee194c2d8fef86b2566dc74d34b2"
       },
       "scores": {
-        "confidence": 90,
+        "confidence": 100,
         "rarity": "new",
         "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 12659.1936,
-        "vol_24h_usd": 3211.1177456958
+        "liq_usd": 15299.2563,
+        "vol_24h_usd": 12032.700142176
       },
       "dex": "geckoterminal",
-      "pair_address": "0x7843c7dd8bbdf2250324f837b9154e2ad58d5c94",
+      "pair_address": "0xd75c5488063eee194c2d8fef86b2566dc74d34b2",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T19:06:37.731369+00:00",
+      "chain": "base",
+      "token": {
+        "name": "CRAIG",
+        "symbol": "$CRAIG",
+        "address": "0x52ec3ac600ef6876bd58872bc1e4bca8b368eebe"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 50683.5588,
+        "vol_24h_usd": 1403.126727
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x52ec3ac600ef6876bd58872bc1e4bca8b368eebe",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T19:06:37.924154+00:00",
+      "chain": "base",
+      "token": {
+        "name": "memes",
+        "symbol": "$MEMES",
+        "address": "0x6668830fdcfdb9ebe16bfdcaf83966f47ed0d0f9"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 24068.6851,
+        "vol_24h_usd": 39561.03052287
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x6668830fdcfdb9ebe16bfdcaf83966f47ed0d0f9",
       "scanner": "cio"
     }
   ]
