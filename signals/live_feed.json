@@ -1,21 +1,71 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T16:31:08.172Z",
+    "updated_at": "2026-03-05T16:36:09.305Z",
     "source": "cio",
     "chain": "base",
-    "count": 3,
+    "count": 4,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T16:31:07.419044+00:00",
+      "ts_utc": "2026-03-05T16:36:08.988218+00:00",
+      "chain": "base",
+      "token": {
+        "name": "UGOR",
+        "symbol": "$UGOR",
+        "address": "0xc35a25ef75f89f1aac98c7a499d3bdd48ee01aff"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 15768.6205,
+        "vol_24h_usd": 13769.8584629712
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xc35a25ef75f89f1aac98c7a499d3bdd48ee01aff",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T16:36:09.192783+00:00",
+      "chain": "base",
+      "token": {
+        "name": "WORK",
+        "symbol": "$WORK",
+        "address": "0xa12b2b4ba08c81e62ea3eee92d85defd25e8c4bd"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 138381.5906,
+        "vol_24h_usd": 2093.840528
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xa12b2b4ba08c81e62ea3eee92d85defd25e8c4bd",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T16:36:09.272210+00:00",
       "chain": "base",
       "token": {
         "name": "matrix",
         "symbol": "$MATRIX",
-        "address": "0x897868a8e772b880778584a17ba19c87f3cd8ba3"
+        "address": "0x50fe421568e704fb6a5dc2342aeb7521500f8ba3"
       },
       "scores": {
         "confidence": 100,
@@ -25,61 +75,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 26697.6491,
-        "vol_24h_usd": 4358.9973651165
+        "liq_usd": 12432.6192,
+        "vol_24h_usd": 4457.7209382155
       },
       "dex": "geckoterminal",
-      "pair_address": "0x897868a8e772b880778584a17ba19c87f3cd8ba3",
+      "pair_address": "0x50fe421568e704fb6a5dc2342aeb7521500f8ba3",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T16:31:07.809488+00:00",
+      "ts_utc": "2026-03-05T16:36:09.140798+00:00",
       "chain": "base",
       "token": {
-        "name": "SUPER",
-        "symbol": "$SUPER",
-        "address": "0x050b5a9069d4ada783376b523203bd5c1163bd49"
+        "name": "WX",
+        "symbol": "$WX",
+        "address": "0xd43e89cb9a78610a2b3c2de7ae5045252e59d538"
       },
       "scores": {
-        "confidence": 100,
+        "confidence": 95,
         "rarity": "new",
-        "risk": "low"
+        "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 15508.4723,
-        "vol_24h_usd": 32513.5476644865
+        "liq_usd": 5700.5616,
+        "vol_24h_usd": 4104.2050933544
       },
       "dex": "geckoterminal",
-      "pair_address": "0x050b5a9069d4ada783376b523203bd5c1163bd49",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T16:31:08.140541+00:00",
-      "chain": "base",
-      "token": {
-        "name": "COLESLAW",
-        "symbol": "$COLESLAW",
-        "address": "0x625f9d9566fde0531a7892c72def72efd7d02ca0"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 24127.5634,
-        "vol_24h_usd": 43408.508935132
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x625f9d9566fde0531a7892c72def72efd7d02ca0",
+      "pair_address": "0xd43e89cb9a78610a2b3c2de7ae5045252e59d538",
       "scanner": "cio"
     }
   ]
