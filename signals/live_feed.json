@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T04:30:16.149Z",
+    "updated_at": "2026-03-05T04:45:18.868Z",
     "source": "cio",
     "chain": "base",
-    "count": 4,
+    "count": 2,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T04:30:15.971343+00:00",
+      "ts_utc": "2026-03-05T04:45:18.669520+00:00",
       "chain": "base",
       "token": {
-        "name": "Genny",
-        "symbol": "$GENNY",
-        "address": "0xdef4cfe9af7533a6f5bc74e8824728c7884693cd"
+        "name": "ANTS",
+        "symbol": "$ANTS",
+        "address": "0xea6f0c0acd0cb15232ce22a758066ed09ddf05dc"
       },
       "scores": {
         "confidence": 100,
@@ -25,86 +25,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 25173.766,
-        "vol_24h_usd": 24114.6300467005
+        "liq_usd": 15515.8623,
+        "vol_24h_usd": 8875.5230686919
       },
       "dex": "geckoterminal",
-      "pair_address": "0xdef4cfe9af7533a6f5bc74e8824728c7884693cd",
+      "pair_address": "0xea6f0c0acd0cb15232ce22a758066ed09ddf05dc",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T04:30:16.031011+00:00",
+      "ts_utc": "2026-03-05T04:45:18.836649+00:00",
       "chain": "base",
       "token": {
-        "name": "Diamond",
-        "symbol": "$DIAMOND",
-        "address": "0xdff707ee97590ca045b89fe45c2de553fe7c2ed8"
+        "name": "LUFFY",
+        "symbol": "$LUFFY",
+        "address": "0x9cb4b6a15d15e7a073b59cc1d6fad22a8eea9877"
       },
       "scores": {
         "confidence": 100,
         "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 16937.0378,
-        "vol_24h_usd": 26650.2043420926
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xdff707ee97590ca045b89fe45c2de553fe7c2ed8",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T04:30:16.062546+00:00",
-      "chain": "base",
-      "token": {
-        "name": "CEETH",
-        "symbol": "$CEETH",
-        "address": "0x8a968bbe37dbd8fb6e80b2a30835aed3511a9343"
-      },
-      "scores": {
-        "confidence": 95,
-        "rarity": "new",
         "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 7680.3453,
-        "vol_24h_usd": 1665.6957570546
+        "liq_usd": 89135.3624,
+        "vol_24h_usd": 1914.85529
       },
       "dex": "geckoterminal",
-      "pair_address": "0x8a968bbe37dbd8fb6e80b2a30835aed3511a9343",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T04:30:16.110254+00:00",
-      "chain": "base",
-      "token": {
-        "name": "DEBT",
-        "symbol": "$DEBT",
-        "address": "0xcea64a168c101cdcc07c502a9d00b0d18fad4aab"
-      },
-      "scores": {
-        "confidence": 95,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 5324.2515,
-        "vol_24h_usd": 1609.0255968942
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xcea64a168c101cdcc07c502a9d00b0d18fad4aab",
+      "pair_address": "0x9cb4b6a15d15e7a073b59cc1d6fad22a8eea9877",
       "scanner": "cio"
     }
   ]
