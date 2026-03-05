@@ -1,61 +1,10 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T13:01:50.301Z",
+    "updated_at": "2026-03-05T13:16:53.482Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 0,
     "errors": []
   },
-  "signals": [
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T13:01:50.020940+00:00",
-      "chain": "base",
-      "token": {
-        "name": "CLAWNCH",
-        "symbol": "$CLAWNCH",
-        "address": "0x10c70670a70f24c82909dfb64e22d17af8a747be"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 11627.5577,
-        "vol_24h_usd": 1948.8249797812
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x10c70670a70f24c82909dfb64e22d17af8a747be",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T13:01:50.217603+00:00",
-      "chain": "base",
-      "token": {
-        "name": "Clawmode",
-        "symbol": "$CLAWMODE",
-        "address": "0xe5cc8832ff2946275f18fb307f6562c7e84dcf5d"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 54566.2015,
-        "vol_24h_usd": 2676.347422843
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xe5cc8832ff2946275f18fb307f6562c7e84dcf5d",
-      "scanner": "cio"
-    }
-  ]
+  "signals": []
 }
