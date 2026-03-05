@@ -1,21 +1,46 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T11:16:29.899Z",
+    "updated_at": "2026-03-05T11:31:33.305Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 3,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T11:16:29.865665+00:00",
+      "ts_utc": "2026-03-05T11:31:32.828695+00:00",
       "chain": "base",
       "token": {
-        "name": "TSM",
-        "symbol": "$TSM",
-        "address": "0xc6641f9684e9034fb34c5c3bf9fda74b65c1918d"
+        "name": "fadcoin",
+        "symbol": "$FADCOIN",
+        "address": "0x8a6b6149f87b012bd46df5882964aee440733d50"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 25922.3086,
+        "vol_24h_usd": 34816.4490514632
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x8a6b6149f87b012bd46df5882964aee440733d50",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T11:31:33.273252+00:00",
+      "chain": "base",
+      "token": {
+        "name": "KOSPI",
+        "symbol": "$KOSPI",
+        "address": "0x5c391c8498bb0553f9c2c41c8efb9d8516fc438d"
       },
       "scores": {
         "confidence": 100,
@@ -25,36 +50,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 13300.4361,
-        "vol_24h_usd": 1274.101683065
+        "liq_usd": 13373.5429,
+        "vol_24h_usd": 1939.9114008828
       },
       "dex": "geckoterminal",
-      "pair_address": "0xc6641f9684e9034fb34c5c3bf9fda74b65c1918d",
+      "pair_address": "0x5c391c8498bb0553f9c2c41c8efb9d8516fc438d",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T11:16:29.648872+00:00",
+      "ts_utc": "2026-03-05T11:31:33.014043+00:00",
       "chain": "base",
       "token": {
-        "name": "NIGHTVISIO",
-        "symbol": "$NIGHTVISIO",
-        "address": "0xd85a246c63dcb0b73e04a8ae431e042d9e3d8dc3"
+        "name": "AgentCast",
+        "symbol": "$AGENTCAST",
+        "address": "0x981a0c0257f6c56d5a08e5b849bb7e6bbcc82ba3"
       },
       "scores": {
-        "confidence": 90,
+        "confidence": 95,
         "rarity": "new",
-        "risk": "low"
+        "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 14281.8468,
-        "vol_24h_usd": 5025.9334888777
+        "liq_usd": 22853.0883,
+        "vol_24h_usd": 1457.7223471575
       },
       "dex": "geckoterminal",
-      "pair_address": "0xd85a246c63dcb0b73e04a8ae431e042d9e3d8dc3",
+      "pair_address": "0x981a0c0257f6c56d5a08e5b849bb7e6bbcc82ba3",
       "scanner": "cio"
     }
   ]
