@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-05T17:55:40.025000+00:00",
-    "generated_at": "2026-03-05T17:55:40.025000+00:00",
+    "updated_at": "2026-03-05T18:04:52.363000+00:00",
+    "generated_at": "2026-03-05T18:04:52.363000+00:00",
     "status": "ok",
-    "count": 2,
+    "count": 3,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,7 +12,7 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
-      "low": 2
+      "low": 3
     },
     "rejected": {
       "too_old": 1,
@@ -21,6 +21,46 @@
     "source": "ultra_launch_scanner"
   },
   "candidates": [
+    {
+      "token": {
+        "address": "0xd344aefe9a72215b72768cc0f50a4f9a203027de",
+        "symbol": "RANCH",
+        "name": "Ranch Token"
+      },
+      "pair": {
+        "address": "0xcf154df0f559a1387ec035916b5492dc9d6a6dbca5330864d1ab9f18684da072",
+        "dex": "uniswap",
+        "quote": "ETH"
+      },
+      "metrics": {
+        "liq_usd": 12657.6,
+        "vol_5m_usd": 1158.0,
+        "vol_1h_usd": 30576.03,
+        "txns_5m": 14,
+        "price_usd": 5.86
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-05T17:47:17+00:00",
+        "token_first_seen": "2026-03-05T18:01:32.412000+00:00",
+        "age_minutes": 17.6,
+        "age_hours": 0.29
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 1.0
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    },
     {
       "token": {
         "address": "0x2f491be4c6354236a9d76bba9d9929e9ed81dba3",
@@ -33,17 +73,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 53423.27,
-        "vol_5m_usd": 1929.57,
-        "vol_1h_usd": 29019.08,
-        "txns_5m": 11,
-        "price_usd": 6.513e-07
+        "liq_usd": 50892.15,
+        "vol_5m_usd": 857.43,
+        "vol_1h_usd": 21611.54,
+        "txns_5m": 2,
+        "price_usd": 6.074e-07
       },
       "timestamps": {
         "pair_created_at": "2026-03-05T16:02:03+00:00",
         "token_first_seen": "2026-03-05T17:42:17.370000+00:00",
-        "age_minutes": 113.6,
-        "age_hours": 1.89
+        "age_minutes": 122.8,
+        "age_hours": 2.05
       },
       "scores": {
         "cio_score": 100,
@@ -73,20 +113,20 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 81026.44,
-        "vol_5m_usd": 176.95,
-        "vol_1h_usd": 10457.56,
-        "txns_5m": 3,
-        "price_usd": 1.008e-06
+        "liq_usd": 84627.21,
+        "vol_5m_usd": 1967.74,
+        "vol_1h_usd": 9338.44,
+        "txns_5m": 6,
+        "price_usd": 1.081e-06
       },
       "timestamps": {
         "pair_created_at": "2026-03-03T15:10:33+00:00",
         "token_first_seen": "2026-03-05T17:00:28.412000+00:00",
-        "age_minutes": 3045.1,
-        "age_hours": 50.75
+        "age_minutes": 3054.3,
+        "age_hours": 50.91
       },
       "scores": {
-        "cio_score": 90,
+        "cio_score": 100,
         "freshness": 0.15
       },
       "risks": [],

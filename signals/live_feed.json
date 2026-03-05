@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T17:51:22.189Z",
+    "updated_at": "2026-03-05T18:01:23.877Z",
     "source": "cio",
     "chain": "base",
-    "count": 3,
+    "count": 4,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T17:51:22.153025+00:00",
+      "ts_utc": "2026-03-05T18:01:23.442253+00:00",
       "chain": "base",
       "token": {
-        "name": "Skyline",
-        "symbol": "$SKYLINE",
-        "address": "0x7658ce2563c0aa063bc0557afdb8e4bc2fbe7f32"
+        "name": "fccomics",
+        "symbol": "$FCCOMICS",
+        "address": "0x378bc0d9c921c7fa2fe90021759c7f5013b87b07"
       },
       "scores": {
         "confidence": 100,
@@ -25,61 +25,86 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 117919.7547,
-        "vol_24h_usd": 1199.385464
+        "liq_usd": 40310.8834,
+        "vol_24h_usd": 16381.7095063005
       },
       "dex": "geckoterminal",
-      "pair_address": "0x7658ce2563c0aa063bc0557afdb8e4bc2fbe7f32",
+      "pair_address": "0x378bc0d9c921c7fa2fe90021759c7f5013b87b07",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T17:51:21.777625+00:00",
+      "ts_utc": "2026-03-05T18:01:23.647175+00:00",
       "chain": "base",
       "token": {
-        "name": "IVA",
-        "symbol": "$IVA",
-        "address": "0x92af7be1d78f5dd0cb64d7e9171d44a775510651"
+        "name": "wcd",
+        "symbol": "$WCD",
+        "address": "0x48ee9828c5496cc30af535367ae34ba885f3589a"
       },
       "scores": {
-        "confidence": 95,
+        "confidence": 100,
         "rarity": "new",
         "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 22504.7341,
-        "vol_24h_usd": 3139.2736544445
+        "liq_usd": 16773.3202,
+        "vol_24h_usd": 2207.3294005919
       },
       "dex": "geckoterminal",
-      "pair_address": "0x92af7be1d78f5dd0cb64d7e9171d44a775510651",
+      "pair_address": "0x48ee9828c5496cc30af535367ae34ba885f3589a",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T17:51:21.955075+00:00",
+      "ts_utc": "2026-03-05T18:01:23.838100+00:00",
       "chain": "base",
       "token": {
-        "name": "ETS1",
-        "symbol": "$ETS1",
-        "address": "0x835e2663f2e04a0485ca1ca8f2c9c945a583cbe7"
+        "name": "IVA",
+        "symbol": "$IVA",
+        "address": "0xf436c8dc49a0c606a157e395a20a83dd99447ab5"
       },
       "scores": {
-        "confidence": 95,
+        "confidence": 100,
         "rarity": "new",
-        "risk": "high"
+        "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 6182.5851,
-        "vol_24h_usd": 1754.0697179121
+        "liq_usd": 17760.18,
+        "vol_24h_usd": 26935.0760300875
       },
       "dex": "geckoterminal",
-      "pair_address": "0x835e2663f2e04a0485ca1ca8f2c9c945a583cbe7",
+      "pair_address": "0xf436c8dc49a0c606a157e395a20a83dd99447ab5",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T18:01:23.699376+00:00",
+      "chain": "base",
+      "token": {
+        "name": "BRANCH",
+        "symbol": "$BRANCH",
+        "address": "0x5870be54b7617daea47765f59d2920f545b0eb07"
+      },
+      "scores": {
+        "confidence": 90,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 19859.3426,
+        "vol_24h_usd": 3158.1334110891
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x5870be54b7617daea47765f59d2920f545b0eb07",
       "scanner": "cio"
     }
   ]
