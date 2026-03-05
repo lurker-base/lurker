@@ -1,21 +1,64 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-05T20:25:21.825000+00:00",
-    "generated_at": "2026-03-05T20:25:21.825000+00:00",
-    "status": "calm",
-    "count": 0,
+    "updated_at": "2026-03-05T20:34:34.696000+00:00",
+    "generated_at": "2026-03-05T20:34:34.696000+00:00",
+    "status": "ok",
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
       "min_tx_5m": 1,
       "max_age_min": 43200
     },
-    "risk_distribution": {},
+    "risk_distribution": {
+      "low": 1
+    },
     "rejected": {
       "too_old": 1
     },
     "source": "ultra_launch_scanner"
   },
-  "candidates": []
+  "candidates": [
+    {
+      "token": {
+        "address": "0xd724810bdff66416cb61f6ecb1c50f5d423a6ba3",
+        "symbol": "TEDDY",
+        "name": "Teddy Declassified"
+      },
+      "pair": {
+        "address": "0xec645eee2c69d085c45f58a2fead471b97e5a854c3238180c6bbb43bc4f3a7db",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 62530.58,
+        "vol_5m_usd": 4850.71,
+        "vol_1h_usd": 19542.05,
+        "txns_5m": 19,
+        "price_usd": 7.343e-07
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-04T04:03:53+00:00",
+        "token_first_seen": "2026-03-05T20:27:03.069000+00:00",
+        "age_minutes": 2430.7,
+        "age_hours": 40.51
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.32
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    }
+  ]
 }

@@ -1,96 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T20:21:52.600Z",
+    "updated_at": "2026-03-05T20:31:54.042Z",
     "source": "cio",
     "chain": "base",
-    "count": 4,
+    "count": 1,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T20:21:52.019778+00:00",
+      "ts_utc": "2026-03-05T20:31:54.015884+00:00",
       "chain": "base",
       "token": {
-        "name": "Mei",
-        "symbol": "$MEI",
-        "address": "0x59f2062ef800442358a0fe26a828d0057b45eba3"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 11230.0679,
-        "vol_24h_usd": 1552.0722155497
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x59f2062ef800442358a0fe26a828d0057b45eba3",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T20:21:52.167780+00:00",
-      "chain": "base",
-      "token": {
-        "name": "COVENANT",
-        "symbol": "$COVENANT",
-        "address": "0x4929c59254014aa52996fd8528a0cc93a36d2b78"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 14205.0326,
-        "vol_24h_usd": 5875.602498859
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x4929c59254014aa52996fd8528a0cc93a36d2b78",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T20:21:52.576246+00:00",
-      "chain": "base",
-      "token": {
-        "name": "CRICKET",
-        "symbol": "$CRICKET",
-        "address": "0xdbdedd94dd476b5a58d9e72690e0f854487b3099"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 24949.6215,
-        "vol_24h_usd": 23004.118243111
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xdbdedd94dd476b5a58d9e72690e0f854487b3099",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T20:21:52.356139+00:00",
-      "chain": "base",
-      "token": {
-        "name": "GAF",
-        "symbol": "$GAF",
-        "address": "0x029cd203922eb5e7a3009954404b567620f50ba3"
+        "name": "ROOM",
+        "symbol": "$ROOM",
+        "address": "0xfb2ae88aaac774a650a21f153d6b91c793346ab1"
       },
       "scores": {
         "confidence": 95,
@@ -100,11 +25,11 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 20420.1453,
-        "vol_24h_usd": 7619.7708863059
+        "liq_usd": 49618.4403,
+        "vol_24h_usd": 1094.094466885
       },
       "dex": "geckoterminal",
-      "pair_address": "0x029cd203922eb5e7a3009954404b567620f50ba3",
+      "pair_address": "0xfb2ae88aaac774a650a21f153d6b91c793346ab1",
       "scanner": "cio"
     }
   ]
