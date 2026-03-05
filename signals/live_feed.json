@@ -1,10 +1,61 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T11:01:26.145Z",
+    "updated_at": "2026-03-05T11:16:29.899Z",
     "source": "cio",
     "chain": "base",
-    "count": 0,
+    "count": 2,
     "errors": []
   },
-  "signals": []
+  "signals": [
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T11:16:29.865665+00:00",
+      "chain": "base",
+      "token": {
+        "name": "TSM",
+        "symbol": "$TSM",
+        "address": "0xc6641f9684e9034fb34c5c3bf9fda74b65c1918d"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 13300.4361,
+        "vol_24h_usd": 1274.101683065
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xc6641f9684e9034fb34c5c3bf9fda74b65c1918d",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T11:16:29.648872+00:00",
+      "chain": "base",
+      "token": {
+        "name": "NIGHTVISIO",
+        "symbol": "$NIGHTVISIO",
+        "address": "0xd85a246c63dcb0b73e04a8ae431e042d9e3d8dc3"
+      },
+      "scores": {
+        "confidence": 90,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 14281.8468,
+        "vol_24h_usd": 5025.9334888777
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xd85a246c63dcb0b73e04a8ae431e042d9e3d8dc3",
+      "scanner": "cio"
+    }
+  ]
 }
