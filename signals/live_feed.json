@@ -1,60 +1,110 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T14:50:44.791Z",
+    "updated_at": "2026-03-05T15:00:46.803Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 4,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T14:50:44.613805+00:00",
+      "ts_utc": "2026-03-05T15:00:46.781046+00:00",
       "chain": "base",
       "token": {
-        "name": "Kyuquot",
-        "symbol": "$KYUQUOT",
-        "address": "0x312f44292a006c60d61d56cb96a10eacd5f1d558"
+        "name": "ruck",
+        "symbol": "$RUCK",
+        "address": "0x30a19fab96eaa973b6872fc39162bc7f37a96c8f"
       },
       "scores": {
         "confidence": 100,
         "rarity": "new",
-        "risk": "low"
+        "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 13620.2596,
-        "vol_24h_usd": 8511.0944027204
+        "liq_usd": 52037.655,
+        "vol_24h_usd": 1651.787018
       },
       "dex": "geckoterminal",
-      "pair_address": "0x312f44292a006c60d61d56cb96a10eacd5f1d558",
+      "pair_address": "0x30a19fab96eaa973b6872fc39162bc7f37a96c8f",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T14:50:44.767584+00:00",
+      "ts_utc": "2026-03-05T15:00:46.222500+00:00",
       "chain": "base",
       "token": {
-        "name": "Sanrio",
-        "symbol": "$SANRIO",
-        "address": "0xd896c745a420f4a76c561bb43aaaca45e386addc"
+        "name": "LATTICE",
+        "symbol": "$LATTICE",
+        "address": "0x39a04d68e6206380f68fad1a277e5ae03b0983ac"
       },
       "scores": {
-        "confidence": 100,
+        "confidence": 95,
         "rarity": "new",
         "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 22602.2801,
-        "vol_24h_usd": 11308.2276951113
+        "liq_usd": 14365.5232,
+        "vol_24h_usd": 12603.1941737589
       },
       "dex": "geckoterminal",
-      "pair_address": "0xd896c745a420f4a76c561bb43aaaca45e386addc",
+      "pair_address": "0x39a04d68e6206380f68fad1a277e5ae03b0983ac",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T15:00:46.394292+00:00",
+      "chain": "base",
+      "token": {
+        "name": "Mort",
+        "symbol": "$MORT",
+        "address": "0xccbce48fe0cddefc461d37e0e44896ba4c1644c1"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 23774.904,
+        "vol_24h_usd": 9416.7673386761
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xccbce48fe0cddefc461d37e0e44896ba4c1644c1",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T15:00:46.599691+00:00",
+      "chain": "base",
+      "token": {
+        "name": "$DIME",
+        "symbol": "$$DIME",
+        "address": "0xda432a42f68980581d1fe1c3295f200128218cc1"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 6604.6108,
+        "vol_24h_usd": 2237.804985118
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xda432a42f68980581d1fe1c3295f200128218cc1",
       "scanner": "cio"
     }
   ]

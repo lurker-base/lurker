@@ -1,8 +1,8 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-05T14:55:01.026000+00:00",
-    "generated_at": "2026-03-05T14:55:01.026000+00:00",
+    "updated_at": "2026-03-05T15:04:11.832000+00:00",
+    "generated_at": "2026-03-05T15:04:11.832000+00:00",
     "status": "ok",
     "count": 1,
     "thresholds": {
@@ -12,7 +12,7 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
-      "low": 1
+      "medium": 1
     },
     "rejected": {
       "too_old": 1
@@ -32,24 +32,26 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 55394.92,
-        "vol_5m_usd": 8114.75,
-        "vol_1h_usd": 59796.84,
-        "txns_5m": 94,
-        "price_usd": 1.631e-06
+        "liq_usd": 38745.95,
+        "vol_5m_usd": 10576.39,
+        "vol_1h_usd": 64141.71,
+        "txns_5m": 52,
+        "price_usd": 7.881e-07
       },
       "timestamps": {
         "pair_created_at": "2026-03-04T12:35:55+00:00",
         "token_first_seen": "2026-03-04T16:34:15.099000+00:00",
-        "age_minutes": 1579.1,
-        "age_hours": 26.32
+        "age_minutes": 1588.3,
+        "age_hours": 26.47
       },
       "scores": {
         "cio_score": 100,
         "freshness": 0.56
       },
-      "risks": [],
-      "risk_level": "low",
+      "risks": [
+        "dumping"
+      ],
+      "risk_level": "medium",
       "source": "boosts",
       "status": "observing",
       "quality": {
