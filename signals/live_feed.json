@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T23:02:17.982Z",
+    "updated_at": "2026-03-05T23:07:18.916Z",
     "source": "cio",
     "chain": "base",
     "count": 4,
@@ -10,12 +10,37 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T23:02:17.239092+00:00",
+      "ts_utc": "2026-03-05T23:07:18.660116+00:00",
       "chain": "base",
       "token": {
-        "name": "YARR",
-        "symbol": "$YARR",
-        "address": "0xb85786a7977d419346a83358db7fd72e25f3fbda"
+        "name": "WHITEHOUSE",
+        "symbol": "$WHITEHOUSE",
+        "address": "0x67f4bc635ffbcfc21bbfb703f565bc946fb91706"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 23155.682,
+        "vol_24h_usd": 21543.3168229745
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x67f4bc635ffbcfc21bbfb703f565bc946fb91706",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-05T23:07:18.715659+00:00",
+      "chain": "base",
+      "token": {
+        "name": "Pikachu",
+        "symbol": "$PIKACHU",
+        "address": "0xeb5c89233848ad83b800a3736f4bd2b96ee8a538"
       },
       "scores": {
         "confidence": 100,
@@ -25,72 +50,47 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 50393.7986,
-        "vol_24h_usd": 1264.19819
+        "liq_usd": 84879.911,
+        "vol_24h_usd": 1077.901188046
       },
       "dex": "geckoterminal",
-      "pair_address": "0xb85786a7977d419346a83358db7fd72e25f3fbda",
+      "pair_address": "0xeb5c89233848ad83b800a3736f4bd2b96ee8a538",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T23:02:17.436244+00:00",
+      "ts_utc": "2026-03-05T23:07:18.889193+00:00",
       "chain": "base",
       "token": {
-        "name": "MD",
-        "symbol": "$MD",
-        "address": "0x28e006ef46b0768b6d4f87609218d432a5278e56"
+        "name": "GITC",
+        "symbol": "$GITC",
+        "address": "0xab54e7a3fddfb0079c763dffcaa7e9fc74bedba3"
       },
       "scores": {
         "confidence": 100,
         "rarity": "new",
-        "risk": "medium"
+        "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 137235.8602,
-        "vol_24h_usd": 1519.731853
+        "liq_usd": 13452.206,
+        "vol_24h_usd": 4929.4389536033
       },
       "dex": "geckoterminal",
-      "pair_address": "0x28e006ef46b0768b6d4f87609218d432a5278e56",
+      "pair_address": "0xab54e7a3fddfb0079c763dffcaa7e9fc74bedba3",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T23:02:17.944170+00:00",
+      "ts_utc": "2026-03-05T23:07:18.759766+00:00",
       "chain": "base",
       "token": {
-        "name": "noice",
-        "symbol": "$NOICE",
-        "address": "0x6a193e6f840e6f6f72301575b66c2dc11b5c7e67"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 89385.3925,
-        "vol_24h_usd": 1010.180608388
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x6a193e6f840e6f6f72301575b66c2dc11b5c7e67",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-05T23:02:17.658625+00:00",
-      "chain": "base",
-      "token": {
-        "name": "somewhere",
-        "symbol": "$SOMEWHERE",
-        "address": "0xc7c1260a59a668d37cf451fceefb145604bcaba3"
+        "name": "MOLTROOMS",
+        "symbol": "$MOLTROOMS",
+        "address": "0x93e01b8b359a95ecc907f5c54f48ef44c176cba3"
       },
       "scores": {
         "confidence": 95,
@@ -100,11 +100,11 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 23275.5816,
-        "vol_24h_usd": 7387.0046432697
+        "liq_usd": 20916.3243,
+        "vol_24h_usd": 3998.1993399833
       },
       "dex": "geckoterminal",
-      "pair_address": "0xc7c1260a59a668d37cf451fceefb145604bcaba3",
+      "pair_address": "0x93e01b8b359a95ecc907f5c54f48ef44c176cba3",
       "scanner": "cio"
     }
   ]
