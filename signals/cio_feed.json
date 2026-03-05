@@ -1,19 +1,90 @@
 {
-  "schema": "lurker_cio_ultra_launch",
-  "meta": {
-    "updated_at": "2026-03-05T13:49:29.997000+00:00",
-    "generated_at": "2026-03-05T13:49:29.997000+00:00",
-    "status": "degraded",
-    "count": 0,
-    "thresholds": {
-      "min_liq_usd": 1000,
-      "min_vol_5m": 500,
-      "min_tx_5m": 1,
-      "max_age_min": 43200
+  "timestamp": "2026-03-05T13:50:17.622322+00:00",
+  "source": "geckoterminal_v2",
+  "candidates": [
+    {
+      "token": {
+        "address": "0x4769ba4adcbf392115d5202fe2c9bfc8255c4c01",
+        "symbol": "shitcoin",
+        "name": "shitcoin"
+      },
+      "metrics": {
+        "liq_usd": 10579.9337,
+        "vol_24h_usd": 1508.2427333951,
+        "txns_24h": 9,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.04841181527777778,
+      "detected_at": "2026-03-05T13:50:17.439438+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 SUPER FRESH",
+        "\ud83d\udcd7 PUMPING"
+      ]
     },
-    "risk_distribution": {},
-    "rejected": {},
-    "source": "ultra_launch_scanner"
-  },
-  "candidates": []
+    {
+      "token": {
+        "address": "0xf3c89b9750c567845f1fa44aac6de83290102ffc",
+        "symbol": "\ud835\udd4f Car",
+        "name": "\ud835\udd4f Car"
+      },
+      "metrics": {
+        "liq_usd": 27723.9054,
+        "vol_24h_usd": 28701.0217274748,
+        "txns_24h": 170,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "low",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.07123320305555556,
+      "detected_at": "2026-03-05T13:50:17.583741+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 SUPER FRESH",
+        "\ud83d\udca7 LIQ",
+        "\ud83d\udcc8 ACTIVE",
+        "\u26a1 VIRAL",
+        "\ud83d\ude80 PUMP",
+        "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x49ba88bfab1c6fc32a43f65a32e62b364b712914",
+        "symbol": "LIZARD",
+        "name": "LIZARD"
+      },
+      "metrics": {
+        "liq_usd": 14341.8998,
+        "vol_24h_usd": 5276.4688503051,
+        "txns_24h": 17,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 90,
+      "age_hours": 0.08127327583333334,
+      "detected_at": "2026-03-05T13:50:17.620864+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 SUPER FRESH"
+      ]
+    }
+  ]
 }
