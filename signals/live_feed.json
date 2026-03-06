@@ -1,10 +1,36 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T08:49:14.347Z",
+    "updated_at": "2026-03-06T08:54:14.857Z",
     "source": "cio",
     "chain": "base",
-    "count": 0,
+    "count": 1,
     "errors": []
   },
-  "signals": []
+  "signals": [
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T08:54:14.827027+00:00",
+      "chain": "base",
+      "token": {
+        "name": "WW3",
+        "symbol": "$WW3",
+        "address": "0xb8ef11b5494574456dcffcd896bd089dd1f1cba3"
+      },
+      "scores": {
+        "confidence": 80,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 6276.1859,
+        "vol_24h_usd": 1069.8450290928
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xb8ef11b5494574456dcffcd896bd089dd1f1cba3",
+      "scanner": "cio"
+    }
+  ]
 }
