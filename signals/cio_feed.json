@@ -1,67 +1,22 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-06T05:25:41.027000+00:00",
-    "generated_at": "2026-03-06T05:25:41.027000+00:00",
-    "status": "ok",
-    "count": 1,
+    "updated_at": "2026-03-06T05:35:43.591000+00:00",
+    "generated_at": "2026-03-06T05:35:43.591000+00:00",
+    "status": "calm",
+    "count": 0,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
       "min_tx_5m": 1,
       "max_age_min": 43200
     },
-    "risk_distribution": {
-      "medium": 1
-    },
+    "risk_distribution": {},
     "rejected": {
-      "too_old": 1
+      "too_old": 1,
+      "low_volume": 1
     },
     "source": "ultra_launch_scanner"
   },
-  "candidates": [
-    {
-      "token": {
-        "address": "0xcb5ff7331193c45f61f05b035ddabe08f13f6ba3",
-        "symbol": "openagentmarket",
-        "name": "openagentmarket"
-      },
-      "pair": {
-        "address": "0x1f9d841f25e1499e196b3646dba5827812673f944b8d41a8a9ced7c2cd798f68",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 186098.88,
-        "vol_5m_usd": 299.8,
-        "vol_1h_usd": 921.09,
-        "txns_5m": 1,
-        "price_usd": 2.652e-06
-      },
-      "timestamps": {
-        "pair_created_at": "2026-02-20T16:01:31+00:00",
-        "token_first_seen": "2026-03-06T04:41:20.152000+00:00",
-        "age_minutes": 19524.2,
-        "age_hours": 325.4
-      },
-      "scores": {
-        "cio_score": 90,
-        "freshness": 0
-      },
-      "risks": [
-        "low_activity",
-        "low_volume"
-      ],
-      "risk_level": "medium",
-      "source": "community",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    }
-  ]
+  "candidates": []
 }
