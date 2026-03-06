@@ -24,7 +24,13 @@
         "removed_stale": 0
       }
     },
-    "last_lifecycle": "2026-03-06T13:43:27.578771+00:00"
+    "last_lifecycle": "2026-03-06T13:43:27.578771+00:00",
+    "last_scan": "2026-03-06T17:06:50.728393",
+    "scanner": "multi_api",
+    "sources_used": [
+      "dexscreener"
+    ],
+    "tokens_found": 8
   },
   "tokens": {
     "0x1234567890abcdef1234567890abcdef12345678": {
@@ -113,6 +119,118 @@
         ]
       },
       "price_usd": 0.001
+    },
+    "7oxne1dbphup6dn1jf8prgctzfcy4p2fubnewjzhpump": {
+      "address": "7oXNE1dbpHUp6dn1JF8pRgCtzfCy4P2FuBneWjZHpump",
+      "symbol": "WHITEHOUSE",
+      "name": "The White House",
+      "source": "dexscreener",
+      "detected_at": "2026-03-06T17:06:49.469486",
+      "category": "NEW",
+      "metrics": {
+        "price_usd": 0.001097,
+        "liq_usd": 98583.83,
+        "vol_24h_usd": 5888320.29,
+        "market_cap": 1097595.0
+      }
+    },
+    "38pgzpjyu2hkiyvv8qepfakb8tuobpdgm2ffen7dpump": {
+      "address": "38PgzpJYu2HkiYvV8qePFakB8tuobPdGm2FFEn7Dpump",
+      "symbol": "GORK",
+      "name": "New XAI gork",
+      "source": "dexscreener",
+      "detected_at": "2026-03-06T17:06:49.469503",
+      "category": "NEW",
+      "metrics": {
+        "price_usd": 0.003185,
+        "liq_usd": 534235.5,
+        "vol_24h_usd": 830470.01,
+        "market_cap": 3185045.0
+      }
+    },
+    "4uf883orbx89vqziv4eorpnquwyn5zuevc4pcpq9moon": {
+      "address": "4Uf883orBx89VQZiV4EoRpNqUWYN5ZuEvC4PCpQ9moon",
+      "symbol": "SPLAT",
+      "name": "Ask Splat",
+      "source": "dexscreener",
+      "detected_at": "2026-03-06T17:06:49.469512",
+      "category": "NEW",
+      "metrics": {
+        "price_usd": 0.001287,
+        "liq_usd": 282514.6,
+        "vol_24h_usd": 4663.08,
+        "market_cap": 845813.0
+      }
+    },
+    "4nswj3o1lo9iwyvvrjxud8vbcy9ay7qqoxycnchnbonk": {
+      "address": "4nswj3o1Lo9iWYvvRJxUD8vbCy9ay7QQoXYcncHNbonk",
+      "symbol": "SPSC",
+      "name": "Shit Piss Skin Can",
+      "source": "dexscreener",
+      "detected_at": "2026-03-06T17:06:49.469519",
+      "category": "NEW",
+      "metrics": {
+        "price_usd": 0.0006733,
+        "liq_usd": 151316.33,
+        "vol_24h_usd": 111300.06,
+        "market_cap": 673313.0
+      }
+    },
+    "0x70131b713a5d0e9d900feca15d0e1348658e4444": {
+      "address": "0x70131b713A5D0e9D900FEcA15D0e1348658E4444",
+      "symbol": "NOTIFAI",
+      "name": "NotifAi News",
+      "source": "dexscreener",
+      "detected_at": "2026-03-06T17:06:49.469522",
+      "category": "NEW",
+      "metrics": {
+        "price_usd": 9.293e-05,
+        "liq_usd": 35065.93,
+        "vol_24h_usd": 8065.33,
+        "market_cap": 92903.0
+      }
+    },
+    "tsatdggslybvcrm3pxiib8nmzkcb1iudjrrsengssxu": {
+      "address": "tSATdGGSLYBVCrm3pXiib8NmzKcB1iUdjRRseNGssxu",
+      "symbol": "TSAT",
+      "name": "Satoshi a BTC Stablecoin",
+      "source": "dexscreener",
+      "detected_at": "2026-03-06T17:06:49.469525",
+      "category": "NEW",
+      "metrics": {
+        "price_usd": 0.0006831,
+        "liq_usd": 151910.7,
+        "vol_24h_usd": 4597.87,
+        "market_cap": 54784.0
+      }
+    },
+    "ikhhabrngxhkyhnews6gtezcp1zgjfgedgukgx68ray": {
+      "address": "ikHHabrNGxHkyhNEws6GTeZCP1zgjfGEDGuKGX68ray",
+      "symbol": "MAKK",
+      "name": "MakkCoin",
+      "source": "dexscreener",
+      "detected_at": "2026-03-06T17:06:49.469540",
+      "category": "NEW",
+      "metrics": {
+        "price_usd": 0.0004271,
+        "liq_usd": 87186.2,
+        "vol_24h_usd": 99498.45,
+        "market_cap": 427142.0
+      }
+    },
+    "0x9842989969687f7d249d01cae1d2ff6b7b6b6d35": {
+      "address": "0x9842989969687f7d249d01Cae1D2ff6b7b6b6D35",
+      "symbol": "CRYPTO",
+      "name": "New Crypto Space",
+      "source": "dexscreener",
+      "detected_at": "2026-03-06T17:06:49.469543",
+      "category": "NEW",
+      "metrics": {
+        "price_usd": 0.0108,
+        "liq_usd": 749675.39,
+        "vol_24h_usd": 4801.21,
+        "market_cap": 1079453.0
+      }
     }
   },
   "last_updated": "2026-03-06T14:40:00Z"

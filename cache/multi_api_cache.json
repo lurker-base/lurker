@@ -1,0 +1,96 @@
+{
+  "tokens": [
+    {
+      "symbol": "WHITEHOUSE",
+      "address": "7oXNE1dbpHUp6dn1JF8pRgCtzfCy4P2FuBneWjZHpump",
+      "name": "The White House",
+      "price_usd": 0.001097,
+      "liquidity_usd": 98583.83,
+      "volume_24h": 5888320.29,
+      "market_cap": 1097595.0,
+      "source": "dexscreener",
+      "detected_at": "2026-03-06T17:06:49.469486"
+    },
+    {
+      "symbol": "GORK",
+      "address": "38PgzpJYu2HkiYvV8qePFakB8tuobPdGm2FFEn7Dpump",
+      "name": "New XAI gork",
+      "price_usd": 0.003185,
+      "liquidity_usd": 534235.5,
+      "volume_24h": 830470.01,
+      "market_cap": 3185045.0,
+      "source": "dexscreener",
+      "detected_at": "2026-03-06T17:06:49.469503"
+    },
+    {
+      "symbol": "SPLAT",
+      "address": "4Uf883orBx89VQZiV4EoRpNqUWYN5ZuEvC4PCpQ9moon",
+      "name": "Ask Splat",
+      "price_usd": 0.001287,
+      "liquidity_usd": 282514.6,
+      "volume_24h": 4663.08,
+      "market_cap": 845813.0,
+      "source": "dexscreener",
+      "detected_at": "2026-03-06T17:06:49.469512"
+    },
+    {
+      "symbol": "SPSC",
+      "address": "4nswj3o1Lo9iWYvvRJxUD8vbCy9ay7QQoXYcncHNbonk",
+      "name": "Shit Piss Skin Can",
+      "price_usd": 0.0006733,
+      "liquidity_usd": 151316.33,
+      "volume_24h": 111300.06,
+      "market_cap": 673313.0,
+      "source": "dexscreener",
+      "detected_at": "2026-03-06T17:06:49.469519"
+    },
+    {
+      "symbol": "NOTIFAI",
+      "address": "0x70131b713A5D0e9D900FEcA15D0e1348658E4444",
+      "name": "NotifAi News",
+      "price_usd": 9.293e-05,
+      "liquidity_usd": 35065.93,
+      "volume_24h": 8065.33,
+      "market_cap": 92903.0,
+      "source": "dexscreener",
+      "detected_at": "2026-03-06T17:06:49.469522"
+    },
+    {
+      "symbol": "TSAT",
+      "address": "tSATdGGSLYBVCrm3pXiib8NmzKcB1iUdjRRseNGssxu",
+      "name": "Satoshi a BTC Stablecoin",
+      "price_usd": 0.0006831,
+      "liquidity_usd": 151910.7,
+      "volume_24h": 4597.87,
+      "market_cap": 54784.0,
+      "source": "dexscreener",
+      "detected_at": "2026-03-06T17:06:49.469525"
+    },
+    {
+      "symbol": "MAKK",
+      "address": "ikHHabrNGxHkyhNEws6GTeZCP1zgjfGEDGuKGX68ray",
+      "name": "MakkCoin",
+      "price_usd": 0.0004271,
+      "liquidity_usd": 87186.2,
+      "volume_24h": 99498.45,
+      "market_cap": 427142.0,
+      "source": "dexscreener",
+      "detected_at": "2026-03-06T17:06:49.469540"
+    },
+    {
+      "symbol": "CRYPTO",
+      "address": "0x9842989969687f7d249d01Cae1D2ff6b7b6b6D35",
+      "name": "New Crypto Space",
+      "price_usd": 0.0108,
+      "liquidity_usd": 749675.39,
+      "volume_24h": 4801.21,
+      "market_cap": 1079453.0,
+      "source": "dexscreener",
+      "detected_at": "2026-03-06T17:06:49.469543"
+    }
+  ],
+  "last_updated": "2026-03-06T17:06:50.729290",
+  "sources_used": [
+    "dexscreener"
+  ]
+}
