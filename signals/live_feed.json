@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T09:19:19.635Z",
+    "updated_at": "2026-03-06T09:24:20.694Z",
     "source": "cio",
     "chain": "base",
-    "count": 3,
+    "count": 2,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T09:19:19.420083+00:00",
+      "ts_utc": "2026-03-06T09:24:20.441081+00:00",
       "chain": "base",
       "token": {
-        "name": "Byenance",
-        "symbol": "$BYENANCE",
-        "address": "0x1014cc69a9557869500d17a50158ab99883283d8"
+        "name": "USPC",
+        "symbol": "$USPC",
+        "address": "0x671e65b4db4394955c9798350668a8632059289b"
       },
       "scores": {
         "confidence": 100,
@@ -25,61 +25,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 33617.1533,
-        "vol_24h_usd": 77816.1233923372
+        "liq_usd": 24272.7482,
+        "vol_24h_usd": 9181.5277842417
       },
       "dex": "geckoterminal",
-      "pair_address": "0x1014cc69a9557869500d17a50158ab99883283d8",
+      "pair_address": "0x671e65b4db4394955c9798350668a8632059289b",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T09:19:19.601206+00:00",
+      "ts_utc": "2026-03-06T09:24:20.654109+00:00",
       "chain": "base",
       "token": {
-        "name": "Compound",
-        "symbol": "$COMPOUND",
-        "address": "0x620ccf142095828e9032bed4f550ae10b8208218"
+        "name": "BMO",
+        "symbol": "$BMO",
+        "address": "0x8c31084ee62c5ac04a2eb5fb452883961c4f425e"
       },
       "scores": {
         "confidence": 100,
         "rarity": "new",
-        "risk": "medium"
+        "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 51790.8039,
-        "vol_24h_usd": 2169.42375176
+        "liq_usd": 20260.9707,
+        "vol_24h_usd": 9846.2852160654
       },
       "dex": "geckoterminal",
-      "pair_address": "0x620ccf142095828e9032bed4f550ae10b8208218",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-06T09:19:19.220543+00:00",
-      "chain": "base",
-      "token": {
-        "name": "WW3",
-        "symbol": "$WW3",
-        "address": "0x2de483a19cc60bae0a4d5b0094682eb50b77cba3"
-      },
-      "scores": {
-        "confidence": 90,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 6951.6603,
-        "vol_24h_usd": 1421.5448545032
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x2de483a19cc60bae0a4d5b0094682eb50b77cba3",
+      "pair_address": "0x8c31084ee62c5ac04a2eb5fb452883961c4f425e",
       "scanner": "cio"
     }
   ]
