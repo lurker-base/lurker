@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T05:38:38.439Z",
+    "updated_at": "2026-03-06T05:48:40.509Z",
     "source": "cio",
     "chain": "base",
     "count": 2,
@@ -10,12 +10,12 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T05:38:38.224636+00:00",
+      "ts_utc": "2026-03-06T05:48:39.805639+00:00",
       "chain": "base",
       "token": {
-        "name": "大香蕉",
-        "symbol": "$大香蕉",
-        "address": "0x1bb6e2cae0a7b8c3d8d9833218c48d03fcff61de"
+        "name": "Steak",
+        "symbol": "$STEAK",
+        "address": "0x8820621dcc2213c3b4a1e31106a2dcec487d6805"
       },
       "scores": {
         "confidence": 100,
@@ -25,36 +25,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 21932.4173,
-        "vol_24h_usd": 19735.4607656154
+        "liq_usd": 33595.1613,
+        "vol_24h_usd": 60652.111599585
       },
       "dex": "geckoterminal",
-      "pair_address": "0x1bb6e2cae0a7b8c3d8d9833218c48d03fcff61de",
+      "pair_address": "0x8820621dcc2213c3b4a1e31106a2dcec487d6805",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T05:38:38.413150+00:00",
+      "ts_utc": "2026-03-06T05:48:40.246131+00:00",
       "chain": "base",
       "token": {
-        "name": "SCOUT",
-        "symbol": "$SCOUT",
-        "address": "0xa65195b1c14a3a8252589398549297b0ba836a42"
+        "name": "Mei",
+        "symbol": "$MEI",
+        "address": "0x3a0bb50cd3486a74fd7235d479e3946e9b8eeba3"
       },
       "scores": {
-        "confidence": 100,
+        "confidence": 95,
         "rarity": "new",
         "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 53148.7614,
-        "vol_24h_usd": 2813.48014692
+        "liq_usd": 8595.3437,
+        "vol_24h_usd": 4764.3357645494
       },
       "dex": "geckoterminal",
-      "pair_address": "0xa65195b1c14a3a8252589398549297b0ba836a42",
+      "pair_address": "0x3a0bb50cd3486a74fd7235d479e3946e9b8eeba3",
       "scanner": "cio"
     }
   ]
