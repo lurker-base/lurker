@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T00:17:32.982Z",
+    "updated_at": "2026-03-06T00:22:33.583Z",
     "source": "cio",
     "chain": "base",
     "count": 2,
@@ -10,37 +10,12 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T00:17:32.769440+00:00",
+      "ts_utc": "2026-03-06T00:22:33.336875+00:00",
       "chain": "base",
       "token": {
-        "name": "LUFFY",
-        "symbol": "$LUFFY",
-        "address": "0x6a4c66b12be523e9b764291cd5007ddc2ad070d3"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 85966.4663,
-        "vol_24h_usd": 1408.4803997363
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x6a4c66b12be523e9b764291cd5007ddc2ad070d3",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-06T00:17:32.956304+00:00",
-      "chain": "base",
-      "token": {
-        "name": "Cope",
-        "symbol": "$COPE",
-        "address": "0x4c031064554fb93602ee570b32e7ca750dab23c6"
+        "name": "WAR",
+        "symbol": "$WAR",
+        "address": "0xc5c40d19c4176761def970e2bfebd05f9cbe6f90"
       },
       "scores": {
         "confidence": 100,
@@ -50,11 +25,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 22625.6003,
-        "vol_24h_usd": 21639.9307811795
+        "liq_usd": 25635.049,
+        "vol_24h_usd": 16743.3548315749
       },
       "dex": "geckoterminal",
-      "pair_address": "0x4c031064554fb93602ee570b32e7ca750dab23c6",
+      "pair_address": "0xc5c40d19c4176761def970e2bfebd05f9cbe6f90",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T00:22:33.557739+00:00",
+      "chain": "base",
+      "token": {
+        "name": "NEXUS",
+        "symbol": "$NEXUS",
+        "address": "0xda5bbf571b75ce745d9ae209c033a3104a053ba3"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 7588.9262,
+        "vol_24h_usd": 3177.6959929172
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xda5bbf571b75ce745d9ae209c033a3104a053ba3",
       "scanner": "cio"
     }
   ]
