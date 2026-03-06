@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T07:54:05.466Z",
+    "updated_at": "2026-03-06T08:04:07.046Z",
     "source": "cio",
     "chain": "base",
     "count": 2,
@@ -10,12 +10,12 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T07:54:05.440614+00:00",
+      "ts_utc": "2026-03-06T08:04:06.845527+00:00",
       "chain": "base",
       "token": {
-        "name": "Builder Arena",
-        "symbol": "$BUILDER ARENA",
-        "address": "0x465e7a2df3abff13f74c093c4df27d461b654e50"
+        "name": "旺柴",
+        "symbol": "$旺柴",
+        "address": "0xf5606d69697a40e3dda12d0f2b2aa633a3b2667b"
       },
       "scores": {
         "confidence": 100,
@@ -25,36 +25,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 140555.2886,
-        "vol_24h_usd": 2848.08618429
+        "liq_usd": 28284.0559,
+        "vol_24h_usd": 15384.2610931495
       },
       "dex": "geckoterminal",
-      "pair_address": "0x465e7a2df3abff13f74c093c4df27d461b654e50",
+      "pair_address": "0xf5606d69697a40e3dda12d0f2b2aa633a3b2667b",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T07:54:05.028566+00:00",
+      "ts_utc": "2026-03-06T08:04:07.020238+00:00",
       "chain": "base",
       "token": {
-        "name": "Valerie",
-        "symbol": "$VALERIE",
-        "address": "0x5a833b75a19b9deb89568ad16d1ff57bf19ee1cc"
+        "name": "WW3",
+        "symbol": "$WW3",
+        "address": "0x0cd6c2a1392e98118b85e141a069d3b6ecd8cba3"
       },
       "scores": {
         "confidence": 95,
         "rarity": "new",
-        "risk": "low"
+        "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 23103.2725,
-        "vol_24h_usd": 9563.2665833961
+        "liq_usd": 7549.3868,
+        "vol_24h_usd": 3775.5407061851
       },
       "dex": "geckoterminal",
-      "pair_address": "0x5a833b75a19b9deb89568ad16d1ff57bf19ee1cc",
+      "pair_address": "0x0cd6c2a1392e98118b85e141a069d3b6ecd8cba3",
       "scanner": "cio"
     }
   ]
