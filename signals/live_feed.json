@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T09:04:16.440Z",
+    "updated_at": "2026-03-06T09:09:17.138Z",
     "source": "cio",
     "chain": "base",
     "count": 2,
@@ -10,12 +10,12 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T09:04:16.172306+00:00",
+      "ts_utc": "2026-03-06T09:09:16.952176+00:00",
       "chain": "base",
       "token": {
-        "name": "Nodie",
-        "symbol": "$NODIE",
-        "address": "0xea00acf6ed1683c256a3a4cbb001d9bde829ceee"
+        "name": "wwd",
+        "symbol": "$WWD",
+        "address": "0x7e72cad28c11e8fb9c2fa2e499faa591549f2208"
       },
       "scores": {
         "confidence": 100,
@@ -25,36 +25,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 15556.126,
-        "vol_24h_usd": 5901.1820207633
+        "liq_usd": 28131.852,
+        "vol_24h_usd": 28517.1144066661
       },
       "dex": "geckoterminal",
-      "pair_address": "0xea00acf6ed1683c256a3a4cbb001d9bde829ceee",
+      "pair_address": "0x7e72cad28c11e8fb9c2fa2e499faa591549f2208",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T09:04:16.412362+00:00",
+      "ts_utc": "2026-03-06T09:09:17.107123+00:00",
       "chain": "base",
       "token": {
-        "name": "Byenance",
-        "symbol": "$BYENANCE",
-        "address": "0x29cd6117beecda3dbbc40ffe7484f66f70a08951"
+        "name": "WW3",
+        "symbol": "$WW3",
+        "address": "0x5d6fd0b9028de69b6384e1505efef5b94d58cba3"
       },
       "scores": {
-        "confidence": 100,
+        "confidence": 95,
         "rarity": "new",
-        "risk": "low"
+        "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 22947.8645,
-        "vol_24h_usd": 37664.4613042579
+        "liq_usd": 7899.9823,
+        "vol_24h_usd": 3735.091336522
       },
       "dex": "geckoterminal",
-      "pair_address": "0x29cd6117beecda3dbbc40ffe7484f66f70a08951",
+      "pair_address": "0x5d6fd0b9028de69b6384e1505efef5b94d58cba3",
       "scanner": "cio"
     }
   ]
