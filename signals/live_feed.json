@@ -1,60 +1,35 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T12:34:56.278Z",
+    "updated_at": "2026-03-06T12:39:57.106Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 1,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T12:34:55.837262+00:00",
+      "ts_utc": "2026-03-06T12:39:57.077043+00:00",
       "chain": "base",
       "token": {
-        "name": "SOYJAK",
-        "symbol": "$SOYJAK",
-        "address": "0x66ca2460effc5041e16b53af1e7ce42d1308af64"
+        "name": "Basemail",
+        "symbol": "$BASEMAIL",
+        "address": "0x22e5affef710dc7517f62ec1931c631877ef1ba3"
       },
       "scores": {
-        "confidence": 100,
+        "confidence": 90,
         "rarity": "new",
-        "risk": "low"
+        "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 27559.3307,
-        "vol_24h_usd": 7576.7446078976
+        "liq_usd": 6987.9347,
+        "vol_24h_usd": 2423.5031142837
       },
       "dex": "geckoterminal",
-      "pair_address": "0x66ca2460effc5041e16b53af1e7ce42d1308af64",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-06T12:34:56.248842+00:00",
-      "chain": "base",
-      "token": {
-        "name": "拉大便",
-        "symbol": "$拉大便",
-        "address": "0xc272c6cd00d25d78d10c1d4776fd9207f98e8816"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 21899.1216,
-        "vol_24h_usd": 45658.6748793038
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xc272c6cd00d25d78d10c1d4776fd9207f98e8816",
+      "pair_address": "0x22e5affef710dc7517f62ec1931c631877ef1ba3",
       "scanner": "cio"
     }
   ]
