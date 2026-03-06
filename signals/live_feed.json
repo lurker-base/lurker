@@ -1,60 +1,35 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T07:08:55.331Z",
+    "updated_at": "2026-03-06T07:18:57.357Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 1,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T07:08:54.887069+00:00",
+      "ts_utc": "2026-03-06T07:18:57.322418+00:00",
       "chain": "base",
       "token": {
-        "name": "ApexClaw",
-        "symbol": "$APEXCLAW",
-        "address": "0xc20e5de7b6d36b02a3d1cd332fbaf44331f699f2"
+        "name": "歪比巴",
+        "symbol": "$歪比巴",
+        "address": "0x264b9cfed91edf9c8c0a7748c975d73f5bd35014"
       },
       "scores": {
         "confidence": 100,
         "rarity": "new",
-        "risk": "medium"
+        "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 53705.6545,
-        "vol_24h_usd": 2965.85654296
+        "liq_usd": 32772.4355,
+        "vol_24h_usd": 60578.9874639753
       },
       "dex": "geckoterminal",
-      "pair_address": "0xc20e5de7b6d36b02a3d1cd332fbaf44331f699f2",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-06T07:08:55.300553+00:00",
-      "chain": "base",
-      "token": {
-        "name": "SILVER",
-        "symbol": "$SILVER",
-        "address": "0x5a494d2bbb00d05b00008695ce6e8bff409ef07a"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 12974.0114,
-        "vol_24h_usd": 2264.8890554168
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x5a494d2bbb00d05b00008695ce6e8bff409ef07a",
+      "pair_address": "0x264b9cfed91edf9c8c0a7748c975d73f5bd35014",
       "scanner": "cio"
     }
   ]
