@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T12:49:58.857Z",
+    "updated_at": "2026-03-06T12:54:59.532Z",
     "source": "cio",
     "chain": "base",
     "count": 1,
@@ -10,12 +10,12 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T12:49:58.820067+00:00",
+      "ts_utc": "2026-03-06T12:54:59.505618+00:00",
       "chain": "base",
       "token": {
-        "name": "1元",
-        "symbol": "$1元",
-        "address": "0x38a9afe56d505529c8b3e2f18fa7501d7731cde7"
+        "name": "马钱",
+        "symbol": "$马钱",
+        "address": "0x0884c1d3cc6bff90e47295f5ea7358b3a6f9da02"
       },
       "scores": {
         "confidence": 100,
@@ -25,11 +25,11 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 35165.4686,
-        "vol_24h_usd": 68069.6773824705
+        "liq_usd": 27590.3757,
+        "vol_24h_usd": 50543.4435468799
       },
       "dex": "geckoterminal",
-      "pair_address": "0x38a9afe56d505529c8b3e2f18fa7501d7731cde7",
+      "pair_address": "0x0884c1d3cc6bff90e47295f5ea7358b3a6f9da02",
       "scanner": "cio"
     }
   ]
