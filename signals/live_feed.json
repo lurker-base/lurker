@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T06:18:45.982Z",
+    "updated_at": "2026-03-06T06:23:46.968Z",
     "source": "cio",
     "chain": "base",
-    "count": 3,
+    "count": 4,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T06:18:45.612824+00:00",
+      "ts_utc": "2026-03-06T06:23:46.331960+00:00",
       "chain": "base",
       "token": {
-        "name": "奶龙",
-        "symbol": "$奶龙",
-        "address": "0x476cd636efa114a8854424806998329e9db39dc9"
+        "name": "噜噜",
+        "symbol": "$噜噜",
+        "address": "0x497e1dc80739d598bb6485974bf126c5762cde9b"
       },
       "scores": {
         "confidence": 100,
@@ -25,61 +25,86 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 34386.6861,
-        "vol_24h_usd": 45300.653506763
+        "liq_usd": 23638.9974,
+        "vol_24h_usd": 3007.0859839046
       },
       "dex": "geckoterminal",
-      "pair_address": "0x476cd636efa114a8854424806998329e9db39dc9",
+      "pair_address": "0x497e1dc80739d598bb6485974bf126c5762cde9b",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T06:18:45.952269+00:00",
+      "ts_utc": "2026-03-06T06:23:46.538255+00:00",
       "chain": "base",
       "token": {
-        "name": "MOLTID",
-        "symbol": "$MOLTID",
-        "address": "0xc44b62daa42d470d052a5ee61a5da6db9a508673"
+        "name": "汉堡",
+        "symbol": "$汉堡",
+        "address": "0x17a012d69e5031f5aa098cc8f871380f70233d48"
       },
       "scores": {
         "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 20405.3197,
+        "vol_24h_usd": 17134.8115437538
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x17a012d69e5031f5aa098cc8f871380f70233d48",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T06:23:46.732096+00:00",
+      "chain": "base",
+      "token": {
+        "name": "MINDLESS",
+        "symbol": "$MINDLESS",
+        "address": "0xb1c43fd04390ca63cd7d7bca344b2ca16abddcc7"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 151274.5241,
+        "vol_24h_usd": 1187.732659644
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xb1c43fd04390ca63cd7d7bca344b2ca16abddcc7",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T06:23:46.941323+00:00",
+      "chain": "base",
+      "token": {
+        "name": "CLAUDE",
+        "symbol": "$CLAUDE",
+        "address": "0x92b3e29d04310aa7693a1bd5d16a0e3b304497f4"
+      },
+      "scores": {
+        "confidence": 90,
         "rarity": "new",
         "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 12861.4231,
-        "vol_24h_usd": 1669.3446269935
+        "liq_usd": 10963.6757,
+        "vol_24h_usd": 1151.2355299467
       },
       "dex": "geckoterminal",
-      "pair_address": "0xc44b62daa42d470d052a5ee61a5da6db9a508673",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-06T06:18:45.801309+00:00",
-      "chain": "base",
-      "token": {
-        "name": "VEBLO",
-        "symbol": "$VEBLO",
-        "address": "0xc821ecf5b535ae05e707fbff7bf0fa8f96183bb6"
-      },
-      "scores": {
-        "confidence": 95,
-        "rarity": "new",
-        "risk": "high"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 5621.6584,
-        "vol_24h_usd": 1209.0608899183
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xc821ecf5b535ae05e707fbff7bf0fa8f96183bb6",
+      "pair_address": "0x92b3e29d04310aa7693a1bd5d16a0e3b304497f4",
       "scanner": "cio"
     }
   ]
