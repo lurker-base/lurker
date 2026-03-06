@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T06:33:48.330Z",
+    "updated_at": "2026-03-06T06:38:49.207Z",
     "source": "cio",
     "chain": "base",
-    "count": 3,
+    "count": 2,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T06:33:47.964838+00:00",
+      "ts_utc": "2026-03-06T06:38:48.794388+00:00",
       "chain": "base",
       "token": {
-        "name": "SOL人生",
-        "symbol": "$SOL人生",
-        "address": "0xeaa4b1be6ebca3580e2ee027a5cbfe26fdbeaf1f"
+        "name": "噜噜",
+        "symbol": "$噜噜",
+        "address": "0x6f26e5746b67c2757d0368169b16fd7457775b1e"
       },
       "scores": {
         "confidence": 100,
@@ -25,61 +25,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 30662.1823,
-        "vol_24h_usd": 63085.9515300795
+        "liq_usd": 33014.281,
+        "vol_24h_usd": 73732.1222142778
       },
       "dex": "geckoterminal",
-      "pair_address": "0xeaa4b1be6ebca3580e2ee027a5cbfe26fdbeaf1f",
+      "pair_address": "0x6f26e5746b67c2757d0368169b16fd7457775b1e",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T06:33:48.110660+00:00",
+      "ts_utc": "2026-03-06T06:38:49.174336+00:00",
       "chain": "base",
       "token": {
-        "name": "AYA",
-        "symbol": "$AYA",
-        "address": "0x427dc2ffc751b41881984cafcb2b3a95f677ab18"
+        "name": "WW3",
+        "symbol": "$WW3",
+        "address": "0xb85925a76725451243411f3f3e3f64ef7ef6cba3"
       },
       "scores": {
-        "confidence": 100,
+        "confidence": 95,
         "rarity": "new",
         "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 136356.6433,
-        "vol_24h_usd": 1446.55957639
+        "liq_usd": 8467.7882,
+        "vol_24h_usd": 4512.1705251218
       },
       "dex": "geckoterminal",
-      "pair_address": "0x427dc2ffc751b41881984cafcb2b3a95f677ab18",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-06T06:33:48.302441+00:00",
-      "chain": "base",
-      "token": {
-        "name": "ORIGIN",
-        "symbol": "$ORIGIN",
-        "address": "0xe3bfc28bf6988e9be2b6db50bffecd15b93773d5"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 54417.4683,
-        "vol_24h_usd": 3411.10550751
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xe3bfc28bf6988e9be2b6db50bffecd15b93773d5",
+      "pair_address": "0xb85925a76725451243411f3f3e3f64ef7ef6cba3",
       "scanner": "cio"
     }
   ]
