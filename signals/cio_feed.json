@@ -1,8 +1,8 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-06T10:51:01.390000+00:00",
-    "generated_at": "2026-03-06T10:51:01.390000+00:00",
+    "updated_at": "2026-03-06T10:56:03.706000+00:00",
+    "generated_at": "2026-03-06T10:56:03.706000+00:00",
     "status": "ok",
     "count": 1,
     "thresholds": {
@@ -12,7 +12,7 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
-      "medium": 1
+      "low": 1
     },
     "rejected": {
       "too_old": 1,
@@ -23,36 +23,34 @@
   "candidates": [
     {
       "token": {
-        "address": "0x35d97427b55f5ca87711e35367de1fe2cd3883a7",
-        "symbol": "ClawPing",
-        "name": "ClawPing"
+        "address": "0x1258da1c520c51ca501d44a60ac8a25227817aed",
+        "symbol": "Basemail",
+        "name": "Basemail"
       },
       "pair": {
-        "address": "0x09f686c91fcee5abb82b5a832514219f119f8084a4441a94f212ef6eca8cd565",
+        "address": "0xe7017ea499f8ff9d8c48df186561aa1feacdd26df5dab972fab9abe8688d9a4b",
         "dex": "uniswap",
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 68390.33,
-        "vol_5m_usd": 9394.36,
-        "vol_1h_usd": 188882.51,
-        "txns_5m": 51,
-        "price_usd": 9.705e-07
+        "liq_usd": 44990.06,
+        "vol_5m_usd": 38710.64,
+        "vol_1h_usd": 57829.78,
+        "txns_5m": 95,
+        "price_usd": 5.092e-07
       },
       "timestamps": {
-        "pair_created_at": "2026-03-06T08:38:07+00:00",
-        "token_first_seen": "2026-03-06T08:56:27.163000+00:00",
-        "age_minutes": 132.9,
-        "age_hours": 2.22
+        "pair_created_at": "2026-03-06T10:39:29+00:00",
+        "token_first_seen": "2026-03-06T10:55:13.816000+00:00",
+        "age_minutes": 16.6,
+        "age_hours": 0.28
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.96
+        "freshness": 1.0
       },
-      "risks": [
-        "dumping"
-      ],
-      "risk_level": "medium",
+      "risks": [],
+      "risk_level": "low",
       "source": "profiles",
       "status": "observing",
       "quality": {
