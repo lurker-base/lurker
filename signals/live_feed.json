@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T04:23:23.068Z",
+    "updated_at": "2026-03-06T04:33:25.166Z",
     "source": "cio",
     "chain": "base",
     "count": 2,
@@ -10,51 +10,51 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T04:23:23.036189+00:00",
+      "ts_utc": "2026-03-06T04:33:24.991748+00:00",
       "chain": "base",
       "token": {
-        "name": "InstantClaw",
-        "symbol": "$INSTANTCLAW",
-        "address": "0xe7c2795a52db9a97c50a23c42c4529859b9f4192"
+        "name": "AICoin",
+        "symbol": "$AICOIN",
+        "address": "0x8bfa34dcc7f998349b3a7b2858dc91da9776ae66"
       },
       "scores": {
         "confidence": 100,
         "rarity": "new",
-        "risk": "medium"
+        "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 52359.8924,
-        "vol_24h_usd": 2285.44926683
+        "liq_usd": 27533.1678,
+        "vol_24h_usd": 15063.7927668726
       },
       "dex": "geckoterminal",
-      "pair_address": "0xe7c2795a52db9a97c50a23c42c4529859b9f4192",
+      "pair_address": "0x8bfa34dcc7f998349b3a7b2858dc91da9776ae66",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T04:23:22.822290+00:00",
+      "ts_utc": "2026-03-06T04:33:25.137917+00:00",
       "chain": "base",
       "token": {
-        "name": "TENDRELA",
-        "symbol": "$TENDRELA",
-        "address": "0x69c6458f1f98e346424a9d86b5a033abc77ceba3"
+        "name": "BRUH",
+        "symbol": "$BRUH",
+        "address": "0x7910c30c3aab60ea6e445212bb2108c10f7ecbea"
       },
       "scores": {
-        "confidence": 95,
+        "confidence": 100,
         "rarity": "new",
-        "risk": "medium"
+        "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 27021.8667,
-        "vol_24h_usd": 4752.5693759755
+        "liq_usd": 28436.7824,
+        "vol_24h_usd": 56263.1968910905
       },
       "dex": "geckoterminal",
-      "pair_address": "0x69c6458f1f98e346424a9d86b5a033abc77ceba3",
+      "pair_address": "0x7910c30c3aab60ea6e445212bb2108c10f7ecbea",
       "scanner": "cio"
     }
   ]
