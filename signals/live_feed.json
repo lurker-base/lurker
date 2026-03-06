@@ -1,9 +1,9 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T17:36:31.428350+00:00",
-    "source": "lifecycle",
+    "updated_at": "2026-03-06T19:46:26.326111+00:00",
+    "source": "merged",
     "chain": "base",
-    "count": 11,
+    "count": 4,
     "errors": []
   },
   "signals": [
@@ -41,92 +41,15 @@
       "status": "PREMIUM"
     },
     {
-      "address": "7oxne1dbphup6dn1jf8prgctzfcy4p2fubnewjzhpump",
-      "symbol": "WHITEHOUSE",
-      "name": "The White House",
-      "liquidity_usd": 0,
+      "address": "0x2fe357b4202266b53f4bc03e519f5f8660452b4f",
+      "symbol": "ClawSight",
+      "name": "Claw Sight",
+      "liquidity_usd": 123035.05,
       "volume_24h": 0,
-      "quality_score": 0,
-      "age_minutes": 0,
-      "detected_at": "2026-03-06T17:06:49.469486",
-      "status": "NEW"
-    },
-    {
-      "address": "38pgzpjyu2hkiyvv8qepfakb8tuobpdgm2ffen7dpump",
-      "symbol": "GORK",
-      "name": "New XAI gork",
-      "liquidity_usd": 0,
-      "volume_24h": 0,
-      "quality_score": 0,
-      "age_minutes": 0,
-      "detected_at": "2026-03-06T17:06:49.469503",
-      "status": "NEW"
-    },
-    {
-      "address": "4uf883orbx89vqziv4eorpnquwyn5zuevc4pcpq9moon",
-      "symbol": "SPLAT",
-      "name": "Ask Splat",
-      "liquidity_usd": 0,
-      "volume_24h": 0,
-      "quality_score": 0,
-      "age_minutes": 0,
-      "detected_at": "2026-03-06T17:06:49.469512",
-      "status": "NEW"
-    },
-    {
-      "address": "4nswj3o1lo9iwyvvrjxud8vbcy9ay7qqoxycnchnbonk",
-      "symbol": "SPSC",
-      "name": "Shit Piss Skin Can",
-      "liquidity_usd": 0,
-      "volume_24h": 0,
-      "quality_score": 0,
-      "age_minutes": 0,
-      "detected_at": "2026-03-06T17:06:49.469519",
-      "status": "NEW"
-    },
-    {
-      "address": "0x70131b713a5d0e9d900feca15d0e1348658e4444",
-      "symbol": "NOTIFAI",
-      "name": "NotifAi News",
-      "liquidity_usd": 0,
-      "volume_24h": 0,
-      "quality_score": 0,
-      "age_minutes": 0,
-      "detected_at": "2026-03-06T17:06:49.469522",
-      "status": "NEW"
-    },
-    {
-      "address": "tsatdggslybvcrm3pxiib8nmzkcb1iudjrrsengssxu",
-      "symbol": "TSAT",
-      "name": "Satoshi a BTC Stablecoin",
-      "liquidity_usd": 0,
-      "volume_24h": 0,
-      "quality_score": 0,
-      "age_minutes": 0,
-      "detected_at": "2026-03-06T17:06:49.469525",
-      "status": "NEW"
-    },
-    {
-      "address": "ikhhabrngxhkyhnews6gtezcp1zgjfgedgukgx68ray",
-      "symbol": "MAKK",
-      "name": "MakkCoin",
-      "liquidity_usd": 0,
-      "volume_24h": 0,
-      "quality_score": 0,
-      "age_minutes": 0,
-      "detected_at": "2026-03-06T17:06:49.469540",
-      "status": "NEW"
-    },
-    {
-      "address": "0x9842989969687f7d249d01cae1d2ff6b7b6b6d35",
-      "symbol": "CRYPTO",
-      "name": "New Crypto Space",
-      "liquidity_usd": 0,
-      "volume_24h": 0,
-      "quality_score": 0,
-      "age_minutes": 0,
-      "detected_at": "2026-03-06T17:06:49.469543",
-      "status": "NEW"
+      "quality_score": 100,
+      "age_minutes": 97.2,
+      "detected_at": "2026-03-06T19:46:16.947000+00:00",
+      "risk_level": "low"
     }
   ]
 }

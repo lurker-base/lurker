@@ -22181,6 +22181,23 @@
         "symbol": "BASTION",
         "name": "Bastion Finance"
       }
+    },
+    "0x2fe357b4202266b53f4bc03e519f5f8660452b4f": {
+      "first_seen": 1772826376947,
+      "first_seen_iso": "2026-03-06T19:46:16.947000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1772826376947,
+          "price": 2.662e-06,
+          "liq": 123035.05,
+          "vol_5m": 28659.88
+        }
+      ],
+      "token": {
+        "address": "0x2fe357b4202266b53f4bc03e519f5f8660452b4f",
+        "symbol": "ClawSight",
+        "name": "Claw Sight"
+      }
     }
   }
 }
