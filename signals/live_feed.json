@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T11:49:47.502Z",
+    "updated_at": "2026-03-06T11:54:48.972Z",
     "source": "cio",
     "chain": "base",
-    "count": 1,
+    "count": 3,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T11:49:47.470475+00:00",
+      "ts_utc": "2026-03-06T11:54:48.373660+00:00",
       "chain": "base",
       "token": {
-        "name": "RUOZHIBA",
-        "symbol": "$RUOZHIBA",
-        "address": "0x3d1c1cf3a66bbbc4d6d37ecb11ffa6a6f9d48c39"
+        "name": "狗头",
+        "symbol": "$狗头",
+        "address": "0xf3c098b826e55ba7b0eb045bf6532c6dfedd28e8"
       },
       "scores": {
         "confidence": 100,
@@ -25,11 +25,61 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 27675.6194,
-        "vol_24h_usd": 74411.7807640685
+        "liq_usd": 22975.0647,
+        "vol_24h_usd": 3021.865016058
       },
       "dex": "geckoterminal",
-      "pair_address": "0x3d1c1cf3a66bbbc4d6d37ecb11ffa6a6f9d48c39",
+      "pair_address": "0xf3c098b826e55ba7b0eb045bf6532c6dfedd28e8",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T11:54:48.545711+00:00",
+      "chain": "base",
+      "token": {
+        "name": "杀马特",
+        "symbol": "$杀马特",
+        "address": "0x2e6e72e0362a2c7be0917f8077a45b2bb4eb86c6"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 13916.2204,
+        "vol_24h_usd": 1932.4229604386
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x2e6e72e0362a2c7be0917f8077a45b2bb4eb86c6",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T11:54:48.927168+00:00",
+      "chain": "base",
+      "token": {
+        "name": "Polymarket",
+        "symbol": "$POLYMARKET",
+        "address": "0x207cf16e4b35460b5aa7c6f29f0e2bc7423a90d3"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 50283.2174,
+        "vol_24h_usd": 1525.59117471
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x207cf16e4b35460b5aa7c6f29f0e2bc7423a90d3",
       "scanner": "cio"
     }
   ]
