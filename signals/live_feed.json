@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T02:48:01.738Z",
+    "updated_at": "2026-03-06T02:53:02.647Z",
     "source": "cio",
     "chain": "base",
-    "count": 3,
+    "count": 2,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T02:48:01.267374+00:00",
+      "ts_utc": "2026-03-06T02:53:02.353002+00:00",
       "chain": "base",
       "token": {
-        "name": "LUFFY",
-        "symbol": "$LUFFY",
-        "address": "0x132a33f91bee93c9fca68e6694831b60e11d5839"
+        "name": "SYNTHESIS",
+        "symbol": "$SYNTHESIS",
+        "address": "0xc7e70d2fadb56483047883c40ccdf312ab890676"
       },
       "scores": {
         "confidence": 100,
@@ -25,61 +25,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 87009.4691,
-        "vol_24h_usd": 1765.306438582
+        "liq_usd": 51630.7275,
+        "vol_24h_usd": 1903.677719
       },
       "dex": "geckoterminal",
-      "pair_address": "0x132a33f91bee93c9fca68e6694831b60e11d5839",
+      "pair_address": "0xc7e70d2fadb56483047883c40ccdf312ab890676",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T02:48:01.695709+00:00",
+      "ts_utc": "2026-03-06T02:53:02.607236+00:00",
       "chain": "base",
       "token": {
-        "name": "CHRONOEFFE",
-        "symbol": "$CHRONOEFFE",
-        "address": "0xeed1b06ed0524b2479896868ea5cb2312a8d7116"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 12717.7644,
-        "vol_24h_usd": 1516.9958573085
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xeed1b06ed0524b2479896868ea5cb2312a8d7116",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-06T02:48:01.054287+00:00",
-      "chain": "base",
-      "token": {
-        "name": "Paperclip",
-        "symbol": "$PAPERCLIP",
-        "address": "0xc6d2a73b0887c4064b92c49b1576eb3ac58baba3"
+        "name": "IRRAD",
+        "symbol": "$IRRAD",
+        "address": "0x1a6674a54479357603a12dde146758fd9d1bb5f4"
       },
       "scores": {
         "confidence": 95,
         "rarity": "new",
-        "risk": "medium"
+        "risk": "high"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 8121.7468,
-        "vol_24h_usd": 3255.5777652755
+        "liq_usd": 6734.6469,
+        "vol_24h_usd": 1422.0241079714
       },
       "dex": "geckoterminal",
-      "pair_address": "0xc6d2a73b0887c4064b92c49b1576eb3ac58baba3",
+      "pair_address": "0x1a6674a54479357603a12dde146758fd9d1bb5f4",
       "scanner": "cio"
     }
   ]
