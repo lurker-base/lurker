@@ -1,35 +1,60 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T08:54:14.857Z",
+    "updated_at": "2026-03-06T09:04:16.440Z",
     "source": "cio",
     "chain": "base",
-    "count": 1,
+    "count": 2,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T08:54:14.827027+00:00",
+      "ts_utc": "2026-03-06T09:04:16.172306+00:00",
       "chain": "base",
       "token": {
-        "name": "WW3",
-        "symbol": "$WW3",
-        "address": "0xb8ef11b5494574456dcffcd896bd089dd1f1cba3"
+        "name": "Nodie",
+        "symbol": "$NODIE",
+        "address": "0xea00acf6ed1683c256a3a4cbb001d9bde829ceee"
       },
       "scores": {
-        "confidence": 80,
+        "confidence": 100,
         "rarity": "new",
-        "risk": "medium"
+        "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 6276.1859,
-        "vol_24h_usd": 1069.8450290928
+        "liq_usd": 15556.126,
+        "vol_24h_usd": 5901.1820207633
       },
       "dex": "geckoterminal",
-      "pair_address": "0xb8ef11b5494574456dcffcd896bd089dd1f1cba3",
+      "pair_address": "0xea00acf6ed1683c256a3a4cbb001d9bde829ceee",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T09:04:16.412362+00:00",
+      "chain": "base",
+      "token": {
+        "name": "Byenance",
+        "symbol": "$BYENANCE",
+        "address": "0x29cd6117beecda3dbbc40ffe7484f66f70a08951"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 22947.8645,
+        "vol_24h_usd": 37664.4613042579
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x29cd6117beecda3dbbc40ffe7484f66f70a08951",
       "scanner": "cio"
     }
   ]

@@ -1,21 +1,64 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-06T08:55:36.638000+00:00",
-    "generated_at": "2026-03-06T08:55:36.638000+00:00",
-    "status": "calm",
-    "count": 0,
+    "updated_at": "2026-03-06T09:05:39.714000+00:00",
+    "generated_at": "2026-03-06T09:05:39.714000+00:00",
+    "status": "ok",
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
       "min_tx_5m": 1,
       "max_age_min": 43200
     },
-    "risk_distribution": {},
+    "risk_distribution": {
+      "low": 1
+    },
     "rejected": {
       "too_old": 1
     },
     "source": "ultra_launch_scanner"
   },
-  "candidates": []
+  "candidates": [
+    {
+      "token": {
+        "address": "0x35d97427b55f5ca87711e35367de1fe2cd3883a7",
+        "symbol": "ClawPing",
+        "name": "ClawPing"
+      },
+      "pair": {
+        "address": "0x09f686c91fcee5abb82b5a832514219f119f8084a4441a94f212ef6eca8cd565",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 100166.63,
+        "vol_5m_usd": 24289.04,
+        "vol_1h_usd": 205064.91,
+        "txns_5m": 71,
+        "price_usd": 1.995e-06
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-06T08:38:07+00:00",
+        "token_first_seen": "2026-03-06T08:56:27.163000+00:00",
+        "age_minutes": 27.5,
+        "age_hours": 0.46
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.99
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    }
+  ]
 }
