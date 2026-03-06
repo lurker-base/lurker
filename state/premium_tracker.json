@@ -1,7 +1,35 @@
 {
   "schema": "lurker_premium_tracker_v1",
-  "tracked_tokens": {},
+  "tracked_tokens": {
+    "0x1234567890abcdef1234567890abcdef12345678": {
+      "symbol": "DEGEN",
+      "address": "0x1234567890abcdef1234567890abcdef12345678",
+      "liquidity": 150000,
+      "volume_24h": 500000,
+      "quality_score": 85,
+      "first_tracked": "2026-03-06T13:34:11.941510+00:00",
+      "last_check": "2026-03-06T13:34:11.941527+00:00"
+    },
+    "0xabcdef1234567890abcdef1234567890abcdef12": {
+      "symbol": "PONKE",
+      "address": "0xabcdef1234567890abcdef1234567890abcdef12",
+      "liquidity": 80000,
+      "volume_24h": 200000,
+      "quality_score": 72,
+      "first_tracked": "2026-03-06T13:34:11.941552+00:00",
+      "last_check": "2026-03-06T13:34:11.941555+00:00"
+    },
+    "0x9876543210fedcba9876543210fedcba98765432": {
+      "symbol": "BOLT",
+      "address": "0x9876543210fedcba9876543210fedcba98765432",
+      "liquidity": 200000,
+      "volume_24h": 800000,
+      "quality_score": 92,
+      "first_tracked": "2026-03-06T13:34:11.941566+00:00",
+      "last_check": "2026-03-06T13:34:11.941568+00:00"
+    }
+  },
   "pump_alerts": [],
   "dump_alerts": [],
-  "last_scan": "2026-03-06T13:08:59.143000+00:00"
+  "last_scan": "2026-03-06T13:34:17.619000+00:00"
 }

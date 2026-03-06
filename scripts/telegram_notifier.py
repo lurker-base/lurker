@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 """
-LURKER Telegram Notifier — Early detection alerts
-Send alerts for ALL new tokens (not just PREMIUM) so users can enter early
+LURKER Telegram Notifier - Premium Alerts
+Sends alerts for:
+- New PREMIUM token detected
+- Pump detected (+20% in 1h)
+- Dump detected (-15% in 1h)
+- PREMIUM token disappears from top
 """
 import json
 import os
@@ -9,209 +13,286 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-CIO_FILE = Path("signals/cio_feed.json")
-STATE_FILE = Path("state/telegram_notified.json")
+# Config
+BASE_DIR = Path("/data/.openclaw/workspace/lurker-project")
 
-# Telegram config from env
+# Telegram config via env vars
 BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
-CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+ALERT_CHAT_ID = os.getenv("LURKER_ALERTS_CHAT_ID")
 
-def load_state():
-    if STATE_FILE.exists():
-        with open(STATE_FILE) as f:
-            return json.load(f)
-    return {"notified": {}, "updates": []}
-
-def save_state(state):
-    STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
-    with open(STATE_FILE, 'w') as f:
-        json.dump(state, f, indent=2)
-
-def calculate_badge(token):
-    """Calculate badge: PREMIUM, GOOD, or WATCH"""
-    quality = token.get('quality', {})
-    q_score = quality.get('quality_score', 0)
-    liq = token['metrics']['liq_usd']
-    vol1h = token['metrics'].get('vol_1h_usd', 0)
-    
-    # Same logic as unifiedFeed.js
-    is_pumping = vol1h > 100000
-    is_premium = q_score >= 80 and (liq > 40000 or is_pumping)
-    is_good = q_score >= 60 or liq > 30000 or vol1h > 50000
-    
-    if is_premium:
-        return "PREMIUM", "🔥"
-    elif is_good:
-        return "GOOD", "✅"
-    else:
-        return "WATCH", "👁️"
+# Thresholds
+PUMP_THRESHOLD = 20  # 20%
+DUMP_THRESHOLD = -15  # -15%
 
 def send_telegram_message(text):
+    """Send message to Telegram"""
     import urllib.request
     import urllib.parse
     
-    if not BOT_TOKEN or not CHAT_ID:
-        print("[TELEGRAM] Missing credentials")
+    if not BOT_TOKEN or not ALERT_CHAT_ID:
+        print("[NOTIFIER] Missing Telegram credentials (TELEGRAM_BOT_TOKEN, LURKER_ALERTS_CHAT_ID)")
         return False
     
     url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
     data = urllib.parse.urlencode({
-        'chat_id': CHAT_ID,
+        'chat_id': ALERT_CHAT_ID,
         'text': text,
         'parse_mode': 'HTML',
-        'disable_web_page_preview': 'true'
+        'disable_web_page_preview': 'false'
     }).encode()
     
     try:
         req = urllib.request.Request(url, data=data, method='POST')
         with urllib.request.urlopen(req, timeout=30) as response:
             result = json.loads(response.read().decode())
-            if result.get('ok'):
-                print(f"[TELEGRAM] Message sent")
-                return True
-            else:
-                print(f"[TELEGRAM] Error: {result}")
-                return False
+            return result.get('ok', False)
     except Exception as e:
-        print(f"[TELEGRAM] Failed: {e}")
+        print(f"[NOTIFIER] Failed to send: {e}")
         return False
 
-def format_token_alert(token, badge_name, badge_emoji):
-    """Format token info for Telegram with badge"""
-    symbol = token['token']['symbol']
-    name = token['token']['name']
-    addr = token['token']['address']
-    liq = token['metrics']['liq_usd']
-    vol1h = token['metrics'].get('vol_1h_usd', 0)
-    vol5m = token['metrics'].get('vol_5m_usd', 0)
-    # Handle both old format (timestamps.age_minutes) and new format (age_hours)
-    age = token.get('timestamps', {}).get('age_minutes', token.get('age_hours', 0) * 60)
-    quality = token.get('quality', {})
-    risk = token.get('risk', {}).get('level', token.get('risk_level', 'medium'))
-    score = token.get('score', token.get('scores', {}).get('cio_score', 0))
-    
-    # Risk emoji
-    risk_emoji = "🟢" if risk == 'low' else "🟡" if risk == 'medium' else "🔴"
-    
-    # Quality icons
-    icons = ""
-    if quality.get('has_image'): icons += "🖼️"
-    if quality.get('has_socials'): icons += "💬"
-    if quality.get('has_website'): icons += "🌐"
-    
-    msg = f"""<b>{badge_emoji} {badge_name}</b>
 
-<b>${symbol}</b> — {name}
-{icons}
+def get_badge(score):
+    """Get badge based on score"""
+    if score >= 80:
+        return "💎 DIAMOND"
+    elif score >= 60:
+        return "🔥 HOT"
+    elif score >= 40:
+        return "⭐ PREMIUM"
+    elif score >= 20:
+        return "📈 WATCH"
+    else:
+        return "🆕 NEW"
 
-📊 Score: {score}/100
-{risk_emoji} Risk: {risk.upper()}
-💧 Liquidity: ${liq/1000:.1f}k
-📈 Volume 1h: ${vol1h/1000:.1f}k
-🔥 Volume 5m: ${vol5m/1000:.1f}k
-⏱️ Age: {age:.0f} minutes
 
-<a href="https://dexscreener.com/base/{addr}">View on DexScreener →</a>
+def get_recommendation(change_pct, score, liquidity, volume):
+    """Generate BUY/SELL/HOLD recommendation"""
+    # Base recommendation
+    if change_pct >= 15 and liquidity > 10000 and volume > 50000:
+        return "🤜 STRONG BUY"
+    elif change_pct >= 10 and liquidity > 5000:
+        return "✅ BUY"
+    elif change_pct <= -20:
+        return "🛑 SELL"
+    elif change_pct <= -10:
+        return "⚠️ SELL"
+    elif score >= 60 and change_pct > 0:
+        return "✅ HOLD (BUY)"
+    elif score >= 40:
+        return "⏸️ HOLD"
+    else:
+        return "❌ AVOID"
 
-👁️ LURKER — Early Detection"""
-    
-    return msg
 
-def format_upgrade_alert(token, old_badge, new_badge, badge_emoji):
-    """Format upgrade notification (e.g., WATCH -> GOOD)"""
-    symbol = token['token']['symbol']
-    addr = token['token']['address']
-    liq = token['metrics']['liq_usd']
-    
-    msg = f"""<b>{badge_emoji} UPGRADE: {old_badge} → {new_badge}</b>
+def format_price(price):
+    """Format price nicely"""
+    if price is None or price == 0:
+        return "N/A"
+    if price >= 1:
+        return f"${price:.4f}"
+    elif price >= 0.01:
+        return f"${price:.6f}"
+    else:
+        return f"${price:.8f}"
 
-<b>${symbol}</b> 
 
-💧 Liquidity: ${liq/1000:.1f}k
+def format_large_number(num):
+    """Format large numbers"""
+    if num is None or num == 0:
+        return "$0"
+    if num >= 1_000_000:
+        return f"${num/1_000_000:.2f}M"
+    elif num >= 1_000:
+        return f"${num/1_000:.1f}k"
+    else:
+        return f"${num:.0f}"
 
-Token upgraded to {new_badge}!
 
-<a href="https://dexscreener.com/base/{addr}">View on DexScreener →</a>
+# ============================================================
+# ALERT TYPES
+# ============================================================
 
-👁️ LURKER"""
+def send_new_premium_token(token_data):
+    """Alert when new PREMIUM token detected"""
+    symbol = token_data.get("symbol") or token_data.get("token", {}).get("symbol", "UNKNOWN")
+    address = token_data.get("address") or token_data.get("token", {}).get("address", "")
+    price = token_data.get("price") or token_data.get("metrics", {}).get("price_usd", 0)
+    liquidity = token_data.get("liquidity") or token_data.get("metrics", {}).get("liq_usd", 0)
+    volume = token_data.get("volume_24h") or token_data.get("metrics", {}).get("vol_24h_usd", 0)
+    score = token_data.get("score") or token_data.get("scores", {}).get("cio_score", 0)
+    change_pct = token_data.get("change_pct", 0)
     
-    return msg
+    badge = get_badge(score)
+    recommendation = get_recommendation(change_pct, score, liquidity, volume)
+    
+    msg = f"""<b>🆕 NOUVEAU TOKEN PREMIUM</b>
 
-def main():
-    print("=" * 60)
-    print("[TELEGRAM NOTIFIER] Early Detection Mode")
-    print("=" * 60)
+<b>{badge}</b> <code>{symbol}</code>
+
+<b>Prix:</b> {format_price(price)}
+<b>Variation:</b> {change_pct:+.2f}%
+<b>Score:</b> {score}/100
+
+<b>Liquidité:</b> {format_large_number(liquidity)}
+<b>Volume 24h:</b> {format_large_number(volume)}
+
+<b>📊 Recommandation:</b> {recommendation}
+
+<a href="https://dexscreener.com/base/{address}">Voir sur DexScreener →</a>
+
+👁️ LURKER Premium Alert"""
     
-    if not CIO_FILE.exists():
-        print("[ERROR] CIO feed not found")
-        sys.exit(1)
+    return send_telegram_message(msg)
+
+
+def send_pump_alert(token_data):
+    """Alert when pump detected (+20% in 1h)"""
+    symbol = token_data.get("symbol") or token_data.get("token", {}).get("symbol", "UNKNOWN")
+    address = token_data.get("address") or token_data.get("token", {}).get("address", "")
+    price = token_data.get("price") or token_data.get("metrics", {}).get("price_usd", 0)
+    liquidity = token_data.get("liquidity") or token_data.get("metrics", {}).get("liq_usd", 0)
+    volume = token_data.get("volume_24h") or token_data.get("metrics", {}).get("vol_24h_usd", 0)
+    score = token_data.get("score") or token_data.get("scores", {}).get("cio_score", 0)
+    change_pct = token_data.get("change_pct", 0)
     
-    with open(CIO_FILE) as f:
-        data = json.load(f)
+    badge = get_badge(score)
+    recommendation = get_recommendation(change_pct, score, liquidity, volume)
     
-    candidates = data.get('candidates', [])
-    state = load_state()
-    notified = state.get('notified', {})
+    msg = f"""<b>🚀 PUMP ALERT: {symbol}</b>
+
+{badge} <code>{symbol}</code>
+
+<b>Prix actuel:</b> {format_price(price)}
+<b>📈 Variation:</b> <b>+{change_pct:.2f}%</b> en 1h
+<b>Score:</b> {score}/100
+
+<b>Liquidité:</b> {format_large_number(liquidity)}
+<b>Volume 24h:</b> {format_large_number(volume)}
+
+<b>📊 Recommandation:</b> {recommendation}
+
+<a href="https://dexscreener.com/base/{address}">Voir sur DexScreener →</a>
+
+🔥 LURKER Pump Alert"""
     
-    new_tokens = []
-    upgraded_tokens = []
+    return send_telegram_message(msg)
+
+
+def send_dump_alert(token_data):
+    """Alert when dump detected (-15% in 1h)"""
+    symbol = token_data.get("symbol") or token_data.get("token", {}).get("symbol", "UNKNOWN")
+    address = token_data.get("address") or token_data.get("token", {}).get("address", "")
+    price = token_data.get("price") or token_data.get("metrics", {}).get("price_usd", 0)
+    liquidity = token_data.get("liquidity") or token_data.get("metrics", {}).get("liq_usd", 0)
+    volume = token_data.get("volume_24h") or token_data.get("metrics", {}).get("vol_24h_usd", 0)
+    score = token_data.get("score") or token_data.get("scores", {}).get("cio_score", 0)
+    change_pct = token_data.get("change_pct", 0)
     
-    for token in candidates:
-        addr = token['token']['address'].lower()
-        badge_name, badge_emoji = calculate_badge(token)
-        
-        if addr not in notified:
-            # New token — send alert immediately
-            new_tokens.append((token, badge_name, badge_emoji))
-            notified[addr] = {
-                "badge": badge_name,
-                "timestamp": datetime.now(timezone.utc).isoformat(),
-                "symbol": token['token']['symbol']
-            }
-        elif notified[addr].get('badge') != badge_name:
-            # Badge upgraded — send update
-            old_badge = notified[addr]['badge']
-            if badge_name in ['GOOD', 'PREMIUM'] and old_badge in ['WATCH', 'GOOD']:
-                upgraded_tokens.append((token, old_badge, badge_name, badge_emoji))
-                notified[addr]['badge'] = badge_name
-                notified[addr]['upgraded_at'] = datetime.now(timezone.utc).isoformat()
+    badge = get_badge(score)
+    recommendation = get_recommendation(change_pct, score, liquidity, volume)
     
-    print(f"[INFO] {len(candidates)} tokens in CIO feed")
-    print(f"[INFO] {len(new_tokens)} new tokens to notify")
-    print(f"[INFO] {len(upgraded_tokens)} upgrades to notify")
+    msg = f"""<b>📉 DUMP ALERT: {symbol}</b>
+
+{badge} <code>{symbol}</code>
+
+<b>Prix actuel:</b> {format_price(price)}
+<b>📉 Variation:</b> <b>{change_pct:.2f}%</b> en 1h
+<b>Score:</b> {score}/100
+
+<b>Liquidité:</b> {format_large_number(liquidity)}
+<b>Volume 24h:</b> {format_large_number(volume)}
+
+<b>📊 Recommandation:</b> {recommendation}
+
+<a href="https://dexscreener.com/base/{address}">Voir sur DexScreener →</a>
+
+⚠️ LURKER Dump Alert"""
     
-    sent = 0
-    failed = []
+    return send_telegram_message(msg)
+
+
+def send_premium_removed(token_data):
+    """Alert when PREMIUM token disappears from top"""
+    symbol = token_data.get("symbol") or token_data.get("token", {}).get("symbol", "UNKNOWN")
+    address = token_data.get("address") or token_data.get("token", {}).get("address", "")
+    last_price = token_data.get("last_price") or token_data.get("metrics", {}).get("price_usd", 0)
+    change_pct = token_data.get("change_pct", 0)
     
-    # Send new token alerts
-    for token, badge_name, badge_emoji in new_tokens:
-        msg = format_token_alert(token, badge_name, badge_emoji)
-        if send_telegram_message(msg):
-            sent += 1
-        else:
-            failed.append(token['token']['address'].lower())
+    msg = f"""<b>❌ TOKEN PREMIUM SORTI DU TOP</b>
+
+<code>{symbol}</code>
+
+<b>Dernier prix:</b> {format_price(last_price)}
+<b>Variation finale:</b> {change_pct:.2f}%
+<b>Adresse:</b> <code>{address}</code>
+
+<b>Cause possible:</b>
+• Liquidity trop faible
+• Volume trop bas
+• Token établi comme inactif
+• RUG détecté
+
+<a href="https://dexscreener.com/base/{address}">Voir historique →</a>
+
+👁️ LURKER Premium Exit"""
     
-    # Send upgrade alerts
-    for token, old_badge, new_badge, badge_emoji in upgraded_tokens:
-        msg = format_upgrade_alert(token, old_badge, new_badge, badge_emoji)
-        if send_telegram_message(msg):
-            sent += 1
-        else:
-            failed.append(token['token']['address'].lower())
+    return send_telegram_message(msg)
+
+
+# ============================================================
+# INTEGRATION HELPERS
+# ============================================================
+
+def notify_new_premium(token):
+    """Notify new premium token - call from scanner_cio_ultra.py"""
+    return send_new_premium_token(token)
+
+
+def notify_pump(token_data):
+    """Notify pump alert - call from premium_tracker.py"""
+    return send_pump_alert(token_data)
+
+
+def notify_dump(token_data):
+    """Notify dump alert - call from premium_tracker.py"""
+    return send_dump_alert(token_data)
+
+
+def notify_premium_removed(token):
+    """Notify premium token removed from top - call from lifecycle_core.py"""
+    return send_premium_removed(token)
+
+
+# ============================================================
+# MAIN / TEST
+# ============================================================
+
+def test():
+    """Test all alert types"""
+    test_token = {
+        "symbol": "TEST",
+        "address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0",
+        "price": 0.00342,
+        "liquidity": 85000,
+        "volume_24h": 250000,
+        "score": 75,
+        "change_pct": 25.5
+    }
     
-    # Remove failed from state so they retry
-    for addr in failed:
-        if addr in notified:
-            del notified[addr]
+    print("Testing new premium token...")
+    send_new_premium_token(test_token)
     
-    # Save state
-    state['notified'] = notified
-    state['last_check'] = datetime.now(timezone.utc).isoformat()
-    save_state(state)
+    print("Testing pump alert...")
+    send_pump_alert(test_token)
     
-    print(f"[INFO] Sent {sent} notifications")
-    print("[DONE]")
-    return 0
+    print("Testing dump alert...")
+    dump_token = test_token.copy()
+    dump_token["change_pct"] = -18.5
+    send_dump_alert(dump_token)
+    
+    print("Testing premium removed...")
+    send_premium_removed(test_token)
+
 
 if __name__ == "__main__":
-    sys.exit(main())
+    test()
