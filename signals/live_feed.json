@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T06:08:43.458Z",
+    "updated_at": "2026-03-06T06:18:45.982Z",
     "source": "cio",
     "chain": "base",
-    "count": 1,
+    "count": 3,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T06:08:43.415107+00:00",
+      "ts_utc": "2026-03-06T06:18:45.612824+00:00",
       "chain": "base",
       "token": {
-        "name": "Valerie",
-        "symbol": "$VALERIE",
-        "address": "0x136edccd42448b3f7375dad69d101b841416ff34"
+        "name": "奶龙",
+        "symbol": "$奶龙",
+        "address": "0x476cd636efa114a8854424806998329e9db39dc9"
       },
       "scores": {
         "confidence": 100,
@@ -25,11 +25,61 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 30836.985,
-        "vol_24h_usd": 26066.2259220468
+        "liq_usd": 34386.6861,
+        "vol_24h_usd": 45300.653506763
       },
       "dex": "geckoterminal",
-      "pair_address": "0x136edccd42448b3f7375dad69d101b841416ff34",
+      "pair_address": "0x476cd636efa114a8854424806998329e9db39dc9",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T06:18:45.952269+00:00",
+      "chain": "base",
+      "token": {
+        "name": "MOLTID",
+        "symbol": "$MOLTID",
+        "address": "0xc44b62daa42d470d052a5ee61a5da6db9a508673"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 12861.4231,
+        "vol_24h_usd": 1669.3446269935
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xc44b62daa42d470d052a5ee61a5da6db9a508673",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T06:18:45.801309+00:00",
+      "chain": "base",
+      "token": {
+        "name": "VEBLO",
+        "symbol": "$VEBLO",
+        "address": "0xc821ecf5b535ae05e707fbff7bf0fa8f96183bb6"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "high"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 5621.6584,
+        "vol_24h_usd": 1209.0608899183
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xc821ecf5b535ae05e707fbff7bf0fa8f96183bb6",
       "scanner": "cio"
     }
   ]
