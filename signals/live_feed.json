@@ -1,35 +1,60 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T01:02:40.162Z",
+    "updated_at": "2026-03-06T01:07:40.968Z",
     "source": "cio",
     "chain": "base",
-    "count": 1,
+    "count": 2,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T01:02:40.125825+00:00",
+      "ts_utc": "2026-03-06T01:07:40.939850+00:00",
       "chain": "base",
       "token": {
-        "name": "貓",
-        "symbol": "$貓",
-        "address": "0xe6af5b2ac53cfcae4df61b1eec47b7cd5235dcb8"
+        "name": "COG",
+        "symbol": "$COG",
+        "address": "0x12301694ccce48e894831aface18335b549ecf4c"
       },
       "scores": {
         "confidence": 100,
         "rarity": "new",
-        "risk": "low"
+        "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 22239.0714,
-        "vol_24h_usd": 8721.6862152586
+        "liq_usd": 52196.9373,
+        "vol_24h_usd": 2228.524221
       },
       "dex": "geckoterminal",
-      "pair_address": "0xe6af5b2ac53cfcae4df61b1eec47b7cd5235dcb8",
+      "pair_address": "0x12301694ccce48e894831aface18335b549ecf4c",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T01:07:40.670824+00:00",
+      "chain": "base",
+      "token": {
+        "name": "AICOIN",
+        "symbol": "$AICOIN",
+        "address": "0x29012c0f9e9e13bd6709c7380470464ad0eb4ba3"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 24804.478,
+        "vol_24h_usd": 4218.103981184
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x29012c0f9e9e13bd6709c7380470464ad0eb4ba3",
       "scanner": "cio"
     }
   ]
