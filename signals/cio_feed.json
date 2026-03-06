@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-06T10:35:59.794000+00:00",
-    "generated_at": "2026-03-06T10:35:59.794000+00:00",
+    "updated_at": "2026-03-06T10:40:58.885000+00:00",
+    "generated_at": "2026-03-06T10:40:58.885000+00:00",
     "status": "ok",
-    "count": 1,
+    "count": 2,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,15 +12,56 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
-      "low": 1
+      "medium": 2
     },
     "rejected": {
-      "too_old": 1,
-      "low_tx": 1
+      "too_old": 1
     },
     "source": "ultra_launch_scanner"
   },
   "candidates": [
+    {
+      "token": {
+        "address": "0x081e0ab8c2cf9515bcc2982ea8cfd6ee40f5e8ae",
+        "symbol": "Imbue",
+        "name": "Imbue"
+      },
+      "pair": {
+        "address": "0x5f884c2694e8bac414aa842ec6e22b8a4d0910eb34acc5f38f63fbfc3451fe04",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 105709.54,
+        "vol_5m_usd": 0.98,
+        "vol_1h_usd": 21402.81,
+        "txns_5m": 1,
+        "price_usd": 1.121e-06
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-06T08:54:51+00:00",
+        "token_first_seen": "2026-03-06T09:08:09.514000+00:00",
+        "age_minutes": 106.1,
+        "age_hours": 1.77
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.97
+      },
+      "risks": [
+        "dumping"
+      ],
+      "risk_level": "medium",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": false,
+        "quality_score": 75
+      }
+    },
     {
       "token": {
         "address": "0x35d97427b55f5ca87711e35367de1fe2cd3883a7",
@@ -33,24 +74,26 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 81062.53,
-        "vol_5m_usd": 5570.89,
-        "vol_1h_usd": 234117.06,
-        "txns_5m": 35,
-        "price_usd": 1.29e-06
+        "liq_usd": 65615.77,
+        "vol_5m_usd": 4392.45,
+        "vol_1h_usd": 220268.6,
+        "txns_5m": 30,
+        "price_usd": 9.113e-07
       },
       "timestamps": {
         "pair_created_at": "2026-03-06T08:38:07+00:00",
         "token_first_seen": "2026-03-06T08:56:27.163000+00:00",
-        "age_minutes": 117.9,
-        "age_hours": 1.96
+        "age_minutes": 122.9,
+        "age_hours": 2.05
       },
       "scores": {
         "cio_score": 100,
         "freshness": 0.97
       },
-      "risks": [],
-      "risk_level": "low",
+      "risks": [
+        "dumping"
+      ],
+      "risk_level": "medium",
       "source": "profiles",
       "status": "observing",
       "quality": {
