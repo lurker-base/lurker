@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T10:04:26.971Z",
+    "updated_at": "2026-03-06T10:09:27.451Z",
     "source": "cio",
     "chain": "base",
     "count": 1,
@@ -10,26 +10,26 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T10:04:26.940222+00:00",
+      "ts_utc": "2026-03-06T10:09:27.416443+00:00",
       "chain": "base",
       "token": {
-        "name": "ClawPing",
-        "symbol": "$CLAWPING",
-        "address": "0x0c3550a6ef1896244ccf1deda0243da511694ff0"
+        "name": "草地牛",
+        "symbol": "$草地牛",
+        "address": "0x0d8d5f2e9e4aceb9b3835681bf3eed231885792c"
       },
       "scores": {
         "confidence": 100,
         "rarity": "new",
-        "risk": "medium"
+        "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 50959.6196,
-        "vol_24h_usd": 1771.24242712
+        "liq_usd": 26417.6069,
+        "vol_24h_usd": 11993.101116249
       },
       "dex": "geckoterminal",
-      "pair_address": "0x0c3550a6ef1896244ccf1deda0243da511694ff0",
+      "pair_address": "0x0d8d5f2e9e4aceb9b3835681bf3eed231885792c",
       "scanner": "cio"
     }
   ]
