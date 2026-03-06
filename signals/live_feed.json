@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T03:53:16.854Z",
+    "updated_at": "2026-03-06T04:03:19.676Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 8,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T03:53:16.606513+00:00",
+      "ts_utc": "2026-03-06T04:03:18.460568+00:00",
       "chain": "base",
       "token": {
-        "name": "Yotsuba",
-        "symbol": "$YOTSUBA",
-        "address": "0x20775648455a96741f3ea504b11a709cf9643b7f"
+        "name": "IVANKA",
+        "symbol": "$IVANKA",
+        "address": "0x3738dd1b519cba560f6e4183de2c6182f7b3b213"
       },
       "scores": {
         "confidence": 100,
@@ -25,22 +25,147 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 26406.4401,
-        "vol_24h_usd": 57125.4614764022
+        "liq_usd": 30163.5639,
+        "vol_24h_usd": 48267.4733740674
       },
       "dex": "geckoterminal",
-      "pair_address": "0x20775648455a96741f3ea504b11a709cf9643b7f",
+      "pair_address": "0x3738dd1b519cba560f6e4183de2c6182f7b3b213",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T03:53:16.818212+00:00",
+      "ts_utc": "2026-03-06T04:03:18.664875+00:00",
       "chain": "base",
       "token": {
-        "name": "Mei",
-        "symbol": "$MEI",
-        "address": "0x1a4fa2dbf329e241f3e19c2fc9c060009249eba3"
+        "name": "Jellybean",
+        "symbol": "$JELLYBEAN",
+        "address": "0xea1d92e90b57a3dea1a1609971f223abfb9fccf1"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 50491.3732,
+        "vol_24h_usd": 1300.881942169
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xea1d92e90b57a3dea1a1609971f223abfb9fccf1",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T04:03:19.090837+00:00",
+      "chain": "base",
+      "token": {
+        "name": "billion",
+        "symbol": "$BILLION",
+        "address": "0x0596118e22d847c8c70f5fd78d03e5352cfb8ac5"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 26337.993,
+        "vol_24h_usd": 51581.4627802351
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x0596118e22d847c8c70f5fd78d03e5352cfb8ac5",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T04:03:19.246482+00:00",
+      "chain": "base",
+      "token": {
+        "name": "SENT",
+        "symbol": "$SENT",
+        "address": "0xfeb8ee07140929d7bab56f2bec38b8ba4113c139"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 139185.9851,
+        "vol_24h_usd": 2253.271124167
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xfeb8ee07140929d7bab56f2bec38b8ba4113c139",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T04:03:19.473454+00:00",
+      "chain": "base",
+      "token": {
+        "name": "ZAMA",
+        "symbol": "$ZAMA",
+        "address": "0x82e4ba65d12f3cfcd1120ad314b078ad01603940"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 118744.9058,
+        "vol_24h_usd": 1092.519324
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x82e4ba65d12f3cfcd1120ad314b078ad01603940",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T04:03:19.649809+00:00",
+      "chain": "base",
+      "token": {
+        "name": "LUFFY",
+        "symbol": "$LUFFY",
+        "address": "0xf0a9d06432e6f96baa6a6467686a356c7590acdc"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 87438.647,
+        "vol_24h_usd": 2096.951848233
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xf0a9d06432e6f96baa6a6467686a356c7590acdc",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T04:03:18.307543+00:00",
+      "chain": "base",
+      "token": {
+        "name": "ROOM",
+        "symbol": "$ROOM",
+        "address": "0x1f2e3b05e156db318cd736ee5b9cdb110fe10ba3"
       },
       "scores": {
         "confidence": 95,
@@ -50,11 +175,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 8181.4789,
-        "vol_24h_usd": 5458.5715484462
+        "liq_usd": 7482.9025,
+        "vol_24h_usd": 2281.567228299
       },
       "dex": "geckoterminal",
-      "pair_address": "0x1a4fa2dbf329e241f3e19c2fc9c060009249eba3",
+      "pair_address": "0x1f2e3b05e156db318cd736ee5b9cdb110fe10ba3",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T04:03:18.903789+00:00",
+      "chain": "base",
+      "token": {
+        "name": "INFOX",
+        "symbol": "$INFOX",
+        "address": "0x992be5da3e2ea0b56ab5404593a33bb7c59598e9"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "high"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 6381.1541,
+        "vol_24h_usd": 1107.2788176028
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x992be5da3e2ea0b56ab5404593a33bb7c59598e9",
       "scanner": "cio"
     }
   ]
