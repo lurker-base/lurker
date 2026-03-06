@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T09:24:20.694Z",
+    "updated_at": "2026-03-06T09:29:21.488Z",
     "source": "cio",
     "chain": "base",
     "count": 2,
@@ -10,12 +10,12 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T09:24:20.441081+00:00",
+      "ts_utc": "2026-03-06T09:29:21.304940+00:00",
       "chain": "base",
       "token": {
-        "name": "USPC",
-        "symbol": "$USPC",
-        "address": "0x671e65b4db4394955c9798350668a8632059289b"
+        "name": "SOL人生",
+        "symbol": "$SOL人生",
+        "address": "0x1a88bcd386f5182fd731445fee519b396178e763"
       },
       "scores": {
         "confidence": 100,
@@ -25,22 +25,22 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 24272.7482,
-        "vol_24h_usd": 9181.5277842417
+        "liq_usd": 25354.8804,
+        "vol_24h_usd": 11773.718301821
       },
       "dex": "geckoterminal",
-      "pair_address": "0x671e65b4db4394955c9798350668a8632059289b",
+      "pair_address": "0x1a88bcd386f5182fd731445fee519b396178e763",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T09:24:20.654109+00:00",
+      "ts_utc": "2026-03-06T09:29:21.459280+00:00",
       "chain": "base",
       "token": {
         "name": "BMO",
         "symbol": "$BMO",
-        "address": "0x8c31084ee62c5ac04a2eb5fb452883961c4f425e"
+        "address": "0x6e639bf4a83c66d96b8cb7940c7a0cd39ed16a35"
       },
       "scores": {
         "confidence": 100,
@@ -50,11 +50,11 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 20260.9707,
-        "vol_24h_usd": 9846.2852160654
+        "liq_usd": 26584.4484,
+        "vol_24h_usd": 64076.0467732767
       },
       "dex": "geckoterminal",
-      "pair_address": "0x8c31084ee62c5ac04a2eb5fb452883961c4f425e",
+      "pair_address": "0x6e639bf4a83c66d96b8cb7940c7a0cd39ed16a35",
       "scanner": "cio"
     }
   ]
