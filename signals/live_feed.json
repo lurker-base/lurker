@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T04:08:20.380Z",
+    "updated_at": "2026-03-06T04:18:22.338Z",
     "source": "cio",
     "chain": "base",
-    "count": 1,
+    "count": 2,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T04:08:20.347229+00:00",
+      "ts_utc": "2026-03-06T04:18:22.149576+00:00",
       "chain": "base",
       "token": {
-        "name": "DATMO",
-        "symbol": "$DATMO",
-        "address": "0x3115bc7008d1e4c545328fe608859913e44c2726"
+        "name": "Coinmaker",
+        "symbol": "$COINMAKER",
+        "address": "0x3e3dc17ab2453a41c0e3e13dafdb0f81c231c60e"
       },
       "scores": {
         "confidence": 100,
@@ -25,11 +25,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 14828.0097,
-        "vol_24h_usd": 6276.5095510141
+        "liq_usd": 25115.0182,
+        "vol_24h_usd": 31171.8034086171
       },
       "dex": "geckoterminal",
-      "pair_address": "0x3115bc7008d1e4c545328fe608859913e44c2726",
+      "pair_address": "0x3e3dc17ab2453a41c0e3e13dafdb0f81c231c60e",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T04:18:22.299900+00:00",
+      "chain": "base",
+      "token": {
+        "name": "ZAMA",
+        "symbol": "$ZAMA",
+        "address": "0x0dd2bc8bf0bc99d28101563bccc0a5c63803e7ca"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 118355.4561,
+        "vol_24h_usd": 1038.03143966
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x0dd2bc8bf0bc99d28101563bccc0a5c63803e7ca",
       "scanner": "cio"
     }
   ]
