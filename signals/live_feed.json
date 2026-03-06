@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T05:08:32.027Z",
+    "updated_at": "2026-03-06T05:18:34.892Z",
     "source": "cio",
     "chain": "base",
-    "count": 4,
+    "count": 2,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T05:08:31.092853+00:00",
+      "ts_utc": "2026-03-06T05:18:34.653822+00:00",
       "chain": "base",
       "token": {
-        "name": "Boogie",
-        "symbol": "$BOOGIE",
-        "address": "0xd87726fa43dbff689b93f63930c03c9fc843b87c"
+        "name": "VIRTERN",
+        "symbol": "$VIRTERN",
+        "address": "0x41ddeed95e5d82e0168a6b4af8cfb17a0aec4483"
       },
       "scores": {
         "confidence": 100,
@@ -25,72 +25,22 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 14989.5093,
-        "vol_24h_usd": 3980.9845471071
+        "liq_usd": 137189.1572,
+        "vol_24h_usd": 1675.38762041
       },
       "dex": "geckoterminal",
-      "pair_address": "0xd87726fa43dbff689b93f63930c03c9fc843b87c",
+      "pair_address": "0x41ddeed95e5d82e0168a6b4af8cfb17a0aec4483",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T05:08:31.635312+00:00",
+      "ts_utc": "2026-03-06T05:18:34.858398+00:00",
       "chain": "base",
       "token": {
-        "name": "MINDLESS",
-        "symbol": "$MINDLESS",
-        "address": "0x05ca86268dfbe1a415f69324c892250d6fabb0e4"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 152512.436,
-        "vol_24h_usd": 1852.9259695129
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x05ca86268dfbe1a415f69324c892250d6fabb0e4",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-06T05:08:32.002050+00:00",
-      "chain": "base",
-      "token": {
-        "name": "URNM",
-        "symbol": "$URNM",
-        "address": "0xff1de812d433b0bf99c4c594fc0b90ca7d2a349e"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 12807.4515,
-        "vol_24h_usd": 1235.5627984605
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xff1de812d433b0bf99c4c594fc0b90ca7d2a349e",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-06T05:08:31.575163+00:00",
-      "chain": "base",
-      "token": {
-        "name": "tendrela",
-        "symbol": "$TENDRELA",
-        "address": "0x78a69f950eb6bf15b59bf10b50728df25e43dba3"
+        "name": "Mei",
+        "symbol": "$MEI",
+        "address": "0xb99de456f831a8ceb9832599485c4451608eeba3"
       },
       "scores": {
         "confidence": 95,
@@ -100,11 +50,11 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 8494.2692,
-        "vol_24h_usd": 4513.0898443585
+        "liq_usd": 7825.7107,
+        "vol_24h_usd": 4085.0092017447
       },
       "dex": "geckoterminal",
-      "pair_address": "0x78a69f950eb6bf15b59bf10b50728df25e43dba3",
+      "pair_address": "0xb99de456f831a8ceb9832599485c4451608eeba3",
       "scanner": "cio"
     }
   ]
