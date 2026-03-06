@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T07:49:04.451Z",
+    "updated_at": "2026-03-06T07:54:05.466Z",
     "source": "cio",
     "chain": "base",
-    "count": 3,
+    "count": 2,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T07:49:03.602428+00:00",
+      "ts_utc": "2026-03-06T07:54:05.440614+00:00",
       "chain": "base",
       "token": {
-        "name": "旺柴",
-        "symbol": "$旺柴",
-        "address": "0x567d18b1e65c3edd9c53bd2cafed1e7b51019b92"
+        "name": "Builder Arena",
+        "symbol": "$BUILDER ARENA",
+        "address": "0x465e7a2df3abff13f74c093c4df27d461b654e50"
       },
       "scores": {
         "confidence": 100,
@@ -25,61 +25,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 15289.8836,
-        "vol_24h_usd": 6290.1909401433
+        "liq_usd": 140555.2886,
+        "vol_24h_usd": 2848.08618429
       },
       "dex": "geckoterminal",
-      "pair_address": "0x567d18b1e65c3edd9c53bd2cafed1e7b51019b92",
+      "pair_address": "0x465e7a2df3abff13f74c093c4df27d461b654e50",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T07:49:04.417481+00:00",
+      "ts_utc": "2026-03-06T07:54:05.028566+00:00",
       "chain": "base",
       "token": {
-        "name": "欺诈罪",
-        "symbol": "$欺诈罪",
-        "address": "0xb66b1d1d868dedc92544a1ec4cf1188a532848a2"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 32425.4033,
-        "vol_24h_usd": 46558.7169397393
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xb66b1d1d868dedc92544a1ec4cf1188a532848a2",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-06T07:49:03.963427+00:00",
-      "chain": "base",
-      "token": {
-        "name": "WW3",
-        "symbol": "$WW3",
-        "address": "0xe894809d115f490cd897f316ee3d8889d581cba3"
+        "name": "Valerie",
+        "symbol": "$VALERIE",
+        "address": "0x5a833b75a19b9deb89568ad16d1ff57bf19ee1cc"
       },
       "scores": {
         "confidence": 95,
         "rarity": "new",
-        "risk": "medium"
+        "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 7375.0597,
-        "vol_24h_usd": 1697.9466910348
+        "liq_usd": 23103.2725,
+        "vol_24h_usd": 9563.2665833961
       },
       "dex": "geckoterminal",
-      "pair_address": "0xe894809d115f490cd897f316ee3d8889d581cba3",
+      "pair_address": "0x5a833b75a19b9deb89568ad16d1ff57bf19ee1cc",
       "scanner": "cio"
     }
   ]
