@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T10:09:27.451Z",
+    "updated_at": "2026-03-06T10:19:29.098Z",
     "source": "cio",
     "chain": "base",
     "count": 1,
@@ -10,12 +10,12 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T10:09:27.416443+00:00",
+      "ts_utc": "2026-03-06T10:19:29.072569+00:00",
       "chain": "base",
       "token": {
-        "name": "草地牛",
-        "symbol": "$草地牛",
-        "address": "0x0d8d5f2e9e4aceb9b3835681bf3eed231885792c"
+        "name": "死对头",
+        "symbol": "$死对头",
+        "address": "0x223b021138852c92313e455dfb9bd9223e67e471"
       },
       "scores": {
         "confidence": 100,
@@ -25,11 +25,11 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 26417.6069,
-        "vol_24h_usd": 11993.101116249
+        "liq_usd": 33512.0293,
+        "vol_24h_usd": 34073.7599834842
       },
       "dex": "geckoterminal",
-      "pair_address": "0x0d8d5f2e9e4aceb9b3835681bf3eed231885792c",
+      "pair_address": "0x223b021138852c92313e455dfb9bd9223e67e471",
       "scanner": "cio"
     }
   ]
