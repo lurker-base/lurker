@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T02:32:57.934Z",
+    "updated_at": "2026-03-06T02:37:59.278Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 4,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T02:32:57.751575+00:00",
+      "ts_utc": "2026-03-06T02:37:58.710105+00:00",
       "chain": "base",
       "token": {
-        "name": "ACTORCOIN",
-        "symbol": "$ACTORCOIN",
-        "address": "0x551d53e4b85cd2c381bd3707fac4590d92a6f163"
+        "name": "VibeCraft",
+        "symbol": "$VIBECRAFT",
+        "address": "0x90a32262aa1c048b9e8249890fa323f7850f0d65"
       },
       "scores": {
         "confidence": 100,
@@ -25,22 +25,47 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 33172.2775,
-        "vol_24h_usd": 41738.1852784994
+        "liq_usd": 25014.7302,
+        "vol_24h_usd": 6036.8172854391
       },
       "dex": "geckoterminal",
-      "pair_address": "0x551d53e4b85cd2c381bd3707fac4590d92a6f163",
+      "pair_address": "0x90a32262aa1c048b9e8249890fa323f7850f0d65",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T02:32:57.896436+00:00",
+      "ts_utc": "2026-03-06T02:37:58.877565+00:00",
       "chain": "base",
       "token": {
-        "name": "MECKA",
-        "symbol": "$MECKA",
-        "address": "0x780b543bfd418d44d1e4c33c5e54497246c29baf"
+        "name": "AICOIN",
+        "symbol": "$AICOIN",
+        "address": "0x5b8fd194b8c32657ff46fae1a6b8dfaec06958f7"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 32129.7663,
+        "vol_24h_usd": 63825.087959177
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x5b8fd194b8c32657ff46fae1a6b8dfaec06958f7",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T02:37:59.245602+00:00",
+      "chain": "base",
+      "token": {
+        "name": "Roll",
+        "symbol": "$ROLL",
+        "address": "0x68a6da911099c87e70a7804bf2e8b3f67e0fccbf"
       },
       "scores": {
         "confidence": 100,
@@ -50,11 +75,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 50385.7121,
-        "vol_24h_usd": 1190.2063150646
+        "liq_usd": 89815.4024,
+        "vol_24h_usd": 1171.7793830212
       },
       "dex": "geckoterminal",
-      "pair_address": "0x780b543bfd418d44d1e4c33c5e54497246c29baf",
+      "pair_address": "0x68a6da911099c87e70a7804bf2e8b3f67e0fccbf",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T02:37:59.059792+00:00",
+      "chain": "base",
+      "token": {
+        "name": "ROOM",
+        "symbol": "$ROOM",
+        "address": "0x96686ce73f93cea7d93eb71f45e85789d4c40ba3"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 8181.6873,
+        "vol_24h_usd": 4248.5326715625
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x96686ce73f93cea7d93eb71f45e85789d4c40ba3",
       "scanner": "cio"
     }
   ]
