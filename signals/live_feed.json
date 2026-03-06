@@ -1,35 +1,60 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T09:49:24.566Z",
+    "updated_at": "2026-03-06T09:54:25.506Z",
     "source": "cio",
     "chain": "base",
-    "count": 1,
+    "count": 2,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T09:49:24.538580+00:00",
+      "ts_utc": "2026-03-06T09:54:25.319612+00:00",
       "chain": "base",
       "token": {
-        "name": "DynOS",
-        "symbol": "$DYNOS",
-        "address": "0x2744923e430f35a8281f0e82fe28169128351ba3"
+        "name": "I'm here",
+        "symbol": "$I'M HERE",
+        "address": "0x858b71f2db080b97c91170717a29d590f326b441"
       },
       "scores": {
-        "confidence": 95,
+        "confidence": 100,
         "rarity": "new",
-        "risk": "medium"
+        "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 21050.7383,
-        "vol_24h_usd": 3901.0402416978
+        "liq_usd": 22552.4654,
+        "vol_24h_usd": 26679.1792462243
       },
       "dex": "geckoterminal",
-      "pair_address": "0x2744923e430f35a8281f0e82fe28169128351ba3",
+      "pair_address": "0x858b71f2db080b97c91170717a29d590f326b441",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T09:54:25.477814+00:00",
+      "chain": "base",
+      "token": {
+        "name": "SOL人生",
+        "symbol": "$SOL人生",
+        "address": "0x5e4478f8c5748910e73ab127fe7f6bda6d0753ba"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 35153.5062,
+        "vol_24h_usd": 66819.1041264741
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x5e4478f8c5748910e73ab127fe7f6bda6d0753ba",
       "scanner": "cio"
     }
   ]
