@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T12:24:53.801Z",
+    "updated_at": "2026-03-06T12:34:56.278Z",
     "source": "cio",
     "chain": "base",
     "count": 2,
@@ -10,12 +10,12 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T12:24:53.614380+00:00",
+      "ts_utc": "2026-03-06T12:34:55.837262+00:00",
       "chain": "base",
       "token": {
-        "name": "中国制",
-        "symbol": "$中国制",
-        "address": "0xf74ade9eabeac927b82a046599763a0a432647f2"
+        "name": "SOYJAK",
+        "symbol": "$SOYJAK",
+        "address": "0x66ca2460effc5041e16b53af1e7ce42d1308af64"
       },
       "scores": {
         "confidence": 100,
@@ -25,22 +25,22 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 24473.6304,
-        "vol_24h_usd": 36303.0873938457
+        "liq_usd": 27559.3307,
+        "vol_24h_usd": 7576.7446078976
       },
       "dex": "geckoterminal",
-      "pair_address": "0xf74ade9eabeac927b82a046599763a0a432647f2",
+      "pair_address": "0x66ca2460effc5041e16b53af1e7ce42d1308af64",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T12:24:53.763799+00:00",
+      "ts_utc": "2026-03-06T12:34:56.248842+00:00",
       "chain": "base",
       "token": {
-        "name": "中國INU",
-        "symbol": "$中國INU",
-        "address": "0x02d23ee1e169a07d0a3eb614de05c95671e7c8e7"
+        "name": "拉大便",
+        "symbol": "$拉大便",
+        "address": "0xc272c6cd00d25d78d10c1d4776fd9207f98e8816"
       },
       "scores": {
         "confidence": 100,
@@ -50,11 +50,11 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 37315.3344,
-        "vol_24h_usd": 66191.3805176128
+        "liq_usd": 21899.1216,
+        "vol_24h_usd": 45658.6748793038
       },
       "dex": "geckoterminal",
-      "pair_address": "0x02d23ee1e169a07d0a3eb614de05c95671e7c8e7",
+      "pair_address": "0xc272c6cd00d25d78d10c1d4776fd9207f98e8816",
       "scanner": "cio"
     }
   ]
