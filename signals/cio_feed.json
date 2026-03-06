@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-06T00:50:30.034000+00:00",
-    "generated_at": "2026-03-06T00:50:30.034000+00:00",
+    "updated_at": "2026-03-06T00:55:32.628000+00:00",
+    "generated_at": "2026-03-06T00:55:32.628000+00:00",
     "status": "ok",
-    "count": 3,
+    "count": 2,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,10 +12,12 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
-      "low": 3
+      "low": 1,
+      "medium": 1
     },
     "rejected": {
       "too_old": 1,
+      "low_tx": 1,
       "low_volume": 1
     },
     "source": "ultra_launch_scanner"
@@ -33,61 +35,21 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 137157.86,
-        "vol_5m_usd": 28611.82,
-        "vol_1h_usd": 210137.44,
-        "txns_5m": 96,
-        "price_usd": 3.456e-06
+        "liq_usd": 114520.22,
+        "vol_5m_usd": 44134.41,
+        "vol_1h_usd": 254738.32,
+        "txns_5m": 169,
+        "price_usd": 2.497e-06
       },
       "timestamps": {
         "pair_created_at": "2026-03-06T00:12:33+00:00",
         "token_first_seen": "2026-03-06T00:29:36.125000+00:00",
-        "age_minutes": 38.0,
-        "age_hours": 0.63
+        "age_minutes": 43.0,
+        "age_hours": 0.72
       },
       "scores": {
         "cio_score": 100,
         "freshness": 0.99
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    },
-    {
-      "token": {
-        "address": "0x38ed1701eb1d3299313ab48324dbbe38a4684ba3",
-        "symbol": "CRUST",
-        "name": "Crustocean"
-      },
-      "pair": {
-        "address": "0xa35eaa7f0590aa929efda1c93b2e88ce1514e8fc59624de71e782843b416bfad",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 70026.54,
-        "vol_5m_usd": 10.25,
-        "vol_1h_usd": 29478.4,
-        "txns_5m": 1,
-        "price_usd": 9.637e-07
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-05T22:31:27+00:00",
-        "token_first_seen": "2026-03-06T00:18:43.272000+00:00",
-        "age_minutes": 139.1,
-        "age_hours": 2.32
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.96
       },
       "risks": [],
       "risk_level": "low",
@@ -113,24 +75,26 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 37675.3,
-        "vol_5m_usd": 82.06,
-        "vol_1h_usd": 1095.39,
+        "liq_usd": 37660.71,
+        "vol_5m_usd": 96.36,
+        "vol_1h_usd": 930.32,
         "txns_5m": 22,
-        "price_usd": 3.959e-07
+        "price_usd": 3.958e-07
       },
       "timestamps": {
         "pair_created_at": "2026-03-05T21:37:13+00:00",
         "token_first_seen": "2026-03-05T23:02:37.259000+00:00",
-        "age_minutes": 193.3,
-        "age_hours": 3.22
+        "age_minutes": 198.3,
+        "age_hours": 3.31
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.95
+        "freshness": 0.94
       },
-      "risks": [],
-      "risk_level": "low",
+      "risks": [
+        "low_volume"
+      ],
+      "risk_level": "medium",
       "source": "boosts",
       "status": "observing",
       "quality": {
