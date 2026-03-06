@@ -22123,6 +22123,40 @@
         "symbol": "VAULT",
         "name": "Claw Vaults"
       }
+    },
+    "0x3b4acef1170eb196583ca1aeb49d452812fab7fd": {
+      "first_seen": 1772817483326,
+      "first_seen_iso": "2026-03-06T17:18:03.326000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1772817483326,
+          "price": 4.184e-07,
+          "liq": 36415.76,
+          "vol_5m": 745.21
+        }
+      ],
+      "token": {
+        "address": "0x3b4acef1170eb196583ca1aeb49d452812fab7fd",
+        "symbol": "Carapace",
+        "name": "Carapace Bot"
+      }
+    },
+    "0xd8d55f94000b071ce30a6aec95f0e8d5f9e5306e": {
+      "first_seen": 1772817483326,
+      "first_seen_iso": "2026-03-06T17:18:03.326000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1772817483327,
+          "price": 1.208e-07,
+          "liq": 10525.77,
+          "vol_5m": 54.47
+        }
+      ],
+      "token": {
+        "address": "0xd8d55f94000b071ce30a6aec95f0e8d5f9e5306e",
+        "symbol": "BASTION",
+        "name": "Bastion Finance"
+      }
     }
   }
 }
