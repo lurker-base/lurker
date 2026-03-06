@@ -1,67 +1,22 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-06T01:49:53.068000+00:00",
-    "generated_at": "2026-03-06T01:49:53.068000+00:00",
-    "status": "ok",
-    "count": 1,
+    "updated_at": "2026-03-06T01:55:44.755000+00:00",
+    "generated_at": "2026-03-06T01:55:44.755000+00:00",
+    "status": "calm",
+    "count": 0,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
       "min_tx_5m": 1,
       "max_age_min": 43200
     },
-    "risk_distribution": {
-      "medium": 1
-    },
+    "risk_distribution": {},
     "rejected": {
       "too_old": 1,
       "low_volume": 1
     },
     "source": "ultra_launch_scanner"
   },
-  "candidates": [
-    {
-      "token": {
-        "address": "0x144505dc4cafe61ae942807563dfb8cafa4d482e",
-        "symbol": "Secureclaw",
-        "name": "Secureclaw"
-      },
-      "pair": {
-        "address": "0x74ff0ef45f65610def357ca92a021c6764215145372a6d377b00a6dc230e6adf",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 111537.15,
-        "vol_5m_usd": 19455.1,
-        "vol_1h_usd": 439662.49,
-        "txns_5m": 78,
-        "price_usd": 2.236e-06
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-06T00:12:33+00:00",
-        "token_first_seen": "2026-03-06T00:29:36.125000+00:00",
-        "age_minutes": 97.3,
-        "age_hours": 1.62
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.97
-      },
-      "risks": [
-        "dumping"
-      ],
-      "risk_level": "medium",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    }
-  ]
+  "candidates": []
 }

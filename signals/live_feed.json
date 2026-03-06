@@ -1,46 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T01:47:49.668Z",
+    "updated_at": "2026-03-06T01:52:50.150Z",
     "source": "cio",
     "chain": "base",
-    "count": 4,
+    "count": 1,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T01:47:48.924470+00:00",
+      "ts_utc": "2026-03-06T01:52:50.125432+00:00",
       "chain": "base",
       "token": {
         "name": "AICOIN",
         "symbol": "$AICOIN",
-        "address": "0x86b9b4ff62b85134d530cbf8120c1518b453c898"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 22706.5363,
-        "vol_24h_usd": 22777.5399904446
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x86b9b4ff62b85134d530cbf8120c1518b453c898",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-06T01:47:49.073241+00:00",
-      "chain": "base",
-      "token": {
-        "name": "POPEYE",
-        "symbol": "$POPEYE",
-        "address": "0x9b70fcd2c58be0f6c4d083917cf2ac3c061921cb"
+        "address": "0xb0e8f92564498453a94db8e2476189cc92f34522"
       },
       "scores": {
         "confidence": 100,
@@ -50,61 +25,11 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 86505.5399,
-        "vol_24h_usd": 1550.12048
+        "liq_usd": 12519.5687,
+        "vol_24h_usd": 1319.1709440957
       },
       "dex": "geckoterminal",
-      "pair_address": "0x9b70fcd2c58be0f6c4d083917cf2ac3c061921cb",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-06T01:47:49.413238+00:00",
-      "chain": "base",
-      "token": {
-        "name": "Paperclip",
-        "symbol": "$PAPERCLIP",
-        "address": "0xcb75276c4e692d0f99cb520573a3cc280c3baba3"
-      },
-      "scores": {
-        "confidence": 95,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 7717.0224,
-        "vol_24h_usd": 4367.4964037077
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xcb75276c4e692d0f99cb520573a3cc280c3baba3",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-06T01:47:49.640205+00:00",
-      "chain": "base",
-      "token": {
-        "name": "ENDRA",
-        "symbol": "$ENDRA",
-        "address": "0x3df1dab812f823105fd8a2e3745717f15fe0d0b4"
-      },
-      "scores": {
-        "confidence": 95,
-        "rarity": "new",
-        "risk": "high"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 7299.0655,
-        "vol_24h_usd": 1467.7160687815
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x3df1dab812f823105fd8a2e3745717f15fe0d0b4",
+      "pair_address": "0xb0e8f92564498453a94db8e2476189cc92f34522",
       "scanner": "cio"
     }
   ]
