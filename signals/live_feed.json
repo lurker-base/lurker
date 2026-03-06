@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T03:23:10.178Z",
+    "updated_at": "2026-03-06T03:33:12.949Z",
     "source": "cio",
     "chain": "base",
-    "count": 1,
+    "count": 2,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T03:23:10.147072+00:00",
+      "ts_utc": "2026-03-06T03:33:12.872756+00:00",
       "chain": "base",
       "token": {
-        "name": "AICOIN",
-        "symbol": "$AICOIN",
-        "address": "0xfc1f5afb3f1954ad146abc3b417675d3f9eaa942"
+        "name": "WALLY",
+        "symbol": "$WALLY",
+        "address": "0x3fa6c0919cb16b72a3db757a8ec36642299b20a0"
       },
       "scores": {
         "confidence": 100,
@@ -25,11 +25,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 16783.4985,
-        "vol_24h_usd": 11487.8481520759
+        "liq_usd": 118757.3205,
+        "vol_24h_usd": 1085.575889508
       },
       "dex": "geckoterminal",
-      "pair_address": "0xfc1f5afb3f1954ad146abc3b417675d3f9eaa942",
+      "pair_address": "0x3fa6c0919cb16b72a3db757a8ec36642299b20a0",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T03:33:12.924683+00:00",
+      "chain": "base",
+      "token": {
+        "name": "Pikachu",
+        "symbol": "$PIKACHU",
+        "address": "0x960470ff3b9593bed86a98aaa096d027ab73baa7"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 87557.886,
+        "vol_24h_usd": 2069.15315
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x960470ff3b9593bed86a98aaa096d027ab73baa7",
       "scanner": "cio"
     }
   ]
