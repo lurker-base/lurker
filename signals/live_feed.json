@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T12:54:59.532Z",
+    "updated_at": "2026-03-06T13:05:02.224Z",
     "source": "cio",
     "chain": "base",
-    "count": 1,
+    "count": 3,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T12:54:59.505618+00:00",
+      "ts_utc": "2026-03-06T13:05:01.745010+00:00",
       "chain": "base",
       "token": {
-        "name": "马钱",
-        "symbol": "$马钱",
-        "address": "0x0884c1d3cc6bff90e47295f5ea7358b3a6f9da02"
+        "name": "戴信加",
+        "symbol": "$戴信加",
+        "address": "0x30c7f90fa37bbffa9301f24974415c1842ad474a"
       },
       "scores": {
         "confidence": 100,
@@ -25,11 +25,61 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 27590.3757,
-        "vol_24h_usd": 50543.4435468799
+        "liq_usd": 21968.2197,
+        "vol_24h_usd": 26330.183185186
       },
       "dex": "geckoterminal",
-      "pair_address": "0x0884c1d3cc6bff90e47295f5ea7358b3a6f9da02",
+      "pair_address": "0x30c7f90fa37bbffa9301f24974415c1842ad474a",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T13:05:01.925948+00:00",
+      "chain": "base",
+      "token": {
+        "name": "兔斯基",
+        "symbol": "$兔斯基",
+        "address": "0x4f0848a931653a5336df62b425a8898dbd1315f6"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 34438.7783,
+        "vol_24h_usd": 24242.6614725174
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x4f0848a931653a5336df62b425a8898dbd1315f6",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T13:05:02.160890+00:00",
+      "chain": "base",
+      "token": {
+        "name": "RANCH",
+        "symbol": "$RANCH",
+        "address": "0xfd021ab5681bfc20fd9572bc926d348b78e91ba3"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 7254.9273,
+        "vol_24h_usd": 3043.592487544
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xfd021ab5681bfc20fd9572bc926d348b78e91ba3",
       "scanner": "cio"
     }
   ]
