@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T07:34:00.318Z",
+    "updated_at": "2026-03-06T07:39:01.699Z",
     "source": "cio",
     "chain": "base",
-    "count": 1,
+    "count": 4,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T07:34:00.287367+00:00",
+      "ts_utc": "2026-03-06T07:39:01.011512+00:00",
       "chain": "base",
       "token": {
-        "name": "5",
-        "symbol": "$5",
-        "address": "0x688c384714da5c72a4b4939fa8f393e3f07e2a6d"
+        "name": "欺诈罪",
+        "symbol": "$欺诈罪",
+        "address": "0x8f2aec9f7a270e20196e00031d7da5f75a77b805"
       },
       "scores": {
         "confidence": 100,
@@ -25,11 +25,86 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 33136.8591,
-        "vol_24h_usd": 25763.3080028815
+        "liq_usd": 30988.9385,
+        "vol_24h_usd": 13562.8931661021
       },
       "dex": "geckoterminal",
-      "pair_address": "0x688c384714da5c72a4b4939fa8f393e3f07e2a6d",
+      "pair_address": "0x8f2aec9f7a270e20196e00031d7da5f75a77b805",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T07:39:01.200175+00:00",
+      "chain": "base",
+      "token": {
+        "name": "ハイジ",
+        "symbol": "$ハイジ",
+        "address": "0x47daede2e31a08ca7b82ee881b683ab2dc59b81d"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 18643.9666,
+        "vol_24h_usd": 27512.1228671012
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x47daede2e31a08ca7b82ee881b683ab2dc59b81d",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T07:39:01.392550+00:00",
+      "chain": "base",
+      "token": {
+        "name": "PROWL",
+        "symbol": "$PROWL",
+        "address": "0xc78e5955127b1b072d280b20a7a30e210c8be3bf"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 50723.9006,
+        "vol_24h_usd": 1710.319950751
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xc78e5955127b1b072d280b20a7a30e210c8be3bf",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T07:39:01.613695+00:00",
+      "chain": "base",
+      "token": {
+        "name": "WW3",
+        "symbol": "$WW3",
+        "address": "0x051e9c07a687b151ea673caed699aa9da7cacba3"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 7655.7109,
+        "vol_24h_usd": 3580.8338119681
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x051e9c07a687b151ea673caed699aa9da7cacba3",
       "scanner": "cio"
     }
   ]

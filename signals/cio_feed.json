@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-06T07:35:19.507000+00:00",
-    "generated_at": "2026-03-06T07:35:19.507000+00:00",
+    "updated_at": "2026-03-06T07:41:10.115000+00:00",
+    "generated_at": "2026-03-06T07:41:10.115000+00:00",
     "status": "ok",
-    "count": 1,
+    "count": 2,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,11 +12,11 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
-      "medium": 1
+      "medium": 1,
+      "low": 1
     },
     "rejected": {
-      "too_old": 1,
-      "low_tx": 1
+      "too_old": 1
     },
     "source": "ultra_launch_scanner"
   },
@@ -33,17 +33,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 102277.1,
-        "vol_5m_usd": 19458.32,
-        "vol_1h_usd": 1075399.63,
-        "txns_5m": 120,
-        "price_usd": 1.823e-06
+        "liq_usd": 141967.99,
+        "vol_5m_usd": 71975.29,
+        "vol_1h_usd": 989104.55,
+        "txns_5m": 154,
+        "price_usd": 3.271e-06
       },
       "timestamps": {
         "pair_created_at": "2026-03-06T05:46:31+00:00",
         "token_first_seen": "2026-03-06T05:59:07.506000+00:00",
-        "age_minutes": 108.8,
-        "age_hours": 1.81
+        "age_minutes": 114.7,
+        "age_hours": 1.91
       },
       "scores": {
         "cio_score": 100,
@@ -53,6 +53,46 @@
         "dumping"
       ],
       "risk_level": "medium",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    },
+    {
+      "token": {
+        "address": "0x58d6b0cad3ee697ccd93d66fb1e5f940e5173ba3",
+        "symbol": "NEXUS",
+        "name": "NEXUS"
+      },
+      "pair": {
+        "address": "0xe23f9de1c6a549fdfcb1aeec1d57a90427e24b4eac500bad134c17e38def1d7e",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 104057.58,
+        "vol_5m_usd": 242.32,
+        "vol_1h_usd": 7528.08,
+        "txns_5m": 2,
+        "price_usd": 1.779e-06
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-05T04:39:15+00:00",
+        "token_first_seen": "2026-03-06T06:43:28.779000+00:00",
+        "age_minutes": 1621.9,
+        "age_hours": 27.03
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.55
+      },
+      "risks": [],
+      "risk_level": "low",
       "source": "profiles",
       "status": "observing",
       "quality": {
