@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T00:22:33.583Z",
+    "updated_at": "2026-03-06T00:32:34.806Z",
     "source": "cio",
     "chain": "base",
     "count": 2,
@@ -10,12 +10,12 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T00:22:33.336875+00:00",
+      "ts_utc": "2026-03-06T00:32:34.779329+00:00",
       "chain": "base",
       "token": {
-        "name": "WAR",
-        "symbol": "$WAR",
-        "address": "0xc5c40d19c4176761def970e2bfebd05f9cbe6f90"
+        "name": "AICOIN",
+        "symbol": "$AICOIN",
+        "address": "0x021412d9b91104243d065a3d1da311ca2a3522df"
       },
       "scores": {
         "confidence": 100,
@@ -25,36 +25,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 25635.049,
-        "vol_24h_usd": 16743.3548315749
+        "liq_usd": 23949.236,
+        "vol_24h_usd": 14549.016065835
       },
       "dex": "geckoterminal",
-      "pair_address": "0xc5c40d19c4176761def970e2bfebd05f9cbe6f90",
+      "pair_address": "0x021412d9b91104243d065a3d1da311ca2a3522df",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T00:22:33.557739+00:00",
+      "ts_utc": "2026-03-06T00:32:34.612182+00:00",
       "chain": "base",
       "token": {
         "name": "NEXUS",
         "symbol": "$NEXUS",
-        "address": "0xda5bbf571b75ce745d9ae209c033a3104a053ba3"
+        "address": "0xde561e32ea52b7d67a1851490d26af80a1033ba3"
       },
       "scores": {
-        "confidence": 95,
+        "confidence": 90,
         "rarity": "new",
         "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 7588.9262,
-        "vol_24h_usd": 3177.6959929172
+        "liq_usd": 6671.0918,
+        "vol_24h_usd": 1383.4967601931
       },
       "dex": "geckoterminal",
-      "pair_address": "0xda5bbf571b75ce745d9ae209c033a3104a053ba3",
+      "pair_address": "0xde561e32ea52b7d67a1851490d26af80a1033ba3",
       "scanner": "cio"
     }
   ]
