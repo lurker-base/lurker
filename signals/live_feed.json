@@ -1,46 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T02:17:54.773Z",
+    "updated_at": "2026-03-06T02:22:55.749Z",
     "source": "cio",
     "chain": "base",
-    "count": 3,
+    "count": 2,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T02:17:54.340459+00:00",
+      "ts_utc": "2026-03-06T02:22:55.564882+00:00",
       "chain": "base",
       "token": {
-        "name": "KAHO",
-        "symbol": "$KAHO",
-        "address": "0x2600b4b5c4c6f8679ca251d397d0ffc3b7dd2564"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 24379.2407,
-        "vol_24h_usd": 22047.8679121253
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x2600b4b5c4c6f8679ca251d397d0ffc3b7dd2564",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-06T02:17:54.541907+00:00",
-      "chain": "base",
-      "token": {
-        "name": "Custos",
-        "symbol": "$CUSTOS",
-        "address": "0xb413c7ac72b8dd460e5930fc150d1dc2bc3bed16"
+        "name": "Pikachu",
+        "symbol": "$PIKACHU",
+        "address": "0xa8b6ad39abd9c5be0f579bf795f9df6e63791d74"
       },
       "scores": {
         "confidence": 100,
@@ -50,36 +25,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 51653.3972,
-        "vol_24h_usd": 2059.730532794
+        "liq_usd": 88406.6137,
+        "vol_24h_usd": 2538.59653
       },
       "dex": "geckoterminal",
-      "pair_address": "0xb413c7ac72b8dd460e5930fc150d1dc2bc3bed16",
+      "pair_address": "0xa8b6ad39abd9c5be0f579bf795f9df6e63791d74",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T02:17:54.738348+00:00",
+      "ts_utc": "2026-03-06T02:22:55.716087+00:00",
       "chain": "base",
       "token": {
-        "name": "WORK",
-        "symbol": "$WORK",
-        "address": "0xd33b5538006e8f228c1f6cd78e5707f1833f10e2"
+        "name": "noice",
+        "symbol": "$NOICE",
+        "address": "0x7061d9b78593a17067912086c391bfa18974c559"
       },
       "scores": {
         "confidence": 100,
         "rarity": "new",
-        "risk": "low"
+        "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 139272.6167,
-        "vol_24h_usd": 2145.251574
+        "liq_usd": 90810.5398,
+        "vol_24h_usd": 1653.691586
       },
       "dex": "geckoterminal",
-      "pair_address": "0xd33b5538006e8f228c1f6cd78e5707f1833f10e2",
+      "pair_address": "0x7061d9b78593a17067912086c391bfa18974c559",
       "scanner": "cio"
     }
   ]
