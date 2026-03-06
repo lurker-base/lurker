@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T01:32:45.637Z",
+    "updated_at": "2026-03-06T01:37:46.769Z",
     "source": "cio",
     "chain": "base",
-    "count": 1,
+    "count": 3,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T01:32:45.607993+00:00",
+      "ts_utc": "2026-03-06T01:37:46.220505+00:00",
       "chain": "base",
       "token": {
-        "name": "localhost",
-        "symbol": "$LOCALHOST",
-        "address": "0x9613d9dd65a92857bb87b4855021cd45d56c4c0b"
+        "name": "AICOIN",
+        "symbol": "$AICOIN",
+        "address": "0x9583fd9d1615507807841b599a74731edcc25b31"
       },
       "scores": {
         "confidence": 100,
@@ -25,11 +25,61 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 18838.9732,
-        "vol_24h_usd": 14367.7273717785
+        "liq_usd": 20976.5583,
+        "vol_24h_usd": 28561.3065016526
       },
       "dex": "geckoterminal",
-      "pair_address": "0x9613d9dd65a92857bb87b4855021cd45d56c4c0b",
+      "pair_address": "0x9583fd9d1615507807841b599a74731edcc25b31",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T01:37:46.398048+00:00",
+      "chain": "base",
+      "token": {
+        "name": "Chronos",
+        "symbol": "$CHRONOS",
+        "address": "0x128e1d3ddbb813d02533796d91128bca968572aa"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 32588.9425,
+        "vol_24h_usd": 59369.7089235355
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x128e1d3ddbb813d02533796d91128bca968572aa",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T01:37:46.744715+00:00",
+      "chain": "base",
+      "token": {
+        "name": "Mei",
+        "symbol": "$MEI",
+        "address": "0x4cff00e3cd0b9e69274c7d81d90106ec4ec0eba3"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 8891.8315,
+        "vol_24h_usd": 5652.7213473775
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x4cff00e3cd0b9e69274c7d81d90106ec4ec0eba3",
       "scanner": "cio"
     }
   ]
