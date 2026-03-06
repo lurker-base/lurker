@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T05:53:41.680Z",
+    "updated_at": "2026-03-06T06:03:42.875Z",
     "source": "cio",
     "chain": "base",
     "count": 3,
@@ -10,12 +10,12 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T05:53:41.074166+00:00",
+      "ts_utc": "2026-03-06T06:03:42.504437+00:00",
       "chain": "base",
       "token": {
-        "name": "Valerie",
-        "symbol": "$VALERIE",
-        "address": "0x79e0a22ce7c5daf6efee3a4aee6ccc4b97e994dc"
+        "name": "Arnold",
+        "symbol": "$ARNOLD",
+        "address": "0xc7e6aff5fd791883a9c53227ec601e059eb54561"
       },
       "scores": {
         "confidence": 100,
@@ -25,22 +25,22 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 24085.6313,
-        "vol_24h_usd": 19902.1401048832
+        "liq_usd": 20755.5998,
+        "vol_24h_usd": 19751.3841875772
       },
       "dex": "geckoterminal",
-      "pair_address": "0x79e0a22ce7c5daf6efee3a4aee6ccc4b97e994dc",
+      "pair_address": "0xc7e6aff5fd791883a9c53227ec601e059eb54561",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T05:53:41.489707+00:00",
+      "ts_utc": "2026-03-06T06:03:42.647665+00:00",
       "chain": "base",
       "token": {
-        "name": "Nodie",
-        "symbol": "$NODIE",
-        "address": "0xc04f7a7f40755a627dd9749bcb5973cf68161b5f"
+        "name": "恶俗企",
+        "symbol": "$恶俗企",
+        "address": "0xaffc4fb22875b7fcbeb06cdceab55f2f71879f73"
       },
       "scores": {
         "confidence": 100,
@@ -50,36 +50,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 32816.5695,
-        "vol_24h_usd": 34856.7223103781
+        "liq_usd": 34612.2525,
+        "vol_24h_usd": 70363.9354694485
       },
       "dex": "geckoterminal",
-      "pair_address": "0xc04f7a7f40755a627dd9749bcb5973cf68161b5f",
+      "pair_address": "0xaffc4fb22875b7fcbeb06cdceab55f2f71879f73",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T05:53:41.633013+00:00",
+      "ts_utc": "2026-03-06T06:03:42.824851+00:00",
       "chain": "base",
       "token": {
-        "name": "CLAW",
-        "symbol": "$CLAW",
-        "address": "0x9a35ca21a8fa92f8480010df1683ab726ef4a918"
+        "name": "ROOM",
+        "symbol": "$ROOM",
+        "address": "0x49f433fc4defda0ef262f89971cba3012b530ba3"
       },
       "scores": {
-        "confidence": 100,
+        "confidence": 95,
         "rarity": "new",
         "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 50723.3005,
-        "vol_24h_usd": 1655.55550947
+        "liq_usd": 9319.2165,
+        "vol_24h_usd": 6150.1205210289
       },
       "dex": "geckoterminal",
-      "pair_address": "0x9a35ca21a8fa92f8480010df1683ab726ef4a918",
+      "pair_address": "0x49f433fc4defda0ef262f89971cba3012b530ba3",
       "scanner": "cio"
     }
   ]
