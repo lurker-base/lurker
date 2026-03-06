@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T07:18:57.357Z",
+    "updated_at": "2026-03-06T07:23:58.614Z",
     "source": "cio",
     "chain": "base",
-    "count": 1,
+    "count": 4,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T07:18:57.322418+00:00",
+      "ts_utc": "2026-03-06T07:23:58.224012+00:00",
       "chain": "base",
       "token": {
-        "name": "歪比巴",
-        "symbol": "$歪比巴",
-        "address": "0x264b9cfed91edf9c8c0a7748c975d73f5bd35014"
+        "name": "欺诈罪",
+        "symbol": "$欺诈罪",
+        "address": "0x6aabfb50ae5c24f6bdd6f18590d5c1c76cd9a684"
       },
       "scores": {
         "confidence": 100,
@@ -25,11 +25,86 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 32772.4355,
-        "vol_24h_usd": 60578.9874639753
+        "liq_usd": 18245.8455,
+        "vol_24h_usd": 14455.0492748876
       },
       "dex": "geckoterminal",
-      "pair_address": "0x264b9cfed91edf9c8c0a7748c975d73f5bd35014",
+      "pair_address": "0x6aabfb50ae5c24f6bdd6f18590d5c1c76cd9a684",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T07:23:58.583306+00:00",
+      "chain": "base",
+      "token": {
+        "name": "toothpaste",
+        "symbol": "$TOOTHPASTE",
+        "address": "0x115ea0b6f348ffef9e861628519b36d9b1041323"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 52023.4364,
+        "vol_24h_usd": 2132.24430881
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x115ea0b6f348ffef9e861628519b36d9b1041323",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T07:23:57.955176+00:00",
+      "chain": "base",
+      "token": {
+        "name": "SOL人生",
+        "symbol": "$SOL人生",
+        "address": "0xb502e31ce1567c1fd057902a322220805e296e7b"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 25372.0194,
+        "vol_24h_usd": 8728.3751237955
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xb502e31ce1567c1fd057902a322220805e296e7b",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T07:23:58.404442+00:00",
+      "chain": "base",
+      "token": {
+        "name": "INECH",
+        "symbol": "$INECH",
+        "address": "0x2d9555cceae853a262e949aad09a5062e2b1a09c"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "high"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 8273.8792,
+        "vol_24h_usd": 1648.4172846253
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x2d9555cceae853a262e949aad09a5062e2b1a09c",
       "scanner": "cio"
     }
   ]
