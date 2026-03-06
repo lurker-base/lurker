@@ -1,35 +1,85 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T08:34:11.771Z",
+    "updated_at": "2026-03-06T08:39:13.120Z",
     "source": "cio",
     "chain": "base",
-    "count": 1,
+    "count": 3,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T08:34:11.745331+00:00",
+      "ts_utc": "2026-03-06T08:39:12.729485+00:00",
       "chain": "base",
       "token": {
-        "name": "Kamal",
-        "symbol": "$KAMAL",
-        "address": "0x66ba78cd373c4afa5625e383b312bb71fe5caf66"
+        "name": "Cumrio",
+        "symbol": "$CUMRIO",
+        "address": "0x3999bcc2b1e075ed84f8a9f2ff2ebd3f2bea20f5"
       },
       "scores": {
-        "confidence": 95,
+        "confidence": 100,
         "rarity": "new",
-        "risk": "medium"
+        "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 49943.7387,
-        "vol_24h_usd": 1314.236889327
+        "liq_usd": 17977.0368,
+        "vol_24h_usd": 7939.7407584921
       },
       "dex": "geckoterminal",
-      "pair_address": "0x66ba78cd373c4afa5625e383b312bb71fe5caf66",
+      "pair_address": "0x3999bcc2b1e075ed84f8a9f2ff2ebd3f2bea20f5",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T08:39:13.093590+00:00",
+      "chain": "base",
+      "token": {
+        "name": "刘元立",
+        "symbol": "$刘元立",
+        "address": "0xcea33b1088bbdab43ad8840ee0b35cbf71886c88"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 36548.1582,
+        "vol_24h_usd": 59105.0779063447
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xcea33b1088bbdab43ad8840ee0b35cbf71886c88",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T08:39:12.950950+00:00",
+      "chain": "base",
+      "token": {
+        "name": "RGRBSGNN",
+        "symbol": "$RGRBSGNN",
+        "address": "0x592db1f7c22addbd9964836e3350465f99ef42ab"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 24911.6279,
+        "vol_24h_usd": 2005.7187273862
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x592db1f7c22addbd9964836e3350465f99ef42ab",
       "scanner": "cio"
     }
   ]
