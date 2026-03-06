@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T11:39:45.762Z",
+    "updated_at": "2026-03-06T11:49:47.502Z",
     "source": "cio",
     "chain": "base",
-    "count": 3,
+    "count": 1,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T11:39:45.310583+00:00",
+      "ts_utc": "2026-03-06T11:49:47.470475+00:00",
       "chain": "base",
       "token": {
-        "name": "🟪",
-        "symbol": "$🟪",
-        "address": "0x35bd39aaaca23aee2d84036a5b29ff83e077a41d"
+        "name": "RUOZHIBA",
+        "symbol": "$RUOZHIBA",
+        "address": "0x3d1c1cf3a66bbbc4d6d37ecb11ffa6a6f9d48c39"
       },
       "scores": {
         "confidence": 100,
@@ -25,61 +25,11 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 22623.7341,
-        "vol_24h_usd": 20861.6958690551
+        "liq_usd": 27675.6194,
+        "vol_24h_usd": 74411.7807640685
       },
       "dex": "geckoterminal",
-      "pair_address": "0x35bd39aaaca23aee2d84036a5b29ff83e077a41d",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-06T11:39:45.735144+00:00",
-      "chain": "base",
-      "token": {
-        "name": "los",
-        "symbol": "$LOS",
-        "address": "0xa21e47bda7072238825a426fd6ddbcbed8bd1c07"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 32729.8564,
-        "vol_24h_usd": 62774.8373461031
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xa21e47bda7072238825a426fd6ddbcbed8bd1c07",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-06T11:39:45.534283+00:00",
-      "chain": "base",
-      "token": {
-        "name": "Basemail",
-        "symbol": "$BASEMAIL",
-        "address": "0xf09a3da26e19c41c5355a8e36cd34e8f42271ba3"
-      },
-      "scores": {
-        "confidence": 95,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 7190.5439,
-        "vol_24h_usd": 2141.2970271447
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xf09a3da26e19c41c5355a8e36cd34e8f42271ba3",
+      "pair_address": "0x3d1c1cf3a66bbbc4d6d37ecb11ffa6a6f9d48c39",
       "scanner": "cio"
     }
   ]

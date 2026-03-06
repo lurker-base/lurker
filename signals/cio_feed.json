@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-06T11:41:12.736000+00:00",
-    "generated_at": "2026-03-06T11:41:12.736000+00:00",
+    "updated_at": "2026-03-06T11:51:15.141000+00:00",
+    "generated_at": "2026-03-06T11:51:15.141000+00:00",
     "status": "ok",
-    "count": 1,
+    "count": 2,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,7 +12,7 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
-      "low": 1
+      "low": 2
     },
     "rejected": {
       "too_old": 1
@@ -32,21 +32,61 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 103167.53,
-        "vol_5m_usd": 44246.68,
-        "vol_1h_usd": 317186.51,
-        "txns_5m": 101,
-        "price_usd": 1.702e-06
+        "liq_usd": 141137.57,
+        "vol_5m_usd": 56106.88,
+        "vol_1h_usd": 420764.12,
+        "txns_5m": 138,
+        "price_usd": 2.844e-06
       },
       "timestamps": {
         "pair_created_at": "2026-03-06T10:39:29+00:00",
         "token_first_seen": "2026-03-06T10:55:13.816000+00:00",
-        "age_minutes": 61.7,
-        "age_hours": 1.03
+        "age_minutes": 71.8,
+        "age_hours": 1.2
       },
       "scores": {
         "cio_score": 100,
         "freshness": 0.98
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    },
+    {
+      "token": {
+        "address": "0xc116e183ac27278852833bd54212f883b838f372",
+        "symbol": "VAULT",
+        "name": "Claw Vaults"
+      },
+      "pair": {
+        "address": "0x8c7932d5e7c5d33a8d0ee0c6bcb9db2a36b3fe2eac07809edc87387951df1e58",
+        "dex": "uniswap",
+        "quote": "flETH"
+      },
+      "metrics": {
+        "liq_usd": 9824.01,
+        "vol_5m_usd": 3076.32,
+        "vol_1h_usd": 3080.48,
+        "txns_5m": 38,
+        "price_usd": 1.099e-07
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-05T16:08:25+00:00",
+        "token_first_seen": "2026-03-06T11:47:05.285000+00:00",
+        "age_minutes": 1182.8,
+        "age_hours": 19.71
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.67
       },
       "risks": [],
       "risk_level": "low",
