@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-06T00:10:21.422000+00:00",
-    "generated_at": "2026-03-06T00:10:21.422000+00:00",
+    "updated_at": "2026-03-06T00:20:23.460000+00:00",
+    "generated_at": "2026-03-06T00:20:23.460000+00:00",
     "status": "ok",
-    "count": 1,
+    "count": 2,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,16 +12,55 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
-      "low": 1
+      "low": 2
     },
     "rejected": {
       "too_old": 1,
-      "low_tx": 1,
-      "duplicate": 1
+      "low_volume": 1
     },
     "source": "ultra_launch_scanner"
   },
   "candidates": [
+    {
+      "token": {
+        "address": "0x38ed1701eb1d3299313ab48324dbbe38a4684ba3",
+        "symbol": "CRUST",
+        "name": "Crustocean"
+      },
+      "pair": {
+        "address": "0xa35eaa7f0590aa929efda1c93b2e88ce1514e8fc59624de71e782843b416bfad",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 77815.94,
+        "vol_5m_usd": 351.91,
+        "vol_1h_usd": 133917.88,
+        "txns_5m": 15,
+        "price_usd": 1.137e-06
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-05T22:31:27+00:00",
+        "token_first_seen": "2026-03-06T00:18:43.272000+00:00",
+        "age_minutes": 108.9,
+        "age_hours": 1.82
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.97
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    },
     {
       "token": {
         "address": "0x124a4ed43e2abf32b7e6a3d6dc1c8e47bbd1cba3",
@@ -34,25 +73,25 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 37615.12,
-        "vol_5m_usd": 147.86,
-        "vol_1h_usd": 2272.48,
-        "txns_5m": 18,
-        "price_usd": 3.951e-07
+        "liq_usd": 37612.86,
+        "vol_5m_usd": 44.02,
+        "vol_1h_usd": 1835.21,
+        "txns_5m": 19,
+        "price_usd": 3.949e-07
       },
       "timestamps": {
         "pair_created_at": "2026-03-05T21:37:13+00:00",
         "token_first_seen": "2026-03-05T23:02:37.259000+00:00",
-        "age_minutes": 153.1,
-        "age_hours": 2.55
+        "age_minutes": 163.2,
+        "age_hours": 2.72
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.96
+        "freshness": 0.95
       },
       "risks": [],
       "risk_level": "low",
-      "source": "profiles",
+      "source": "boosts",
       "status": "observing",
       "quality": {
         "has_profile": true,

@@ -1,21 +1,46 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T00:07:31.261Z",
+    "updated_at": "2026-03-06T00:17:32.982Z",
     "source": "cio",
     "chain": "base",
-    "count": 1,
+    "count": 2,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T00:07:31.221533+00:00",
+      "ts_utc": "2026-03-06T00:17:32.769440+00:00",
       "chain": "base",
       "token": {
-        "name": "Asset",
-        "symbol": "$ASSET",
-        "address": "0x5d178a33e66e43f6f76b83d8cdc01dcef854b8c4"
+        "name": "LUFFY",
+        "symbol": "$LUFFY",
+        "address": "0x6a4c66b12be523e9b764291cd5007ddc2ad070d3"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 85966.4663,
+        "vol_24h_usd": 1408.4803997363
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x6a4c66b12be523e9b764291cd5007ddc2ad070d3",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T00:17:32.956304+00:00",
+      "chain": "base",
+      "token": {
+        "name": "Cope",
+        "symbol": "$COPE",
+        "address": "0x4c031064554fb93602ee570b32e7ca750dab23c6"
       },
       "scores": {
         "confidence": 100,
@@ -25,11 +50,11 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 26533.2422,
-        "vol_24h_usd": 11481.0309615252
+        "liq_usd": 22625.6003,
+        "vol_24h_usd": 21639.9307811795
       },
       "dex": "geckoterminal",
-      "pair_address": "0x5d178a33e66e43f6f76b83d8cdc01dcef854b8c4",
+      "pair_address": "0x4c031064554fb93602ee570b32e7ca750dab23c6",
       "scanner": "cio"
     }
   ]
