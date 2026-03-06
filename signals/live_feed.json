@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T00:02:30.714Z",
+    "updated_at": "2026-03-06T00:07:31.261Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 1,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T00:02:30.675198+00:00",
+      "ts_utc": "2026-03-06T00:07:31.221533+00:00",
       "chain": "base",
       "token": {
-        "name": "LIFE",
-        "symbol": "$LIFE",
-        "address": "0x53a1e0cd0408fc3e22f9c6a944b8765210d22aab"
+        "name": "Asset",
+        "symbol": "$ASSET",
+        "address": "0x5d178a33e66e43f6f76b83d8cdc01dcef854b8c4"
       },
       "scores": {
         "confidence": 100,
@@ -25,36 +25,11 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 22868.1358,
-        "vol_24h_usd": 22986.2384583072
+        "liq_usd": 26533.2422,
+        "vol_24h_usd": 11481.0309615252
       },
       "dex": "geckoterminal",
-      "pair_address": "0x53a1e0cd0408fc3e22f9c6a944b8765210d22aab",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-06T00:02:30.447017+00:00",
-      "chain": "base",
-      "token": {
-        "name": "CashApples",
-        "symbol": "$CASHAPPLES",
-        "address": "0xae9d5b05365511eed2ea9c04c99b2055b5569ba3"
-      },
-      "scores": {
-        "confidence": 95,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 21356.4953,
-        "vol_24h_usd": 1614.6936539314
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xae9d5b05365511eed2ea9c04c99b2055b5569ba3",
+      "pair_address": "0x5d178a33e66e43f6f76b83d8cdc01dcef854b8c4",
       "scanner": "cio"
     }
   ]
