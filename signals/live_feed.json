@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T05:18:34.892Z",
+    "updated_at": "2026-03-06T05:23:36.026Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 3,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T05:18:34.653822+00:00",
+      "ts_utc": "2026-03-06T05:23:35.346003+00:00",
       "chain": "base",
       "token": {
-        "name": "VIRTERN",
-        "symbol": "$VIRTERN",
-        "address": "0x41ddeed95e5d82e0168a6b4af8cfb17a0aec4483"
+        "name": "DINO",
+        "symbol": "$DINO",
+        "address": "0x041bb407b026369fa8dc97c13d306034bb54cca6"
       },
       "scores": {
         "confidence": 100,
@@ -25,36 +25,61 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 137189.1572,
-        "vol_24h_usd": 1675.38762041
+        "liq_usd": 24385.7725,
+        "vol_24h_usd": 7584.3734916743
       },
       "dex": "geckoterminal",
-      "pair_address": "0x41ddeed95e5d82e0168a6b4af8cfb17a0aec4483",
+      "pair_address": "0x041bb407b026369fa8dc97c13d306034bb54cca6",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T05:18:34.858398+00:00",
+      "ts_utc": "2026-03-06T05:23:35.775881+00:00",
       "chain": "base",
       "token": {
-        "name": "Mei",
-        "symbol": "$MEI",
-        "address": "0xb99de456f831a8ceb9832599485c4451608eeba3"
+        "name": "死对头",
+        "symbol": "$死对头",
+        "address": "0x33673ff0811460ad3fcdc585c256f22898d2d6f0"
       },
       "scores": {
-        "confidence": 95,
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 25867.3448,
+        "vol_24h_usd": 58535.8956070021
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x33673ff0811460ad3fcdc585c256f22898d2d6f0",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T05:23:35.998217+00:00",
+      "chain": "base",
+      "token": {
+        "name": "LUFFY",
+        "symbol": "$LUFFY",
+        "address": "0x007661d2162657c65e5736433b36b925a823339b"
+      },
+      "scores": {
+        "confidence": 100,
         "rarity": "new",
         "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 7825.7107,
-        "vol_24h_usd": 4085.0092017447
+        "liq_usd": 88082.4028,
+        "vol_24h_usd": 2638.344488694
       },
       "dex": "geckoterminal",
-      "pair_address": "0xb99de456f831a8ceb9832599485c4451608eeba3",
+      "pair_address": "0x007661d2162657c65e5736433b36b925a823339b",
       "scanner": "cio"
     }
   ]
