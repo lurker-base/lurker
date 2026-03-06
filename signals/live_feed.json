@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T03:33:12.949Z",
+    "updated_at": "2026-03-06T03:38:14.412Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 5,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T03:33:12.872756+00:00",
+      "ts_utc": "2026-03-06T03:38:13.703663+00:00",
       "chain": "base",
       "token": {
-        "name": "WALLY",
-        "symbol": "$WALLY",
-        "address": "0x3fa6c0919cb16b72a3db757a8ec36642299b20a0"
+        "name": "1B",
+        "symbol": "$1B",
+        "address": "0x93c4e3680a71b721d8352b1c1a07830370f08401"
       },
       "scores": {
         "confidence": 100,
@@ -25,22 +25,72 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 118757.3205,
-        "vol_24h_usd": 1085.575889508
+        "liq_usd": 29393.0936,
+        "vol_24h_usd": 30132.4044741673
       },
       "dex": "geckoterminal",
-      "pair_address": "0x3fa6c0919cb16b72a3db757a8ec36642299b20a0",
+      "pair_address": "0x93c4e3680a71b721d8352b1c1a07830370f08401",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T03:33:12.924683+00:00",
+      "ts_utc": "2026-03-06T03:38:13.869433+00:00",
       "chain": "base",
       "token": {
-        "name": "Pikachu",
-        "symbol": "$PIKACHU",
-        "address": "0x960470ff3b9593bed86a98aaa096d027ab73baa7"
+        "name": "AICOIN",
+        "symbol": "$AICOIN",
+        "address": "0x96cfa77ed2162a8d028e3ae8209ec1ac49fffeaf"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 28313.6921,
+        "vol_24h_usd": 80370.8898306629
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x96cfa77ed2162a8d028e3ae8209ec1ac49fffeaf",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T03:38:14.049857+00:00",
+      "chain": "base",
+      "token": {
+        "name": "VIRTERN",
+        "symbol": "$VIRTERN",
+        "address": "0x92892c8530f83fd0130d672ba4bc77f88561eef6"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 139658.9106,
+        "vol_24h_usd": 2458.622622619
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x92892c8530f83fd0130d672ba4bc77f88561eef6",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T03:38:14.382845+00:00",
+      "chain": "base",
+      "token": {
+        "name": "PUNCH",
+        "symbol": "$PUNCH",
+        "address": "0xa02186b68bc2aa0ad9297abb63bb3a3b52c5cd1b"
       },
       "scores": {
         "confidence": 100,
@@ -50,11 +100,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 87557.886,
-        "vol_24h_usd": 2069.15315
+        "liq_usd": 12340.8443,
+        "vol_24h_usd": 1155.2385277852
       },
       "dex": "geckoterminal",
-      "pair_address": "0x960470ff3b9593bed86a98aaa096d027ab73baa7",
+      "pair_address": "0xa02186b68bc2aa0ad9297abb63bb3a3b52c5cd1b",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T03:38:13.555981+00:00",
+      "chain": "base",
+      "token": {
+        "name": "Mei",
+        "symbol": "$MEI",
+        "address": "0x272b8f57a096d45792b8a99e955cc9aa7d6eeba3"
+      },
+      "scores": {
+        "confidence": 90,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 7178.7497,
+        "vol_24h_usd": 2447.71909811
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x272b8f57a096d45792b8a99e955cc9aa7d6eeba3",
       "scanner": "cio"
     }
   ]
