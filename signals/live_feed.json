@@ -1,60 +1,35 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T08:19:09.470Z",
+    "updated_at": "2026-03-06T08:24:10.029Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 1,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T08:19:09.051096+00:00",
+      "ts_utc": "2026-03-06T08:24:09.991879+00:00",
       "chain": "base",
       "token": {
-        "name": "1Pigeon",
-        "symbol": "$1PIGEON",
-        "address": "0x420c14c8bb9e9197a8c928e3db07a05bda341c8c"
+        "name": "NZ",
+        "symbol": "$NZ",
+        "address": "0xee8e8247a3ebf6d19fab8a70e9a1c95e31bcae0c"
       },
       "scores": {
-        "confidence": 100,
+        "confidence": 90,
         "rarity": "new",
         "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 30531.9409,
-        "vol_24h_usd": 18926.9535917414
+        "liq_usd": 13153.0237,
+        "vol_24h_usd": 3512.282096951
       },
       "dex": "geckoterminal",
-      "pair_address": "0x420c14c8bb9e9197a8c928e3db07a05bda341c8c",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-06T08:19:09.432592+00:00",
-      "chain": "base",
-      "token": {
-        "name": "OPENBOT",
-        "symbol": "$OPENBOT",
-        "address": "0xf9c333c830b78609432cf1bd7078ca92c8404a4b"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 137612.6636,
-        "vol_24h_usd": 1441.16730188
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0xf9c333c830b78609432cf1bd7078ca92c8404a4b",
+      "pair_address": "0xee8e8247a3ebf6d19fab8a70e9a1c95e31bcae0c",
       "scanner": "cio"
     }
   ]
