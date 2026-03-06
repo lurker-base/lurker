@@ -1,21 +1,71 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T01:52:50.150Z",
+    "updated_at": "2026-03-06T02:02:52.433Z",
     "source": "cio",
     "chain": "base",
-    "count": 1,
+    "count": 4,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T01:52:50.125432+00:00",
+      "ts_utc": "2026-03-06T02:02:51.877282+00:00",
       "chain": "base",
       "token": {
-        "name": "AICOIN",
-        "symbol": "$AICOIN",
-        "address": "0xb0e8f92564498453a94db8e2476189cc92f34522"
+        "name": "CORVUS",
+        "symbol": "$CORVUS",
+        "address": "0x39057a2106920f7829ee575285e60c4839179e25"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 23446.303,
+        "vol_24h_usd": 4783.1902229149
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x39057a2106920f7829ee575285e60c4839179e25",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T02:02:52.047605+00:00",
+      "chain": "base",
+      "token": {
+        "name": "QUACKER",
+        "symbol": "$QUACKER",
+        "address": "0x438e55e315a30bbc6218bbf73dfd2edc04580232"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 24753.2242,
+        "vol_24h_usd": 29953.3518687786
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x438e55e315a30bbc6218bbf73dfd2edc04580232",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T02:02:52.404450+00:00",
+      "chain": "base",
+      "token": {
+        "name": "LILBULE",
+        "symbol": "$LILBULE",
+        "address": "0x5e948ca460d429a4f6781d639f7ca1fc97bb7b35"
       },
       "scores": {
         "confidence": 100,
@@ -25,11 +75,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 12519.5687,
-        "vol_24h_usd": 1319.1709440957
+        "liq_usd": 90649.7377,
+        "vol_24h_usd": 1585.169432697
       },
       "dex": "geckoterminal",
-      "pair_address": "0xb0e8f92564498453a94db8e2476189cc92f34522",
+      "pair_address": "0x5e948ca460d429a4f6781d639f7ca1fc97bb7b35",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T02:02:52.182603+00:00",
+      "chain": "base",
+      "token": {
+        "name": "Paperclip",
+        "symbol": "$PAPERCLIP",
+        "address": "0xfc82792af81cfc48e730e271bdc1e88bcb1baba3"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 9139.2634,
+        "vol_24h_usd": 5637.3433224908
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xfc82792af81cfc48e730e271bdc1e88bcb1baba3",
       "scanner": "cio"
     }
   ]
