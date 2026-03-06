@@ -1,21 +1,46 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T06:38:49.207Z",
+    "updated_at": "2026-03-06T06:48:50.871Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 4,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T06:38:48.794388+00:00",
+      "ts_utc": "2026-03-06T06:48:50.477481+00:00",
       "chain": "base",
       "token": {
-        "name": "噜噜",
-        "symbol": "$噜噜",
-        "address": "0x6f26e5746b67c2757d0368169b16fd7457775b1e"
+        "name": "OMNIX",
+        "symbol": "$OMNIX",
+        "address": "0x07026f1d6e70f00a8349e22c6dfbe2b7845703ea"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 51404.8932,
+        "vol_24h_usd": 1848.41149035
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x07026f1d6e70f00a8349e22c6dfbe2b7845703ea",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T06:48:50.656839+00:00",
+      "chain": "base",
+      "token": {
+        "name": "Cowboy",
+        "symbol": "$COWBOY",
+        "address": "0x94ab23f3baf838d7998ed3732a0617b18f7bd5aa"
       },
       "scores": {
         "confidence": 100,
@@ -25,36 +50,61 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 33014.281,
-        "vol_24h_usd": 73732.1222142778
+        "liq_usd": 27447.8119,
+        "vol_24h_usd": 88066.189558918
       },
       "dex": "geckoterminal",
-      "pair_address": "0x6f26e5746b67c2757d0368169b16fd7457775b1e",
+      "pair_address": "0x94ab23f3baf838d7998ed3732a0617b18f7bd5aa",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T06:38:49.174336+00:00",
+      "ts_utc": "2026-03-06T06:48:50.837542+00:00",
       "chain": "base",
       "token": {
-        "name": "WW3",
-        "symbol": "$WW3",
-        "address": "0xb85925a76725451243411f3f3e3f64ef7ef6cba3"
+        "name": "NICKELS",
+        "symbol": "$NICKELS",
+        "address": "0x09d6b9e52c53997a765e0bb58ccddebb43281cb8"
       },
       "scores": {
-        "confidence": 95,
+        "confidence": 100,
         "rarity": "new",
         "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 8467.7882,
-        "vol_24h_usd": 4512.1705251218
+        "liq_usd": 13085.6136,
+        "vol_24h_usd": 1585.8271508711
       },
       "dex": "geckoterminal",
-      "pair_address": "0xb85925a76725451243411f3f3e3f64ef7ef6cba3",
+      "pair_address": "0x09d6b9e52c53997a765e0bb58ccddebb43281cb8",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T06:48:50.294903+00:00",
+      "chain": "base",
+      "token": {
+        "name": "WW3",
+        "symbol": "$WW3",
+        "address": "0xc0e563790f6bbc7af1442d69a4be28fe2c29cba3"
+      },
+      "scores": {
+        "confidence": 90,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 6912.7853,
+        "vol_24h_usd": 2086.9851442131
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xc0e563790f6bbc7af1442d69a4be28fe2c29cba3",
       "scanner": "cio"
     }
   ]
