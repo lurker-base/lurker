@@ -17,14 +17,14 @@
       "dumps_24h": 0,
       "rugged": 3,
       "cleanup": {
-        "last_run": "2026-03-06T13:36:00.431753+00:00",
+        "last_run": "2026-03-06T13:43:32.590548+00:00",
         "tokens_before": 3,
         "tokens_after": 3,
         "moved_to_rugged": 0,
         "removed_stale": 0
       }
     },
-    "last_lifecycle": "2026-03-06T13:35:55.428067+00:00"
+    "last_lifecycle": "2026-03-06T13:43:27.578771+00:00"
   },
   "tokens": {
     "0x1234567890abcdef1234567890abcdef12345678": {
