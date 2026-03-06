@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T10:24:30.091Z",
+    "updated_at": "2026-03-06T10:34:31.414Z",
     "source": "cio",
     "chain": "base",
     "count": 1,
@@ -10,26 +10,26 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T10:24:30.062270+00:00",
+      "ts_utc": "2026-03-06T10:34:31.375445+00:00",
       "chain": "base",
       "token": {
-        "name": "manyu",
-        "symbol": "$MANYU",
-        "address": "0xb2b7ce67be4554f7b2bfb5f5f67616effb490c74"
+        "name": "Basemail",
+        "symbol": "$BASEMAIL",
+        "address": "0xcfb1ca9d2b7f532b2f24b90262cda0146c6f1ba3"
       },
       "scores": {
-        "confidence": 100,
+        "confidence": 95,
         "rarity": "new",
-        "risk": "low"
+        "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 28983.8481,
-        "vol_24h_usd": 23024.0695031355
+        "liq_usd": 7177.2303,
+        "vol_24h_usd": 1820.8790795332
       },
       "dex": "geckoterminal",
-      "pair_address": "0xb2b7ce67be4554f7b2bfb5f5f67616effb490c74",
+      "pair_address": "0xcfb1ca9d2b7f532b2f24b90262cda0146c6f1ba3",
       "scanner": "cio"
     }
   ]
