@@ -18044,6 +18044,89 @@
         "symbol": "Secureclaw",
         "name": "Secureclaw"
       }
+    },
+    "0xcb5ff7331193c45f61f05b035ddabe08f13f6ba3": {
+      "first_seen": 1772772080152,
+      "first_seen_iso": "2026-03-06T04:41:20.152000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1772772080152,
+          "price": 2.624e-06,
+          "liq": 185135.67,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1772772129768,
+          "price": 2.624e-06,
+          "liq": 185135.67,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1772772182620,
+          "price": 2.624e-06,
+          "liq": 185135.67,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1772772232102,
+          "price": 2.624e-06,
+          "liq": 185135.67,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1772772282173,
+          "price": 2.624e-06,
+          "liq": 185135.67,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1772772332128,
+          "price": 2.624e-06,
+          "liq": 185135.67,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1772772382171,
+          "price": 2.624e-06,
+          "liq": 185135.67,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1772772432138,
+          "price": 2.624e-06,
+          "liq": 185135.67,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1772772482120,
+          "price": 2.624e-06,
+          "liq": 185135.67,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1772772532371,
+          "price": 2.624e-06,
+          "liq": 185135.67,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1772772582180,
+          "price": 2.624e-06,
+          "liq": 185135.67,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1772772632619,
+          "price": 2.624e-06,
+          "liq": 185135.67,
+          "vol_5m": 0.0
+        }
+      ],
+      "token": {
+        "address": "0xcb5ff7331193c45f61f05b035ddabe08f13f6ba3",
+        "symbol": "openagentmarket",
+        "name": "openagentmarket"
+      }
     }
   }
 }

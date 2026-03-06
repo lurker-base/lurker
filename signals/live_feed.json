@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T04:38:26.009Z",
+    "updated_at": "2026-03-06T04:48:27.839Z",
     "source": "cio",
     "chain": "base",
-    "count": 3,
+    "count": 2,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T04:38:25.644043+00:00",
+      "ts_utc": "2026-03-06T04:48:27.432929+00:00",
       "chain": "base",
       "token": {
-        "name": "BRUH",
-        "symbol": "$BRUH",
-        "address": "0xc92160417337782244598bdc2b9bc1976164d49c"
+        "name": "Fenrir",
+        "symbol": "$FENRIR",
+        "address": "0x862223d23f65a4bdda2e13bca07c617350121cd6"
       },
       "scores": {
         "confidence": 100,
@@ -25,61 +25,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 18566.5856,
-        "vol_24h_usd": 10795.826070278
+        "liq_usd": 27586.1692,
+        "vol_24h_usd": 26599.1162339429
       },
       "dex": "geckoterminal",
-      "pair_address": "0xc92160417337782244598bdc2b9bc1976164d49c",
+      "pair_address": "0x862223d23f65a4bdda2e13bca07c617350121cd6",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T04:38:25.984382+00:00",
+      "ts_utc": "2026-03-06T04:48:27.816549+00:00",
       "chain": "base",
       "token": {
-        "name": "toothpaste",
-        "symbol": "$TOOTHPASTE",
-        "address": "0x6b979c2782d5e9823f233e1ed5252a49b743164e"
+        "name": "conviction",
+        "symbol": "$CONVICTION",
+        "address": "0x42f7d7576306a1fedf47f0395b8ad957c5378441"
       },
       "scores": {
         "confidence": 100,
         "rarity": "new",
-        "risk": "medium"
+        "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 51201.7548,
-        "vol_24h_usd": 1732.85704616
+        "liq_usd": 26513.4036,
+        "vol_24h_usd": 34891.87282349
       },
       "dex": "geckoterminal",
-      "pair_address": "0x6b979c2782d5e9823f233e1ed5252a49b743164e",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-06T04:38:25.817067+00:00",
-      "chain": "base",
-      "token": {
-        "name": "Mei",
-        "symbol": "$MEI",
-        "address": "0x3d587c73a3567c55e63e9f54553b8d09f1ddeba3"
-      },
-      "scores": {
-        "confidence": 90,
-        "rarity": "new",
-        "risk": "medium"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 6469.7486,
-        "vol_24h_usd": 1520.6503445986
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x3d587c73a3567c55e63e9f54553b8d09f1ddeba3",
+      "pair_address": "0x42f7d7576306a1fedf47f0395b8ad957c5378441",
       "scanner": "cio"
     }
   ]
