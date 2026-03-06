@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T06:53:51.731Z",
+    "updated_at": "2026-03-06T07:03:53.965Z",
     "source": "cio",
     "chain": "base",
-    "count": 1,
+    "count": 4,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T06:53:51.702056+00:00",
+      "ts_utc": "2026-03-06T07:03:53.152387+00:00",
       "chain": "base",
       "token": {
-        "name": "Become",
-        "symbol": "$BECOME",
-        "address": "0x89b25cfe506f43db9feb9696f5d386dd96fd5562"
+        "name": "5",
+        "symbol": "$5",
+        "address": "0x7e0254316bebea3b08aa903fe662de7fc546e534"
       },
       "scores": {
         "confidence": 100,
@@ -25,11 +25,86 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 34817.9704,
-        "vol_24h_usd": 50372.355397127
+        "liq_usd": 30551.8648,
+        "vol_24h_usd": 29388.5298581976
       },
       "dex": "geckoterminal",
-      "pair_address": "0x89b25cfe506f43db9feb9696f5d386dd96fd5562",
+      "pair_address": "0x7e0254316bebea3b08aa903fe662de7fc546e534",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T07:03:53.474532+00:00",
+      "chain": "base",
+      "token": {
+        "name": "Become",
+        "symbol": "$BECOME",
+        "address": "0xdc9f140db6c7c13a11841ad5a346f601ef7d5433"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 33820.1469,
+        "vol_24h_usd": 74594.2211219642
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xdc9f140db6c7c13a11841ad5a346f601ef7d5433",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T07:03:53.937525+00:00",
+      "chain": "base",
+      "token": {
+        "name": "VIRTERN",
+        "symbol": "$VIRTERN",
+        "address": "0x7f8f9c3357b588940da130905956cab7a4c96ae2"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 140095.2764,
+        "vol_24h_usd": 2972.708661015
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x7f8f9c3357b588940da130905956cab7a4c96ae2",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T07:03:53.803338+00:00",
+      "chain": "base",
+      "token": {
+        "name": "WW3",
+        "symbol": "$WW3",
+        "address": "0xe9819ce3fdde43846816fe638806e499b98ecba3"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 9039.8451,
+        "vol_24h_usd": 4780.0155776015
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xe9819ce3fdde43846816fe638806e499b98ecba3",
       "scanner": "cio"
     }
   ]
