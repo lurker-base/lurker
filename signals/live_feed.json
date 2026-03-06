@@ -1,71 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T02:37:59.278Z",
+    "updated_at": "2026-03-06T02:48:01.738Z",
     "source": "cio",
     "chain": "base",
-    "count": 4,
+    "count": 3,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T02:37:58.710105+00:00",
+      "ts_utc": "2026-03-06T02:48:01.267374+00:00",
       "chain": "base",
       "token": {
-        "name": "VibeCraft",
-        "symbol": "$VIBECRAFT",
-        "address": "0x90a32262aa1c048b9e8249890fa323f7850f0d65"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 25014.7302,
-        "vol_24h_usd": 6036.8172854391
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x90a32262aa1c048b9e8249890fa323f7850f0d65",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-06T02:37:58.877565+00:00",
-      "chain": "base",
-      "token": {
-        "name": "AICOIN",
-        "symbol": "$AICOIN",
-        "address": "0x5b8fd194b8c32657ff46fae1a6b8dfaec06958f7"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 32129.7663,
-        "vol_24h_usd": 63825.087959177
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x5b8fd194b8c32657ff46fae1a6b8dfaec06958f7",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-06T02:37:59.245602+00:00",
-      "chain": "base",
-      "token": {
-        "name": "Roll",
-        "symbol": "$ROLL",
-        "address": "0x68a6da911099c87e70a7804bf2e8b3f67e0fccbf"
+        "name": "LUFFY",
+        "symbol": "$LUFFY",
+        "address": "0x132a33f91bee93c9fca68e6694831b60e11d5839"
       },
       "scores": {
         "confidence": 100,
@@ -75,22 +25,47 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 89815.4024,
-        "vol_24h_usd": 1171.7793830212
+        "liq_usd": 87009.4691,
+        "vol_24h_usd": 1765.306438582
       },
       "dex": "geckoterminal",
-      "pair_address": "0x68a6da911099c87e70a7804bf2e8b3f67e0fccbf",
+      "pair_address": "0x132a33f91bee93c9fca68e6694831b60e11d5839",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T02:37:59.059792+00:00",
+      "ts_utc": "2026-03-06T02:48:01.695709+00:00",
       "chain": "base",
       "token": {
-        "name": "ROOM",
-        "symbol": "$ROOM",
-        "address": "0x96686ce73f93cea7d93eb71f45e85789d4c40ba3"
+        "name": "CHRONOEFFE",
+        "symbol": "$CHRONOEFFE",
+        "address": "0xeed1b06ed0524b2479896868ea5cb2312a8d7116"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 12717.7644,
+        "vol_24h_usd": 1516.9958573085
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xeed1b06ed0524b2479896868ea5cb2312a8d7116",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T02:48:01.054287+00:00",
+      "chain": "base",
+      "token": {
+        "name": "Paperclip",
+        "symbol": "$PAPERCLIP",
+        "address": "0xc6d2a73b0887c4064b92c49b1576eb3ac58baba3"
       },
       "scores": {
         "confidence": 95,
@@ -100,11 +75,11 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 8181.6873,
-        "vol_24h_usd": 4248.5326715625
+        "liq_usd": 8121.7468,
+        "vol_24h_usd": 3255.5777652755
       },
       "dex": "geckoterminal",
-      "pair_address": "0x96686ce73f93cea7d93eb71f45e85789d4c40ba3",
+      "pair_address": "0xc6d2a73b0887c4064b92c49b1576eb3ac58baba3",
       "scanner": "cio"
     }
   ]
