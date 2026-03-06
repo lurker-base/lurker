@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T12:09:51.022Z",
+    "updated_at": "2026-03-06T12:19:52.972Z",
     "source": "cio",
     "chain": "base",
-    "count": 1,
+    "count": 2,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T12:09:50.988524+00:00",
+      "ts_utc": "2026-03-06T12:19:52.872998+00:00",
       "chain": "base",
       "token": {
-        "name": "金狗",
-        "symbol": "$金狗",
-        "address": "0xf0897e826eb418cf3f053bf38c70391ffd4a2681"
+        "name": "我的刀",
+        "symbol": "$我的刀",
+        "address": "0x6c46799d7b9208782a986dbae2d36787c28e222f"
       },
       "scores": {
         "confidence": 100,
@@ -25,11 +25,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 27435.008,
-        "vol_24h_usd": 12940.2742738064
+        "liq_usd": 28641.3645,
+        "vol_24h_usd": 19594.9514662309
       },
       "dex": "geckoterminal",
-      "pair_address": "0xf0897e826eb418cf3f053bf38c70391ffd4a2681",
+      "pair_address": "0x6c46799d7b9208782a986dbae2d36787c28e222f",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T12:19:52.938402+00:00",
+      "chain": "base",
+      "token": {
+        "name": "frank",
+        "symbol": "$FRANK",
+        "address": "0xc242ca4c35e6a0993a926314529ca4dbb157ab4a"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 29390.3912,
+        "vol_24h_usd": 71511.950609528
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xc242ca4c35e6a0993a926314529ca4dbb157ab4a",
       "scanner": "cio"
     }
   ]
