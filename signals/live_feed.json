@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T12:39:57.106Z",
+    "updated_at": "2026-03-06T12:49:58.857Z",
     "source": "cio",
     "chain": "base",
     "count": 1,
@@ -10,26 +10,26 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T12:39:57.077043+00:00",
+      "ts_utc": "2026-03-06T12:49:58.820067+00:00",
       "chain": "base",
       "token": {
-        "name": "Basemail",
-        "symbol": "$BASEMAIL",
-        "address": "0x22e5affef710dc7517f62ec1931c631877ef1ba3"
+        "name": "1元",
+        "symbol": "$1元",
+        "address": "0x38a9afe56d505529c8b3e2f18fa7501d7731cde7"
       },
       "scores": {
-        "confidence": 90,
+        "confidence": 100,
         "rarity": "new",
-        "risk": "medium"
+        "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 6987.9347,
-        "vol_24h_usd": 2423.5031142837
+        "liq_usd": 35165.4686,
+        "vol_24h_usd": 68069.6773824705
       },
       "dex": "geckoterminal",
-      "pair_address": "0x22e5affef710dc7517f62ec1931c631877ef1ba3",
+      "pair_address": "0x38a9afe56d505529c8b3e2f18fa7501d7731cde7",
       "scanner": "cio"
     }
   ]
