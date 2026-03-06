@@ -1,66 +1,21 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-06T13:06:31.867000+00:00",
-    "generated_at": "2026-03-06T13:06:31.867000+00:00",
-    "status": "ok",
-    "count": 1,
+    "updated_at": "2026-03-06T13:11:31.728000+00:00",
+    "generated_at": "2026-03-06T13:11:31.728000+00:00",
+    "status": "calm",
+    "count": 0,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
       "min_tx_5m": 1,
       "max_age_min": 43200
     },
-    "risk_distribution": {
-      "medium": 1
-    },
+    "risk_distribution": {},
     "rejected": {
       "too_old": 1
     },
     "source": "ultra_launch_scanner"
   },
-  "candidates": [
-    {
-      "token": {
-        "address": "0xc116e183ac27278852833bd54212f883b838f372",
-        "symbol": "VAULT",
-        "name": "Claw Vaults"
-      },
-      "pair": {
-        "address": "0x8c7932d5e7c5d33a8d0ee0c6bcb9db2a36b3fe2eac07809edc87387951df1e58",
-        "dex": "uniswap",
-        "quote": "flETH"
-      },
-      "metrics": {
-        "liq_usd": 7665.62,
-        "vol_5m_usd": 167.57,
-        "vol_1h_usd": 4614.87,
-        "txns_5m": 10,
-        "price_usd": 8.039e-08
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-05T16:08:25+00:00",
-        "token_first_seen": "2026-03-06T11:47:05.285000+00:00",
-        "age_minutes": 1258.1,
-        "age_hours": 20.97
-      },
-      "scores": {
-        "cio_score": 95,
-        "freshness": 0.65
-      },
-      "risks": [
-        "dumping"
-      ],
-      "risk_level": "medium",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    }
-  ]
+  "candidates": []
 }
