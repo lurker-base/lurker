@@ -1,21 +1,21 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T11:19:41.864Z",
+    "updated_at": "2026-03-06T11:24:42.613Z",
     "source": "cio",
     "chain": "base",
-    "count": 1,
+    "count": 2,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T11:19:41.838407+00:00",
+      "ts_utc": "2026-03-06T11:24:42.581937+00:00",
       "chain": "base",
       "token": {
-        "name": "◎",
-        "symbol": "$◎",
-        "address": "0x2f69320d9ecec697639d2c8328aa962463e298cb"
+        "name": "SUGOO",
+        "symbol": "$SUGOO",
+        "address": "0xa52fcb1e0969fe016bde5bb58c9bfa1592a11786"
       },
       "scores": {
         "confidence": 100,
@@ -25,11 +25,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 14309.9431,
-        "vol_24h_usd": 2575.2258316676
+        "liq_usd": 36049.3284,
+        "vol_24h_usd": 79187.1567613311
       },
       "dex": "geckoterminal",
-      "pair_address": "0x2f69320d9ecec697639d2c8328aa962463e298cb",
+      "pair_address": "0xa52fcb1e0969fe016bde5bb58c9bfa1592a11786",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T11:24:42.370295+00:00",
+      "chain": "base",
+      "token": {
+        "name": "Basemail",
+        "symbol": "$BASEMAIL",
+        "address": "0xbceff9ee73435eb2bc5d120d7d59a12eb6111ba3"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 8533.6959,
+        "vol_24h_usd": 3845.7735233
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xbceff9ee73435eb2bc5d120d7d59a12eb6111ba3",
       "scanner": "cio"
     }
   ]
