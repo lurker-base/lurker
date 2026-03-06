@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T08:24:10.029Z",
+    "updated_at": "2026-03-06T08:34:11.771Z",
     "source": "cio",
     "chain": "base",
     "count": 1,
@@ -10,26 +10,26 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T08:24:09.991879+00:00",
+      "ts_utc": "2026-03-06T08:34:11.745331+00:00",
       "chain": "base",
       "token": {
-        "name": "NZ",
-        "symbol": "$NZ",
-        "address": "0xee8e8247a3ebf6d19fab8a70e9a1c95e31bcae0c"
+        "name": "Kamal",
+        "symbol": "$KAMAL",
+        "address": "0x66ba78cd373c4afa5625e383b312bb71fe5caf66"
       },
       "scores": {
-        "confidence": 90,
+        "confidence": 95,
         "rarity": "new",
-        "risk": "low"
+        "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 13153.0237,
-        "vol_24h_usd": 3512.282096951
+        "liq_usd": 49943.7387,
+        "vol_24h_usd": 1314.236889327
       },
       "dex": "geckoterminal",
-      "pair_address": "0xee8e8247a3ebf6d19fab8a70e9a1c95e31bcae0c",
+      "pair_address": "0x66ba78cd373c4afa5625e383b312bb71fe5caf66",
       "scanner": "cio"
     }
   ]
