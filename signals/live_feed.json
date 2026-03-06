@@ -1,21 +1,71 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T02:53:02.647Z",
+    "updated_at": "2026-03-06T03:03:05.369Z",
     "source": "cio",
     "chain": "base",
-    "count": 2,
+    "count": 4,
     "errors": []
   },
   "signals": [
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T02:53:02.353002+00:00",
+      "ts_utc": "2026-03-06T03:03:04.414703+00:00",
       "chain": "base",
       "token": {
-        "name": "SYNTHESIS",
-        "symbol": "$SYNTHESIS",
-        "address": "0xc7e70d2fadb56483047883c40ccdf312ab890676"
+        "name": "SLEEP",
+        "symbol": "$SLEEP",
+        "address": "0x1e3fd6cd51d6994f06649cac702e44573370cd95"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 18091.916,
+        "vol_24h_usd": 18913.9646817179
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x1e3fd6cd51d6994f06649cac702e44573370cd95",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T03:03:04.979447+00:00",
+      "chain": "base",
+      "token": {
+        "name": "Sexblox",
+        "symbol": "$SEXBLOX",
+        "address": "0xe6ffc229b8280f4811f2d35e0f3f29e4cd75a1b3"
+      },
+      "scores": {
+        "confidence": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 35349.3944,
+        "vol_24h_usd": 56044.7767833659
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0xe6ffc229b8280f4811f2d35e0f3f29e4cd75a1b3",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T03:03:05.332010+00:00",
+      "chain": "base",
+      "token": {
+        "name": "PILL",
+        "symbol": "$PILL",
+        "address": "0xf16436ec06824c77a5b41c16a1e6cb8d95778780"
       },
       "scores": {
         "confidence": 100,
@@ -25,36 +75,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 51630.7275,
-        "vol_24h_usd": 1903.677719
+        "liq_usd": 12100.3976,
+        "vol_24h_usd": 2068.0463835817
       },
       "dex": "geckoterminal",
-      "pair_address": "0xc7e70d2fadb56483047883c40ccdf312ab890676",
+      "pair_address": "0xf16436ec06824c77a5b41c16a1e6cb8d95778780",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T02:53:02.607236+00:00",
+      "ts_utc": "2026-03-06T03:03:04.832435+00:00",
       "chain": "base",
       "token": {
-        "name": "IRRAD",
-        "symbol": "$IRRAD",
-        "address": "0x1a6674a54479357603a12dde146758fd9d1bb5f4"
+        "name": "Paperclip",
+        "symbol": "$PAPERCLIP",
+        "address": "0xe9b2564f937a8b93b485f3a2026cca9c3020aba3"
       },
       "scores": {
         "confidence": 95,
         "rarity": "new",
-        "risk": "high"
+        "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 6734.6469,
-        "vol_24h_usd": 1422.0241079714
+        "liq_usd": 7285.0738,
+        "vol_24h_usd": 2637.8887593637
       },
       "dex": "geckoterminal",
-      "pair_address": "0x1a6674a54479357603a12dde146758fd9d1bb5f4",
+      "pair_address": "0xe9b2564f937a8b93b485f3a2026cca9c3020aba3",
       "scanner": "cio"
     }
   ]
