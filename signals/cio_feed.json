@@ -1,64 +1,21 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-06T08:40:32.772000+00:00",
-    "generated_at": "2026-03-06T08:40:32.772000+00:00",
-    "status": "ok",
-    "count": 1,
+    "updated_at": "2026-03-06T08:50:34.483000+00:00",
+    "generated_at": "2026-03-06T08:50:34.483000+00:00",
+    "status": "calm",
+    "count": 0,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
       "min_tx_5m": 1,
       "max_age_min": 43200
     },
-    "risk_distribution": {
-      "low": 1
-    },
+    "risk_distribution": {},
     "rejected": {
       "too_old": 1
     },
     "source": "ultra_launch_scanner"
   },
-  "candidates": [
-    {
-      "token": {
-        "address": "0x58d6b0cad3ee697ccd93d66fb1e5f940e5173ba3",
-        "symbol": "NEXUS",
-        "name": "NEXUS"
-      },
-      "pair": {
-        "address": "0xe23f9de1c6a549fdfcb1aeec1d57a90427e24b4eac500bad134c17e38def1d7e",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 99939.64,
-        "vol_5m_usd": 362.65,
-        "vol_1h_usd": 3206.69,
-        "txns_5m": 1,
-        "price_usd": 1.666e-06
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-05T04:39:15+00:00",
-        "token_first_seen": "2026-03-06T06:43:28.779000+00:00",
-        "age_minutes": 1681.3,
-        "age_hours": 28.02
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.53
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    }
-  ]
+  "candidates": []
 }
