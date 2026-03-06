@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T08:04:07.046Z",
+    "updated_at": "2026-03-06T08:09:07.718Z",
     "source": "cio",
     "chain": "base",
     "count": 2,
@@ -10,12 +10,12 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T08:04:06.845527+00:00",
+      "ts_utc": "2026-03-06T08:09:07.641080+00:00",
       "chain": "base",
       "token": {
-        "name": "旺柴",
-        "symbol": "$旺柴",
-        "address": "0xf5606d69697a40e3dda12d0f2b2aa633a3b2667b"
+        "name": "歪比巴",
+        "symbol": "$歪比巴",
+        "address": "0x1938c04fc0507d8096d435c33de77b193599facd"
       },
       "scores": {
         "confidence": 100,
@@ -25,36 +25,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 28284.0559,
-        "vol_24h_usd": 15384.2610931495
+        "liq_usd": 23977.3776,
+        "vol_24h_usd": 6125.2863781274
       },
       "dex": "geckoterminal",
-      "pair_address": "0xf5606d69697a40e3dda12d0f2b2aa633a3b2667b",
+      "pair_address": "0x1938c04fc0507d8096d435c33de77b193599facd",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T08:04:07.020238+00:00",
+      "ts_utc": "2026-03-06T08:09:07.692265+00:00",
       "chain": "base",
       "token": {
-        "name": "WW3",
-        "symbol": "$WW3",
-        "address": "0x0cd6c2a1392e98118b85e141a069d3b6ecd8cba3"
+        "name": "刘元立",
+        "symbol": "$刘元立",
+        "address": "0xad92b2a4b5d8b84c97c5298d88d39b070a189585"
       },
       "scores": {
-        "confidence": 95,
+        "confidence": 100,
         "rarity": "new",
-        "risk": "medium"
+        "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 7549.3868,
-        "vol_24h_usd": 3775.5407061851
+        "liq_usd": 18653.3937,
+        "vol_24h_usd": 25119.0067388728
       },
       "dex": "geckoterminal",
-      "pair_address": "0x0cd6c2a1392e98118b85e141a069d3b6ecd8cba3",
+      "pair_address": "0xad92b2a4b5d8b84c97c5298d88d39b070a189585",
       "scanner": "cio"
     }
   ]
