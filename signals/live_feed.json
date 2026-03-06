@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-05T23:52:28.780Z",
+    "updated_at": "2026-03-06T00:02:30.714Z",
     "source": "cio",
     "chain": "base",
     "count": 2,
@@ -10,51 +10,51 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T23:52:28.550550+00:00",
+      "ts_utc": "2026-03-06T00:02:30.675198+00:00",
       "chain": "base",
       "token": {
-        "name": "cryptoeasy",
-        "symbol": "$CRYPTOEASY",
-        "address": "0x5230c4048e1faca2761c203b73f37744975f3b07"
+        "name": "LIFE",
+        "symbol": "$LIFE",
+        "address": "0x53a1e0cd0408fc3e22f9c6a944b8765210d22aab"
       },
       "scores": {
         "confidence": 100,
         "rarity": "new",
-        "risk": "medium"
+        "risk": "low"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 20941.7469,
-        "vol_24h_usd": 1049.7104041989
+        "liq_usd": 22868.1358,
+        "vol_24h_usd": 22986.2384583072
       },
       "dex": "geckoterminal",
-      "pair_address": "0x5230c4048e1faca2761c203b73f37744975f3b07",
+      "pair_address": "0x53a1e0cd0408fc3e22f9c6a944b8765210d22aab",
       "scanner": "cio"
     },
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-05T23:52:28.751805+00:00",
+      "ts_utc": "2026-03-06T00:02:30.447017+00:00",
       "chain": "base",
       "token": {
-        "name": "DiCaprio",
-        "symbol": "$DICAPRIO",
-        "address": "0x8310f69630e272a940b779648bcb61926e326360"
+        "name": "CashApples",
+        "symbol": "$CASHAPPLES",
+        "address": "0xae9d5b05365511eed2ea9c04c99b2055b5569ba3"
       },
       "scores": {
-        "confidence": 100,
+        "confidence": 95,
         "rarity": "new",
         "risk": "medium"
       },
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 52009.6326,
-        "vol_24h_usd": 2142.607886
+        "liq_usd": 21356.4953,
+        "vol_24h_usd": 1614.6936539314
       },
       "dex": "geckoterminal",
-      "pair_address": "0x8310f69630e272a940b779648bcb61926e326360",
+      "pair_address": "0xae9d5b05365511eed2ea9c04c99b2055b5569ba3",
       "scanner": "cio"
     }
   ]
