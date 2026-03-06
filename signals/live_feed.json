@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T10:54:34.888Z",
+    "updated_at": "2026-03-06T11:04:36.242Z",
     "source": "cio",
     "chain": "base",
     "count": 1,
@@ -10,12 +10,12 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T10:54:34.854954+00:00",
+      "ts_utc": "2026-03-06T11:04:36.206823+00:00",
       "chain": "base",
       "token": {
-        "name": "walnuts",
-        "symbol": "$WALNUTS",
-        "address": "0x133046a58f3b194e37112f063c5a393af5868a31"
+        "name": "草地牛",
+        "symbol": "$草地牛",
+        "address": "0x2bbcf0044cff4b84067adf60c2f61c93d0491409"
       },
       "scores": {
         "confidence": 100,
@@ -25,11 +25,11 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 27922.6615,
-        "vol_24h_usd": 61912.8179257165
+        "liq_usd": 24413.637,
+        "vol_24h_usd": 54415.0988260851
       },
       "dex": "geckoterminal",
-      "pair_address": "0x133046a58f3b194e37112f063c5a393af5868a31",
+      "pair_address": "0x2bbcf0044cff4b84067adf60c2f61c93d0491409",
       "scanner": "cio"
     }
   ]
