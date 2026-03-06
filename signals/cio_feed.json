@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-06T17:18:03.355000+00:00",
-    "generated_at": "2026-03-06T17:18:03.355000+00:00",
+    "updated_at": "2026-03-06T17:34:46.861000+00:00",
+    "generated_at": "2026-03-06T17:34:46.861000+00:00",
     "status": "ok",
-    "count": 2,
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 1000,
       "min_vol_5m": 500,
@@ -12,58 +12,16 @@
       "max_age_min": 43200
     },
     "risk_distribution": {
-      "medium": 1,
       "low": 1
     },
     "rejected": {
       "too_old": 1,
+      "low_tx": 1,
       "known_token": 1
     },
     "source": "ultra_launch_scanner"
   },
   "candidates": [
-    {
-      "token": {
-        "address": "0x3b4acef1170eb196583ca1aeb49d452812fab7fd",
-        "symbol": "Carapace",
-        "name": "Carapace Bot"
-      },
-      "pair": {
-        "address": "0xbae5e53dee37a3d7d44218f8abf1521d2766151b657a47a77e375499d1ef993a",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 36415.76,
-        "vol_5m_usd": 745.21,
-        "vol_1h_usd": 252647.01,
-        "txns_5m": 12,
-        "price_usd": 4.184e-07
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-06T16:08:45+00:00",
-        "token_first_seen": "2026-03-06T17:18:03.326000+00:00",
-        "age_minutes": 69.3,
-        "age_hours": 1.16
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.98
-      },
-      "risks": [
-        "dumping"
-      ],
-      "risk_level": "medium",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    },
     {
       "token": {
         "address": "0xd8d55f94000b071ce30a6aec95f0e8d5f9e5306e",
@@ -76,17 +34,17 @@
         "quote": "flETH"
       },
       "metrics": {
-        "liq_usd": 10525.77,
-        "vol_5m_usd": 54.47,
-        "vol_1h_usd": 13910.89,
-        "txns_5m": 6,
-        "price_usd": 1.208e-07
+        "liq_usd": 10096.64,
+        "vol_5m_usd": 100.74,
+        "vol_1h_usd": 2023.93,
+        "txns_5m": 2,
+        "price_usd": 1.141e-07
       },
       "timestamps": {
         "pair_created_at": "2026-03-06T14:55:43+00:00",
         "token_first_seen": "2026-03-06T17:18:03.326000+00:00",
-        "age_minutes": 142.3,
-        "age_hours": 2.37
+        "age_minutes": 159.1,
+        "age_hours": 2.65
       },
       "scores": {
         "cio_score": 100,

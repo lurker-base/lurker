@@ -1,7 +1,7 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T17:18:31.333586+00:00",
-    "source": "scanner",
+    "updated_at": "2026-03-06T17:36:31.428350+00:00",
+    "source": "lifecycle",
     "chain": "base",
     "count": 11,
     "errors": []
@@ -15,7 +15,8 @@
       "volume_24h": 500000,
       "quality_score": 85,
       "age_minutes": 1440,
-      "detected_at": "2026-03-06T10:00:00Z"
+      "detected_at": "2026-03-06T10:00:00Z",
+      "status": "PREMIUM"
     },
     {
       "address": "0xabcdef1234567890abcdef1234567890abcdef12",
@@ -25,7 +26,8 @@
       "volume_24h": 200000,
       "quality_score": 72,
       "age_minutes": 720,
-      "detected_at": "2026-03-06T08:00:00Z"
+      "detected_at": "2026-03-06T08:00:00Z",
+      "status": "ACTIVE"
     },
     {
       "address": "0x9876543210fedcba9876543210fedcba98765432",
@@ -35,7 +37,8 @@
       "volume_24h": 800000,
       "quality_score": 92,
       "age_minutes": 2880,
-      "detected_at": "2026-03-06T02:00:00Z"
+      "detected_at": "2026-03-06T02:00:00Z",
+      "status": "PREMIUM"
     },
     {
       "address": "7oxne1dbphup6dn1jf8prgctzfcy4p2fubnewjzhpump",
@@ -45,7 +48,8 @@
       "volume_24h": 0,
       "quality_score": 0,
       "age_minutes": 0,
-      "detected_at": "2026-03-06T17:06:49.469486"
+      "detected_at": "2026-03-06T17:06:49.469486",
+      "status": "NEW"
     },
     {
       "address": "38pgzpjyu2hkiyvv8qepfakb8tuobpdgm2ffen7dpump",
@@ -55,7 +59,8 @@
       "volume_24h": 0,
       "quality_score": 0,
       "age_minutes": 0,
-      "detected_at": "2026-03-06T17:06:49.469503"
+      "detected_at": "2026-03-06T17:06:49.469503",
+      "status": "NEW"
     },
     {
       "address": "4uf883orbx89vqziv4eorpnquwyn5zuevc4pcpq9moon",
@@ -65,7 +70,8 @@
       "volume_24h": 0,
       "quality_score": 0,
       "age_minutes": 0,
-      "detected_at": "2026-03-06T17:06:49.469512"
+      "detected_at": "2026-03-06T17:06:49.469512",
+      "status": "NEW"
     },
     {
       "address": "4nswj3o1lo9iwyvvrjxud8vbcy9ay7qqoxycnchnbonk",
@@ -75,7 +81,8 @@
       "volume_24h": 0,
       "quality_score": 0,
       "age_minutes": 0,
-      "detected_at": "2026-03-06T17:06:49.469519"
+      "detected_at": "2026-03-06T17:06:49.469519",
+      "status": "NEW"
     },
     {
       "address": "0x70131b713a5d0e9d900feca15d0e1348658e4444",
@@ -85,7 +92,8 @@
       "volume_24h": 0,
       "quality_score": 0,
       "age_minutes": 0,
-      "detected_at": "2026-03-06T17:06:49.469522"
+      "detected_at": "2026-03-06T17:06:49.469522",
+      "status": "NEW"
     },
     {
       "address": "tsatdggslybvcrm3pxiib8nmzkcb1iudjrrsengssxu",
@@ -95,7 +103,8 @@
       "volume_24h": 0,
       "quality_score": 0,
       "age_minutes": 0,
-      "detected_at": "2026-03-06T17:06:49.469525"
+      "detected_at": "2026-03-06T17:06:49.469525",
+      "status": "NEW"
     },
     {
       "address": "ikhhabrngxhkyhnews6gtezcp1zgjfgedgukgx68ray",
@@ -105,7 +114,8 @@
       "volume_24h": 0,
       "quality_score": 0,
       "age_minutes": 0,
-      "detected_at": "2026-03-06T17:06:49.469540"
+      "detected_at": "2026-03-06T17:06:49.469540",
+      "status": "NEW"
     },
     {
       "address": "0x9842989969687f7d249d01cae1d2ff6b7b6b6d35",
@@ -115,7 +125,8 @@
       "volume_24h": 0,
       "quality_score": 0,
       "age_minutes": 0,
-      "detected_at": "2026-03-06T17:06:49.469543"
+      "detected_at": "2026-03-06T17:06:49.469543",
+      "status": "NEW"
     }
   ]
 }

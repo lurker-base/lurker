@@ -486,10 +486,38 @@ def scan():
         "candidates": candidates,
     }
     
-    # Save
+    # Save CIO feed
     CIO_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(CIO_FILE, 'w', encoding='utf-8') as f:
         json.dump(feed, f, ensure_ascii=False, indent=2)
+    
+    # ALSO save live_feed.json for dashboard
+    LIVE_FEED = CIO_FILE.parent / "live_feed.json"
+    live_signals = []
+    for c in candidates:
+        live_signals.append({
+            'address': c['token']['address'],
+            'symbol': c['token']['symbol'],
+            'name': c['token'].get('name', ''),
+            'liquidity_usd': c['metrics']['liq_usd'],
+            'volume_24h': c['metrics'].get('vol_24h_usd', 0),
+            'quality_score': c['scores']['cio_score'],
+            'age_minutes': c['timestamps']['age_minutes'],
+            'detected_at': c['timestamps'].get('token_first_seen', c['timestamps'].get('pair_created_at', iso())),
+            'risk_level': c['risk_level']
+        })
+    live_feed = {
+        'meta': {
+            'updated_at': iso(),
+            'source': 'cio_scanner',
+            'chain': CHAIN,
+            'count': len(live_signals),
+            'errors': []
+        },
+        'signals': live_signals
+    }
+    with open(LIVE_FEED, 'w') as f:
+        json.dump(live_feed, f, indent=2)
     
     print(f"\n[SCANNER] ✅ Candidates: {len(candidates)}")
     print(f"[SCANNER] Risk: {dict(risk_counts)}")

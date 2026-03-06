@@ -60,7 +60,8 @@
           "rug_detected"
         ]
       },
-      "price_usd": 0.001
+      "price_usd": 0.001,
+      "status": "PREMIUM"
     },
     "0xabcdef1234567890abcdef1234567890abcdef12": {
       "symbol": "PONKE",
@@ -89,7 +90,8 @@
           "rug_detected"
         ]
       },
-      "price_usd": 0.001
+      "price_usd": 0.001,
+      "status": "ACTIVE"
     },
     "0x9876543210fedcba9876543210fedcba98765432": {
       "symbol": "BOLT",
@@ -118,7 +120,8 @@
           "rug_detected"
         ]
       },
-      "price_usd": 0.001
+      "price_usd": 0.001,
+      "status": "PREMIUM"
     },
     "7oxne1dbphup6dn1jf8prgctzfcy4p2fubnewjzhpump": {
       "address": "7oXNE1dbpHUp6dn1JF8pRgCtzfCy4P2FuBneWjZHpump",
@@ -132,7 +135,8 @@
         "liq_usd": 98583.83,
         "vol_24h_usd": 5888320.29,
         "market_cap": 1097595.0
-      }
+      },
+      "status": "NEW"
     },
     "38pgzpjyu2hkiyvv8qepfakb8tuobpdgm2ffen7dpump": {
       "address": "38PgzpJYu2HkiYvV8qePFakB8tuobPdGm2FFEn7Dpump",
@@ -146,7 +150,8 @@
         "liq_usd": 534235.5,
         "vol_24h_usd": 830470.01,
         "market_cap": 3185045.0
-      }
+      },
+      "status": "NEW"
     },
     "4uf883orbx89vqziv4eorpnquwyn5zuevc4pcpq9moon": {
       "address": "4Uf883orBx89VQZiV4EoRpNqUWYN5ZuEvC4PCpQ9moon",
@@ -160,7 +165,8 @@
         "liq_usd": 282514.6,
         "vol_24h_usd": 4663.08,
         "market_cap": 845813.0
-      }
+      },
+      "status": "NEW"
     },
     "4nswj3o1lo9iwyvvrjxud8vbcy9ay7qqoxycnchnbonk": {
       "address": "4nswj3o1Lo9iWYvvRJxUD8vbCy9ay7QQoXYcncHNbonk",
@@ -174,7 +180,8 @@
         "liq_usd": 151316.33,
         "vol_24h_usd": 111300.06,
         "market_cap": 673313.0
-      }
+      },
+      "status": "NEW"
     },
     "0x70131b713a5d0e9d900feca15d0e1348658e4444": {
       "address": "0x70131b713A5D0e9D900FEcA15D0e1348658E4444",
@@ -188,7 +195,8 @@
         "liq_usd": 35065.93,
         "vol_24h_usd": 8065.33,
         "market_cap": 92903.0
-      }
+      },
+      "status": "NEW"
     },
     "tsatdggslybvcrm3pxiib8nmzkcb1iudjrrsengssxu": {
       "address": "tSATdGGSLYBVCrm3pXiib8NmzKcB1iUdjRRseNGssxu",
@@ -202,7 +210,8 @@
         "liq_usd": 151910.7,
         "vol_24h_usd": 4597.87,
         "market_cap": 54784.0
-      }
+      },
+      "status": "NEW"
     },
     "ikhhabrngxhkyhnews6gtezcp1zgjfgedgukgx68ray": {
       "address": "ikHHabrNGxHkyhNEws6GTeZCP1zgjfGEDGuKGX68ray",
@@ -216,7 +225,8 @@
         "liq_usd": 87186.2,
         "vol_24h_usd": 99498.45,
         "market_cap": 427142.0
-      }
+      },
+      "status": "NEW"
     },
     "0x9842989969687f7d249d01cae1d2ff6b7b6b6d35": {
       "address": "0x9842989969687f7d249d01Cae1D2ff6b7b6b6D35",
@@ -230,7 +240,8 @@
         "liq_usd": 749675.39,
         "vol_24h_usd": 4801.21,
         "market_cap": 1079453.0
-      }
+      },
+      "status": "NEW"
     }
   },
   "last_updated": "2026-03-06T14:40:00Z"
