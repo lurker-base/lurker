@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-06T04:18:22.338Z",
+    "updated_at": "2026-03-06T04:23:23.068Z",
     "source": "cio",
     "chain": "base",
     "count": 2,
@@ -10,37 +10,12 @@
     {
       "kind": "LURKER_SIGNAL",
       "status": "active",
-      "ts_utc": "2026-03-06T04:18:22.149576+00:00",
+      "ts_utc": "2026-03-06T04:23:23.036189+00:00",
       "chain": "base",
       "token": {
-        "name": "Coinmaker",
-        "symbol": "$COINMAKER",
-        "address": "0x3e3dc17ab2453a41c0e3e13dafdb0f81c231c60e"
-      },
-      "scores": {
-        "confidence": 100,
-        "rarity": "new",
-        "risk": "low"
-      },
-      "metrics": {
-        "price_usd": 0,
-        "mcap_usd": 0,
-        "liq_usd": 25115.0182,
-        "vol_24h_usd": 31171.8034086171
-      },
-      "dex": "geckoterminal",
-      "pair_address": "0x3e3dc17ab2453a41c0e3e13dafdb0f81c231c60e",
-      "scanner": "cio"
-    },
-    {
-      "kind": "LURKER_SIGNAL",
-      "status": "active",
-      "ts_utc": "2026-03-06T04:18:22.299900+00:00",
-      "chain": "base",
-      "token": {
-        "name": "ZAMA",
-        "symbol": "$ZAMA",
-        "address": "0x0dd2bc8bf0bc99d28101563bccc0a5c63803e7ca"
+        "name": "InstantClaw",
+        "symbol": "$INSTANTCLAW",
+        "address": "0xe7c2795a52db9a97c50a23c42c4529859b9f4192"
       },
       "scores": {
         "confidence": 100,
@@ -50,11 +25,36 @@
       "metrics": {
         "price_usd": 0,
         "mcap_usd": 0,
-        "liq_usd": 118355.4561,
-        "vol_24h_usd": 1038.03143966
+        "liq_usd": 52359.8924,
+        "vol_24h_usd": 2285.44926683
       },
       "dex": "geckoterminal",
-      "pair_address": "0x0dd2bc8bf0bc99d28101563bccc0a5c63803e7ca",
+      "pair_address": "0xe7c2795a52db9a97c50a23c42c4529859b9f4192",
+      "scanner": "cio"
+    },
+    {
+      "kind": "LURKER_SIGNAL",
+      "status": "active",
+      "ts_utc": "2026-03-06T04:23:22.822290+00:00",
+      "chain": "base",
+      "token": {
+        "name": "TENDRELA",
+        "symbol": "$TENDRELA",
+        "address": "0x69c6458f1f98e346424a9d86b5a033abc77ceba3"
+      },
+      "scores": {
+        "confidence": 95,
+        "rarity": "new",
+        "risk": "medium"
+      },
+      "metrics": {
+        "price_usd": 0,
+        "mcap_usd": 0,
+        "liq_usd": 27021.8667,
+        "vol_24h_usd": 4752.5693759755
+      },
+      "dex": "geckoterminal",
+      "pair_address": "0x69c6458f1f98e346424a9d86b5a033abc77ceba3",
       "scanner": "cio"
     }
   ]
