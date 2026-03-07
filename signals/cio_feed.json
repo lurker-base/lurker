@@ -1,64 +1,24 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-06T19:46:16.983000+00:00",
-    "generated_at": "2026-03-06T19:46:16.983000+00:00",
-    "status": "ok",
-    "count": 1,
+    "updated_at": "2026-03-07T10:14:22.168000+00:00",
+    "generated_at": "2026-03-07T10:14:22.168000+00:00",
+    "status": "calm",
+    "count": 0,
     "thresholds": {
-      "min_liq_usd": 1000,
-      "min_vol_5m": 500,
+      "min_liq_usd": 100,
+      "min_vol_5m": 10,
       "min_tx_5m": 1,
-      "max_age_min": 43200
+      "max_age_min": 10080
     },
-    "risk_distribution": {
-      "low": 1
-    },
+    "risk_distribution": {},
     "rejected": {
-      "too_old": 2
+      "low_volume": 13,
+      "too_old": 8,
+      "low_liq": 19,
+      "low_tx": 3
     },
     "source": "ultra_launch_scanner"
   },
-  "candidates": [
-    {
-      "token": {
-        "address": "0x2fe357b4202266b53f4bc03e519f5f8660452b4f",
-        "symbol": "ClawSight",
-        "name": "Claw Sight"
-      },
-      "pair": {
-        "address": "0x7d4862ad4d66e13c48930c4b405b224b47887e59a03c919da5bb5c1e4e2b3424",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 123035.05,
-        "vol_5m_usd": 28659.88,
-        "vol_1h_usd": 473766.68,
-        "txns_5m": 85,
-        "price_usd": 2.662e-06
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-06T18:09:07+00:00",
-        "token_first_seen": "2026-03-06T19:46:16.947000+00:00",
-        "age_minutes": 97.2,
-        "age_hours": 1.62
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.97
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": false,
-        "quality_score": 75
-      }
-    }
-  ]
+  "candidates": []
 }

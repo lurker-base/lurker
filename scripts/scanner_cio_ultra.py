@@ -16,11 +16,11 @@ CHAIN = "base"
 CIO_FILE = Path(__file__).parent.parent / "signals" / "cio_feed.json"
 STATE_FILE = Path(__file__).parent.parent / "state" / "token_registry.json"
 
-# ULTRA LAUNCH MODE - Discovery thresholds
-MIN_LIQ_USD = 1000         # $1k - fresh but viable
-MIN_VOLUME_5M = 500        # $500 - early activity
+# ULTRA LAUNCH MODE - Discovery thresholds (more permissive)
+MIN_LIQ_USD = 100          # $100 - very low threshold for discovery mode
+MIN_VOLUME_5M = 10         # $10 - very low threshold for discovery  
 MIN_TX_5M = 1              # 1 tx minimum
-MAX_AGE_MINUTES = 43200    # 30 days - extended for Base (was 7 days)
+MAX_AGE_MINUTES = 10080    # 7 days - ULTRA LAUNCH mode: be more lenient
 TIMEOUT = 15
 
 def now_ms():
@@ -121,15 +121,18 @@ def fetch_search_pairs():
     print("[SCANNER] Source 1: Search rake...")
     
     # Popular search terms that catch new pairs - expanded for more coverage
-    search_terms = ["WETH", "USDC", "ETH", "1000000", "0x", "BASE", "AERO", "CLANKER", "VIRTUAL", "DEGEN", "BRETT", "MIGGLES"]
+    # Use "new" to get latest pairs across all chains, then filter for Base
+    search_terms = ["new", "trending", "WETH", "USDC", "ETH", "1000000", "0x", "BASE", "AERO", "CLANKER", "VIRTUAL", "DEGEN", "BRETT", "MIGGLES", "BARNEY", "TOSHI", "GIGA"]
     all_pairs = []
     
-    for term in search_terms[:5]:  # Increased from 3 to 5 for more coverage
+    for term in search_terms[:8]:  # Increased for more coverage
         results = get_json(f"{BASE_URL}/latest/dex/search?q={term}")
         if results and isinstance(results, dict):
             pairs = results.get("pairs", [])
             # Filter Base chain
             base_pairs = [p for p in pairs if (p.get("chainId") or "").lower() == CHAIN]
+            if base_pairs:
+                print(f"[SCANNER]   '{term}' -> {len(base_pairs)} Base pairs")
             all_pairs.extend(base_pairs)
         time.sleep(0.2)
     
@@ -265,22 +268,30 @@ def process_candidate(item, registry):
     
     # Get pair creation time
     pair_created = pair.get("pairCreatedAt") or 0
+    
+    # Debug: print pair_created if it's 0
     if not pair_created:
         # Try to estimate from registry
         token_meta = registry["tokens"].get(token_addr, {})
         pair_created = token_meta.get("first_seen", now_ms())
     
-    # Calculate age
-    age_ms = now_ms() - pair_created
+    # Calculate age - use token_first_seen from registry if available (when LURKER first saw this token)
+    # Otherwise use pair_created. This prevents rejecting tokens that were just discovered but have old pairs
+    token_meta = registry["tokens"].get(token_addr, {})
+    first_seen_ms = token_meta.get("first_seen", pair_created)
+    
+    age_ms = now_ms() - first_seen_ms
     age_min = age_ms / 60000
     age_h = age_ms / 3600000
     
-    # ULTRA LAUNCH: accept up to 12h, but be more permissive for high liquidity tokens
+    # ULTRA LAUNCH: be more permissive with age
+    # Accept tokens up to 7 days (much more lenient for Base ecosystem)
+    MAX_AGE_ULTRA = 10080  # 7 days in minutes
     liq = safe_num((pair.get("liquidity") or {}).get("usd"), 0)
     
-    if age_min > MAX_AGE_MINUTES:
-        # Exception: keep tokens with $5k+ liquidity even if older (Base ecosystem is mature)
-        if liq >= 5000 and age_min <= 525600:  # Up to 1 year if liq >= $5k
+    if age_min > MAX_AGE_ULTRA:
+        # Exception: keep tokens with $3k+ liquidity even if older (Base ecosystem is mature)
+        if liq >= 3000 and age_min <= 525600:  # Up to 1 year if liq >= $3k
             pass  # Accept it
         else:
             return None, "too_old"
@@ -326,10 +337,10 @@ def process_candidate(item, registry):
         "name": token.get("name", "")
     }
     
-    # ULTRA LAUNCH thresholds
+    # ULTRA LAUNCH thresholds (more permissive)
     if liq < MIN_LIQ_USD:
         return None, "low_liq"
-    if vol_5m < MIN_VOLUME_5M and vol_1h < 500:
+    if vol_5m < MIN_VOLUME_5M and vol_1h < MIN_VOLUME_5M:
         return None, "low_volume"
     if tx_count_5m < MIN_TX_5M:
         return None, "low_tx"
@@ -491,27 +502,46 @@ def scan():
     with open(CIO_FILE, 'w', encoding='utf-8') as f:
         json.dump(feed, f, ensure_ascii=False, indent=2)
     
-    # ALSO save live_feed.json for dashboard
+    # ALSO save live_feed.json for dashboard with proper filtering and mapping
     LIVE_FEED = CIO_FILE.parent / "live_feed.json"
     live_signals = []
-    for c in candidates:
+    
+    # Filter: only include tokens with recent activity (volume in last 1h > $0)
+    # Sort by quality score (descending) to show top performers
+    valid_candidates = [c for c in candidates if c['metrics'].get('vol_1h_usd', 0) > 0]
+    valid_candidates.sort(key=lambda x: x['scores']['cio_score'], reverse=True)
+    
+    # Keep only top 20 performers
+    top_candidates = valid_candidates[:20]
+    
+    for c in top_candidates:
+        vol_1h = c['metrics'].get('vol_1h_usd', 0)
         live_signals.append({
             'address': c['token']['address'],
             'symbol': c['token']['symbol'],
             'name': c['token'].get('name', ''),
             'liquidity_usd': c['metrics']['liq_usd'],
-            'volume_24h': c['metrics'].get('vol_24h_usd', 0),
+            'volume_1h': vol_1h,
+            'volume_5m': c['metrics'].get('vol_5m_usd', 0),
             'quality_score': c['scores']['cio_score'],
             'age_minutes': c['timestamps']['age_minutes'],
+            'age_hours': round(c['timestamps']['age_minutes'] / 60, 1),
             'detected_at': c['timestamps'].get('token_first_seen', c['timestamps'].get('pair_created_at', iso())),
-            'risk_level': c['risk_level']
+            'risk_level': c['risk_level'],
+            'source': c.get('source', 'unknown')
         })
+    
     live_feed = {
         'meta': {
             'updated_at': iso(),
             'source': 'cio_scanner',
             'chain': CHAIN,
             'count': len(live_signals),
+            'filters': {
+                'min_volume_1h': 0,
+                'max_results': 20,
+                'sort_by': 'quality_score'
+            },
             'errors': []
         },
         'signals': live_signals
