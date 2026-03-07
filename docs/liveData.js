@@ -26,20 +26,18 @@ function renderSignalWidget(data) {
         return '<div class="signal-empty">No active signal</div>';
     }
     
-    // Support both V1 and V2 formats
-    const isV2 = data.format === 'LURKER_SIGNAL_V2' || data.kind === 'LURKER_SIGNAL_V2';
-    const signals = data.signals || (data.token ? [data] : []);
-    const signal = signals[0];
+    // Get the first signal from array or use data directly
+    const signals = data.signals || [];
+    const signal = signals.length > 0 ? signals[0] : data;
     
-    if (!signal) {
-        return '<div class="signal-empty">No active signal</div>';
+    if (!signal || (signal.status !== 'active' && signal.status !== 'posted')) {
+        return '<div class="signal-empty">🔍 Observing the chain...</div>';
     }
     
     const token = signal.token || {};
-    const scores = signal.scores || signal.scores || {};
-    const metrics = signal.metrics || signal.metrics || {};
+    const metrics = signal.metrics || {};
     const age = signal.age || {};
-    const confidence = signal.confidence || scores.confidence || 0;
+    const confidence = signal.confidence || 0;
     
     // V2 fields
     const thesis = signal.thesis || '';
