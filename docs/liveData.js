@@ -1,4 +1,4 @@
-// Live Data Loader — Fetches from GitHub JSON
+// Live Data Loader — Fetches from GitHub JSON (V2 FORMAT)
 const REPO_RAW = 'https://raw.githubusercontent.com/lurker-base/lurker/main';
 
 async function fetchLatestSignal() {
@@ -14,82 +14,78 @@ async function fetchLatestSignal() {
     }
 }
 
-async function fetchPerformance() {
-    try {
-        const res = await fetch(`${REPO_RAW}/state/performance_tracker.json?t=${Date.now()}`, {
-            cache: "no-store"
-        });
-        if (!res.ok) throw new Error('Tracker not found');
-        return await res.json();
-    } catch (e) {
-        console.log('No performance data yet:', e.message);
-        return null;
-    }
+function formatCurrency(value) {
+    if (!value) return '$0';
+    if (value >= 1000000) return '$' + (value / 1000000).toFixed(2) + 'M';
+    if (value >= 1000) return '$' + (value / 1000).toFixed(1) + 'k';
+    return '$' + value.toFixed(0);
 }
 
 function renderSignalWidget(data) {
-    if (!data || data.status !== 'posted') {
+    if (!data) {
         return '<div class="signal-empty">No active signal</div>';
     }
     
-    const isDryRun = data.mode === 'dry-run';
-    const dryRunBadge = isDryRun ? '<span class="badge dry-run">🧪 DRY-RUN</span>' : '';
-    const token = data.token || {};
-    const scores = data.scores || {};
-    const metrics = data.metrics || {};
+    // Support both V1 and V2 formats
+    const isV2 = data.format === 'LURKER_SIGNAL_V2' || data.kind === 'LURKER_SIGNAL_V2';
+    const signals = data.signals || (data.token ? [data] : []);
+    const signal = signals[0];
     
-    return `
-        <div class="signal-card ${isDryRun ? 'dry-run' : ''}">
-            <div class="signal-header">
-                <span class="signal-symbol">${token.symbol || 'UNKNOWN'}</span>
-                <span class="signal-chain">${data.chain || 'base'}</span>
-                ${dryRunBadge}
-            </div>
-            <div class="signal-meta">
-                <span>Conf: ${scores.confidence || 0}/100</span>
-                <span>Risk: ${scores.risk || 'high'}</span>
-            </div>
-            <div class="signal-metrics">
-                <span>Price: $${(metrics.price_usd || 0).toExponential(2)}</span>
-                <span>MC: $${((metrics.mcap_usd || 0) / 1000).toFixed(0)}k</span>
-                <span>Liq: $${((metrics.liq_usd || 0) / 1000).toFixed(0)}k</span>
-            </div>
-            <div class="signal-time">
-                ${data.ts_utc ? new Date(data.ts_utc).toLocaleTimeString() : '--:--'}
-            </div>
-        </div>
-    `;
-}
-
-function renderPerformanceWidget(data) {
-    if (!data) {
-        return '<div class="perf-empty">No performance data</div>';
+    if (!signal) {
+        return '<div class="signal-empty">No active signal</div>';
     }
     
-    const signals = data.signals || [];
-    const total = signals.length;
-    const wins = signals.filter(s => s.verdict === 'WIN').length;
-    const winRate = total > 0 ? ((wins / total) * 100).toFixed(0) : '--';
+    const token = signal.token || {};
+    const scores = signal.scores || signal.scores || {};
+    const metrics = signal.metrics || signal.metrics || {};
+    const age = signal.age || {};
+    const confidence = signal.confidence || scores.confidence || 0;
+    
+    // V2 fields
+    const thesis = signal.thesis || '';
+    const whyNow = signal.why_now || [];
+    const invalidation = signal.invalidation || '';
+    const dexUrl = signal.dex_url || '';
+    
+    const liq = metrics.liq_usd || 0;
+    const vol1h = metrics.vol_1h_usd || 0;
+    const momentum = metrics.momentum_24h || 0;
+    
+    const ageDisplay = age.hours ? `${age.hours.toFixed(1)}h` : (age.minutes ? `${age.minutes}m` : 'unknown');
     
     return `
-        <div class="perf-card">
-            <div class="perf-title">📊 Performance Tracker</div>
-            <div class="perf-stats">
-                <div class="perf-stat">
-                    <span class="perf-value">${total}</span>
-                    <span class="perf-label">signals</span>
-                </div>
-                <div class="perf-stat">
-                    <span class="perf-value">${winRate}%</span>
-                    <span class="perf-label">win rate</span>
-                </div>
-                <div class="perf-stat">
-                    <span class="perf-value">${data.target_signals || 20}</span>
-                    <span class="perf-label">target</span>
-                </div>
+        <div class="signal-card">
+            <div class="signal-header">
+                <span class="signal-symbol">${token.symbol || 'UNKNOWN'}</span>
+                <span class="signal-chain">${signal.chain || 'base'}</span>
+                <span class="confidence-badge">${confidence.toFixed(1)}/6</span>
             </div>
-            <div class="perf-phase">Phase: <strong>${data.phase || 'DRY-RUN'}</strong></div>
-            <div class="perf-note">Tracking transparency — results cannot be cherry-picked</div>
+            
+            <div class="signal-meta">
+                <span>Age: ${ageDisplay}</span>
+                <span>Liq: ${formatCurrency(liq)}</span>
+                <span>Vol 1h: ${formatCurrency(vol1h)}</span>
+                ${momentum ? `<span>Momentum: ${momentum.toFixed(0)}%</span>` : ''}
+            </div>
+            
+            ${thesis ? `<div class="signal-thesis"><strong>Thesis:</strong> ${thesis}</div>` : ''}
+            
+            ${whyNow.length > 0 ? `
+                <div class="signal-why-now">
+                    <strong>Why Now:</strong>
+                    <ul>
+                        ${whyNow.map(w => `<li>${w}</li>`).join('')}
+                    </ul>
+                </div>
+            ` : ''}
+            
+            ${invalidation ? `<div class="signal-invalidation"><strong>Invalidation:</strong> ${invalidation}</div>` : ''}
+            
+            <div class="signal-time">
+                ${signal.ts_utc ? new Date(signal.ts_utc).toLocaleString() : '--'}
+            </div>
+            
+            ${dexUrl ? `<a href="${dexUrl}" target="_blank" class="dex-link">📊 View on DexScreener</a>` : ''}
         </div>
     `;
 }
@@ -97,16 +93,10 @@ function renderPerformanceWidget(data) {
 // Auto-refresh every 30 seconds
 async function initLiveData() {
     const signalEl = document.getElementById('live-signal-widget');
-    const perfEl = document.getElementById('performance-widget');
     
     if (signalEl) {
         const signal = await fetchLatestSignal();
         signalEl.innerHTML = renderSignalWidget(signal);
-    }
-    
-    if (perfEl) {
-        const perf = await fetchPerformance();
-        perfEl.innerHTML = renderPerformanceWidget(perf);
     }
 }
 

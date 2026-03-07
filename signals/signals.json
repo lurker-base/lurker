@@ -10,7 +10,8 @@
       "max_results": 20,
       "sort_by": "quality_score"
     },
-    "errors": []
+    "errors": [],
+    "generated_at": "2026-03-07T14:41:05.839Z"
   },
   "signals": [
     {

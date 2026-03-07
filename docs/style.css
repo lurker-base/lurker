@@ -2820,3 +2820,64 @@ a {
         width: 100% !important;
     }
 }
+
+/* V2 Signal Widget Styles */
+.signal-thesis {
+    background: rgba(124, 58, 237, 0.1);
+    border-left: 3px solid #7C3AED;
+    padding: 8px 12px;
+    margin: 8px 0;
+    font-size: 0.85em;
+    border-radius: 0 4px 4px 0;
+}
+
+.signal-why-now {
+    background: rgba(0, 209, 255, 0.1);
+    border-left: 3px solid #00D1FF;
+    padding: 8px 12px;
+    margin: 8px 0;
+    font-size: 0.85em;
+    border-radius: 0 4px 4px 0;
+}
+
+.signal-why-now ul {
+    margin: 4px 0 0 0;
+    padding-left: 16px;
+}
+
+.signal-why-now li {
+    margin: 2px 0;
+}
+
+.signal-invalidation {
+    background: rgba(239, 68, 68, 0.1);
+    border-left: 3px solid #EF4444;
+    padding: 8px 12px;
+    margin: 8px 0;
+    font-size: 0.85em;
+    border-radius: 0 4px 4px 0;
+}
+
+.confidence-badge {
+    background: linear-gradient(135deg, #7C3AED, #00D1FF);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.dex-link {
+    display: inline-block;
+    background: #00D1FF;
+    color: #000;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.dex-link:hover {
+    background: #00b8e0;
+}
