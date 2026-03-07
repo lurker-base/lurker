@@ -1,4 +1,16 @@
 // LURKER Unified Feed — CIO + WATCH + HOTLIST + FAST-CERTIFIED + CERTIFIED
+
+// Inject V2 styles
+(function() {
+    const style = document.createElement('style');
+    style.textContent = `.confidence-badge { padding: 2px 8px; border-radius: 10px; color: white; font-weight: bold; font-size: 0.75em; }
+.thesis-box { font-size: 0.8em; color: #a78bfa; background: rgba(124,58,237,0.1); padding: 6px 10px; border-radius: 4px; margin: 4px 0; }
+.why-now-box { font-size: 0.75em; color: #fbbf24; margin: 4px 0; }
+.invalidation-box { font-size: 0.7em; color: #f87171; font-style: italic; margin: 4px 0; }`;
+    if (document.head) document.head.appendChild(style);
+})();
+
+
 const REPO_RAW = 'https://raw.githubusercontent.com/lurker-base/lurker/main';
 
 // Unified state
@@ -55,6 +67,14 @@ function renderAgeBadge(ageHours) {
 
 function renderWatchCard(item) {
     const symbol = pick(item, ['token.symbol', 'symbol'], '???');
+    // Add confidence badge
+    let confBadge = '';
+    if (confidence > 0) {
+        let confColor = '#ef4444';
+        if (confidence >= 5) confColor = '#22c55e';
+        else if (confidence >= 3) confColor = '#f59e0b';
+        confBadge = `<span class="confidence-badge" style="background:\${confColor}">\${confidence.toFixed(1)}/6</span>`;
+    }
     const ageMin = safeNum(item.timestamps?.age_minutes, 0);
     const age = ageMin / 60;
     const checks = item.timestamps?.checks || 1;
@@ -84,6 +104,7 @@ function renderWatchCard(item) {
                 Buffer zone (10-30m) — re-testing before HOTLIST
             </div>
             ${renderBadges(item.badges || [])}
+            ${invalidation ? `<div class="invalidation-box">🛑 ${invalidation}</div>` : ''}
             <div class="card-footer">
                 <span class="age-text">${formatAge(ageMin)} old</span>
                 ${url !== '#' ? `<a href="${url}" target="_blank" class="dex-link">DexScreener →</a>` : ''}
@@ -164,7 +185,24 @@ function renderBadges(badges) {
 }
 
 function renderCIOCard(item) {
+    // V2 field extraction
+    const confidence = safeNum(item.confidence || 0, 0);
+    const thesis = item.thesis || '';
+    const whyNow = item.why_now || [];
+    const invalidation = item.invalidation || '';
+    const dexUrl = item.dex_url || '';
+    const vol24h = safeNum(item.metrics?.volume24h || item.metrics?.vol_24h_usd, 0);
+    const momentum = safeNum(item.metrics?.momentum_24h, 0);
+    
     const symbol = pick(item, ['token.symbol', 'symbol'], '???');
+    // Add confidence badge
+    let confBadge = '';
+    if (confidence > 0) {
+        let confColor = '#ef4444';
+        if (confidence >= 5) confColor = '#22c55e';
+        else if (confidence >= 3) confColor = '#f59e0b';
+        confBadge = `<span class="confidence-badge" style="background:\${confColor}">\${confidence.toFixed(1)}/6</span>`;
+    }
     const age = safeNum(item.age_hours || item.timestamps?.age_hours, 0);
     const ageMin = safeNum(item.timestamps?.age_minutes, age * 60);
     const score = safeNum(item.scores?.cio_score, 0);
@@ -203,11 +241,14 @@ function renderCIOCard(item) {
             <div class="card-header">
                 <span class="token-symbol">${symbol}</span>
                 <span class="badges">
-                    ${renderQualityBadge(quality, liq, vol1h)}
+                    ${confBadge}
                     ${renderAgeBadge(age)}
                     ${renderSourceBadge(source)}
                 </span>
             </div>
+            
+            ${thesis ? `<div class="thesis-box">📝 ${thesis}</div>` : ''}
+            ${whyNow.length > 0 ? `<div class="why-now-box">🔥 ${whyNow.slice(0,2).join(' | ')}</div>` : ''}
             <div style="margin: 0.5rem 0;">
                 ${renderRiskBadge(riskLevel, risks)}
                 ${renderBadges(badges)}
@@ -215,9 +256,11 @@ function renderCIOCard(item) {
             <div class="card-metrics">
                 <span>⭐ ${score}/100</span>
                 <span>💧 $${(liq/1e3).toFixed(1)}k</span>
-                <span>📈 $${(vol5m/1e3).toFixed(1)}k/5m</span>
+                <span>📈 $${(vol1h/1e3).toFixed(0)}k/h</span>
+                ${momentum ? `<span>🚀 ${momentum > 0 ? '+' : ''}${momentum.toFixed(0)}%</span>` : ''}
                 <span>🔥 ${Math.round(tx5m)} tx/5m</span>
             </div>
+            ${invalidation ? `<div class="invalidation-box">🛑 ${invalidation}</div>` : ''}
             <div class="card-footer">
                 <span class="age-text">${formatAge(ageMin)} old</span>
                 ${url !== '#' ? `<a href="${url}" target="_blank" class="dex-link">DexScreener →</a>` : ''}
@@ -228,6 +271,14 @@ function renderCIOCard(item) {
 
 function renderHotlistCard(item) {
     const symbol = pick(item, ['token.symbol', 'symbol'], '???');
+    // Add confidence badge
+    let confBadge = '';
+    if (confidence > 0) {
+        let confColor = '#ef4444';
+        if (confidence >= 5) confColor = '#22c55e';
+        else if (confidence >= 3) confColor = '#f59e0b';
+        confBadge = `<span class="confidence-badge" style="background:\${confColor}">\${confidence.toFixed(1)}/6</span>`;
+    }
     const ageMin = safeNum(item.timestamps?.age_minutes, 0);
     const age = ageMin / 60; // Convert to hours for display
     const score = safeNum(item.scores?.hotlist_score, 0);
@@ -346,12 +397,29 @@ function renderStats() {
 // Feed loaders
 async function loadCIOFeed() {
     try {
-        const res = await fetch(`${REPO_RAW}/signals/cio_feed.json?t=${Date.now()}`, { cache: 'no-store' });
-        if (!res.ok) throw new Error('CIO HTTP ' + res.status);
-        const data = await res.json();
-        // Support both old (candidates) and new (tokens) structure
-        feedState.cio = data.candidates || data.tokens || [];
-        feedState.updated = data.meta?.updated_at || data.updated_at || '--:--';
+        // V2 SUPPORT: Try latest.json first (our new V2 format)
+        const res = await fetch(`${REPO_RAW}/signals/latest.json?t=${Date.now()}`, { cache: 'no-store' });
+        if (res.ok) {
+            const data = await res.json();
+            // V2 format: data.signals is array
+            if (data.signals && data.signals.length > 0) {
+                feedState.cio = data.signals;
+                feedState.updated = data.meta?.updated_at || data.updated_at || '--:--';
+                return;
+            }
+            // Direct V2 token object
+            if (data.token) {
+                feedState.cio = [data];
+                feedState.updated = data.meta?.updated_at || '--:--';
+                return;
+            }
+        }
+        // Fallback to old format
+        const res2 = await fetch(`${REPO_RAW}/signals/cio_feed.json?t=${Date.now()}`, { cache: 'no-store' });
+        if (!res2.ok) throw new Error('CIO HTTP ' + res2.status);
+        const data2 = await res2.json();
+        feedState.cio = data2.candidates || data2.tokens || [];
+        feedState.updated = data2.meta?.updated_at || data2.updated_at || '--:--';
     } catch (e) {
         console.error('CIO load failed:', e);
     }
@@ -495,3 +563,75 @@ document.addEventListener('DOMContentLoaded', () => {
     // Refresh every 30 seconds
     setInterval(renderAllFeeds, 30000);
 });
+
+// === V2 FORMAT SUPPORT ===
+function isV2Format(data) {
+    return data && (data.format === 'LURKER_SIGNAL_V2' || data.kind === 'LURKER_SIGNAL_V2' || data.meta?.format === 'LURKER_SIGNAL_V2');
+}
+
+function renderV2Token(token) {
+    const tokenInfo = token.token || {};
+    const metrics = token.metrics || {};
+    const age = token.age || {};
+    const confidence = token.confidence || 0;
+    
+    const symbol = tokenInfo.symbol || '???';
+    const liq = safeNum(metrics.liq_usd, 0);
+    const vol24h = safeNum(metrics.volume24h || metrics.vol_1h_usd || 0, 0);
+    const price = metrics.price_usd || 0;
+    const momentum = safeNum(metrics.momentum_24h, 0);
+    
+    const ageDisplay = age.hours ? `${age.hours.toFixed(1)}h` : (age.minutes ? `${age.minutes}m` : '?');
+    
+    // Thesis and why_now
+    const thesis = token.thesis || '';
+    const whyNow = token.why_now || [];
+    const invalidation = token.invalidation || '';
+    
+    // Confidence badge color
+    let confColor = '#ef4444'; // red
+    if (confidence >= 4) confColor = '#22c55e'; // green
+    else if (confidence >= 2) confColor = '#f59e0b'; // yellow
+    
+    return `
+        <div class="token-row v2">
+            <div class="token-main">
+                <span class="token-symbol">${symbol}</span>
+                <span class="token-age" style="background:${confColor}">${confidence.toFixed(1)}/6</span>
+            </div>
+            <div class="token-stats">
+                <span>Liq: $${(liq/1000).toFixed(0)}k</span>
+                <span>Vol: $${(vol24h/1000).toFixed(0)}k</span>
+                <span>Momentum: ${momentum > 0 ? '+' : ''}${momentum.toFixed(0)}%</span>
+                <span>Age: ${ageDisplay}</span>
+            </div>
+            ${thesis ? `<div class="token-thesis">📝 ${thesis}</div>` : ''}
+            ${whyNow.length > 0 ? `<div class="token-why-now">🔥 ${whyNow.slice(0,2).join(' | ')}</div>` : ''}
+            ${invalidation ? `<div class="token-invalidation">🛑 Invalidation: ${invalidation}</div>` : ''}
+        </div>
+    `;
+}
+
+// Add V2 CSS
+const v2css = `
+.token-v2 { border-left: 3px solid #7C3AED; margin: 8px 0; padding: 12px; background: rgba(124,58,237,0.05); border-radius: 8px; }
+.token-thesis { font-size: 0.85em; color: #a78bfa; margin-top: 8px; padding: 8px; background: rgba(124,58,237,0.1); border-radius: 4px; }
+.token-why-now { font-size: 0.8em; color: #fbbf24; margin-top: 4px; }
+.token-invalidation { font-size: 0.75em; color: #f87171; margin-top: 4px; }
+.token-age { padding: 2px 8px; border-radius: 10px; color: white; font-weight: bold; }
+`;
+
+// Inject V2 CSS
+if (typeof document !== 'undefined') {
+    const style = document.createElement('style');
+    style.textContent = v2css;
+    document.head.appendChild(style);
+}
+
+// Add V2 CSS styles
+const v2Styles = `
+.confidence-badge { padding: 2px 8px; border-radius: 10px; color: white; font-weight: bold; font-size: 0.75em; }
+.thesis-box { font-size: 0.8em; color: #a78bfa; background: rgba(124,58,237,0.1); padding: 6px 10px; border-radius: 4px; margin: 4px 0; }
+.why-now-box { font-size: 0.75em; color: #fbbf24; margin: 4px 0; }
+.invalidation-box { font-size: 0.7em; color: #f87171; font-style: italic; margin: 4px 0; }
+`;
