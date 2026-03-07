@@ -1,31 +1,66 @@
 {
-  "kind": "LURKER_SIGNAL",
-  "status": "posted",
-  "ts_utc": "2026-02-22T09:35:00Z",
-  "chain": "base",
-  "token": {
-    "name": "LURKER",
-    "symbol": "$LURKER",
-    "address": "0xDRYRUN",
-    "pair_url": "https://dexscreener.com/base/0xDRYRUN"
+  "meta": {
+    "updated_at": "2026-03-07T14:41:05.833Z",
+    "format": "LURKER_SIGNAL_V2",
+    "source": "cio",
+    "chain": "base",
+    "count": 1,
+    "filters": {
+      "min_volume_1h": 100,
+      "max_results": 20,
+      "sort_by": "quality_score"
+    },
+    "errors": []
   },
-  "scores": {
-    "confidence": 78,
-    "rarity": "3-5/day",
-    "risk": "high"
-  },
-  "metrics": {
-    "price_usd": 0.00000145,
-    "mcap_usd": 485000,
-    "liq_usd": 92000,
-    "vol_5m_usd": 15000
-  },
-  "trade": {
-    "entry": "0.00000125 - 0.00000135",
-    "targets": ["0.00000160", "0.00000185"],
-    "stop": "0.00000105"
-  },
-  "message": "🔔 LURKER ALPHA — $LURKER (Base)\n\nConf: 78/100 | Risk: HIGH\nPrice: $0.00000145 | MC: $485k | Liq: $92k\n\n📈 Entry: 0.00000125 – 0.00000135\n🎯 Targets:\n  • TP1: 1.60 (+10%)\n  • TP2: 1.85 (+28%)\n🛑 Stop: 1.05 (-23%)\n\n⏱️ Momentum-based | Short-term setup\n\n🔗 Dex: https://dexscreener.com/base/0xDRYRUN\n⚠️ Rarity: 3–5/day | DYOR",
-  "source": "manual_assist",
-  "signal_number": "#2"
+  "signals": [
+    {
+      "kind": "LURKER_SIGNAL_V2",
+      "status": "active",
+      "ts_utc": "2026-03-07T10:17:24.016000+00:00",
+      "chain": "base",
+      "token": {
+        "name": "XCLAW",
+        "symbol": "$XCLAW",
+        "address": "0x0bfb55d47d4c6d3440c54da7e279fca18c798365"
+      },
+      "dex_url": "https://dexscreener.com/base/0x5b4a88057782001ea9e0c2fbb622fffc7b79554357cb5836c12bb6ecdc3ecf9a",
+      "thesis": "Meme token with strong visual identity and community appeal",
+      "team": {
+        "name": "Unknown",
+        "twitter": null,
+        "credibility": "unknown"
+      },
+      "metrics": {
+        "price_usd": 0.00003765,
+        "mcap_usd": 0,
+        "liq_usd": 133904.26,
+        "vol_1h_usd": 288440.32,
+        "vol_5m_usd": 34332.45,
+        "momentum_24h": 155
+      },
+      "why_now": [
+        "Fresh launch (< 2h) - early adopter window",
+        "Strong volume: $288K 1h",
+        "High tx activity: 95 txns/5m",
+        "Maximum freshness score - real-time attention"
+      ],
+      "invalidation": "Price drops >50% from signal price",
+      "next_check": "2026-03-07T15:41:05.834Z",
+      "confidence": 6,
+      "scores": {
+        "confidence_raw": 100,
+        "rarity": "new",
+        "risk": "low"
+      },
+      "age": {
+        "minutes": 32,
+        "hours": 0.5,
+        "days": 0
+      },
+      "dex": "uniswap",
+      "pair_address": "0x5b4a88057782001ea9e0c2fbb622fffc7b79554357cb5836c12bb6ecdc3ecf9a",
+      "scanner": "cio",
+      "source": "profiles"
+    }
+  ]
 }
