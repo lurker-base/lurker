@@ -147,7 +147,7 @@
 
     <script src="sparks.js"></script>
     <script>
-        const CIO_FEED_URL = 'https://raw.githubusercontent.com/lurker-base/lurker/main/signals/cio_feed.json';
+        const CIO_FEED_URL = 'https://raw.githubusercontent.com/lurker-base/lurker/main/signals/latest.json';
         const DEXSCREENER_API = 'https://api.dexscreener.com/latest/dex/tokens';
         
         let allTokens = [];
@@ -203,7 +203,25 @@
                 if (!response.ok) throw new Error('failed to load');
                 const data = await response.json();
                 
-                allTokens = data.candidates || [];
+                // V2 format support: signals array
+                allTokens = data.signals || data.candidates || [];
+                
+                // Convert V2 format to old format for compatibility
+                if (data.meta?.format === 'LURKER_SIGNAL_V2' && data.signals) {
+                    allTokens = data.signals.map(s => ({
+                        token: s.token,
+                        score: (s.confidence || 0) * 16.67, // Convert 0-6 to 0-100
+                        risk: { level: s.scores?.risk || 'medium' },
+                        metrics: s.metrics,
+                        age_hours: s.age?.hours || 0,
+                        source: s.source,
+                        dex_url: s.dex_url,
+                        thesis: s.thesis,
+                        why_now: s.why_now,
+                        invalidation: s.invalidation,
+                        confidence: s.confidence
+                    }));
+                }
                 
                 // Validate all tokens with DexScreener in parallel
                 const validatePromises = allTokens.map(async (token) => {
@@ -264,9 +282,25 @@
                 const risk = token.risk?.level || 'medium';
                 const riskClass = risk === 'high' ? 'badge-risk-high' : risk === 'medium' ? 'badge-risk-med' : 'badge-risk-low';
                 
+                // V2 fields
+                const confidence = token.confidence || 0;
+                const thesis = token.thesis || '';
+                const whyNow = token.why_now || [];
+                const invalidation = token.invalidation || '';
+                
+                // Confidence badge
+                let confBadge = '';
+                if (confidence > 0) {
+                    let confColor = '#ef4444';
+                    if (confidence >= 5) confColor = '#22c55e';
+                    else if (confidence >= 3) confColor = '#f59e0b';
+                    confBadge = '<span class="badge" style="background:' + confColor + '">' + confidence.toFixed(1) + '/6</span>';
+                }
+                
                 // Generate badges - LURKER native indicators
                 const badges = [];
-                badges.push('<span class="badge badge-score">' + token.score + '%</span>');
+                badges.push('<span class="badge badge-score">' + token.score.toFixed(0) + '%</span>');
+                if (confBadge) badges.push(confBadge);
                 
                 // Age badge
                 if (token.age_hours < 0.1) badges.push('<span class="badge badge-fresh">🔥 FRESH</span>');
@@ -360,3 +394,9 @@
     </script>
 </body>
 </html>
+
+<style>
+.v2-thesis { font-size: 0.75em; color: #a78bfa; background: rgba(124,58,237,0.1); padding: 4px 8px; border-radius: 4px; margin: 4px 0; }
+.v2-why { font-size: 0.7em; color: #fbbf24; margin: 2px 0; }
+.v2-inv { font-size: 0.65em; color: #f87171; font-style: italic; margin: 2px 0; }
+</style>
