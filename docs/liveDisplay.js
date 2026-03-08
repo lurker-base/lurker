@@ -113,7 +113,7 @@ function createCard(s) {
         <div class="signal-header">
             <span class="signal-type">
                 <span class="badge ${statusClass}">${statusText}</span>
-                <span style="color:#fff;font-weight:bold;margin-left:0.5rem">${symbol}</span>
+                <span style="color:#fff;font-weight:bold;margin-left:0.5rem">$${symbol}</span>
                 ${s.score ? `<span style="margin-left:0.5rem;font-size:0.8rem;color:var(--accent)">Score: ${s.score}</span>` : ''}
             </span>
             <span class="signal-time">${age}</span>
