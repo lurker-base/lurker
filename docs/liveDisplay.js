@@ -92,7 +92,7 @@ function createCard(s) {
     }
     
     const addr = s.contract_address || s.address || '???';
-    const symbol = s.symbol || '???';
+    const symbol = (s.symbol || '???').replace(/^\$/, '');
     const mcap = s.marketCap || s.market_cap || 0;
     const vol5m = s.volume5m || s.volume_5m || 0;
     const age = fmtAge(s.detectedAt, s.ageHours, s.ageMinutes);
