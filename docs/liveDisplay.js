@@ -74,19 +74,21 @@ function createCard(s) {
     const hasLiq = liq > 1000;
     const hasVol = vol24h > 5000;
     
-    let emoji = '🆕';
-    let badgeClass = 'badge-new';
+    let statusText = 'NEW';
+    let statusClass = 'badge-new';
     
     if (s.source === 'historical') {
-        emoji = '📜';
+        statusText = 'HISTORICAL';
+        statusClass = 'badge-historical';
     } else if (s.status === 'HOT' || s.score >= 70) {
-        emoji = '🔥';
-        badgeClass = 'badge-hot';
+        statusText = 'HOT';
+        statusClass = 'badge-hot';
     } else if (s.status === 'WARM' || s.score >= 40) {
-        emoji = '⚡';
-        badgeClass = 'badge-warm';
+        statusText = 'WARM';
+        statusClass = 'badge-warm';
     } else if (hasLiq && hasVol) {
-        emoji = '💧';
+        statusText = 'ACTIVE';
+        statusClass = 'badge-active';
     }
     
     const addr = s.contract_address || s.address || '???';
@@ -110,9 +112,9 @@ function createCard(s) {
     div.innerHTML = `
         <div class="signal-header">
             <span class="signal-type">
-                <span>${emoji}</span>
-                <span>$${symbol}</span>
-                ${s.score ? `<span style="margin-left:0.5rem;font-size:0.8rem;color:var(--accent)">${s.score}</span>` : ''}
+                <span class="badge ${statusClass}">${statusText}</span>
+                <span style="color:#fff;font-weight:bold;margin-left:0.5rem">${symbol}</span>
+                ${s.score ? `<span style="margin-left:0.5rem;font-size:0.8rem;color:var(--accent)">Score: ${s.score}</span>` : ''}
             </span>
             <span class="signal-time">${age}</span>
         </div>
@@ -271,16 +273,16 @@ async function load() {
         if (counterDisplay) {
             counterDisplay.innerHTML = `
                 <span style="color:#888">Total: ${totalCount}</span> · 
-                <span style="color:#ff4444">🔥${hotCount}</span> · 
-                <span style="color:#ffaa00">⚡${warmCount}</span> · 
-                <span style="color:#00ff88">💰${withLiq}</span>
-                ${currentFilter.warnOnly ? ` <span style="color:#00ff88">| Affichés: ${filtered.length}</span>` : ''}
+                <span style="color:#ff4444">HOT: ${hotCount}</span> · 
+                <span style="color:#ffaa00">WARM: ${warmCount}</span> · 
+                <span style="color:#00ff88">LIQ: ${withLiq}</span>
+                ${currentFilter.warnOnly ? ` <span style="color:#00ff88">| Shown: ${filtered.length}</span>` : ''}
             `;
         }
         
         // Legacy counters
         const countEl = document.getElementById('token-count');
-        if (countEl) countEl.textContent = `${totalCount} total (${withLiq} w/ liq, ${hotCount}🔥, ${warmCount}⚡)`;
+        if (countEl) countEl.textContent = `${totalCount} total (${withLiq} w/ liq, ${hotCount}HOT, ${warmCount}WARM)`;
         
         const scannedEl = document.getElementById('scanned-count');
         if (scannedEl) scannedEl.textContent = totalCount;
