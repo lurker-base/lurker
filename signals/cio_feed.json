@@ -1,33 +1,32 @@
 {
-  "timestamp": "2026-03-14T20:29:58.857387+00:00",
+  "timestamp": "2026-03-14T20:34:59.520519+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x58f4227bfdc7788cf961c0d0e9fdd4e7e901bbe9",
-        "symbol": "\u9a6c\u65af\u514b\u5e01\u2600\ufe0f",
-        "name": "\u9a6c\u65af\u514b\u5e01\u2600\ufe0f"
+        "address": "0x703b4b48246669189f7e9d3700a629cecc20e920",
+        "symbol": "ETNYM",
+        "name": "ETNYM"
       },
       "metrics": {
-        "liq_usd": 6427.5565,
-        "vol_24h_usd": 1015.1553542958,
-        "txns_24h": 71,
+        "liq_usd": 7247.614,
+        "vol_24h_usd": 1226.9687650765,
+        "txns_24h": 14,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "high",
         "factors": [
           "new_token"
         ]
       },
       "score": 95,
-      "age_hours": 0.06158262083333334,
-      "detected_at": "2026-03-14T20:29:58.854902+00:00",
+      "age_hours": 0.06064798138888888,
+      "detected_at": "2026-03-14T20:34:59.518581+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 SUPER FRESH",
-        "\u26a1 BUZZ",
-        "\ud83d\ude80 PUMP"
+        "\ud83d\ude80 MEGA PUMP"
       ]
     }
   ]
