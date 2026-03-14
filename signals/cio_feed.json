@@ -1,17 +1,48 @@
 {
-  "timestamp": "2026-03-14T11:53:52.381172+00:00",
+  "timestamp": "2026-03-14T12:13:55.278568+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x8094694bf6f3e347482a4c8783b98bc17b232cfb",
-        "symbol": "UGOR",
-        "name": "UGOR"
+        "address": "0x6a103d89dc49731ef2b55ca18599646dc627dba3",
+        "symbol": "AGENTDAVE",
+        "name": "AGENTDAVE"
       },
       "metrics": {
-        "liq_usd": 6051.4305,
-        "vol_24h_usd": 2831.4097697077,
-        "txns_24h": 62,
+        "liq_usd": 29997.3227,
+        "vol_24h_usd": 24171.6799776252,
+        "txns_24h": 63,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "low",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.14109979583333335,
+      "detected_at": "2026-03-14T12:13:55.100571+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udca7 LIQ",
+        "\ud83d\udcc8 ACTIVE",
+        "\u26a1 BUZZ",
+        "\ud83d\udcd7 PUMPING",
+        "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x4ad9d8683bd75885e28f07c555a547bca1ba9624",
+        "symbol": "CLAW",
+        "name": "CLAW"
+      },
+      "metrics": {
+        "liq_usd": 6780.3278,
+        "vol_24h_usd": 1678.7039115251,
+        "txns_24h": 47,
         "price_usd": 0
       },
       "risk": {
@@ -21,13 +52,12 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.15533644694444446,
-      "detected_at": "2026-03-14T11:53:52.378399+00:00",
+      "age_hours": 0.15669462194444445,
+      "detected_at": "2026-03-14T12:13:55.276158+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\u26a1 BUZZ",
-        "\ud83d\ude80 MEGA PUMP"
+        "\ud83d\ude80 PUMP"
       ]
     }
   ]
