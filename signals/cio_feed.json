@@ -1,61 +1,32 @@
 {
-  "timestamp": "2026-03-14T11:28:48.261884+00:00",
+  "timestamp": "2026-03-14T11:38:49.181350+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x8b0f59c08a7f0b7cb29698b811c4fac51e6c75d6",
-        "symbol": "ClawMaven",
-        "name": "ClawMaven"
+        "address": "0x1426ed5ed9446204cff66502152d630cad45dfe9",
+        "symbol": "SEBUT",
+        "name": "SEBUT"
       },
       "metrics": {
-        "liq_usd": 51344.712,
-        "vol_24h_usd": 1851.90908452,
+        "liq_usd": 6419.5871,
+        "vol_24h_usd": 1289.4350597433,
         "txns_24h": 11,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "high",
         "factors": [
           "new_token"
         ]
       },
-      "score": 100,
-      "age_hours": 0.10027236833333333,
-      "detected_at": "2026-03-14T11:28:48.116508+00:00",
+      "score": 95,
+      "age_hours": 0.0705570986111111,
+      "detected_at": "2026-03-14T11:38:49.178828+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 FRESH",
-        "\ud83d\udca7 DEEP LIQ",
-        "\u2b50 GEM"
-      ]
-    },
-    {
-      "token": {
-        "address": "0x9e1ab18d728d8235426e9b7085f65aa27f532e51",
-        "symbol": "LMTS",
-        "name": "LMTS"
-      },
-      "metrics": {
-        "liq_usd": 152159.8439,
-        "vol_24h_usd": 1557.25319095,
-        "txns_24h": 25,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "low",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.21308794972222223,
-      "detected_at": "2026-03-14T11:28:48.259816+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 FRESH",
-        "\ud83d\udcb0 WHALE",
-        "\u2b50 GEM"
+        "\ud83d\udd25 SUPER FRESH",
+        "\ud83d\ude80 MEGA PUMP"
       ]
     }
   ]
