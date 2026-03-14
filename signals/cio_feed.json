@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-14T14:14:10.219331+00:00",
+  "timestamp": "2026-03-14T14:19:11.056380+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x3bfab66d9e4058c4ad86ca47fc9ad90647e1dfb4",
-        "symbol": "AIMPACT",
-        "name": "AIMPACT"
+        "address": "0xb89a135d22662f66dcbb68b19df0e24b7e0d66b2",
+        "symbol": "BaseMe",
+        "name": "BaseMe"
       },
       "metrics": {
-        "liq_usd": 6451.5177,
-        "vol_24h_usd": 1343.593770558,
-        "txns_24h": 37,
+        "liq_usd": 51812.9997,
+        "vol_24h_usd": 2043.56416588,
+        "txns_24h": 12,
         "price_usd": 0
       },
       "risk": {
@@ -20,9 +20,65 @@
           "new_token"
         ]
       },
-      "score": 95,
-      "age_hours": 0.11973187388888888,
-      "detected_at": "2026-03-14T14:14:10.216475+00:00",
+      "score": 100,
+      "age_hours": 0.09941017222222222,
+      "detected_at": "2026-03-14T14:19:10.932857+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 SUPER FRESH",
+        "\ud83d\udca7 DEEP LIQ",
+        "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0xa5d563422eb3ac1b42de00120fe545ff06ac049f",
+        "symbol": "WORK",
+        "name": "WORK"
+      },
+      "metrics": {
+        "liq_usd": 151053.258,
+        "vol_24h_usd": 1015.1936105,
+        "txns_24h": 33,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "low",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.12664803972222222,
+      "detected_at": "2026-03-14T14:19:11.005859+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udcb0 WHALE",
+        "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x004ae351da1093e5abdafbdc92a70d37dab035f1",
+        "symbol": "\u9f99\u867e",
+        "name": "\u9f99\u867e"
+      },
+      "metrics": {
+        "liq_usd": 13098.8975,
+        "vol_24h_usd": 1461.7518026453,
+        "txns_24h": 10,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.19889054277777776,
+      "detected_at": "2026-03-14T14:19:11.054407+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
