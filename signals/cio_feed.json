@@ -1,32 +1,32 @@
 {
-  "timestamp": "2026-03-14T14:44:13.609862+00:00",
+  "timestamp": "2026-03-14T14:59:15.525730+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x26745c4b869fd2204c2b6354f3065caee27e46eb",
-        "symbol": "SPACE",
-        "name": "SPACE"
+        "address": "0x19b7f0344b8b4f442f9d3c0fe2701755a0d92ae1",
+        "symbol": "Anvil",
+        "name": "Anvil"
       },
       "metrics": {
-        "liq_usd": 151263.765,
-        "vol_24h_usd": 1083.82799317,
-        "txns_24h": 36,
+        "liq_usd": 52585.0242,
+        "vol_24h_usd": 2442.68375829,
+        "txns_24h": 12,
         "price_usd": 0
       },
       "risk": {
-        "level": "low",
+        "level": "medium",
         "factors": [
           "new_token"
         ]
       },
       "score": 100,
-      "age_hours": 0.15015294472222224,
-      "detected_at": "2026-03-14T14:44:13.606488+00:00",
+      "age_hours": 0.11735177611111111,
+      "detected_at": "2026-03-14T14:59:15.522662+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\udcb0 WHALE",
+        "\ud83d\udca7 DEEP LIQ",
         "\u2b50 GEM"
       ]
     }
