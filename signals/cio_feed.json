@@ -1,45 +1,44 @@
 {
-  "timestamp": "2026-03-14T13:14:03.593854+00:00",
+  "timestamp": "2026-03-14T13:29:05.625929+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x3c73eb0e0858b32f311a7a365a316b00818d2bd6",
-        "symbol": "WM",
-        "name": "WM"
+        "address": "0x14abd6b5baf8f66c3d232d2b8008d56f2f246019",
+        "symbol": "SEEMB",
+        "name": "SEEMB"
       },
       "metrics": {
-        "liq_usd": 51136.7437,
-        "vol_24h_usd": 1714.96487635,
-        "txns_24h": 9,
+        "liq_usd": 7441.2538,
+        "vol_24h_usd": 1857.8140898863,
+        "txns_24h": 17,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "high",
         "factors": [
           "new_token"
         ]
       },
-      "score": 100,
-      "age_hours": 0.09288532805555555,
-      "detected_at": "2026-03-14T13:14:03.447941+00:00",
+      "score": 95,
+      "age_hours": 0.13340658277777778,
+      "detected_at": "2026-03-14T13:29:05.454276+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 SUPER FRESH",
-        "\ud83d\udca7 DEEP LIQ",
-        "\u2b50 GEM"
+        "\ud83d\udd25 FRESH",
+        "\ud83d\ude80 MEGA PUMP"
       ]
     },
     {
       "token": {
-        "address": "0x2d4e9f009eaf4dcd90925ba026711156f76da2cd",
-        "symbol": "UGOR",
-        "name": "UGOR"
+        "address": "0x3413978f4522d7cfc1460d7bfd5e69af8d5be6ae",
+        "symbol": "KRAVX",
+        "name": "KRAVX"
       },
       "metrics": {
-        "liq_usd": 5742.0355,
-        "vol_24h_usd": 2677.3342876262,
-        "txns_24h": 60,
+        "liq_usd": 7050.0202,
+        "vol_24h_usd": 1763.5196913302,
+        "txns_24h": 51,
         "price_usd": 0
       },
       "risk": {
@@ -49,8 +48,8 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.17623556222222223,
-      "detected_at": "2026-03-14T13:14:03.591375+00:00",
+      "age_hours": 0.17957065555555554,
+      "detected_at": "2026-03-14T13:29:05.624104+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
