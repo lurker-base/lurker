@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-03-14T21:25:07.455314+00:00",
+  "timestamp": "2026-03-14T22:20:12.729326+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x2e0d5d5ee28eb99a23d0a54c93b37491599fbe42",
-        "symbol": "LIFE",
-        "name": "LIFE"
+        "address": "0xa197cc4ebeadd5bc4d5241112a0d0a37d7f1748d",
+        "symbol": "AFC",
+        "name": "AFC"
       },
       "metrics": {
-        "liq_usd": 50179.2743,
-        "vol_24h_usd": 1123.22822358,
+        "liq_usd": 50336.8938,
+        "vol_24h_usd": 1179.8893907,
         "txns_24h": 7,
         "price_usd": 0
       },
@@ -21,8 +21,8 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.07400174527777777,
-      "detected_at": "2026-03-14T21:25:07.453191+00:00",
+      "age_hours": 0.07268649361111111,
+      "detected_at": "2026-03-14T22:20:12.727554+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 SUPER FRESH",
