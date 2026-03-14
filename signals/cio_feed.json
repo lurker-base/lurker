@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-14T08:33:21.780961+00:00",
+  "timestamp": "2026-03-14T08:38:22.644608+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x32b673f9803ec6612014073eb9183e1597b16575",
-        "symbol": "CLAWD",
-        "name": "CLAWD"
+        "address": "0x7af7b322e8f5862cb916b72abfaf59ffd920b97f",
+        "symbol": "COGE",
+        "name": "COGE"
       },
       "metrics": {
-        "liq_usd": 50620.3756,
-        "vol_24h_usd": 1399.48258967,
-        "txns_24h": 10,
+        "liq_usd": 12593.9773,
+        "vol_24h_usd": 1310.2447232415,
+        "txns_24h": 15,
         "price_usd": 0
       },
       "risk": {
@@ -21,36 +21,8 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.10570820694444445,
-      "detected_at": "2026-03-14T08:33:21.592525+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 FRESH",
-        "\ud83d\udca7 DEEP LIQ",
-        "\u2b50 GEM"
-      ]
-    },
-    {
-      "token": {
-        "address": "0x5523df64c85eb7991f922d7651c5fea94c2ae40b",
-        "symbol": "AIMPACT",
-        "name": "AIMPACT"
-      },
-      "metrics": {
-        "liq_usd": 6536.2239,
-        "vol_24h_usd": 1321.3192073946,
-        "txns_24h": 41,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 95,
-      "age_hours": 0.1429423836111111,
-      "detected_at": "2026-03-14T08:33:21.778625+00:00",
+      "age_hours": 0.258187395,
+      "detected_at": "2026-03-14T08:38:22.642927+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
