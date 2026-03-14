@@ -1,33 +1,33 @@
 {
-  "timestamp": "2026-03-14T15:59:23.661354+00:00",
+  "timestamp": "2026-03-14T16:04:24.432902+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x2d4111696f5ab91d469c16b6c959d01149b64ba3",
-        "symbol": "LARVAI",
-        "name": "LARVAI"
+        "address": "0xea1082d9fb74705f0361240a9071cbc6b1a54090",
+        "symbol": "\ud83c\udf5cLAMB",
+        "name": "\ud83c\udf5cLAMB"
       },
       "metrics": {
-        "liq_usd": 20788.595,
-        "vol_24h_usd": 8072.863889857,
-        "txns_24h": 27,
+        "liq_usd": 6070.7811,
+        "vol_24h_usd": 1130.9668012691,
+        "txns_24h": 156,
         "price_usd": 0
       },
       "risk": {
-        "level": "low",
+        "level": "medium",
         "factors": [
           "new_token"
         ]
       },
       "score": 95,
-      "age_hours": 0.18458075222222223,
-      "detected_at": "2026-03-14T15:59:23.658794+00:00",
+      "age_hours": 0.10475374055555556,
+      "detected_at": "2026-03-14T16:04:24.267916+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\udca7 LIQ",
-        "\u2b50 GEM"
+        "\u26a1 VIRAL",
+        "\ud83d\ude80 PUMP"
       ]
     }
   ]
