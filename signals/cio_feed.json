@@ -1,31 +1,32 @@
 {
-  "timestamp": "2026-03-14T20:34:59.520519+00:00",
+  "timestamp": "2026-03-14T20:50:02.480444+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x703b4b48246669189f7e9d3700a629cecc20e920",
-        "symbol": "ETNYM",
-        "name": "ETNYM"
+        "address": "0xa2c06023e8e530dc93febc3967c8205c1a34207c",
+        "symbol": "PHO\ud83d\udc35",
+        "name": "PHO\ud83d\udc35"
       },
       "metrics": {
-        "liq_usd": 7247.614,
-        "vol_24h_usd": 1226.9687650765,
-        "txns_24h": 14,
+        "liq_usd": 7426.8316,
+        "vol_24h_usd": 2560.1933768398,
+        "txns_24h": 116,
         "price_usd": 0
       },
       "risk": {
-        "level": "high",
+        "level": "medium",
         "factors": [
           "new_token"
         ]
       },
       "score": 95,
-      "age_hours": 0.06064798138888888,
-      "detected_at": "2026-03-14T20:34:59.518581+00:00",
+      "age_hours": 0.08197251944444445,
+      "detected_at": "2026-03-14T20:50:02.477904+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 SUPER FRESH",
+        "\u26a1 VIRAL",
         "\ud83d\ude80 MEGA PUMP"
       ]
     }
