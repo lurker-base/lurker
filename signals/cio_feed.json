@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-14T08:38:22.644608+00:00",
+  "timestamp": "2026-03-14T08:53:24.871120+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x7af7b322e8f5862cb916b72abfaf59ffd920b97f",
-        "symbol": "COGE",
-        "name": "COGE"
+        "address": "0x73f3f532a957d47d98bf50a6d61dc5abae7e74f9",
+        "symbol": "PENGUIN",
+        "name": "PENGUIN"
       },
       "metrics": {
-        "liq_usd": 12593.9773,
-        "vol_24h_usd": 1310.2447232415,
-        "txns_24h": 15,
+        "liq_usd": 49753.6294,
+        "vol_24h_usd": 1191.18021287,
+        "txns_24h": 9,
         "price_usd": 0
       },
       "risk": {
@@ -20,13 +20,14 @@
           "new_token"
         ]
       },
-      "score": 100,
-      "age_hours": 0.258187395,
-      "detected_at": "2026-03-14T08:38:22.642927+00:00",
+      "score": 95,
+      "age_hours": 0.08328618694444444,
+      "detected_at": "2026-03-14T08:53:24.868965+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 FRESH",
-        "\ud83d\ude80 PUMP"
+        "\ud83d\udd25 SUPER FRESH",
+        "\ud83d\udca7 LIQ",
+        "\u2b50 GEM"
       ]
     }
   ]
