@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-14T18:14:42.267117+00:00",
+  "timestamp": "2026-03-14T18:29:44.910278+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x1ae15c285192264a4d9c14bd4bce01889f5fccdc",
-        "symbol": "PENGUIN",
-        "name": "PENGUIN"
+        "address": "0x2e61b78d3cda6e855ee7696eea426c42bcbf7963",
+        "symbol": "$BRSMG",
+        "name": "$BRSMG"
       },
       "metrics": {
-        "liq_usd": 52912.8896,
-        "vol_24h_usd": 2595.84289348,
-        "txns_24h": 14,
+        "liq_usd": 51662.435,
+        "vol_24h_usd": 1974.05856793,
+        "txns_24h": 13,
         "price_usd": 0
       },
       "risk": {
@@ -21,70 +21,13 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.11581783500000001,
-      "detected_at": "2026-03-14T18:14:42.102520+00:00",
+      "age_hours": 0.10328868166666666,
+      "detected_at": "2026-03-14T18:29:44.908368+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
         "\ud83d\udca7 DEEP LIQ",
-        "\ud83d\udcd7 PUMPING",
         "\u2b50 GEM"
-      ]
-    },
-    {
-      "token": {
-        "address": "0x54be7f4918d7b9c9022dc416b1d8bf29d79e6cb4",
-        "symbol": "WORK",
-        "name": "WORK"
-      },
-      "metrics": {
-        "liq_usd": 151382.1869,
-        "vol_24h_usd": 1134.60539737,
-        "txns_24h": 37,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "low",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.14530627083333333,
-      "detected_at": "2026-03-14T18:14:42.265221+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 FRESH",
-        "\ud83d\udcb0 WHALE",
-        "\u2b50 GEM"
-      ]
-    },
-    {
-      "token": {
-        "address": "0xea44c7945d7c15fd5839c30a120058221179b162",
-        "symbol": "\u94f6\u884c\u667a\u80fd",
-        "name": "\u94f6\u884c\u667a\u80fd"
-      },
-      "metrics": {
-        "liq_usd": 6312.2249,
-        "vol_24h_usd": 1246.367956524,
-        "txns_24h": 50,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 95,
-      "age_hours": 0.045211785000000004,
-      "detected_at": "2026-03-14T18:14:41.944132+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 SUPER FRESH",
-        "\u26a1 BUZZ",
-        "\ud83d\ude80 PUMP"
       ]
     }
   ]
