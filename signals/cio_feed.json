@@ -1,59 +1,33 @@
 {
-  "timestamp": "2026-03-14T15:39:21.120920+00:00",
+  "timestamp": "2026-03-14T15:59:23.661354+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x7c54c167ccb56dec012ebd042e7a021df603d519",
-        "symbol": "SOS",
-        "name": "SOS"
+        "address": "0x2d4111696f5ab91d469c16b6c959d01149b64ba3",
+        "symbol": "LARVAI",
+        "name": "LARVAI"
       },
       "metrics": {
-        "liq_usd": 9665.067,
-        "vol_24h_usd": 1099.845517872,
-        "txns_24h": 7,
+        "liq_usd": 20788.595,
+        "vol_24h_usd": 8072.863889857,
+        "txns_24h": 27,
         "price_usd": 0
       },
       "risk": {
-        "level": "high",
+        "level": "low",
         "factors": [
           "new_token"
         ]
       },
       "score": 95,
-      "age_hours": 0.12765199666666666,
-      "detected_at": "2026-03-14T15:39:20.952690+00:00",
+      "age_hours": 0.18458075222222223,
+      "detected_at": "2026-03-14T15:59:23.658794+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\ude80 MEGA PUMP"
-      ]
-    },
-    {
-      "token": {
-        "address": "0xb3a9ed4b1c10aee0bec3ea9ece451aa3fc84a9ed",
-        "symbol": "VNODE",
-        "name": "VNODE"
-      },
-      "metrics": {
-        "liq_usd": 6974.2002,
-        "vol_24h_usd": 1516.6191640029,
-        "txns_24h": 47,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 95,
-      "age_hours": 0.15998687361111114,
-      "detected_at": "2026-03-14T15:39:21.117935+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 FRESH",
-        "\ud83d\ude80 MEGA PUMP"
+        "\ud83d\udca7 LIQ",
+        "\u2b50 GEM"
       ]
     }
   ]
