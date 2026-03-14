@@ -1,17 +1,46 @@
 {
-  "timestamp": "2026-03-14T09:58:34.140944+00:00",
+  "timestamp": "2026-03-14T10:13:36.928920+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x41d363d47e39ac5780e79aebdaf998c2680f896f",
-        "symbol": "HAMYS",
-        "name": "HAMYS"
+        "address": "0xf03c1837c0265f6544ff149cc3c61ed95815b3ef",
+        "symbol": "ClawSight",
+        "name": "ClawSight"
       },
       "metrics": {
-        "liq_usd": 7476.0149,
-        "vol_24h_usd": 2206.0891822067,
-        "txns_24h": 18,
+        "liq_usd": 52405.8868,
+        "vol_24h_usd": 2414.32750353,
+        "txns_24h": 14,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.1177158725,
+      "detected_at": "2026-03-14T10:13:36.925976+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udca7 DEEP LIQ",
+        "\ud83d\udcd7 PUMPING",
+        "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x171e4aa77dd2ebc1d616658cbdc419089e5b44ff",
+        "symbol": "MIVEL",
+        "name": "MIVEL"
+      },
+      "metrics": {
+        "liq_usd": 5898.6772,
+        "vol_24h_usd": 1017.8873280745,
+        "txns_24h": 10,
         "price_usd": 0
       },
       "risk": {
@@ -21,11 +50,11 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.14192925527777778,
-      "detected_at": "2026-03-14T09:58:34.138552+00:00",
+      "age_hours": 0.06378323694444445,
+      "detected_at": "2026-03-14T10:13:36.777092+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 FRESH",
+        "\ud83d\udd25 SUPER FRESH",
         "\ud83d\ude80 MEGA PUMP"
       ]
     }
