@@ -1,45 +1,17 @@
 {
-  "timestamp": "2026-03-14T13:59:08.763387+00:00",
+  "timestamp": "2026-03-14T14:14:10.219331+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xe2161e58d8f42b10d9e6bc5f1e2b7e51bdb27d6b",
-        "symbol": "ADHD",
-        "name": "ADHD"
+        "address": "0x3bfab66d9e4058c4ad86ca47fc9ad90647e1dfb4",
+        "symbol": "AIMPACT",
+        "name": "AIMPACT"
       },
       "metrics": {
-        "liq_usd": 152307.2943,
-        "vol_24h_usd": 1436.57483998,
-        "txns_24h": 47,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "low",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.1837598413888889,
-      "detected_at": "2026-03-14T13:59:08.607386+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 FRESH",
-        "\ud83d\udcb0 WHALE",
-        "\u2b50 GEM"
-      ]
-    },
-    {
-      "token": {
-        "address": "0x07a5a61ede1df5531636ab5b184c86e8897df072",
-        "symbol": "COINBANK",
-        "name": "COINBANK"
-      },
-      "metrics": {
-        "liq_usd": 11632.3892,
-        "vol_24h_usd": 1041.5380753766,
-        "txns_24h": 13,
+        "liq_usd": 6451.5177,
+        "vol_24h_usd": 1343.593770558,
+        "txns_24h": 37,
         "price_usd": 0
       },
       "risk": {
@@ -48,13 +20,13 @@
           "new_token"
         ]
       },
-      "score": 100,
-      "age_hours": 0.22211318333333332,
-      "detected_at": "2026-03-14T13:59:08.760403+00:00",
+      "score": 95,
+      "age_hours": 0.11973187388888888,
+      "detected_at": "2026-03-14T14:14:10.216475+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\udcd7 PUMPING"
+        "\ud83d\ude80 PUMP"
       ]
     }
   ]
