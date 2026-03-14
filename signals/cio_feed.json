@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-14T18:54:47.925911+00:00",
+  "timestamp": "2026-03-14T19:34:51.961262+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x271278955bdd0124610cfb461fb2c1e5e1714dd0",
-        "symbol": "TRUMP",
-        "name": "TRUMP"
+        "address": "0x8978f36198b63cd6fc4a08cf5a83d7b794f3de84",
+        "symbol": "\u673a\u5668\u4eba\u5e01",
+        "name": "\u673a\u5668\u4eba\u5e01"
       },
       "metrics": {
-        "liq_usd": 52086.2763,
-        "vol_24h_usd": 2162.5059196,
-        "txns_24h": 14,
+        "liq_usd": 7207.1955,
+        "vol_24h_usd": 2252.2325329104,
+        "txns_24h": 25,
         "price_usd": 0
       },
       "risk": {
@@ -20,14 +20,13 @@
           "new_token"
         ]
       },
-      "score": 100,
-      "age_hours": 0.10024002222222222,
-      "detected_at": "2026-03-14T18:54:47.923809+00:00",
+      "score": 95,
+      "age_hours": 0.039662528055555556,
+      "detected_at": "2026-03-14T19:34:51.959071+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 FRESH",
-        "\ud83d\udca7 DEEP LIQ",
-        "\u2b50 GEM"
+        "\ud83d\udd25 SUPER FRESH",
+        "\ud83d\ude80 MEGA PUMP"
       ]
     }
   ]
