@@ -1,44 +1,46 @@
 {
-  "timestamp": "2026-03-14T13:29:05.625929+00:00",
+  "timestamp": "2026-03-14T13:34:06.318005+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x14abd6b5baf8f66c3d232d2b8008d56f2f246019",
-        "symbol": "SEEMB",
-        "name": "SEEMB"
+        "address": "0x05c2d3a4745b88728b5abede1626ab5162ad2868",
+        "symbol": "XCLAW",
+        "name": "XCLAW"
       },
       "metrics": {
-        "liq_usd": 7441.2538,
-        "vol_24h_usd": 1857.8140898863,
-        "txns_24h": 17,
+        "liq_usd": 52679.4092,
+        "vol_24h_usd": 2533.84996145,
+        "txns_24h": 15,
         "price_usd": 0
       },
       "risk": {
-        "level": "high",
+        "level": "medium",
         "factors": [
           "new_token"
         ]
       },
-      "score": 95,
-      "age_hours": 0.13340658277777778,
-      "detected_at": "2026-03-14T13:29:05.454276+00:00",
+      "score": 100,
+      "age_hours": 0.12701823777777776,
+      "detected_at": "2026-03-14T13:34:06.316215+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\ude80 MEGA PUMP"
+        "\ud83d\udca7 DEEP LIQ",
+        "\ud83d\udcd7 PUMPING",
+        "\u2b50 GEM"
       ]
     },
     {
       "token": {
-        "address": "0x3413978f4522d7cfc1460d7bfd5e69af8d5be6ae",
-        "symbol": "KRAVX",
-        "name": "KRAVX"
+        "address": "0x715a358008294cb1c02612bc7e453c50586cd83c",
+        "symbol": "QUE\ud83c\udf5c",
+        "name": "QUE\ud83c\udf5c"
       },
       "metrics": {
-        "liq_usd": 7050.0202,
-        "vol_24h_usd": 1763.5196913302,
-        "txns_24h": 51,
+        "liq_usd": 6715.1757,
+        "vol_24h_usd": 3219.4384319544,
+        "txns_24h": 143,
         "price_usd": 0
       },
       "risk": {
@@ -48,12 +50,12 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.17957065555555554,
-      "detected_at": "2026-03-14T13:29:05.624104+00:00",
+      "age_hours": 0.11031112555555556,
+      "detected_at": "2026-03-14T13:34:06.265588+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\u26a1 BUZZ",
+        "\u26a1 VIRAL",
         "\ud83d\ude80 MEGA PUMP"
       ]
     }
