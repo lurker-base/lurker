@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-14T08:53:24.871120+00:00",
+  "timestamp": "2026-03-14T09:03:25.789650+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x73f3f532a957d47d98bf50a6d61dc5abae7e74f9",
-        "symbol": "PENGUIN",
-        "name": "PENGUIN"
+        "address": "0x41829d5b44aa797a47ff2de5a69ce1243820be31",
+        "symbol": "USTECH",
+        "name": "USTECH"
       },
       "metrics": {
-        "liq_usd": 49753.6294,
-        "vol_24h_usd": 1191.18021287,
-        "txns_24h": 9,
+        "liq_usd": 12940.6032,
+        "vol_24h_usd": 1875.9369185973,
+        "txns_24h": 15,
         "price_usd": 0
       },
       "risk": {
@@ -20,14 +20,13 @@
           "new_token"
         ]
       },
-      "score": 95,
-      "age_hours": 0.08328618694444444,
-      "detected_at": "2026-03-14T08:53:24.868965+00:00",
+      "score": 100,
+      "age_hours": 0.21461428388888887,
+      "detected_at": "2026-03-14T09:03:25.787487+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 SUPER FRESH",
-        "\ud83d\udca7 LIQ",
-        "\u2b50 GEM"
+        "\ud83d\udd25 FRESH",
+        "\ud83d\ude80 PUMP"
       ]
     }
   ]
