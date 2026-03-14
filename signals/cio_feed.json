@@ -1,60 +1,33 @@
 {
-  "timestamp": "2026-03-14T16:54:30.555651+00:00",
+  "timestamp": "2026-03-14T17:04:31.668836+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xd97ce10ab0a5edb8d3ba73f300ab77b647ef6545",
-        "symbol": "BEAR",
-        "name": "BEAR"
+        "address": "0xe1baad4a61e327fbc36565449297aba18b76d780",
+        "symbol": "ADHD",
+        "name": "ADHD"
       },
       "metrics": {
-        "liq_usd": 6343.9516,
-        "vol_24h_usd": 12065.0629779838,
-        "txns_24h": 126,
+        "liq_usd": 151939.9009,
+        "vol_24h_usd": 1301.88045021,
+        "txns_24h": 42,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "low",
         "factors": [
           "new_token"
         ]
       },
       "score": 100,
-      "age_hours": 0.09806767083333333,
-      "detected_at": "2026-03-14T16:54:30.382124+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 SUPER FRESH",
-        "\u26a1 VIRAL",
-        "\ud83d\ude80 MEGA PUMP"
-      ]
-    },
-    {
-      "token": {
-        "address": "0x106c0dfe858c5a0ac17bd8cc679cc6bd3d489f56",
-        "symbol": "IRSTA",
-        "name": "IRSTA"
-      },
-      "metrics": {
-        "liq_usd": 7412.4088,
-        "vol_24h_usd": 2215.9130713242,
-        "txns_24h": 17,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "high",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 95,
-      "age_hours": 0.11149504916666667,
-      "detected_at": "2026-03-14T16:54:30.553104+00:00",
+      "age_hours": 0.16739572055555554,
+      "detected_at": "2026-03-14T17:04:31.666229+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\ude80 MEGA PUMP"
+        "\ud83d\udcb0 WHALE",
+        "\u2b50 GEM"
       ]
     }
   ]
