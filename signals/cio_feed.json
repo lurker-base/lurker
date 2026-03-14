@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-14T12:28:57.151433+00:00",
+  "timestamp": "2026-03-14T12:38:58.591465+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xcb7606154f89b2ca4c74c5a6de2adf1bc8101ddc",
-        "symbol": "\ud83d\ude0eSTA",
-        "name": "\ud83d\ude0eSTA"
+        "address": "0x04089e531b188d999a807608888dc7fad7636ba3",
+        "symbol": "GEMINI",
+        "name": "GEMINI"
       },
       "metrics": {
-        "liq_usd": 7132.0843,
-        "vol_24h_usd": 1273.928137275,
-        "txns_24h": 44,
+        "liq_usd": 20197.4541,
+        "vol_24h_usd": 3084.5844723785,
+        "txns_24h": 11,
         "price_usd": 0
       },
       "risk": {
@@ -21,39 +21,40 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.043826876111111114,
-      "detected_at": "2026-03-14T12:28:56.956749+00:00",
+      "age_hours": 0.14027099,
+      "detected_at": "2026-03-14T12:38:58.152177+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 SUPER FRESH",
-        "\ud83d\ude80 MEGA PUMP"
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udca7 LIQ",
+        "\u2b50 GEM"
       ]
     },
     {
       "token": {
-        "address": "0x9f08d80c61329c3bcdaab0157cbaf4346618a882",
-        "symbol": "LYSUN",
-        "name": "LYSUN"
+        "address": "0xd9285ff87938307194b71e918f62cc6417c3a41f",
+        "symbol": "AIMPACT",
+        "name": "AIMPACT"
       },
       "metrics": {
-        "liq_usd": 7493.1129,
-        "vol_24h_usd": 2120.5365921165,
-        "txns_24h": 18,
+        "liq_usd": 7259.9065,
+        "vol_24h_usd": 1862.9674240035,
+        "txns_24h": 49,
         "price_usd": 0
       },
       "risk": {
-        "level": "high",
+        "level": "medium",
         "factors": [
           "new_token"
         ]
       },
       "score": 95,
-      "age_hours": 0.10609912361111111,
-      "detected_at": "2026-03-14T12:28:57.149529+00:00",
+      "age_hours": 0.16587562694444444,
+      "detected_at": "2026-03-14T12:38:58.588862+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\ude80 MEGA PUMP"
+        "\ud83d\ude80 PUMP"
       ]
     }
   ]
