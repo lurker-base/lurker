@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-14T08:13:19.769375+00:00",
+  "timestamp": "2026-03-14T08:33:21.780961+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x8ac65728662096840e6330a666bf20a7e27bdfb8",
-        "symbol": "BatchClaw",
-        "name": "BatchClaw"
+        "address": "0x32b673f9803ec6612014073eb9183e1597b16575",
+        "symbol": "CLAWD",
+        "name": "CLAWD"
       },
       "metrics": {
-        "liq_usd": 52330.5753,
-        "vol_24h_usd": 2243.13554051,
-        "txns_24h": 12,
+        "liq_usd": 50620.3756,
+        "vol_24h_usd": 1399.48258967,
+        "txns_24h": 10,
         "price_usd": 0
       },
       "risk": {
@@ -21,14 +21,40 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.09742228388888888,
-      "detected_at": "2026-03-14T08:13:19.767645+00:00",
+      "age_hours": 0.10570820694444445,
+      "detected_at": "2026-03-14T08:33:21.592525+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 SUPER FRESH",
+        "\ud83d\udd25 FRESH",
         "\ud83d\udca7 DEEP LIQ",
-        "\ud83d\udcd7 PUMPING",
         "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x5523df64c85eb7991f922d7651c5fea94c2ae40b",
+        "symbol": "AIMPACT",
+        "name": "AIMPACT"
+      },
+      "metrics": {
+        "liq_usd": 6536.2239,
+        "vol_24h_usd": 1321.3192073946,
+        "txns_24h": 41,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 95,
+      "age_hours": 0.1429423836111111,
+      "detected_at": "2026-03-14T08:33:21.778625+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\ud83d\ude80 PUMP"
       ]
     }
   ]
