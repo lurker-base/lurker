@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-14T16:04:24.432902+00:00",
+  "timestamp": "2026-03-14T16:29:27.292952+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xea1082d9fb74705f0361240a9071cbc6b1a54090",
-        "symbol": "\ud83c\udf5cLAMB",
-        "name": "\ud83c\udf5cLAMB"
+        "address": "0x7185ab7fd0ac5b8c5274375792ce0ba5e95f2d22",
+        "symbol": "ZEMOO",
+        "name": "ZEMOO"
       },
       "metrics": {
-        "liq_usd": 6070.7811,
-        "vol_24h_usd": 1130.9668012691,
-        "txns_24h": 156,
+        "liq_usd": 7683.9923,
+        "vol_24h_usd": 2319.2824726846,
+        "txns_24h": 20,
         "price_usd": 0
       },
       "risk": {
@@ -21,13 +21,12 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.10475374055555556,
-      "detected_at": "2026-03-14T16:04:24.267916+00:00",
+      "age_hours": 0.1233640361111111,
+      "detected_at": "2026-03-14T16:29:27.290354+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\u26a1 VIRAL",
-        "\ud83d\ude80 PUMP"
+        "\ud83d\ude80 MEGA PUMP"
       ]
     }
   ]
