@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-14T12:54:00.298979+00:00",
+  "timestamp": "2026-03-14T13:14:03.593854+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x66fc5bc3a316cfde52019836512bc0f73b070738",
-        "symbol": "LOBSTAR",
-        "name": "LOBSTAR"
+        "address": "0x3c73eb0e0858b32f311a7a365a316b00818d2bd6",
+        "symbol": "WM",
+        "name": "WM"
       },
       "metrics": {
-        "liq_usd": 11643.6836,
-        "vol_24h_usd": 1330.6849853988,
-        "txns_24h": 12,
+        "liq_usd": 51136.7437,
+        "vol_24h_usd": 1714.96487635,
+        "txns_24h": 9,
         "price_usd": 0
       },
       "risk": {
@@ -21,12 +21,41 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.22252135583333332,
-      "detected_at": "2026-03-14T12:54:00.296083+00:00",
+      "age_hours": 0.09288532805555555,
+      "detected_at": "2026-03-14T13:14:03.447941+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 SUPER FRESH",
+        "\ud83d\udca7 DEEP LIQ",
+        "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x2d4e9f009eaf4dcd90925ba026711156f76da2cd",
+        "symbol": "UGOR",
+        "name": "UGOR"
+      },
+      "metrics": {
+        "liq_usd": 5742.0355,
+        "vol_24h_usd": 2677.3342876262,
+        "txns_24h": 60,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 95,
+      "age_hours": 0.17623556222222223,
+      "detected_at": "2026-03-14T13:14:03.591375+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\udcd7 PUMPING"
+        "\u26a1 BUZZ",
+        "\ud83d\ude80 MEGA PUMP"
       ]
     }
   ]
