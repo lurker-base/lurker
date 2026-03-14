@@ -1,31 +1,32 @@
 {
-  "timestamp": "2026-03-14T11:38:49.181350+00:00",
+  "timestamp": "2026-03-14T11:53:52.381172+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x1426ed5ed9446204cff66502152d630cad45dfe9",
-        "symbol": "SEBUT",
-        "name": "SEBUT"
+        "address": "0x8094694bf6f3e347482a4c8783b98bc17b232cfb",
+        "symbol": "UGOR",
+        "name": "UGOR"
       },
       "metrics": {
-        "liq_usd": 6419.5871,
-        "vol_24h_usd": 1289.4350597433,
-        "txns_24h": 11,
+        "liq_usd": 6051.4305,
+        "vol_24h_usd": 2831.4097697077,
+        "txns_24h": 62,
         "price_usd": 0
       },
       "risk": {
-        "level": "high",
+        "level": "medium",
         "factors": [
           "new_token"
         ]
       },
       "score": 95,
-      "age_hours": 0.0705570986111111,
-      "detected_at": "2026-03-14T11:38:49.178828+00:00",
+      "age_hours": 0.15533644694444446,
+      "detected_at": "2026-03-14T11:53:52.378399+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 SUPER FRESH",
+        "\ud83d\udd25 FRESH",
+        "\u26a1 BUZZ",
         "\ud83d\ude80 MEGA PUMP"
       ]
     }
