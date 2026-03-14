@@ -1,33 +1,35 @@
 {
-  "timestamp": "2026-03-14T10:28:38.909665+00:00",
+  "timestamp": "2026-03-14T10:43:42.481408+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xfc8cff4421a77aa3e3c4d70efd27e8b721109b43",
-        "symbol": "ClawPod",
-        "name": "ClawPod"
+        "address": "0xd9946e315714af12c80fc16f6d7a8b98bbf369a1",
+        "symbol": "cyb3rwr3n",
+        "name": "cyb3rwr3n"
       },
       "metrics": {
-        "liq_usd": 50928.7632,
-        "vol_24h_usd": 1702.61742661,
-        "txns_24h": 11,
+        "liq_usd": 46750.9282,
+        "vol_24h_usd": 69894.7488836454,
+        "txns_24h": 346,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "low",
         "factors": [
           "new_token"
         ]
       },
       "score": 100,
-      "age_hours": 0.0910708425,
-      "detected_at": "2026-03-14T10:28:38.906428+00:00",
+      "age_hours": 0.1670260927777778,
+      "detected_at": "2026-03-14T10:43:42.478388+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 SUPER FRESH",
-        "\ud83d\udca7 DEEP LIQ",
-        "\u2b50 GEM"
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udca7 LIQ",
+        "\ud83d\udcc8 HOT",
+        "\u26a1 VIRAL",
+        "\ud83d\udc8e PREMIUM"
       ]
     }
   ]
