@@ -1,32 +1,33 @@
 {
-  "timestamp": "2026-03-14T16:29:27.292952+00:00",
+  "timestamp": "2026-03-14T16:39:28.410307+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x7185ab7fd0ac5b8c5274375792ce0ba5e95f2d22",
-        "symbol": "ZEMOO",
-        "name": "ZEMOO"
+        "address": "0x18aeff0239bf128b7263af187917679ca155e5d2",
+        "symbol": "CHARLES",
+        "name": "CHARLES"
       },
       "metrics": {
-        "liq_usd": 7683.9923,
-        "vol_24h_usd": 2319.2824726846,
-        "txns_24h": 20,
+        "liq_usd": 151417.67,
+        "vol_24h_usd": 1062.17639686,
+        "txns_24h": 36,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "low",
         "factors": [
           "new_token"
         ]
       },
-      "score": 95,
-      "age_hours": 0.1233640361111111,
-      "detected_at": "2026-03-14T16:29:27.290354+00:00",
+      "score": 100,
+      "age_hours": 0.14367771805555554,
+      "detected_at": "2026-03-14T16:39:28.407930+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\ude80 MEGA PUMP"
+        "\ud83d\udcb0 WHALE",
+        "\u2b50 GEM"
       ]
     }
   ]
