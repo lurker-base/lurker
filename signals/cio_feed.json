@@ -1,33 +1,32 @@
 {
-  "timestamp": "2026-03-14T19:49:53.738313+00:00",
+  "timestamp": "2026-03-14T20:14:56.524533+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x70c6f70f334b5aa961b2bbd3ac29df11d57dc327",
-        "symbol": "denchclaw",
-        "name": "denchclaw"
+        "address": "0xe63291e86182108f214d9c2997ae5d6ee1632ad9",
+        "symbol": "SIUNI",
+        "name": "SIUNI"
       },
       "metrics": {
-        "liq_usd": 50121.5229,
-        "vol_24h_usd": 1156.83262504,
-        "txns_24h": 9,
+        "liq_usd": 5063.0125,
+        "vol_24h_usd": 1202.0260682395,
+        "txns_24h": 8,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "high",
         "factors": [
           "new_token"
         ]
       },
-      "score": 100,
-      "age_hours": 0.08293429416666667,
-      "detected_at": "2026-03-14T19:49:53.735876+00:00",
+      "score": 90,
+      "age_hours": 0.03870735833333333,
+      "detected_at": "2026-03-14T20:14:56.522314+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 SUPER FRESH",
-        "\ud83d\udca7 DEEP LIQ",
-        "\u2b50 GEM"
+        "\ud83d\udcd7 PUMPING"
       ]
     }
   ]
