@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-14T09:03:25.789650+00:00",
+  "timestamp": "2026-03-14T09:28:29.533999+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x41829d5b44aa797a47ff2de5a69ce1243820be31",
-        "symbol": "USTECH",
-        "name": "USTECH"
+        "address": "0xf8be8fea8cec9690d11f5b8af5104b4861beec7b",
+        "symbol": "COGE",
+        "name": "COGE"
       },
       "metrics": {
-        "liq_usd": 12940.6032,
-        "vol_24h_usd": 1875.9369185973,
-        "txns_24h": 15,
+        "liq_usd": 12044.3228,
+        "vol_24h_usd": 1669.5840495688,
+        "txns_24h": 13,
         "price_usd": 0
       },
       "risk": {
@@ -21,12 +21,12 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.21461428388888887,
-      "detected_at": "2026-03-14T09:03:25.787487+00:00",
+      "age_hours": 0.1878862613888889,
+      "detected_at": "2026-03-14T09:28:29.532327+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\ude80 PUMP"
+        "\ud83d\udcd7 PUMPING"
       ]
     }
   ]
