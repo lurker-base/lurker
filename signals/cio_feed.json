@@ -1,32 +1,33 @@
 {
-  "timestamp": "2026-03-14T20:14:56.524533+00:00",
+  "timestamp": "2026-03-14T20:29:58.857387+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xe63291e86182108f214d9c2997ae5d6ee1632ad9",
-        "symbol": "SIUNI",
-        "name": "SIUNI"
+        "address": "0x58f4227bfdc7788cf961c0d0e9fdd4e7e901bbe9",
+        "symbol": "\u9a6c\u65af\u514b\u5e01\u2600\ufe0f",
+        "name": "\u9a6c\u65af\u514b\u5e01\u2600\ufe0f"
       },
       "metrics": {
-        "liq_usd": 5063.0125,
-        "vol_24h_usd": 1202.0260682395,
-        "txns_24h": 8,
+        "liq_usd": 6427.5565,
+        "vol_24h_usd": 1015.1553542958,
+        "txns_24h": 71,
         "price_usd": 0
       },
       "risk": {
-        "level": "high",
+        "level": "medium",
         "factors": [
           "new_token"
         ]
       },
-      "score": 90,
-      "age_hours": 0.03870735833333333,
-      "detected_at": "2026-03-14T20:14:56.522314+00:00",
+      "score": 95,
+      "age_hours": 0.06158262083333334,
+      "detected_at": "2026-03-14T20:29:58.854902+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 SUPER FRESH",
-        "\ud83d\udcd7 PUMPING"
+        "\u26a1 BUZZ",
+        "\ud83d\ude80 PUMP"
       ]
     }
   ]
