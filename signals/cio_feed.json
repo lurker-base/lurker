@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-14T09:28:29.533999+00:00",
+  "timestamp": "2026-03-14T09:43:31.651579+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xf8be8fea8cec9690d11f5b8af5104b4861beec7b",
-        "symbol": "COGE",
-        "name": "COGE"
+        "address": "0xea7eef209ac88a36ad14bad8d87e8c6b915120c5",
+        "symbol": "UGOR",
+        "name": "UGOR"
       },
       "metrics": {
-        "liq_usd": 12044.3228,
-        "vol_24h_usd": 1669.5840495688,
-        "txns_24h": 13,
+        "liq_usd": 5312.2797,
+        "vol_24h_usd": 3073.4799611176,
+        "txns_24h": 62,
         "price_usd": 0
       },
       "risk": {
@@ -20,13 +20,14 @@
           "new_token"
         ]
       },
-      "score": 100,
-      "age_hours": 0.1878862613888889,
-      "detected_at": "2026-03-14T09:28:29.532327+00:00",
+      "score": 95,
+      "age_hours": 0.17727989666666666,
+      "detected_at": "2026-03-14T09:43:31.648825+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\udcd7 PUMPING"
+        "\u26a1 BUZZ",
+        "\ud83d\ude80 MEGA PUMP"
       ]
     }
   ]
