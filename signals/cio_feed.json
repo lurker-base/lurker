@@ -1,35 +1,32 @@
 {
-  "timestamp": "2026-03-14T10:43:42.481408+00:00",
+  "timestamp": "2026-03-14T10:58:44.538157+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xd9946e315714af12c80fc16f6d7a8b98bbf369a1",
-        "symbol": "cyb3rwr3n",
-        "name": "cyb3rwr3n"
+        "address": "0xaf463a551d70c45b3dab372968f74b80e13843ba",
+        "symbol": "VRTX",
+        "name": "VRTX"
       },
       "metrics": {
-        "liq_usd": 46750.9282,
-        "vol_24h_usd": 69894.7488836454,
-        "txns_24h": 346,
+        "liq_usd": 6663.5641,
+        "vol_24h_usd": 1109.6907586687,
+        "txns_24h": 33,
         "price_usd": 0
       },
       "risk": {
-        "level": "low",
+        "level": "medium",
         "factors": [
           "new_token"
         ]
       },
-      "score": 100,
-      "age_hours": 0.1670260927777778,
-      "detected_at": "2026-03-14T10:43:42.478388+00:00",
+      "score": 95,
+      "age_hours": 0.12315527694444445,
+      "detected_at": "2026-03-14T10:58:44.535996+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\udca7 LIQ",
-        "\ud83d\udcc8 HOT",
-        "\u26a1 VIRAL",
-        "\ud83d\udc8e PREMIUM"
+        "\ud83d\ude80 PUMP"
       ]
     }
   ]
