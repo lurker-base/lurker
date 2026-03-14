@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-14T17:04:31.668836+00:00",
+  "timestamp": "2026-03-14T17:29:34.949315+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xe1baad4a61e327fbc36565449297aba18b76d780",
-        "symbol": "ADHD",
-        "name": "ADHD"
+        "address": "0xe8d492883f10fe1bef74224f754b2459d8f6df42",
+        "symbol": "POKEPULL",
+        "name": "POKEPULL"
       },
       "metrics": {
-        "liq_usd": 151939.9009,
-        "vol_24h_usd": 1301.88045021,
-        "txns_24h": 42,
+        "liq_usd": 152430.2545,
+        "vol_24h_usd": 1550.22927263,
+        "txns_24h": 50,
         "price_usd": 0
       },
       "risk": {
@@ -21,13 +21,41 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.16739572055555554,
-      "detected_at": "2026-03-14T17:04:31.666229+00:00",
+      "age_hours": 0.19935001416666664,
+      "detected_at": "2026-03-14T17:29:34.804226+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
         "\ud83d\udcb0 WHALE",
+        "\u26a1 BUZZ",
         "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0xbda6eab6fb6b00b455a8ef7335dc3d9e3f16e045",
+        "symbol": "NEXAI",
+        "name": "NEXAI"
+      },
+      "metrics": {
+        "liq_usd": 6563.7805,
+        "vol_24h_usd": 1274.2795032139,
+        "txns_24h": 49,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 90,
+      "age_hours": 0.16151947194444444,
+      "detected_at": "2026-03-14T17:29:34.659970+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udcd7 PUMPING"
       ]
     }
   ]
