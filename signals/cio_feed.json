@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-03-14T14:59:15.525730+00:00",
+  "timestamp": "2026-03-14T15:14:17.696713+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x19b7f0344b8b4f442f9d3c0fe2701755a0d92ae1",
-        "symbol": "Anvil",
-        "name": "Anvil"
+        "address": "0xbe3b9902de99266a39c54723eebb3b4dab895d51",
+        "symbol": "PENGUIN",
+        "name": "PENGUIN"
       },
       "metrics": {
-        "liq_usd": 52585.0242,
-        "vol_24h_usd": 2442.68375829,
+        "liq_usd": 51556.242,
+        "vol_24h_usd": 1928.27131476,
         "txns_24h": 12,
         "price_usd": 0
       },
@@ -21,8 +21,8 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.11735177611111111,
-      "detected_at": "2026-03-14T14:59:15.522662+00:00",
+      "age_hours": 0.11681666166666667,
+      "detected_at": "2026-03-14T15:14:17.694080+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
