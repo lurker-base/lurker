@@ -1,17 +1,45 @@
 {
-  "timestamp": "2026-03-14T13:34:06.318005+00:00",
+  "timestamp": "2026-03-14T13:59:08.763387+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x05c2d3a4745b88728b5abede1626ab5162ad2868",
-        "symbol": "XCLAW",
-        "name": "XCLAW"
+        "address": "0xe2161e58d8f42b10d9e6bc5f1e2b7e51bdb27d6b",
+        "symbol": "ADHD",
+        "name": "ADHD"
       },
       "metrics": {
-        "liq_usd": 52679.4092,
-        "vol_24h_usd": 2533.84996145,
-        "txns_24h": 15,
+        "liq_usd": 152307.2943,
+        "vol_24h_usd": 1436.57483998,
+        "txns_24h": 47,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "low",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.1837598413888889,
+      "detected_at": "2026-03-14T13:59:08.607386+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udcb0 WHALE",
+        "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x07a5a61ede1df5531636ab5b184c86e8897df072",
+        "symbol": "COINBANK",
+        "name": "COINBANK"
+      },
+      "metrics": {
+        "liq_usd": 11632.3892,
+        "vol_24h_usd": 1041.5380753766,
+        "txns_24h": 13,
         "price_usd": 0
       },
       "risk": {
@@ -21,42 +49,12 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.12701823777777776,
-      "detected_at": "2026-03-14T13:34:06.316215+00:00",
+      "age_hours": 0.22211318333333332,
+      "detected_at": "2026-03-14T13:59:08.760403+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\udca7 DEEP LIQ",
-        "\ud83d\udcd7 PUMPING",
-        "\u2b50 GEM"
-      ]
-    },
-    {
-      "token": {
-        "address": "0x715a358008294cb1c02612bc7e453c50586cd83c",
-        "symbol": "QUE\ud83c\udf5c",
-        "name": "QUE\ud83c\udf5c"
-      },
-      "metrics": {
-        "liq_usd": 6715.1757,
-        "vol_24h_usd": 3219.4384319544,
-        "txns_24h": 143,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 95,
-      "age_hours": 0.11031112555555556,
-      "detected_at": "2026-03-14T13:34:06.265588+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 FRESH",
-        "\u26a1 VIRAL",
-        "\ud83d\ude80 MEGA PUMP"
+        "\ud83d\udcd7 PUMPING"
       ]
     }
   ]
