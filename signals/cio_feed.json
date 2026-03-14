@@ -1,33 +1,60 @@
 {
-  "timestamp": "2026-03-14T16:39:28.410307+00:00",
+  "timestamp": "2026-03-14T16:54:30.555651+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x18aeff0239bf128b7263af187917679ca155e5d2",
-        "symbol": "CHARLES",
-        "name": "CHARLES"
+        "address": "0xd97ce10ab0a5edb8d3ba73f300ab77b647ef6545",
+        "symbol": "BEAR",
+        "name": "BEAR"
       },
       "metrics": {
-        "liq_usd": 151417.67,
-        "vol_24h_usd": 1062.17639686,
-        "txns_24h": 36,
+        "liq_usd": 6343.9516,
+        "vol_24h_usd": 12065.0629779838,
+        "txns_24h": 126,
         "price_usd": 0
       },
       "risk": {
-        "level": "low",
+        "level": "medium",
         "factors": [
           "new_token"
         ]
       },
       "score": 100,
-      "age_hours": 0.14367771805555554,
-      "detected_at": "2026-03-14T16:39:28.407930+00:00",
+      "age_hours": 0.09806767083333333,
+      "detected_at": "2026-03-14T16:54:30.382124+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 SUPER FRESH",
+        "\u26a1 VIRAL",
+        "\ud83d\ude80 MEGA PUMP"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x106c0dfe858c5a0ac17bd8cc679cc6bd3d489f56",
+        "symbol": "IRSTA",
+        "name": "IRSTA"
+      },
+      "metrics": {
+        "liq_usd": 7412.4088,
+        "vol_24h_usd": 2215.9130713242,
+        "txns_24h": 17,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "high",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 95,
+      "age_hours": 0.11149504916666667,
+      "detected_at": "2026-03-14T16:54:30.553104+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\udcb0 WHALE",
-        "\u2b50 GEM"
+        "\ud83d\ude80 MEGA PUMP"
       ]
     }
   ]
