@@ -1257,12 +1257,166 @@
         "header": "https://cdn.dexscreener.com/cms/images/uDJPr7woBS9Y3vEY?width=600&height=200&fit=crop&quality=95&format=auto",
         "icon": "https://cdn.dexscreener.com/cms/images/ZZ22zIFlcObtdgc7?width=64&height=64&fit=crop&quality=95&format=auto"
       }
+    },
+    {
+      "token": {
+        "address": "0x43cB3730B11f94b0df95D1B819CC788AE8ECbFB3",
+        "symbol": "TILES",
+        "name": "Tiles Wheel"
+      },
+      "source": "hybrid_profiles",
+      "detected_at": "2026-03-14T08:03:24.576133+00:00",
+      "age_hours": 8.53,
+      "creator": "unknown",
+      "tx_hash": null,
+      "dexscreener": {
+        "priceUsd": "0.0000002554",
+        "liquidity": {
+          "usd": 21951.63,
+          "base": 62120431012,
+          "quote": 2.9298
+        },
+        "volume": {
+          "h24": 38876.71,
+          "h6": 38876.71,
+          "h1": 7682.22,
+          "m5": 199.33
+        },
+        "txns": {
+          "m5": {
+            "buys": 0,
+            "sells": 2
+          },
+          "h1": {
+            "buys": 48,
+            "sells": 24
+          },
+          "h6": {
+            "buys": 193,
+            "sells": 91
+          },
+          "h24": {
+            "buys": 193,
+            "sells": 91
+          }
+        },
+        "marketCap": 25541,
+        "fdv": 25541,
+        "pairAddress": "0x1c7b6d2ea2b1ba4b230c81790e3ea2b8b2cdc50b2c9ff53849734678b2f997bd",
+        "dexId": "uniswap",
+        "pairCreatedAt": 1773444705000,
+        "info": {
+          "imageUrl": "https://cdn.dexscreener.com/cms/images/GZ0dJHsiT5sKIaT1?width=800&height=800&quality=95&format=auto",
+          "header": "https://cdn.dexscreener.com/cms/images/nLkspA1nFBZxiP6R?width=1500&height=500&quality=95&format=auto",
+          "openGraph": "https://cdn.dexscreener.com/token-images/og/base/0x43cb3730b11f94b0df95d1b819cc788ae8ecbfb3?timestamp=1773475500000",
+          "websites": [
+            {
+              "url": "https://takeover.fun/coin/0x43cb3730b11f94b0df95d1b819cc788ae8ecbfb3",
+              "label": "Website"
+            },
+            {
+              "url": "https://flaunch.gg/base/coin/0x43cb3730b11f94b0df95d1b819cc788ae8ecbfb3",
+              "label": "Flaunch"
+            }
+          ],
+          "socials": [
+            {
+              "url": "https://x.com/tileswheel",
+              "type": "twitter"
+            }
+          ]
+        }
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "low_activity",
+          "dumping"
+        ]
+      },
+      "meta": {
+        "source": "profiles",
+        "url": "https://dexscreener.com/base/0x43cb3730b11f94b0df95d1b819cc788ae8ecbfb3",
+        "header": "https://cdn.dexscreener.com/cms/images/nLkspA1nFBZxiP6R?width=600&height=200&fit=crop&quality=95&format=auto",
+        "icon": "https://cdn.dexscreener.com/cms/images/GZ0dJHsiT5sKIaT1?width=64&height=64&fit=crop&quality=95&format=auto"
+      }
+    },
+    {
+      "token": {
+        "address": "0xCac25CBdA01138EB70adEC5B0a062b87B9Ebcba3",
+        "symbol": "CLAWBER",
+        "name": "Agent Clawber"
+      },
+      "source": "hybrid_profiles",
+      "detected_at": "2026-03-14T08:03:24.903482+00:00",
+      "age_hours": 1.48,
+      "creator": "unknown",
+      "tx_hash": null,
+      "dexscreener": {
+        "priceUsd": "0.000005475",
+        "liquidity": {
+          "usd": 175539.98,
+          "base": 16831460432,
+          "quote": 40.1421
+        },
+        "volume": {
+          "h24": 723398.03,
+          "h6": 723398.03,
+          "h1": 584355.43,
+          "m5": 103131.55
+        },
+        "txns": {
+          "m5": {
+            "buys": 97,
+            "sells": 60
+          },
+          "h1": {
+            "buys": 908,
+            "sells": 620
+          },
+          "h6": {
+            "buys": 1278,
+            "sells": 806
+          },
+          "h24": {
+            "buys": 1278,
+            "sells": 806
+          }
+        },
+        "marketCap": 547579,
+        "fdv": 547579,
+        "pairAddress": "0x47244d1643fbe7e0278c61836680d4d235605d2b932730a5f4ba39e6f3dfe412",
+        "dexId": "uniswap",
+        "pairCreatedAt": 1773470079000,
+        "info": {
+          "imageUrl": "https://cdn.dexscreener.com/cms/images/-NuK-069OflG4RiS?width=800&height=800&quality=95&format=auto",
+          "header": "https://cdn.dexscreener.com/cms/images/92F5Dn2SNpHNhedp?width=1500&height=500&quality=95&format=auto",
+          "openGraph": "https://cdn.dexscreener.com/token-images/og/base/0xcac25cbda01138eb70adec5b0a062b87b9ebcba3?timestamp=1773475500000",
+          "websites": [],
+          "socials": [
+            {
+              "url": "https://x.com/AgentClawber",
+              "type": "twitter"
+            }
+          ]
+        }
+      },
+      "risk": {
+        "level": "low",
+        "factors": []
+      },
+      "meta": {
+        "source": "profiles",
+        "url": "https://dexscreener.com/base/0xcac25cbda01138eb70adec5b0a062b87b9ebcba3",
+        "header": "https://cdn.dexscreener.com/cms/images/92F5Dn2SNpHNhedp?width=600&height=200&fit=crop&quality=95&format=auto",
+        "icon": "https://cdn.dexscreener.com/cms/images/-NuK-069OflG4RiS?width=64&height=64&fit=crop&quality=95&format=auto"
+      }
     }
   ],
   "meta": {
-    "updated_at": "2026-02-27T09:57:18.227256+00:00",
-    "count": 22,
+    "updated_at": "2026-03-14T08:03:26.341205+00:00",
+    "count": 24,
     "new_this_scan": 2,
-    "latest_block": 42698444
+    "latest_block": 43343028
   }
 }
