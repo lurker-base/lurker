@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-14T19:34:51.961262+00:00",
+  "timestamp": "2026-03-14T19:49:53.738313+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x8978f36198b63cd6fc4a08cf5a83d7b794f3de84",
-        "symbol": "\u673a\u5668\u4eba\u5e01",
-        "name": "\u673a\u5668\u4eba\u5e01"
+        "address": "0x70c6f70f334b5aa961b2bbd3ac29df11d57dc327",
+        "symbol": "denchclaw",
+        "name": "denchclaw"
       },
       "metrics": {
-        "liq_usd": 7207.1955,
-        "vol_24h_usd": 2252.2325329104,
-        "txns_24h": 25,
+        "liq_usd": 50121.5229,
+        "vol_24h_usd": 1156.83262504,
+        "txns_24h": 9,
         "price_usd": 0
       },
       "risk": {
@@ -20,13 +20,14 @@
           "new_token"
         ]
       },
-      "score": 95,
-      "age_hours": 0.039662528055555556,
-      "detected_at": "2026-03-14T19:34:51.959071+00:00",
+      "score": 100,
+      "age_hours": 0.08293429416666667,
+      "detected_at": "2026-03-14T19:49:53.735876+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 SUPER FRESH",
-        "\ud83d\ude80 MEGA PUMP"
+        "\ud83d\udca7 DEEP LIQ",
+        "\u2b50 GEM"
       ]
     }
   ]
