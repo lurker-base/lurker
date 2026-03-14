@@ -1,24 +1,61 @@
 {
-  "schema": "lurker_cio_ultra_launch",
-  "meta": {
-    "updated_at": "2026-03-07T16:17:59.472000+00:00",
-    "generated_at": "2026-03-07T16:17:59.472000+00:00",
-    "status": "calm",
-    "count": 0,
-    "thresholds": {
-      "min_liq_usd": 100,
-      "min_vol_5m": 10,
-      "min_tx_5m": 1,
-      "max_age_min": 10080
+  "timestamp": "2026-03-14T08:03:18.016915+00:00",
+  "source": "geckoterminal_v2",
+  "candidates": [
+    {
+      "token": {
+        "address": "0xa337653fd454272ca5dd4281b717b83c2bade264",
+        "symbol": "CRUST",
+        "name": "CRUST"
+      },
+      "metrics": {
+        "liq_usd": 57231.9766,
+        "vol_24h_usd": 4729.95493628,
+        "txns_24h": 25,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "low",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.25186777416666667,
+      "detected_at": "2026-03-14T08:03:17.866311+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udca7 DEEP LIQ",
+        "\ud83d\udcd7 PUMPING",
+        "\u2b50 GEM"
+      ]
     },
-    "risk_distribution": {},
-    "rejected": {
-      "too_old": 7,
-      "low_volume": 15,
-      "low_tx": 2,
-      "low_liq": 24
-    },
-    "source": "ultra_launch_scanner"
-  },
-  "candidates": []
+    {
+      "token": {
+        "address": "0x65021a79aeef22b17cdc1b768f5e79a8618beba3",
+        "symbol": "ROBOTMONEY",
+        "name": "ROBOTMONEY"
+      },
+      "metrics": {
+        "liq_usd": 438741.9568,
+        "vol_24h_usd": 1658974.87446682,
+        "txns_24h": 5284,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "low",
+        "factors": []
+      },
+      "score": 85,
+      "age_hours": 37.59468510833334,
+      "detected_at": "2026-03-14T08:03:18.014501+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udcb0 WHALE",
+        "\ud83d\udcc8 MOON",
+        "\u26a1 VIRAL"
+      ]
+    }
+  ]
 }
