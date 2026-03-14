@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-14T18:29:44.910278+00:00",
+  "timestamp": "2026-03-14T18:44:47.023920+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x2e61b78d3cda6e855ee7696eea426c42bcbf7963",
-        "symbol": "$BRSMG",
-        "name": "$BRSMG"
+        "address": "0x8920098515d55a308544879ebc15a723a0e49c15",
+        "symbol": "VICPAY",
+        "name": "VICPAY"
       },
       "metrics": {
-        "liq_usd": 51662.435,
-        "vol_24h_usd": 1974.05856793,
-        "txns_24h": 13,
+        "liq_usd": 11162.4481,
+        "vol_24h_usd": 1042.2318895019,
+        "txns_24h": 10,
         "price_usd": 0
       },
       "risk": {
@@ -20,14 +20,40 @@
           "new_token"
         ]
       },
-      "score": 100,
-      "age_hours": 0.10328868166666666,
-      "detected_at": "2026-03-14T18:29:44.908368+00:00",
+      "score": 90,
+      "age_hours": 0.16656709527777777,
+      "detected_at": "2026-03-14T18:44:46.853512+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x29bc9627ae135e2c3205f78181acc567bfbc45fa",
+        "symbol": "CLAW",
+        "name": "CLAW"
+      },
+      "metrics": {
+        "liq_usd": 6555.5322,
+        "vol_24h_usd": 1703.6319562119,
+        "txns_24h": 64,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 90,
+      "age_hours": 0.1999593238888889,
+      "detected_at": "2026-03-14T18:44:47.021090+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\udca7 DEEP LIQ",
-        "\u2b50 GEM"
+        "\u26a1 BUZZ",
+        "\ud83d\udcd7 PUMPING"
       ]
     }
   ]
