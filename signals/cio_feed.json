@@ -1,72 +1,16 @@
 {
-  "timestamp": "2026-03-15T07:16:33.890363+00:00",
+  "timestamp": "2026-03-15T07:31:36.259837+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x0b8b63e95e84ff995f8cbaf02f8a5e5562f3710d",
-        "symbol": "CHARLES",
-        "name": "CHARLES"
+        "address": "0xe8c9a912dba1c92663b6fe5a40b43112bd8dc07e",
+        "symbol": "SANAET",
+        "name": "SANAET"
       },
       "metrics": {
-        "liq_usd": 155028.643,
-        "vol_24h_usd": 1633.30663606,
-        "txns_24h": 52,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "low",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.20126468111111112,
-      "detected_at": "2026-03-15T07:16:33.695363+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 FRESH",
-        "\ud83d\udcb0 WHALE",
-        "\u26a1 BUZZ",
-        "\u2b50 GEM"
-      ]
-    },
-    {
-      "token": {
-        "address": "0xf7f21cd79678c12a58e4eb754283171f139edf1e",
-        "symbol": "OMEGA\u200eX",
-        "name": "OMEGA\u200eX"
-      },
-      "metrics": {
-        "liq_usd": 12833.3963,
-        "vol_24h_usd": 1489.5602713746,
-        "txns_24h": 14,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.21797095111111112,
-      "detected_at": "2026-03-15T07:16:33.887341+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 FRESH",
-        "\ud83d\udcd7 PUMPING"
-      ]
-    },
-    {
-      "token": {
-        "address": "0xef668fe0f4c7357d45483fb13ff834cbc9f03802",
-        "symbol": "CLAW",
-        "name": "CLAW"
-      },
-      "metrics": {
-        "liq_usd": 7105.1882,
-        "vol_24h_usd": 1398.7420659986,
+        "liq_usd": 5577.9651,
+        "vol_24h_usd": 2262.1443474987,
         "txns_24h": 51,
         "price_usd": 0
       },
@@ -77,13 +21,13 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.18454816638888888,
-      "detected_at": "2026-03-15T07:16:33.552792+00:00",
+      "age_hours": 0.1385808,
+      "detected_at": "2026-03-15T07:31:36.079987+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
         "\u26a1 BUZZ",
-        "\ud83d\ude80 PUMP"
+        "\ud83d\ude80 MEGA PUMP"
       ]
     }
   ]
