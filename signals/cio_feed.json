@@ -1,32 +1,32 @@
 {
-  "timestamp": "2026-03-15T13:58:34.889352+00:00",
+  "timestamp": "2026-03-15T14:18:39.414281+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x28d44cb5bdad9afb856476ae50930cfcf0b3ec0b",
-        "symbol": "Mirabel",
-        "name": "Mirabel"
+        "address": "0x7564d8ebc89b04d2cfb636914d2573f9c7491b88",
+        "symbol": "SPACE",
+        "name": "SPACE"
       },
       "metrics": {
-        "liq_usd": 50862.4007,
-        "vol_24h_usd": 1342.85548037,
-        "txns_24h": 9,
+        "liq_usd": 153304.048,
+        "vol_24h_usd": 1382.50831891,
+        "txns_24h": 48,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "low",
         "factors": [
           "new_token"
         ]
       },
       "score": 100,
-      "age_hours": 0.08653184527777777,
-      "detected_at": "2026-03-15T13:58:34.562847+00:00",
+      "age_hours": 0.19389779555555556,
+      "detected_at": "2026-03-15T14:18:39.225383+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 SUPER FRESH",
-        "\ud83d\udca7 DEEP LIQ",
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udcb0 WHALE",
         "\u2b50 GEM"
       ]
     }
