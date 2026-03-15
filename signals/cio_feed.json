@@ -1,17 +1,72 @@
 {
-  "timestamp": "2026-03-15T07:31:36.259837+00:00",
+  "timestamp": "2026-03-15T07:41:38.326321+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xe8c9a912dba1c92663b6fe5a40b43112bd8dc07e",
-        "symbol": "SANAET",
-        "name": "SANAET"
+        "address": "0x8dd5bebde0bc479f1b626746929f713c9b1f5558",
+        "symbol": "Agent Doge",
+        "name": "Agent Doge"
       },
       "metrics": {
-        "liq_usd": 5577.9651,
-        "vol_24h_usd": 2262.1443474987,
-        "txns_24h": 51,
+        "liq_usd": 50692.3825,
+        "vol_24h_usd": 1124.50271883,
+        "txns_24h": 6,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.054614082499999994,
+      "detected_at": "2026-03-15T07:41:37.666290+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 SUPER FRESH",
+        "\ud83d\udca7 DEEP LIQ",
+        "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x7194be0643169e10886e37e236b35aedfc52fd8e",
+        "symbol": "CEGon",
+        "name": "CEGon"
+      },
+      "metrics": {
+        "liq_usd": 11898.8736,
+        "vol_24h_usd": 1269.9224982976,
+        "txns_24h": 10,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.16911846916666667,
+      "detected_at": "2026-03-15T07:41:37.963389+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udcd7 PUMPING"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x360722530f8cbb42c84ec1f23c3c99bc53a167d2",
+        "symbol": "\u26a1PHO",
+        "name": "\u26a1PHO"
+      },
+      "metrics": {
+        "liq_usd": 6546.0144,
+        "vol_24h_usd": 1463.5060425149,
+        "txns_24h": 157,
         "price_usd": 0
       },
       "risk": {
@@ -21,13 +76,13 @@
         ]
       },
       "score": 95,
-      "age_hours": 0.1385808,
-      "detected_at": "2026-03-15T07:31:36.079987+00:00",
+      "age_hours": 0.10462953805555555,
+      "detected_at": "2026-03-15T07:41:37.826419+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\u26a1 BUZZ",
-        "\ud83d\ude80 MEGA PUMP"
+        "\u26a1 VIRAL",
+        "\ud83d\ude80 PUMP"
       ]
     }
   ]
