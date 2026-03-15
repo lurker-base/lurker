@@ -1,32 +1,32 @@
 {
-  "timestamp": "2026-03-15T16:44:10.177407+00:00",
+  "timestamp": "2026-03-15T17:04:15.007257+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x8b1a5f0bfd058c8f6bbcbe10a9d598e26d5a725e",
-        "symbol": "VIRTERN",
-        "name": "VIRTERN"
+        "address": "0x540953ba636253e11e2ad90dca1b3a2e6b3bd57c",
+        "symbol": "ELYS",
+        "name": "ELYS"
       },
       "metrics": {
-        "liq_usd": 152876.5392,
-        "vol_24h_usd": 1187.8394688509,
-        "txns_24h": 41,
+        "liq_usd": 51542.9306,
+        "vol_24h_usd": 1704.4261181,
+        "txns_24h": 9,
         "price_usd": 0
       },
       "risk": {
-        "level": "low",
+        "level": "medium",
         "factors": [
           "new_token"
         ]
       },
       "score": 100,
-      "age_hours": 0.16970306972222224,
-      "detected_at": "2026-03-15T16:44:10.003844+00:00",
+      "age_hours": 0.0926420775,
+      "detected_at": "2026-03-15T17:04:14.681646+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 FRESH",
-        "\ud83d\udcb0 WHALE",
+        "\ud83d\udd25 SUPER FRESH",
+        "\ud83d\udca7 DEEP LIQ",
         "\u2b50 GEM"
       ]
     }
