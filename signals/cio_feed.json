@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-15T11:48:06.633513+00:00",
+  "timestamp": "2026-03-15T11:53:08.082817+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x709c2a3fdcef1dcbeaff3edd583d63e38df8288f",
-        "symbol": "VRDCT",
-        "name": "VRDCT"
+        "address": "0xc4898bbdf5d67ff7a1f43888f211e750b695ae22",
+        "symbol": "IXIC",
+        "name": "IXIC"
       },
       "metrics": {
-        "liq_usd": 85462.8322,
-        "vol_24h_usd": 4459.141515606,
-        "txns_24h": 12,
+        "liq_usd": 12348.5899,
+        "vol_24h_usd": 1228.7955643455,
+        "txns_24h": 17,
         "price_usd": 0
       },
       "risk": {
@@ -21,42 +21,40 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.1620102363888889,
-      "detected_at": "2026-03-15T11:48:06.292204+00:00",
+      "age_hours": 0.27132584333333337,
+      "detected_at": "2026-03-15T11:53:07.919844+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\udca7 DEEP LIQ",
-        "\u2b50 GEM"
+        "\ud83d\udcd7 PUMPING"
       ]
     },
     {
       "token": {
-        "address": "0x36dcfe9719ac4108bbaea4ef55832253bb2b1fcd",
-        "symbol": "POKEPULL",
-        "name": "POKEPULL"
+        "address": "0x40c94d800f5367f936bd818cd7e83e556517de92",
+        "symbol": "\u673a\u5668\u4eba\u6708",
+        "name": "\u673a\u5668\u4eba\u6708"
       },
       "metrics": {
-        "liq_usd": 155449.546,
-        "vol_24h_usd": 1596.7073357962,
-        "txns_24h": 52,
+        "liq_usd": 7800.27,
+        "vol_24h_usd": 4032.5621596634,
+        "txns_24h": 54,
         "price_usd": 0
       },
       "risk": {
-        "level": "low",
+        "level": "medium",
         "factors": [
           "new_token"
         ]
       },
-      "score": 100,
-      "age_hours": 0.19369229666666668,
-      "detected_at": "2026-03-15T11:48:06.469989+00:00",
+      "score": 95,
+      "age_hours": 0.05350148305555555,
+      "detected_at": "2026-03-15T11:53:07.772918+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 FRESH",
-        "\ud83d\udcb0 WHALE",
+        "\ud83d\udd25 SUPER FRESH",
         "\u26a1 BUZZ",
-        "\u2b50 GEM"
+        "\ud83d\ude80 MEGA PUMP"
       ]
     }
   ]
