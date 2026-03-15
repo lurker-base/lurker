@@ -1,89 +1,32 @@
 {
-  "timestamp": "2026-03-15T16:19:05.444576+00:00",
+  "timestamp": "2026-03-15T16:34:08.312445+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xf8fa60df3e5d81ec3a7a8b6ab98e1af68aff9433",
-        "symbol": "MOLT",
-        "name": "MOLT"
+        "address": "0xa0f6681e38bdaeee515273ad07b4cf5e507c9079",
+        "symbol": "SAECH",
+        "name": "SAECH"
       },
       "metrics": {
-        "liq_usd": 51535.195,
-        "vol_24h_usd": 1709.74098048,
+        "liq_usd": 5792.6526,
+        "vol_24h_usd": 1203.4925022102,
         "txns_24h": 11,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "high",
         "factors": [
           "new_token"
         ]
       },
-      "score": 100,
-      "age_hours": 0.09109245833333332,
-      "detected_at": "2026-03-15T16:19:05.103801+00:00",
+      "score": 95,
+      "age_hours": 0.07305049805555555,
+      "detected_at": "2026-03-15T16:34:08.150426+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 SUPER FRESH",
-        "\ud83d\udca7 DEEP LIQ",
-        "\u2b50 GEM"
-      ]
-    },
-    {
-      "token": {
-        "address": "0xe2a10583e64b7e7c5e65d83f4b3a0606134fd784",
-        "symbol": "POKEPULL",
-        "name": "POKEPULL"
-      },
-      "metrics": {
-        "liq_usd": 152538.255,
-        "vol_24h_usd": 1055.14506117,
-        "txns_24h": 32,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "low",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.12891774305555556,
-      "detected_at": "2026-03-15T16:19:05.157983+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 FRESH",
-        "\ud83d\udcb0 WHALE",
-        "\u2b50 GEM"
-      ]
-    },
-    {
-      "token": {
-        "address": "0x234dd1a3e43a8b2daee57e54fbbe5940542fe992",
-        "symbol": "TikTok",
-        "name": "TikTok"
-      },
-      "metrics": {
-        "liq_usd": 119976.5116,
-        "vol_24h_usd": 1428.12333773,
-        "txns_24h": 30,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "low",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.1450916213888889,
-      "detected_at": "2026-03-15T16:19:05.386608+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 FRESH",
-        "\ud83d\udcb0 WHALE",
-        "\u2b50 GEM"
+        "\ud83d\ude80 PUMP"
       ]
     }
   ]
