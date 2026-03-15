@@ -1,16 +1,44 @@
 {
-  "timestamp": "2026-03-15T02:30:50.849482+00:00",
+  "timestamp": "2026-03-15T02:45:52.706998+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x43e67269746325caa04f0a74c0c3c79b4b22824b",
+        "address": "0x49c7b9b7afa246396d1f9b97fd8936532eca106c",
+        "symbol": "Basemate",
+        "name": "Basemate"
+      },
+      "metrics": {
+        "liq_usd": 50280.2045,
+        "vol_24h_usd": 1053.79083645,
+        "txns_24h": 6,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.06318726027777778,
+      "detected_at": "2026-03-15T02:45:52.649807+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 SUPER FRESH",
+        "\ud83d\udca7 DEEP LIQ",
+        "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x6555ebca2ac952ac76bfe94ec76c50db8fd00fea",
         "symbol": "ZAMA",
         "name": "ZAMA"
       },
       "metrics": {
-        "liq_usd": 119674.0974,
-        "vol_24h_usd": 1237.13680151,
+        "liq_usd": 119494.5475,
+        "vol_24h_usd": 1154.37955562,
         "txns_24h": 24,
         "price_usd": 0
       },
@@ -21,8 +49,8 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.13491123055555557,
-      "detected_at": "2026-03-15T02:30:50.846748+00:00",
+      "age_hours": 0.12601386027777778,
+      "detected_at": "2026-03-15T02:45:52.704391+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
