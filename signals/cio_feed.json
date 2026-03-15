@@ -1,33 +1,32 @@
 {
-  "timestamp": "2026-03-14T23:50:22.425564+00:00",
+  "timestamp": "2026-03-15T00:30:28.843946+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xfe2c61175dc8cc0edea25d477749ae4de821f09f",
-        "symbol": "Clawops",
-        "name": "Clawops"
+        "address": "0x6c4b5a9d67f548b4c1d282295d8419e01a91fd73",
+        "symbol": "SANOV",
+        "name": "SANOV"
       },
       "metrics": {
-        "liq_usd": 50435.4652,
-        "vol_24h_usd": 1112.60837067,
-        "txns_24h": 6,
+        "liq_usd": 6798.3242,
+        "vol_24h_usd": 1309.400816161,
+        "txns_24h": 13,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "high",
         "factors": [
           "new_token"
         ]
       },
-      "score": 100,
-      "age_hours": 0.06588319361111111,
-      "detected_at": "2026-03-14T23:50:22.422171+00:00",
+      "score": 95,
+      "age_hours": 0.062130267499999996,
+      "detected_at": "2026-03-15T00:30:28.841326+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 SUPER FRESH",
-        "\ud83d\udca7 DEEP LIQ",
-        "\u2b50 GEM"
+        "\ud83d\ude80 MEGA PUMP"
       ]
     }
   ]
