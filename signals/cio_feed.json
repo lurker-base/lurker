@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-15T01:25:38.739355+00:00",
+  "timestamp": "2026-03-15T01:40:41.517306+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xc6fad4eaeab61e8e1d604a7ae6b797778a9c4113",
-        "symbol": "WALLY",
-        "name": "WALLY"
+        "address": "0x929f6f2640d98df8596d3596ed359a4c28a363f3",
+        "symbol": "ZAMA",
+        "name": "ZAMA"
       },
       "metrics": {
-        "liq_usd": 119353.8032,
-        "vol_24h_usd": 1332.32269652,
-        "txns_24h": 28,
+        "liq_usd": 119213.236,
+        "vol_24h_usd": 1251.899137,
+        "txns_24h": 23,
         "price_usd": 0
       },
       "risk": {
@@ -21,8 +21,8 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.16260384416666665,
-      "detected_at": "2026-03-15T01:25:38.556169+00:00",
+      "age_hours": 0.12889109944444443,
+      "detected_at": "2026-03-15T01:40:41.375449+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
@@ -32,29 +32,56 @@
     },
     {
       "token": {
-        "address": "0x9acb79b48a78fabcd884d5662a306db5ae4f5a65",
-        "symbol": "SANAET",
-        "name": "SANAET"
+        "address": "0xdcfe168bfa7f2907de2f0f0c7db111613419fdda",
+        "symbol": "POKEPULL",
+        "name": "POKEPULL"
       },
       "metrics": {
-        "liq_usd": 5993.3291,
-        "vol_24h_usd": 2796.9250385924,
-        "txns_24h": 60,
+        "liq_usd": 152159.5456,
+        "vol_24h_usd": 1136.14367793,
+        "txns_24h": 37,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "low",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.1651043138888889,
+      "detected_at": "2026-03-15T01:40:41.515395+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udcb0 WHALE",
+        "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x62d6295a898dbecd1b9fb8a5badf66a285454a83",
+        "symbol": "ZEPHO",
+        "name": "ZEPHO"
+      },
+      "metrics": {
+        "liq_usd": 7345.9894,
+        "vol_24h_usd": 1618.2658083582,
+        "txns_24h": 16,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "high",
         "factors": [
           "new_token"
         ]
       },
       "score": 95,
-      "age_hours": 0.1837656188888889,
-      "detected_at": "2026-03-15T01:25:38.737484+00:00",
+      "age_hours": 0.09606823944444444,
+      "detected_at": "2026-03-15T01:40:41.007890+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 FRESH",
-        "\u26a1 BUZZ",
+        "\ud83d\udd25 SUPER FRESH",
         "\ud83d\ude80 MEGA PUMP"
       ]
     }
