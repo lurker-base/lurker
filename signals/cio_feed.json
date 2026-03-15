@@ -1,33 +1,31 @@
 {
-  "timestamp": "2026-03-15T09:46:59.601657+00:00",
+  "timestamp": "2026-03-15T10:02:02.315365+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xc08356e06b2cfaaa3ddfbb9072c046a161d473ee",
-        "symbol": "VIRTERN",
-        "name": "VIRTERN"
+        "address": "0x657293376cbf233a4863a80a8c56a942a43e4dcb",
+        "symbol": "SEAS",
+        "name": "SEAS"
       },
       "metrics": {
-        "liq_usd": 155096.8752,
-        "vol_24h_usd": 1508.91201525,
-        "txns_24h": 48,
+        "liq_usd": 11507.2735,
+        "vol_24h_usd": 1413.6515088428,
+        "txns_24h": 14,
         "price_usd": 0
       },
       "risk": {
-        "level": "low",
+        "level": "medium",
         "factors": [
           "new_token"
         ]
       },
-      "score": 100,
-      "age_hours": 0.19565153083333334,
-      "detected_at": "2026-03-15T09:46:59.534578+00:00",
+      "score": 90,
+      "age_hours": 0.21693452416666667,
+      "detected_at": "2026-03-15T10:02:02.152848+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 FRESH",
-        "\ud83d\udcb0 WHALE",
-        "\u2b50 GEM"
+        "\ud83d\udd25 FRESH"
       ]
     }
   ]
