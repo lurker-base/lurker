@@ -1,32 +1,32 @@
 {
-  "timestamp": "2026-03-15T09:31:57.579627+00:00",
+  "timestamp": "2026-03-15T09:46:59.601657+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xa9f3be7b89d983d7c5690bafc78361ca8f3d35d0",
-        "symbol": "Wasabot",
-        "name": "Wasabot"
+        "address": "0xc08356e06b2cfaaa3ddfbb9072c046a161d473ee",
+        "symbol": "VIRTERN",
+        "name": "VIRTERN"
       },
       "metrics": {
-        "liq_usd": 51442.5825,
-        "vol_24h_usd": 1365.31236634,
-        "txns_24h": 7,
+        "liq_usd": 155096.8752,
+        "vol_24h_usd": 1508.91201525,
+        "txns_24h": 48,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "low",
         "factors": [
           "new_token"
         ]
       },
       "score": 100,
-      "age_hours": 0.06894846472222223,
-      "detected_at": "2026-03-15T09:31:57.404658+00:00",
+      "age_hours": 0.19565153083333334,
+      "detected_at": "2026-03-15T09:46:59.534578+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 SUPER FRESH",
-        "\ud83d\udca7 DEEP LIQ",
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udcb0 WHALE",
         "\u2b50 GEM"
       ]
     }
