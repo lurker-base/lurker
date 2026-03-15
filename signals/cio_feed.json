@@ -1,33 +1,32 @@
 {
-  "timestamp": "2026-03-15T14:18:39.414281+00:00",
+  "timestamp": "2026-03-15T14:33:42.370066+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x7564d8ebc89b04d2cfb636914d2573f9c7491b88",
-        "symbol": "SPACE",
-        "name": "SPACE"
+        "address": "0x1136447f52a11c0e1bd6027875bbe934d1473f66",
+        "symbol": "SN3",
+        "name": "SN3"
       },
       "metrics": {
-        "liq_usd": 153304.048,
-        "vol_24h_usd": 1382.50831891,
-        "txns_24h": 48,
+        "liq_usd": 12779.5676,
+        "vol_24h_usd": 1610.0138470031,
+        "txns_24h": 11,
         "price_usd": 0
       },
       "risk": {
-        "level": "low",
+        "level": "medium",
         "factors": [
           "new_token"
         ]
       },
       "score": 100,
-      "age_hours": 0.19389779555555556,
-      "detected_at": "2026-03-15T14:18:39.225383+00:00",
+      "age_hours": 0.17864205222222224,
+      "detected_at": "2026-03-15T14:33:42.304574+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\udcb0 WHALE",
-        "\u2b50 GEM"
+        "\ud83d\udcd7 PUMPING"
       ]
     }
   ]
