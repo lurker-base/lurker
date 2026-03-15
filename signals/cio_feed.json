@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-15T03:15:57.713316+00:00",
+  "timestamp": "2026-03-15T03:30:59.287484+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xa111a5085c0963aeb1caf142e749c3db348626d9",
-        "symbol": "\u5c0f\u9f99\u867e",
-        "name": "\u5c0f\u9f99\u867e"
+        "address": "0x3f7852639fef7dabd12b37389710afe235ab0da5",
+        "symbol": "LUFFY",
+        "name": "LUFFY"
       },
       "metrics": {
-        "liq_usd": 11526.9431,
-        "vol_24h_usd": 1246.0581559634,
-        "txns_24h": 11,
+        "liq_usd": 53261.7614,
+        "vol_24h_usd": 2525.5367411,
+        "txns_24h": 17,
         "price_usd": 0
       },
       "risk": {
@@ -21,8 +21,37 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.17560086555555554,
-      "detected_at": "2026-03-15T03:15:57.324994+00:00",
+      "age_hours": 0.13445056722222223,
+      "detected_at": "2026-03-15T03:30:59.076134+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udca7 DEEP LIQ",
+        "\ud83d\udcd7 PUMPING",
+        "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x4243a8f182cf456f0797746ae40871cf8161a2a0",
+        "symbol": "VNODE",
+        "name": "VNODE"
+      },
+      "metrics": {
+        "liq_usd": 6623.1851,
+        "vol_24h_usd": 1177.0637640818,
+        "txns_24h": 43,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 90,
+      "age_hours": 0.13835449555555557,
+      "detected_at": "2026-03-15T03:30:59.285570+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
