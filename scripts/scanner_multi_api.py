@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 LURKER Multi-API Scanner with Fallback
-Implements fallback chain: Birdeye → CoinGecko → DexScreener → Cache
+Implements fallback chain: Birdeye → CoinGecko → GeckoTerminal → DexScreener → Cache
 
 Each source:
 - Fetches trending/new tokens
@@ -315,6 +315,89 @@ def fetch_dexscreener() -> List[Dict]:
     return []
 
 
+def fetch_geckoterminal() -> List[Dict]:
+    """Fetch from GeckoTerminal API V2"""
+    log("📡 Trying GeckoTerminal API...")
+    
+    GECKO_API = "https://api.geckoterminal.com/api/v2"
+    HEADERS = {"Accept": "application/json;version=20230203"}
+    
+    BLUECHIP_ADDRESSES = {
+        "0x4200000000000000000000000000000000000006",
+        "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+        "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+    }
+    
+    tokens = []
+    
+    # Try trending pools first
+    url = f"{GECKO_API}/networks/base/trending_pools?page=1&limit=30"
+    
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=15)
+        if resp.status_code == 429:
+            log("⚠️ GeckoTerminal rate limited")
+            return []
+        if resp.status_code != 200:
+            log(f"⚠️ GeckoTerminal status {resp.status_code}")
+            return []
+            
+        data = resp.json()
+        
+        for pool in data.get("data", []):
+            attrs = pool.get("attributes", {})
+            relationships = pool.get("relationships", {})
+            
+            # Get token addresses
+            base_token = relationships.get("base_token", {}).get("data", {})
+            quote_token = relationships.get("quote_token", {}).get("data", {})
+            
+            base_addr = base_token.get("id", "").replace("base_", "")
+            quote_addr = quote_token.get("id", "").replace("base_", "")
+            
+            # Skip bluechips
+            if base_addr.lower() in {a.lower() for a in BLUECHIP_ADDRESSES}:
+                continue
+            if quote_addr.lower() in {a.lower() for a in BLUECHIP_ADDRESSES}:
+                continue
+            
+            pool_name = attrs.get("name", "")
+            symbol = pool_name.split(" / ")[0] if "/" in pool_name else "UNKNOWN"
+            
+            liquidity = float(attrs.get("reserve_in_usd", 0) or 0)
+            volume_24h = float(attrs.get("volume_usd", {}).get("h24", 0) or 0)
+            
+            if liquidity < MIN_LIQUIDITY:
+                continue
+            
+            token_data = {
+                "symbol": symbol,
+                "address": attrs.get("address", ""),
+                "name": pool_name,
+                "price_usd": float(attrs.get("base_token_price_usd", 0) or 0),
+                "liquidity_usd": liquidity,
+                "volume_24h": volume_24h,
+                "market_cap": float(attrs.get("fdv_usd", 0) or 0),
+            }
+            
+            token = normalize_token(token_data, "geckoterminal")
+            if token:
+                tokens.append(token)
+        
+        time.sleep(1)  # Rate limiting
+        
+    except Exception as e:
+        log(f"⚠️ GeckoTerminal error: {e}")
+        return []
+    
+    if tokens:
+        log(f"✅ GeckoTerminal: {len(tokens)} tokens")
+        return tokens
+    
+    log("⚠️ GeckoTerminal: no data")
+    return []
+
+
 def fetch_all_sources() -> List[Dict]:
     """Fetch from all sources with fallback"""
     all_tokens = []
@@ -324,6 +407,7 @@ def fetch_all_sources() -> List[Dict]:
     sources = [
         ("birdeye", fetch_birdeye),
         ("coingecko", fetch_coingecko),
+        ("geckoterminal", fetch_geckoterminal),
         ("dexscreener", fetch_dexscreener),
     ]
     

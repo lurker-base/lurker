@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "updated_at": "2026-03-15T10:37:09.613828+00:00",
+    "format": "LURKER_SIGNAL_V2",
+    "source": "cio",
+    "chain": "base",
+    "count": 2
+  },
+  "signals": [
+    {
+      "address": "0x7f8acf4fc7b17e061c95054e2dfde14c29d11bb8",
+      "symbol": "LMTS",
+      "name": "LMTS",
+      "liquidityUsd": 154673.4768,
+      "volume24h": 1024.7046793078,
+      "ageMinutes": 5.629781033333334,
+      "detectedAt": "2026-03-15T10:37:08.946281+00:00",
+      "score": 100,
+      "risk": "medium",
+      "badges": [
+        "\ud83d\udd25 SUPER FRESH",
+        "\ud83d\udcb0 WHALE",
+        "\u2b50 GEM"
+      ],
+      "source": "geckoterminal_v2"
+    },
+    {
+      "address": "0xf3befc8f6716a66b376d218f7cd5d92194833a4e",
+      "symbol": "QPAW",
+      "name": "QPAW",
+      "liquidityUsd": 6810.8084,
+      "volume24h": 1905.6643746176,
+      "ageMinutes": 10.66863305,
+      "detectedAt": "2026-03-15T10:37:09.289142+00:00",
+      "score": 90,
+      "risk": "medium",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\u26a1 BUZZ",
+        "\ud83d\udcd7 PUMPING"
+      ],
+      "source": "geckoterminal_v2"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "timestamp": "2026-03-15T10:37:09.613828+00:00",
+  "source": "geckoterminal_v2",
+  "candidates": [
+    {
+      "token": {
+        "address": "0x7f8acf4fc7b17e061c95054e2dfde14c29d11bb8",
+        "symbol": "LMTS",
+        "name": "LMTS"
+      },
+      "metrics": {
+        "liq_usd": 154673.4768,
+        "vol_24h_usd": 1024.7046793078,
+        "txns_24h": 19,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.09382968388888889,
+      "detected_at": "2026-03-15T10:37:08.946281+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 SUPER FRESH",
+        "\ud83d\udcb0 WHALE",
+        "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0xf3befc8f6716a66b376d218f7cd5d92194833a4e",
+        "symbol": "QPAW",
+        "name": "QPAW"
+      },
+      "metrics": {
+        "liq_usd": 6810.8084,
+        "vol_24h_usd": 1905.6643746176,
+        "txns_24h": 55,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 90,
+      "age_hours": 0.17781055083333333,
+      "detected_at": "2026-03-15T10:37:09.289142+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\u26a1 BUZZ",
+        "\ud83d\udcd7 PUMPING"
+      ]
+    }
+  ]
+}

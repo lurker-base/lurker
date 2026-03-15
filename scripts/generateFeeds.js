@@ -27,7 +27,9 @@ function loadAllSignals() {
     'pulseSignals.v2.json', 
     'realtimeSignals.json',
     'signals.json',
-    'allBaseSignals.json'
+    'allBaseSignals.json',
+    'cio_feed.json',
+    'live_feed.json'
   ];
   
   for (const source of sources) {
@@ -40,7 +42,21 @@ function loadAllSignals() {
         } else if (data.items && Array.isArray(data.items)) {
           signals.push(...data.items);
         } else if (data.candidates && Array.isArray(data.candidates)) {
-          signals.push(...data.candidates);
+          // Convert CIO feed candidates to signal format
+          const converted = data.candidates.map(c => ({
+            address: c.token?.address,
+            symbol: c.token?.symbol,
+            name: c.token?.name,
+            ageMinutes: (c.age_hours || 0) * 60,
+            liquidityUsd: c.metrics?.liq_usd || 0,
+            volume5m: c.metrics?.vol_24h_usd ? c.metrics.vol_24h_usd / 288 : 0,
+            detectedAt: c.detected_at,
+            risk: c.risk?.level,
+            source: c.source,
+            badges: c.badges,
+            score: c.score
+          }));
+          signals.push(...converted);
         }
         console.log(`📥 Loaded ${source}: ${data.length || data.items?.length || data.candidates?.length || 0} signals`);
       }
@@ -213,6 +229,22 @@ function saveFeeds(feeds) {
     }, null, 2)
   );
   console.log(`✅ CERTIFIED: ${feeds.certified.length} tokens`);
+  
+  // LIVE Feed (for dashboard) - combine all signals
+  const allSignals = [
+    ...feeds.cio.map(s => ({...s, tier: 'CIO'})),
+    ...feeds.hotlist.map(s => ({...s, tier: 'HOTLIST'})),
+    ...feeds.certified.map(s => ({...s, tier: 'CERTIFIED'}))
+  ].sort((a, b) => (b.scores?.cio_score || 0) - (a.scores?.cio_score || 0));
+  
+  fs.writeFileSync(
+    path.join(SIGNALS_DIR, 'live_feed.json'),
+    JSON.stringify({
+      meta: { updated_at: timestamp, count: allSignals.length },
+      signals: allSignals
+    }, null, 2)
+  );
+  console.log(`✅ LIVE: ${allSignals.length} tokens`);
   
   // Résumé
   const total = feeds.cio.length + feeds.watch.length + feeds.hotlist.length + feeds.fast.length + feeds.certified.length;

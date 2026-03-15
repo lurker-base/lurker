@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-15T11:02:57.029915+00:00",
+  "timestamp": "2026-03-15T11:12:58.806594+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x8046232b61469a318e0e40fbb07bf25545783a5b",
-        "symbol": "OpenClaw",
-        "name": "OpenClaw"
+        "address": "0x513b1149b4882279db362ed11b7a54ac76438d7c",
+        "symbol": "MOONDOGE",
+        "name": "MOONDOGE"
       },
       "metrics": {
-        "liq_usd": 51631.3611,
-        "vol_24h_usd": 1443.57202733,
-        "txns_24h": 8,
+        "liq_usd": 11517.2889,
+        "vol_24h_usd": 1390.6834935865,
+        "txns_24h": 10,
         "price_usd": 0
       },
       "risk": {
@@ -21,13 +21,12 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.08828164277777778,
-      "detected_at": "2026-03-15T11:02:56.869335+00:00",
+      "age_hours": 0.15701432055555556,
+      "detected_at": "2026-03-15T11:12:58.422304+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 SUPER FRESH",
-        "\ud83d\udca7 DEEP LIQ",
-        "\u2b50 GEM"
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udcd7 PUMPING"
       ]
     }
   ]
