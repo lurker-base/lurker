@@ -1,5 +1,5 @@
 // Live Feed Loader — Renders list from DexScreener scanner
-const REPO_RAW = 'https://raw.githubusercontent.com/lurker-base/lurker/main';
+const REPO_RAW = 'https://raw.githubusercontent.com/lurker-base/lurker/gh-pages';
 
 async function fetchLiveFeed() {
     try {
