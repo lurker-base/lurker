@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-15T14:48:45.477448+00:00",
+  "timestamp": "2026-03-15T15:03:48.776134+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x6e5e908d63c82191419288660ab4159511d811a4",
-        "symbol": "UGOR",
-        "name": "UGOR"
+        "address": "0x1b65c227303844f83fafa34b72942158c1186d6c",
+        "symbol": "ASSEMBLY",
+        "name": "ASSEMBLY"
       },
       "metrics": {
-        "liq_usd": 5044.7678,
-        "vol_24h_usd": 1600.8548428057,
-        "txns_24h": 36,
+        "liq_usd": 53271.147,
+        "vol_24h_usd": 2533.02294794,
+        "txns_24h": 16,
         "price_usd": 0
       },
       "risk": {
@@ -20,13 +20,70 @@
           "new_token"
         ]
       },
-      "score": 95,
-      "age_hours": 0.1133766913888889,
-      "detected_at": "2026-03-15T14:48:45.315594+00:00",
+      "score": 100,
+      "age_hours": 0.1536311363888889,
+      "detected_at": "2026-03-15T15:03:48.252839+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\ude80 MEGA PUMP"
+        "\ud83d\udca7 DEEP LIQ",
+        "\ud83d\udcd7 PUMPING",
+        "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x3fcf0160423014c5a60c3f8e310b54e60725a70a",
+        "symbol": "LFUSD",
+        "name": "LFUSD"
+      },
+      "metrics": {
+        "liq_usd": 12577.3792,
+        "vol_24h_usd": 1952.3382305314,
+        "txns_24h": 11,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.1976155325,
+      "detected_at": "2026-03-15T15:03:48.580863+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udcd7 PUMPING"
+      ]
+    },
+    {
+      "token": {
+        "address": "0xb5cecca201dd1ed5e9089e7763fe0aa63ddf91ec",
+        "symbol": "AIMPACT",
+        "name": "AIMPACT"
+      },
+      "metrics": {
+        "liq_usd": 6711.4851,
+        "vol_24h_usd": 1764.5475305212,
+        "txns_24h": 56,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 90,
+      "age_hours": 0.1897924752777778,
+      "detected_at": "2026-03-15T15:03:48.415866+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\u26a1 BUZZ",
+        "\ud83d\udcd7 PUMPING"
       ]
     }
   ]
