@@ -1,32 +1,33 @@
 {
-  "timestamp": "2026-03-15T10:17:05.235175+00:00",
+  "timestamp": "2026-03-15T10:32:08.444774+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xac16093e1982222261f18efdcd43b2681274dbb8",
-        "symbol": "PHNOV",
-        "name": "PHNOV"
+        "address": "0x627c717c2ded5a3c0427dcabc2d955a49349fc99",
+        "symbol": "POKEPULL",
+        "name": "POKEPULL"
       },
       "metrics": {
-        "liq_usd": 6916.7825,
-        "vol_24h_usd": 1778.0250788854,
-        "txns_24h": 14,
+        "liq_usd": 154460.9606,
+        "vol_24h_usd": 1063.89355856,
+        "txns_24h": 34,
         "price_usd": 0
       },
       "risk": {
-        "level": "high",
+        "level": "low",
         "factors": [
           "new_token"
         ]
       },
-      "score": 95,
-      "age_hours": 0.07941095583333332,
-      "detected_at": "2026-03-15T10:17:05.072347+00:00",
+      "score": 100,
+      "age_hours": 0.15025527805555555,
+      "detected_at": "2026-03-15T10:32:08.110026+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 SUPER FRESH",
-        "\ud83d\ude80 MEGA PUMP"
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udcb0 WHALE",
+        "\u2b50 GEM"
       ]
     }
   ]
