@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-15T00:45:31.190955+00:00",
+  "timestamp": "2026-03-15T01:00:33.833960+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x739c5596cede72cce80a8da6ff31f35886888851",
-        "symbol": "AgentCash",
-        "name": "AgentCash"
+        "address": "0x2ef01691103806eae1d5c38c972a3acf383b468a",
+        "symbol": "BLACK",
+        "name": "BLACK"
       },
       "metrics": {
-        "liq_usd": 52740.6546,
-        "vol_24h_usd": 2319.76502581,
-        "txns_24h": 14,
+        "liq_usd": 50362.9718,
+        "vol_24h_usd": 1164.09338299,
+        "txns_24h": 7,
         "price_usd": 0
       },
       "risk": {
@@ -21,26 +21,53 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.11665282583333333,
-      "detected_at": "2026-03-15T00:45:31.009777+00:00",
+      "age_hours": 0.068400095,
+      "detected_at": "2026-03-15T01:00:33.288310+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 FRESH",
+        "\ud83d\udd25 SUPER FRESH",
         "\ud83d\udca7 DEEP LIQ",
-        "\ud83d\udcd7 PUMPING",
         "\u2b50 GEM"
       ]
     },
     {
       "token": {
-        "address": "0x6a96aae39c9b8803a3fb2fe050edc5a1ef18c4b9",
-        "symbol": "POPEYE",
-        "name": "POPEYE"
+        "address": "0xf5b482e4abe666ac2e67012539e3f35d9b9a76a7",
+        "symbol": "CUBE3",
+        "name": "CUBE3"
       },
       "metrics": {
-        "liq_usd": 88969.7146,
-        "vol_24h_usd": 2679.10030993,
-        "txns_24h": 17,
+        "liq_usd": 152679.6876,
+        "vol_24h_usd": 1254.13149347,
+        "txns_24h": 22,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "low",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.11341343305555555,
+      "detected_at": "2026-03-15T01:00:33.341703+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udcb0 WHALE",
+        "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x01efbfab8493068665fd2f48232ea99676a589a4",
+        "symbol": "BMNR",
+        "name": "BMNR"
+      },
+      "metrics": {
+        "liq_usd": 12488.9908,
+        "vol_24h_usd": 1715.3040350645,
+        "txns_24h": 16,
         "price_usd": 0
       },
       "risk": {
@@ -50,40 +77,40 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.15892881083333335,
-      "detected_at": "2026-03-15T00:45:31.187595+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 FRESH",
-        "\ud83d\udca7 DEEP LIQ",
-        "\u2b50 GEM"
-      ]
-    },
-    {
-      "token": {
-        "address": "0x14a0f3a86e9e5ed53f9834339f41acdd373325f8",
-        "symbol": "NEXAI",
-        "name": "NEXAI"
-      },
-      "metrics": {
-        "liq_usd": 6248.6847,
-        "vol_24h_usd": 1143.6597637128,
-        "txns_24h": 37,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 90,
-      "age_hours": 0.14166939888888888,
-      "detected_at": "2026-03-15T00:45:31.143639+00:00",
+      "age_hours": 0.22902760777777775,
+      "detected_at": "2026-03-15T01:00:33.660463+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
         "\ud83d\udcd7 PUMPING"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x202e2e240970baf93dbcb2868e24278c454198d1",
+        "symbol": "SANAET",
+        "name": "SANAET"
+      },
+      "metrics": {
+        "liq_usd": 5742.2758,
+        "vol_24h_usd": 2572.8235427483,
+        "txns_24h": 58,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 95,
+      "age_hours": 0.2301834738888889,
+      "detected_at": "2026-03-15T01:00:33.832256+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\u26a1 BUZZ",
+        "\ud83d\ude80 MEGA PUMP"
       ]
     }
   ]
