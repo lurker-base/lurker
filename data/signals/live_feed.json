@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-15T11:16:47.740Z",
+    "updated_at": "2026-03-15T11:17:59.845Z",
     "count": 3
   },
   "signals": [
@@ -96,7 +96,7 @@
       },
       "tier_label": "24h+",
       "timestamps": {
-        "age_hours": 538.2102205555556
+        "age_hours": 538.2302497222222
       },
       "holders": 0
     }

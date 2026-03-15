@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-03-15T11:12:58.806594+00:00",
+  "timestamp": "2026-03-15T11:17:59.759370+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x513b1149b4882279db362ed11b7a54ac76438d7c",
-        "symbol": "MOONDOGE",
-        "name": "MOONDOGE"
+        "address": "0x50d0d11c04ad40ace9d76280751e974e6c2bf3b3",
+        "symbol": "SN3",
+        "name": "SN3"
       },
       "metrics": {
-        "liq_usd": 11517.2889,
-        "vol_24h_usd": 1390.6834935865,
+        "liq_usd": 12851.8803,
+        "vol_24h_usd": 1129.5265796927,
         "txns_24h": 10,
         "price_usd": 0
       },
@@ -21,8 +21,8 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.15701432055555556,
-      "detected_at": "2026-03-15T11:12:58.422304+00:00",
+      "age_hours": 0.13045537805555557,
+      "detected_at": "2026-03-15T11:17:59.700445+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
