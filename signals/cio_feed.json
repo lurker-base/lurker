@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-15T02:00:45.166899+00:00",
+  "timestamp": "2026-03-15T02:15:47.974322+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xa85bb699dc9adc3dbe877492ca12af728d56dcbc",
+        "address": "0xb2152414155cca0f9427ad8b78d69a087d63045d",
         "symbol": "ZAMA",
         "name": "ZAMA"
       },
       "metrics": {
-        "liq_usd": 120250.0663,
-        "vol_24h_usd": 1710.63942074,
-        "txns_24h": 37,
+        "liq_usd": 120286.9696,
+        "vol_24h_usd": 1474.96756034,
+        "txns_24h": 30,
         "price_usd": 0
       },
       "risk": {
@@ -21,13 +21,40 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.1972554925,
-      "detected_at": "2026-03-15T02:00:45.163138+00:00",
+      "age_hours": 0.16683803277777778,
+      "detected_at": "2026-03-15T02:15:47.664726+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
         "\ud83d\udcb0 WHALE",
         "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0xf6e992b0e96be878fdf93e98cc100faad8e34cf8",
+        "symbol": "X402",
+        "name": "X402"
+      },
+      "metrics": {
+        "liq_usd": 12175.2095,
+        "vol_24h_usd": 1383.4206901291,
+        "txns_24h": 22,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "low",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.34133788861111114,
+      "detected_at": "2026-03-15T02:15:47.972439+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udcd7 PUMPING"
       ]
     }
   ]
