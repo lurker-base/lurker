@@ -1,32 +1,33 @@
 {
-  "timestamp": "2026-03-15T16:34:08.312445+00:00",
+  "timestamp": "2026-03-15T16:44:10.177407+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xa0f6681e38bdaeee515273ad07b4cf5e507c9079",
-        "symbol": "SAECH",
-        "name": "SAECH"
+        "address": "0x8b1a5f0bfd058c8f6bbcbe10a9d598e26d5a725e",
+        "symbol": "VIRTERN",
+        "name": "VIRTERN"
       },
       "metrics": {
-        "liq_usd": 5792.6526,
-        "vol_24h_usd": 1203.4925022102,
-        "txns_24h": 11,
+        "liq_usd": 152876.5392,
+        "vol_24h_usd": 1187.8394688509,
+        "txns_24h": 41,
         "price_usd": 0
       },
       "risk": {
-        "level": "high",
+        "level": "low",
         "factors": [
           "new_token"
         ]
       },
-      "score": 95,
-      "age_hours": 0.07305049805555555,
-      "detected_at": "2026-03-15T16:34:08.150426+00:00",
+      "score": 100,
+      "age_hours": 0.16970306972222224,
+      "detected_at": "2026-03-15T16:44:10.003844+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 SUPER FRESH",
-        "\ud83d\ude80 PUMP"
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udcb0 WHALE",
+        "\u2b50 GEM"
       ]
     }
   ]
