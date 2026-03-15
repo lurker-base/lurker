@@ -1,44 +1,16 @@
 {
-  "timestamp": "2026-03-15T12:33:16.445091+00:00",
+  "timestamp": "2026-03-15T12:48:19.962953+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x65724651a315b08a4c239b4cb1691569e4e24a55",
-        "symbol": "Smoklon",
-        "name": "Smoklon"
+        "address": "0xb6c56f1eb53a4e4bd0cee65c30ca441b15e29915",
+        "symbol": "RIVN",
+        "name": "RIVN"
       },
       "metrics": {
-        "liq_usd": 52622.0299,
-        "vol_24h_usd": 1964.801221875,
-        "txns_24h": 11,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.07577702777777778,
-      "detected_at": "2026-03-15T12:33:15.960759+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 SUPER FRESH",
-        "\ud83d\udca7 DEEP LIQ",
-        "\u2b50 GEM"
-      ]
-    },
-    {
-      "token": {
-        "address": "0xcffecf6b10c59a62a97934199eea6e0c31f1d2bc",
-        "symbol": "TSM",
-        "name": "TSM"
-      },
-      "metrics": {
-        "liq_usd": 12208.2966,
-        "vol_24h_usd": 1113.5709538211,
+        "liq_usd": 12568.2661,
+        "vol_24h_usd": 1008.6209098353,
         "txns_24h": 12,
         "price_usd": 0
       },
@@ -49,8 +21,8 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.16475499277777778,
-      "detected_at": "2026-03-15T12:33:16.284459+00:00",
+      "age_hours": 0.19126243916666666,
+      "detected_at": "2026-03-15T12:48:19.760012+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
@@ -59,28 +31,29 @@
     },
     {
       "token": {
-        "address": "0x590809bc4889d9e69ab132fb4fbb14e797cefde6",
-        "symbol": "SASTA",
-        "name": "SASTA"
+        "address": "0x4c6c1adc5b6fbfec93da5065446e94688e9cd13c",
+        "symbol": "GANG\ud83e\udd85",
+        "name": "GANG\ud83e\udd85"
       },
       "metrics": {
-        "liq_usd": 8130.9539,
-        "vol_24h_usd": 1838.8501508256,
-        "txns_24h": 16,
+        "liq_usd": 7599.1876,
+        "vol_24h_usd": 3262.2773220309,
+        "txns_24h": 129,
         "price_usd": 0
       },
       "risk": {
-        "level": "high",
+        "level": "medium",
         "factors": [
           "new_token"
         ]
       },
       "score": 95,
-      "age_hours": 0.09082245500000001,
-      "detected_at": "2026-03-15T12:33:16.117896+00:00",
+      "age_hours": 0.08510303666666666,
+      "detected_at": "2026-03-15T12:48:19.544627+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 SUPER FRESH",
+        "\u26a1 VIRAL",
         "\ud83d\ude80 MEGA PUMP"
       ]
     }
