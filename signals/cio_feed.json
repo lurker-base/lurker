@@ -1,16 +1,45 @@
 {
-  "timestamp": "2026-03-15T13:18:25.549027+00:00",
+  "timestamp": "2026-03-15T13:33:28.232513+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xf9f0af8a0b676e05f0e81f6e91e7bf9ff052144a",
-        "symbol": "42",
-        "name": "42"
+        "address": "0xc0d13399c9196c873dbe7682634e5e40b4c37cb6",
+        "symbol": "SPACE",
+        "name": "SPACE"
       },
       "metrics": {
-        "liq_usd": 51925.7083,
-        "vol_24h_usd": 1849.7024696825,
+        "liq_usd": 154099.837,
+        "vol_24h_usd": 1663.28875087,
+        "txns_24h": 53,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "low",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.21464429194444445,
+      "detected_at": "2026-03-15T13:33:27.894616+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udcb0 WHALE",
+        "\u26a1 BUZZ",
+        "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x0227c15bd9ffce516a01f6487efffcb66ff94842",
+        "symbol": "ELON",
+        "name": "ELON"
+      },
+      "metrics": {
+        "liq_usd": 12781.6757,
+        "vol_24h_usd": 1151.6163073655,
         "txns_24h": 13,
         "price_usd": 0
       },
@@ -21,13 +50,12 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.11061854166666667,
-      "detected_at": "2026-03-15T13:18:25.390743+00:00",
+      "age_hours": 0.24580408444444446,
+      "detected_at": "2026-03-15T13:33:28.065979+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\udca7 DEEP LIQ",
-        "\u2b50 GEM"
+        "\ud83d\udcd7 PUMPING"
       ]
     }
   ]
