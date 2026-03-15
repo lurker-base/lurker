@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-03-15T11:17:59.759370+00:00",
+  "timestamp": "2026-03-15T11:23:00.688763+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x50d0d11c04ad40ace9d76280751e974e6c2bf3b3",
-        "symbol": "SN3",
-        "name": "SN3"
+        "address": "0xe7c0abcfe53ad753b469880746959ff28df6d077",
+        "symbol": "Out",
+        "name": "Out"
       },
       "metrics": {
-        "liq_usd": 12851.8803,
-        "vol_24h_usd": 1129.5265796927,
+        "liq_usd": 52163.4706,
+        "vol_24h_usd": 1719.071077887,
         "txns_24h": 10,
         "price_usd": 0
       },
@@ -21,8 +21,92 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.13045537805555557,
-      "detected_at": "2026-03-15T11:17:59.700445+00:00",
+      "age_hours": 0.09929289805555555,
+      "detected_at": "2026-03-15T11:23:00.494731+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 SUPER FRESH",
+        "\ud83d\udca7 DEEP LIQ",
+        "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x4a9bf1c0803670127edc481243a399cdb1e05fce",
+        "symbol": "SENT",
+        "name": "SENT"
+      },
+      "metrics": {
+        "liq_usd": 155048.9706,
+        "vol_24h_usd": 1370.04119324,
+        "txns_24h": 43,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "low",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.177653185,
+      "detected_at": "2026-03-15T11:23:00.619280+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udcb0 WHALE",
+        "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x619904eec5da3b65d87274d8835ec8dbcda902e3",
+        "symbol": "BP\ud83d\udc8e",
+        "name": "BP\ud83d\udc8e"
+      },
+      "metrics": {
+        "liq_usd": 6627.3661,
+        "vol_24h_usd": 1609.1003129284,
+        "txns_24h": 56,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 95,
+      "age_hours": 0.060916458888888886,
+      "detected_at": "2026-03-15T11:23:00.454363+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 SUPER FRESH",
+        "\u26a1 BUZZ",
+        "\ud83d\ude80 PUMP"
+      ]
+    },
+    {
+      "token": {
+        "address": "0xe44c51e842c9c00aec03ef7ecf83d28192c141d1",
+        "symbol": "KRAVX",
+        "name": "KRAVX"
+      },
+      "metrics": {
+        "liq_usd": 6423.3526,
+        "vol_24h_usd": 1188.0988707905,
+        "txns_24h": 45,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 90,
+      "age_hours": 0.15097078305555556,
+      "detected_at": "2026-03-15T11:23:00.551405+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
