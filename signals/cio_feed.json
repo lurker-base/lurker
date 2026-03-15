@@ -1,46 +1,17 @@
 {
-  "timestamp": "2026-03-15T05:26:17.846831+00:00",
+  "timestamp": "2026-03-15T06:01:20.719037+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xd04ec589cd23aff4b8604ae2321e957c025ce0b1",
-        "symbol": "SPACE",
-        "name": "SPACE"
+        "address": "0x2f92bdc747afa140639f76b31496a39db0f1fc78",
+        "symbol": "ETHR",
+        "name": "ETHR"
       },
       "metrics": {
-        "liq_usd": 155024.4393,
-        "vol_24h_usd": 1634.70630217,
-        "txns_24h": 52,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "low",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.1984829413888889,
-      "detected_at": "2026-03-15T05:26:17.698218+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 FRESH",
-        "\ud83d\udcb0 WHALE",
-        "\u26a1 BUZZ",
-        "\u2b50 GEM"
-      ]
-    },
-    {
-      "token": {
-        "address": "0x34cff27c4e3e256e941673fd33a79711f02fa999",
-        "symbol": "KIMCHI",
-        "name": "KIMCHI"
-      },
-      "metrics": {
-        "liq_usd": 11819.2204,
-        "vol_24h_usd": 1608.3069488804,
-        "txns_24h": 17,
+        "liq_usd": 52322.1047,
+        "vol_24h_usd": 2070.11876271,
+        "txns_24h": 13,
         "price_usd": 0
       },
       "risk": {
@@ -50,12 +21,13 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.2563051058333333,
-      "detected_at": "2026-03-15T05:26:17.844652+00:00",
+      "age_hours": 0.1137887925,
+      "detected_at": "2026-03-15T06:01:20.713764+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\udcd7 PUMPING"
+        "\ud83d\udca7 DEEP LIQ",
+        "\u2b50 GEM"
       ]
     }
   ]
