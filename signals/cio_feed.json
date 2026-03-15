@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-15T09:16:54.221363+00:00",
+  "timestamp": "2026-03-15T09:31:57.579627+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x86e5917d8b0b0243bf1f80d5ca5db75d388f6f51",
-        "symbol": "YARR",
-        "name": "YARR"
+        "address": "0xa9f3be7b89d983d7c5690bafc78361ca8f3d35d0",
+        "symbol": "Wasabot",
+        "name": "Wasabot"
       },
       "metrics": {
-        "liq_usd": 54222.3851,
-        "vol_24h_usd": 2732.60012896,
-        "txns_24h": 15,
+        "liq_usd": 51442.5825,
+        "vol_24h_usd": 1365.31236634,
+        "txns_24h": 7,
         "price_usd": 0
       },
       "risk": {
@@ -21,13 +21,12 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.1235858711111111,
-      "detected_at": "2026-03-15T09:16:54.056438+00:00",
+      "age_hours": 0.06894846472222223,
+      "detected_at": "2026-03-15T09:31:57.404658+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 FRESH",
+        "\ud83d\udd25 SUPER FRESH",
         "\ud83d\udca7 DEEP LIQ",
-        "\ud83d\udcd7 PUMPING",
         "\u2b50 GEM"
       ]
     }
