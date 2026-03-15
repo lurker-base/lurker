@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-15T14:33:42.370066+00:00",
+  "timestamp": "2026-03-15T14:48:45.477448+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x1136447f52a11c0e1bd6027875bbe934d1473f66",
-        "symbol": "SN3",
-        "name": "SN3"
+        "address": "0x6e5e908d63c82191419288660ab4159511d811a4",
+        "symbol": "UGOR",
+        "name": "UGOR"
       },
       "metrics": {
-        "liq_usd": 12779.5676,
-        "vol_24h_usd": 1610.0138470031,
-        "txns_24h": 11,
+        "liq_usd": 5044.7678,
+        "vol_24h_usd": 1600.8548428057,
+        "txns_24h": 36,
         "price_usd": 0
       },
       "risk": {
@@ -20,13 +20,13 @@
           "new_token"
         ]
       },
-      "score": 100,
-      "age_hours": 0.17864205222222224,
-      "detected_at": "2026-03-15T14:33:42.304574+00:00",
+      "score": 95,
+      "age_hours": 0.1133766913888889,
+      "detected_at": "2026-03-15T14:48:45.315594+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\udcd7 PUMPING"
+        "\ud83d\ude80 MEGA PUMP"
       ]
     }
   ]
