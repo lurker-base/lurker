@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-15T12:48:19.962953+00:00",
+  "timestamp": "2026-03-15T13:03:23.062101+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xb6c56f1eb53a4e4bd0cee65c30ca441b15e29915",
-        "symbol": "RIVN",
-        "name": "RIVN"
+        "address": "0x94ca12fb34807f84d194614d678cda1b6d2fb173",
+        "symbol": "COGE",
+        "name": "COGE"
       },
       "metrics": {
-        "liq_usd": 12568.2661,
-        "vol_24h_usd": 1008.6209098353,
-        "txns_24h": 12,
+        "liq_usd": 12669.1347,
+        "vol_24h_usd": 1059.8479063257,
+        "txns_24h": 13,
         "price_usd": 0
       },
       "risk": {
@@ -21,8 +21,8 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.19126243916666666,
-      "detected_at": "2026-03-15T12:48:19.760012+00:00",
+      "age_hours": 0.2277014161111111,
+      "detected_at": "2026-03-15T13:03:22.904198+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
@@ -31,14 +31,41 @@
     },
     {
       "token": {
-        "address": "0x4c6c1adc5b6fbfec93da5065446e94688e9cd13c",
-        "symbol": "GANG\ud83e\udd85",
-        "name": "GANG\ud83e\udd85"
+        "address": "0x6e1d112a2f7ba5d663fa0d07e3600311838b577f",
+        "symbol": "HOWHI",
+        "name": "HOWHI"
       },
       "metrics": {
-        "liq_usd": 7599.1876,
-        "vol_24h_usd": 3262.2773220309,
-        "txns_24h": 129,
+        "liq_usd": 8005.1124,
+        "vol_24h_usd": 2146.4438978365,
+        "txns_24h": 17,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "high",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 95,
+      "age_hours": 0.11982622888888889,
+      "detected_at": "2026-03-15T13:03:22.542966+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\ud83d\ude80 MEGA PUMP"
+      ]
+    },
+    {
+      "token": {
+        "address": "0xbf47fb7119bda733d53ab060b64cbca77c22f1e7",
+        "symbol": "VRTX",
+        "name": "VRTX"
+      },
+      "metrics": {
+        "liq_usd": 6891.1113,
+        "vol_24h_usd": 1307.2168367123,
+        "txns_24h": 46,
         "price_usd": 0
       },
       "risk": {
@@ -47,14 +74,13 @@
           "new_token"
         ]
       },
-      "score": 95,
-      "age_hours": 0.08510303666666666,
-      "detected_at": "2026-03-15T12:48:19.544627+00:00",
+      "score": 90,
+      "age_hours": 0.16265084277777778,
+      "detected_at": "2026-03-15T13:03:22.725022+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 SUPER FRESH",
-        "\u26a1 VIRAL",
-        "\ud83d\ude80 MEGA PUMP"
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udcd7 PUMPING"
       ]
     }
   ]
