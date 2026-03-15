@@ -1,60 +1,33 @@
 {
-  "timestamp": "2026-03-15T15:48:58.332167+00:00",
+  "timestamp": "2026-03-15T16:04:01.907414+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xab35344198feb89728d7fd43e6457e3ea2d93614",
-        "symbol": "PAND\u2600\ufe0f",
-        "name": "PAND\u2600\ufe0f"
+        "address": "0xf89b9bd5e02272a05c8596d8821dcaff6f6a00fb",
+        "symbol": "ZALA AI",
+        "name": "ZALA AI"
       },
       "metrics": {
-        "liq_usd": 6830.3912,
-        "vol_24h_usd": 1391.2995215193,
-        "txns_24h": 52,
+        "liq_usd": 120799.6505,
+        "vol_24h_usd": 1793.67047084,
+        "txns_24h": 35,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "low",
         "factors": [
           "new_token"
         ]
       },
-      "score": 95,
-      "age_hours": 0.048014358611111106,
-      "detected_at": "2026-03-15T15:48:58.014019+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 SUPER FRESH",
-        "\u26a1 BUZZ",
-        "\ud83d\ude80 PUMP"
-      ]
-    },
-    {
-      "token": {
-        "address": "0x000b8256e8fc82afc53e508bae37945b80b0a234",
-        "symbol": "KRAVX",
-        "name": "KRAVX"
-      },
-      "metrics": {
-        "liq_usd": 6397.1178,
-        "vol_24h_usd": 1515.9353386833,
-        "txns_24h": 49,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 90,
-      "age_hours": 0.16028170888888887,
-      "detected_at": "2026-03-15T15:48:58.166496+00:00",
+      "score": 100,
+      "age_hours": 0.17457546333333335,
+      "detected_at": "2026-03-15T16:04:01.546157+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\udcd7 PUMPING"
+        "\ud83d\udcb0 WHALE",
+        "\u2b50 GEM"
       ]
     }
   ]
