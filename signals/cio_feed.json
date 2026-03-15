@@ -1,32 +1,89 @@
 {
-  "timestamp": "2026-03-15T00:30:28.843946+00:00",
+  "timestamp": "2026-03-15T00:45:31.190955+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x6c4b5a9d67f548b4c1d282295d8419e01a91fd73",
-        "symbol": "SANOV",
-        "name": "SANOV"
+        "address": "0x739c5596cede72cce80a8da6ff31f35886888851",
+        "symbol": "AgentCash",
+        "name": "AgentCash"
       },
       "metrics": {
-        "liq_usd": 6798.3242,
-        "vol_24h_usd": 1309.400816161,
-        "txns_24h": 13,
+        "liq_usd": 52740.6546,
+        "vol_24h_usd": 2319.76502581,
+        "txns_24h": 14,
         "price_usd": 0
       },
       "risk": {
-        "level": "high",
+        "level": "medium",
         "factors": [
           "new_token"
         ]
       },
-      "score": 95,
-      "age_hours": 0.062130267499999996,
-      "detected_at": "2026-03-15T00:30:28.841326+00:00",
+      "score": 100,
+      "age_hours": 0.11665282583333333,
+      "detected_at": "2026-03-15T00:45:31.009777+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 SUPER FRESH",
-        "\ud83d\ude80 MEGA PUMP"
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udca7 DEEP LIQ",
+        "\ud83d\udcd7 PUMPING",
+        "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x6a96aae39c9b8803a3fb2fe050edc5a1ef18c4b9",
+        "symbol": "POPEYE",
+        "name": "POPEYE"
+      },
+      "metrics": {
+        "liq_usd": 88969.7146,
+        "vol_24h_usd": 2679.10030993,
+        "txns_24h": 17,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.15892881083333335,
+      "detected_at": "2026-03-15T00:45:31.187595+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udca7 DEEP LIQ",
+        "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x14a0f3a86e9e5ed53f9834339f41acdd373325f8",
+        "symbol": "NEXAI",
+        "name": "NEXAI"
+      },
+      "metrics": {
+        "liq_usd": 6248.6847,
+        "vol_24h_usd": 1143.6597637128,
+        "txns_24h": 37,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 90,
+      "age_hours": 0.14166939888888888,
+      "detected_at": "2026-03-15T00:45:31.143639+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udcd7 PUMPING"
       ]
     }
   ]
