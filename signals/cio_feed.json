@@ -1,16 +1,44 @@
 {
-  "timestamp": "2026-03-15T12:18:12.887151+00:00",
+  "timestamp": "2026-03-15T12:33:16.445091+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x4d1a5878d87c8b3b1fc05fef091de29f93266dcb",
-        "symbol": "WREN",
-        "name": "WREN"
+        "address": "0x65724651a315b08a4c239b4cb1691569e4e24a55",
+        "symbol": "Smoklon",
+        "name": "Smoklon"
       },
       "metrics": {
-        "liq_usd": 52902.7131,
-        "vol_24h_usd": 2120.5861126,
+        "liq_usd": 52622.0299,
+        "vol_24h_usd": 1964.801221875,
+        "txns_24h": 11,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.07577702777777778,
+      "detected_at": "2026-03-15T12:33:15.960759+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 SUPER FRESH",
+        "\ud83d\udca7 DEEP LIQ",
+        "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0xcffecf6b10c59a62a97934199eea6e0c31f1d2bc",
+        "symbol": "TSM",
+        "name": "TSM"
+      },
+      "metrics": {
+        "liq_usd": 12208.2966,
+        "vol_24h_usd": 1113.5709538211,
         "txns_24h": 12,
         "price_usd": 0
       },
@@ -21,41 +49,39 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.10483318194444444,
-      "detected_at": "2026-03-15T12:18:12.579952+00:00",
+      "age_hours": 0.16475499277777778,
+      "detected_at": "2026-03-15T12:33:16.284459+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\udca7 DEEP LIQ",
-        "\u2b50 GEM"
+        "\ud83d\udcd7 PUMPING"
       ]
     },
     {
       "token": {
-        "address": "0x114d1a83c3385616b8c79fd5d31efd0dc1e010d1",
-        "symbol": "KRAVX",
-        "name": "KRAVX"
+        "address": "0x590809bc4889d9e69ab132fb4fbb14e797cefde6",
+        "symbol": "SASTA",
+        "name": "SASTA"
       },
       "metrics": {
-        "liq_usd": 6678.7458,
-        "vol_24h_usd": 1722.3878014696,
-        "txns_24h": 59,
+        "liq_usd": 8130.9539,
+        "vol_24h_usd": 1838.8501508256,
+        "txns_24h": 16,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "high",
         "factors": [
           "new_token"
         ]
       },
-      "score": 90,
-      "age_hours": 0.1876611227777778,
-      "detected_at": "2026-03-15T12:18:12.726169+00:00",
+      "score": 95,
+      "age_hours": 0.09082245500000001,
+      "detected_at": "2026-03-15T12:33:16.117896+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 FRESH",
-        "\u26a1 BUZZ",
-        "\ud83d\udcd7 PUMPING"
+        "\ud83d\udd25 SUPER FRESH",
+        "\ud83d\ude80 MEGA PUMP"
       ]
     }
   ]
