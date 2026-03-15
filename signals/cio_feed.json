@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-15T04:01:03.293248+00:00",
+  "timestamp": "2026-03-15T04:16:05.290159+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x79f37ee7e9a1d886211887ddc20ab6eaee63aedd",
-        "symbol": "ENERGY",
-        "name": "ENERGY"
+        "address": "0xaeb90913ddd2718120984cf135dfa081397435e9",
+        "symbol": "DISTORTED",
+        "name": "DISTORTED"
       },
       "metrics": {
-        "liq_usd": 12950.1658,
-        "vol_24h_usd": 1341.4936224198,
-        "txns_24h": 12,
+        "liq_usd": 12784.8994,
+        "vol_24h_usd": 1136.14462455,
+        "txns_24h": 9,
         "price_usd": 0
       },
       "risk": {
@@ -21,40 +21,40 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.18995929138888887,
-      "detected_at": "2026-03-15T04:01:03.006773+00:00",
+      "age_hours": 0.14999424555555554,
+      "detected_at": "2026-03-15T04:16:05.121116+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\ude80 PUMP"
+        "\ud83d\udcd7 PUMPING"
       ]
     },
     {
       "token": {
-        "address": "0x47f45ff9b7b2fce6d31822f05f3fef113b346bc1",
-        "symbol": "VNODE",
-        "name": "VNODE"
+        "address": "0x68cda2adfd323275489af8e7cf72564b7715ecc7",
+        "symbol": "ZAMA",
+        "name": "ZAMA"
       },
       "metrics": {
-        "liq_usd": 6547.693,
-        "vol_24h_usd": 1930.7000191058,
-        "txns_24h": 64,
+        "liq_usd": 121153.4937,
+        "vol_24h_usd": 1731.43174311,
+        "txns_24h": 31,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "low",
         "factors": [
           "new_token"
         ]
       },
-      "score": 90,
-      "age_hours": 0.23504171444444444,
-      "detected_at": "2026-03-15T04:01:03.290851+00:00",
+      "score": 100,
+      "age_hours": 0.17225588638888886,
+      "detected_at": "2026-03-15T04:16:05.287865+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\u26a1 BUZZ",
-        "\ud83d\udcd7 PUMPING"
+        "\ud83d\udcb0 WHALE",
+        "\u2b50 GEM"
       ]
     }
   ]
