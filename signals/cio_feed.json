@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-15T03:46:01.234070+00:00",
+  "timestamp": "2026-03-15T04:01:03.293248+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x50859358d41b011dcd6194c0909f51d2a2ccad7e",
-        "symbol": "WarHouse",
-        "name": "WarHouse"
+        "address": "0x79f37ee7e9a1d886211887ddc20ab6eaee63aedd",
+        "symbol": "ENERGY",
+        "name": "ENERGY"
       },
       "metrics": {
-        "liq_usd": 51141.9276,
-        "vol_24h_usd": 1458.12891868,
-        "txns_24h": 10,
+        "liq_usd": 12950.1658,
+        "vol_24h_usd": 1341.4936224198,
+        "txns_24h": 12,
         "price_usd": 0
       },
       "risk": {
@@ -21,13 +21,40 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.09555465805555555,
-      "detected_at": "2026-03-15T03:46:01.054195+00:00",
+      "age_hours": 0.18995929138888887,
+      "detected_at": "2026-03-15T04:01:03.006773+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 SUPER FRESH",
-        "\ud83d\udca7 DEEP LIQ",
-        "\u2b50 GEM"
+        "\ud83d\udd25 FRESH",
+        "\ud83d\ude80 PUMP"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x47f45ff9b7b2fce6d31822f05f3fef113b346bc1",
+        "symbol": "VNODE",
+        "name": "VNODE"
+      },
+      "metrics": {
+        "liq_usd": 6547.693,
+        "vol_24h_usd": 1930.7000191058,
+        "txns_24h": 64,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 90,
+      "age_hours": 0.23504171444444444,
+      "detected_at": "2026-03-15T04:01:03.290851+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\u26a1 BUZZ",
+        "\ud83d\udcd7 PUMPING"
       ]
     }
   ]
