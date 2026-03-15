@@ -1,143 +1,33 @@
 {
-  "timestamp": "2026-03-15T06:11:22.600638+00:00",
+  "timestamp": "2026-03-15T06:31:26.066893+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xc0c1976a079cd5076ddf7e85d74ef38be0ea5d7e",
-        "symbol": "BLM",
-        "name": "BLM"
+        "address": "0x9c2f2d80b0ac80c29802952731afc7e5dca98efe",
+        "symbol": "SENT",
+        "name": "SENT"
       },
       "metrics": {
-        "liq_usd": 121169.6213,
-        "vol_24h_usd": 1524.1729825,
-        "txns_24h": 29,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "low",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.17142188000000003,
-      "detected_at": "2026-03-15T06:11:22.192362+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 FRESH",
-        "\ud83d\udcb0 WHALE",
-        "\u2b50 GEM"
-      ]
-    },
-    {
-      "token": {
-        "address": "0xc2939fd97e099eb32be802c8d90ccf3fd7001068",
-        "symbol": "IRAN",
-        "name": "IRAN"
-      },
-      "metrics": {
-        "liq_usd": 154636.2803,
-        "vol_24h_usd": 1467.81081045,
-        "txns_24h": 46,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "low",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.19644234194444446,
-      "detected_at": "2026-03-15T06:11:22.238230+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 FRESH",
-        "\ud83d\udcb0 WHALE",
-        "\u2b50 GEM"
-      ]
-    },
-    {
-      "token": {
-        "address": "0x9d27950ca82a1db1f2e2538eec53ef5310f82cc4",
-        "symbol": "CLAUDE",
-        "name": "CLAUDE"
-      },
-      "metrics": {
-        "liq_usd": 11918.6174,
-        "vol_24h_usd": 1897.4797994867,
-        "txns_24h": 17,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.2531798975,
-      "detected_at": "2026-03-15T06:11:22.597934+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 FRESH",
-        "\ud83d\udcd7 PUMPING"
-      ]
-    },
-    {
-      "token": {
-        "address": "0x624846e72e87a54aea6e436b4afd91e91ed7165a",
-        "symbol": "SANAET",
-        "name": "SANAET"
-      },
-      "metrics": {
-        "liq_usd": 5675.1905,
-        "vol_24h_usd": 2207.1101122634,
-        "txns_24h": 56,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 95,
-      "age_hours": 0.20701063111111112,
-      "detected_at": "2026-03-15T06:11:22.447574+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 FRESH",
-        "\u26a1 BUZZ",
-        "\ud83d\ude80 MEGA PUMP"
-      ]
-    },
-    {
-      "token": {
-        "address": "0xbbf83851658d71a5e1ce8cfc6a39c3af8a8e8ee0",
-        "symbol": "KRAVX",
-        "name": "KRAVX"
-      },
-      "metrics": {
-        "liq_usd": 6362.253,
-        "vol_24h_usd": 1206.4977009636,
+        "liq_usd": 154246.7857,
+        "vol_24h_usd": 1394.88292994,
         "txns_24h": 45,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "low",
         "factors": [
           "new_token"
         ]
       },
-      "score": 90,
-      "age_hours": 0.15859440305555556,
-      "detected_at": "2026-03-15T06:11:22.118703+00:00",
+      "score": 100,
+      "age_hours": 0.17245754361111112,
+      "detected_at": "2026-03-15T06:31:25.918790+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\udcd7 PUMPING"
+        "\ud83d\udcb0 WHALE",
+        "\u2b50 GEM"
       ]
     }
   ]
