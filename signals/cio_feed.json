@@ -1,33 +1,89 @@
 {
-  "timestamp": "2026-03-15T10:32:08.444774+00:00",
+  "timestamp": "2026-03-15T10:47:11.273106+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x627c717c2ded5a3c0427dcabc2d955a49349fc99",
-        "symbol": "POKEPULL",
-        "name": "POKEPULL"
+        "address": "0x7aa91e8aae0c92be1f1162bb89840e69a73a9dbc",
+        "symbol": "Clawbrr",
+        "name": "Clawbrr"
       },
       "metrics": {
-        "liq_usd": 154460.9606,
-        "vol_24h_usd": 1063.89355856,
-        "txns_24h": 34,
+        "liq_usd": 53912.4413,
+        "vol_24h_usd": 2839.29495071,
+        "txns_24h": 16,
         "price_usd": 0
       },
       "risk": {
-        "level": "low",
+        "level": "medium",
         "factors": [
           "new_token"
         ]
       },
       "score": 100,
-      "age_hours": 0.15025527805555555,
-      "detected_at": "2026-03-15T10:32:08.110026+00:00",
+      "age_hours": 0.12382439888888888,
+      "detected_at": "2026-03-15T10:47:10.940326+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\udcb0 WHALE",
+        "\ud83d\udca7 DEEP LIQ",
+        "\ud83d\udcd7 PUMPING",
         "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x3b03038a062ba8900b553295a11d4cae613487c3",
+        "symbol": "RIVN",
+        "name": "RIVN"
+      },
+      "metrics": {
+        "liq_usd": 12340.3829,
+        "vol_24h_usd": 1470.0779489527,
+        "txns_24h": 12,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.19665011166666665,
+      "detected_at": "2026-03-15T10:47:11.116093+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udcd7 PUMPING"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x1f03ebe7d369400088682efdae1c6af2d7d57ac9",
+        "symbol": "MOON",
+        "name": "MOON"
+      },
+      "metrics": {
+        "liq_usd": 8301.4117,
+        "vol_24h_usd": 1944.0858518392,
+        "txns_24h": 145,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 95,
+      "age_hours": 0.0926668775,
+      "detected_at": "2026-03-15T10:47:10.767785+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 SUPER FRESH",
+        "\u26a1 VIRAL",
+        "\ud83d\ude80 MEGA PUMP"
       ]
     }
   ]

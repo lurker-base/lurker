@@ -1,7 +1,52 @@
 {
   "meta": {
-    "updated_at": "2026-03-04T10:02:25.693Z",
+    "updated_at": "2026-03-15T10:48:01.215Z",
     "version": "2.0-launch"
   },
-  "candidates": []
+  "candidates": [
+    {
+      "address": "0x7f8acf4fc7b17e061c95054e2dfde14c29d11bb8",
+      "symbol": "LMTS",
+      "name": "LMTS",
+      "ageMinutes": 5.629781033333334,
+      "liquidityUsd": 154673.4768,
+      "volume5m": 3.558002358707639,
+      "detectedAt": "2026-03-15T10:37:08.946281+00:00",
+      "risk": "medium",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "🔥 SUPER FRESH",
+        "💰 WHALE",
+        "⭐ GEM"
+      ],
+      "score": 100,
+      "tier": "CIO",
+      "tier_label": "0-10m",
+      "scores": {
+        "cio_score": 100
+      }
+    },
+    {
+      "address": "0xf3befc8f6716a66b376d218f7cd5d92194833a4e",
+      "symbol": "QPAW",
+      "name": "QPAW",
+      "ageMinutes": 10.66863305,
+      "liquidityUsd": 6810.8084,
+      "volume5m": 6.616890189644445,
+      "detectedAt": "2026-03-15T10:37:09.289142+00:00",
+      "risk": "medium",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "🔥 FRESH",
+        "⚡ BUZZ",
+        "📗 PUMPING"
+      ],
+      "score": 90,
+      "tier": "CIO",
+      "tier_label": "0-10m",
+      "scores": {
+        "cio_score": 6
+      }
+    }
+  ]
 }
