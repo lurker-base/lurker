@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-15T15:18:51.483457+00:00",
+  "timestamp": "2026-03-15T15:33:55.059931+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x6281eefc1d30153676a57c3fe39d9e3483f0cd16",
-        "symbol": "ASSEMBLY",
-        "name": "ASSEMBLY"
+        "address": "0xff4651ef5cc92202399b0490e9c47a671d30a7c4",
+        "symbol": "VK",
+        "name": "VK"
       },
       "metrics": {
-        "liq_usd": 50746.0433,
-        "vol_24h_usd": 1299.53344751,
-        "txns_24h": 9,
+        "liq_usd": 12313.0547,
+        "vol_24h_usd": 1039.757627768,
+        "txns_24h": 12,
         "price_usd": 0
       },
       "risk": {
@@ -21,97 +21,12 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.09771450416666667,
-      "detected_at": "2026-03-15T15:18:50.964252+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 SUPER FRESH",
-        "\ud83d\udca7 DEEP LIQ",
-        "\u2b50 GEM"
-      ]
-    },
-    {
-      "token": {
-        "address": "0xcaa0c6e479d290572971790fe761c2f8c5d89207",
-        "symbol": "SENT",
-        "name": "SENT"
-      },
-      "metrics": {
-        "liq_usd": 152894.6137,
-        "vol_24h_usd": 1196.94616081,
-        "txns_24h": 39,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "low",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.15169807944444444,
-      "detected_at": "2026-03-15T15:18:51.249897+00:00",
+      "age_hours": 0.1743665222222222,
+      "detected_at": "2026-03-15T15:33:54.904414+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\udcb0 WHALE",
-        "\u2b50 GEM"
-      ]
-    },
-    {
-      "token": {
-        "address": "0x8ecbd9d05e04827605554e7d825a0bb06bad0543",
-        "symbol": "MIN",
-        "name": "MIN"
-      },
-      "metrics": {
-        "liq_usd": 6479.6701,
-        "vol_24h_usd": 3065.7477415043,
-        "txns_24h": 147,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 95,
-      "age_hours": 0.10276786194444444,
-      "detected_at": "2026-03-15T15:18:51.113031+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 FRESH",
-        "\u26a1 VIRAL",
-        "\ud83d\ude80 PUMP"
-      ]
-    },
-    {
-      "token": {
-        "address": "0x415aba877d7b6a3acb64d08172936378411831d2",
-        "symbol": "UGOR",
-        "name": "UGOR"
-      },
-      "metrics": {
-        "liq_usd": 5476.4914,
-        "vol_24h_usd": 2841.5256386221,
-        "txns_24h": 63,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 95,
-      "age_hours": 0.1634027636111111,
-      "detected_at": "2026-03-15T15:18:51.423145+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 FRESH",
-        "\u26a1 BUZZ",
-        "\ud83d\ude80 MEGA PUMP"
+        "\ud83d\udcd7 PUMPING"
       ]
     }
   ]
