@@ -1,44 +1,17 @@
 {
-  "timestamp": "2026-03-15T04:16:05.290159+00:00",
+  "timestamp": "2026-03-15T04:31:08.396280+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xaeb90913ddd2718120984cf135dfa081397435e9",
-        "symbol": "DISTORTED",
-        "name": "DISTORTED"
-      },
-      "metrics": {
-        "liq_usd": 12784.8994,
-        "vol_24h_usd": 1136.14462455,
-        "txns_24h": 9,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.14999424555555554,
-      "detected_at": "2026-03-15T04:16:05.121116+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 FRESH",
-        "\ud83d\udcd7 PUMPING"
-      ]
-    },
-    {
-      "token": {
-        "address": "0x68cda2adfd323275489af8e7cf72564b7715ecc7",
+        "address": "0xcd697463f553d12b49e0fb62c714316f6672c6fc",
         "symbol": "ZAMA",
         "name": "ZAMA"
       },
       "metrics": {
-        "liq_usd": 121153.4937,
-        "vol_24h_usd": 1731.43174311,
-        "txns_24h": 31,
+        "liq_usd": 121095.865,
+        "vol_24h_usd": 1801.34400209,
+        "txns_24h": 34,
         "price_usd": 0
       },
       "risk": {
@@ -48,13 +21,40 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.17225588638888886,
-      "detected_at": "2026-03-15T04:16:05.287865+00:00",
+      "age_hours": 0.1601681391666667,
+      "detected_at": "2026-03-15T04:31:08.043401+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
         "\ud83d\udcb0 WHALE",
         "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x7fa43e5cb5635c9eb284a4aa5b023b18a1635d9c",
+        "symbol": "LFUSD",
+        "name": "LFUSD"
+      },
+      "metrics": {
+        "liq_usd": 12171.9195,
+        "vol_24h_usd": 1699.5429040627,
+        "txns_24h": 15,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.26918953055555556,
+      "detected_at": "2026-03-15T04:31:08.234233+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udcd7 PUMPING"
       ]
     }
   ]
