@@ -1,33 +1,86 @@
 {
-  "timestamp": "2026-03-15T06:41:28.162630+00:00",
+  "timestamp": "2026-03-15T07:01:31.203478+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x2000ef0a918e1a1b3d2f35940e3dff8e8ca5b4c7",
-        "symbol": "$RITUAL",
-        "name": "$RITUAL"
+        "address": "0xf2c6a083729f81554faba442098ab0509f5df0a0",
+        "symbol": "UGOR",
+        "name": "UGOR"
       },
       "metrics": {
-        "liq_usd": 153945.1658,
-        "vol_24h_usd": 1353.79799238,
-        "txns_24h": 21,
+        "liq_usd": 5184.4467,
+        "vol_24h_usd": 1964.5374041226,
+        "txns_24h": 47,
         "price_usd": 0
       },
       "risk": {
-        "level": "low",
+        "level": "medium",
         "factors": [
           "new_token"
         ]
       },
-      "score": 100,
-      "age_hours": 0.1536442736111111,
-      "detected_at": "2026-03-15T06:41:28.159478+00:00",
+      "score": 95,
+      "age_hours": 0.12603003916666666,
+      "detected_at": "2026-03-15T07:01:30.866008+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\udcb0 WHALE",
-        "\u2b50 GEM"
+        "\ud83d\ude80 MEGA PUMP"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x5d60e629aed874258cd7384efacfe88cf184cc14",
+        "symbol": "COGE",
+        "name": "COGE"
+      },
+      "metrics": {
+        "liq_usd": 11367.2966,
+        "vol_24h_usd": 1068.6330343246,
+        "txns_24h": 9,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 90,
+      "age_hours": 0.15662945833333333,
+      "detected_at": "2026-03-15T07:01:31.062427+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x996927352062102bf210c356fad2d1d377758828",
+        "symbol": "VNODE",
+        "name": "VNODE"
+      },
+      "metrics": {
+        "liq_usd": 6622.2991,
+        "vol_24h_usd": 1772.9680429374,
+        "txns_24h": 62,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 90,
+      "age_hours": 0.20779513472222222,
+      "detected_at": "2026-03-15T07:01:31.199956+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\u26a1 BUZZ",
+        "\ud83d\udcd7 PUMPING"
       ]
     }
   ]

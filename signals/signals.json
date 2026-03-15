@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-15T06:46:28.884Z",
+    "updated_at": "2026-03-15T07:01:31.243Z",
     "format": "LURKER_SIGNAL_V2",
     "source": "cio",
     "chain": "base",
@@ -11,7 +11,7 @@
       "sort_by": "quality_score"
     },
     "errors": [],
-    "generated_at": "2026-03-15T06:46:28.892Z"
+    "generated_at": "2026-03-15T07:01:31.249Z"
   },
   "signals": []
 }
