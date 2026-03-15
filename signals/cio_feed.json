@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-15T06:31:26.066893+00:00",
+  "timestamp": "2026-03-15T06:41:28.162630+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x9c2f2d80b0ac80c29802952731afc7e5dca98efe",
-        "symbol": "SENT",
-        "name": "SENT"
+        "address": "0x2000ef0a918e1a1b3d2f35940e3dff8e8ca5b4c7",
+        "symbol": "$RITUAL",
+        "name": "$RITUAL"
       },
       "metrics": {
-        "liq_usd": 154246.7857,
-        "vol_24h_usd": 1394.88292994,
-        "txns_24h": 45,
+        "liq_usd": 153945.1658,
+        "vol_24h_usd": 1353.79799238,
+        "txns_24h": 21,
         "price_usd": 0
       },
       "risk": {
@@ -21,8 +21,8 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.17245754361111112,
-      "detected_at": "2026-03-15T06:31:25.918790+00:00",
+      "age_hours": 0.1536442736111111,
+      "detected_at": "2026-03-15T06:41:28.159478+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
