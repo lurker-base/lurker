@@ -1,31 +1,32 @@
 {
-  "timestamp": "2026-03-15T10:02:02.315365+00:00",
+  "timestamp": "2026-03-15T10:17:05.235175+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x657293376cbf233a4863a80a8c56a942a43e4dcb",
-        "symbol": "SEAS",
-        "name": "SEAS"
+        "address": "0xac16093e1982222261f18efdcd43b2681274dbb8",
+        "symbol": "PHNOV",
+        "name": "PHNOV"
       },
       "metrics": {
-        "liq_usd": 11507.2735,
-        "vol_24h_usd": 1413.6515088428,
+        "liq_usd": 6916.7825,
+        "vol_24h_usd": 1778.0250788854,
         "txns_24h": 14,
         "price_usd": 0
       },
       "risk": {
-        "level": "medium",
+        "level": "high",
         "factors": [
           "new_token"
         ]
       },
-      "score": 90,
-      "age_hours": 0.21693452416666667,
-      "detected_at": "2026-03-15T10:02:02.152848+00:00",
+      "score": 95,
+      "age_hours": 0.07941095583333332,
+      "detected_at": "2026-03-15T10:17:05.072347+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 FRESH"
+        "\ud83d\udd25 SUPER FRESH",
+        "\ud83d\ude80 MEGA PUMP"
       ]
     }
   ]
