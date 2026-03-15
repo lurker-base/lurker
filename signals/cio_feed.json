@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-15T09:01:52.175077+00:00",
+  "timestamp": "2026-03-15T09:16:54.221363+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xbd7e0f16891b2e93ce298727c67ddab023369797",
-        "symbol": "UGOR",
-        "name": "UGOR"
+        "address": "0x86e5917d8b0b0243bf1f80d5ca5db75d388f6f51",
+        "symbol": "YARR",
+        "name": "YARR"
       },
       "metrics": {
-        "liq_usd": 5765.975,
-        "vol_24h_usd": 3450.2347410174,
-        "txns_24h": 69,
+        "liq_usd": 54222.3851,
+        "vol_24h_usd": 2732.60012896,
+        "txns_24h": 15,
         "price_usd": 0
       },
       "risk": {
@@ -20,14 +20,15 @@
           "new_token"
         ]
       },
-      "score": 95,
-      "age_hours": 0.19304395500000002,
-      "detected_at": "2026-03-15T09:01:52.119803+00:00",
+      "score": 100,
+      "age_hours": 0.1235858711111111,
+      "detected_at": "2026-03-15T09:16:54.056438+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\u26a1 BUZZ",
-        "\ud83d\ude80 MEGA PUMP"
+        "\ud83d\udca7 DEEP LIQ",
+        "\ud83d\udcd7 PUMPING",
+        "\u2b50 GEM"
       ]
     }
   ]
