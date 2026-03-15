@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-15T11:53:08.082817+00:00",
+  "timestamp": "2026-03-15T12:18:12.887151+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xc4898bbdf5d67ff7a1f43888f211e750b695ae22",
-        "symbol": "IXIC",
-        "name": "IXIC"
+        "address": "0x4d1a5878d87c8b3b1fc05fef091de29f93266dcb",
+        "symbol": "WREN",
+        "name": "WREN"
       },
       "metrics": {
-        "liq_usd": 12348.5899,
-        "vol_24h_usd": 1228.7955643455,
-        "txns_24h": 17,
+        "liq_usd": 52902.7131,
+        "vol_24h_usd": 2120.5861126,
+        "txns_24h": 12,
         "price_usd": 0
       },
       "risk": {
@@ -21,24 +21,25 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.27132584333333337,
-      "detected_at": "2026-03-15T11:53:07.919844+00:00",
+      "age_hours": 0.10483318194444444,
+      "detected_at": "2026-03-15T12:18:12.579952+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\udcd7 PUMPING"
+        "\ud83d\udca7 DEEP LIQ",
+        "\u2b50 GEM"
       ]
     },
     {
       "token": {
-        "address": "0x40c94d800f5367f936bd818cd7e83e556517de92",
-        "symbol": "\u673a\u5668\u4eba\u6708",
-        "name": "\u673a\u5668\u4eba\u6708"
+        "address": "0x114d1a83c3385616b8c79fd5d31efd0dc1e010d1",
+        "symbol": "KRAVX",
+        "name": "KRAVX"
       },
       "metrics": {
-        "liq_usd": 7800.27,
-        "vol_24h_usd": 4032.5621596634,
-        "txns_24h": 54,
+        "liq_usd": 6678.7458,
+        "vol_24h_usd": 1722.3878014696,
+        "txns_24h": 59,
         "price_usd": 0
       },
       "risk": {
@@ -47,14 +48,14 @@
           "new_token"
         ]
       },
-      "score": 95,
-      "age_hours": 0.05350148305555555,
-      "detected_at": "2026-03-15T11:53:07.772918+00:00",
+      "score": 90,
+      "age_hours": 0.1876611227777778,
+      "detected_at": "2026-03-15T12:18:12.726169+00:00",
       "source": "geckoterminal_v2",
       "badges": [
-        "\ud83d\udd25 SUPER FRESH",
+        "\ud83d\udd25 FRESH",
         "\u26a1 BUZZ",
-        "\ud83d\ude80 MEGA PUMP"
+        "\ud83d\udcd7 PUMPING"
       ]
     }
   ]
