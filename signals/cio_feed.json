@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-15T08:11:43.270798+00:00",
+  "timestamp": "2026-03-15T08:31:46.341495+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x131a1082f575e934c1a28e57616e9c59b44e06e5",
-        "symbol": "ROBOTMONEY",
-        "name": "ROBOTMONEY"
+        "address": "0xe7c77cb96638d29c736ffbbcb42e1a7a9ee141f1",
+        "symbol": "ENERGY",
+        "name": "ENERGY"
       },
       "metrics": {
-        "liq_usd": 53451.7792,
-        "vol_24h_usd": 2487.49373843,
-        "txns_24h": 15,
+        "liq_usd": 12693.7905,
+        "vol_24h_usd": 1071.7355627164,
+        "txns_24h": 8,
         "price_usd": 0
       },
       "risk": {
@@ -21,36 +21,8 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.12048553861111111,
-      "detected_at": "2026-03-15T08:11:42.924605+00:00",
-      "source": "geckoterminal_v2",
-      "badges": [
-        "\ud83d\udd25 FRESH",
-        "\ud83d\udca7 DEEP LIQ",
-        "\u2b50 GEM"
-      ]
-    },
-    {
-      "token": {
-        "address": "0x943d0fb6cf61317a40111710ab7234a6de166901",
-        "symbol": "BDAG",
-        "name": "BDAG"
-      },
-      "metrics": {
-        "liq_usd": 11744.1165,
-        "vol_24h_usd": 1580.236895328,
-        "txns_24h": 16,
-        "price_usd": 0
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "new_token"
-        ]
-      },
-      "score": 100,
-      "age_hours": 0.2272013163888889,
-      "detected_at": "2026-03-15T08:11:43.114151+00:00",
+      "age_hours": 0.12919920666666668,
+      "detected_at": "2026-03-15T08:31:46.270061+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
