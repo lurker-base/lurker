@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-03-15T03:00:55.435262+00:00",
+  "timestamp": "2026-03-15T03:15:57.713316+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0x9fbc6ca385594d5eae3c0816d6ff2638d748d7f6",
-        "symbol": "WKROWN",
-        "name": "WKROWN"
+        "address": "0xa111a5085c0963aeb1caf142e749c3db348626d9",
+        "symbol": "\u5c0f\u9f99\u867e",
+        "name": "\u5c0f\u9f99\u867e"
       },
       "metrics": {
-        "liq_usd": 12166.2357,
-        "vol_24h_usd": 1237.2473035238,
-        "txns_24h": 9,
+        "liq_usd": 11526.9431,
+        "vol_24h_usd": 1246.0581559634,
+        "txns_24h": 11,
         "price_usd": 0
       },
       "risk": {
@@ -21,8 +21,8 @@
         ]
       },
       "score": 100,
-      "age_hours": 0.15063013194444444,
-      "detected_at": "2026-03-15T03:00:55.432159+00:00",
+      "age_hours": 0.17560086555555554,
+      "detected_at": "2026-03-15T03:15:57.324994+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
