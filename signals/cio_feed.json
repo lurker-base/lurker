@@ -1,17 +1,45 @@
 {
-  "timestamp": "2026-03-15T01:15:36.609147+00:00",
+  "timestamp": "2026-03-15T01:25:38.739355+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
       "token": {
-        "address": "0xa8e1638d9a585c106152e1039714ede57b668b72",
-        "symbol": "DIME",
-        "name": "DIME"
+        "address": "0xc6fad4eaeab61e8e1d604a7ae6b797778a9c4113",
+        "symbol": "WALLY",
+        "name": "WALLY"
       },
       "metrics": {
-        "liq_usd": 12134.064,
-        "vol_24h_usd": 1273.5178880201,
-        "txns_24h": 14,
+        "liq_usd": 119353.8032,
+        "vol_24h_usd": 1332.32269652,
+        "txns_24h": 28,
+        "price_usd": 0
+      },
+      "risk": {
+        "level": "low",
+        "factors": [
+          "new_token"
+        ]
+      },
+      "score": 100,
+      "age_hours": 0.16260384416666665,
+      "detected_at": "2026-03-15T01:25:38.556169+00:00",
+      "source": "geckoterminal_v2",
+      "badges": [
+        "\ud83d\udd25 FRESH",
+        "\ud83d\udcb0 WHALE",
+        "\u2b50 GEM"
+      ]
+    },
+    {
+      "token": {
+        "address": "0x9acb79b48a78fabcd884d5662a306db5ae4f5a65",
+        "symbol": "SANAET",
+        "name": "SANAET"
+      },
+      "metrics": {
+        "liq_usd": 5993.3291,
+        "vol_24h_usd": 2796.9250385924,
+        "txns_24h": 60,
         "price_usd": 0
       },
       "risk": {
@@ -20,13 +48,14 @@
           "new_token"
         ]
       },
-      "score": 100,
-      "age_hours": 0.2259466386111111,
-      "detected_at": "2026-03-15T01:15:36.604819+00:00",
+      "score": 95,
+      "age_hours": 0.1837656188888889,
+      "detected_at": "2026-03-15T01:25:38.737484+00:00",
       "source": "geckoterminal_v2",
       "badges": [
         "\ud83d\udd25 FRESH",
-        "\ud83d\udcd7 PUMPING"
+        "\u26a1 BUZZ",
+        "\ud83d\ude80 MEGA PUMP"
       ]
     }
   ]
