@@ -1,11 +1,70 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-16T19:27:41.005000+00:00",
-    "status": "error",
-    "count": 0,
-    "error": "scanner crashed: JSONDecodeError('Expecting property name enclosed in double quotes: line 60892 column 1 (char 1434439)')",
-    "trace": "ellar/python@3.14/3.14.3_1/lib/python3.14/json/decoder.py\", line 345, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/linuxbrew/.linuxbrew/Cellar/python@3.14/3.14.3_1/lib/python3.14/json/decoder.py\", line 361, in raw_decode\n    obj, end = self.scan_once(s, idx)\n               ~~~~~~~~~~~~~~^^^^^^^^\njson.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 60892 column 1 (char 1434439)\n"
+    "updated_at": "2026-03-16T19:37:50.276000+00:00",
+    "generated_at": "2026-03-16T19:37:50.276000+00:00",
+    "status": "ok",
+    "count": 1,
+    "thresholds": {
+      "min_liq_usd": 100,
+      "min_vol_5m": 10,
+      "min_tx_5m": 1,
+      "max_age_min": 10080
+    },
+    "risk_distribution": {
+      "medium": 1
+    },
+    "rejected": {
+      "known_token": 7,
+      "low_volume": 3,
+      "too_old": 21,
+      "low_liq": 1,
+      "duplicate": 1
+    },
+    "source": "ultra_launch_scanner"
   },
-  "candidates": []
+  "candidates": [
+    {
+      "token": {
+        "address": "0x10fc809d0c6f25f47ff294655d12c9e7fd54fae2",
+        "symbol": "SHITCOIN",
+        "name": "shitcoin"
+      },
+      "pair": {
+        "address": "0xa90dd36c021194d247447b6c89a8ab0440b21553712b0279881339d998afdf97",
+        "dex": "uniswap",
+        "quote": "flETH"
+      },
+      "metrics": {
+        "liq_usd": 100648.15,
+        "vol_5m_usd": 2.15,
+        "vol_1h_usd": 312.86,
+        "txns_5m": 2,
+        "price_usd": 1.006e-06
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-16T19:01:33+00:00",
+        "token_first_seen": "2026-03-16T19:24:25.562000+00:00",
+        "age_minutes": 13.4,
+        "age_hours": 0.22
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 1.0
+      },
+      "risks": [
+        "low_volume"
+      ],
+      "risk_level": "medium",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    }
+  ]
 }
