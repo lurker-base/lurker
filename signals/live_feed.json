@@ -1,9 +1,9 @@
 {
   "meta": {
-    "updated_at": "2026-03-16T22:25:35.273000+00:00",
+    "updated_at": "2026-03-16T22:40:50.334000+00:00",
     "source": "cio_scanner",
     "chain": "base",
-    "count": 2,
+    "count": 1,
     "filters": {
       "min_volume_1h": 0,
       "max_results": 20,
@@ -13,29 +13,15 @@
   },
   "signals": [
     {
-      "address": "0x6f4a1c9540212e1e1efdcc885ceadef5cf07b893",
-      "symbol": "CRZ",
-      "name": "Credz Agent",
-      "liquidity_usd": 100295.45,
-      "volume_1h": 243658.87,
-      "volume_5m": 8712.5,
-      "quality_score": 100,
-      "age_minutes": 66.1,
-      "age_hours": 1.1,
-      "detected_at": "2026-03-16T21:19:27.962000+00:00",
-      "risk_level": "low",
-      "source": "profiles"
-    },
-    {
       "address": "0xfca95aeb5bf44ae355806a5ad14659c940dc6bf7",
       "symbol": "SHIB",
       "name": "SHIBA INU",
-      "liquidity_usd": 352264.06,
-      "volume_1h": 229.41,
-      "volume_5m": 229.41,
+      "liquidity_usd": 352712.77,
+      "volume_1h": 258.8,
+      "volume_5m": 29.39,
       "quality_score": 100,
-      "age_minutes": 152.5,
-      "age_hours": 2.5,
+      "age_minutes": 167.8,
+      "age_hours": 2.8,
       "detected_at": "2026-03-16T19:53:03.661000+00:00",
       "risk_level": "medium",
       "source": "boosts"

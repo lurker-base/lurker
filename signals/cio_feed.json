@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-16T22:25:35.273000+00:00",
-    "generated_at": "2026-03-16T22:25:35.273000+00:00",
+    "updated_at": "2026-03-16T22:40:50.333000+00:00",
+    "generated_at": "2026-03-16T22:40:50.333000+00:00",
     "status": "ok",
-    "count": 2,
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 100,
       "min_vol_5m": 10,
@@ -12,60 +12,19 @@
       "max_age_min": 10080
     },
     "risk_distribution": {
-      "low": 1,
       "medium": 1
     },
     "rejected": {
       "low_liq": 2,
       "low_volume": 6,
       "known_token": 7,
-      "too_old": 21,
+      "too_old": 20,
       "low_tx": 2,
       "duplicate": 1
     },
     "source": "ultra_launch_scanner"
   },
   "candidates": [
-    {
-      "token": {
-        "address": "0x6f4a1c9540212e1e1efdcc885ceadef5cf07b893",
-        "symbol": "CRZ",
-        "name": "Credz Agent"
-      },
-      "pair": {
-        "address": "0xd2d50621c80bf6158c8233e81802d74029e92051990e30b4b019bf8f13f2df88",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 100295.45,
-        "vol_5m_usd": 8712.5,
-        "vol_1h_usd": 243658.87,
-        "txns_5m": 60,
-        "price_usd": 1.92e-06
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-16T20:53:29+00:00",
-        "token_first_seen": "2026-03-16T21:19:27.962000+00:00",
-        "age_minutes": 66.1,
-        "age_hours": 1.1
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.98
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    },
     {
       "token": {
         "address": "0xfca95aeb5bf44ae355806a5ad14659c940dc6bf7",
@@ -78,21 +37,21 @@
         "quote": "ETH"
       },
       "metrics": {
-        "liq_usd": 352264.06,
-        "vol_5m_usd": 229.41,
-        "vol_1h_usd": 229.41,
-        "txns_5m": 252,
-        "price_usd": 4.481e-09
+        "liq_usd": 352712.77,
+        "vol_5m_usd": 29.39,
+        "vol_1h_usd": 258.8,
+        "txns_5m": 202,
+        "price_usd": 4.486e-09
       },
       "timestamps": {
         "pair_created_at": "2025-06-16T10:33:31+00:00",
         "token_first_seen": "2026-03-16T19:53:03.661000+00:00",
-        "age_minutes": 152.5,
-        "age_hours": 2.54
+        "age_minutes": 167.8,
+        "age_hours": 2.8
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.96
+        "freshness": 0.95
       },
       "risks": [
         "low_volume"
