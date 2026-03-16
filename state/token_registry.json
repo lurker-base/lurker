@@ -61018,6 +61018,24 @@
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773691088825,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773691393102,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773691697612,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
         }
       ],
       "token": {
@@ -61071,6 +61089,24 @@
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773691088825,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773691393102,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773691697612,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
         }
       ],
       "token": {
@@ -61121,6 +61157,24 @@
         },
         {
           "timestamp": 1773690783661,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773691088825,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773691393102,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773691697612,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
@@ -61208,6 +61262,24 @@
         },
         {
           "timestamp": 1773690783661,
+          "price": 2.29e-07,
+          "liq": 22993.23,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773691088825,
+          "price": 2.29e-07,
+          "liq": 22993.23,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773691393102,
+          "price": 2.29e-07,
+          "liq": 22993.23,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773691697612,
           "price": 2.29e-07,
           "liq": 22993.23,
           "vol_5m": 0.0
@@ -61342,6 +61414,24 @@
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773691088825,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773691393102,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773691697612,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
         }
       ],
       "token": {
@@ -61453,6 +61543,42 @@
           "price": 1.003e-06,
           "liq": 100384.61,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773691088825,
+          "price": 1.003e-06,
+          "liq": 100384.61,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773691088825,
+          "price": 1.003e-06,
+          "liq": 100384.61,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773691393102,
+          "price": 1.003e-06,
+          "liq": 100384.61,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773691393102,
+          "price": 1.003e-06,
+          "liq": 100384.61,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773691697612,
+          "price": 1.003e-06,
+          "liq": 100384.61,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773691697612,
+          "price": 1.003e-06,
+          "liq": 100384.61,
+          "vol_5m": 0.0
         }
       ],
       "token": {
@@ -61470,12 +61596,70 @@
           "price": 4.355e-09,
           "liq": 334426.21,
           "vol_5m": 32.24
+        },
+        {
+          "timestamp": 1773691088825,
+          "price": 4.365e-09,
+          "liq": 335092.39,
+          "vol_5m": 41.02
+        },
+        {
+          "timestamp": 1773691393102,
+          "price": 4.502e-09,
+          "liq": 340778.04,
+          "vol_5m": 1955.61
+        },
+        {
+          "timestamp": 1773691697612,
+          "price": 4.501e-09,
+          "liq": 340441.22,
+          "vol_5m": 68.37
         }
       ],
       "token": {
         "address": "0xfca95aeb5bf44ae355806a5ad14659c940dc6bf7",
         "symbol": "SHIB",
         "name": "SHIBA INU"
+      }
+    },
+    "0xcfb877dd71c88d806e1c01d5d9a8b4c6ec476d6d": {
+      "first_seen": 1773691393102,
+      "first_seen_iso": "2026-03-16T20:03:13.102000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1773691393102,
+          "price": 5.511e-07,
+          "liq": 0,
+          "vol_5m": 79.67
+        },
+        {
+          "timestamp": 1773691697612,
+          "price": 5.954e-07,
+          "liq": 629.72,
+          "vol_5m": 0.02
+        }
+      ],
+      "token": {
+        "address": "0xcfb877dd71c88d806e1c01d5d9a8b4c6ec476d6d",
+        "symbol": "UGROIL",
+        "name": "United Global Reserve Oil"
+      }
+    },
+    "0x00bb032296e0c580e21010a5a6a4e007e0953e68": {
+      "first_seen": 1773691697612,
+      "first_seen_iso": "2026-03-16T20:08:17.612000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1773691697612,
+          "price": 4.098e-07,
+          "liq": 38917.71,
+          "vol_5m": 349.93
+        }
+      ],
+      "token": {
+        "address": "0x00bb032296e0c580e21010a5a6a4e007e0953e68",
+        "symbol": "\ud83d\udfe9\ud83e\udd9e",
+        "name": "NetClawd"
       }
     }
   }

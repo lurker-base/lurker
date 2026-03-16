@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-16T19:53:03.747000+00:00",
-    "generated_at": "2026-03-16T19:53:03.747000+00:00",
+    "updated_at": "2026-03-16T20:08:17.712000+00:00",
+    "generated_at": "2026-03-16T20:08:17.712000+00:00",
     "status": "ok",
-    "count": 1,
+    "count": 3,
     "thresholds": {
       "min_liq_usd": 100,
       "min_vol_5m": 10,
@@ -12,7 +12,8 @@
       "max_age_min": 10080
     },
     "risk_distribution": {
-      "medium": 1
+      "low": 2,
+      "high": 1
     },
     "rejected": {
       "low_liq": 2,
@@ -36,26 +37,24 @@
         "quote": "ETH"
       },
       "metrics": {
-        "liq_usd": 334426.21,
-        "vol_5m_usd": 32.24,
-        "vol_1h_usd": 613.27,
-        "txns_5m": 43,
-        "price_usd": 4.355e-09
+        "liq_usd": 340441.22,
+        "vol_5m_usd": 68.37,
+        "vol_1h_usd": 2595.05,
+        "txns_5m": 53,
+        "price_usd": 4.501e-09
       },
       "timestamps": {
         "pair_created_at": "2025-06-16T10:33:31+00:00",
         "token_first_seen": "2026-03-16T19:53:03.661000+00:00",
-        "age_minutes": 393679.5,
-        "age_hours": 6561.33
+        "age_minutes": 15.2,
+        "age_hours": 0.25
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0
+        "freshness": 1.0
       },
-      "risks": [
-        "low_volume"
-      ],
-      "risk_level": "medium",
+      "risks": [],
+      "risk_level": "low",
       "source": "boosts",
       "status": "observing",
       "quality": {
@@ -64,6 +63,91 @@
         "has_socials": true,
         "has_website": true,
         "quality_score": 100
+      }
+    },
+    {
+      "token": {
+        "address": "0x00bb032296e0c580e21010a5a6a4e007e0953e68",
+        "symbol": "🟩🦞",
+        "name": "NetClawd"
+      },
+      "pair": {
+        "address": "0x31642ba6defeea957dbfcaea442fcb258ac7e251",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 38917.71,
+        "vol_5m_usd": 349.93,
+        "vol_1h_usd": 3093.79,
+        "txns_5m": 2,
+        "price_usd": 4.098e-07
+      },
+      "timestamps": {
+        "pair_created_at": "2026-01-26T02:30:49+00:00",
+        "token_first_seen": "2026-03-16T20:08:17.612000+00:00",
+        "age_minutes": 71617.5,
+        "age_hours": 1193.62
+      },
+      "scores": {
+        "cio_score": 90,
+        "freshness": 0
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "community",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    },
+    {
+      "token": {
+        "address": "0xcfb877dd71c88d806e1c01d5d9a8b4c6ec476d6d",
+        "symbol": "UGROIL",
+        "name": "United Global Reserve Oil"
+      },
+      "pair": {
+        "address": "0x808c87b9c28806c761ff7e2884521feaec90d98ddac4c411364f8a6185106632",
+        "dex": "uniswap",
+        "quote": "topbasetrending"
+      },
+      "metrics": {
+        "liq_usd": 629.72,
+        "vol_5m_usd": 0.02,
+        "vol_1h_usd": 113.59,
+        "txns_5m": 1,
+        "price_usd": 5.954e-07
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-16T19:56:53+00:00",
+        "token_first_seen": "2026-03-16T20:03:13.102000+00:00",
+        "age_minutes": 5.1,
+        "age_hours": 0.08
+      },
+      "scores": {
+        "cio_score": 80,
+        "freshness": 1.0
+      },
+      "risks": [
+        "low_liquidity",
+        "very_low_liquidity",
+        "low_activity",
+        "low_volume"
+      ],
+      "risk_level": "high",
+      "source": "search",
+      "status": "observing",
+      "quality": {
+        "has_profile": false,
+        "has_image": false,
+        "has_socials": false,
+        "has_website": false,
+        "quality_score": 0
       }
     }
   ]

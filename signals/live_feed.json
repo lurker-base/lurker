@@ -1,9 +1,9 @@
 {
   "meta": {
-    "updated_at": "2026-03-16T19:53:03.748000+00:00",
+    "updated_at": "2026-03-16T20:08:17.713000+00:00",
     "source": "cio_scanner",
     "chain": "base",
-    "count": 1,
+    "count": 3,
     "filters": {
       "min_volume_1h": 0,
       "max_results": 20,
@@ -16,15 +16,43 @@
       "address": "0xfca95aeb5bf44ae355806a5ad14659c940dc6bf7",
       "symbol": "SHIB",
       "name": "SHIBA INU",
-      "liquidity_usd": 334426.21,
-      "volume_1h": 613.27,
-      "volume_5m": 32.24,
+      "liquidity_usd": 340441.22,
+      "volume_1h": 2595.05,
+      "volume_5m": 68.37,
       "quality_score": 100,
-      "age_minutes": 393679.5,
-      "age_hours": 6561.3,
+      "age_minutes": 15.2,
+      "age_hours": 0.3,
       "detected_at": "2026-03-16T19:53:03.661000+00:00",
-      "risk_level": "medium",
+      "risk_level": "low",
       "source": "boosts"
+    },
+    {
+      "address": "0x00bb032296e0c580e21010a5a6a4e007e0953e68",
+      "symbol": "\ud83d\udfe9\ud83e\udd9e",
+      "name": "NetClawd",
+      "liquidity_usd": 38917.71,
+      "volume_1h": 3093.79,
+      "volume_5m": 349.93,
+      "quality_score": 90,
+      "age_minutes": 71617.5,
+      "age_hours": 1193.6,
+      "detected_at": "2026-03-16T20:08:17.612000+00:00",
+      "risk_level": "low",
+      "source": "community"
+    },
+    {
+      "address": "0xcfb877dd71c88d806e1c01d5d9a8b4c6ec476d6d",
+      "symbol": "UGROIL",
+      "name": "United Global Reserve Oil",
+      "liquidity_usd": 629.72,
+      "volume_1h": 113.59,
+      "volume_5m": 0.02,
+      "quality_score": 80,
+      "age_minutes": 5.1,
+      "age_hours": 0.1,
+      "detected_at": "2026-03-16T20:03:13.102000+00:00",
+      "risk_level": "high",
+      "source": "search"
     }
   ]
 }
