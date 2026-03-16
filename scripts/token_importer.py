@@ -8,6 +8,7 @@ Exécute toutes les 2 minutes
 import json
 from datetime import datetime, timezone
 from pathlib import Path
+from safe_state import StateFile
 
 LURKER_DIR = Path("/data/.openclaw/workspace/lurker-project")
 CIO_FILE = LURKER_DIR / "signals" / "cio_feed.json"
@@ -23,34 +24,49 @@ def load_cio_feed():
         data = json.load(f)
     return data.get("candidates", [])
 
+def default_state():
+    return {
+        "schema": "lurker_v1.5",
+        "meta": {
+            "version": "1.5.0",
+            "total_tokens": 0,
+            "stats": {
+                "by_category": {"NEW": 0, "WATCHING": 0, "TRENDING": 0, "ACTIVE": 0, "VERIFIED": 0, "RUGGED": 0},
+                "pumps_24h": 0,
+                "dumps_24h": 0
+            }
+        },
+        "tokens": {}
+    }
+
+
 def load_state():
     """Charge l'état actuel"""
     if not STATE_FILE.exists():
         print("[IMPORTER] State file not found, creating new")
-        return {
-            "schema": "lurker_v1.5",
-            "meta": {
-                "version": "1.5.0",
-                "total_tokens": 0,
-                "stats": {
-                    "by_category": {"NEW": 0, "WATCHING": 0, "TRENDING": 0, "ACTIVE": 0, "VERIFIED": 0, "RUGGED": 0},
-                    "pumps_24h": 0,
-                    "dumps_24h": 0
-                }
-            },
-            "tokens": {}
-        }
-    
-    with open(STATE_FILE) as f:
-        return json.load(f)
+        return default_state()
+
+    handler = StateFile(STATE_FILE, max_retries=5, retry_delay=0.2)
+    state = handler.load(default=None)
+    if state is None:
+        backup_file = STATE_FILE.parent / "lurker_state_backup.json"
+        if backup_file.exists():
+            print("[IMPORTER] Primary state unreadable, trying backup")
+            state = StateFile(backup_file, max_retries=2, retry_delay=0.1).load(default=default_state())
+        else:
+            print("[IMPORTER] Primary state unreadable, using default state")
+            state = default_state()
+    return state
+
 
 def save_state(state):
     """Sauvegarde l'état"""
     STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
     state["meta"]["total_tokens"] = len(state["tokens"])
     state["meta"]["last_scan"] = datetime.now(timezone.utc).isoformat()
-    with open(STATE_FILE, 'w') as f:
-        json.dump(state, f, indent=2)
+    handler = StateFile(STATE_FILE, max_retries=5, retry_delay=0.2)
+    if not handler.save(state):
+        raise RuntimeError("failed to save state atomically")
 
 def generate_badges(risk, metrics):
     """Génère les badges colorés pour le dashboard"""

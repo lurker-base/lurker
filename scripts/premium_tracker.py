@@ -10,6 +10,7 @@ import requests
 from datetime import datetime, timezone
 from pathlib import Path
 import os
+from safe_state import StateFile
 
 # Config
 BASE_DIR = Path("/data/.openclaw/workspace/lurker-project")
@@ -38,12 +39,7 @@ def iso(ts_ms=None):
         ts_ms = now_ms()
     return datetime.fromtimestamp(ts_ms / 1000, tz=timezone.utc).isoformat()
 
-def load_tracker_state():
-    """Load or create premium tracker state"""
-    STATE_FILE = STATE_DIR / "premium_tracker.json"
-    if STATE_FILE.exists():
-        with open(STATE_FILE) as f:
-            return json.load(f)
+def default_tracker_state():
     return {
         "schema": "lurker_premium_tracker_v1",
         "tracked_tokens": {},
@@ -52,12 +48,21 @@ def load_tracker_state():
         "last_scan": None
     }
 
+
+def load_tracker_state():
+    """Load or create premium tracker state"""
+    STATE_FILE = STATE_DIR / "premium_tracker.json"
+    if not STATE_FILE.exists():
+        return default_tracker_state()
+    return StateFile(STATE_FILE, max_retries=5, retry_delay=0.2).load(default=default_tracker_state())
+
+
 def save_tracker_state(state):
     """Save premium tracker state"""
     STATE_FILE = STATE_DIR / "premium_tracker.json"
     STATE_DIR.mkdir(parents=True, exist_ok=True)
-    with open(STATE_FILE, 'w') as f:
-        json.dump(state, f, indent=2)
+    if not StateFile(STATE_FILE, max_retries=5, retry_delay=0.2).save(state):
+        raise RuntimeError("failed to save premium tracker state atomically")
 
 def get_token_data_from_dexscreener(token_address):
     """Fetch token data from DexScreener"""
@@ -134,20 +139,19 @@ def scan_consistent_tokens():
     # Check lifecycle for established tokens
     state_file = STATE_DIR / "lurker_state.json"
     if state_file.exists():
-        with open(state_file) as f:
-            state_data = json.load(f)
-            tokens = state_data.get("tokens", {})
-            
-            # Find consistent tokens
-            for addr, token in tokens.items():
-                age_hours = token.get("age_hours", 0)
-                liq = token.get("liquidity_usd", 0)
-                vol = token.get("volume_24h", 0)
-                
-                # Check if meets criteria
-                if age_hours >= MIN_AGE_HOURS and liq >= MIN_LIQ and vol >= MIN_VOL_24H:
-                    # Add to tracking if not already tracked
-                    print(f"  Found consistent: {token.get('symbol', 'unknown')} - ${liq:.0f} liq, ${vol:.0f} vol")
+        state_data = StateFile(state_file, max_retries=5, retry_delay=0.2).load(default={"tokens": {}})
+        tokens = state_data.get("tokens", {})
+
+        # Find consistent tokens
+        for addr, token in tokens.items():
+            age_hours = token.get("age_hours", 0)
+            liq = token.get("liquidity_usd", 0)
+            vol = token.get("volume_24h", 0)
+
+            # Check if meets criteria
+            if age_hours >= MIN_AGE_HOURS and liq >= MIN_LIQ and vol >= MIN_VOL_24H:
+                # Add to tracking if not already tracked
+                print(f"  Found consistent: {token.get('symbol', 'unknown')} - ${liq:.0f} liq, ${vol:.0f} vol")
     
     # Also check the live feed
     live_file = SIGNALS_DIR / "live_feed.json"

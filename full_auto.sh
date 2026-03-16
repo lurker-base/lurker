@@ -54,7 +54,9 @@ pkill -f "token_importer.py" || true
 pkill -f "lifecycle_core.py" || true
 pkill -f "cleanup_tokens.py" || true
 pkill -f "scanner_v2.py" || true
+pkill -f "scanner_cio_ultra.py" || true
 pkill -f "auto_push.sh" || true
+pkill -f "auto_push_loop.sh" || true
 # Ensure no old wrappers are running either
 pkill -f "logs/.*_wrapper.sh" || true
 
@@ -72,31 +74,14 @@ launch_service "scripts/lifecycle_core.py" 180 "lifecycle"
 # 3. Cleanup - nettoie les vieux tokens toutes les 10 min
 launch_service "scripts/cleanup_tokens.py" 600 "cleanup"
 
-# 4. Scanner CIO Ultra - scanne les nouveaux tokens toutes les 15 min
-# scanner_v2.py is for scanning, not scanner_cio_ultra.py
-launch_service "scripts/scanner_v2.py" 300 "scanner"
+# 4. Scanner CIO Ultra - scanne les nouveaux tokens toutes les 5 min
+launch_service "scripts/scanner_cio_ultra.py" 300 "scanner"
 
-# 5. Auto Push - pousse sur GitHub toutes les 15 min (runs as a separate loop)
-(
-    while true; do
-        echo "[$(date)] Auto push check..." >> logs/auto_push.log
-        bash auto_push.sh >> logs/auto_push.log 2>&1
-        sleep 900
-    done
-) &
-
-echo "LURKER services initiated. Monitor logs for status."
-# Keep the main script running
-while true; do
-    sleep 60
-done
-
-# Verify launched services PIDs
-sleep 5
-echo "Verifying launched services..."
-pgrep -f "token_importer.py\|lifecycle_core.py\|cleanup_tokens.py\|scanner_v2.py" | xargs -I {} true
-echo $! > logs/auto_push.pid
-echo "  ✅ auto_push lancé (PID: $!)"
+# 5. Auto Push - pousse sur GitHub toutes les 15 min
+setsid nohup bash scripts/auto_push_loop.sh >> logs/auto_push.log 2>&1 &
+auto_push_pid=$!
+echo $auto_push_pid > logs/auto_push.pid
+echo "  ✅ auto_push lancé (PID: $auto_push_pid)"
 
 # Sauvegarder le PID du script principal
 echo $$ > logs/full_auto.pid
@@ -107,10 +92,16 @@ echo "Services actifs:"
 echo "  - Token Importer (toutes les 2 min)"
 echo "  - Lifecycle Core (toutes les 3 min)"
 echo "  - Cleanup (toutes les 10 min)"
-echo "  - Scanner CIO (toutes les 15 min)"
+echo "  - Scanner CIO (toutes les 5 min)"
 echo "  - Auto Push GitHub (toutes les 15 min)"
 echo ""
 echo "PIDs sauvegardés dans: logs/*.pid"
 echo "Logs disponibles dans: logs/"
 echo ""
 echo "Pour arrêter: pkill -f full_auto.sh && pkill -f lurker_wrapper"
+
+echo "LURKER services initiated. Monitor logs for status."
+# Keep the main script running
+while true; do
+    sleep 60
+done

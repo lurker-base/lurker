@@ -7,18 +7,29 @@ Nettoie les feeds : retire les rugs des catégories actives, élimine les doublo
 import json
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
+from safe_state import StateFile
 
 STATE_FILE = Path(__file__).parent.parent / "state" / "lurker_state.json"
 
 def load_state():
-    if STATE_FILE.exists():
-        with open(STATE_FILE) as f:
-            return json.load(f)
-    return {"tokens": {}}
+    if not STATE_FILE.exists():
+        return {"tokens": {}}
+
+    handler = StateFile(STATE_FILE, max_retries=5, retry_delay=0.2)
+    state = handler.load(default=None)
+    if state is None:
+        backup_file = STATE_FILE.parent / "lurker_state_backup.json"
+        if backup_file.exists():
+            print("[CLEANUP] Primary state unreadable, trying backup")
+            return StateFile(backup_file, max_retries=2, retry_delay=0.1).load(default={"tokens": {}})
+        return {"tokens": {}}
+    return state
+
 
 def save_state(state):
-    with open(STATE_FILE, 'w') as f:
-        json.dump(state, f, indent=2)
+    handler = StateFile(STATE_FILE, max_retries=5, retry_delay=0.2)
+    if not handler.save(state):
+        raise RuntimeError("failed to save state atomically")
 
 def is_token_rugged(token):
     """Détermine si un token est RUGGED"""
