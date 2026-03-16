@@ -46,7 +46,7 @@ def save_token(token_id, data):
         json.dump(tokens, f, indent=2)
 
 def get_token_price(token_address):
-    """Get current price from DexScreener"""
+    """Get current price from DexScreener — also resolves symbol/name"""
     try:
         url = f"https://api.dexscreener.com/latest/dex/tokens/{token_address}"
         resp = requests.get(url, timeout=15)
@@ -56,12 +56,32 @@ def get_token_price(token_address):
             if pairs:
                 # Get best pair by volume
                 best = max(pairs, key=lambda x: float(x.get("volume", {}).get("h24", 0) or 0))
+                
+                # Resolve token symbol and name from pair data
+                base_token = best.get("baseToken", {})
+                resolved_symbol = base_token.get("symbol", "UNKNOWN")
+                resolved_name = base_token.get("name", "Unknown")
+                
+                # Buy/Sell data for pressure analysis
+                txns_1h = best.get("txns", {}).get("h1", {})
+                buys_1h = txns_1h.get("buys", 0) or 0
+                sells_1h = txns_1h.get("sells", 0) or 0
+                
+                liq = float(best.get("liquidity", {}).get("usd", 0) or 0)
+                vol_1h = float(best.get("volume", {}).get("h1", 0) or 0)
+                
                 return {
                     "price": float(best.get("priceUsd", 0) or 0),
                     "volume24h": float(best.get("volume", {}).get("h24", 0) or 0),
-                    "liquidity": float(best.get("liquidity", {}).get("usd", 0) or 0),
+                    "volume1h": vol_1h,
+                    "liquidity": liq,
                     "priceChange": float(best.get("priceChange", {}).get("h24", 0) or 0),
-                    "pair": best.get("pairAddress")
+                    "pair": best.get("pairAddress"),
+                    "symbol": resolved_symbol,
+                    "name": resolved_name,
+                    "buys_1h": buys_1h,
+                    "sells_1h": sells_1h,
+                    "vol_liq_ratio": round(vol_1h / liq, 3) if liq > 0 else 0,
                 }
     except Exception as e:
         log(f"Error fetching price: {e}")
@@ -69,23 +89,36 @@ def get_token_price(token_address):
 
 def generate_signal(token_id, token_data, current_data, signal_type):
     """Generate signal file"""
+    # Use resolved symbol from DexScreener if available, fallback to stored
+    symbol = current_data.get("symbol") or token_data.get("symbol", "UNKNOWN")
+    name = current_data.get("name") or token_data.get("name", "Unknown")
+    
+    # Skip signals for unresolved tokens — reduces noise
+    if symbol in ("UNKNOWN", "Unknown", ""):
+        log(f"⏭️ Skipping {signal_type} for unresolved token {token_id[:16]}...")
+        return
+    
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    signal_file = SIGNALS_DIR / f"{signal_type}_{token_data['symbol']}_{timestamp}.json"
+    signal_file = SIGNALS_DIR / f"{signal_type}_{symbol}_{timestamp}.json"
     
     SIGNALS_DIR.mkdir(parents=True, exist_ok=True)
     
     signal = {
         "type": signal_type,  # PUMP ou DUMP
         "token_id": token_id,
-        "symbol": token_data.get("symbol", "UNKNOWN"),
-        "name": token_data.get("name", "Unknown"),
+        "symbol": symbol,
+        "name": name,
         "price_usd": current_data["price"],
         "price_change_24h": current_data["priceChange"],
         "volume_24h": current_data["volume24h"],
+        "volume_1h": current_data.get("volume1h", 0),
         "liquidity_usd": current_data["liquidity"],
+        "vol_liq_ratio": current_data.get("vol_liq_ratio", 0),
+        "buys_1h": current_data.get("buys_1h", 0),
+        "sells_1h": current_data.get("sells_1h", 0),
         "detected_at": datetime.now().isoformat(),
         "dexscreener_url": f"https://dexscreener.com/base/{token_id}",
-        "alert_message": f"🚨 {signal_type} ALERT: {token_data.get('symbol', 'TOKEN')} "
+        "alert_message": f"🚨 {signal_type} ALERT: ${symbol} "
                         f"${current_data['price']:.6f} "
                         f"({current_data['priceChange']:+.1f}%)"
     }
@@ -127,8 +160,12 @@ def check_all_tokens():
             if not current:
                 continue
             
-            # Update last check
+            # Update last check and resolve symbol if missing
             token_data["last_check"] = time.time()
+            if current.get("symbol") and token_data.get("symbol") in ("UNKNOWN", None, ""):
+                token_data["symbol"] = current["symbol"]
+                token_data["name"] = current.get("name", token_data.get("name", "Unknown"))
+                log(f"📝 Resolved symbol: {current['symbol']} for {token_id[:16]}...")
             token_data["price_history"] = token_data.get("price_history", [])
             token_data["price_history"].append({
                 "timestamp": time.time(),

@@ -90,37 +90,94 @@ def is_new_token(token_addr, registry, max_age_hours=48):
         return True, registry["tokens"][token_addr]
 
 def score_cio(pair, age_h, source_boost=0):
-    """Score: freshness + liquidity + volume + source boost"""
-    score = 30 + source_boost  # Base + source bonus
+    """Score: freshness + liquidity + volume/liq ratio + buy pressure + source boost
     
-    # Freshness (40%)
-    if age_h < 1:
-        score += 40
-    elif age_h < 6:
-        score += 35
-    elif age_h < 12:
-        score += 30
-    elif age_h < 24:
-        score += 20
-    elif age_h < 48:
-        score += 10
+    v3.1 — Improved scoring with pump/dump detection signals:
+    - Volume/Liquidity ratio (key pump indicator, 25% weight)
+    - Buy vs Sell pressure (accumulation signal, 15% weight)  
+    - Freshness sweet spot (1-12h, not too new, 20% weight)
+    - Liquidity health (20% weight)
+    - Source credibility (10% weight)
+    - Transaction density (10% weight)
+    """
+    import math
+    score = source_boost  # Start with source bonus only
     
-    # Liquidity (20%)
     liq = safe_num((pair.get("liquidity") or {}).get("usd"), 0)
-    if liq > 0:
-        import math
-        score += min(math.log10(liq) / 7, 1.0) * 20
-    
-    # Volume 1h (20%) - momentum signal
     vol_1h = safe_num((pair.get("volume") or {}).get("h1"), 0)
-    if vol_1h > 0:
-        import math
-        score += min(math.log10(vol_1h) / 5, 1.0) * 20
-    
-    # Transaction count (10%) - activity signal
+    vol_5m = safe_num((pair.get("volume") or {}).get("m5"), 0)
     tx_1h = (pair.get("txns") or {}).get("h1") or {}
-    tx_count = (tx_1h.get("buys") or 0) + (tx_1h.get("sells") or 0)
-    score += min(tx_count / 100, 1.0) * 10
+    buys_1h = tx_1h.get("buys") or 0
+    sells_1h = tx_1h.get("sells") or 0
+    tx_count = buys_1h + sells_1h
+    
+    # === FRESHNESS (20%) — Sweet spot: 1-12h ===
+    if age_h < 0.5:
+        score += 6     # Too new = rug risk
+    elif age_h < 1:
+        score += 14
+    elif age_h < 6:
+        score += 20    # Sweet spot peak
+    elif age_h < 12:
+        score += 18
+    elif age_h < 24:
+        score += 12
+    elif age_h < 48:
+        score += 6
+    else:
+        score += 2
+    
+    # === VOLUME/LIQUIDITY RATIO (25%) — Key pump indicator ===
+    if liq > 0:
+        vol_liq = vol_1h / liq
+        if vol_liq < 0.1:
+            score += 2     # Dead pool
+        elif vol_liq < 0.5:
+            score += 10    # Low interest
+        elif vol_liq < 3.0:
+            score += 20    # Healthy interest
+        elif vol_liq < 10.0:
+            score += 25    # High interest = potential pump
+        elif vol_liq < 50.0:
+            score += 15    # Getting suspicious
+        else:
+            score += 5     # Likely wash trading
+    
+    # === LIQUIDITY HEALTH (20%) ===
+    if liq > 0:
+        liq_score = min(math.log10(max(liq, 1)) / 6, 1.0)  # log scale, cap at $1M
+        score += liq_score * 20
+    
+    # === BUY/SELL PRESSURE (15%) ===
+    if tx_count >= 5:
+        buy_ratio = buys_1h / tx_count
+        if buy_ratio > 0.7:
+            score += 15   # Strong accumulation
+        elif buy_ratio > 0.55:
+            score += 12   # Healthy buying
+        elif buy_ratio > 0.45:
+            score += 8    # Balanced
+        elif buy_ratio > 0.3:
+            score += 4    # Sell pressure
+        else:
+            score += 1    # Heavy dumping
+    else:
+        score += 5  # Not enough data, neutral
+    
+    # === TRANSACTION DENSITY (10%) ===
+    if tx_count >= 50:
+        score += 10
+    elif tx_count >= 20:
+        score += 8
+    elif tx_count >= 10:
+        score += 6
+    elif tx_count >= 5:
+        score += 4
+    else:
+        score += 1
+    
+    # === SOURCE CREDIBILITY (10%) — already in source_boost ===
+    score += 10  # Base credibility
     
     return round(min(score, 100), 1)
 
@@ -255,6 +312,21 @@ def process_candidate(item, registry):
     # Source boost
     source_boost = {"profiles": 5, "boosts": 10, "top_boosts": 15}.get(source, 0)
     
+    # Enhanced metrics
+    vol_5m = safe_num((pair.get("volume") or {}).get("m5"), 0)
+    vol_24h = safe_num((pair.get("volume") or {}).get("h24"), 0)
+    tx_1h_obj_full = (pair.get("txns") or {}).get("h1") or {}
+    buys_1h = tx_1h_obj_full.get("buys") or 0
+    sells_1h = tx_1h_obj_full.get("sells") or 0
+    tx_24h_obj = (pair.get("txns") or {}).get("h24") or {}
+    txns_24h = (tx_24h_obj.get("buys") or 0) + (tx_24h_obj.get("sells") or 0)
+    
+    # Volume/Liquidity ratio — key pump/dump indicator
+    vol_liq_ratio = round(vol_1h / liq, 3) if liq > 0 else 0
+    
+    # Buy/Sell pressure ratio
+    buy_ratio = round(buys_1h / (buys_1h + sells_1h), 3) if (buys_1h + sells_1h) >= 5 else 0.5
+    
     # Score
     score = score_cio(pair, min(pair_age, token_age), source_boost)
     
@@ -276,10 +348,15 @@ def process_candidate(item, registry):
         "chain": CHAIN,
         "metrics": {
             "liq_usd": liq,
+            "vol_5m_usd": vol_5m,
             "vol_1h_usd": vol_1h,
-            "vol_24h_usd": safe_num((pair.get("volume") or {}).get("h24"), 0),
+            "vol_24h_usd": vol_24h,
+            "vol_liq_ratio": vol_liq_ratio,
             "txns_1h": tx_1h,
-            "txns_24h": safe_num((pair.get("txns") or {}).get("h24", {}).get("total"), 0),
+            "txns_1h_buys": buys_1h,
+            "txns_1h_sells": sells_1h,
+            "txns_24h": txns_24h,
+            "buy_ratio_1h": buy_ratio,
             "price_usd": pair.get("priceUsd"),
             "marketCap": pair.get("marketCap") or pair.get("fdv")
         },
@@ -293,7 +370,9 @@ def process_candidate(item, registry):
             "cio_score": score,
             "freshness": round(max(0, 1 - (min(pair_age, token_age) / 48)), 2),
             "source": source,
-            "source_boost": source_boost
+            "source_boost": source_boost,
+            "vol_liq_ratio": vol_liq_ratio,
+            "buy_pressure": buy_ratio
         },
         "status": "observing",
         "enriched": True
