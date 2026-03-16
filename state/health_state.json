@@ -1,0 +1,9 @@
+{
+  "schema": "lurker_health_v1",
+  "empty_streak": 2,
+  "last_check": null,
+  "last_count": 0,
+  "last_successful_scan": null,
+  "last_non_empty_scan": null,
+  "trend": "stable"
+}

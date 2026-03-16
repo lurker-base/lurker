@@ -60889,6 +60889,7 @@
         "name": "Base Me"
       }
     },
+<<<<<<< HEAD
     "0xe1d8523ae32a0d062c5f80f2fb468b7a89a67073": {
       "first_seen": 1773475407848,
       "first_seen_iso": "2026-03-14T08:03:27.848000+00:00",
@@ -60903,10 +60904,27 @@
           "timestamp": 1773573035426,
           "price": 5.933e-06,
           "liq": 5903.01,
+=======
+    "0x93d4da55d0c25ac9fc3cfcf6377cc22978830a98": {
+      "first_seen": 1773689065562,
+      "first_seen_iso": "2026-03-16T19:24:25.562000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1773689065562,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773689206316,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+>>>>>>> 2050fa7 (auto: hourly update 20:26)
           "vol_5m": 0.0
         }
       ],
       "token": {
+<<<<<<< HEAD
         "address": "0xe1d8523ae32a0d062c5f80f2fb468b7a89a67073",
         "symbol": "trending",
         "name": "trending"
@@ -60918,12 +60936,55 @@
       "price_history": [
         {
           "timestamp": 1773475407848,
+=======
+        "address": "0x93d4da55d0c25ac9fc3cfcf6377cc22978830a98",
+        "symbol": "STRATEGIC XRP RESERVE (SXR)",
+        "name": "STRATEGIC XRP RESERVE (SXR)"
+      }
+    },
+    "0x194032c556823517c000e9fda69dd760f8c6fb8b": {
+      "first_seen": 1773689065562,
+      "first_seen_iso": "2026-03-16T19:24:25.562000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1773689065562,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773689206316,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        }
+      ],
+      "token": {
+        "address": "0x194032c556823517c000e9fda69dd760f8c6fb8b",
+        "symbol": "XRPLEDGER NETWORK",
+        "name": "XRPLEDGER NETWORK "
+      }
+    },
+    "0x3971dce284e337f913f49606434c0badceffc327": {
+      "first_seen": 1773689065562,
+      "first_seen_iso": "2026-03-16T19:24:25.562000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1773689065562,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773689206316,
+>>>>>>> 2050fa7 (auto: hourly update 20:26)
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         }
       ],
       "token": {
+<<<<<<< HEAD
         "address": "0xaec649c3d55e022b0792891ca22adca54c78143a",
         "symbol": "NoM",
         "name": "Neiro on Moon"
@@ -60977,10 +61038,32 @@
           "timestamp": 1773475407848,
           "price": 0,
           "liq": 0,
+=======
+        "address": "0x3971dce284e337f913f49606434c0badceffc327",
+        "symbol": "0x",
+        "name": "0x"
+      }
+    },
+    "0x27ab84babefb2f0c9e07838acd1240bbc3521ba3": {
+      "first_seen": 1773689065562,
+      "first_seen_iso": "2026-03-16T19:24:25.562000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1773689065562,
+          "price": 2.29e-07,
+          "liq": 22993.23,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773689206316,
+          "price": 2.29e-07,
+          "liq": 22993.23,
+>>>>>>> 2050fa7 (auto: hourly update 20:26)
           "vol_5m": 0.0
         }
       ],
       "token": {
+<<<<<<< HEAD
         "address": "0x0b494d7e03d34967fc8ba41bd327daf1d7f64501",
         "symbol": "topbasetrending",
         "name": "topbasetrending"
@@ -61160,6 +61243,40 @@
         "address": "0xbe6716f32b27fc20e9bb3c2512bdb2704b589ba3",
         "symbol": "BASE",
         "name": "BaseBatches"
+=======
+        "address": "0x27ab84babefb2f0c9e07838acd1240bbc3521ba3",
+        "symbol": "Base",
+        "name": "VIRTUALS"
+      }
+    },
+    "0x10fc809d0c6f25f47ff294655d12c9e7fd54fae2": {
+      "first_seen": 1773689065562,
+      "first_seen_iso": "2026-03-16T19:24:25.562000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1773689065562,
+          "price": 1.006e-06,
+          "liq": 100635.02,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773689065562,
+          "price": 1.006e-06,
+          "liq": 100635.02,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773689206317,
+          "price": 1.006e-06,
+          "liq": 100643.01,
+          "vol_5m": 115.1
+        }
+      ],
+      "token": {
+        "address": "0x10fc809d0c6f25f47ff294655d12c9e7fd54fae2",
+        "symbol": "SHITCOIN",
+        "name": "shitcoin"
+>>>>>>> 2050fa7 (auto: hourly update 20:26)
       }
     }
   }

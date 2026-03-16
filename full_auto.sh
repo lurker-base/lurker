@@ -15,18 +15,19 @@ launch_service() {
     local name="$3"
     local logfile="logs/${name}.log"
     
-    # Créer un wrapper script
-    cat > "logs/${name}_wrapper.sh" << EOF
+    # Créer un wrapper script (fixed: properly capture exit status)
+    cat > "logs/${name}_wrapper.sh" << 'WRAPPEREOF'
 #!/bin/bash
 while true; do
-    echo "[\$(date)] Starting $name" >> "$logfile"
-    python3 "$script" >> "$logfile" 2>&1
-    # If python3 exited, log and sleep before next attempt
+    echo "[$(date)] Starting SCRIPT_NAME" >> "LOGFILE"
+    python3 "SCRIPT_PATH" >> "LOGFILE" 2>&1
     status=$?
-    echo "[\$(date)] $name exited with status $status, restarting in ${interval}s" >> "$logfile"
-    sleep "$interval"
+    echo "[$(date)] SCRIPT_NAME exited with status $status, restarting in INTERVALs" >> "LOGFILE"
+    sleep INTERVAL
 done
-EOF
+WRAPPEREOF
+    # Replace placeholders
+    sed -i "s|SCRIPT_NAME|$name|g; s|SCRIPT_PATH|$script|g; s|LOGFILE|$logfile|g; s|INTERVAL|$interval|g" "logs/${name}_wrapper.sh"
     chmod +x "logs/${name}_wrapper.sh"
     
     # Lancer le wrapper

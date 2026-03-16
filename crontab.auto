@@ -1,0 +1,8 @@
+# LURKER Auto-Start Cron - Keep services alive
+# Installed by subagent for reliability
+
+# Check every 5 minutes if LURKER full_auto is running, restart if not
+*/5 * * * * cd /data/.openclaw/workspace/lurker-project && pgrep -f "full_auto.sh" > /dev/null || nohup ./full_auto.sh > /data/.openclaw/logs/lurker_autostart.log 2>&1 &
+
+# Also check auto_restart_critical every 15 minutes
+*/15 * * * * cd /data/.openclaw/workspace && bash scripts/auto_restart_critical.sh >> /data/.openclaw/logs/auto_restart.log 2>&1
