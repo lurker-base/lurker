@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-16T23:26:35.695000+00:00",
+    "updated_at": "2026-03-16T23:41:50.432000+00:00",
     "source": "cio_scanner",
     "chain": "base",
     "count": 2,
@@ -16,12 +16,12 @@
       "address": "0xe0a9a35efe811d520fa00f831034a3d806f00236",
       "symbol": "Atoms",
       "name": "Atoms",
-      "liquidity_usd": 165843.3,
-      "volume_1h": 315115.28,
-      "volume_5m": 20277.32,
+      "liquidity_usd": 193667.61,
+      "volume_1h": 308624.36,
+      "volume_5m": 20719.33,
       "quality_score": 100,
-      "age_minutes": 25.4,
-      "age_hours": 0.4,
+      "age_minutes": 40.7,
+      "age_hours": 0.7,
       "detected_at": "2026-03-16T23:01:09.292000+00:00",
       "risk_level": "low",
       "source": "profiles"
@@ -30,15 +30,15 @@
       "address": "0xfca95aeb5bf44ae355806a5ad14659c940dc6bf7",
       "symbol": "SHIB",
       "name": "SHIBA INU",
-      "liquidity_usd": 349439.82,
-      "volume_1h": 45.82,
+      "liquidity_usd": 352250.06,
+      "volume_1h": 283.1,
       "volume_5m": 0.0,
       "quality_score": 100,
-      "age_minutes": 213.5,
-      "age_hours": 3.6,
+      "age_minutes": 228.8,
+      "age_hours": 3.8,
       "detected_at": "2026-03-16T19:53:03.661000+00:00",
       "risk_level": "medium",
-      "source": "boosts"
+      "source": "ads"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-16T23:26:35.694000+00:00",
-    "generated_at": "2026-03-16T23:26:35.694000+00:00",
+    "updated_at": "2026-03-16T23:41:50.432000+00:00",
+    "generated_at": "2026-03-16T23:41:50.432000+00:00",
     "status": "ok",
     "count": 2,
     "thresholds": {
@@ -17,11 +17,9 @@
     },
     "rejected": {
       "low_liq": 1,
-      "low_volume": 6,
-      "known_token": 6,
-      "too_old": 22,
-      "low_tx": 1,
-      "duplicate": 1
+      "low_volume": 7,
+      "known_token": 7,
+      "too_old": 21
     },
     "source": "ultra_launch_scanner"
   },
@@ -38,17 +36,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 165843.3,
-        "vol_5m_usd": 20277.32,
-        "vol_1h_usd": 315115.28,
-        "txns_5m": 58,
-        "price_usd": 4.304e-06
+        "liq_usd": 193667.61,
+        "vol_5m_usd": 20719.33,
+        "vol_1h_usd": 308624.36,
+        "txns_5m": 48,
+        "price_usd": 5.612e-06
       },
       "timestamps": {
         "pair_created_at": "2026-03-16T22:36:13+00:00",
         "token_first_seen": "2026-03-16T23:01:09.292000+00:00",
-        "age_minutes": 25.4,
-        "age_hours": 0.42
+        "age_minutes": 40.7,
+        "age_hours": 0.68
       },
       "scores": {
         "cio_score": 100,
@@ -78,17 +76,17 @@
         "quote": "ETH"
       },
       "metrics": {
-        "liq_usd": 349439.82,
+        "liq_usd": 352250.06,
         "vol_5m_usd": 0.0,
-        "vol_1h_usd": 45.82,
-        "txns_5m": 235,
-        "price_usd": 4.444e-09
+        "vol_1h_usd": 283.1,
+        "txns_5m": 234,
+        "price_usd": 4.488e-09
       },
       "timestamps": {
         "pair_created_at": "2025-06-16T10:33:31+00:00",
         "token_first_seen": "2026-03-16T19:53:03.661000+00:00",
-        "age_minutes": 213.5,
-        "age_hours": 3.56
+        "age_minutes": 228.8,
+        "age_hours": 3.81
       },
       "scores": {
         "cio_score": 100,
@@ -98,7 +96,7 @@
         "low_volume"
       ],
       "risk_level": "medium",
-      "source": "boosts",
+      "source": "ads",
       "status": "observing",
       "quality": {
         "has_profile": true,
