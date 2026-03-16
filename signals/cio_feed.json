@@ -1,8 +1,8 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-16T21:24:32.772000+00:00",
-    "generated_at": "2026-03-16T21:24:32.772000+00:00",
+    "updated_at": "2026-03-16T21:39:48.806000+00:00",
+    "generated_at": "2026-03-16T21:39:48.806000+00:00",
     "status": "ok",
     "count": 3,
     "thresholds": {
@@ -12,12 +12,13 @@
       "max_age_min": 10080
     },
     "risk_distribution": {
-      "low": 3
+      "low": 2,
+      "medium": 1
     },
     "rejected": {
       "low_liq": 2,
+      "low_volume": 7,
       "known_token": 7,
-      "low_volume": 5,
       "too_old": 21,
       "duplicate": 1
     },
@@ -36,21 +37,21 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 84324.26,
-        "vol_5m_usd": 5559.28,
-        "vol_1h_usd": 109474.27,
-        "txns_5m": 40,
-        "price_usd": 1.507e-06
+        "liq_usd": 91631.95,
+        "vol_5m_usd": 10214.16,
+        "vol_1h_usd": 161016.62,
+        "txns_5m": 46,
+        "price_usd": 1.704e-06
       },
       "timestamps": {
         "pair_created_at": "2026-03-16T20:53:29+00:00",
         "token_first_seen": "2026-03-16T21:19:27.962000+00:00",
-        "age_minutes": 5.1,
-        "age_hours": 0.08
+        "age_minutes": 20.3,
+        "age_hours": 0.34
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 1.0
+        "freshness": 0.99
       },
       "risks": [],
       "risk_level": "low",
@@ -76,21 +77,21 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 40470.29,
-        "vol_5m_usd": 69.59,
-        "vol_1h_usd": 2693.48,
+        "liq_usd": 40882.53,
+        "vol_5m_usd": 31.67,
+        "vol_1h_usd": 2617.81,
         "txns_5m": 1,
-        "price_usd": 4.301e-07
+        "price_usd": 4.347e-07
       },
       "timestamps": {
         "pair_created_at": "2026-01-26T02:30:49+00:00",
         "token_first_seen": "2026-03-16T20:08:17.612000+00:00",
-        "age_minutes": 76.3,
-        "age_hours": 1.27
+        "age_minutes": 91.5,
+        "age_hours": 1.53
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.98
+        "freshness": 0.97
       },
       "risks": [],
       "risk_level": "low",
@@ -116,24 +117,26 @@
         "quote": "ETH"
       },
       "metrics": {
-        "liq_usd": 350822.56,
+        "liq_usd": 354023.53,
         "vol_5m_usd": 0.0,
-        "vol_1h_usd": 3995.46,
-        "txns_5m": 237,
-        "price_usd": 4.47e-09
+        "vol_1h_usd": 573.49,
+        "txns_5m": 195,
+        "price_usd": 4.511e-09
       },
       "timestamps": {
         "pair_created_at": "2025-06-16T10:33:31+00:00",
         "token_first_seen": "2026-03-16T19:53:03.661000+00:00",
-        "age_minutes": 91.5,
-        "age_hours": 1.52
+        "age_minutes": 106.8,
+        "age_hours": 1.78
       },
       "scores": {
         "cio_score": 100,
         "freshness": 0.97
       },
-      "risks": [],
-      "risk_level": "low",
+      "risks": [
+        "low_volume"
+      ],
+      "risk_level": "medium",
       "source": "boosts",
       "status": "observing",
       "quality": {
