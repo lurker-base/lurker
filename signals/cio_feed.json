@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-16T21:39:48.806000+00:00",
-    "generated_at": "2026-03-16T21:39:48.806000+00:00",
+    "updated_at": "2026-03-16T21:55:03.738000+00:00",
+    "generated_at": "2026-03-16T21:55:03.738000+00:00",
     "status": "ok",
-    "count": 3,
+    "count": 2,
     "thresholds": {
       "min_liq_usd": 100,
       "min_vol_5m": 10,
@@ -12,7 +12,7 @@
       "max_age_min": 10080
     },
     "risk_distribution": {
-      "low": 2,
+      "low": 1,
       "medium": 1
     },
     "rejected": {
@@ -20,6 +20,7 @@
       "low_volume": 7,
       "known_token": 7,
       "too_old": 21,
+      "low_tx": 1,
       "duplicate": 1
     },
     "source": "ultra_launch_scanner"
@@ -37,17 +38,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 91631.95,
-        "vol_5m_usd": 10214.16,
-        "vol_1h_usd": 161016.62,
-        "txns_5m": 46,
-        "price_usd": 1.704e-06
+        "liq_usd": 95601.43,
+        "vol_5m_usd": 23497.72,
+        "vol_1h_usd": 228806.21,
+        "txns_5m": 60,
+        "price_usd": 1.802e-06
       },
       "timestamps": {
         "pair_created_at": "2026-03-16T20:53:29+00:00",
         "token_first_seen": "2026-03-16T21:19:27.962000+00:00",
-        "age_minutes": 20.3,
-        "age_hours": 0.34
+        "age_minutes": 35.6,
+        "age_hours": 0.59
       },
       "scores": {
         "cio_score": 100,
@@ -56,46 +57,6 @@
       "risks": [],
       "risk_level": "low",
       "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    },
-    {
-      "token": {
-        "address": "0x00bb032296e0c580e21010a5a6a4e007e0953e68",
-        "symbol": "🟩🦞",
-        "name": "NetClawd"
-      },
-      "pair": {
-        "address": "0x31642ba6defeea957dbfcaea442fcb258ac7e251",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 40882.53,
-        "vol_5m_usd": 31.67,
-        "vol_1h_usd": 2617.81,
-        "txns_5m": 1,
-        "price_usd": 4.347e-07
-      },
-      "timestamps": {
-        "pair_created_at": "2026-01-26T02:30:49+00:00",
-        "token_first_seen": "2026-03-16T20:08:17.612000+00:00",
-        "age_minutes": 91.5,
-        "age_hours": 1.53
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.97
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "community",
       "status": "observing",
       "quality": {
         "has_profile": true,
@@ -117,17 +78,17 @@
         "quote": "ETH"
       },
       "metrics": {
-        "liq_usd": 354023.53,
+        "liq_usd": 353289.45,
         "vol_5m_usd": 0.0,
-        "vol_1h_usd": 573.49,
-        "txns_5m": 195,
-        "price_usd": 4.511e-09
+        "vol_1h_usd": 406.65,
+        "txns_5m": 233,
+        "price_usd": 4.501e-09
       },
       "timestamps": {
         "pair_created_at": "2025-06-16T10:33:31+00:00",
         "token_first_seen": "2026-03-16T19:53:03.661000+00:00",
-        "age_minutes": 106.8,
-        "age_hours": 1.78
+        "age_minutes": 122.0,
+        "age_hours": 2.03
       },
       "scores": {
         "cio_score": 100,
