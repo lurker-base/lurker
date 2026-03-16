@@ -1,9 +1,9 @@
 {
   "meta": {
-    "updated_at": "2026-03-16T21:09:16.443000+00:00",
+    "updated_at": "2026-03-16T21:24:32.772000+00:00",
     "source": "cio_scanner",
     "chain": "base",
-    "count": 1,
+    "count": 3,
     "filters": {
       "min_volume_1h": 0,
       "max_results": 20,
@@ -13,15 +13,43 @@
   },
   "signals": [
     {
+      "address": "0x6f4a1c9540212e1e1efdcc885ceadef5cf07b893",
+      "symbol": "CRZ",
+      "name": "Credz Agent",
+      "liquidity_usd": 84324.26,
+      "volume_1h": 109474.27,
+      "volume_5m": 5559.28,
+      "quality_score": 100,
+      "age_minutes": 5.1,
+      "age_hours": 0.1,
+      "detected_at": "2026-03-16T21:19:27.962000+00:00",
+      "risk_level": "low",
+      "source": "profiles"
+    },
+    {
+      "address": "0x00bb032296e0c580e21010a5a6a4e007e0953e68",
+      "symbol": "\ud83d\udfe9\ud83e\udd9e",
+      "name": "NetClawd",
+      "liquidity_usd": 40470.29,
+      "volume_1h": 2693.48,
+      "volume_5m": 69.59,
+      "quality_score": 100,
+      "age_minutes": 76.3,
+      "age_hours": 1.3,
+      "detected_at": "2026-03-16T20:08:17.612000+00:00",
+      "risk_level": "low",
+      "source": "community"
+    },
+    {
       "address": "0xfca95aeb5bf44ae355806a5ad14659c940dc6bf7",
       "symbol": "SHIB",
       "name": "SHIBA INU",
-      "liquidity_usd": 352530.98,
-      "volume_1h": 6465.96,
+      "liquidity_usd": 350822.56,
+      "volume_1h": 3995.46,
       "volume_5m": 0.0,
       "quality_score": 100,
-      "age_minutes": 76.2,
-      "age_hours": 1.3,
+      "age_minutes": 91.5,
+      "age_hours": 1.5,
       "detected_at": "2026-03-16T19:53:03.661000+00:00",
       "risk_level": "low",
       "source": "boosts"
