@@ -61000,6 +61000,24 @@
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773690174569,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773690479140,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773690783661,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
         }
       ],
       "token": {
@@ -61035,6 +61053,24 @@
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773690174569,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773690479140,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773690783661,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
         }
       ],
       "token": {
@@ -61067,6 +61103,24 @@
         },
         {
           "timestamp": 1773689870190,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773690174569,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773690479140,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773690783661,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
@@ -61136,6 +61190,24 @@
         },
         {
           "timestamp": 1773689870190,
+          "price": 2.29e-07,
+          "liq": 22993.23,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773690174569,
+          "price": 2.29e-07,
+          "liq": 22993.23,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773690479140,
+          "price": 2.29e-07,
+          "liq": 22993.23,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773690783661,
           "price": 2.29e-07,
           "liq": 22993.23,
           "vol_5m": 0.0
@@ -61264,6 +61336,12 @@
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773690783661,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
         }
       ],
       "token": {
@@ -61345,12 +61423,59 @@
           "price": 1.006e-06,
           "liq": 100648.15,
           "vol_5m": 2.15
+        },
+        {
+          "timestamp": 1773690174569,
+          "price": 1.006e-06,
+          "liq": 100648.15,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773690174569,
+          "price": 1.006e-06,
+          "liq": 100648.15,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773690479140,
+          "price": 1.003e-06,
+          "liq": 100384.61,
+          "vol_5m": 22.26
+        },
+        {
+          "timestamp": 1773690783661,
+          "price": 1.003e-06,
+          "liq": 100384.61,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773690783661,
+          "price": 1.003e-06,
+          "liq": 100384.61,
+          "vol_5m": 0.0
         }
       ],
       "token": {
         "address": "0x10fc809d0c6f25f47ff294655d12c9e7fd54fae2",
         "symbol": "SHITCOIN",
         "name": "shitcoin"
+      }
+    },
+    "0xfca95aeb5bf44ae355806a5ad14659c940dc6bf7": {
+      "first_seen": 1773690783661,
+      "first_seen_iso": "2026-03-16T19:53:03.661000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1773690783661,
+          "price": 4.355e-09,
+          "liq": 334426.21,
+          "vol_5m": 32.24
+        }
+      ],
+      "token": {
+        "address": "0xfca95aeb5bf44ae355806a5ad14659c940dc6bf7",
+        "symbol": "SHIB",
+        "name": "SHIBA INU"
       }
     }
   }

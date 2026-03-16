@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-16T19:37:50.277000+00:00",
+    "updated_at": "2026-03-16T19:53:03.748000+00:00",
     "source": "cio_scanner",
     "chain": "base",
     "count": 1,
@@ -13,18 +13,18 @@
   },
   "signals": [
     {
-      "address": "0x10fc809d0c6f25f47ff294655d12c9e7fd54fae2",
-      "symbol": "SHITCOIN",
-      "name": "shitcoin",
-      "liquidity_usd": 100648.15,
-      "volume_1h": 312.86,
-      "volume_5m": 2.15,
+      "address": "0xfca95aeb5bf44ae355806a5ad14659c940dc6bf7",
+      "symbol": "SHIB",
+      "name": "SHIBA INU",
+      "liquidity_usd": 334426.21,
+      "volume_1h": 613.27,
+      "volume_5m": 32.24,
       "quality_score": 100,
-      "age_minutes": 13.4,
-      "age_hours": 0.2,
-      "detected_at": "2026-03-16T19:24:25.562000+00:00",
+      "age_minutes": 393679.5,
+      "age_hours": 6561.3,
+      "detected_at": "2026-03-16T19:53:03.661000+00:00",
       "risk_level": "medium",
-      "source": "profiles"
+      "source": "boosts"
     }
   ]
 }
