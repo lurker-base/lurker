@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-16T20:08:17.712000+00:00",
-    "generated_at": "2026-03-16T20:08:17.712000+00:00",
+    "updated_at": "2026-03-16T20:23:31.527000+00:00",
+    "generated_at": "2026-03-16T20:23:31.527000+00:00",
     "status": "ok",
-    "count": 3,
+    "count": 2,
     "thresholds": {
       "min_liq_usd": 100,
       "min_vol_5m": 10,
@@ -12,15 +12,16 @@
       "max_age_min": 10080
     },
     "risk_distribution": {
-      "low": 2,
-      "high": 1
+      "low": 1,
+      "medium": 1
     },
     "rejected": {
       "low_liq": 2,
       "known_token": 7,
       "low_volume": 3,
       "too_old": 21,
-      "low_tx": 2
+      "low_tx": 2,
+      "duplicate": 1
     },
     "source": "ultra_launch_scanner"
   },
@@ -37,21 +38,21 @@
         "quote": "ETH"
       },
       "metrics": {
-        "liq_usd": 340441.22,
-        "vol_5m_usd": 68.37,
-        "vol_1h_usd": 2595.05,
-        "txns_5m": 53,
-        "price_usd": 4.501e-09
+        "liq_usd": 356106.05,
+        "vol_5m_usd": 0.0,
+        "vol_1h_usd": 5457.75,
+        "txns_5m": 90,
+        "price_usd": 4.857e-09
       },
       "timestamps": {
         "pair_created_at": "2025-06-16T10:33:31+00:00",
         "token_first_seen": "2026-03-16T19:53:03.661000+00:00",
-        "age_minutes": 15.2,
-        "age_hours": 0.25
+        "age_minutes": 30.5,
+        "age_hours": 0.51
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 1.0
+        "freshness": 0.99
       },
       "risks": [],
       "risk_level": "low",
@@ -67,35 +68,37 @@
     },
     {
       "token": {
-        "address": "0x00bb032296e0c580e21010a5a6a4e007e0953e68",
-        "symbol": "🟩🦞",
-        "name": "NetClawd"
+        "address": "0x10fc809d0c6f25f47ff294655d12c9e7fd54fae2",
+        "symbol": "SHITCOIN",
+        "name": "shitcoin"
       },
       "pair": {
-        "address": "0x31642ba6defeea957dbfcaea442fcb258ac7e251",
+        "address": "0xa90dd36c021194d247447b6c89a8ab0440b21553712b0279881339d998afdf97",
         "dex": "uniswap",
-        "quote": "WETH"
+        "quote": "flETH"
       },
       "metrics": {
-        "liq_usd": 38917.71,
-        "vol_5m_usd": 349.93,
-        "vol_1h_usd": 3093.79,
-        "txns_5m": 2,
-        "price_usd": 4.098e-07
+        "liq_usd": 100454.6,
+        "vol_5m_usd": 57.8,
+        "vol_1h_usd": 178.79,
+        "txns_5m": 1,
+        "price_usd": 1.004e-06
       },
       "timestamps": {
-        "pair_created_at": "2026-01-26T02:30:49+00:00",
-        "token_first_seen": "2026-03-16T20:08:17.612000+00:00",
-        "age_minutes": 71617.5,
-        "age_hours": 1193.62
+        "pair_created_at": "2026-03-16T19:01:33+00:00",
+        "token_first_seen": "2026-03-16T19:24:25.562000+00:00",
+        "age_minutes": 59.1,
+        "age_hours": 0.98
       },
       "scores": {
-        "cio_score": 90,
-        "freshness": 0
+        "cio_score": 100,
+        "freshness": 0.98
       },
-      "risks": [],
-      "risk_level": "low",
-      "source": "community",
+      "risks": [
+        "low_volume"
+      ],
+      "risk_level": "medium",
+      "source": "boosts",
       "status": "observing",
       "quality": {
         "has_profile": true,
@@ -103,51 +106,6 @@
         "has_socials": true,
         "has_website": true,
         "quality_score": 100
-      }
-    },
-    {
-      "token": {
-        "address": "0xcfb877dd71c88d806e1c01d5d9a8b4c6ec476d6d",
-        "symbol": "UGROIL",
-        "name": "United Global Reserve Oil"
-      },
-      "pair": {
-        "address": "0x808c87b9c28806c761ff7e2884521feaec90d98ddac4c411364f8a6185106632",
-        "dex": "uniswap",
-        "quote": "topbasetrending"
-      },
-      "metrics": {
-        "liq_usd": 629.72,
-        "vol_5m_usd": 0.02,
-        "vol_1h_usd": 113.59,
-        "txns_5m": 1,
-        "price_usd": 5.954e-07
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-16T19:56:53+00:00",
-        "token_first_seen": "2026-03-16T20:03:13.102000+00:00",
-        "age_minutes": 5.1,
-        "age_hours": 0.08
-      },
-      "scores": {
-        "cio_score": 80,
-        "freshness": 1.0
-      },
-      "risks": [
-        "low_liquidity",
-        "very_low_liquidity",
-        "low_activity",
-        "low_volume"
-      ],
-      "risk_level": "high",
-      "source": "search",
-      "status": "observing",
-      "quality": {
-        "has_profile": false,
-        "has_image": false,
-        "has_socials": false,
-        "has_website": false,
-        "quality_score": 0
       }
     }
   ]
