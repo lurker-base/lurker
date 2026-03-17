@@ -1,19 +1,153 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-17T13:49:57.655000+00:00",
-    "generated_at": "2026-03-17T13:49:57.655000+00:00",
-    "status": "degraded",
-    "count": 0,
+    "updated_at": "2026-03-17T14:01:15.514000+00:00",
+    "generated_at": "2026-03-17T14:01:15.514000+00:00",
+    "status": "ok",
+    "count": 3,
     "thresholds": {
       "min_liq_usd": 100,
       "min_vol_5m": 10,
       "min_tx_5m": 1,
       "max_age_min": 10080
     },
-    "risk_distribution": {},
-    "rejected": {},
+    "risk_distribution": {
+      "low": 1,
+      "medium": 2
+    },
+    "rejected": {
+      "known_token": 8,
+      "low_liq": 1,
+      "too_old": 20,
+      "low_volume": 4,
+      "low_tx": 1
+    },
     "source": "ultra_launch_scanner"
   },
-  "candidates": []
+  "candidates": [
+    {
+      "token": {
+        "address": "0x8c386b032b1506af06cd432a8c4f97cd2bd05c5a",
+        "symbol": "S7",
+        "name": "BTCSentinel"
+      },
+      "pair": {
+        "address": "0x1592c48f2a3c8ccddc9a450a648756e7b8e39d87",
+        "dex": "aerodrome",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 13941.38,
+        "vol_5m_usd": 9.91,
+        "vol_1h_usd": 2765.14,
+        "txns_5m": 1,
+        "price_usd": 7.138e-06
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-14T14:49:19+00:00",
+        "token_first_seen": "2026-03-17T13:16:13.898000+00:00",
+        "age_minutes": 45.0,
+        "age_hours": 0.75
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.99
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "boosts",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    },
+    {
+      "token": {
+        "address": "0x412c9fedc8bf9e0c84c4c7b6924fe41c462a2af6",
+        "symbol": "CAISHEN",
+        "name": "Caishen"
+      },
+      "pair": {
+        "address": "0xf413309c158e2330ced241656d5c182eedc2862c42deab73910ef51aa5c5fd1d",
+        "dex": "uniswap",
+        "quote": "ETH"
+      },
+      "metrics": {
+        "liq_usd": 9759.6,
+        "vol_5m_usd": 71.42,
+        "vol_1h_usd": 734.9,
+        "txns_5m": 15,
+        "price_usd": 1.205e-05
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-25T00:04:07+00:00",
+        "token_first_seen": "2026-03-17T11:59:32.494000+00:00",
+        "age_minutes": 121.7,
+        "age_hours": 2.03
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.97
+      },
+      "risks": [
+        "low_volume"
+      ],
+      "risk_level": "medium",
+      "source": "boosts",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": false,
+        "quality_score": 75
+      }
+    },
+    {
+      "token": {
+        "address": "0xfca95aeb5bf44ae355806a5ad14659c940dc6bf7",
+        "symbol": "SHIB",
+        "name": "SHIBA INU"
+      },
+      "pair": {
+        "address": "0x06249abc099011fec3a5550a7a6d1f12ba90ad9b9c59cd13b32a83b5c1fad7ee",
+        "dex": "uniswap",
+        "quote": "ETH"
+      },
+      "metrics": {
+        "liq_usd": 351991.54,
+        "vol_5m_usd": 0.0,
+        "vol_1h_usd": 44.38,
+        "txns_5m": 90,
+        "price_usd": 4.536e-09
+      },
+      "timestamps": {
+        "pair_created_at": "2025-06-16T10:33:31+00:00",
+        "token_first_seen": "2026-03-16T19:53:03.661000+00:00",
+        "age_minutes": 1088.2,
+        "age_hours": 18.14
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.7
+      },
+      "risks": [
+        "low_volume"
+      ],
+      "risk_level": "medium",
+      "source": "ads",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    }
+  ]
 }
