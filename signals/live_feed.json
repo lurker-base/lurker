@@ -1,9 +1,9 @@
 {
   "meta": {
-    "updated_at": "2026-03-17T15:05:07.658000+00:00",
+    "updated_at": "2026-03-17T15:20:11.964000+00:00",
     "source": "cio_scanner",
     "chain": "base",
-    "count": 2,
+    "count": 1,
     "filters": {
       "min_volume_1h": 0,
       "max_results": 20,
@@ -16,29 +16,15 @@
       "address": "0xdb88c481af72731fcdc7eaf37be0d4d15b734e69",
       "symbol": "ZAB",
       "name": "Wazabi AI",
-      "liquidity_usd": 212583.61,
-      "volume_1h": 294372.61,
-      "volume_5m": 2477.65,
+      "liquidity_usd": 217411.96,
+      "volume_1h": 96422.57,
+      "volume_5m": 198.28,
       "quality_score": 100,
-      "age_minutes": 50.5,
-      "age_hours": 0.8,
+      "age_minutes": 65.5,
+      "age_hours": 1.1,
       "detected_at": "2026-03-17T14:14:39.432000+00:00",
-      "risk_level": "low",
-      "source": "profiles"
-    },
-    {
-      "address": "0x00bb032296e0c580e21010a5a6a4e007e0953e68",
-      "symbol": "\ud83d\udfe9\ud83e\udd9e",
-      "name": "NetClawd",
-      "liquidity_usd": 38545.08,
-      "volume_1h": 24.41,
-      "volume_5m": 24.4,
-      "quality_score": 100,
-      "age_minutes": 1136.8,
-      "age_hours": 18.9,
-      "detected_at": "2026-03-16T20:08:17.612000+00:00",
       "risk_level": "medium",
-      "source": "community"
+      "source": "profiles"
     }
   ]
 }
