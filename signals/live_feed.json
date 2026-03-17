@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-17T19:20:34.470000+00:00",
+    "updated_at": "2026-03-17T19:35:29.448000+00:00",
     "source": "cio_scanner",
     "chain": "base",
     "count": 3,
@@ -13,46 +13,46 @@
   },
   "signals": [
     {
-      "address": "0x16e1588d90b4ec00e9dfb0147a1fd5329323377d",
-      "symbol": "Atlas",
-      "name": "Humanoid Atlas",
-      "liquidity_usd": 25876.14,
-      "volume_1h": 46237.84,
-      "volume_5m": 9.2,
+      "address": "0xb4d0684a8527314baf2e6e6464c7244bfcc2c222",
+      "symbol": "HDNTCL",
+      "name": "HDNTCL",
+      "liquidity_usd": 21532.7594,
+      "volume_1h": 11717.7410903178,
+      "volume_5m": 11717.7410903178,
       "quality_score": 100,
-      "age_minutes": 100.8,
-      "age_hours": 1.7,
-      "detected_at": "2026-03-17T17:39:49.006000+00:00",
-      "risk_level": "medium",
-      "source": "boosts"
-    },
-    {
-      "address": "0x412c9fedc8bf9e0c84c4c7b6924fe41c462a2af6",
-      "symbol": "CAISHEN",
-      "name": "Caishen",
-      "liquidity_usd": 11664.14,
-      "volume_1h": 677.01,
-      "volume_5m": 39.14,
-      "quality_score": 100,
-      "age_minutes": 441.0,
-      "age_hours": 7.3,
-      "detected_at": "2026-03-17T11:59:32.494000+00:00",
-      "risk_level": "medium",
-      "source": "boosts"
-    },
-    {
-      "address": "0xfca95aeb5bf44ae355806a5ad14659c940dc6bf7",
-      "symbol": "SHIB",
-      "name": "SHIBA INU",
-      "liquidity_usd": 354490.98,
-      "volume_1h": 2273.62,
-      "volume_5m": 0.0,
-      "quality_score": 100,
-      "age_minutes": 1407.5,
-      "age_hours": 23.5,
-      "detected_at": "2026-03-16T19:53:03.661000+00:00",
+      "age_minutes": 3.6,
+      "age_hours": 0.1,
+      "detected_at": "2026-03-17T19:31:53.109000+00:00",
       "risk_level": "low",
-      "source": "ads"
+      "source": "geckoterminal_new"
+    },
+    {
+      "address": "0x0a6e9c67e64710165102b474d12b12abdefe88f2",
+      "symbol": "diztorted",
+      "name": "diztorted",
+      "liquidity_usd": 54607.7114,
+      "volume_1h": 489.8128632013,
+      "volume_5m": 489.8128632013,
+      "quality_score": 95,
+      "age_minutes": 0.6,
+      "age_hours": 0.0,
+      "detected_at": "2026-03-17T19:34:53.121000+00:00",
+      "risk_level": "medium",
+      "source": "geckoterminal_new"
+    },
+    {
+      "address": "0x42ed354fc3ec29d8a1012bcb116fb90573bd8b52",
+      "symbol": "UGER",
+      "name": "UGER",
+      "liquidity_usd": 243.7776,
+      "volume_1h": 43.0677061385,
+      "volume_5m": 37.8732620133,
+      "quality_score": 80,
+      "age_minutes": 3.6,
+      "age_hours": 0.1,
+      "detected_at": "2026-03-17T19:31:53.109000+00:00",
+      "risk_level": "high",
+      "source": "geckoterminal_new"
     }
   ]
 }
