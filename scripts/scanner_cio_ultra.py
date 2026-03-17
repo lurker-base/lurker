@@ -80,6 +80,111 @@ def calculate_risk_tags(pair):
     
     return risks
 
+
+def generate_signal_explanation(candidate, source, risks, dex_quality):
+    """Generate a credible explanation of WHY this token was selected.
+    
+    Returns a dict with structured reasoning that can be displayed in the UI.
+    """
+    metrics = candidate.get("metrics", {})
+    
+    # Build explanation based on what metrics triggered the signal
+    reasons = []
+    key_metrics = []
+    
+    # Source-based explanation
+    source_reasons = {
+        "boosts": "Token is actively promoted with boost visibility",
+        "profiles": "Complete DexScreener profile with verified info",
+        "community": "Community takeover detected - organic momentum",
+        "ads": "High activity placement - advertiser confidence",
+        "search": "Caught in discovery sweep - early detection",
+    }
+    
+    if source in source_reasons:
+        reasons.append(source_reasons[source])
+    
+    # Metrics-based explanation
+    vol_1h = metrics.get("vol_1h_usd", 0)
+    liq = metrics.get("liq_usd", 0)
+    tx_5m = metrics.get("txns_5m", 0)
+    age_hours = candidate.get("timestamps", {}).get("age_hours", 0)
+    
+    # Volume velocity explanation
+    if vol_1h > 100000:
+        reasons.append("High 1h volume indicates strong trading interest")
+        key_metrics.append({"metric": "volume_1h", "value": f"${vol_1h:,.0f}", "significance": "high"})
+    elif vol_1h > 50000:
+        reasons.append("Solid hourly volume above $50K threshold")
+        key_metrics.append({"metric": "volume_1h", "value": f"${vol_1h:,.0f}", "significance": "medium"})
+    
+    # Liquidity explanation
+    if liq > 50000:
+        reasons.append("Strong liquidity depth reduces slippage risk")
+        key_metrics.append({"metric": "liquidity", "value": f"${liq:,.0f}", "significance": "high"})
+    elif liq > 30000:
+        reasons.append("Adequate liquidity for position entry/exit")
+        key_metrics.append({"metric": "liquidity", "value": f"${liq:,.0f}", "significance": "medium"})
+    elif liq < 5000:
+        reasons.append("Low liquidity - high risk, potential for large moves")
+        key_metrics.append({"metric": "liquidity", "value": f"${liq:,.0f}", "significance": "risk"})
+    
+    # Transaction activity
+    if tx_5m > 50:
+        reasons.append("High transaction frequency - active market participation")
+        key_metrics.append({"metric": "tx_5m", "value": f"{tx_5m} txs", "significance": "high"})
+    elif tx_5m > 20:
+        reasons.append("Healthy transaction flow indicating organic interest")
+        key_metrics.append({"metric": "tx_5m", "value": f"{tx_5m} txs", "significance": "medium"})
+    
+    # Freshness explanation
+    if age_hours < 1:
+        reasons.append("Very fresh token - early entry opportunity")
+        key_metrics.append({"metric": "age", "value": f"{age_hours*60:.0f} min", "significance": "high"})
+    elif age_hours < 6:
+        reasons.append("Recent launch - still in early price discovery")
+        key_metrics.append({"metric": "age", "value": f"{age_hours:.1f}h", "significance": "medium"})
+    elif age_hours > 24:
+        reasons.append("Mature token with established trading history")
+        key_metrics.append({"metric": "age", "value": f"{age_hours:.1f}h", "significance": "neutral"})
+    
+    # Profile quality explanation
+    if dex_quality.get("quality_score", 0) >= 75:
+        reasons.append("Verified profile with image, socials and website")
+        key_metrics.append({"metric": "profile", "value": f"{dex_quality['quality_score']}/100", "significance": "high"})
+    elif dex_quality.get("has_image") and dex_quality.get("has_socials"):
+        reasons.append("Social presence detected - community building")
+        key_metrics.append({"metric": "profile", "value": "partial", "significance": "medium"})
+    
+    # Risk caveats
+    risk_caveats = []
+    if "very_low_liquidity" in risks:
+        risk_caveats.append("Extremely low liquidity - high risk of loss")
+    if "low_activity" in risks:
+        risk_caveats.append("Low transaction count - possible bot activity")
+    if "dumping" in risks:
+        risk_caveats.append("Price declining - potential sell pressure")
+    if candidate.get("recycled"):
+        risk_caveats.append("Token recycled from previous scan - not truly new")
+    
+    # Confidence score explanation
+    cio_score = candidate.get("scores", {}).get("cio_score", 0)
+    if cio_score >= 80:
+        confidence_desc = "High confidence - multiple positive indicators aligned"
+    elif cio_score >= 60:
+        confidence_desc = "Moderate confidence - some positive signals present"
+    else:
+        confidence_desc = "Low confidence - speculative entry"
+    
+    return {
+        "summary": reasons[0] if reasons else "Standard scan detection",
+        "reasons": reasons,
+        "key_metrics": key_metrics,
+        "risk_caveats": risk_caveats,
+        "confidence_description": confidence_desc,
+        "signal_quality": "high" if cio_score >= 80 else "medium" if cio_score >= 60 else "low"
+    }
+
 def check_dexscreener_quality(pair):
     """Check if DexScreener profile is complete (info, image, socials)"""
     quality = {
@@ -296,15 +401,26 @@ def process_candidate(item, registry):
         else:
             return None, "too_old"
     
-    # Check if truly new (anti-relist)
+    # Check if truly new (anti-relist) - RELAXED for ULTRA LAUNCH
+    # Extended from 48h to 168h (7 days) to allow rediscovery of older tokens
+    # This prevents missing opportunities in the mature Base ecosystem
     is_new, token_meta = True, {"first_seen": now_ms(), "first_seen_iso": iso()}
     if token_addr in registry["tokens"]:
         first_seen = registry["tokens"][token_addr]["first_seen"]
         token_age_h = (now_ms() - first_seen) / 3600000
-        if token_age_h > 48:  # Seen more than 48h ago
+        # RELAXED: Allow tokens seen up to 7 days ago to be rediscovered
+        # This is critical for Base where many tokens are already known
+        if token_age_h > 168:  # Seen more than 7 days ago = truly known
             return None, "known_token"
-        is_new = False
-        token_meta = registry["tokens"][token_addr]
+        # Partial recycle: tokens 48h-168h old get "recycled" status
+        if token_age_h > 48:
+            token_meta = registry["tokens"][token_addr]
+            token_meta["recycled"] = True
+            token_meta["recycled_at"] = iso()
+            is_new = False  # Not truly new, but recycled
+        else:
+            is_new = False
+            token_meta = registry["tokens"][token_addr]
     else:
         registry["tokens"][token_addr] = token_meta
     
