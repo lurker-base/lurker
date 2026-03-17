@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-17T13:19:52.770000+00:00",
-    "generated_at": "2026-03-17T13:19:52.770000+00:00",
+    "updated_at": "2026-03-17T13:34:57.051000+00:00",
+    "generated_at": "2026-03-17T13:34:57.051000+00:00",
     "status": "ok",
-    "count": 2,
+    "count": 4,
     "thresholds": {
       "min_liq_usd": 100,
       "min_vol_5m": 10,
@@ -12,17 +12,102 @@
       "max_age_min": 10080
     },
     "risk_distribution": {
-      "medium": 2
+      "medium": 4
     },
     "rejected": {
-      "known_token": 8,
-      "low_liq": 1,
-      "low_volume": 7,
-      "too_old": 18
+      "low_volume": 5,
+      "known_token": 7,
+      "too_old": 19
     },
     "source": "ultra_launch_scanner"
   },
   "candidates": [
+    {
+      "token": {
+        "address": "0x8c386b032b1506af06cd432a8c4f97cd2bd05c5a",
+        "symbol": "S7",
+        "name": "BTCSentinel"
+      },
+      "pair": {
+        "address": "0x1592c48f2a3c8ccddc9a450a648756e7b8e39d87",
+        "dex": "aerodrome",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 11150.99,
+        "vol_5m_usd": 69.89,
+        "vol_1h_usd": 69.89,
+        "txns_5m": 4,
+        "price_usd": 4.584e-06
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-14T14:49:19+00:00",
+        "token_first_seen": "2026-03-17T13:16:13.898000+00:00",
+        "age_minutes": 18.7,
+        "age_hours": 0.31
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.99
+      },
+      "risks": [
+        "low_activity",
+        "low_volume"
+      ],
+      "risk_level": "medium",
+      "source": "boosts",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    },
+    {
+      "token": {
+        "address": "0x8c0d3adcf8ce094e1ae437557ec90a6374dc9bdd",
+        "symbol": "OVPP",
+        "name": "OpenVPP"
+      },
+      "pair": {
+        "address": "0xe2444faa67022125a059c19d5737d8e4dad251fa",
+        "dex": "aerodrome",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 487725.08,
+        "vol_5m_usd": 66.1,
+        "vol_1h_usd": 94.02,
+        "txns_5m": 1,
+        "price_usd": 0.00487
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-17T07:20:51+00:00",
+        "token_first_seen": "2026-03-17T13:05:02.136000+00:00",
+        "age_minutes": 29.9,
+        "age_hours": 0.5
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.99
+      },
+      "risks": [
+        "low_activity",
+        "low_volume"
+      ],
+      "risk_level": "medium",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    },
     {
       "token": {
         "address": "0x412c9fedc8bf9e0c84c4c7b6924fe41c462a2af6",
@@ -35,21 +120,21 @@
         "quote": "ETH"
       },
       "metrics": {
-        "liq_usd": 9700.13,
-        "vol_5m_usd": 75.16,
-        "vol_1h_usd": 823.22,
-        "txns_5m": 13,
+        "liq_usd": 9716.38,
+        "vol_5m_usd": 25.32,
+        "vol_1h_usd": 737.84,
+        "txns_5m": 9,
         "price_usd": 1.197e-05
       },
       "timestamps": {
         "pair_created_at": "2026-02-25T00:04:07+00:00",
         "token_first_seen": "2026-03-17T11:59:32.494000+00:00",
-        "age_minutes": 80.3,
-        "age_hours": 1.34
+        "age_minutes": 95.4,
+        "age_hours": 1.59
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.98
+        "freshness": 0.97
       },
       "risks": [
         "low_volume"
@@ -77,17 +162,17 @@
         "quote": "ETH"
       },
       "metrics": {
-        "liq_usd": 350752.03,
+        "liq_usd": 353111.55,
         "vol_5m_usd": 0.0,
         "vol_1h_usd": 72.2,
         "txns_5m": 88,
-        "price_usd": 4.52e-09
+        "price_usd": 4.55e-09
       },
       "timestamps": {
         "pair_created_at": "2025-06-16T10:33:31+00:00",
         "token_first_seen": "2026-03-16T19:53:03.661000+00:00",
-        "age_minutes": 1046.8,
-        "age_hours": 17.45
+        "age_minutes": 1061.9,
+        "age_hours": 17.7
       },
       "scores": {
         "cio_score": 100,
