@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-17T18:20:27.829000+00:00",
-    "generated_at": "2026-03-17T18:20:27.829000+00:00",
+    "updated_at": "2026-03-17T18:35:30.644000+00:00",
+    "generated_at": "2026-03-17T18:35:30.644000+00:00",
     "status": "ok",
-    "count": 4,
+    "count": 3,
     "thresholds": {
       "min_liq_usd": 100,
       "min_vol_5m": 10,
@@ -12,16 +12,14 @@
       "max_age_min": 10080
     },
     "risk_distribution": {
-      "low": 1,
       "medium": 3
     },
     "rejected": {
       "low_liq": 2,
-      "low_volume": 2,
+      "low_volume": 3,
       "known_token": 7,
-      "too_old": 21,
-      "duplicate": 1,
-      "low_tx": 2
+      "too_old": 22,
+      "duplicate": 1
     },
     "source": "ultra_launch_scanner"
   },
@@ -38,57 +36,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 91864.32,
-        "vol_5m_usd": 14771.39,
-        "vol_1h_usd": 182663.52,
-        "txns_5m": 73,
-        "price_usd": 1.334e-06
+        "liq_usd": 25891.77,
+        "vol_5m_usd": 31010.46,
+        "vol_1h_usd": 173978.38,
+        "txns_5m": 325,
+        "price_usd": 2.409e-07
       },
       "timestamps": {
         "pair_created_at": "2026-03-17T17:27:35+00:00",
         "token_first_seen": "2026-03-17T17:39:49.006000+00:00",
-        "age_minutes": 40.6,
-        "age_hours": 0.68
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.99
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      }
-    },
-    {
-      "token": {
-        "address": "0xbf003846da231cc2b745e58eec43e024c2528b07",
-        "symbol": "PIEDAI",
-        "name": "piedAI"
-      },
-      "pair": {
-        "address": "0x6d9423754aefd848d69e562e71d1f2fb57b5ec1711a477ac66ef61e192c46311",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 135732.5,
-        "vol_5m_usd": 67.22,
-        "vol_1h_usd": 14860.71,
-        "txns_5m": 4,
-        "price_usd": 2.042e-06
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-17T15:31:25+00:00",
-        "token_first_seen": "2026-03-17T17:00:03.591000+00:00",
-        "age_minutes": 80.4,
-        "age_hours": 1.34
+        "age_minutes": 55.7,
+        "age_hours": 0.93
       },
       "scores": {
         "cio_score": 100,
@@ -106,6 +64,119 @@
         "has_socials": true,
         "has_website": true,
         "quality_score": 100
+      },
+      "is_recycled": false,
+      "explanation": {
+        "summary": "Complete DexScreener profile with verified info",
+        "reasons": [
+          "Complete DexScreener profile with verified info",
+          "High 1h volume indicates strong trading interest",
+          "High transaction frequency - active market participation",
+          "Very fresh token - early entry opportunity",
+          "Verified profile with image, socials and website"
+        ],
+        "key_metrics": [
+          {
+            "metric": "volume_1h",
+            "value": "$173,978",
+            "significance": "high"
+          },
+          {
+            "metric": "tx_5m",
+            "value": "325 txs",
+            "significance": "high"
+          },
+          {
+            "metric": "age",
+            "value": "56 min",
+            "significance": "high"
+          },
+          {
+            "metric": "profile",
+            "value": "100/100",
+            "significance": "high"
+          }
+        ],
+        "risk_caveats": [
+          "Price declining - potential sell pressure"
+        ],
+        "confidence_description": "High confidence - multiple positive indicators aligned",
+        "signal_quality": "high"
+      }
+    },
+    {
+      "token": {
+        "address": "0x6eefbfc95c7810adf53ac232d1de911839918749",
+        "symbol": "COS",
+        "name": "ClawdOS"
+      },
+      "pair": {
+        "address": "0xc83724138830b1c1a34a15c418f2358e126412183f2647281a8673d117e4df66",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 167722.69,
+        "vol_5m_usd": 108.81,
+        "vol_1h_usd": 118.7,
+        "txns_5m": 1,
+        "price_usd": 2.369e-06
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-06T14:06:21+00:00",
+        "token_first_seen": "2026-03-17T16:19:06.318000+00:00",
+        "age_minutes": 136.4,
+        "age_hours": 2.27
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.96
+      },
+      "risks": [
+        "low_activity",
+        "low_volume"
+      ],
+      "risk_level": "medium",
+      "source": "boosts",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      },
+      "is_recycled": false,
+      "explanation": {
+        "summary": "Token is actively promoted with boost visibility",
+        "reasons": [
+          "Token is actively promoted with boost visibility",
+          "Strong liquidity depth reduces slippage risk",
+          "Recent launch - still in early price discovery",
+          "Verified profile with image, socials and website"
+        ],
+        "key_metrics": [
+          {
+            "metric": "liquidity",
+            "value": "$167,723",
+            "significance": "high"
+          },
+          {
+            "metric": "age",
+            "value": "2.3h",
+            "significance": "medium"
+          },
+          {
+            "metric": "profile",
+            "value": "100/100",
+            "significance": "high"
+          }
+        ],
+        "risk_caveats": [
+          "Low transaction count - possible bot activity"
+        ],
+        "confidence_description": "High confidence - multiple positive indicators aligned",
+        "signal_quality": "high"
       }
     },
     {
@@ -120,17 +191,17 @@
         "quote": "ETH"
       },
       "metrics": {
-        "liq_usd": 11687.5,
-        "vol_5m_usd": 31.71,
-        "vol_1h_usd": 681.3,
-        "txns_5m": 9,
-        "price_usd": 1.7e-05
+        "liq_usd": 11596.73,
+        "vol_5m_usd": 72.65,
+        "vol_1h_usd": 681.67,
+        "txns_5m": 10,
+        "price_usd": 1.672e-05
       },
       "timestamps": {
         "pair_created_at": "2026-02-25T00:04:07+00:00",
         "token_first_seen": "2026-03-17T11:59:32.494000+00:00",
-        "age_minutes": 380.9,
-        "age_hours": 6.35
+        "age_minutes": 396.0,
+        "age_hours": 6.6
       },
       "scores": {
         "cio_score": 100,
@@ -148,48 +219,24 @@
         "has_socials": true,
         "has_website": false,
         "quality_score": 75
-      }
-    },
-    {
-      "token": {
-        "address": "0xfca95aeb5bf44ae355806a5ad14659c940dc6bf7",
-        "symbol": "SHIB",
-        "name": "SHIBA INU"
       },
-      "pair": {
-        "address": "0x06249abc099011fec3a5550a7a6d1f12ba90ad9b9c59cd13b32a83b5c1fad7ee",
-        "dex": "uniswap",
-        "quote": "ETH"
-      },
-      "metrics": {
-        "liq_usd": 353228.0,
-        "vol_5m_usd": 0.0,
-        "vol_1h_usd": 45.31,
-        "txns_5m": 96,
-        "price_usd": 4.549e-09
-      },
-      "timestamps": {
-        "pair_created_at": "2025-06-16T10:33:31+00:00",
-        "token_first_seen": "2026-03-16T19:53:03.661000+00:00",
-        "age_minutes": 1347.4,
-        "age_hours": 22.46
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.63
-      },
-      "risks": [
-        "low_volume"
-      ],
-      "risk_level": "medium",
-      "source": "ads",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
+      "is_recycled": false,
+      "explanation": {
+        "summary": "Token is actively promoted with boost visibility",
+        "reasons": [
+          "Token is actively promoted with boost visibility",
+          "Verified profile with image, socials and website"
+        ],
+        "key_metrics": [
+          {
+            "metric": "profile",
+            "value": "75/100",
+            "significance": "high"
+          }
+        ],
+        "risk_caveats": [],
+        "confidence_description": "High confidence - multiple positive indicators aligned",
+        "signal_quality": "high"
       }
     }
   ]

@@ -1,5 +1,102 @@
 # LURKER Product Quality — Priority Plan
-> Generated: 2026-03-17 | Focus: user-visible credibility fixes
+> Generated: 2026-03-17 | Updated: 2026-03-17
+> Focus: user-visible credibility fixes
+
+## Summary of Improvements Made (2026-03-17)
+
+### 1. ✅ Signal Explanations More Credible
+**Problem:** Tokens appeared in feed with no explanation of WHY they were selected.
+
+**Solution:** Added `generate_signal_explanation()` function to `scanner_cio_ultra.py` that generates structured explanations including:
+- Primary reason for selection (source-based: boosts, profiles, community, etc.)
+- Key metrics that triggered the signal (volume, liquidity, tx count, age)
+- Risk caveats (low liquidity, dumping, recycled status)
+- Confidence description based on CIO score
+- Signal quality rating (high/medium/low)
+
+**Files Modified:**
+- `scripts/scanner_cio_ultra.py` - Added explanation generation
+- `docs/live.html` - Displays explanation in token row
+
+### 2. ✅ Badge Logic Improved (More Honest)
+**Problem:** Every token got 3+ positive badges (FRESH, LIQUID, VOLUME, TX) with no risk indication. Badges were purely cosmetic.
+
+**Solution:** Rewrote badge logic in `live.html` with:
+- Maximum 3 badges per token
+- Risk badge ALWAYS first (most important)
+- Score badge second for context
+- Third badge is most relevant warning or positive indicator
+- Honest indicators: 💀 LOW LIQ, 📉 DUMPING, 🔄 RECYCLED when applicable
+- Removed indiscriminate "FRESH" badges for high-risk tokens
+
+**New Badge Priority:**
+1. Risk badge (HIGH/MEDIUM/LOW RISK) - always shown
+2. Score badge (e.g., "75/100") - always shown  
+3. Context badge - dynamic based on token state:
+   - 🔄 RECYCLED (if token is recycled 48h-168h old)
+   - ⚠️ BRAND NEW (if <30min + high risk = potential rug)
+   - 💀 LOW LIQ (if very low liquidity)
+   - 📉 DUMPING (if price declining)
+   - 💧 $50K+ LIQ (if strong liquidity)
+   - 📈 HIGH VOL (if high volume)
+   - ⚡ ACTIVE (if high tx count)
+   - 🔥 <1H OLD (if very fresh and not high risk)
+   - Age badge (fallback)
+
+### 3. ✅ Token Recycling/Staleness Reduced
+**Problem:** Scanner found 0 candidates because 48h anti-relist window rejected most Base tokens. Registry was 1.7MB with old tokens blocking discovery.
+
+**Solution:**
+- Extended `known_token` threshold from 48h → 168h (7 days)
+- Tokens 48h-168h old now marked as "recycled" instead of rejected
+- Added `is_recycled` flag to candidate data
+- Created `cleanup_registry.py` to purge stale tokens (>14 days, no activity, <$1k liq)
+- Tokens are now properly rediscovered with transparency about age
+
+**Files Modified:**
+- `scripts/scanner_cio_ultra.py` - Relaxed anti-relist logic
+- `scripts/cleanup_registry.py` - New utility to clean bloat
+
+### 4. ✅ Post-Signal Performance Tracking Added
+**Problem:** No visibility into whether signals actually performed well after detection.
+
+**Solution:** Created comprehensive performance tracking system:
+- `scripts/performance_tracker_v2.py` - Tracks all signaled tokens for 72h
+- `signals/performance/` - Individual JSON files per token with price history
+- `signals/performance_summary.json` - Aggregated stats
+- `docs/performance_widget.html` - Dashboard widget showing:
+  - Win rate percentage
+  - Verdict distribution (MOON, WINNING, PROFIT, NEUTRAL, LOSING, FAIL, RUG)
+  - Top performers list
+  - Recent signals list
+  - All signals with current gain/loss
+
+**Verdict System:**
+- MOON: 100%+ gain
+- WINNING: 20%+ gain
+- PROFIT: 10%+ gain
+- NEUTRAL: -10% to +10%
+- LOSING: -15% to -10%
+- FAIL: -30% to -15%
+- RUG: -50%+ loss
+- TRACKING: <6 hours since signal
+
+### 5. ✅ Centralized Configuration
+**Added:** `config/lurker.yaml` - Centralized configuration for:
+- Scanner thresholds
+- Badge system settings
+- Scoring weights
+- Performance tracking settings
+- Feed settings
+- Dashboard settings
+- Data source settings
+- Lifecycle settings
+
+This makes the system more maintainable and allows for easier tuning.
+
+---
+
+## Previous Fixes (Already Applied)
 
 ## 🔴 P0 — Critical (Broken for ALL visitors)
 
@@ -83,6 +180,61 @@
 ---
 
 ## Files Changed (This Session)
+
+### New Files:
+1. `scripts/performance_tracker_v2.py` - Post-signal performance tracking
+2. `scripts/cleanup_registry.py` - Registry bloat cleanup utility
+3. `config/lurker.yaml` - Centralized configuration
+4. `docs/performance_widget.html` - Performance dashboard widget
+
+### Modified Files:
+1. `docs/index.html` — Fixed CIO feed URL, dynamic metrics, block number, last-scan timestamp
+2. `docs/live.html` — Fixed feed URL, CIO format adapter, improved badge logic, added explanations
+3. `scripts/scanner_cio_ultra.py` — Added signal explanations, relaxed anti-relist (48h→168h), added recycled flag
+4. `PRODUCT_QUALITY_PLAN.md` — Updated with all improvements
+
+---
+
+## Next Priority: Scanner Not Finding Candidates (URGENT)
+
+**Current Issue:** Scanner returns 0 candidates with "degraded" status.
+
+**Root Cause Analysis:**
+1. Token registry has 1.7MB of old tokens - most Base ecosystem tokens are "known"
+2. DexScreener API may be rate limiting or returning limited results
+3. Search terms may not be catching new pairs effectively
+
+**Recommended Next Steps:**
+
+### Option A: Add GeckoTerminal as Fallback Data Source
+- GeckoTerminal has different rate limits and data coverage
+- Implement in `scanner_cio_ultra.py` as secondary source
+- Merge results from both DexScreener and GeckoTerminal
+
+### Option B: Relax Thresholds Further for Discovery Mode
+- Lower `MIN_LIQ_USD` from $100 → $50 or even $0
+- Accept tokens with zero volume if they have liquidity
+- Focus on "discovery" rather than "quality" at this stage
+
+### Option C: Implement On-Chain Scanning
+- Query Base RPC directly for new pair creation events
+- Use factory contracts (Uniswap V2/V3, Aerodrome) to detect new tokens
+- Bypass DexScreener rate limits entirely
+
+### Option D: Manual Token Import System
+- Allow manual token contract input
+- Community-driven token submissions
+- Verification workflow before adding to feed
+
+**Recommended Priority Order:**
+1. **P0** - Add GeckoTerminal fallback (quickest fix)
+2. **P1** - Relax thresholds to pure discovery mode
+3. **P2** - Implement on-chain pair monitoring
+4. **P3** - Manual import system for community
+
+---
+
+## Files Changed (Original Session)
 1. `docs/index.html` — Fixed CIO feed URL, dynamic metrics, block number, last-scan timestamp
 2. `docs/live.html` — Fixed feed URL, CIO format adapter, feed timestamp display
 3. `PRODUCT_QUALITY_PLAN.md` — This plan (new file)

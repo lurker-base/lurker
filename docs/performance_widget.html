@@ -1,0 +1,314 @@
+<!-- LURKER Performance Widget - Include in live.html or use standalone -->
+<style>
+.performance-widget {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.performance-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.performance-title {
+    font-weight: bold;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.performance-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.perf-stat {
+    text-align: center;
+    padding: 0.75rem;
+    background: rgba(0,0,0,0.3);
+    border-radius: 6px;
+}
+
+.perf-stat-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.perf-stat-label {
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    text-transform: uppercase;
+}
+
+.perf-win { color: #22c55e; }
+.perf-loss { color: #ef4444; }
+.perf-neutral { color: #9ca3af; }
+
+.verdict-bar {
+    display: flex;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.verdict-segment {
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.verdict-moon { background: #f59e0b; }
+.verdict-winning { background: #22c55e; }
+.verdict-profit { background: #4ade80; }
+.verdict-neutral { background: #6b7280; }
+.verdict-losing { background: #f87171; }
+.verdict-fail { background: #dc2626; }
+.verdict-rug { background: #7f1d1d; }
+
+.performance-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.perf-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 0.5rem;
+    background: rgba(0,0,0,0.2);
+    border-radius: 4px;
+    align-items: center;
+}
+
+.perf-item:hover {
+    background: rgba(255,255,255,0.05);
+}
+
+.perf-symbol {
+    font-weight: bold;
+}
+
+.perf-gain {
+    text-align: right;
+    font-family: monospace;
+}
+
+.perf-verdict {
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.perf-time {
+    text-align: right;
+    color: var(--text-dim);
+    font-size: 0.75rem;
+}
+
+.perf-tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.perf-tab {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    padding: 0.3rem 0.8rem;
+    cursor: pointer;
+    font-size: 0.75rem;
+    border-radius: 4px;
+}
+
+.perf-tab:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.perf-tab.active {
+    background: var(--accent);
+    color: var(--bg);
+    border-color: var(--accent);
+}
+
+@media (max-width: 768px) {
+    .performance-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .perf-item {
+        grid-template-columns: 2fr 1fr;
+        gap: 0.5rem;
+    }
+    
+    .perf-time, .perf-verdict {
+        display: none;
+    }
+}
+</style>
+
+<div class="performance-widget" id="performance-widget">
+    <div class="performance-header">
+        <div class="performance-title">
+            <span>📊</span> Signal Performance
+        </div>
+        <span style="font-size: 0.75rem; color: var(--text-dim);" id="perf-updated">-</span>
+    </div>
+    
+    <div class="performance-stats">
+        <div class="perf-stat">
+            <div class="perf-stat-value perf-win" id="perf-winrate">-</div>
+            <div class="perf-stat-label">Win Rate</div>
+        </div>
+        <div class="perf-stat">
+            <div class="perf-stat-value" id="perf-total">-</div>
+            <div class="perf-stat-label">Tracked</div>
+        </div>
+        <div class="perf-stat">
+            <div class="perf-stat-value perf-win" id="perf-wins">-</div>
+            <div class="perf-stat-label">Wins</div>
+        </div>
+        <div class="perf-stat">
+            <div class="perf-stat-value perf-loss" id="perf-losses">-</div>
+            <div class="perf-stat-label">Losses</div>
+        </div>
+    </div>
+    
+    <div class="verdict-bar" id="verdict-bar"></div>
+    
+    <div class="perf-tabs">
+        <button class="perf-tab active" data-tab="top">Top Performers</button>
+        <button class="perf-tab" data-tab="recent">Recent</button>
+        <button class="perf-tab" data-tab="all">All Signals</button>
+    </div>
+    
+    <div class="performance-list" id="performance-list">
+        <div style="text-align: center; color: var(--text-dim); padding: 1rem;">Loading performance data...</div>
+    </div>
+</div>
+
+<script>
+const PERFORMANCE_URL = 'https://raw.githubusercontent.com/lurker-base/lurker/main/signals/performance_summary.json';
+
+let perfData = null;
+let currentPerfTab = 'top';
+
+const VERDICT_STYLES = {
+    'MOON': { class: 'verdict-moon', label: '🌙 MOON' },
+    'WINNING': { class: 'verdict-winning', label: '✅ WINNING' },
+    'PROFIT': { class: 'verdict-profit', label: '💰 PROFIT' },
+    'NEUTRAL': { class: 'verdict-neutral', label: '➖ NEUTRAL' },
+    'LOSING': { class: 'verdict-losing', label: '📉 LOSING' },
+    'FAIL': { class: 'verdict-fail', label: '❌ FAIL' },
+    'RUG': { class: 'verdict-rug', label: '💀 RUG' },
+    'TRACKING': { class: 'verdict-neutral', label: '⏳ TRACKING' }
+};
+
+async function loadPerformance() {
+    try {
+        const response = await fetch(PERFORMANCE_URL + '?t=' + Date.now());
+        if (!response.ok) throw new Error('Failed to load');
+        perfData = await response.json();
+        renderPerformance();
+    } catch (e) {
+        document.getElementById('performance-list').innerHTML = 
+            '<div style="text-align: center; color: var(--text-dim); padding: 1rem;">Performance data unavailable</div>';
+    }
+}
+
+function renderPerformance() {
+    if (!perfData) return;
+    
+    // Update header stats
+    document.getElementById('perf-winrate').textContent = perfData.win_rate?.toFixed(1) + '%' || '-';
+    document.getElementById('perf-total').textContent = perfData.total_tracked || '0';
+    
+    const verdicts = perfData.verdicts || {};
+    const wins = (verdicts.WINNING || 0) + (verdicts.PROFIT || 0) + (verdicts.MOON || 0);
+    const losses = (verdicts.LOSING || 0) + (verdicts.FAIL || 0) + (verdicts.RUG || 0);
+    document.getElementById('perf-wins').textContent = wins;
+    document.getElementById('perf-losses').textContent = losses;
+    document.getElementById('perf-updated').textContent = perfData.updated_at ? 
+        new Date(perfData.updated_at).toLocaleString() : '-';
+    
+    // Render verdict bar
+    const total = perfData.total_tracked || 1;
+    const barHtml = [
+        { key: 'MOON', class: 'verdict-moon' },
+        { key: 'WINNING', class: 'verdict-winning' },
+        { key: 'PROFIT', class: 'verdict-profit' },
+        { key: 'NEUTRAL', class: 'verdict-neutral' },
+        { key: 'LOSING', class: 'verdict-losing' },
+        { key: 'FAIL', class: 'verdict-fail' },
+        { key: 'RUG', class: 'verdict-rug' },
+    ].map(v => {
+        const count = verdicts[v.key] || 0;
+        const pct = (count / total * 100).toFixed(1);
+        return `<div class="verdict-segment ${v.class}" style="width: ${pct}%"></div>`;
+    }).join('');
+    document.getElementById('verdict-bar').innerHTML = barHtml;
+    
+    // Render list based on tab
+    let signals = [];
+    if (currentPerfTab === 'top') {
+        signals = perfData.top_performers || [];
+    } else if (currentPerfTab === 'recent') {
+        signals = perfData.recent_signals || [];
+    } else {
+        signals = perfData.all_signals || [];
+    }
+    
+    renderPerformanceList(signals);
+}
+
+function renderPerformanceList(signals) {
+    const container = document.getElementById('performance-list');
+    
+    if (signals.length === 0) {
+        container.innerHTML = '<div style="text-align: center; color: var(--text-dim); padding: 1rem;">No performance data yet</div>';
+        return;
+    }
+    
+    container.innerHTML = signals.map(s => {
+        const style = VERDICT_STYLES[s.verdict] || VERDICT_STYLES['NEUTRAL'];
+        const gainClass = s.current_gain_pct > 0 ? 'perf-win' : s.current_gain_pct < 0 ? 'perf-loss' : 'perf-neutral';
+        const gainSign = s.current_gain_pct > 0 ? '+' : '';
+        
+        return `
+            <div class="perf-item">
+                <div class="perf-symbol">$${s.symbol}</div>
+                <div class="perf-gain ${gainClass}">${gainSign}${s.current_gain_pct?.toFixed(1) || 0}%</div>
+                <div class="perf-verdict ${style.class}">${style.label}</div>
+                <div class="perf-time">${s.hours_tracked?.toFixed(1) || 0}h</div>
+            </div>
+        `;
+    }).join('');
+}
+
+// Tab handling
+document.querySelectorAll('.perf-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+        document.querySelectorAll('.perf-tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        currentPerfTab = tab.dataset.tab;
+        renderPerformance();
+    });
+});
+
+// Load on init
+loadPerformance();
+</script>

@@ -485,7 +485,8 @@ def process_candidate(item, registry):
     # Bonus for complete DexScreener profile (quality indicator)
     score += dex_quality["quality_score"] // 4  # Up to +25 points
     
-    return {
+    # Build candidate dict (without explanation first - will be added after)
+    candidate = {
         "token": {
             "address": token_addr,
             "symbol": token_symbol,
@@ -518,7 +519,13 @@ def process_candidate(item, registry):
         "source": source,
         "status": "observing",
         "quality": dex_quality,  # DexScreener profile quality
-    }, None
+        "is_recycled": token_meta.get("recycled", False),
+    }
+    
+    # Generate explanation of WHY this token was selected
+    candidate["explanation"] = generate_signal_explanation(candidate, source, risks, dex_quality)
+    
+    return candidate, None
 
 def scan():
     """Main scan - ULTRA LAUNCH MODE"""

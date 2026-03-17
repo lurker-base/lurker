@@ -1,0 +1,162 @@
+# LURKER Configuration
+# Centralized settings for scanner, badges, and performance tracking
+
+# Scanner Thresholds
+scanner:
+  # Discovery mode thresholds (ULTRA LAUNCH)
+  min_liq_usd: 100
+  min_volume_5m: 10
+  min_tx_5m: 1
+  max_age_minutes: 10080  # 7 days
+  
+  # Anti-relist window
+  known_token_threshold_hours: 168  # 7 days - tokens older than this are "known"
+  recycled_token_threshold_hours: 48  # 2 days - tokens between 2-7 days are "recycled"
+  
+  # Risk calculation
+  risk_low_liq_threshold: 5000
+  risk_very_low_liq_threshold: 2000
+  risk_low_tx_threshold: 10  # per 1h
+  risk_low_vol_threshold: 1000  # per 1h
+  risk_dump_threshold_pct: -10  # 1h price change
+
+# Badge System Settings
+badges:
+  max_badges_per_token: 3
+  
+  # Priority order (first = highest priority)
+  priority:
+    - risk_high
+    - risk_medium
+    - recycled
+    - score
+    - very_low_liquidity
+    - dumping
+    - high_liquidity
+    - high_volume
+    - high_activity
+    - fresh
+    - age
+  
+  # Thresholds
+  high_liquidity_usd: 50000
+  medium_liquidity_usd: 20000
+  high_volume_24h_usd: 100000
+  medium_volume_24h_usd: 50000
+  high_tx_5m: 50
+  fresh_age_hours: 1
+
+# Scoring Weights
+scoring:
+  base_score: 50
+  
+  age_bonus:
+    under_1h: 30
+    under_10h: 20
+    under_30h: 10
+  
+  liquidity_bonus:
+    over_100k: 15
+    over_50k: 10
+    over_20k: 5
+  
+  volume_bonus:
+    over_1000_5m: 10
+  
+  tx_bonus:
+    over_10_5m: 10
+  
+  source_bonus:
+    boosts: 5
+  
+  profile_bonus_divisor: 4  # quality_score // 4
+
+# Performance Tracking
+performance:
+  tracking_duration_hours: 72
+  price_check_interval_minutes: 30
+  max_price_history_points: 200
+  
+  # Verdict thresholds
+  verdict:
+    moon_gain_pct: 100
+    winning_gain_pct: 20
+    profit_gain_pct: 10
+    losing_loss_pct: -15
+    fail_loss_pct: -30
+    rug_loss_pct: -50
+  
+  # Status determination
+  status:
+    pump_dump_threshold_gain: 50
+    pump_dump_retrace_ratio: 0.5
+    moon_threshold_gain: 100
+    pumping_threshold_gain: 50
+    rugged_threshold_loss: -50
+    dumping_threshold_loss: -30
+    profitable_threshold_gain: 10
+    losing_threshold_loss: -10
+
+# Feed Settings
+feeds:
+  cio_feed_file: "signals/cio_feed.json"
+  live_feed_file: "signals/live_feed.json"
+  performance_dir: "signals/performance"
+  token_registry_file: "state/token_registry.json"
+  
+  # Live feed settings
+  max_live_signals: 20
+  min_volume_1h_for_live: 0
+  sort_live_by: "quality_score"
+
+# Dashboard
+dashboard:
+  refresh_interval_seconds: 30
+  countdown_interval_seconds: 30
+  max_tokens_display: 50
+  
+  # Formatting
+  number_format:
+    million_suffix: "M"
+    thousand_suffix: "K"
+    decimal_places: 1
+
+# Data Sources
+sources:
+  dexscreener_base_url: "https://api.dexscreener.com"
+  chain: "base"
+  timeout_seconds: 15
+  
+  # Search terms for discovery
+  search_terms:
+    - "new"
+    - "trending"
+    - "WETH"
+    - "USDC"
+    - "BASE"
+    - "AERO"
+    - "CLANKER"
+    - "VIRTUAL"
+  
+  max_search_terms_per_scan: 8
+
+# Lifecycle Settings
+lifecycle:
+  thresholds:
+    new_max_age_minutes: 30
+    watching_max_age_minutes: 60
+    trending_max_age_minutes: 180
+    active_max_age_minutes: 1440  # 24h
+    verified_min_age_minutes: 1440  # 24h
+    max_inactive_time_minutes: 180  # 3h
+  
+  rug_detection:
+    zero_liquidity: true
+    pump_dump_min_gain: 100
+    pump_dump_retrace_ratio: 0.5
+    severe_dump_pct: -90
+    dumping_with_loss_pct: -50
+  
+  cleanup:
+    max_age_days: 7
+    min_liq_for_retention: 5000

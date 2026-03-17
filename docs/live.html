@@ -307,83 +307,92 @@
             }
             
             container.innerHTML = '<div class="token-list">' + tokens.map(token => {
-                const risk = token.risk?.level || 'medium';
+                const risk = token.risk?.level || token.risk_level || 'medium';
                 const riskClass = risk === 'high' ? 'badge-risk-high' : risk === 'medium' ? 'badge-risk-med' : 'badge-risk-low';
                 
-                // V2 fields
-                const confidence = token.confidence || 0;
-                const thesis = token.thesis || '';
-                const whyNow = token.why_now || [];
-                const invalidation = token.invalidation || '';
+                // Get explanation if available
+                const explanation = token.explanation || {};
+                const isRecycled = token.is_recycled || false;
+                const signalQuality = explanation.signal_quality || 'medium';
                 
-                // Confidence badge
-                let confBadge = '';
-                if (confidence > 0) {
-                    let confColor = '#ef4444';
-                    if (confidence >= 5) confColor = '#22c55e';
-                    else if (confidence >= 3) confColor = '#f59e0b';
-                    confBadge = '<span class="badge" style="background:' + confColor + '">' + confidence.toFixed(1) + '/6</span>';
+                // Generate badges - HONEST VERSION: max 3, prioritize risk
+                const badges = [];
+                
+                // 1. RISK BADGE (always first - most important)
+                badges.push('<span class="badge ' + riskClass + '">' + risk.toUpperCase() + ' RISK</span>');
+                
+                // 2. QUALITY/SCORE BADGE (context for the score)
+                let scoreClass = 'badge-score';
+                if (token.score >= 80) scoreClass += ' badge-premium';
+                badges.push('<span class="badge ' + scoreClass + '">' + token.score.toFixed(0) + '/100</span>');
+                
+                // 3. THIRD BADGE: Most relevant metric based on token characteristics
+                // Prioritize warnings and notable metrics
+                const liq = token.metrics?.liq_usd || 0;
+                const vol_1h = token.metrics?.vol_1h_usd || 0;
+                const vol_24h = token.metrics?.vol_24h_usd || vol_1h * 24; // Approximate
+                const tx_5m = token.metrics?.txns_5m || 0;
+                
+                // Check for risks that should be highlighted
+                const risks = token.risks || [];
+                
+                if (isRecycled) {
+                    badges.push('<span class="badge badge-historical">🔄 RECYCLED</span>');
+                } else if (token.age_hours < 0.5 && risk === 'high') {
+                    // Very new + high risk = potential rug
+                    badges.push('<span class="badge badge-rug">⚠️ BRAND NEW</span>');
+                } else if (risks.includes('very_low_liquidity') || liq < 2000) {
+                    badges.push('<span class="badge badge-dump">💀 LOW LIQ</span>');
+                } else if (risks.includes('dumping')) {
+                    badges.push('<span class="badge badge-dump">📉 DUMPING</span>');
+                } else if (liq >= 50000) {
+                    badges.push('<span class="badge badge-liquid">💧 $50K+ LIQ</span>');
+                } else if (vol_24h >= 100000) {
+                    badges.push('<span class="badge badge-volume">📈 HIGH VOL</span>');
+                } else if (tx_5m >= 50) {
+                    badges.push('<span class="badge badge-tx">⚡ ACTIVE</span>');
+                } else if (token.age_hours < 1) {
+                    badges.push('<span class="badge badge-fresh">🔥 <1H OLD</span>');
+                } else {
+                    // Default: age badge
+                    badges.push('<span class="badge badge-historical">' + formatAge(token.age_hours) + '</span>');
                 }
                 
-                // Generate badges - LURKER native indicators
-                const badges = [];
-                badges.push('<span class="badge badge-score">' + token.score.toFixed(0) + '%</span>');
-                if (confBadge) badges.push(confBadge);
-                
-                // Age badge
-                if (token.age_hours < 0.1) badges.push('<span class="badge badge-fresh">🔥 FRESH</span>');
-                else if (token.age_hours < 1) badges.push('<span class="badge badge-fresh">' + formatAge(token.age_hours) + '</span>');
-                
-                // Liquidity badge
-                if (token.metrics.liq_usd >= 50000) badges.push('<span class="badge badge-liquid">💧 $50K+</span>');
-                else if (token.metrics.liq_usd >= 20000) badges.push('<span class="badge badge-liquid">💧 $20K+</span>');
-                
-                // Volume badge
-                if (token.metrics.vol_24h_usd >= 50000) badges.push('<span class="badge badge-volume">📈 $50K+</span>');
-                else if (token.metrics.vol_24h_usd >= 10000) badges.push('<span class="badge badge-volume">📈 $10K+</span>');
-                
-                // Tx badge
-                if (token.metrics.txns_24h >= 50) badges.push('<span class="badge badge-tx">⚡ ' + token.metrics.txns_24h + ' tx</span>');
-                
-                // Risk badge
-                badges.push('<span class="badge ' + riskClass + '">' + risk.toUpperCase() + '</span>');
-                
-                // Add badges from scanner feed (PUMP, DUMP, PREMIUM, etc.)
-                if (token.badges && token.badges.length > 0) {
-                    token.badges.forEach(badge => {
-                        let className = 'badge';
-                        if (badge.includes('PREMIUM')) className += ' badge-premium';
-                        else if (badge.includes('GEM')) className += ' badge-gem';
-                        else if (badge.includes('MEGA PUMP')) className += ' badge-mega-pump';
-                        else if (badge.includes('PUMP')) className += ' badge-pump';
-                        else if (badge.includes('DUMP')) className += ' badge-dump';
-                        else if (badge.includes('RUG')) className += ' badge-rug';
-                        else if (badge.includes('WHALE')) className += ' badge-whale';
-                        else if (badge.includes('HOT')) className += ' badge-hot';
-                        else if (badge.includes('VIRAL')) className += ' badge-viral';
-                        badges.push('<span class="' + className + '">' + badge + '</span>');
-                    });
+                // Add explanation tooltip or summary if available
+                let explanationHtml = '';
+                if (explanation.summary) {
+                    const caveats = explanation.risk_caveats || [];
+                    const caveatText = caveats.length > 0 ? '<br>⚠️ ' + caveats.join('<br>⚠️ ') : '';
+                    explanationHtml = `
+                        <div class="token-explanation" style="font-size: 0.75rem; color: #9ca3af; margin-top: 4px; grid-column: 1 / -1; border-top: 1px solid #333; padding-top: 4px;">
+                            <span style="color: #f97316;">📊 ${explanation.summary}</span>
+                            ${caveatText}
+                        </div>
+                    `;
                 }
                 
                 // DexScreener link - PROMINENT
                 const dexUrl = 'https://dexscreener.com/base/' + token.token.address;
                 
+                // Format metrics for display
+                const volDisplay = vol_1h > 0 ? formatNumber(vol_1h) + '/h' : formatNumber(vol_24h) + '/24h';
+                
                 return `
-                    <div class="token-row">
+                    <div class="token-row" style="grid-template-rows: auto auto;">
                         <div class="token-info">
                             <span class="token-symbol">
-                                <a href="${dexUrl}" target="_blank" class="dex-link">$<span style="color:#fff;font-weight:bold">${token.token.symbol.replace("$","")}</span></a>
+                                <a href="${dexUrl}" target="_blank" class="dex-link">$<span style="color:#fff;font-weight:bold">${token.token.symbol?.replace("$","") || '???'}</span></a>
                             </span>
                             <span class="token-address">${token.token.address.slice(0, 6)}...${token.token.address.slice(-4)}</span>
                         </div>
                         <div class="token-metrics">
                             <div class="token-metric">
                                 <div class="metric-label">Liquidity</div>
-                                <div class="metric-value">${formatNumber(token.metrics.liq_usd)}</div>
+                                <div class="metric-value">${formatNumber(liq)}</div>
                             </div>
                             <div class="token-metric">
-                                <div class="metric-label">Volume 24h</div>
-                                <div class="metric-value">${formatNumber(token.metrics.vol_24h_usd)}</div>
+                                <div class="metric-label">Volume</div>
+                                <div class="metric-value">${volDisplay}</div>
                             </div>
                         </div>
                         <div class="token-badges">${badges.join('')}</div>
@@ -392,9 +401,10 @@
                             <div class="metric-value">${formatAge(token.age_hours)}</div>
                         </div>
                         <div class="token-metric">
-                            <div class="metric-label">Risk</div>
-                            <div class="metric-value">${risk}</div>
+                            <div class="metric-label">Source</div>
+                            <div class="metric-value" style="font-size: 0.7rem; text-transform: uppercase;">${token.source || 'scan'}</div>
                         </div>
+                        ${explanationHtml}
                     </div>
                 `;
             }).join('') + '</div>';
