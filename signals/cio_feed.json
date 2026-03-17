@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-17T19:35:29.447000+00:00",
-    "generated_at": "2026-03-17T19:35:29.447000+00:00",
+    "updated_at": "2026-03-17T19:50:36.396000+00:00",
+    "generated_at": "2026-03-17T19:50:36.396000+00:00",
     "status": "ok",
-    "count": 3,
+    "count": 2,
     "thresholds": {
       "min_liq_usd": 100,
       "min_vol_5m": 10,
@@ -12,77 +12,75 @@
       "max_age_min": 10080
     },
     "risk_distribution": {
-      "low": 1,
-      "medium": 1,
-      "high": 1
+      "medium": 2
     },
     "rejected": {
-      "low_liq": 14,
-      "low_volume": 3
+      "low_liq": 1,
+      "low_volume": 4,
+      "known_token": 7,
+      "too_old": 21,
+      "low_tx": 1
     },
     "source": "ultra_launch_scanner",
     "fallback": {
-      "used": true,
-      "geckoterminal_items": 20,
-      "trigger": "low_dexscreener_results"
+      "used": false,
+      "geckoterminal_items": 0,
+      "trigger": null
     }
   },
   "candidates": [
     {
       "token": {
-        "address": "0xb4d0684a8527314baf2e6e6464c7244bfcc2c222",
-        "symbol": "HDNTCL",
-        "name": "HDNTCL"
+        "address": "0x412c9fedc8bf9e0c84c4c7b6924fe41c462a2af6",
+        "symbol": "CAISHEN",
+        "name": "Caishen"
       },
       "pair": {
-        "address": "0xc39d701b14ce0c7a984386ff9258b8a49b224092",
-        "dex": "aerodrome-base",
-        "quote": "USDC"
+        "address": "0xf413309c158e2330ced241656d5c182eedc2862c42deab73910ef51aa5c5fd1d",
+        "dex": "uniswap",
+        "quote": "ETH"
       },
       "metrics": {
-        "liq_usd": 21532.7594,
-        "vol_5m_usd": 11717.7410903178,
-        "vol_1h_usd": 11717.7410903178,
-        "txns_5m": 36,
-        "price_usd": 0.00111289201072572
+        "liq_usd": 11544.59,
+        "vol_5m_usd": 122.56,
+        "vol_1h_usd": 638.02,
+        "txns_5m": 17,
+        "price_usd": 1.666e-05
       },
       "timestamps": {
-        "pair_created_at": "2026-03-17T19:26:53+00:00",
-        "token_first_seen": "2026-03-17T19:31:53.109000+00:00",
-        "age_minutes": 3.6,
-        "age_hours": 0.06
+        "pair_created_at": "2026-02-25T00:04:07+00:00",
+        "token_first_seen": "2026-03-17T11:59:32.494000+00:00",
+        "age_minutes": 471.1,
+        "age_hours": 7.85
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 1.0
+        "freshness": 0.87
       },
-      "risks": [],
-      "risk_level": "low",
-      "source": "geckoterminal_new",
+      "risks": [
+        "low_volume"
+      ],
+      "risk_level": "medium",
+      "source": "boosts",
       "status": "observing",
       "quality": {
-        "has_profile": false,
-        "has_image": false,
-        "has_socials": false,
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
         "has_website": false,
-        "quality_score": 0
+        "quality_score": 75
       },
       "is_recycled": false,
       "explanation": {
-        "summary": "Healthy transaction flow indicating organic interest",
+        "summary": "Token is actively promoted with boost visibility",
         "reasons": [
-          "Healthy transaction flow indicating organic interest",
-          "Very fresh token - early entry opportunity"
+          "Token is actively promoted with boost visibility",
+          "Verified profile with image, socials and website"
         ],
         "key_metrics": [
           {
-            "metric": "tx_5m",
-            "value": "36 txs",
-            "significance": "medium"
-          },
-          {
-            "metric": "age",
-            "value": "4 min",
+            "metric": "profile",
+            "value": "75/100",
             "significance": "high"
           }
         ],
@@ -93,139 +91,72 @@
     },
     {
       "token": {
-        "address": "0x0a6e9c67e64710165102b474d12b12abdefe88f2",
-        "symbol": "diztorted",
-        "name": "diztorted"
+        "address": "0xfca95aeb5bf44ae355806a5ad14659c940dc6bf7",
+        "symbol": "SHIB",
+        "name": "SHIBA INU"
       },
       "pair": {
-        "address": "0x93529aff18c23aec03e8605ffabd0332606c8f7e",
-        "dex": "uniswap-v2-base",
-        "quote": "WETH"
+        "address": "0x06249abc099011fec3a5550a7a6d1f12ba90ad9b9c59cd13b32a83b5c1fad7ee",
+        "dex": "uniswap",
+        "quote": "ETH"
       },
       "metrics": {
-        "liq_usd": 54607.7114,
-        "vol_5m_usd": 489.8128632013,
-        "vol_1h_usd": 489.8128632013,
-        "txns_5m": 6,
-        "price_usd": 4.25735178978086e-06
+        "liq_usd": 352216.73,
+        "vol_5m_usd": 0.0,
+        "vol_1h_usd": 99.09,
+        "txns_5m": 87,
+        "price_usd": 4.547e-09
       },
       "timestamps": {
-        "pair_created_at": "2026-03-17T19:32:57+00:00",
-        "token_first_seen": "2026-03-17T19:34:53.121000+00:00",
-        "age_minutes": 0.6,
-        "age_hours": 0.01
+        "pair_created_at": "2025-06-16T10:33:31+00:00",
+        "token_first_seen": "2026-03-16T19:53:03.661000+00:00",
+        "age_minutes": 1437.5,
+        "age_hours": 23.96
       },
       "scores": {
-        "cio_score": 95,
-        "freshness": 1.0
+        "cio_score": 100,
+        "freshness": 0.6
       },
       "risks": [
-        "low_activity",
         "low_volume"
       ],
       "risk_level": "medium",
-      "source": "geckoterminal_new",
+      "source": "ads",
       "status": "observing",
       "quality": {
-        "has_profile": false,
-        "has_image": false,
-        "has_socials": false,
-        "has_website": false,
-        "quality_score": 0
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
       },
       "is_recycled": false,
       "explanation": {
-        "summary": "Strong liquidity depth reduces slippage risk",
+        "summary": "High activity placement - advertiser confidence",
         "reasons": [
+          "High activity placement - advertiser confidence",
           "Strong liquidity depth reduces slippage risk",
-          "Very fresh token - early entry opportunity"
+          "High transaction frequency - active market participation",
+          "Verified profile with image, socials and website"
         ],
         "key_metrics": [
           {
             "metric": "liquidity",
-            "value": "$54,608",
+            "value": "$352,217",
             "significance": "high"
           },
           {
-            "metric": "age",
-            "value": "1 min",
+            "metric": "tx_5m",
+            "value": "87 txs",
             "significance": "high"
-          }
-        ],
-        "risk_caveats": [
-          "Low transaction count - possible bot activity"
-        ],
-        "confidence_description": "High confidence - multiple positive indicators aligned",
-        "signal_quality": "high"
-      }
-    },
-    {
-      "token": {
-        "address": "0x42ed354fc3ec29d8a1012bcb116fb90573bd8b52",
-        "symbol": "UGER",
-        "name": "UGER"
-      },
-      "pair": {
-        "address": "0x831f515bb9f10bf34ad6c229d0d77872dcf8357e16f3b2e951900cc26f9c4030",
-        "dex": "uniswap-v4-base",
-        "quote": "USDC"
-      },
-      "metrics": {
-        "liq_usd": 243.7776,
-        "vol_5m_usd": 37.8732620133,
-        "vol_1h_usd": 43.0677061385,
-        "txns_5m": 1,
-        "price_usd": 5.83174323537772e-06
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-17T19:26:35+00:00",
-        "token_first_seen": "2026-03-17T19:31:53.109000+00:00",
-        "age_minutes": 3.6,
-        "age_hours": 0.06
-      },
-      "scores": {
-        "cio_score": 80,
-        "freshness": 1.0
-      },
-      "risks": [
-        "low_liquidity",
-        "very_low_liquidity",
-        "low_activity",
-        "low_volume"
-      ],
-      "risk_level": "high",
-      "source": "geckoterminal_new",
-      "status": "observing",
-      "quality": {
-        "has_profile": false,
-        "has_image": false,
-        "has_socials": false,
-        "has_website": false,
-        "quality_score": 0
-      },
-      "is_recycled": false,
-      "explanation": {
-        "summary": "Low liquidity - high risk, potential for large moves",
-        "reasons": [
-          "Low liquidity - high risk, potential for large moves",
-          "Very fresh token - early entry opportunity"
-        ],
-        "key_metrics": [
-          {
-            "metric": "liquidity",
-            "value": "$244",
-            "significance": "risk"
           },
           {
-            "metric": "age",
-            "value": "4 min",
+            "metric": "profile",
+            "value": "100/100",
             "significance": "high"
           }
         ],
-        "risk_caveats": [
-          "Extremely low liquidity - high risk of loss",
-          "Low transaction count - possible bot activity"
-        ],
+        "risk_caveats": [],
         "confidence_description": "High confidence - multiple positive indicators aligned",
         "signal_quality": "high"
       }
