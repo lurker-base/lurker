@@ -1,9 +1,9 @@
 {
   "meta": {
-    "updated_at": "2026-03-17T17:35:24.114000+00:00",
+    "updated_at": "2026-03-17T17:50:26.696000+00:00",
     "source": "cio_scanner",
     "chain": "base",
-    "count": 0,
+    "count": 4,
     "filters": {
       "min_volume_1h": 0,
       "max_results": 20,
@@ -11,5 +11,62 @@
     },
     "errors": []
   },
-  "signals": []
+  "signals": [
+    {
+      "address": "0x16e1588d90b4ec00e9dfb0147a1fd5329323377d",
+      "symbol": "Atlas",
+      "name": "Humanoid Atlas",
+      "liquidity_usd": 93357.43,
+      "volume_1h": 98056.92,
+      "volume_5m": 13421.21,
+      "quality_score": 100,
+      "age_minutes": 10.6,
+      "age_hours": 0.2,
+      "detected_at": "2026-03-17T17:39:49.006000+00:00",
+      "risk_level": "low",
+      "source": "profiles"
+    },
+    {
+      "address": "0xbf003846da231cc2b745e58eec43e024c2528b07",
+      "symbol": "PIEDAI",
+      "name": "piedAI",
+      "liquidity_usd": 146205.01,
+      "volume_1h": 28821.24,
+      "volume_5m": 121.16,
+      "quality_score": 100,
+      "age_minutes": 50.4,
+      "age_hours": 0.8,
+      "detected_at": "2026-03-17T17:00:03.591000+00:00",
+      "risk_level": "low",
+      "source": "profiles"
+    },
+    {
+      "address": "0x412c9fedc8bf9e0c84c4c7b6924fe41c462a2af6",
+      "symbol": "CAISHEN",
+      "name": "Caishen",
+      "liquidity_usd": 11591.47,
+      "volume_1h": 741.8,
+      "volume_5m": 56.51,
+      "quality_score": 100,
+      "age_minutes": 350.9,
+      "age_hours": 5.8,
+      "detected_at": "2026-03-17T11:59:32.494000+00:00",
+      "risk_level": "medium",
+      "source": "boosts"
+    },
+    {
+      "address": "0xfca95aeb5bf44ae355806a5ad14659c940dc6bf7",
+      "symbol": "SHIB",
+      "name": "SHIBA INU",
+      "liquidity_usd": 353194.89,
+      "volume_1h": 56.82,
+      "volume_5m": 34.19,
+      "quality_score": 100,
+      "age_minutes": 1317.4,
+      "age_hours": 22.0,
+      "detected_at": "2026-03-16T19:53:03.661000+00:00",
+      "risk_level": "medium",
+      "source": "ads"
+    }
+  ]
 }

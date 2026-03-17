@@ -1,19 +1,193 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-17T17:35:24.113000+00:00",
-    "generated_at": "2026-03-17T17:35:24.113000+00:00",
-    "status": "degraded",
-    "count": 0,
+    "updated_at": "2026-03-17T17:50:26.695000+00:00",
+    "generated_at": "2026-03-17T17:50:26.695000+00:00",
+    "status": "ok",
+    "count": 4,
     "thresholds": {
       "min_liq_usd": 100,
       "min_vol_5m": 10,
       "min_tx_5m": 1,
       "max_age_min": 10080
     },
-    "risk_distribution": {},
-    "rejected": {},
+    "risk_distribution": {
+      "low": 2,
+      "medium": 2
+    },
+    "rejected": {
+      "known_token": 8,
+      "low_liq": 1,
+      "low_volume": 2,
+      "too_old": 20,
+      "duplicate": 1
+    },
     "source": "ultra_launch_scanner"
   },
-  "candidates": []
+  "candidates": [
+    {
+      "token": {
+        "address": "0x16e1588d90b4ec00e9dfb0147a1fd5329323377d",
+        "symbol": "Atlas",
+        "name": "Humanoid Atlas"
+      },
+      "pair": {
+        "address": "0x403ba8e5b9221610fbd64acd35b3e1000edad21c27a521ed7949ed24fc85b601",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 93357.43,
+        "vol_5m_usd": 13421.21,
+        "vol_1h_usd": 98056.92,
+        "txns_5m": 84,
+        "price_usd": 1.395e-06
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-17T17:27:35+00:00",
+        "token_first_seen": "2026-03-17T17:39:49.006000+00:00",
+        "age_minutes": 10.6,
+        "age_hours": 0.18
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 1.0
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    },
+    {
+      "token": {
+        "address": "0xbf003846da231cc2b745e58eec43e024c2528b07",
+        "symbol": "PIEDAI",
+        "name": "piedAI"
+      },
+      "pair": {
+        "address": "0x6d9423754aefd848d69e562e71d1f2fb57b5ec1711a477ac66ef61e192c46311",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 146205.01,
+        "vol_5m_usd": 121.16,
+        "vol_1h_usd": 28821.24,
+        "txns_5m": 4,
+        "price_usd": 2.227e-06
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-17T15:31:25+00:00",
+        "token_first_seen": "2026-03-17T17:00:03.591000+00:00",
+        "age_minutes": 50.4,
+        "age_hours": 0.84
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.99
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    },
+    {
+      "token": {
+        "address": "0x412c9fedc8bf9e0c84c4c7b6924fe41c462a2af6",
+        "symbol": "CAISHEN",
+        "name": "Caishen"
+      },
+      "pair": {
+        "address": "0xf413309c158e2330ced241656d5c182eedc2862c42deab73910ef51aa5c5fd1d",
+        "dex": "uniswap",
+        "quote": "ETH"
+      },
+      "metrics": {
+        "liq_usd": 11591.47,
+        "vol_5m_usd": 56.51,
+        "vol_1h_usd": 741.8,
+        "txns_5m": 8,
+        "price_usd": 1.677e-05
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-25T00:04:07+00:00",
+        "token_first_seen": "2026-03-17T11:59:32.494000+00:00",
+        "age_minutes": 350.9,
+        "age_hours": 5.85
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.9
+      },
+      "risks": [
+        "low_volume"
+      ],
+      "risk_level": "medium",
+      "source": "boosts",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": false,
+        "quality_score": 75
+      }
+    },
+    {
+      "token": {
+        "address": "0xfca95aeb5bf44ae355806a5ad14659c940dc6bf7",
+        "symbol": "SHIB",
+        "name": "SHIBA INU"
+      },
+      "pair": {
+        "address": "0x06249abc099011fec3a5550a7a6d1f12ba90ad9b9c59cd13b32a83b5c1fad7ee",
+        "dex": "uniswap",
+        "quote": "ETH"
+      },
+      "metrics": {
+        "liq_usd": 353194.89,
+        "vol_5m_usd": 34.19,
+        "vol_1h_usd": 56.82,
+        "txns_5m": 91,
+        "price_usd": 4.549e-09
+      },
+      "timestamps": {
+        "pair_created_at": "2025-06-16T10:33:31+00:00",
+        "token_first_seen": "2026-03-16T19:53:03.661000+00:00",
+        "age_minutes": 1317.4,
+        "age_hours": 21.96
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.63
+      },
+      "risks": [
+        "low_volume"
+      ],
+      "risk_level": "medium",
+      "source": "ads",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    }
+  ]
 }
