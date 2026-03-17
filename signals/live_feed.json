@@ -1,9 +1,9 @@
 {
   "meta": {
-    "updated_at": "2026-03-17T14:35:00.833000+00:00",
+    "updated_at": "2026-03-17T14:50:07.191000+00:00",
     "source": "cio_scanner",
     "chain": "base",
-    "count": 2,
+    "count": 0,
     "filters": {
       "min_volume_1h": 0,
       "max_results": 20,
@@ -11,34 +11,5 @@
     },
     "errors": []
   },
-  "signals": [
-    {
-      "address": "0xdb88c481af72731fcdc7eaf37be0d4d15b734e69",
-      "symbol": "ZAB",
-      "name": "Wazabi AI",
-      "liquidity_usd": 246232.4,
-      "volume_1h": 415840.18,
-      "volume_5m": 8541.41,
-      "quality_score": 100,
-      "age_minutes": 20.4,
-      "age_hours": 0.3,
-      "detected_at": "2026-03-17T14:14:39.432000+00:00",
-      "risk_level": "low",
-      "source": "profiles"
-    },
-    {
-      "address": "0x412c9fedc8bf9e0c84c4c7b6924fe41c462a2af6",
-      "symbol": "CAISHEN",
-      "name": "Caishen",
-      "liquidity_usd": 9869.16,
-      "volume_1h": 740.7,
-      "volume_5m": 60.88,
-      "quality_score": 100,
-      "age_minutes": 155.5,
-      "age_hours": 2.6,
-      "detected_at": "2026-03-17T11:59:32.494000+00:00",
-      "risk_level": "medium",
-      "source": "boosts"
-    }
-  ]
+  "signals": []
 }
