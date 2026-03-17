@@ -1,24 +1,70 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-17T09:19:30.425000+00:00",
-    "generated_at": "2026-03-17T09:19:30.425000+00:00",
-    "status": "calm",
-    "count": 0,
+    "updated_at": "2026-03-17T09:34:32.168000+00:00",
+    "generated_at": "2026-03-17T09:34:32.168000+00:00",
+    "status": "ok",
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 100,
       "min_vol_5m": 10,
       "min_tx_5m": 1,
       "max_age_min": 10080
     },
-    "risk_distribution": {},
+    "risk_distribution": {
+      "medium": 1
+    },
     "rejected": {
       "low_liq": 2,
-      "low_volume": 6,
+      "low_volume": 5,
       "known_token": 7,
       "too_old": 16
     },
     "source": "ultra_launch_scanner"
   },
-  "candidates": []
+  "candidates": [
+    {
+      "token": {
+        "address": "0x00bb032296e0c580e21010a5a6a4e007e0953e68",
+        "symbol": "🟩🦞",
+        "name": "NetClawd"
+      },
+      "pair": {
+        "address": "0x31642ba6defeea957dbfcaea442fcb258ac7e251",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 38103.74,
+        "vol_5m_usd": 327.58,
+        "vol_1h_usd": 660.98,
+        "txns_5m": 1,
+        "price_usd": 4.059e-07
+      },
+      "timestamps": {
+        "pair_created_at": "2026-01-26T02:30:49+00:00",
+        "token_first_seen": "2026-03-16T20:08:17.612000+00:00",
+        "age_minutes": 806.2,
+        "age_hours": 13.44
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.78
+      },
+      "risks": [
+        "low_activity",
+        "low_volume"
+      ],
+      "risk_level": "medium",
+      "source": "community",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      }
+    }
+  ]
 }
