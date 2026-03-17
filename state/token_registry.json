@@ -60978,343 +60978,601 @@
       "first_seen_iso": "2026-03-16T19:24:25.562000+00:00",
       "price_history": [
         {
-          "timestamp": 1773689065562,
+          "timestamp": 1773731674403,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773689206316,
+          "timestamp": 1773731676992,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773689565922,
+          "timestamp": 1773731679688,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773689870190,
+          "timestamp": 1773731682778,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773690174569,
+          "timestamp": 1773731685382,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773690479140,
+          "timestamp": 1773731687987,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773690783661,
+          "timestamp": 1773731690623,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773691088825,
+          "timestamp": 1773731693391,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773691393102,
+          "timestamp": 1773731696406,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773691697612,
+          "timestamp": 1773731699728,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773692002562,
+          "timestamp": 1773731703459,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773692306687,
+          "timestamp": 1773731706125,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773692611465,
+          "timestamp": 1773731708804,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773692916000,
+          "timestamp": 1773731711444,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773693220784,
+          "timestamp": 1773731714203,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773693525502,
+          "timestamp": 1773731716818,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773693830619,
+          "timestamp": 1773731719424,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773694135907,
+          "timestamp": 1773731722194,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773694441096,
+          "timestamp": 1773731725165,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773694746449,
+          "timestamp": 1773731727806,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773695051396,
+          "timestamp": 1773731731132,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773695356336,
+          "timestamp": 1773731734809,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773695662458,
+          "timestamp": 1773731737477,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773695967961,
+          "timestamp": 1773731740263,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773696272706,
+          "timestamp": 1773731742867,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773696577761,
+          "timestamp": 1773731745677,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773696882980,
+          "timestamp": 1773731748355,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773697188737,
+          "timestamp": 1773731750953,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773697493394,
+          "timestamp": 1773731753641,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773697798252,
+          "timestamp": 1773731756487,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773698103675,
+          "timestamp": 1773731759285,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773698409047,
+          "timestamp": 1773731762641,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773698714258,
+          "timestamp": 1773731766063,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773699019407,
+          "timestamp": 1773731769072,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773699324414,
+          "timestamp": 1773731771690,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773699629756,
+          "timestamp": 1773731774291,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773699935172,
+          "timestamp": 1773731777357,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773700240521,
+          "timestamp": 1773731780064,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773700545744,
+          "timestamp": 1773731782758,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773700850268,
+          "timestamp": 1773731785382,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773701154454,
+          "timestamp": 1773731788266,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773701459090,
+          "timestamp": 1773731790922,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773701764288,
+          "timestamp": 1773731794276,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773702069291,
+          "timestamp": 1773731797596,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773702374501,
+          "timestamp": 1773731800565,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773702679742,
+          "timestamp": 1773731803217,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773702985544,
+          "timestamp": 1773731805856,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773703290849,
+          "timestamp": 1773731809496,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773703595624,
+          "timestamp": 1773731812210,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773703900521,
+          "timestamp": 1773731814823,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773704205978,
+          "timestamp": 1773731817507,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773704510367,
+          "timestamp": 1773731820411,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773704815262,
+          "timestamp": 1773731823169,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773705120448,
+          "timestamp": 1773731826708,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773705425675,
+          "timestamp": 1773731830269,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773705730181,
+          "timestamp": 1773731833002,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773706035208,
+          "timestamp": 1773731835647,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731838308,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731841070,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731843805,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731846513,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731849255,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731852041,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731854636,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731858062,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731861700,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731864472,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731867083,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731869664,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731872840,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731875456,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731878069,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731880797,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731883632,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731886357,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731889791,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731893085,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731895802,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731898458,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731901144,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731903986,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731906718,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731909358,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731912006,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731914641,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731917278,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731920250,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731923953,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731926834,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731929504,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731932188,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731935139,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731937786,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731940425,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731943341,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731946032,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731948849,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731951831,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731955366,
+          "price": 1.461e-05,
+          "liq": 14364.28,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731958296,
           "price": 1.461e-05,
           "liq": 14364.28,
           "vol_5m": 0.0
@@ -61331,343 +61589,601 @@
       "first_seen_iso": "2026-03-16T19:24:25.562000+00:00",
       "price_history": [
         {
-          "timestamp": 1773689065562,
+          "timestamp": 1773731674403,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773689206316,
+          "timestamp": 1773731676992,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773689565922,
+          "timestamp": 1773731679688,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773689870190,
+          "timestamp": 1773731682778,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773690174569,
+          "timestamp": 1773731685382,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773690479140,
+          "timestamp": 1773731687987,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773690783661,
+          "timestamp": 1773731690623,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773691088825,
+          "timestamp": 1773731693391,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773691393102,
+          "timestamp": 1773731696406,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773691697612,
+          "timestamp": 1773731699728,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773692002562,
+          "timestamp": 1773731703459,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773692306687,
+          "timestamp": 1773731706125,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773692611465,
+          "timestamp": 1773731708804,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773692916000,
+          "timestamp": 1773731711444,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773693220784,
+          "timestamp": 1773731714203,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773693525502,
+          "timestamp": 1773731716818,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773693830619,
+          "timestamp": 1773731719424,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773694135907,
+          "timestamp": 1773731722194,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773694441096,
+          "timestamp": 1773731725165,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773694746449,
+          "timestamp": 1773731727806,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773695051396,
+          "timestamp": 1773731731133,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773695356336,
+          "timestamp": 1773731734809,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773695662458,
+          "timestamp": 1773731737477,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773695967962,
+          "timestamp": 1773731740264,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773696272706,
+          "timestamp": 1773731742867,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773696577761,
+          "timestamp": 1773731745677,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773696882980,
+          "timestamp": 1773731748355,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773697188737,
+          "timestamp": 1773731750953,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773697493394,
+          "timestamp": 1773731753642,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773697798252,
+          "timestamp": 1773731756487,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773698103675,
+          "timestamp": 1773731759285,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773698409047,
+          "timestamp": 1773731762641,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773698714258,
+          "timestamp": 1773731766063,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773699019407,
+          "timestamp": 1773731769072,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773699324414,
+          "timestamp": 1773731771690,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773699629756,
+          "timestamp": 1773731774291,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773699935172,
+          "timestamp": 1773731777358,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773700240521,
+          "timestamp": 1773731780064,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773700545744,
+          "timestamp": 1773731782758,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773700850268,
+          "timestamp": 1773731785382,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773701154454,
+          "timestamp": 1773731788266,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773701459090,
+          "timestamp": 1773731790922,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773701764288,
+          "timestamp": 1773731794276,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773702069291,
+          "timestamp": 1773731797596,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773702374501,
+          "timestamp": 1773731800565,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773702679742,
+          "timestamp": 1773731803217,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773702985544,
+          "timestamp": 1773731805856,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773703290849,
+          "timestamp": 1773731809496,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773703595624,
+          "timestamp": 1773731812210,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773703900521,
+          "timestamp": 1773731814823,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773704205978,
+          "timestamp": 1773731817507,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773704510367,
+          "timestamp": 1773731820411,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773704815262,
+          "timestamp": 1773731823169,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773705120448,
+          "timestamp": 1773731826709,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773705425675,
+          "timestamp": 1773731830269,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773705730181,
+          "timestamp": 1773731833002,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773706035208,
+          "timestamp": 1773731835648,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731838308,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731841070,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731843805,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731846513,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731849255,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731852041,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731854636,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731858062,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731861700,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731864472,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731867083,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731869664,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731872840,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731875456,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731878069,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731880797,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731883632,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731886358,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731889791,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731893085,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731895802,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731898458,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731901144,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731903986,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731906718,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731909358,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731912006,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731914641,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731917278,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731920250,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731923953,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731926834,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731929504,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731932188,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731935139,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731937787,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731940425,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731943341,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731946032,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731948849,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731951831,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731955366,
+          "price": 1.405e-07,
+          "liq": 139.1,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731958296,
           "price": 1.405e-07,
           "liq": 139.1,
           "vol_5m": 0.0
@@ -62442,313 +62958,601 @@
       "first_seen_iso": "2026-03-15T11:10:35.426000+00:00",
       "price_history": [
         {
-          "timestamp": 1773573035426,
+          "timestamp": 1773731674403,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773690783661,
+          "timestamp": 1773731676992,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773691088825,
+          "timestamp": 1773731679688,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773691393102,
+          "timestamp": 1773731682778,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773691697612,
+          "timestamp": 1773731685382,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773692002562,
+          "timestamp": 1773731687987,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773692306687,
+          "timestamp": 1773731690623,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773692611465,
+          "timestamp": 1773731693391,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773692916000,
+          "timestamp": 1773731696406,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773693220784,
+          "timestamp": 1773731699728,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773693525502,
+          "timestamp": 1773731703459,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773693830619,
+          "timestamp": 1773731706125,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773694135907,
+          "timestamp": 1773731708804,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773694441096,
+          "timestamp": 1773731711444,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773694746449,
+          "timestamp": 1773731714203,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773695051396,
+          "timestamp": 1773731716818,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773695356336,
+          "timestamp": 1773731719424,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773695662458,
+          "timestamp": 1773731722194,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773695967961,
+          "timestamp": 1773731725165,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773696272706,
+          "timestamp": 1773731727806,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773696577761,
+          "timestamp": 1773731731132,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773696882980,
+          "timestamp": 1773731734809,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773697188737,
+          "timestamp": 1773731737477,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773697493394,
+          "timestamp": 1773731740263,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773697798252,
+          "timestamp": 1773731742867,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773698103675,
+          "timestamp": 1773731745677,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773698409047,
+          "timestamp": 1773731748354,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773698714258,
+          "timestamp": 1773731750953,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773699019407,
+          "timestamp": 1773731753641,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773699324414,
+          "timestamp": 1773731756487,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773699629756,
+          "timestamp": 1773731759285,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773699935172,
+          "timestamp": 1773731762641,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773700240521,
+          "timestamp": 1773731766063,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773700545744,
+          "timestamp": 1773731769072,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773700850268,
+          "timestamp": 1773731771690,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773701154454,
+          "timestamp": 1773731774291,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773701459090,
+          "timestamp": 1773731777357,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773701764288,
+          "timestamp": 1773731780064,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773702069291,
+          "timestamp": 1773731782758,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773702374501,
+          "timestamp": 1773731785382,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773702679742,
+          "timestamp": 1773731788266,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773702985544,
+          "timestamp": 1773731790921,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773703290848,
+          "timestamp": 1773731794276,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773703595624,
+          "timestamp": 1773731797596,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773703900521,
+          "timestamp": 1773731800565,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773704205978,
+          "timestamp": 1773731803217,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773704510367,
+          "timestamp": 1773731805856,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773704815262,
+          "timestamp": 1773731809496,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773705120448,
+          "timestamp": 1773731812210,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773705425675,
+          "timestamp": 1773731814823,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773705730181,
+          "timestamp": 1773731817507,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773706035208,
+          "timestamp": 1773731820411,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731823168,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731826708,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731830269,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731833002,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731835647,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731838308,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731841070,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731843805,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731846513,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731849255,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731852041,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731854636,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731858061,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731861700,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731864472,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731867083,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731869664,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731872839,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731875456,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731878069,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731880797,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731883632,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731886357,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731889791,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731893085,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731895802,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731898458,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731901144,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731903986,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731906718,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731909357,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731912006,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731914641,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731917278,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731920250,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731923953,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731926834,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731929504,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731932188,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731935139,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731937786,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731940424,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731943341,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731946032,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731948849,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731951830,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731955366,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731958296,
           "price": 0,
           "liq": 0,
           "vol_5m": 0.0
@@ -63122,321 +63926,603 @@
       "first_seen_iso": "2026-03-16T19:53:03.661000+00:00",
       "price_history": [
         {
-          "timestamp": 1773690783661,
-          "price": 4.355e-09,
-          "liq": 334426.21,
-          "vol_5m": 32.24
+          "timestamp": 1773731674403,
+          "price": 4.523e-09,
+          "liq": 351054.34,
+          "vol_5m": 0.0
         },
         {
-          "timestamp": 1773691088825,
-          "price": 4.365e-09,
-          "liq": 335092.39,
-          "vol_5m": 41.02
+          "timestamp": 1773731676992,
+          "price": 4.523e-09,
+          "liq": 351054.34,
+          "vol_5m": 0.0
         },
         {
-          "timestamp": 1773691393102,
-          "price": 4.502e-09,
-          "liq": 340778.04,
-          "vol_5m": 1955.61
+          "timestamp": 1773731679688,
+          "price": 4.523e-09,
+          "liq": 351054.34,
+          "vol_5m": 0.0
         },
         {
-          "timestamp": 1773691697612,
-          "price": 4.501e-09,
-          "liq": 340441.22,
-          "vol_5m": 68.37
+          "timestamp": 1773731682778,
+          "price": 4.523e-09,
+          "liq": 351054.34,
+          "vol_5m": 0.0
         },
         {
-          "timestamp": 1773692002562,
+          "timestamp": 1773731685382,
+          "price": 4.523e-09,
+          "liq": 351054.34,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731687987,
+          "price": 4.523e-09,
+          "liq": 351054.34,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731690623,
+          "price": 4.523e-09,
+          "liq": 351054.34,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731693391,
+          "price": 4.523e-09,
+          "liq": 351054.34,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731696406,
+          "price": 4.523e-09,
+          "liq": 351054.34,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731699728,
           "price": 4.525e-09,
-          "liq": 341611.25,
-          "vol_5m": 185.04
-        },
-        {
-          "timestamp": 1773692306687,
-          "price": 4.86e-09,
-          "liq": 356323.19,
+          "liq": 351225.09,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773692611465,
-          "price": 4.857e-09,
-          "liq": 356106.05,
+          "timestamp": 1773731703460,
+          "price": 4.525e-09,
+          "liq": 351225.09,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773692916000,
-          "price": 4.863e-09,
-          "liq": 356541.85,
+          "timestamp": 1773731706125,
+          "price": 4.525e-09,
+          "liq": 351225.09,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773693220785,
-          "price": 4.861e-09,
-          "liq": 367449.45,
+          "timestamp": 1773731708804,
+          "price": 4.525e-09,
+          "liq": 351225.09,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773693525502,
-          "price": 4.496e-09,
-          "liq": 351424.2,
-          "vol_5m": 3421.96
-        },
-        {
-          "timestamp": 1773693830619,
-          "price": 4.498e-09,
-          "liq": 351544.48,
+          "timestamp": 1773731711444,
+          "price": 4.525e-09,
+          "liq": 351225.09,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773694135907,
-          "price": 4.502e-09,
-          "liq": 351858.72,
+          "timestamp": 1773731714203,
+          "price": 4.525e-09,
+          "liq": 351225.09,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773694441096,
-          "price": 4.499e-09,
-          "liq": 352046.1,
-          "vol_5m": 166.83
-        },
-        {
-          "timestamp": 1773694746449,
-          "price": 4.497e-09,
-          "liq": 351951.54,
+          "timestamp": 1773731716818,
+          "price": 4.525e-09,
+          "liq": 351225.09,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773695051396,
-          "price": 4.497e-09,
-          "liq": 351908.87,
-          "vol_5m": 7.93
-        },
-        {
-          "timestamp": 1773695356336,
-          "price": 4.504e-09,
-          "liq": 352530.98,
+          "timestamp": 1773731719424,
+          "price": 4.525e-09,
+          "liq": 351225.09,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773695662458,
-          "price": 4.481e-09,
-          "liq": 351706.96,
-          "vol_5m": 394.55
-        },
-        {
-          "timestamp": 1773695967962,
-          "price": 4.483e-09,
-          "liq": 351837.72,
+          "timestamp": 1773731722194,
+          "price": 4.525e-09,
+          "liq": 351225.09,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773696272706,
-          "price": 4.47e-09,
-          "liq": 350822.56,
+          "timestamp": 1773731725165,
+          "price": 4.525e-09,
+          "liq": 351225.09,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773696577762,
-          "price": 4.469e-09,
-          "liq": 350746.31,
+          "timestamp": 1773731727806,
+          "price": 4.525e-09,
+          "liq": 351225.09,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773696882980,
-          "price": 4.482e-09,
-          "liq": 351767.45,
+          "timestamp": 1773731731133,
+          "price": 4.525e-09,
+          "liq": 351225.09,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773697188737,
-          "price": 4.511e-09,
-          "liq": 354023.53,
+          "timestamp": 1773731734809,
+          "price": 4.525e-09,
+          "liq": 351225.09,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773697493395,
-          "price": 4.495e-09,
-          "liq": 352806.54,
+          "timestamp": 1773731737477,
+          "price": 4.525e-09,
+          "liq": 351225.09,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773697798252,
-          "price": 4.5e-09,
-          "liq": 353204.23,
+          "timestamp": 1773731740264,
+          "price": 4.525e-09,
+          "liq": 351225.09,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773698103676,
-          "price": 4.501e-09,
-          "liq": 353289.45,
+          "timestamp": 1773731742867,
+          "price": 4.525e-09,
+          "liq": 351225.09,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773698409047,
-          "price": 4.496e-09,
-          "liq": 352839.43,
+          "timestamp": 1773731745677,
+          "price": 4.525e-09,
+          "liq": 351225.09,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773698714258,
-          "price": 4.502e-09,
-          "liq": 353350.75,
+          "timestamp": 1773731748355,
+          "price": 4.525e-09,
+          "liq": 351225.09,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773699019407,
+          "timestamp": 1773731750953,
+          "price": 4.525e-09,
+          "liq": 351225.09,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731753642,
+          "price": 4.525e-09,
+          "liq": 351225.09,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731756487,
+          "price": 4.525e-09,
+          "liq": 351225.09,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731759286,
+          "price": 4.525e-09,
+          "liq": 351225.09,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731762641,
+          "price": 4.526e-09,
+          "liq": 351300.64,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731766063,
+          "price": 4.526e-09,
+          "liq": 351300.64,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731769072,
+          "price": 4.526e-09,
+          "liq": 351300.64,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731771690,
+          "price": 4.526e-09,
+          "liq": 351300.64,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731774291,
+          "price": 4.526e-09,
+          "liq": 351300.64,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731777358,
+          "price": 4.526e-09,
+          "liq": 351300.64,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731780065,
+          "price": 4.526e-09,
+          "liq": 351300.64,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731782758,
+          "price": 4.526e-09,
+          "liq": 351300.64,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731785382,
+          "price": 4.526e-09,
+          "liq": 351300.64,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731788266,
+          "price": 4.526e-09,
+          "liq": 351300.64,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731790922,
+          "price": 4.526e-09,
+          "liq": 351300.64,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731794276,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731797596,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731800565,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731803217,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731805856,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731809496,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731812210,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731814823,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731817507,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731820411,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731823169,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731826709,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731830269,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731833002,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731835648,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731838308,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731841070,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731843805,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731846513,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731849255,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731852041,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731854636,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731858062,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731861700,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731864472,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731867084,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731869664,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731872840,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731875457,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731878069,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731880797,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731883632,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731886358,
+          "price": 4.528e-09,
+          "liq": 351413.97,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731889791,
           "price": 4.527e-09,
-          "liq": 355294.35,
+          "liq": 351376.19,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773699324415,
+          "timestamp": 1773731893085,
           "price": 4.527e-09,
-          "liq": 355276.41,
+          "liq": 351376.19,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773699324415,
+          "timestamp": 1773731895802,
           "price": 4.527e-09,
-          "liq": 355276.41,
+          "liq": 351376.19,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773699629756,
-          "price": 4.522e-09,
-          "liq": 354919.09,
+          "timestamp": 1773731898458,
+          "price": 4.527e-09,
+          "liq": 351376.19,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773699629756,
-          "price": 4.522e-09,
-          "liq": 354919.09,
+          "timestamp": 1773731901144,
+          "price": 4.527e-09,
+          "liq": 351376.19,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773699935172,
-          "price": 4.481e-09,
-          "liq": 352264.06,
-          "vol_5m": 229.41
-        },
-        {
-          "timestamp": 1773700240521,
-          "price": 4.479e-09,
-          "liq": 352091.02,
+          "timestamp": 1773731903986,
+          "price": 4.527e-09,
+          "liq": 351376.19,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773700545744,
-          "price": 4.48e-09,
-          "liq": 352143.23,
+          "timestamp": 1773731906719,
+          "price": 4.527e-09,
+          "liq": 351376.19,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773700850268,
-          "price": 4.486e-09,
-          "liq": 352712.77,
-          "vol_5m": 29.39
-        },
-        {
-          "timestamp": 1773701154454,
-          "price": 4.486e-09,
-          "liq": 352752.61,
+          "timestamp": 1773731909358,
+          "price": 4.527e-09,
+          "liq": 351376.19,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773701459090,
-          "price": 4.49e-09,
-          "liq": 353091.4,
-          "vol_5m": 11.13
-        },
-        {
-          "timestamp": 1773701764288,
-          "price": 4.474e-09,
-          "liq": 351797.17,
+          "timestamp": 1773731912006,
+          "price": 4.527e-09,
+          "liq": 351376.19,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773702069292,
-          "price": 4.47e-09,
-          "liq": 351521.32,
+          "timestamp": 1773731914641,
+          "price": 4.527e-09,
+          "liq": 351376.19,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773702374502,
-          "price": 4.45e-09,
-          "liq": 349910.99,
+          "timestamp": 1773731917278,
+          "price": 4.527e-09,
+          "liq": 351376.19,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773702679742,
-          "price": 4.423e-09,
-          "liq": 347817.55,
+          "timestamp": 1773731920250,
+          "price": 4.527e-09,
+          "liq": 351376.19,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773702985545,
-          "price": 4.436e-09,
-          "liq": 348829.98,
+          "timestamp": 1773731923953,
+          "price": 4.527e-09,
+          "liq": 351376.19,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773703290849,
-          "price": 4.44e-09,
-          "liq": 349166.95,
+          "timestamp": 1773731926834,
+          "price": 4.527e-09,
+          "liq": 351376.19,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773703595624,
-          "price": 4.444e-09,
-          "liq": 349439.82,
+          "timestamp": 1773731929505,
+          "price": 4.527e-09,
+          "liq": 351376.19,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773703900521,
-          "price": 4.456e-09,
-          "liq": 350432.86,
+          "timestamp": 1773731932188,
+          "price": 4.527e-09,
+          "liq": 351376.19,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773704205979,
-          "price": 4.486e-09,
-          "liq": 352125.97,
-          "vol_5m": 271.97
-        },
-        {
-          "timestamp": 1773704510367,
-          "price": 4.488e-09,
-          "liq": 352250.06,
+          "timestamp": 1773731935139,
+          "price": 4.527e-09,
+          "liq": 351376.19,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773704815262,
-          "price": 4.496e-09,
-          "liq": 352887.88,
-          "vol_5m": 12.87
-        },
-        {
-          "timestamp": 1773705120448,
-          "price": 4.487e-09,
-          "liq": 352139.68,
+          "timestamp": 1773731937787,
+          "price": 4.527e-09,
+          "liq": 351376.19,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773705425675,
-          "price": 4.487e-09,
-          "liq": 351813.3,
-          "vol_5m": 105.68
+          "timestamp": 1773731940427,
+          "price": 4.527e-09,
+          "liq": 351376.19,
+          "vol_5m": 0.0
         },
         {
-          "timestamp": 1773705730181,
-          "price": 4.483e-09,
-          "liq": 351188.58,
-          "vol_5m": 133.39
+          "timestamp": 1773731943341,
+          "price": 4.527e-09,
+          "liq": 351376.19,
+          "vol_5m": 0.0
         },
         {
-          "timestamp": 1773706035208,
-          "price": 4.488e-09,
-          "liq": 351533.77,
+          "timestamp": 1773731946032,
+          "price": 4.527e-09,
+          "liq": 351376.19,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731948849,
+          "price": 4.527e-09,
+          "liq": 351376.19,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731951831,
+          "price": 4.536e-09,
+          "liq": 352065.22,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731955367,
+          "price": 4.536e-09,
+          "liq": 352065.22,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731958296,
+          "price": 4.536e-09,
+          "liq": 352065.22,
           "vol_5m": 0.0
         }
       ],
@@ -63451,295 +64537,601 @@
       "first_seen_iso": "2026-03-16T20:03:13.102000+00:00",
       "price_history": [
         {
-          "timestamp": 1773691393102,
-          "price": 5.511e-07,
-          "liq": 0,
-          "vol_5m": 79.67
-        },
-        {
-          "timestamp": 1773691697612,
-          "price": 5.954e-07,
-          "liq": 629.72,
-          "vol_5m": 0.02
-        },
-        {
-          "timestamp": 1773692002562,
-          "price": 5.962e-07,
-          "liq": 629.88,
-          "vol_5m": 0.11
-        },
-        {
-          "timestamp": 1773692306687,
-          "price": 5.962e-07,
-          "liq": 629.88,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1773692611465,
-          "price": 5.962e-07,
-          "liq": 629.88,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1773692916000,
-          "price": 5.962e-07,
-          "liq": 629.88,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1773693220784,
-          "price": 5.966e-07,
-          "liq": 630.23,
-          "vol_5m": 0.01
-        },
-        {
-          "timestamp": 1773693525502,
-          "price": 5.966e-07,
-          "liq": 630.23,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1773693830619,
-          "price": 6.041e-07,
-          "liq": 637.59,
-          "vol_5m": 2.31
-        },
-        {
-          "timestamp": 1773694135907,
-          "price": 6.041e-07,
-          "liq": 637.59,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1773694441096,
-          "price": 6.041e-07,
-          "liq": 637.59,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1773694746449,
-          "price": 6.041e-07,
-          "liq": 637.59,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1773695051396,
-          "price": 6.041e-07,
-          "liq": 637.59,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1773695356336,
-          "price": 6.041e-07,
-          "liq": 637.59,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1773695662458,
-          "price": 6.041e-07,
-          "liq": 637.59,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1773695967962,
-          "price": 6.041e-07,
-          "liq": 637.59,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1773696272706,
-          "price": 6.041e-07,
-          "liq": 637.59,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1773696577761,
-          "price": 6.041e-07,
-          "liq": 637.59,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1773696882980,
-          "price": 6.041e-07,
-          "liq": 637.59,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1773697188737,
-          "price": 6.041e-07,
-          "liq": 637.59,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1773697493394,
-          "price": 6.041e-07,
-          "liq": 637.59,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1773697798252,
-          "price": 6.041e-07,
-          "liq": 637.59,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1773698103675,
-          "price": 6.041e-07,
-          "liq": 637.59,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1773698409047,
-          "price": 6.041e-07,
-          "liq": 637.59,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1773698714258,
-          "price": 6.041e-07,
-          "liq": 637.59,
-          "vol_5m": 0.0
-        },
-        {
-          "timestamp": 1773699019407,
-          "price": 6.038e-07,
-          "liq": 637.11,
-          "vol_5m": 0.44
-        },
-        {
-          "timestamp": 1773699324414,
+          "timestamp": 1773731674403,
           "price": 5.633e-07,
           "liq": 602.52,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773699629756,
+          "timestamp": 1773731676992,
           "price": 5.633e-07,
           "liq": 602.52,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773699935172,
+          "timestamp": 1773731679688,
           "price": 5.633e-07,
           "liq": 602.52,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773700240521,
+          "timestamp": 1773731682778,
           "price": 5.633e-07,
           "liq": 602.52,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773700545744,
+          "timestamp": 1773731685382,
           "price": 5.633e-07,
           "liq": 602.52,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773700850268,
+          "timestamp": 1773731687987,
           "price": 5.633e-07,
           "liq": 602.52,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773701154454,
+          "timestamp": 1773731690623,
           "price": 5.633e-07,
           "liq": 602.52,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773701459090,
+          "timestamp": 1773731693391,
           "price": 5.633e-07,
           "liq": 602.52,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773701764288,
+          "timestamp": 1773731696406,
           "price": 5.633e-07,
           "liq": 602.52,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773702069291,
+          "timestamp": 1773731699728,
           "price": 5.633e-07,
           "liq": 602.52,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773702374501,
+          "timestamp": 1773731703459,
           "price": 5.633e-07,
           "liq": 602.52,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773702679742,
+          "timestamp": 1773731706125,
           "price": 5.633e-07,
           "liq": 602.52,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773702985544,
+          "timestamp": 1773731708804,
           "price": 5.633e-07,
           "liq": 602.52,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773703290849,
+          "timestamp": 1773731711444,
           "price": 5.633e-07,
           "liq": 602.52,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773703595624,
+          "timestamp": 1773731714203,
           "price": 5.633e-07,
           "liq": 602.52,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773703900521,
+          "timestamp": 1773731716818,
           "price": 5.633e-07,
           "liq": 602.52,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773704205978,
+          "timestamp": 1773731719424,
           "price": 5.633e-07,
           "liq": 602.52,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773704510367,
+          "timestamp": 1773731722194,
           "price": 5.633e-07,
           "liq": 602.52,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773704815262,
+          "timestamp": 1773731725165,
           "price": 5.633e-07,
           "liq": 602.52,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773705120448,
+          "timestamp": 1773731727806,
           "price": 5.633e-07,
           "liq": 602.52,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773705425675,
+          "timestamp": 1773731731132,
           "price": 5.633e-07,
           "liq": 602.52,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773705730181,
+          "timestamp": 1773731734809,
           "price": 5.633e-07,
           "liq": 602.52,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773706035208,
+          "timestamp": 1773731737477,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731740264,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731742867,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731745677,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731748355,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731750953,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731753642,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731756487,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731759285,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731762641,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731766063,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731769072,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731771690,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731774291,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731777358,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731780064,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731782758,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731785382,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731788266,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731790922,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731794276,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731797596,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731800565,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731803217,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731805856,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731809496,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731812210,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731814823,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731817507,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731820411,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731823169,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731826709,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731830269,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731833002,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731835648,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731838308,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731841070,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731843805,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731846513,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731849255,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731852041,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731854636,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731858062,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731861700,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731864472,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731867083,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731869664,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731872840,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731875456,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731878069,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731880797,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731883632,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731886357,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731889791,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731893085,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731895802,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731898458,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731901144,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731903986,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731906718,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731909358,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731912006,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731914641,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731917278,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731920250,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731923953,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731926834,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731929504,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731932188,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731935139,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731937787,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731940425,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731943341,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731946032,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731948849,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731951831,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731955366,
+          "price": 5.633e-07,
+          "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731958296,
           "price": 5.633e-07,
           "liq": 602.52,
           "vol_5m": 0.0
@@ -63756,291 +65148,603 @@
       "first_seen_iso": "2026-03-16T20:08:17.612000+00:00",
       "price_history": [
         {
-          "timestamp": 1773691697612,
-          "price": 4.098e-07,
-          "liq": 38917.71,
-          "vol_5m": 349.93
-        },
-        {
-          "timestamp": 1773692002562,
-          "price": 4.182e-07,
-          "liq": 39571.72,
-          "vol_5m": 921.08
-        },
-        {
-          "timestamp": 1773692306688,
-          "price": 4.228e-07,
-          "liq": 39932.28,
-          "vol_5m": 894.59
-        },
-        {
-          "timestamp": 1773692611465,
-          "price": 4.235e-07,
-          "liq": 39985.82,
+          "timestamp": 1773731674403,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773692916000,
-          "price": 4.235e-07,
-          "liq": 39985.82,
+          "timestamp": 1773731676992,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773693220785,
-          "price": 4.235e-07,
-          "liq": 39985.82,
+          "timestamp": 1773731679688,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773693525502,
-          "price": 4.279e-07,
-          "liq": 40344.12,
-          "vol_5m": 107.34
-        },
-        {
-          "timestamp": 1773693830619,
-          "price": 4.283e-07,
-          "liq": 40402.71,
-          "vol_5m": 2293.24
-        },
-        {
-          "timestamp": 1773694135907,
-          "price": 4.326e-07,
-          "liq": 40731.0,
-          "vol_5m": 70.5
-        },
-        {
-          "timestamp": 1773694441096,
-          "price": 4.316e-07,
-          "liq": 40564.77,
-          "vol_5m": 62.23
-        },
-        {
-          "timestamp": 1773694746450,
-          "price": 4.313e-07,
-          "liq": 40531.49,
-          "vol_5m": 0.4
-        },
-        {
-          "timestamp": 1773695051396,
-          "price": 4.313e-07,
-          "liq": 40531.49,
+          "timestamp": 1773731682778,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773695356336,
-          "price": 4.313e-07,
-          "liq": 40531.49,
+          "timestamp": 1773731685382,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773695662458,
-          "price": 4.313e-07,
-          "liq": 40531.49,
+          "timestamp": 1773731687987,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773695967962,
-          "price": 4.322e-07,
-          "liq": 40624.72,
-          "vol_5m": 19.43
-        },
-        {
-          "timestamp": 1773696272706,
-          "price": 4.301e-07,
-          "liq": 40470.29,
-          "vol_5m": 69.59
-        },
-        {
-          "timestamp": 1773696577762,
-          "price": 4.301e-07,
-          "liq": 40470.29,
+          "timestamp": 1773731690623,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773696882980,
-          "price": 4.301e-07,
-          "liq": 40470.29,
+          "timestamp": 1773731693391,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773697188737,
-          "price": 4.347e-07,
-          "liq": 40882.53,
-          "vol_5m": 31.67
-        },
-        {
-          "timestamp": 1773697493395,
-          "price": 4.3e-07,
-          "liq": 40509.08,
+          "timestamp": 1773731696406,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773697798252,
-          "price": 4.3e-07,
-          "liq": 40509.08,
+          "timestamp": 1773731699728,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773698103676,
-          "price": 4.3e-07,
-          "liq": 40509.08,
+          "timestamp": 1773731703460,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773698409047,
-          "price": 4.3e-07,
-          "liq": 40509.08,
+          "timestamp": 1773731706125,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773698714258,
-          "price": 4.3e-07,
-          "liq": 40509.08,
+          "timestamp": 1773731708804,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773699019407,
-          "price": 4.3e-07,
-          "liq": 40509.08,
+          "timestamp": 1773731711444,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773699324415,
-          "price": 4.3e-07,
-          "liq": 40509.08,
+          "timestamp": 1773731714203,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773699629756,
-          "price": 4.3e-07,
-          "liq": 40509.08,
+          "timestamp": 1773731716818,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773699935172,
-          "price": 4.3e-07,
-          "liq": 40509.08,
+          "timestamp": 1773731719424,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773700240521,
-          "price": 4.305e-07,
-          "liq": 40537.01,
+          "timestamp": 1773731722194,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773700545744,
-          "price": 4.305e-07,
-          "liq": 40537.01,
+          "timestamp": 1773731725165,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773700850268,
-          "price": 4.223e-07,
-          "liq": 39938.23,
+          "timestamp": 1773731727806,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773701154454,
-          "price": 4.223e-07,
-          "liq": 39938.23,
+          "timestamp": 1773731731133,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773701459090,
-          "price": 4.223e-07,
-          "liq": 39938.23,
+          "timestamp": 1773731734809,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773701764288,
-          "price": 4.223e-07,
-          "liq": 39938.23,
+          "timestamp": 1773731737477,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773702069292,
-          "price": 4.223e-07,
-          "liq": 39938.23,
+          "timestamp": 1773731740264,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773702374502,
-          "price": 4.223e-07,
-          "liq": 39938.23,
+          "timestamp": 1773731742867,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773702679742,
-          "price": 4.223e-07,
-          "liq": 39938.23,
+          "timestamp": 1773731745677,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773702985545,
-          "price": 4.223e-07,
-          "liq": 39938.23,
+          "timestamp": 1773731748355,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773703290849,
-          "price": 4.223e-07,
-          "liq": 39938.23,
+          "timestamp": 1773731750953,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773703595624,
-          "price": 4.223e-07,
-          "liq": 39938.23,
+          "timestamp": 1773731753642,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773703900521,
-          "price": 4.223e-07,
-          "liq": 39938.23,
+          "timestamp": 1773731756487,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773704205979,
-          "price": 4.223e-07,
-          "liq": 39938.23,
+          "timestamp": 1773731759286,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773704510367,
-          "price": 4.223e-07,
-          "liq": 39938.23,
+          "timestamp": 1773731762641,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773704815262,
-          "price": 4.223e-07,
-          "liq": 39938.23,
+          "timestamp": 1773731766063,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773705120448,
-          "price": 4.223e-07,
-          "liq": 39938.23,
+          "timestamp": 1773731769072,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773705425675,
-          "price": 4.223e-07,
-          "liq": 39938.23,
+          "timestamp": 1773731771690,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773705730181,
-          "price": 4.223e-07,
-          "liq": 39938.23,
+          "timestamp": 1773731774291,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773706035208,
-          "price": 4.223e-07,
-          "liq": 39938.23,
+          "timestamp": 1773731777358,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731780065,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731782758,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731785382,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731788266,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731790922,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731794276,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731797596,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731800565,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731803217,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731805856,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731809496,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731812210,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731814823,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731817507,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731820411,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731823169,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731826709,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731830269,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731833002,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731835648,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731838308,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731841070,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731843805,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731846513,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731849255,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731852041,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731854636,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731858062,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731861700,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731864472,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731867083,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731869664,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731872840,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731875457,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731878069,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731880797,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731883632,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731886358,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731889791,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731893085,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731895802,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731898458,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731901144,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731903986,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731906719,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731909358,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731912006,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731914641,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731917278,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731920250,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731923953,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731926834,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731929505,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731932188,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731935139,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731937787,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731940427,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731943341,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731946032,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731948849,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731951831,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731955367,
+          "price": 4.047e-07,
+          "liq": 38470.71,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731958296,
+          "price": 4.047e-07,
+          "liq": 38470.71,
           "vol_5m": 0.0
         }
       ],
@@ -64156,193 +65860,601 @@
       "first_seen_iso": "2026-03-16T21:29:37.761000+00:00",
       "price_history": [
         {
-          "timestamp": 1773696577761,
-          "price": 6.101e-06,
-          "liq": 6070.17,
-          "vol_5m": 1.01
-        },
-        {
-          "timestamp": 1773696882980,
+          "timestamp": 1773731674403,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773697188737,
+          "timestamp": 1773731676992,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773697493394,
+          "timestamp": 1773731679688,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773697798252,
+          "timestamp": 1773731682778,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773698103675,
+          "timestamp": 1773731685382,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773698409047,
+          "timestamp": 1773731687987,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773698714258,
+          "timestamp": 1773731690623,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773699019407,
+          "timestamp": 1773731693391,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773699324414,
+          "timestamp": 1773731696406,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773699629756,
+          "timestamp": 1773731699728,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773699935172,
+          "timestamp": 1773731703459,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773700240521,
+          "timestamp": 1773731706125,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773700545744,
+          "timestamp": 1773731708804,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773700850268,
+          "timestamp": 1773731711444,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773701154454,
+          "timestamp": 1773731714203,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773701459090,
+          "timestamp": 1773731716818,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773701764288,
+          "timestamp": 1773731719424,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773702069291,
+          "timestamp": 1773731722194,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773702374501,
+          "timestamp": 1773731725165,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773702679742,
+          "timestamp": 1773731727806,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773702985544,
+          "timestamp": 1773731731132,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773703290849,
+          "timestamp": 1773731734809,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773703595624,
+          "timestamp": 1773731737477,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773703900521,
+          "timestamp": 1773731740263,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773704205978,
+          "timestamp": 1773731742867,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773704510367,
+          "timestamp": 1773731745677,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773704815262,
+          "timestamp": 1773731748355,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773705120448,
+          "timestamp": 1773731750953,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773705425675,
+          "timestamp": 1773731753641,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773705730181,
+          "timestamp": 1773731756487,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
         },
         {
-          "timestamp": 1773706035208,
+          "timestamp": 1773731759285,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731762641,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731766063,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731769072,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731771690,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731774291,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731777357,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731780064,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731782758,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731785382,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731788266,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731790922,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731794276,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731797596,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731800565,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731803217,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731805856,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731809496,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731812210,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731814823,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731817507,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731820411,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731823169,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731826708,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731830269,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731833002,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731835647,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731838308,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731841070,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731843805,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731846513,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731849255,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731852041,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731854636,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731858062,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731861700,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731864472,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731867083,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731869664,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731872839,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731875456,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731878069,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731880797,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731883632,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731886357,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731889791,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731893085,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731895802,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731898458,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731901144,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731903986,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731906718,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731909357,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731912006,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731914641,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731917278,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731920250,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731923953,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731926834,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731929504,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731932188,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731935139,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731937786,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731940425,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731943341,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731946032,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731948849,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731951831,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731955366,
+          "price": 6.101e-06,
+          "liq": 6070.17,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731958296,
           "price": 6.101e-06,
           "liq": 6070.17,
           "vol_5m": 0.0
@@ -64667,6 +66779,617 @@
         "address": "0x8e7af8755046bb38c8a3c8c3909fb51a3da91b07",
         "symbol": "TRENCHESCLAW",
         "name": "TrenchesClaw"
+      }
+    },
+    "0x39975ac4ed9aa1826a46cce7b6ffd5eeff69aeb7": {
+      "first_seen": 1773731447801,
+      "first_seen_iso": "2026-03-17T07:10:47.801000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1773731674403,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731676992,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731679688,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731682778,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731685382,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731687987,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731690623,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731693391,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731696406,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731699728,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731703459,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731706125,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731708804,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731711444,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731714203,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731716818,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731719424,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731722194,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731725165,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731727806,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731731132,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731734809,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731737477,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731740263,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731742867,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731745677,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731748354,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731750953,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731753641,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731756487,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731759285,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731762641,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731766063,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731769072,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731771690,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731774291,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731777357,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731780064,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731782758,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731785382,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731788266,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731790922,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731794276,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731797596,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731800565,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731803217,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731805856,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731809496,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731812210,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731814823,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731817507,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731820411,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731823169,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731826708,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731830269,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731833002,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731835647,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731838308,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731841070,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731843805,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731846513,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731849255,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731852041,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731854636,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731858062,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731861700,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731864472,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731867083,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731869664,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731872839,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731875456,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731878069,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731880797,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731883632,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731886357,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731889791,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731893085,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731895802,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731898458,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731901144,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731903986,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731906718,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731909357,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731912006,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731914641,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731917278,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731920250,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731923953,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731926834,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731929504,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731932188,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731935139,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731937786,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731940425,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731943341,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731946032,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731948849,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731951831,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731955366,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773731958296,
+          "price": 0,
+          "liq": 0,
+          "vol_5m": 0.0
+        }
+      ],
+      "token": {
+        "address": "0x39975ac4ed9aa1826a46cce7b6ffd5eeff69aeb7",
+        "symbol": "NEW",
+        "name": "NEW ACCOUNT"
       }
     }
   }
