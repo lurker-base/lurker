@@ -1,8 +1,8 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-17T19:05:33.951000+00:00",
-    "generated_at": "2026-03-17T19:05:33.951000+00:00",
+    "updated_at": "2026-03-17T19:20:34.469000+00:00",
+    "generated_at": "2026-03-17T19:20:34.469000+00:00",
     "status": "ok",
     "count": 3,
     "thresholds": {
@@ -20,7 +20,7 @@
       "low_volume": 3,
       "known_token": 7,
       "too_old": 21,
-      "low_tx": 2
+      "low_tx": 1
     },
     "source": "ultra_launch_scanner",
     "fallback": {
@@ -32,38 +32,37 @@
   "candidates": [
     {
       "token": {
-        "address": "0xe7d192e52fa418236d6eecf7d5eb38da9dd11ba3",
-        "symbol": "EVE",
-        "name": "0xAgentEVE"
+        "address": "0x16e1588d90b4ec00e9dfb0147a1fd5329323377d",
+        "symbol": "Atlas",
+        "name": "Humanoid Atlas"
       },
       "pair": {
-        "address": "0x935697dd4a8170092be90b538d3bfb34d0af3429b93f4b1c589abe921a09c22e",
+        "address": "0x403ba8e5b9221610fbd64acd35b3e1000edad21c27a521ed7949ed24fc85b601",
         "dex": "uniswap",
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 65307.21,
-        "vol_5m_usd": 167.6,
-        "vol_1h_usd": 975.96,
+        "liq_usd": 25876.14,
+        "vol_5m_usd": 9.2,
+        "vol_1h_usd": 46237.84,
         "txns_5m": 1,
-        "price_usd": 7.287e-07
+        "price_usd": 2.407e-07
       },
       "timestamps": {
-        "pair_created_at": "2026-03-13T23:22:51+00:00",
-        "token_first_seen": "2026-03-17T18:54:43.508000+00:00",
-        "age_minutes": 10.8,
-        "age_hours": 0.18
+        "pair_created_at": "2026-03-17T17:27:35+00:00",
+        "token_first_seen": "2026-03-17T17:39:49.006000+00:00",
+        "age_minutes": 100.8,
+        "age_hours": 1.68
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 1.0
+        "freshness": 0.97
       },
       "risks": [
-        "low_activity",
-        "low_volume"
+        "dumping"
       ],
       "risk_level": "medium",
-      "source": "profiles",
+      "source": "boosts",
       "status": "observing",
       "quality": {
         "has_profile": true,
@@ -74,23 +73,17 @@
       },
       "is_recycled": false,
       "explanation": {
-        "summary": "Complete DexScreener profile with verified info",
+        "summary": "Token is actively promoted with boost visibility",
         "reasons": [
-          "Complete DexScreener profile with verified info",
-          "Strong liquidity depth reduces slippage risk",
-          "Very fresh token - early entry opportunity",
+          "Token is actively promoted with boost visibility",
+          "Recent launch - still in early price discovery",
           "Verified profile with image, socials and website"
         ],
         "key_metrics": [
           {
-            "metric": "liquidity",
-            "value": "$65,307",
-            "significance": "high"
-          },
-          {
             "metric": "age",
-            "value": "11 min",
-            "significance": "high"
+            "value": "1.7h",
+            "significance": "medium"
           },
           {
             "metric": "profile",
@@ -99,7 +92,7 @@
           }
         ],
         "risk_caveats": [
-          "Low transaction count - possible bot activity"
+          "Price declining - potential sell pressure"
         ],
         "confidence_description": "High confidence - multiple positive indicators aligned",
         "signal_quality": "high"
@@ -117,17 +110,17 @@
         "quote": "ETH"
       },
       "metrics": {
-        "liq_usd": 11614.6,
-        "vol_5m_usd": 28.09,
-        "vol_1h_usd": 673.54,
-        "txns_5m": 3,
-        "price_usd": 1.681e-05
+        "liq_usd": 11664.14,
+        "vol_5m_usd": 39.14,
+        "vol_1h_usd": 677.01,
+        "txns_5m": 6,
+        "price_usd": 1.691e-05
       },
       "timestamps": {
         "pair_created_at": "2026-02-25T00:04:07+00:00",
         "token_first_seen": "2026-03-17T11:59:32.494000+00:00",
-        "age_minutes": 426.0,
-        "age_hours": 7.1
+        "age_minutes": 441.0,
+        "age_hours": 7.35
       },
       "scores": {
         "cio_score": 100,
@@ -177,17 +170,17 @@
         "quote": "ETH"
       },
       "metrics": {
-        "liq_usd": 356273.27,
+        "liq_usd": 354490.98,
         "vol_5m_usd": 0.0,
-        "vol_1h_usd": 2273.61,
-        "txns_5m": 94,
-        "price_usd": 4.624e-09
+        "vol_1h_usd": 2273.62,
+        "txns_5m": 82,
+        "price_usd": 4.576e-09
       },
       "timestamps": {
         "pair_created_at": "2025-06-16T10:33:31+00:00",
         "token_first_seen": "2026-03-16T19:53:03.661000+00:00",
-        "age_minutes": 1392.5,
-        "age_hours": 23.21
+        "age_minutes": 1407.5,
+        "age_hours": 23.46
       },
       "scores": {
         "cio_score": 100,
@@ -216,12 +209,12 @@
         "key_metrics": [
           {
             "metric": "liquidity",
-            "value": "$356,273",
+            "value": "$354,491",
             "significance": "high"
           },
           {
             "metric": "tx_5m",
-            "value": "94 txs",
+            "value": "82 txs",
             "significance": "high"
           },
           {
