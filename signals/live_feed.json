@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-03-17T12:19:47.612000+00:00",
+    "updated_at": "2026-03-17T12:34:48.577000+00:00",
     "source": "cio_scanner",
     "chain": "base",
     "count": 1,
@@ -16,12 +16,12 @@
       "address": "0x412c9fedc8bf9e0c84c4c7b6924fe41c462a2af6",
       "symbol": "CAISHEN",
       "name": "Caishen",
-      "liquidity_usd": 9662.89,
-      "volume_1h": 796.77,
-      "volume_5m": 61.32,
+      "liquidity_usd": 9654.76,
+      "volume_1h": 771.42,
+      "volume_5m": 42.79,
       "quality_score": 100,
-      "age_minutes": 20.3,
-      "age_hours": 0.3,
+      "age_minutes": 35.3,
+      "age_hours": 0.6,
       "detected_at": "2026-03-17T11:59:32.494000+00:00",
       "risk_level": "medium",
       "source": "boosts"
