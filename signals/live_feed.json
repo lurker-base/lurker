@@ -1,9 +1,9 @@
 {
   "meta": {
-    "updated_at": "2026-03-17T16:20:17.699000+00:00",
+    "updated_at": "2026-03-17T16:35:17.121000+00:00",
     "source": "cio_scanner",
     "chain": "base",
-    "count": 1,
+    "count": 0,
     "filters": {
       "min_volume_1h": 0,
       "max_results": 20,
@@ -11,20 +11,5 @@
     },
     "errors": []
   },
-  "signals": [
-    {
-      "address": "0xfca95aeb5bf44ae355806a5ad14659c940dc6bf7",
-      "symbol": "SHIB",
-      "name": "SHIBA INU",
-      "liquidity_usd": 351563.8,
-      "volume_1h": 142.04,
-      "volume_5m": 0.0,
-      "quality_score": 100,
-      "age_minutes": 1227.2,
-      "age_hours": 20.5,
-      "detected_at": "2026-03-16T19:53:03.661000+00:00",
-      "risk_level": "medium",
-      "source": "ads"
-    }
-  ]
+  "signals": []
 }
