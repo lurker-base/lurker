@@ -353,6 +353,246 @@ def fetch_ads():
     print(f"[SCANNER] Source 5: {len(results)} pairs")
     return results
 
+
+# GeckoTerminal API integration
+GECKO_API = "https://api.geckoterminal.com/api/v2"
+GECKO_HEADERS = {"Accept": "application/json;version=20230203"}
+
+def get_gecko_json(url, max_retries=2):
+    """Fetch from GeckoTerminal API with rate limit handling"""
+    for attempt in range(max_retries + 1):
+        try:
+            r = requests.get(url, timeout=TIMEOUT, headers=GECKO_HEADERS)
+            
+            if r.status_code == 429:
+                wait = 2 * (attempt + 1)
+                print(f"[SCANNER]   GeckoTerminal rate limited, waiting {wait}s...")
+                time.sleep(wait)
+                continue
+                
+            r.raise_for_status()
+            return r.json()
+        except requests.exceptions.HTTPError as e:
+            if r.status_code == 429:
+                wait = 2 * (attempt + 1)
+                print(f"[SCANNER]   GeckoTerminal rate limited, waiting {wait}s...")
+                time.sleep(wait)
+                continue
+            print(f"[SCANNER] GeckoTerminal error {url}: {e}")
+            return None
+        except Exception as e:
+            print(f"[SCANNER] GeckoTerminal error {url}: {e}")
+            return None
+    return None
+
+def fetch_geckoterminal_trending():
+    """Source 6: GeckoTerminal trending pools (FALLBACK)"""
+    print("[SCANNER] Source 6: GeckoTerminal trending pools (fallback)...")
+    
+    url = f"{GECKO_API}/networks/base/trending_pools?page=1&limit=30"
+    data = get_gecko_json(url)
+    
+    if not data or "data" not in data:
+        print("[SCANNER]   No data from GeckoTerminal")
+        return []
+    
+    results = []
+    
+    for pool in data.get("data", []):
+        attrs = pool.get("attributes", {})
+        relationships = pool.get("relationships", {})
+        
+        # Get base token info
+        base_token_data = relationships.get("base_token", {}).get("data", {})
+        token_addr = base_token_data.get("id", "").replace("base_", "")
+        
+        if not token_addr:
+            continue
+        
+        # Get quote token info
+        quote_token_data = relationships.get("quote_token", {}).get("data", {})
+        quote_addr = quote_token_data.get("id", "").replace("base_", "")
+        
+        # Build normalized pair structure matching DexScreener format
+        pool_name = attrs.get("name", "")
+        symbol = pool_name.split(" / ")[0] if " / " in pool_name else "UNKNOWN"
+        quote_symbol = pool_name.split(" / ")[1] if " / " in pool_name else ""
+        
+        # Normalize liquidity
+        liq = float(attrs.get("reserve_in_usd", 0) or 0)
+        
+        # Skip bluechips (quote token is not a known bluechip)
+        bluechips = {"USDC", "USDT", "WETH", "WBTC", "DAI"}
+        if quote_symbol.upper() in bluechips:
+            # Only include if liquidity is reasonable for memecoin
+            pass  # Accept it
+        
+        # Get volumes - GeckoTerminal provides different timeframes
+        vol_5m = float(attrs.get("volume_usd", {}).get("m5", 0) or 0)
+        vol_1h = float(attrs.get("volume_usd", {}).get("h1", 0) or 0)
+        vol_24h = float(attrs.get("volume_usd", {}).get("h24", 0) or 0)
+        
+        # Get transactions
+        tx_5m_data = attrs.get("transactions", {}).get("m5", {})
+        tx_5m = (tx_5m_data.get("buys", 0) or 0) + (tx_5m_data.get("sells", 0) or 0)
+        
+        tx_1h_data = attrs.get("transactions", {}).get("h1", {})
+        tx_1h = (tx_1h_data.get("buys", 0) or 0) + (tx_1h_data.get("sells", 0) or 0)
+        
+        # Get price data
+        price_usd = float(attrs.get("base_token_price_usd", 0) or 0)
+        price_change_1h = float(attrs.get("price_change_percentage", {}).get("h1", 0) or 0)
+        
+        # Pool creation time
+        pool_created = attrs.get("pool_created_at", "")
+        pair_created_ms = 0
+        if pool_created:
+            try:
+                from datetime import datetime
+                pair_created_ms = int(datetime.fromisoformat(pool_created.replace("Z", "+00:00")).timestamp() * 1000)
+            except:
+                pair_created_ms = now_ms()
+        
+        # Build normalized pair structure
+        normalized_pair = {
+            "pairAddress": attrs.get("address", ""),
+            "chainId": "base",
+            "dexId": relationships.get("dex", {}).get("data", {}).get("id", ""),
+            "baseToken": {
+                "address": token_addr,
+                "symbol": symbol,
+                "name": symbol  # GeckoTerminal doesn't provide full name separately
+            },
+            "quoteToken": {
+                "address": quote_addr,
+                "symbol": quote_symbol
+            },
+            "liquidity": {
+                "usd": liq
+            },
+            "volume": {
+                "m5": vol_5m,
+                "h1": vol_1h,
+                "h24": vol_24h
+            },
+            "txns": {
+                "m5": {"buys": tx_5m_data.get("buys", 0), "sells": tx_5m_data.get("sells", 0)},
+                "h1": {"buys": tx_1h_data.get("buys", 0), "sells": tx_1h_data.get("sells", 0)}
+            },
+            "priceUsd": price_usd,
+            "priceChange": {
+                "h1": price_change_1h
+            },
+            "pairCreatedAt": pair_created_ms,
+            "info": {
+                "imageUrl": None,
+                "socials": [],
+                "websites": []
+            },
+            "_geckoterminal": True  # Marker for source identification
+        }
+        
+        results.append({"pair": normalized_pair, "source": "geckoterminal_trending"})
+    
+    print(f"[SCANNER] Source 6: {len(results)} pairs from GeckoTerminal")
+    return results
+
+def fetch_geckoterminal_new():
+    """Source 7: GeckoTerminal new pools (FALLBACK)"""
+    print("[SCANNER] Source 7: GeckoTerminal new pools (fallback)...")
+    
+    url = f"{GECKO_API}/networks/base/new_pools?page=1&limit=30"
+    data = get_gecko_json(url)
+    
+    if not data or "data" not in data:
+        print("[SCANNER]   No data from GeckoTerminal new pools")
+        return []
+    
+    results = []
+    
+    for pool in data.get("data", []):
+        attrs = pool.get("attributes", {})
+        relationships = pool.get("relationships", {})
+        
+        base_token_data = relationships.get("base_token", {}).get("data", {})
+        token_addr = base_token_data.get("id", "").replace("base_", "")
+        
+        if not token_addr:
+            continue
+        
+        quote_token_data = relationships.get("quote_token", {}).get("data", {})
+        quote_addr = quote_token_data.get("id", "").replace("base_", "")
+        
+        pool_name = attrs.get("name", "")
+        symbol = pool_name.split(" / ")[0] if " / " in pool_name else "UNKNOWN"
+        quote_symbol = pool_name.split(" / ")[1] if " / " in pool_name else ""
+        
+        liq = float(attrs.get("reserve_in_usd", 0) or 0)
+        vol_5m = float(attrs.get("volume_usd", {}).get("m5", 0) or 0)
+        vol_1h = float(attrs.get("volume_usd", {}).get("h1", 0) or 0)
+        vol_24h = float(attrs.get("volume_usd", {}).get("h24", 0) or 0)
+        
+        tx_5m_data = attrs.get("transactions", {}).get("m5", {})
+        tx_5m = (tx_5m_data.get("buys", 0) or 0) + (tx_5m_data.get("sells", 0) or 0)
+        
+        tx_1h_data = attrs.get("transactions", {}).get("h1", {})
+        tx_1h = (tx_1h_data.get("buys", 0) or 0) + (tx_1h_data.get("sells", 0) or 0)
+        
+        price_usd = float(attrs.get("base_token_price_usd", 0) or 0)
+        price_change_1h = float(attrs.get("price_change_percentage", {}).get("h1", 0) or 0)
+        
+        pool_created = attrs.get("pool_created_at", "")
+        pair_created_ms = 0
+        if pool_created:
+            try:
+                from datetime import datetime
+                pair_created_ms = int(datetime.fromisoformat(pool_created.replace("Z", "+00:00")).timestamp() * 1000)
+            except:
+                pair_created_ms = now_ms()
+        
+        normalized_pair = {
+            "pairAddress": attrs.get("address", ""),
+            "chainId": "base",
+            "dexId": relationships.get("dex", {}).get("data", {}).get("id", ""),
+            "baseToken": {
+                "address": token_addr,
+                "symbol": symbol,
+                "name": symbol
+            },
+            "quoteToken": {
+                "address": quote_addr,
+                "symbol": quote_symbol
+            },
+            "liquidity": {
+                "usd": liq
+            },
+            "volume": {
+                "m5": vol_5m,
+                "h1": vol_1h,
+                "h24": vol_24h
+            },
+            "txns": {
+                "m5": {"buys": tx_5m_data.get("buys", 0), "sells": tx_5m_data.get("sells", 0)},
+                "h1": {"buys": tx_1h_data.get("buys", 0), "sells": tx_1h_data.get("sells", 0)}
+            },
+            "priceUsd": price_usd,
+            "priceChange": {
+                "h1": price_change_1h
+            },
+            "pairCreatedAt": pair_created_ms,
+            "info": {
+                "imageUrl": None,
+                "socials": [],
+                "websites": []
+            },
+            "_geckoterminal": True
+        }
+        
+        results.append({"pair": normalized_pair, "source": "geckoterminal_new"})
+    
+    print(f"[SCANNER] Source 7: {len(results)} pairs from GeckoTerminal new pools")
+    return results
+
 def process_candidate(item, registry):
     """Process a candidate - ULTRA LAUNCH MODE (permissive)"""
     pair = item["pair"]
@@ -545,7 +785,36 @@ def scan():
     all_items.extend(fetch_community_takeovers())    # Source 4: CTOs
     all_items.extend(fetch_ads())                    # Source 5: Ads
     
-    print(f"\n[SCANNER] Total raw: {len(all_items)} items")
+    print(f"\n[SCANNER] Total raw from DexScreener: {len(all_items)} items")
+    
+    # FALLBACK: Use GeckoTerminal if DexScreener returns limited results
+    # Trigger fallback if we have less than 15 raw items (indicates rate limiting or calm market)
+    if len(all_items) < 15:
+        print(f"[SCANNER] ⚠️ Low DexScreener results ({len(all_items)}), activating GeckoTerminal fallback...")
+        gecko_items = []
+        gecko_items.extend(fetch_geckoterminal_trending())  # Source 6
+        gecko_items.extend(fetch_geckoterminal_new())       # Source 7
+        
+        # Merge GeckoTerminal results, avoiding duplicates
+        existing_tokens = set()
+        for item in all_items:
+            token = item["pair"].get("baseToken") or item["pair"].get("token") or {}
+            token_addr = (token.get("address") or "").lower()
+            if token_addr:
+                existing_tokens.add(token_addr)
+        
+        added_count = 0
+        for item in gecko_items:
+            token = item["pair"].get("baseToken") or item["pair"].get("token") or {}
+            token_addr = (token.get("address") or "").lower()
+            if token_addr and token_addr not in existing_tokens:
+                all_items.append(item)
+                existing_tokens.add(token_addr)
+                added_count += 1
+        
+        print(f"[SCANNER]   Added {added_count} unique tokens from GeckoTerminal")
+    
+    print(f"[SCANNER] Total raw (after fallback): {len(all_items)} items")
     
     # Process and dedupe
     candidates = []
@@ -599,6 +868,10 @@ def scan():
     else:
         status = "calm"  # Data available but no candidates passed filters
     
+    # Check if we used fallback
+    used_fallback = any(item.get("source", "").startswith("geckoterminal") for item in all_items)
+    gecko_count = sum(1 for item in all_items if item.get("source", "").startswith("geckoterminal"))
+    
     # Build feed
     feed = {
         "schema": "lurker_cio_ultra_launch",
@@ -616,6 +889,11 @@ def scan():
             "risk_distribution": dict(risk_counts),
             "rejected": dict(rejected),
             "source": "ultra_launch_scanner",
+            "fallback": {
+                "used": used_fallback,
+                "geckoterminal_items": gecko_count,
+                "trigger": "low_dexscreener_results" if used_fallback else None
+            }
         },
         "candidates": candidates,
     }
