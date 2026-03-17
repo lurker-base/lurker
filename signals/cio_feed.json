@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-17T12:49:52.005000+00:00",
-    "generated_at": "2026-03-17T12:49:52.005000+00:00",
+    "updated_at": "2026-03-17T13:04:52.952000+00:00",
+    "generated_at": "2026-03-17T13:04:52.952000+00:00",
     "status": "ok",
-    "count": 1,
+    "count": 2,
     "thresholds": {
       "min_liq_usd": 100,
       "min_vol_5m": 10,
@@ -12,12 +12,12 @@
       "max_age_min": 10080
     },
     "risk_distribution": {
-      "medium": 1
+      "medium": 2
     },
     "rejected": {
       "known_token": 8,
       "low_liq": 1,
-      "low_volume": 6,
+      "low_volume": 5,
       "too_old": 18
     },
     "source": "ultra_launch_scanner"
@@ -35,21 +35,21 @@
         "quote": "ETH"
       },
       "metrics": {
-        "liq_usd": 9644.51,
-        "vol_5m_usd": 41.76,
-        "vol_1h_usd": 841.74,
-        "txns_5m": 12,
-        "price_usd": 1.189e-05
+        "liq_usd": 9670.27,
+        "vol_5m_usd": 73.62,
+        "vol_1h_usd": 802.58,
+        "txns_5m": 19,
+        "price_usd": 1.193e-05
       },
       "timestamps": {
         "pair_created_at": "2026-02-25T00:04:07+00:00",
         "token_first_seen": "2026-03-17T11:59:32.494000+00:00",
-        "age_minutes": 50.3,
-        "age_hours": 0.84
+        "age_minutes": 65.3,
+        "age_hours": 1.09
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.99
+        "freshness": 0.98
       },
       "risks": [
         "low_volume"
@@ -63,6 +63,48 @@
         "has_socials": true,
         "has_website": false,
         "quality_score": 75
+      }
+    },
+    {
+      "token": {
+        "address": "0xfca95aeb5bf44ae355806a5ad14659c940dc6bf7",
+        "symbol": "SHIB",
+        "name": "SHIBA INU"
+      },
+      "pair": {
+        "address": "0x06249abc099011fec3a5550a7a6d1f12ba90ad9b9c59cd13b32a83b5c1fad7ee",
+        "dex": "uniswap",
+        "quote": "ETH"
+      },
+      "metrics": {
+        "liq_usd": 350247.78,
+        "vol_5m_usd": 0.0,
+        "vol_1h_usd": 30.67,
+        "txns_5m": 91,
+        "price_usd": 4.513e-09
+      },
+      "timestamps": {
+        "pair_created_at": "2025-06-16T10:33:31+00:00",
+        "token_first_seen": "2026-03-16T19:53:03.661000+00:00",
+        "age_minutes": 1031.8,
+        "age_hours": 17.2
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.71
+      },
+      "risks": [
+        "low_volume"
+      ],
+      "risk_level": "medium",
+      "source": "ads",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
       }
     }
   ]
