@@ -1,17 +1,19 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-17T11:49:46.293000+00:00",
-    "generated_at": "2026-03-17T11:49:46.293000+00:00",
-    "status": "calm",
-    "count": 0,
+    "updated_at": "2026-03-17T12:04:45.851000+00:00",
+    "generated_at": "2026-03-17T12:04:45.851000+00:00",
+    "status": "ok",
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 100,
       "min_vol_5m": 10,
       "min_tx_5m": 1,
       "max_age_min": 10080
     },
-    "risk_distribution": {},
+    "risk_distribution": {
+      "medium": 1
+    },
     "rejected": {
       "known_token": 8,
       "low_liq": 1,
@@ -20,5 +22,48 @@
     },
     "source": "ultra_launch_scanner"
   },
-  "candidates": []
+  "candidates": [
+    {
+      "token": {
+        "address": "0x412c9fedc8bf9e0c84c4c7b6924fe41c462a2af6",
+        "symbol": "CAISHEN",
+        "name": "Caishen"
+      },
+      "pair": {
+        "address": "0xf413309c158e2330ced241656d5c182eedc2862c42deab73910ef51aa5c5fd1d",
+        "dex": "uniswap",
+        "quote": "ETH"
+      },
+      "metrics": {
+        "liq_usd": 9726.87,
+        "vol_5m_usd": 87.21,
+        "vol_1h_usd": 778.33,
+        "txns_5m": 15,
+        "price_usd": 1.213e-05
+      },
+      "timestamps": {
+        "pair_created_at": "2026-02-25T00:04:07+00:00",
+        "token_first_seen": "2026-03-17T11:59:32.494000+00:00",
+        "age_minutes": 5.2,
+        "age_hours": 0.09
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 1.0
+      },
+      "risks": [
+        "low_volume"
+      ],
+      "risk_level": "medium",
+      "source": "boosts",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": false,
+        "quality_score": 75
+      }
+    }
+  ]
 }
