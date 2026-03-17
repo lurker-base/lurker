@@ -1,9 +1,9 @@
 {
   "meta": {
-    "updated_at": "2026-03-17T09:34:32.169000+00:00",
+    "updated_at": "2026-03-17T09:49:34.364000+00:00",
     "source": "cio_scanner",
     "chain": "base",
-    "count": 1,
+    "count": 0,
     "filters": {
       "min_volume_1h": 0,
       "max_results": 20,
@@ -11,20 +11,5 @@
     },
     "errors": []
   },
-  "signals": [
-    {
-      "address": "0x00bb032296e0c580e21010a5a6a4e007e0953e68",
-      "symbol": "\ud83d\udfe9\ud83e\udd9e",
-      "name": "NetClawd",
-      "liquidity_usd": 38103.74,
-      "volume_1h": 660.98,
-      "volume_5m": 327.58,
-      "quality_score": 100,
-      "age_minutes": 806.2,
-      "age_hours": 13.4,
-      "detected_at": "2026-03-16T20:08:17.612000+00:00",
-      "risk_level": "medium",
-      "source": "community"
-    }
-  ]
+  "signals": []
 }

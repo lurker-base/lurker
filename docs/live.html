@@ -151,7 +151,7 @@
 
     <script src="sparks.js"></script>
     <script>
-        const CIO_FEED_URL = 'https://raw.githubusercontent.com/lurker-base/lurker/main/signals/latest.json';
+        const CIO_FEED_URL = 'https://raw.githubusercontent.com/lurker-base/lurker/main/signals/cio_feed.json';
         const DEXSCREENER_API = 'https://api.dexscreener.com/latest/dex/tokens';
         
         let allTokens = [];
@@ -207,14 +207,14 @@
                 if (!response.ok) throw new Error('failed to load');
                 const data = await response.json();
                 
-                // V2 format support: signals array
+                // Support all feed formats
                 allTokens = data.signals || data.candidates || [];
                 
-                // Convert V2 format to old format for compatibility
+                // Convert V2 format (signals/latest.json) to display format
                 if (data.meta?.format === 'LURKER_SIGNAL_V2' && data.signals) {
                     allTokens = data.signals.map(s => ({
                         token: s.token,
-                        score: (s.confidence || 0) * 16.67, // Convert 0-6 to 0-100
+                        score: (s.confidence || 0) * 16.67,
                         risk: { level: s.scores?.risk || 'medium' },
                         metrics: s.metrics,
                         age_hours: s.age?.hours || 0,
@@ -224,6 +224,27 @@
                         why_now: s.why_now,
                         invalidation: s.invalidation,
                         confidence: s.confidence
+                    }));
+                }
+                
+                // Convert CIO Ultra format (signals/cio_feed.json) to display format
+                if (data.schema === 'lurker_cio_ultra_launch' && data.candidates) {
+                    allTokens = data.candidates.map(c => ({
+                        token: c.token,
+                        score: c.scores?.cio_score || 0,
+                        risk: { level: c.risk_level || 'medium' },
+                        metrics: {
+                            liq_usd: c.metrics?.liq_usd || 0,
+                            vol_1h_usd: c.metrics?.vol_1h_usd || 0,
+                            vol_24h_usd: (c.metrics?.vol_1h_usd || 0) * 24,
+                            vol_5m_usd: c.metrics?.vol_5m_usd || 0,
+                            txns_5m: c.metrics?.txns_5m || 0,
+                            txns_24h: (c.metrics?.txns_5m || 0) * 288,
+                        },
+                        age_hours: c.timestamps?.age_hours || (c.timestamps?.age_minutes || 0) / 60,
+                        source: c.source,
+                        quality: c.quality,
+                        badges: [],
                     }));
                 }
                 
@@ -243,7 +264,10 @@
                 
                 updateStats();
                 renderTokens();
-                document.getElementById('last-update').textContent = new Date().toLocaleTimeString();
+                // Show feed timestamp + local time
+                const feedTime = data.meta?.updated_at ? new Date(data.meta.updated_at).toLocaleString() : 'unknown';
+                const feedStatus = data.meta?.status || '';
+                document.getElementById('last-update').textContent = feedTime + (feedStatus ? ' (' + feedStatus + ')' : '');
             } catch (error) {
                 document.getElementById('tokens-container').innerHTML = '<div class="loading">error: ' + error.message + '</div>';
             }

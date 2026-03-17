@@ -45,21 +45,21 @@
                 <div class="meta">
                     <span>genesis: feb 20, 2026</span>
                     <span>●</span>
-                    <span>scanning block <span id="block-num">42,384,127</span></span>
+                    <span>scanning block <span id="block-num">...</span></span>
                 </div>
 
                 <div class="metrics">
                     <div class="metric">
-                        <span class="metric-value">1,247</span>
-                        <span class="metric-label">wallets watched</span>
+                        <span class="metric-value" id="metric-tokens">--</span>
+                        <span class="metric-label">tokens scanned</span>
                     </div>
                     <div class="metric">
-                        <span class="metric-value">463</span>
-                        <span class="metric-label">echoes detected</span>
+                        <span class="metric-value" id="metric-signals">--</span>
+                        <span class="metric-label">active signals</span>
                     </div>
                     <div class="metric">
-                        <span class="metric-value">--</span>
-                        <span class="metric-label">whales tracked</span>
+                        <span class="metric-value" id="metric-scans">24/7</span>
+                        <span class="metric-label">scanning Base</span>
                     </div>
                 </div>
 
@@ -298,13 +298,20 @@
         // Live tokens loader
         async function loadLiveTokens() {
             try {
-                const response = await fetch('data/cio_feed.json');
+                const response = await fetch('https://raw.githubusercontent.com/lurker-base/lurker/main/signals/cio_feed.json?t=' + Date.now());
                 const data = await response.json();
                 const candidates = data.candidates || [];
                 const grid = document.getElementById('tokens-grid');
                 
+                // Update live metrics from feed
+                const rejected = data.meta?.rejected || {};
+                const totalScanned = Object.values(rejected).reduce((a, b) => a + b, 0) + candidates.length;
+                document.getElementById('metric-tokens').textContent = totalScanned > 0 ? totalScanned.toLocaleString() : '--';
+                document.getElementById('metric-signals').textContent = candidates.length || '0';
+                
                 if (candidates.length === 0) {
-                    grid.innerHTML = '<div class="no-tokens">no active signals</div>';
+                    const updatedAt = data.meta?.updated_at ? new Date(data.meta.updated_at).toLocaleString() : 'unknown';
+                    grid.innerHTML = '<div class="no-tokens">no active signals<br><span style="font-size:0.75rem;opacity:0.5">last scan: ' + updatedAt + '</span></div>';
                     return;
                 }
                 
@@ -354,9 +361,28 @@
         
         setInterval(updateTimer, 1000);
         
+        // Fetch live Base block number
+        async function updateBlockNumber() {
+            try {
+                const resp = await fetch('https://base.blockscout.com/api/v2/stats');
+                const stats = await resp.json();
+                if (stats.total_blocks) {
+                    document.getElementById('block-num').textContent = parseInt(stats.total_blocks).toLocaleString();
+                }
+            } catch(e) {
+                // Fallback: estimate based on ~2s block time from genesis
+                const baseGenesis = new Date('2023-06-15T00:00:00Z').getTime();
+                const now = Date.now();
+                const estimatedBlock = Math.floor((now - baseGenesis) / 2000);
+                document.getElementById('block-num').textContent = estimatedBlock.toLocaleString();
+            }
+        }
+        
+        updateBlockNumber();
         loadLiveTokens();
         setInterval(() => {
             loadLiveTokens();
+            updateBlockNumber();
             timeLeft = 60;
         }, 60000); // Refresh every minute
     </script>
