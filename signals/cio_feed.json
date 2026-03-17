@@ -1,8 +1,8 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-17T16:05:15.676000+00:00",
-    "generated_at": "2026-03-17T16:05:15.676000+00:00",
+    "updated_at": "2026-03-17T16:20:17.698000+00:00",
+    "generated_at": "2026-03-17T16:20:17.698000+00:00",
     "status": "ok",
     "count": 1,
     "thresholds": {
@@ -19,7 +19,7 @@
       "low_liq": 1,
       "low_volume": 2,
       "too_old": 20,
-      "low_tx": 1
+      "low_tx": 2
     },
     "source": "ultra_launch_scanner"
   },
@@ -36,17 +36,17 @@
         "quote": "ETH"
       },
       "metrics": {
-        "liq_usd": 349511.06,
+        "liq_usd": 351563.8,
         "vol_5m_usd": 0.0,
         "vol_1h_usd": 142.04,
-        "txns_5m": 90,
-        "price_usd": 4.502e-09
+        "txns_5m": 88,
+        "price_usd": 4.528e-09
       },
       "timestamps": {
         "pair_created_at": "2025-06-16T10:33:31+00:00",
         "token_first_seen": "2026-03-16T19:53:03.661000+00:00",
-        "age_minutes": 1212.2,
-        "age_hours": 20.2
+        "age_minutes": 1227.2,
+        "age_hours": 20.45
       },
       "scores": {
         "cio_score": 100,
