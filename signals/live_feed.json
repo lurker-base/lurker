@@ -1,9 +1,9 @@
 {
   "meta": {
-    "updated_at": "2026-03-17T13:34:57.051000+00:00",
+    "updated_at": "2026-03-17T13:49:57.656000+00:00",
     "source": "cio_scanner",
     "chain": "base",
-    "count": 4,
+    "count": 0,
     "filters": {
       "min_volume_1h": 0,
       "max_results": 20,
@@ -11,62 +11,5 @@
     },
     "errors": []
   },
-  "signals": [
-    {
-      "address": "0x8c386b032b1506af06cd432a8c4f97cd2bd05c5a",
-      "symbol": "S7",
-      "name": "BTCSentinel",
-      "liquidity_usd": 11150.99,
-      "volume_1h": 69.89,
-      "volume_5m": 69.89,
-      "quality_score": 100,
-      "age_minutes": 18.7,
-      "age_hours": 0.3,
-      "detected_at": "2026-03-17T13:16:13.898000+00:00",
-      "risk_level": "medium",
-      "source": "boosts"
-    },
-    {
-      "address": "0x8c0d3adcf8ce094e1ae437557ec90a6374dc9bdd",
-      "symbol": "OVPP",
-      "name": "OpenVPP",
-      "liquidity_usd": 487725.08,
-      "volume_1h": 94.02,
-      "volume_5m": 66.1,
-      "quality_score": 100,
-      "age_minutes": 29.9,
-      "age_hours": 0.5,
-      "detected_at": "2026-03-17T13:05:02.136000+00:00",
-      "risk_level": "medium",
-      "source": "profiles"
-    },
-    {
-      "address": "0x412c9fedc8bf9e0c84c4c7b6924fe41c462a2af6",
-      "symbol": "CAISHEN",
-      "name": "Caishen",
-      "liquidity_usd": 9716.38,
-      "volume_1h": 737.84,
-      "volume_5m": 25.32,
-      "quality_score": 100,
-      "age_minutes": 95.4,
-      "age_hours": 1.6,
-      "detected_at": "2026-03-17T11:59:32.494000+00:00",
-      "risk_level": "medium",
-      "source": "boosts"
-    },
-    {
-      "address": "0xfca95aeb5bf44ae355806a5ad14659c940dc6bf7",
-      "symbol": "SHIB",
-      "name": "SHIBA INU",
-      "liquidity_usd": 353111.55,
-      "volume_1h": 72.2,
-      "volume_5m": 0.0,
-      "quality_score": 100,
-      "age_minutes": 1061.9,
-      "age_hours": 17.7,
-      "detected_at": "2026-03-16T19:53:03.661000+00:00",
-      "risk_level": "medium",
-      "source": "ads"
-    }
-  ]
+  "signals": []
 }
