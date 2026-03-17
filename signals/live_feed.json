@@ -1,9 +1,9 @@
 {
   "meta": {
-    "updated_at": "2026-03-17T16:35:17.121000+00:00",
+    "updated_at": "2026-03-17T16:50:18.724000+00:00",
     "source": "cio_scanner",
     "chain": "base",
-    "count": 0,
+    "count": 1,
     "filters": {
       "min_volume_1h": 0,
       "max_results": 20,
@@ -11,5 +11,20 @@
     },
     "errors": []
   },
-  "signals": []
+  "signals": [
+    {
+      "address": "0xebb86c0e77524c09c32799b1c3401647b46a61b4",
+      "symbol": "AYA",
+      "name": "AVATAR48",
+      "liquidity_usd": 131283.06,
+      "volume_1h": 4227.41,
+      "volume_5m": 4227.15,
+      "quality_score": 100,
+      "age_minutes": 22.4,
+      "age_hours": 0.4,
+      "detected_at": "2026-03-17T16:27:55.433000+00:00",
+      "risk_level": "medium",
+      "source": "profiles"
+    }
+  ]
 }
