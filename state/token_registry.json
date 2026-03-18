@@ -64539,12 +64539,6 @@
       "first_seen_iso": "2026-03-16T20:03:13.102000+00:00",
       "price_history": [
         {
-          "timestamp": 1773776627272,
-          "price": 5.633e-07,
-          "liq": 602.52,
-          "vol_5m": 0.0
-        },
-        {
           "timestamp": 1773776630727,
           "price": 5.633e-07,
           "liq": 602.52,
@@ -65136,6 +65130,12 @@
           "timestamp": 1773777036296,
           "price": 5.633e-07,
           "liq": 602.52,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773839277203,
+          "price": 1.053e-31,
+          "liq": 86.5,
           "vol_5m": 0.0
         }
       ],
@@ -65862,12 +65862,6 @@
       "first_seen_iso": "2026-03-16T21:29:37.761000+00:00",
       "price_history": [
         {
-          "timestamp": 1773776627272,
-          "price": 6.172e-06,
-          "liq": 6141.15,
-          "vol_5m": 0.0
-        },
-        {
           "timestamp": 1773776630727,
           "price": 6.172e-06,
           "liq": 6141.15,
@@ -66457,6 +66451,12 @@
         },
         {
           "timestamp": 1773777036296,
+          "price": 6.172e-06,
+          "liq": 6141.15,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773839277203,
           "price": 6.172e-06,
           "liq": 6141.15,
           "vol_5m": 0.0
@@ -87320,12 +87320,18 @@
           "price": 1.19034145461969e-06,
           "liq": -14748.6551559954,
           "vol_5m": 33020.6722647458
+        },
+        {
+          "timestamp": 1773839277203,
+          "price": 2.215e-06,
+          "liq": 61931.57,
+          "vol_5m": 4545.86
         }
       ],
       "token": {
         "address": "0x7f9c2361a1a59261879bae132370d5f7adba2b07",
         "symbol": "RUBY",
-        "name": "RUBY"
+        "name": "Ruby Rush"
       }
     },
     "0x57b6b90083221bce3fee9a0ee3ffd44a6d5da99e": {
@@ -87907,6 +87913,23 @@
         "address": "0x3cdb92970ac02ecf23b532ef1402dc24d2fbc469",
         "symbol": "RUBY",
         "name": "RUBY"
+      }
+    },
+    "0x89d4f39be2a6f85328615065df97ebde659b8c36": {
+      "first_seen": 1773839277203,
+      "first_seen_iso": "2026-03-18T13:07:57.203000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1773839277203,
+          "price": 4.965e-07,
+          "liq": 504.36,
+          "vol_5m": 0.0
+        }
+      ],
+      "token": {
+        "address": "0x89d4f39be2a6f85328615065df97ebde659b8c36",
+        "symbol": "OILTRUMP",
+        "name": "OILTRUMP"
       }
     }
   }

@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-17T19:50:36.396000+00:00",
-    "generated_at": "2026-03-17T19:50:36.396000+00:00",
+    "updated_at": "2026-03-18T13:07:57.306000+00:00",
+    "generated_at": "2026-03-18T13:07:57.306000+00:00",
     "status": "ok",
-    "count": 2,
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 100,
       "min_vol_5m": 10,
@@ -12,14 +12,13 @@
       "max_age_min": 10080
     },
     "risk_distribution": {
-      "medium": 2
+      "medium": 1
     },
     "rejected": {
-      "low_liq": 1,
-      "low_volume": 4,
+      "low_volume": 2,
       "known_token": 7,
       "too_old": 21,
-      "low_tx": 1
+      "low_liq": 1
     },
     "source": "ultra_launch_scanner",
     "fallback": {
@@ -31,97 +30,37 @@
   "candidates": [
     {
       "token": {
-        "address": "0x412c9fedc8bf9e0c84c4c7b6924fe41c462a2af6",
-        "symbol": "CAISHEN",
-        "name": "Caishen"
+        "address": "0x7f9c2361a1a59261879bae132370d5f7adba2b07",
+        "symbol": "RUBY",
+        "name": "Ruby Rush"
       },
       "pair": {
-        "address": "0xf413309c158e2330ced241656d5c182eedc2862c42deab73910ef51aa5c5fd1d",
+        "address": "0xfe7ff4f767e58670a1f49d219a23800b550528bd2dc55a410ccff785a71fc1f0",
         "dex": "uniswap",
-        "quote": "ETH"
+        "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 11544.59,
-        "vol_5m_usd": 122.56,
-        "vol_1h_usd": 638.02,
-        "txns_5m": 17,
-        "price_usd": 1.666e-05
+        "liq_usd": 61931.57,
+        "vol_5m_usd": 4545.86,
+        "vol_1h_usd": 14405.99,
+        "txns_5m": 15,
+        "price_usd": 2.215e-06
       },
       "timestamps": {
-        "pair_created_at": "2026-02-25T00:04:07+00:00",
-        "token_first_seen": "2026-03-17T11:59:32.494000+00:00",
-        "age_minutes": 471.1,
-        "age_hours": 7.85
+        "pair_created_at": "2026-03-17T19:39:35+00:00",
+        "token_first_seen": "2026-03-17T19:42:38.777000+00:00",
+        "age_minutes": 1045.3,
+        "age_hours": 17.42
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.87
+        "freshness": 0.71
       },
       "risks": [
-        "low_volume"
+        "dumping"
       ],
       "risk_level": "medium",
       "source": "boosts",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": false,
-        "quality_score": 75
-      },
-      "is_recycled": false,
-      "explanation": {
-        "summary": "Token is actively promoted with boost visibility",
-        "reasons": [
-          "Token is actively promoted with boost visibility",
-          "Verified profile with image, socials and website"
-        ],
-        "key_metrics": [
-          {
-            "metric": "profile",
-            "value": "75/100",
-            "significance": "high"
-          }
-        ],
-        "risk_caveats": [],
-        "confidence_description": "High confidence - multiple positive indicators aligned",
-        "signal_quality": "high"
-      }
-    },
-    {
-      "token": {
-        "address": "0xfca95aeb5bf44ae355806a5ad14659c940dc6bf7",
-        "symbol": "SHIB",
-        "name": "SHIBA INU"
-      },
-      "pair": {
-        "address": "0x06249abc099011fec3a5550a7a6d1f12ba90ad9b9c59cd13b32a83b5c1fad7ee",
-        "dex": "uniswap",
-        "quote": "ETH"
-      },
-      "metrics": {
-        "liq_usd": 352216.73,
-        "vol_5m_usd": 0.0,
-        "vol_1h_usd": 99.09,
-        "txns_5m": 87,
-        "price_usd": 4.547e-09
-      },
-      "timestamps": {
-        "pair_created_at": "2025-06-16T10:33:31+00:00",
-        "token_first_seen": "2026-03-16T19:53:03.661000+00:00",
-        "age_minutes": 1437.5,
-        "age_hours": 23.96
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.6
-      },
-      "risks": [
-        "low_volume"
-      ],
-      "risk_level": "medium",
-      "source": "ads",
       "status": "observing",
       "quality": {
         "has_profile": true,
@@ -132,22 +71,16 @@
       },
       "is_recycled": false,
       "explanation": {
-        "summary": "High activity placement - advertiser confidence",
+        "summary": "Token is actively promoted with boost visibility",
         "reasons": [
-          "High activity placement - advertiser confidence",
+          "Token is actively promoted with boost visibility",
           "Strong liquidity depth reduces slippage risk",
-          "High transaction frequency - active market participation",
           "Verified profile with image, socials and website"
         ],
         "key_metrics": [
           {
             "metric": "liquidity",
-            "value": "$352,217",
-            "significance": "high"
-          },
-          {
-            "metric": "tx_5m",
-            "value": "87 txs",
+            "value": "$61,932",
             "significance": "high"
           },
           {
@@ -156,7 +89,9 @@
             "significance": "high"
           }
         ],
-        "risk_caveats": [],
+        "risk_caveats": [
+          "Price declining - potential sell pressure"
+        ],
         "confidence_description": "High confidence - multiple positive indicators aligned",
         "signal_quality": "high"
       }

@@ -1,9 +1,9 @@
 {
   "meta": {
-    "updated_at": "2026-03-17T19:50:36.397000+00:00",
+    "updated_at": "2026-03-18T13:07:57.306000+00:00",
     "source": "cio_scanner",
     "chain": "base",
-    "count": 2,
+    "count": 1,
     "filters": {
       "min_volume_1h": 0,
       "max_results": 20,
@@ -13,32 +13,18 @@
   },
   "signals": [
     {
-      "address": "0x412c9fedc8bf9e0c84c4c7b6924fe41c462a2af6",
-      "symbol": "CAISHEN",
-      "name": "Caishen",
-      "liquidity_usd": 11544.59,
-      "volume_1h": 638.02,
-      "volume_5m": 122.56,
+      "address": "0x7f9c2361a1a59261879bae132370d5f7adba2b07",
+      "symbol": "RUBY",
+      "name": "Ruby Rush",
+      "liquidity_usd": 61931.57,
+      "volume_1h": 14405.99,
+      "volume_5m": 4545.86,
       "quality_score": 100,
-      "age_minutes": 471.1,
-      "age_hours": 7.9,
-      "detected_at": "2026-03-17T11:59:32.494000+00:00",
+      "age_minutes": 1045.3,
+      "age_hours": 17.4,
+      "detected_at": "2026-03-17T19:42:38.777000+00:00",
       "risk_level": "medium",
       "source": "boosts"
-    },
-    {
-      "address": "0xfca95aeb5bf44ae355806a5ad14659c940dc6bf7",
-      "symbol": "SHIB",
-      "name": "SHIBA INU",
-      "liquidity_usd": 352216.73,
-      "volume_1h": 99.09,
-      "volume_5m": 0.0,
-      "quality_score": 100,
-      "age_minutes": 1437.5,
-      "age_hours": 24.0,
-      "detected_at": "2026-03-16T19:53:03.661000+00:00",
-      "risk_level": "medium",
-      "source": "ads"
     }
   ]
 }
