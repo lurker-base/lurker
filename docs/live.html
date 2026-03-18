@@ -245,6 +245,8 @@
                         source: c.source,
                         quality: c.quality,
                         badges: [],
+                        action_badge: c.action_badge,
+                        action_reason: c.action_reason,
                     }));
                 }
                 
@@ -317,6 +319,14 @@
                 
                 // Generate badges - HONEST VERSION: max 3, prioritize risk
                 const badges = [];
+                
+                // 0. ACTION BADGE (most important - tells user what to do)
+                const actionBadge = token.action_badge || data.meta?.badge_legend?.['🟡 SURVEILLER'];
+                if (actionBadge) {
+                    const actionClass = actionBadge.includes('🟢') ? 'badge-pump' : 
+                                       actionBadge.includes('🔴') ? 'badge-rug' : 'badge-premium';
+                    badges.push('<span class="badge ' + actionClass + '">' + actionBadge + '</span>');
+                }
                 
                 // 1. RISK BADGE (always first - most important)
                 badges.push('<span class="badge ' + riskClass + '">' + risk.toUpperCase() + ' RISK</span>');
