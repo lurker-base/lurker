@@ -70,6 +70,8 @@
         "quality_score": 100
       },
       "is_recycled": false,
+      "action_badge": "🟡 SURVEILLER",
+      "action_reason": "Token mature (17.4h), volume modéré ($600/h). Attendre un pump de confirmation.",
       "explanation": {
         "summary": "Token is actively promoted with boost visibility",
         "reasons": [

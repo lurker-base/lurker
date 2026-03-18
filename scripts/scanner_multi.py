@@ -23,6 +23,43 @@ DEXES = [
     "rocketswap"
 ]
 
+def calculate_action_badge(age_hours, liq_usd, vol_24h_usd):
+    """Calcule le badge d'action recommandée"""
+    vol_1h_estimate = vol_24h_usd / 24
+    
+    # 🟢 ACHETER: Token frais + bon volume + bonne liquidité
+    if age_hours < 2 and vol_1h_estimate > 5000 and liq_usd > 30000:
+        return "🟢 ACHETER"
+    
+    # 🔴 ÉVITER: Token vieux + faible volume
+    if age_hours > 12 and vol_1h_estimate < 1000:
+        return "🔴 ÉVITER"
+    
+    # 🟡 SURVEILLER: Cas intermédiaires
+    return "🟡 SURVEILLER"
+
+def calculate_action_reason(age_hours, liq_usd, vol_24h_usd):
+    """Explique la raison du badge"""
+    vol_1h_estimate = vol_24h_usd / 24
+    
+    if age_hours < 2 and vol_1h_estimate > 5000 and liq_usd > 30000:
+        return f"Token frais ({age_hours:.1f}h), volume élevé (${vol_1h_estimate:,.0f}/h), bonne liquidité (${liq_usd:,.0f})"
+    
+    if age_hours > 12 and vol_1h_estimate < 1000:
+        return f"Token mature ({age_hours:.1f}h), volume faible (${vol_1h_estimate:,.0f}/h) - risque de sortie"
+    
+    reasons = []
+    if age_hours < 6:
+        reasons.append("token récent")
+    if vol_1h_estimate > 3000:
+        reasons.append("volume intéressant")
+    if liq_usd > 20000:
+        reasons.append("liquidité correcte")
+    
+    if reasons:
+        return f"{', '.join(reasons).capitalize()} - attendre confirmation"
+    return "Attendre un signal de momentum plus fort"
+
 def get_gecko_pools(dex_id, limit=20):
     """Get pools from a specific dex"""
     try:
@@ -109,7 +146,9 @@ def main():
                 "source": "multi_scanner",
                 "score": min(100, int(liq / 500)),
                 "risk": {"level": "medium" if age_hours < 1 else "low"},
-                "badges": ["🔥 SUPER FRESH"] if age_hours < 1 else ["⚡ ACTIVE"]
+                "badges": ["🔥 SUPER FRESH"] if age_hours < 1 else ["⚡ ACTIVE"],
+                "action_badge": calculate_action_badge(age_hours, liq, vol),
+                "action_reason": calculate_action_reason(age_hours, liq, vol)
             })
     
     print(f"[MULTI] Candidates: {len(candidates)}")
