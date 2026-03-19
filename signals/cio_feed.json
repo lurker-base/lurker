@@ -1,23 +1,24 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-19T11:05:41.213000+00:00",
-    "generated_at": "2026-03-19T11:05:41.213000+00:00",
-    "status": "calm",
-    "count": 0,
+    "updated_at": "2026-03-19T11:11:55.332000+00:00",
+    "generated_at": "2026-03-19T11:11:55.332000+00:00",
+    "status": "ok",
+    "count": 2,
     "thresholds": {
       "min_liq_usd": 100,
       "min_vol_5m": 10,
       "min_tx_5m": 1,
       "max_age_min": 10080
     },
-    "risk_distribution": {},
+    "risk_distribution": {
+      "low": 2
+    },
     "rejected": {
       "low_liq": 1,
       "too_old": 28,
       "known_token": 8,
-      "low_volume": 2,
-      "low_tx": 1
+      "low_volume": 2
     },
     "source": "ultra_launch_scanner",
     "fallback": {
@@ -26,5 +27,146 @@
       "trigger": null
     }
   },
-  "candidates": []
+  "candidates": [
+    {
+      "token": {
+        "address": "0xe497a3444ca6cbfc1c5a1ce537b743a21ff9f1ca",
+        "symbol": "JAZZER",
+        "name": "Jazzer Guys"
+      },
+      "pair": {
+        "address": "0xef42db897d95390fc22edfea30ca09864f322c22",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 74780.43,
+        "vol_5m_usd": 2729.55,
+        "vol_1h_usd": 49506.74,
+        "txns_5m": 20,
+        "price_usd": 0.0003169
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-16T03:18:07+00:00",
+        "token_first_seen": "2026-03-19T11:09:50.297000+00:00",
+        "age_minutes": 2.1,
+        "age_hours": 0.03
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 1.0
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      },
+      "is_recycled": false,
+      "explanation": {
+        "summary": "Complete DexScreener profile with verified info",
+        "reasons": [
+          "Complete DexScreener profile with verified info",
+          "Strong liquidity depth reduces slippage risk",
+          "Very fresh token - early entry opportunity",
+          "Verified profile with image, socials and website"
+        ],
+        "key_metrics": [
+          {
+            "metric": "liquidity",
+            "value": "$74,780",
+            "significance": "high"
+          },
+          {
+            "metric": "age",
+            "value": "2 min",
+            "significance": "high"
+          },
+          {
+            "metric": "profile",
+            "value": "100/100",
+            "significance": "high"
+          }
+        ],
+        "risk_caveats": [],
+        "confidence_description": "High confidence - multiple positive indicators aligned",
+        "signal_quality": "high"
+      }
+    },
+    {
+      "token": {
+        "address": "0x5f980dcfc4c0fa3911554cf5ab288ed0eb13dba3",
+        "symbol": "GITLAWB",
+        "name": "gitlawb"
+      },
+      "pair": {
+        "address": "0xec33256bf1ded407a57fd3c1965e7556e42ac14db09bc4e6fef57d5e2eb0b0b9",
+        "dex": "uniswap",
+        "quote": "WETH"
+      },
+      "metrics": {
+        "liq_usd": 125918.35,
+        "vol_5m_usd": 64.47,
+        "vol_1h_usd": 8965.31,
+        "txns_5m": 1,
+        "price_usd": 1.779e-06
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-11T02:00:07+00:00",
+        "token_first_seen": "2026-03-19T10:29:19.215000+00:00",
+        "age_minutes": 42.6,
+        "age_hours": 0.71
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.99
+      },
+      "risks": [],
+      "risk_level": "low",
+      "source": "boosts",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      },
+      "is_recycled": false,
+      "explanation": {
+        "summary": "Token is actively promoted with boost visibility",
+        "reasons": [
+          "Token is actively promoted with boost visibility",
+          "Strong liquidity depth reduces slippage risk",
+          "Very fresh token - early entry opportunity",
+          "Verified profile with image, socials and website"
+        ],
+        "key_metrics": [
+          {
+            "metric": "liquidity",
+            "value": "$125,918",
+            "significance": "high"
+          },
+          {
+            "metric": "age",
+            "value": "43 min",
+            "significance": "high"
+          },
+          {
+            "metric": "profile",
+            "value": "100/100",
+            "significance": "high"
+          }
+        ],
+        "risk_caveats": [],
+        "confidence_description": "High confidence - multiple positive indicators aligned",
+        "signal_quality": "high"
+      }
+    }
+  ]
 }
