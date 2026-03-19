@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-19T07:05:08.496000+00:00",
-    "generated_at": "2026-03-19T07:05:08.496000+00:00",
+    "updated_at": "2026-03-19T10:35:33.188000+00:00",
+    "generated_at": "2026-03-19T10:35:33.188000+00:00",
     "status": "ok",
-    "count": 2,
+    "count": 1,
     "thresholds": {
       "min_liq_usd": 100,
       "min_vol_5m": 10,
@@ -12,11 +12,11 @@
       "max_age_min": 10080
     },
     "risk_distribution": {
-      "low": 2
+      "low": 1
     },
     "rejected": {
       "low_liq": 1,
-      "too_old": 24,
+      "too_old": 28,
       "known_token": 8,
       "low_volume": 2,
       "low_tx": 1
@@ -31,31 +31,31 @@
   "candidates": [
     {
       "token": {
-        "address": "0x2866ee84cbcfc237c8572a683c2655cfc1f9989a",
-        "symbol": "CLAWTV",
-        "name": "Live Claw "
+        "address": "0xae8f3f67eb1429d2e3f99693f9b7006ec4af8626",
+        "symbol": "AgentInBox",
+        "name": "AgentInBox"
       },
       "pair": {
-        "address": "0x941b445a8d5db0aaf4cba4c9ba823fcd21c7509b80d8d4e0ed2eefac90ae8c48",
+        "address": "0x95e97e0df1eb77cfac92f65a0b35ef33923094880ca12873930ab1a824dac03b",
         "dex": "uniswap",
-        "quote": "flETH"
+        "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 23511.46,
-        "vol_5m_usd": 905.71,
-        "vol_1h_usd": 4396.53,
-        "txns_5m": 5,
-        "price_usd": 2.817e-07
+        "liq_usd": 123623.11,
+        "vol_5m_usd": 6190.71,
+        "vol_1h_usd": 219455.62,
+        "txns_5m": 29,
+        "price_usd": 2.542e-06
       },
       "timestamps": {
-        "pair_created_at": "2026-03-18T21:58:31+00:00",
-        "token_first_seen": "2026-03-19T07:05:08.364000+00:00",
-        "age_minutes": 546.6,
-        "age_hours": 9.11
+        "pair_created_at": "2026-03-19T07:39:25+00:00",
+        "token_first_seen": "2026-03-19T10:29:19.215000+00:00",
+        "age_minutes": 6.2,
+        "age_hours": 0.1
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.85
+        "freshness": 1.0
       },
       "risks": [],
       "risk_level": "low",
@@ -65,84 +65,44 @@
         "has_profile": true,
         "has_image": true,
         "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
+        "has_website": false,
+        "quality_score": 75
       },
       "is_recycled": false,
       "explanation": {
         "summary": "Complete DexScreener profile with verified info",
         "reasons": [
           "Complete DexScreener profile with verified info",
+          "High 1h volume indicates strong trading interest",
+          "Strong liquidity depth reduces slippage risk",
+          "Healthy transaction flow indicating organic interest",
+          "Very fresh token - early entry opportunity",
           "Verified profile with image, socials and website"
         ],
         "key_metrics": [
           {
-            "metric": "profile",
-            "value": "100/100",
+            "metric": "volume_1h",
+            "value": "$219,456",
             "significance": "high"
-          }
-        ],
-        "risk_caveats": [],
-        "confidence_description": "High confidence - multiple positive indicators aligned",
-        "signal_quality": "high"
-      }
-    },
-    {
-      "token": {
-        "address": "0x797f214a2cd64a4963a91fa21c8c55ec3eba4714",
-        "symbol": "SIBYL",
-        "name": "SIBYL by Virtuals"
-      },
-      "pair": {
-        "address": "0x43447f02ada550929f1f0619471a8f8dba173243",
-        "dex": "uniswap",
-        "quote": "VIRTUAL"
-      },
-      "metrics": {
-        "liq_usd": 75204.15,
-        "vol_5m_usd": 0.08,
-        "vol_1h_usd": 4041.79,
-        "txns_5m": 12,
-        "price_usd": 0.0003641
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-18T21:32:05+00:00",
-        "token_first_seen": "2026-03-19T07:05:08.365000+00:00",
-        "age_minutes": 573.1,
-        "age_hours": 9.55
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 0.84
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "boosts",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": true,
-        "quality_score": 100
-      },
-      "is_recycled": false,
-      "explanation": {
-        "summary": "Token is actively promoted with boost visibility",
-        "reasons": [
-          "Token is actively promoted with boost visibility",
-          "Strong liquidity depth reduces slippage risk",
-          "Verified profile with image, socials and website"
-        ],
-        "key_metrics": [
+          },
           {
             "metric": "liquidity",
-            "value": "$75,204",
+            "value": "$123,623",
+            "significance": "high"
+          },
+          {
+            "metric": "tx_5m",
+            "value": "29 txs",
+            "significance": "medium"
+          },
+          {
+            "metric": "age",
+            "value": "6 min",
             "significance": "high"
           },
           {
             "metric": "profile",
-            "value": "100/100",
+            "value": "75/100",
             "significance": "high"
           }
         ],

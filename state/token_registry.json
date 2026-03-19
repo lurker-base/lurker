@@ -87930,6 +87930,30 @@
           "price": 4.452e-07,
           "liq": 444.37,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773916159214,
+          "price": 4.452e-07,
+          "liq": 444.37,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773916284068,
+          "price": 4.452e-07,
+          "liq": 444.37,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773916408532,
+          "price": 4.452e-07,
+          "liq": 444.37,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773916533059,
+          "price": 4.452e-07,
+          "liq": 444.37,
+          "vol_5m": 0.0
         }
       ],
       "token": {
@@ -87944,6 +87968,30 @@
       "price_history": [
         {
           "timestamp": 1773903908364,
+          "price": 2.015e-05,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773916159214,
+          "price": 2.015e-05,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773916284068,
+          "price": 2.015e-05,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773916408532,
+          "price": 2.015e-05,
+          "liq": 0,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773916533059,
           "price": 2.015e-05,
           "liq": 0,
           "vol_5m": 0.0
@@ -87963,6 +88011,30 @@
           "timestamp": 1773903908364,
           "price": 4.85e-07,
           "liq": 468.89,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773916159214,
+          "price": 4.779e-07,
+          "liq": 462.02,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773916284068,
+          "price": 4.779e-07,
+          "liq": 462.02,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773916408532,
+          "price": 4.779e-07,
+          "liq": 462.02,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773916533059,
+          "price": 4.779e-07,
+          "liq": 462.02,
           "vol_5m": 0.0
         }
       ],
@@ -88021,6 +88093,76 @@
         "address": "0x797f214a2cd64a4963a91fa21c8c55ec3eba4714",
         "symbol": "SIBYL",
         "name": "SIBYL by Virtuals"
+      }
+    },
+    "0xae8f3f67eb1429d2e3f99693f9b7006ec4af8626": {
+      "first_seen": 1773916159215,
+      "first_seen_iso": "2026-03-19T10:29:19.215000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1773916159215,
+          "price": 2.418e-06,
+          "liq": 120116.63,
+          "vol_5m": 10093.2
+        },
+        {
+          "timestamp": 1773916284068,
+          "price": 2.405e-06,
+          "liq": 119733.41,
+          "vol_5m": 8771.71
+        },
+        {
+          "timestamp": 1773916408532,
+          "price": 2.469e-06,
+          "liq": 121552.13,
+          "vol_5m": 7338.13
+        },
+        {
+          "timestamp": 1773916533059,
+          "price": 2.542e-06,
+          "liq": 123623.11,
+          "vol_5m": 6190.71
+        }
+      ],
+      "token": {
+        "address": "0xae8f3f67eb1429d2e3f99693f9b7006ec4af8626",
+        "symbol": "AgentInBox",
+        "name": "AgentInBox"
+      }
+    },
+    "0x5f980dcfc4c0fa3911554cf5ab288ed0eb13dba3": {
+      "first_seen": 1773916159215,
+      "first_seen_iso": "2026-03-19T10:29:19.215000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1773916159215,
+          "price": 1.75e-06,
+          "liq": 124998.22,
+          "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773916284069,
+          "price": 1.764e-06,
+          "liq": 125536.49,
+          "vol_5m": 478.15
+        },
+        {
+          "timestamp": 1773916408532,
+          "price": 1.764e-06,
+          "liq": 125536.49,
+          "vol_5m": 478.15
+        },
+        {
+          "timestamp": 1773916533059,
+          "price": 1.764e-06,
+          "liq": 125536.49,
+          "vol_5m": 0.0
+        }
+      ],
+      "token": {
+        "address": "0x5f980dcfc4c0fa3911554cf5ab288ed0eb13dba3",
+        "symbol": "GITLAWB",
+        "name": "gitlawb"
       }
     }
   }
