@@ -5,10 +5,10 @@
     "symbol": "UNKNOWN",
     "name": "TACHI / WETH",
     "metrics": {
-      "liq_usd": 81331.595,
-      "vol_24h_usd": 60081.048657999,
+      "liq_usd": 82451.0789,
+      "vol_24h_usd": 60195.9566161901,
       "txns_24h": 0,
-      "price_usd": 1.05460823121399e-06
+      "price_usd": 1.05930353735085e-06
     },
     "risk": {
       "level": "medium",
@@ -20,5 +20,5 @@
     "first_seen": "2026-03-19T11:55:37.858404+00:00",
     "status": "NEW"
   },
-  "timestamp": "2026-03-19T12:01:45.705509+00:00"
+  "timestamp": "2026-03-19T12:04:45.760485+00:00"
 }
