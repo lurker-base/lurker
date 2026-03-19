@@ -5,10 +5,10 @@
     "symbol": "UNKNOWN",
     "name": "ROBOTMONEY / WETH",
     "metrics": {
-      "liq_usd": 490250.7769,
-      "vol_24h_usd": 515734.150110519,
+      "liq_usd": 482878.0219,
+      "vol_24h_usd": 523363.877662035,
       "txns_24h": 0,
-      "price_usd": 1.5806487546966e-05
+      "price_usd": 1.52250037258426e-05
     },
     "risk": {
       "level": "low",
@@ -19,5 +19,5 @@
     "first_seen": "2026-03-19T11:55:37.858410+00:00",
     "status": "NEW"
   },
-  "timestamp": "2026-03-19T12:10:45.886652+00:00"
+  "timestamp": "2026-03-19T12:19:46.029856+00:00"
 }
