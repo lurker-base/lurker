@@ -1,10 +1,10 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-18T13:07:57.306000+00:00",
-    "generated_at": "2026-03-18T13:07:57.306000+00:00",
+    "updated_at": "2026-03-19T07:05:08.496000+00:00",
+    "generated_at": "2026-03-19T07:05:08.496000+00:00",
     "status": "ok",
-    "count": 1,
+    "count": 2,
     "thresholds": {
       "min_liq_usd": 100,
       "min_vol_5m": 10,
@@ -12,13 +12,14 @@
       "max_age_min": 10080
     },
     "risk_distribution": {
-      "medium": 1
+      "low": 2
     },
     "rejected": {
+      "low_liq": 1,
+      "too_old": 24,
+      "known_token": 8,
       "low_volume": 2,
-      "known_token": 7,
-      "too_old": 21,
-      "low_liq": 1
+      "low_tx": 1
     },
     "source": "ultra_launch_scanner",
     "fallback": {
@@ -30,36 +31,92 @@
   "candidates": [
     {
       "token": {
-        "address": "0x7f9c2361a1a59261879bae132370d5f7adba2b07",
-        "symbol": "RUBY",
-        "name": "Ruby Rush"
+        "address": "0x2866ee84cbcfc237c8572a683c2655cfc1f9989a",
+        "symbol": "CLAWTV",
+        "name": "Live Claw "
       },
       "pair": {
-        "address": "0xfe7ff4f767e58670a1f49d219a23800b550528bd2dc55a410ccff785a71fc1f0",
+        "address": "0x941b445a8d5db0aaf4cba4c9ba823fcd21c7509b80d8d4e0ed2eefac90ae8c48",
         "dex": "uniswap",
-        "quote": "WETH"
+        "quote": "flETH"
       },
       "metrics": {
-        "liq_usd": 61931.57,
-        "vol_5m_usd": 4545.86,
-        "vol_1h_usd": 14405.99,
-        "txns_5m": 15,
-        "price_usd": 2.215e-06
+        "liq_usd": 23511.46,
+        "vol_5m_usd": 905.71,
+        "vol_1h_usd": 4396.53,
+        "txns_5m": 5,
+        "price_usd": 2.817e-07
       },
       "timestamps": {
-        "pair_created_at": "2026-03-17T19:39:35+00:00",
-        "token_first_seen": "2026-03-17T19:42:38.777000+00:00",
-        "age_minutes": 1045.3,
-        "age_hours": 17.42
+        "pair_created_at": "2026-03-18T21:58:31+00:00",
+        "token_first_seen": "2026-03-19T07:05:08.364000+00:00",
+        "age_minutes": 546.6,
+        "age_hours": 9.11
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.71
+        "freshness": 0.85
       },
-      "risks": [
-        "dumping"
-      ],
-      "risk_level": "medium",
+      "risks": [],
+      "risk_level": "low",
+      "source": "profiles",
+      "status": "observing",
+      "quality": {
+        "has_profile": true,
+        "has_image": true,
+        "has_socials": true,
+        "has_website": true,
+        "quality_score": 100
+      },
+      "is_recycled": false,
+      "explanation": {
+        "summary": "Complete DexScreener profile with verified info",
+        "reasons": [
+          "Complete DexScreener profile with verified info",
+          "Verified profile with image, socials and website"
+        ],
+        "key_metrics": [
+          {
+            "metric": "profile",
+            "value": "100/100",
+            "significance": "high"
+          }
+        ],
+        "risk_caveats": [],
+        "confidence_description": "High confidence - multiple positive indicators aligned",
+        "signal_quality": "high"
+      }
+    },
+    {
+      "token": {
+        "address": "0x797f214a2cd64a4963a91fa21c8c55ec3eba4714",
+        "symbol": "SIBYL",
+        "name": "SIBYL by Virtuals"
+      },
+      "pair": {
+        "address": "0x43447f02ada550929f1f0619471a8f8dba173243",
+        "dex": "uniswap",
+        "quote": "VIRTUAL"
+      },
+      "metrics": {
+        "liq_usd": 75204.15,
+        "vol_5m_usd": 0.08,
+        "vol_1h_usd": 4041.79,
+        "txns_5m": 12,
+        "price_usd": 0.0003641
+      },
+      "timestamps": {
+        "pair_created_at": "2026-03-18T21:32:05+00:00",
+        "token_first_seen": "2026-03-19T07:05:08.365000+00:00",
+        "age_minutes": 573.1,
+        "age_hours": 9.55
+      },
+      "scores": {
+        "cio_score": 100,
+        "freshness": 0.84
+      },
+      "risks": [],
+      "risk_level": "low",
       "source": "boosts",
       "status": "observing",
       "quality": {
@@ -70,8 +127,6 @@
         "quality_score": 100
       },
       "is_recycled": false,
-      "action_badge": "🟡 SURVEILLER",
-      "action_reason": "Token mature (17.4h), volume modéré ($600/h). Attendre un pump de confirmation.",
       "explanation": {
         "summary": "Token is actively promoted with boost visibility",
         "reasons": [
@@ -82,7 +137,7 @@
         "key_metrics": [
           {
             "metric": "liquidity",
-            "value": "$61,932",
+            "value": "$75,204",
             "significance": "high"
           },
           {
@@ -91,9 +146,7 @@
             "significance": "high"
           }
         ],
-        "risk_caveats": [
-          "Price declining - potential sell pressure"
-        ],
+        "risk_caveats": [],
         "confidence_description": "High confidence - multiple positive indicators aligned",
         "signal_quality": "high"
       }

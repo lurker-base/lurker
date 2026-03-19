@@ -87924,12 +87924,103 @@
           "price": 4.965e-07,
           "liq": 504.36,
           "vol_5m": 0.0
+        },
+        {
+          "timestamp": 1773903908364,
+          "price": 4.452e-07,
+          "liq": 444.37,
+          "vol_5m": 0.0
         }
       ],
       "token": {
         "address": "0x89d4f39be2a6f85328615065df97ebde659b8c36",
         "symbol": "OILTRUMP",
         "name": "OILTRUMP"
+      }
+    },
+    "0x6288f6a32940f6dd428a09e41aa2cb3319b4176c": {
+      "first_seen": 1773903908364,
+      "first_seen_iso": "2026-03-19T07:05:08.364000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1773903908364,
+          "price": 2.015e-05,
+          "liq": 0,
+          "vol_5m": 0.0
+        }
+      ],
+      "token": {
+        "address": "0x6288f6a32940f6dd428a09e41aa2cb3319b4176c",
+        "symbol": "NEW",
+        "name": "NEW MARKET"
+      }
+    },
+    "0x0247ccb496b139f3abe2740a28948e0ec216469a": {
+      "first_seen": 1773903908364,
+      "first_seen_iso": "2026-03-19T07:05:08.364000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1773903908364,
+          "price": 4.85e-07,
+          "liq": 468.89,
+          "vol_5m": 0.0
+        }
+      ],
+      "token": {
+        "address": "0x0247ccb496b139f3abe2740a28948e0ec216469a",
+        "symbol": "BANK",
+        "name": "Lorenzo Governance Token"
+      }
+    },
+    "0x2866ee84cbcfc237c8572a683c2655cfc1f9989a": {
+      "first_seen": 1773903908364,
+      "first_seen_iso": "2026-03-19T07:05:08.364000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1773903908364,
+          "price": 2.817e-07,
+          "liq": 23511.46,
+          "vol_5m": 905.71
+        }
+      ],
+      "token": {
+        "address": "0x2866ee84cbcfc237c8572a683c2655cfc1f9989a",
+        "symbol": "CLAWTV",
+        "name": "Live Claw "
+      }
+    },
+    "0x115940411e5835007d29a3925eab775ba4af84d6": {
+      "first_seen": 1773903908365,
+      "first_seen_iso": "2026-03-19T07:05:08.365000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1773903908365,
+          "price": 5.277e-07,
+          "liq": 47367.93,
+          "vol_5m": 0.0
+        }
+      ],
+      "token": {
+        "address": "0x115940411e5835007d29a3925eab775ba4af84d6",
+        "symbol": "Aliens",
+        "name": "Aliens"
+      }
+    },
+    "0x797f214a2cd64a4963a91fa21c8c55ec3eba4714": {
+      "first_seen": 1773903908365,
+      "first_seen_iso": "2026-03-19T07:05:08.365000+00:00",
+      "price_history": [
+        {
+          "timestamp": 1773903908365,
+          "price": 0.0003641,
+          "liq": 75204.15,
+          "vol_5m": 0.08
+        }
+      ],
+      "token": {
+        "address": "0x797f214a2cd64a4963a91fa21c8c55ec3eba4714",
+        "symbol": "SIBYL",
+        "name": "SIBYL by Virtuals"
       }
     }
   }

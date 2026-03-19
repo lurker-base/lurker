@@ -1,37 +1,44 @@
 {
   "meta": {
-    "updated_at": "2026-03-18T13:07:57.306000+00:00",
+    "updated_at": "2026-03-19T07:05:08.496000+00:00",
     "source": "cio_scanner",
     "chain": "base",
-    "count": 1,
+    "count": 2,
     "filters": {
       "min_volume_1h": 0,
       "max_results": 20,
       "sort_by": "quality_score"
     },
-    "errors": [],
-    "badge_legend": {
-      "🟢 ACHETER": "Signal fort, bon timing d'entrée",
-      "🟡 SURVEILLER": "Potentiel intéressant, attendre confirmation",
-      "🔴 ÉVITER": "Risque élevé ou mauvais timing"
-    }
+    "errors": []
   },
   "signals": [
     {
-      "address": "0x7f9c2361a1a59261879bae132370d5f7adba2b07",
-      "symbol": "RUBY",
-      "name": "Ruby Rush",
-      "liquidity_usd": 61931.57,
-      "volume_1h": 14405.99,
-      "volume_5m": 4545.86,
+      "address": "0x2866ee84cbcfc237c8572a683c2655cfc1f9989a",
+      "symbol": "CLAWTV",
+      "name": "Live Claw ",
+      "liquidity_usd": 23511.46,
+      "volume_1h": 4396.53,
+      "volume_5m": 905.71,
       "quality_score": 100,
-      "age_minutes": 1045.3,
-      "age_hours": 17.4,
-      "detected_at": "2026-03-17T19:42:38.777000+00:00",
-      "risk_level": "medium",
-      "source": "boosts",
-      "action_badge": "🟡 SURVEILLER",
-      "action_reason": "Token mature (17h), volume modéré. Attendre un pump de confirmation."
+      "age_minutes": 546.6,
+      "age_hours": 9.1,
+      "detected_at": "2026-03-19T07:05:08.364000+00:00",
+      "risk_level": "low",
+      "source": "profiles"
+    },
+    {
+      "address": "0x797f214a2cd64a4963a91fa21c8c55ec3eba4714",
+      "symbol": "SIBYL",
+      "name": "SIBYL by Virtuals",
+      "liquidity_usd": 75204.15,
+      "volume_1h": 4041.79,
+      "volume_5m": 0.08,
+      "quality_score": 100,
+      "age_minutes": 573.1,
+      "age_hours": 9.6,
+      "detected_at": "2026-03-19T07:05:08.365000+00:00",
+      "risk_level": "low",
+      "source": "boosts"
     }
   ]
 }
