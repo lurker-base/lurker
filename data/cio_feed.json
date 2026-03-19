@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-19T12:05:47.369078+00:00",
+  "timestamp": "2026-03-19T12:11:48.390364+00:00",
   "source": "geckoterminal_v2",
   "candidates": [
     {
@@ -9,10 +9,10 @@
         "name": "ODAI / flETH"
       },
       "metrics": {
-        "liq_usd": 699807.92,
-        "vol_24h_usd": 301943.088829299,
+        "liq_usd": 689891.791,
+        "vol_24h_usd": 306234.486000974,
         "txns_24h": 0,
-        "price_usd": 7.1362317817248e-05
+        "price_usd": 7.02181806481948e-05
       },
       "risk": {
         "level": "low",
@@ -20,7 +20,7 @@
           "low_activity"
         ]
       },
-      "timestamp": "2026-03-19T12:05:47.368833+00:00"
+      "timestamp": "2026-03-19T12:11:48.390076+00:00"
     },
     {
       "token": {
@@ -29,10 +29,10 @@
         "name": "cbBTC / WETH 0.01%"
       },
       "metrics": {
-        "liq_usd": 7242614.003,
-        "vol_24h_usd": 62655749.0187396,
+        "liq_usd": 7222002.8646,
+        "vol_24h_usd": 62281085.1762575,
         "txns_24h": 0,
-        "price_usd": 69877.3495783567
+        "price_usd": 69694.0640561972
       },
       "risk": {
         "level": "low",
@@ -40,7 +40,7 @@
           "low_activity"
         ]
       },
-      "timestamp": "2026-03-19T12:05:47.368865+00:00"
+      "timestamp": "2026-03-19T12:11:48.390110+00:00"
     },
     {
       "token": {
@@ -49,10 +49,10 @@
         "name": "VVV / WETH 0.05%"
       },
       "metrics": {
-        "liq_usd": 3304269.5819,
-        "vol_24h_usd": 3529087.10326924,
+        "liq_usd": 4357367.5785,
+        "vol_24h_usd": 3534840.71706564,
         "txns_24h": 0,
-        "price_usd": 5.46932828008558
+        "price_usd": 5.46270120456558
       },
       "risk": {
         "level": "low",
@@ -60,7 +60,7 @@
           "low_activity"
         ]
       },
-      "timestamp": "2026-03-19T12:05:47.368872+00:00"
+      "timestamp": "2026-03-19T12:11:48.390119+00:00"
     },
     {
       "token": {
@@ -69,10 +69,10 @@
         "name": "MOLT / WETH"
       },
       "metrics": {
-        "liq_usd": 1805695.8917,
-        "vol_24h_usd": 126261.985263546,
+        "liq_usd": 1782817.2438,
+        "vol_24h_usd": 126257.325033832,
         "txns_24h": 0,
-        "price_usd": 2.33866068728006e-05
+        "price_usd": 2.31447582836902e-05
       },
       "risk": {
         "level": "low",
@@ -80,7 +80,27 @@
           "low_activity"
         ]
       },
-      "timestamp": "2026-03-19T12:05:47.368878+00:00"
+      "timestamp": "2026-03-19T12:11:48.390128+00:00"
+    },
+    {
+      "token": {
+        "address": "0x65021a79aeef22b17cdc1b768f5e79a8618beba3",
+        "symbol": "UNKNOWN",
+        "name": "ROBOTMONEY / WETH"
+      },
+      "metrics": {
+        "liq_usd": 490731.8601,
+        "vol_24h_usd": 515376.399980667,
+        "txns_24h": 0,
+        "price_usd": 1.58386086021922e-05
+      },
+      "risk": {
+        "level": "low",
+        "factors": [
+          "low_activity"
+        ]
+      },
+      "timestamp": "2026-03-19T12:11:48.390136+00:00"
     },
     {
       "token": {
@@ -89,8 +109,8 @@
         "name": "TACHI / WETH"
       },
       "metrics": {
-        "liq_usd": 82408.4614,
-        "vol_24h_usd": 60137.8977792351,
+        "liq_usd": 82148.5711,
+        "vol_24h_usd": 58184.5393858292,
         "txns_24h": 0,
         "price_usd": 1.05930353735085e-06
       },
@@ -101,27 +121,7 @@
           "low_activity"
         ]
       },
-      "timestamp": "2026-03-19T12:05:47.368884+00:00"
-    },
-    {
-      "token": {
-        "address": "0x65021a79aeef22b17cdc1b768f5e79a8618beba3",
-        "symbol": "UNKNOWN",
-        "name": "ROBOTMONEY / WETH"
-      },
-      "metrics": {
-        "liq_usd": 491366.176,
-        "vol_24h_usd": 516614.496555715,
-        "txns_24h": 0,
-        "price_usd": 1.54756005277533e-05
-      },
-      "risk": {
-        "level": "low",
-        "factors": [
-          "low_activity"
-        ]
-      },
-      "timestamp": "2026-03-19T12:05:47.368890+00:00"
+      "timestamp": "2026-03-19T12:11:48.390144+00:00"
     },
     {
       "token": {
@@ -130,10 +130,10 @@
         "name": "LITCOIN / WETH"
       },
       "metrics": {
-        "liq_usd": 139813.902,
-        "vol_24h_usd": 78663.3736516245,
+        "liq_usd": 135825.2875,
+        "vol_24h_usd": 80926.7438316119,
         "txns_24h": 0,
-        "price_usd": 1.82508725474376e-06
+        "price_usd": 1.73837356216781e-06
       },
       "risk": {
         "level": "low",
@@ -141,7 +141,7 @@
           "low_activity"
         ]
       },
-      "timestamp": "2026-03-19T12:05:47.368895+00:00"
+      "timestamp": "2026-03-19T12:11:48.390152+00:00"
     },
     {
       "token": {
@@ -150,10 +150,10 @@
         "name": "KTA / WETH"
       },
       "metrics": {
-        "liq_usd": 5953945.3268,
-        "vol_24h_usd": 2005240.207052,
+        "liq_usd": 5942855.7343,
+        "vol_24h_usd": 2007405.03212509,
         "txns_24h": 0,
-        "price_usd": 0.173253301013646
+        "price_usd": 0.172916852164792
       },
       "risk": {
         "level": "low",
@@ -161,7 +161,7 @@
           "low_activity"
         ]
       },
-      "timestamp": "2026-03-19T12:05:47.368906+00:00"
+      "timestamp": "2026-03-19T12:11:48.390190+00:00"
     },
     {
       "token": {
@@ -170,10 +170,10 @@
         "name": "WETH / USDC 0.3%"
       },
       "metrics": {
-        "liq_usd": 87482312.5056,
-        "vol_24h_usd": 100293783.128083,
+        "liq_usd": 87329635.3539,
+        "vol_24h_usd": 99970461.7474692,
         "txns_24h": 0,
-        "price_usd": 2163.77
+        "price_usd": 2158.13
       },
       "risk": {
         "level": "low",
@@ -181,69 +181,7 @@
           "low_activity"
         ]
       },
-      "timestamp": "2026-03-19T12:05:47.368911+00:00"
-    },
-    {
-      "token": {
-        "address": "0xe6c854488811fbd6472b684360ad5c393c7bae8f",
-        "symbol": "UNKNOWN",
-        "name": "BID / WETH 0.01%"
-      },
-      "metrics": {
-        "liq_usd": 75484.2507,
-        "vol_24h_usd": 2945527.12427489,
-        "txns_24h": 0,
-        "price_usd": 0.000213410340053105
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "moderate_liquidity",
-          "low_activity"
-        ]
-      },
-      "timestamp": "2026-03-19T12:05:47.368918+00:00"
-    },
-    {
-      "token": {
-        "address": "0x8bc2b8480b4b69863942f3e08a4740386139575d",
-        "symbol": "UNKNOWN",
-        "name": "SAIMMY / WETH 1%"
-      },
-      "metrics": {
-        "liq_usd": 282254.2759,
-        "vol_24h_usd": 4705055.04778132,
-        "txns_24h": 0,
-        "price_usd": 4.73494355811228e-06
-      },
-      "risk": {
-        "level": "low",
-        "factors": [
-          "low_activity"
-        ]
-      },
-      "timestamp": "2026-03-19T12:05:47.368929+00:00"
-    },
-    {
-      "token": {
-        "address": "0x10b2057bc08d1d50ba18a536172244fb96c7dba3",
-        "symbol": "UNKNOWN",
-        "name": "SHAR / WETH"
-      },
-      "metrics": {
-        "liq_usd": 67291.9524,
-        "vol_24h_usd": 91695.5254498187,
-        "txns_24h": 0,
-        "price_usd": 7.34610682597318e-07
-      },
-      "risk": {
-        "level": "medium",
-        "factors": [
-          "moderate_liquidity",
-          "low_activity"
-        ]
-      },
-      "timestamp": "2026-03-19T12:05:47.368934+00:00"
+      "timestamp": "2026-03-19T12:11:48.390200+00:00"
     },
     {
       "token": {
@@ -252,10 +190,10 @@
         "name": "BRETT / WETH 1%"
       },
       "metrics": {
-        "liq_usd": 1026239.6398,
-        "vol_24h_usd": 299539.308421755,
+        "liq_usd": 1022526.3626,
+        "vol_24h_usd": 297528.300863554,
         "txns_24h": 0,
-        "price_usd": 0.0069686764576985
+        "price_usd": 0.00693655381070407
       },
       "risk": {
         "level": "low",
@@ -263,19 +201,40 @@
           "low_activity"
         ]
       },
-      "timestamp": "2026-03-19T12:05:47.368938+00:00"
+      "timestamp": "2026-03-19T12:11:48.390206+00:00"
     },
     {
       "token": {
-        "address": "0x768be13e1680b5ebe0024c42c896e3db59ec0149",
+        "address": "0xe6c854488811fbd6472b684360ad5c393c7bae8f",
         "symbol": "UNKNOWN",
-        "name": "SKI / WETH"
+        "name": "BID / WETH 0.01%"
       },
       "metrics": {
-        "liq_usd": 906988.9884,
-        "vol_24h_usd": 328470.63217145,
+        "liq_usd": 76724.2625,
+        "vol_24h_usd": 2926402.17791504,
         "txns_24h": 0,
-        "price_usd": 0.00889004409344343
+        "price_usd": 0.00022505756595492
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "moderate_liquidity",
+          "low_activity"
+        ]
+      },
+      "timestamp": "2026-03-19T12:11:48.390213+00:00"
+    },
+    {
+      "token": {
+        "address": "0x8bc2b8480b4b69863942f3e08a4740386139575d",
+        "symbol": "UNKNOWN",
+        "name": "SAIMMY / WETH 1%"
+      },
+      "metrics": {
+        "liq_usd": 267762.7399,
+        "vol_24h_usd": 4692633.21369093,
+        "txns_24h": 0,
+        "price_usd": 4.29497010300554e-06
       },
       "risk": {
         "level": "low",
@@ -283,7 +242,28 @@
           "low_activity"
         ]
       },
-      "timestamp": "2026-03-19T12:05:47.368943+00:00"
+      "timestamp": "2026-03-19T12:11:48.390219+00:00"
+    },
+    {
+      "token": {
+        "address": "0x10b2057bc08d1d50ba18a536172244fb96c7dba3",
+        "symbol": "UNKNOWN",
+        "name": "SHAR / WETH"
+      },
+      "metrics": {
+        "liq_usd": 65803.1322,
+        "vol_24h_usd": 91710.2108964132,
+        "txns_24h": 0,
+        "price_usd": 7.27346690111125e-07
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "moderate_liquidity",
+          "low_activity"
+        ]
+      },
+      "timestamp": "2026-03-19T12:11:48.390226+00:00"
     },
     {
       "token": {
@@ -292,10 +272,10 @@
         "name": "JUNO / WETH"
       },
       "metrics": {
-        "liq_usd": 649951.5753,
-        "vol_24h_usd": 114909.728188318,
+        "liq_usd": 650783.0353,
+        "vol_24h_usd": 115717.426252388,
         "txns_24h": 0,
-        "price_usd": 1.39610291863793e-05
+        "price_usd": 1.37263973371825e-05
       },
       "risk": {
         "level": "low",
@@ -303,7 +283,27 @@
           "low_activity"
         ]
       },
-      "timestamp": "2026-03-19T12:05:47.368948+00:00"
+      "timestamp": "2026-03-19T12:11:48.390234+00:00"
+    },
+    {
+      "token": {
+        "address": "0x768be13e1680b5ebe0024c42c896e3db59ec0149",
+        "symbol": "UNKNOWN",
+        "name": "SKI / WETH"
+      },
+      "metrics": {
+        "liq_usd": 904950.1429,
+        "vol_24h_usd": 328299.164169722,
+        "txns_24h": 0,
+        "price_usd": 0.00885643604187471
+      },
+      "risk": {
+        "level": "low",
+        "factors": [
+          "low_activity"
+        ]
+      },
+      "timestamp": "2026-03-19T12:11:48.390240+00:00"
     },
     {
       "token": {
@@ -312,8 +312,8 @@
         "name": "DRB / WETH 1%"
       },
       "metrics": {
-        "liq_usd": 908906.121,
-        "vol_24h_usd": 59475.2998390093,
+        "liq_usd": 906027.1265,
+        "vol_24h_usd": 59474.7338564427,
         "txns_24h": 0,
         "price_usd": 7.19819973452187e-05
       },
@@ -323,27 +323,7 @@
           "low_activity"
         ]
       },
-      "timestamp": "2026-03-19T12:05:47.368956+00:00"
-    },
-    {
-      "token": {
-        "address": "0x22af33fe49fd1fa80c7149773dde5890d3c76f3b",
-        "symbol": "UNKNOWN",
-        "name": "BNKR / WETH 1%"
-      },
-      "metrics": {
-        "liq_usd": 2596981.2553,
-        "vol_24h_usd": 64708.63363512,
-        "txns_24h": 0,
-        "price_usd": 0.000443979844487502
-      },
-      "risk": {
-        "level": "low",
-        "factors": [
-          "low_activity"
-        ]
-      },
-      "timestamp": "2026-03-19T12:05:47.368961+00:00"
+      "timestamp": "2026-03-19T12:11:48.390249+00:00"
     },
     {
       "token": {
@@ -352,10 +332,10 @@
         "name": "BNKR / WETH 0.3%"
       },
       "metrics": {
-        "liq_usd": 389486.5609,
-        "vol_24h_usd": 476280.417209629,
+        "liq_usd": 413297.8289,
+        "vol_24h_usd": 476009.423969986,
         "txns_24h": 0,
-        "price_usd": 0.000443006464544122
+        "price_usd": 0.000443995130800318
       },
       "risk": {
         "level": "low",
@@ -363,7 +343,27 @@
           "low_activity"
         ]
       },
-      "timestamp": "2026-03-19T12:05:47.368966+00:00"
+      "timestamp": "2026-03-19T12:11:48.390255+00:00"
+    },
+    {
+      "token": {
+        "address": "0x22af33fe49fd1fa80c7149773dde5890d3c76f3b",
+        "symbol": "UNKNOWN",
+        "name": "BNKR / WETH 1%"
+      },
+      "metrics": {
+        "liq_usd": 2613153.7799,
+        "vol_24h_usd": 61621.5289322486,
+        "txns_24h": 0,
+        "price_usd": 0.000449749860819665
+      },
+      "risk": {
+        "level": "low",
+        "factors": [
+          "low_activity"
+        ]
+      },
+      "timestamp": "2026-03-19T12:11:48.390262+00:00"
     },
     {
       "token": {
@@ -372,10 +372,10 @@
         "name": "ZORA / USDC 0.3%"
       },
       "metrics": {
-        "liq_usd": 387614.0794,
-        "vol_24h_usd": 412710.933650248,
+        "liq_usd": 386685.8796,
+        "vol_24h_usd": 413845.680477605,
         "txns_24h": 0,
-        "price_usd": 0.0168891771641294
+        "price_usd": 0.0168711184255893
       },
       "risk": {
         "level": "low",
@@ -383,7 +383,7 @@
           "low_activity"
         ]
       },
-      "timestamp": "2026-03-19T12:05:47.368971+00:00"
+      "timestamp": "2026-03-19T12:11:48.390268+00:00"
     },
     {
       "token": {
@@ -392,10 +392,10 @@
         "name": "CLAWNCH / WETH"
       },
       "metrics": {
-        "liq_usd": 1477456.4025,
-        "vol_24h_usd": 125046.091654718,
+        "liq_usd": 1481115.2894,
+        "vol_24h_usd": 127944.423170593,
         "txns_24h": 0,
-        "price_usd": 4.22880055892383e-05
+        "price_usd": 4.24217284299498e-05
       },
       "risk": {
         "level": "low",
@@ -403,7 +403,7 @@
           "low_activity"
         ]
       },
-      "timestamp": "2026-03-19T12:05:47.368977+00:00"
+      "timestamp": "2026-03-19T12:11:48.390274+00:00"
     }
   ]
 }
