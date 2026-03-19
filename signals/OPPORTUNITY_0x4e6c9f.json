@@ -1,0 +1,23 @@
+{
+  "type": "OPPORTUNITY",
+  "token": {
+    "address": "0x4e6c9f48f73e54ee5f3ab7e2992b2d733d0d0b07",
+    "symbol": "UNKNOWN",
+    "name": "JUNO / WETH",
+    "metrics": {
+      "liq_usd": 645575.1339,
+      "vol_24h_usd": 114914.974435423,
+      "txns_24h": 0,
+      "price_usd": 1.39692380738725e-05
+    },
+    "risk": {
+      "level": "low",
+      "factors": [
+        "low_activity"
+      ]
+    },
+    "first_seen": "2026-03-19T11:55:37.858574+00:00",
+    "status": "NEW"
+  },
+  "timestamp": "2026-03-19T12:01:45.707330+00:00"
+}

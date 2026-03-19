@@ -1,0 +1,23 @@
+{
+  "type": "OPPORTUNITY",
+  "token": {
+    "address": "0x22af33fe49fd1fa80c7149773dde5890d3c76f3b",
+    "symbol": "UNKNOWN",
+    "name": "BNKR / WETH 1%",
+    "metrics": {
+      "liq_usd": 389669.067,
+      "vol_24h_usd": 490786.952153145,
+      "txns_24h": 0,
+      "price_usd": 0.00044632553417714
+    },
+    "risk": {
+      "level": "low",
+      "factors": [
+        "low_activity"
+      ]
+    },
+    "first_seen": "2026-03-19T11:55:37.858637+00:00",
+    "status": "NEW"
+  },
+  "timestamp": "2026-03-19T12:01:45.707955+00:00"
+}

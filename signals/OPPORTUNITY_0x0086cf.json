@@ -1,0 +1,23 @@
+{
+  "type": "OPPORTUNITY",
+  "token": {
+    "address": "0x0086cff0c1e5d17b19f5bcd4c8840a5b4251d959",
+    "symbol": "UNKNOWN",
+    "name": "ODAI / flETH",
+    "metrics": {
+      "liq_usd": 704293.256,
+      "vol_24h_usd": 301324.519073779,
+      "txns_24h": 0,
+      "price_usd": 7.11681696156853e-05
+    },
+    "risk": {
+      "level": "low",
+      "factors": [
+        "low_activity"
+      ]
+    },
+    "first_seen": "2026-03-19T11:55:37.858250+00:00",
+    "status": "NEW"
+  },
+  "timestamp": "2026-03-19T12:01:45.704648+00:00"
+}

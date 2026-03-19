@@ -1,0 +1,23 @@
+{
+  "type": "OPPORTUNITY",
+  "token": {
+    "address": "0x1111111111166b7fe7bd91427724b487980afc69",
+    "symbol": "UNKNOWN",
+    "name": "ZORA / USDC 0.3%",
+    "metrics": {
+      "liq_usd": 387925.2284,
+      "vol_24h_usd": 412389.633695373,
+      "txns_24h": 0,
+      "price_usd": 0.0168058045695023
+    },
+    "risk": {
+      "level": "low",
+      "factors": [
+        "low_activity"
+      ]
+    },
+    "first_seen": "2026-03-19T11:55:37.858644+00:00",
+    "status": "NEW"
+  },
+  "timestamp": "2026-03-19T12:01:45.708158+00:00"
+}

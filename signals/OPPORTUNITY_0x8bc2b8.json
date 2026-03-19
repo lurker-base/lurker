@@ -1,0 +1,23 @@
+{
+  "type": "OPPORTUNITY",
+  "token": {
+    "address": "0x8bc2b8480b4b69863942f3e08a4740386139575d",
+    "symbol": "UNKNOWN",
+    "name": "SAIMMY / WETH 1%",
+    "metrics": {
+      "liq_usd": 278032.5411,
+      "vol_24h_usd": 4690180.07191384,
+      "txns_24h": 0,
+      "price_usd": 4.45818403723567e-06
+    },
+    "risk": {
+      "level": "low",
+      "factors": [
+        "low_activity"
+      ]
+    },
+    "first_seen": "2026-03-19T11:55:37.858470+00:00",
+    "status": "NEW"
+  },
+  "timestamp": "2026-03-19T12:01:45.707132+00:00"
+}

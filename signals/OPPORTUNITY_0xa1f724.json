@@ -1,0 +1,23 @@
+{
+  "type": "OPPORTUNITY",
+  "token": {
+    "address": "0xa1f72459dfa10bad200ac160ecd78c6b77a747be",
+    "symbol": "UNKNOWN",
+    "name": "CLAWNCH / WETH",
+    "metrics": {
+      "liq_usd": 1479031.7631,
+      "vol_24h_usd": 126951.810686342,
+      "txns_24h": 0,
+      "price_usd": 4.22880055892383e-05
+    },
+    "risk": {
+      "level": "low",
+      "factors": [
+        "low_activity"
+      ]
+    },
+    "first_seen": "2026-03-19T11:55:37.858655+00:00",
+    "status": "NEW"
+  },
+  "timestamp": "2026-03-19T12:01:45.708347+00:00"
+}

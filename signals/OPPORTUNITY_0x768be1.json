@@ -1,0 +1,23 @@
+{
+  "type": "OPPORTUNITY",
+  "token": {
+    "address": "0x768be13e1680b5ebe0024c42c896e3db59ec0149",
+    "symbol": "UNKNOWN",
+    "name": "SKI / WETH",
+    "metrics": {
+      "liq_usd": 899106.1364,
+      "vol_24h_usd": 325970.371199088,
+      "txns_24h": 0,
+      "price_usd": 0.00872828502448166
+    },
+    "risk": {
+      "level": "low",
+      "factors": [
+        "low_activity"
+      ]
+    },
+    "first_seen": "2026-03-19T11:55:37.858607+00:00",
+    "status": "NEW"
+  },
+  "timestamp": "2026-03-19T12:01:45.707739+00:00"
+}

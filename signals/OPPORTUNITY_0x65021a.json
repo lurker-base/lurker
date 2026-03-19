@@ -1,0 +1,23 @@
+{
+  "type": "OPPORTUNITY",
+  "token": {
+    "address": "0x65021a79aeef22b17cdc1b768f5e79a8618beba3",
+    "symbol": "UNKNOWN",
+    "name": "ROBOTMONEY / WETH",
+    "metrics": {
+      "liq_usd": 495515.0947,
+      "vol_24h_usd": 514400.363869475,
+      "txns_24h": 0,
+      "price_usd": 1.57313961420538e-05
+    },
+    "risk": {
+      "level": "low",
+      "factors": [
+        "low_activity"
+      ]
+    },
+    "first_seen": "2026-03-19T11:55:37.858410+00:00",
+    "status": "NEW"
+  },
+  "timestamp": "2026-03-19T12:01:45.705722+00:00"
+}

@@ -1,0 +1,23 @@
+{
+  "type": "OPPORTUNITY",
+  "token": {
+    "address": "0xb695559b26bb2c9703ef1935c37aeae9526bab07",
+    "symbol": "UNKNOWN",
+    "name": "MOLT / WETH",
+    "metrics": {
+      "liq_usd": 1785733.3296,
+      "vol_24h_usd": 122732.006377054,
+      "txns_24h": 0,
+      "price_usd": 2.32040153987436e-05
+    },
+    "risk": {
+      "level": "low",
+      "factors": [
+        "low_activity"
+      ]
+    },
+    "first_seen": "2026-03-19T11:55:37.858396+00:00",
+    "status": "NEW"
+  },
+  "timestamp": "2026-03-19T12:01:45.705306+00:00"
+}

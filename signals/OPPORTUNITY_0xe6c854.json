@@ -1,0 +1,24 @@
+{
+  "type": "OPPORTUNITY",
+  "token": {
+    "address": "0xe6c854488811fbd6472b684360ad5c393c7bae8f",
+    "symbol": "UNKNOWN",
+    "name": "BID / WETH 0.01%",
+    "metrics": {
+      "liq_usd": 79113.6112,
+      "vol_24h_usd": 2949918.60529863,
+      "txns_24h": 0,
+      "price_usd": 0.000228389535855906
+    },
+    "risk": {
+      "level": "medium",
+      "factors": [
+        "moderate_liquidity",
+        "low_activity"
+      ]
+    },
+    "first_seen": "2026-03-19T11:55:37.858464+00:00",
+    "status": "NEW"
+  },
+  "timestamp": "2026-03-19T12:01:45.706942+00:00"
+}

@@ -1,0 +1,24 @@
+{
+  "type": "OPPORTUNITY",
+  "token": {
+    "address": "0x10b2057bc08d1d50ba18a536172244fb96c7dba3",
+    "symbol": "UNKNOWN",
+    "name": "SHAR / WETH",
+    "metrics": {
+      "liq_usd": 67393.5559,
+      "vol_24h_usd": 92526.4130894985,
+      "txns_24h": 0,
+      "price_usd": 7.34610682597318e-07
+    },
+    "risk": {
+      "level": "medium",
+      "factors": [
+        "moderate_liquidity",
+        "low_activity"
+      ]
+    },
+    "first_seen": "2026-03-19T11:55:37.858457+00:00",
+    "status": "NEW"
+  },
+  "timestamp": "2026-03-19T12:01:45.706727+00:00"
+}

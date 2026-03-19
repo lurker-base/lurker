@@ -7231,8 +7231,8 @@
       "symbol": "UNKNOWN",
       "name": "ODAI / flETH",
       "metrics": {
-        "liq_usd": 704293.256,
-        "vol_24h_usd": 301324.519073779,
+        "liq_usd": 703750.2268,
+        "vol_24h_usd": 300926.966214175,
         "txns_24h": 0,
         "price_usd": 7.11681696156853e-05
       },
@@ -7250,10 +7250,10 @@
       "symbol": "UNKNOWN",
       "name": "cbBTC / WETH 0.01%",
       "metrics": {
-        "liq_usd": 7243886.3344,
-        "vol_24h_usd": 62930248.5461451,
+        "liq_usd": 7237895.652,
+        "vol_24h_usd": 62754868.7463457,
         "txns_24h": 0,
-        "price_usd": 69983.2214627017
+        "price_usd": 69934.4983235161
       },
       "risk": {
         "level": "low",
@@ -7269,10 +7269,10 @@
       "symbol": "UNKNOWN",
       "name": "VVV / WETH 0.05%",
       "metrics": {
-        "liq_usd": 3702946.8114,
-        "vol_24h_usd": 3600102.73010631,
+        "liq_usd": 3880455.4817,
+        "vol_24h_usd": 3561413.45310028,
         "txns_24h": 0,
-        "price_usd": 5.47229496193057
+        "price_usd": 5.47020921282209
       },
       "risk": {
         "level": "low",
@@ -7307,10 +7307,10 @@
       "symbol": "UNKNOWN",
       "name": "TACHI / WETH",
       "metrics": {
-        "liq_usd": 81331.595,
-        "vol_24h_usd": 60081.048657999,
+        "liq_usd": 82451.0789,
+        "vol_24h_usd": 60195.9566161901,
         "txns_24h": 0,
-        "price_usd": 1.05460823121399e-06
+        "price_usd": 1.05930353735085e-06
       },
       "risk": {
         "level": "medium",
@@ -7327,10 +7327,10 @@
       "symbol": "UNKNOWN",
       "name": "ROBOTMONEY / WETH",
       "metrics": {
-        "liq_usd": 488857.9766,
-        "vol_24h_usd": 513121.715184467,
+        "liq_usd": 495515.0947,
+        "vol_24h_usd": 514400.363869475,
         "txns_24h": 0,
-        "price_usd": 1.52133542040539e-05
+        "price_usd": 1.57313961420538e-05
       },
       "risk": {
         "level": "low",
@@ -7346,8 +7346,8 @@
       "symbol": "UNKNOWN",
       "name": "LITCOIN / WETH",
       "metrics": {
-        "liq_usd": 140112.0027,
-        "vol_24h_usd": 78668.8549126955,
+        "liq_usd": 139997.6371,
+        "vol_24h_usd": 78663.3736516245,
         "txns_24h": 0,
         "price_usd": 1.83007927903281e-06
       },
@@ -7365,10 +7365,10 @@
       "symbol": "UNKNOWN",
       "name": "KTA / WETH",
       "metrics": {
-        "liq_usd": 5964882.2875,
-        "vol_24h_usd": 2008545.85779777,
+        "liq_usd": 5959158.428,
+        "vol_24h_usd": 2010538.1558866,
         "txns_24h": 0,
-        "price_usd": 0.17233045289004
+        "price_usd": 0.172268924303637
       },
       "risk": {
         "level": "low",
@@ -7384,10 +7384,10 @@
       "symbol": "UNKNOWN",
       "name": "WETH / USDC 0.3%",
       "metrics": {
-        "liq_usd": 87346563.2923,
-        "vol_24h_usd": 100218220.251135,
+        "liq_usd": 87522552.5579,
+        "vol_24h_usd": 99848336.7198587,
         "txns_24h": 0,
-        "price_usd": 2167.92
+        "price_usd": 2166.84
       },
       "risk": {
         "level": "low",
@@ -7403,10 +7403,10 @@
       "symbol": "UNKNOWN",
       "name": "BRETT / WETH 1%",
       "metrics": {
-        "liq_usd": 1027346.7075,
-        "vol_24h_usd": 299618.54035197,
+        "liq_usd": 1045564.702,
+        "vol_24h_usd": 299007.24602223,
         "txns_24h": 0,
-        "price_usd": 0.00697809154702388
+        "price_usd": 0.00697474902237707
       },
       "risk": {
         "level": "low",
@@ -7422,7 +7422,7 @@
       "symbol": "UNKNOWN",
       "name": "SHAR / WETH",
       "metrics": {
-        "liq_usd": 67393.5559,
+        "liq_usd": 67322.4024,
         "vol_24h_usd": 92526.4130894985,
         "txns_24h": 0,
         "price_usd": 7.34610682597318e-07
@@ -7442,10 +7442,10 @@
       "symbol": "UNKNOWN",
       "name": "BID / WETH 0.01%",
       "metrics": {
-        "liq_usd": 78896.0957,
-        "vol_24h_usd": 2959025.64389454,
+        "liq_usd": 77761.8881,
+        "vol_24h_usd": 2951034.12742159,
         "txns_24h": 0,
-        "price_usd": 0.000234339750036905
+        "price_usd": 0.000228350061944128
       },
       "risk": {
         "level": "medium",
@@ -7462,10 +7462,10 @@
       "symbol": "UNKNOWN",
       "name": "SAIMMY / WETH 1%",
       "metrics": {
-        "liq_usd": 281327.8521,
-        "vol_24h_usd": 4696758.50938986,
+        "liq_usd": 269678.4059,
+        "vol_24h_usd": 4694244.39048577,
         "txns_24h": 0,
-        "price_usd": 4.69375761077692e-06
+        "price_usd": 4.43356682523627e-06
       },
       "risk": {
         "level": "low",
@@ -7500,7 +7500,7 @@
       "symbol": "UNKNOWN",
       "name": "DRB / WETH 1%",
       "metrics": {
-        "liq_usd": 910060.2369,
+        "liq_usd": 909317.406,
         "vol_24h_usd": 59517.5511135906,
         "txns_24h": 0,
         "price_usd": 7.19819973452187e-05
@@ -7519,10 +7519,10 @@
       "symbol": "UNKNOWN",
       "name": "SKI / WETH",
       "metrics": {
-        "liq_usd": 899106.1364,
-        "vol_24h_usd": 325970.371199088,
+        "liq_usd": 907766.8489,
+        "vol_24h_usd": 330717.629605856,
         "txns_24h": 0,
-        "price_usd": 0.00872828502448166
+        "price_usd": 0.00889811568150017
       },
       "risk": {
         "level": "low",
@@ -7538,10 +7538,10 @@
       "symbol": "UNKNOWN",
       "name": "BNKR / WETH 1%",
       "metrics": {
-        "liq_usd": 389946.782,
-        "vol_24h_usd": 490997.504813096,
+        "liq_usd": 389487.7254,
+        "vol_24h_usd": 490819.321717711,
         "txns_24h": 0,
-        "price_usd": 0.000446405457545449
+        "price_usd": 0.000445950944453155
       },
       "risk": {
         "level": "low",
@@ -7557,10 +7557,10 @@
       "symbol": "UNKNOWN",
       "name": "ZORA / USDC 0.3%",
       "metrics": {
-        "liq_usd": 387439.7512,
-        "vol_24h_usd": 412104.709839078,
+        "liq_usd": 387881.2614,
+        "vol_24h_usd": 412533.462877065,
         "txns_24h": 0,
-        "price_usd": 0.0169207078300402
+        "price_usd": 0.0169066174841886
       },
       "risk": {
         "level": "low",
@@ -7591,5 +7591,5 @@
       "status": "NEW"
     }
   },
-  "last_update": "2026-03-19T11:57:45.664373+00:00"
+  "last_update": "2026-03-19T12:01:45.763700+00:00"
 }
