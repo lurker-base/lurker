@@ -1,19 +1,17 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-19T10:35:33.188000+00:00",
-    "generated_at": "2026-03-19T10:35:33.188000+00:00",
-    "status": "ok",
-    "count": 1,
+    "updated_at": "2026-03-19T10:41:46.590000+00:00",
+    "generated_at": "2026-03-19T10:41:46.590000+00:00",
+    "status": "calm",
+    "count": 0,
     "thresholds": {
       "min_liq_usd": 100,
       "min_vol_5m": 10,
       "min_tx_5m": 1,
       "max_age_min": 10080
     },
-    "risk_distribution": {
-      "low": 1
-    },
+    "risk_distribution": {},
     "rejected": {
       "low_liq": 1,
       "too_old": 28,
@@ -28,88 +26,5 @@
       "trigger": null
     }
   },
-  "candidates": [
-    {
-      "token": {
-        "address": "0xae8f3f67eb1429d2e3f99693f9b7006ec4af8626",
-        "symbol": "AgentInBox",
-        "name": "AgentInBox"
-      },
-      "pair": {
-        "address": "0x95e97e0df1eb77cfac92f65a0b35ef33923094880ca12873930ab1a824dac03b",
-        "dex": "uniswap",
-        "quote": "WETH"
-      },
-      "metrics": {
-        "liq_usd": 123623.11,
-        "vol_5m_usd": 6190.71,
-        "vol_1h_usd": 219455.62,
-        "txns_5m": 29,
-        "price_usd": 2.542e-06
-      },
-      "timestamps": {
-        "pair_created_at": "2026-03-19T07:39:25+00:00",
-        "token_first_seen": "2026-03-19T10:29:19.215000+00:00",
-        "age_minutes": 6.2,
-        "age_hours": 0.1
-      },
-      "scores": {
-        "cio_score": 100,
-        "freshness": 1.0
-      },
-      "risks": [],
-      "risk_level": "low",
-      "source": "profiles",
-      "status": "observing",
-      "quality": {
-        "has_profile": true,
-        "has_image": true,
-        "has_socials": true,
-        "has_website": false,
-        "quality_score": 75
-      },
-      "is_recycled": false,
-      "explanation": {
-        "summary": "Complete DexScreener profile with verified info",
-        "reasons": [
-          "Complete DexScreener profile with verified info",
-          "High 1h volume indicates strong trading interest",
-          "Strong liquidity depth reduces slippage risk",
-          "Healthy transaction flow indicating organic interest",
-          "Very fresh token - early entry opportunity",
-          "Verified profile with image, socials and website"
-        ],
-        "key_metrics": [
-          {
-            "metric": "volume_1h",
-            "value": "$219,456",
-            "significance": "high"
-          },
-          {
-            "metric": "liquidity",
-            "value": "$123,623",
-            "significance": "high"
-          },
-          {
-            "metric": "tx_5m",
-            "value": "29 txs",
-            "significance": "medium"
-          },
-          {
-            "metric": "age",
-            "value": "6 min",
-            "significance": "high"
-          },
-          {
-            "metric": "profile",
-            "value": "75/100",
-            "significance": "high"
-          }
-        ],
-        "risk_caveats": [],
-        "confidence_description": "High confidence - multiple positive indicators aligned",
-        "signal_quality": "high"
-      }
-    }
-  ]
+  "candidates": []
 }
