@@ -1,9 +1,9 @@
 {
   "meta": {
-    "updated_at": "2026-03-19T10:41:46.590000+00:00",
+    "updated_at": "2026-03-19T10:50:03.829000+00:00",
     "source": "cio_scanner",
     "chain": "base",
-    "count": 0,
+    "count": 1,
     "filters": {
       "min_volume_1h": 0,
       "max_results": 20,
@@ -11,5 +11,20 @@
     },
     "errors": []
   },
-  "signals": []
+  "signals": [
+    {
+      "address": "0x5f980dcfc4c0fa3911554cf5ab288ed0eb13dba3",
+      "symbol": "GITLAWB",
+      "name": "gitlawb",
+      "liquidity_usd": 126876.7,
+      "volume_1h": 16620.37,
+      "volume_5m": 0.46,
+      "quality_score": 100,
+      "age_minutes": 20.7,
+      "age_hours": 0.3,
+      "detected_at": "2026-03-19T10:29:19.215000+00:00",
+      "risk_level": "low",
+      "source": "boosts"
+    }
+  ]
 }

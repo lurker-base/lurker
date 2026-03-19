@@ -1411,12 +1411,99 @@
         "header": "https://cdn.dexscreener.com/cms/images/92F5Dn2SNpHNhedp?width=600&height=200&fit=crop&quality=95&format=auto",
         "icon": "https://cdn.dexscreener.com/cms/images/-NuK-069OflG4RiS?width=64&height=64&fit=crop&quality=95&format=auto"
       }
+    },
+    {
+      "token": {
+        "address": "0x797f214a2CD64a4963A91Fa21c8C55Ec3EBa4714",
+        "symbol": "SIBYL",
+        "name": "SIBYL by Virtuals"
+      },
+      "source": "hybrid_trending",
+      "detected_at": "2026-03-19T10:50:26.680286+00:00",
+      "age_hours": 13.31,
+      "creator": "unknown",
+      "tx_hash": null,
+      "dexscreener": {
+        "priceUsd": "0.0003480",
+        "liquidity": {
+          "usd": 73408.19,
+          "base": 105452462,
+          "quote": 51023
+        },
+        "volume": {
+          "h24": 358702.31,
+          "h6": 10649.35,
+          "h1": 488.26,
+          "m5": 0
+        },
+        "txns": {
+          "m5": {
+            "buys": 0,
+            "sells": 0
+          },
+          "h1": {
+            "buys": 2,
+            "sells": 3
+          },
+          "h6": {
+            "buys": 370,
+            "sells": 118
+          },
+          "h24": {
+            "buys": 1259,
+            "sells": 650
+          }
+        },
+        "marketCap": 348063,
+        "fdv": 348063,
+        "pairAddress": "0x43447F02AdA550929F1F0619471a8F8dba173243",
+        "dexId": "uniswap",
+        "pairCreatedAt": 1773869525000,
+        "info": {
+          "imageUrl": "https://cdn.dexscreener.com/cms/images/rHcFA-I2vW4VaoLJ?width=800&height=800&quality=95&format=auto",
+          "header": "https://cdn.dexscreener.com/cms/images/G6tDKTxXOGT9s0dg?width=1500&height=500&quality=95&format=auto",
+          "openGraph": "https://cdn.dexscreener.com/token-images/og/base/0x797f214a2cd64a4963a91fa21c8c55ec3eba4714?timestamp=1773917400000",
+          "websites": [
+            {
+              "url": "https://sibylcap.com",
+              "label": "Website"
+            },
+            {
+              "url": "https://sibylcap.com/mind",
+              "label": "Docs"
+            },
+            {
+              "url": "https://ping.sibylcap.com",
+              "label": "Ping"
+            }
+          ],
+          "socials": [
+            {
+              "url": "https://x.com/sibylcap",
+              "type": "twitter"
+            }
+          ]
+        }
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "low_volume",
+          "low_activity"
+        ]
+      },
+      "meta": {
+        "source": "trending",
+        "url": "https://dexscreener.com/base/0x797f214a2cd64a4963a91fa21c8c55ec3eba4714",
+        "header": "https://cdn.dexscreener.com/cms/images/G6tDKTxXOGT9s0dg?width=900&height=300&fit=crop&quality=95&format=auto",
+        "icon": "rHcFA-I2vW4VaoLJ"
+      }
     }
   ],
   "meta": {
-    "updated_at": "2026-03-14T08:03:26.341205+00:00",
-    "count": 24,
-    "new_this_scan": 2,
-    "latest_block": 43343028
+    "updated_at": "2026-03-19T10:50:27.946650+00:00",
+    "count": 25,
+    "new_this_scan": 1,
+    "latest_block": 43564039
   }
 }

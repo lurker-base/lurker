@@ -6,5 +6,9 @@
   "0xCac25CBdA01138EB70adEC5B0a062b87B9Ebcba3": {
     "detected": "2026-03-14T08:03:24.903499+00:00",
     "source": "profiles"
+  },
+  "0x797f214a2CD64a4963A91Fa21c8C55Ec3EBa4714": {
+    "detected": "2026-03-19T10:50:26.680322+00:00",
+    "source": "trending"
   }
 }
