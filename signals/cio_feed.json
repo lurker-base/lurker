@@ -1,8 +1,8 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-19T11:20:14.118000+00:00",
-    "generated_at": "2026-03-19T11:20:14.118000+00:00",
+    "updated_at": "2026-03-19T11:26:27.647000+00:00",
+    "generated_at": "2026-03-19T11:26:27.647000+00:00",
     "status": "ok",
     "count": 2,
     "thresholds": {
@@ -12,8 +12,7 @@
       "max_age_min": 10080
     },
     "risk_distribution": {
-      "medium": 1,
-      "low": 1
+      "low": 2
     },
     "rejected": {
       "low_liq": 1,
@@ -41,26 +40,24 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 73137.0,
-        "vol_5m_usd": 3247.36,
-        "vol_1h_usd": 46530.19,
-        "txns_5m": 24,
-        "price_usd": 0.0003033
+        "liq_usd": 74354.75,
+        "vol_5m_usd": 2106.94,
+        "vol_1h_usd": 44066.12,
+        "txns_5m": 14,
+        "price_usd": 0.0003129
       },
       "timestamps": {
         "pair_created_at": "2026-03-16T03:18:07+00:00",
         "token_first_seen": "2026-03-19T11:09:50.297000+00:00",
-        "age_minutes": 10.4,
-        "age_hours": 0.17
+        "age_minutes": 16.6,
+        "age_hours": 0.28
       },
       "scores": {
         "cio_score": 100,
         "freshness": 1.0
       },
-      "risks": [
-        "dumping"
-      ],
-      "risk_level": "medium",
+      "risks": [],
+      "risk_level": "low",
       "source": "profiles",
       "status": "observing",
       "quality": {
@@ -76,24 +73,18 @@
         "reasons": [
           "Complete DexScreener profile with verified info",
           "Strong liquidity depth reduces slippage risk",
-          "Healthy transaction flow indicating organic interest",
           "Very fresh token - early entry opportunity",
           "Verified profile with image, socials and website"
         ],
         "key_metrics": [
           {
             "metric": "liquidity",
-            "value": "$73,137",
+            "value": "$74,355",
             "significance": "high"
           },
           {
-            "metric": "tx_5m",
-            "value": "24 txs",
-            "significance": "medium"
-          },
-          {
             "metric": "age",
-            "value": "10 min",
+            "value": "17 min",
             "significance": "high"
           },
           {
@@ -102,9 +93,7 @@
             "significance": "high"
           }
         ],
-        "risk_caveats": [
-          "Price declining - potential sell pressure"
-        ],
+        "risk_caveats": [],
         "confidence_description": "High confidence - multiple positive indicators aligned",
         "signal_quality": "high"
       }
@@ -121,21 +110,21 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 125700.45,
-        "vol_5m_usd": 5.17,
-        "vol_1h_usd": 5392.94,
-        "txns_5m": 1,
-        "price_usd": 1.773e-06
+        "liq_usd": 123695.99,
+        "vol_5m_usd": 892.07,
+        "vol_1h_usd": 3885.53,
+        "txns_5m": 2,
+        "price_usd": 1.724e-06
       },
       "timestamps": {
         "pair_created_at": "2026-03-11T02:00:07+00:00",
         "token_first_seen": "2026-03-19T10:29:19.215000+00:00",
-        "age_minutes": 50.9,
-        "age_hours": 0.85
+        "age_minutes": 57.1,
+        "age_hours": 0.95
       },
       "scores": {
         "cio_score": 100,
-        "freshness": 0.99
+        "freshness": 0.98
       },
       "risks": [],
       "risk_level": "low",
@@ -160,12 +149,12 @@
         "key_metrics": [
           {
             "metric": "liquidity",
-            "value": "$125,700",
+            "value": "$123,696",
             "significance": "high"
           },
           {
             "metric": "age",
-            "value": "51 min",
+            "value": "57 min",
             "significance": "high"
           },
           {
