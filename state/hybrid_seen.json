@@ -10,5 +10,9 @@
   "0x797f214a2CD64a4963A91Fa21c8C55Ec3EBa4714": {
     "detected": "2026-03-19T10:50:26.680322+00:00",
     "source": "trending"
+  },
+  "0xe497A3444cA6cBFc1C5A1CE537B743A21FF9f1ca": {
+    "detected": "2026-03-19T11:20:35.051255+00:00",
+    "source": "profiles"
   }
 }

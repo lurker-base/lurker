@@ -1498,12 +1498,94 @@
         "header": "https://cdn.dexscreener.com/cms/images/G6tDKTxXOGT9s0dg?width=900&height=300&fit=crop&quality=95&format=auto",
         "icon": "rHcFA-I2vW4VaoLJ"
       }
+    },
+    {
+      "token": {
+        "address": "0xe497A3444cA6cBFc1C5A1CE537B743A21FF9f1ca",
+        "symbol": "JAZZER",
+        "name": "Jazzer Guys"
+      },
+      "source": "hybrid_profiles",
+      "detected_at": "2026-03-19T11:20:35.051226+00:00",
+      "age_hours": 80.04,
+      "creator": "unknown",
+      "tx_hash": null,
+      "dexscreener": {
+        "priceUsd": "0.0003033",
+        "liquidity": {
+          "usd": 73138.19,
+          "base": 120127498,
+          "quote": 16.9148
+        },
+        "volume": {
+          "h24": 1221729.01,
+          "h6": 306127.23,
+          "h1": 45685.04,
+          "m5": 2369.88
+        },
+        "txns": {
+          "m5": {
+            "buys": 5,
+            "sells": 10
+          },
+          "h1": {
+            "buys": 139,
+            "sells": 164
+          },
+          "h6": {
+            "buys": 1010,
+            "sells": 1026
+          },
+          "h24": {
+            "buys": 4011,
+            "sells": 4120
+          }
+        },
+        "marketCap": 303340,
+        "fdv": 303340,
+        "pairAddress": "0xeF42DB897D95390fc22eDFeA30ca09864f322C22",
+        "dexId": "uniswap",
+        "pairCreatedAt": 1773631087000,
+        "info": {
+          "imageUrl": "https://cdn.dexscreener.com/cms/images/cZykcjvj4FDwNL67?width=800&height=800&quality=95&format=auto",
+          "header": "https://cdn.dexscreener.com/cms/images/buCdW2QroFweIzus?width=1500&height=500&quality=95&format=auto",
+          "openGraph": "https://cdn.dexscreener.com/token-images/og/base/0xe497a3444ca6cbfc1c5a1ce537b743a21ff9f1ca?timestamp=1773919200000",
+          "websites": [
+            {
+              "url": "https://jazzerguys.xyz/",
+              "label": "Website"
+            }
+          ],
+          "socials": [
+            {
+              "url": "https://x.com/JAZZER_Coin",
+              "type": "twitter"
+            },
+            {
+              "url": "https://t.me/JAZZER_Official",
+              "type": "telegram"
+            }
+          ]
+        }
+      },
+      "risk": {
+        "level": "medium",
+        "factors": [
+          "dumping"
+        ]
+      },
+      "meta": {
+        "source": "profiles",
+        "url": "https://dexscreener.com/base/0xe497a3444ca6cbfc1c5a1ce537b743a21ff9f1ca",
+        "header": "https://cdn.dexscreener.com/cms/images/buCdW2QroFweIzus?width=600&height=200&fit=crop&quality=95&format=auto",
+        "icon": "https://cdn.dexscreener.com/cms/images/cZykcjvj4FDwNL67?width=64&height=64&fit=crop&quality=95&format=auto"
+      }
     }
   ],
   "meta": {
-    "updated_at": "2026-03-19T11:05:28.486262+00:00",
-    "count": 25,
-    "new_this_scan": 0,
-    "latest_block": 43564490
+    "updated_at": "2026-03-19T11:20:37.080406+00:00",
+    "count": 26,
+    "new_this_scan": 1,
+    "latest_block": 43564944
   }
 }
