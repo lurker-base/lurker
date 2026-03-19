@@ -7231,8 +7231,8 @@
       "symbol": "UNKNOWN",
       "name": "ODAI / flETH",
       "metrics": {
-        "liq_usd": 692053.0406,
-        "vol_24h_usd": 308730.668603841,
+        "liq_usd": 691521.436,
+        "vol_24h_usd": 307483.020586845,
         "txns_24h": 0,
         "price_usd": 6.93536447729966e-05
       },
@@ -7250,10 +7250,10 @@
       "symbol": "UNKNOWN",
       "name": "cbBTC / WETH 0.01%",
       "metrics": {
-        "liq_usd": 7224698.6462,
-        "vol_24h_usd": 62099738.4867208,
+        "liq_usd": 7222696.7255,
+        "vol_24h_usd": 62182713.0834569,
         "txns_24h": 0,
-        "price_usd": 69704.6281119266
+        "price_usd": 69640.2264411553
       },
       "risk": {
         "level": "low",
@@ -7269,10 +7269,10 @@
       "symbol": "UNKNOWN",
       "name": "VVV / WETH 0.05%",
       "metrics": {
-        "liq_usd": 3881303.3499,
-        "vol_24h_usd": 3534872.80739923,
+        "liq_usd": 3941095.8411,
+        "vol_24h_usd": 3535166.50210168,
         "txns_24h": 0,
-        "price_usd": 5.47307159781643
+        "price_usd": 5.46751781512834
       },
       "risk": {
         "level": "low",
@@ -7288,10 +7288,10 @@
       "symbol": "UNKNOWN",
       "name": "MOLT / WETH",
       "metrics": {
-        "liq_usd": 1779052.6424,
-        "vol_24h_usd": 126458.038278763,
+        "liq_usd": 1775688.5623,
+        "vol_24h_usd": 127056.82730837,
         "txns_24h": 0,
-        "price_usd": 2.30849824541882e-05
+        "price_usd": 2.29942090072721e-05
       },
       "risk": {
         "level": "low",
@@ -7307,10 +7307,10 @@
       "symbol": "UNKNOWN",
       "name": "TACHI / WETH",
       "metrics": {
-        "liq_usd": 82564.5406,
-        "vol_24h_usd": 58246.8230578292,
+        "liq_usd": 82818.8627,
+        "vol_24h_usd": 58768.1515275771,
         "txns_24h": 0,
-        "price_usd": 1.06502478178551e-06
+        "price_usd": 1.0912160505901e-06
       },
       "risk": {
         "level": "medium",
@@ -7327,10 +7327,10 @@
       "symbol": "UNKNOWN",
       "name": "ROBOTMONEY / WETH",
       "metrics": {
-        "liq_usd": 487587.0078,
-        "vol_24h_usd": 520280.520958482,
+        "liq_usd": 478379.9731,
+        "vol_24h_usd": 521910.588641226,
         "txns_24h": 0,
-        "price_usd": 1.53253266131906e-05
+        "price_usd": 1.50263480158083e-05
       },
       "risk": {
         "level": "low",
@@ -7346,10 +7346,10 @@
       "symbol": "UNKNOWN",
       "name": "LITCOIN / WETH",
       "metrics": {
-        "liq_usd": 136047.3764,
-        "vol_24h_usd": 80926.7438316119,
+        "liq_usd": 135957.4084,
+        "vol_24h_usd": 82154.8836616404,
         "txns_24h": 0,
-        "price_usd": 1.73837356216781e-06
+        "price_usd": 1.67689372039721e-06
       },
       "risk": {
         "level": "low",
@@ -7365,10 +7365,10 @@
       "symbol": "UNKNOWN",
       "name": "KTA / WETH",
       "metrics": {
-        "liq_usd": 5948719.4956,
-        "vol_24h_usd": 2006531.67226772,
+        "liq_usd": 5944039.411,
+        "vol_24h_usd": 2003123.49621574,
         "txns_24h": 0,
-        "price_usd": 0.173033802547567
+        "price_usd": 0.171920717980587
       },
       "risk": {
         "level": "low",
@@ -7384,10 +7384,10 @@
       "symbol": "UNKNOWN",
       "name": "WETH / USDC 0.3%",
       "metrics": {
-        "liq_usd": 87261081.1338,
-        "vol_24h_usd": 99664701.7003064,
+        "liq_usd": 87230807.5295,
+        "vol_24h_usd": 99664704.6865703,
         "txns_24h": 0,
-        "price_usd": 2160.11
+        "price_usd": 2159.36
       },
       "risk": {
         "level": "low",
@@ -7403,10 +7403,10 @@
       "symbol": "UNKNOWN",
       "name": "BRETT / WETH 1%",
       "metrics": {
-        "liq_usd": 1044434.4041,
-        "vol_24h_usd": 297512.69638637,
+        "liq_usd": 1042619.2107,
+        "vol_24h_usd": 297524.44491755,
         "txns_24h": 0,
-        "price_usd": 0.00697177666695488
+        "price_usd": 0.006960071864092
       },
       "risk": {
         "level": "low",
@@ -7422,10 +7422,10 @@
       "symbol": "UNKNOWN",
       "name": "SHAR / WETH",
       "metrics": {
-        "liq_usd": 65847.6338,
-        "vol_24h_usd": 91710.2108964132,
+        "liq_usd": 65565.6525,
+        "vol_24h_usd": 91711.2682843652,
         "txns_24h": 0,
-        "price_usd": 7.27346690111125e-07
+        "price_usd": 7.44755508805941e-07
       },
       "risk": {
         "level": "medium",
@@ -7442,10 +7442,10 @@
       "symbol": "UNKNOWN",
       "name": "BID / WETH 0.01%",
       "metrics": {
-        "liq_usd": 78085.2345,
-        "vol_24h_usd": 2913347.94576377,
+        "liq_usd": 79137.8244,
+        "vol_24h_usd": 2915086.77827989,
         "txns_24h": 0,
-        "price_usd": 0.000231245527015714
+        "price_usd": 0.000235704766740245
       },
       "risk": {
         "level": "medium",
@@ -7462,10 +7462,10 @@
       "symbol": "UNKNOWN",
       "name": "SAIMMY / WETH 1%",
       "metrics": {
-        "liq_usd": 267730.0922,
-        "vol_24h_usd": 4696331.314226,
+        "liq_usd": 269526.685,
+        "vol_24h_usd": 4704577.47182304,
         "txns_24h": 0,
-        "price_usd": 4.55129063287166e-06
+        "price_usd": 4.3516490771022e-06
       },
       "risk": {
         "level": "low",
@@ -7481,10 +7481,10 @@
       "symbol": "UNKNOWN",
       "name": "JUNO / WETH",
       "metrics": {
-        "liq_usd": 651658.972,
-        "vol_24h_usd": 115121.509027248,
+        "liq_usd": 653089.2863,
+        "vol_24h_usd": 116114.023032311,
         "txns_24h": 0,
-        "price_usd": 1.40389120005574e-05
+        "price_usd": 1.41173631641139e-05
       },
       "risk": {
         "level": "low",
@@ -7519,10 +7519,10 @@
       "symbol": "UNKNOWN",
       "name": "SKI / WETH",
       "metrics": {
-        "liq_usd": 904961.1894,
-        "vol_24h_usd": 328254.787844434,
+        "liq_usd": 892030.4069,
+        "vol_24h_usd": 333716.040458393,
         "txns_24h": 0,
-        "price_usd": 0.0088633518588906
+        "price_usd": 0.00873757976474906
       },
       "risk": {
         "level": "low",
@@ -7538,10 +7538,10 @@
       "symbol": "UNKNOWN",
       "name": "BNKR / WETH 1%",
       "metrics": {
-        "liq_usd": 2613734.1617,
-        "vol_24h_usd": 61623.4659462903,
+        "liq_usd": 422601.5691,
+        "vol_24h_usd": 478293.404796537,
         "txns_24h": 0,
-        "price_usd": 0.000449852359213584
+        "price_usd": 0.000443156383450683
       },
       "risk": {
         "level": "low",
@@ -7557,10 +7557,10 @@
       "symbol": "UNKNOWN",
       "name": "ZORA / USDC 0.3%",
       "metrics": {
-        "liq_usd": 385502.9407,
-        "vol_24h_usd": 401548.460791731,
+        "liq_usd": 385531.205,
+        "vol_24h_usd": 403085.983010461,
         "txns_24h": 0,
-        "price_usd": 0.0167995239365772
+        "price_usd": 0.0168070183767878
       },
       "risk": {
         "level": "low",
@@ -7591,5 +7591,5 @@
       "status": "NEW"
     }
   },
-  "last_update": "2026-03-19T12:19:46.235448+00:00"
+  "last_update": "2026-03-19T12:23:46.355428+00:00"
 }

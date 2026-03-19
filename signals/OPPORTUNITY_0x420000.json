@@ -5,10 +5,10 @@
     "symbol": "UNKNOWN",
     "name": "WETH / USDC 0.3%",
     "metrics": {
-      "liq_usd": 87545475.696,
-      "vol_24h_usd": 99664772.7050567,
+      "liq_usd": 87261081.1338,
+      "vol_24h_usd": 99664701.7003064,
       "txns_24h": 0,
-      "price_usd": 2162.4
+      "price_usd": 2159.36
     },
     "risk": {
       "level": "low",
@@ -19,5 +19,5 @@
     "first_seen": "2026-03-19T11:55:37.858445+00:00",
     "status": "NEW"
   },
-  "timestamp": "2026-03-19T12:19:46.031109+00:00"
+  "timestamp": "2026-03-19T12:22:46.094933+00:00"
 }
