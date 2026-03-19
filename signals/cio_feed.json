@@ -1,8 +1,8 @@
 {
   "schema": "lurker_cio_ultra_launch",
   "meta": {
-    "updated_at": "2026-03-19T10:50:03.829000+00:00",
-    "generated_at": "2026-03-19T10:50:03.829000+00:00",
+    "updated_at": "2026-03-19T10:58:20.976000+00:00",
+    "generated_at": "2026-03-19T10:58:20.976000+00:00",
     "status": "ok",
     "count": 1,
     "thresholds": {
@@ -40,17 +40,17 @@
         "quote": "WETH"
       },
       "metrics": {
-        "liq_usd": 126876.7,
-        "vol_5m_usd": 0.46,
-        "vol_1h_usd": 16620.37,
-        "txns_5m": 1,
-        "price_usd": 1.798e-06
+        "liq_usd": 126057.57,
+        "vol_5m_usd": 710.17,
+        "vol_1h_usd": 17274.74,
+        "txns_5m": 2,
+        "price_usd": 1.779e-06
       },
       "timestamps": {
         "pair_created_at": "2026-03-11T02:00:07+00:00",
         "token_first_seen": "2026-03-19T10:29:19.215000+00:00",
-        "age_minutes": 20.7,
-        "age_hours": 0.35
+        "age_minutes": 29.0,
+        "age_hours": 0.48
       },
       "scores": {
         "cio_score": 100,
@@ -79,12 +79,12 @@
         "key_metrics": [
           {
             "metric": "liquidity",
-            "value": "$126,877",
+            "value": "$126,058",
             "significance": "high"
           },
           {
             "metric": "age",
-            "value": "21 min",
+            "value": "29 min",
             "significance": "high"
           },
           {
