@@ -1,98 +1,53 @@
 #!/usr/bin/env python3
 """
-LURKER Feed Sentinel — Surveillance locale du feed CIO
-Alerte immédiate si le feed est stale (pas de mise à jour depuis >10 min)
-Usage: python3 feed_sentinel.py [--alert]
+LURKER Feed Sentinel
+Monitors feed freshness and alerts on stale data
 """
+
 import json
-import sys
-import subprocess
+import os
+import time
 from datetime import datetime, timezone
-from pathlib import Path
 
-def check_feed_health():
-    """Vérifie si le feed est à jour"""
-    feed_path = Path("/data/.openclaw/workspace/lurker-project/signals/cio_feed.json")
-    
-    if not feed_path.exists():
-        return False, "Feed file not found", None
-    
-    try:
-        with open(feed_path) as f:
-            data = json.load(f)
-        
-        updated_at = data.get('meta', {}).get('updated_at')
-        if not updated_at:
-            return False, "No updated_at timestamp", None
-        
-        # Parse timestamp
-        try:
-            last_update = datetime.fromisoformat(updated_at.replace('Z', '+00:00'))
-        except:
-            last_update = datetime.strptime(updated_at, "%Y-%m-%dT%H:%M:%S.%f%z")
-        
-        now = datetime.now(timezone.utc)
-        stale_minutes = (now - last_update).total_seconds() / 60
-        
-        if stale_minutes > 15:  # Alert if > 15 min
-            return False, f"Feed stale for {stale_minutes:.0f} minutes", stale_minutes
-        
-        count = data.get('meta', {}).get('count', 0)
-        return True, f"Feed healthy — {count} tokens — last update {stale_minutes:.0f}min ago", stale_minutes
-        
-    except Exception as e:
-        return False, f"Error reading feed: {e}", None
+DATA_DIR = "/data/.openclaw/workspace/lurker-project/data"
+FEED_FILE = f"{DATA_DIR}/cio_feed.json"
+ALERT_FILE = f"{DATA_DIR}/.last_cio_alert.json"
 
-def send_alert(message, stale_time):
-    """Envoie alerte Telegram si configuré"""
-    import urllib.request
-    import urllib.parse
-    import os
-    
-    bot_token = os.getenv("TELEGRAM_BOT_TOKEN", "8455628045:AAGb6Q2PdkPHpobhTAcmMK3SFqJm1QlM6bY")
-    chat_id = os.getenv("LURKER_ALERTS_CHAT_ID", "@LurkerAlphaSignals")
-    
-    if not bot_token or not chat_id:
-        print("[ALERT] Missing Telegram credentials")
+def check_feed_freshness():
+    """Check if feed is fresh (less than 10 minutes old)"""
+    if not os.path.exists(FEED_FILE):
+        print(f"[{datetime.now()}] No feed file found")
         return False
     
-    alert_text = f"""🚨 LURKER FEED ALERT
-
-{message}
-
-⏰ Feed hasn't updated in {stale_time:.0f} minutes
-
-🔧 Action needed:
-1. Check GitHub Actions status
-2. Run manual scan: python3 scripts/scanner_cio_ultra.py
-3. Push update if needed
-
-👁️ Sentinel — {datetime.now(timezone.utc).strftime('%H:%M UTC')}"""
-    
-    url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
-    data = urllib.parse.urlencode({
-        'chat_id': chat_id,
-        'text': alert_text,
-        'parse_mode': 'HTML'
-    }).encode()
-    
     try:
-        req = urllib.request.Request(url, data=data, method='POST')
-        with urllib.request.urlopen(req, timeout=30) as response:
-            return json.loads(response.read().decode()).get('ok', False)
+        with open(FEED_FILE, 'r') as f:
+            feed = json.load(f)
+        
+        feed_time = datetime.fromisoformat(feed['timestamp'])
+        now = datetime.now(timezone.utc)
+        age_minutes = (now - feed_time).total_seconds() / 60
+        
+        print(f"[{datetime.now()}] Feed age: {age_minutes:.1f} minutes")
+        
+        if age_minutes > 10:
+            print(f"[{datetime.now()}] WARNING: Feed is stale ({age_minutes:.1f} min)")
+            return False
+        
+        return True
+        
     except Exception as e:
-        print(f"[ALERT] Failed to send: {e}")
+        print(f"[{datetime.now()}] Error checking feed: {e}")
         return False
 
 def main():
-    healthy, message, stale_time = check_feed_health()
+    print(f"[{datetime.now()}] Feed Sentinel checking...")
     
-    print(f"[{datetime.now(timezone.utc).strftime('%H:%M:%S')}] {message}")
+    is_fresh = check_feed_freshness()
     
-    if not healthy and stale_time and '--alert' in sys.argv:
-        send_alert(message, stale_time)
-    
-    sys.exit(0 if healthy else 1)
+    if is_fresh:
+        print(f"[{datetime.now()}] Feed is fresh ✓")
+    else:
+        print(f"[{datetime.now()}] Feed needs attention ⚠")
 
 if __name__ == "__main__":
     main()

@@ -43,7 +43,9 @@ def process_data(data):
         
         liq_usd = float(attrs.get('reserve_in_usd', 0) or 0)
         vol_24h = float(attrs.get('volume_usd', {}).get('h24', 0) or 0)
-        txns_24h = int(attrs.get('transactions', {}).get('h24', 0) or 0)
+        txns_data = attrs.get('transactions', {})
+        h24_data = txns_data.get('h24', 0) if isinstance(txns_data, dict) else 0
+        txns_24h = int(h24_data) if isinstance(h24_data, (int, float, str)) else 0
         price_usd = float(attrs.get('base_token_price_usd', 0) or 0)
         
         # Risk assessment

@@ -1,0 +1,90 @@
+{
+  "type": "OPPORTUNITY",
+  "token": {
+    "address": "0x9A92dD358a7a6411c76b0f7C3Fc061729e0c1A39",
+    "symbol": "WOLF",
+    "name": "WOLF",
+    "source": "pairs",
+    "icon": "https://cdn.dexscreener.com/cms/images/Q5oHkoA0n2Yd7o-p?width=64&height=64&fit=crop&quality=95&format=auto",
+    "description": "A tribute to Philippe des Palli\u00e8res and Herv\u00e9 Marly \u2014 bringing The Werewolves of Miller\u2019s Hollow onto the blockchain through the power of AI.",
+    "twitter": "",
+    "website": "",
+    "telegram": "",
+    "has_profile": true,
+    "pair_address": "0x49ab97B05F5Afc8a65E7C419F80C04E59C754cb8",
+    "dex": "uniswap",
+    "age_minutes": 47.8,
+    "metrics": {
+      "liq_usd": 89686.28,
+      "price_usd": 0.001052,
+      "vol_5m_usd": 382.07,
+      "vol_1h_usd": 74965.69,
+      "vol_24h_usd": 74965.69,
+      "txns_5m": 5.0,
+      "price_change_24h": 2084.0,
+      "market_cap": 1052720.0
+    },
+    "sources": [
+      "pairs"
+    ],
+    "detected_at": "2026-02-25T08:30:43.179378+00:00",
+    "category": "VERIFIED",
+    "risk": {
+      "level": "low",
+      "factors": []
+    },
+    "performance": {
+      "max_gain": 0.0,
+      "current_gain": 0.0,
+      "status": "stable"
+    },
+    "risk_tags": [
+      "FAST_GROWTH",
+      "ESTABLISHED"
+    ],
+    "price_history": [
+      {
+        "timestamp": "2026-02-25T09:56:21.138604+00:00",
+        "price": 0.001052
+      },
+      {
+        "timestamp": "2026-02-26T09:07:32.665595+00:00",
+        "price": 0.001052
+      },
+      {
+        "timestamp": "2026-02-26T09:12:32.738771+00:00",
+        "price": 0.001052
+      },
+      {
+        "timestamp": "2026-02-26T09:13:46.149669+00:00",
+        "price": 0.001052
+      },
+      {
+        "timestamp": "2026-02-26T09:14:55.402936+00:00",
+        "price": 0.001052
+      },
+      {
+        "timestamp": "2026-02-26T09:15:56.896957+00:00",
+        "price": 0.001052
+      },
+      {
+        "timestamp": "2026-02-27T09:57:15.639641+00:00",
+        "price": 0.001052
+      },
+      {
+        "timestamp": "2026-02-27T09:59:41.511327+00:00",
+        "price": 0.001052
+      },
+      {
+        "timestamp": "2026-02-27T09:59:55.507593+00:00",
+        "price": 0.001052
+      }
+    ],
+    "badges": [
+      "\ud83d\udc8e High Liq",
+      "\ud83d\udcca Active",
+      "\u2728 Fresh"
+    ]
+  },
+  "timestamp": "2026-03-19T11:55:45.585146+00:00"
+}
