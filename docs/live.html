@@ -223,8 +223,9 @@
                 }
                 
                 // Limit to avoid performance issues
+                const beforeCount = allTokens.length;
                 allTokens = allTokens.slice(0, 50);
-                console.log(`Filtered ${beforeCount - allTokens.length} rugged tokens`);
+                console.log(`Filtered ${beforeCount - allTokens.length} tokens (limit 50)`);
                 
                 updateStats();
                 renderTokens();
