@@ -283,7 +283,7 @@
                 const badges = [];
                 
                 // 0. ACTION BADGE (most important - tells user what to do)
-                const actionBadge = token.action_badge || data.meta?.badge_legend?.['🟡 SURVEILLER'];
+                const actionBadge = token.action_badge;
                 if (actionBadge) {
                     const actionClass = actionBadge.includes('🟢') ? 'badge-pump' : 
                                        actionBadge.includes('🔴') ? 'badge-rug' : 'badge-premium';
